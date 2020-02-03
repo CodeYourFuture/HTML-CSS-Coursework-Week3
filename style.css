@@ -1,1 +1,7 @@
 /*  Add your styling here */
+.header1{
+    background-color: blue;
+    position: sticky;
+    margin: 0px 0px 0px 0px;
+    padding: 100
+}
