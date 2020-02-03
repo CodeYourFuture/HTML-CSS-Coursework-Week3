@@ -1,8 +1,19 @@
 /*  Add your styling here */
 
 body {
-    margin: 0;
-    background-color: lavender;
+    margin: 0 auto;
+    background-color: rgb(255, 250, 250);   
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 480px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .top {
@@ -10,6 +21,9 @@ body {
     position: fixed;
     align-items: center;
     width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 20px;
     z-index: 999;
     display: flex;
     flex-direction: row;
@@ -18,7 +32,7 @@ body {
 }
 
 .logo {
-    height: 24px;
+    height: 28px;
     width: 15;
     margin: 3px 5px 3px 15px;
 }
@@ -29,31 +43,49 @@ body {
 }
 
 .navbar {
-    margin-top: 10px;
+    margin: 20px 0 0 0;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 
 .content {
+    margin: 20px 0 0 0;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 
 li {
     list-style-type: none;
+    background-color: red;
+    color: white;
     margin: 5px;
     padding: 3px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.welcome {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-color: rgb(138, 7, 7);
+    text-align: center;
+    border-color: papayawhip;
+    border-style: solid;
     border-width: 2px;
 }
 
+.welcome {
+    background-image: url('../images/introbackground.jpg');
+    background-size: 480px;
+    color: olive;
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 180px;
+    border-color: papayawhip;
+    border-style: solid;
+    border-width: 2px;
+    margin-left: 5px;
+    margin-right: 5px;
+
+}
+
 h1 {
-    margin: 5px 0 5px 0;
+    margin: 80px 0 5px 0;
+    padding: 0;
 }
