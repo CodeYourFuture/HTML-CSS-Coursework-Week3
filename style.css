@@ -1,1 +1,146 @@
-/*  Add your styling here */
+.header{
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 25px;
+    background-color: #fff;
+}
+
+.header__inner{
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-around;
+}
+
+.logo{
+    background-color: grey;
+    width: 15wv;
+}
+
+.contacts{
+    background-color: darkgrey;
+    width: 20wv;
+}
+
+.nav__list{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-between;
+    align-items: stretch;
+    display: none;
+}
+
+.nav__item {
+    background-color: deeppink;
+}
+
+
+.main__inner{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+
+}
+.main__info{
+    width: 100vw;
+    background-color: darkmagenta;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+}
+
+.main__image{
+    width: 100vw;
+    background-color: darkorange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25vh;
+}
+
+.main__cakes{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.cake{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
+    width: 45vw;
+    margin: 5px;
+}
+
+
+.cake__one{
+    background-color: darkslateblue;
+}
+.cake__two{
+    background-color: darkturquoise;
+}
+
+.cake__three{
+    background-color: firebrick;
+}
+
+.cake__four{
+    background-color: green;
+}
+
+.footer__list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style: none;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    padding-inline-start: 0px;
+
+}
+
+.footer {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__link {
+    background-color: darkolivegreen;
+    width: 40vw;
+    text-align: center;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width: 768px) {
+    .nav__list{
+
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        justify-content: space-between;
+        align-items: stretch;
+    }
+    .main__inner{
+        margin-top: 5vh;
+        flex-direction: row;
+    }
+    .main__info{
+        width: 25vw;
+        height: 25vh;
+    }
+    .main__image{
+        width: 75vw;
+    }
+
+}
