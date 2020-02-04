@@ -76,11 +76,17 @@ a:hover {
 #check:checked ~ .nav-bar {
   right: 0;
 }
-section {
-  background: url(../images/sumo4.jpeg) no-repeat;
-  background-size: cover;
-  height: 700px;
+.test-two img{
+  background-size:cover;
+  margin: auto;
+  display:block;
+  height:100vh;
 }
-.test-one {
-  background: url(../images/sumo3jpg) no-repeat;
-}
+
+
+@media (min-width:768px){
+  .header-nav{
+    background-color: green;
+  }
+  
+  }
