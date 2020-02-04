@@ -9,7 +9,8 @@ body {
   font-family: sans-serif;
 }
 .logo {
-  height: 80px;
+  height:80px;
+  margin:10px
 }
 
 header h2 {
@@ -20,11 +21,11 @@ header h2 {
 
 .header-nav {
   background-color: red;
-  height: 100px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   width:100%;
+  
 }
 .check-btn {
   font-size: 50px;
@@ -80,17 +81,30 @@ a:hover {
   right: 0;
 }
 
-
 .hero-area{
-  width:620px;
-}
+  display:flex;
+  flex-direction: column;
+  align-items: center;
 
- .cake img {
-  width:300px;
-  height:200px;
-  
 }
+.cake img {
+  width:50%;
+  display:block;
+  margin:auto;
+}
+.hero-info ,.example-cake {
+  margin:20px;
+  list-style:none;
+}
+.example-cake{
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
 
+}
+.example-cake img{
+  width:25vw;
+  }
 
 
 @media (min-width:768px){
