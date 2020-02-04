@@ -24,7 +24,6 @@ header h2 {
   flex-direction: row;
   justify-content: space-around;
   padding: 10px 10px;
-
   z-index: 10;
 }
 .check-btn {
@@ -80,6 +79,7 @@ a:hover {
 #check:checked ~ .nav-bar {
   right: 0;
 }
+
 .test-two img{
   background-size:cover;
   margin: auto;
