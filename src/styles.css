@@ -1,0 +1,86 @@
+/*  Add your styling here */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+.logo {
+  height: 80px;
+}
+
+header h2 {
+  line-height: 80px;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+.header-nav {
+  background-color: red;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 10px 10px;
+
+  z-index: 10;
+}
+.check-btn {
+  font-size: 50px;
+  color: white;
+  cursor: pointer;
+}
+.menubtn-text {
+  font-size: 15px;
+  text-transform: uppercase;
+  color: black;
+  font-weight: bold;
+}
+
+.nav-bar {
+  top: 90px;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  transition: all 0.5s;
+  width: 50vw;
+  right: -100%;
+}
+.nav-bar li {
+  list-style: none;
+  line-height: 30px;
+  margin: 20px 0;
+}
+.nav-bar a {
+  text-decoration: none;
+  font-size: 30px;
+  color: white;
+  opacity: 0.75;
+  background-color: black;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+a:hover {
+  opacity: 1;
+  color: yellow;
+  background-color: red;
+  transition: 0.5s;
+}
+#check {
+  display: none;
+}
+#check:checked ~ .nav-bar {
+  right: 0;
+}
+section {
+  background: url(../src/sumo4.jpeg) no-repeat;
+  background-size: cover;
+  height: 700px;
+}
+.test-one {
+  background: url(../src/sumo3jpg) no-repeat;
+}
