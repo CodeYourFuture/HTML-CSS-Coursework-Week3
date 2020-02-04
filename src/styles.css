@@ -40,20 +40,24 @@ header h2 {
 }
 
 .nav-bar {
-  top: 90px;
-  position: fixed;
+  top: 100px;
+  position:absolute;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  align-items: center;
+  align-items:center;
   transition: all 0.5s;
   width: 50vw;
   right: -100%;
+  background-color:black;
+  opacity:0.85;
+  overflow:auto;
 }
 .nav-bar li {
   list-style: none;
   line-height: 30px;
   margin: 20px 0;
+  
 }
 .nav-bar a {
   text-decoration: none;
