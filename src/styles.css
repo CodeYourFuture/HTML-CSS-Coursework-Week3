@@ -17,14 +17,14 @@ header h2 {
   font-size: 24px;
   text-transform: uppercase;
 }
+
 .header-nav {
   background-color: red;
   height: 100px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  padding: 10px 10px;
-  z-index: 10;
+  width:100%;
 }
 .check-btn {
   font-size: 50px;
@@ -40,7 +40,7 @@ header h2 {
 
 .nav-bar {
   top: 100px;
-  position:absolute;
+  position:fixed;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -50,7 +50,7 @@ header h2 {
   right: -100%;
   background-color:black;
   opacity:0.85;
-  overflow:auto;
+
 }
 .nav-bar li {
   list-style: none;
@@ -80,12 +80,17 @@ a:hover {
   right: 0;
 }
 
-.test-two img{
-  background-size:cover;
-  margin: auto;
-  display:block;
-  height:100vh;
+
+.hero-area{
+  width:620px;
 }
+
+ .cake img {
+  width:300px;
+  height:200px;
+  
+}
+
 
 
 @media (min-width:768px){
