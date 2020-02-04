@@ -4,15 +4,17 @@ body {
     margin: 0 auto;
     background-color: rgb(255, 250, 250);   
     font-family: Arial, Helvetica, sans-serif;
-    max-width: 480px;
+    max-width: 450px;
     display: flex;
     flex-direction: column;
+    box-sizing: border-box;
 }
 
 header {
     width: 100%;
     display: flex;
     justify-content: center;
+    
 }
 
 .top {
@@ -28,6 +30,7 @@ header {
     flex-direction: row;
     justify-content: space-between;
     border: 2px;
+    box-sizing: border-box;
 }
 
 .logo {
@@ -42,7 +45,8 @@ header {
 }
 
 .navbar {
-    margin: 20px 0 0 0;
+    margin: 16px 0 0 0;
+    position: fixed;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -53,23 +57,23 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-}
-
-li {
-    list-style-type: none;
-    background-color: red;
-    color: white;
-    margin: 5px;
-    padding: 3px;
-    text-align: center;
+    background-color: #820085;
     border-color: papayawhip;
     border-style: solid;
     border-width: 2px;
 }
 
+li {
+    list-style-type: none;
+    color: white;
+    margin: 5px;
+    padding: 3px;
+    text-align: center;
+}
+
 .welcome {
     background-image: url('../images/introbackground.jpg');
-    background-size: 480px;
+    background-size: 380px;
     color: olive;
     font-size: 24px;
     display: flex;
@@ -95,7 +99,37 @@ h1 {
 }
 
 .corousel img {
-
     width: 100%;
     height: 100%;
+}
+.cakes {
+    margin: 20px;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.cakes .content {
+    border-color: salmon;
+    border-width: 2px;
+    margin: 5px 5px 5px 5px;
+    padding: 0;
+    width: 150px;
+    height: 110px;
+}
+
+footer {
+    background-color: rgb(43, 40, 40);
+    margin: 20px;
+}
+
+.footer {
+    list-style-type: none;
+    color: rgb(228, 220, 220);
+    margin-top: 10px;
+    padding: 3px;
+    text-align: left;
+    font-size: 16px;
 }
