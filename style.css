@@ -1,1 +1,141 @@
-/*  Add your styling here */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Lato', sans-serif;
+  background-color: #eee;
+}
+#page-wrapper {
+	position: relative;
+}
+li {
+	list-style: none;
+}
+a {
+	color: Black;
+	text-decoration: none;
+}
+.container {
+	max-width: 59vw;
+	width: 100%;
+	margin: 0 auto;
+}
+header {
+	padding: 10px 10px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 100;
+	min-height: -100px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background-color: #d6dbdf;
+    border-bottom: 1px solid #ddd;
+}
+nav {
+    font-weight: 400;
+  }
+  
+  nav>ul {
+      width: 35vw;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+  }
+.btn {
+	padding: 0 10px;
+	height: 32px;
+	font-size: Arial;
+	font-weight: 800;
+	text-transform: uppercase;
+	border: 2px black solid;
+	border-radius: 3px;
+	background: transparent;
+	cursor: pointer;
+	background-color: #d6dbdf;
+}
+.grid {
+  display: flex;
+}
+
+
+/* start albom image */
+/* Gallery image */
+
+div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+  }
+  
+  div.gallery:hover {
+    border: 1px solid #777;
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }
+/* foter */
+/* FOOTER */
+
+.footer{
+    width: 60vw;
+    margin: 15vh auto 0 auto;
+    height: 255px;
+   
+    border-top: 1px solid #DDD;
+}
+.footer__title{
+    text-align: center;
+    font-size: 16px;
+    color: #000;
+    margin-top: 20px;
+}
+.footer__links{
+    width: 60vw;
+    margin: 0 auto;
+    height: 80px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer__twitter{
+    color: #55ACEE;
+}
+.footer__facebook{
+    color: #4C66A4;
+}
+.footer__instagram {
+    color: #3F729B;
+}
+.footer__icon{
+    display: flex;
+    width: 40px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    padding: 10px;
+    margin: 10px;
+    border: 1px sol
+}
+.footer__icon:hover{
+    cursor: pointer;
+}
+.footer__text{
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: 300;
+    color: #a0c5ab;
+}
