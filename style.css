@@ -1,1 +1,85 @@
 /*  Add your styling here */
+
+body {
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;  
+}
+.burger {width:100px;}
+.mobnav{
+  display:flex;
+  justify-content: space-between;
+}
+@media only screen and (min-width: 600px) {
+
+  .mobnav {display:none;}
+}
+
+
+ 
+.desktop_navigation{
+  display:inline-flex;
+  justify-content: space-betwee; }
+li { 
+padding:10px;
+display: inline-block; 
+justify-content: space-around;
+
+}
+li:hover {
+   font-style:bold;
+   cursor: pointer;
+   color: #910909;
+}
+navbar{
+display:flex;
+flex-basis:250vw;
+}
+.container{
+display:flex;
+flex-direction: row;
+justify-content:space-evenly;
+width:100%;
+}
+@media only screen and (max-width: 600px) {
+  .desktop_navigation{display:none;}
+}
+.hero{
+  width:100 vw;
+}
+h1{
+  font-weight: lighter;
+  text-align: center;
+  padding-top:10vh;
+  font-size: 2.75rem;
+}
+.container{
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+}
+
+h2{ text-align:center;
+  font-size: 1.75rem;
+  margin: 1.625rem 0 3.125rem;
+  font-weight: bold;
+
+}
+
+    button {
+      width: 9.688rem;
+      background-color: #f15a29;
+      border-color: #f15a29;
+      text-shadow: none;
+      border-style: none;
+      border-radius: 4px;
+      padding: 1rem 1.5rem;
+      color: white;
+      font-size: 1.125rem;
+  }
