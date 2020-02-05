@@ -1,1 +1,130 @@
-/*  Add your styling here */
+body {
+    margin: 0;
+    font-family: Helvetica, sans-serif;
+    background-color: #fdffe8;
+  }
+  .logo img {
+    width: 150px;
+    height: 60px;
+    margin-right: ;
+}
+  a {
+    color: palevioletred;
+    
+  }
+.fa {
+    margin: 5px 30px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    
+}
+
+
+.header {
+    display: block;
+    box-shadow: 2px 2px 6px 0 rgba(0,0,0, .1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    
+}
+
+
+.header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    background-color: white;
+    display: block;
+    text-align: center;
+}
+.header li {
+    padding: 20px 30px;
+    
+}
+.header li a {
+   text-decoration: none;
+   cursor: pointer;
+   
+}
+.header li a:hover,
+.header .menu-btn:hover {
+    color: teal;
+} 
+
+.header .menu {
+    display: block;
+    position: relative;
+    transition: max-height .2s ease-out;
+    max-height: 0px;
+    
+}
+.header .menu-icon {
+    cursor: pointer;
+    display: block;
+    float: right;
+    padding: 28px 30px;
+    position: relative;
+    cursor: pointer;
+}
+.header .menu-icon .navicon {
+    background: palevioletred;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 18px;
+}
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+    background: palevioletred;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+
+}
+.header .menu-icon .navicon:before {
+    top: 8px;
+}
+.header .menu-icon .navicon:after {
+    top: -8px;
+}
+.header .menu-btn {
+    display: none;
+
+}
+.header .menu-btn:checked ~ .menu  {
+    max-height: 240px;
+    transition: all 1s cubic-bezier(.5, 1, .22, 1);
+
+}
+.header .menu-btn:checked ~ .menu-icon .navicon {
+    background: transparent;
+    
+  }
+  .header .menu-btn:checked ~ .menu-icon .navicon:before {
+    transform: rotate(-45deg);
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon:after {
+    transform: rotate(45deg);
+  }
+  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+
+.title {
+    
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    
+}
