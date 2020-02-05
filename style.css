@@ -1,1 +1,51 @@
 /*  Add your styling here */
+.Logo{
+    background-color: black;
+}
+img{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 25%;
+}
+p{
+    display: flex;
+    justify-content: center;
+    font-family: 'Bangers', cursive;
+    font-size: 16px;
+}
+ul li{
+    float: left;
+    list-style: none;
+    position: relative;
+}
+a{
+   display: block; 
+   padding: 20px;
+   text-decoration: none;
+}
+ul li ul{
+    display: none;
+    position: absolute;
+    background-color:brown;
+    padding: 20px;
+    border-radius: 0px 0px 5px 5px;
+}
+ul li:hover ul{
+    display: block;
+}
+ul li ul li{
+    width: 120px;
+}
+ul li ul li a{
+    padding: 15px 0px;
+}
+ul li ul li a:hover{
+   background-color: crimson;
+    
+}
+/* here is thr font type
+font-family: 'Bangers', cursive;
+font-family: 'Lobster', cursive;
+font-family: 'Caveat', cursive;
+font-family: 'Courgette', cursive; */
