@@ -7,7 +7,8 @@ body {
 .burger {width:100px;}
 .mobnav{
   display:flex;
-  justify-content: space-between;
+  justify-content: space-between
+  ;
 }
 @media only screen and (min-width: 600px) {
 
