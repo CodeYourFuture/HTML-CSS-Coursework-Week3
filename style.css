@@ -51,7 +51,8 @@ h1{
   font-weight: lighter;
   text-align: center;
   padding-top:10vh;
-  font-size: 2.75rem;
+  font-size: 2 rem;
+  z-index: 10;
 }
 .container{
   position: relative;
@@ -67,9 +68,10 @@ h1{
 }
 
 h2{ text-align:center;
-  font-size: 1.75rem;
+  font-size: 1.5 em;
   margin: 1.625rem 0 3.125rem;
   font-weight: bold;
+  z-index: 9;
 
 }
 
