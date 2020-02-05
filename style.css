@@ -126,7 +126,7 @@ h1 {
     margin: 5px;
 }
 footer {
-    max-width: 380px;
+    max-width: 450px;
     background-color: rgb(43, 40, 40);
     margin-top: 20px;
 }
@@ -135,7 +135,7 @@ footer {
     list-style-type: none;
     color: rgb(228, 220, 220);
     margin-top: 10px;
-    padding: 3px;
+    padding: 2px;
     text-align: left;
     font-size: 16px;
 }
