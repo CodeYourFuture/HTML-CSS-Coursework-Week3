@@ -19,18 +19,18 @@ ul li{
     float: left;
     list-style: none;
     position: relative;
-    
+
 }
 a{
    display: block; 
-   padding: 20px;
    text-decoration: none;
    color:white;
+   font-size: 25px;
 }
 ul li ul{
     display: none;
     position: absolute;
-    background-color:brown;
+    background-color:rgb(63, 8, 8);
     padding: 20px;
     border-radius: 0px 0px 5px 5px;
 }
@@ -54,6 +54,22 @@ body{
     /* background-position-x: center; */
     /* background-position-y: bottom; */
     overflow: auto;
+}
+/* table */
+table{
+    /* display: flex; */
+    /* justify-items:center; */
+}
+img{
+   width: 100px;
+    height: 90px;
+   
+}
+tr{
+    color: white;
+    display: flex;
+    justify-content:center;
+    padding: 20px 0px;
 }
 /* here is thr font type
 font-family: 'Bangers', cursive;
