@@ -120,7 +120,7 @@
 
   }
   
-  /* Responsive layout - when the screen is more than 800px wide, make the two columns stack on top of each other instead of next to each other */
+  /* Responsive layout - when the screen is more than 768px wide, make the two columns stack on top of each other instead of next to each other */
   @media screen and (min-width: 800px) {
    
     .row{
