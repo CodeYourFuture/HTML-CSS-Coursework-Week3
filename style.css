@@ -12,19 +12,25 @@ img {
 /*Typography */
 
 h1 {
-    font-size:1.5rem;
+    font-size:2rem;
     color:#18080f;
     margin-top:0;
 }
 
+h1 span {
+    color:#f63e7b;
+}
+
 h2 {
-    font-size:1rem;
+    font-size:1.5rem;
     color:#5b2e44;
     font-weight: 800;
+    margin-top:0;
+    margin-bottom:0;
 }
 
 h3 {
-    font-size:1rem;
+    font-size:1.25rem;
     color:#f63e7b;
 }
 
@@ -34,20 +40,43 @@ p {
     margin-top:0;
 }
 
+.company-title {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+    font-weight: 900;
+    margin-top:1em;
+}
+
+.article-info {
+    font-size:1.25rem;
+    color:#18080f;
+    margin-top:1em;
+}
+
 .article-read-more {
     color:#f63e7b;
     font-weight: 600;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     text-decoration: underline;
 }
 
+.main-info-text {
+    font-weight: 2rem;
+    margin-bottom:1em;
+}
+
+.article-recent-info {
+    font-size: 1em;
+    margin-top:0.5em;
+    margin-bottom:0.75em;
+}
 /*header styling */
 
 .container {
     width:95%;
     max-width: 900px;
     min-width: 250px;
-    border:2px solid blue;
+   /* border:2px solid blue; */
     margin:0 auto;
     overflow:auto;
 }
@@ -68,8 +97,10 @@ p {
 
 header {
     min-width:250px;
-    background-color:yellow;
+    background-color:#ffff;
+    box-shadow: 1px 1px 4px rgba(0,0,0,.1);
     padding:1em 0;
+    margin-bottom: 1.5em;
 }
 
 .company-info {
@@ -112,21 +143,25 @@ header {
 }
 
 .nav-links:hover {
-    color:#18080f;
+    color:#f63e7b;
 }
 
 .btn {
-    padding: 0.75em;
-    border-radius: 12px;
-    background-color:#ffffff;
+    padding: 1em;
+    background-color:#f63e7b;
     border:2px solid  #f63e7b;
     font-size: 1rem;
-    color:#5b2e44;
+    color:#ffff;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     transition-duration: 0.4s;
     cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #5b2e44;
+    border:#5b2e44;
 }
 .contact-button {
     margin-bottom:1em;
@@ -148,7 +183,7 @@ header {
 /*footer styling */
 footer {
     min-width:250px;
-    background-color:green;
+    background-color:#F3E7E6;
     padding:1em 0;
 }
 
@@ -156,7 +191,7 @@ footer {
     width:95%;
     max-width: 900px;
     min-width: 250px;
-    border:2px solid blue;
+   /* border:2px solid blue;*/
     margin:0 auto;
     overflow:auto;
     display: flex;
@@ -201,7 +236,7 @@ footer {
 }
 
 .footer-links:hover {
-    color:#18080f;
+    color:#f63e7b;
 }
 
 /* Layout - Content styling */
@@ -234,7 +269,7 @@ aside {
 .article-featured {
     border-bottom: 1px solid #5b2e44;
     padding-bottom:2em;
-    margin-bottom: 3em;
+    margin-bottom: 1em;
 }
 
 .article-recent {
@@ -254,7 +289,6 @@ aside {
         display:flex;
         flex-direction: row;
         justify-content: space-between;
-        align-items: center;
        
     }
 
@@ -266,10 +300,6 @@ aside {
     .article-recent-main {
         width:45%;
         order:2;
-    }
-
-    .article-button {
-       margin-left:1em;
     }
    
 }
@@ -284,7 +314,7 @@ aside {
 
 @media (min-width: 768px) {
     .sidebar-widget {
-        border:15px solid #5b2e44;
+        border:15px solid #F3E7E6;
         padding:1em;
     }
 }
