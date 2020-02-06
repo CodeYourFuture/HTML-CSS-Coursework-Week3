@@ -189,7 +189,7 @@ h1 {
 }
 @media screen and (max-width: 600px) {
     .column {
-        flex: 50%;
+        flex: 25%;
         max-width: 100%;
     }
 }
