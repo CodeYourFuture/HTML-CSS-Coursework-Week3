@@ -1,19 +1,24 @@
+
 body {
     margin: 0;
+    padding: 0;
     font-family: Helvetica, sans-serif;
     background-color: #fdffe8;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   }
   .logo img {
     width: 150px;
     height: 60px;
     margin-right: ;
 }
+h1 {
+    position: sticky;
+}
   a {
     color: palevioletred;
     
   }
 .fa {
-    margin: 5px 30px;
     font-size: 30px;
     width: 50px;
     text-align: center;
@@ -25,10 +30,10 @@ body {
 .header {
     display: block;
     box-shadow: 2px 2px 6px 0 rgba(0,0,0, .1);
-    position: fixed;
+    position: sticky;
     width: 100%;
     top: 0;
-    
+    background-color: #fdffe8;
 }
 
 
@@ -121,10 +126,72 @@ body {
 }
 
 
-.title {
-    
-    display: flex;
-    justify-content: center;
+#title {
+    text-align: center;
     margin-top: 100px;
     
 }
+.btn {
+    background-color: palevioletred;
+    color: white;
+}
+
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 4px;
+    
+}
+.column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0px 4px;
+}
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 80%;
+}
+
+
+
+@media screen and (min-width: 768px) {
+    .header .menu-icon {
+        display: none;
+    }
+    .header {
+        display: flex;
+        align-items: flex-start;
+        align-items: center;
+        justify-content: space-between;
+        
+    }
+    .header ul {
+        display: flex;
+        flex-direction: row;
+        overflow: visible;
+        align-self: flex-start;
+        
+        
+    }
+    .header li {
+        display: inline-block;
+    }
+    .fa {
+        visibility: hidden;
+    }
+    .column {
+        flex: 25%;
+        max-width: 100%;
+    }
+}
+@media screen and (max-width: 600px) {
+    .column {
+        flex: 50%;
+        max-width: 100%;
+    }
+}
+
+
