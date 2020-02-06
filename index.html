@@ -7,10 +7,134 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Responsive Cake webpage</title>
     <!-- Add a link to your css file here -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
+
+
 <body>
-    <!-- Add your markup here -->
+    <header class="header">
+        <nav class="menu-bar">
+                <!--logo image-->
+            <img src="images/designed-logo.png" alt="Shop Logo" class="logo">
+
+            <input type="checkbox" id="check"/>
+            <label for="check" class="check-button">
+            <i class="fa fa-bars">Menu</i>
+            </label>
+      
+        
+        <!--burger menu with contact included-->
+
+            <ul class="menu">
+           <li><a href="#">Home</a></li>
+           <li><a href="#">Cakes</a></li>
+           <li><a href="#">Ordering</a></li>
+           <li><a href="#">Lessons</a></li>
+           <li><a href="#">About</a></li>
+           <li><a href="#">Contact</a></li>
+         </ul>
+
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="carousel-section">
+
+            <article class="hello-text">
+                <h1>Welcome!</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias reiciendis laboriosam aut, at natus quae sapiente quo? Quos dolorum beatae fuga! Impedit dignissimos nisi iusto architecto libero? Eveniet, minima impedit!</p>
+            </article>
+
+            <!--image carousel-->
+
+            <ul class="carousel">
+
+                <li>
+                    <img src="images/carousel shop 1.jfif" alt="shop image" id="carousel-image1" class="carousel-image">
+                </li>
+
+                 <li>
+                    <img src="images/carousel inside 2.jfif" alt="inside-shop" id="carousel-image2" class="carousel-image">
+                 </li>
+
+                <li>
+                    <img src="images/carousel cake 3.jfif" alt="cakes" id="carousel-image3" class="carousel-image">
+                 </li>
+
+                <li>
+                    <img src="images/carousel macarons 4.jfif" alt="macarons" id="carousel-image4" class="carousel-image">
+
+                </li>
+
+            </ul>
+
+            <div class="controls">
+                <a href="#carousel-image1" class="control-button">•</a>
+                <a href="#carousel-image2" class="control-button">•</a>
+                <a href="#carousel-image3" class="control-button">•</a>
+                <a href="#carousel-image4" class="control-button">•</a>
+            </div>
+
+        </section>
+
+        <section class="cakes">
+
+            <h1>Check out our dreamy cakes</h1>
+
+            <!--two by two cakes-->
+
+            <div class="row1">
+            <article class="first-row">
+                <img src="images/fruit cake.jfif" >
+                <h6>Fruit Cake</h6>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+            </article>
+
+            <article class="first-row">
+                <img src="images/cupcakes.jfif">
+                <h6>Cupcakes</h6>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            </article>
+        </div>
+
+            <div class="row2">
+            <article class="second-row">
+                <img src="images/personalised cake.jfif">
+                <h6>Personalised Cake</h6>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </article>
+
+            <article class="second-row">
+                <img src="images/walnut cake.jfif">
+                <h6>Walnut Cake</h6>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            </article>
+        </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <!--site map, contact, delivery, social media-->
+        <nav>
+            <ul class="bottom-list">
+                <li><a href="">Site map</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="">Delivery</a></li>
+            </ul>
+
+        </nav>
+
+        <!--social media-->
+        <section class="media"> 
+            <button><i class="fa fa-twitter"></i></button>
+            <button><i class="fa fa-facebook"></i></button>
+            <button><i class="fa fa-instagram"></i></button>
+            </section>
+    </footer>
 </body>
 
 </html>
