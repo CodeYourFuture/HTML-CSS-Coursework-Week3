@@ -13,84 +13,118 @@
 
 <body>
     <!-- Add your markup here -->
+    <header>
+        <div class="container container-nav">
+            <div class="company-info">
+                <img class="logo" src="images/logo.png" alt="company logo">
+                <p>Rose's Cakes</p>
+            </div>
+            <nav>
+                <ul class="nav-list">
+                    <li class="nav-list-items"><a class="nav-links" href="#">Cakes</a></li>
+                    <li class="nav-list-items"><a class="nav-links" href="#">Ordering</a></li>
+                    <li class="nav-list-items"><a class="nav-links" href="#">Lessons</a></li>
+                </ul>
+            </nav>
+            <div class="contact-info">
+                <input class=" btn contact-button" type="submit" value="Contact">
+            </div>
+        </div> 
+    </header> 
 
-    <header class="header-container">
-        <img class="logo" src="http://www.free-icons-download.net/images/berry-tower-cake-icon-56528.png" alt="company logo">
-        <nav>
-            <ul class="nav-links hide-mobile">
-                <li ><a>Home</a></li>
-                <li><a>Cakes</a></li>
-                <li><a>Ordering</a></li>
-                <li><a>Lessons</a></li>
-                <li><a>About</a></li>
-            </ul>
-        </nav>
-        <input class=" btn contact-button" type="submit" value="Contact">
-    </header>
-    <main>
+    <div class="container container-flex">
+        <main>
+            <article class="article-featured">
+                <h1 class="article-title">Cakes with <span>love</span> !</h1>
+                <img class="article-image" src="https://images.unsplash.com/photo-1547736809-6d7227d324d3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60" alt="cakes">                
+                <p class="article-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <a href="#" class="article-read-more">Learn More</a>
+            </article>
 
-        <!--------- Hero of the webpage ------->
-        <div class="hero-container">
-            <div class="hero-text">
-                <h1>Cakes with love</h1>                
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                <input class="btn info-button" type="submit" value="Learn More"> 
+            <article class="article-recent">
+                <div class="article-recent-main">
+                    <h1 class="article-title">Birthday Cakes</h1>
+                    <p class="article-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <input class="btn article-button" type="submit" value="Order Now">
+                </div> <!-- closing tag for article-recent-main-->
+
+                <div class="article-recent-secondary">
+                    <img class="article-image" src="https://images.unsplash.com/photo-1547736809-6d7227d324d3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60" alt="cakes"> 
+                </div> <!-- closing tag for article-recent-secondary-->
+            </article>
+
+            <article class="article-recent">
+                <div class="article-recent-main">
+                    <h1 class="article-title">Cupcakes</h1>
+                    <p class="article-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <input class="btn article-button" type="submit" value="Order Now">
+                </div> <!-- closing tag for article-recent-main-->
+
+                <div class="article-recent-secondary">
+                    <img class="article-image" src="https://images.unsplash.com/photo-1547736809-6d7227d324d3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60" alt="cakes"> 
+                </div> <!-- closing tag for article-recent-secondary-->
+            </article>
+
+            <article class="article-recent">
+                <div class="article-recent-main">
+                    <h1 class="article-title">Wedding Cakes</h1>
+                    <p class="article-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <input class="btn article-button"type="submit" value="Order Now">
+                </div> <!-- closing tag for article-recent-main-->
+
+                <div class="article-recent-secondary">
+                    <img class="article-image" src="https://images.unsplash.com/photo-1547736809-6d7227d324d3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60" alt="cakes"> 
+                </div> <!-- closing tag for article-recent-secondary-->
+            </article>
+
+            <article class="article-recent">
+                <div class="article-recent-main">
+                    <h1 class="article-title">Macarons</h1>
+                    <p class="article-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <input class="btn article-button" type="submit" value="Order Now">
+                </div> <!-- closing tag for article-recent-main-->
+
+                <div class="article-recent-secondary">
+                    <img class="article-image" src="https://images.unsplash.com/photo-1547736809-6d7227d324d3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60" alt="cakes"> 
+                </div> <!-- closing tag for article-recent-secondary-->
+            </article>
+
+        </main>
+
+        <aside class="sidebar"> 
+            <div class="sidebar-widget">
+                <h2 class="widget-title">@Rose's Cake</h2>
+                <div class="widget-cake">
+                    <h3 class="widget-cake-title">Today's Special</h3>
+                    <img class="widget-image" src="https://images.unsplash.com/photo-1566121618198-73c850d5f3f9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60" alt="cakes"> 
+                </div>
+                <div class="widget-cake">
+                    <h3 class="widget-cake-title">Best of Month</h3>
+                    <img class="widget-image" src="https://images.unsplash.com/photo-1566121618198-73c850d5f3f9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60" alt="cakes"> 
+                </div>
+                <div class="widget-cake">
+                    <h3 class="widget-cake-title"> Valentine's Day Special </h3>
+                    <img class="widget-image" src="https://images.unsplash.com/photo-1566121618198-73c850d5f3f9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60" alt="cakes"> 
+                </div>
+            </div>
+
+        </aside>
+    </div> <!--closing tag for container-->
+
+
+    <footer>
+        <div class="container-footer">
+            <div class="company-info">
+                <p>Rose's Cakes</p>
+            </div>
+            <div class="footer-info">
+                <ul class="footer-list">
+                    <li class="footer-list-items"><a class="footer-links" href="#">Sitemap</a></li>
+                    <li class="footer-list-items"><a class="footer-links" href="#">Contact</a></li>
+                    <li class="footer-list-items"><a class="footer-links" href="#">Delivery</a></li>
+                </ul>
             </div>
         </div>
-
-        <h1 class="hide-mobile">Our Customers' Favorites</h1>
-
-        <!------- Image Carousel -------> 
-        <div class="hide-mobile cus-fav-container">
-                <img class="image-car" src="https://images.unsplash.com/photo-1571142317846-2aa5347a24e7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60" alt="cakes">
-                <img class="image-car" src="https://images.unsplash.com/photo-1566121652444-41d39986a87a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60" alt="cakes">
-                <img class="image-car" src="https://images.unsplash.com/photo-1577133165228-72cb973df5ab?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60" alt="cakes">
-                <img class="image-car" src="https://images.unsplash.com/photo-1476834333517-979117ad6f83?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60" alt="cakes">
-        </div>
-
-        <h1>Our Collections</h1>
-
-        <!--------Cakes ------->
-        <div class="cake-container">
-        
-            <section class= "cake">
-                <h2>Birthday Cakes</h2>
-                <img class="cake-img" src="https://images.unsplash.com/photo-1511348398635-8efff213a280?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60" alt="Birthday Cakes">
-                <input class="btn cake-button" type="submit" value="Order Now">
-            </section>
-
-            <section class="cake">
-                <h2>Cupcakes</h2>
-                <img class="cake-img" src="https://images.unsplash.com/photo-1486427944299-d1955d23e34d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60" alt="Cupcakes">
-                <input class="btn cake-button" type="submit" value="Order Now">
-            </section>
-
-            <section class="cake">
-                <h2>Wedding Cakes</h2>
-                <img class="cake-img" src="https://images.unsplash.com/photo-1525956570400-207225f50dd6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60" alt="Wedding Cakes">
-                <input class="btn cake-button" type="submit" value="Order Now">
-            </section>
-
-            <section class="cake no-border">
-                <h2>Macarons</h2>
-                <img class="cake-img" src="https://images.unsplash.com/photo-1559716433-057855e8b527?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60" alt="Macorons">
-                <input class="btn cake-button" type="submit" value="Order Now">
-            </section>
-        </div>
-
-    </main>
-
-    <footer class="footer-container"> 
-                <ul class="footer-links">
-                    <li class="hide-mobile"><a>About</a></li>
-                    <li class="hide-mobile"><a>Cakes</a></li>
-                    <li class="show-mobile"><a>Lessons</a></li> 
-                    <li class="show-mobile show-desktop"><a>Ordering</a></li>
-                    <li class="show-mobile show-desktop"><a>Delivery</a></li>
-                    <li class="hide-mobile"><a>Contact</a></li>
-                    <li class="hide-mobile"><a>Sitemap</a></li>
-                </ul>
     </footer>
-
 </body>
 </html>
