@@ -1,8 +1,8 @@
 /*  Add your styling here */
 .Logo{
-    background-color: black;
+    /* background-color:#696f80; */
 }
-img{
+.logoup{
     display: flex;
     justify-content: center;
     margin: auto;
@@ -13,16 +13,19 @@ p{
     justify-content: center;
     font-family: 'Bangers', cursive;
     font-size: 16px;
+    color:white;
 }
 ul li{
     float: left;
     list-style: none;
     position: relative;
+    
 }
 a{
    display: block; 
    padding: 20px;
    text-decoration: none;
+   color:white;
 }
 ul li ul{
     display: none;
@@ -41,8 +44,16 @@ ul li ul li a{
     padding: 15px 0px;
 }
 ul li ul li a:hover{
-   background-color: crimson;
-    
+   background-color: crimson; 
+}
+body{
+    background-image: url(../images/cake1.jpg);
+    /* background-position: center bottom; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-position-x: center; */
+    /* background-position-y: bottom; */
+    overflow: auto;
 }
 /* here is thr font type
 font-family: 'Bangers', cursive;
