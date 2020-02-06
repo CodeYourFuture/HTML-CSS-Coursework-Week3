@@ -1,1 +1,138 @@
-/*  Add your styling here */
+ /* General */
+ html,
+ body {
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+     font-family: 'Roboto', sans-serif;
+     line-height: 1.4;     
+     text-align: center;
+     /* background: url('https://images.unsplash.com/photo-1506368083636-6defb67639a7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80');
+     background-size: auto;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     height: 100vh; */
+    }
+
+ .small-font {
+     font-size: 1rem;
+     vertical-align: middle;
+ }
+
+ /* Header */
+ .page-nav {
+     width: 100%;
+     background: rgb(64, 159, 202);
+     position: fixed;
+     top: 0;
+     display: flex;
+ }
+
+/* Logo */
+ .logo {
+     max-width: 100px;
+     margin: 10px;
+ }
+ .page-nav a {
+    align-self: flex-start;
+}
+
+ /* [ON SMALL SCREENS] */
+ .page-nav {
+     flex-direction: column;
+ }
+
+ /* Show Hamburger */
+ .page-nav label {
+     display: inline-block;
+     color: #fff;
+     font-style: normal;
+     font-size: 1.75rem;
+     position: fixed;
+     right: 0;
+     padding: 20px 10px;
+ }
+
+ .page-nav label:hover {
+     color: blue;
+ }
+
+ /* Hide Checkbox */
+ #hamburger {
+     align-self: flex-end;
+     display: none;
+ }
+
+ /* Toggle show/hide menu on checkbox click */
+ .page-nav ul {
+     display: none;
+     padding: 0;
+     margin: 0;
+ }
+
+ /* Break down menu items into vertical */
+ .page-nav ul li {
+     display: block;
+     border: 1px solid #333;
+     width: 100%;
+     text-align: center;
+     padding: 20px 0;
+ }
+
+ .page-nav ul li a {
+     color: #fff;
+     text-decoration: none;
+ }
+
+ /* Show menu when hamburger clicked */
+ .page-nav input:checked~ul {
+     display: flex;
+     flex-direction: column;
+     /* justify-content: center; */
+     /* align-items: center; */
+     /* width: 100vw; */
+ }
+
+
+ /* [ON BIG SCREEN] */
+ @media screen and (min-width: 768px) {
+
+     /* Hide Hamburger */
+     .page-nav label,
+     #hamburger {
+         display: none;
+     }
+     
+     /* Header */
+     .page-nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+     /* Menu Items */
+     .page-nav ul {
+         list-style-type: none;
+         margin: 0;
+         padding: 0;
+         display: flex;
+     }
+
+     .page-nav ul li {
+         padding: 20px;
+         border: none;
+     }
+
+ }
+
+ .img-carousel {
+     margin-top: 400px;
+     display: flex;
+     flex-wrap: wrap;
+ }
+
+ section {
+     margin-top: 100px;
+ }
