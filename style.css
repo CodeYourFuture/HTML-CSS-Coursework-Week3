@@ -1,1 +1,69 @@
-/*  Add your styling here */
+
+/* Universal styles */
+
+* {
+    font-family: 'Pacifico', cursive;
+    background-color: rgb(188, 243, 226);
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(200, 144, 233);
+}
+
+h1, h3 {
+    color: rgb(255,128,153);
+    text-align: center;
+}
+
+/* Navigation styles */
+
+#header-image {
+    height: 150px;
+    width: 150px;
+    display: block;
+    margin: 0 auto;
+}
+
+.navigation li {
+    padding-right: 50px;
+}
+
+/* About section styles */
+
+.about {
+    padding: 100px;
+}
+
+/* Example cake styles */
+
+.example-cakes ul {
+   justify-content: space-around;
+   flex-wrap: wrap;
+   align-items: center;
+}
+
+.example-cakes li {
+    height: 200px;
+    width: 200px;
+    align-items: center;
+}
+
+/* Footer styles */
+
+.footer {
+    padding: 100px;
+}
+
+.footer li {
+    padding-right: 50px;
+}
