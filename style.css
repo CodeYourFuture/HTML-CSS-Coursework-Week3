@@ -2,7 +2,12 @@
 body{
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: orange;
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+
 }
 a {
     color: rgb(122, 0, 122);
@@ -10,6 +15,7 @@ a {
 
 
 .header1{
+    grid-area: header;
     background-color: rgb(235, 195, 123);
     position: fixed;
     box-shadow: 1px 1px 4px rgba(0,0,0,.2);
@@ -104,6 +110,36 @@ a {
     transform: rotate(-45deg);
     top:0;
 }
+
+.main1{
+    grid-area: main;
+    background-color: rgb(255, 185, 56);
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    margin-top: 75px;
+    grid-column-gap: 5px;
+}
+.footer1{
+    grid-area: footer;
+    border:1px solid black;
+    background-color: grey;
+}
+.section1{
+    background-image: url(https://source.unsplash.com/1600x900/cake,cake);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (min-width:768px){
     .header1 li{
         float: left;
@@ -127,4 +163,13 @@ a {
     .header1{
         height: 95px;
     }
+    .main1{
+        margin-top: 95px;
+    }
+    /* .header1{
+        display: grid;
+        grid-template-columns: 50px 1fr 50px;
+        grid-template-areas: "logo space burger";
+        background-color: palegreen;
+    } */
 }
