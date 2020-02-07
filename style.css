@@ -9,7 +9,10 @@ img {
     max-width: 100%;
     display: block;
 }
+
+/*************/
 /*Typography */
+/*************/
 
 h1 {
     font-size:2rem;
@@ -41,7 +44,6 @@ p {
 }
 
 .company-title {
-    font-family: 'Times New Roman', Times, serif;
     font-size: 1.5rem;
     font-weight: 900;
     margin-top:1em;
@@ -60,9 +62,8 @@ p {
     text-decoration: underline;
 }
 
-.main-info-text {
-    font-weight: 2rem;
-    margin-bottom:1em;
+.article-read-more:hover {
+    color:#5b2e44;
 }
 
 .article-recent-info {
@@ -70,7 +71,23 @@ p {
     margin-top:0.5em;
     margin-bottom:0.75em;
 }
+
+.widget-title {
+    color:#fff;
+}
+
+/** Media query for responsive design **/
+/* larger screens / desktop design from a min width of 768px and up **/
+
+@media (min-width: 768px) {
+    .widget-title {
+        color:#5b2e44;
+    }
+}
+
+/*************/
 /*header styling */
+/*************/
 
 .container {
     width:95%;
@@ -88,6 +105,9 @@ p {
     flex-direction: column;
 
 }
+
+/** Media query for responsive design **/
+/* larger screens / desktop design from a min width of 768px and up **/
 
 @media (min-width: 768px) {
     .container-nav {
@@ -116,20 +136,25 @@ header {
     padding:0;
     display:flex;
     flex-direction: column;
-    align-items: center; 
+    align-items: center;
 }
 
 .nav-list-items {
     margin:0 1em;
+    padding:0.5em;
 }
 
 .nav-links {
     text-decoration:none;
+    font-size: 1.5rem;
     color:#5b2e44;
     font-weight: 800;
-    margin-top:0.2em;
+    margin-top:1em;
     padding:1em;
 }
+
+/** Media query for responsive design **/
+/* larger screens / desktop design from a min width of 768px and up **/
 
 @media (min-width: 768px) {
     .nav-links {
@@ -149,7 +174,7 @@ header {
 .btn {
     padding: 1em;
     background-color:#f63e7b;
-    border:2px solid  #f63e7b;
+    border:none;
     font-size: 1rem;
     color:#ffff;
     text-align: center;
@@ -161,11 +186,13 @@ header {
 
 .btn:hover {
     background-color: #5b2e44;
-    border:#5b2e44;
 }
 .contact-button {
     margin-bottom:1em;
 }
+
+/** Media query for responsive design **/
+/* larger screens / desktop design from a min width of 768px and up **/
 
 @media (min-width: 768px) {
     .contact-button {
@@ -180,7 +207,10 @@ header {
     font-weight:800;
 }
 
+/*************/
 /*footer styling */
+/*************/
+
 footer {
     min-width:250px;
     background-color:#F3E7E6;
@@ -200,6 +230,9 @@ footer {
     flex-direction: column;
 }
 
+/** Media query for responsive design **/
+/* larger screens / desktop design from a min width of 768px and up **/
+
 @media (min-width: 768px) {
     .container-footer {
         flex-direction: row;
@@ -210,24 +243,29 @@ footer {
     padding:0;
     display:flex;
     flex-direction: column;
-    align-items: center;  
+    align-items: center; 
 }
 
 .footer-list-items {
     margin:0 1em;
-}
-
-.footer-links {
-    text-decoration:none;
-    color:#5b2e44;
-    font-weight: 800;
-    margin-top:0.2em;
     padding:1em;
 }
 
+.footer-links {
+    font-size: 1.25rem;
+    text-decoration:none;
+    color:#5b2e44;
+    font-weight: 800;
+    margin-top:1em;
+    padding:1em;
+}
+
+/** Media query for responsive design **/
+/* larger screens / desktop design from a min width of 768px and up **/
+
 @media (min-width: 768px) {
     .footer-links {
-        font-size: 1.25rem;
+        font-size: 1rem;
     }
 
     .footer-list {
@@ -239,13 +277,19 @@ footer {
     color:#f63e7b;
 }
 
+/*************/
 /* Layout - Content styling */
+/*************/
 
+/** container-flex styles main and asides and it is a flexbox for main and asides**/
 .container-flex {
     display:flex;
     justify-content: space-between;
     flex-direction: column;
 }
+
+/** Media query for responsive design **/
+/* larger screens / desktop design from a min width of 768px and up **/
 
 @media (min-width: 768px) {
     .container-flex {
@@ -260,8 +304,11 @@ aside {
 }
 }
 
+/*************/
 /** --- articles---*/
+/*************/
 
+/*article-button styles "Order Now" buttons **/
 .article-button {
     margin-bottom:2em;
 }
@@ -284,6 +331,9 @@ aside {
     align-items:flex-start;
 }
 
+/** Media query for responsive design **/
+/* larger screens / desktop design from a min width of 768px and up **/
+
 @media (min-width: 768px) {
     .article-recent {
         display:flex;
@@ -304,20 +354,29 @@ aside {
    
 }
 
+/*************/
 /* Asides and widgets */
+/*************/
 
 .sidebar-widget {
     border-top:1px solid #5b2e44;
     padding-top:1em;
     margin-bottom:3em;
+    background-color: #5b2e44;
+    border:15px solid #5b2e44;
 }
+
+/** Media query for responsive design **/
+/* larger screens / desktop design from a min width of 768px and up **/
 
 @media (min-width: 768px) {
     .sidebar-widget {
+        background-color:#ffff;
         border:15px solid #F3E7E6;
         padding:1em;
     }
 }
+
 
 
 
