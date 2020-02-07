@@ -15,7 +15,7 @@ img {
 /*************/
 
 h1 {
-    font-size:2rem;
+    font-size:1.75rem;
     color:#18080f;
     margin-top:0;
 }
@@ -323,6 +323,7 @@ aside {
     display:flex;
     flex-direction: column;
     margin-bottom:2em;
+    margin-top:2em;
 }
 
 .article-recent-main {
@@ -360,10 +361,9 @@ aside {
 
 .sidebar-widget {
     border-top:1px solid #5b2e44;
-    padding-top:1em;
     margin-bottom:3em;
     background-color: #5b2e44;
-    border:15px solid #5b2e44;
+    border:25px solid #5b2e44;
 }
 
 /** Media query for responsive design **/
