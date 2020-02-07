@@ -29,43 +29,35 @@ body{
     margin: 5px 0 0 5px;
     width:60px;
 }
-.nav-bar{
-    display:flex;
+/* Style the top navigation bar */
+.topnav {
     overflow: hidden;
-    background-color:#f47d35;
-    height: 80px;
-    width:100%;
-    margin:0;
-	border: 1px solid #a2a2a2;
-	box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
-    
-}
-.nav-links{
-    display:flex;
-    
-    width:100%;
-    
-}
-.nav-links li{
-    
-    list-style-type: none;
-    
-    margin: 4px 5px 4px 0;
-    
-}
-.nav-bar a{
-    padding: 15px 15px;
-    color:rgb(10, 10, 10);
-    display: inline;
+    margin-top: 10;
+    background-color: #eb9de0;
+  }
+  
+  /* Style the topnav links */
+  .topnav a {
+    display: block;
+    background-color: rgb(233, 159, 196);
+    color: #3306b1;
+    text-align: center;
+    font-size: 20px;
+    font-family: "Segoe UI";
+    font-style: oblique;
+    font-weight: 480;
+    padding: 14px 16px;
     text-decoration: none;
-    font-size: 18px;
-    font-weight: 600;
-    margin-left: 10px;  
-} 
-.nav-links a:hover {
-    background-color: rgb(196, 20, 43);
-    color:#b0cf24;
-}
+    float: none;
+    width: 100%;
+    
+  }
+  
+  /* Change color on hover */
+  .topnav a:hover {
+    background-color: #3b0542;
+    color: white;
+  }
 
 .rightcolumn .leftcolumn{
     
@@ -178,4 +170,10 @@ body{
     justify-content: space-evenly;
 }
 }
+@media screen and (min-width: 450px) {
+    .topnav a {
+      float: left;
+      width: 20%;
+    }
+  }
 
