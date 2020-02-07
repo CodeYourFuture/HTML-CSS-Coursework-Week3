@@ -36,6 +36,15 @@
     align-content: center;
     justify-content: center;
   }
+
+  .cake-col {
+    height: auto;
+    text-align: center;
+  }
+  .cake-col img {
+    width: 300px;
+    margin: 30px 10px 5px 10px;
+  }
 }
 
 /* iPads (portrait and landscape) ----------- */
