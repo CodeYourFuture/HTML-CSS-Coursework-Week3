@@ -1,6 +1,14 @@
+*{
+    box-sizing: border-box;
+}
+main{
+    max-width: 900px;
+    margin:auto;
+    box-shadow: 30px 0px 40px rgba(0,0,0,0.4), -30px, 0px, 40px rgba(0,0,0,0.4); /*not working*/
+}
 body{
     font-family: Helvetica;
-    background-color: F1E7D9;
+    background-color: #f73549;
 }
 .header{
     display:flex;
@@ -32,15 +40,22 @@ body{
 	box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
     
 }
+.nav-links{
+    display:flex;
+    
+    width:100%;
+    
+}
 .nav-links li{
-    float: left;
+    
     list-style-type: none;
-    border:1px solid green;
+    
     margin: 4px 5px 4px 0;
-    background-color: cadetblue;
+    
 }
 .nav-bar a{
-    color:rgb(48, 46, 46);
+    padding: 15px 15px;
+    color:rgb(10, 10, 10);
     display: inline;
     text-decoration: none;
     font-size: 18px;
@@ -48,10 +63,11 @@ body{
     margin-left: 10px;  
 } 
 .nav-links a:hover {
-    color:#d3dce6;
+    background-color: rgb(196, 20, 43);
+    color:#b0cf24;
 }
 
-.rightcolumn{
+.rightcolumn .leftcolumn{
     
     width: 100%;
     height:auto;
@@ -59,6 +75,7 @@ body{
     
 }
 .cake1 img{
+    padding: 0;
     width:100%;
     height:auto;
  
@@ -66,7 +83,7 @@ body{
 .cakes{
     
     padding:10px;
-    margin-top: 0;
+    margin-top:10;
     width: 25%;
     height:80px;
     
@@ -83,6 +100,7 @@ body{
 .leftcolumn{
     background-image: url('images/background.jpg');
     width:100%;
+    margin-top: 20px;
     height:350px;
     
 }
@@ -118,7 +136,7 @@ body{
 
 /*Media Queries*/
 
-@media (min-width:768px) {
+@media screen and (min-width:768px) {
 .header,
 .nav-bar {
     display:flex;
@@ -130,15 +148,19 @@ body{
     text-align: end;
 }
 .row{
-    display:flex;
+    display: flex;
+        width: 100%;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    
 }
 .rightcolumn{
     float:right;
-    width:60%;
+    width:70%;
 }
 .leftcolumn{
     float:left;
-    width:40%;
+    width:28%;
     height: auto;
 }
 .bottom-box{
@@ -151,4 +173,9 @@ body{
     margin:15px 15px 10px 0;
 
 }
+.nav-links{
+    display:flex;
+    justify-content: space-evenly;
 }
+}
+
