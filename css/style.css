@@ -43,6 +43,7 @@ nav a {
 
 .carousel img {
   width: 100%;
+  height: auto;
 }
 .cakes-list {
   display: flex;
@@ -68,26 +69,29 @@ nav a {
 
 .hello-information {
   display: flex;
-  align-items: center;
+  flex-direction: column;
   background-color: #f6cfda;
   width: 100%;
+  padding: 10px;
 }
 
 .hello-information-wrapper {
   display: flex;
   height: 300px;
   flex-direction: column;
+  /* width: 80px; */
 }
 
 .hello-information > h1 {
   display: block;
   font-size: 2em;
-  width: 100%;
-  height: 300px;
+  align-self: center;
+  width: 95%;
+  height: 200px;
   background-color: #76c8e6;
   color: #3a3a3a;
-  padding: 10px;
-  margin: 20px;
+  padding: 5px;
+  margin: 10px;
 }
 
 .hello-information-wrapper h3 {

@@ -1,10 +1,41 @@
-/* Smartphones (portrait and landscape) ----------- */
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-}
-
 /* Smartphones (portrait) ----------- */
 @media only screen and (max-width: 320px) {
   /* Styles */
+  .contact-link {
+    display: none;
+  }
+
+  .cake-col {
+    width: 90%;
+  }
+
+  .cake-col img {
+    width: 95%;
+    height: auto;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .contact-link {
+    display: none;
+  }
+
+  header a {
+    display: none;
+  }
+
+  .hello-information {
+    align-content: center;
+    background-color: #f6cfda;
+    margin: 0 auto;
+  }
+
+  .hello-information > h1 {
+    font-size: 2.5em;
+    width: 100%;
+    align-content: center;
+    justify-content: center;
+  }
 }
 
 /* iPads (portrait and landscape) ----------- */
@@ -20,6 +51,7 @@
   }
 
   .contact-link {
+    display: block;
     width: 20%;
     padding: 10px;
     background-color: steelblue;
@@ -32,30 +64,30 @@
 
   .carousel-hello-wrapper {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: column;
+    flex-wrap: wrap;
   }
 
   .carousel {
     display: flex;
     flex-direction: row-reverse;
-    width: 75%;
+    width: 100%;
   }
   .carousel img {
-    width: 100%;
     margin-left: 20px;
+    height: auto;
   }
 
   .hello-information {
-    align-items: center;
+    align-content: center;
     background-color: #f6cfda;
-    width: 25%;
-    flex-direction: column;
     margin: auto 5px auto 5px;
+    margin: 0 auto;
   }
 
   .hello-information > h1 {
     font-size: 2.5em;
-    width: 80%;
+    width: 100%;
   }
 
   .hello-information-wrapper h3 {
@@ -72,6 +104,7 @@
   .cakes-list {
     display: flex;
     flex-direction: row;
+    flex-flow: wrap;
     justify-content: space-around;
   }
 
@@ -131,7 +164,6 @@
     background-color: #f6cfda;
     width: 25%;
     flex-direction: column;
-    margin: auto 5px auto 5px;
   }
 
   .hello-information > h1 {
@@ -154,6 +186,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    flex-wrap: wrap;
   }
 
   .cake-col p {
@@ -165,9 +198,4 @@
     flex-direction: row;
     justify-content: space-around;
   }
-}
-
-/* Large screens ----------- */
-@media only screen and (min-width: 1824px) {
-  /* Styles */
 }
