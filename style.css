@@ -1,32 +1,148 @@
 /*  Add your styling here */
-@media screen and (max-width:480px){
+
+#navigation{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    align-items: center;
+    top: 0px;
+    background-color: white;
+    overflow: hidden;
+    height: 60px;
+}
+#logo{
+    margin-top: 0px;
+    padding-top: 0px;
+
+    height: 50px;
+    width: 120px;
+}
+a{
+    text-decoration:none;
+    text-decoration: none;
+    color: gray;
+}
+#first-section{
+    height: 550px;
+    width: 100%;
+    background-color:rgb(214, 235,215);
+    margin-top: 50px;
+    
+}
+#first-text{
+    margin-top: 0px;
+}
+.title{
+    font-family: 'Anonymous Pro', monospace;
+    font-family: 'PT Serif', serif;
+    font-size: 35px;
+    color: grey;
+    margin: 0px 30px 0px 30px;
+    padding: 20px 5px 5px 5px;
+    text-align: center
+            
+}
+.text{
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 25px;
+    color: grey;
+    margin-top: 0px;
+    padding: 5px;
+    margin: 0px 30px 0px 30px;
+    text-align: center;
+    
+    
+}
+body{
+    margin-top: 10px;
+    margin-left: 0px;
+    width: 480px;
+    
+}
+#second-section{
+    /* height: 235px; */
+    width: 100%;
+    background-color:#f5f6fa;
+    display: flex;
+    flex-direction:column;
+    /* position: relative; */
+    margin-top: 10px;
+    align-items: center;
+}
+
+.second-section-img{
+    width: 420px;
+    height: 420px;
+}
+hr{
+    display: block;
+    margin: 0.1em auto 3em auto;
+    border:none;
+    background-color: lightgrey;
+    height: 0.2px;
+    width: 60%;
+    padding-bottom: 1px;
+    
+}  
+#footer{
+    width: 100%;
+    height: 50px;
+    background-color: #dfe4ea;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    margin-top: 0px;
+    
+    }
+.img-cake{
+    height: 290px;
+    width: 290px;
+    
+}
+.images-cake{
+    display: flex;
+    justify-content: center;
+}
+@media screen and (min-width:900px){
+    body{
+        margin-top: 10px;
+        margin-left: 0px;
+        width: 100%;
+        
+    }
     #navigation{
-        /* height: 480px%; */
         width: 100%;
         display: flex;
         justify-content: space-around;
         position: fixed;
         align-items: center;
         top: 0px;
+        background-color: white;
+        overflow: hidden;
+        height: 15%;
+        margin-top: 0px;
     }
     #logo{
         margin-top: 0px;
         padding-top: 0px;
-
-        height: 50px;
-        width: 120px;
+        height: 90px;
+        width: 200px;
     }
     a{
         text-decoration:none;
-        text-decoration: none;
         color: gray;
     }
     #first-section{
-        height: 455px;
+        height: 600px;
         width: 100%;
         background-color:rgb(214, 235,215);
-        margin-top: 50px;
+        margin-top: 0px;
         
+    }
+    #first-text{
+        margin-top: 100px;
     }
     .title{
         font-family: 'Anonymous Pro', monospace;
@@ -49,24 +165,29 @@
         
         
     }
-    body{
-        margin: 0px;
-    }
     #second-section{
-        height: 235px;
         width: 100%;
         background-color:#f5f6fa;
-        /* margin: 0px; */
-    }
-    #footer{
-        width: 100%;
-        height: 50px;
-        background-color: #dfe4ea;
         display: flex;
-        justify-content: space-around;
+        flex-direction:column;
+        margin-top: 10px;
         align-items: center;
-        /* position: fixed; */
-        }
+    }
+    
+    .second-section-img{
+        width: 700px;
+        height: 700px;
+    }
+    hr{
+        display: block;
+        margin: 0.1em auto 3em auto;
+        border:none;
+        background-color: lightgrey;
+        height: 0.2px;
+        width: 20%;
+        padding-bottom: 1px;
+    }  
+    
     .img-cake{
         height: 290px;
         width: 290px;
@@ -77,4 +198,20 @@
         justify-content: center;
     }
     
+    
+    #footer{
+        width: 100%;
+        height: 50px;
+        background-color: #dfe4ea;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: relative;
+        margin-bottom: 0px;
+        font-family: 'Open Sans Condensed', sans-serif;
+        
+        }
+        
 }
+/*
+    */
