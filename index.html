@@ -1,16 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Responsive Cake webpage</title>
     <!-- Add a link to your css file here -->
-</head>
-
-<body>
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/mediaquery.css" />
+  </head>
+  <body>
     <!-- Add your markup here -->
-</body>
+    <header>
+      <img
+        class="logo"
+        src="images/logo.png"
+        alt="Sweet Cake logo"
+        title="Sweet Cake logo"
+      />
+      <i class="fa fa-bars fa-3x burger-menu"></i>
+      <a href="#" class="contact-link" title="contact"> CONTACT </a>
+    </header>
+    <nav>
+      <a href="#" title="HOME">HOME</a>
+      <a href="#" title="CAKES">CAKES</a>
+      <a href="#" title="ORDERING">ORDERING</a>
+      <a href="#" title="LESSSONS">LESSONS</a>
+    </nav>
+    <main>
+      <section class="carousel-hello-wrapper">
+        <!-- carousel image is here  -->
+        <div class="carousel">
+          <img src="images/pink-blue-cake.jpg" />
+        </div>
 
+        <section class="hello-information">
+          <!-- HEllO and INFORMATION-->
+          <h1>HELLO</h1>
+          <div class="hello-information-wrapper">
+            <h3>information</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
+              laoreet urna et elit pharetra facilisis. Mauris bibendum ante sit
+              amet sapien pharetra, at malesuada urna accumsan.
+            </p>
+          </div>
+        </section>
+      </section>
+
+      <section class="cakes-list">
+        <!-- CAKES-->
+        <div class="cake-col">
+          <img src="images/cake1.jpg" />
+          <p>Lorem ipsum dolor sit amet</p>
+        </div>
+        <div class="cake-col">
+          <img src="images/cake2.jpg" />
+          <p>Lorem ipsum dolor sit amet</p>
+        </div>
+        <div class="cake-col">
+          <img src="images/cake3.jpg" />
+          <p>Lorem ipsum dolor sit amet</p>
+        </div>
+        <div class="cake-col">
+          <img src="images/cake4.jpg" />
+          <p>Lorem ipsum dolor sit amet</p>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <!-- Footer -->
+      <a href="#" class="footer-link">SITE MAP</a>
+      <a href="#" class="footer-link">CONTACT</a>
+      <a href="#" class="footer-link">DELIVERY</a>
+      <a href="#" class="footer-link">ORDER</a>
+      <a href="#" class="footer-link">ABOUT US</a>
+    </footer>
+  </body>
 </html>

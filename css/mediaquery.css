@@ -1,0 +1,173 @@
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width: 320px) {
+  /* Styles */
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .burger-menu {
+    display: none;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .contact-link {
+    width: 20%;
+    padding: 10px;
+    background-color: steelblue;
+    color: azure;
+    margin: 10px;
+    align-self: flex-end;
+    font-size: 1.8em;
+    text-decoration: none;
+  }
+
+  .carousel-hello-wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .carousel {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 75%;
+  }
+  .carousel img {
+    width: 100%;
+    margin-left: 20px;
+  }
+
+  .hello-information {
+    align-items: center;
+    background-color: #f6cfda;
+    width: 25%;
+    flex-direction: column;
+    margin: auto 5px auto 5px;
+  }
+
+  .hello-information > h1 {
+    font-size: 2.5em;
+    width: 80%;
+  }
+
+  .hello-information-wrapper h3 {
+    margin: 0 auto;
+    font-size: 2.2em;
+  }
+
+  .hello-information-wrapper p {
+    margin: 0 auto;
+    text-align: left;
+    padding: 10px;
+    text-align: justify;
+  }
+  .cakes-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .cake-col p {
+    font-size: 1em;
+    width: 80%;
+  }
+
+  footer {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+/*
+/* Desktops and laptops ----------- */
+@media only screen and (min-width: 1024px) {
+  .burger-menu {
+    display: none;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .contact-link {
+    width: 20%;
+    padding: 10px;
+    background-color: steelblue;
+    color: azure;
+    margin: 10px;
+    align-self: flex-end;
+    font-size: 1.8em;
+    text-decoration: none;
+  }
+
+  .carousel-hello-wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .carousel {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 75%;
+  }
+  .carousel img {
+    width: 100%;
+    margin-left: 20px;
+  }
+
+  .hello-information {
+    align-items: center;
+    background-color: #f6cfda;
+    width: 25%;
+    flex-direction: column;
+    margin: auto 5px auto 5px;
+  }
+
+  .hello-information > h1 {
+    font-size: 2.5em;
+    width: 80%;
+  }
+
+  .hello-information-wrapper h3 {
+    margin: 0 auto;
+    font-size: 2.2em;
+  }
+
+  .hello-information-wrapper p {
+    margin: 0 auto;
+    text-align: left;
+    padding: 10px;
+    text-align: justify;
+  }
+  .cakes-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .cake-col p {
+    font-size: 1em;
+    width: 80%;
+  }
+
+  footer {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+/* Large screens ----------- */
+@media only screen and (min-width: 1824px) {
+  /* Styles */
+}

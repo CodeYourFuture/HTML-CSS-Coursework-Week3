@@ -1,0 +1,117 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.logo {
+  margin: 20px;
+  display: block;
+  height: auto;
+  width: 150px;
+}
+
+nav {
+  display: none;
+  background-color: #e3f7ff;
+}
+
+nav a {
+  text-decoration: none;
+  background-color: #ffdce6;
+  padding: 10px 30px 10px 30px;
+  margin: 5px;
+  font-size: 1.5em;
+  color: #e55779;
+}
+
+.burger-menu {
+  margin: 30px;
+}
+
+.carousel-hello-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.carousel img {
+  width: 100%;
+}
+.cakes-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.cake-col {
+  height: auto;
+  text-align: center;
+}
+.cake-col img {
+  width: 280px;
+  margin: 30px 10px 5px 10px;
+}
+
+.cake-col p {
+  font-size: 1.2em;
+  color: lightslategray;
+  background-color: aliceblue;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.hello-information {
+  display: flex;
+  align-items: center;
+  background-color: #f6cfda;
+  width: 100%;
+}
+
+.hello-information-wrapper {
+  display: flex;
+  height: 300px;
+  flex-direction: column;
+}
+
+.hello-information > h1 {
+  display: block;
+  font-size: 2em;
+  width: 100%;
+  height: 300px;
+  background-color: #76c8e6;
+  color: #3a3a3a;
+  padding: 10px;
+  margin: 20px;
+}
+
+.hello-information-wrapper h3 {
+  font-size: 2em;
+}
+
+.hello-information-wrapper p {
+  text-align: left;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #f0f0f0;
+  margin-top: 20px;
+}
+
+footer a {
+  margin: 7px;
+  text-decoration: none;
+  color: #4ea4c4;
+  padding: 5px;
+}
+footer a:hover {
+  cursor: pointer;
+  color: palevioletred;
+}
