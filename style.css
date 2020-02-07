@@ -203,11 +203,29 @@ h1 {
     border: 1px solid palevioletred;
 }
 
+
+.row-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.col-footer {
+    flex-wrap: wrap;
+}
 footer {
-    display: block;
+    margin-top: 50px;
     background-color: palevioletred;
-    padding: 10px;
-    margin-top: 20px;
+    padding: 20px;
+}
+#about {
+    margin-left: 50px;
+}
+#about p{
+    margin: 0;
+}
+.col-footer a {
+    color: black;
 }
 
 
@@ -236,6 +254,22 @@ footer {
     .fa {
         visibility: hidden;
     }
+    #about {
+       
+    }
+    footer {
+        display: flex;
+        justify-content: space-between;
+        flex: 25%;
+    }
+    #about {
+        width: 50%;
+        
+    }
+    .row-footer {
+        flex: 25%;
+    }
+    
     
 }
 
@@ -263,6 +297,9 @@ footer {
     }
     #info {
         width: 100%;
+    }
+    .row-footer {
+        flex-direction: column;
     }
 }
 
