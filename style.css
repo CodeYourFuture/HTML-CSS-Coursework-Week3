@@ -128,11 +128,13 @@
      margin-top: 5rem;
  }
 
- .special-orders-imgs {
+ .special-orders-imgs,
+ .foot-nav ul {
      margin: 0 !important;
  }
 
- h2, footer {
+ h2,
+ footer {
      margin-top: 5rem;
  }
 
@@ -217,7 +219,26 @@
      }
  }
 
-/* Footer */
+ /* Footer */
+ /* .foot-nav {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     list-style-type: none;
+     max-width: 100%;
+ }
+ .foot-nav li a{
+    text-decoration: none;
+    padding: 1rem;
+    margin: 1rem;
+ } */
+
+ /* .social-copy {
+     display: flex;
+     justify-content: center;
+     flex-wrap: wrap;
+ } */
+
  .social-media {
      display: flex;
      justify-content: center;
@@ -246,5 +267,7 @@
  }
 
  .copyright {
+     font-size: 0.75rem;
      color: #838994;
+     align-self: flex-end;
  }
