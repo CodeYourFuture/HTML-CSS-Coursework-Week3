@@ -1,4 +1,74 @@
-nav{
+.logo{
+    background-color: hotpink;
+}
+
+
+nav {
     display: flex;
     flex-direction: row;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    background-color: grey;
+
+}
+
+ul{
+    list-style: none;
+}
+
+.pic1{
+    background-color: indigo;
+    width: 80px;
+}
+
+.pic2{
+    background-color:yellow;
+    width: 80px;
+}
+.pic3{
+    background-color: lightblue;
+    width: 80px;
+}
+
+.pic4{
+    background-color: lime;
+    width: 80px;
+}
+
+.hello{
+    background-color: maroon;
+}
+
+.information{
+    background-color: mediumseagreen;
+}
+
+.receipe1{
+    background-color: mediumslateblue;
+}
+
+.receipe2{
+    background-color: olive;
+}
+
+.receipe3{
+    background-color: orange;
+}
+.receipe4{
+    background-color: plum;
+}
+
+.slidecontainercake{
+    display: flex;
+    justify-content: center;
+    height: 200px;
+    
+}
+
+.receipeimgcontainer{
+    display: flex;
+    justify-content: center;
 }
