@@ -1,0 +1,123 @@
+.hamIcon{
+    position: absolute;
+    right: 10px;
+    top: 20px;
+}
+
+.logo_image{
+    display: flex;
+    justify-content: center;
+    height: 200px;
+    background: url("images/Mynavbarimage.jpeg");
+    background-position: center;
+}
+.nav_bar{
+    background: url("images/nav_back.JPG");
+   
+}
+
+.mainMenu{
+    font-family: 'Courgette', cursive;
+    list-style: circle;
+    right:2px;
+    top: 100px;
+    padding: 30px;
+    font-size: 30px;
+    height: 200px;
+    border-radius:10px;
+    border:4px double plum;
+    text-decoration: none;
+
+}
+body{
+    background: url("images/wallpaper.jpg");
+    text-decoration: none;
+}
+
+a:hover{
+    color:blue;
+    text-decoration: none;
+}
+.H-one{
+    color:#fc0384;
+    font-size: 50px;
+    font-family: 'Courgette', cursive;
+    /*display: flex;
+    flex-direction: column;
+    justify-content:center;*/
+    text-align: center;
+    padding: 50px 20px 10px 50px;
+
+}
+.description{
+    font-size: 30px;
+    text-align: center;
+    color: black;
+    font-family: 'Courgette', cursive;
+    padding: 0 auto;
+    margin: 10 10;
+}
+.main_cakes{
+    display:flex;
+    justify-content:space-around;
+    align-content:space-around;
+    flex-wrap: wrap;
+}
+.cakes{
+    display: block;
+    box-sizing: border-box;
+}
+.style_cake{
+    height: 300px;
+    padding: 100px 100px;
+    display: inline-block;
+}
+
+.font_cake{
+display:block;
+font-family: 'Courgette', cursive;
+font-size: 20px;
+color: rgb(206, 23, 23);
+padding-left: 150px;
+text-decoration: none;
+}
+
+.footer{
+    background-color: pink;
+
+}
+
+@media(max-width: 768px){
+    .mainMenu{
+        display: none;
+    }
+    .nav_bar{
+        background: 
+    }
+    .mainMenu.toggleClasses{
+        display: block;
+
+    }
+    
+}
+@media(min-width:769px ){
+    .hamIcon{
+        display: none;
+    }
+    .mainMenu{
+        position: relative;
+        color: black;
+        display:flex;
+        flex-direction:row;
+        justify-content:space-between;
+        padding: 5px 5px;
+        height: 60px;
+        list-style: none;
+        border: 2px solid white;
+        background:url("images/bar-background.jpg");
+    }
+    .logo_image{
+        display: flex;
+        flex-direction:row;
+    }
+}
