@@ -1,115 +1,99 @@
-/*  Add your styling here */
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-body {
+body{
+  margin:0;
+  font-size:1.125rem;
   font-family: sans-serif;
 }
-.logo {
-  height:80px;
-  
-}
 
-header h2 {
-  line-height: 80px;
-  font-size: 24px;
-  text-transform: uppercase;
-}
-
-.header-nav {
-  background-color: red;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  width:100%;
-  
-}
-.check-btn {
-  font-size: 50px;
-  color: white;
-  cursor: pointer;
-}
-.menubtn-text {
-  font-size: 15px;
-  text-transform: uppercase;
-  color: black;
-  font-weight: bold;
-}
-
-.nav-bar {
-  top: 100px;
-  position:fixed;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items:center;
-  transition: all 0.5s;
-  width: 50vw;
-  right: -100%;
-  background-color:black;
-  opacity:0.85;
-
-}
-.nav-bar li {
-  list-style: none;
-  line-height: 30px;
-  margin: 20px 0;
-  
-}
-.nav-bar a {
-  text-decoration: none;
-  font-size: 30px;
-  color: white;
-  opacity: 0.75;
-  background-color: black;
-  border-radius: 5px;
-  padding: 5px 10px;
-}
-a:hover {
-  opacity: 1;
-  color: yellow;
-  background-color: red;
-  transition: 0.5s;
-}
-#check {
-  display: none;
-}
-#check:checked ~ .nav-bar {
-  right: 0;
-}
-
-.hero-area{
-  display:flex;
-  flex-direction: column;
-  align-items: center;
-
-}
-.cake img {
-  width:50%;
+/* layout*/
+img{
+  max-width: 100%;
   display:block;
-  margin:auto;
+
 }
-.hero-info ,.example-cake {
-  margin:20px;
-  list-style:none;
+.container{
+  
+  width:90%;
+  border: 1px solid blue;
+  margin:0 auto;
 }
-.example-cake{
+.container-flex{
   display:flex;
-  flex-direction: row;
+  flex-direction:column;
   justify-content: center;
+}
+
+.article-recent{
+  display:flex;
+  flex-direction:column;
+}
+/* navigation*/
+.header{
+  flex-direction:row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 
 }
-.example-cake img{
-  width:20vw;
-  }
+.logo{
+  width:20%;
+  
+}
 
 
-@media (min-width:768px){
-  .header-nav{
-    background-color: green;
+
+
+nav ul{
+  list-style:none;
+
+}
+input{
+  display:none; s
+}
+
+
+
+
+/* from a minimum width of 768px and above*/
+
+  
+@media(min-width:768px){
+  /* layout*/
+
+  .container-flex{
+    flex-direction:row;
   }
   
+  .article-recent{
+    flex-direction:row;
+    flex-wrap: wrap;
+    
   }
+  
+  .article-recent img{
+    width:20%;
+  }
+  .main{
+    width:70%;
+  }
+  .aside{
+    width: 30%;
+  }
+  /* navigation*/
+
+  .logo{
+    max-width:80px;
+  }
+  .header{
+    justify-content: space-between;
+    
+    background-color: greenyellow;
+
+  }
+  .header .nav-bar{
+    display:flex;
+    
+  }
+  input,label{
+    display:none;
+  }
+}
