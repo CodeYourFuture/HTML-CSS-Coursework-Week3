@@ -106,18 +106,18 @@ tr{
     height: 100%;
     padding-bottom: 50%;
 }
+/* footer */
 .content{
     display: flex;
     flex-direction: column;
+    color: maroon;
 }
 .facebook{
     text-align: center;
     color:red;
     font-size: 12px;
 }
-hr{
-    margin-bottom: 0px;
-}
+
 
 /* MEDIA QUARIES */
 
