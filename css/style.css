@@ -1,0 +1,67 @@
+/*  Add your styling here */
+body{
+    background-color: rgb(234, 243, 243)3);
+}
+
+
+.topheader{
+    border: solid;
+    border-color: black;
+    height: 70px;
+    justify-content: space-between;
+    display: flex;
+    padding: 5px;
+    background-color: rgb(168, 167, 167);
+}
+
+.topheader1 {
+    border: solid;
+    border-color: black;
+    height: 90%;
+    margin-top: 2px;
+    padding-right: 30px;
+    background-color: rgb(65, 62, 62);
+}
+
+.topheader2 {
+    border: solid;
+    border-color: black;
+    flex-direction: column;
+    align-self: flex-end;
+    background-color: rgb(65, 62, 62);
+    /* position: absolute; */
+}
+.navbar {
+    border-style: none;
+    padding: 0;
+    margin: 5px 0 5px 0;
+    background-color: lightgray;border-style: none;
+
+}
+
+.navbar .navbarlist{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    border: black;
+    margin: 2px;
+
+}
+
+.navbar li{
+    border-style: solid;
+    border-color: black;
+    font-size: 10px;
+    /* margin-left: auto; */
+    padding: 5px;
+    font-size: 12px;
+
+
+}
+
+.pageimage{
+border: black;
+border-style: solid;
+
+}

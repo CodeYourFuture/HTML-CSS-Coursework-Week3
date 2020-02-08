@@ -1,1 +1,189 @@
 /*  Add your styling here */
+body{
+    background-color: rgb(234, 243, 243)3);
+    margin: 0px;
+}
+
+.topheader{
+    border: 2px solid #1D3557;
+    height: 70px;
+    justify-content: space-between;
+    display: flex;
+    padding: 5px;
+    background-color: rgb(218, 163, 163);
+}
+
+.topheader1 {
+    border: solid;
+    border-color: rgb(12, 12, 22);
+    height: 90%;
+    margin-top: 2px;
+    padding-right: 30px;
+    background-color: rgba(228, 176, 221, 0.911);
+}
+
+.topheader2 {
+    border: solid;
+    border-color: #0f1b20;
+    flex-direction: column;
+    align-self: flex-end;
+    background-color: rgb(238, 180, 180);
+}
+
+.navbar {
+    padding: 0;
+    margin: 5px 0 5px 0;
+    background-color: #c5a0c3;
+    border: 2px solid darkblue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.navbar .navbarlist{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 3px;
+    margin: 2px;
+    border-radius: 5px;
+}
+
+.navbar li{
+    border-style: hidden;
+    font-size: 10px;
+    padding: 3px 5px;
+    font-size: 12px;
+    background-color: black;
+    color: blanchedalmond;
+}
+
+.boxes{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.box-text {
+    background-color: lightgray;
+    display: flex;
+    flex-direction: column;
+}
+
+.boxes p{
+    font-family: sans-serif;
+}
+
+p.text1 {
+    background-color: #927979;
+    color: white;
+    padding: 5px 20px 20px 5px;
+    margin: 5px;
+    border: 3px solid #04194e;
+}
+
+p.text2 {
+    border: solid;
+    border: solid;
+    background-color: #ca7e7e;
+    color: white;
+    padding: 5px 20px 20px 5px;
+    margin: 5px;
+    border: 3px solid #04194e;
+}
+
+.box-image {
+    width: 100%;
+    background-color: rgb(105, 162, 212);
+}
+
+.boxes .main-img {
+    background-color: rgb(185, 156, 165);
+    padding-bottom: 200px;
+    margin: 5px;
+    border-style: solid;
+    border-width: thin;
+}
+
+.carousel-moreimages {
+    display: flex;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.carousel-moreimages-ul {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding-inline-start: 0px;
+}
+
+.carousel-moreimages-ul li {
+    margin: 5px;
+    background-color: lightslategrey;
+    list-style-type: none;
+    width: 100%;
+    height: auto;
+    border: 1px solid;
+    padding: 5%;
+    height: 40%;
+}
+
+.cake-wrapper-row{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid black;
+}
+
+.cake-wrapper-row-part {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.cake-wrapper-row .cake-wrapper-row-part figure {
+    margin: 5px;
+    flex-direction: column;
+    width: 100%;
+}
+
+figure.wrapperimage {
+    background-color: #204a52;
+    padding: 10px;
+}
+
+.cakeswrapper {
+    padding: 20px;
+    color: white;
+}
+
+.cakesdetails {
+    color: white;
+    flex-wrap: wrap;
+}
+
+.footerlist {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-inline-start: 0px;
+    background-color: rgb(223, 189, 189);
+    margin: 0px;
+ 
+}
+
+.footer {
+    list-style-type: none;
+    color: rgb(63, 47, 47);
+    margin-top: 10px;
+    padding: 2px;
+    text-align: center;
+    font-size: 16px;
+    padding: 3px;
+    border: 2px solid rgb(115, 140, 209);
+    border-radius: 3px;
+    margin: 5px;
+    justify-content: center;
+    background-color: rgb(45, 193, 219);
+
+}
