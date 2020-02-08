@@ -55,6 +55,30 @@ input{
 }
 nav ul{
   list-style:none;
+  display:none;
+}
+nav li{
+  text-transform: uppercase;
+  display:flex;
+  flex-direction:column;
+  margin:.5em;
+
+}
+nav a{
+  text-decoration: none;
+  color: black;
+
+}
+
+.check-btn i {
+  font-size:2rem;
+}
+.checkbtn-text{
+  font-size:.75rem;
+  text-transform: uppercase;
+}
+#check:checked ~ ul{
+  display:block;
 }
 
 /* from a minimum width of 768px and above*/
@@ -68,16 +92,15 @@ nav ul{
   .article-recent{
     flex-direction:row;
     flex-wrap: wrap;
-    
   }
   
   .article-recent img{
     width:20%;
   }
-  .main{
+  main{
     width:70%;
   }
-  .aside{
+  aside{
     width: 30%;
   }
   /* navigation*/
@@ -92,9 +115,8 @@ nav ul{
     background-color: greenyellow;
 
   }
-  .header .nav-bar{
+  nav .nav-bar{
     display:flex;
-    
   }
   input,label{
     display:none;
