@@ -40,7 +40,7 @@ input:checked ~ ul {
   }
 
 .slider {
-    display: flex;
+    display: block;
 }
 
 .display {
@@ -129,5 +129,17 @@ footer {
     ul {
         display: flex;
         justify-content: space-between;
+    }
+
+    .more-desserts {
+        display: flex;
+    }
+
+    .details {
+        display: flex;
+    }
+
+    .slider {
+        display: flex;
     }
 }
