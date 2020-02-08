@@ -109,7 +109,7 @@ flex-direction: row;
     }
 }
 
-.boxes p{
+.boxes figcaption{
     font-family: sans-serif;
 }
 
