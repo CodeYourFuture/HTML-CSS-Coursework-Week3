@@ -17,7 +17,7 @@ header {
 
 
 .logo {
-    width: 130px;
+    width: 30%;
     border: 1px solid black;
 }
 
@@ -63,16 +63,6 @@ a:hover {
     color: purple;
 }
 
-/* images */
-
-article img {
-    width: 130px;
-    height: 120px;
-    border: 2px solid black;
-    border-radius: 2%;
-    padding: 2px;
-}
-
 /* carousel and text section */
 
 .carousel-section {
@@ -87,6 +77,7 @@ article img {
     display: flex;
     flex-direction: column;
     align-items: center;
+
 }
 
 .hello-text h1 {
@@ -118,7 +109,7 @@ article img {
     flex-shrink: 0;
     width: 100%;
     height: auto;
-    margin: 15%;
+    margin: 10%;
 }
 
 .carousel-image {
@@ -129,6 +120,7 @@ article img {
     margin-top:10%;
 }
 
+
 .controls {
     display:flex;
     justify-content: center;
@@ -137,7 +129,7 @@ article img {
 .control-button {
     text-decoration: none;
     font-size: 25px;
-    padding-left:10px;
+    padding-left:5;
     color: red;
 } 
 
@@ -145,9 +137,9 @@ article img {
 .images-controls {
     border: 2px double black;
     background-color: rgb(204, 154, 240);
-    width:60%;
+    width:70%;
     height:50%;
-    margin: 15%;
+    margin: 13%;
 }
 
 
@@ -156,24 +148,42 @@ article img {
 .cakes {
     display: flex;
     flex-direction: column;
-    align-items: center;
     border: 3px solid black;
-    margin:5px;
+    margin: 3%;
     background-color: rgb(204, 154, 240);
+    height: 30%;
+    width: 99%;
+    overflow: hidden;
 }
 
-.row1, .row2 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+.row1-div, .row2-div {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-evenly;
 }
 
-.cakes div article {
+.first-row-article, .second-row-article {
+    margin: 3%;
     border: 1px solid black;
-    margin: 15px;
-    padding: 10px;
-    background-color: rgb(241, 224, 227);
     border-radius: 5%;
+    padding: 2%;
+    background-color: rgb(241, 224, 227);
+    width: 30%;
+}
+
+/* images */
+
+.section2-picture {
+    height: 15%;
+    width: 70%;
+    border: 2px solid black;
+    border-radius: 2%;
+    padding: 2px;
+}
+
+.section2-picture:hover {
+    transform: scale(1.5);
+    overflow: hidden;
 }
 
 .cakes div article h6 {
@@ -181,6 +191,7 @@ article img {
     font-size: 20px;
     border-bottom: 1px solid grey;
     width: auto;
+    overflow: hidden;
 
 }
 
@@ -194,7 +205,7 @@ article img {
     margin-top:30px;
     padding: 15px;
     list-style-type: none;
-    background-color: rgb(228, 112, 208);;
+    background-color: rgb(228, 112, 208);
 }
 
 footer nav {
@@ -225,18 +236,22 @@ button:hover {
 @media (min-width: 961px) {
 
     header {
-        margin-bottom: 70px;
+        margin-bottom: 7%;
     }
 
     .logo {
         border: 2px solid black;
+        height: 100%;
+        width: 8%;
 }
 
     .menu-bar {
         display:flex;
         flex-direction: row;
         justify-content: space-between;
-        padding: 5px;
+        height: 7rem;
+        padding-right: 10%;
+        padding-bottom: 2%;
     }
 
     #checkbox, label {
@@ -247,11 +262,10 @@ button:hover {
         display: flex;
         justify-content: flex-start;
         position: absolute;
-        right: 0px;
-        top: 50px;
+        right: 10%;
+        top: 13%;
         width: 100%;
-        margin: 10px;
-        
+        margin-left: 35%;
     }
 
     .menu li {
@@ -259,20 +273,20 @@ button:hover {
         border: 2px solid black;
         text-align: center;
         font-weight: bolder;
+        margin-left: 12%;
     }
 
     .nav-item {
         width: 100%;
-        margin-left: 5%;
-        margin-top: 110px;
+        margin-left: 1rem;
+        margin-top: 5rem;
     }
 
     #contact {
-        height: 40px;
-        margin-right: 150px;
+        height: 8%;
+        width:5%;
         border-radius: 40%;
         background-color: rgb(199, 10, 199);
-        margin-right: 2%;
     }
     
     .hello-text h1 {
@@ -281,12 +295,12 @@ button:hover {
 
     .carousel {
        width: 80%;
-       height: 450px;
+       height: auto;
        border: 2px solid black;
     }
 
     .carousel-image {
-        height: 330px;
+        height: 80%;
         width: 90%;
     }
 
@@ -300,8 +314,8 @@ button:hover {
         border: 2px double black;
         margin: 5%;
         background-color: rgb(204, 154, 240);
-        width:80%;
-        height: 100;
+        width: 80%;
+        height: 100%;
         padding: 1%;
 
     }
@@ -310,20 +324,29 @@ button:hover {
         justify-content: center;
         border: 2px solid black;
         background-color: rgb(228, 112, 208);
-        width:100%;
+        width: 100%;
     }
 
     .controls a {
         overflow: hidden;
     }
 
-    .cakes div article{
-        background-color: rgb(248, 179, 237); 
-        border: 2px solid black;
+
+    .cakes {
+        display: flex;
+        flex-direction: row;
+        align-content: space-around;
+        height: 50%;
     }
 
-    .cakes div article img {
-        margin: 30px 100px;
+    .section2-picture {
+        height: 8rem;
+        width: 8rem;
+        margin: 3% 5%;
+    }
+
+    .section2-picture:hover {
+        transform: (1.3);
     }
 
     .bottom-list {
