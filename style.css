@@ -1,19 +1,17 @@
  /* General */
+ * {
+     box-sizing: border-box;
+ }
+
  html,
  body {
-     box-sizing: border-box;
      margin: 0;
      padding: 0;
      font-family: 'Roboto', sans-serif;
-     line-height: 1.4;     
+     line-height: 1.4;
      text-align: center;
-     /* background: url('https://images.unsplash.com/photo-1506368083636-6defb67639a7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80');
-     background-size: auto;
-     background-position: center;
-     background-repeat: no-repeat;
-     background-size: cover;
-     height: 100vh; */
-    }
+     background: antiquewhite;
+ }
 
  .small-font {
      font-size: 1rem;
@@ -21,31 +19,29 @@
  }
 
  /* Header */
+ /* [ON SMALL SCREENS] */
  .page-nav {
      width: 100%;
-     background: rgb(64, 159, 202);
+     background: rgb(136, 122, 77);
      position: fixed;
      top: 0;
      display: flex;
- }
-
-/* Logo */
- .logo {
-     max-width: 100px;
-     margin: 10px;
- }
- .page-nav a {
-    align-self: flex-start;
-}
-
- /* [ON SMALL SCREENS] */
- .page-nav {
      flex-direction: column;
+     z-index: 1;
+ }
+
+ /* Logo */
+ .logo {
+     max-width: 4.5rem;
+     margin: 1rem;
+ }
+
+ .page-nav a {
+     align-self: flex-start;
  }
 
  /* Show Hamburger */
  .page-nav label {
-     display: inline-block;
      color: #fff;
      font-style: normal;
      font-size: 1.75rem;
@@ -89,11 +85,7 @@
  .page-nav input:checked~ul {
      display: flex;
      flex-direction: column;
-     /* justify-content: center; */
-     /* align-items: center; */
-     /* width: 100vw; */
  }
-
 
  /* [ON BIG SCREEN] */
  @media screen and (min-width: 768px) {
@@ -103,14 +95,14 @@
      #hamburger {
          display: none;
      }
-     
+
      /* Header */
      .page-nav {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-    }
+         display: flex;
+         flex-direction: row;
+         justify-content: space-between;
+         align-items: center;
+     }
 
      /* Menu Items */
      .page-nav ul {
@@ -124,15 +116,102 @@
          padding: 20px;
          border: none;
      }
-
  }
 
- .img-carousel {
-     margin-top: 400px;
+ /* Responsive Image grid */
+ .img-grid-row,
+ .special-orders-imgs {
      display: flex;
      flex-wrap: wrap;
+     justify-content: center;
+     padding: 0 4px;
+     margin-top: 5rem;
  }
 
- section {
-     margin-top: 100px;
+.special-orders-imgs {
+    margin: 0!important;
+}
+
+h2 {
+     margin-top: 5rem;
+ }
+
+ /* Create equal columns that sit next to each other */
+ .column {
+     flex: 100%;
+     max-width: 100%;
+     padding: 0 4px;
+ }
+
+ .column img {
+     margin-top: 8px;
+     vertical-align: middle;
+     width: 100%;
+     border: black solid 2px;
+     border-radius: 5px;
+ }
+
+ .column-info {
+     margin-top: 8px;
+     border: black solid 2px;
+     border-radius: 5px;
+     background: url('https://images.unsplash.com/photo-1506368083636-6defb67639a7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60');
+     background-repeat: no-repeat;
+     background-size: cover;
+     opacity: 0.5;
+ }
+
+ .column-info h1,
+ .column-info h1 p {
+     margin: auto;
+ }
+
+ .special-orders-imgs img {
+     max-width: 80%;
+     margin: 0 20px;
+     border: black groove 5px;
+     border-radius: 10%;
+ }
+
+ .special-orders-imgs h5 {
+     margin: 0;
+ }
+ /* Responsive layout - makes a two column-layout instead of four columns */
+ @media screen and (min-width: 481px) and (max-width: 1024px) {
+     html {
+         font-size: 1.5rem;
+     }
+
+     .column-imgs {
+         flex: 50%;
+         max-width: 50%;
+         order: 2;
+     }
+
+     .special-orders-imgs div {
+         max-width: 40%;
+     }
+ }
+
+ /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+ @media screen and (min-width: 1025px) {
+     html {
+         font-size: 1.75rem;
+     }
+
+     .column {
+         flex: 33.3%;
+         max-width: 33.3%;
+     }
+
+     .special-orders-imgs div {
+         max-width: 20%;
+     }
+
+ }
+
+ @media screen and (min-width: 1200px){
+    html {
+        font-size: 2rem;
+    } 
  }

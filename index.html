@@ -1,52 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Responsive Cake webpage</title>
     <!-- Add a link to your css file here -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-
-<body>
+  <body>
     <header>
-        <!-- [NAVIGATION BAR] -->
-        <nav class="page-nav">
-            <a href="#"><img class="logo" src="https://cdn.pixabay.com/photo/2019/05/19/14/12/sweet-4214168_960_720.png"
-                    alt="sweet-treats">
-            </a>
-            <!-- [THE HAMBURGER] -->
-            <label for="hamburger"><span class="small-font">Menu </span>&#9776;</label>
-            <input type="checkbox" id="hamburger" />
+      <!-- [NAVIGATION BAR] -->
+      <nav class="page-nav">
+        <a href="#"
+          ><img
+            class="logo"
+            src="https://cdn.pixabay.com/photo/2019/05/19/14/12/sweet-4214168_960_720.png"
+            alt="sweet-treats"
+          />
+        </a>
+        <!-- [THE HAMBURGER] -->
+        <label for="hamburger"
+          ><span class="small-font">Menu </span>&#9776;</label
+        >
+        <input type="checkbox" id="hamburger" />
 
-            <!-- [MENU ITEMS] -->
-            <ul>
-                <li><a href="">HOME</a></li>
-                <li><a href="">CAKES</a></li>
-                <li><a href="">ORDERING</a></li>
-                <li><a href="">LESSONS</a></li>
-                <li><a href="">ABOUT</a></li>
-            </ul>
-        </nav>
+        <!-- [MENU ITEMS] -->
+        <ul>
+          <li><a href="#">HOME</a></li>
+          <li><a href="#Cakes">CAKES</a></li>
+          <li><a href="#Ordering">ORDERING</a></li>
+          <li><a href="#Footer">LESSONS</a></li>
+          <li><a href="#">ABOUT</a></li>
+        </ul>
+      </nav>
     </header>
 
     <main>
-        <section>
-            <h1>Hello!</h1>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur exercitationem possimus nemo provident labore eveniet ducimus voluptatem magnam omnis dignissimos?</p>
-        </section>
-        <div class="img-carousel">
-            <img src="https://images.unsplash.com/photo-1516054575922-f0b8eeadec1a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80" alt="chocolate cake">
-            <img src="https://images.unsplash.com/photo-1535141192574-5d4897c12636?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=335&q=80" alt="3-tier vanilla cake with blueberry and strawberry toppings">
-            <img src="https://images.unsplash.com/photo-1571115177098-24ec42ed204d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80" alt="layered cake">
-            <img src="https://images.unsplash.com/photo-1562023692-9283c11284bd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80" alt="chocolate fondant cake">
+      <section id="Cakes">
+        <div class="img-grid-row">
+          <div class="column column-info">
+            <h1>HELLO WORLD!</h1>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Similique ad sapiente ratione ut minus excepturi illum.
+              Exercitationem alias quae reiciendis?
+            </p>
+          </div>
+          <div class="column column-imgs">
+            <img
+              src="https://images.unsplash.com/photo-1557925923-33b27f891f88?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=333&q=80"
+              alt="round cake with white frosting topped with red raspberries"
+            />
+            <img
+              src="https://images.unsplash.com/photo-1474625342403-1b8a2c0f7215?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=751&q=80"
+              alt="closeup photo of cupcakes on round white ceramic plate"
+            />
+          </div>
+          <div class="column column-imgs">
+            <img
+              src="https://images.unsplash.com/photo-1426869884541-df7117556757?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"
+              alt="close-up photography of cupcakes"
+            />
+            <img
+              src="https://images.unsplash.com/photo-1571115177098-24ec42ed204d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+              alt="layered cake"
+            />
+          </div>
+          <!-- <div class="column">
+          <img
+            src="https://images.unsplash.com/photo-1516054575922-f0b8eeadec1a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80"
+            alt="chocolate cake"
+          />
+          <img
+            src="https://images.unsplash.com/photo-1469533667357-006056eaf780?ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"
+            alt="chocolate cake topped with cherries"
+          />
         </div>
+          <div class="column">
+          <img
+            src="https://images.unsplash.com/photo-1469533778471-92a68acc3633?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=751&q=80"
+            alt="blueberry cupcakes"
+          />
+          <img
+            src="https://images.unsplash.com/photo-1562023693-81355c9373ab?ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80"
+            alt="chocolate cake on white plate"
+          />
+        </div> -->
+        </div>
+      </section>
 
+      <section id="Ordering">
+        <h2>Special Orders</h2>
+        <div class="special-orders-imgs">
+          <div>
+            <img
+              src="https://images.unsplash.com/photo-1557979619-445218f326b9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"
+              alt="M&M pack pouring candies on M&m cake's mouth on marble surface"
+            />
+            <h5>Cake 1</h5>
+          </div>
+          <div>
+            <img
+              src="https://images.unsplash.com/photo-1546856139-46fb2b57ff21?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"
+              alt="flat-lat photography of pink-icing colored rosette cake"
+            />
+            <h5>Cake 2</h5>
+          </div>
+          <div>
+            <img
+              src="https://images.unsplash.com/photo-1519340333755-56e9c1d04579?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"
+              alt="round red and white cake with cookies toppings"
+            />
+            <h5>Cake 3</h5>
+          </div>
+          <div>
+            <h5></h5>
+          </div>
+          <div>
+            <img
+              src="https://images.unsplash.com/photo-1573127275465-722f36cc4d44?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"
+              alt="chocolate digger construction 2 year old birthday cake"
+            />
+            <h5>Cake 4</h5>
+          </div>
+        </div>
+      </section>
     </main>
-</body>
 
+    <footer></footer>
+  </body>
 </html>
