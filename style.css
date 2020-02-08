@@ -1,1 +1,77 @@
 /*  Add your styling here */
+
+body {
+    background-color: #a5edd9;
+}
+
+.logo {
+    display: block;
+    width: 75px;
+    height: 75px;
+    max-width: 100%;
+    margin: auto;
+}
+
+label {
+    display: inline-block;
+    font-size: 30px;
+    text-align: left;
+    padding-top: 0;
+}
+
+ul li{
+    list-style: none;
+    display: block;
+    padding: 5px;
+}
+
+ul {
+    display: none;
+    background-color: #c7fff6;
+}
+
+input:checked ~ ul {
+    display: block;
+  }
+
+  .slider-image {
+      width: 90%;
+      height: 90%;
+  }
+
+.slider {
+    display: flex;
+}
+
+.display {
+    max-width: 70%;
+    border: 2px solid white;
+    padding: 10px;
+    padding-left: 30%;
+}
+
+.inside { ---
+    background-color: #c7fff6;
+    max-width: fit-content;
+}
+
+h3 {
+    font-size: 18px;
+    color: #ea8064;
+    padding-left: 30%;
+}
+
+p {
+    font-size: 14px;
+}
+
+footer {
+    background-color: #ea8064;
+
+}
+
+.details {
+    display: inline-block;
+    background-color: #ea8064;
+}
+

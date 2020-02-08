@@ -6,11 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Responsive Cake webpage</title>
-    <!-- Add a link to your css file here -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <!-- Add your markup here -->
+<header>
+    <img class="logo" src="images/logo.jpg" alt="logo">
+    <nav>
+        <label for="hamburger">&#9776;</label>
+        <input type="checkbox" class="hamburger"/> 
+        <ul>
+            <li>Home</li>
+            <li>Cakes</li>
+            <li>Ordering</li>
+            <li>About</li>
+        </ul>  
+    </nav>
+</header>
+<section class="carousel">
+        <div class="slider">
+        <div><img class="slider-image" src="images/starcake.jpg" alt="star cake" ></div>
+        <div><img class="slider-image" src="images/cheesecake.jpg" alt="cheesecake" ></div>
+        <div><img class="slider-image" src="images/pumpkincake.jpg" alt="halloween cake"></div>
+    </div>
+</section>
+<section class="information">
+    <div class="display">
+        <h3>Display</h3>
+        <img class="inside" src="images/display.jpg" alt="inside cake shop" style="width: 60%;">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab earum esse ad voluptates nulla sunt sit, temporibus ex expedita sed accusamus nisi ullam saepe cupiditate ut?
+        </p>
+    </div>
+</section>
+<footer>
+    <nav class="footer-nav">
+<ul class="details">
+    <li>Site Map</li>
+    <li>Contact Us</li>
+    <li>Delivery </li>
+</ul>
+</nav>
+</footer>
 </body>
-
 </html>
