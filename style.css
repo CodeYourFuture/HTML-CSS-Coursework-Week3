@@ -1,1 +1,15 @@
-/*  Add your styling here */
+.logo{
+  height: 100px;
+  width: 100px;
+  position: relative;
+  left: 0px;
+}
+
+.nav-bar{
+  position: relative;
+  left: 30px;
+}
+
+.nav-content{
+  display: none;
+}
