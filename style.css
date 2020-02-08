@@ -1,18 +1,20 @@
 .logo{
     background-color: hotpink;
+    height: 50px;
 }
 
 
 nav {
     display: flex;
     flex-direction: row;
+    background-color: gray;
 }
 
 .navbar{
     display: flex;
     flex-direction: row;
     background-color: grey;
-
+    
 }
 
 ul{
@@ -40,14 +42,23 @@ ul{
 
 .hello{
     background-color: maroon;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
+
 
 .information{
     background-color: mediumseagreen;
+    height: 100px;
+    margin-bottom: 15px;    
 }
 
 .receipe1{
     background-color: mediumslateblue;
+    height: 50px;
 }
 
 .receipe2{
@@ -61,14 +72,50 @@ ul{
     background-color: plum;
 }
 
+.carouselcakes{
+    position: relative;
+    text-align: center;  
+}
+
 .slidecontainercake{
     display: flex;
     justify-content: center;
-    height: 200px;
+    height: 300px;
+
     
 }
 
 .receipeimgcontainer{
     display: flex;
     justify-content: center;
+}
+
+.receipes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 0px;
+
+}
+
+.rec1{
+    background-color: mediumslateblue;
+    height: 100px;
+}
+
+.rec2{
+    background-color: olive;
+    height: 100px;
+}
+.rec3{
+    background-color: orange;
+    height: 100px;
+}
+.rec4{
+    background-color: plum;
+    height: 100px;
+}
+
+footer{
+    background-color: red;
 }
