@@ -59,9 +59,9 @@ input:checked ~ ul {
 }
 
 h3 {
-    font-size: 18px;
+    font-size: 40px;
+    padding-left: 20%;
     color: #ea8064;
-    padding-left: 30%;
 }
 
 .display.info {
@@ -80,10 +80,29 @@ h3 {
 .dessert-image {
     width: 40%;
     height: 40%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.dessert {
+    border: 2px solid white;
+    background-color: #c7fff6;
+}
+
+.buy-now {
+    background-color: #ea8064;
+    padding: 10px;
+    margin: auto;
+    display: block;
+    color: white;
 }
 
 p {
-    font-size: 24px;
+    font-size: 30px;
+    text-align: center;
+    color: #ea8064;
 }
 footer {
     background-color: #ea8064;
@@ -94,5 +113,21 @@ footer {
     display: inline-block;
     background-color: #ea8064;
     font-weight: 100;
+    font-size: 40px;
+    color: white;
 }
 
+@media (min-width: 768px) {
+    label {
+        visibility: hidden;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    ul {
+        display: flex;
+        justify-content: space-between;
+    }
+}
