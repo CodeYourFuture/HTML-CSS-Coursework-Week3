@@ -56,17 +56,28 @@ input{
 nav ul{
   list-style:none;
   display:none;
+  width:80%;
+  background-color: #f1f1f1;
+  box-shadow:  0 8px 16px 0px rgba(0,0,0,0.2);
+  z-index:1;
+  text-align: center;
+}
+ul a:hover{
+  background-color: #ddd;
 }
 nav li{
   text-transform: uppercase;
   display:flex;
   flex-direction:column;
   margin:.5em;
+  border-top: 1px solid #333;
 
 }
 nav a{
   text-decoration: none;
   color: black;
+  padding:1em;
+  display:block;
 
 }
 
@@ -80,6 +91,7 @@ nav a{
 #check:checked ~ ul{
   display:block;
 }
+
 
 /* from a minimum width of 768px and above*/
 @media(min-width:768px){
@@ -107,6 +119,7 @@ nav a{
 
   .logo{
     max-width:80px;
+    margin:.20em;
   }
   .header{
     flex-flow:nowrap;
@@ -115,8 +128,15 @@ nav a{
     background-color: greenyellow;
 
   }
-  nav .nav-bar{
+  nav ul{
     display:flex;
+    text-decoration: ;
+  }
+  nav li {
+    border:none;
+  }
+  nav a{
+    padding:0;
   }
   input,label{
     display:none;
