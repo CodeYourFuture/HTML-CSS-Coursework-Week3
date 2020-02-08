@@ -6,6 +6,7 @@ body{
     grid-template-areas: 
     "header"
     "main"
+    "main2"
     "footer";
 
 }
@@ -92,6 +93,7 @@ a {
     display: none;
 }
 .header1 .menu-btn:checked ~ .menu{
+    background-color: rgb(235, 195, 123);
     max-height: 300px;
     margin-top: 80px;
     margin-right: 5%;
@@ -99,7 +101,7 @@ a {
 }
 
 .header1 .menu-btn:checked ~ .menu-icon .nav-icon{
-    background: transparent;
+    background-color:transparent;
 
 }
 .header1 .menu-btn:checked ~ .menu-icon .nav-icon::before{
@@ -109,6 +111,9 @@ a {
 .header1 .menu-btn:checked ~ .menu-icon .nav-icon:after{
     transform: rotate(-45deg);
     top:0;
+}
+.aside1{
+    color: rgb(83, 7, 83);
 }
 
 .main1{
@@ -123,9 +128,26 @@ a {
     grid-area: footer;
     border:1px solid black;
     background-color: grey;
+    text-align: center;
 }
 .section1{
-    background-image: url(https://source.unsplash.com/1600x900/cake,cake);
+    color: purple;
+    text-align: center;
+}
+.section2{
+    grid-area: main2;
+    float: left;
+}
+.twitter{
+    width: 30px;
+    margin-right: 1em;
+}
+figcaption{
+    text-align: center;
+    text-shadow: saddlebrown;
+}
+p{
+    font-size: medium;
 }
 
 
@@ -166,10 +188,7 @@ a {
     .main1{
         margin-top: 95px;
     }
-    /* .header1{
-        display: grid;
-        grid-template-columns: 50px 1fr 50px;
-        grid-template-areas: "logo space burger";
-        background-color: palegreen;
-    } */
+    #craousel{
+        width: 300px;
+    }
 }
