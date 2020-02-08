@@ -4,23 +4,33 @@ body{
     flex-direction: column;
     margin: 0;
     padding: 0;
+    overflow: hidden;
 }
 
-.Logo{
-    /* background-color:#696f80; */
-}
 .logoup{
     display: flex;
     justify-content: center;
     margin: auto;
-    width: 25%;
+    width: 30%;
+}  
+
+/* cart icon */
+h3{
+    color: #ffffff;
+    float: right;
+    font-size: 16px;
+    padding: 0px 15px 0px 0px;
+
 }
 p{
     display: flex;
     justify-content: center;
-    font-family: 'Bangers', cursive;
-    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
     color:rgb(245, 245, 245);
+    background-color: rgb(17, 18, 19, 0.5);
+    padding: 0px 20px 0px 20px;
 }
 ul li{
     float: left;
@@ -32,7 +42,7 @@ a{
    display: block; 
    text-decoration: none;
    color:white;
-   font-size: 25px;
+   font-size: 22px;
 }
 ul li ul{
     display: none;
@@ -74,7 +84,6 @@ img{
    width: 100px;
     height: 90px;
     display: flex;
-    justify-content: space-between;
 }
 tr{
     color: white;
@@ -103,10 +112,61 @@ tr{
 .facebook{
     text-align: center;
     color:red;
-    font-size: 80px;
+    font-size: 12px;
 }
 hr{
     margin-bottom: 0px;
+}
+
+/* MEDIA QUARIES */
+
+@media (min-width: 768px){
+    .logoup{
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        width: 12%;
+        height: 20%;
+    }
+    h3{
+        color: #ffffff;
+        float: right;
+        font-size: 26px;
+        padding: 0px 15px 0px 0px;
+    
+    }
+    .first-menu{
+        font-size: 30px;
+    }
+    p{
+        display: flex;
+        justify-content: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        line-height: 1.5;
+        color:rgb(245, 245, 245);
+        background-color: rgb(17, 18, 19, 0.5);
+        padding: 0px 20px 0px 20px;
+    } 
+
+    table{
+        margin: 60px 20px 50px 200px;
+    }
+    th{
+        display: flex;
+    }
+   img{
+      width: 350px;
+       height: 250px;
+       
+   }
+   tr{
+       color: white;
+       display: flex;
+       justify-content: center;
+       padding: 20px 0px;
+       font-size: 30px;
+   }
 }
 /* here is thr font type
 font-family: 'Bangers', cursive;
