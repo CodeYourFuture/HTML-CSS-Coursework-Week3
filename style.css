@@ -4,7 +4,7 @@ body{
     margin: 0px;
 }
 
-@media screen and (min-width: 480px){
+@media screen and (min-width: 768px){
     body{
         background-color: black;
     }
@@ -56,7 +56,7 @@ body{
     border-radius: 5px;
 }
 
-@media screen and (min-width: 480px){
+@media screen and (min-width: 768px){
     .navbar .navbarlist{
     display: flex;
     }
@@ -75,7 +75,7 @@ body{
     display: flex;
 }
 
-@media screen and (min-width: 480px){
+@media screen and (min-width: 768px){
     .navbar li{
     display: flex;
     margin: auto;
@@ -90,7 +90,7 @@ body{
     margin: 3px;
 }
 
-@media screen and (min-width: 480px){
+@media screen and (min-width: 768px){
     .boxes{
         display: flex;
 flex-direction: row;
@@ -103,7 +103,7 @@ flex-direction: row;
     flex-direction: column;
 }
 
-@media screen and (min-width: 480px){
+@media screen and (min-width: 768px){
     .box-text {
         width: 40%;
     }
@@ -121,7 +121,7 @@ p.text1 {
     border: 3px solid #04194e;
 }
 
-@media screen and (min-width: 480px){
+@media screen and (min-width: 768px){
     p.text1 {
         height: 60%;
     }
@@ -137,7 +137,7 @@ p.text2 {
     border: 3px solid #04194e;
 }
 
-@media screen and (min-width: 480px){
+@media screen and (min-width: 768px){
     p.text2 {
         height: 40%;
     }
@@ -157,7 +157,7 @@ p.text2 {
     height: 60%;
 }
 
-@media screen and (min-width: 480px){
+@media screen and (min-width: 768px){
     .box-image .main-img {
         height: 20%;
         margin-bottom: 8px;
@@ -207,7 +207,7 @@ p.text2 {
     justify-content: center;
 }
 
-@media screen and (min-width: 480px){
+@media screen and (min-width: 768px){
     .cake-wrapper-row-part {
     flex-wrap: nowrap;
     }
