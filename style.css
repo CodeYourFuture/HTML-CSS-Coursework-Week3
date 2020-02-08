@@ -70,10 +70,10 @@
  /* Break down menu items into vertical */
  .page-nav ul li {
      display: block;
-     border: 1px solid #333;
+     border-top: 1px solid #333;
      width: 100%;
      text-align: center;
-     padding: 20px 0;
+     padding: 20px;
  }
 
  .page-nav ul li a {
@@ -100,7 +100,7 @@
      .page-nav {
          display: flex;
          flex-direction: row;
-         justify-content: space-between;
+         justify-content: space-around;
          align-items: center;
      }
 
@@ -128,11 +128,11 @@
      margin-top: 5rem;
  }
 
-.special-orders-imgs {
-    margin: 0!important;
-}
+ .special-orders-imgs {
+     margin: 0 !important;
+ }
 
-h2 {
+ h2, footer {
      margin-top: 5rem;
  }
 
@@ -143,7 +143,8 @@ h2 {
      padding: 0 4px;
  }
 
- .column img {
+ .column img,
+ .column-info {
      margin-top: 8px;
      vertical-align: middle;
      width: 100%;
@@ -152,18 +153,17 @@ h2 {
  }
 
  .column-info {
-     margin-top: 8px;
-     border: black solid 2px;
-     border-radius: 5px;
      background: url('https://images.unsplash.com/photo-1506368083636-6defb67639a7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60');
      background-repeat: no-repeat;
      background-size: cover;
-     opacity: 0.5;
+     /* opacity: 0.5; */
  }
 
  .column-info h1,
- .column-info h1 p {
+ .column-info p {
      margin: auto;
+     text-align: center;
+     text-shadow: -1px 1px #333;
  }
 
  .special-orders-imgs img {
@@ -173,9 +173,10 @@ h2 {
      border-radius: 10%;
  }
 
- .special-orders-imgs h5 {
+ .special-orders-imgs h4 {
      margin: 0;
  }
+
  /* Responsive layout - makes a two column-layout instead of four columns */
  @media screen and (min-width: 481px) and (max-width: 1024px) {
      html {
@@ -210,8 +211,40 @@ h2 {
 
  }
 
- @media screen and (min-width: 1200px){
-    html {
-        font-size: 2rem;
-    } 
+ @media screen and (min-width: 1200px) {
+     html {
+         font-size: 2rem;
+     }
+ }
+
+/* Footer */
+ .social-media {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     list-style-type: none;
+ }
+
+ .fa {
+     display: flex;
+     width: 2.5rem;
+     height: 2.5rem;
+     text-decoration: none;
+     margin: 0;
+ }
+
+ .fa-twitter {
+     color: #55acee;
+ }
+
+ .fa-facebook {
+     color: #4c66a4;
+ }
+
+ .fa-instagram {
+     color: #3f729b;
+ }
+
+ .copyright {
+     color: #838994;
  }
