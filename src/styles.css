@@ -1,5 +1,10 @@
-body{
+*{
   margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+body{
+  
   font-size:1.125rem;
   font-family: sans-serif;
 }
@@ -25,37 +30,34 @@ img{
 .article-recent{
   display:flex;
   flex-direction:column;
+  
 }
 /* navigation*/
 .header{
-  flex-direction:row;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-
+  display:flex;
+  flex-flow:row wrap;
+  justify-content: space-around;
+  align-items: stretch;
 }
 .logo{
-  width:20%;
-  
+  max-width: 30%;
 }
-
-
-
-
-nav ul{
-  list-style:none;
-
+.check-btn{
+  text-align:right;
+  margin:2em;
+}
+.shop-title{
+  flex:100%;
+  text-align: center;
 }
 input{
-  display:none; s
+  display:none; 
+}
+nav ul{
+  list-style:none;
 }
 
-
-
-
 /* from a minimum width of 768px and above*/
-
-  
 @media(min-width:768px){
   /* layout*/
 
@@ -84,8 +86,9 @@ input{
     max-width:80px;
   }
   .header{
+    flex-flow:nowrap;
     justify-content: space-between;
-    
+    align-items: center;
     background-color: greenyellow;
 
   }
