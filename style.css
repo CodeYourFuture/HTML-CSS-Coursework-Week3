@@ -50,8 +50,11 @@ input:checked ~ ul {
     padding-left: 30%;
 }
 
-.inside { ---
+.information {
     background-color: #c7fff6;
+}
+
+.inside { 
     max-width: fit-content;
 }
 
@@ -61,10 +64,27 @@ h3 {
     padding-left: 30%;
 }
 
-p {
+.display.info {
     font-size: 14px;
 }
 
+.cakes {
+    border: 2px solid white;
+}
+
+.more-desserts {
+    display: block;
+    justify-content: center;
+}
+
+.dessert-image {
+    width: 40%;
+    height: 40%;
+}
+
+p {
+    font-size: 24px;
+}
 footer {
     background-color: #ea8064;
 
@@ -73,5 +93,6 @@ footer {
 .details {
     display: inline-block;
     background-color: #ea8064;
+    font-weight: 100;
 }
 
