@@ -7,8 +7,26 @@ body{
   
   font-size:1.125rem;
   font-family: sans-serif;
+  background-color:thistle;
 }
+/* subtitle */
+h1{
+  text-align:center;
+  margin:.5em;
+}
+h2{
+  text-transform: uppercase;
+  margin:.5em;
+}
+p{
+  padding:.5em;
+  text-indent:2em;
 
+}
+.article-info{
+  text-decoration: none;
+  color:#1792d2;
+}
 /* layout*/
 img{
   max-width: 100%;
@@ -16,15 +34,15 @@ img{
 
 }
 .container{
-  
   width:90%;
-  border: 1px solid blue;
   margin:0 auto;
+  background-color: blanchedalmond;
 }
 .container-flex{
   display:flex;
   flex-direction:column;
   justify-content: center;
+
 }
 
 .article-recent{
@@ -32,12 +50,30 @@ img{
   flex-direction:column;
   
 }
+.foot-nav{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  margin:.5em;
+  
+}
+
+.article-recent img {
+  border:10px solid #efefef;
+  margin:0.2em;
+}
+.aside{
+  text-align:center;
+  margin:0.3em;
+}
+
 /* navigation*/
 .header{
   display:flex;
   flex-flow:row wrap;
   justify-content: space-around;
   align-items: stretch;
+  background-color:#ddd;
 }
 .logo{
   max-width: 30%;
@@ -73,12 +109,11 @@ nav li{
   border-top: 1px solid #333;
 
 }
-nav a{
+a{
   text-decoration: none;
   color: black;
   padding:1em;
   display:block;
-
 }
 
 .check-btn i {
@@ -88,8 +123,21 @@ nav a{
   font-size:.75rem;
   text-transform: uppercase;
 }
+
 #check:checked ~ ul{
   display:block;
+}
+footer ul{
+  list-style: none;
+}
+hr{
+  text-align: center;
+  width:10%;
+  margin:auto;
+}
+footer li{
+  background-color: rgba(0,0,0,0.2);
+  margin:0.5em;
 }
 
 
@@ -103,7 +151,7 @@ nav a{
   
   .article-recent{
     flex-direction:row;
-    flex-wrap: wrap;
+    justify-content:space-around;
   }
   
   .article-recent img{
@@ -111,6 +159,7 @@ nav a{
   }
   main{
     width:70%;
+    border:1px solid wheat;
   }
   aside{
     width: 30%;
@@ -125,7 +174,8 @@ nav a{
     flex-flow:nowrap;
     justify-content: space-between;
     align-items: center;
-    background-color: greenyellow;
+    border-bottom: 1px solid wheat;
+    
 
   }
   nav ul{
@@ -141,4 +191,19 @@ nav a{
   input,label{
     display:none;
   }
+  .hero-cake{
+    flex-flow:row wrap;
+    justify-content: space-between;
+    
+  }
+  .display-cake{
+    flex:100%;
+  }
+  .foot-nav{
+    flex-direction: row;
+  }
+  
+  
+  
+  
 }
