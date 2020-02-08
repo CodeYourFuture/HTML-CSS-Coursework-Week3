@@ -1,60 +1,105 @@
-    <!DOCTYPE html>
-    <html lang="en">
+        <!DOCTYPE html>
+        <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Responsive Cake webpage</title>
-        <link rel="stylesheet" href="css/style.css">
-        <!-- Add a link to your css file here -->
-    </head>
+        <head>
+            <meta charset="UTF-8">
+            <link rel="stylesheet" href="style.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Cake website</title>
+            <meta http-equiv="X-UA-Compatible" content="ie=edge">
+            <title>Responsive Cake webpage</title>
+            
+        
+            <!-- Add a link to your css file here -->
+        </head>
 
-    <body>
-    <main>
-    <!--navigation and logo-->
-        <nav> 
-        <ul><header>pp</header>
-            <li>Home</li>
-            <li>Cakes</li>
-            <li>Ordering</li>
-            <li>Lessons</li>
-            <li>About</li>
-        </ul>
-        <img class="logo" src="img/cake-logo.png" alt="Logo Image" width="20">
-        <input type="submit" value="Contact">
+        <body>
+        <main>
+        <!--navigation and logo-->
+        <nav class="upper-navigation"> 
+            <header><center>Welcome to Sweet cakes!</center></header>
+            <ul>
+                <li>Home</li>
+                <li>Cakes</li>
+                <li>Ordering</li>
+                <li>Lessons</li>
+                <li>About</li>
+            </ul>
+        
         </nav>
-    <!--Hello information and image carousel-->
-        <section class="intro">
-            <h1>Hello</h1>
-            <article>Information</article>
-            <section class="images">
-                <img src="img_snow.jpg" alt="Snow" style="width:100%">
-                <img src="img_forest.jpg" alt="Forest" style="width:100%">
-                <img src="img_mountains.jpg" alt="Mountains" style="width:100%">
-                <img src="img_mountains.jpg" alt="Mountains" style="width:100%">
+        <img class="cakeLogo" src="images/cake-logo.jpg" alt="logo" width="150px" height="150px">
+    
+        <!--Hello information and image carousel-->
+            <article class="intro">
+                <h1>Hello</h1>
+                <p>is simply dummy text of the printing and typesetting industry.</p>
+                <p>is simply dummy text of the printing and typesetting industry.</p>
+                <p>is simply dummy text of the printing and typesetting industry.</p>
+                <p>is simply dummy text of the printing and typesetting industry.</p>
+                
+            </article>
+
+            <section class="carousel">
+                    <!--making the image width 100% to make it responsive-->
+            <ul>
+                    
+                <li>
+                    <div class="carousel-container">
+                        <img src="images/cake.jpg" alt="Snow" style="width:100%">
+                    </div>
+                </li>
+                <li>
+                    <div class="carousel-container">
+                          <img src="images/cake.jpg" alt="Snow" style="width:100%">
+                    </div>
+                </li>
+                 <li>
+                    <div class="carousel-container">
+                        <img src="images/cake.jpg" alt="Snow" style="width:100%">
+                    </div>
+                </li>
+                <li>
+                    <div class="carousel-container">
+                        <img src="images/cake.jpg" alt="Snow" style="width:100%">
+                    </div>
+                </li>
+            </ul>
         </section>
 
-        <!--4 row of images-->
-        <section class="4images">
-            <img src="img/img1.jpg" alt="pic1">
-            <img src="img/img1.jpg" alt="pic1">
-            <img src="img/img1.jpg" alt="pic1">
-            <img src="img/img1.jpg" alt="pic1">
-        </section>
+            <!--4 row of images-->
+            <section class="three">
+                <div>
+                  <h2>Here is a range of our cakes</h2>
+                  <ul class="cake1">
+                    <li>
+                      <img src="image/cake.jpg" alt="cake" width="127" height="127">
+                      <h3>cupcakes</h3>
+                    </li>
+                    <li>
+                      <img src="images/cake.jpg" alt="ccake" width="127" height="127">
+                      <h3>cookie cake</h3>
+                    </li>
+                    <li>
+                      <img src="images/cake.jpg" alt="bcake" width="127" height="127">
+                      <h3>Brownie cake</h3>
+                    </li>
+                  </ul>
+                </div>
+              </section>
 
-        <!--Footer for sitemap etc...-->
-        <footer>
-            <nav>
-                <ul class="footer-nav">
-                <li><a href="#">Sitemap</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Delivery</a></li>
-                </ul>
-            </nav>
-        </footer>
-    </main>
-        <!-- Add your markup here -->
-    </body>
+            <!--Footer for sitemap etc...-->
+            <footer>
+                <nav>
+                    <ul class="footer-nav">
+                    <li><a href="#">Sitemap</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Delivery</a></li>
+                    </ul>
+                </nav>
+            </footer>
+        </main>
+            <!-- Add your markup here -->
+        </body>
 
-    </html>
+        </html>

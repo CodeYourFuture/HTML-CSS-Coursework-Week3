@@ -1,1 +1,179 @@
 /*  Add your styling here */
+@media(max-width: 1024px){
+     
+  .upper-navigation{
+    justify-content: center;
+    font-size: 1.2rem;
+    margin-top: 25px; 
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  .upper-navigation li {
+    display: inline-block;
+    margin-left: 75px;
+  }
+
+
+    
+    
+  
+}
+
+body{
+    background-color: pink;
+}
+
+.upper-navigation {
+    justify-content: space-around;
+    background-color: rgb(217, 236, 252);
+    position: relative;
+    margin: 0 auto;
+    
+  }
+  
+  .upper-navigation {
+    width: 970px;
+    height: 4.375rem;
+    margin: 0 auto;
+    color: #f721da;
+    justify-content: center;
+   
+  }
+  
+  .upper-navigation{
+    justify-content: center;
+    font-size: 1.2rem;
+    margin-top: 25px; 
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  .upper-navigation li {
+    display: inline-block;
+    margin-left: 75px;
+  }
+
+  .cakeLogo{
+    position:absolute;
+    left:0;
+    top:0;
+  }
+
+
+.intro{
+    display: inline-block;
+    margin-left:
+    justify-content: space-between;
+
+}
+
+.carousel, ul{
+    height:300px;
+}
+
+.carousel{
+    position: absolute;
+    width: 600px;
+    margin:auto;
+    overflow: hidden;
+    margin-top: 100px;
+    box-shadow: 10px 10px 15px rgba(0,0,0,0.50);
+    
+}
+
+.carousel li{
+    display: inline-block;
+    height: 300px;
+    float: left;
+    position: relative;
+    width: 600px;
+    
+}
+
+.carousel ul{
+    position: absolute;
+    left: 0;
+    top: -15px;
+    width: 9000px;
+    list-style: none;
+    margin-left: -50px;
+    transition: left .3s linear;
+    animation: slide-animation 15s infinite;
+}
+
+.carousel-container{
+    margin: 0 auto;
+    padding: 0;
+    width: 600px;
+}
+
+.carousel-container img{
+    width: 100%;
+    padding: 0 10px;
+}
+
+.carousel ul{
+    animation: side-animation 15s infinite;
+}
+
+.carousel ul:hover{
+    animation-play-state: paused;
+}
+
+@keyframes slide-animation{
+    20%(left: 0)
+    25%(left: -600px)
+    45%(left: -600px)
+    50%(left: -1200px)
+    70%(left: -1200px)
+    75%(left: -1800px)
+    98%(left: -1800px)
+    100%(left: -1800px)
+
+}
+
+.three {
+    text-align: center;
+  }
+
+  .cake1 > li {
+    width: 33%;
+    box-sizing: border-box;
+    /*
+    height: 4em;
+    */
+    display: inline-block;
+    list-style: none;
+    box-sizing: border-box;
+    margin-left:-5%;
+    margin-right: -5%;
+  }
+
+.footer-nav{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ border-top: 1px solid black;
+ margin-top:30px;
+ padding: 15px;
+ list-style-type: none;
+}
+
+
+@media(max-width: 768px){
+    .cake1{
+      flex-direction: column;
+      display: flex;
+      align-items: center;
+    }
+   div{
+     color:blueviolet;
+
+   }
+
+   .upper-navigation{
+     flex-direction: column;
+     display: inline;
+     margin:0 auto;
+   }
+
+  }
