@@ -5,13 +5,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;lang=en" />
     <title>Responsive Cake webpage</title>
-    <!-- Add a link to your css file here -->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
 </head>
 
 <body>
-    <p>hi guys</p>
-    <!-- Add your markup here -->
+    <header>
+        <nav class="main-navigation">
+          <ul class="menu">
+              <li class="logo">LOGO</li>
+              <li class="menu-item-has-children"><a href="menu.html">
+                <div class="berger-icon"></div>
+                <div class="berger-icon"></div>
+                <div class="berger-icon"></div></a>
+              </li>
+          </ul>
+               <ul class="sub-menu">
+                  <li><a href="#">CAKES</a></li>
+                  <li><a href="#">ORDERING</a></li>
+                  <li><a href="#">LESSONS</a></li>
+                  <li><a href="#">ABOUT</a></li>
+                  <li><a href="#">CONTACT</a></li>
+                </ul>
+              
+          </nav>
+    </header>
+    <main>
+      <section class="include-both-section">
+        <section class="carousel-section">
+          <div class="slider">
+            <div class="slide" id="slide-1">
+              <img src="images/cake1.jpg">
+            </div>
+            <div class="slide" id="slide-2">
+              <img src="images/cake2.jpg">
+            </div>
+            <div class="slide" id="slide-3">
+              <img src="images/cake3.jpg">
+            </div>
+          </div>
+        </section>
+        <section class="hello-section">
+          <h2>HELLO</h2>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore itaque eum, vero animi perferendis, deleniti veniam totam debitis voluptatem voluptas enim dicta, iste distinctio consectetur commodi eos voluptatibus reprehenderit necessitatibus.</p>
+        </section>
+      </section>
+      <section class="picture-section">
+        <div class="picture-text pictureWithText1">
+          <h3>French Cake</h3>
+          <h5>reading poem with nice French cake</h5>
+        </div>
+        <div class="picture-text pictureWithText2">
+          <h3>English Cake</h3>
+          <h5>relax time with nice English cake</h5>
+        </div>
+        <div class="picture-text pictureWithText3">
+          <h3>American cake</h3>
+          <h5>painting dream with nice American cake</h5>
+        </div>
+        <div class="picture-text pictureWithText4">
+          <h3>Rusha cake</h3>
+          <h5>play chees with nice Rusha</h5>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <img src="images/road.svg" alt="road map" width="35px" height="35px">
+      <div>
+        <h5>Contact</h5>
+      </div>
+      <div>
+        <h5>Delivery</h5>
+      </div>
+    </footer>
 </body>
 
 </html>

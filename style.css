@@ -1,1 +1,110 @@
-/*  Add your styling here */
+body{
+  display: flex;
+  flex-direction: column;
+  background-color: darkred;
+}
+*{ 
+    box-sizing:border-box;
+    font-family:"Dosis", sans-serif; 
+  }
+header{
+   display: flex;
+   flex-direction: column;
+   }
+  .menu{
+    display: flex;
+    justify-content:space-between;
+  }
+  .sub-menu {
+    display: none;
+  }
+  .berger-icon {
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+  }
+  .slider {
+     display: flex;
+     overflow: auto;
+    }
+.slide {
+   flex-shrink: 0;
+   }
+   .main-navigation {
+     margin-right: 15px;
+   }
+   .hello-section {
+    display: flex;
+    flex-direction: column;
+   }
+   h2 {
+     text-align: center;
+   }
+   .picture-text {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+   }
+.pictureWithText1 {
+  background: url(images/picText1.jpg);
+}
+.pictureWithText2 {
+  background: url(images/picText2.JPG);
+}
+.pictureWithText3 {
+  background: url(images/picText3.JPG);
+} 
+.pictureWithText4 {
+  background: url(images/picText4.JPG);
+} 
+  div {
+    margin-top: 3px;
+  }
+  h3 {
+    padding: 20px;
+  }
+  footer {
+    
+    margin-top: 3px;
+    background-color: darkkhaki;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  h5 {
+    padding: 20px;
+  }
+  img {
+    padding: 5px;
+  }
+  @media( min-width:369px) {
+    body {
+        background-color: yellow;
+    }
+    .menu-item-has-children {
+      display: none;
+    }
+  .sub-menu {
+    display: flex;
+  }
+  .include-both-section {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .slider {
+    display: flex;
+    overflow: ;
+    
+  }
+  .carousel-section {
+      flex-basis: 2;
+  }
+  img {
+    width: 100%;
+  }
+  .hello-section {
+    flex-wrap: wrap;
+    
+  }
+}
