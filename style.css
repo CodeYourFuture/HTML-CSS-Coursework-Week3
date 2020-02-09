@@ -1,366 +1,379 @@
 /*  Add your styling here */
-@import
-  url('https://fonts.googleapis.com/css?family=Crimson+Text&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text&display=swap');
+
 html,
 body {
-  margin: 0;
-  padding: 0;
-  font-family: handlee, sans-serif;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: handlee, sans-serif;
+    box-sizing: border-box;
 }
 
 /* [ON THE SMALL SCREEN] */
 @media only screen and (max-width: 768px) {
 
     #page-nav-wrap label {
-    color: #fff;
-    background: #ce3535;
-    padding: 10px;
-    font-size: 24px;
-    cursor: pointer;
-  }
-  
-  #page-nav-wrap label,
-  #hamburger {
-     /* Hide the hamburger icon */
-    display: none;
-  } 
-  
-  #page-nav-wrap {
-    background: #fff;
-    
-  }
-  
-  h1{
-    position: absolute;
-    margin: 25px 50px 10px 105px;
-  
-  }
-  
-  #page-nav-wrap h2 {display: none;}
-  
-  #page-nav {
-    display: flex;
-    flex-direction: row;
-  }
-  
-  #page-nav a {
-    color: #fff;
-    padding: 20px;
-    font-size: 22px;
-    text-decoration: none;
-    text-align: center;
-    /* Flex grow and basis will auto adjust the width */
-    /* Remove these if you do not want auto width */
-    flex-grow: 1;
-    flex-basis: 0;
-    /* A little bit of CSS animation magic */
-    transition: all ease 0.3s;
-  }
-  
-  #page-nav a:hover {
-    background: #9b2222;
-  }
-  
-    /* Show hamburger icon */
-    #page-nav-wrap label {
-      display: inline-block;
-    }
-  
-    /* Collapse menu */
-    #page-nav {
-      flex-direction: column;
-      align-items: flex-start;
-      /*align-content: flex-start;*/
-      justify-content: flex-start;
-      overflow: hidden;
-      
-    }
-  
-    /* Show/hide menu on checkbox click */
-    #page-nav {
-      display: none;
-    }
-  
-  #page-nav a{
-    
-    border-top: 4px double tomato
-    ;
-    width: 100%;
-    
-    
-    
-  }
-    #page-nav-wrap input:checked~#page-nav {
-      display: flex;
-    }
-  
-    .intro {
-    background-color: oldlace;
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
-    border: 2px solid brown;
-  
-  
-  }
-  .gap {
-    
-    margin-top: -13px;
-  }
-  
-  .image-carosoule {
-    width: 100%;
-    height: 50vh;
-    background-color: lightgoldenrodyellow;
-  
-  }
-  
-  .colour {
-    display: flex;
-    justify-content: space-around;
-  }
-  
-  .col {
-    width: 25vw;
-    height: 90px;
-  }
-  
-  .red {
-    background-color: firebrick;
-  }
-  
-  .green {
-    background-color: greenyellow;
-  }
-  
-  .blue {
-    background-color: dodgerblue;
-  }
-  
-  .alpha {
-    background-color: lavender;
-  }
-  .feature-cakes {
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    width: 100%;
-    height: 150vh;
-    justify-content:space-between;
-    /*overflow-x: hidden;*/
-    /*margin-right: auto;*/
-    /*border: 3px dotted mediumspringgreen;*/
-    margin-top: 5px;
-    font-family: 'Bangers', cursive;
-    font-size: 2rem;
-  
-  }
-  
-  .cakes {
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    justify-content: space-between;
-    border: 3px double darkblue;
-    flex-basis: 50vw;
-    width: 80vw;
-    text-transform: uppercase;
-    background-color: honeydew;
-  
-  }
-  
-  .cakes button {
-    margin: 5px auto;
-    padding: 5px;
-    font-family: 'Crimson Text', serif;
-    font-size: 1.2rem;
-  }
-  
-  .footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    background-color: powderblue;
-    width: 100%;
-    height: 50vh;
-    margin-top: 5px;
-  }
-  
-  .footer a, #page-nav a {
-    color: #fff;
-    padding: 10px;
-    font-size: 1rem;
-    text-decoration: none;
-    text-align: center;
-    background-color: dimgray;
-    text-transform: uppercase;
-  
-  }
-  
-  
-  }
-/* [ON THE BIG SCREEN] */
-
-@media only screen and (min-width: 768px) {
-        
-    /* NAVIGATION BAR */
-    #page-nav-wrap {
-      /*background: #fff;*/
-      color: #9b2222;
-      display: flex;
-      flex-direction: column;
-      flex-basis: 3vw;
-      
-    }
-    
-    h1{
-      /*position: absolute;
-      margin: 25px 50px 10px 105px;
-      border: 3px double greenyellow;*/
-      align-self: flex-start;
-      font-size: 2rem;
-      margin-bottom: 0px;
-      margin-top: 0px;
-      background-color: darkgray;
-      
-    }
-    
-    #page-nav-wrap h2 {
-      align-self: flex-end;
-      margin-top: 0px;
-      padding: 0px 150px 0px 0px;
-      background-color: silver;
-     
+        color: #fff;
+        background: #ce3535;
+        padding: 10px;
+        font-size: 24px;
+        cursor: pointer;
     }
 
     #page-nav-wrap label,
-  #hamburger {
-     /*Hide the hamburger icon */
-    display: none;
-  }
-    
+    #hamburger {
+        /* Hide the hamburger icon */
+        display: none;
+    }
+
+    #page-nav-wrap {
+        background: #fff;
+
+    }
+
+    h1 {
+        position: absolute;
+        margin: 25px 50px 10px 105px;
+
+    }
+
+    #page-nav-wrap h2 {
+        display: none;
+    }
+
     #page-nav {
-      display: flex;
-      flex-direction: row;
+        display: flex;
+        flex-direction: row;
     }
-    
+
     #page-nav a {
-      color: #fff;
-      padding: 10px;
-      font-size: 1.5rem;
-      text-decoration: none;
-      text-align: center;
-      /*border-top: 2px dotted tomato;*/
-      color: black;
-      /* Flex grow and basis will auto adjust the width */
-      /* Remove these if you do not want auto width */
-      flex-grow: 1;
-      flex-basis: 0;
-      /* A little bit of CSS animation magic */
-      transition: all ease 0.3s;
-      font-family: 'Courgette', cursive;
+        color: #fff;
+        padding: 20px;
+        font-size: 22px;
+        text-decoration: none;
+        text-align: center;
+        /* Flex grow and basis will auto adjust the width */
+        /* Remove these if you do not want auto width */
+        flex-grow: 1;
+        flex-basis: 0;
+        /* A little bit of CSS animation magic */
+        transition: all ease 0.3s;
     }
-    
+
     #page-nav a:hover {
-      background: skyblue;
+        background: #9b2222;
     }
-    
+
+    /* Show hamburger icon */
+    #page-nav-wrap label {
+        display: inline-block;
+    }
+
+    /* Collapse menu */
+    #page-nav {
+        flex-direction: column;
+        align-items: flex-start;
+        /*align-content: flex-start;*/
+        justify-content: flex-start;
+        overflow: hidden;
+
+    }
+
+    /* Show/hide menu on checkbox click */
+    #page-nav {
+        display: none;
+    }
+
+    #page-nav a {
+
+        border-top: 4px double tomato;
+        width: 100%;
+
+
+
+    }
+
+    #page-nav-wrap input:checked~#page-nav {
+        display: flex;
+    }
+
+    .intro {
+        background-color: oldlace;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid brown;
+
+
+    }
+
+    .gap {
+
+        margin-top: -13px;
+    }
+
+    .image-carosoule {
+        width: 100%;
+        height: 50vh;
+        background-color: lightgoldenrodyellow;
+
+    }
+
+    .colour {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .col {
+        width: 25vw;
+        height: 90px;
+    }
+
+    .red {
+        background-color: firebrick;
+    }
+
+    .green {
+        background-color: greenyellow;
+    }
+
+    .blue {
+        background-color: dodgerblue;
+    }
+
+    .alpha {
+        background-color: lavender;
+    }
+
+    .feature-cakes {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        width: 100%;
+        height: 150vh;
+        justify-content: space-between;
+        /*overflow-x: hidden;*/
+        /*margin-right: auto;*/
+        /*border: 3px dotted mediumspringgreen;*/
+        margin-top: 5px;
+        font-family: 'Bangers', cursive;
+        font-size: 2rem;
+
+    }
+
+    .cakes {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: space-between;
+        border: 3px double darkblue;
+        flex-basis: 50vw;
+        width: 80vw;
+        text-transform: uppercase;
+        background-color: honeydew;
+
+    }
+
+    .cakes button {
+        margin: 5px auto;
+        padding: 5px;
+        font-family: 'Crimson Text', serif;
+        font-size: 1.2rem;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        background-color: powderblue;
+        width: 100%;
+        height: 50vh;
+        margin-top: 5px;
+    }
+
+    .footer a,
+    #page-nav a {
+        color: #fff;
+        padding: 10px;
+        font-size: 1rem;
+        text-decoration: none;
+        text-align: center;
+        background-color: dimgray;
+        text-transform: uppercase;
+
+    }
+
+
+}
+
+/* [ON THE BIG SCREEN] */
+
+@media only screen and (min-width: 768px) {
+
+    /* NAVIGATION BAR */
+    #page-nav-wrap {
+        /*background: #fff;*/
+        color: #9b2222;
+        display: flex;
+        flex-direction: column;
+        flex-basis: 3vw;
+
+    }
+
+    h1 {
+        /*position: absolute;
+      margin: 25px 50px 10px 105px;
+      border: 3px double greenyellow;*/
+        align-self: flex-start;
+        font-size: 2rem;
+        margin-bottom: 0px;
+        margin-top: 0px;
+        background-color: darkgray;
+
+    }
+
+    #page-nav-wrap h2 {
+        align-self: flex-end;
+        margin-top: 0px;
+        padding: 0px 150px 0px 0px;
+        background-color: silver;
+
+    }
+
+    #page-nav-wrap label,
+    #hamburger {
+        /*Hide the hamburger icon */
+        display: none;
+    }
+
+    #page-nav {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #page-nav a {
+        color: #fff;
+        padding: 10px;
+        font-size: 1.5rem;
+        text-decoration: none;
+        text-align: center;
+        /*border-top: 2px dotted tomato;*/
+        color: black;
+        /* Flex grow and basis will auto adjust the width */
+        /* Remove these if you do not want auto width */
+        flex-grow: 1;
+        flex-basis: 0;
+        /* A little bit of CSS animation magic */
+        transition: all ease 0.3s;
+        font-family: 'Courgette', cursive;
+    }
+
+    #page-nav a:hover {
+        background: skyblue;
+    }
+
     .two-columns {
-      display: flex;
-      /*justify-content: space-between;*/
-      flex-grow: 1;
-      font-family: 'Bangers', cursive;
-    
+        display: flex;
+        /*justify-content: space-between;*/
+        flex-grow: 1;
+        font-family: 'Bangers', cursive;
+
     }
-    .intro, .gap {
-      /*width: 40vw;*/
-      height: 80vh;
-      background-color: gray;
-      /*flex-grow: 1;*/
-      /*border-left: 4px double tomato;*/
+
+    .intro,
+    .gap {
+        /*width: 40vw;*/
+        height: 80vh;
+        background-color: gray;
+        /*flex-grow: 1;*/
+        /*border-left: 4px double tomato;*/
     }
-    
-    .intro {flex-basis: 30vw; background-color: lightgray;}
+
+    .intro {
+        flex-basis: 30vw;
+        background-color: lightgray;
+    }
+
     .gap {
         flex-basis: 70vw;
         display: flex;
         flex-flow: column wrap;
-      }
-    
-     .image-carosoule {
-      /*border: 2px dashed magenta;*/
-      flex-basis: 60vh;
-     }
-    
+    }
+
+    .image-carosoule {
+        /*border: 2px dashed magenta;*/
+        flex-basis: 60vh;
+    }
+
     .colour {
-      display: flex;
-      /*justify-content: space-between;*/
-      align-self: flex-end;
+        display: flex;
+        /*justify-content: space-between;*/
+        align-self: flex-end;
     }
-    
+
     .col {
-      width: 15vw;
-      height: 15vh;
-      /*border: 2px dashed blue;*/
-      margin: 4px 10px;
-      text-align: center;
-      font-size: 3rem;
-      background-color: lightgray;
+        width: 15vw;
+        height: 15vh;
+        /*border: 2px dashed blue;*/
+        margin: 4px 10px;
+        text-align: center;
+        font-size: 3rem;
+        background-color: lightgray;
     }
-    
+
     .feature-cakes {
-      display: flex;
-      flex-flow: row;
-      width: 100%;
-      height: 30vh;
-      justify-content:space-between;
-      /*overflow-x: hidden;*/
-      margin-right: auto;
-      /*border: 3px dotted mediumspringgreen;*/
-      font-family: 'Lobster', cursive;
-    
+        display: flex;
+        flex-flow: row;
+        width: 100%;
+        height: 30vh;
+        justify-content: space-between;
+        /*overflow-x: hidden;*/
+        margin-right: auto;
+        /*border: 3px dotted mediumspringgreen;*/
+        font-family: 'Lobster', cursive;
+
     }
-    
+
     .cakes {
-      display: flex;
-      flex-flow: column;
-      align-items: center;
-      justify-content: space-between;
-     /* border: 3px double darkblue;*/
-      flex-basis: 20vw;
-      text-transform: uppercase;
-      background-color: lightslategray;
-    
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: space-between;
+        /* border: 3px double darkblue;*/
+        flex-basis: 20vw;
+        text-transform: uppercase;
+        background-color: lightslategray;
+
     }
-    
+
     .cakes button {
-      margin: 8px auto;
-      padding: 7px;
-      font-family: 'Crimson Text', serif;
-      font-size: 1.2rem;
+        margin: 8px auto;
+        padding: 7px;
+        font-family: 'Crimson Text', serif;
+        font-size: 1.2rem;
     }
-    
+
     .footer {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background-color: gainsboro;
-      width: 100%;
-      height: 15vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: gainsboro;
+        width: 100%;
+        height: 15vh;
     }
-    
-    .footer a, #page-nav a {
-      color: #fff;
-      padding: 10px;
-      font-size: 1.5rem;
-      text-decoration: none;
-      text-align: center;
-      background-color: dimgray;
-      text-transform: uppercase;
-    
+
+    .footer a,
+    #page-nav a {
+        color: #fff;
+        padding: 10px;
+        font-size: 1.5rem;
+        text-decoration: none;
+        text-align: center;
+        background-color: dimgray;
+        text-transform: uppercase;
+
     }
-    
+
 }
