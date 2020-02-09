@@ -213,5 +213,6 @@ hr{
         }
         
 }
-/*
-    */
+    *{
+        border: solid red 1px;
+    }
