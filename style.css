@@ -25,23 +25,40 @@ h1, h3 {
     text-align: center;
 }
 
-/* Navigation styles */
+/* Header styles */
+
+.top-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 #header-image {
     height: 150px;
     width: 150px;
-    display: block;
-    margin: 0 auto;
+    padding: 20px;
+}
+
+button {
+    color: rgb(200, 144, 233);
+    font-size: larger;
+    border-color: rgb(252, 251, 253);
+    border-radius: 20px;
+    border-width: medium;
+    width: 125px;
+    height: 50px;
 }
 
 .navigation li {
+    padding-top: 25px;
     padding-right: 50px;
+    font-size: large;
 }
 
 /* About section styles */
 
 .about {
-    padding: 100px;
+    padding: 75px;
 }
 
 /* Example cake styles */
@@ -61,9 +78,21 @@ h1, h3 {
 /* Footer styles */
 
 .footer {
-    padding: 100px;
+    padding: 75px;
 }
 
 .footer li {
     padding-right: 50px;
+    font-size: large;
 }
+
+
+/* Things to do :
+
+1. Find a way to resize cake images so they're the same size
+
+2. Add media queries for larger screens
+
+3. Add a background
+
+4. Attempt a hamburger menu /*
