@@ -1,1 +1,134 @@
-/*  Add your styling here */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+header,
+footer {
+  padding: 5px;
+}
+h2 {
+  text-align: center;
+}
+body {
+  background-image: linear-gradient(260deg, #2376ae 0%, #c16ecf 100%);
+}
+
+.navbar {
+  font-size: 18px;
+  background-image: linear-gradient(260deg, #2376ae 0%, #c16ecf 100%);
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding-bottom: 10px;
+}
+
+.main-nav {
+  list-style-type: none;
+}
+
+.nav-links {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.main-nav li {
+  text-align: center;
+  margin: 15px auto;
+}
+.page_title {
+  text-align: center;
+  align-items: stretch;
+  align-content: center;
+}
+.story-text {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.featured_products {
+  display: flex;
+  align-items: stretch;
+  align-content: center;
+  flex-direction: column;
+}
+.cake-images {
+  display: flex;
+  align-items: strech;
+  align-content: center;
+  flex-direction: column;
+  margin: 10px;
+}
+
+.featured_products_text {
+  color: beige;
+  text-align: center;
+  padding: 2px;
+}
+.featured_products_button {
+  background-color: #c16ecf;
+  color: black;
+  font-size: 16px;
+  padding: 10px 14px;
+  border: none;
+  border-radius: 4px;
+  text-align: center;
+}
+.header_block {
+  display: flex;
+  align-items: stretch;
+
+  align-content: stretch;
+}
+
+.footer-gift-text {
+  padding: 5px;
+}
+
+@media screen and (min-width: 768px) {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0;
+    height: 70px;
+    align-items: center;
+  }
+  .main-nav {
+    display: flex;
+    margin-right: 30px;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  .featured-products_text {
+    color: beige;
+    text-align: center;
+    padding: 2px;
+  }
+  .featured_products {
+    display: flex;
+    align-items: center;
+    align-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  .footer-main-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  .main-nav li {
+    margin: 0;
+  }
+  .nav-links {
+    margin-left: 140px;
+  }
+
+  .footer-gift-text {
+    margin-top: 10px;
+    text-align: center;
+    padding: 2px;
+  }
+}
