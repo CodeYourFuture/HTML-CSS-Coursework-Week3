@@ -7,8 +7,8 @@
 .logo_image{
     display: flex;
     justify-content: center;
+    background: url("images/cake-logo.jpg");
     height: 200px;
-    background: url("images/Mynavbarimage.jpeg");
     background-position: center;
 }
 .nav_bar{
@@ -23,15 +23,16 @@
     top: 100px;
     padding: 30px;
     font-size: 30px;
+    color: black;
     height: 200px;
     border-radius:10px;
     border:4px double plum;
     text-decoration: none;
+    background: url("images/bar-background.jpg");
 
 }
 body{
     background: url("images/wallpaper.jpg");
-    text-decoration: none;
 }
 
 a:hover{
@@ -65,7 +66,7 @@ a:hover{
 }
 .cakes{
     display: block;
-    box-sizing: border-box;
+    /*box-sizing: border-box;*/
 }
 .style_cake{
     height: 300px;
@@ -81,22 +82,40 @@ color: rgb(206, 23, 23);
 padding-left: 150px;
 text-decoration: none;
 }
-
-.footer{
-    background-color: pink;
-
+.footer_p{
+    display: block;
+    text-align: center;
+    font-family: 'Courgette', cursive;
+    font-size: 20px;
+    margin-top: 0;
 }
-
+.footer{
+    background-color:pink;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.ellie_footer{
+    position: absolute;
+    width: 90px;
+    height:60px;
+    float: left;
+    
+}
+/*
+.footer_social{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+}
+*/
 @media(max-width: 768px){
     .mainMenu{
         display: none;
     }
-    .nav_bar{
-        background: 
-    }
+
     .mainMenu.toggleClasses{
         display: block;
-
     }
     
 }
@@ -114,9 +133,9 @@ text-decoration: none;
         height: 60px;
         list-style: none;
         border: 2px solid white;
-        background:url("images/bar-background.jpg");
     }
-    .logo_image{
+    
+    .logo_image{   
         display: flex;
         flex-direction:row;
     }
