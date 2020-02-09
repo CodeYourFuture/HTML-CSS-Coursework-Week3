@@ -183,6 +183,7 @@ body {
         font-family: 'Crimson Text', serif;
         font-size: 1.2rem;
         background-color:plum;
+        border-radius: 4px;
     }
 
     .footer {
