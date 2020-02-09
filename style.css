@@ -1,1 +1,27 @@
 /*  Add your styling here */
+body {
+    background: #eee;
+}
+
+
+.gray-1 {
+    background: rgb(185, 185, 185);
+    border: solid black 1px;
+}
+
+.gray-2 {
+    background: rgb(153, 153, 153);
+    border: solid black 1px;
+}
+
+
+.gray-3 {
+    background: rgb(94, 94, 94);
+    border: solid black 1px;
+}
+
+.white {
+    color: white;
+}
+
+
