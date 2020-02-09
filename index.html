@@ -6,11 +6,166 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Responsive Cake webpage</title>
+    <link rel="shortcut icon" type="image/x-icon" href="">
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400,700" rel="stylesheet">
     <!-- Add a link to your css file here -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </head>
 
 <body>
-    <!-- Add your markup here -->
+
+    <!------------------------LOGO & NAV SECTION ------------------->
+
+    <section id="logo-nav-section">
+        <div class="container">
+            <header>
+                <img class="logo" src="images/fresh-cakes-logo.png" alt="Fresh Cakes">
+                <a href="#" class="button">Contact</a>
+                <nav id="main-menu">
+                    <ul>
+                        <li class="active"><a href="#">Home</a></li>
+                        <li><a href="#">Cakes</a></li>
+                        <li><a href="#">Ordering</a></li>
+                        <li><a href="#">Lessons</a></li>
+                        <li><a href="#">About</a></li>
+                    </ul>
+                </nav>
+
+                <a href="#" id="burgar-icon" onclick="toggleMenu();" style="display: none;">
+                    <i class="fas fa-bars"></i>
+                </a>
+
+            </header>
+
+
+        </div>
+    </section>
+
+
+    <!------------------------ CAROUSEL SECTION ------------------->
+
+    <section id="Carousel-section">
+        <div class="container">
+            <div class="image-two">
+                <img src="images/david-holifield-kPxsqUGneXQ-unsplash.jpg" alt="">
+            </div>
+            <div class="cakes-img">
+                <div class="img2">
+
+                    <div class="image1of4">
+                        <img src="images/alina-karpenko-IAYQuCqD00g-unsplash.jpg" alt="">
+                    </div>
+                </div>
+
+                <div class="img2">
+
+                    <div class="image1of4">
+                        <img src="images/brooke-lark-V4MBq8kue3U-unsplash.jpg" alt="">
+                    </div>
+                </div>
+
+                <div class="img2">
+
+                    <div class="image1of4">
+                        <img src="images/calum-lewis-rkT_TG5NKF8-unsplash.jpg" alt="">
+                    </div>
+                </div>
+
+                <div class="img2">
+
+                    <div class="image1of4">
+                        <img src="images/christiann-koepke-AigxB1zfRVo-unsplash.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="info-text">
+            <h1>Welcome to Fresh Cakes</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+        </div>
+
+    </section>
+
+    <!------------------------ PHOTO SECTION ------------------->
+
+    <section id="photo-section">
+        <div class="container">
+            <div class="fresh-cakes-title">
+                <h2>Fresh Cakes</h2>
+            </div>
+
+            <div class="cakes-img">
+                <div class="img1">
+
+                    <div class="image1of4">
+                        <img src="images/alina-karpenko-IAYQuCqD00g-unsplash.jpg" alt="">
+                    </div>
+                </div>
+
+                <div class="img1">
+
+                    <div class="image1of4">
+                        <img src="images/brooke-lark-V4MBq8kue3U-unsplash.jpg" alt="">
+                    </div>
+                </div>
+
+                <div class="img1">
+
+                    <div class="image1of4">
+                        <img src="images/calum-lewis-rkT_TG5NKF8-unsplash.jpg" alt="">
+                    </div>
+                </div>
+
+                <div class="img1">
+
+                    <div class="image1of4">
+                        <img src="images/christiann-koepke-AigxB1zfRVo-unsplash.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!------------------------   FOOTER SECTION ------------------->
+
+    <footer>
+        <div class="footer-list">
+            <ul>
+                <li><a href="#">Site Map</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Delivery</a></li>
+                <li><a href="#">Site Map</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Delivery</a></li>
+                <li><a href="#">Site Map</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Delivery</a></li>
+                <li><a href="#">Site Map</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Delivery</a></li>
+                <li><a href="#">Site Map</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Delivery</a></li>
+            </ul>
+        </div>
+
+    </footer>
+    <script>
+        function toggleMenu() {
+            var x = document.getElementById("main-menu");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
 </body>
 
 </html>
