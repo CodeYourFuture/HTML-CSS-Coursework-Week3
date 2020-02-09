@@ -47,7 +47,7 @@ footer {
 
 @media (min-width: 500px) {
   .gray-1 {
-    background: rgb(250, 159, 159);
+    background: rgb(255, 0, 0);
     border: solid black 1px;
   }
 
