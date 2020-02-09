@@ -243,6 +243,9 @@
  }
 
  /* Footer */
+ footer {
+     padding-inline-start: 0px;
+ }
  .foot-nav {
      display: flex;
      flex-direction: column;
@@ -250,6 +253,8 @@
      align-items: center;
      list-style-type: none;
      max-width: 100%;
+     padding-inline-start: 0px;
+
  }
 
  .foot-nav li a {
