@@ -40,7 +40,52 @@ nav {
   justify-content: space-evenly;
 }
 
-footer{
+footer {
+  display: flex;
+  justify-content: space-around;
+}
+
+@media (min-width: 500px) {
+  .gray-1 {
+    background: rgb(250, 159, 159);
+    border: solid black 1px;
+  }
+
+  .gray-2 {
+    background: rgb(156, 102, 102);
+    border: solid black 1px;
     display: flex;
-    justify-content: space-around;
+    height: 30vh;
+    justify-content: space-evenly;
+  }
+
+  .gray-3 {
+    background: rgb(105, 67, 67);
+    border: solid black 1px;
+  }
+
+  #header {
+    background: rgb(158, 245, 118);
+  }
+  .flex-1 {
+    display: flex;
+    justify-content: space-between;
+    width: 80vw;
+    padding: 1rem 2rem;
+  }
+
+  nav {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .black {
+    background: black;
+    margin-right: 1rem;
+  }
+
+  footer {
+    display: flex;
+    justify-content: flex-start;
+  }
 }
