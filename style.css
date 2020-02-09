@@ -1,27 +1,36 @@
 /*  Add your styling here */
 body {
-    background: #eee;
+  background: #eee;
 }
 
-
+#header {
+    background: rgb(253, 232, 232);
+}
 .gray-1 {
-    background: rgb(185, 185, 185);
-    border: solid black 1px;
+  background: rgb(185, 185, 185);
+  border: solid black 1px;
 }
 
 .gray-2 {
-    background: rgb(153, 153, 153);
-    border: solid black 1px;
+  background: rgb(153, 153, 153);
+  border: solid black 1px;
 }
 
-
 .gray-3 {
-    background: rgb(94, 94, 94);
-    border: solid black 1px;
+  background: rgb(94, 94, 94);
+  border: solid black 1px;
 }
 
 .white {
-    color: white;
+  color: white;
 }
 
+.black {
+    background: black;
+}
 
+.flex-1 {
+  display: flex;
+  justify-content: space-around;
+  width: 90vw;
+}
