@@ -119,3 +119,34 @@ ul{
 footer{
     background-color: red;
 }
+
+@media (min-width: 500px) {
+
+    .logo{
+        background-color: black;
+        color: hotpink;
+    }
+
+    .slidecontainercake{
+        display: flex;
+        align-items: stretch;
+
+    }
+
+    nav{
+        background-color: black ;
+    }
+
+    .navbar li{
+        color: black;
+        border-color: black;
+        border: solid;
+    }
+
+  .hello{
+      color: white;
+   position: absolute;
+   bottom: 8px;
+   right: 16px;
+  }
+}
