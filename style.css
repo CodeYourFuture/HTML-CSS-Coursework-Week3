@@ -1,3 +1,4 @@
+/* for Desktop */ 
 * {
 	margin: 0;
 	padding: 0;
@@ -6,65 +7,110 @@
 
 body {
 	font-family: 'Lato', sans-serif;
-  background-color: #eee;
+  background-color:rgb(231, 226, 226);
 }
 #page-wrapper {
 	position: relative;
 }
 li {
-	list-style: none;
+  float: left;
 }
-a {
-	color: Black;
-	text-decoration: none;
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 10px 10px;
+  text-decoration: none;
+}
+li a:hover {
+  background-color: #111;
 }
 .container {
 	max-width: 59vw;
 	width: 100%;
 	margin: 0 auto;
 }
+
 header {
-	padding: 10px 10px;
 	position: fixed;
 	top: 0;
 	left: 0;
-	right: 0;
+  right: 0;
 	z-index: 100;
 	min-height: -100px;
 	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	background-color: #d6dbdf;
-    border-bottom: 1px solid #ddd;
+	justify-content: space-between;
+  align-items: flex-start;
+  background-color: #212121;
+  border-bottom: 5px solid #777;
 }
-nav {
+
+nav{
     font-weight: 400;
   }
   
-  nav>ul {
-      width: 35vw;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
   }
-.btn {
-	padding: 0 10px;
-	height: 32px;
-	font-size: Arial;
-	font-weight: 800;
-	text-transform: uppercase;
-	border: 2px black solid;
-	border-radius: 3px;
-	background: transparent;
-	cursor: pointer;
-	background-color: #d6dbdf;
-}
+
 .grid {
   display: flex;
 }
 
 
-/* start albom image */
+/* information*/
+.part{
+  padding: 10px auto;
+  border: 2px solid #ccc;
+}
+.part h2{
+  border: 1px solid #ccc;
+  margin-left: 2mm;
+  margin-top: 20mm;
+  color: rgb(27, 20, 20);
+  font-size: 1cm;
+  font-weight: 40;
+}
+.part h3{
+  margin-left: 2mm;
+  margin-top: 5mm;
+  color: black;
+  font-size: 7mm;
+  font-weight: 40;
+}
+.part h4 {
+  margin-left: 4mm;
+  color: black;
+  font-size: 5mm;
+  font-weight: 20;
+ 
+}
+.btn {
+	padding: 0 10px;
+	height: 32px;
+	font-weight: 800;
+	text-transform: uppercase;
+	border: 2px black solid;
+	border-radius: 2px;
+	background: transparent;
+	cursor: pointer;
+  background-color: #d6dbdf;
+  justify-content: center;
+  margin-top: 3mm;
+  margin-bottom:3mm;
+}
+/*  image */
+.show{
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+}
+
+
 /* Gallery image */
 
 div.gallery {
@@ -87,7 +133,7 @@ div.gallery {
     padding: 15px;
     text-align: center;
   }
-/* foter */
+
 /* FOOTER */
 
 .footer{
@@ -138,4 +184,18 @@ div.gallery {
     font-size: 0.9rem;
     font-weight: 300;
     color: #a0c5ab;
+}
+
+
+/* Mobile */
+
+@media screen and (max-width: 40em) {
+  /* #menu is the original menu */
+  .js #menu {
+      display:none;
+  }
+
+  .js .slicknav_menu {
+      display:block;
+  }
 }

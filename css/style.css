@@ -1,3 +1,4 @@
+/* for Iphone X  375 * 812 */ 
 * {
 	margin: 0;
 	padding: 0;
@@ -6,46 +7,55 @@
 
 body {
 	font-family: 'Lato', sans-serif;
-  background-color: #eee;
+  background-color:rgb(231, 226, 226);
 }
 #page-wrapper {
 	position: relative;
 }
 li {
-	list-style: none;
+  float: left;
+  
 }
-a {
-	color: Black;
-	text-decoration: none;
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 30px;
+  text-decoration: none;
+}
+li a:hover {
+  background-color: #111;
 }
 .container {
 	max-width: 59vw;
 	width: 100%;
 	margin: 0 auto;
 }
+
 header {
-	padding: 10px 10px;
 	position: fixed;
 	top: 0;
 	left: 0;
-	right: 0;
-	z-index: 100;
+  right: 0;
 	min-height: -100px;
 	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	background-color: #d6dbdf;
-  border-bottom: 1px solid #ddd;
+	justify-content: space-between;
+  align-items: flex-start;
+  background-color: #212121fb;
+  border-bottom: 5px solid #777;
 }
-nav {
+
+nav{
     font-weight: 400;
   }
   
-  nav>ul {
-      width: 35vw;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+  background-color: #212121fb;
   }
 
 .grid {
@@ -55,15 +65,17 @@ nav {
 
 /* information*/
 .part{
+  padding: 10px auto;
   border: 2px solid #ccc;
 }
 .part h2{
   border: 1px solid #ccc;
   margin-left: 2mm;
-  margin-top: 15mm;
+  margin-top: 20mm;
   color: rgb(27, 20, 20);
   font-size: 1cm;
   font-weight: 40;
+  font-style: initial;
 }
 .part h3{
   margin-left: 2mm;
@@ -71,40 +83,75 @@ nav {
   color: black;
   font-size: 7mm;
   font-weight: 40;
+  font-style: initial;
 }
-.part h4 {
+h4 {
+  margin-top: 4mm;
   margin-left: 4mm;
   color: black;
   font-size: 5mm;
   font-weight: 20;
- 
+  font-style: italic;
 }
 .btn {
+  margin-left: 2mm;
 	padding: 0 10px;
 	height: 32px;
 	font-weight: 800;
 	text-transform: uppercase;
 	border: 2px black solid;
-	border-radius: 3px;
+	border-radius: 2px;
 	background: transparent;
 	cursor: pointer;
   background-color: #d6dbdf;
   justify-content: center;
+  margin-top: 3mm;
+  margin-bottom:3mm;
+  margin-bottom: 4mm;
 }
-/*  image */
+
+#show {
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  align-content: center;
+  width: 100%;
+  height: 400px;
+  background-size: cover;
+}
+#show #image-main{
+  max-width: 100%;
+  border: 5px solid black;
+  
+}
+#show i {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: absolute;
+  top: 0;
+}
+
+#show i, #show a {
+  height: 44px;
+  display: block;
+}
+
 
 
 /* Gallery image */
 
 div.gallery {
-    margin: 5px;
+  margin-top: 50mm;
+  margin: 5px;
     border: 1px solid #ccc;
     float: left;
     width: 180px;
   }
   
   div.gallery:hover {
-    border: 1px solid #777;
+    border: 2px solid #777;
   }
   
   div.gallery img {
@@ -120,17 +167,16 @@ div.gallery {
 /* FOOTER */
 
 .footer{
-    width: 60vw;
-    margin: 15vh auto 0 auto;
-    height: 255px;
-   
-    border-top: 1px solid #DDD;
+    width: 100%;
+    margin: 10vh 0 auto auto;
+    height:10px;
+    background-color: rgb(207, 206, 206);
 }
 .footer__title{
     text-align: center;
     font-size: 16px;
     color: #000;
-    margin-top: 20px;
+    margin-top: 1px;
 }
 .footer__links{
     width: 60vw;
@@ -155,9 +201,6 @@ div.gallery {
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    padding: 10px;
-    margin: 10px;
-    border: 1px sol
 }
 .footer__icon:hover{
     cursor: pointer;
@@ -165,6 +208,66 @@ div.gallery {
 .footer__text{
     text-align: center;
     font-size: 0.9rem;
-    font-weight: 300;
-    color: #a0c5ab;
+    font-weight: 50;
+    color: #202522;
+}
+
+
+/* desktop */
+
+@media (max-width: 1024px){
+	body {
+		background-color: rgb(230, 243, 243);
+	}
+  }
+/* mobile */
+@media (max-width: 768px){
+body {
+  background-color:#ccdad0;
+}
+.hide-mobile {
+  display: none;
+}
+header{
+  z-index: 100;
+}
+.nav a {
+  font-size: 0.75em;
+}
+.show {
+  background-position: -600px 20px;
+}
+.part h2 {
+  font-size: 2em;
+  font-weight: 50;
+}
+.h4 {
+  font-size: 1em;
+  font-weight: 40;
+}
+.part h3 {
+  font-size: 1.5em;
+  font-weight: 50;
+}
+div.gallery {
+  flex-direction: column;
+  align-items: center;
+}
+.footer__title {
+  margin-top: 5vh;
+}
+.footer__twitter {
+  height: 20px;
+}
+.footer__facebook {
+height: 25px;
+margin: 0px 20px;
+}
+.footer__instagram {
+  height: 25px;
+}
+.footer__text {
+  color: black;
+}
+
 }
