@@ -45,12 +45,11 @@ a {
 /* carousel picture slider */
 
 .carousel-container img {
-    width: 379px;
+    width: 378px;
     height: auto;
     margin-left: auto;
     margin-right: auto;
     overflow: hidden;
-    text-align: center;
 }
 
 slides {

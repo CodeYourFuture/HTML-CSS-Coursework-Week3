@@ -1,0 +1,51 @@
+/* global element styling */
+
+body {
+    background-color: #ffdbe4;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+main {
+    position: relative;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+
+/* global class styling */
+
+header {
+    text-align: center;
+}
+
+.logo {
+    margin: 0px;
+    width: 10px;
+    flex: auto;
+    flex-direction: column;
+    opacity: 0.9;
+}
+
+
+/* cake image section */
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+
+/* creating 4 columns sitting next to each other */

@@ -44,30 +44,16 @@ a {
 
 /* carousel picture slider */
 
-.carousel-container img {
-    width: 379px;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-    overflow: hidden;
-    text-align: center;
+.carousel-container {
+    max-width: 25%;
+    display: flex;
+    overflow-x: auto;
 }
 
-slides {
-    width: 25%;
-    height: auto;
-    position: relative;
-    transition: left 2s;
-    -webkit-transition: left 2s;
-    -moz-transition: left 2s;
-    -ms-transition: left 2s;
-    -o-transition: left 2s;
-}
-
-.slider-img {
-    float: left;
-    margin: 0px;
-    padding: 0px;
+.img {
+    max-width: 100%;
+    flex-shrink: 0;
+    height: 100%;
 }
 
 

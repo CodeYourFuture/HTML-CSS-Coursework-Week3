@@ -44,7 +44,7 @@ a {
 
 /* carousel picture slider */
 
-.carousel-container img {
+.carousel-container {
     width: 379px;
     height: auto;
     margin-left: auto;
@@ -54,7 +54,7 @@ a {
 }
 
 slides {
-    width: 25%;
+    width: 1516;
     height: auto;
     position: relative;
     transition: left 2s;

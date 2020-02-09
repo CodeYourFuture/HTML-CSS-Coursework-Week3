@@ -1,7 +1,7 @@
 /* global element styling */
 
 body {
-    background-color: #ffe70a;
+    background-color: #ffdbe4;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     margin: 0px;
@@ -37,53 +37,19 @@ a {
 }
 
 .header-img {
-    max-width: 100%;
+    max-width: 120px;
     opacity: 0.9;
-}
-
-
-/* carousel picture slider */
-
-.carousel-container img {
-    width: 379px;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-    overflow: hidden;
-    text-align: center;
-}
-
-slides {
-    width: 25%;
-    height: auto;
-    position: relative;
-    transition: left 2s;
-    -webkit-transition: left 2s;
-    -moz-transition: left 2s;
-    -ms-transition: left 2s;
-    -o-transition: left 2s;
-}
-
-.slider-img {
-    float: left;
-    margin: 0px;
-    padding: 0px;
 }
 
 
 /* cake image section */
 
 .cake {
-    background-color: rgb(18, 188, 240);
-    border: 10px solid;
-    border-color: rgb(240, 2, 133);
-    border-radius: 3%;
+    border-style: solid;
+    border-color: rgb(235, 12, 134);
+    border-width: 7px;
     margin: 10px;
     padding: 7px;
-    -webkit-border-radius: 3%;
-    -moz-border-radius: 3%;
-    -ms-border-radius: 3%;
-    -o-border-radius: 3%;
 }
 
 .row {
@@ -127,6 +93,3 @@ slides {
         max-width: 100%;
     }
 }
-
-
-/* slider - http://qnimate.com/creating-a-slider-using-html-and-css-only/ */

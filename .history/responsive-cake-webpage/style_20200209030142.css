@@ -42,32 +42,31 @@ a {
 }
 
 
-/* carousel picture slider */
+/* carousel picture slider - work in progress */
 
-.carousel-container img {
-    width: 379px;
-    height: auto;
+.carousel-container {
+    width: 2400px;
+    height: 600px;
     margin-left: auto;
     margin-right: auto;
-    overflow: hidden;
+    /* overflow: hidden; */
     text-align: center;
 }
 
-slides {
-    width: 25%;
+slides {}
+
+.slider-img {
+    width: 379px;
     height: auto;
+    float: left;
+    margin: 0px;
+    padding: 0px;
     position: relative;
     transition: left 2s;
     -webkit-transition: left 2s;
     -moz-transition: left 2s;
     -ms-transition: left 2s;
     -o-transition: left 2s;
-}
-
-.slider-img {
-    float: left;
-    margin: 0px;
-    padding: 0px;
 }
 
 
@@ -129,4 +128,5 @@ slides {
 }
 
 
-/* slider - http://qnimate.com/creating-a-slider-using-html-and-css-only/ */
+/* slider - http://qnimate.com/creating-a-slider-using-html-and-css-only/
+carousel - https: //www.youtube.com/watch?v=FZrHoAUkHpE */

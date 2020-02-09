@@ -1,7 +1,7 @@
 /* global element styling */
 
 body {
-    background-color: #ffe70a;
+    background-color: #ffdbe4;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     margin: 0px;
@@ -29,62 +29,19 @@ a {
 .header {
     background-color: rgb(238, 238, 238);
     margin: 0px;
-    padding: 10;
     width: 100%;
     height: auto;
     flex: auto;
     flex-direction: column;
+    /* opacity: 0.9; */
 }
 
 .header-img {
-    max-width: 100%;
-    opacity: 0.9;
-}
-
-
-/* carousel picture slider */
-
-.carousel-container img {
-    width: 379px;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-    overflow: hidden;
-    text-align: center;
-}
-
-slides {
-    width: 25%;
-    height: auto;
-    position: relative;
-    transition: left 2s;
-    -webkit-transition: left 2s;
-    -moz-transition: left 2s;
-    -ms-transition: left 2s;
-    -o-transition: left 2s;
-}
-
-.slider-img {
-    float: left;
-    margin: 0px;
-    padding: 0px;
+    max-width: 120px;
 }
 
 
 /* cake image section */
-
-.cake {
-    background-color: rgb(18, 188, 240);
-    border: 10px solid;
-    border-color: rgb(240, 2, 133);
-    border-radius: 3%;
-    margin: 10px;
-    padding: 7px;
-    -webkit-border-radius: 3%;
-    -moz-border-radius: 3%;
-    -ms-border-radius: 3%;
-    -o-border-radius: 3%;
-}
 
 .row {
     display: flex;
@@ -102,6 +59,7 @@ slides {
 }
 
 .column img {
+    margin-top: 8px;
     vertical-align: middle;
     max-width: 100%;
     height: auto;
@@ -110,13 +68,12 @@ slides {
 
 /* responsive layout - 2 columns */
 
-
-/* @media screen and (max-width: 800px) {
+@media screen and (max-width: 800px) {
     .column {
         flex: 50%;
         max-width: 50%;
     }
-} */
+}
 
 
 /* responsive layout - makes two columns stack on top of each other */
@@ -127,6 +84,3 @@ slides {
         max-width: 100%;
     }
 }
-
-
-/* slider - http://qnimate.com/creating-a-slider-using-html-and-css-only/ */

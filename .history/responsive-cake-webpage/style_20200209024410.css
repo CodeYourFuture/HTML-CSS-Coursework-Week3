@@ -47,10 +47,6 @@ a {
 .carousel-container img {
     width: 379px;
     height: auto;
-    margin-left: auto;
-    margin-right: auto;
-    overflow: hidden;
-    text-align: center;
 }
 
 slides {

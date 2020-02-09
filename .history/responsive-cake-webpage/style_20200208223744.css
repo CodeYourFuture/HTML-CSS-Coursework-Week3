@@ -1,0 +1,28 @@
+/* global element styling */
+
+body {
+    background-color: #ffdbe4;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+
+/* global class styling */
+
+header-img {
+    margin: 0px;
+    width: 10px;
+}

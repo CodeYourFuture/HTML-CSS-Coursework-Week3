@@ -42,20 +42,18 @@ a {
 }
 
 
-/* carousel picture slider */
+/* carousel picture slider - work in progress */
 
-.carousel-container img {
-    width: 379px;
-    height: auto;
+.carousel-container {
+    width: 2400px;
+    height: 600px;
     margin-left: auto;
     margin-right: auto;
-    overflow: hidden;
+    /* overflow: hidden; */
     text-align: center;
 }
 
 slides {
-    width: 25%;
-    height: auto;
     position: relative;
     transition: left 2s;
     -webkit-transition: left 2s;
@@ -65,6 +63,8 @@ slides {
 }
 
 .slider-img {
+    width: 379px;
+    height: auto;
     float: left;
     margin: 0px;
     padding: 0px;
@@ -129,4 +129,5 @@ slides {
 }
 
 
-/* slider - http://qnimate.com/creating-a-slider-using-html-and-css-only/ */
+/* slider - http://qnimate.com/creating-a-slider-using-html-and-css-only/
+carousel - https: //www.youtube.com/watch?v=FZrHoAUkHpE */

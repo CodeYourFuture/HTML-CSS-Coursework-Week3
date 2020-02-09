@@ -45,29 +45,21 @@ a {
 /* carousel picture slider */
 
 .carousel-container img {
-    width: 379px;
+    width: 100%;
     height: auto;
-    margin-left: auto;
-    margin-right: auto;
-    overflow: hidden;
-    text-align: center;
+    margin: 0;
+    padding: 5px;
 }
 
 slides {
-    width: 25%;
+    width: 100%;
     height: auto;
     position: relative;
-    transition: left 2s;
-    -webkit-transition: left 2s;
-    -moz-transition: left 2s;
-    -ms-transition: left 2s;
-    -o-transition: left 2s;
-}
-
-.slider-img {
-    float: left;
-    margin: 0px;
-    padding: 0px;
+    transition: 2s;
+    -webkit-transition: 2s;
+    -moz-transition: 2s;
+    -ms-transition: 2s;
+    -o-transition: 2s;
 }
 
 

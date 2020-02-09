@@ -1,0 +1,11 @@
+/*  Add your styling here */
+
+body {
+    background-color: #ffdbe4;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    position: relative;
+}

@@ -44,17 +44,17 @@ a {
 
 /* carousel picture slider */
 
-.carousel-container img {
-    width: 379px;
-    height: auto;
+.carousel-container {
+    width: 400px;
+    height: 300px;
     margin-left: auto;
     margin-right: auto;
-    overflow: hidden;
+    /* overflow: hidden; */
     text-align: center;
 }
 
 slides {
-    width: 25%;
+    width: 2400px;
     height: auto;
     position: relative;
     transition: left 2s;
