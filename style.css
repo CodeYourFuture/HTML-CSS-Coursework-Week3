@@ -168,7 +168,9 @@ body {
         align-items: center;
         justify-content: space-between;
         border: 3px double darkblue;
-        flex-basis: 50vw;
+        /* flex-basis: 50vw; */
+        flex: 1 1 50vw;
+        margin: 5px 0px;
         width: 80vw;
         text-transform: uppercase;
         background-color: honeydew;
@@ -180,6 +182,7 @@ body {
         padding: 5px;
         font-family: 'Crimson Text', serif;
         font-size: 1.2rem;
+        background-color:plum;
     }
 
     .footer {
