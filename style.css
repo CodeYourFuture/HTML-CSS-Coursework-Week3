@@ -120,7 +120,7 @@ footer{
     background-color: red;
 }
 
-@media (min-width: 500px) {
+@media (min-width: 768px) {
 
     .logo{
         background-color: black;
@@ -144,9 +144,13 @@ footer{
     }
 
   .hello{
-      color: white;
+   color: white;
    position: absolute;
    bottom: 8px;
    right: 16px;
+  }
+
+  .information{
+      color: white;
   }
 }
