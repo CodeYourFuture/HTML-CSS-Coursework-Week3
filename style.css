@@ -178,6 +178,10 @@ nav ul li.active {
     /* max-height: 800px; */
 }
 
+img {
+    width: 100%;
+}
+
 .info-text {
     max-width: 768px;
     text-align: center;
