@@ -159,7 +159,7 @@ p.text2 {
 
 @media screen and (min-width: 768px){
     .box-image .main-img {
-        height: 20%;
+        /* height: 20%; */
         margin-bottom: 8px;
     }
 }
@@ -188,7 +188,7 @@ p.text2 {
     background-color: lightslategrey;
     list-style-type: none;
     width: 100%;
-    height: auto;
+    /* height: auto; */
     border: 1px solid;
     padding: 5%;
     /* height: 40%; */
