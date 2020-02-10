@@ -19,10 +19,15 @@
 
   /* Header */
   .header {
-    padding: 10px;
-    text-align: center;
+  text-align: center;
   }
   
+  /*logo and phone*/
+ .up-header{
+    display: flex;
+    flex-direction: column;
+  }
+
   .header h1 {
     font-size: 2rem;
     color:#825947;
@@ -122,20 +127,27 @@
         justify-content: space-between;
     }
   /* header */
-main{
+
+  main{
     max-width: 1024px;
     margin:auto;
 }
 
+.upper{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
   .header {
     display: flex;
-    justify-content: space-between;
-    padding: 5px;
+    flex-direction: column;
+    padding: 0px;
     text-align: right;
     background-image: url(/images/ValentineFirstImage.png);
     background-size:300px;
     background-repeat: no-repeat;
-    background-position: 50% 80%;
+    background-position: 50% 40%;
 }
 .container {
     display: flex;
