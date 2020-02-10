@@ -20,11 +20,6 @@ a {
     color: rgb(200, 144, 233);
 }
 
-h1, h3 {
-    color: rgb(255,128,153);
-    text-align: center;
-}
-
 /* Header styles */
 
 .top-header {
@@ -49,6 +44,7 @@ button {
     height: 50px;
 }
 
+
 .navigation li {
     padding-top: 25px;
     padding-right: 50px;
@@ -61,6 +57,23 @@ button {
     padding: 75px;
 }
 
+h1 {
+    font-size: 40px;
+    color: rgb(255,128,153);
+    text-align: center;
+}
+
+h3 {
+    font-size: 20px;
+    color: rgb(255,128,153);
+    text-align: center;
+}
+
+.about .cupcakes {
+    padding-top: 75px;
+    width: 95%;
+}
+
 /* Example cake styles */
 
 .example-cakes ul {
@@ -70,15 +83,16 @@ button {
 }
 
 .example-cakes li {
-    height: 200px;
-    width: 200px;
+    width: 45%;
     align-items: center;
 }
 
 /* Footer styles */
 
 .footer {
+    display: flex;
     padding: 75px;
+    justify-content: center;
 }
 
 .footer li {
@@ -86,13 +100,9 @@ button {
     font-size: large;
 }
 
+ /* Media queries */
 
-/* Things to do :
+@media screen and (max-width 500px) {
+   
+}
 
-1. Find a way to resize cake images so they're the same size
-
-2. Add media queries for larger screens
-
-3. Add a background
-
-4. Attempt a hamburger menu /*
