@@ -180,7 +180,7 @@ footer li {
     width: 20%;
   }
 
-  main {
+  .main-content {
     width: 70%;
     border: 1px solid wheat;
   }
