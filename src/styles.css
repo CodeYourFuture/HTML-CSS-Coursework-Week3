@@ -32,7 +32,11 @@ p {
   text-decoration: none;
   color: #1792d2;
 }
-
+button{
+  background:#1792d2;
+  padding:.5em;
+  border-radius:5em;
+}
 /* layout*/
 img {
   max-width: 100%;
