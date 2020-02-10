@@ -93,7 +93,7 @@ body{
 @media screen and (min-width: 768px){
     .boxes{
         display: flex;
-flex-direction: row;
+        flex-direction: row;
     }
 }
 
@@ -154,7 +154,7 @@ p.text2 {
     margin: 5px;
     border-style: solid;
     border-width: thin;
-    height: 60%;
+    /* height: 60%; */
 }
 
 @media screen and (min-width: 768px){
