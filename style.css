@@ -13,7 +13,7 @@
     height: auto;
   }
   
-  p{
+  p {
       padding: 0px 5px;
   }
 
@@ -21,7 +21,6 @@
   .header {
     padding: 10px;
     text-align: center;
-    
   }
   
   .header h1 {
@@ -34,28 +33,26 @@
   }
 
   main{
-      max-width: 900px;
       margin:auto;
-      box-shadow: 30px 0px 40px rgba(0,0,0,0.4), -30px, 0px, 40px rgba(0,0,0,0.4); /*not working*/
-  }
+      }
   /* Style the top navigation bar */
   .topnav {
-    overflow: hidden;
-    margin-top: 10;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
     background-color: #eb9de0;
+    align-items: center;
   }
   
   /* Style the topnav links */
   .topnav a {
-    display: block;
+    display: flex;
+    justify-content: center;
     background-color: rgb(233, 159, 196);
     color: #850a2f;
-    text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    float: none;
     width: 100%;
-    
   }
   
   /* Change color on hover */
@@ -64,24 +61,23 @@
     color: white;
   }
   
-  /* Create two equal columns that floats next to each other */
+  /*makes one column*/
   .leftcolumn, .rightcolumn {   
     width: 100%;
     padding: 0;
   }
 
-  
   /* image */
   .logo {
     width: 100%;
     float: left;
     }
 
-    
     .container{
         width:100%;
     }
-  .img {
+
+    .img {
     background-color: #825947;
     width: 100%;
     padding: 5px;
@@ -98,13 +94,11 @@
   
 
    /* Create 4 equal columns that floats next to each other */ 
-   .bottom-img {
-    
+  .bottom-img {
     background-color: #825947;
     width: 100%;
     padding: 2px;
-
-   }
+  }
 
   /* Footer */
   .footer {
@@ -116,8 +110,6 @@
     padding: 1em 0;
     color: #541800;
     background: #fff;
-    
-
   }
   
   /* Responsive layout - when the screen is more than 768px wide, make the two columns stack on top of each other instead of next to each other */
@@ -146,28 +138,25 @@ main{
     background-position: 50% 80%;
 }
 .container {
-    float: left;
+    display: flex;
     width: 24%;
 }
 .container-right {
     display: flex;
     flex-direction: column;
-    float: right;
+    padding-right: 20px;
     width: 30%;
 }
 
   /* main */
     .card {
         background-color: white;
-        padding: auto;
         margin-top: 10px;
       }
 
     .rightcolumn {   
         width: 70%;
         background-color: white;
-        align-self: 2;
-
     }
       
     .leftcolumn {
@@ -192,8 +181,15 @@ main{
   
   /* Responsive layout - when the screen is more than 400px wide, make the navigation links stack on top of each other instead of next to each other */
   @media screen and (min-width: 400px) {
+    .topnav {
+      flex-direction: row;
+    }
+
     .topnav a {
-      float: left;
+      display: flex;
+      flex-direction: row;
+      align-content: center;
+      justify-content: space-around;
       width: 20%;
     }
   }
