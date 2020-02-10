@@ -159,7 +159,8 @@ p.text2 {
 
 @media screen and (min-width: 768px){
     .box-image .main-img {
-        /* height: 20%; */
+        display:flex;
+        /* height: 60%; */
         margin-bottom: 8px;
     }
 }
