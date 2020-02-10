@@ -18,6 +18,7 @@ header {
 
 .logo {
     width: 30%;
+    height: auto;
     border: 1px solid black;
 }
 
@@ -32,7 +33,7 @@ header {
 
 .menu li {
     list-style-type: none;
-    padding: 0.5%;
+    padding: 11.5%;
     background-color: grey;
 }
 
@@ -40,7 +41,8 @@ header {
     position: fixed;
     right: -100%;
     transition: all.5s;
-
+    padding: 5.5%;
+    width: 15%;
 } 
 
  #check {
@@ -154,6 +156,7 @@ a:hover {
     height: 30%;
     width: 90%;
     overflow: hidden;
+    padding: 3%;
 }
 
 .h1-cakes {
@@ -178,8 +181,8 @@ a:hover {
 /* images */
 
 .section2-picture {
-    height: 15%;
-    width: 70%;
+    height: auto;
+    width: 100%;
     border: 2px solid black;
     border-radius: 2%;
     padding: 2px;
@@ -240,13 +243,13 @@ button:hover {
 @media (min-width: 961px) {
 
     header {
-        margin-bottom: 7%;
+        margin-bottom: 10%;
     }
 
     .logo {
         border: 2px solid black;
         height: 100%;
-        width: 8%;
+        width: auto;
 }
 
     .menu-bar {
@@ -267,9 +270,10 @@ button:hover {
         justify-content: flex-start;
         position: absolute;
         right: 10%;
-        top: 20%;
+        top: 10%;
         width: 100%;
-        margin-left: 35%;
+        margin-left: 20%;
+        padding: 5%;
     }
 
     .menu li {
@@ -277,16 +281,19 @@ button:hover {
         border: 2px solid black;
         text-align: center;
         font-weight: bolder;
-        margin-left: 12%;
+        margin-left: 5%;
+        margin-right: 5%;
+        padding: 1%;
     }
 
     .nav-item {
-        width: 100%;
-        margin-left: 1rem;
+        width: 80%;
+        margin-left: 3rem;
         margin-top: 5rem;
     }
 
     #contact {
+        top: 5%;
         height: 8%;
         width:5%;
         border-radius: 40%;
