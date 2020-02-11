@@ -23,14 +23,14 @@ a {
 }
 
 .top-header .header-image {
-  height: 150px;
-  width: 150px;
+  height: 200px;
+  width: 200px;
   padding: 20px;
 }
 
 button {
   color: rgb(200, 144, 233);
-  font-size: larger;
+  font-size: 25px;
   border-color: rgb(252, 251, 253);
   border-radius: 20px;
   border-width: medium;
@@ -47,7 +47,7 @@ button {
 .navigation li {
   padding-top: 25px;
   padding-right: 50px;
-  font-size: large;
+  font-size: 25px;
 }
 
 /* About section styles */
@@ -63,7 +63,7 @@ button {
 }
 
 .about h3 {
-  font-size: 20px;
+  font-size: 25px;
   color: rgb(255, 128, 153);
   text-align: center;
   padding-bottom: 50px;
@@ -80,7 +80,7 @@ button {
 /* Example cake styles */
 
 .example-cakes h3 {
-  font-size: 20px;
+  font-size: 25px;
   color: rgb(255, 128, 153);
   text-align: center;
   padding-top: 50px;
@@ -112,7 +112,7 @@ button {
 
 .footer li {
   padding-right: 50px;
-  font-size: large;
+  font-size: 25px;
 }
 
 /* Media queries */
