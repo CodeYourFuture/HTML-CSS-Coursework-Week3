@@ -62,36 +62,62 @@ a:hover{
 }
 .main_cakes{
     display:flex;
-    flex-direction: column;
+    flex-direction:column;
     border:2px solid pink;
-    box-sizing: border-box;
+    border-radius: 10px;
+    border-style: ridge;
+    box-sizing:border-box;
 }
 
 .big_pic{
     display: flex;
+    flex-direction: column;
     justify-content:center;
-    align-items: center;
-    background-size: cover;
-
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px 30px;
+    
 }
 
 .cover1_back{
     width: 80%;
     padding: 10px 5px;
 }
-.font{
+.font_cake{ 
+    font-size:40px;
     text-align: center;
-    font-size: 50px;
+    text-decoration: none;
+    color: purple;
     font-family: 'Courgette', cursive;
+    
+}
+li{
+    list-style-type:none;
+}
+.font_cake2{
+    font-size: medium;
+    text-decoration: none;
+    color: purple;
+    font-family:'Courgette', cursive ;
+    text-align: justify;
 }
 
 .style_cake{
-   display: flex;
-   width:50%;
-   box-sizing: border-box;
-   height:200px;
+   display:flex;
+   flex-direction:row;
+   justify-content: space-around;
+   align-items: center;
 }
 
+.width_cakes{
+    width: 50%;
+    height: 50%;
+    text-decoration: none;
+}
+.width_cake3{
+    width: 200px;
+    height: 1%;
+}
 
 .footer_p{
     display: block;
@@ -105,21 +131,25 @@ a:hover{
     display:flex;
     flex-direction: row;
     justify-content: space-around;
+    align-items: center;
 }
 .ellie_footer{
+    display: flex;
+    justify-content: flex-start;
     position: absolute;
     width: 90px;
     height:60px;
-    float: left;
+    
     
 }
-/*
-.footer_social{
-    position: absolute;
-    width: 1px;
-    height: 1px;
+.email{
+    text-decoration: none;
 }
-*/
+a.email:hover{
+   color: black;
+   text-decoration: none;
+}
+
 @media(max-width: 768px){
     .mainMenu{
         display: none;
