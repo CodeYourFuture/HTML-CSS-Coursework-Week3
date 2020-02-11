@@ -6,11 +6,6 @@
     background-color: rgb(188, 243, 226);
 }
 
-ul {
-    display: flex;
-    justify-content: center;
-}
-
 li {
     list-style: none;
 }
@@ -28,7 +23,7 @@ a {
     align-items: center;
 }
 
-#header-image {
+.top-header .header-image {
     height: 150px;
     width: 150px;
     padding: 20px;
@@ -44,6 +39,10 @@ button {
     height: 50px;
 }
 
+.navigation ul {
+    display: flex; 
+    flex-direction: column;
+}
 
 .navigation li {
     padding-top: 25px;
@@ -54,44 +53,56 @@ button {
 /* About section styles */
 
 .about {
-    padding: 75px;
+    padding-top: 50px;
 }
 
-h1 {
+.about h1 {
     font-size: 40px;
     color: rgb(255,128,153);
     text-align: center;
 }
 
-h3 {
+.about h3 {
     font-size: 20px;
     color: rgb(255,128,153);
     text-align: center;
+    padding-bottom: 50px;
 }
 
 .about .cupcakes {
-    padding-top: 75px;
-    width: 95%;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    border: 2px solid rgb(252, 251, 253);
 }
 
 /* Example cake styles */
 
-.example-cakes ul {
-   justify-content: space-around;
-   flex-wrap: wrap;
-   align-items: center;
+.example-cakes h3 {
+    font-size: 20px;
+    color: rgb(255,128,153);
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 20px;
+
 }
 
 .example-cakes li {
-    width: 45%;
-    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+}
+
+.images {
+    border: 2px solid rgb(252, 251, 253);
 }
 
 /* Footer styles */
 
 .footer {
     display: flex;
-    padding: 75px;
+    padding: 50px;
     justify-content: center;
 }
 
@@ -102,7 +113,41 @@ h3 {
 
  /* Media queries */
 
-@media screen and (max-width 500px) {
-   
+@media only screen and (min-width: 600px) {
+    .navigation ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .example-cakes ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .example-cakes li {
+        padding-right: 20px;
+        width: 45%;
+        height: 45%;
+    }
+
+    .footer ul {
+        display: flex;
+        flex-direction: row;
+    }
 }
 
+
+@media only screen and (min-width:1000px) {
+    .example-cakes ul {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    .example-cakes li {
+        padding-right: 20px;
+        width: 20%;
+        height: 20%;
+    }
+}
