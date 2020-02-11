@@ -7,6 +7,7 @@ body {
     display: flex;
   flex-direction: row;
   justify-content: space-between;
+
     
 }
 .background  {
@@ -18,19 +19,119 @@ body {
     overflow: auto;
 }
 
+
 .logo {
     margin-top: 15px;
-    width: 10%;
     position: relative;
+    display: flex;
+    justify-content: center;
+
+
   }
   .logo > img {
-    width: 100%;
-    height: 3.375rem;
-    max-width: 200px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    
+    height: 150px;
+    flex-direction: column;
     text-align: center;
-    margin-left: 20px;
-    margin-bottom: 5px;
+    margin-bottom: 20px;
   }
+  nav > ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    margin-top: 25px;
+    color: #838994;
+    padding-left: 0mm;
+    
+  
+  }
+  li {
+    list-style: none;
+    
+  }
+  li:hover {
+	cursor: pointer;
+	color: #282a85;
+}
+.btn {
+	width: 33.33%;
+	border-radius: 4px;
+    color: #ffffff;
+    background-color: #4794f8;
+    font-size: 16px;
+    display: block;
+    padding: 16px 32px;
+    margin: 0 auto;
+    text-decoration: none;
+    text-align: center;
+}
+
+ .btn:hover {
+	cursor: pointer;
+    background-color: #d9400e;
+    text-decoration: none;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+   
+}
+.col-12{
+    width: 100%;
+    padding: 20px 10px;
+    margin-top: 10px;
+
+}
+.col-12 img{
+    width: 100%;
+}
+.col-6{
+    width: 35%;
+    padding: 20px 10px;
+    margin-top: 10px;
+
+}
+.col-6 img{
+    width: 100% 
+}
+.footer {
+	text-align: center;
+	color: #000000;
+	
+}
+.footer hr {
+	border: 1px solid #eaebec;
+}
+.footer h5 {
+	font-size: 16px;
+	margin-top: 25px;
+}
+
+.footer p {
+	font-size: 15px;
+	font-weight: 200;
+	color: #838994;
+	
+}
+.social li {
+	display: inline-block;
+	margin: 16px .80px;
+	padding: 12px;
+	height: 48px;
+	width: 48px;
+	border: 2px solid #eaebec;
+	border-radius: 50%;
+}
+
+
+
+
+   
+
+
+
