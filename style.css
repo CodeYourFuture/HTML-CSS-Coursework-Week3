@@ -144,6 +144,42 @@ button {
 }
 
 @media only screen and (min-width: 1000px) {
+  .top-header .header-image {
+    display: flex;
+    flex-direction: column;
+    align-self: start;
+    height: 300px;
+    width: 300px;
+  }
+
+   button {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    width: 175px;
+    height: 75px;
+    font-size: 30px;
+    padding-left: 30px;
+    padding-top: 8px;
+    margin-right: 5px;
+  }
+
+  .navigation li {
+    font-size: 30px;
+  }
+
+  .about h1 {
+    font-size: 60px;
+  }
+
+  .about h3 {
+    font-size: 30px;
+  }
+
+  .example-cakes h3 {
+    font-size: 30px;
+  }
+
   .example-cakes ul {
     display: flex;
     justify-content: space-evenly;
@@ -152,5 +188,9 @@ button {
   .example-cakes li {
     width: 20%;
     height: 20%;
+  }
+
+  .footer li {
+    font-size: 30px;
   }
 }
