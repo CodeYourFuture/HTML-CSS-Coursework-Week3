@@ -1,1 +1,36 @@
 /*  Add your styling here */
+body {
+    font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+.headerheader-wrapper {
+    display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+    
+}
+.background  {
+    background-image: url("https://c4.wallpaperflare.com/wallpaper/953/450/507/nuts-cream-dessert-cakes-wallpaper-preview.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 582.4px;
+    background-position: center bottom;
+    overflow: auto;
+}
+
+.logo {
+    margin-top: 15px;
+    width: 10%;
+    position: relative;
+  }
+  .logo > img {
+    width: 100%;
+    height: 3.375rem;
+    max-width: 200px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    margin-left: 20px;
+    margin-bottom: 5px;
+  }
