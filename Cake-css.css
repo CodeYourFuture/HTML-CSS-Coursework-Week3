@@ -13,6 +13,8 @@
 }
 .nav_bar{
     background: url("images/nav_back.JPG");
+    background-repeat: repeat-x;
+    background-size: cover;
    
 }
 
@@ -39,7 +41,7 @@ a:hover{
     color:blue;
     text-decoration: none;
 }
-.H-one{
+.My_title{
     color:#fc0384;
     font-size: 50px;
     font-family: 'Courgette', cursive;
@@ -60,28 +62,37 @@ a:hover{
 }
 .main_cakes{
     display:flex;
-    justify-content:space-around;
-    align-content:space-around;
-    flex-wrap: wrap;
-}
-.cakes{
-    display: block;
-    /*box-sizing: border-box;*/
-}
-.style_cake{
-    height: 300px;
-    padding: 100px 100px;
-    display: inline-block;
+    flex-direction: column;
+    border:2px solid pink;
+    box-sizing: border-box;
 }
 
-.font_cake{
-display:block;
-font-family: 'Courgette', cursive;
-font-size: 20px;
-color: rgb(206, 23, 23);
-padding-left: 150px;
-text-decoration: none;
+.big_pic{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    background-size: cover;
+
 }
+
+.cover1_back{
+    width: 80%;
+    padding: 10px 5px;
+}
+.font{
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Courgette', cursive;
+}
+
+.style_cake{
+   display: flex;
+   width:50%;
+   box-sizing: border-box;
+   height:200px;
+}
+
+
 .footer_p{
     display: block;
     text-align: center;
@@ -134,7 +145,7 @@ text-decoration: none;
         list-style: none;
         border: 2px solid white;
     }
-    
+
     .logo_image{   
         display: flex;
         flex-direction:row;
