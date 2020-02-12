@@ -28,7 +28,7 @@ a {
   padding: 20px;
 }
 
-button {
+.contact-button {
   color: rgb(200, 144, 233);
   font-size: 25px;
   border-color: rgb(252, 251, 253);
@@ -117,12 +117,12 @@ button {
 
 /* Media queries */
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 650px) {
   .navigation ul {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding-left: 0;
+    padding-left: 20px;
   }
 
   .example-cakes ul {
@@ -152,7 +152,7 @@ button {
     width: 250px;
   }
 
-  button {
+  .contact-button {
     display: flex;
     flex-direction: column;
     align-self: flex-end;
