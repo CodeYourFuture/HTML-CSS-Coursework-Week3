@@ -15,12 +15,10 @@
     background: url("images/nav_back.JPG");
     background-repeat: repeat-x;
     background-size: cover;
-   
 }
 
 .mainMenu{
     font-family: 'Courgette', cursive;
-    list-style: circle;
     right:2px;
     top: 100px;
     padding: 30px;
@@ -29,10 +27,10 @@
     height: 200px;
     border-radius:10px;
     border:4px double plum;
-    text-decoration: none;
     background: url("images/bar-background.jpg");
 
 }
+
 body{
     background: url("images/wallpaper.jpg");
 }
