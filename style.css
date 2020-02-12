@@ -1,1 +1,34 @@
-/*  Add your styling here */
+.grid {
+    border: solid 1px red;
+
+}
+
+.grid-one {
+    display: grid;
+    grid-template-columns: 140px 140px;
+    border: solid 1px pink;
+}
+
+.grid-one>img {
+    margin: auto;
+}
+
+.grid-one>h1 {
+    margin: auto;
+}
+
+@media screen and (min-width:900px) {
+    .grid-one {
+        display: flex;
+    }
+
+    .grid-one>img {
+        margin-left: 20px;
+    }
+
+    .grid-one>h1 {
+        margin-right: 100px;
+    }
+}
+
+/html/body/main/header/nav/div[2]
