@@ -38,6 +38,7 @@
     .general-hero-section {
         display: flex;
         padding: 10px;
+
     }
 
     .first-section {
@@ -48,6 +49,19 @@
     .second-section {
         width: 60%;
     }
+
+    .pictures-section {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+    }
+
+    .each-picture {
+        margin: 5px;
+    }
+
+    .footer {
+        justify-content: flex-start;
+    }
 }
 
 .grid-two {
@@ -57,6 +71,7 @@
 
 .first-section {
     background-color: pink;
+    height: 150px;
 }
 
 .first-section-inf-div {
@@ -76,4 +91,36 @@
     background-color: beige;
     height: 150px;
     text-align: center;
+}
+
+
+
+.each-picture {
+    background-color: aquamarine;
+    border: pink 2px solid;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    position: relative;
+    height: 130px;
+}
+
+.each-picture>h3 {
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+}
+
+.footer {
+    display: flex;
+    justify-content: flex-start;
+    background-color: cornflowerblue;
+    height: 50px;
+    padding: auto;
+    justify-content: center;
+}
+
+.footer>a {
+    margin-right: 15px;
 }
