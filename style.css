@@ -124,11 +124,18 @@ body {
 	padding: 12px;
 	height: 48px;
 	width: 48px;
-	border: 2px solid #eaebec;
+	border: 2px solid #2b4f72;
 	border-radius: 50%;
 }
+@media (min-width: 700px) {
+    .md-col-3{
 
+    width: 22%;
 
+    }
+}
+
+   
 
 
    
