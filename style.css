@@ -27,6 +27,7 @@
     height: 200px;
     border-radius:10px;
     border:4px double plum;
+    text-decoration: none;
     background: url("images/bar-background.jpg");
 
 }
