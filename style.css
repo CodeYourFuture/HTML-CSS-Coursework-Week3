@@ -34,9 +34,46 @@
         display: flex;
         justify-content: space-around;
     }
+
+    .general-hero-section {
+        display: flex;
+        padding: 10px;
+    }
+
+    .first-section {
+        width: 40%;
+        margin-right: 20px;
+    }
+
+    .second-section {
+        width: 60%;
+    }
 }
 
 .grid-two {
     text-align: center;
     background-color: bisque;
+}
+
+.first-section {
+    background-color: pink;
+}
+
+.first-section-inf-div {
+    padding: 10px;
+    height: 100px;
+    text-align: center;
+}
+
+
+.first-section-hello-div {
+    background-color: aliceblue;
+    height: 30px;
+    padding: 5px;
+}
+
+.second-section {
+    background-color: beige;
+    height: 150px;
+    text-align: center;
 }
