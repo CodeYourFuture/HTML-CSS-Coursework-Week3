@@ -1,3 +1,5 @@
+
+
 body{
   background-color: blueviolet;
 }
@@ -20,57 +22,21 @@ label{
   padding-top: 0;
 }
 
-li{
+nav ul{
+  background-color: aqua;
   list-style: none;
-  display: block;
-  padding: 5px;
+
 }
 
-ul{
-  display: none;
-  background-color: #c7fff6;
+nav ul li{
+  display: inline-flex;
 }
 
-input:checked  ul{
-  display: block;
+.check-button{
+  
+
 }
 
-.slider-image{
-  widows: 90%;
-  height: 90%;
-}
-
-.slider{
-  display: flex;
-}
-
-.display{
-  max-width: 70%;
-  border: 2px solid white;
-  padding: 10px;
-  padding-left: 30%;
-}
-
-.inside{
-  background-color: #c7fff6;
-  max-width: fit-content;
-}
-
-h3{
-  font-size: 10px;
-  color: #ea8064;
-  padding-left: 30%;
-}
-
-p{
-  font-size: 14px
-}
-
-footer{
-  background-color: #ea8064;
-}
-
-.details{
-  display: inline-block;
-  background-color: #ea8064;
+.fa fa-bars{
+  
 }
