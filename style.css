@@ -79,6 +79,7 @@ body {
     flex-wrap: wrap;
     width: 100%;
     justify-content: space-around;
+    padding: 0 10px;
    
 }
 .col-12{
@@ -132,6 +133,9 @@ body {
 
     width: 22%;
 
+    }
+    .md-col-12{
+        width: 40%;
     }
 }
 
