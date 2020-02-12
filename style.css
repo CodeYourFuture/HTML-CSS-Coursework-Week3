@@ -62,6 +62,7 @@ a:hover{
 .main_cakes{
     display:flex;
     flex-direction:column;
+    justify-content:center;
     border:2px solid pink;
     border-radius: 10px;
     border-style: ridge;
@@ -69,13 +70,11 @@ a:hover{
 }
 
 .big_pic{
-    display: flex;
-    flex-direction: column;
-    justify-content:center;
-    background-position: center;
-    background-repeat: no-repeat;
-    padding: 20px 30px;
-    
+    width: 60%;
+}
+
+div.big_pic img{
+    width: 100%;   
 }
 
 .cover1_back{
@@ -84,11 +83,11 @@ a:hover{
 }
 .font_cake{ 
     font-size:40px;
-    text-align: center;
     text-decoration: none;
     color: purple;
-    font-family: 'Courgette', cursive;
-    
+    font-family:'Courgette', cursive ;
+    text-align: center;
+   
 }
 li{
     list-style-type:none;
@@ -105,17 +104,16 @@ li{
    display:flex;
    flex-direction:row;
    justify-content: space-around;
-   align-items: center;
+   align-items: stretch;
+
 }
 
 .width_cakes{
-    width: 50%;
-    height: 50%;
+    width: 100%;
     text-decoration: none;
 }
-.width_cake3{
-    width: 200px;
-    height: 1%;
+.li_width{
+    width: 33%;
 }
 
 .footer_p{
