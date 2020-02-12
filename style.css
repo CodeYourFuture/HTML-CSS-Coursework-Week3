@@ -1,12 +1,12 @@
 .grid {
-    border: solid 1px red;
+    /* border: solid 1px red; */
 
 }
 
 .grid-one {
     display: grid;
     grid-template-columns: 140px 140px;
-    border: solid 1px pink;
+    /* border: solid 1px pink; */
 }
 
 .grid-one>img {
@@ -29,6 +29,14 @@
     .grid-one>h1 {
         margin-right: 100px;
     }
+
+    .grid-two {
+        display: flex;
+        justify-content: space-around;
+    }
 }
 
-/html/body/main/header/nav/div[2]
+.grid-two {
+    text-align: center;
+    background-color: bisque;
+}
