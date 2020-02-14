@@ -44,27 +44,29 @@ input:checked ~ ul {
 }
 
 .display {
-    max-width: 70%;
+    max-width: 100%;
     border: 2px solid white;
-    padding: 10px;
-    padding-left: 30%;
 }
 
 .information {
     background-color: #c7fff6;
+    justify-content: center;
+    align-items: center;
 }
 
 .inside { 
     max-width: fit-content;
+    width: 50%;
 }
 
 h3 {
     font-size: 40px;
     padding-left: 20%;
     color: #ea8064;
+    text-align: center;
 }
 
-.display.info {
+.display-info {
     font-size: 14px;
 }
 
