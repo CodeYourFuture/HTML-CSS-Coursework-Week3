@@ -1,7 +1,7 @@
 
 
 body{
-  background-color: blueviolet;
+  background-color: rgb(247, 71, 71);
 }
 
 .logo{
@@ -22,21 +22,16 @@ label{
   padding-top: 0;
 }
 
-nav ul{
-  background-color: aqua;
+nav ul {
+  background-color:rgba(241, 11, 11, 0.945);
   list-style: none;
-
 }
 
-nav ul li{
+nav li{
   display: inline-flex;
-}
+  padding: left;
+} 
 
-.check-button{
-  
-
-}
-
-.fa fa-bars{
-  
+.cake1{
+  display: inline-flex;
 }
