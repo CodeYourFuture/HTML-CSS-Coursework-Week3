@@ -174,10 +174,11 @@ p{
     font-size: medium;
 }
 @media (min-width:768px){
-    .top li{
+    .top .li{
         /* float: left; */
         display: flex;
         flex-direction: row;
+        justify-items: right;
     }
     .top li a{
         padding: 20px 30px;
