@@ -1,66 +1,87 @@
 /*  Add your styling here */
+/* *{
+    max-width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+} */
 body{
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    display: grid;
+    /* display: grid;
+    max-width: 100%;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 75px 570px 300px 50px 50px ;
     grid-template-areas: 
-    "header"
-    "main"
-    "main2"
-    "footer";
-
+    "logo nav"
+    "aside section"
+    "section2"
+    "footer"; */
 }
 a {
     color: rgb(122, 0, 122);
 }
 
 
-.header1{
-    grid-area: header;
+.top{
+    /* display: grid;
+    grid-area: nav;
+    max-width: 100%;
+    grid-template-columns: 1/6; */
     background-color: rgb(235, 195, 123);
     position: fixed;
     box-shadow: 1px 1px 4px rgba(0,0,0,.2);
     width: 100%;
     z-index: 10;
     height:75px;
+    top: 0em;
 }
 
-.header1 ul{
+.top ul{
+    /* display: grid;
+    grid-area: nav;
+    grid-template-columns: 6/13; */
     list-style: none; 
     overflow: hidden;
 }
 
-.header1 ul a{
+.top ul a{
     display: block;
-    /* outline: 1px solid purple; */
+    outline: 1px solid purple;
     padding:15px;
     border:1px solid purple;
     text-decoration: none;
 }
 
-.header1 .logo{
-    float: left;
-    display: block;
+.top .logo{
+    /* grid-area: logo;
+    grid-template-columns: 6/13; */
+    background-color: rgb(235, 195, 123);
+    /* float: left;
+    display: block; */
     margin-top: 5px;
     margin-left: 5px;
 }
-.header1 ul a:hover{
+.top ul a:hover{
     background-color:rgb(226, 165, 52);
     text-decoration: none;
 }
-.header1 .menu{
-    clear: both;
+.top .menu{
+    /* clear: both; */
     max-height: 0;
     transition: max-height .2s ease-out;
 }
-.header1 .menu-icon{
+.top .menu-icon{
     /* border: 1px solid purple; */
     padding: 28px 20px;
     position: relative;
     float: right;
     cursor: pointer;
+    display: flex;
+    justify-content: flex-end;
 }
-.header1 .menu-icon .nav-icon{
+.top .menu-icon .nav-icon{
     background: black;
     display: block;
     height: 2px;
@@ -68,7 +89,7 @@ a {
     position: relative;
     transition: background .2s ease-out;
 }
-.header1 .menu-icon .nav-icon:before{
+.top .menu-icon .nav-icon:before{
     background: black;
     content:"";
     display: block;
@@ -79,7 +100,7 @@ a {
     top: 5px;
     
 }
-.header1 .menu-icon .nav-icon:after{
+.top .menu-icon .nav-icon:after{
     background: black;
     content:"";
     display: block;
@@ -89,10 +110,10 @@ a {
     transition: all .2s ease-out;
     top: -5px;
 }
-.header1 .menu-btn{
+.top .menu-btn{
     display: none;
 }
-.header1 .menu-btn:checked ~ .menu{
+.top .menu-btn:checked ~ .menu{
     background-color: rgb(235, 195, 123);
     max-height: 300px;
     margin-top: 80px;
@@ -100,37 +121,40 @@ a {
     margin-left: 50%;
 }
 
-.header1 .menu-btn:checked ~ .menu-icon .nav-icon{
+.top .menu-btn:checked ~ .menu-icon .nav-icon{
     background-color:transparent;
-
 }
-.header1 .menu-btn:checked ~ .menu-icon .nav-icon::before{
+.top .menu-btn:checked ~ .menu-icon .nav-icon::before{
     transform: rotate(45deg);
     top:0;
 }
-.header1 .menu-btn:checked ~ .menu-icon .nav-icon:after{
+.top .menu-btn:checked ~ .menu-icon .nav-icon:after{
     transform: rotate(-45deg);
     top:0;
 }
-.aside1{
+.left{
+    /* display: grid;
+    grid-area: aside;
+    grid-template-columns: 1/6; */
     color: rgb(83, 7, 83);
 }
 
-.main1{
+.middle{
     grid-area: main;
     background-color: rgb(255, 185, 56);
     display: grid;
     grid-template-columns: 1fr 3fr;
+    border: black;
     margin-top: 75px;
     grid-column-gap: 5px;
 }
-.footer1{
+.footer{
     grid-area: footer;
     border:1px solid black;
     background-color: grey;
     text-align: center;
 }
-.section1{
+.section{
     color: purple;
     text-align: center;
 }
@@ -149,43 +173,32 @@ figcaption{
 p{
     font-size: medium;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media (min-width:768px){
-    .header1 li{
-        float: left;
+    .top li{
+        /* float: left; */
+        display: flex;
+        flex-direction: row;
     }
-    .header1 li a{
+    .top li a{
         padding: 20px 30px;
     }
-    .header1 .menu{
+    .top .menu{
         clear:none;
         float: right;
         max-height: none;
         margin-right: 40px;
     }
-    .header1 .menu-icon{
+    .top .menu-icon{
         display:none;
     }
-    .header1 .logo{
+    .top .logo{
         margin-left: 40px;
         margin-top: 10px;
     }
-    .header1{
+    .top{
         height: 95px;
     }
-    .main1{
+    .middle{
         margin-top: 95px;
     }
     #craousel{

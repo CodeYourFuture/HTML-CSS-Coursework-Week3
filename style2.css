@@ -1,0 +1,31 @@
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 75px 400px 500px 100px;
+    grid-template-areas: 
+    "header"
+    "aside"
+    "main"
+    "footer"
+    ;
+}
+header, .top, .logo, .menu{
+    grid-area: header;
+    background-color: rgb(235, 195, 123);
+    position: fixed;
+    box-shadow: 1px 1px 4px rgba(0,0,0,.2);
+    z-index: 10;
+    height:75px;
+    top: 0em;
+}
+.logo{
+    grid-column: 1/2;
+}
+.menu{
+    grid-column: 2/3;
+}
