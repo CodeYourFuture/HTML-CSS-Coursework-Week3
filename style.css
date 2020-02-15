@@ -1,1 +1,51 @@
-/*  Add your styling here */
+[type="checkbox"]:checked + nav {
+    display: block;
+}
+nav {
+    display: none;
+}
+label {
+    border-bottom: 3px solid black;
+    border-top: 3px solid black;
+    display: block;
+    width: 20px;
+    height: 8px;
+    position: relative;
+}
+label::before {
+    content: "";
+    position: absolute;
+    border-bottom: 3px solid black;
+    left: 0;
+    right: 0;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+
+}
+.divL {
+    width: 15%;
+}
+.divR {
+    width: 35%;
+    display: flex;
+    
+}
+.divT { 
+    position: relative;
+    box-sizing: border-box;
+    width: 50%;
+    padding: 20px;
+    display: flex;
+    float:left;    
+}
+.divB { 
+    position: absolute;
+    box-sizing: border-box;
+    bottom: 50%;
+    display: flex;
+    bottom: 40%;
+    float:left;
+}
+
