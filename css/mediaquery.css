@@ -28,6 +28,7 @@
     align-content: center;
     background-color: #f6cfda;
     margin: 0 auto;
+    padding: 0;
   }
 
   .hello-information > h1 {
@@ -35,6 +36,7 @@
     width: 100%;
     align-content: center;
     justify-content: center;
+    padding: 0;
   }
 
   .cake-col {
