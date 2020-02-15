@@ -1,6 +1,6 @@
 /*  Add your styling here */
 
-#navigation{
+.navigation{
     width: 100%;
     display: flex;
     justify-content: space-around;
@@ -20,7 +20,6 @@
 }
 a{
     text-decoration:none;
-    text-decoration: none;
     color: gray;
 }
 #first-section{
@@ -34,7 +33,7 @@ a{
     margin-top: 0px;
 }
 .title{
-    font-family: 'Anonymous Pro', monospace;
+    
     font-family: 'PT Serif', serif;
     font-size: 35px;
     color: grey;
@@ -47,9 +46,8 @@ a{
     font-family: 'Open Sans Condensed', sans-serif;
     font-size: 25px;
     color: grey;
-    margin-top: 0px;
     padding: 5px;
-    margin: 0px 30px 0px 30px;
+    margin: 0px 30px;
     text-align: center;
     
     
@@ -131,7 +129,6 @@ hr{
         width: 200px;
     }
     a{
-        text-decoration:none;
         color: gray;
     }
     #first-section{
@@ -213,6 +210,3 @@ hr{
         }
         
 }
-    *{
-        border: solid red 1px;
-    }
