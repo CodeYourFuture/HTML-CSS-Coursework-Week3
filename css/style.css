@@ -72,7 +72,6 @@ nav a {
   flex-direction: column;
   background-color: #f6cfda;
   width: 100%;
-  padding: 10px;
 }
 
 .hello-information-wrapper {
@@ -90,7 +89,6 @@ nav a {
   height: 200px;
   background-color: #76c8e6;
   color: #3a3a3a;
-  padding: 5px;
   margin: 10px;
 }
 
