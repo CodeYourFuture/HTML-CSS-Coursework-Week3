@@ -13,6 +13,13 @@
     width: 95%;
     height: auto;
   }
+
+  .hello-information {
+    padding: 0;
+  }
+  .hello-information > h1 {
+    padding: 0;
+  }
 }
 
 @media only screen and (min-width: 320px) and (max-width: 768px) {
