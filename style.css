@@ -104,12 +104,12 @@ a:hover {
     border-radius: 2%;
     list-style-type: none;
     height: 30%;
-    width: 70%;
+    width: 60%;
 }
 
 .carousel > li {
     flex-shrink: 0;
-    width: 100%;
+    width: 90%;
     height: auto;
     margin: 10%;
 }
@@ -122,6 +122,9 @@ a:hover {
     margin-top:10%;
 }
 
+ul.carousel {
+    padding: 0px;
+}
 
 .controls {
     display:flex;
@@ -141,7 +144,7 @@ a:hover {
     background-color: rgb(204, 154, 240);
     width:70%;
     height:50%;
-    margin: 13%;
+    margin: 15%;
 }
 
 
@@ -240,7 +243,7 @@ button:hover {
 
 /* responsive to desktop */
 
-@media (min-width: 961px) {
+@media (min-width: 1024px) {
 
     header {
         margin-bottom: 10%;
@@ -268,12 +271,12 @@ button:hover {
     .menu {
         display: flex;
         justify-content: flex-start;
-        position: absolute;
         right: 10%;
         top: 10%;
         width: 100%;
         margin-left: 20%;
         padding: 5%;
+        position: absolute;
     }
 
     .menu li {
@@ -283,21 +286,27 @@ button:hover {
         font-weight: bolder;
         margin-left: 5%;
         margin-right: 5%;
-        padding: 1%;
+        padding: 1% 2%;
+    }
+
+    ul.carousel {
+        padding: none;
     }
 
     .nav-item {
-        width: 80%;
+        width: 90%;
         margin-left: 3rem;
         margin-top: 5rem;
+       
     }
 
     #contact {
-        top: 5%;
+        top: 2%;
         height: 8%;
         width:5%;
         border-radius: 40%;
         background-color: rgb(199, 10, 199);
+        margin-bottom: 2rem;
     }
     
     .hello-text h1 {
@@ -312,7 +321,7 @@ button:hover {
 
     .carousel-image {
         height: 80%;
-        width: 90%;
+        width: 80%;
     }
 
     .carousel-section {
