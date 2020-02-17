@@ -17,6 +17,65 @@
     margin: auto;
 }
 
+.first-section {
+    background-color: pink;
+    height: 150px;
+}
+
+.first-section-inf-div {
+    padding: 10px;
+    height: 100px;
+    text-align: center;
+}
+
+
+.first-section-hello-div {
+    background-color: aliceblue;
+    height: 30px;
+    padding: 5px;
+}
+
+.second-section {
+    background-color: beige;
+    height: 150px;
+    text-align: center;
+}
+
+.grid-two {
+    text-align: center;
+    background-color: bisque;
+}
+
+.each-picture {
+    background-color: aquamarine;
+    border: pink 2px solid;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    position: relative;
+    height: 130px;
+}
+
+.each-picture>h3 {
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+}
+
+.footer {
+    display: flex;
+    justify-content: flex-start;
+    background-color: cornflowerblue;
+    height: 50px;
+    padding: auto;
+    justify-content: center;
+}
+
+.footer>a {
+    margin-right: 15px;
+}
+
 @media screen and (min-width:900px) {
     .grid-one {
         display: flex;
@@ -62,65 +121,12 @@
     .footer {
         justify-content: flex-start;
     }
-}
 
-.grid-two {
-    text-align: center;
-    background-color: bisque;
-}
+    .first-section {
+        height: 600px;
+    }
 
-.first-section {
-    background-color: pink;
-    height: 150px;
-}
-
-.first-section-inf-div {
-    padding: 10px;
-    height: 100px;
-    text-align: center;
-}
-
-
-.first-section-hello-div {
-    background-color: aliceblue;
-    height: 30px;
-    padding: 5px;
-}
-
-.second-section {
-    background-color: beige;
-    height: 150px;
-    text-align: center;
-}
-
-
-
-.each-picture {
-    background-color: aquamarine;
-    border: pink 2px solid;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    position: relative;
-    height: 130px;
-}
-
-.each-picture>h3 {
-
-    position: absolute;
-    bottom: 0;
-    left: 0;
-
-}
-
-.footer {
-    display: flex;
-    justify-content: flex-start;
-    background-color: cornflowerblue;
-    height: 50px;
-    padding: auto;
-    justify-content: center;
-}
-
-.footer>a {
-    margin-right: 15px;
+    .second-section {
+        height: 600px;
+    }
 }
