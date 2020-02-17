@@ -35,26 +35,28 @@ body{
     margin: 0;
     padding: 0;
     background-color: #eb9de0;
+    width:100%;
+    text-align: center;
   }
   
   /* Style the topnav links */
   .topnav li {
     list-style-type: none;
+    display: inline;
     
   }
   .topnav a {
-    display: block;
     background-color: rgb(233, 159, 196);
     color: #3306b1;
     text-align: center;
-    font-size: 20px;
+    font-size: 18px;
     font-family: "Segoe UI";
     font-style: oblique;
     font-weight: 480;
     padding: 14px 16px;
     text-decoration: none;
     
-    
+
   }
   
   /* Change color on hover */
@@ -169,12 +171,10 @@ body{
 }
 
 }
-@media screen and (min-width: 500px) {
+@media screen and (max-width: 500px) {
     .topnav a {
       display:block;
       text-align: center;
-      float: left;
-      width: 25%;
     }
-  }
+}
 
