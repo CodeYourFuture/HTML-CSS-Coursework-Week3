@@ -45,6 +45,7 @@ footer {
   justify-content: space-around;
 }
 
+
 @media (min-width: 500px) {
   .gray-1 {
     background: rgb(255, 0, 0);
