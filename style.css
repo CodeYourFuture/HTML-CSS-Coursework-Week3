@@ -269,9 +269,6 @@ footer {
     .fa {
         visibility: hidden;
     }
-    #about {
-       
-    }
     .footer-flex {
         display: flex;
         justify-content: space-between;
