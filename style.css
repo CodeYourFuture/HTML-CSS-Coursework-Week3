@@ -29,7 +29,9 @@ body {
 
 
 .header {
-    display: block;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     box-shadow: 2px 2px 6px 0 rgba(0,0,0, .1);
     position: fixed;
     width: 100%;
@@ -40,15 +42,17 @@ body {
 
 
 .header ul {
+    justify-content: flex-end;
+    align-items: flex-end;
     margin: 0;
     padding: 0;
     list-style: none;
     overflow: hidden;
     background-color: white;
-    display: block;
     text-align: center;
 }
 .header li {
+    
     padding: 20px 30px;
     
 }
@@ -63,10 +67,13 @@ body {
 } 
 
 .header .menu {
-    display: block;
-    position: relative;
+    position: absolute;
+    flex-direction: row;
+    top: 0;
+    margin-top: 62px;
     transition: max-height .2s ease-out;
     max-height: 0px;
+    width: 100%;
     
 }
 .header .menu-icon {
