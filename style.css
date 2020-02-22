@@ -24,6 +24,7 @@ main section {
     color: #fff;
 }
 
+/* Navigation styles */
 .header {
     display: flex;
 }
@@ -71,12 +72,16 @@ main section {
 
 }
 
+/* Hero styles */
+
 .hero {
     background: white;
     text-align: center;
     color: turquoise;
 }
 
+
+/* Content styles */
 
 @media screen and (max-width: 480px) {
     .flex-container {
@@ -131,6 +136,8 @@ figcaption {
     justify-content: center;
     margin-top: 30px;
     margin-bottom: 30px;
+    background-color: #fff;
+    color: tomato;
 
 }
 
@@ -158,7 +165,6 @@ figcaption {
 .line {
     border-top: 1px solid #fff;
     width: 10%;
-    position: ;
    
 }
 
@@ -190,12 +196,6 @@ figcaption {
     text-align: center;
 }
 
-.portfolio {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr))
-
-}
-
 .ordering {
     text-align: center;
 }
@@ -205,6 +205,8 @@ figcaption {
     padding-bottom: 20px;
     text-align: center;
 }
+
+/* Footer styles */
 
 footer {
     display: flex;
