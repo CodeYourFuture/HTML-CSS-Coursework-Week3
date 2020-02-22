@@ -1,92 +1,130 @@
-*{
+* {
     margin: 0;
-    padding: 0;
+    padding: 4px;
 }
 
 body {
     font-family: Arial, Helvetica, sans-serif;
     -webkit-font-smoothing: antialiased;
-    background-color: white;
+    background-color: #96e0d9;
 }
 
-
-@media screen and (max-width: 480px) {
-
-.top-bar {
-    background-color: #ffc0cb;
-    width: 100%;
-    padding: 10px;
-    border-bottom: 1px solid black;
+.wrapper {
+    margin: auto;
+    max-width: 75rem;
 }
 
-.top-bar h1 {
-    text-align: center;
+aside,
+footer,
+header,
+main section {
+    display: block;
+    margin: 0;
+    padding: 1.25rem;
+    color: #fff;
 }
 
-
-.hamburger-menu {
-        display: block;
-        height: 100px;
-        width: 100%;
-        background: url(images/hamburger-menu.png) no-repeat 98% center;
-        background-color: white;
-        padding-left: 35px;
-
+.header {
+    display: flex;
 }
 
 .logo {
-    width: 100px;
-    float: left;
+    display: flex;
+    width: 80px;
+ 
 }
 
-#nav-bar {
+.nav-bar {
     text-align: left;
-    padding-top: 65px;
 }
 
-#nav-bar ul {
+.nav-bar ul {
     list-style: none;
     margin: none;
 }
 
 
-#nav-bar li {
+.nav-bar li {
     display: inline-flex;
+    display: none;
 }
 
-#nav-bar li a {
+.nav-bar li a {
     color: black;
     text-decoration: none;
     padding: 10px;
 
 }
 
-#nav-bar li a:hover {
+.nav-bar li a:hover {
     color: black;
 }
 
-.img-banner {
-    display: none;
+
+.hamburger-menu {
+    display: block;
+    height: 80px;
+    width: 100%;
+    background: url(images/hamburger-menu.png) no-repeat 100% center;
+    background-color: #fff;
+
+
 }
 
-
-.mini-banner {
-    background-color: #ffc0cb;
-}
-
-.mini-banner h1 {
+.hero {
+    background: white;
     text-align: center;
-    font-size: 35px;
-    padding-top: 60px;
-    padding-bottom: 10px;
+    color: turquoise;
 }
 
-.mini-banner p {
+
+@media screen and (max-width: 480px) {
+    .flex-container {
+        display: flex;
+        max-width: 100%;
+        background: tomato;
+    }
+}
+
+.content {
+    flex: 1;
+
+}
+
+.cakes {
     text-align: center;
-    font-size: 35px;
-    padding-bottom: 60px;
-    margin-bottom: 50px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.side-bar {
+    flex: 0 1 300px;
+    justify-content: center;
+    text-align: center;
+}
+
+
+figure {
+    display: flex;
+    flex-flow: column;
+    padding: 3px;
+    max-width: 100%;
+    margin: 5px;
+    border: 1px solid #f5f5f5;
+    text-align: center;
+
+}
+
+img {
+    max-width: 100%;
+    max-height: 150px;
+}
+
+figcaption {
+    text-align: center;
+    font-style: italic;
+    background-color: #96e0d9;
+    color: #000;
+    padding: 3px;
+
 }
 
 .btn {
@@ -96,34 +134,32 @@ body {
 
 }
 
-.information {
+.side-bar {
     margin: 10px, 20px;
+    border: 1px solid #fff;
+    
 }
 
-.information h1 {
+.side-bar h1 {
     text-align: center;
     font-size: 30px;
     margin-bottom: 10px;
 }
 
-.information p {
+.side-bar p {
     margin-left: 20px;
     margin-right: 20px;
     line-height: 25px;
     padding-bottom: 20px;
     text-align: justify;
+    
 }
 
-hr {
-    width: 100%;
-    background-color: gray;
-    opacity: 0.1;
-    padding: 15px;
-}
-
-.responsive {
-    width: 100%;
-    height: auto;
+.line {
+    border-top: 1px solid #fff;
+    width: 10%;
+    position: ;
+   
 }
 
 .cake-text {
@@ -131,35 +167,93 @@ hr {
     text-align: center;
 }
 
-hr {
+
+.row {
+    display: flex;
+    padding: 0 4px;
+    flex-direction: row;
+}
+
+.column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+.cupcake_img {
+    margin-top: 8px;
     width: 100%;
-    background-color: gray;
-    opacity: 0.1;
+}
+
+
+.cupcakes-text{
+    text-align: center;
+}
+
+.portfolio {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr))
+
+}
+
+.ordering {
+    text-align: center;
 }
 
 .ordering h1 {
-    padding-top: 20px;
+    padding-top: 10px;
     padding-bottom: 20px;
     text-align: center;
 }
 
 footer {
+    display: flex;
     justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 20px;
 }
 
-.site-footer li {
+
+footer p {
+    height: 30px;
+    padding-top: 20px;
+    margin-top: 20px;
+    background-color: #ffc0cb;
+    width: 100%;
     text-align: center;
 
 }
 
-footer p {
-        height: 30px;
-        padding-top: 20px;
-        background-color: #ffc0cb;
-        border-top: 1px solid #eee;
-        width: 100%;
-        text-align: center;
-    
+.site-footer {
+    text-align: center;
+    font-weight: bold;
+    padding-top: 60px;
+}
+
+
+@media screen and (min-width: 480px) {
+    .flex-container {
+        display: flex;
+        max-width: 100%;
     }
+
+    .row {
+        display: flex;
+        padding: 0 4px;
+    }
+
+    .column {
+        flex: 50%;
+        max-width: 50%;
+        padding: 0 4px;
+    }
+
+    .cupcake_img {
+        margin-top: 8px;
+        width: 100%;
+    }
+
+
 
 }
