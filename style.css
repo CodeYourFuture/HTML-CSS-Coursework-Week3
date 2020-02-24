@@ -1,51 +1,54 @@
-[type="checkbox"]:checked + nav {
-    display: block;
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+html {
+    font-family: Arial, Helvetica, sans-serif;
 }
 nav {
-    display: none;
+    border-bottom: 1px solid grey;
+    text-align: right;
+    height: 70px;
+    line-height: 70px;
+}
+.menu {
+    margin: 0 30 0 0;
+}
+.menu li a {
+    display: flex;
+    text-decoration: none;
+    color: grey;
+    margin: 0 10px;
+    line-height: 70px;
 }
 label {
-    border-bottom: 3px solid black;
-    border-top: 3px solid black;
-    display: block;
-    width: 20px;
-    height: 8px;
-    position: relative;
+    margin: 0 40 0 0;
+    font-size: 26px;
+    line-height: 70px;
+    display: none;
 }
-label::before {
-    content: "";
-    position: absolute;
-    border-bottom: 3px solid black;
-    left: 0;
-    right: 0;
+#toggle {
+    display: none;
 }
-header {
-    display: flex;
-    justify-content: space-between;
-
-}
-.divL {
-    width: 15%;
-}
-.divR {
-    width: 35%;
-    display: flex;
+@media only screen and (max-width: 500px) {
+    label {
+        display: block;
+        cursor: pointer;
+    }
+    .menu {
+        text-align: center;
+        width:100%;
+        display: none;
+    }
+    .menu ul a {
+        display: block;
+        border-bottom: 1px solid grey;
+        margin:0;
+    }
+    #toggle:checked + .menu {
+        display: block;
+    }
     
-}
-.divT { 
-    position: relative;
-    box-sizing: border-box;
-    width: 50%;
-    padding: 20px;
-    display: flex;
-    float:left;    
-}
-.divB { 
-    position: absolute;
-    box-sizing: border-box;
-    bottom: 50%;
-    display: flex;
-    bottom: 40%;
-    float:left;
-}
 
+}
