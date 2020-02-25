@@ -1,37 +1,94 @@
 
-
 body{
-  background-color: rgb(247, 71, 71);
-}
-
-.logo{
-  height:75px;
-  width: 75px;
-  margin: auto;
+  background-color: pink;
 }
 
 .nav-bar{
-   max-width: 100%;
+  position: fixed;
+  top: 0;  
+  width: 100%;
+  display: flex;
+  flex-direction: flex-start;
+  align-items: center;
+  z-index: 1; 
+  color: white;
+}
+
+.logo{
+  height:70px;
+  width: 100px;
   margin: auto;
+  float: left;
 }
 
-label{
-  display: inline-block;
-  font-size: 30px;
-  text-align: left;
-  padding-top: 0;
+.nav-link {
+  margin: 75px;
+  
 }
 
-nav ul {
-  background-color:rgba(241, 11, 11, 0.945);
-  list-style: none;
+.boxColor{
+  background-color: white;
 }
 
-nav li{
-  display: inline-flex;
-  padding: left;
+.spacing{
+  margin-top: 100px;
+  margin-left: 100px;
+}
+
+.Cake{
+  height:700px;
+  width: 670px;
+  margin: auto;
+  float: right; 
+}
+
+.smallPics{
+  height: 200px;
+  width: 200px;
+  margin-top: 20px;
+}
+
+footer{
+  text-align: center;
+  margin: 20px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.col-3,
+.col-6,
+.col-12{
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-6 {
+  width: 50%;
+}
+.col-12 {
+  width: 100%;
+}
+
+ @media (max-width: 768px){
+  header{
+      background-color: blueviolet;
+  }
+  footer{
+      font-size: 20px;
+  }
+  .details{
+      display: flex;
+      flex-direction: column;
+  }
 } 
-
-.cake1{
-  display: inline-flex;
-}
