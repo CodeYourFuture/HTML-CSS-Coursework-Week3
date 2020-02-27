@@ -83,14 +83,6 @@ main section {
 
 /* Content styles */
 
-@media screen and (max-width: 480px) {
-    .flex-container {
-        display: flex;
-        max-width: 100%;
-        background: tomato;
-    }
-}
-
 .content {
     flex: 1;
 
@@ -119,8 +111,10 @@ figure {
 }
 
 img {
-    max-width: 100%;
+    width: 100%;
     max-height: 150px;
+    height: auto;
+    max-width: auto;
 }
 
 figcaption {
@@ -233,6 +227,14 @@ footer p {
     padding-top: 60px;
 }
 
+@media screen and (max-width: 480px) {
+    .flex-container {
+        display: flex;
+        max-width: 100%;
+        background: tomato;
+    }
+}
+
 
 @media screen and (min-width: 480px) {
     .flex-container {
@@ -256,6 +258,8 @@ footer p {
         width: 100%;
     }
 
-
+.hamburger-menu {
+    display: none;
+}
 
 }
