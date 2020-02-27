@@ -108,7 +108,7 @@ main section {
 
 
 figure {
-    display: flex;
+    display: inline-block;
     flex-flow: column;
     padding: 3px;
     max-width: 100%;
