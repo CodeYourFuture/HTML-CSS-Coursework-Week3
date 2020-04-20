@@ -71,6 +71,10 @@ a:hover{
 
 .big_pic{
     width: 60%;
+    background-size: cover;
+    height: 25%;
+    margin-left: 20%;
+    margin-top: 5%;
 }
 
 div.big_pic img{
@@ -114,6 +118,20 @@ li{
 }
 .li_width{
     width: 33%;
+}
+.li_width p{
+    text-align: center;
+    font-size: x-large;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    text-shadow: 0 0 0.2px blue;
+}
+.big_pic p{
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    text-shadow: 0 0 0.2px blue;   
 }
 
 .footer_p{
