@@ -1,16 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Responsive Cake webpage</title>
-    <!-- Add a link to your css file here -->
-</head>
+    <link rel="stylesheet" href="style.css" />
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <script defer src="/app.js"></script>
+  </head>
 
-<body>
-    <!-- Add your markup here -->
-</body>
+  <body>
+    <header>
+      <nav>
+        <div class="logoandtitle">
+          <img id="logo" src="/images/cake-logo.png" alt="logo">
+          <h1>Pastel</h1>
+        </div>
+        <ul class="navlinks">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Services</a></li>
+        </ul>
+        <div class="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
 
+      </nav>
+    </header>
+    <main>
+      <section class="mainsection">
+        <div class="hero">
+          <!-- <img id="heropic" src="/images/cake-image.png" alt="cake image"> -->
+        </div>
+      </section>
+
+      <section>
+          <div class="section2">
+            <h3 class="welcome">Welcome</h3>
+            <p>We provide cakes for all occasions, from weddings to birthday parties. All our cakes are baked with quality ingredients guarenteeing satisfaction.</p>
+          </div>
+          <div class="threeimages">
+            <ul class="pics3">
+              <li>
+                <img id="lipics" src="/images/birthdaypic.png" alt="birthday cake">
+                <a href="#">Birthdays</a>
+              </li>
+              <li>
+                <img id="lipics" src="/images/partypic.png" alt="party cake">
+                <a href="#">Parties</a>
+              </li>
+              <li>
+                <img id="lipics" src="/images/weddingpic.png" alt="wedding cake">
+                <a href="#">Weddings</a>
+              </li>
+            </ul>
+          </div>
+          <img id="ellipse2" src="/images/Ellipse 2.png" alt="ellipse">
+          <img id="ellipse3" src="/images/Ellipse 3.png" alt="ellipse">
+          <img id="ellipse4" src="/images/Ellipse 4.png" alt="ellipse">
+          <img id="ellipse1" src="/images/Ellipse 1.png" alt="ellipse">
+      </section>
+    </main>
+    <footer>
+      <h3 class="join">Follow Us Now</h3>
+      <div class="social">
+        <ul id="footerul">
+          <li><div class="icon-container"><img id="socialicons" src="/images/icons8-twitter-48.png"></div></li>
+          <li><div class="icon-container"><img id="socialicons" src="/images/icons8-facebook-48.png"></div></li>
+          <li><div class="icon-container"><img id="socialicons" src="/images/icons8-instagram.svg"></div></li>
+        </ul>
+      </div>
+      <h5>&copy;Copyright 2020, Pastel Inc.</h5>
+    </footer>
+  </body>
 </html>
