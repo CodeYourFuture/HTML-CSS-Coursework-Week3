@@ -33,6 +33,8 @@ section {
     align-items: center;
 }
 
+/* Introduction */
+
 .introduction {
     width: 100%;
 }
@@ -45,16 +47,28 @@ section {
     margin: auto;
     overflow: hidden;
     text-align: center;
+
+    position: relative;
 }
 
 .navigation {
-    background: red;
+    position: absolute;
+    bottom: .5rem;
+
+    width: 100%;
+    height: 20%;
+    background: #65583B;
+    opacity: .5;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
-.bars {
+.bar {    
     background: #D8BD96;
-    width: 80px;
-    height: 10px;
+    width: 20%;
+    height: 70%;
 }
 
 /* Footer */
