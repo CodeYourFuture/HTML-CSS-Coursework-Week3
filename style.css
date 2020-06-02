@@ -3,14 +3,25 @@ html {
 	font-family: apple-system, BlinkMacSystemFont, “Segoe UI”, “Roboto”, “Oxygen”, “Ubuntu”, “Cantarell”, “Fira Sans”,
 		“Droid Sans”, “Helvetica Neue”, sans-serif;
 }
-body {
-	background-color: #faf0cb;
+
+.navbar {
+	font-size: 1.5rem;
 }
-.button-top {
-	border: 3px;
-	border-color: black;
+.navbar img {
+	font-size: 1.5rem;
 }
 
+.nav-top ul li {
+	font-size: 2rem;
+}
+
+.aside-left-with-carossel p {
+	font-size: 1.3rem;
+}
+#carouselExampleIndicators img {
+	width: 100%;
+	height: 100%;
+}
 .cake-cards img {
 	width: 100%;
 	height: 50%;
@@ -18,6 +29,9 @@ body {
 .cake-card col {
 	margin-left: 10px;
 	margin-right: 10px;
+}
+.cake-cards {
+	border: none;
 }
 
 @media only screen and (min-width: 550px) and (max-width: 750px) {
