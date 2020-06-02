@@ -1,0 +1,129 @@
+@import './variables';
+
+*
+{
+    font-family: monospace;
+}
+
+
+
+html{
+    font-size: 10px;
+    
+}
+
+@mixin flexCenter($direction)
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $direction;
+}
+
+@mixin bord
+{
+    border: 2px solid;
+}
+
+header{
+
+    background: $primary_b_color;
+}
+
+// this is the container from bootstrap
+// it never takes 100% width automatically, container fluid takes 100% width.
+.container 
+{
+    @include flexCenter(column);
+    @include bord;
+
+
+    &-logo{
+
+        border-radius: 50%;
+        margin:3rem;
+        @include bord;
+        border-width: 1rem;
+        color:$secondary_color;
+
+    }
+
+    .company-name{
+        font-size: 3rem;
+        color:$secondary_color;
+    }
+}
+
+
+
+/* The Overlay (background) */
+.overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+    height: 100%;
+    width: 0;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: rgb(0, 0, 0); /* Black fallback color */
+    background-color: rgba(245, 148, 148, 0.9); /* Black w/opacity */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+  }
+  
+  /* Position the content inside the overlay */
+  .overlay-content {
+    position: relative;
+    top: 25%; /* 25% from the top */
+    width: 100%; /* 100% width */
+    text-align: center; /* Centered text/links */
+    margin-top: 3rem; /* 30px top margin to avoid conflict with the close button on smaller screens */
+    background-color: rgba(150, 243, 238, 0.7); 
+    padding:3rem 0;
+  }
+  
+  /* The navigation links inside the overlay */
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 3rem;
+    color: #e76565;
+    display: block; /* Display block instead of inline */
+    transition: 0.3s; /* Transition effects on hover (color) */
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .overlay a:hover, .overlay a:focus {
+    color: #585454;
+  }
+  
+  /* Position the close button (top right corner) */
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+
+
+
+  .header
+  {
+    #{&}-nav-button
+   {
+      font-size: 2rem;
+      width:30%;
+      background-color: $secondary_color;
+      color:blue;
+      border: 0.3rem solid;
+      text-align: center;
+      padding:0.9rem 0.1rem;
+      margin: 5rem auto;
+
+      &:hover{
+        background-color:darken($secondary_color,5%);
+        border: 0.4rem solid;
+      }
+    }
+  }
+  

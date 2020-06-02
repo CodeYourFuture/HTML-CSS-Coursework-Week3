@@ -7,10 +7,58 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Responsive Cake webpage</title>
     <!-- Add a link to your css file here -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Here is the link for bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" 
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" 
+        crossorigin="anonymous"
+    >
 </head>
 
 <body>
-    <!-- Add your markup here -->
+    <header class="header">
+        <div class="container">
+            <img class="container-logo"src="images/logo.png" alt="Logo of the website">
+
+            <h1 class="company-name">Davies cake shop</h1>
+        </div>
+
+        <!-- The overlay -->
+        <div id="myNav" class="overlay">
+
+            <!-- Button to close the overlay navigation -->
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  
+             <!-- Overlay content -->
+            <div class="overlay-content">
+                <a href="#">Homes</a>
+                <a href="#">Services</a>
+                <a href="#">Cakes</a>
+                <a href="#">Special orders</a>
+                <a href="#">Home Delivery</a>
+            </div>
+  
+        </div>
+  
+         <!-- Use any element to open/show the overlay navigation menu -->
+        <div class="header-nav-button" onclick="openNav()">////</div>
+
+
+        <script>
+            /* Open when someone clicks on the span element */
+          function openNav() {
+            document.getElementById("myNav").style.width = "100%";
+          }
+          
+          /* Close when someone clicks on the "x" symbol inside the overlay */
+          function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+          }
+          </script> 
+    </header>
+    <main></main>
+    <footer></footer>
 </body>
 
 </html>
