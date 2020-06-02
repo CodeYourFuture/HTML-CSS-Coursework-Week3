@@ -10,6 +10,9 @@ body{
     background: linear-gradient(#FBFBFB, #4F5455);
     overflow: hidden;
 }
+h1{
+   
+}
 nav{
     display: flex;
     justify-content: space-between;
@@ -327,6 +330,7 @@ footer{
 @media screen and (min-width: 411px){
     body{
         height: 80vh;
+        overflow-y: visible;
     }
      footer{
         padding-top: 250px;
@@ -372,7 +376,8 @@ footer{
  
  @media screen and (min-width: 768px){
     body{
-        height: 150vh;
+        height: 200vh;
+        overflow-y: visible;
     }
     .mainsection{
         height: 60vh;
@@ -405,10 +410,10 @@ footer{
     }
    
     .welcome{
-        font-size: 30px;
+        font-size: 25px;
     }
     p{
-        font-size: 25px;
+        font-size: 20px;
     }
     #lipics{
         width: 160px;
@@ -480,7 +485,12 @@ footer{
 }
 
 @media screen and (min-width: 1024px){
-    
+    body{
+        overflow-y: visible;
+    }
+    h1{
+        font-size: 40px;
+    }
     .mainsection{
         height: 60vh;
         background-image: url(/images/cakehero2.jpg);
@@ -489,18 +499,19 @@ footer{
         background-size: cover;
     }
     .welcome{
-        font-size: 20px;
+        font-size: 25px;
     }
     p{
-        font-size: 25px;
+        font-size: 20px;
     }
 
     .navlinks{
         width: 33%;
     }
     h1{
-        font-size: 60px;
+        font-size: 50px;
         letter-spacing: 2px;
+        
     }
     .threeimages{
         height: 20vh;
@@ -583,7 +594,7 @@ footer{
     }
     .mainsection{
         height: 60vh;
-        background-image: url(/images/cake-image.png);
+        background-image: url(/images/cakehero2.jpg);
         background-repeat: no-repeat;
         background-position: center bottom;
         background-size: cover;
@@ -653,7 +664,7 @@ footer{
 
 @media screen and (min-width: 1300px){
     body{
-        height: 200vh;
+        height: 120vh;
        
        
     }
@@ -683,21 +694,20 @@ footer{
    
     .threeimages{
         height: 300px;
+        padding-top: 200px;
     }
-    .welcome{
-        font-size: 25px;
-    }
-    p{
-        font-size: 20px;
-    }
+   
     .join{
         padding-top: 120px;
         font-weight: 200;
         font-size: 25px;
     }
+    footer{
+        padding-top: 400px;
+    }
    
     #footerul{
-        
+       
         width: 15%;
 
     }
