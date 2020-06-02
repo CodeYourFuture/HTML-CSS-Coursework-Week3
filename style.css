@@ -1,5 +1,5 @@
 * {
-  font-family: monospace;
+  font-family: 'Courier New', Courier, monospace;
   background: #c6fff1;
 }
 
@@ -215,11 +215,53 @@ html {
   font-size: 2.5rem;
   text-align: center;
   width: 60%;
+  margin-top: 10rem;
 }
 
 .lower-main .slideshow-1 {
-  margin-top: 1rem;
   border: 3px solid;
   border-radius: 10%;
+  border-color: #e288ae;
+}
+
+.lower-main .wedding-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 6rem;
+}
+
+.lower-main .wedding-section h3 {
+  font-size: 3.5rem;
+  color: #fd8d8d;
+  margin-top: 4rem;
+  margin-bottom: 0;
+}
+
+.lower-main .wedding-section .wedding-cakes {
+  width: 30rem;
+  margin: 3rem;
+  height: 40rem;
+  border: 5px solid;
+  border-color: #f38c8c;
+  border-radius: 5%;
+}
+
+.footer {
+  background-color: #93ffe4;
+}
+
+.footer li {
+  background-color: #93ffe4;
 }
 /*# sourceMappingURL=style.css.map */

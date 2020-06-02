@@ -2,7 +2,7 @@
 
 *
 {
-    font-family: monospace;
+    font-family: 'Courier New', Courier, monospace;;;
     background: $primary_b_color;
 }
 
@@ -190,14 +190,48 @@ html{
       font-size: 2.5rem;
       text-align: center;
       width:60%;
+      margin-top: 10rem;
     }
 
     .slideshow-1
     {
-      
-      margin-top: 1rem;
       border:3px solid;
       border-radius: 10%;
+      border-color: rgb(226, 136, 174);
     }
+
+    .wedding-section
+    {
+      @include flexCenter(column);
+      margin-top: 6rem;
+
+      h3
+      {
+        font-size:3.5rem;
+        color:$secondary_color;
+        margin-top: 4rem;
+        margin-bottom: 0;
+      }
+      .wedding-cakes
+      {
+        width:30rem;
+        margin:3rem;
+        height: 40rem;
+        border:5px solid;
+        border-color:rgb(243, 140, 140);
+        border-radius: 5%;
+      }
+    }
+
+  }
+
+
+  .footer
+  {
+    background-color: darken($primary_b_color,10%);
+    li{
+      background-color: darken($primary_b_color,10%);
+    }
+    
 
   }
