@@ -27,7 +27,7 @@ header {
 
 /* Section */
 
-section {
+main {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -44,12 +44,54 @@ section {
 .slidershow {
     width: 20rem;
     height: 12rem;
-    margin: auto;
+    margin: 1rem auto;
     overflow: hidden;
-    text-align: center;
+    text-align: center;     /* positions slider to the middle */
 
     position: relative;
 }
+
+/* Radio buttons */
+
+input[name="radio"] {
+    display: none;
+}
+
+/* Slides */
+
+.slides {    
+    width: 400%;
+    display: flex;
+}
+
+.slide {
+    width: 25%;
+    transition: .6s;
+}
+
+img {
+    width: 100%;
+}
+
+/* Slide1 moves left on radio check */
+
+#radio1:checked ~ .slide1 {
+    margin-left: 0;
+}
+
+#radio2:checked ~ .slide1 {
+    margin-left: -25%;
+}
+
+#radio3:checked ~ .slide1 {
+    margin-left: -50%;
+}
+
+#radio4:checked +.slide1 {
+    margin-left: -75%;
+}
+
+/* Navigation */
 
 .navigation {
     position: absolute;
