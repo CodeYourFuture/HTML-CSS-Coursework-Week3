@@ -14,6 +14,7 @@ body {
     background: #3E3629;
     color: #D8BD96;
     font-family: 'Architects Daughter', cursive;
+    line-height: 1.4rem;
     margin: 1rem;
 }
 
@@ -111,6 +112,10 @@ img {
     background: #D8BD96;
     width: 20%;
     height: 70%;
+}
+
+figure {
+    margin: 2rem;
 }
 
 /* Footer */
