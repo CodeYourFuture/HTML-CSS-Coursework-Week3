@@ -116,6 +116,18 @@ img {
 
 figure {
     margin: 2rem;
+    background: #9C7143;
+}
+
+figcaption {
+    text-align: center;
+    color: #D8BD96;
+    padding: .5rem;
+}
+
+b {
+    font-size: 1.2rem;
+    color: #3E3629;
 }
 
 /* Footer */
