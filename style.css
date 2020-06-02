@@ -13,6 +13,21 @@
 body {
     background: #3E3629;
     color: #D8BD96;
-    font-family: 'Architects Daughter', cursive;;
+    font-family: 'Architects Daughter', cursive;
+    margin: 1rem;
 }
 
+/* Header */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Slider */
+
+.slidershow {
+    width: 20rem;
+    height: 12rem;
+}
