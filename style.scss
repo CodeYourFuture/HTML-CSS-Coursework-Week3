@@ -228,9 +228,22 @@ html{
 
   .footer
   {
-    background-color: darken($primary_b_color,10%);
+    @include flexCenter(row);
+    margin-top: 5rem;
+    ul
+    {
+      @include flexCenter(row);
+      justify-content: space-around;
+      width:50%;
+    }
     li{
-      background-color: darken($primary_b_color,10%);
+      list-style: none;
+      font-size: 2rem;
+      color:rgb(19, 119, 150);
+      border:3px solid;;
+      padding: 1rem 1rem;
+      background-color: rgb(240, 144, 144);
+      border-radius: 20%;
     }
     
 
