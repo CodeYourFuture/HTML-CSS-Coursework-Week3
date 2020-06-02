@@ -1,5 +1,5 @@
 * {
-  font-family: 'Courier New', Courier, monospace;
+  font-family: ubuntu, Verdana, Arial, sans-serif;
   background: #c6fff1;
 }
 
@@ -49,11 +49,14 @@ html {
       align-self: flex-end;
   margin: 3rem 2rem;
   font-size: 2rem;
-  color: #0d615a;
+  color: #EEE2DC;
+  border-color: #123C69;
   background-color: #fd8d8d;
   padding: 2rem;
   border-radius: 10%;
   border: 2px solid;
+  -webkit-box-shadow: 4px 4px grey;
+          box-shadow: 4px 4px grey;
 }
 
 .container-logo {
@@ -62,11 +65,14 @@ html {
   border: 2px solid;
   border-width: 1rem;
   color: #fd8d8d;
+  -webkit-box-shadow: 4px 4px grey;
+          box-shadow: 4px 4px grey;
 }
 
 .container .company-name {
   font-size: 5rem;
   color: #fd8d8d;
+  text-shadow: 2px 2px grey;
 }
 
 /* The Overlay (background) */
@@ -145,14 +151,17 @@ html {
 }
 
 .header .header-nav-button {
-  font-size: 2rem;
+  font-size: 3rem;
   width: 30%;
   background-color: #fd8d8d;
-  color: blue;
+  color: #05599e;
   border: 0.3rem solid;
+  border-color: #fac5c5;
   text-align: center;
   padding: 0.9rem 0.1rem;
   margin-top: 4rem;
+  -webkit-box-shadow: 4px 4px grey;
+          box-shadow: 4px 4px grey;
 }
 
 .header .header-nav-button:hover {
@@ -212,7 +221,7 @@ html {
 
 .lower-main h2 {
   color: #fd8d8d;
-  font-size: 2.5rem;
+  font-size: 3rem;
   text-align: center;
   width: 60%;
   margin-top: 10rem;
@@ -290,7 +299,7 @@ html {
           flex-direction: row;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  width: 50%;
+  width: 70%;
 }
 
 .footer li {
@@ -301,5 +310,43 @@ html {
   padding: 1rem 1rem;
   background-color: #f09090;
   border-radius: 20%;
+  -webkit-box-shadow: 5px 5px;
+          box-shadow: 5px 5px;
+}
+
+@media only screen and (max-width: 600px) {
+  .container .logo-contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container .logo-contact h1 {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .container .company-name {
+    font-size: 4rem;
+    text-align: center;
+  }
+  .upper-main-tagline {
+    font-size: 2rem;
+  }
+  .lower-main h2 {
+    font-size: 2rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */

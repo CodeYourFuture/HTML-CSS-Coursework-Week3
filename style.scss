@@ -2,7 +2,8 @@
 
 *
 {
-    font-family: 'Courier New', Courier, monospace;;;
+    // font-family: cursive;
+    font-family: ubuntu, Verdana, Arial, sans-serif;
     background: $primary_b_color;
 }
 
@@ -50,11 +51,13 @@ html{
         align-self: flex-end;
         margin: 3rem 2rem;
         font-size: 2rem;
-        color:rgb(13, 97, 90);
+        color:#EEE2DC;
+        border-color:#123C69;
         background-color: $secondary_color;
         padding:2rem;
         border-radius: 10%;
         border:2px solid;
+        box-shadow: 4px 4px grey;
 
       }
     }
@@ -66,12 +69,15 @@ html{
         @include bord;
         border-width: 1rem;
         color:$secondary_color;
+        box-shadow: 4px 4px grey;
 
     }
 
     .company-name{
         font-size: 5rem;
         color:$secondary_color;
+        text-shadow: 2px 2px grey;
+        // color:rgb(41, 126, 114);
     }
 }
 
@@ -133,14 +139,17 @@ html{
     @include flexCenter(column);
     #{&}-nav-button
    {
-      font-size: 2rem;
+      font-size: 3rem;
       width:30%;
       background-color: $secondary_color;
-      color:blue;
+      color:rgb(5, 89, 158);
+      // text-shadow: 2px 2px grey;
       border: 0.3rem solid;
+      border-color: rgb(250, 197, 197);
       text-align: center;
       padding:0.9rem 0.1rem;
       margin-top: 4rem;
+      box-shadow: 4px 4px grey;
 
       &:hover{
         background-color:darken($secondary_color,5%);
@@ -187,7 +196,7 @@ html{
     h2
     {
       color:$secondary_color;
-      font-size: 2.5rem;
+      font-size: 3rem;
       text-align: center;
       width:60%;
       margin-top: 10rem;
@@ -234,7 +243,7 @@ html{
     {
       @include flexCenter(row);
       justify-content: space-around;
-      width:50%;
+      width:70%;
     }
     li{
       list-style: none;
@@ -244,7 +253,45 @@ html{
       padding: 1rem 1rem;
       background-color: rgb(240, 144, 144);
       border-radius: 20%;
+      box-shadow: 5px 5px;
     }
-    
+  }
 
+
+
+
+  @media only screen and (max-width:600px)
+  {
+    .container .logo-contact
+    {
+      @include flexCenter(column);
+      h1
+      {
+        align-self: center;
+      }
+    }
+
+  }
+
+  @media only screen and (max-width:450px)
+  {
+    .container .company-name
+    {
+      font-size: 4rem;
+      text-align: center;
+      
+    }
+
+    .upper-main-tagline
+    {
+      font-size: 2rem;
+    }
+
+    .lower-main
+    {
+      h2
+      {
+        font-size: 2rem;
+      }
+    }
   }
