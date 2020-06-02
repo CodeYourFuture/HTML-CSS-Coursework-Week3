@@ -6,8 +6,13 @@
     box-sizing: border-size;
 }
 
-body {
-    background:;
-    color: ;
-    font-family: ;
+:root {
+    color: #3E3629,#65583B,#9C7143,#D77832,#D8BD96;
 }
+
+body {
+    background: #3E3629;
+    color: #D8BD96;
+    font-family: 'Architects Daughter', cursive;;
+}
+
