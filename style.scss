@@ -3,6 +3,7 @@
 *
 {
     font-family: monospace;
+    background: $primary_b_color;
 }
 
 
@@ -25,18 +26,38 @@ html{
     border: 2px solid;
 }
 
-header{
-
-    background: $primary_b_color;
-}
 
 // this is the container from bootstrap
 // it never takes 100% width automatically, container fluid takes 100% width.
 .container 
 {
-    @include flexCenter(column);
-    @include bord;
 
+  width:100%;
+    @include flexCenter(column);
+    // @include bord;
+
+
+    .logo-contact
+    {
+      @include flexCenter(row);
+      justify-content: space-between;
+      // @include bord();
+      width:100%;
+
+
+      h1
+      {
+        align-self: flex-end;
+        margin: 3rem 2rem;
+        font-size: 2rem;
+        color:rgb(13, 97, 90);
+        background-color: $secondary_color;
+        padding:2rem;
+        border-radius: 10%;
+        border:2px solid;
+
+      }
+    }
 
     &-logo{
 
@@ -49,26 +70,25 @@ header{
     }
 
     .company-name{
-        font-size: 3rem;
+        font-size: 5rem;
         color:$secondary_color;
     }
 }
 
-
+// -------------------------------------------------------------------------------
 
 /* The Overlay (background) */
-.overlay {
-    /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+.overlay {   
     height: 100%;
     width: 0;
     position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    z-index: 1; 
     left: 0;
     top: 0;
-    background-color: rgb(0, 0, 0); /* Black fallback color */
-    background-color: rgba(245, 148, 148, 0.9); /* Black w/opacity */
+    background-color: rgb(0, 0, 0); 
+    background-color: rgba(245, 148, 148, 0.9); 
     overflow-x: hidden; /* Disable horizontal scroll */
-    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay */
   }
   
   /* Position the content inside the overlay */
@@ -109,6 +129,8 @@ header{
 
   .header
   {
+
+    @include flexCenter(column);
     #{&}-nav-button
    {
       font-size: 2rem;
@@ -118,12 +140,64 @@ header{
       border: 0.3rem solid;
       text-align: center;
       padding:0.9rem 0.1rem;
-      margin: 5rem auto;
+      margin-top: 4rem;
 
       &:hover{
         background-color:darken($secondary_color,5%);
-        border: 0.4rem solid;
+        border-color: rgb(9, 90, 90);
       }
     }
   }
   
+// ---------------------------------------------------------------------------------
+
+  .upper-main
+  {
+
+    margin-top: 0;
+
+    h2{
+      margin-top: 3rem;
+    }
+    @include flexCenter(column);
+    &-image
+    {
+      width:80%;
+      border:4px solid;
+      border-radius: 5%;
+      border-color: rgb(114, 17, 143);
+    }
+
+    &-tagline
+    {
+      color:$secondary_color;
+      font-size: 3rem;
+      text-align: center;
+    }
+  }
+
+
+
+  .lower-main
+  {
+
+    @include flexCenter(column);
+
+
+    h2
+    {
+      color:$secondary_color;
+      font-size: 2.5rem;
+      text-align: center;
+      width:60%;
+    }
+
+    .slideshow-1
+    {
+      
+      margin-top: 1rem;
+      border:3px solid;
+      border-radius: 10%;
+    }
+
+  }

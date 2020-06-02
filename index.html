@@ -10,18 +10,25 @@
     <link rel="stylesheet" href="style.css" />
 
     <!-- Here is the link for bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" 
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" 
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" 
         crossorigin="anonymous"
-    >
+    > -->
 </head>
 
 <body>
+    <!-- header contains the logo, company-name and navigation bar  -->
     <header class="header">
+
         <div class="container">
-            <img class="container-logo"src="images/logo.png" alt="Logo of the website">
+            <div class="logo-contact">
+                <img class="container-logo"src="images/logo.png" alt="Logo of the website">
+                <h1>Email us </h1>
+            </div>
+            
 
             <h1 class="company-name">Davies cake shop</h1>
+            <hr>
         </div>
 
         <!-- The overlay -->
@@ -57,7 +64,54 @@
           }
           </script> 
     </header>
-    <main></main>
+    <main>
+        <!-- <hr> -->
+        <!-- upper main will contain a bigger image with an attracting tagline -->
+        <div class="upper-main">
+            <h2 class="upper-main-tagline">
+                Enjoy our Fresh cakes for free take free eat free get lost.
+            </h2>
+            
+            <img class="upper-main-image" src="images/cup-cakes.jpg" alt="cup-cakes">
+        </div>
+        <!-- lower main will contain 3 slide shows of cakes and a second slide show with 2 floor cakes
+        and a third slide show with 3 floor cakes -->
+        <div class="lower-main">
+            <script>
+                var i=0;
+                var images=[];
+                var time=1000;
+                // image list
+                images[0]="images/image1-s-1.jpg";
+                images[1]="images/image2-s-1.jpg";
+                images[2]="images/image3-s-1.jpg";
+   
+                function changeImg()
+                {
+                    document.slide.src=images[i];
+
+                    if(i<images.length-1){
+                        i++;
+                    }
+                    else{
+                        i=0;
+                    }
+                    setTimeout("changeImg()",time);
+                       
+                }
+                
+                    window.onload=changeImg;
+            </script>
+            <h2>Here is the variety of our chocolate cakes</h2>
+            <hr>
+            <img class="slideshow-1" name="slide" width ="300" height="300">
+
+            <div class="wedding-cakes">
+                
+            </div>
+            
+        </div>
+    </main>
     <footer></footer>
 </body>
 

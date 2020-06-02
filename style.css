@@ -1,16 +1,14 @@
 * {
   font-family: monospace;
+  background: #c6fff1;
 }
 
 html {
   font-size: 10px;
 }
 
-header {
-  background: #91eef5;
-}
-
 .container {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -24,6 +22,37 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.container .logo-contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.container .logo-contact h1 {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin: 3rem 2rem;
+  font-size: 2rem;
+  color: #0d615a;
+  background-color: #fd8d8d;
+  padding: 2rem;
+  border-radius: 10%;
   border: 2px solid;
 }
 
@@ -36,30 +65,26 @@ header {
 }
 
 .container .company-name {
-  font-size: 3rem;
+  font-size: 5rem;
   color: #fd8d8d;
 }
 
 /* The Overlay (background) */
 .overlay {
-  /* Height & width depends on how you want to reveal the overlay (see JS below) */
   height: 100%;
   width: 0;
   position: fixed;
   /* Stay in place */
   z-index: 1;
-  /* Sit on top */
   left: 0;
   top: 0;
   background-color: black;
-  /* Black fallback color */
   background-color: rgba(245, 148, 148, 0.9);
-  /* Black w/opacity */
   overflow-x: hidden;
   /* Disable horizontal scroll */
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+  /* 0.5 second transition effect to slide in or slide down the overlay */
 }
 
 /* Position the content inside the overlay */
@@ -103,6 +128,22 @@ header {
   font-size: 60px;
 }
 
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .header .header-nav-button {
   font-size: 2rem;
   width: 30%;
@@ -111,11 +152,74 @@ header {
   border: 0.3rem solid;
   text-align: center;
   padding: 0.9rem 0.1rem;
-  margin: 5rem auto;
+  margin-top: 4rem;
 }
 
 .header .header-nav-button:hover {
   background-color: #fd7474;
-  border: 0.4rem solid;
+  border-color: #095a5a;
+}
+
+.upper-main {
+  margin-top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.upper-main h2 {
+  margin-top: 3rem;
+}
+
+.upper-main-image {
+  width: 80%;
+  border: 4px solid;
+  border-radius: 5%;
+  border-color: #72118f;
+}
+
+.upper-main-tagline {
+  color: #fd8d8d;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.lower-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.lower-main h2 {
+  color: #fd8d8d;
+  font-size: 2.5rem;
+  text-align: center;
+  width: 60%;
+}
+
+.lower-main .slideshow-1 {
+  margin-top: 1rem;
+  border: 3px solid;
+  border-radius: 10%;
 }
 /*# sourceMappingURL=style.css.map */
