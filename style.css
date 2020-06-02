@@ -25,9 +25,40 @@ header {
     align-items: center;
 }
 
+/* Section */
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.introduction {
+    width: 100%;
+}
+
 /* Slider */
 
 .slidershow {
     width: 20rem;
     height: 12rem;
+    margin: auto;
+    overflow: hidden;
+    text-align: center;
+}
+
+.navigation {
+    background: red;
+}
+
+.bars {
+    background: #D8BD96;
+    width: 80px;
+    height: 10px;
+}
+
+/* Footer */
+
+footer {
+    display: none;
 }
