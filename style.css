@@ -19,6 +19,32 @@ body {
     width: 13rem;
 }
 
+/* Navbar */
+
+.nav-container {
+    background: #D77832;
+    padding: 1rem;
+    width: 70%;
+    /* transform: translateX(-120%); */
+}
+
+.cross {
+    text-align: end;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #3E3629;
+    font-weight: 900;
+    font-size: 1.2rem;
+    line-height: 2.6rem;
+    padding: 1rem;
+}
+
 /* Header */
 
 header {
@@ -34,7 +60,7 @@ h1 {
     margin: 0 1.7rem;
 }
 
-/* Section */
+/* Main */
 
 main {
     display: flex;
@@ -120,6 +146,7 @@ img {
 
 .introduction {
     width: 100%;
+    margin-bottom: .5rem;
 }
 
 h2 {
