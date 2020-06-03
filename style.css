@@ -4,7 +4,7 @@ body {
     color: #FF3D7F;
 }
 
-/* Medium viewport or screen */
+/* Medium viewport or screen -md-*/
 
 @media only screen and (min-width : 768px) {
     body {
@@ -12,7 +12,7 @@ body {
     }
 }
 
-/* Large viewport or screen */
+/* Large viewport or screen -lg-*/
 
 @media only screen and (min-width : 992px) {
     body {
@@ -20,7 +20,7 @@ body {
     }
 }
 
-/* Extra large viewport or screen */
+/* Extra large viewport or screen -xl- */
 
 @media only screen and (min-width : 1200px) {
     body {
