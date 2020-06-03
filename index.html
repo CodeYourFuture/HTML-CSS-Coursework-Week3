@@ -15,9 +15,57 @@
     <!-- Add a link to your css file here -->
   </head>
 
-  <body>
+  <body data-spy="scroll" data-target="#navScrollspy">
     <!-- Add your markup here -->
-    <header></header>
+    <nav class="navbar bg-primary navbar-dark navbar-expand-md fixed-top">
+      <a href="#" class="navbar-brand">CakesRUs</a>
+      <button
+        class="navbar-toggler navbar-toggler-right"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav" id="navScrollspy">
+          <li class="nav-item">
+            <a href="#top" class="nav-link">To the top</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a href="#description" class="nav-link">Description</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav">
+          <li class="nav-item"><a href="#cakes" class="nav-link">Cakes</a></li>
+        </ul>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a href="#orders" class="nav-link">Customise your own</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a href="#showcase" class="nav-link">Showcase</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a href="#about" class="nav-link">About Us</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a href="#contact" class="nav-link">Find Us</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
     <main></main>
     <footer></footer>
 
