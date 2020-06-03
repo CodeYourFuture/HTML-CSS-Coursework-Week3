@@ -1,7 +1,7 @@
 /*  Add your styling here */
-html {
-	font-family: apple-system, BlinkMacSystemFont, “Segoe UI”, “Roboto”, “Oxygen”, “Ubuntu”, “Cantarell”, “Fira Sans”,
-		“Droid Sans”, “Helvetica Neue”, sans-serif;
+
+body {
+	font-family: 'Lobster Two', cursive;
 }
 
 .navbar {
@@ -15,10 +15,14 @@ html {
 	font-size: 2rem;
 }
 
-.aside-left-with-carossel p {
-	font-size: 1.3rem;
+.aside-left-with-carousel p:first-of-type {
+	font-size: 1.5rem;
 }
-#carouselExampleIndicators img {
+#carouselExampleCaptions img {
+	width: 100%;
+	height: 100%;
+}
+.carousel-inner img {
 	width: 100%;
 	height: 100%;
 }
@@ -34,8 +38,14 @@ html {
 	border: none;
 }
 
-@media only screen and (min-width: 550px) and (max-width: 750px) {
-	.aside-left-with-carossel p {
-		font-size: .5rem;
+@media only screen and (min-width: 150px) and (max-width: 350px) {
+	.aside-left-with-carousel p:first-of-type {
+		font-size: 1rem;
+	}
+	.nav-top li a {
+		font-size: 1rem;
+	}
+	.aside-left-with-carousel h1:first-of-type {
+		font-size: 1rem;
 	}
 }
