@@ -2,6 +2,7 @@
 
 body {
 	font-family: 'Lobster Two', cursive;
+	background-color: #f8f9fa;
 }
 
 .navbar {
@@ -36,6 +37,7 @@ body {
 }
 .cake-cards {
 	border: none;
+	background-color: #f8f9fa;
 }
 
 @media only screen and (min-width: 150px) and (max-width: 350px) {
