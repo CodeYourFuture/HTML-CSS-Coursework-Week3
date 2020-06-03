@@ -3,3 +3,27 @@ body {
     background-color: aquamarine;
     color: #FF3D7F;
 }
+
+/* Medium viewport or screen */
+
+@media only screen and (min-width : 768px) {
+    body {
+        background-color: black;
+    }
+}
+
+/* Large viewport or screen */
+
+@media only screen and (min-width : 992px) {
+    body {
+        background-color: white;
+    }
+}
+
+/* Extra large viewport or screen */
+
+@media only screen and (min-width : 1200px) {
+    body {
+        background-color: blueviolet;
+    }
+}
