@@ -42,7 +42,6 @@ html{
     {
       @include flexCenter(row);
       justify-content: space-between;
-      // @include bord();
       width:100%;
 
 
@@ -143,7 +142,7 @@ html{
       width:30%;
       background-color: $secondary_color;
       color:rgb(5, 89, 158);
-      // text-shadow: 2px 2px grey;
+      border-radius: 10%;
       border: 0.3rem solid;
       border-color: rgb(250, 197, 197);
       text-align: center;
@@ -221,6 +220,11 @@ html{
         margin-top: 4rem;
         margin-bottom: 0;
       }
+
+      .image-container
+      {
+        @include flexCenter(column);
+      }
       .wedding-cakes
       {
         width:30rem;
@@ -260,7 +264,50 @@ html{
 
 
 
-  @media only screen and (max-width:600px)
+
+  @media only screen and (min-width:920px)
+  {
+
+    .container .company-name
+    {
+      font-size: 7rem;
+    }
+
+    .upper-main
+    {
+      @include flexCenter(row);
+      justify-content: space-evenly;
+      margin-top: 5rem;
+
+      &-tagline{
+        text-align: center;
+        width:40%;
+        align-self: flex-start;
+
+      }
+
+      &-image
+      {
+        // flex-basis: 1;
+        width:50%;
+      }
+
+    }
+    .lower-main 
+    {
+      // @include flexCenter(row);
+      .wedding-section 
+      {
+        .image-container
+        {
+          flex-direction: row;
+          flex-wrap: wrap;
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width:620px)
   {
     .container .logo-contact
     {
@@ -271,14 +318,48 @@ html{
       }
     }
 
+    .slideshow-1
+    {
+      width: 25rem;
+      height: 27rem;
+    }
+
+    .lower-main .wedding-section
+     
+    {
+      .wedding-cakes
+      {
+        width: 25rem;
+        height: 30rem;
+      }
+    }
+
+    .footer{
+      ul
+      {
+        width:100%;
+        li{
+          padding: 0.5rem;
+        }
+      }
+    }
+
   }
 
   @media only screen and (max-width:450px)
   {
-    .container .company-name
+    .container 
     {
-      font-size: 4rem;
-      text-align: center;
+      .company-name
+      {
+        font-size: 4rem;
+        text-align: center;
+      }
+
+      &-logo
+      {
+        width:60%;
+      }
       
     }
 
@@ -287,11 +368,36 @@ html{
       font-size: 2rem;
     }
 
+
+
+
     .lower-main
     {
       h2
       {
         font-size: 2rem;
       }
+
+      .wedding-section
+      {
+        h3
+        {
+          width:100%;
+          text-align: center;
+        }
+        .wedding-cakes
+        {
+          width: 60%;
+          height: auto;
+        }
+      }
+    }
+
+
+
+    .slideshow-1
+    {
+      width: 60%;
+      height: 20rem;
     }
   }
