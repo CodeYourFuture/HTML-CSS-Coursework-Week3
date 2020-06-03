@@ -1,1 +1,27 @@
-/*  Add your styling here */
+body{
+    margin: 0em;
+    
+}
+.logo-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+}
+#logo-img{
+    width: 10em;
+    border-radius: 50%;
+}
+.hero{
+    width: 100%;
+}
+.background-img{
+    width: 100%;
+}
+.background-minor-imgs{
+    display: flex;
+   justify-content: space-evenly;
+}
+.small-imgs{
+    width: 20%;
+}

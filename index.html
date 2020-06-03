@@ -6,11 +6,86 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Responsive Cake webpage</title>
-    <!-- Add a link to your css file here -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="screen and (min-width: 415px)" href="desktop.css" />
+
 </head>
 
 <body>
-    <!-- Add your markup here -->
+    <header>
+        <div class="logo-container">
+            <img id="logo-img" src="./images/logo.jpg" alt="logo">
+            <button id="contact-button">Contact</button>
+        </div>
+        <nav class="main-nav">
+            <ul class="nav-list">
+                <li><a href="">Home</a></li>
+              <li><a href="">Cakes</a></li>
+              <li><a href="">Ordering</a></li>
+              <li><a href="">Lessons</a></li>
+              <li><a href="">About</a></li>
+            </ul>
+        </nav>  
+    </header>
+    <main class="main-content">
+        <section class="mid-section">
+            <div class="hero">
+                
+                <img class="background-img" src="./images/background-1.webp" alt="background image">
+                
+                <div class="background-minor-imgs">
+                    <img class="small-imgs" src="./images/cake-1.jpg" alt="cake-1">
+                    <img class="small-imgs" src="./images/cake-2.webp" alt="cake-2">
+                    <img class="small-imgs" src="./images/cake-3.jpg" alt="cake-3">
+                    <img class="small-imgs" src="./images/cake-4.jpg" alt="cake-4">
+                </div>
+            </div>
+            <div class="info">
+                <h1>Welcome To Sweet Cake Bakery</h1>
+                <p>
+                    We hand-make our Sponge Cakes in our bakery in Holt, Norfolk and offer cake delivery anywhere in the UK, 
+                    offering next day delivery as standard. We make our cakes with a lot of care and love using quality and local 
+                    ingredients and we are always adding new flavours and ranges. We use robust packaging to ensure that your Sponges
+                     arrive to you safely and undamaged so you don't have to worry about ordering cake online. As well as having over 14 
+                     flavours of standard cakes we also make delicious gluten free cakes and scrummy vegan cakes. We are very proud of these 
+                     ranges and don't think you will be able to tell the difference between these and our standard sponge cakes. Make sure you 
+                     can always get the perfect birthday cake whether its a chocolate birthday cake, gluten free birthday cake or vegan birthday 
+                     cake - we've got you covered!
+                    Create your own personalised cake by uploading your own photo and creating a photo cake, or selecting one of our expertly 
+                    pre-designed cake toppers to really make someone’s day. As well as that you can add gift cards suitable for any occasion, 
+                    one of our tipples such as prosecco or a G&T, or a hot drink or soft drink, candles or balloons! Can't find the flavour you want? 
+                    You can even design your own birthday cake!
+                </p>
+            </div>
+        </section>
+        <section class="cake-types">
+            <div>
+                <img src="./images/Chiffon Cake.jpg" alt="Chiffon cake">
+                <p>Chiffon Cakes</p>
+            </div>
+            <div>
+                <img src="./images/sponge cake.jpg" alt="sponge cake">
+                <p>Sponge Cakes</p>
+            </div>
+            <div>
+                <img src="./images/Biscuit Cake.webp" alt="Biscuit cake">
+                <p>Biscuit Cakes</p>
+            </div>
+            <div>
+                <img src="./images/Butter Cake.webp" alt="Butter cake">
+                <p>Butter Cakes</p>
+            </div>
+        </section>
+
+    </main>
+    <footer class="footer">
+        <ul>
+            <li><a href="">Sitemap</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="">Delivery</a></li>
+          </ul>
+
+    </footer>
 </body>
 
 </html>
