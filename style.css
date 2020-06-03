@@ -3,7 +3,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-size;
+    box-sizing: border-box;
 }
 
 :root {
@@ -16,6 +16,7 @@ body {
     font-family: 'Architects Daughter', cursive;
     line-height: 1.4rem;
     margin: 1rem;
+    width: 13rem;
 }
 
 /* Header */
@@ -24,6 +25,13 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 0 1.7rem;
 }
 
 /* Section */
@@ -34,17 +42,11 @@ main {
     align-items: center;
 }
 
-/* Introduction */
-
-.introduction {
-    width: 100%;
-}
-
 /* Slider */
 
 .slidershow {
-    width: 20rem;
-    height: 12rem;
+    width: 100%;
+    height: 7.7rem;
     margin: 1rem auto;
     overflow: hidden;
     text-align: center;     /* positions slider to the middle */
@@ -96,7 +98,7 @@ img {
 
 .navigation {
     position: absolute;
-    bottom: .5rem;
+    bottom: .2rem;
 
     width: 100%;
     height: 20%;
@@ -114,9 +116,29 @@ img {
     height: 70%;
 }
 
+/* Introduction */
+
+.introduction {
+    width: 100%;
+}
+
+h2 {
+    margin: .5rem;
+}
+
+/* Gallery */
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
 figure {
-    margin: 2rem;
+    margin: .5rem;
     background: #9C7143;
+    width: 100%;
 }
 
 figcaption {
