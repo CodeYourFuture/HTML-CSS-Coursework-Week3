@@ -434,3 +434,31 @@ a {
     max-width: 1200px;
   }
 }
+
+@media screen and (min-width: 1600px) {
+
+  /*----------  Carousel section  ----------*/
+
+  .cakes-carousel {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    max-width: 200rem;
+    margin: 0 auto;
+  }
+
+  .cakes-heading {
+    width: 100%;
+  }
+
+  .carousel-wrapper {
+    width: 60%;
+    max-width: 80rem;
+  }
+
+  .info-wrapper {
+    width: 40%;
+    margin-left: 2rem;
+  }
+}
