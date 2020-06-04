@@ -1,1 +1,98 @@
-/*  Add your styling here */
+/*----------  Universal styles  ----------*/
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  font-family: 'Architects Daughter',
+    cursive;
+  color: rgba(0, 0, 0, 0.87)
+}
+
+body {
+  font-size: 1.6em;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  font-size: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*----------  Header  ----------*/
+
+.header {
+  background-color: rgba(0, 0, 0, 0.05);
+  padding: 0 1rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.brand {
+  display: flex;
+  justify-content: space-between;
+}
+
+.brand-img {
+  max-width: 60px;
+  max-height: 60px;
+  margin: 1rem 0;
+}
+
+.brand-heading {
+  font-size: 2.6rem;
+  display: flex;
+  align-self: center;
+}
+
+.nav {
+  display: none;
+}
+
+.nav-list {
+  list-style: none;
+  width: 100%;
+}
+
+.nav-list-item {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.nav-link {
+  width: 100%;
+  display: inline-block;
+  font-size: 2rem;
+}
+
+.nav-link:hover {
+  background-color: pink;
+}
+
+.hamburger {
+  align-self: center;
+  user-select: none;
+  cursor: pointer;
+}
+
+.menu-visible {
+  display: flex;
+}
