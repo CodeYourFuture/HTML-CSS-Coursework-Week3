@@ -15,17 +15,30 @@ body {
     color: #D8BD96;
     font-family: 'Architects Daughter', cursive;
     line-height: 1.4rem;
-    margin: 1rem;
     width: 13rem;
+}
+
+header,
+main,
+section,
+footer {
+    margin: 1rem;
 }
 
 /* Navbar */
 
 .nav-container {
     background: #D77832;
+    color: #3E3629;
+    font-size: 1.5rem;
     padding: 1rem;
     width: 70%;
+    height: 100vh;
     /* transform: translateX(-120%); */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .cross {
