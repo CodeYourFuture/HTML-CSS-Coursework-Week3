@@ -233,3 +233,26 @@ a {
 .example-image:hover {
   transform: scale(1.1);
 }
+
+/*----------  Footer  ----------*/
+
+.footer {
+  background-color: #e6e6e6;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 4rem 1rem;
+}
+
+.footer>ul>li {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.footer-link {
+  width: 100%;
+  display: inline-block;
+  font-size: 2rem;
+}
+
+.footer-link:hover {
+  background-color: pink;
+}
