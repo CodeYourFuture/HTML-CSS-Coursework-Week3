@@ -126,3 +126,87 @@ a {
   font-size: 3rem;
   text-align: center;
 }
+
+/*----------  Carousel section  ----------*/
+
+.cakes-heading {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.carousel-image {
+  width: 100%;
+  max-height: 260px;
+  object-fit: cover;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+
+.carousel-item {
+  display: none;
+}
+
+.visible {
+  display: block;
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 5rem;
+  color: #fff;
+  font-weight: bold;
+}
+
+.prev:hover,
+.next:hover {
+  font-size: 6rem;
+}
+
+.prev {
+  padding: 8rem 8rem 8rem 5rem;
+  left: 0;
+}
+
+.next {
+  padding: 8rem 5rem 8rem 8rem;
+  right: 0;
+}
+
+.carousel-wrapper {
+  max-width: 960px;
+  user-select: none;
+  position: relative;
+  margin: 0 auto;
+}
+
+.cakes-heading {
+  margin: 4.8rem 0;
+  transform: skewY(-1deg);
+}
+
+.cakes-heading>span {
+  background: pink;
+  padding: 1rem 2rem;
+}
+
+.info-wrapper {
+  margin: 0 1rem;
+}
+
+.info-heading {
+  font-size: 2.6rem;
+  margin: 2.8rem 0;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+.info-content {
+  font-size: 1.8rem;
+  max-width: 60rem;
+  margin: 0 auto;
+  letter-spacing: 2px;
+}
