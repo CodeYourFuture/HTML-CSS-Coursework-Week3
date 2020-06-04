@@ -16,6 +16,10 @@ body {
   color: #424242;
 }
 
+html {
+  font-size: 1rem;
+}
+
 .navbar > img {
     margin-left: 1.1rem;
     vertical-align: middle;
@@ -23,4 +27,35 @@ body {
     width: 15%;
     height: 80px;
     justify-content: center;
+}
+
+
+#1c2267
+
+
+
+
+
+
+
+
+
+
+
+@include media-breakpoint-up(sm) {
+  html {
+    font-size: 1.2rem;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  html {
+    font-size: 1.4rem;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  html {
+    font-size: 1.6rem;
+  }
 }
