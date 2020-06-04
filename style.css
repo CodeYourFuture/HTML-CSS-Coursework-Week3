@@ -15,14 +15,7 @@ body {
     color: #D8BD96;
     font-family: 'Architects Daughter', cursive;
     line-height: 1.4rem;
-    width: 13rem;
-}
-
-header,
-main,
-section,
-footer {
-    margin: 1rem;
+    width: 18.5rem;
 }
 
 /* Navbar */
@@ -30,15 +23,21 @@ footer {
 .nav-container {
     background: #D77832;
     color: #3E3629;
+    opacity: .95;
     font-size: 1.5rem;
     padding: 1rem;
-    width: 70%;
+    width: 10rem;
     height: 100vh;
     /* transform: translateX(-120%); */
 
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+
+    position: fixed;
+    z-index: 2;
+
+    transition: .7s;    /* takes .7s to slide out */
 }
 
 .cross {
@@ -61,10 +60,15 @@ a {
 /* Header */
 
 header {
+    background: #3E3629;
+    height: 3.5rem;
+    width: 100%;
+    
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    justify-content: center;
+    position: fixed;
+    z-index: 1;
 }
 
 h1 {
@@ -74,11 +78,18 @@ h1 {
 }
 
 /* Main */
-
 main {
+    padding: 1rem;
+    width: 100%;
+}
+
+/* Hero */
+
+.hero {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
 }
 
 /* Slider */
