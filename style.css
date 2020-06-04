@@ -384,3 +384,53 @@ a {
     margin-left: 0;
   }
 }
+
+@media screen and (min-width: 1200px) {
+
+  /*----------  Header   ----------*/
+
+  .brand-heading {
+    font-size: 2.8rem;
+  }
+
+  .nav-list-item {
+    margin-left: 4rem;
+  }
+
+  .nav-link {
+    padding: 1rem 1.5rem;
+    font-size: 2.8rem;
+  }
+
+  /*----------  Hero section  ----------*/
+
+  .hero {
+    min-height: calc(100vh - 122px);
+  }
+
+  .hero-content>h2 {
+    font-size: 6rem;
+  }
+
+  .hero-content>p {
+    font-size: 3rem;
+  }
+
+  /*----------  Carousel section  ----------*/
+
+  .carousel-image {
+    max-height: 600px;
+  }
+
+  /*----------  Cakes examples section  ----------*/
+
+  .cakes-heading {
+    font-size: 6rem;
+    margin-top: 12rem;
+    margin-bottom: 12rem;
+  }
+
+  .example-cakes-wrapper {
+    max-width: 1200px;
+  }
+}
