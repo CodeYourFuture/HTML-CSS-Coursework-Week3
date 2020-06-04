@@ -96,3 +96,33 @@ a {
 .menu-visible {
   display: flex;
 }
+
+/*----------  Hero section  ----------*/
+
+.hero {
+  min-height: 30rem;
+  background-image: url(images/cakes/cupcakes.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-content {
+  background: rgba(200, 200, 200, 0.7);
+  padding: 1rem 2rem;
+  margin: 3rem 0;
+}
+
+
+.hero-content>p {
+  text-align: center;
+  color: rgba(0, 0, 0, 0.7)
+}
+
+.hero-content>h2 {
+  font-size: 3rem;
+  text-align: center;
+}
