@@ -25,10 +25,10 @@ body {
     color: #3E3629;
     opacity: .95;
     font-size: 1.5rem;
-    padding: 1rem;
-    width: 10rem;
+    /* padding: 1rem; */
+    width: 0;       /* so when you close it, the width goes to 0 */
     height: 100vh;
-    /* transform: translateX(-120%); */
+    overflow: hidden;     /* so when you close it, horizontal x is hidden */
 
     display: flex;
     flex-direction: column;

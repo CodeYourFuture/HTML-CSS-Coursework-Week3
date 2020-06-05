@@ -19,9 +19,9 @@
 <body>
     <!-- Add your markup here -->
 
-    <div class="nav-container">
+    <div id="side-menu" class="nav-container">
         <div class="crossbutton">             
-            <a href="#"><i class="fas fa-times"></i></a>  
+            <a href="#" onclick="closeSlideMenu()"><i class="fas fa-times"></i></a>  
         </div>
 
         <nav class="navtop">
@@ -45,7 +45,7 @@
     
     <header>
  
-        <a href="#"><i class="fas fa-bars"></i></a>
+        <a href="#" onclick="openSlideMenu()"><i class="fas fa-bars"></i></a>
         
         <h1>
             c A k e <br> &nbsp;&nbsp; s h o P
@@ -135,6 +135,18 @@
             </ul>
         </nav>
     </footer>
+
+    <script>
+        function openSlideMenu() {      
+            document.getElementById('side-menu').style.width = '10rem';
+            document.getElementById('side-menu').style.padding = '1rem';
+        }
+
+        function closeSlideMenu() {      
+            document.getElementById('side-menu').style.width = '0';
+            document.getElementById('side-menu').style.padding = '0';
+        }
+    </script> 
 
 </body>
 
