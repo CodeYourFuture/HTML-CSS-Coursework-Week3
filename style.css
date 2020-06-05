@@ -251,13 +251,17 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
 }
 
 figure {
     margin: .5rem;
     background: #9C7143;
+}
+
+.image-container {
     width: 100%;
+    height: 14rem;
+    overflow: hidden;
 }
 
 figcaption {
@@ -270,6 +274,10 @@ b {
     font-size: 1.2rem;
     color: #3E3629;
 }
+
+/* figure:hover {
+    border: 1px solid #D77832;  /* BUG how to stop 1px border from pushing other figures
+}*/
 
 /* Footer */
 
