@@ -15,7 +15,7 @@ body {
     color: #D8BD96;
     font-family: 'Architects Daughter', cursive;
     line-height: 1.4rem;
-    width: 18.5rem;
+    width: 16rem;
 }
 
 /* Navbar */
@@ -37,18 +37,30 @@ body {
     position: fixed;
     z-index: 2;
 
-    transition: .7s;    /* takes .7s to slide out */
+    transition: .5s;    /* takes .5s to slide out */
 }
 
-.cross {
+.crossbutton {
     text-align: end;
+}
+
+.crossbutton a {
+    color: #3E3629;
 }
 
 ul {
     list-style: none;
 }
 
-a {
+.navtop {
+    margin-bottom: auto;
+}
+
+.navbottom {
+    margin-top: auto;
+}
+
+nav a {
     text-decoration: none;
     color: #3E3629;
     font-weight: 900;
@@ -61,14 +73,22 @@ a {
 
 header {
     background: #3E3629;
+    
     height: 3.5rem;
-    width: 100%;
+    width: 16rem;
+    padding: 0 1rem;
+
     
     display: flex;
     justify-content: space-around;
     align-items: center;
-    position: fixed;
+
+    position: fixed;        /* BUG when scroll down, header disappears */
     z-index: 1;
+}
+
+header a {
+    color: #D8BD96;
 }
 
 h1 {
@@ -78,6 +98,7 @@ h1 {
 }
 
 /* Main */
+
 main {
     padding: 1rem;
     width: 100%;
@@ -90,6 +111,7 @@ main {
     flex-direction: column;
     align-items: center;
     width: 100%;
+    margin-top: 2rem;
 }
 
 /* Slider */
