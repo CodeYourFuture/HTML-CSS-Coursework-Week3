@@ -4,13 +4,14 @@
 {
     // font-family: cursive;
     font-family: ubuntu, Verdana, Arial, sans-serif;
-    background: $primary_b_color;
+    // background: $primary_b_color;
 }
 
 
 
 html{
     font-size: 10px;
+    background: $primary_b_color;
     
 }
 
@@ -28,8 +29,6 @@ html{
 }
 
 
-// this is the container from bootstrap
-// it never takes 100% width automatically, container fluid takes 100% width.
 .container 
 {
 
@@ -56,7 +55,7 @@ html{
         padding:2rem;
         border-radius: 10%;
         border:2px solid;
-        box-shadow: 4px 4px grey;
+        box-shadow: 4px 4px rgb(221, 217, 217);
 
       }
     }
@@ -68,14 +67,14 @@ html{
         @include bord;
         border-width: 1rem;
         color:$secondary_color;
-        box-shadow: 4px 4px grey;
+        box-shadow: 4px 4px rgb(56, 183, 192);
 
     }
 
     .company-name{
         font-size: 5rem;
         color:$secondary_color;
-        text-shadow: 2px 2px grey;
+        text-shadow: 2px 2px rgb(238, 232, 232);
         // color:rgb(41, 126, 114);
     }
 }
@@ -99,11 +98,11 @@ html{
   /* Position the content inside the overlay */
   .overlay-content {
     position: relative;
-    top: 25%; /* 25% from the top */
-    width: 100%; /* 100% width */
-    text-align: center; /* Centered text/links */
+    top: 25%; 
+    width: 100%; 
+    text-align: center;
     margin-top: 3rem; /* 30px top margin to avoid conflict with the close button on smaller screens */
-    background-color: rgba(150, 243, 238, 0.7); 
+    background-color: rgba(143, 108, 199, 0.7); 
     padding:3rem 0;
   }
   
@@ -112,7 +111,7 @@ html{
     padding: 8px;
     text-decoration: none;
     font-size: 3rem;
-    color: #e76565;
+    color: #ecdede;
     display: block; /* Display block instead of inline */
     transition: 0.3s; /* Transition effects on hover (color) */
   }
@@ -129,9 +128,7 @@ html{
     right: 45px;
     font-size: 60px;
   }
-
-
-
+  
   .header
   {
 
@@ -141,7 +138,7 @@ html{
       font-size: 3rem;
       width:30%;
       background-color: $secondary_color;
-      color:rgb(5, 89, 158);
+      color:rgb(247, 196, 224);
       border-radius: 10%;
       border: 0.3rem solid;
       border-color: rgb(250, 197, 197);
@@ -157,16 +154,12 @@ html{
     }
   }
   
-// ---------------------------------------------------------------------------------
+// -------------------------- end of overlay/Navbar-------------------------------------------------------
 
   .upper-main
   {
 
     margin-top: 0;
-
-    h2{
-      margin-top: 3rem;
-    }
     @include flexCenter(column);
     &-image
     {
@@ -179,6 +172,8 @@ html{
     &-tagline
     {
       color:$secondary_color;
+      margin-top: 3rem;
+      text-shadow: 1px 1px rgb(221, 217, 217);
       font-size: 3rem;
       text-align: center;
     }
@@ -190,22 +185,21 @@ html{
   {
 
     @include flexCenter(column);
-
-
-    h2
+    h2 // here is the Variety of our chocolate Cakes
     {
       color:$secondary_color;
       font-size: 3rem;
       text-align: center;
       width:60%;
       margin-top: 10rem;
+      text-shadow: 1px 1px rgb(221, 217, 217);
     }
 
     .slideshow-1
     {
-      border:3px solid;
+      border:5px solid;
       border-radius: 10%;
-      border-color: rgb(226, 136, 174);
+      border-color: rgb(176, 63, 211);
     }
 
     .wedding-section
@@ -215,8 +209,10 @@ html{
 
       h3
       {
-        font-size:3.5rem;
-        color:$secondary_color;
+        font-size:4rem;
+        // color:$secondary_color;
+        color: rgb(250, 248, 248);
+        text-shadow: 2px 2px rgb(41, 100, 148);
         margin-top: 4rem;
         margin-bottom: 0;
       }
@@ -231,7 +227,7 @@ html{
         margin:3rem;
         height: 40rem;
         border:5px solid;
-        border-color:rgb(243, 140, 140);
+        border-color:rgb(223, 212, 212);
         border-radius: 5%;
       }
     }
@@ -252,8 +248,9 @@ html{
     li{
       list-style: none;
       font-size: 2rem;
-      color:rgb(19, 119, 150);
-      border:3px solid;;
+      color:rgb(18, 117, 150);
+      border:3px solid;
+      border-color: rgb(235, 223, 223);
       padding: 1rem 1rem;
       background-color: rgb(240, 144, 144);
       border-radius: 20%;
@@ -368,9 +365,6 @@ html{
       font-size: 2rem;
     }
 
-
-
-
     .lower-main
     {
       h2
@@ -392,8 +386,6 @@ html{
         }
       }
     }
-
-
 
     .slideshow-1
     {

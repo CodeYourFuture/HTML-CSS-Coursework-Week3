@@ -1,10 +1,11 @@
 * {
   font-family: ubuntu, Verdana, Arial, sans-serif;
-  background: #c6fff1;
 }
 
 html {
   font-size: 10px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#f0acac), color-stop(#e66465), to(#9198e5));
+  background: linear-gradient(#f0acac, #e66465, #9198e5);
 }
 
 .container {
@@ -51,12 +52,12 @@ html {
   font-size: 2rem;
   color: #EEE2DC;
   border-color: #123C69;
-  background-color: #fd8d8d;
+  background-color: #864eac;
   padding: 2rem;
   border-radius: 10%;
   border: 2px solid;
-  -webkit-box-shadow: 4px 4px grey;
-          box-shadow: 4px 4px grey;
+  -webkit-box-shadow: 4px 4px #ddd9d9;
+          box-shadow: 4px 4px #ddd9d9;
 }
 
 .container-logo {
@@ -64,15 +65,15 @@ html {
   margin: 3rem;
   border: 2px solid;
   border-width: 1rem;
-  color: #fd8d8d;
-  -webkit-box-shadow: 4px 4px grey;
-          box-shadow: 4px 4px grey;
+  color: #864eac;
+  -webkit-box-shadow: 4px 4px #38b7c0;
+          box-shadow: 4px 4px #38b7c0;
 }
 
 .container .company-name {
   font-size: 5rem;
-  color: #fd8d8d;
-  text-shadow: 2px 2px grey;
+  color: #864eac;
+  text-shadow: 2px 2px #eee8e8;
 }
 
 /* The Overlay (background) */
@@ -97,14 +98,11 @@ html {
 .overlay-content {
   position: relative;
   top: 25%;
-  /* 25% from the top */
   width: 100%;
-  /* 100% width */
   text-align: center;
-  /* Centered text/links */
   margin-top: 3rem;
   /* 30px top margin to avoid conflict with the close button on smaller screens */
-  background-color: rgba(150, 243, 238, 0.7);
+  background-color: rgba(143, 108, 199, 0.7);
   padding: 3rem 0;
 }
 
@@ -113,7 +111,7 @@ html {
   padding: 8px;
   text-decoration: none;
   font-size: 3rem;
-  color: #e76565;
+  color: #ecdede;
   display: block;
   /* Display block instead of inline */
   -webkit-transition: 0.3s;
@@ -153,8 +151,8 @@ html {
 .header .header-nav-button {
   font-size: 3rem;
   width: 30%;
-  background-color: #fd8d8d;
-  color: #05599e;
+  background-color: #864eac;
+  color: #f7c4e0;
   border-radius: 10%;
   border: 0.3rem solid;
   border-color: #fac5c5;
@@ -166,7 +164,7 @@ html {
 }
 
 .header .header-nav-button:hover {
-  background-color: #fd7474;
+  background-color: #78469a;
   border-color: #095a5a;
 }
 
@@ -187,10 +185,6 @@ html {
           flex-direction: column;
 }
 
-.upper-main h2 {
-  margin-top: 3rem;
-}
-
 .upper-main-image {
   width: 80%;
   border: 4px solid;
@@ -199,7 +193,9 @@ html {
 }
 
 .upper-main-tagline {
-  color: #fd8d8d;
+  color: #864eac;
+  margin-top: 3rem;
+  text-shadow: 1px 1px #ddd9d9;
   font-size: 3rem;
   text-align: center;
 }
@@ -221,17 +217,18 @@ html {
 }
 
 .lower-main h2 {
-  color: #fd8d8d;
+  color: #864eac;
   font-size: 3rem;
   text-align: center;
   width: 60%;
   margin-top: 10rem;
+  text-shadow: 1px 1px #ddd9d9;
 }
 
 .lower-main .slideshow-1 {
-  border: 3px solid;
+  border: 5px solid;
   border-radius: 10%;
-  border-color: #e288ae;
+  border-color: #b03fd3;
 }
 
 .lower-main .wedding-section {
@@ -252,8 +249,9 @@ html {
 }
 
 .lower-main .wedding-section h3 {
-  font-size: 3.5rem;
-  color: #fd8d8d;
+  font-size: 4rem;
+  color: #faf8f8;
+  text-shadow: 2px 2px #296494;
   margin-top: 4rem;
   margin-bottom: 0;
 }
@@ -279,7 +277,7 @@ html {
   margin: 3rem;
   height: 40rem;
   border: 5px solid;
-  border-color: #f38c8c;
+  border-color: #dfd4d4;
   border-radius: 5%;
 }
 
@@ -322,8 +320,9 @@ html {
 .footer li {
   list-style: none;
   font-size: 2rem;
-  color: #137796;
+  color: #127596;
   border: 3px solid;
+  border-color: #ebdfdf;
   padding: 1rem 1rem;
   background-color: #f09090;
   border-radius: 20%;
