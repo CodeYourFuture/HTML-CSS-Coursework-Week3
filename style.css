@@ -1,1 +1,133 @@
 /*  Add your styling here */
+
+* {
+    font-family: "Pacifico", cursive;
+   
+  }
+  body{
+    margin: 0;
+  }
+  
+  .bg{
+    top:0;
+     left:0;
+    width: 100%;
+    height: 100%;
+     /* background-image: url("images/bg.jpg");
+  background-size:100% 100%;
+     opacity: 0.5; */
+  background-color:pink;
+     /* position: fixed;  */
+     
+    
+     background-image: url("images/bg.jpg");
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+     background-size: 100%;
+     opacity:0.8;
+     /* filter:alpha(opacity=80); */
+  }
+  .header-bar{
+    width: 100%;
+    display: flex;
+     flex-wrap: wrap; 
+  align-items: center;
+  left:0;
+  top:0;
+    background-image:url("images/footer.jpg");
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    background-size: 100%;
+    opacity:0.5; 
+  }
+  
+  .header-bar .logo{
+    width: 25%;
+   }
+  
+  .logo img{
+    width: 100px;
+    height: 100px;
+  }
+  
+  .header-bar h1{
+    /* line-height: 0.5em; */
+    color:white;
+    /* text-align: center; */
+  
+  }
+  .header-bar h3{
+    color: white;
+  /* line-height: 0em; */
+  
+  }
+  .list1, .list2, .list3{
+    width:100%;
+    display: flex;
+    flex-direction: row;
+  justify-content: space-evenly;
+  
+  }
+  a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    
+  }
+  /* .list1 a{
+    padding-left: 1.7rem;
+    padding-right: 1.7rem;
+  }
+  
+  .list2 a{
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  .list3 a{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  } */
+  
+  
+  .nav ul{
+    
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    justify-content: center;
+    color: white;
+  }
+  .nav ul li{
+   width:30%;
+    color: white;
+    border: 2px solid white;
+    border-radius: 0.5rem;
+    text-align: center;
+    margin-bottom: 10px;
+    background-color: hotpink;
+    opacity: 0.5;
+  }
+  .nav ul li:hover{
+    background-color: rgb(240, 68, 231);
+  }
+  /* .cupcakes{
+    width: 100%;
+  } */
+  .cup{
+    max-width:100%;
+    height: auto;
+  }
+  
+  footer{
+      left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background-image: url("images/footer.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    opacity:0.5;
+    
+  }
