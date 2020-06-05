@@ -15,8 +15,8 @@ body {
 .header {
 }
 .logo-box {
-  width: 5rem;
-  height: 4rem;
+  width: 10rem;
+  height: auto;
   margin: 0 auto;
   /* border: 0.1rem solid pink; */
   border-radius: 50%;
@@ -61,4 +61,11 @@ body {
   background-color: #fb8e7e;
   color: #faddd3;
   cursor: pointer;
+}
+.about-section {
+  background-color: #f7f1e9;
+}
+.section-intro {
+}
+.about-text {
 }
