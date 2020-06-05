@@ -258,7 +258,7 @@ figure {
     background: #9C7143;
 }
 
-.image-container {
+.image-container {      /* BUG: oversized figcaption at certain screen widths; not all cards have same dimension */
     width: 100%;
     height: 14rem;
     overflow: hidden;
