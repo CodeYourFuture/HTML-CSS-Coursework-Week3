@@ -192,6 +192,10 @@ img {
     height: 70%;
 }
 
+.bar:hover {
+    cursor: pointer;
+}
+
 /* Introduction */
 
 .introduction {
