@@ -15,7 +15,7 @@ body {
 .header {
 }
 .logo-box {
-  width: 10rem;
+  width: 8rem;
   height: auto;
   margin: 0 auto;
   /* border: 0.1rem solid pink; */
@@ -71,11 +71,15 @@ body {
 /*=== SECTION .PRODUCTS ===*/
 
 .products {
-  margin: 2.5rem 0;
+  /* margin: 2.5rem 0; */
+}
+.products-section {
+  /* //margin-top: 2rem; */
 }
 .product1 {
   width: 80%;
   margin: 0 auto;
+  padding-top: 1.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -83,10 +87,10 @@ body {
 }
 .product-title {
   font-size: 1.5rem;
-  padding: 1rem;
+  padding: 1.5rem;
 }
 .prod-image {
-  width: 100px;
+  width: 10rem;
 }
 .product-description {
   padding-top: 1.5rem;
@@ -124,4 +128,70 @@ body {
   font-size: 1.3rem;
 }
 .about-text {
+}
+
+/*=== MEDIA QUERIES ===*/
+@media screen and (min-width: 450px) {
+  html {
+    font-size: 12px;
+  }
+  .hero-box {
+    background-size: cover;
+    height: 20rem;
+    /* background-position: center; */
+  }
+}
+
+@media screen and (min-width: 600px) {
+  html {
+    font-size: 14px;
+  }
+  .hero-box {
+    height: 25rem;
+  }
+  .product1 {
+    width: 40%;
+    margin: 1.5rem auto;
+  }
+  .products-section {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 900px) {
+  html {
+    font-size: 16px;
+  }
+  .logo-box {
+    /* width: 12rem; */
+  }
+  .hero-box {
+    height: 30rem;
+  }
+  .nav-link {
+    font-size: 1.5rem;
+    padding: 0.1em;
+  }
+  .products {
+  }
+  .products-section {
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    margin-top: 0;
+  }
+  .product1 {
+    width: 22.5%;
+  }
+  .product-title {
+    margin-bottom: 1rem;
+  }
+  .prod-image {
+    width: 12.5rem;
+    margin-bottom: 1rem;
+  }
+  .product-description {
+    padding-bottom: 2rem;
+  }
 }
