@@ -62,10 +62,66 @@ body {
   color: #faddd3;
   cursor: pointer;
 }
+/*=== MAIN ===*/
+
+#main {
+  background-color: #f7f1e9;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+/*=== SECTION .PRODUCTS ===*/
+
+.products {
+  margin: 2.5rem 0;
+}
+.product1 {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #e75039;
+}
+.product-title {
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+.prod-image {
+  width: 100px;
+}
+.product-description {
+  padding-top: 1.5rem;
+  text-align: center;
+}
+.prod-button {
+  margin-top: 1rem;
+  font-size: 1em;
+  font-weight: 600;
+  border: none;
+  background-color: #fb8e7e;
+  padding: 0.5em 1em;
+  border-radius: 0.2em;
+  cursor: pointer;
+  color: #e43015;
+  text-align: center;
+}
+
+/*=== SECTION .ABOUT-SECTION ===*/
+
 .about-section {
+  height: 10rem;
   background-color: #f7f1e9;
 }
+.about-text {
+  width: 90%;
+  text-align: center;
+  margin: auto;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-style: italic;
+}
 .section-intro {
+  padding: 1rem 0 0.5rem 0;
+  font-weight: 500;
+  font-size: 1.3rem;
 }
 .about-text {
 }
