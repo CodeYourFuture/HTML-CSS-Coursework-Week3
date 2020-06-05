@@ -71,7 +71,7 @@ nav a {
 
 /* Header */
 
-header {
+header.small {
     background: #3E3629;
     
     height: 3.5rem;
@@ -87,8 +87,12 @@ header {
     z-index: 1;
 }
 
-header a {
+header.small a {
     color: #D8BD96;
+}
+
+header.big {
+    display: none;
 }
 
 h1 {
@@ -241,7 +245,7 @@ footer {
     body {
         width: 320px;
     }
-    header {
+    header.small {
         width: 100%;
     }
     .slidershow {
@@ -284,11 +288,49 @@ footer {
         justify-content: space-between;
         padding: 0 3rem;
     }
+    header.small {
+        display: none;
+    }
+    .logo-contact {
+        display: flex;
+        justify-content: flex-end;
+    } 
+    header.big {
+        background: #3E3629;
+        display: block;
+        width: 100%;
+        height: 7.5rem;
+        padding-top: 3rem;
+
+        text-align: center;
+        
+        position: fixed;
+        z-index: 1;
+    }
+    header.big h1 {
+        position: absolute;
+        top: 20%;
+        left: 0%;
+    }
+    header.big .contact {
+        font-weight: 900;
+        font-size: 1.2rem;
+        color: #D77832;
+        text-decoration: none;
+    }
+    header.big li {
+        display: inline;
+        margin-left: 2rem;
+    }
+    header.big a {
+        color: #D8BD96;
+    }
     .hero {
         flex-direction: row-reverse;
+        margin-top: 6rem;
     }
     .introduction {
-        margin: 1rem
+        margin: 1rem;
     }
     .slidershow {
         height: 13rem;
@@ -300,13 +342,19 @@ footer {
     }
     figure {
         width: 45vw;
-    }    
+    }
+    footer {
+        display: block;
+    }
 }
 
 @media screen and (min-width: 1000px) {
     body {
         background: black;
         width: 1000px;        
+    }
+    header.big li {
+        margin-left: 5rem;
     }
     .slidershow {
         height: 16rem;
