@@ -25,7 +25,7 @@ body {
     color: #3E3629;
     opacity: .95;
     font-size: 1.5rem;
-    /* padding: 1rem; */
+
     width: 0;       /* so when you close it, the width goes to 0 */
     height: 100vh;
     overflow: hidden;     /* so when you close it, horizontal x is hidden */
@@ -73,11 +73,11 @@ nav a {
 
 header.small {
     background: #3E3629;
+    filter: brightness(1.3);
     
     height: 3.5rem;
     width: 16rem;
     padding: 0 1rem;
-
     
     display: flex;
     justify-content: space-around;
@@ -345,6 +345,20 @@ footer {
     }
     footer {
         display: block;
+        background: #3E3629;
+        margin-top: 1rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem; 
+        width: 100vw;
+    }
+    
+    footer li {
+        display: inline;
+        margin-left: 5rem;
+    }
+    footer a {
+        color: #D8BD96;
+        font-weight: 100;
     }
 }
 
