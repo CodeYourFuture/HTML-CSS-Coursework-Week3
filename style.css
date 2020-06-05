@@ -199,6 +199,10 @@ h2 {
     margin: .5rem;
 }
 
+.sign {
+    text-align: end;
+}
+
 /* Gallery */
 
 .gallery {
@@ -230,3 +234,5 @@ b {
 footer {
     display: none;
 }
+
+/* Media queries */
