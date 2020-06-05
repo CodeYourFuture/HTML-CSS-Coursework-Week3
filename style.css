@@ -69,6 +69,20 @@ nav a {
     padding: 1rem;
 }
 
+.crossbutton a:hover,
+nav a:hover,
+header.small a:hover {
+    filter: brightness(1.3)
+}
+
+.contact {
+    transition: .5s cubic-bezier(0.6, -0.8, 0.735, 0.045);
+}
+
+.contact:hover {
+    transform: rotate(10deg);
+}
+
 /* Header */
 
 header.small {
@@ -179,17 +193,37 @@ img {
     width: 100%;
     height: 20%;
     background: #65583B;
-    opacity: .5;
+    opacity: .7;
 
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
+.bar1 {    
+    background: url("images/cheesecake.jpg");
+    background-position: center;
+}
+
+.bar2 {    
+    background: url("images/cupcakes.jpg");
+    background-position: center bottom;
+}
+
+.bar3 {    
+    background: url("images/gateaux.jpg");
+}
+
+.bar4 {    
+    background: url("images/tart.jpg");
+    background-position: center;
+}
+
 .bar {    
-    background: #D8BD96;
     width: 20%;
     height: 70%;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .bar:hover {
@@ -358,11 +392,12 @@ footer {
     
     footer li {
         display: inline;
-        margin-left: 5rem;
+        margin-left: 9rem;
     }
     footer a {
         color: #D8BD96;
         font-weight: 100;
+        font-size: 1rem;
     }
 }
 
