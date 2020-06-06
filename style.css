@@ -20,7 +20,7 @@ body {
   margin: 0 auto;
   /* border: 0.1rem solid pink; */
   border-radius: 50%;
-  background-color: #f7f1e9;
+  /*  background-color: #f7f1e9; */
 }
 .business-logo {
   max-width: 100%;
@@ -31,10 +31,11 @@ body {
   width: 100%;
   height: 18rem;
   margin: auto;
-  background-image: url(./images/hero-cake.jpg);
+  background-image: url(./images/hero-cake1.jpg);
   background-position: bottom;
   background-size: cover;
   background-color: #f7f1e9;
+  back
 }
 .navigation {
 }
@@ -112,22 +113,29 @@ body {
 /*=== SECTION .ABOUT-SECTION ===*/
 
 .about-section {
-  height: 10rem;
-  background-color: #f7f1e9;
+  height: 17rem;
+  background-color: #fde4e0;
+  padding-top: 2.5rem;
+  
 }
 .about-text {
-  width: 90%;
+  padding: 1em;
+  background-color: #f8efef;
+  width: 80%;
   text-align: center;
-  margin: auto;
+  margin: auto auto;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-style: italic;
+  color: #e43015;
 }
 .section-intro {
-  padding: 1rem 0 0.5rem 0;
+  padding: 1rem 0 1rem 0;
   font-weight: 500;
   font-size: 1.3rem;
 }
-.about-text {
+.about-description {
+  color: #9c2d2f;
+  padding-bottom: 1rem;
 }
 
 /*=== MEDIA QUERIES ===*/
@@ -168,7 +176,8 @@ body {
     /* width: 12rem; */
   }
   .hero-box {
-    height: 30rem;
+    height: 35rem;
+    /* background-position: 10% 70%; */
   }
   .nav-link {
     font-size: 1.5rem;
@@ -193,5 +202,14 @@ body {
   }
   .product-description {
     padding-bottom: 2rem;
+  }
+  .about-section {
+    padding-top: 4rem;
+  }
+  .section-intro{
+    font-size: 2rem;
+  }
+  .about-description{
+    font-size: 1.2em;
   }
 }
