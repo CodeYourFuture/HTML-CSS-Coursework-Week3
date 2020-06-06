@@ -5,12 +5,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        
     <title>Responsive Cake webpage</title>
     <!-- Add a link to your css file here -->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet"/>
 </head>
 
 <body>
     <!-- Add your markup here -->
+     <!--
+                                           HEADER  SECTION
+    -->
+    <header class="header">
+        <div class="brand">
+            <a class="logo" 
+                href=""><img class="cake-logo" 
+                src="https://i.postimg.cc/Zq6Jqk9D/2a6c1858-0fe8-48a7-82fe-1976833b8691-200x200.png" 
+                alt="Let Them Eat Cake logo">
+            </a>
+            <div class="contact">Contact</div>
+        </div>
+    <!--
+                                           NAV  BAR   SECTION
+    -->
+        <nav>
+             <input class="menu-btn" type="checkbox" id="menu-btn">
+            <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Cakes</a></li>
+                <li><a href="#">Ordering</a></li>
+                <li><a href="#">Lessons</a></li>
+                <li><a href="#">About</a></li>
+            </ul> 
+        </nav>
+    </header>
+     <!--
+                                           START  of MAIN  SECTION
+    -->
+    <main class="main-content">
+         <!--
+                                           TAGLINE  SECTION
+    -->
+        <section>
+            <h1 class="tag">Let Them Eat Cake</h1>
+            <h3 class="tagline">Feeding the cake deprived since 2020</h3>
+        </section>
+     <!--
+                                           MAIN  IMAGE
+    -->
+        <section class="main-image">
+            <img class="cupcakes" src="./images/Cakes/cupcakes.jpg" alt="Cupcakes with sprinkles">
+        </section>
+        <h3 class="gallery-title">Just a small sample of our bakes:</h3>
+     <!--
+                                           IMAGE GALLERY  SECTION
+    -->
+        <section class="gallery">
+            <div class="gallery-image"><img src="./images/Cakes/cake-with-blackberries.jpg" alt="Cakes with blackberries"></div>
+            <div class="gallery-image"><img src="./images/Cakes/wedding-cake.jpg" alt="Wedding cake"></div>
+            <div class="gallery-image"><img src="./images/Cakes/cake-with-macarons.jpg" alt="Cake with macaroons"></div>
+            <div class="gallery-image"><img src="./images/Cakes/not-technically-a-cake.jpg" alt="Cake not cake"></div>
+        </section>
+    </main>                         <!--                END of MAIN SECTION              -->
+    <!--
+                                           FOOTER  SECTION
+    -->
+    <footer class="footer">
+        <ul> 
+            <li><a href="">Sitemap</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="">Delivery</a></li>
+        </ul>
+    </footer>
 </body>
 
 </html>
