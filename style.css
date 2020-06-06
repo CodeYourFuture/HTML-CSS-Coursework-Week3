@@ -196,7 +196,45 @@ header .menu-btn:checked ~ .menu-icon .nav-icon::after {
  *
  *      
  */
+.main-content {
+    width: 100%;
+}
+.main-content .tag, .main-content .tagline  {
+    text-align: center;
+}
 
+.main-content .tag {
+    margin-top: 60px;
+}
+
+.main-content .tagline {
+    margin-bottom: 30px;
+}
+
+.main-content .gallery-title {
+    text-align: center;
+    margin-top: 60px ;
+}
+.main-image .cupcakes {
+    display: flex;
+    justify-content: center;
+    height: auto;
+    margin: 0 auto;
+    width: 96%;
+    }
+
+.main-content .gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}  
+
+.main-content .gallery-image {
+    border: 1px solid #ff8099;
+    padding: 20px;
+    margin: 35px;
+    padding: 2rem;
+}
 
  
 /*
