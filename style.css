@@ -209,6 +209,7 @@ img {
 .bar1 {    
     background: url("images/cheesecake.jpg");
     background-position: center;
+    opacity: 1;                         /* BUG this opacity is overridden by the .navigation opacity [its parent] */
 }
 
 .bar2 {    
