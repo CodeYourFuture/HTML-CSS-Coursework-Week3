@@ -7,3 +7,200 @@ html {
     font-size: 62.5%;
     box-sizing: border-box;
 }
+
+
+body {
+    margin: 0;
+    font-family:  "Pacifico", cursive;
+    background-color: #bcf3e2;
+    font-size: 2.5rem;
+    color: #ff8099;
+    width: 100%;
+}
+
+a {
+    color: #c890e9;
+    text-decoration: none;
+}
+
+/*
+ *     HEADER SECTION
+*
+*       This section contains two flexboxes:
+*                   .header contains two children  --->  .brand & nav
+*                   .brand contains two children ---> .cake-logo & .contact
+*                   nav has three children ---> .menu-btn, .menu-icon, & .menu
+*                   .menu is also a flexbox
+*
+*/
+ 
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 1px 1px 4px #4936361a;
+    width: 100%;
+    z-index: 3;
+}
+
+.header .brand {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.header .contact {
+    align-self: center;
+    display:inline-block;
+    margin-right: 30px;
+    color:#c890e9;
+    border:1px solid #CCC;
+    background:#f7d5dc;
+    box-shadow: 0 0 5px -1px rgba(0,0,0,0.2);
+    cursor:pointer;
+    smax-width: ;
+    height: 5rem;
+    width: 15rem;
+    padding-top: 10px;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 10%;
+}
+/****/
+
+.header .contact:active {
+    color: #ff8099;
+    box-shadow: 0 0 5px -1px rgba(0,0,0,0.6);
+}
+/*****/
+
+.header .logo .cake-logo {
+    width: 12rem;
+}
+
+nav {
+    display: flex;
+   /* flex-direction: column; */
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+nav .menu {
+    order: -1;
+}
+
+.header ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    /* z-index: 999999;   */
+}
+
+.header ul li {
+    /*
+    sbackground-color: red;
+    */
+    width: 100%;
+    height: 100%;
+}
+
+.header ul a {
+    display: block;
+    padding: 5px 20px;
+}
+
+.header ul a:hover {
+    background-color: #f7d5dc;
+}
+
+.header .logo {
+    display: block;
+    font-size: 2rem;
+    padding: 10px 20px;
+}
+
+.header .menu {
+    max-height: 0;
+    transition: max-height .2s ease-out;
+}
+
+.header .menu-icon {
+    padding: 28px 20px 24px;
+    position: relative;
+    float: right;
+    cursor: pointer;
+}
+
+.header .menu-icon .nav-icon {
+    background-color: #ff8099;
+    display: block;
+    height: 4px;
+    width: 22px;
+    position: relative;
+    transition: background .2s ease-out;
+}
+
+.header .menu-icon .nav-icon:before {
+    background-color: #ff8099;
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    top: 5px;
+}
+
+.header .menu-icon .nav-icon:after {
+    background-color: #ff8099;
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+     transition: all .2s ease-out;
+    top: -5px;
+}
+
+.header .menu-btn {
+    display: none;    
+}
+
+.header .menu-btn:checked ~ .menu {
+    max-height: 300px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon {
+    background: transparent;
+}
+
+header .menu-btn:checked ~ .menu-icon .nav-icon:before {
+    top: 0;
+    color: #ff8099;
+    transform: rotate(-45deg);
+}
+
+header .menu-btn:checked ~ .menu-icon .nav-icon::after {
+    top: 0;
+    color: #ff8099;
+    transform: rotate(45deg);
+}
+
+/*
+ *     MAIN SECTION
+ *
+ *      
+ */
+
+
+ 
+/*
+ *     FOOTER SECTION
+ *
+ *      
+ */
