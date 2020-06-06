@@ -15,7 +15,7 @@ body {
     color: #D8BD96;
     font-family: 'Architects Daughter', cursive;
     line-height: 1.4rem;
-    width: 16rem;
+    width: 16rem;           /* BUG how to position content to centre and not left-aligned as there is a void on the right */
 }
 
 /* Navbar */
@@ -69,6 +69,12 @@ nav a {
     padding: 1rem;
 }
 
+.crossbutton a,
+nav a,
+header.small a {
+    transition: .5s;
+}
+
 .crossbutton a:hover,
 nav a:hover,
 header.small a:hover {
@@ -97,7 +103,7 @@ header.small {
     justify-content: space-around;
     align-items: center;
 
-    position: fixed;        /* BUG when scroll down, header disappears */
+    position: fixed;
     z-index: 1;
 }
 
@@ -352,6 +358,7 @@ footer {
         
         position: fixed;
         z-index: 1;
+        transition: .5s;
     }
     header.big h1 {
         position: absolute;
