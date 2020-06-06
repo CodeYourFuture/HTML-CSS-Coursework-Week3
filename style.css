@@ -252,3 +252,68 @@ header .menu-btn:checked ~ .menu-icon .nav-icon::after {
     align-items: center;
     align-items: center;
 }
+
+/*
+ *******************************************  M E  D I A    Q U E R I E S  ******************************************** 
+ */
+@media (min-width: 80rem)  {
+     .main-content .gallery {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+    }
+}
+
+ @media (min-width: 48rem) and (max-width: 79.9rem) {
+     .main-content .gallery {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        flex-basis: 50%;
+        justify-content: space-evenly;
+    
+    }
+ }
+
+@media (min-width: 48rem) {
+    .header .logo .cake-logo {
+        width: 15rem;
+    }
+    nav {
+        align-items: flex-end;
+    }
+    .header ul {
+        flex-direction: row;
+        
+    }
+
+    .header li a {
+        padding-left:  20px;
+        /*
+        background-color: red;
+        */
+    }
+
+    .header .menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        max-height: 100px;
+    }
+
+    .header .menu-icon {
+        display: none;
+    }
+
+.footer ul {
+    list-style: none;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+}
+
+.footer ul li {
+    margin:  30px;
+    }
+}
