@@ -1,1 +1,9 @@
 /*  Add your styling here */
+html, body, header, footer,  main,  section, ol, ul, li, div, p, h1, h2, h3 {
+    margin: 0;
+    padding: 0;
+} 
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
