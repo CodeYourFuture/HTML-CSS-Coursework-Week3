@@ -187,13 +187,22 @@ margin: 1rem auto;
 .title {
   margin-bottom: 0.5rem;
   font-size: 1.2rem;
-color: #6d0505;
+  color: #6d0505;
 }
 .hours {
   text-decoration: none;
   color: #6d0505;
 }
-
+/* .contact {
+  width:40%;
+  margin: 1.5rem auto;
+}  */
+.info {
+  list-style-type: none;
+}
+info1::before {
+  content: url(./images/heart.png);
+}
 
 
 
