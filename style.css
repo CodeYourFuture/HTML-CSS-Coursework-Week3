@@ -1,17 +1,89 @@
+
 body{
     margin: 0em;
+    background-color: #f3abb9;
+    font-family: cursive;
+    margin: 0em;
+    padding: 0em;
     
 }
+/* Logo and button */
 .logo-container{
     display: flex;
     flex-direction: column;
     align-items: center;
     max-width: 100%;
+    border-bottom: solid black 1px;
 }
 #logo-img{
     width: 10em;
     border-radius: 50%;
 }
+#contact-button {
+    color: #58490d;
+    font-size: 15px;
+    border-color: rgb(252, 251, 253);
+    border-radius: 20px;
+    border-width: medium;
+    width: 90px;
+    height: 40px;
+  }
+
+  /* nav bar */
+  .main-nav{
+      background-color: #f3c1ab;
+      border-bottom: solid black 1px;
+  }
+.nav-list{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    width: 100%;
+    margin: 0em; 
+}
+.nav-list li button{
+    text-decoration: none;
+    color: #58490d;
+    font-size: 15px;
+    border-color: rgb(252, 251, 253);
+    border-radius: 10px;
+    border-width: medium;
+    width: 85px;
+    height: 25px;
+    
+    
+}
+.upper-list{
+    display: flex;
+    justify-content: center; 
+    width: 100%;
+}
+.upper-list button{
+margin-right: 5em;
+}
+.mid-list{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.mid-list button{
+    margin-right: 5em;
+}
+
+
+.buttom-list{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.buttom-list button{
+    margin-right: 5em;
+}
+
+
+
+
+/* mid section */
 .hero{
     width: 100%;
 }
@@ -25,3 +97,61 @@ body{
 .small-imgs{
     width: 20%;
 }
+.info{
+    width: 100%;
+    text-align: center;
+}
+.info h1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+}
+.info p{
+    font-family: monospace;
+    margin: 2em;
+}
+
+/* Types of cake section */
+.cake-types{
+    display: flex;
+
+}
+.cake-types div img{
+  width: 10em;
+  height: 8em;
+    max-width: 100%;
+    
+}
+.frame{
+   
+    margin: 1em;
+}
+.frame2{
+    margin-right: 1em;
+}
+.captions{
+    margin-top: 0em;
+    margin-left: 1.5em;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: 800;
+}
+.footer{
+    margin-right: 5em;
+    margin-left: 2em;
+
+}
+/* Footer */
+.footer ul {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-right: 55em;
+  }
+  
+  .footer li {
+    list-style: none;
+    margin-right: 3em;
+   
+  }
+  .footer li a{
+      text-decoration: none;
+  }
