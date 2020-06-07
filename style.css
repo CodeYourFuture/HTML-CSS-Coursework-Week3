@@ -1,1 +1,43 @@
-/*  Add your styling here */
+
+
+.logo {
+    width: 4rem;
+}
+
+
+/*
+.my-container {
+    border: 1px solid yellow;
+}
+
+.my-row {
+    
+    border: 1px solid red;
+}
+
+.my-col {
+    border: 3px solid blue;
+}
+
+.navbar {
+    background-color: white;
+}
+
+h2 {
+    border: 1px solid green;
+}
+
+
+*/
+.navbar-text {
+    font-size: 1.5rem;
+}
+
+img {
+    
+    min-height: 100%;
+}
+
+/*button {
+    min-height: 100%;
+}*/
