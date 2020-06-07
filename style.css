@@ -1,8 +1,9 @@
 /*  Add your styling here */
 
-@import url('https://fonts.googleapis.com/css?family=Montserrat: 400,600');
+@import url("https://fonts.googleapis.com/css?family=Montserrat: 400,600");
 
-body, html {
+body,
+html {
   margin: 0;
   padding: 0;
   width: 100%;
@@ -10,7 +11,7 @@ body, html {
 }
 
 body {
-  font-family: 'Montserrat', sans-serif, Roboto;
+  font-family: "Montserrat", sans-serif, Roboto;
   font-size: 1em;
   line-height: 1.6em;
 }
@@ -20,19 +21,18 @@ html {
 }
 
 .navbar > img {
-    margin-left: 1.1rem;
-    vertical-align: middle;
-    border-style: none;
-    width: 15%;
-    height: 80px;
-    justify-content: center;
+  margin-left: 1.1rem;
+  vertical-align: middle;
+  border-style: none;
+  width: 15%;
+  height: 80px;
+  justify-content: center;
 }
 
 .carousel-inner img {
   width: 100%;
   height: 400px;
 }
-
 
 .intro {
   background-color: rgb(#201010);
@@ -48,7 +48,6 @@ html {
   background-image: url(https://images.pexels.com/photos/1857157/pexels-photo-1857157.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
   color: black;
 }
-
 
 @include media-breakpoint-up(sm) {
   html {
