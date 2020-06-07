@@ -35,7 +35,6 @@ body {
   background-position: bottom;
   background-size: cover;
   background-color: #f7f1e9;
-  back
 }
 .navigation {
 }
@@ -116,7 +115,6 @@ body {
   height: 17rem;
   background-color: #fde4e0;
   padding-top: 2.5rem;
-  
 }
 .about-text {
   padding: 1em;
@@ -139,15 +137,14 @@ body {
 }
 .membership-perks {
   width: 90%;
-margin: 1rem auto;
-
+  margin: 1rem auto;
 }
 .perks-box {
   border: 0.01rem solid #e77b7c;
-  display:flex;
+  display: flex;
   justify-content: space-evenly;
   border-radius: 0.5rem;
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 .perks-image {
   /* border: .2rem solid #ff002b; */
@@ -158,16 +155,18 @@ margin: 1rem auto;
 .perks-text {
   width: 60%;
   color: #9c2d2f;
-
 }
 .section-intro {
-
 }
 .section-description {
-
 }
-#footer {
 
+/*=== FOOTER ===*/
+
+#footer {
+}
+.footer-container{
+  margin-bottom: 3rem;
 }
 .work-time {
   padding: 1rem;
@@ -181,8 +180,6 @@ margin: 1rem auto;
   margin: 1rem auto;
   background-color: #e47c6d;
   text-align: justify;
-  
-
 }
 .title {
   margin-bottom: 0.5rem;
@@ -193,6 +190,13 @@ margin: 1rem auto;
   text-decoration: none;
   color: #6d0505;
 }
+.footer-line {
+  width: 70%;
+    margin: 1rem auto;
+    border-bottom: 0;
+    border: 0.05rem solid #6d0505;
+}
+}
 /* .contact {
   width:40%;
   margin: 1.5rem auto;
@@ -200,11 +204,19 @@ margin: 1rem auto;
 .info {
   list-style-type: none;
 }
-info1::before {
-  content: url(./images/heart.png);
+/* info1::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f0e7";
+} */
+.social-media {
+  /* display: flex;
+  flex-direction: column;
+  align-items: center; */
 }
-
-
+.sm-icons {
+}
+.fa-facebook {
+}
 
 /*=== MEDIA QUERIES ===*/
 @media screen and (min-width: 450px) {
@@ -274,10 +286,10 @@ info1::before {
   .about-section {
     padding-top: 4rem;
   }
-  .section-intro{
+  .section-intro {
     font-size: 2rem;
   }
-  .section-description{
+  .section-description {
     font-size: 1.2em;
   }
   .membership-perks {
@@ -286,6 +298,16 @@ info1::before {
   }
   .perks-box {
     width: 45%;
-
+  }
+  .footer-container {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .work-time {
+    width: 30%;
+  }
+  .footer-line {
+    width: 0%;
+    border: 0;
   }
 }
