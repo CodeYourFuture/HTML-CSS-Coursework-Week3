@@ -1,14 +1,40 @@
+/*
+ *  As tempting as it was I've decided to delay my exploration into Bootstrap until I begin my
+*   research into Design Systems & styleguides: Bootstrap will serve as a good case study.
+*   Instead I wanted to develop a deeper understanding of CSS, and what better way than to just
+*   do lots & lots of  standard CSS.
+*
+*   I also want to start looking at how to implement components with only HTML & CSS. I 
+*   found a nice example of the hamburger menu on youTube, which I stole and adapted, to use
+*   flexbox. This cost me more time than I expected, but the time spent means that I have a 
+*   deeper understanding of  that implementation of a hamburger menu....which was obviously 
+*   the point.
+*/
+
 /*  Add your styling here */
-html, body, header, footer,  main,  section, ol, ul, li, div, p, h1, h2, h3 {
+
+/*
+ *  Let's reset all the items that I'll be using today...
+ */
+html, body, header, footer,  main,  section, 
+ol, ul, li, div, p, h1, h2, h3, img {
     margin: 0;
     padding: 0;
 } 
+
+/*
+ *  As much as I like math, let's be kind to ourselves & set up an environment for easy mental math
+ *  Setting out default font-size to 10px makes our ems & rems super easy to visualise....
+ */
 html {
     font-size: 62.5%;
     box-sizing: border-box;
 }
 
-
+/*
+ *  
+ *
+ */
 body {
     margin: 0;
     font-family:  "Pacifico", cursive;
@@ -16,11 +42,6 @@ body {
     font-size: 2.5rem;
     color: #ff8099;
     width: 100%;
-}
-
-a {
-    color: #c890e9;
-    text-decoration: none;
 }
 
 /*
@@ -107,6 +128,11 @@ nav .menu {
 .header ul a {
     display: block;
     padding: 5px 20px;
+}
+
+.header ul a {
+    color: #c890e9;
+    text-decoration: none;
 }
 
 .header ul a:hover {
@@ -227,16 +253,24 @@ header .menu-btn:checked ~ .menu-icon .nav-icon::after {
 
 .main-content .gallery-image {
     border: 1px solid #ff8099;
-    padding: 20px;
     margin: 35px;
     padding: 2rem;
 }
+
 .footer ul {
     list-style: none;
     display: flex;
     flex-direction: column;
     align-items: center;
-    align-items: center;
+}
+
+.footer ul a {
+    display: block;
+    padding: 5px 20px;
+}
+
+.footer ul a:hover {
+    background-color: #f7d5dc;
 }
  
 /*
@@ -251,6 +285,11 @@ header .menu-btn:checked ~ .menu-icon .nav-icon::after {
     flex-direction: column;
     align-items: center;
     align-items: center;
+}
+
+.footer a {
+    color: #c890e9;
+    text-decoration: none;
 }
 
 /*
