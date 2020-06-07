@@ -42,6 +42,7 @@ nav {
 .nav-cakes ul ul {
     background:linear-gradient(90deg,#ff8a00,#e52e71);
    position:absolute;
+ 
    top:60px;
    display:none;
    font-size:20px ;
@@ -100,7 +101,6 @@ main{
   padding: 10px;
 }
   
-  
  .row::after {
   
   clear: both;
@@ -151,8 +151,7 @@ h2{
   text-decoration:none;
 }
 
-
-
+/*  media for large screen*/
 @media only screen and (min-width: 900px) {
   .nav-cakes .small{
     display:none;
