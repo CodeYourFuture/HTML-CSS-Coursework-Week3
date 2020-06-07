@@ -1,0 +1,38 @@
+.nav-bar{
+    background-color: #F9FAFC;
+    height: 8rem;
+
+    &__list{
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style-type: none;
+    }
+
+    &__item{
+        margin: 0 .7rem;
+        width: 8rem;
+        text-align: center;
+
+       
+    }
+
+    &__link{
+        text-decoration: none;
+        font-size: 1.4rem;
+        color: $color-secondary;
+        font-weight: 500;
+        
+        &:hover{
+            color: $color-secondary-darken-30;
+        }
+    }
+
+    &__logo{
+        width: 8rem;
+        position: relative;
+        border-radius: 50%;
+        bottom: -3rem;
+    }
+}

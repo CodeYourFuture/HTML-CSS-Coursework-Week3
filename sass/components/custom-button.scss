@@ -1,0 +1,14 @@
+.custom-button{
+     text-decoration: none;
+     margin: 2rem;
+     padding: 1rem 1.5rem;
+     font-size: 1.6rem;
+     color: white;
+     background-color: $color-secondary;
+     border-radius: 20px;
+     font-family: inherit;
+
+     &:hover{
+         background-color: $color-primary-darken-10;
+     }
+}

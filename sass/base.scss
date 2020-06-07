@@ -1,0 +1,20 @@
+$color-primary: #490B22;
+$color-secondary: #F07BA7;
+$color-gray: #787878;
+
+$color-primary-darken-10: darken($color-secondary, 10%);
+$color-secondary-darken-30: darken( $color-secondary, 30%);
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 10px;
+} 
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}

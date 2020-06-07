@@ -1,0 +1,23 @@
+{
+  "name": "responsive-cake-webpage",
+  "version": "1.0.0",
+  "description": "Responsive cake webpage",
+  "main": "index.js",
+  "dependencies": {
+    "node-sass": "^4.14.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Denis-Andrei/responsive-cake-webpage.git"
+  },
+  "author": "Denis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Denis-Andrei/responsive-cake-webpage/issues"
+  },
+  "homepage": "https://github.com/Denis-Andrei/responsive-cake-webpage#readme"
+}
