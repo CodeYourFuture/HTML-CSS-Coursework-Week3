@@ -33,22 +33,21 @@ html {
   height: 400px;
 }
 
-.jumbotron .jumbotron-fluid {
-  background-color: #cccccc;
-  height: 500px;
+
+.intro {
+  background-color: rgb(#201010);
+}
+
+.jumbotron {
+  background-color: #4e0f0f;
+  height: 400px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  background-image: url(https://images.pexels.com/photos/1857157/pexels-photo-1857157.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  color: black;
 }
-
-
-
-
-
-
-
-
 
 
 @include media-breakpoint-up(sm) {
