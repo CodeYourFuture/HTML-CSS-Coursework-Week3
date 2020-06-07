@@ -16,6 +16,11 @@ body {
     body {
         background-color: black;
     }
+
+    .jumbotron {
+        height: 400px;
+    }
+
 }
 
 /* Large viewport or screen -lg-*/
@@ -24,6 +29,10 @@ body {
     body {
         background-color: white;
     }
+
+    .jumbotron {
+        height: 500px;
+    }
 }
 
 /* Extra large viewport or screen -xl- */
@@ -31,5 +40,9 @@ body {
 @media only screen and (min-width : 1200px) {
     body {
         background-color: blueviolet;
+    }
+
+    .jumbotron {
+        height: 700px;
     }
 }
