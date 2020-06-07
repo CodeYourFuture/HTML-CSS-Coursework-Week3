@@ -154,8 +154,6 @@ margin: 1rem auto;
   font-size: 2rem;
   width: 6rem;
   padding: 0.4rem;
-
-
 }
 .perks-text {
   width: 60%;
@@ -168,7 +166,33 @@ margin: 1rem auto;
 .section-description {
 
 }
+#footer {
 
+}
+.work-time {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  /* border: 0.02rem solid #350801; */
+  border-radius: 1rem;
+  width: 60%;
+  margin: 1rem auto;
+  background-color: #e47c6d;
+  text-align: justify;
+  
+
+}
+.title {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+color: #6d0505;
+}
+.hours {
+  text-decoration: none;
+  color: #6d0505;
+}
 
 
 
