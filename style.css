@@ -133,10 +133,43 @@ body {
   font-weight: 500;
   font-size: 1.3rem;
 }
-.about-description {
+.section-description {
   color: #9c2d2f;
   padding-bottom: 1rem;
 }
+.membership-perks {
+  width: 90%;
+margin: 1rem auto;
+
+}
+.perks-box {
+  border: 0.01rem solid #e77b7c;
+  display:flex;
+  justify-content: space-evenly;
+}
+.perks-image {
+  /* border: .2rem solid #ff002b; */
+  font-size: 2rem;
+  width: 8rem;
+  padding: 0.4rem;
+
+
+}
+.perks-text {
+  width: 60%;
+  color: #9c2d2f;
+
+}
+.section-intro {
+
+}
+.section-description {
+
+}
+
+
+
+
 
 /*=== MEDIA QUERIES ===*/
 @media screen and (min-width: 450px) {
@@ -209,7 +242,7 @@ body {
   .section-intro{
     font-size: 2rem;
   }
-  .about-description{
+  .section-description{
     font-size: 1.2em;
   }
 }
