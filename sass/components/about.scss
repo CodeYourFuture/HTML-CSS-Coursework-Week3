@@ -1,0 +1,51 @@
+.about{
+    margin: 5rem 0;
+
+    .about__cards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+
+        .card-c{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 30rem;
+
+            &__image{
+                
+                
+              
+                position: relative;
+
+
+                &-letter{
+                    font-family: 'Shrikhand', cursive;
+                    font-size: 15rem;
+                    text-align: center;
+                    color: $color-primary;
+                    margin-bottom: 0;
+                    
+                }
+
+                &-icon{
+                    width: 6rem;
+                    height: 6rem;
+                    position: absolute;
+                    bottom: 6rem;
+                    right: 0;
+                }
+
+            }
+
+            &__heading{
+                margin-top: 0;
+            }
+
+
+        } 
+    }
+}

@@ -8,7 +8,7 @@ html {
 body {
   font-family: 'Montserrat', sans-serif; }
 
-.heading-main, .heading-2 {
+.heading-main, .heading-2, .heading-3 {
   font-family: 'Shrikhand', cursive;
   text-align: center; }
 
@@ -22,17 +22,63 @@ body {
   font-weight: 300;
   text-align: center; }
 
+.heading-2 {
+  font-size: 4rem;
+  color: #490B22;
+  margin: 2rem; }
+
+.heading-3 {
+  text-align: center;
+  color: #490B22;
+  font-size: 2.5rem;
+  margin: 2rem 0; }
+  .heading-3--pink {
+    color: #F07BA7; }
+
+.heading-4 {
+  text-align: center;
+  font-size: 1.6rem; }
+  .heading-4--pink {
+    color: #F07BA7; }
+  .heading-4--gray {
+    color: #787878;
+    font-weight: 300; }
+
+.footer-heading-4 {
+  color: #F07BA7;
+  font-size: 2rem;
+  font-weight: 300;
+  margin-bottom: 2rem;
+  position: relative; }
+
+.footer-heading-4::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  bottom: -5px;
+  position: absolute;
+  background-color: #F07BA7; }
+
 .custom-button {
-  text-decoration: none;
-  margin: 2rem;
-  padding: 1rem 1.5rem;
+  margin: 2rem 0;
+  padding: 1rem 2rem;
   font-size: 1.6rem;
   color: white;
-  background-color: #F07BA7;
-  border-radius: 20px;
-  font-family: inherit; }
-  .custom-button:hover {
-    background-color: #eb4d88; }
+  font-family: inherit;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 30px; }
+  .custom-button:active, .custom-button:focus {
+    outline: none; }
+  .custom-button--primary {
+    background-color: #490B22; }
+    .custom-button--primary:hover {
+      background-color: #751237; }
+  .custom-button--secondary {
+    background-color: #F07BA7; }
+    .custom-button--secondary:hover {
+      background-color: #eb4d88; }
 
 .nav-bar {
   background-color: #F9FAFC;
@@ -52,12 +98,13 @@ body {
     color: #F07BA7;
     font-weight: 500; }
     .nav-bar__link:hover {
-      color: #bd1554; }
+      color: #bd1554;
+      text-decoration: none; }
   .nav-bar__logo {
     width: 8rem;
     position: relative;
-    border-radius: 50%;
-    bottom: -3rem; }
+    border-radius: 20%;
+    bottom: -2.3rem; }
 
 .header {
   height: 50rem;
@@ -70,3 +117,125 @@ body {
   align-items: center;
   justify-content: center;
   padding: 1rem; }
+
+.carousel-container {
+  width: 90%;
+  margin: -10rem auto 0 auto;
+  background-color: #fff;
+  padding: 2rem 1rem;
+  box-shadow: 1px 1px 10px black; }
+  .carousel-container__text {
+    margin-bottom: 2rem; }
+  .carousel-container .carousel {
+    border: 2px solid #490B22;
+    padding: 1rem; }
+
+.products {
+  margin: 10rem auto; }
+  .products .products__container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .products .products__container .product {
+      width: 30rem;
+      background-color: #fbe0ea;
+      border: 2px solid #f8c4d8;
+      text-align: center;
+      padding: 0 2rem;
+      margin-top: 15rem;
+      border-radius: 20px; }
+      .products .products__container .product__image {
+        width: 120px;
+        height: 120px;
+        object-fit: cover;
+        object-position: top center;
+        border-radius: 50%;
+        margin: -6rem auto 1rem auto;
+        box-shadow: 1px 1px 10px #490B22; }
+
+.offers {
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url("../../images/offers.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.about {
+  margin: 5rem 0; }
+  .about .about__cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    .about .about__cards .card-c {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 30rem; }
+      .about .about__cards .card-c__image {
+        position: relative; }
+        .about .about__cards .card-c__image-letter {
+          font-family: 'Shrikhand', cursive;
+          font-size: 15rem;
+          text-align: center;
+          color: #490B22;
+          margin-bottom: 0; }
+        .about .about__cards .card-c__image-icon {
+          width: 6rem;
+          height: 6rem;
+          position: absolute;
+          bottom: 6rem;
+          right: 0; }
+      .about .about__cards .card-c__heading {
+        margin-top: 0; }
+
+.footer {
+  background-color: #490B22;
+  padding: 5rem 1rem 0 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+  .footer__logo {
+    width: 15rem; }
+  .footer .footer-info {
+    margin: 2rem 0; }
+    .footer .footer-info__locations, .footer .footer-info__hours, .footer .footer-info__form {
+      width: 90%;
+      margin: 1rem auto;
+      background-color: #6c1033;
+      padding: 1rem 2rem;
+      border-radius: 20px; }
+    .footer .footer-info__text {
+      color: white;
+      font-size: 1.6rem;
+      font-weight: 300; }
+    .footer .footer-info__form .form {
+      display: flex;
+      flex-direction: column; }
+      .footer .footer-info__form .form__input {
+        padding: 1rem;
+        margin: 5px 0;
+        border-radius: 20px;
+        border: 0;
+        outline: none;
+        resize: none;
+        font-size: 1.4rem; }
+        .footer .footer-info__form .form__input::placeholder {
+          color: #490B22; }
+  .footer__social {
+    margin-bottom: 1rem; }
+    .footer__social-img {
+      width: 3rem;
+      margin: 0 1rem; }
+  .footer__copyright {
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 300; }

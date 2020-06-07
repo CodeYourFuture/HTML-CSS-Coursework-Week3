@@ -1,0 +1,12 @@
+.offers{
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)),
+    url('../../images/offers.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    padding: 2rem ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} 

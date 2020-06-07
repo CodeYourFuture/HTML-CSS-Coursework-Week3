@@ -1,0 +1,17 @@
+.carousel-container{
+    width: 90%; 
+    margin: -10rem auto 0 auto;
+    background-color: #fff;
+    padding: 2rem 1rem;
+    box-shadow: 1px 1px 10px black;
+
+
+    &__text{
+        margin-bottom: 2rem;
+    }
+
+    .carousel{
+        border: 2px solid $color-primary;
+        padding: 1rem;
+    }
+}

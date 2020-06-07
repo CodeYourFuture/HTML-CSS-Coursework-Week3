@@ -14,8 +14,6 @@
         margin: 0 .7rem;
         width: 8rem;
         text-align: center;
-
-       
     }
 
     &__link{
@@ -26,13 +24,14 @@
         
         &:hover{
             color: $color-secondary-darken-30;
+            text-decoration: none;
         }
     }
 
     &__logo{
         width: 8rem;
         position: relative;
-        border-radius: 50%;
-        bottom: -3rem;
+        border-radius: 20%;
+        bottom: -2.3rem;
     }
 }

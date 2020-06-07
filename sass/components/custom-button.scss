@@ -1,14 +1,40 @@
 .custom-button{
-     text-decoration: none;
-     margin: 2rem;
-     padding: 1rem 1.5rem;
-     font-size: 1.6rem;
-     color: white;
-     background-color: $color-secondary;
-     border-radius: 20px;
-     font-family: inherit;
 
-     &:hover{
-         background-color: $color-primary-darken-10;
+    &:active, &:focus{
+        outline: none;
+    }
+        
+    margin: 2rem 0;
+    padding: 1rem 2rem;
+    font-size: 1.6rem;
+    color: white;
+    font-family: inherit;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 30px;
+
+     &--primary{
+       
+         background-color: $color-primary;
+
+         &:hover{
+            background-color: $color-primary-lighten-10;
+         }
      }
+
+     &--secondary{
+        
+        background-color: $color-secondary;
+
+        &:hover{
+           background-color: $color-secondary-darken-10;
+        }
+     }
+
+     
+    
 }
+
+
+
+   

@@ -1,0 +1,39 @@
+.products{
+    margin: 10rem auto;
+
+    .products__container{
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+
+        .product{
+
+            width: 30rem;
+            background-color: $color-secondary-lighten-22;
+            border: 2px solid $color-secondary-lighten-16;
+            text-align: center;
+            padding: 0 2rem;
+            margin-top: 15rem;
+            border-radius: 20px;
+
+
+
+            &__image{
+                width: 120px;
+                height: 120px;
+                object-fit: cover;
+                object-position: top center;
+                border-radius: 50%;
+                margin: -6rem auto 1rem auto;
+                box-shadow: 1px 1px 10px $color-primary;
+            }
+
+           
+        }
+
+    }
+}

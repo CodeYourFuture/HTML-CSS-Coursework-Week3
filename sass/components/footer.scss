@@ -1,0 +1,75 @@
+.footer{
+    background-color: $color-primary;
+    padding: 5rem 1rem 0 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+
+    &__logo{
+        width: 15rem;
+    }
+
+
+
+    .footer-info{
+        margin: 2rem 0;
+
+        &__locations, &__hours, &__form{
+            width: 90%;
+            margin: 1rem auto;
+            background-color: $color-primary-lighten-12;
+            padding: 1rem 2rem;
+            
+            border-radius: 20px;
+        }
+
+        &__text{
+            color: white;
+            font-size: 1.6rem;
+            font-weight: 300;
+        }
+
+        &__form{
+            
+
+            .form{
+                display: flex;
+                flex-direction: column;
+
+                &__input{
+                    padding: 1rem;
+                    margin: 5px 0;
+                    border-radius: 20px;
+                    border: 0;
+                    outline: none;
+                    resize: none;
+                    font-size: 1.4rem;
+                    &::placeholder{
+                        color: $color-primary;
+                    }
+                }
+            }
+        }
+    }
+
+
+    &__social{
+        margin-bottom: 1rem;
+        
+        &-img{
+            width: 3rem;
+            margin: 0 1rem
+        }
+    }
+
+
+    &__copyright{
+        color: white;
+        font-size: 1.4rem;
+        font-weight: 300;
+    }
+
+} 
