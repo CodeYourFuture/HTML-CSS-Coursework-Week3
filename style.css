@@ -2,7 +2,7 @@
 
 @import url("https://fonts.googleapis.com/css?family=Montserrat: 400,600");
 
-body,
+*body,
 html {
   margin: 0;
   padding: 0;
@@ -40,29 +40,16 @@ html {
 
 .jumbotron {
   background-color: #4e0f0f;
-  height: 400px;
+  height: auto;
+  width: 98%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  background-image: url(https://images.pexels.com/photos/1857157/pexels-photo-1857157.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.541), rgba(0, 0, 0, 0.336)), url(https://images.pexels.com/photos/1857157/pexels-photo-1857157.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
   color: black;
 }
 
-@include media-breakpoint-up(sm) {
-  html {
-    font-size: 1.2rem;
-  }
-}
 
-@include media-breakpoint-up(md) {
-  html {
-    font-size: 1.4rem;
-  }
-}
 
-@include media-breakpoint-up(lg) {
-  html {
-    font-size: 1.6rem;
-  }
-}
+
