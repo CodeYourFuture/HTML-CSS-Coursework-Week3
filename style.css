@@ -6,6 +6,8 @@
   margin-top: 2rem;
   border-top: 2px solid grey;
 }
-#foot{
-justify-content: space-evenly;
+@media only screen and (min-width:781px){
+  .d-block{
+    height: 500px;
+  }
 }
