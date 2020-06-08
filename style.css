@@ -4,3 +4,11 @@
 .navbar-brand{
   align-items: center;
 }
+.footer{
+  height: 5rem;
+  margin-top: 2rem;
+  border: 2px solid red;
+}
+.justify-content-center{
+justify-content: space-evenly;
+}
