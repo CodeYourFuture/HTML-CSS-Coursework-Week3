@@ -1,11 +1,9 @@
 
 body{
-    margin: 0em;
     background-color: #f3abb9;
     font-family: cursive;
     margin: 0em;
-    padding: 0em;
-    
+    padding: 0em;   
 }
 /* Logo and button */
 .logo-container{
@@ -49,9 +47,7 @@ body{
     border-radius: 10px;
     border-width: medium;
     width: 85px;
-    height: 25px;
-    
-    
+    height: 25px;  
 }
 .upper-list{
     display: flex;
@@ -118,8 +114,7 @@ margin-right: 5em;
 .cake-types div img{
   width: 10em;
   height: 8em;
-    max-width: 100%;
-    
+    max-width: 100%;  
 }
 .frame{
    
@@ -134,12 +129,12 @@ margin-right: 5em;
     font-family:'Courier New', Courier, monospace;
     font-weight: 800;
 }
+/* Footer */
 .footer{
     margin-right: 5em;
     margin-left: 2em;
 
 }
-/* Footer */
 .footer ul {
     display: flex;
     justify-content: center;
