@@ -1,215 +1,117 @@
-/*  Add your styling here */
-/* Universal styles */
-
-* {
-    font-family: "Pacifico", cursive;
-    background-color: rgb(188, 243, 226);
-  }
-  
-  li {
-    list-style: none;
-  }
-  
-  a {
-    text-decoration: none;
-    color: rgb(200, 144, 233);
-  }
-  
-  /* Header styles */
-  
-  .top-header {
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+.social a{
+font-size: 4.5em;
+padding: 3rem;
+}
+.fa-facebook {
+    color: #2B5998;
+}
+.fa-twitter {
+color: #00ACED
+}
+.fa-instagram {
+    color: #517FA4
+}
+.fa-youtube {
+    color:#bb0000
+}
+.fa-facebook:hover,
+.fa-twitter:hover,
+.fa-instagram:hover,
+.fa-youtube:hover {
+color:#d5d5d5;
+}
+.top-container {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .top-header .header-image {
-    height: 200px;
-    width: 200px;
-    padding: 20px;
-  }
-  
-  .contact-button {
-    color: rgb(200, 144, 233);
-    font-size: 25px;
-    border-color: rgb(252, 251, 253);
-    border-radius: 20px;
-    border-width: medium;
-    width: 125px;
-    height: 50px;
-  }
-  
-  .navigation ul {
-    display: flex;
-    flex-direction: column;
-    padding-left: 5px;
-  }
-  
-  .navigation li {
-    padding-top: 25px;
-    padding-right: 50px;
-    font-size: 25px;
-  }
-  
-  /* About section styles */
-  
-  .about {
-    padding-top: 50px;
-  }
-  
-  .about h1 {
-    font-size: 40px;
-    color: rgb(255, 128, 153);
-    text-align: center;
-  }
-  
-  .about h3 {
-    font-size: 25px;
-    color: rgb(255, 128, 153);
-    text-align: center;
-    padding-bottom: 50px;
-  }
-  
-  .about .cupcakes {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    border: 2px solid rgb(252, 251, 253);
-    margin: 0;
-  }
-  
-  /* Example cake styles */
-  
-  .example-cakes h3 {
-    font-size: 25px;
-    color: rgb(255, 128, 153);
-    text-align: center;
-    padding-top: 50px;
-    padding-bottom: 20px;
-  }
-  
-  .example-cakes ul {
-    padding-left: 0;
-  }
-  
-  .example-cakes li {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding-bottom: 20px;
-  }
-  
-  .images {
-    border: 2px solid rgb(252, 251, 253);
-  }
-  
-  /* Footer styles */
-  
-  .footer {
-    display: flex;
-    padding: 50px;
-    justify-content: center;
-  }
-  
-  .footer li {
-    padding-right: 50px;
-    font-size: 25px;
-  }
-  
-  /* Media queries */
-  
-  @media only screen and (min-width: 650px) {
-    .navigation ul {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      padding-left: 20px;
-    }
-  
-    .example-cakes ul {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-evenly;
-    }
-  
-    .example-cakes li {
-      width: 45%;
-      height: 45%;
-    }
-  
-    .footer ul {
-      display: flex;
-      flex-direction: row;
-    }
-  }
-  
-  @media only screen and (min-width: 1000px) {
-    .top-header .header-image {
-      display: flex;
-      flex-direction: column;
-      align-self: start;
-      height: 250px;
-      width: 250px;
-    }
-  
-    .contact-button {
-      display: flex;
-      flex-direction: column;
-      align-self: flex-end;
-      width: 175px;
-      height: 75px;
-      font-size: 30px;
-      padding-left: 30px;
-      padding-top: 8px;
-      margin-right: 5px;
-    }
-  
-    .navigation li {
-      font-size: 30px;
-    }
-  
-    .about h1 {
-      font-size: 60px;
-    }
-  
-    .about h3 {
-      font-size: 30px;
-    }
-  
-    .example-cakes h3 {
-      font-size: 30px;
-    }
-  
-    .example-cakes ul {
-      display: flex;
-      justify-content: space-evenly;
-    }
-  
-    .example-cakes li {
-      width: 20%;
-      height: 20%;
-    }
-  
-    .footer li {
-      font-size: 30px;
-    }
-  }
-  col-1 {width: 8.33%;}
-  .col-2 {width: 16.66%;}
-  .col-3 {width: 25%;}
-  .col-4 {width: 33.33%;}
-  .col-5 {width: 41.66%;}
-  .col-6 {width: 50%;}
-  .col-7 {width: 58.33%;}
-  .col-8 {width: 66.66%;}
-  .col-9 {width: 75%;}
-  .col-10 {width: 83.33%;}
-  .col-11 {width: 91.66%;}
-  .col-12 {width: 100%;}
-  @media only screen and (max-width: 768px) {
-    /* For mobile phones: */
-   [class*="col-"] {
+    justify-content: space-between;
+    width:60%;
+    margin: 0 auto;
+    /* position: fixed; */
+    /* background-color: white; */
+    /* border: solid;  */
+    /* height: 4.375rem; */
+}
+.logo {
+    width: 4rem;
+    height:4rem;
+    margin-bottom: 1rem;
+}
+nav ul
+ {
+     display: flex;
      width: 100%;
-    }
+     margin-top: 1rem;
+ }
+ nav ul li
+ {
+     list-style-type: none;
+     font-size: 1.5rem;
+     margin-left:7rem;
+     /* border: solid; */
+ }
+ .top-item
+ {
+     margin-top: 1.2%;
+     margin-bottom: 0.2%;
+ }
+ /* .second-top-item
+ {
+     width:60%;
+     border: solid;
+ } */
+ nav a
+{
+    text-decoration: none;
+    color: rgb(135, 145, 145);
+}
+nav a:hover
+{
+    color: rgb(204, 18, 18);
+}
+#first-link
+{
+    color: rgb(232, 230, 240);
+    font-weight: 500;
+}
+.footer-copyright text-center py-3 {
+    color: purple;
+}
+/*---Media Queries --*/
+@media (max-width: 992px) {
   }
+@media (max-width: 768px) {
+}
+@media (max-width: 576px) {
+}
+figure {
+  position: relative;
+  width: 100%;
+  height: 60%;
+  margin: 0!important;
+}
+.fixed-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+#fixed {
+  background-image: url('img/mac.png');
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  will-change: transform;
+}
+/*--- Bootstrap Padding Fix --*/
+[class*="col-"] {
+    padding: 1rem;
+}
