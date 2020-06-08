@@ -2,10 +2,11 @@
 
 * {
     font-family: "Pacifico", cursive;
-   
+   margin: 0;
+   padding: 0;
   }
   body{
-    margin: 0;
+    /* margin: 0; */
   }
   
   .bg{
@@ -107,8 +108,13 @@
     width: 100%;
   } */
 
+  .cup{
+    max-width:100%;
+    height: auto;
+  }
+
   .cakes{
-    background-image: url("");
+    /* background-image: url(""); */
   }
   .text{
 height: 100px;
@@ -131,20 +137,23 @@ background-image: url("images/footer.jpg");
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    /* max-width: 100%; */
 }
   .cup-container li{
-   width: 50%;
+    width: 50%;
+ display: flex;
+ justify-content: center;
   }
   .cup-container li img{
+    margin-top: 5%;
+   max-width: 75%;
+   max-height: 90%;
     border:2px solid #F679E5;
     box-shadow: 6px 6px black ;
   }
-  .cup{
-    max-width:100%;
-    height: auto;
-  }
   
-  footer{
+  
+  .footer{
       /* left: 0;
     bottom: 0; */
     /* width: 100%; */
@@ -155,4 +164,24 @@ background-image: url("images/footer.jpg");
     background-size: 100%;
     opacity:0.5;
     
+  }
+  .footer-list{
+    display: flex;
+    justify-content: space-evenly;
+    align-self:center;
+   
+  }
+  .footer-list li{
+    font-size: 0.5rem;
+    text-align: center;
+    list-style: none;
+  /* width: 30%; */
+    color: white;
+    margin: 3%;
+align-self: baseline;
+
+  }
+  .footer-list li:hover{
+    background-color: #F679E5;
+    border-radius: 4px;
   }
