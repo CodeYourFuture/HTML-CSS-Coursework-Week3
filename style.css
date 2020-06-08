@@ -7,8 +7,8 @@
 .footer{
   height: 5rem;
   margin-top: 2rem;
-  border: 2px solid red;
+  border-top: 2px solid grey;
 }
-.justify-content-center{
+#foot{
 justify-content: space-evenly;
 }
