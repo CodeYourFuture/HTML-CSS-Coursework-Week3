@@ -5,7 +5,7 @@
 }
 html{
    font-size: 16px;
-    color: red;
+    color:white;
     
 }
 /*****************generic classes**********/
@@ -184,12 +184,16 @@ padding:0.5rem;
 #footer{
     background-color: #383739;
     width:100%;
-    
-   
+    padding-left: 0.5; 
 
+}
+.footer-item-list{
+    display:flex;
+    justify-content: space-around;
+    list-style-type: none;
 }
 
 .footer-item-list-item{
-    color: darkcyan;
+    
     
 }
