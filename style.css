@@ -6,6 +6,7 @@
 html{
    font-size: 16px;
     color:white;
+    font-family: monospace;
     
 }
 /*****************generic classes**********/
@@ -33,25 +34,17 @@ background-color: blue;
     width:60%;
     height:auto;
 }
-#img-open{
-   
-    width:10%;
-    height:auto;
-}
+
+
 #img-contact{
-    width:30%;
+    width:40%;
     height:auto;
 }
 .logo-img{
     width:100%;
     height:auto;
 }
-.open{
-   
-    width: 100%;
-    height:auto;
-   
-}
+
 .contact{
     
     width:100%;
@@ -59,20 +52,16 @@ background-color: blue;
     
 }
 /***************nave bar*****************/
-.open:hover .nav-bar{
-    
-    background-color: red;
-    width:100%;
-    display:block;
-}
+
 .nav-bar{
-    position: relative;
+    width: 100%;
     color:white;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     font-weight: bold;
-    display: none;
+    
    
 }
+
 .navigation{
     list-style-type: none;
     display: flex;
@@ -81,12 +70,13 @@ background-color: blue;
     justify-content: space-evenly;
     align-items: center;
     
+    
 
 }
 .list-item{
     background-color: darksalmon;
     width:40%;
-    height: 2.5rem;
+    height: 3rem;
    margin-top: 0.6rem;
    display: flex;
    align-items: center;
@@ -135,7 +125,11 @@ background-color: blue;
    justify-content: space-between;
 }
 .home-container-small-img{
- width:24%;    
+ width:24%; 
+
+}
+.home-container-small-img:hover{
+    cursor: pointer;
 }
 .home-small-img{
     width:100%;
@@ -157,6 +151,7 @@ background-color: blue;
 }
 .info-text-content{
     width:100%;
+    padding:0.5rem;
     background-color: #fcffe8;;
     display: flex;
     flex-direction: column;
@@ -165,7 +160,13 @@ background-color: blue;
 }
 .info-section-title{
     color: #f094dc;
-    
+}
+.info-text-content{
+    padding: 0.5rem;
+    text-align: center;
+}
+.info-detail{
+    font-size: 1rem;
 }
 .info-section-title::after{
     content: "";
@@ -187,31 +188,88 @@ background-color: blue;
 }
 .info-small-img-container{
     width:100%;
+    
 }
 
 .info-small-img{
     width:100%;
+   
 }
 
 /*************footer*************/
 #footer{
     background-color: #383739;
     width: 100%;
-    padding-left: 0.5;
+    padding:0.5%;
     display: flex;
     flex-wrap: wrap;
-    padding:0.5rem;
-
+    justify-content: space-around;
 }
-.footer-item-list{
+.footer-site-map,.footer-contact,.footer-delevery{
+    color: cyan;
+   font-size: 1.3rem;
+   font-weight: bold;
+}
+
+/****************** >400****************************************************/
+
+@media only screen  and (min-width: 400px) {
+  /*************header***********************************************/
+
+
+#img-logo{
+  background-color: cyan;
+    width:14rem;
+    height:5rem;
+}
+
+
+#img-contact{
+    background-color: darkgoldenrod;
+    width:10rem;
+    height:5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+/***************nave bar*****************/
+
+.nav-bar{
+    width: 100%;
+    color:white;
+    font-size: 1.6rem;
+    font-weight: bold;
+    
    
 }
 
-.footer-item-list-item{
-    
-    
+.list-item{
+    background-color: darksalmon;
+    width:12rem;
+    height: 3rem;
+   margin-top: 0.6rem;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 1rem;
+   
 }
-/****************** laptops ****************************************************/
+
+/*************footer*************/
+
+.footer-site-map,.footer-contact,.footer-delevery{
+    color: cyan;
+   font-size: 1.3rem;
+   font-weight: bold;
+}
+
+}
+/****************** >650****************************************************/
+
+@media only screen  and (min-width: 400px) {
+}
+/****************** >1000****************************************************/
 
 @media only screen  and (min-width : 1000px) {
 
@@ -295,9 +353,32 @@ background-color: blue;
     width:80%;
     background-color: violet;
 }
+/****************info-section*******************/
+.info-section{
+   
+    padding:1.5%;
+    
+}
+.info-container-zoom-img{
+    width:47%;
+    height:20rem;
+}
 
+.info-text-content{
+    
+    width:50.5%;
+    padding-left: 1rem;
+   
+}
+.info-small-img-bar{
+    background-color: lawngreen;
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.info-small-img-container{
+    width:23.5%;
+}
 
-
-
-
-    }
+}
