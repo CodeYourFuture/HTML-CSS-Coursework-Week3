@@ -9,22 +9,19 @@ html {
   font-size: 10px;
 }
 body {
-  background-color: #fb8e7e;
+  /* background-color: #fb8e7e; */
 }
 /*=== HEADER === */
 .header {
 }
 .logo-box {
-  width: 8rem;
-  height: auto;
-  margin: 0 auto;
-  /* border: 0.1rem solid pink; */
-  border-radius: 50%;
-  /*  background-color: #f7f1e9; */
+  background-color: #fb8e7e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .business-logo {
-  max-width: 100%;
-  height: auto;
+  max-width: 8rem;
   padding: 0.5rem;
 }
 .hero-box {
@@ -51,11 +48,11 @@ body {
 }
 .nav-link {
   text-decoration: none;
-  color: #ff002b;
-  font-weight: 300;
+  color: #fff;
+  font-weight: 500;
   padding: 0.2rem;
   border-radius: 0.3em;
-  background-color: #ffccbb;
+  /* background-color: #ff002b; */
 }
 .nav-link:hover {
   background-color: #fb8e7e;
@@ -74,7 +71,7 @@ body {
   /* margin: 2.5rem 0; */
 }
 .products-section {
-  /* //margin-top: 2rem; */
+  padding-bottom: 2rem;
 }
 .product1 {
   width: 80%;
@@ -88,6 +85,7 @@ body {
 .product-title {
   font-size: 1.5rem;
   padding: 1.5rem;
+  width: max-content;
 }
 .prod-image {
   width: 10rem;
@@ -114,11 +112,12 @@ body {
 .about-section {
   height: 17rem;
   background-color: #fde4e0;
-  padding-top: 2.5rem;
+  padding-top: 3rem;
 }
 .about-text {
   padding: 1em;
   background-color: #f8efef;
+  border-radius: 0.7rem;
   width: 80%;
   text-align: center;
   margin: auto auto;
@@ -127,7 +126,7 @@ body {
   color: #e43015;
 }
 .section-intro {
-  padding: 1rem 0 1rem 0;
+  margin: 1rem auto;
   font-weight: 500;
   font-size: 1.3rem;
 }
@@ -137,14 +136,15 @@ body {
 }
 .membership-perks {
   width: 90%;
-  margin: 1rem auto;
+  padding: 3rem;
+  margin: auto;
 }
 .perks-box {
   border: 0.01rem solid #e77b7c;
   display: flex;
   justify-content: space-evenly;
   border-radius: 0.5rem;
-  margin-bottom: 1rem;
+  margin: 1rem;
 }
 .perks-image {
   /* border: .2rem solid #ff002b; */
@@ -164,8 +164,10 @@ body {
 /*=== FOOTER ===*/
 
 #footer {
+  padding: 2rem;
+  background-color: #fb8e7e;
 }
-.footer-container{
+.footer-container {
   margin-bottom: 3rem;
 }
 .work-time {
@@ -192,11 +194,11 @@ body {
 }
 .footer-line {
   width: 70%;
-    margin: 1rem auto;
-    border-bottom: 0;
-    border: 0.05rem solid #6d0505;
+  margin: 1rem auto;
+  border-bottom: 0;
+  border: 0.05rem solid #6d0505;
 }
-}
+
 /* .contact {
   width:40%;
   margin: 1.5rem auto;
@@ -247,8 +249,11 @@ body {
     margin: auto;
     flex-wrap: wrap;
   }
+  .membership-perks {
+    width: 85%;
+  }
 }
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 980px) {
   html {
     font-size: 16px;
   }
@@ -275,6 +280,7 @@ body {
   }
   .product-title {
     margin-bottom: 1rem;
+    width: max-content;
   }
   .prod-image {
     width: 12.5rem;
@@ -284,7 +290,8 @@ body {
     padding-bottom: 2rem;
   }
   .about-section {
-    padding-top: 4rem;
+    /* padding-top: 4rem; */
+    height: 18rem;
   }
   .section-intro {
     font-size: 2rem;
@@ -295,6 +302,7 @@ body {
   .membership-perks {
     display: flex;
     justify-content: space-evenly;
+    width: 95%;
   }
   .perks-box {
     width: 45%;
