@@ -56,17 +56,7 @@
     height: 100px;
   }
   
-  .header-bar h1{
-    /* line-height: 0.5em; */
-    color:white;
-    /* text-align: center; */
   
-  }
-  .header-bar h3{
-    color: white;
-  /* line-height: 0em; */
-  
-  }
   .list1, .list2, .list3{
     /* background-color: aqua; */
     width:100%;
@@ -77,10 +67,9 @@
   } 
   a{
     background-color: rgb(241, 90, 216,0.0);
-       color: white;
+       color: #F6EFEE;
     text-decoration: none;
     font-size: 1.5rem;
-    
   }
    .list1 a{
     padding-left: 1.7rem;
@@ -100,13 +89,14 @@
   
   
   .nav li{
+    background-color:#F497DA;
      width:40%;
-    color: white;
-    border: 2px solid white;
+    color: #F6EFEE;
+    border: 2px solid #F6EFEE;
     border-radius: 0.5rem;
     text-align: center; 
     margin-bottom: 10px;
-       opacity: 0.5; 
+       /* opacity: 0.5;  */
    
   }
 
@@ -116,15 +106,48 @@
   /* .cupcakes{
     width: 100%;
   } */
+
+  .cakes{
+    background-image: url("");
+  }
+  .text{
+height: 100px;
+background-image: url("images/footer.jpg");
+  opacity: 0.5;
+    color:white;
+    text-align: center;
+  }
+  .text h1{
+    font-size: 1.7rem;
+   
+  }
+  .text h3{
+    line-height: 1rem;
+    font-size: 1rem;
+
+  }
+  .cup-container{
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+  .cup-container li{
+   width: 50%;
+  }
+  .cup-container li img{
+    border:2px solid #F679E5;
+    box-shadow: 6px 6px black ;
+  }
   .cup{
     max-width:100%;
     height: auto;
   }
   
   footer{
-      left: 0;
-    bottom: 0;
-    width: 100%;
+      /* left: 0;
+    bottom: 0; */
+    /* width: 100%; */
     height: 100px;
     background-image: url("images/footer.jpg");
     background-repeat: no-repeat;
