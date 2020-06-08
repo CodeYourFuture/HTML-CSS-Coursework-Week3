@@ -65,6 +65,8 @@ body {
   background-color: #f7f1e9;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
+
+/*=== SECTION .CAROUSEL ===*/
 /*=== SECTION .PRODUCTS ===*/
 
 .products {
@@ -91,7 +93,7 @@ body {
   width: 10rem;
 }
 .product-description {
-  padding-top: 1.5rem;
+  padding: 1.5rem;
   text-align: center;
 }
 .prod-button {
@@ -132,7 +134,7 @@ body {
 }
 .section-description {
   color: #9c2d2f;
-  padding-bottom: 1rem;
+  /* padding-bottom: 1rem; */
 }
 .membership-perks {
   width: 90%;
@@ -219,7 +221,12 @@ body {
 }
 .fa-facebook {
 }
-
+.copyright {
+  text-align: center;
+  font-family: cursive;
+  font-size: 0.75rem;
+  color: #6d0505;
+}
 /*=== MEDIA QUERIES ===*/
 @media screen and (min-width: 450px) {
   html {
