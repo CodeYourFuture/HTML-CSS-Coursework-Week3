@@ -1,1 +1,117 @@
 /*  Add your styling here */
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+   font-size: 16px;
+    color: red;
+    
+}
+/*****************generic classes**********/
+#header,#main,#footer{
+  width: 100%;
+
+}
+
+/*************header*************/
+
+#header{
+display: flex;
+flex-wrap: wrap;
+padding:0.5rem;
+}
+#header-img{
+}
+#img-logo{
+  
+    width:60%;
+    height:auto;
+}
+#img-open{
+   
+    width:10%;
+    height:auto;
+}
+#img-contact{
+    width:30%;
+    height:auto;
+}
+.logo-img{
+    width:100%;
+    height:auto;
+}
+.open{
+   
+    width: 100%;
+    height:auto;
+   
+}
+.contact{
+    
+    width:100%;
+    height:auto;
+    
+}
+/***************nave bar*****************/
+.open:hover .nav-bar{
+    
+    background-color: red;
+    width:100%;
+    display:block;
+}
+.nav-bar{
+    position: relative;
+    color:white;
+    font-size: 1.3rem;
+    font-weight: bold;
+    display: none;
+   
+}
+.navigation{
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    
+
+}
+.list-item{
+    background-color: darksalmon;
+    width:40%;
+    height: 2.5rem;
+    margin-top: 0.5rem;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 1rem;
+   
+}
+/*************main*************/
+#main{
+  
+
+}
+.super-img,.whole-cake-main-img{
+width:360px;
+}
+.whole-cake-img-list-img{
+    width:360px;
+
+}
+
+
+/*************footer*************/
+#footer{
+    background-color: #383739;
+    
+   
+
+}
+
+.footer-item-list-item{
+    color: darkcyan;
+    
+}
