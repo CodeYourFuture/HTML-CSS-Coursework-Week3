@@ -1,6 +1,12 @@
 .nav-bar{
     background-color: #F9FAFC;
     height: 8rem;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+
+    
 
     &__list{
         
@@ -8,10 +14,18 @@
         justify-content: center;
         align-items: center;
         list-style-type: none;
+
+        @media screen and(min-width:800px) {
+            justify-content: space-evenly;
+        }
+        @media screen and(min-width:1000px) {
+            width: 70%;
+            margin: 0 auto;
+        }
     }
 
     &__item{
-        margin: 0 .7rem;
+        margin: 0 .5rem;
         width: 8rem;
         text-align: center;
     }
@@ -21,10 +35,14 @@
         font-size: 1.4rem;
         color: $color-secondary;
         font-weight: 500;
-        
+
         &:hover{
             color: $color-secondary-darken-30;
             text-decoration: none;
+        }
+
+        @media screen and(min-width:600px){
+            font-size: 1.6rem;
         }
     }
 
@@ -35,3 +53,5 @@
         bottom: -2.3rem;
     }
 }
+
+

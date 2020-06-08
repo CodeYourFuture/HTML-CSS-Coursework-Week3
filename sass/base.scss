@@ -23,4 +23,12 @@ html{
 
 body{
     font-family: 'Montserrat', sans-serif;
+
+    @media screen and(max-width: 300px){
+       
+        width: 30rem;
+        
+    }
 }
+
+

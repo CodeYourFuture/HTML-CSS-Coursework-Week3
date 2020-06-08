@@ -9,16 +9,43 @@
         justify-content: center;
         align-items: center;
 
+        @media screen and(min-width:1000px){
+            
+            width: 95%;
+            flex-direction: row;
+        
+        }
+
+        @media screen and(min-width:1200px){
+           
+            width: 80%;
+            justify-content: space-between;
+
+        }
+
 
         .product{
 
-            width: 30rem;
+            min-width: 25rem;
             background-color: $color-secondary-lighten-22;
             border: 2px solid $color-secondary-lighten-16;
             text-align: center;
             padding: 0 2rem;
             margin-top: 15rem;
             border-radius: 20px;
+
+            @media screen and(min-width:1000px){
+                        
+                margin: 10rem 2rem;   
+                
+            }
+
+            @media screen and(min-width:1200px){
+               
+                margin: 10rem 2rem;
+                width: 30rem;
+                 
+            }
 
 
 
@@ -37,3 +64,6 @@
 
     }
 }
+
+
+

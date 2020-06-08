@@ -6,6 +6,10 @@
 .heading-main{
     color: white;
     font-size: 5rem;
+
+    @media screen and(min-width: 1000px){
+        font-size: 7rem;
+    }
     
 }
 
@@ -36,10 +40,10 @@
 .heading-4{
     text-align: center;
     font-size: 1.6rem;
-    // margin: 2rem 0;
 
     &--pink{
         color: $color-secondary;
+        font-weight: 300;
     }
 
     &--gray{
@@ -52,7 +56,7 @@
 .footer-heading-4{
     color: $color-secondary;
     font-size: 2rem;
-    font-weight: 300;
+    font-weight: 400;
     margin-bottom: 2rem;
     position: relative;
 }

@@ -5,6 +5,24 @@
     padding: 2rem 1rem;
     box-shadow: 1px 1px 10px black;
 
+    @media screen and(min-width:600px){
+        
+        width: 80%;
+        
+    }
+
+    @media screen and(min-width:800px){
+        margin: -15rem auto 0 auto;
+        width: 70%;
+    
+    }
+
+    @media screen and(min-width:1300px){
+        
+        width: 60%;
+            
+    }
+
 
     &__text{
         margin-bottom: 2rem;
@@ -13,5 +31,13 @@
     .carousel{
         border: 2px solid $color-primary;
         padding: 1rem;
+        margin: 0 auto;
+
+        @media screen and(min-width:800px){
+            
+            width: 80%;
+                
+        }
     }
 }
+
