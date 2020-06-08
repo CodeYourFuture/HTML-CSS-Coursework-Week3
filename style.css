@@ -1,9 +1,6 @@
 #navbarNavAltMarkup{
   justify-content: flex-end;
 }
-.navbar-brand{
-  align-items: center;
-}
 .footer{
   height: 5rem;
   margin-top: 2rem;
