@@ -23,11 +23,14 @@ body {
 
 }
 
-/* Large viewport or screen -lg-*/
+/* Large viewport or screen -lg- (space on right for external adverts)*/
 
 @media only screen and (min-width : 992px) {
     body {
         background-color: white;
+        width: 80%;
+        margin-left: 0;
+        margin-right: auto;
     }
 
     .jumbotron {
@@ -35,11 +38,14 @@ body {
     }
 }
 
-/* Extra large viewport or screen -xl- */
+/* Extra large viewport or screen -xl- (space on right for external adverts) */
 
 @media only screen and (min-width : 1200px) {
     body {
         background-color: blueviolet;
+        width: 80%;
+        margin-left: 0;
+        margin-right: auto;
     }
 
     .jumbotron {
