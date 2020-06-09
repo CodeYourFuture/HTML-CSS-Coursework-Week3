@@ -216,7 +216,6 @@ background-color: blue;
 @media only screen  and (min-width: 400px) {
   /*************header***********************************************/
 
-
 #img-logo{
   background-color: cyan;
     width:14rem;
@@ -267,7 +266,63 @@ background-color: blue;
 }
 /****************** >650****************************************************/
 
-@media only screen  and (min-width: 400px) {
+@media only screen  and (min-width: 650px) {
+     
+#img-logo{
+      width:16rem;
+      height:5rem;
+  }
+  
+  
+  #img-contact{
+      width:12rem;
+      height:5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+  }
+  
+  /***************nave bar*****************/
+  
+  .nav-bar{
+      width: 100%;
+      color:white;
+      font-size: 1.8rem;
+      font-weight: bold;
+      
+     
+  }
+  
+  .list-item{
+      
+      width:13rem;
+      height: 3.6rem;
+    
+     
+  }
+  .info-section-title{
+    font-size: 2.5rem;
+  }
+  .info-section-title::after{
+   
+    width:18rem;
+   
+}
+  .info-detail{
+    font-size: 1.5rem;
+  }
+  /*************footer*************/
+  
+  .footer-site-map,.footer-contact,.footer-delevery{
+      color: cyan;
+     font-size: 1.6rem;
+     font-weight: bold;
+  }
+  
+}
+/****************** >900****************************************************/
+
+@media only screen  and (min-width: 900px) {
 }
 /****************** >1000****************************************************/
 
