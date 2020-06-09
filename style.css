@@ -41,22 +41,13 @@ Navigation Menu
   width: 15%;
   height: 80px;
   justify-content: center;
+}
 
 /**
 *
 Main
 *
 **/  
-}
-
-.carousel-inner img {
-  width: 100%;
-  height: 400px;
-}
-
-.intro {
-  background-color: rgb(#201010);
-}
 
 .jumbotron {
   background-color: #4e0f0f;
@@ -70,6 +61,41 @@ Main
   color: black;
 }
 
+.carousel-inner img {
+  width: 100%;
+  height: 400px;
+}
+
+/**
+*
+Footer
+*
+**/
 
 
 
+
+
+/**
+*
+Media Query
+*
+**/
+
+@include media-breakpoint-up(sm) {
+  html {
+    font-size: 1.2rem;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  html {
+    font-size: 1.4rem;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  html {
+    font-size: 1.6rem;
+  }
+}
