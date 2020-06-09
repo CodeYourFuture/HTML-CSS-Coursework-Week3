@@ -1,8 +1,12 @@
-/*  Add your styling here */
-
 @import url("https://fonts.googleapis.com/css?family=Montserrat: 400,600");
 
-*body,
+/**
+*
+Body
+*
+**/
+
+body,
 html {
   margin: 0;
   padding: 0;
@@ -18,6 +22,12 @@ body {
   background-color: rgb(233, 210, 180);
 }
 
+
+/**
+*
+Navigation Menu
+*
+**/
 .navbar {
   border: 0.1px solid rgb(223, 156, 156);
   background-color: rgb(192, 187, 183);
@@ -31,7 +41,12 @@ body {
   width: 15%;
   height: 80px;
   justify-content: center;
-  
+
+/**
+*
+Main
+*
+**/  
 }
 
 .carousel-inner img {
