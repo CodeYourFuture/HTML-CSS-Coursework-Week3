@@ -19,28 +19,28 @@ html{
 #header{
 display: flex;
 flex-wrap: wrap;
-justify-content: space-between;
-
-
+flex-direction: column;
 
 }
-
+.logo-content{
+   
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
 #img-logo{
-    background-color: red;
+  
     width:10rem;
-    height:5rem;
-    
+    height:10rem; 
 }
 
 
 #img-contact{
-    background-color: red;
-    width:5rem;
-    height:5rem;
+    
+    width:10rem;
+    height:7rem;
     display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
- 
+    
 }
 .logo-img{
     
@@ -204,26 +204,61 @@ justify-content: space-between;
     margin-left: auto;
     margin-right: auto;
 }
+.footer-content{
+    color:cyan;
+    font-size: 2rem;
+}
 #main{
    
-    background-color: crimson;
     width: 100%;
 }
 
-/****************** <300****************************************************/
-
-
 /****************** >360****************************************************/
 
-@media only screen  and (min-width: 360px) {
+@media only screen  and (max-width: 360px) {
 
-   
+    .nav-bar{
+        width: 100%;
+        color:white;
+        font-size: 1.4rem;
+        font-weight: bold;
+    }
+    
+    .navigation{
+        list-style-type: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        justify-content: space-evenly;
+        align-items: center;
+        
+        
+    
+    }
+    .list-item{
+        background-color: darksalmon;
+      
+        width:8rem;
+        height: 2.7rem;
+       margin-top: 0.6rem;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       border-radius: 1rem;
+       
+    }
     }
 /****************** >400****************************************************/
 
 @media only screen  and (min-width: 400px) {
   /*************header***********************************************/
-
+  .nav-bar{
+   
+    width: 100%;
+    color:white;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
 
 }
 /****************** >600****************************************************/
@@ -267,11 +302,16 @@ justify-content: space-between;
    background-color:#fcffe8;
    } 
 }
-/****************** mead query >700****************************************************/
+/****************** mead query >650****************************************************/
 
-@media only screen  and (min-width: 700px) {
+@media only screen  and (min-width: 650px) {
 
-
+    .nav-bar{
+       
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 /****************** >800****************************************************/
 
@@ -293,6 +333,30 @@ justify-content: space-between;
     }
     .home-images{
         width:80%;
+        
+    }
+    .nav-bar{
+       
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .list-item{
+       
+        width: 14rem;
+    }
+    #img-logo{
+  
+        width:11rem;
+        height:11rem; 
+    }
+    
+    
+    #img-contact{
+        
+        width:12rem;
+        height:7rem;
+        display: flex;
         
     }
 

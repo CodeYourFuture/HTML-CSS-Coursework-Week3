@@ -11,19 +11,24 @@
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" type="image/x-icon"  href="favicon.ico">
     <link rel="shortcut icon" type="image/x-icon"  href="img">
-    
+    <!--croasal imagelinks--------------------->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!--croasal imagelinks--------------------->
 </head>
 
 <body>
     <div id="header-wrape">
         <header id="header">
-            <div id="img-logo">
-                <img src="images/logo.jpeg" class="logo-img" alt="logo">
+            <div class="logo-content">
+                <div id="img-logo">
+                    <img src="images/logo.jpg" class="logo-img" alt="logo">
+                </div>
+                <div id="img-contact">
+                    <img src="images/contact.jpeg" class="contact"  alt="contact">
+                </div> 
             </div>
-            <div id="img-contact">
-                <img src="images/contact.jpeg" class="contact"  alt="contact">
-            </div> 
-            
             <div class="nav-bar">
                 <ul class="navigation">
                     <li class="list-item">HOME</li>
@@ -47,7 +52,7 @@
                    <h3 style="color:#f094dc;margin-top:2rem">CONTACT US</h3>
                    <h3 style="color:#f094dc;margin-top:2rem">SHOP</h3>
                 </ul>
-                
+
                 <h3 class="side-bar-heading" style="color: #f094dc; margin-top: 2rem;margin-bottom: 2rem1;">Opening time</h3>
                 <p class="side-bar-detail" style="color: #f094dc;">
                     We hand-make our Sponge Cakes in our bakery in Holt, Norfolk and
@@ -56,9 +61,52 @@
                 </p>
             </div>
             <div  class="home-images">
+                <!--crosal---------------------------------------->
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                      <li data-target="#myCarousel" data-slide-to="1"></li>
+                      <li data-target="#myCarousel" data-slide-to="2"></li>
+                    </ol>
+                
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner home-container-zoom-img">
+                      <div class="item active">
+                        <img src="images/big.jpeg" alt="Los Angeles">
+                      </div>
+                
+                      <div class="item home-container-zoom-img">
+                        <img src="images/big1.jpeg" alt="Chicago">
+                      </div>
+                    
+                      <div class="item home-container-zoom-img">
+                        <img src="images/big2.jpeg" alt="New york">
+                      </div>
+                      <div class="item home-container-zoom-img">
+                        <img src="images/big3.jpeg" alt="New york">
+                      </div>
+                      <div class="item home-container-zoom-img">
+                        <img src="images/big4.jpeg" alt="New york">
+                      </div>
+                    </div>
+                
+                    <!-- Left and right controls -->
+                    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                      <span class="glyphicon glyphicon-chevron-left"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                      <span class="glyphicon glyphicon-chevron-right"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+                <!--crosal-------------------------------------->
+                <!--
                 <div class="home-container-zoom-img">
                     <img src="images/big.jpeg" class="home-zoom-img" alt="craousel"> 
                 </div>
+                -->
                 <div class="home-container-small-img-bar">
                     <div class="home-container-small-img">
                         <img src="images/img1.jpeg" class="home-small-img">
