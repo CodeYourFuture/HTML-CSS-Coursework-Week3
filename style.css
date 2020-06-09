@@ -1,45 +1,25 @@
-/*  Add your styling here */
+
 
 * {
     font-family: "Pacifico", cursive;
    margin: 0;
    padding: 0;
   }
-  body{
-    /* margin: 0; */
-  }
-  
+
   .bg{
-    top:0;
-     left:0;
-    width: 100%;
-    height: 100%;
-     /* background-image: url("images/bg.jpg");
-  background-size:100% 100%;
-     opacity: 0.5; */
-  background-color:pink;
-     /* position: fixed;  */
+   
+   
      
-    
+  background-color:pink;
+        
      background-image: url("images/bg.jpg");
      background-repeat: no-repeat;
      background-attachment: fixed;
-     background-size: 100%;
+     background-size:cover;
      opacity:0.8;
-     /* filter:alpha(opacity=80); */
+  
   }
-  .nav{
-    margin-top: 5%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-     flex-wrap: wrap; 
-  align-items: center; 
-  list-style-type: none;
-    
-    /* background-attachment: fixed; */
-   
-  }
+ 
   .logo-container{
     background-image:url("images/footer.jpg");
     background-repeat: no-repeat;
@@ -57,9 +37,21 @@
     height: 100px;
   }
   
-  
+  .nav{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+     flex-wrap: wrap; 
+  align-items: center; 
+  list-style-type: none;
+    
+ 
+   
+  }
   .list1, .list2, .list3{
-    /* background-color: aqua; */
+   
     width:100%;
     display: flex;
     flex-direction: row;
@@ -97,47 +89,55 @@
     border-radius: 0.5rem;
     text-align: center; 
     margin-bottom: 10px;
-       /* opacity: 0.5;  */
+    
    
   }
 
   .nav li:hover{
     background-color: rgb(255, 121, 233);
   }
-  /* .cupcakes{
-    width: 100%;
-  } */
-
+  
   .cup{
     max-width:100%;
     height: auto;
+    margin-bottom: 5%;
+ 
   }
 
   .cakes{
-    /* background-image: url(""); */
-  }
+    
+    margin-top: 5%;
+
+     }
+
   .text{
-height: 100px;
+    height: 120px;
 background-image: url("images/footer.jpg");
   opacity: 0.5;
     color:white;
     text-align: center;
+   
   }
   .text h1{
     font-size: 1.7rem;
-   
+   line-height: 3rem;
   }
   .text h3{
-    line-height: 1rem;
+    line-height: 3rem;
     font-size: 1rem;
 
   }
   .cup-container{
+
     list-style-type: none;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    /* max-width: 100%; */
+   
+  
+   border: 0px 4px solid pink;
+  
+   padding-bottom: 5%;
 }
   .cup-container li{
     width: 50%;
@@ -154,32 +154,31 @@ background-image: url("images/footer.jpg");
   
   
   .footer{
-      /* left: 0;
-    bottom: 0; */
-    /* width: 100%; */
+    
     height: 100px;
     background-image: url("images/footer.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100%;
     opacity:0.5;
-    
   }
-  .footer-list{
+  .footer-list
+  {
+    height: 100%; 
     display: flex;
-    justify-content: space-evenly;
-    align-self:center;
-   
+    justify-content:center;
   }
+
   .footer-list li{
-    font-size: 0.5rem;
     text-align: center;
     list-style: none;
-  /* width: 30%; */
+   width: 30%; 
     color: white;
     margin: 3%;
-align-self: baseline;
-
+align-self: center;
+  }
+  .footer-list li a{
+    font-size: 1.5rem;
   }
   .footer-list li:hover{
     background-color: #F679E5;
