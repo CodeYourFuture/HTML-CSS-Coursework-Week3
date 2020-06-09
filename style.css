@@ -78,10 +78,22 @@ nav a:hover
 }
 /*---Media Queries --*/
 @media (max-width: 992px) {
+    .social a {
+        font-size: 4em;
+        padding: 2rem;
+      }
   }
 @media (max-width: 768px) {
+    .social a {
+        font-size: 2.5em;
+        padding: 1.2rem;
+      }
 }
 @media (max-width: 576px) {
+    .social a {
+        font-size: 2em;
+        padding: .7rem;
+      }
 }
 figure {
   position: relative;
@@ -115,3 +127,38 @@ figure {
 [class*="col-"] {
     padding: 1rem;
 }
+
+footer {
+    background-color: #3F3F3F;
+    color: #D5D5D5;
+    padding-top: 2rem;
+  }
+  hr.light {
+    border-top: 1px solid#d5d5d5;
+    width: 75%;
+    margin-top: .8rem;
+    margin-bottom: 1rem;
+  }
+  footer a {
+    color: d5d5d5;
+  }
+  hr.light-100 {
+    border-top: 1px solid#d5d5d5;
+    width: 100%;
+    margin-top: .8rem;
+    margin-bottom: 1rem;
+  }
+
+  .fa-birthday-cake {
+    color: rgb(119, 202, 23);
+    }
+    .fa-truck {
+      color: #000;
+    }
+    .fa-gem {
+      color: blueviolet
+    }
+    .fa-birthday-cake, .fa-truck, .fa-gem {
+      font-size: 4em;
+      margin: 1rem;
+    }
