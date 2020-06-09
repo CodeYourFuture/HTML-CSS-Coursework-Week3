@@ -7,8 +7,7 @@
   }
 
   .bg{
-   
-   
+  
      
   background-color:pink;
         
@@ -59,31 +58,33 @@
   .nav-s{
     margin-top: 5%;
     margin-bottom: 5%;
-    width: 100%;
+    /* width: 100%; */
     display: flex;
     justify-content: center;
      flex-wrap: wrap; 
   align-items: center; 
   list-style-type: none;
-    
- 
+  
    
   }
   .list1, .list2, .list3{
    
-    width:100%;
+    width:100%; 
     display: flex;
     flex-direction: row;
   justify-content: space-evenly;
-  
+
   } 
-  .nav-s a{
-    background-color: rgb(241, 90, 216,0.0);
+  .nav-s .alink{
+    display: flex;
+    justify-content: center;
+      background-color: rgb(241, 90, 216,0.0);
        color: #F6EFEE;
     text-decoration: none;
-    font-size: 1.5rem;
-  }
-   .list1 a{
+    font-size: 1.4rem;
+    }
+   /* .list1 a{
+     
     padding-left: 1.7rem;
     padding-right: 1.7rem;
   }
@@ -96,7 +97,7 @@
   .list3 a{
     padding-left: 1.5rem;
     padding-right: 1.5rem;
-  } 
+  }  */
   
   
   
@@ -113,7 +114,12 @@
   }
 
   .nav-s li:hover{
+    
     background-color: rgb(255, 121, 233);
+  }
+  .nav-s li a:hover{
+    text-decoration: none;
+    color: white;
   }
   
   .cup{
