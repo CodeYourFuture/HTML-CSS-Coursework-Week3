@@ -5,7 +5,6 @@ html, body {
   width: 100%;
   font-family: 'Poppins', sans-serif;
   color: #222;
-  background-image: url(image/background-2.jpg);
 }
 
 .navbar {
@@ -51,6 +50,7 @@ ul {
 .jumbotron {
   padding: 1rem;
   border-radius: 0;
+  background-image: url(image/Backgrounds_1.jpg);
 }
 .padding {
  padding-bottom: 2rem;
@@ -89,7 +89,6 @@ color: #bb0000;
 .gif {
   max-width: 100%;
 }
-
 
 .social a{
   font-size: 4.5em;
