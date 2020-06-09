@@ -1,103 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Responsive Cake webpage</title>
     <link rel="stylesheet" href="style.css" />
     <link
       href="https://fonts.googleapis.com/css?family=Pacifico&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <!-- Add a link to your css file here -->
-</head>
-
-    <!-- Add your markup here -->
-     <body>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    /> 
+  </head>
+  <body>
     <div class="bg">
-    <header>
-     <div class="logo-container">
-     <img class="logo" src="https://i.postimg.cc/Zq6Jqk9D/2a6c1858-0fe8-48a7-82fe-1976833b8691-200x200.png" alt="Logo">
-     <li>Contact</li>
+      <header>
+        <div class="logo-container">
+          <img
+            class="logo"
+            src="https://i.postimg.cc/Zq6Jqk9D/2a6c1858-0fe8-48a7-82fe-1976833b8691-200x200.png"
+            alt="Logo"
+          />
+          <li>Contact</li>
+        </div>
+        <nav class="nav-s">
+          <div class="list1">
+            <li class="alist"><a class="alink" href="#">Home</a></li>
+            <li class="alist"><a class="alink" href="#">Cakes</a></li>
+          </div>
+          <div class="list2">
+            <li class="alist"><a class="alink" href="#">Ordering</a></li>
+            <li class="alist"><a class="alink" href="#">Lessons</a></li>
+          </div>
+          <div class="list3">
+            <li class="alist"><a class="alink" href="#">About</a></li>
+            <li class="alist"><a class="alink" href="#">Contact</a></li>
+          </div>
+        </nav>
+      </header>
+      <main>
+        <section class="cupcakes">
+          <sidebar class="side">
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+              voluptates deserunt laboriosam commodi amet ullam dolore
+              architecto, rem corporis molestias libero distinctio eum a facere
+              deleniti praesentium cumque similique impedit!
+            </p>
+          </sidebar>
+          <div id="slider">
+            <figure>
+              <img src="images/Cakes/1.jpeg" />
+              <img src="images/Cakes/2.jpeg" />
+              <img src="images/Cakes/3.jpeg" />
+              <img src="images/Cakes/4.jpeg" />
+              <img src="images/Cakes/5.jpeg" />
+            </figure>
+            <img class="cup" src="images/Cakes/cupcakes.jpg" alt="cupcakes" />
+          </div>
+        </section>
+        <section class="cakes">
+          <div class="text">
+            <h1>Let Them Eat Cake</h1>
+            <h3>Feeding the cake deprived since 2020</h3>
+          </div>
+          <ul class="cup-container">
+            <li><img src="images/Cakes/cake-with-blackberries.jpg " /></li>
+            <li><img src="images/Cakes/cake-with-macarons.jpg" /></li>
+            <li><img src="images/Cakes/wedding-cake.jpg" /></li>
+            <li><img src="images/Cakes/not-technically-a-cake.jpg" /></li>
+          </ul>
+        </section>
+      </main>
+      <footer class="footer">
+        <ul class="footer-list">
+          <li><a href="#">Site Map</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Delivery</a></li>
+        </ul>
+      </footer>
     </div>
-   
-  
-      <nav class="nav-s">
-
-     <div class="list1">
-     <li class="alist"><a class="alink" href="#">Home</a></li>
-     <li class="alist"><a class="alink" href="#">Cakes</a></li>
-     </div>
-
-     <div class="list2">
-     <li class="alist"><a class="alink" href="#">Ordering</a></li>
-     <li class="alist"><a class="alink" href="#">Lessons</a></li>
-    </div>
-
-    <div class="list3">
-     <li class="alist"><a class="alink" href="#">About</a></li>
-     <li class="alist"><a class="alink" href="#">Contact</a></li>
-    </div>
-  
-      </nav>
-    </header>
-
-    <main>
-      <section class="cupcakes">
-        <sidebar class="side">
-<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam voluptates deserunt laboriosam commodi amet ullam dolore architecto, rem corporis molestias libero distinctio eum a facere deleniti praesentium cumque similique impedit!</p>
-      
-</sidebar>
-
-       <!-- <div class="slider"> -->
-
-
-
-        <div id="slider">
-          <figure>
-            <img src="images/Cakes/1.jpeg">
-            <img src="images/Cakes/2.jpeg">
-            <img src="images/Cakes/3.jpg">
-            <img src="images/Cakes/4.jpeg">
-            <img src="images/Cakes/5.jpeg">
-          </figure>
-        <!-- </div> -->
-       
-
-        <img class="cup" src="images/Cakes/cupcakes.jpg" alt="cupcakes">
-      </div>
-
-     </section>
-
-      <section class="cakes">
-
-        <div class="text">
-          <h1>Let Them Eat Cake</h1>
-           <h3>Feeding the cake deprived since 2020</h3>
-         </div>
-    <ul class="cup-container">
-      <li><img src="images/Cakes/cake-with-blackberries.jpg "></li>
-      <li><img src="images/Cakes/cake-with-macarons.jpg"></li>
-      <li><img src="images/Cakes/wedding-cake.jpg"></li>
-      <li><img src="images/Cakes/not-technically-a-cake.jpg"></li>
-    </ul>
-      
-      </section>
-    </main>
-
-    <footer class="footer">
-    
-      <ul class="footer-list">
-        <li ><a  href="#">Site Map</a></li>
-        <li ><a  href="#">Contact</a></li>
-        <li ><a  href="#">Delivery</a></li>
-      </ul>
-    </footer>
-
-
-  </div>
   </body>
 </html>

@@ -6,18 +6,18 @@
    padding: 0;
   }
 
-  .bg{
+  /**************************  Back-groun container style ***********************************/
   
-     
-  background-color:pink;
-        
+  .bg{   
+  background-color:pink;      
      background-image: url("images/bg.jpg");
      background-repeat: no-repeat;
      background-attachment: fixed;
      background-size:cover;
      opacity:0.8;
-  
   }
+
+  /**************************   Logo bar style  ********************************************/
  
   .logo-container{
     background-image:url("images/footer.jpg");
@@ -37,43 +37,35 @@
     text-align: center; 
     margin-bottom: 10px;
     align-self:center;
-    display: none;
-
-
-
-   
+    display: none;  
   }
   .logo-container li:hover{
     background-color: rgb(255, 121, 233);
   }
   .logo-container .logo{
     width: 25%;
-   }
-  
+   } 
   .logo img{
     width: 100px;
     height: 100px;
-  }
+  } 
+
+  /********************************   Navigation links style   *******************************/
   
   .nav-s{
     margin-top: 5%;
     margin-bottom: 5%;
-    /* width: 100%; */
     display: flex;
     justify-content: center;
      flex-wrap: wrap; 
   align-items: center; 
-  list-style-type: none;
-  
-   
+  list-style-type: none;  
   }
   .list1, .list2, .list3{
-   
     width:100%; 
     display: flex;
     flex-direction: row;
   justify-content: space-evenly;
-
   } 
   .nav-s .alink{
     display: flex;
@@ -83,24 +75,6 @@
     text-decoration: none;
     font-size: 1.4rem;
     }
-   /* .list1 a{
-     
-    padding-left: 1.7rem;
-    padding-right: 1.7rem;
-  }
-  
-  .list2 a{
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-  
-  .list3 a{
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-  }  */
-  
-  
-  
   .nav-s li{
     background-color:#F497DA;
      width:40%;
@@ -109,48 +83,36 @@
     border-radius: 0.5rem;
     text-align: center; 
     margin-bottom: 10px;
-    
-   
   }
-
   .nav-s li:hover{
-    
     background-color: rgb(255, 121, 233);
   }
   .nav-s li a:hover{
     text-decoration: none;
     color: white;
-  }
+  } 
+
+  /****************************  section 2 header Text style *********************************/
   
   .cup{
     max-width:100%;
     height: auto;
     margin-bottom: 5%;
- 
   }
-
-  .cakes{
-    
+  .cakes{  
     margin-top: 5%;
-
      }
      .side{
        color:grey;
        font-size: 1.5rem;
        display: none;
      }
-/* 
-     .slidershow,.middle{
-       display: none;
-     } */
-
   .text{
     height: 120px;
 background-image: url("images/footer.jpg");
   opacity: 0.5;
     color:white;
     text-align: center;
-   
   }
   .text h1{
     font-size: 1.7rem;
@@ -159,25 +121,25 @@ background-image: url("images/footer.jpg");
   .text h3{
     line-height: 3rem;
     font-size: 1rem;
-
   }
+
+  /*************************** main image and carousel style  ********************************/
+  
   #slider{
     display: none;
   }
-
   .cup-container{
-
-    list-style-type: none;
+   list-style-type: none;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-   
-  
    border: 0px 4px solid pink;
-  
    padding-bottom: 5%;
-}
-  .cup-container li{
+  }
+
+   /****************************  4 images style  ******************************************/
+  
+   .cup-container li{
     width: 50%;
  display: flex;
  justify-content: center;
@@ -189,10 +151,10 @@ background-image: url("images/footer.jpg");
     border:2px solid #F679E5;
     box-shadow: 6px 6px black ;
   }
+
+  /******************************** footer style  *******************************************/
   
-  
-  .footer{
-    
+  .footer{ 
     height: 100px;
     background-image: url("images/footer.jpg");
     background-repeat: no-repeat;
@@ -206,7 +168,6 @@ background-image: url("images/footer.jpg");
     display: flex;
     justify-content:center;
   }
-
   .footer-list li{
     text-align: center;
     list-style: none;
@@ -223,7 +184,9 @@ align-self: center;
     border-radius: 4px;
   }
 
-  @media screen and (min-width:600px){
+/***********************************  Media quiries  *****************************************/
+  
+@media screen and (min-width:600px){
     .logo-container .logo{
     width: 15%;
     }
@@ -244,26 +207,20 @@ align-self: center;
     .side{
       display: initial;
       width: 25%;
-
     }
 #slider{
   display: initial;
 }
-
-
     #slider figure img{
-   
      height: 400px;
     }
     #slider{
 width: 50%;
 max-height: 50%;
-    }
-    
+    } 
     .cup{
       display: none;
     }
- 
     #slider {
       overflow: hidden;
     }
@@ -278,7 +235,6 @@ max-height: 50%;
       width: 20%;
       float: left;
     }
-    
     @keyframes slider {
       0% {
         left: 0;
@@ -308,7 +264,6 @@ max-height: 50%;
         left: -400%;
       }
     }
-
   .cup-container{
     flex-wrap: nowrap;
   }
