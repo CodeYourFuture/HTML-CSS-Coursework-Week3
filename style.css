@@ -213,6 +213,11 @@ body {
   align-items: center; */
 }
 .sm-icons {
+  list-style-type: none;
+  height: 1.5rem;
+  padding: 0.2rem;
+  background-color: #fb8e7e;
+  margin: 0.3rem;
 }
 .fa-facebook {
 }
