@@ -80,8 +80,8 @@ Social Media
 .fa-facebook {
     color:#3b5998
 } 
-.fa-instagram {
-    color:#517fa4
+.fa-google-plus-g {
+    color: #dd4b39;
   }
 .fa-twitter {
     color:#00aced
@@ -89,15 +89,15 @@ Social Media
 .fa-youtube {
     color:#bb0000;
 }
-.fa-google-plus-g {
-    color: #dd4b39;
+.fa-instagram{
+    color:#517fa4
 }
 
 .fa-facebook:hover,
-.fa-instagram:hover,
+.fa-google-plus-g:hover,
 .fa-twitter:hover,
 .fa-youtube:hover,
-.fa-google-plus-g:hover {
+.fa-instagram:hover {
     color: #d5d5d5;
 }
 
