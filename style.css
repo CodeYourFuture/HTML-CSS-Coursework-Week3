@@ -1,5 +1,5 @@
 /*  Add your styling here */
-@media screen and (min-width : 421px) ,(min-height : 701px) 
+@media screen and (min-width : 521px) ,(min-height : 901px) 
 {
 
 body {
@@ -212,7 +212,7 @@ body {
 /* Mobile Screen Responsive */
 
 /* Header */
-@media screen and (max-width : 420px) and (max-height : 700px)
+@media screen and (max-width : 520px) and (max-height : 900px)
 {
 
 body {
@@ -223,7 +223,7 @@ body {
    margin-bottom: 2%;
    width : 100%;
    height : 20%; 
-   background-color: lightcyan;
+   background-color: white;
    box-sizing: border-box;
    display: flex;
    justify-content: space-between;
@@ -276,79 +276,108 @@ body {
 
 /*  Main */
 .main {
-   box-sizing: border-box;
-   background-color: darkcyan;
-   font-size: 1em;
-   width : 100%;
-   height : auto;
+    box-sizing: border-box;
+    background-color: rgb(255, 255, 255);
+    font-size: 1em;
+    width : 100%;
+    height : auto;
+    margin: 1% 0;
 }
 
 /* hello lines */
 .helloLines {
     box-sizing: border-box;
-    color : red;
+    color : black;
     text-align: center;
     width: inherit;
     height: auto;
+    margin : 2% 0;
+    background-color: lightgray;
 }
 
 /* Information Lines */
 
 .informationLines {
     box-sizing: border-box;
-    padding: 0.5%;
-    margin: 0.5%;
-    color : pink;
+    color : black;
     text-align: center;
     width: inherit;
     height: auto;
+    margin : 2% 0;
+    background-color: lightgray;
+}
+
+.sections {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.section1{
+   box-sizing: border-box;
+    background-color: white;
+    
+}
+
+.section2{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: darkgray;
 }
 
 /* image carousal  */
 .imageCarousal {
     box-sizing: border-box;
     width: inherit;
-    height: 200px;
-    background-color: yellow;
+    height: 300px;
+    background-color: darkgray;
     display: flex;
     flex-wrap: wrap;
 }
 /* Image Boxes Main */
 .imageBoxesMain {
-    width : inherit;
+    width : 100%;
     height : 75px;
     display: flex;
     flex-wrap: wrap;
+    align-self: flex-end;
+    justify-content: space-around;
 }
 /* image boxes */
 .imageBoxes {
     height : 70px;
     width : 70px ;
-    background-color: khaki;
+    background-color: lightgray;
 }
 /* Cake Boxes Main */
 .cakeBoxesMain {
     box-sizing: border-box;
-    width: inherit;
+    width: 100%;
     height: auto;
-    background-color: pink;
+    background-color: lightgray;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 2% 0%;
 }
 /* Cake Boxes */
 .cakeBoxes {
     display: flex;
     flex-wrap: wrap;
     height : 140px;
-    width : 140px ;
-    background-color: khaki;
+    width : 45vw;
+    margin: 2% 0;
+    flex-direction: column;
+    background-color: darkgray;
+    justify-content: space-evenly;
+         
 }
 
 /* Footer  */
-.footer {
-    background-color: lawngreen;
-  
-}
+
 
 
 /* testing */
