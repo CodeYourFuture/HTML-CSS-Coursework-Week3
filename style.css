@@ -1,4 +1,6 @@
 /*  Add your styling here */
+
+
 @media screen and (min-height : 901px) , (min-width : 601px)
 {
 
@@ -344,9 +346,7 @@ body {
         font-size: 23rem;
         color: transparent;
       }
-      .slides > div:target {
-      /*   transform: scale(0.8); */
-      }
+      
       .author-info {
         background: rgba(0, 0, 0, 0.75);
         color: white;
@@ -389,12 +389,7 @@ body {
         background: #000;
       }
       
-      /* Don't need button navigation */
-      @supports (scroll-snap-type) {
-        .slider > a {
-          display: none;
-        }
-      }
+     
 
       .navigation .icon {
         
@@ -425,13 +420,13 @@ body {
 /* Mobile Screen Responsive */
 
 /* Header */
-@media screen  and (max-height : 900px) and (max-width : 600px) 
-{
 
-   body {
+@media screen and ( max-height : 900px )  and (max-width : 600px) {
+
+body {
         margin : 0 2% 2% 2%;
         font-family: Helvetica,Calibri,Arial,sans-serif;
-    }
+}
     .header {
         margin: 1% 0;
         width : 100%;
@@ -793,9 +788,7 @@ body {
         font-size: 23rem;
         color: transparent;
       }
-      .slides > div:target {
-      /*   transform: scale(0.8); */
-      }
+     
       .author-info {
         background: rgba(0, 0, 0, 0.75);
         color: white;
@@ -838,12 +831,7 @@ body {
         background: #000;
       }
       
-      /* Don't need button navigation */
-      @supports (scroll-snap-type) {
-        .slider > a {
-          display: none;
-        }
-      }
+      
 
 
 }
