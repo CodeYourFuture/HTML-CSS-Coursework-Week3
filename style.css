@@ -5,12 +5,23 @@
 
 body {
     background-color: #F1BDE9;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 
 #navbarSupportedContent  {
     background-color: #E699BD;
 }
+
+.gallery{
+  margin-top: 3rem;
+
+ }
+
+ Card-text {
+   color: coral;
+ }
+
 /* html {
     font-size: 10px;
 
@@ -75,7 +86,7 @@ footer a {
 }
 
 footer a:hover {
-  color: #FA944B;
+  color: #004D55;
   text-decoration: none;
 }
 
@@ -87,7 +98,7 @@ footer a:hover {
 
 .footer-middle {
   padding-top: 2em;
-  color: #eb1ce0;
+  color: #000000	;
 }
 
 
@@ -114,7 +125,11 @@ ul.social-network li {
   background-color: #3B5998;
 }
 
-.social-network a.icoLinkedin:hover {
+.social-network a.icoTwitter:hover {
+  background-color: #007bb7;
+}
+
+.social-network a.icoInstagram:hover {
   background-color: #007bb7;
 }
 
@@ -172,3 +187,9 @@ ul.social-network li {
 .social-network a {
   background-color: #F9F9F9;
 }
+
+@media screen and (max-width: 800px) {
+  .column {
+      flex: 50%;
+      max-width: 50%;
+  }
