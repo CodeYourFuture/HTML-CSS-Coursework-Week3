@@ -61,7 +61,7 @@ body {
               <a class="nav-link" href="#">About</a>
             </li>
 
-} */ */
+
 
 hr {
     
@@ -74,7 +74,7 @@ hr {
 footer {
   background: #EC7F97;
   background: -webkit-linear-gradient(59deg, #EC7F97, #E699BD);
-  background: linear-gradient(59deg, #3A6073, #16222A);
+  background: linear-gradient(59deg, #99c3d8, #16222A);
   color: black;
   margin-top:100px;
 }
@@ -193,3 +193,15 @@ ul.social-network li {
       flex: 50%;
       max-width: 50%;
   }
+
+  @media screen and (max-width: 1000px) {
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+
+    @media screen and (max-width: 576px) {
+      .column {
+          flex: 100%;
+          max-width: 50%;
+      }
