@@ -1,0 +1,28 @@
+body
+{
+    margin:0px;
+}
+.header 
+{
+    background-color:gray;
+}
+.header img{
+    position: relative;
+    width: 200px;
+    height: 150px;
+    margin-left:40px;
+    margin-top: 15px;    
+}
+.container
+{
+    width:700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#contact
+{
+    position: relative;
+    color:yellow;
+    margin-left:500px;
+    margin-bottom:50px;
+}
