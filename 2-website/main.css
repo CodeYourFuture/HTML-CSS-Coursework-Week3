@@ -1,0 +1,126 @@
+body {
+	padding: 0;
+	margin: 0;
+	background: #f2f6e9;
+	background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRbMiF_mnyyYJOT9wUuIgpXc5OGzAUbH2HgDg&usqp=CAU')
+	
+}
+
+/*--- navigation bar ---*/
+
+.navbar {
+	background: #FFFACD;
+	margin-bottom: 10px;
+}
+
+.nav-link,
+.navbar-brand {
+	color: #000;
+	cursor: pointer;
+}
+
+.nav-link {
+	margin-right: 1em !important;
+}
+
+.nav-link:hover {
+	color: #000;
+}
+
+.navbar-collapse {
+	justify-content: center;
+}
+
+/*main layout*/
+.description {
+	left: 50%;
+	position: absolute;
+	top: 45%;
+	transform: translate(-50%, -55%);
+	text-align: center;
+}
+
+.description h1 {
+	color: #6ab446;
+}
+
+.description p {
+	color: #fff;
+	font-size: 1.3rem;
+	line-height: 1.5;
+}
+
+.description button {
+	border: 1px solid #6ab446;
+	background: #6ab446;
+	border-radius: 0;
+	color: #fff;
+}
+
+.description button:hover {
+	border: 1px solid #fff;
+	background: #fff;
+	color: #000;
+}
+/*logo image*/
+#logo{
+	
+	width:100px;
+}
+/*Carousel Background*/
+#carouselExampleIndicators{
+	background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRbMiF_mnyyYJOT9wUuIgpXc5OGzAUbH2HgDg&usqp=CAU');
+
+}
+
+.jumbotron{
+ height: auto;
+margin-left:10px;
+ background-color:#ffccff;
+
+}
+
+.lead{
+	
+	color:#BA55D3;
+}
+.carousel-item{
+width:80%;
+
+}
+
+/*cards for cake images in a row*/
+.card-img-top {
+width: 100%;
+height: 30vh;
+object-fit: contain;
+}
+
+
+/*--- footer ---*/
+
+.page-footer {
+	background-color: #222;
+	color: #ccc;
+	padding: 60px 0 30px;
+}
+
+.footer-copyright {
+	color: #666;
+	padding: 40px 0;
+}
+
+/*--- media queries ---*/
+@media (max-width: 575.98px)
+ {
+
+	.jumbotron {
+        height: 700px;
+		width:auto;
+    }
+	.carousel-item{
+width:100%;
+
+}
+
+}
