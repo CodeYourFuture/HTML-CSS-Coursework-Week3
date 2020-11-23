@@ -1,4 +1,11 @@
 /*  General styles */
+
+html {
+  font-family: sans-serif; /* 1 */
+  -ms-text-size-adjust: 100%; /* 2 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
 .introduction,
 .footer,
 .links {
@@ -11,7 +18,7 @@ li {
 }
 
 html {
-  background-color: red;
+  background-color: #f2d6dc;
 }
 
 body {
@@ -27,7 +34,14 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 1rem;
+  align-items: center;
+  padding-top: 1rem;
+  padding-left: 1rem;
+  padding-right: 4rem;
+  padding-bottom: 1rem;
+  margin: 0;
+  color: #09363f;
+  background-color: white;
 }
 
 .logo-div {
@@ -37,7 +51,7 @@ body {
 
 .logo {
   width: 100%;
-  max-width: 130px;
+  max-width: 200px;
   height: auto;
 }
 
@@ -57,22 +71,32 @@ body {
 /* Navigation styles */
 
 .links {
-  padding: 1%;
-  margin: 1%;
+  padding: 3%;
+  margin: 0;
   justify-content: space-between;
+  background-color: #4aafc4;
+  color: #09363f;
 }
 
 /* Introduction styles */
 
+.introduction {
+  margin: 0.5rem;
+  border: 5px solid #e76189;
+  border-radius: 25px;
+  background-color: #f0baca;
+  color: #b42f57;
+}
+
 aside {
   width: 30%;
   font-size: 3vw;
-  margin: 1.5rem;
+  margin: 1rem;
 }
 
 .carousel {
   width: 77%;
-  margin-right: 1rem;
+  margin: 1rem;
 }
 
 * {
@@ -89,6 +113,14 @@ aside {
 /* Hide the images by default */
 .mySlides {
   display: none;
+}
+
+.carousel-img {
+  height: 50vw;
+  max-height: 300px;
+  width: auto;
+  max-width: 400px;
+  margin: auto;
 }
 
 /* Next & previous buttons */
@@ -169,6 +201,8 @@ aside {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background-color: #9cbeb8;
+  color: #0a3f35;
 }
 
 .cake {
@@ -189,6 +223,11 @@ figcaption {
 }
 
 /* Footer styles  */
+
+.footer {
+  background-color: #a56c46;
+  color: #4b241b;
+}
 
 .footer-item {
   padding: 1%;
