@@ -1,1 +1,19 @@
-/*  Add your styling here */
+*
+body {
+    background-image: url("/images/american-heritage-chocolate-vdx5hPQhXFk-unsplash.jpg");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40rem;
+    width: 100%;
+}
+
+header {
+    padding: 30px;
+    background-color: pink;
+    margin: 10px;
+}
+
+.contact {
+
+}
