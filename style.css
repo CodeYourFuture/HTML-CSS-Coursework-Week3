@@ -78,6 +78,11 @@ body {
   color: #09363f;
 }
 
+.links li:hover {
+  color: #021e24;
+  font-weight: bold;
+}
+
 /* Introduction styles */
 
 .introduction {
@@ -86,6 +91,7 @@ body {
   border-radius: 25px;
   background-color: #f0baca;
   color: #b42f57;
+  align-items: center;
 }
 
 aside {
@@ -95,12 +101,8 @@ aside {
 }
 
 .carousel {
-  width: 77%;
+  width: 68%;
   margin: 1rem;
-}
-
-* {
-  box-sizing: border-box;
 }
 
 /* Slideshow container */
@@ -113,13 +115,14 @@ aside {
 /* Hide the images by default */
 .mySlides {
   display: none;
+  max-height: 150px;
 }
 
 .carousel-img {
-  height: 50vw;
-  max-height: 300px;
   width: auto;
-  max-width: 400px;
+  max-width: 100%;
+  height: 100%;
+  max-height: 150px;
   margin: auto;
 }
 
@@ -201,6 +204,7 @@ aside {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   background-color: #9cbeb8;
   color: #0a3f35;
 }
@@ -209,13 +213,18 @@ aside {
   text-align: center;
   max-width: 100%;
   margin: 1rem;
+  border-radius: 25px;
+}
+
+.cake:hover {
+  background-color: #549287;
 }
 
 .cake-img {
   width: auto;
-  max-width: 100%;
+  max-width: 350px;
   height: auto;
-  max-height: 250px;
+  max-height: 100%;
 }
 
 figcaption {
@@ -254,9 +263,26 @@ figcaption {
   }
   .cakes {
     flex-direction: row;
+    flex-wrap: wrap;
   }
   aside {
     font-size: 1rem;
+  }
+  .links {
+    font-size: 1.2rem;
+  }
+  .cake-img {
+    max-height: 250px;
+  }
+  .cake {
+    max-width: 50%;
+  }
+  .mySlides {
+    max-height: 250px;
+  }
+
+  .carousel-img {
+    max-height: 250px;
   }
 }
 @media (min-width: 62rem) {
