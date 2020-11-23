@@ -13,7 +13,30 @@ header {
     background-color: pink;
     margin: 10px;
 }
+ul {
+    list-style-type: none;
+}
 
 .contact {
-
+    display: flex;
+    justify-content: flex-end;
 }
+
+/******************* Styling footer ********************/
+.footer {
+    background-color: rgb(101, 160, 199);
+    overflow: auto;
+    padding-bottom: 2rem;
+    text-align: center;
+}
+
+.footer-list > li {
+display: inline-block;
+
+  
+  
+    
+   
+}
+
+
