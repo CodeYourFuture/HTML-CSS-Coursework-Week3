@@ -1,0 +1,65 @@
+/* CSS STYLE CODES BELOW */
+
+/*
+* 
+* STYLE RESET
+*
+*/
+body,
+header,
+main,
+footer,
+section,
+article,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+li,
+figure,
+img,
+figcaption,
+p,
+a,
+:before,
+:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+/*
+* 
+* GENERAL STYLES
+*
+*/
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  width: 100%;
+  margin: 0 auto;
+  border: 1px solid #e9e3e3;
+  background-color: #fcf8f8;
+}
+
+.content,
+.nav-links,
+div.cake,
+div.cake-types {
+  display: flex;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
