@@ -63,3 +63,46 @@ a {
   text-decoration: none;
 }
 
+/*
+*
+* HEADER STYLES
+*
+*/
+.header-content {
+  justify-content: space-between;
+  align-items: center;
+  height: 4rem;
+  border: 1px solid;
+  background: rgb(207, 81, 81);
+  color: #f8f1f1;
+}
+.logo {
+  display: flex;
+  align-items: flex-start;
+  height: 100%;
+}
+
+.logo img {
+  max-height: 100%;
+  max-width: 4rem;
+}
+
+.site-name {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: auto 0;
+  margin-left: 5px;
+}
+
+.primary-nav {
+  margin: auto 0;
+}
+
+.primary-nav:before {
+  content: "\2630";
+  font-size: 3rem;
+}
+
+.primary-nav-links {
+  display: none;
+}
