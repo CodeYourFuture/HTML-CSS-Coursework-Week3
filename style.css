@@ -1,1 +1,126 @@
-/*  Add your styling here */
+/*  General styles */
+.introduction,
+.footer,
+.links {
+  display: flex;
+  justify-content: center;
+}
+
+li {
+  list-style-type: none;
+}
+
+html {
+  background-color: red;
+}
+
+body {
+  padding: 0;
+  margin: auto;
+  max-width: 900px;
+  background-color: white;
+}
+
+/* Header styles */
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.logo-div {
+  width: 33%;
+  min-width: 30px;
+}
+
+.logo {
+  width: 100%;
+  max-width: 130px;
+  height: auto;
+}
+
+.contact {
+  max-width: 50%;
+}
+
+.contact h3 {
+  margin-top: 0.1rem;
+}
+
+.contact p {
+  font-size: 0.8rem;
+  margin: 0;
+}
+
+/* Introduction styles */
+
+.links {
+  padding: 1%;
+  margin: 1%;
+}
+
+aside {
+  width: 30%;
+  font-size: 3vw;
+  margin: 1.5rem;
+}
+
+/* Cakes styles */
+
+.cakes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cake {
+  text-align: center;
+  max-width: 100%;
+  margin: 1rem;
+}
+
+.cake-img {
+  width: 100%;
+  height: auto;
+  max-height: 300px;
+}
+
+/* Footer styles  */
+
+.footer-item {
+  padding: 1%;
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 80%;
+}
+
+.footer-item h3 {
+  margin-top: 0.1rem;
+}
+
+.footer-item p {
+  margin: 0;
+}
+
+/* Media queries */
+
+@media (min-width: 48rem) {
+  body {
+    width: 46rem;
+  }
+  .cakes {
+    flex-direction: row;
+  }
+  aside {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 62rem) {
+  body {
+    width: 60rem;
+  }
+}
