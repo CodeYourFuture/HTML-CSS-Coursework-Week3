@@ -5,29 +5,45 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Responsive Cake webpage</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" 
+            integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
         <link rel="stylesheet" href="/css/style.css">
-       
+        <title>Responsive Cake webpage</title>       
     </head>
 
     <body>
-       <header class="header">
-           <div class="image">
-                <img src="images/stoica-ionela-CoNsEK5iHug-unsplash.jpg" alt="Company Logo" width="30">
-           </div>
-            <span class="contact">Contact</span>
-           <nav class="nav-bar">
-               <ul class="nav-list">
-                   <li>Home</li>
-                   <li>Cakes</li>
-                   <li>Ordering</li>
-                   <li>Lessons</li>
-                   <li>About</li>
-               </ul>
-            </nav>
-       </header>
-
-
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+            <div class="container">
+              <a class="navbar-brand" href="#">
+                <img src="images/stoica-ionela-CoNsEK5iHug-unsplash.jpg" alt="Company Logo" id="logo-image">
+                  </a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+              <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto" id="nav-list">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Cakes</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Ordering</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Lessons</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
 
        <main>
            <div></div>
@@ -39,14 +55,22 @@
                <div></div>
            </div>
        </main>
-       <footer class="footer">
+       <footer class="card-footer bg-info">
            <ul class="footer-list">
-               <li>Site Map</li>
-               <li>Delivery</li>
-               <li>Contact</li>
+               <li>
+                    <a id="footer-links" href="#">Site Map</a>
+                </li>
+               <li>
+                    <a id="footer-links" href="#">Delivery</a>
+                </li>
+               <li>
+                    <a id="footer-links" href="#">Contact</a>
+                </li>
            </ul>
        </footer>
-    </body>
 
+
+      
+    </body>
 
 </html>
