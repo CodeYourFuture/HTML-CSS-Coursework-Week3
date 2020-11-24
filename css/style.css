@@ -1,25 +1,9 @@
-*
-body {
-    background-image: url("/images/american-heritage-chocolate-vdx5hPQhXFk-unsplash.jpg");
-    background-position: center bottom;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 40rem;
-    width: 100%;
-}
 
-header {
-    padding: 30px;
-    background-color: pink;
-    margin: 10px;
+#logo-image {
+    width: 30%;
 }
-ul {
-    list-style-type: none;
-}
-
-.contact {
-    display: flex;
-    justify-content: flex-end;
+#nav-list {
+    font-size: 2rem;
 }
 
 /******************* Styling footer ********************/
@@ -30,13 +14,16 @@ ul {
     text-align: center;
 }
 
-.footer-list > li {
+.footer-list {
 display: inline-block;
+list-style: none;
+display: flex;
+justify-content: space-around;
+}
 
-  
-  
-    
-   
+#footer-links {
+    color: blanchedalmond;
+    font-size: 1.5rem;
 }
 
 
