@@ -13,11 +13,15 @@
     <!-- HEADER -->
     <header>
         <div class="content header-content">
-            <div class="logo">
-                <img src="img/sweet-cakes.png" alt="Logo Image">
-                <h1 class="site-name">Sweet Bakers</h1>
+            <div>
+                <div class="logo">
+                    <img src="img/sweet-cakes.png" alt="Logo Image">
+                    <h1 class="site-name">Sweet Bakers</h1>
+                </div>
+                <span class="menu"></span>
             </div>
-            <nav id="menu" class="nav primary-nav">
+            
+            <nav class="nav primary-nav">
                 <ul class="nav-links primary-nav-links">
                     <li class="link">
                         <a href="#">Home</a>
@@ -78,6 +82,26 @@
         </div>
     </footer>
     <!-- END FOOTER -->
+
+    <!-- SCRIPT -->
+    <script>
+             /*
+          * Open the primary navigation menu when the menu icon is clicked.
+          */
+                var menu = document.querySelector('.menu');
+                var main = document.querySelector('main');
+                var links = document.querySelector('.primary-nav-links');
+                menu.addEventListener('click', function (e) {
+                    links.classList.toggle('open');
+                    e.stopPropagation();
+                });
+                main.addEventListener('click', function () {
+                    links.classList.remove('open');
+                });
+
+    </script>
+        
+    </script>
 </body>
 
 </html>
