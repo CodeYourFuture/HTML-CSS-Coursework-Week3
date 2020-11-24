@@ -53,7 +53,14 @@
 
 /* end of alignment */
 
-
+/**
+body {
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+**/
 
 
 header {
@@ -73,3 +80,36 @@ header div, main div {
     clear: both;
     display: table;
   }
+
+/** start of bottom box **/
+
+.bottom .div1 {
+  width: 4rem;
+  height: 1.5rem;
+  border: 1px solid blue;
+  box-sizing: border-box;
+}
+
+.bottom .div2 {
+    width: 4rem;
+    height: 1.5rem;
+    border: 1px solid blue;
+    box-sizing: border-box;
+  }
+
+  .bottom .div3 {
+    width: 4rem;
+    height: 1.5rem;
+    border: 1px solid blue;
+    box-sizing: border-box;
+  }
+
+  .bottom .div4 {
+    width: 4rem;
+    height: 1.5rem;
+    border: 1px solid blue;
+    box-sizing: border-box;
+  }
+  
+
+/** end of bottom box **/
