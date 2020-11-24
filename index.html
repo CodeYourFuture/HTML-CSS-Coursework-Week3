@@ -89,14 +89,10 @@
           * Open the primary navigation menu when the menu icon is clicked.
           */
                 var menu = document.querySelector('.menu');
-                var main = document.querySelector('main');
                 var links = document.querySelector('.primary-nav-links');
                 menu.addEventListener('click', function (e) {
                     links.classList.toggle('open');
                     e.stopPropagation();
-                });
-                main.addEventListener('click', function () {
-                    links.classList.remove('open');
                 });
 
     </script>
