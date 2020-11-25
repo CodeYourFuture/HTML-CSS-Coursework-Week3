@@ -1,7 +1,9 @@
 /*  Add your styling here */
+
+
 .top {
     width:100%;
-    background-color: white;
+    background-color: rgb(41, 32, 39);
     padding: 1rem;
     display:flex;
   }
@@ -12,6 +14,8 @@
     margin-bottom: 1rem;
     list-style: none;
     display: flex;
+    font-size: 10px;
+    color: white;
 
   }
   .links li {
@@ -19,22 +23,30 @@
   }
 
   .header {
-    background-image: url('https://images.unsplash.com/photo-1558848657-f0d18d858cdf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80');
-    text-align: center;
-    width:100%;
-    color:black;
+    background-image: url('https://images.unsplash.com/photo-1504400739660-22ebeb14f00a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80');
+    display:block;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height:auto;
   }
   .header h1{
-    color: black;
+    color: white;
     text-align: center;
     padding-top: 5rem;
   }
-  .header h2{
-    color: black;
+  .header h3{
+    color: white;
     text-align: center;
     margin-top: 2rem;
     margin-bottom: 5rem;
   }
+
+  .icon h4{
+      font-size: 5px;
+      font-family: sans-serif;
+  }
+
   .flex-container {
     background-color: white;
     display: flex;
@@ -57,5 +69,33 @@
     background-color: white;
     color: black;
     text-align: center;
-    display: flex;
+  }
+
+  .socials {
+      display: flex;
+      text-align: center;
+  }
+
+  div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+    
+  }
+  
+  div.gallery:hover {
+    border: 1px solid #777;
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+ 
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+   
   }
