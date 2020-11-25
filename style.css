@@ -1,15 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great|Architects+Daughter&display=swap');
 
-h1, h2, button {
+h1,
+h2,
+button {
     font-family: 'Fredericka the Great', cursive;
 }
 
-a, p, figcaption {
+a,
+p,
+figcaption {
     font-family: 'Architects Daughter', cursive;
 }
 
 body {
     padding: 2rem;
+    margin: auto;
 }
 
 .logo {
@@ -28,4 +33,71 @@ a {
 
 ul {
     list-style: none;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.main-img {
+    max-width: 30rem;
+}
+
+.cakes {
+    width: auto;
+    height: auto;
+    justify-content: space-evenly;
+}
+
+.cakes .cake {
+    max-width: 10rem;
+}
+
+main .text {
+    flex-direction: column;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    justify-items: center;
+}
+
+
+
+.cakes {
+    display: flex;
+}
+
+.cake {
+    max-width: 30rem;
+}
+
+footer {
+    width: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: top;
+    padding: 5rem;
+}
+
+.contact p {
+    margin: 0;
+}
+
+
+@media (min-width: 48rem) {
+    body {
+        width: 46rem;
+    }
+    .cakes {
+        flex-direction: row;
+    }
 }
