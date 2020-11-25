@@ -1,1 +1,31 @@
-/*  Add your styling here */
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great|Architects+Daughter&display=swap');
+
+h1, h2, button {
+    font-family: 'Fredericka the Great', cursive;
+}
+
+a, p, figcaption {
+    font-family: 'Architects Daughter', cursive;
+}
+
+body {
+    padding: 2rem;
+}
+
+.logo {
+    max-width: 5rem;
+}
+
+.logo-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
