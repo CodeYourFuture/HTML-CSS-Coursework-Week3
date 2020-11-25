@@ -28,3 +28,9 @@
   color: white;
   margin-top: 60px;
 }
+
+.main-content div:nth-child(1) {
+  display: flex;
+  background-color: grey;
+  flex-direction: column;
+}
