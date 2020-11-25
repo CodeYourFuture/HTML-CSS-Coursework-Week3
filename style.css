@@ -101,8 +101,8 @@ span {
 }
 
 #header h2 {
-    border-left: dotted 1px rgb(231, 10, 10);
-    border-right: dotted 1px rgb(231, 10, 10);
+    border-left: dotted 1px #fff;
+    border-right: dotted 1px #fff;
     display: inline-block;
     padding: 0 1rem;
 }
@@ -151,6 +151,19 @@ footer p {
 /* screen size 700px up */
 
 @media (min-width: 700px) {
+    #landing {
+        display: flex;
+        height: 100%;
+    }
+
+    #landing-text {
+        height: 100vh;
+    }
+
+    #landing-image {
+        height: 100vh;
+    }
+
     .btn {
         padding: 1rem 3rem;
     }
