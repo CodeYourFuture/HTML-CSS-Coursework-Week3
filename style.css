@@ -92,6 +92,21 @@ span {
     color: #fff
 }
 
+/* welcome section */
+#welcome {
+    text-align: center;
+}
+
+#welcome h1 {
+    margin: 2rem 0;
+}
+
+#welcome p {
+    margin-bottom: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
 /* headers */
 #header {
     padding: 1.5rem;
