@@ -12,6 +12,7 @@ footer,
 section,
 article,
 div,
+span,
 h1,
 h2,
 h3,
@@ -50,7 +51,6 @@ body {
 
 .content,
 .nav-links,
-div.cake,
 div.cake-types {
   display: flex;
 }
@@ -133,4 +133,65 @@ a {
 .primary-nav li.active a {
   color: #fcf8f8;
   background-color: #000;
+}
+
+/*
+*
+* MAIN CONTENT STYLES
+*
+*/
+.main-content {
+  justify-content: center;
+  width: 90%;
+  margin: 0 auto;
+}
+.cake {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  border: 3px dimgrey;
+}
+
+.cake > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  width: inherit;
+}
+
+.cake-image {
+  width: 80%;
+  height: 200px;
+}
+.previous,
+.next {
+  font-size: 3rem;
+}
+.previous:before {
+  content: "\003C";
+  font-size: 3rem;
+  color: dimgrey;
+}
+
+.next:before {
+  content: "\003E";
+  font-size: 3rem;
+}
+
+.cake div:last-child {
+  margin: 0 auto;
+}
+.cake-name {
+  font-size: 1.5rem;
+  font-weight: 600;
+  width: 80%;
+  margin: 15px auto 5px;
+}
+
+.cake-details {
+  font-size: 1.2rem;
+  font-weight: 300;
+  width: 80%;
+  margin: 0 auto;
 }
