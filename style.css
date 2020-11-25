@@ -1,134 +1,158 @@
 /*  Add your styling here */
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
 
+
+/* css reset */
 * {
     padding: 0;
     margin: 0;
-    list-style: none;
 }
 
+/* base styling */
 body {
 
-    font-family: 'Lato', sans-serif;
-    line-height: 1.8;
-    text-align: center;
-
-
+    font-family: 'Roboto Condensed', sans-serif;
+    background: #eee;
+    height: auto;
 }
-
 
 h1 {
-    color: #333;
-    text-align: center;
-    margin-top: 2rem;
-    font-weight: lighter;
+    font-weight: 400;
+    font-size: 2.5rem;
+    text-transform: uppercase;
 }
 
-.head span {
-    color: rgb(236, 44, 76);
+h2 {
+    font-weight: 400;
+    font-size: 1.2rem;
+    text-transform: capitalize;
 }
-
-i {
-    color: rgb(236, 44, 76);
-}
-
-
-/* Dropdown Button */
-.dropbtn {
-    background-color: #333;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    margin-top: 3rem;
-    border-radius: 19px;
-    cursor: pointer;
-}
-
-/* The container <div> - needed to position the dropdown content */
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-}
-
-/* Links inside the dropdown */
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {
-    background-color: rgb(236, 44, 76);
-}
-
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-/* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {
-    background-color: #333;
-}
-
-/* images */
 
 img {
-    height: 300px;
-    width: 300px;
-    border-radius: 5px;
-    box-shadow: 5px 10px 8px #888888;
+    display: block;
+    width: 100%;
 
 }
 
-/* welcome section styling */
+main {
+    max-width: 900px;
+    margin: auto;
+    box-shadow: 30px 0px 40px rgba(0, 0, 0, 0.2), -30px 0px 40px rgba(0, 0, 0, 0.2);
+}
 
-#welcome h1 {
+span {
+    color: rgb(231, 10, 10);
+}
+
+/* landing styles */
+
+#landing {
+    background: #fff;
+}
+
+#landing-text {
+    display: flex;
+    flex: 0 1 40vw;
+    height: 50vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 1rem;
+}
+
+#landing-text h2 {
+    color: #888;
+}
+
+#landing-image {
+    background: url(images/main-cake.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50vh;
+    flex: 0 1 60vw;
+    margin: 0;
+}
+
+/* button style */
+
+.btn {
+    padding: 0.5rem 2rem;
+    border: 1px #ccc solid;
+    display: inline-block;
+    margin-top: 2rem;
+    border-radius: 50px;
+    text-decoration: none;
+    color: #333;
+    transition: background 700ms ease;
+}
+
+.btn:hover {
+    background: rgb(231, 10, 10);
+    color: #fff
+}
+
+/* headers */
+#header {
+    padding: 1.5rem;
+    text-align: center;
+    background: #333;
+    color: #fff;
+}
+
+#header h2 {
+    border-left: dotted 1px rgb(231, 10, 10);
+    border-right: dotted 1px rgb(231, 10, 10);
+    display: inline-block;
+    padding: 0 1rem;
+}
+
+/* captions */
+.caption {
+    padding: 0.8rem;
+    text-align: center;
+}
+
+/* footer */
+
+footer {
+    text-align: center;
+    padding: 2rem 1rem;
+    margin-bottom: 4rem;
+    color: #333;
+}
+
+footer h3 {
+    font-size: 3rem;
     margin-bottom: 2rem;
 }
 
-#welcome p {
-    margin: 2rem;
-    justify-content: center;
+footer p {
+    padding-top: 1rem;
 }
 
-#cakes p {
-    margin: 2rem 0;
+/* media query 400px and up */
+
+@media only screen and (min-width: 400px) {
+    #landing {
+        display: flex;
+        height: 100%;
+    }
+
+    #landing-text {
+        height: 100vh;
+    }
+
+    #landing-image {
+        height: 100vh;
+    }
 }
 
-/* footer styling */
+/* screen size 700px up */
 
-footer {
-    margin-bottom: 4rem;
-}
+@media (min-width: 700px) {
+    .btn {
+        padding: 1rem 3rem;
+    }
 
-footer span {
-    color: rgb(236, 44, 76);
-}
-
-footer a {
-    cursor: pointer;
-    list-style: none;
-    text-decoration: none;
-    color: #333;
-
-
-}
-
-footer a:hover {
-    font-size: 1.5rem;
-    color: pink;
 }
