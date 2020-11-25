@@ -6,6 +6,11 @@
     font-size: 2rem;
 }
 
+#pic-div {
+    display: flex;
+    justify-content: space-between;
+}
+
 /******************* Styling footer ********************/
 .footer {
     background-color: rgb(101, 160, 199);
