@@ -1,1 +1,30 @@
 /*  Add your styling here */
+
+.flex-container {
+  display: flex;
+  background-color: DodgerBlue;
+  justify-content: space-around;
+}
+
+.flex-container > div {
+  background-color: #a9a9a9;
+  margin: 0.625rem;
+  padding: 1.25rem;
+  font-size: 1.875rem;
+}
+
+.nav-bar {
+  display: flex;
+  background-color: DodgerBlue;
+  justify-content: space-around;
+  flex-direction: row-reverse;
+}
+
+.nav-bar > div {
+  background-color: #0a0101;
+  margin: 0.625rem;
+  padding: 0.1rem;
+  font-size: 1.875rem;
+  color: white;
+  margin-top: 60px;
+}
