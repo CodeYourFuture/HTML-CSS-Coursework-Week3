@@ -1,1 +1,61 @@
 /*  Add your styling here */
+.top {
+    width:100%;
+    background-color: white;
+    padding: 1rem;
+    display:flex;
+  }
+  .top > .links {
+    float: right;
+    font: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    list-style: none;
+    display: flex;
+
+  }
+  .links li {
+    margin-left: 1rem;
+  }
+
+  .header {
+    background-image: url('https://images.unsplash.com/photo-1558848657-f0d18d858cdf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80');
+    text-align: center;
+    width:100%;
+    color:black;
+  }
+  .header h1{
+    color: black;
+    text-align: center;
+    padding-top: 5rem;
+  }
+  .header h2{
+    color: black;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+  }
+  .flex-container {
+    background-color: white;
+    display: flex;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    justify-content: center;
+  }
+  .caption{
+    color: black;
+    text-align: center;
+  }
+  h2{
+    text-align: center;
+  }
+  h3{
+    margin-left: 1rem;
+    display: flex;
+  }
+  .footnote {
+    background-color: white;
+    color: black;
+    text-align: center;
+    display: flex;
+  }
