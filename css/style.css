@@ -83,7 +83,6 @@ a {
 
 .logo {
   display: flex;
-  justify-content: flex-start;
   align-items: center;
 }
 
@@ -95,7 +94,6 @@ a {
 
 .site-title {
   font-size: 2rem;
-  margin-left: 5px;
 }
 
 .menu:after {
@@ -141,10 +139,13 @@ a {
 *
 */
 .main-content {
+  flex-direction: column;
   justify-content: center;
   width: 90%;
-  margin: 0 auto;
+  margin: 50px auto 0;
 }
+
+/* Cake Display Styles */
 .cake {
   display: block;
   width: 100%;
@@ -194,4 +195,66 @@ a {
   font-weight: 300;
   width: 80%;
   margin: 0 auto;
+}
+
+/* Cake Showcase Styles */
+.cake-types {
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  border: 2px solid grey;
+  margin-top: 30px;
+  padding: 5px 0px;
+}
+
+.cake-types:before {
+  content: "\003C";
+  font-size: 2rem;
+  color: dimgrey;
+}
+
+.cake-types:after {
+  content: "\003E";
+  font-size: 2rem;
+}
+
+.cake-thumbnail {
+  width: 20%;
+  height: 4em;
+  margin: auto 0;
+  text-align: center;
+  font-weight: 500;
+}
+
+.cake-types .active {
+  width: 25%;
+  height: 5em;
+}
+#cake-1 {
+  background-image: url("../img/cupcake-1.jpg");
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+#cake-2 {
+  background-image: url("../img/birthday-cake-1.jpg");
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#cake-3 {
+  background-image: url("../img/wedding-cake-1.jpg");
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#cake-4 {
+  background-image: url("../img/ice-cream-1.jpg");
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
