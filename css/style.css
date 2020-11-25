@@ -138,11 +138,14 @@ a {
 * MAIN CONTENT STYLES
 *
 */
+main {
+  margin-top: 3em;
+}
 .main-content {
   flex-direction: column;
   justify-content: center;
   width: 90%;
-  margin: 50px auto 0;
+  margin: 0 auto;
 }
 
 /* Cake Display Styles */
@@ -220,7 +223,7 @@ a {
 
 .cake-thumbnail {
   width: 20%;
-  height: 4em;
+  height: 4.5em;
   margin: auto 0;
   text-align: center;
   font-weight: 500;
@@ -235,7 +238,7 @@ a {
   background-position: center bottom;
   background-repeat: no-repeat;
   background-size: cover;
-  color: white;
+  color: #fcf8f8;
 }
 
 #cake-2 {
@@ -257,4 +260,42 @@ a {
   background-position: center bottom;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+/*
+*
+* FOOTER STYLES
+*
+*/
+footer {
+  margin-top: 6em;
+}
+.footer-content {
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  padding: 5px;
+  background-color: lightslategrey;
+}
+
+.secondary-nav {
+  margin: 0 auto;
+}
+
+.secondary-nav-links {
+  justify-content: center;
+}
+
+.secondary-nav link,
+.secondary-nav .link a {
+  padding: 0px 15px;
+}
+
+.secondary-nav .link a,
+.footer-content p {
+  color: #000;
+}
+
+.footer-content p {
+  padding: 10px 0 0;
 }
