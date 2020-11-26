@@ -109,6 +109,7 @@ main {
     background-color: rgb(235, 221, 231);
     width: 40%;
     margin-left: 0;
+    position: relative;
 }
 
 .div2 {
