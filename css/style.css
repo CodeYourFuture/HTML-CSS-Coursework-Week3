@@ -287,7 +287,6 @@ ul li a {
 #info .row {
     display: flex;
     flex-wrap: wrap;
-
 }
 
 .info {
@@ -295,11 +294,41 @@ ul li a {
     flex-basis: 33.333333%;
     max-width: 33.333333%;
     background-color: rgb(139, 135, 135);
-
 }
 
 .text {
     margin-bottom: 2rem;
+}
+
+.sec-1a {
+    flex-basis: 66.666667%;
+    max-width: 66.666667%;
+}
+.carousel {
+    padding: 2rem;
+    margin-left: 2rem;
+    background-color: rgb(201, 192, 192);
+}
+
+#img_carousel .carousel {
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.row-1 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-sec-1a {
+    flex-basis: 25%;
+    max-width: 25%;
+}
+
+.images-sec-1a {
+    padding: 1rem;
+    margin-right: 1rem;
+    background-color: rgb(240, 230, 230);
 }
 
 /**end main:section 1 **/
