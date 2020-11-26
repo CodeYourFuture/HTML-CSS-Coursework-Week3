@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great|Architects+Daughter&display=swap');
 
+html, figure {
+    margin: 0;
+    padding: 0;
+}
+
 h1,
 h2,
 button {
@@ -15,6 +20,7 @@ figcaption {
 body {
     padding: 2rem;
     margin: auto;
+    min-width: 300px;
 }
 
 .logo {
@@ -41,17 +47,9 @@ ul {
 }
 
 .main-img {
-    max-width: 30rem;
-}
-
-.cakes {
-    width: auto;
+    min-width: 100px;
+    max-width: 400px;
     height: auto;
-    justify-content: space-evenly;
-}
-
-.cakes .cake {
-    max-width: 10rem;
 }
 
 main .text {
@@ -62,42 +60,34 @@ main {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    justify-items: center;
+    flex-wrap: wrap;
 }
 
-
-
 .cakes {
+    padding-top: 3rem;
     display: flex;
+
 }
 
 .cake {
-    max-width: 30rem;
+    max-width: 50%;
 }
 
 footer {
-    width: auto;
+    padding-top: 5rem;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .footer-nav {
     display: flex;
-    flex-direction: row;
     align-items: top;
-    padding: 5rem;
+    margin-top: 0;
+    padding-left: 0;
 }
 
-.contact p {
+#contact h2, #contact p {
     margin: 0;
 }
 
 
-@media (min-width: 48rem) {
-    body {
-        width: 46rem;
-    }
-    .cakes {
-        flex-direction: row;
-    }
-}
