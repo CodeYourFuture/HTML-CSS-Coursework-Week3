@@ -1,10 +1,13 @@
+/* Import Google Font*/
 @import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great|Architects+Daughter&display=swap');
 
+/* Reset margin and padding */
 html, figure {
     margin: 0;
     padding: 0;
 }
 
+/* set font type */
 h1,
 h2,
 button {
@@ -17,11 +20,7 @@ figcaption {
     font-family: 'Architects Daughter', cursive;
 }
 
-button, a {
-    font-size: 1.5rem;
-}
-
-
+/* top styling */
 body {
     padding: 2rem;
     margin: auto;
@@ -38,24 +37,39 @@ body {
     align-items: center;
 }
 
-a {
-    text-decoration: none;
+button, a {
+    font-size: 1.5rem;
 }
 
-ul {
-    list-style: none;
+button a:hover {
+    color: tomato;
 }
 
+/* top navigation bar */
 .header-nav {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    background-color: violet;
 }
 
 .header-nav li {
     padding: 1rem;
 }
 
+a {
+    text-decoration: none;
+}
+
+.header-nav a:hover {
+    color: yellow;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Main section */
 .main-img {
     min-width: 100px;
     max-width: 400px;
@@ -73,6 +87,7 @@ main {
     flex-wrap: wrap;
 }
 
+/* Types of cakes */
 .cakes {
     padding-top: 3rem;
     display: flex;
@@ -96,13 +111,14 @@ figcaption {
     justify-items: center;
 }
 
+/* footer styling */
 footer {
     padding-top: 5rem;
     display: flex;
     justify-content: space-between;
 }
 
-
+/* footer navigation */
 .footer-nav {
     display: flex;
     align-items: top;
@@ -119,8 +135,10 @@ footer a {
     font-size: 1rem;
 }
 
+footer a:hover {
+    color: teal;
+}
+
 #contact h2, #contact p {
     margin: 0;
 }
-
-
