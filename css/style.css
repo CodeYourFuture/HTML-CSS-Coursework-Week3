@@ -1,6 +1,6 @@
-/** layout **/
+/* layout */
 
-*, ::after, ::before {
+* ::after, ::before {
     box-sizing: border-box;
 }
 
@@ -211,44 +211,54 @@ head {
 /* body */
 
 body {
-    margin: 0px;
+    margin: 0;
     display: block;
-}
 }
 
 /* end of body */
 
-/** header **/
+/* header */
 
-header {
-    width: 100%;
-}
-sss
-.header-image > img {
-    max-width: 100%;
-    height: auto;
-}
+.header-image {
+    padding: 2rem;
+    margin-bottom: 1rem;
+    background: rgb(128, 50, 50);
+} 
 
-.header-image .p-2 .row .mb-1 {
+.header-image {
     display: flex;
     flex-wrap: wrap;
+}
+
+.logo {
     flex-basis: 33.333333%;
     max-width: 33.333333%;
 }
 
-.number {
-    padding: 1rem;
-    background-color: #f2f2f2;
-    flex-basis: 66.666667%;
-    max-width: 66.666667%;
+.w-100 {
+    width: 100%;
+    height: auto;
+}
+
+.numb1 {
     display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;s
+    justify-content: end;
+    align-items: end;
     
 }
-/** end of header **/
 
-/** nav bar **/
+.numb1 {
+    flex-basis: 66.666667%;
+    max-width: 66.666667%;
+}
+
+.number {
+    padding: 1rem;
+    background-color: #d8858c;
+}
+/* end of header */
+
+/* nav bar */
 
 .navbar {
     padding-left: 1rem;
@@ -256,15 +266,15 @@ sss
     padding-top:   1rem;
     padding-bottom: 2rem;
     margin-bottom: 1rem;
-    background-color: gray;
+    background: #dbaeae;
 }
 
 .dark-2-bg {
-    background: #6d6d6d;
+    background: #eca7a7;
 }
 
 .light-color {
-    color: #fff;
+    color: #a1a2e6;
 }
 
 ul {
@@ -280,9 +290,9 @@ ul li a {
     border: 1px solid #000;
 }
 
-/**end of nav bar **/
+/* end of nav bar */
 
-/**main:section 1 **/
+/* main:section 1 */
 
 #info .row {
     display: flex;
@@ -293,11 +303,12 @@ ul li a {
     padding: 2rem;
     flex-basis: 33.333333%;
     max-width: 33.333333%;
-    background-color: rgb(139, 135, 135);
+    background: rgb(139, 135, 135);
 }
 
 .text {
     margin-bottom: 2rem;
+
 }
 
 .sec-1a {
@@ -307,12 +318,14 @@ ul li a {
 .carousel {
     padding: 2rem;
     margin-left: 2rem;
-    background-color: rgb(201, 192, 192);
+    background: rgb(223, 148, 87);
+    
 }
 
-#img_carousel .carousel {
+.carousel-2 {
     padding: 1rem;
     margin-bottom: 1rem;
+    border: 1px solid #000;
 }
 
 .row-1 {
@@ -328,50 +341,84 @@ ul li a {
 .images-sec-1a {
     padding: 1rem;
     margin-right: 1rem;
-    background-color: rgb(240, 230, 230);
+    background: rgb(240, 230, 230);
 }
 
-/**end main:section 1 **/
-
-/**end main:section 2 **/
-
-
-
-/**end main:section 2 **/
-
-
-
-
-
-/**
-
-
-.bottom .div1 {
-  width: 4rem;
-  height: 2.5rem;
-  border: 1px solid blue;
-  box-sizing: border-box;
+.sweet {
+    width: 100%;
+    height: auto;
 }
 
-.bottom .div2 {
-    width: 4rem;
-    height: 2.5rem;
-    border: 1px solid blue;
-    box-sizing: border-box;
+/* end main:section 1 */
+
+/* main:section 2 */
+
+.row2 {
+    display: flex;
+    flex-wrap: wrap;
 }
 
-  .bottom .div3 {
-    width: 4rem;
-    height: 2.5rem;
-    border: 1px solid blue;
-    box-sizing: border-box;
-  }
+.sec2 {
+    margin-top: 2rem;
+}
 
-  .bottom .div4 {
-    width: 4rem;
-    height: 2.5rem;
-    border: 1px solid blue;
-    box-sizing: border-box;
+.cakes-sec2 {
+    flex-basis: 25%;
+    max-width: 25%;
+}
+
+.sec2 {
+    margin: 1rem;
+}
+
+.col-sec2  {
+    padding: 1rem;
+    background: rgb(235, 95, 95);
+}
+.image-sec2 {
+    padding: 1rem;
+    border: 1px solid #000;
+}
+.cakes2 {
+    padding: 1rem;
+    margin-top: 1rem;
+    background: rgb(218, 206, 206);
+}
+/* end of main:section 2 */
+
+/* footer */
+
+.footer {
+    padding: 2rem;
+    background: rgb(160, 122, 122);
+}
+
+.footer2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* end of footer */
+
+@media only screen and (max-width: 700px) {
+    .header-image .sec-1a #portfolio {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
   }
   
-  **/
+  @media only screen and (max-width: 500px) {
+    .header-image .sec-1a #portfolio {
+      width: 100%;
+    }
+  }
+  
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+
+  
