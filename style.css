@@ -2,7 +2,7 @@
 
 .flex-container {
   display: flex;
-  background-color: DodgerBlue;
+  background-color: #d3d3d3;
   justify-content: space-around;
 }
 
@@ -15,7 +15,7 @@
 
 .nav-bar {
   display: flex;
-  background-color: DodgerBlue;
+  background-color: #d3d3d3;
   justify-content: space-around;
   flex-direction: row-reverse;
 }
@@ -29,10 +29,48 @@
   margin-top: 60px;
 }
 
-.main-content div:nth-child(1) {
+.main-content {
   display: flex;
-  background-color: grey;
-  flex-direction: column;
+  background-color: DodgerBlue;
 }
-mnnxjsdhh {
+
+.main-content > div {
+  background-color: #f1f1f1;
+  margin: 10px;
+  padding: 40px;
+  font-size: 30px;
 }
+
+.main-content div:nth-child(2) > p {
+  display: inline;
+}
+
+.order-list {
+  display: flex;
+  background-color: #a9a9a9;
+}
+
+.order-list > div {
+  background-color: #f1f1f1;
+  margin: 10px;
+  padding: 40px;
+  font-size: 30px;
+}
+
+.extra-info {
+  display: flex;
+  background-color: #a9a9a9;
+}
+
+.extra-info > div {
+  background-color: #f1f1f1;
+  margin: 10px;
+  padding: 15px;
+  font-size: 30px;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
