@@ -9,6 +9,7 @@ body{
 
 a{
   text-decoration: none;
+  color: black;
 }
 
 li{
@@ -30,7 +31,7 @@ nav .logo_nav{   /* first navbar with button */
   padding-top: 0.5em;
 } 
 
-a:first-of-type {  /* select the contaact link alone in the nav  */
+a:first-of-type {  /* select the contact link alone in the nav  */
   display: flex;
   padding-right: 1.5em;
   align-self: center;
@@ -41,11 +42,12 @@ nav img{
   border-radius: 25%;
 }
 
+
+
 nav ul{
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  /* font-size: 1.2em; */
 
 }
 
@@ -61,4 +63,34 @@ nav ul{
 }
 .hello h1{
   text-align: center;
+}
+
+.image_carousel{
+  background-image: url("https://www.kitchenhealssoul.com/wp-content/uploads/2014/04/chocolatecake_4400_p1s.jpg");
+}
+
+hr{
+  width: 95%;
+}
+
+.company_info ul{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2em;
+}
+
+
+/* media queries */
+
+@media only screen and (min-width: 601px) and (max-width: 800px){
+
+  body{
+     max-width: 700px;
+     background-color: white;
+  }
+
+
+
+ 
+
 }
