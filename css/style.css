@@ -2,9 +2,23 @@
 h1 {
     font-family: 'Tangerine', cursive;
     color: rgb(197, 51, 7);
+    font-size: 4rem;
+}
+p {
+    margin-top: 1rem;
+    text-align: justify;
+}
+figcaption{
+    margin-bottom: 1rem;
+    text-align: center;
 }
 #logo-image {
     width: 30%;
+}
+#images {
+    border-radius: 5%;
+    border-color: rgb(104, 172, 36);
+    margin-top: 0.3rem;
 }
 #nav-list {
     font-size: 2rem;
