@@ -23,30 +23,42 @@ li{
 nav .logo_nav{   /* first navbar with button */
   display: flex;
   width: 100%;
-  font-size: 1.8rem;
+  height: auto;
+  font-size: 1.5rem;
   justify-content: space-between;
   border-bottom: 3px solid #ffc4d6;
-  margin-top: 0.7em;
+  padding-top: 0.5em;
 } 
+
+a:first-of-type {  /* select the contaact link alone in the nav  */
+  display: flex;
+  padding-right: 1.5em;
+  align-self: center;
+}
 
 nav img{
   width: 10%;
   border-radius: 25%;
 }
 
-nav a{
-  margin-right: 1.5em;
-  align-self: center;
-}
-
- nav ul li{
-  
-} 
-
-
 nav ul{
   display: flex;
   flex-direction: row;
-  /* text-align: center; */
+  justify-content: space-around;
+  /* font-size: 1.2em; */
+
 }
 
+/* main page styling */
+.hello{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  margin: 6% 0;
+  justify-content: center;
+
+}
+.hello h1{
+  text-align: center;
+}
