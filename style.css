@@ -8,18 +8,39 @@ body{
 
 }
 
+#introduction{
+    margin-right: 50%;
+    
+}
+
+.slider{
+    display: flex;
+    align-items: left;
+
+
+}
+
 header{
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 
 }
 
 #header-img {
-    margin: 0px 500px 0px 150px;
+    margin: 0px 500px 0px 25px;
 }
 
 .nav-links{
     justify-content: center;
 
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+}
 }
     
 
