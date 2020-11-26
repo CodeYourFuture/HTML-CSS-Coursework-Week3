@@ -1,1 +1,41 @@
-/*  Add your styling here */
+body, html {
+     
+    max-width: 100%;
+}
+
+.header{
+    background-color: antiquewhite;
+    width: 100%;
+    display: flex;
+    
+}
+
+.header h1{
+    width:60%;
+}
+.header img{
+  min-width: 20px;
+  max-width: 100px;
+  height: auto;
+  width: 20%;
+   
+}
+.nav{
+    background-color:antiquewhite;
+    width:97%;
+    display:flex;
+    justify-content: center;
+    list-style: none;
+    
+}
+
+.nav a {
+
+    padding: 50px;
+
+}
+
+.home{
+    background-color: rgb(173, 132, 132);
+    color: rgb(226, 220, 220);
+}
