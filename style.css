@@ -1,8 +1,11 @@
 /* mobile device style */
 
 body{
-  background-color: #f2e9e4;
+  background-color: #ffc4d6;
   width: 480px;
   font-size: 1.2rem;
 }
 
+.nav_bar{
+  width: 100%;
+}
