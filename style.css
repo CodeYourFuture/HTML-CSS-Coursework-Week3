@@ -7,6 +7,14 @@ body{
   box-sizing: border-box;
 }
 
+a{
+  text-decoration: none;
+}
+
+li{
+  list-style-type: none;
+}
+
 .nav_bar{            
    width: 100%;    /* spans w/hole width */
   
@@ -15,18 +23,30 @@ body{
 nav .logo_nav{   /* first navbar with button */
   display: flex;
   width: 100%;
+  font-size: 1.8rem;
   justify-content: space-between;
   border-bottom: 3px solid #ffc4d6;
+  margin-top: 0.7em;
 } 
 
 nav img{
-  width: 8%;
+  width: 10%;
+  border-radius: 25%;
 }
 
-a{
-  text-decoration: none;
+nav a{
+  margin-right: 1.5em;
+  align-self: center;
 }
 
-li{
-  list-style-type: none;
+ nav ul li{
+  
+} 
+
+
+nav ul{
+  display: flex;
+  flex-direction: row;
+  /* text-align: center; */
 }
+
