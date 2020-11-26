@@ -17,6 +17,11 @@ figcaption {
     font-family: 'Architects Daughter', cursive;
 }
 
+button, a {
+    font-size: 1.5rem;
+}
+
+
 body {
     padding: 2rem;
     margin: auto;
@@ -44,6 +49,11 @@ ul {
 .header-nav {
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.header-nav li {
+    padding: 1rem;
 }
 
 .main-img {
@@ -66,11 +76,24 @@ main {
 .cakes {
     padding-top: 3rem;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
+.cakes figure {
+    padding: 1rem;
+    width: auto;
+    max-width: 250px;
+}
+
+figcaption {
+    text-align: center;
 }
 
 .cake {
     max-width: 50%;
+    display: flex;
+    justify-items: center;
 }
 
 footer {
@@ -79,11 +102,21 @@ footer {
     justify-content: space-between;
 }
 
+
 .footer-nav {
     display: flex;
     align-items: top;
+    flex-wrap: wrap;
     margin-top: 0;
     padding-left: 0;
+}
+
+.footer-nav li {
+    margin-left: 2rem;
+}
+
+footer a {
+    font-size: 1rem;
 }
 
 #contact h2, #contact p {
