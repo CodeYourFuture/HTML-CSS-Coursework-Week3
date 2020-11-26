@@ -15,9 +15,11 @@ body{
 
 .slider{
     display: flex;
-    align-items: left;
-
-
+    position: absolute;
+    justify-content: space-between;
+    right: 0px;
+    width: 500px;
+    
 }
 
 header{
@@ -41,6 +43,11 @@ nav ul{
     list-style-type: none;
     justify-content: space-between;
 }
+
+
+#main-footer{
+    display: flex;
+    text-align: center;
 }
     
 
