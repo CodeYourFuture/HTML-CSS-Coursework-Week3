@@ -8,7 +8,7 @@ del, dfn, em, font, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td {
+table, caption, tbody, tfoot, thead, tr, th, td, a {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -31,7 +31,7 @@ body {
     text-align: center;
 }
 
-.div-header {
+.div-header1, .div-header2 {
     display: flex;
     flex-direction: column;
     border-bottom: 1px solid gray;
@@ -191,13 +191,37 @@ article{
     padding-top: 1em;
     display: flex;
     flex-direction: column;
+    
 }
 
-.page-footer button{
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: flex-end; */
+    /* margin: auto; */
+}
+
+.footer-list li{
+    height: 4em;
+    width: 99%;
+    display: flex;
+    border-bottom: 1px solid gray;
+    background-color: #b0684c;
+    width: 100%;
+}
+
+.footer-list a {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1.2em;
-    height: 3em;
-    background-color: #b0684c;
+    margin: auto;
+    color: black;
+
+}
+
+.footer-list li:first-child {
+    border-top: 1px solid gray;
+
 }
 /************** footer section end **************/
 
@@ -207,3 +231,99 @@ article{
 
 /* MEDIA QUERIES */
 
+/* bootstrap tips:
+xs (for phones - screens less than 768px wide)
+sm (for tablets - screens equal to or greater than 768px wide)
+md (for small laptops - screens equal to or greater than 992px wide)
+lg (for laptops and desktops - screens equal to or greater than 1200px wide) */
+
+@media screen and (min-width: 768px){
+
+
+    .div-header1 {
+        flex-direction: row;
+        background-color: #b0684c;
+        justify-content: space-between;
+    }
+
+    .menu-list {
+        flex-direction: row;
+    }
+
+    .logo-container {
+        margin-left: 0em;
+        margin-top: 1em;
+    }
+
+    .logo {
+        width: 50%;
+
+    }
+
+    .contact {
+        padding-bottom: 1em;
+        margin-right: 3.5em;
+        width: 30%;
+    }
+
+    .galerry-of-pictures {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: flex-end; 
+
+    }
+
+    .cake-list-foto {
+        /* width: 49%; */
+        /* justify-content: flex-end;  */
+        /* align-items: flex-end; */
+        border: none;
+    }
+    .cake {
+        justify-content: flex-end; 
+        align-items: flex-end;
+    }
+
+    .footer-list {
+        flex-direction: row;
+    }
+
+}
+@media screen and (min-width: 992px) {
+ 
+    .div-header2 {
+        width:80%;
+        margin: auto;
+    }
+
+
+    .first-article{
+        width:80%;
+        margin: auto;
+        justify-content: center; 
+        align-items: center;
+    }
+
+    .container{
+        width:80%;
+        margin: auto;
+
+    }
+
+
+    .galerry-of-pictures{
+        width:80%;
+        margin: auto;
+    }
+
+    .page-footer{
+        background-color: #b0684c;
+        margin-top: 1em;
+        padding-top: 0;
+    }
+    .footer-list  {
+        width: 80%;
+        margin: auto;
+    }
+}
