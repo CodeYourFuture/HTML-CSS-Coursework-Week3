@@ -1,7 +1,6 @@
 /* mobile device style */
 
 body{
-  background-color: #ffc4d6;
   width: 600px;
   font-size: 1.2rem;
   box-sizing: border-box;
@@ -42,8 +41,6 @@ nav img{
   border-radius: 25%;
 }
 
-
-
 nav ul{
   display: flex;
   flex-direction: row;
@@ -66,12 +63,15 @@ nav ul{
 }
 
 .image_carousel{
-  background-image: url("https://www.kitchenhealssoul.com/wp-content/uploads/2014/04/chocolatecake_4400_p1s.jpg");
+  width: 100%;
 }
 
-hr{
-  width: 95%;
+.bottom_border{
+  border-bottom: 3px solid #ffc4d6;
+  margin-top: 1.5rem;
+
 }
+
 
 .company_info ul{
   display: flex;
@@ -80,17 +80,54 @@ hr{
 }
 
 
+
 /* media queries */
 
 @media only screen and (min-width: 601px) and (max-width: 800px){
 
   body{
-     max-width: 700px;
+     width: 800px;
      background-color: white;
   }
+}
 
+@media only screen and (min-width: 801px){
 
+  body{
+     width: 100%;
 
- 
+     
+  }
+  .hello{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    margin: 6% 0;
+    
+    justify-content: space-around;
+}
+
+.hello .cake_container{
+  padding: 0 1rem;
 
 }
+.company_intro{
+  align-self: flex-start;
+  width: 30%;
+  
+  flex-grow: 2;
+}
+.image_carousel{
+  width: 100%;
+ 
+}
+.cake{
+  width: 25%;
+}
+
+.cake_container{
+  display: flex;
+  flex-direction: row;
+}
+
