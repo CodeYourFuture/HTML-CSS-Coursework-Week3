@@ -3,7 +3,7 @@
 
 .top {
     width:100%;
-    background-color: rgb(41, 32, 39);
+    background-color: rgb(26, 24, 25);
     padding: 1rem;
     display:flex;
   }
@@ -46,28 +46,9 @@
       font-family: sans-serif;
   }
 
-  .flex-container {
-    background-color: white;
-    display: flex;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    justify-content: center;
-  }
-  .caption{
-    color: black;
-    text-align: center;
-  }
-  h2{
-    text-align: center;
-  }
   h3{
     margin-left: 1rem;
     display: flex;
-  }
-
-  .socials {
-      display: flex;
-      text-align: center;
   }
 
   div.gallery {
@@ -93,8 +74,7 @@
     text-align: center;
    
   }
-  .footnote {
-    background-color: white;
-    color: black;
+  .footer {
     text-align: center;
+    flex-shrink: 0;
   }
