@@ -86,35 +86,37 @@ header {
 .header-nav-list a:hover {
     color: rgb(36, 35, 35);
 }
+
 /* header end */
 
 /* main */
 
 main {
-    margin: 5rem;
+    margin: 0;
     padding: 0;
     width: 100%;
     height: auto;
 }
 
-.section1 {
-    width: 80%;
+.cake-info {
+    width: 100%;
     padding: 5rem;;
     height: auto;
     display: flex;
     justify-content: flex-start;
 }
 
-.div1{
+.info {
     background-color: rgb(235, 221, 231);
     width: 40%;
+    height: auto;
     margin-left: 0;
     position: relative;
 }
 
-.div2 {
+.select-cake {
     width: 50%;
-   
+    height: 50%;
 }
 
 .frame {
@@ -122,9 +124,10 @@ main {
     top: 0;
     margin: 0;
     padding: 0;
+    height: 5rem;
 }
 
-.div2 .frame ul {
+.select-cake .frame ul {
     position: relative;
     list-style: none;
     padding: 0;
@@ -132,7 +135,7 @@ main {
     height: 10%;
 }
 
-.div2 .frame li {
+.select-cake .frame li {
     position: absolute;
     top: 0;
     left: 0;
@@ -140,19 +143,20 @@ main {
     opacity: 0;   
 }
 
-.div2 .frame li:first-child {
+.select-cake .frame li:first-child {
     opacity: 1;
 }
 
-.div2 .frame li img {
+.select-cake .frame li img {
     width: 100%;
-    height: 40%;
+    height: 500px;
     object-fit: cover;
 }
 
 .slides {
     width: 100%;
-    margin-top: 5%;
+    height: 20%;
+    margin-top: 0;
     padding-top: 80%;
     display: flex;
 }
@@ -171,47 +175,43 @@ main {
     object-fit: cover;
 }
 
-.div2 .frame li:target {
+.select-cake .frame li:target {
     opacity: 1;
 }
 
-.section2 {
-    width: 80%;
+.cake-images {
+    width: 100%;
     display: flex;
     justify-content: center;
-    padding: 50px;
     background-image: url(https://img.glyphs.co/img?q=85&w=900&src=aHR0cHM6Ly9zMy5tZWRpYWxvb3QuY29tL2Jsb2ctaW1hZ2VzL1NUUEItSW1hZ2UtMDguanBnP210aW1lPTIwMTgwOTE0MTAwNjQx);
-    
 }
 
-.section2 img {
+.cake-images img {
     width: 20%;
     height: auto;
     border: 2px solid beige;
     padding-right: 10px;
 }
+
 /* main end */
 
 /* footer */
 
 footer {
-    padding: 2rem;
-    width: 100%;
+    width: 120%;
     background-color: rgb(83, 80, 80);
+    display: flex;
+    flex-direction: row;
 }
 
 footer nav li {
-    float: left;
     list-style: none;
-    padding-right: 6rem;
 }
 
 footer nav li a {
-    padding: 0.5rem;
     border: 2px solid gray;
     border-radius: 50%;
     text-decoration: none;
-    text-align: center;
 }
 
 footer a:hover {
@@ -221,8 +221,8 @@ footer a:hover {
 
 /* footer end */
 
-@media screen and (min-width: 550px;) {
+@media screen and (min-width: 550px) {
     body {
-        font-size: 2.5rem;
+        font-size: 1.5rem;
     }
 }
