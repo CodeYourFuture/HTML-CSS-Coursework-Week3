@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <!-- crating the viewport at te same size like screen -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Responsive Cake webpage</title>
@@ -11,17 +12,19 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    
+
     <!-- Add a link to your css file here -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <!-- Add your markup here -->
-    <header>
-        <div>
-            <img src="images/logo.jpeg" alt="logo of Company">
+    <header class="header">
+        <div class="div-header">
+            <img class="logo" src="images/bakery-logo.jpg" alt="logo of Company">
+            <!-- <a href='https://www.freepik.com/vectors/logo'>Logo vector created by freepik - www.freepik.com</a> -->
             <div class="contact">
+                <h2>Contact US</h2>
                 <p>Country: United Kingdom</p>
                 <p> City: XXXXXXXX</p>
                 <p> Street: XXXXXXXX</p>
@@ -30,23 +33,25 @@
                 </p>
             </div>
         </div>
-        <div>
+        <!-- <hr> -->
+        <div class="div-header">
             <nav>
-                <ul>
-                    <li>Home</li>
-                    <li>Cakes</li>
-                    <li>Ordering</li>
-                    <li>Lessons</li>
-                    <li>About</li>
+                <ul class="menu-list">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Cakes</a></li>
+                    <li><a href="#">Ordering</a></li>
+                    <li><a href="#">Lessons</a></li>
+                    <li><a href="#">About</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <main>
-        <article>
+        <article class="first-article">
             <section class="first-column">
-                <p>Hello</p>
+                <h1>The Hottest Bakery</h1>
+                <h2>Welcome!</h2>
                 <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                     et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
                     aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
@@ -99,7 +104,7 @@
 
         </article>
 
-        <section>
+        <section class="galerry-of-pictures">
             <div class="cake-list-foto">
                 <figure class="cake">
                     <img class="cake-img" alt="" src="images/cake1.jpeg">
@@ -115,7 +120,7 @@
             <div class="cake-list-foto">
                 <figure class="cake">
                     <img class="cake-img" alt="" src="images/cake3.jpeg">
-                    <figcaption>Bwowne</figcaption>
+                    <figcaption>Browne</figcaption>
                 </figure>
             </div>
             <div class="cake-list-foto">
@@ -128,7 +133,7 @@
 
     </main>
 
-    <footer>
+    <footer class="page-footer">
         <button>Site Maps</button>
         <button>Contact</button>
         <button>Delivery</button>

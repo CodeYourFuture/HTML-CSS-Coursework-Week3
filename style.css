@@ -1,1 +1,209 @@
 /*  Add your styling here */
+
+/* Total reset from mayerweb.com */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+}
+
+body {
+    background-color: #f0cda0;
+}
+
+/************** Header START **************/
+.header {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.div-header {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid gray;
+}
+
+/************** first header div start **************/
+.logo {
+    width: 100%;
+    border-bottom: 1px solid gray;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    padding-top: 1em;
+}
+
+.contact h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.7em;
+    padding-bottom: 0.5em;
+}
+
+.contact p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.2em;
+}
+
+
+/************** first header div end **************/
+/* hr {
+    width: 95%;
+    height: 1px;
+    padding: 0;
+    margin: 0.5em;
+    color: 1px solid black;
+
+} */
+/*************** second header div start **************/
+.menu-list {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: flex-end; */
+    /* margin: auto; */
+}
+
+.menu-list li{
+    height: 4em;
+    width: 99%;
+    display: flex;
+    border-bottom: 1px solid gray;
+}
+
+.menu-list a {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.2em;
+    margin: auto;
+    color: black;
+
+}
+
+
+/************** second header div end **************/
+/************** Header END **************/
+
+/************** Main Section Start **************/
+/* First Columns Start  */
+main {
+    margin-top: 0.5em;
+    
+}
+
+.first-column h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.9em;
+    padding-bottom: 0.5em;
+    text-align: center;
+    font-weight: bold;
+}
+
+.first-column h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.7em;
+    padding-bottom: 0.5em;
+    text-align: center;
+    font-weight: bold;
+
+}
+
+.first-column p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.2em;
+    text-align: center;
+    width: 90%; 
+    margin: auto;
+
+}
+
+/************* * First Columnd End **************/
+/**************  second column Start **************/
+article{
+    display: flex;
+    flex-direction: column;
+}
+
+.second-column{
+    margin-bottom: 0.5em;
+}
+.container h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.7em;
+    padding-bottom: 0.5em;
+    padding-top: 0.5em;
+    text-align: center;
+}
+
+
+/************* * second column :end **************/
+/* galery of pictures start */
+.galerry-of-pictures {
+    display: flex;
+    flex-direction: column;
+}
+
+.first-article {
+    display: flex;
+    flex-direction: column;
+}
+
+.cake-list-foto {
+    margin: auto;
+    width: 95%;
+    border: 1px solid black;
+    margin-top: 1em;
+
+}
+.cake {
+    /* margin: auto; */
+    text-align: center;
+}
+
+.cake-img{
+    width: 95%;
+    padding-top: 0.5em;
+}
+
+.cake figcaption{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5em;
+}
+
+/************** galery of pictures end *************/
+/************** Footer section start  **************/
+.page-footer {
+    padding-top: 1em;
+    display: flex;
+    flex-direction: column;
+}
+
+.page-footer button{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.2em;
+    height: 3em;
+    background-color: #b0684c;
+}
+/************** footer section end **************/
+
+
+/************** Main Section end **************/
+
+
+/* MEDIA QUERIES */
+
