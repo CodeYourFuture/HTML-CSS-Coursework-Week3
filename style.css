@@ -1,1 +1,100 @@
-/*  Add your styling here */
+ Add your styling here
+body{
+    width:100%;
+    height:100%;
+    padding: 0rem 100rem 0rem 100rem;
+}
+.header{
+    display: flex;
+    background-image: url("https://img.favpng.com/21/7/11/cupcake-birthday-cake-desktop-wallpaper-food-png-favpng-X1PWXah72hxg6hcLEuF7NXs7A.jpg");
+    max-width:100%;
+    height:10rem;
+    justify-content: space-around;
+    background-color: rgba(171, 236, 215, 0.705);
+    padding: 0rem 5rem 0rem 5rem;
+    margin-bottom: 1rem;
+}
+.headerlogo{
+    max-height: 9rem;
+    border-radius: 30%;
+}
+h3, h2{
+    color: rgb(158, 68, 125);
+    text-align: center;
+    font-style: oblique;
+}
+.navbar{
+max-width:100%;
+background-color: rgb(238, 206, 225);
+}
+.nav_items{
+    list-style-type:none;
+}
+.nav_items a{
+text-decoration: none;
+background-color: rgb(233, 206, 238);
+margin-top: 2rem;;
+color: mediumvioletred;
+}
+.nav_items li{
+padding: 2rem;
+float: left;
+width: 18%;
+}
+.article{
+max-width: 100%;
+background-color: lavenderblush;
+padding: 1rem;
+}
+.carousel-inner{
+    max-width: 100%;
+}
+.img1{
+    max-width:100%;
+    display: flex;
+    flex-direction:column;
+    height:100%;   
+    background-color: rgb(245, 204, 210);
+    padding: 1rem;
+}
+.imgbdr{
+    border: 0.2rem solid rgb(252, 235, 235);
+    margin:1rem;
+    border-radius: 1rem;    
+}
+.imgs{
+    width:100%;
+    height:auto;
+    padding: 1rem;
+    border-radius: 2rem;
+    
+}
+.caption p{
+    text-align: center;
+    font-size: 2rem;
+}
+
+.footer{
+    display: flex;
+    flex-wrap: row nowrap;
+    justify-content: space-between;
+    width:100%;
+    min-height: 5rem;
+    background-color: blanchedalmond;
+    padding: 1.5rem 3rem 0rem 3rem;
+}
+/* @media only screen and (min-width: 1024px) {
+ .img1{background-color: rgb(241, 241, 184);
+ /* width: 100%; */
+ /* display:flex;
+ flex-wrap: nowrap;
+}   
+.header{width:100%;}
+.navbar{width:100%;}
+.article{width:24%;}
+.img{width:74%;}
+.cakeimg1, .cakeimg2{width:50%;} */
+/* .cakeimg{width:25%;} */
+/* .cakeimg2{width:45%; order:6;} */
+/* .footer{width:100%;}
+} */ 
