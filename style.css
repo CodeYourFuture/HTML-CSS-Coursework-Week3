@@ -2,10 +2,31 @@
 
 body{
   background-color: #ffc4d6;
-  width: 480px;
+  width: 600px;
   font-size: 1.2rem;
+  box-sizing: border-box;
 }
 
-.nav_bar{
+.nav_bar{            
+   width: 100%;    /* spans w/hole width */
+  
+}
+
+nav .logo_nav{   /* first navbar with button */
+  display: flex;
   width: 100%;
+  justify-content: space-between;
+  border-bottom: 3px solid #ffc4d6;
+} 
+
+nav img{
+  width: 8%;
+}
+
+a{
+  text-decoration: none;
+}
+
+li{
+  list-style-type: none;
 }
