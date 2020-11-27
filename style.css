@@ -1,1 +1,27 @@
 /*  Add your styling here */
+.header{
+    font-size: 20px; 
+    margin: 10px;
+    color: black;
+    background-color:gray;
+    display: flex;
+    justify-content: flex-start;
+}
+.logo{
+    float: right;
+    display: grid;
+  align-items: flex-end;
+}
+.nav-list{
+    font-size: 30px;
+}
+.nav-list ul{
+    display: flex; 
+    background-color: gray;
+    justify-content: space-between;
+}
+.main{
+    border: 20px;
+    height: 30px;
+    width: 50px; 
+}
