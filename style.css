@@ -41,18 +41,31 @@
 .img-list{
 }
 .cake-section{
-    background: white;
-    color: brown; 
+    color: black; 
     padding: 20px; 
     display: flex;
-    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-around;
 }
-.cake-box{
-background: black;
-margin: auto;
-width: 200px;
-height: 100px;
-display: flex;
-flex-direction: row; 
-justify-content: space-between;
+.cake-box-1{
+    height: 100px;
+    width: 100px; 
+    background-color: gray; 
 }
+.cake-box-2{
+    height: 100px;
+    width: 100px; 
+    background-color: gray; 
+    
+}
+.cake-box-3{
+    height: 100px;
+    width: 100px; 
+    background-color: gray; 
+}
+.cake-box-4{
+    height: 100px;
+    width: 100px; 
+    background-color: gray; 
+}
+
