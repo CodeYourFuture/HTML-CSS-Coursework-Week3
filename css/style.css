@@ -207,6 +207,7 @@ main {
 .cake div:last-child {
   margin: 0 auto;
 }
+
 .cake-name {
   font-size: 1.5em;
   font-weight: 600;
@@ -248,7 +249,6 @@ main {
   height: 4.5rem;
   margin: auto 0;
   text-align: center;
-  font-size: 2em;
   font-weight: 500;
 }
 
@@ -405,6 +405,10 @@ footer {
     margin: 20px;
   }
 
+  .cake-thumbnail {
+    font-size: 2em;
+  }
+
   .cake-types .active {
     padding: 5px;
     border: 2px dimgrey;
@@ -471,5 +475,11 @@ footer {
     width: 300px;
     height: 200px;
     margin: 15px 0 15px 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .content {
+    width: 80%;
   }
 }
