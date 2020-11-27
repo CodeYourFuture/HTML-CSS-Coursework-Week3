@@ -4,6 +4,7 @@ body{
     height:100%;
     padding: 0rem 100rem 0rem 100rem;
 }
+main{width:100%;}
 .header{
     display: flex;
     background-image: url("https://img.favpng.com/21/7/11/cupcake-birthday-cake-desktop-wallpaper-food-png-favpng-X1PWXah72hxg6hcLEuF7NXs7A.jpg");
@@ -45,6 +46,8 @@ width: 18%;
 max-width: 100%;
 background-color: lavenderblush;
 padding: 1rem;
+border:0.2rem solid rgb(233, 206, 238); 
+border-radius: 0.5rem;
 }
 .carousel-inner{
     max-width: 100%;
@@ -83,18 +86,24 @@ padding: 1rem;
     background-color: blanchedalmond;
     padding: 1.5rem 3rem 0rem 3rem;
 }
-/* @media only screen and (min-width: 1024px) {
- .img1{background-color: rgb(241, 241, 184);
- /* width: 100%; */
- /* display:flex;
- flex-wrap: nowrap;
-}   
-.header{width:100%;}
-.navbar{width:100%;}
-.article{width:24%;}
-.img{width:74%;}
-.cakeimg1, .cakeimg2{width:50%;} */
-/* .cakeimg{width:25%;} */
-/* .cakeimg2{width:45%; order:6;} */
-/* .footer{width:100%;}
-} */ 
+@media only screen and (min-width: 1024px) {
+  /* main{
+      float:left;
+      flex-direction: row wrap;
+      width:100%;
+}   */
+ .header{width:100%;}
+ .navbar{width:100%;}  
+ .article{width:25%;
+          float:left;
+}
+ .cake{width:75%;
+float:left;}
+.img1{
+    display:flex;
+    flex-direction: row;
+    width:100%;
+    /* float:left; */
+}
+ .footer{width:100%}
+}
