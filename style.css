@@ -2,9 +2,10 @@
 body{
     width:100%;
     height:100%;
-    padding: 0rem 100rem 0rem 100rem;
+    /* padding: 50rem; */
+    background-color: rgb(146, 32, 158);
 }
-main{width:100%;}
+/* main{width:100%;} */
 .header{
     display: flex;
     background-image: url("https://img.favpng.com/21/7/11/cupcake-birthday-cake-desktop-wallpaper-food-png-favpng-X1PWXah72hxg6hcLEuF7NXs7A.jpg");
@@ -15,9 +16,13 @@ main{width:100%;}
     padding: 0rem 5rem 0rem 5rem;
     margin-bottom: 1rem;
 }
+background-image{
+    width:100%;
+}
 .headerlogo{
     max-height: 9rem;
     border-radius: 30%;
+    /* float:right; */
 }
 h3, h2{
     color: rgb(158, 68, 125);
@@ -34,8 +39,10 @@ background-color: rgb(238, 206, 225);
 .nav_items a{
 text-decoration: none;
 background-color: rgb(233, 206, 238);
-margin-top: 2rem;;
+margin-top: 2rem;
+padding: 2rem;
 color: mediumvioletred;
+
 }
 .nav_items li{
 padding: 2rem;
@@ -44,13 +51,19 @@ width: 18%;
 }
 .article{
 max-width: 100%;
-background-color: lavenderblush;
+background-color:  rgb(238, 206, 225);
 padding: 1rem;
 border:0.2rem solid rgb(233, 206, 238); 
 border-radius: 0.5rem;
 }
+section{
+    background-color: rgba(241, 184, 193, 0.849);
+    padding: 0rem 5rem 0rem 5rem;
+}
 .carousel-inner{
-    max-width: 100%;
+    max-width: 70%;
+    height: 50%;
+    margin:auto;
 }
 .img1{
     max-width:100%;
@@ -58,7 +71,7 @@ border-radius: 0.5rem;
     flex-direction:column;
     height:100%;   
     background-color: rgb(245, 204, 210);
-    padding: 1rem;
+    /* padding: 1rem; */
 }
 .imgbdr{
     border: 0.2rem solid rgb(252, 235, 235);
