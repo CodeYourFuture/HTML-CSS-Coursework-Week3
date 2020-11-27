@@ -154,6 +154,8 @@ footer p{
 
 /* media queries */
 
+/* Medium devices Tablets and so on */
+
 @media only screen and (min-width: 601px) and (max-width: 800px){
 
   body{
@@ -168,6 +170,7 @@ footer p{
 
 }
 
+/* for large screens more than 801px */
 @media only screen and (min-width: 801px){
   
 #cake_1, #cake_4{
