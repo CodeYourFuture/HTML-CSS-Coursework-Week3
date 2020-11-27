@@ -2,7 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great|Architects+Daughter&display=swap');
 
 /* Reset margin and padding */
-html, figure {
+html,
+figure {
     margin: 0;
     padding: 0;
 }
@@ -37,7 +38,8 @@ body {
     align-items: center;
 }
 
-button, a {
+button,
+a {
     font-size: 1.5rem;
 }
 
@@ -70,35 +72,53 @@ ul {
 }
 
 /* Main section */
-.main-img {
-    min-width: 100px;
-    max-width: 400px;
-    height: auto;
-}
-
-main .text {
-    flex-direction: column;
-}
-
 main {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    background-color: khaki;
+}
+
+main .text {
+    max-width: 50%;
+    padding: 1rem;
+    flex-direction: column;
+}
+
+.text p {
+    font-size: 1.1rem;
+}
+
+.main-img {
+    min-width: 120px;
+    max-width: 500px;
+    object-fit: contain;
+    padding: 3rem;
+    padding-right: 1rem;
+    align-self: flex-start;
 }
 
 /* Types of cakes */
 .cakes {
     padding-top: 3rem;
+    padding-bottom: 10rem;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
+    align-items: flex-end;
+    background-color: lightpink;
 }
 
 .cakes figure {
-    padding: 1rem;
+    padding-top: 1rem;
     width: auto;
-    max-width: 250px;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(131, 8, 231);
+    font-weight: bolder;
 }
 
 figcaption {
@@ -107,28 +127,21 @@ figcaption {
 
 .cake {
     max-width: 50%;
-    display: flex;
-    justify-items: center;
 }
 
 /* footer styling */
 footer {
-    padding-top: 5rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 /* footer navigation */
 footer {
-    padding-top: 18rem;
+    background-color: rgb(109, 227, 243);
+    padding-top: 1rem;
 }
 
 .footer-nav {
-    background-color: skyblue;
-}    
-
-.footer-nav {
-    background-color: skyblue;
     display: flex;
     align-items: top;
     flex-wrap: wrap;
@@ -141,13 +154,14 @@ footer {
 }
 
 footer a {
-    font-size: 1rem;
+    font-size: 1.3rem;
 }
 
 footer a:hover {
-    color: teal;
+    color: rgb(214, 20, 30);
 }
 
-#contact h2, #contact p {
+#contact h2,
+#contact p {
     margin: 0;
 }
