@@ -3,8 +3,9 @@
 body{
   background-color: #feeafa;
   width: 100%;
-  font-size: 1.1rem;
+  /* font-size: 1rem; */
   box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
 }
 
 a{
@@ -25,7 +26,7 @@ nav .logo_nav{   /* first navbar with button */
   display: flex;
   width: 100%;
   height: auto;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   justify-content: space-between;
   border-bottom: 3px solid #ffc4d6;
   padding-top: 0.3em;
@@ -97,7 +98,7 @@ nav ul{
 .carousel_container img:nth-child(2){animation-delay:10s;}
 .carousel_container img:nth-child(1){animation-delay:15s;}
 
-#cake_3, #cake_4{
+#cake_1, #cake_4{
   display: none;
 }
 
@@ -112,8 +113,40 @@ nav ul{
   display: flex;
   justify-content: space-evenly;
   margin-top: 2em;
+  margin-left: -1em;
+  flex-shrink: 1;
 
 }
+.social_icons{
+  display: flex;
+  justify-content: center;
+}
+
+footer p{
+  text-align: center;
+  padding-top: 0.7em;
+}
+
+.facebook{
+  padding: 0 2%;
+  height: 0.5em;
+  color:  #3b5998;
+}
+.twitter{
+  padding: 0 2%;
+  height: 0.5em;
+  /* padding: 0 2%; */
+  color: #00acee;
+
+}
+.instagram{
+  height: 0.5em;
+  /* width: 2em; */
+  padding: 0 2%;
+  color: #d6249f;
+
+}
+
 
 
 
@@ -129,14 +162,13 @@ nav ul{
     /* align-self: center; */
     padding-top: 3rem;
     align-items: center;
-    jus
   }
 
 }
 
 @media only screen and (min-width: 801px){
   
-#cake_3, #cake_4{
+#cake_1, #cake_4{
   display: inline;
 }
 
