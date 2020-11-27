@@ -1,1 +1,9 @@
-/*  Add your styling here */
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+header,
+footer {
+  background: rgb(195, 205, 185);
+}
