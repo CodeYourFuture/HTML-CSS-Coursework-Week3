@@ -12,12 +12,20 @@ body, html {
 
 .header h1{
     width:60%;
+    font-family: "Aharoni";
+    padding: 0 0 0 30px;
+}
+
+.header p{
+    font-family: "Lucida Handwriting";
+    font-size: 50%;
 }
 .header img{
-  min-width: 20px;
-  max-width: 100px;
-  height: auto;
-  width: 20%;
+        min-width: 20px;
+        max-width: 100px;
+        height: auto;
+        width: 20%;
+        object-fit: contain;
    
 }
 .nav{
@@ -38,4 +46,96 @@ body, html {
 .home{
     background-color: rgb(173, 132, 132);
     color: rgb(226, 220, 220);
+}
+
+.section1{
+    width: 100%;
+    display: flex;
+    text-align: center;
+    font-size: 80%;
+    justify-content: space-around;
+    /* padding: 50px; */
+}
+
+.section1 img{
+    width: 18%;
+
+}
+
+.container{
+    width: 100%;
+    display: flex;
+
+    /* flex-wrap: wrap; */
+}
+
+.vanilla{
+    width: 100%;
+}
+
+.fruit{
+    width: 100%;
+   
+}
+
+.container img{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+ }
+
+ .footer ul{
+    width:100%;
+    display:flex;
+    justify-content: center;
+    list-style: none;
+    
+ }
+
+ .footer a{
+     padding: 60px;
+ }
+
+@media screen and (min-width: 450px){
+    .vanilla{
+        width: 25%;
+    }
+    .chocolate{
+        width: 60%
+    }
+
+    .peanut{
+        width: 30%;
+
+    }
+
+    .fruit{
+        width: 40%;
+    }
+
+    .header img{
+        width: 70%;}
+}
+
+@media screen and (min-width: 550px){
+    .vanilla{
+        width: 50%;
+    }
+    .chocolate{
+        width: 60%
+    }
+
+    .peanut{
+        width: 33%;
+
+    }
+
+    .fruit{
+        width: 40;
+    }
+
+    .header img{
+        width: 65%;
+    }
 }
