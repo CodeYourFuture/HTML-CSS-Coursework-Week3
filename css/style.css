@@ -1,4 +1,4 @@
-/*  Add your styling here */
+
 
 /* body */
 
@@ -12,8 +12,7 @@ body {
     overflow-x: hidden;
 }
 
-/* body end*/
-
+/* body end */
 /* header */
 
 header {
@@ -306,6 +305,3 @@ footer a:hover {
     .footer-nav-list {
         display: none;
     }
-
-
-
