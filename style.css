@@ -1,11 +1,11 @@
 /*  Add your styling here */
 .header{
     font-size: 20px; 
-    margin: 10px;
+   
     color: black;
     background-color:gray;
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
 }
 .logo{
     float: right;
@@ -38,8 +38,21 @@
     justify-content: baseline; 
 
 }
-.img-list ul{
-    display: inline;
-    align-items: ; 
-justify-content: column;
+.img-list{
+}
+.cake-section{
+    background: white;
+    color: brown; 
+    padding: 20px; 
+    display: flex;
+    flex-direction: row;
+}
+.cake-box{
+background: black;
+margin: auto;
+width: 200px;
+height: 100px;
+display: flex;
+flex-direction: row; 
+justify-content: space-between;
 }
