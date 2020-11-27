@@ -1,1 +1,696 @@
+/*--------------------Mobile---------------------*/
+
+
+*
+{
+margin:0;
+padding:0;
+list-style: none;
+}
+
+.content_container{
+margin: 0 auto;
+width: 95%;
+}
+/*-------------------Body----------------------*/
+
+/*---------Header-----------*/
+
+/*----Nav bars----*/
+
+/*---upper nav---*/
+
+.upper-nav{
+display: flex;
+flex-direction: row;
+background-color:rgba(241, 209, 138, 0.829);
+padding-top: 1rem;
+padding-bottom: 2rem;
+margin-bottom:1rem;
+}
+
+.upper-nav li{
+list-style: none;
+font-family: 'lato', sans-serif;
+font-weight: 500 ;
+}
+
+/*---Upper nav H1----*/
+/*------Logo font properties------*/
+#h1-positioning{
+padding-left: 3rem;
+font-family: 'Lato', sans-serif;
+font-weight: 800;
+font-size: 1.3rem;
+}
+
+
+#contact-button{
+font-family: 'open sans', sans-serif;
+font-weight: 500;
+font-size: 1.2rem;
+margin-top: 1rem;
+margin-left: 1.3rem;
+}
+
+
+/*--logo sizes--*/
+
+.upper-nav i{
+font-size: 3.5rem;
+margin-left:1rem;
+}
+    
+
+/*----Contact---*/
+.upper-nav li{
+padding-left: 2rem;
+font-family: 'lato', sans-serif;
+font-weight: 500 ;
+}
+
+
+/*--individual logos--*/
+.fa-birthday-cake{
+width:5%;
+}
+
+
+
+/*---lower nav----*/
+
+.lower-nav ul{
+margin-bottom: 1rem;
+background-color:rgba(241, 209, 138, 0.829);
+
+}
+.lower-nav ul li{
+list-style-type: none;
+display: block;
+font-family: 'lato', sans-serif;
+font-weight: 500 ;
+padding-left: 1.2rem;
+}
+
+
+/*-------Main content-------*/
+
+
+/*---Introduction----*/
+.section-1{
+background-color: darkorange;
+padding-bottom: 2rem;
+margin-bottom: 2rem;
+
+}
+
+/*---H1---*/
+.section-1 h1{
+font-family: 'Lato', sans-serif;
+font-weight: 800;
+padding-top: 0.5rem;
+padding-bottom: 1.5rem;
+padding-left: 1rem;
+font-size: 2rem;
+}
+
+/*---P---*/
+.section-1 p{
+font-family: 'Open Sans', sans-serif;
+font-weight: 500 ;
+line-height: 2rem;
+padding-left: 1rem;
+padding-right: 1rem;
+padding-bottom: 1rem;
+}
+
+/*--Anchor tag--*/
+.section-1 a{
+font-family: 'Open Sans', sans-serif;
+font-weight: 500;
+padding-top: 2.5rem;
+padding-left: 1rem;
+
+}
+
+/*---Primary image----*/
+.section-2{
+background-color: lemonchiffon ;
+}
+
+#primary-main-img{
+width: 100%;
+padding-bottom: 2rem;
+
+}
+
+.primary-img{
+width: 100%;
+padding-bottom: 2rem;
+
+}
+
+
+
+
+/*---Secondary image----*/
+.section-3{
+background-color: lightblue;
+width: 100%;
+margin-top: 3.5rem;
+padding-bottom: 0.5rem;
+margin-bottom: 2rem;
+}
+
+.secondary-img{
+width:100%;
+justify-content: center;
+padding-bottom: 2rem;
+}
+
+
+/*---Secondary text individual properties---*/
+#secondary-txt-1{
+    font-family: 'lato', sans-serif;
+    font-weight: 500 ;
+    font-size: 1.5rem;
+    margin:0rem;
+    align-items: center;
+    padding-left: 5.5rem;
+    margin-bottom: 2rem;
+    background-color: salmon;
+
+    }
+    
+    
+    #secondary-txt-2{
+    font-family: 'lato', sans-serif;
+    font-weight: 500 ;
+    font-size: 1.5rem;
+    margin:0rem;
+    align-items: center;
+    padding-left: 3.5rem;
+    margin-bottom: 2rem;
+    background-color: salmon;
+
+    }
+        
+    
+    #secondary-txt-3{
+    font-family: 'lato', sans-serif;
+    font-weight: 500 ;
+    font-size: 1.5rem;
+    margin:0rem;
+    align-items: center;
+    padding-left: 4rem;
+    margin-bottom: 2rem;
+    background-color: salmon;
+
+    }
+
+
+    #secondary-txt-4{
+    font-family: 'lato', sans-serif;
+    font-weight: 500 ;
+    font-size: 1.5rem;
+    margin:0rem;
+    align-items: center;
+    padding-left: 5.3rem;
+    margin-bottom: 2rem;
+    background-color: salmon;
+
+    }
+    
+    
+
+/*-----------------Footer------------------------*/
+footer{
+background-color: sandybrown;
+padding-top: 1rem;
+padding-bottom: 1rem;
+list-style: none;
+
+}
+
+#copy{
+list-style:none;
+}
+
+#primary-foot li{
+list-style: none;
+display: inline-block;
+font-family: 'lato', sans-serif;
+font-weight: 500 ;
+padding-top: 1rem;
+padding-left: 0.7rem;
+padding-bottom: 2.5rem;
+font-size: 1rem;
+text-decoration: none!important;
+
+}
+
+/*----------Primary footer hyperlink-----------*/
+
+.footer_link {
+text-decoration: none;
+}
+/*---Social media icons---*/
+
+
+hr{
+    border: 0; 
+    border-top: 3px solid #ccc;
+    margin: 0.5em 0; 
+    border-color: red;
+    font-size: 1rem;
+    margin-left: 2.4rem;
+    margin-right: 2.4rem;
+
+    }
+
+
+#secondary-foot li{
+list-style: none;
+display: inline-block;
+justify-content: space-evenly;
+}
+
+#secondary-foot li{
+font-size: 2rem;
+justify-content: space-evenly;
+padding-left: 2.3rem;
+padding-bottom: 1rem;
+}
+
+/*--Social media icon individual styling-*/
+.fa-facebook-square {
+    color: #3b5998
+}
+
+.fa-twitter, .fa-twitter-square {
+    color: #00aced
+}
+
+.fa-youtube-square { color: #bb0000; }
+
+
+.fa-twitch{
+color:#6441a5;
+}
+
+/*--Copy--*/
+#copy{
+font-family: 'lato', sans-serif;
+font-weight: 500 ;
+padding-top: 1rem;
+padding-left: 7.7rem;
+padding-right: 1rem;
+padding-bottom: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------- Fullscreen -------------------------------*/
+/*-------------------Media query----------------------*/
+@media only screen and (min-width:600px){
 /*  Add your styling here */
+*
+{
+margin:0;
+padding:0;
+}
+
+/*body{
+background-color:pink;
+}*/
+
+/*-------------------Body----------------------*/
+
+/*---------Header-----------*/
+
+/*----Nav bars----*/
+
+/*---upper nav---*/
+
+.upper-nav{
+display: flex;
+flex-direction: flex-start;
+background-color:rgba(241, 209, 138, 0.829);
+padding-top: 1rem;
+padding-bottom: 2rem;
+}
+
+#contact-button{
+font-family: 'open sans', sans-serif;
+font-weight: 500;
+font-size: 2rem;
+margin-left: 39rem;
+padding-top: 4.5rem;
+}
+
+
+
+/*---Upper nav H1----*/
+#h1-positioning{
+margin-left: 5rem;
+font-family: 'lato', sans-serif;
+font-size: 3.5rem;
+}
+
+/*--logo sizes--*/
+.upper-nav i{
+font-size: 2rem;
+}
+
+
+/*--individual logos--*/
+
+/*----Cake logo size----*/
+.upper-nav i{
+font-size: 8rem;
+margin-left:2.3rem;
+}
+
+/*---Cake logo properties--*/
+.fa-birthday-cake{
+width:5%;
+}
+
+/*---Consider deleting--
+.fa-bars{
+width:5%;
+background-color: skyblue;
+padding-left: 1rem;
+}---*/
+
+/*---lower nav----*/
+.lower-nav{
+display:flex;
+justify-content: space-around;
+background-color:rgba(241, 209, 138, 0.829);
+text-align: center;
+margin-top:2rem;
+
+}
+
+.lower-nav ul li{
+text-align: center;
+list-style-type: none;
+display: inline-block;
+font-family: 'lato', sans-serif;
+font-weight: 500 ;
+font-size: 2rem;
+padding-left: 0rem;
+margin-left: 5rem;
+}
+
+/*-------Main content-------*/
+
+/*----Element_position1----*/
+.element_position1{
+display: flex;
+margin-top: 2rem;
+
+}
+
+
+
+/*---Introduction----*/
+.section-1{
+background-color: darkorange;
+padding-bottom: 2rem;
+margin-right: 2rem;
+
+width: 800px;
+}
+
+/*---H1---*/
+.section-1 h1{
+font-family: 'Lato', sans-serif;
+font-weight: 800;
+padding-top: 0.5rem;
+padding-bottom: 1rem;
+padding-left: 1rem;
+font-size: 3em;
+}
+
+/*---P---*/
+.section-1 p{
+font-family: 'Open Sans', sans-serif;
+font-weight: 500 ;
+line-height: 2rem;
+padding-left: 1rem;
+padding-right: 1rem;
+padding-bottom: 1rem;
+}
+
+/*--Anchor tag--*/
+.section-1 a{
+font-family: 'Open Sans', sans-serif;
+font-weight: 500;
+padding-top: 2.5rem;
+padding-left: 1rem;
+
+}
+
+/*-------------------------Primary image--------------------------*/
+.section-2{
+background-color: lemonchiffon ;
+}
+
+/*-----Primary main img------*/
+#primary-main-img{
+width: 100%;
+padding-bottom: 2rem;
+
+}
+
+/*------Primary sub image container------*/
+.primary-sub-imgs{
+display: flex;
+justify-content: space-evenly;
+}
+
+/*---Primary sub images---*/
+.primary-img{
+width: 20%;
+height: auto;
+padding-bottom: 2rem;
+}
+
+
+
+
+/*--------------------Secondary image---------------------*/
+/*-----Secondary images container-----*/
+.section-3{
+background-color: lightblue;
+width: 100%;
+display:flex;
+justify-content: space-evenly;
+margin-top: 2rem;
+margin-bottom: 5rem;
+}
+
+.secondary-img{
+width:100%;
+padding-bottom: 2rem;
+display: block;
+}
+
+/*---Secondary image txt description----*/
+.secondary-txt{
+font-family: 'lato', sans-serif;
+font-weight: 500 ;
+font-size: 1.5rem;
+margin:0rem;
+align-items: center;
+padding-left: 3.8rem;
+}
+
+
+
+/*---Secondary text individual properties---*/
+#secondary-txt-1{
+font-family: 'lato', sans-serif;
+font-weight: 500 ;
+font-size: 1.5rem;
+background-color: salmon;
+margin:0rem;
+align-items: center;
+padding-left: 5rem;
+margin-bottom: 2rem;
+}
+
+
+#secondary-txt-2{
+font-family: 'lato', sans-serif;
+font-weight: 500 ;
+font-size: 1.5rem;
+background-color: salmon;
+margin:0rem;
+align-items: center;
+padding-left: 2.5rem;
+margin-bottom: 2rem;
+}
+    
+
+#secondary-txt-3{
+font-family: 'lato', sans-serif;
+font-weight: 500 ;
+font-size: 1.5rem;
+background-color: salmon;
+margin:0rem;
+align-items: center;
+padding-left: 3.8rem;
+margin-bottom: 2rem;
+}
+        
+
+#secondary-txt-4{
+font-family: 'lato', sans-serif;
+font-weight: 500 ;
+font-size: 1.5rem;
+background-color: salmon;
+margin:0rem;
+align-items: center;
+padding-left: 5.3rem;
+margin-bottom: 2rem;
+}
+
+
+
+
+
+
+/*-----------------Footer------------------------*/
+
+/*----Footer container-----*/
+footer{
+background-color: sandybrown;
+padding-top: 1rem;
+padding-bottom: 1rem;
+}
+
+/*---Copy txt---*/
+#copy{
+list-style:none;
+}
+
+
+/*-----Primary footer flex box parent container--------------*/
+#primary-foot{
+display: flex;
+justify-content: space-evenly;
+}
+
+
+/*---Footer link txt---*/
+
+#primary-foot li{
+display: inline-block;
+font-family: 'lato', sans-serif;
+font-weight: 500 ;
+font-size: 1.5rem;
+padding-top: 2.5rem;
+padding-left: 0.7rem;
+padding-bottom: 2.5rem;
+}
+
+/*----------Primary footer hyperlink-----------*/
+
+.footer_link a{
+text-decoration: none;
+}
+/*---------------------Social media icons---------------------*/
+
+/*---------Hr line properties---------------*/
+hr{
+    border: 0; 
+    border-top: 3px solid #ccc;
+    margin: 1em 0; 
+    padding: 0;
+    border-color: red;
+    font-size: 2rem;
+    margin-left: 2.4rem;
+    margin-right: 2.4rem;
+
+    }
+
+
+/*-----------------------Social media icon properties-----------------------------*/
+
+/*-----Secondary foot flex box parent container------*/
+#secondary-foot{
+display:flex;
+justify-content: space-evenly;
+
+}
+#secondary-foot li{
+font-size: 3.5rem;
+justify-content: space-evenly;
+padding-left: 2.3rem;
+padding-bottom: 1rem;
+display: inline-block;
+}
+
+.footer_link{
+text-decoration: none;
+}
+/*-----Extra social media background------*/
+/*.social-media-circle{
+border-radius: 50%;
+height: 3.5rem;
+weight: 2rem;
+background-color: palegreen;
+border-style: solid;
+padding-left: 2rem;
+}*/
+
+
+/*--Social media icon individual styling-*/
+.fa-facebook-square {
+    color: #3b5998
+}
+
+.fa-twitter, .fa-twitter-square {
+    color: #00aced
+}
+
+.fa-youtube-square { color: #bb0000; }
+
+
+.fa-twitch{
+color:#6441a5;
+}
+
+/*--Copy--*/
+#copy{
+font-family: 'lato', sans-serif;
+font-weight:400;
+font-size: 1.5rem;
+padding-top: 1rem;
+padding-bottom: 2.5rem;
+padding-right: 40rem;
+text-align: right;
+margin-bottom: 2rem;
+}
+    
+}
