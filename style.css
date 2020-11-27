@@ -30,6 +30,8 @@ h3, h2{
     font-style: oblique;
 }
 .navbar{
+    display: flex;
+    justify-content: space-between;
 max-width:100%;
 background-color: rgb(238, 206, 225);
 }
