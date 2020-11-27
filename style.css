@@ -1,20 +1,64 @@
+.bannerimage {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.cakeFace {
+  width: 20rem;
+  height: auto;
+}
+
 body {
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
+  position: relative;
 }
 
 footer {
-  background-color: rgb(195, 205, 185);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 3rem;
+  border: 1rem;
+
+  background-color: pink;
 }
 
 nav {
   background-color: rgb(247, 215, 220);
 }
 
-article {
-  background-color: pink;
+li {
+  display: inline-block;
+  margin-left: 0.1rem;
+  list-style-type: none;
 }
 
-aside {
-  background-color: rgb(247, 157, 172);
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  padding: 0.1rem;
+}
+
+.columnLeft {
+  background-color: rgb(196, 195, 174);
+  height: 30rem;
+  padding-bottom: 2rem;
+}
+
+.columnRight {
+  background-color: rgb(247, 236, 236);
+  height: 30rem;
+  padding-bottom: 2rem;
 }
