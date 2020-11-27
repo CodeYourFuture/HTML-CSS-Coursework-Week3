@@ -1,1 +1,483 @@
-/*  Add your styling here */
+/* CSS STYLE CODES BELOW */
+
+/*
+* 
+* STYLE RESET
+*
+*/
+body,
+header,
+main,
+footer,
+section,
+article,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+li,
+figure,
+img,
+figcaption,
+p,
+a,
+:before,
+:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+/*
+* 
+* GENERAL STYLES
+*
+*/
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  width: 100%;
+  margin: 0 auto;
+  border: 1px solid #e9e3e3;
+  background-color: #fcf8f8;
+}
+
+.content,
+.nav-links,
+div.cake-types {
+  display: flex;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*
+*
+* HEADER STYLES
+*
+*/
+.header-content {
+  flex-direction: column;
+  background-color: rgb(201, 42, 42);
+  z-index: 9999;
+}
+
+.header-content div:first-child {
+  display: flex;
+  width: 100%;
+  height: 5rem;
+  border-bottom: 1px solid rgb(184, 181, 181);
+  color: #fcf8f8;
+  z-index: 9999;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: auto;
+  max-width: 5rem;
+  border-bottom: 1px solid rgb(184, 181, 181);
+}
+
+.site-name {
+  font-size: 2em;
+  margin-left: 5px;
+}
+
+.menu:after {
+  content: "\2630";
+  font-size: 3rem;
+  margin-right: 0.75rem;
+}
+
+.primary-nav-links {
+  flex-direction: column;
+  width: 75%;
+  height: 0em;
+  transform: translate(-110%, 0);
+  -webkit-transform: translate(-110, 0);
+  transition: transform 0.3s ease;
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: 500;
+  background-color: #fcf8f8;
+  z-index: -9999;
+}
+
+.primary-nav ul.open {
+  transform: translate(0, 0);
+  -webkit-transform: translate(0, 0);
+}
+
+.primary-nav .link {
+  padding: 20px 0;
+  border-bottom: 1px solid rgb(184, 181, 181);
+  border-right: 1px solid rgb(184, 181, 181);
+  background-color: #fcf8f8;
+  font-size: 1.5rem;
+}
+
+.primary-nav .link a {
+  color: #000;
+  color: rgb(201, 42, 42);
+  background-color: #fcf8f8;
+}
+
+.primary-nav li.active,
+.primary-nav li.active a {
+  color: #fcf8f8;
+  background-color: rgb(201, 42, 42);
+}
+
+/*
+*
+* MAIN CONTENT STYLES
+*
+*/
+main {
+  margin-top: 3em;
+}
+.main-content {
+  flex-direction: column;
+  justify-content: center;
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* Page Intro Styles */
+.intro {
+  padding-left: 10%;
+}
+
+.page-header {
+  margin-bottom: 1rem;
+  color: rgb(201, 42, 42);
+}
+
+.page-intro {
+  font-size: 1.25em;
+  font-weight: 400;
+}
+
+/* Cake Display Styles */
+.cake {
+  display: block;
+  width: 100%;
+  margin: 2.5em auto 0;
+  border: 3px dimgrey;
+}
+
+.cake > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  width: inherit;
+}
+
+.cake-image {
+  width: 80%;
+  height: 220px;
+}
+
+.previous:before {
+  content: "\003C";
+  font-size: 3rem;
+  color: dimgrey;
+}
+
+.next:before {
+  content: "\003E";
+  font-size: 3rem;
+}
+
+.cake div:last-child {
+  margin: 0 auto;
+}
+
+.cake-name {
+  font-size: 1.5em;
+  font-weight: 600;
+  width: 80%;
+  margin: 15px auto 5px;
+  color: rgb(201, 42, 42);
+}
+
+.cake-details {
+  font-size: 1.15em;
+  font-weight: 300;
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Cake Showcase Styles */
+.cake-types {
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  border: 2px solid grey;
+  margin-top: 30px;
+  padding: 5px 0px;
+}
+
+.cake-types:before {
+  content: "\003C";
+  font-size: 2em;
+  color: dimgrey;
+}
+
+.cake-types:after {
+  content: "\003E";
+  font-size: 2rem;
+}
+
+.cake-thumbnail {
+  width: 20%;
+  height: 4.5rem;
+  margin: auto 0;
+  text-align: center;
+  font-weight: 500;
+}
+
+.cake-types .active {
+  width: 25%;
+  height: 5rem;
+}
+#cake-1 {
+  background-image: url("img/cupcake-1.jpg");
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fcf8f8;
+}
+
+#cake-2 {
+  background-image: url("img/birthday-cake-1.jpg");
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#cake-3 {
+  background-image: url("img/wedding-cake-1.jpg");
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#cake-4 {
+  background-image: url("img/christmas-cake-1.jpg");
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*
+*
+* FOOTER STYLES
+*
+*/
+footer {
+  margin-top: 6em;
+}
+.footer-content {
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  padding: 5px;
+  background-color: lightslategrey;
+}
+
+.secondary-nav {
+  margin: 0 auto;
+}
+
+.secondary-nav-links {
+  justify-content: center;
+}
+
+.secondary-nav link,
+.secondary-nav .link a {
+  padding: 0px 15px;
+}
+
+.secondary-nav .link a,
+.footer-content p {
+  color: #000;
+}
+
+.footer-content p {
+  padding: 10px 0 0;
+}
+
+/*
+*
+* RESPONSIVE DESIGN
+*
+*/
+@media screen and (min-width: 481px) {
+  h1.site-name {
+    font-size: 2.5em;
+  }
+}
+
+@media screen and (min-width: 551px) {
+  body {
+    width: 80%;
+  }
+
+  .content {
+    width: inherit;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .header-content div:first-child,
+  .logo img {
+    border-bottom: none;
+  }
+
+  .header-content .menu {
+    display: none;
+  }
+
+  .primary-nav {
+    width: 100%;
+  }
+
+  .primary-nav-links {
+    flex-direction: row;
+    justify-content: space-around;
+    transform: translate(0, 0);
+    -webkit-transform: translate(0, 0);
+    width: inherit;
+    height: initial;
+    background-color: #fcf9f9;
+    border-top: 0.5px solid rgb(161, 159, 159);
+    border-bottom: 0.5px solid rgb(161, 159, 159);
+  }
+
+  .primary-nav .link,
+  .primary-nav .link a {
+    background-color: #fcf9f9;
+    font-size: 1.25em;
+  }
+
+  /*
+  * MAIN STYLES
+  */
+  .cake {
+    display: none;
+  }
+
+  .cake-types {
+    justify-content: space-around;
+    flex-flow: row wrap;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+  }
+
+  .cake-types:before,
+  .cake-types:after {
+    content: none;
+  }
+
+  .cake-thumbnail,
+  .cake-types .active {
+    width: 350px;
+    height: 250px;
+    margin: 20px;
+  }
+
+  .cake-thumbnail {
+    font-size: 2em;
+  }
+
+  .cake-types .active {
+    padding: 5px;
+    border: 2px dimgrey;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    width: 100%;
+  }
+
+  .content {
+    width: inherit;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .header-content {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .site-name {
+    font-size: 1.5em;
+  }
+  .primary-nav {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  .primary-nav-links {
+    border: none;
+    background-color: rgb(201, 42, 42);
+  }
+
+  .primary-nav .link,
+  .primary-nav .link a {
+    padding: 5px;
+    border: none;
+    color: #fcf9f9;
+    font-size: 1.25rem;
+    background-color: rgb(201, 42, 42);
+  }
+
+  .primary-nav li.active,
+  .primary-nav li.active a {
+    color: rgb(201, 42, 42);
+    background-color: #fcf9f9;
+  }
+
+  /*
+  * MAIN STYLES
+  */
+
+  .intro {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  .cake-thumbnail,
+  .cake-types .active {
+    width: 300px;
+    height: 200px;
+    margin: 15px 0 15px 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .content {
+    width: 80%;
+  }
+}
