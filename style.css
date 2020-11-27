@@ -41,15 +41,15 @@ background-color: rgb(238, 206, 225);
 .nav_items a{
 text-decoration: none;
 background-color: rgb(233, 206, 238);
-margin-top: 2rem;
-/* padding: 2rem; */
+margin: 0rem 1rem 0rem 0rem;
+/* padding: 1rem; */
 color: mediumvioletred;
 
 }
 .nav_items li{
-padding: 2rem;
+padding: 1rem;
 float: left;
-width: 18%;
+width: 20%;
 }
 .article{
 max-width: 100%;
