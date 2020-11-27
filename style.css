@@ -1,3 +1,9 @@
+@media only screen and (max-width: 414px) {
+  [class="cakeFace"] {
+    padding: 1.5rem;
+  }
+}
+
 .bannerimage {
   display: flex;
   justify-content: center;
