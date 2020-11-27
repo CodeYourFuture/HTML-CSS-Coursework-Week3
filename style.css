@@ -68,4 +68,16 @@
     width: 100px; 
     background-color: gray; 
 }
-
+.footer-bar{
+    background-color: gray;
+    color: black; 
+    display: flex;
+    justify-content: space-around;
+    
+}
+.footer-list ul{
+    display: flex; 
+    background-color: gray;
+    justify-content: flex-end;
+    list-style-type: none;
+}
