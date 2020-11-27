@@ -1,1 +1,160 @@
 /*  Add your styling here */
+
+body {
+  background-color: rgb(231, 219, 219);
+}
+.logo-and-name {
+  background-color: rgb(248, 242, 242);
+  display: flex;
+  padding-left: 1%;
+  padding-right: 1%;
+  margin-left: 0.1%;
+  margin-right: 0.1%;
+}
+.logo-and-name img {
+  width: 120px;
+  height: auto;
+  align-self: center;
+}
+.logo-and-name h1 {
+  font-size: 2.7rem;
+  font-family: Tangerine;
+  color: rgb(228, 92, 58);
+  transform: rotate(10deg);
+}
+.logo-and-name h2 {
+  font-size: 2rem;
+  font-family: tangerine;
+  color: rgb(253, 128, 226);
+  transform: rotate(10deg);
+}
+.navigation {
+  background-color: rgb(80, 76, 76);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.3%;
+  padding: 2%;
+}
+.navigation a {
+  text-decoration: none;
+  color: rgb(240, 104, 13);
+  font-size: 1.3rem;
+  font-size: 1.5rem;
+}
+.navigation a:hover {
+  color: rgb(243, 78, 106);
+}
+/*flex-box*/
+.flex-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 3%;
+}
+.flex-box .advert-section {
+    width: 50%;
+    border-radius: 5px;
+}
+.flex-box .advert-section p {
+    text-align: center;
+    color: #ff6600;
+    font-size: large;
+}
+/*styling individual p tags*/
+.flex-box .advert-section p:first-child {
+    transform: rotate(-10deg);
+    color: rgb(226, 53, 53);
+    text-align: left;
+}
+.flex-box .advert-section p:nth-child(2) {
+  color: green;
+  transform: rotate(-5deg);
+}
+.flex-box .advert-section p:nth-child(3) {
+  color: rgb(28, 64, 224);
+  transform: rotate(-5deg);
+  text-align: left;
+}
+.flex-box .advert-section p:nth-child(4) {
+  color: rgb(155, 44, 147);
+  transform: rotate(-5deg);
+}
+.flex-box .advert-section p:nth-child(5) {
+  color: green;
+  transform: rotate(-5deg);
+  text-align: right;
+}
+
+/*slider section */
+#slider {
+  overflow: hidden;
+  border-radius: 10px;
+  width: 50%;
+}
+#slider figure {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  animation: 20s slider infinite;
+}
+#slider figure img {
+  float: left;
+  width: 20%;
+}
+@keyframes slider {
+  0% {
+    left: 0;
+  }
+  20% {
+    left: 0;
+  }
+  25% {
+    left: -100%;
+  }
+  45% {
+    left: -100%;
+  }
+  50% {
+      left: -200%;
+  }
+  70% {
+      left: -200%;
+  }
+  75% {
+      left: -300%;
+  }
+  95% {
+      left: -300%;
+  }
+  100% {
+      left: -00%;
+  }
+}
+
+/*footer section*/
+.footer {
+  background-color: rgb(253, 175, 175);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 1000px; /*needs fixing later */
+}
+.footer > a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: black;
+  padding: 1%;
+}
+
+/*media query */
+@media screen and (min-width: 650px) {
+  .logo-and-name {
+    justify-content: space-around;
+  }
+}
+.carosel-inner {
+  height: 35rem;
+}
