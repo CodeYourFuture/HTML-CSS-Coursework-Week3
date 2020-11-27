@@ -3,7 +3,18 @@ body {
   flex-direction: column;
 }
 
-header,
 footer {
-  background: rgb(195, 205, 185);
+  background-color: rgb(195, 205, 185);
+}
+
+nav {
+  background-color: rgb(247, 215, 220);
+}
+
+article {
+  background-color: pink;
+}
+
+aside {
+  background-color: rgb(247, 157, 172);
 }
