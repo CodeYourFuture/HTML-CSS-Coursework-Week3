@@ -110,6 +110,7 @@ a {
   width: 75%;
   height: 0em;
   transform: translate(-110%, 0);
+  -webkit-transform: translate(-110, 0);
   transition: transform 0.3s ease;
   text-align: center;
   font-size: 1.2em;
@@ -120,6 +121,7 @@ a {
 
 .primary-nav ul.open {
   transform: translate(0, 0);
+  -webkit-transform: translate(0, 0);
 }
 
 .primary-nav .link {
@@ -362,6 +364,7 @@ footer {
     flex-direction: row;
     justify-content: space-around;
     transform: translate(0, 0);
+    -webkit-transform: translate(0, 0);
     width: inherit;
     height: initial;
     background-color: #fcf9f9;
@@ -371,10 +374,8 @@ footer {
 
   .primary-nav .link,
   .primary-nav .link a {
-    padding: 5px;
-    border: none;
     background-color: #fcf9f9;
-    font-size: 1.25rem;
+    font-size: 1.25em;
   }
 
   /*
@@ -439,9 +440,6 @@ footer {
     margin-bottom: auto;
   }
   .primary-nav-links {
-    flex-direction: row;
-    justify-content: space-around;
-    transform: translate(0, 0);
     border: none;
     background-color: rgb(201, 42, 42);
   }
