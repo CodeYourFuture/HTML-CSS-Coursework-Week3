@@ -1,8 +1,21 @@
 /*  Add your styling here */
-
-body {
-  background-color: white;
+/*body and html*/
+body,
+html {
+  background-color: rgb(240, 236, 231);
+  width: 100%;
 }
+/*header*/
+header {
+  background: grey;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1;
+}
+/*logo and image*/
 .logo-and-name {
   background-color: rgb(248, 242, 242);
   display: flex;
@@ -11,16 +24,24 @@ body {
   margin-left: 0.1%;
   margin-right: 0.1%;
 }
+/*setting dimensions for logo image*/
 .logo-and-name img {
   width: 120px;
   height: auto;
   align-self: center;
 }
+/*styling choice for banner*/
 .logo-and-name h1 {
   font-size: 2.7rem;
   font-family: Tangerine;
   color: rgb(228, 92, 58);
   transform: rotate(10deg);
+}
+/*h1 hover*/
+.logo-and-name h1:hover {
+  color: black;
+  animation-delay: 2s;
+  transform: rotate(-10deg);
 }
 .logo-and-name h2 {
   font-size: 2rem;
@@ -28,6 +49,12 @@ body {
   color: rgb(253, 128, 226);
   transform: rotate(10deg);
 }
+/*h2 hover*/
+.logo-and-name h2:hover {
+  color: #611f16;
+  transform: rotate(-10deg);
+}
+/*navigation*/
 .navigation {
   background-color: rgb(80, 76, 76);
   display: flex;
@@ -35,13 +62,16 @@ body {
   align-items: center;
   margin: 0.3%;
   padding: 2%;
+  width: 100%;
 }
+/*navigation element*/
 .navigation a {
   text-decoration: none;
   color: rgb(240, 104, 13);
   font-size: 1.3rem;
   font-size: 1.5rem;
 }
+/*navigation hover*/
 .navigation a:hover {
   color: rgb(243, 78, 106);
 }
@@ -51,20 +81,23 @@ body {
   flex-direction: row;
   justify-content: space-between;
   gap: 10px;
-  margin-top: 3%;
+  margin-top: 200px;
+  position: relative;
 }
+/*advertisment*/
 .flex-box .advert-section {
   width: 50%;
   background: rgb(243, 243, 227);
   border-radius: 10px;
-  border: 2px dotted white;
+  border: 5px solid rgb(248, 238, 238);
 }
+/*styling p tags*/
 .flex-box .advert-section p {
   text-align: center;
   color: #ff6600;
   font-size: large;
 }
-/*styling individual p tags*/
+/*styling individual p tags by selecting every child*/
 .flex-box .advert-section p:first-child {
   transform: rotate(-10deg);
   color: rgb(226, 53, 53);
@@ -113,6 +146,7 @@ body {
   float: left;
   width: 20%;
 }
+/*animation*/
 @keyframes slider {
   0% {
     left: 0;
@@ -147,11 +181,9 @@ body {
   font-family: tangerine;
   font-size: 3.7rem;
   text-align: center;
-  background: rgb(255, 254, 254);
   color: #611f16;
   margin-left: 10%;
   margin-right: 10%;
-  margin-top: 10%;
 }
 
 /*section image-gallery*/
@@ -167,29 +199,51 @@ body {
   height: 200px;
   width: 270px;
 }
+/*order section*/
+.order {
+  text-align: center;
+  /*margin-top: 300%;*/
+}
 /*footer section*/
 .footer {
-  background-color: rgb(182, 176, 176);
+  background-color: rgb(66, 64, 64);
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  margin-top: 1000px; /*needs fixing later */
+  align-items: center;
+  margin-top: 100%;
 }
-.footer > a {
+.footer > p {
+  color: white;
+}
+.footer > p > a {
   text-decoration: none;
   font-size: 1.2rem;
-  color: black;
+  color: rgb(241, 95, 11);
   padding: 1%;
 }
-/*media query */
+/*media query for devices with different sizes */
+/*the order class container will have different margin for devices with max-width:450px*/
+@media screen and (max-width: 450px) {
+  .order {
+    margin-top: 340%;
+  }
+  /*media query for devices with bigger sizes than 600px*/
+}
+@media screen and (min-width: 600px) {
+  .order {
+    margin-top: 100%;
+  }
+}
+/*media query for devices wit min-width 768px*/
 @media screen and (min-width: 768px) {
   .logo-and-name {
     justify-content: space-around;
   }
   .flex-box {
-  width: 80%;
-  margin-left: 10%;
-  margin-right: 10%;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
   }
   #slider figure > img {
     height: 500px;
@@ -198,7 +252,6 @@ body {
     font-size: 2rem;
   }
   .image-gallery-h1 {
-    background: rgb(252, 231, 231);
   }
   .image-gallery {
     gap: 10px;
@@ -208,5 +261,8 @@ body {
   .image-gallery img {
     height: 350px;
     width: 350px;
+  }
+  .order {
+    margin-top: 35%;
   }
 }

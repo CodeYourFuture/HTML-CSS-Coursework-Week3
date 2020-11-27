@@ -16,6 +16,7 @@
 
 <body>
   <!-- Add your markup here -->
+  <!--header-->
   <header>
     <div class="logo-and-name">
       <img class="logo" img src="images/cupcake1.jpg" alt="">
@@ -24,50 +25,62 @@
     </div>
     <nav class="navigation">
       <a href="#">Home</a>
-      <a href="#">Wedding</a>
-      <a href="#">Birthday</a>
-      <a href="#">Vegan</a>
+      <a href="#Gallery">Gallery</a>
+      <a href="#order">Order</a>
+      <a href="#contact-us">Contact Us</a>
     </nav>
   </header>
-  <section class="flex-box">
+  <!--home section-->
+  <section id="Home" class="flex-box">
     <div class="advert-section">
-        <p>All Cakes</p>
-        <p>For Wedding</p>
-        <p>Birthday</p>
-        <p>Christmas</p>
-        <p>Celebration</p>
+      <p>All Cakes</p>
+      <p>For Wedding</p>
+      <p>Birthday</p>
+      <p>Christmas</p>
+      <p>Celebration</p>
     </div>
-
     <div id="slider">
+      <!--slider-->
       <figure>
-        <img src="images/birthday-cake.jpg"  width="" alt="">
+        <img src="images/birthday-cake.jpg" width="" alt="">
         <img src="images/wedding-cake.jpg" width="" alt="">
         <img src="images/logo-image.jpg" width="" alt="">
         <img src="images/simple -cake.jpg" width="" alt="">
         <img src="images/birthday-cake.jpg" width="" alt="">
       </figure>
-
     </div>
   </section>
-  <h2 class="image-gallery-h1">Check out Our Cake gallery</h2>
-  <section class="image-gallery">
-    <img src="images/gallery image1.jpg" alt="" >
-    <img src="images/gallery image5.jpg" alt="" >
-    <img src="images/gallery image2.jpg" alt="" >
-    <img src="images/gallery image3.jpg" alt="" >
-    <img src="images/gallery image4.jpg" alt="" >
-    <img src="images/gallery image6.jpg" alt="" >
-    <img src="images/gallery image7.jpg" alt="" >
-    <img src="images/cupcake.jpg" alt="">
-
+  <section> <!--h1 check our gallery-->
+    <h2 class="image-gallery-h1">Check out Our Cake gallery</h2>
   </section>
-
-
-  <footer>
+   <!--gallery section-->
+  <section id="Gallery" class="image-gallery">
+    <img src="images/gallery image1.jpg" alt="">
+    <img src="images/gallery image5.jpg" alt="">
+    <img src="images/gallery image2.jpg" alt="">
+    <img src="images/gallery image3.jpg" alt="">
+    <img src="images/gallery image4.jpg" alt="">
+    <img src="images/gallery image6.jpg" alt="">
+    <img src="images/gallery image7.jpg" alt="">
+    <img src="images/cupcake.jpg" alt="">
+  </section>
+   <!--order section-->
+  <section id="order" class="order">
+    <h1>Ordering Is Made Easy</h1>
+    <p>Order By Calling</p>
+    <p>Order Online</p>
+    <h1>Delivery Is Fast</h1>
+    <p>Our Drivers are Fast and Responsible</p>
+  </section>
+ <!--footer-->
+  <footer id="contact-us">
     <div class="footer">
-      <a href="#">Email:Contactus@gmail.com</a>
-      <a href="#">Tele:07000000000</a>
-      <a href="#">Map</a>
+      <p>Email: <a href="#">contactus@gmail.com</a></p>
+      <p>Telephone: <a href="#"> 07000000000</a></p>
+      <a href="#"><iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2430.0761317913298!2d-1.9011466843543643!3d52.4777572471116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487096f1df0e0571%3A0xedfa487a0f2ea32e!2sBirmingham%20New%20Street!5e0!3m2!1sen!2suk!4v1606494053486!5m2!1sen!2suk"
+          width="150" height="50" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+          tabindex="0"></iframe></a>
     </div>
   </footer>
 </body>
