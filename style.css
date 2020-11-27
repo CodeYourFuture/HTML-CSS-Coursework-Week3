@@ -1,5 +1,4 @@
 body, html {
-     
     max-width: 100%;
 }
 
@@ -7,6 +6,8 @@ body, html {
     background-color: antiquewhite;
     width: 100%;
     display: flex;
+    justify-content: space-between;
+    flex-flow: row nowrap;
     
 }
 
@@ -21,84 +22,192 @@ body, html {
     font-size: 50%;
 }
 .header img{
-        min-width: 20px;
-        max-width: 100px;
+        min-width: 3rem;
+        max-width: 8rem;
         height: auto;
-        width: 20%;
         object-fit: contain;
    
 }
 .nav{
     background-color:antiquewhite;
-    width:97%;
+    width:100%;
     display:flex;
     justify-content: center;
-    list-style: none;
+    list-style-type: none;
+    
+}
+.nav, ul{
+    display:flex;
+    flex-direction: column;
+    width: 100%;
     
 }
 
-.nav a {
+.nav, li{
+    background-color: rgb(151, 106, 106);
+    color: rgb(226, 220, 220);
+    border-bottom: 0.5rem;
+   
 
+}
+.nav a {
+    text-decoration: none;
     padding: 50px;
+    color: white;
+   
 
 }
 
 .home{
-    background-color: rgb(173, 132, 132);
+    background-color: rgb(151, 106, 106);
     color: rgb(226, 220, 220);
 }
 
 .section1{
+    background-color: antiquewhite;
     width: 100%;
     display: flex;
-    text-align: center;
-    font-size: 80%;
+    font-size: .7rem;
     justify-content: space-around;
-    /* padding: 50px; */
+    flex-direction: column;
+    margin-bottom:1rem;
+    
 }
 
-.section1 img{
-    width: 18%;
-
+.cake-text{
+    width: 70%;
+    text-align: justify;
+    /* margin: 0rem 0rem 0rem 30rem; */
 }
 
-.container{
-    width: 100%;
-    display: flex;
-
-    /* flex-wrap: wrap; */
-}
+/* .cake{
+    width: 30%;
+} */
 
 .vanilla{
     width: 100%;
+    padding: 1rem;
+
+}
+.chocolate{
+    width: 100%;
+    padding: 1rem;
+
+}
+.peanut{
+    width:100%;
+    padding: 1rem;
+    height: 100%;
+    
 }
 
 .fruit{
     width: 100%;
+    padding: 1rem;
+    
    
 }
 
-.container img{
+.container, img{
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-bottom: 1rem;
 
  }
 
  .footer ul{
     width:100%;
     display:flex;
-    justify-content: center;
+    justify-content: space-around;
+    margin-top: 5rem;
     list-style: none;
-    
+    flex-direction: row;
  }
+
 
  .footer a{
-     padding: 60px;
+     color: white;
+     text-decoration: none;
+     
  }
 
-@media screen and (min-width: 450px){
-    .vanilla{
+ @media screen and (min-width: 768px){
+    .nav{
+        width: 100%;
+   }
+   .header{
+       width: 100%;
+       justify-content: space-around;
+   }
+   .nav, ul{
+       display: flex;
+       flex-direction: column;
+
+   }
+
+   .section1{
+       display: flex;
+       flex-direction: column;
+       width: 100%;
+       margin: 1rem;
+       
+   }
+
+   .container{
+       display: inline;
+       float: left;
+       /* flex-flow: column wrap ; */
+       width: 100%;
+
+
+   }
+   
+    /* .vanilla{
+
+        width: 50%;
+    }
+    .chocolate{
+        width: 50%
+    }
+
+    .peanut{
+        width: 50%;
+
+    }
+
+    .fruit{
+        width: 50%;
+    } */
+
+    /* .header img{
+        width: 65%;
+    } */
+@media screen and (min-width: 1000px){
+    .nav{
+         width: 100%;
+    }
+
+    .nav, ul{
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    .section1{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+
+    }
+    /* .vanilla{
         width: 25%;
     }
     .chocolate{
@@ -116,26 +225,7 @@ body, html {
 
     .header img{
         width: 70%;}
-}
+} */
 
-@media screen and (min-width: 550px){
-    .vanilla{
-        width: 50%;
-    }
-    .chocolate{
-        width: 60%
-    }
 
-    .peanut{
-        width: 33%;
-
-    }
-
-    .fruit{
-        width: 40;
-    }
-
-    .header img{
-        width: 65%;
-    }
 }
