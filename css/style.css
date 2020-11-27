@@ -303,11 +303,16 @@ ul li a {
     
 }
 
+.carousel img {
+    width: calc(100% - 2rem);
+}
+
 .row-1 {
     display: flex;
     justify-content: space-between;
     margin-left: 32px;
 }
+
 
 /* end main:section 1 */
 
@@ -316,6 +321,10 @@ ul li a {
 .row2 {
     display: flex;
     flex-wrap: wrap;
+}
+
+.row2 img {
+    width: 100%;
 }
 
 .sec2 {
@@ -346,30 +355,41 @@ ul li a {
 
 /* @media screen */
 
-/* For mobile phones: */
+@media only screen and (max-width:350px) {
+    image {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        align-content: center;
+    }
 
-[class*="col-"] {
-    width: 100%;
+
+ /*  For devices smaller than 350px: */ 
+   
+  body {
+    background-image: url('images/cake-1.jpeg' 'images/cakes-2.jpeg' 'images/cakes-3.jpeg' 'images/cake-4.jpeg');
+  }
+
 }
 
-  /* Extra small devices (phones, 600px and down) */
- @media only screen and (max-width: 600px) {...
+/* For devices 400px and larger: */
+@media only screen and (min-device-width: 400px) {
+  body {
+    background-image: url('images/cake-1.jpeg');
+  }
 }
 
-  /* Small devices (portrait tablets and large phones, 600px and up) */
-     @media only screen and (min-width: 600px) {...
-}
-
-    /* Medium devices (landscape tablets, 768px and up) */
-   @media only screen and (min-width: 768px) {...
-}
-
-   /* Large devices (laptops/desktops, 992px and up) */
-   @media only screen and (min-width: 992px) {...
-}
-
-  /* Extra large devices (large laptops and desktops, 1200px and up) */
-  @media only screen and (min-width: 1200px) {...
+@media only screen and (max-width:767px) {
+    .info, .sec-1a {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+    .carousel, .row-1 {
+        margin-left: 0;
+    }
+    .row-1 img {
+        width: 25%;
+    }
 }
 
 
