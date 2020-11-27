@@ -1,3 +1,8 @@
+html {
+    height: 100%;
+    width: 100%;
+}
+
 body{
     background-color: #D2691E;
     font-family: Times;
@@ -8,28 +13,25 @@ body{
 
 }
 
-#introduction aside {
-    margin-right: 50%;
-    
-   
-
+#introduction {
+    display: flex;
 }
-
 
 .slider{
     display: flex;
-    position: absolute;;
     justify-content: space-between;
-    right: 0px;
     width: 500px;
-    
 }
 
 header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
 
+.main-img {
+    height: 250px;
+    width: 300px;
 }
 
 #header-img {
