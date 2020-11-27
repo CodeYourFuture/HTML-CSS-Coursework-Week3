@@ -8,16 +8,17 @@ body{
 
 }
 
-#introduction{
+#introduction aside {
     margin-right: 50%;
-    display: flex;
+    
+   
 
 }
 
 
 .slider{
     display: flex;
-    position: absolute;
+    position: absolute;;
     justify-content: space-between;
     right: 0px;
     width: 500px;
@@ -47,6 +48,11 @@ nav ul{
     justify-content: space-between;
 }
 
+nav ul li{
+    background: white;
+    width: 70px;
+    border-radius: 20px;
+}
 
 .main-footer h3 {
     display: flex;
@@ -54,10 +60,8 @@ nav ul{
     text-align: center;
 }
 
-.footer p{
-    margin: 0 auto;
-    width: 50%;
-    text-align: center;
+.main-footer p {
+    justify-content: flex-end;
 
 }
 
@@ -65,9 +69,5 @@ nav ul{
 
 /* media queries*/
 
-@media (min-width: 50rem) {
-    body {
-      width: 45rem;
-    }
-	    
+
 
