@@ -3,29 +3,32 @@ body{
     width:100%;
     height:100%;
     /* padding: 50rem; */
-    background-color: rgb(146, 32, 158);
+    background-color: rgb(69, 2, 77);
 }
 /* main{width:100%;} */
 .header{
     display: flex;
-    background-image: url("https://img.favpng.com/21/7/11/cupcake-birthday-cake-desktop-wallpaper-food-png-favpng-X1PWXah72hxg6hcLEuF7NXs7A.jpg");
+    background-image: url("https://images.unsplash.com/photo-1551404973-761c83cd8339?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=751&q=80");
     max-width:100%;
     height:13rem;
-    justify-content: space-around;
-    background-color: rgba(171, 236, 215, 0.705);
+    justify-content: space-between;
+    /* background-color: rgba(196, 65, 236, 0.1); */
     padding: 0rem 5rem 0rem 5rem;
     margin-bottom: 1rem;
+    background-size: contain;
+    /* opacity: 0.1; */
 }
-background-image{
+/* background-image{
     width:100%;
-}
+    
+} */
 .headerlogo{
-    max-height: 9rem;
-    border-radius: 30%;
+    max-height: 12rem;
+    border-radius: 50%;
     /* float:right; */
 }
 h3, h2{
-    color: rgb(158, 68, 125);
+    color: rgb(117, 12, 79);
     text-align: center;
     font-style: oblique;
 }
@@ -166,6 +169,9 @@ float:left;}
 width:70%;
 height: 70%;
 margin:auto;
+} */
+/* .imgbdr{
+    width: 25%;
 } */
 .img1{
     display:flex;
