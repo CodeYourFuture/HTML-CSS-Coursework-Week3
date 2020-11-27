@@ -20,8 +20,26 @@
     background-color: gray;
     justify-content: space-between;
 }
-.main{
-    border: 20px;
-    height: 30px;
-    width: 50px; 
+.container{
+    display: flex; 
+    justify-content: flex-end;
+    flex-direction: row;
+    
+}
+.box-1{
+    display: inline;
+    align-self: start;
+    flex-direction: column;
+    margin: 200px; 
+
+}
+.box-2{
+    display: inline-block;
+    justify-content: baseline; 
+
+}
+.img-list ul{
+    display: inline;
+    align-items: ; 
+justify-content: column;
 }
