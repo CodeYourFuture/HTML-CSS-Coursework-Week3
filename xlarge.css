@@ -1,0 +1,32 @@
+/*
+ *
+ * Styles applied when the viewport width is greater than or equal to 1000px
+ *
+*/
+
+html {
+  background-color: #714d49;
+  background-color: #cb9d8d;
+}
+
+body {
+  width: 1000px;
+  margin: auto;
+}
+
+main {
+  padding: 3rem;
+  flex-direction: column;
+}
+
+.intro, .weddingCakes, .birthdayCakes, .festiveFavourites {
+  width: 70%;
+}
+
+.intro, .birthdayCakes {
+  align-self: flex-end;
+}
+
+.birthdayCakes {
+  flex-direction: row-reverse;
+}

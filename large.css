@@ -1,0 +1,14 @@
+/*
+ *
+ * Styles applied when the viewport width is greater than or equal to 800px
+ *
+*/
+
+.navBar {
+  width: 800px;
+  margin: auto;
+}
+
+.intro, .weddingCakes, .birthdayCakes, .festiveFavourites {
+  width: 46%;
+}

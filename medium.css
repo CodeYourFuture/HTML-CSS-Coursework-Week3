@@ -1,0 +1,27 @@
+/*
+ *
+ * Styles applied when the viewport width is greater than or equal to 550px
+ *
+*/
+
+.header {
+  justify-content: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+.navItem {
+  font-size: 1.25rem;
+}
+
+section p {
+  max-width: 60ch;
+  margin: auto;
+  font-size: 1.25rem;
+}

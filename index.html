@@ -5,12 +5,107 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Responsive Cake webpage</title>
-    <!-- Add a link to your css file here -->
+    <title>Delish Cakes</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" media="screen and (min-width: 550px)" href="medium.css">
+    <link rel="stylesheet" media="screen and (min-width: 800px) " href="large.css">
+    <link rel="stylesheet" media="screen and (min-width: 1000px)" href="xlarge.css">
 </head>
 
 <body>
-    <!-- Add your markup here -->
+    <header class="header">
+        <div class="logoImageContainer">
+            <img class="logoImage" src="images/cake-logo-3.jpg">
+        </div>
+        <h1 class="companyName">
+            Delish Cakes
+        </h1>
+    </header>
+    <nav>
+        <ul class="navBar">
+            <li class="navItem"><a class="navLink" href="#weddingCakes">Wedding Cakes</a></li>
+            <li class="navItem"><a class="navLink" href="#birthdayCakes">Birthday Cakes</a></li>
+            <li class="navItem"><a class="navLink" href="#festiveFavourites">Festive Favourites</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="intro">
+            <p>
+                A special occasion deserves to be marked, and there’s no better way than with one of our bespoke celebration cakes. A
+                landmark birthday, welcoming a new member of the family, celebrating an anniversary – whatever the happy occasion, we
+                can create a cake that will make it even more delightful.
+            </p>
+            <p>
+                Choose from the selection of the best celebration cakes in Wolverhampton below or contact us to commission a bespoke design.
+            </p>
+        </section>
+        <section class="weddingCakes">
+            <h2 class="sectionHeading">
+                Wedding Cakes
+            </h2>
+            <div class="imageContainer">
+                <button class="slider-button" onclick="previousWeddingCake()"> &lt; </button>
+                <img id="weddingCakeImage" src="images/engagement-cake.jpg"
+                    alt="poster image">
+                <button class="slider-button" onclick="nextWeddingCake()"> &gt </button>
+            </div>
+            <p class="sectionContent">
+                Your wedding is an exceptional day, and your wedding cake should be equally exceptional. Whether you’re having a small,
+                intimate wedding or a more lavish event, we can craft the perfect cake to complement your style and your celebration.
+            </p>
+        </section>
+        <section class="birthdayCakes">
+            <h2 class="sectionHeading">
+                Birthday Cakes
+            </h2>
+            <!-- <div class="imageContainer">
+                <img class="birthdayCakeImage" src="images/birthday-cake.jpg">
+            </div> -->
+            <div class="imageContainer">
+                <button class="slider-button" onclick="previousBirthdayCake()"> &lt; </button>
+                <img id="birthdayCakeImage" src="images/birthday-cake.jpg" alt="poster image">
+                <button class="slider-button" onclick="nextBirthdayCake()"> &gt </button>
+            </div>
+            <p class="sectionContent">
+                No birthday party is complete without an iconic celebration cake. Each of our luxury cakes are made with you in mind, from every ingredient to the final finishing touches and mouthwatering flavour.
+            </p>
+        </section>
+        <section class="festiveFavourites">
+            <h2 class="sectionHeading">
+                Festive Favourites
+            </h2>
+            <!-- <div class="imageContainer">
+                <img class="assortmentsImage" src="images/assortments.jpg">
+            </div> -->
+            <div class="imageContainer">
+                <button class="slider-button" onclick="previousAssortment()"> &lt; </button>
+                <img id="assortmentsImage" src="images/assortments.jpg" alt="poster image">
+                <button class="slider-button" onclick="nextAssortment()"> &gt </button>
+            </div>
+            <p class="sectionContent">
+                What better way to celebrate this festive season than with a collection of our unique, scrumptious festive assortments made specially for the occasion.
+            </p>
+        </section>
+    </main>
+
+    <hr>
+    
+    <footer>
+        <p class="footerContent">
+            Join us on
+        </p>
+        <ul class="socialIcons">
+            <li class="icon"><a href="#socialIcons"><i class="fa fa-twitter"></i></a></li>
+            <li class="icon"><a href="#socialIcons"><i class="fa fa-facebook"></i></a></li>
+            <li class="icon"><a href="#socialIcons"><i class="fa fa-instagram"></i></a></li>
+        </ul>
+        <p class="copyright">
+            © Karma Mobility, Inc.
+        </p>
+    </footer>
+
+    <script type="text/javascript" src="script.js"></script>
 </body>
 
 </html>

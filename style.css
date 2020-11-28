@@ -1,1 +1,237 @@
-/*  Add your styling here */
+/*
+ *
+ * Common Styles
+ *
+*/
+body {
+  background-color: #fef4d4;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/*
+ *
+ * Styles applied to the header of the page including the title and logo
+ *
+*/
+.header {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #faece4;
+}
+
+.logoImageContainer {
+  width: 30%;
+  max-width: 10rem;
+}
+
+.logoImage {
+  max-width: 100%;
+  margin: 1rem auto;
+  border-radius: 50%;
+}
+
+.companyName {
+  width: 60%;
+  color: #955c4e;
+  text-align: center;
+  max-width: 30rem;
+}
+
+/*
+ *
+ * Styles applied to the navigation bar of the page
+ *
+*/
+nav {
+  width: 100%;
+  background-color: #faece4;
+}
+
+.navBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.navItem {
+  display: inline-block;
+  padding: 0.5rem;
+  white-space: nowrap; /* to stop the li items from wrapping to next line */
+}
+
+.navLink {
+  color: #955c4e;
+  text-decoration: none;
+}
+
+.navLink:hover {
+  color: #e7a27f;
+}
+
+/*
+ *
+ * Styles applied to the main body of the page, including all the sections
+ *
+*/
+main {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding-top: 2rem;
+}
+
+main section {
+  width: 100%;
+  padding: 1%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*
+ *
+ * Styl applied to the introduction part of the page
+ *
+*/
+.intro {
+  color: #714d49;
+}
+
+/*
+ *
+ * Common Styles applied to the headings of all the sections in the main body of the page
+ *
+*/
+.sectionHeading {
+  width:100%;
+  order: -1;
+  text-align: center;
+  color: #714d49;
+}
+
+/*
+ *
+ * Common Styles applied to all the image containers
+ *
+*/
+.imageContainer {
+  width: 45%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*
+ *
+ * Common Styles applied to the images
+ *
+*/
+#weddingCakeImage, #birthdayCakeImage, #assortmentsImage {
+  max-width: 100%;
+  border-radius: 1rem;
+  margin: 1rem -2.5rem;
+}
+
+/*
+ *
+ * Styling of the slider buttons on the page
+ *
+*/
+.slider-button
+{
+  border-radius: 50%;
+  font-size: 1.5em;
+  background-color: transparent;
+  border-color: transparent;
+  outline: none;
+  z-index: 5;
+  padding: 0.5rem;
+  box-shadow: 0px 10px 15px rgba(0,0,0,0.19);
+}
+
+.slider-button:hover
+{
+  background-color: #733c54;
+  color: white;
+  display: flex;
+}
+
+.sectionContent {
+  width: 50%;
+  color: #8f5648;
+}
+
+hr {
+    width: 60%;
+    border-top: 1px solid #6c384f;
+}
+
+
+/*
+ * 
+ * Styles applied to the footer including the the social media icons
+ *
+*/
+footer {
+    margin-top: 1.5rem;;
+    padding-bottom: 6rem;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1rem;
+    color: #6c384f;
+}
+
+.footerContent {
+    margin: 0.1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.copyright {
+    font-size: 0.9rem;
+    color: #6c384f;
+}
+
+.socialIcons {
+    width: 10%;
+    margin: 0.1rem;
+    padding-right: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
+.icon {
+    width: 33%;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    border: 1px solid #6c384f;
+    border-radius: 50%;
+}
+
+.fa-facebook {
+    color: #6c384f;
+}
+
+.fa-twitter {
+    color: #6c384f;
+}
+
+.fa-instagram {
+    color: #6c384f;
+}
