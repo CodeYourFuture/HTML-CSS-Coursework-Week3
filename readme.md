@@ -1,5 +1,10 @@
 Create a responsive webpage showcasing your cake business
 
+
+
+
+
+
 ## Set up
 1) Fork this repository (so you have a copy of it in your own Github account)
 2) Clone the repository to your computer (so you can access it locally and can add code to it!)
