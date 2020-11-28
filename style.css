@@ -81,5 +81,57 @@ aside {
 .image1 {
     max-width: 100%;
     height: 300px;
-    border-radius: 4%;
+    border-radius: 2%;
+}
+
+
+/* Cakes styles */
+
+.cakes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(174, 123, 240);
+    color: #0a3f35;
+    border-radius: 1%;
+    margin-bottom: 20px;
+}
+
+.cake {
+    text-align: center;
+    max-width: 100%;
+    height: 200px;
+    border-radius: 2px;
+}
+
+.cake:hover {
+    background-color: rgb(214, 196, 214);
+}
+
+.cake-img {
+    width: auto;
+    max-width: 350px;
+    height: auto;
+    max-height: 100%;
+}
+
+figcaption {
+    margin: 1rem;
+}
+
+
+/* footer*/
+
+.footer-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+footer {
+    background-color: rgb(245, 237, 237);
 }
