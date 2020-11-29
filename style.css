@@ -475,9 +475,3 @@ footer {
     margin: 15px 0 15px 0;
   }
 }
-
-@media screen and (min-width: 1024px) {
-  .content {
-    width: 80%;
-  }
-}
