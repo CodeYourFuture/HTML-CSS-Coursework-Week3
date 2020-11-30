@@ -1,36 +1,124 @@
+/********* Reset stylesheet *********/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td, a {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+}
+
+body {
+    background-color: #d1bb9e;
+    line-height:1;
+}
 
 h1 {
     font-family: 'Tangerine', cursive;
     color: rgb(197, 51, 7);
     font-size: 4rem;
 }
+
 p {
     margin-top: 1rem;
     text-align: justify;
     line-height: 1.25rem;
 }
+
 figcaption{
     margin-bottom: 1rem;
     text-align: center;
 }
+
 #logo-image {
-    width: 30%;
+    max-width: 30%;
 }
-#images {
-    border-radius: 5%;
-    border-color: rgb(104, 172, 36);
-    margin-top: 0.3rem;
-}
+
 #nav-list {
     font-size: 2rem;
 }
 
-#pic-div {
-    display: flex;
-    justify-content: space-between;
+.cake-display img {
+    border-radius: 10%;
+    border-color: rgb(104, 172, 36);
+    margin-top: 0.3rem;
 }
 
-/******************* Styling footer ********************/
+.carousel {
+    width: 100%;
+    margin-top: 1rem;
+} 
+
+.carousel .track ul {
+    position: relative;
+    list-style-type: none;
+    padding: 0;
+    height: 400px;
+    width: 100%;
+}
+
+.carousel .track ul li {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 400px;
+    opacity: 0;
+    transition:opacity .7s ease;
+}
+
+.carousel .track ul li:first-child {
+    opacity: 1;
+}
+
+.carousel .track ul li img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5%;
+    border-color: rgb(104, 172, 36);
+}
+
+.slides {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+
+.slides a {
+    border: 2px solid #fff;
+    height: 100px;
+    border-radius: 5%;
+    
+}
+
+.slides a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5%;
+    border-color: rgb(104, 172, 36);
+}
+
+.carousel .track ul li:target {
+    opacity: 1;
+}
+
+.slides a:hover {
+    border: 2px solid yellowgreen;
+}
+
+/*********** Styling footer **************/
 .footer {
     background-color: rgb(101, 160, 199);
     overflow: auto;
@@ -39,10 +127,10 @@ figcaption{
 }
 
 .footer-list {
-display: inline-block;
-list-style: none;
-display: flex;
-justify-content: space-around;
+    display: inline-block;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
 }
 
 #footer-links {
@@ -51,3 +139,12 @@ justify-content: space-around;
 }
 
 
+@media (max-width:600px) {
+    .carousel {
+        width: 100%;
+        margin: 60px auto;
+    }
+    .slides {
+        grid-gap: 10px;
+    }
+}
