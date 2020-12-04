@@ -1,1 +1,218 @@
 /*  Add your styling here */
+#firstrow {
+  padding: 10px;
+  position: relative;
+  height: 130px;
+  background-color: rgb(243, 185, 248);
+}
+
+:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6)
+{
+  font-size: 9pt;
+}
+
+#firstrow span {
+  display: inline-block;
+  position: absolute;
+  bottom: 1em;
+  right: 1em;
+  background-color: rgb(153, 69, 135);
+  color: rgb(218, 243, 253);
+  padding: 10px;
+}
+#firstrow img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  transform: translateX(-50%);
+  position: absolute;
+  left: 50%;
+}
+.navbar {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: center;
+  list-style-type: none;
+  /* border-bottom:2px solid #fff; */
+  background-color: rgb(215, 231, 250); 
+
+}
+/* .navbar li:first-of-type{
+  margin-right: 20px;
+} */
+
+.navbar li:nth-child(1n+2)
+{
+  margin-left: 30px;
+}
+
+.navbar li {
+  padding: 10px;
+  background-color: rgb(111, 194, 250);
+  color: white;
+  position: relative;
+  right: 40px;
+}
+
+.navbar li:hover{
+  color: darkblue;
+}
+.content{
+display: grid;
+grid-template-rows: 80% 20%; 
+grid-template-columns: auto;
+padding: 20px;
+}
+#title {
+  margin-top: 20px;
+  background-color: rgb(132, 12, 143);
+  order: 2;
+  padding: 10px;
+
+}
+#title h2 { 
+  color: rgb(247, 232, 96);
+  
+
+}
+#title h3 {
+color: rgb(247, 232, 96);
+
+}
+#title h5{
+  color: #fff;
+}
+.carousel{
+  display:grid;
+  grid-template-rows:80% 20%;
+  grid-row-gap: 10px;
+  order: 1;
+  
+}
+.currentimage img{
+  max-height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+.slices{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: space-between;
+}
+.slices img{
+  width: 90%;
+  height: 90%;
+  /* object-fit: cover; */
+}
+
+.slices > *{
+  flex-basis: 90%;
+}
+
+.slices div{
+  /* max-height: 100%;
+  height: 100px; */
+}
+
+.cakes{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 50px;
+  flex-wrap: wrap;
+  align-content: stretch;
+  align-items: center;
+}
+
+.cakes .cake{
+  flex-basis: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cake img{
+  width: 100%;
+  object-fit: cover;
+  max-width: 100%;
+}
+
+.cake .txt{
+  padding: 6px;
+  background-color: rgb(116, 6, 101);
+  align-self: stretch;
+  text-align: center;
+  border-radius: 25px 25px 25px 25px;
+  color: #fff;
+  font-family: Helvetica, sans-serif;
+}
+
+body{
+  margin: 0;
+  width: 100%;
+}
+
+@media screen and (min-width:333px)
+{
+  :not(h1):not(h2):not(h3):not(h4):not(h5):not(h6)
+  {
+    font-size: 12pt;
+  }
+}
+
+
+@media screen and (min-width:625px)
+{
+
+  .content{
+    grid-template-columns: 40% 60%; 
+    grid-template-rows: 400px;
+  }
+  #title{
+    order: 1;
+    margin-top: 0;
+  }
+
+  .carousel{
+    order: 2;
+  }
+
+  #firstrow img {
+    width: 110px;
+    height: 100%;
+    object-fit: cover;
+    left: auto;
+    position: static;
+    transform: translateX(0);
+  }
+}
+
+/* 660 max */
+@media screen and (min-width: 448px)
+{
+  .cakes > *:nth-child(2n+2)
+  {
+    margin-left: 30px;
+  }
+
+  .cakes > *:nth-child(1n+3)
+  {
+    margin-top: 30px;
+  }
+  
+}
+
+
+@media screen and (min-width: 661px)
+{
+  .cakes > *:nth-child(2n+2)
+  {
+    margin-left: 0;
+  }
+
+  .cakes > *:nth-child(1n+3)
+  {
+    margin-top: 0;
+  }
+}
