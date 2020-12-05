@@ -1,0 +1,67 @@
+//background(89, 216, 255);
+var drawFish = function(centerX,centerY){                                                   
+    var bodyLength = 118;
+    var bodyHeight = 74;
+    var bodyColor = color(162, 0, 255);
+    noStroke();
+    fill(bodyColor);
+    // Fish body
+    ellipse(centerX, centerY, bodyLength, bodyHeight);
+    // Fish tail
+    var tailWidth = bodyLength/4;
+    var tailHeight = bodyHeight/2;
+    triangle(centerX-bodyLength/2, centerY,
+             centerX-bodyLength/2-tailWidth, centerY-tailHeight,
+             centerX-bodyLength/2-tailWidth, centerY+tailHeight);
+    // Fish eye
+    fill(33, 33, 33);
+    ellipse(centerX+bodyLength/4, centerY, bodyHeight/5, bodyHeight/5);
+};
+
+// Bubble
+var drawBubble = function (bubbleX,bubbleY,bubbleSize){
+    fill(240, 228, 240);
+    ellipse(bubbleX, bubbleY, bubbleSize, bubbleSize);
+};
+
+var drawManyFish=function(){  
+     
+     drawFish(150,30);   
+    drawFish(172,100);
+    drawFish(240,240);
+    drawFish(300,120);
+    drawFish(110,300);
+};
+
+ var bubbleArray =[];
+ var drawBubbles = function() {
+     s
+    var bubbleX = random(100,250);
+    
+    var bubbleY = random(30,450);
+   var bubbleSize = random(25,50);
+   for (var i=1; i<11; i++){
+         var bubble= {X:bubbleX,Y:bubbleY,Size:bubbleSize};
+         bubbleArray.push(bubble);
+   drawBubble (bubble.X, bubble.Y ,bubble.Size);
+   
+     }
+     text(bubbleArray.length,200,200);
+ };
+drawBubbles();
+//drawBubble(100,300,25);
+//drawBubble(127,318,30);
+//drawBubble(130,350,35);
+//drawBubble(150,370,40);
+//drawBubble(170,400,45);
+
+var y=400;
+draw= function() {
+background(89, 216, 255);
+drawManyFish();
+for (var i=0;i<bubbleArray.length; i++) {
+    var b =bubbleArray[i];
+    b.Y-=0.2;
+}
+
+};
