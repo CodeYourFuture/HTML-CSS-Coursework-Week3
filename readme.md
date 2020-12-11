@@ -33,9 +33,9 @@ When you're ready to start coding:
   > - breakpoint 2 --> 900px  
 
   Then our CSS code will be split into **3**:  
-  > 1) **"default"**: default styles, should implement the mobile design (no media query used for these). These styles will apply to all screen sizes by default.  
-  > 2) **"medium"**: Our first media query `@media (min-width: 540px) {...}` **will overwrite our default styles** for screens at least 540px wide. Screens *below* 540px will apply the styles from the "default".  
-  > 3) **"large"**: Our second media query `@media (min-width: 900px) {...}` **will overwrite our default AND medium styles** for screens at least 900px wide (no upper limit).  
+  > 1. **"default"**: default styles, should implement the mobile design (no media query used for these). These styles will apply to all screen sizes by default.  
+  > 2. **"medium"**: Our first media query `@media (min-width: 540px) {...}` **will overwrite our default styles** for screens at least 540px wide. Screens *below* 540px will apply the styles from the "default".  
+  > 3. **"large"**: Our second media query `@media (min-width: 900px) {...}` **will overwrite our default AND medium styles** for screens at least 900px wide (no upper limit).  
 
 ### Define your own style
   - Choose 1-2 fonts to use (lots of [free fonts here](https://fonts.google.com/))
@@ -58,8 +58,8 @@ When you're ready to start coding:
 
 Build the mobile wireframe first, then adapt it for larger screens.  
 
-Mobile wireframe:  
+*Mobile wireframe:*  
 ![alt text](./design/cakes%20wireframe%20-%20mobile.png "Cakes Co mobile design")
 
-Desktop wireframe:  
+*Desktop wireframe:*  
 ![alt text](./design/cakes%20wireframe%20-%20desktop.png "Cakes Co desktop design")
