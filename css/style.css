@@ -1,0 +1,8 @@
+body{
+    font-family: 'Fredoka One', cursive;
+}
+
+.purpleShadow{
+    text-shadow: 2px 2px 2px rgb(223, 124, 223),
+                3px 3px 1.5px rgb(68, 157, 240);
+}
