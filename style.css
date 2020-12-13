@@ -1,1 +1,17 @@
 /*  Add your styling here */
+* {
+  font: 1em sans-serif;
+}
+
+header {
+  background-color: brown;
+  border: 3px blue solid;
+}
+
+.welcome {
+  border: cadetblue 3px solid;
+}
+
+.cake {
+  border: cornflowerblue 3px solid;
+}
