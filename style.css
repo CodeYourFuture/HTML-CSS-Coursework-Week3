@@ -18,7 +18,11 @@ header{
    
 }   
 .icon-img img{
-    width:50%;
+    width:25%;
+}
+.icon p{
+    font-size: calc(15px + 1vw);
+    
 }
 
 #myLinks{
@@ -37,6 +41,7 @@ header{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
 .welcome-text p{
     text-align: justify;
@@ -70,6 +75,15 @@ header{
     flex-direction: row;
     justify-content: space-around;
 
+}
+
+.footer-icons img{
+    width:25px;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 
