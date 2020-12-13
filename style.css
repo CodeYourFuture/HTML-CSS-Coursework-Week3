@@ -1,1 +1,9 @@
 /*  Add your styling here */
+body {
+    font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+}
+
+@media (min-width: 600px) {
+}
