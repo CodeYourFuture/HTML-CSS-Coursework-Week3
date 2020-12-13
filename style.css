@@ -1,1 +1,122 @@
 /*  Add your styling here */
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav > ul {
+    display: none;
+}
+
+/* HEADER   */
+
+header {
+    background-color: rgb(247, 247, 247);
+    display: flex;
+    justify-content: space-between;
+    height: 150px;
+    padding: 20px 20px 10px 20px;
+}
+
+.header-align {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    align-content: space-between;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+}
+
+h1{ 
+    font-size: 0.75em;
+    font-weight: 300;
+    text-align: right;
+    /* padding: 0 30px 30px 0; */
+}
+
+/* MAIN */
+
+main {
+    margin: 20px;
+}
+
+/* WELCOME */
+
+.welcome-section,.welcome-text {
+    margin-bottom: 30px;
+}
+
+.welcome-img {
+    width: 335px;
+}
+
+/* CARDS */
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100vw;
+    height: 220px;
+    
+}
+
+.cards > article  {
+    position: relative;
+    width: 155px;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.card-img {
+    height: 100px;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    width: 99.9%;
+
+}
+
+/* FOOTER */
+
+footer {
+    background-color: pink;
+    height: 75px;
+    padding: 15px 0 15px 15px;;
+}
+
+.footer-links {
+    padding-bottom: 15px;;
+}
+
+footer > article > p {
+    font-size: 0.6em;
+    margin: 2px;
+}
+
+/* footer > article {
+   display: flex;
+   justify-content: center;
+   gap: 15px;
+   padding-bottom: 15px;
+}
+footer > article > p {
+    font-size: 0.6em;
+    margin: 2px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+i {
+    height: 20px;
+    width: 20px;
+} */
