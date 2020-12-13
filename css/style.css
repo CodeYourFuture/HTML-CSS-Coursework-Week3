@@ -10,3 +10,26 @@ body{
 .marginContainer{
     margin: 0.75em 0;
 }
+
+.boxLink{
+    background-color: blueviolet;
+}
+
+a{
+    color: inherit;
+}
+
+a:hover{
+    color: grey;
+    text-decoration: none;
+}
+
+.lgDisplay{
+    display: none;
+}
+
+@media only screen and (min-width: 992px) {
+    .lgDisplay{
+        display: block;
+    }
+}
