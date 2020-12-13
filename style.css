@@ -1,1 +1,15 @@
 /*  Add your styling here */
+.welcome{
+    width: 900px;
+    background-color: blueviolet;
+}
+
+.welcome-image{
+    width: 40%;
+    flex: auto;
+}
+
+.products img{
+    width: 35%;
+    justify-content: center;
+}
