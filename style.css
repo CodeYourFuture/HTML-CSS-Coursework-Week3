@@ -1,1 +1,5 @@
 /*  Add your styling here */
+p {
+  font-size: 2rem;
+  background-color: brown;
+}
