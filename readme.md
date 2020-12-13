@@ -54,6 +54,11 @@ When you're ready to start coding:
   Your PR should be named following this format: `Class name - Your name`, for example: `London class 7 - Adam Smith`.
 
 
+## Deployment (optional)
+
+[Deploy your work to Netlify!](https://syllabus.codeyourfuture.io/workshops/deployment/workshop/instructions/)
+Remember to follow this naming convention when creating your custom URL in Netlify: `https://cyf-[your-Github-username]-cakes.netlify.app/`
+
 
 ## Wireframes
 
@@ -64,3 +69,4 @@ Build the mobile wireframe first, then adapt it for larger screens.
 
 *Desktop wireframe:*  
 ![alt text](./design/cakes%20wireframe%20-%20desktop.png "Cakes Co desktop design")
+
