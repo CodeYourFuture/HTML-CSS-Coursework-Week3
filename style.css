@@ -5,13 +5,13 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-nav > ul {
+nav {
     display: none;
 }
 
 /* HEADER   */
 
-header {
+.header-top-section {
     background-color: rgb(247, 247, 247);
     display: flex;
     justify-content: space-between;
@@ -43,6 +43,7 @@ h1{
 
 main {
     margin: 20px;
+    overflow: hidden;
 }
 
 /* WELCOME */
@@ -52,7 +53,7 @@ main {
 }
 
 .welcome-img {
-    width: 335px;
+    width: 99.9%;
 }
 
 /* CARDS */
@@ -60,15 +61,14 @@ main {
 .cards {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 20px;
-    width: 100vw;
     height: 220px;
-    
 }
 
-.cards > article  {
+.card-img-cont {
     position: relative;
-    width: 155px;
+    width: 40vw;
     object-fit: cover;
     overflow: hidden;
 }
@@ -79,7 +79,6 @@ main {
     margin-left: auto;
     margin-right: auto;
     width: 99.9%;
-
 }
 
 /* FOOTER */
@@ -94,29 +93,141 @@ footer {
     padding-bottom: 15px;;
 }
 
-footer > article > p {
+.footer-links-text{
     font-size: 0.6em;
     margin: 2px;
+    color: rgb(97, 97, 97);
+    text-decoration: none;
 }
 
-/* footer > article {
-   display: flex;
-   justify-content: center;
-   gap: 15px;
-   padding-bottom: 15px;
-}
-footer > article > p {
-    font-size: 0.6em;
-    margin: 2px;
+.fab{
+    color:  rgb(97, 97, 97);
 }
 
-.social-links {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
+@media only screen and (min-width: 540px) {
+    /* HEADER */
+    h1 {
+        font-size: 1em;
+    }
+
+    /* MAIN */
+    h2 {
+        font-size: 2em;
+    }
+
+    /* CARDS */
+
+    .cards {
+        height: 350px;
+        
+    }
+
+    .card-img-cont {
+        width: 250px;
+    }
+
+    .card-img {
+        height: 150px;
+    
+    }
+
+    /* FOOTER */
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 90px;
+    }
+    .footer-links {
+        display: flex;
+        gap: 20px;
+        padding-bottom: 20px;
+    }
+    .footer-links-text {
+        font-size: 0.75em;
+    }
+    .fab {
+        padding: 0 8px;
+    }
 }
 
-i {
-    height: 20px;
-    width: 20px;
-} */
+@media only screen and (min-width: 900px) {
+    
+    /* NAV */
+    nav {
+        background-color: rgb(247, 247, 247);
+        display: block;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+        margin-top: 40px;
+        padding: 15px;
+
+    }
+
+    .nav-list {
+        list-style-type: none;
+        display: flex;
+        gap: 20px;
+        justify-content: flex-end;
+        padding-right: 23px;
+    }
+
+    .nav-list >li {
+        background: pink;
+        width: 100px;
+        height: 30px;
+        padding-top: 10px;
+    }
+
+    .nav-links {
+        font-size: 1em;
+        text-decoration: none;
+        color: rgb(97, 97, 97);
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    /* MAIN */
+    main {
+        width: 82%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* WELCOME SECTION */
+    .welcome-section {
+        display: flex;
+        justify-content: space-evenly;
+        gap: 30px;
+    }
+
+    .welcome-section-text {
+        text-align: right;
+        padding-right: 20px;
+        order: 1;
+    }
+
+    .welcome-img {
+        width: 50%;
+    }
+
+    /* CARDS */
+    .cards {
+        height: 250px;
+        justify-content: space-evenly;
+        
+    }
+
+    .card-img-cont {
+        width: 22%;
+    }
+
+    .card-img {
+        height: 150px;
+    
+    }
+}
