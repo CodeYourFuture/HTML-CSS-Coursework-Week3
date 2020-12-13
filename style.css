@@ -29,10 +29,47 @@ header{
     margin-top:16px;
 }
 .welcome-image{
-    width:100%;
-    height:100%;
+    max-width:100%;
+   
 }
-.products img{
-    width:50%;
-    height:50%;
+.welcome{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
+.welcome-text p{
+    text-align: justify;
+}
+
+.products{
+    display: flex;
+    flex-direction: column;
+    row-gap:25px;
+    
+}
+
+
+ .products img{
+    max-width:45%;
+
+} 
+
+
+.products-first-images{
+ 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.products-second-images{
+ 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+
