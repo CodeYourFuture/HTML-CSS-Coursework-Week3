@@ -16,13 +16,19 @@ header{
     flex-wrap: nowrap;
     margin:0px;
    
-}   
-.icon-img img{
+}  
+.icon-img{
     width:25%;
+} 
+.icon-text{
+    width:75%;
+}
+.icon-img img{
+    width:100%;
 }
 .icon p{
     font-size: calc(15px + 1vw);
-    
+    width:100%;
 }
 
 #myLinks{
@@ -32,6 +38,28 @@ header{
 .hamburger-icon{
     margin-top:16px;
 }
+.topnav {
+    overflow: hidden;
+    background-color:pink;
+    position: absolute;
+    display:none;
+    min-width: 100vw;
+    right:0px;
+    top:calc(65px + 3vw);
+   
+  }
+  
+
+  .topnav li{
+      list-style-type: none;
+  }
+  .topnav a {
+    color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
 .welcome-image{
     max-width:100%;
    
@@ -43,8 +71,12 @@ header{
     justify-content: center;
     text-align: center;
 }
+.welcome h1{
+    font-size: calc(30px + 3vw);
+}
 .welcome-text p{
     text-align: justify;
+    font-size: calc(15px + 2vw);
 }
 
 .products{
@@ -84,6 +116,10 @@ footer{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+footer p{
+    font-size: calc(10px + 1vw);
 }
 
 

@@ -18,20 +18,20 @@
                 <img src="./design/icon.png" alt="">
             </div>
         
-            <div>
-                <p class="icon-img">The best cakes in town delivered to your door</p>
+            <div class="icon-text">
+                <p >The best cakes in town delivered to your door</p>
             </div>
         </section>
         <nav>
         <section class="mobile-screen" >
                
-            <img src="./design/menu-hamburger.svg" class="hamburger-icon" onclick="myFunction()">
+            <img src="./design/menu-hamburger.svg" class="hamburger-icon" onclick="openMenu()">
             <div class="topnav" id="myLinks">
                 <ul>
                                    
                     <li><a href="#">HOME</a></li>
                     <li><a href="#">CAKES</a></li>
-                    <li><a href="#">ORDERIN/a></li>
+                    <li><a href="#">ORDERIN</a></li>
                     <li><a href="#">LESSONS</a></li>
                     <li><a href="#">ABOUT</a></li>
                    
@@ -50,11 +50,7 @@
                     elit. Animi possimus necessitatibus natus officia.
                      Atque veritatis id culpa, asperiores et eveniet 
                      modi a! Sequi nostrum delectus voluptatum officia 
-                     optio illum. Error.Lorem ipsum dolor sit amet consectetur adipisicing 
-                     elit. Animi possimus necessitatibus natus officia.
-                      Atque veritatis id culpa, asperiores et eveniet 
-                      modi a! Sequi nostrum delectus voluptatum officia 
-                      optio illum. Error</p>
+                     optio illum. Error.</p>
             </div>  
             <div>
                 <img class="welcome-image" src="./design/imag1.jpg" alt="Cake picture">
@@ -86,6 +82,20 @@
             <p>&copy My cake,Inc.</p>
         </section>
     </footer>
+    <script>
+        function openMenu() {
+         
+          const mobilemenu=document.getElementById("myLinks");
+          if (mobilemenu.style.display === "block") {
+           
+            mobilemenu.style.display="none";
+           
+          } else {
+            mobilemenu.style.display="block";
+         
+          }
+        }
+        </script>
 </body>
 
 
