@@ -1,1 +1,77 @@
 /*  Add your styling here */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    width: 100%;
+    height: 22vh;
+    border-bottom: 1px solid rgb(190, 110, 35);;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-img img {
+    width: 25vw;
+    height: 15vh;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+
+.menu-btn {
+    padding-right: 2rem;
+    padding-top: 1.5rem;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.menu-btn:hover {
+    font-size: 2.5rem;
+    color: rgb(190, 110, 35);
+    transition: all 0.5s ease;
+}
+
+.header-desc {
+    float: right;
+    padding-right: 1rem;
+    
+}
+
+.hero-desc {
+    margin: .5rem;
+}
+
+.hero img {
+    /* background: url("img/background-imagejpg.jpg") no-repeat; */
+    width: 100%;
+    height: 50vh;
+    /* background-size: contain; */
+    /* background-attachment: fixed; */
+}
+
+.cakes-pictures-container {
+    margin: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    /* justify-content: space-around; */
+    /* align-items: center; */
+    border: 1px solid red;
+}
+
+.cakes-pictures-container a {
+    width: 50%;
+}
+
+.cakes-pictures {
+    width: 80%;
+    height: 20vh; 
+    padding: 0.3rem;
+}
