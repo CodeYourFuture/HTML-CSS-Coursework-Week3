@@ -1,10 +1,10 @@
 body{
     font-family: 'Fredoka One', cursive;
+    background-color: rgb(171, 211, 248);
 }
 
-.purpleShadow{
-    text-shadow: 2px 2px 2px rgb(223, 124, 223),
-                3px 3px 1.5px rgb(68, 157, 240);
+.footerClass{
+    background-color:rgb(214, 178, 247);
 }
 
 .marginContainer{
@@ -12,7 +12,7 @@ body{
 }
 
 .boxLink{
-    background-color: blueviolet;
+    background-color: rgb(214, 178, 247);
 }
 
 a{
