@@ -1,1 +1,7 @@
-/*  Add your styling here */
+h1 {
+   flex-direction: row;
+   background-color: blue;
+   color: white;
+   text-align: justify;
+   justify-content: flex-end;
+}
