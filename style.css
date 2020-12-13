@@ -1,1 +1,38 @@
 /*  Add your styling here */
+
+
+
+header{
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+   
+}
+.icon{
+    width:75%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    margin:0px;
+   
+}   
+.icon-img img{
+    width:50%;
+}
+
+#myLinks{
+    display:none;
+}
+
+.hamburger-icon{
+    margin-top:16px;
+}
+.welcome-image{
+    width:100%;
+    height:100%;
+}
+.products img{
+    width:50%;
+    height:50%;
+}
