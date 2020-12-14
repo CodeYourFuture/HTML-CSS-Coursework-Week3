@@ -113,14 +113,18 @@ footer {
   margin-right: auto;
   height: auto;
 
+  border: 3px darkblue solid;
+}
+
+footer .footer-divs {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 
-  border: 3px darkblue solid;
+  border: 1px red solid;
 }
 
-footer .first,
+footer .footer-divs .first,
 .second,
 .third {
   width: 40%;
@@ -128,4 +132,16 @@ footer .first,
   margin: 2%;
   background-color: darkslategrey;
   border: 3px darkblue solid;
+}
+
+footer .copyright {
+  opacity: 0.6;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+
+  background-color: darkslategrey;
+  border: 1px red solid;
+  text-align: center;
 }
