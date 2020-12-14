@@ -26,7 +26,6 @@ header{
 }
 .icon-img img{
     width:100%;
-    
 }
 .icon p{
     font-size: calc(15px + 1vw);
@@ -42,16 +41,17 @@ nav{
 #myLinks{
     display:none;
 }
-.mobile-screen{
-    min-width: 50px;
-    min-height: 50px;
-}
+
 .hamburger-icon{
     margin-top:16px;
     margin-left: 15px;
     width: 60%;
     align-items: flex-start;
-}
+ }
+ .mobile-screen img{
+    background-color:pink;
+
+ }
 .topnav {
     overflow: hidden;
     background-color:pink;
@@ -60,23 +60,22 @@ nav{
     min-width: 100vw;
     right:0px;
     top:calc(65px + 3vw);
-   
-  }
+ }
   
 
-  .topnav li{
+ .topnav li{
       list-style-type: none;
-  }
-  .topnav a {
+ }
+ .topnav a {
     color: black;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
     display: block;
-  }
+ }
+ /* styling main section */
 .welcome-image{
     max-width:100%;
-   
 }
 .welcome{
     display: flex;
@@ -147,7 +146,7 @@ nav{
     justify-content: space-around;
 
 }
-
+/* styling footer section */
 .footer-icons img{
     width:25px;
 }
@@ -163,8 +162,7 @@ footer p{
 
 @media(min-width:540px){
     .monthly-deals{
-       /* showing extra information  */
-        display:block;
+       display:block;
      }
     .monthly-deals img{
         max-width:50%;
