@@ -1,7 +1,5 @@
 /*  Add your styling here */
-
-
-
+/* styling header section */
 header{
     width:100%;
     display: flex;
@@ -21,8 +19,6 @@ header{
 }  
 .icon-img{
   width: 15%;
-    /* min-width:15%;
-    max-width: 20%; */
 } 
 .icon-text{
     width:90%;
@@ -30,10 +26,12 @@ header{
 }
 .icon-img img{
     width:100%;
+    
 }
 .icon p{
     font-size: calc(15px + 1vw);
     width:100%;
+    color:rgb(143, 63, 76);
 }
 
 nav{
@@ -88,17 +86,23 @@ nav{
     text-align: center;
 }
 .welcome h1{
-    font-size: calc(30px + 3vw);
+    font-size: calc(15px + 1.5vw);
+    color:rgb(143, 63, 76);
+    
 }
 .welcome-text p{
     text-align: justify;
-    font-size: calc(15px + 2vw);
+    font-size: calc(10px + 1vw);
 }
 .monthly-deals{
     display: flex;
     flex-direction: column;
     display:none;
     justify-content: center;
+}
+.monthly-deals p{
+    color:rgb(143, 63, 76);
+    font-size: calc(8px + 1vw);
 }
 .welcome-deal-wrapper{
     width: 100%;
@@ -121,6 +125,11 @@ nav{
     max-width:45%;
 
 } 
+.square-cakes, .rounded-cakes p{
+    text-align:center;
+    font-size: calc(10px + 1vw);
+    color:rgb(143, 63, 76);
+}
 
 
 .products-first-images{
@@ -165,9 +174,60 @@ footer p{
     }
     .products{
         margin-top: 50px;
-    }
-
-  
-    
-    
+    }   
 }
+@media(min-width:900px){
+    .icon-img{
+        z-index: 2;
+      } 
+      .icon-text{
+        text-align: right;
+    }
+    .hamburger-icon{
+         display:none;
+     }
+     header{
+         flex-direction: column;
+     }
+     nav{
+         width: 100%;
+     }
+     .mobile-screen{
+         width: 100%;
+     }
+     .topnav{
+         width: 100%;
+         display: block;
+         display: flex;
+         background-color: white;
+         
+     }
+     #myLinks{
+         display: block;
+     }
+     .topnav ul{
+        display:flex;
+        justify-content: flex-end;
+        flex-wrap:nowrap;
+    }
+   .topnav ul li a:hover{
+        color:white;
+        background-color: pink;
+     }
+    .topnav ul li a{
+       font-size:calc(1em + 1vw);
+       background-color: rgb(255, 223, 251);
+       margin:0 5px;
+           
+    } 
+    .welcome{
+        flex-direction: row-reverse;
+    }
+    .welcome-text{
+        width: 90%;
+    }
+    .welcome-deal-wrapper{
+        width: 60%;
+    }
+}
+
