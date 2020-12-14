@@ -7,21 +7,26 @@ header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: flex-start;
    
 }
 .icon{
-    width:75%;
+    width:100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: flex-start;
     flex-wrap: nowrap;
     margin:0px;
    
 }  
 .icon-img{
-    width:25%;
+  width: 15%;
+    /* min-width:15%;
+    max-width: 20%; */
 } 
 .icon-text{
-    width:75%;
+    width:90%;
+    text-align: center;
 }
 .icon-img img{
     width:100%;
@@ -31,12 +36,23 @@ header{
     width:100%;
 }
 
+nav{
+    display: flex;
+    align-items: center;
+}
+
 #myLinks{
     display:none;
 }
-
+.mobile-screen{
+    min-width: 50px;
+    min-height: 50px;
+}
 .hamburger-icon{
     margin-top:16px;
+    margin-left: 15px;
+    width: 60%;
+    align-items: flex-start;
 }
 .topnav {
     overflow: hidden;
@@ -78,7 +94,21 @@ header{
     text-align: justify;
     font-size: calc(15px + 2vw);
 }
+.monthly-deals{
+    display: flex;
+    flex-direction: column;
+    display:none;
+    justify-content: center;
+}
+.welcome-deal-wrapper{
+    width: 100%;
+    display:flex;
+    justify-content:space-around;
+    align-items: center;
+    flex-wrap:nowrap;
+    
 
+}
 .products{
     display: flex;
     flex-direction: column;
@@ -122,4 +152,22 @@ footer p{
     font-size: calc(10px + 1vw);
 }
 
+@media(min-width:540px){
+    .monthly-deals{
+       /* showing extra information  */
+        display:block;
+     }
+    .monthly-deals img{
+        max-width:50%;
+    }
+    .welcome-image{
+        max-width:50%
+    }
+    .products{
+        margin-top: 50px;
+    }
 
+  
+    
+    
+}
