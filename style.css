@@ -50,7 +50,7 @@ body{
 .header{
   width: 100%;
   display: flex;
-  background-color: #450920;
+  background-color: #250902;
   padding-bottom: 20px;
 }
 
@@ -83,7 +83,7 @@ body{
    flex-direction: column;
    align-items: center;
    justify-content: center;
-   background-color: #a53860;
+  background-color:#800e13;
    position: relative;
    
 }
@@ -131,6 +131,7 @@ order: 1;
   color: #fff;
   font-size: 1.5rem;
   text-align: center;
+  padding-bottom: 40px;
 
 }
 .cakes_images img{
@@ -143,19 +144,29 @@ order: 1;
 box-shadow: 5px 5px 15px -3px #000000;
 }
 
-.cakes_images{
+.cakes_images {
   display: grid;
   grid-template-columns: 1fr 1fr;
 row-gap: 20px;
 
+
   
+}
+
+.cakes_images img{
+  opacity: 0.5;
+cursor: pointer;
+transition: 0.5s ease-in-out;
+}
+.cakes_images img:hover{
+  opacity: 1;
 }
 
 .products_img{
   padding-top: 30px;
     text-align: center;
     padding-bottom: 40px;
-    background-color: #a53860;
+     background-color: #38040e;
 }
 
 /*HamBurger Menu*/
@@ -214,7 +225,7 @@ transition: all .5s ease-in-out;
 
 /*footer*/
 footer{
-  background-color:#450920;
+  background-color: #250902;
   text-align: center;
 }
 footer p {
@@ -223,11 +234,15 @@ footer p {
 .footer_icon img{
    width: 30px;
    height: 30px;
-  
+  margin-left: 20px;
 }
 
 .footer_icon{
-  padding-top: 30px;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
 }
 
 .desktop_nav{
@@ -248,7 +263,7 @@ footer p {
  }
  .desktop_nav{
  display: flex;
-   background-color:rgba(61, 16, 16, 0.9);
+   /*background-color:rgba(61, 16, 16, 0.9);*/
    width: 100%;
    flex-direction: row;
    order:3;
@@ -257,19 +272,24 @@ footer p {
   justify-content: center;
 padding: 40px;
 margin: 0 auto;
-
+background-color: #38040e;
 
   
  }
 .cakes_images{
   display: grid;
 grid-template-columns: repeat(4,1fr);
-  
+  position: relative;
 }
 
 .products_img{
-  padding: 50px;
+  padding: 80px;
+ background-color: #38040e;
+
 }
+
+
+
 .cakes_images img{
     max-width: 4/100%;
    margin:  0 auto;
@@ -277,13 +297,21 @@ grid-template-columns: repeat(4,1fr);
    border: 2px solid white;
    -webkit-box-shadow: 5px 5px 15px -3px #000000; 
 box-shadow: 5px 5px 15px -3px #000000;
+opacity: 0.4;
+cursor: pointer;
+transition: 0.5s ease-in-out;
+}
+.cakes_images img:hover{
+  cursor: pointer;
+  opacity: 1;
 }
 
  .text_and_img_container{
    display: flex;
    flex-direction: row;
-background-color:rgba(56, 3, 3, 0.9);
-padding: 70px;
+/*background-color:rgba(56, 3, 3, 0.9);*/
+padding: 100px;
+background-color:#800e13;
  }
  .welcome_text_img img{
   width: 100%;
@@ -312,10 +340,17 @@ font-size: 1.3rem;
 padding: 40px;
 text-decoration: none;
 color: honeydew;
- background-color:rgba(56, 3, 3, 0.2);
+ background-color:#ad2831;
   padding: 20px;
   margin-left: 5px;
+  transition:  0.8s ease-out;
+  border-radius: 5px;
  }
+
+.desktop_nav li a:hover{
+ background-color: rgb(104, 32, 32);
+
+}
 
  .desktop_nav li{
    list-style: none;
@@ -324,28 +359,32 @@ color: honeydew;
  .header{
   width: 100%;
  display: flex;
-  background-color: #450920;
- 
+ /* background-color: #450920;*/
+background-color: #250902;
  
 }
 
 
 .logo{
-    width: 120px;
-    height: 120px;
+    width: 150px;
+    height: 150px;
     margin-top: 20px;
+    
+    
 }
 
 
 .banner_text{
     font-size: 2rem;
     color: floralwhite;
-    padding-top: 60px;
+    padding-top: 70px;
     padding-left: 20px;
+    
    
     
     
 }
+
 
 }
 
