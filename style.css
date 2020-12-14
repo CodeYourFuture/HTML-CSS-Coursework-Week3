@@ -18,14 +18,34 @@ body{
 /*Default Styles*/
 
 
-.desktop_nav_links{
-    display: none;
-}
-.nav_links_mobile{
-    display: none;
+.mobile_nav_links li{
+  padding-top: 40px;
+  list-style: none;
 }
 
+.mobile_nav_links li a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 2rem;
+}
+.mobile_nav{
+  background-color: rgb(88, 15, 27);
+ position: fixed;
+ right: 0;
+bottom:  0px;
+top: 160px;
+ height: 100vh;
+ opacity: 0.9;
+ width: 0%;
+transition: all 0.3s ease-out;
+text-align: center;
+}
 
+.mobile_nav.openNav{
+ width: 100%;
+ opacity: 0.9;
+
+}
 
 .header{
     width: 100%;
@@ -49,10 +69,12 @@ body{
 
 
 .banner_text{
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     color: floralwhite;
     padding-top: 10px;
     padding-left: 20px;
+    margin-top: 30px;
+    margin-right:40px ;
     
 }
 /*welcome section*/
@@ -62,6 +84,7 @@ body{
    align-items: center;
    justify-content: center;
    background-color: #a53860;
+   position: relative;
    
 }
 
@@ -174,16 +197,17 @@ transition: all .5s ease-in-out;
 }
 
 /* Apply Cross when clicked */
-.menu_box.open .line{
+.hamburger_menu_box.open .line{
   background: transparent;
 }
 
-.menu_box.open .line::before{
+.hamburger_menu_box.open .line::before{
   transform: rotate(45deg) ; 
 }
-.menu_box.open .line::after{
+.hamburger_menu_box.open .line::after{
   transform: rotate(-45deg);   
 }
+
 
 
 
