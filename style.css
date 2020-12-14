@@ -30,27 +30,26 @@ body{
 }
 .mobile_nav{
   background-color: rgb(88, 15, 27);
- position: fixed;
- right: 0;
-bottom:  0px;
-top: 160px;
- height: 100vh;
- opacity: 0.9;
- width: 0%;
-transition: all 0.3s ease-out;
-text-align: center;
+  position: fixed;
+  right: 0;
+  bottom:  0px;
+  top: 160px;
+  height: 100vh;
+  opacity: 0.9;
+  width: 0%;
+  transition: all 0.3s ease-out;
+  text-align: center;
 }
 
 .mobile_nav.openNav{
- width: 100%;
- opacity: 0.9;
-
+  width: 100%;
+  opacity: 0.9;
 }
 
 .header{
-    width: 100%;
-   display: flex;
-   background-color: #450920;
+  width: 100%;
+  display: flex;
+  background-color: #450920;
   padding-bottom: 20px;
 }
 
