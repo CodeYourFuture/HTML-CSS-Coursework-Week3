@@ -6,10 +6,15 @@
  margin: 0;  
  padding: 0; 
 }
-
+:root {
+--header-bg-color: brown;
+}
 body{
   font-family: "Rajdhani", sans-serif;
 }
+
+
+
 /*Default Styles*/
 
 
@@ -25,15 +30,15 @@ body{
 .header{
     width: 100%;
    display: flex;
-   background-color: darkslategrey;
+   background-color: #450920;
   padding-bottom: 20px;
 }
 
 .hamburger_menu_and_text{
-   
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    flex: 2;
 }
 
 .logo{
@@ -56,6 +61,8 @@ body{
    flex-direction: column;
    align-items: center;
    justify-content: center;
+   background-color: #a53860;
+   
 }
 
 .welcome_text_img img{
@@ -67,6 +74,9 @@ body{
     width: 100%;
 
   max-height: 300px;
+  border-radius: 10px;
+-webkit-box-shadow: 5px 5px 15px -3px #000000; 
+box-shadow: 5px 5px 15px -3px #000000;
  
    
 }
@@ -76,9 +86,11 @@ h1{
   text-align: center;
   padding-bottom: 20px;
   font-size: 2rem;
+  color: rgb(245, 221, 11);
 }
 .text_and_img_container{
   padding-bottom: 30px;
+  
 }
 .welcome_text_img{
     order: 2;
@@ -93,7 +105,7 @@ order: 1;
 }
 .welcome_text_content{
   width: 100%;
-  color: #000;
+  color: #fff;
   font-size: 1.5rem;
   text-align: center;
 
@@ -102,6 +114,10 @@ order: 1;
     max-width: 80%;
    max-height: 300px;
    margin:  0 auto;
+   border-radius: 10px;
+   border: 2px solid white;
+   -webkit-box-shadow: 5px 5px 15px -3px #000000; 
+box-shadow: 5px 5px 15px -3px #000000;
 }
 
 .cakes_images{
@@ -113,9 +129,10 @@ row-gap: 20px;
 }
 
 .products_img{
+  padding-top: 30px;
     text-align: center;
     padding-bottom: 40px;
-    
+    background-color: #a53860;
 }
 
 /*HamBurger Menu*/
@@ -173,10 +190,18 @@ transition: all .5s ease-in-out;
 
 /*footer*/
 footer{
+  background-color:#450920;
   text-align: center;
+}
+footer p {
+  color: cornsilk;
 }
 .footer_icon img{
    width: 30px;
    height: 30px;
   
+}
+
+.footer_icon{
+  padding-top: 30px;
 }
