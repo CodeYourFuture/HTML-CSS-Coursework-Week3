@@ -10,27 +10,78 @@ header {
   height: 100px;
   margin-left: auto;
   margin-right: auto;
+
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   background-color: gray;
-  border: 3px blue solid;
+  border: 3px darkblue solid;
 }
 
 #welcome {
-  width: 100%;
-  height: 200px;
+  width: 95%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+
   border: cadetblue 3px solid;
 }
 
-#cakes {
-  width: 100%;
+#welcome .welcome-image {
+  width: auto;
   height: 200px;
+
+  display: block;
+  border: 3px darkblue solid;
+}
+
+#welcome .welcome-text {
+  width: auto;
+  height: 100%;
+
+  display: block;
+  object-fit: cover;
+  justify-content: flex-start;
+  padding: 5%;
+  text-align: flex-start;
+  border: 3px darkblue solid;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+#cakes {
+  width: 95%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+
   border: red 3px solid;
 }
 
 footer {
-  width: 100%;
-  height: 100px;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
   border: 3px royalblue solid;
+}
+
+footer .first,
+.second,
+.third {
+  width: 45%;
+  height: auto;
+  padding: 1%;
+  margin: 1%;
+  background-color: darkslategrey;
+  border: 3px darkgreen solid;
 }
