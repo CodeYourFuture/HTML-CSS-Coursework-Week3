@@ -1,1 +1,27 @@
 /*  Add your styling here */
+.intro {
+  width: 290px;
+  background-color: rgb(199, 196, 196);
+}
+
+.intro-image {
+  width: 90%;
+  align-self: center;
+  margin: auto;
+  display: flex;
+  margin-bottom: 20px;
+  display: flex;
+}
+
+.products {
+  width: 290px;
+  display: flex;
+  background-color: rgb(199, 196, 196);
+}
+.products-img {
+  justify-content: center;
+  width: 130px;
+  height: 70px;
+  margin: 5px;
+  flex: 1;
+}
