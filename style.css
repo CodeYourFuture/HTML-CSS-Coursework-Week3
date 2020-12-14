@@ -14,8 +14,20 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  background-color: gray;
+  align-items: center;
+
   border: 3px darkblue solid;
+}
+
+header img {
+  width: 30px;
+  height: 30px;
+  object-position: 10% 10%;
+}
+
+header .ads-words {
+  width: 40%;
+  height: auto;
 }
 
 #welcome {
@@ -24,27 +36,32 @@ header {
   margin-left: auto;
   margin-right: auto;
 
-  border: cadetblue 3px solid;
-}
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
-#welcome .welcome-image {
-  width: auto;
-  height: 200px;
-
-  display: block;
-  border: 3px darkblue solid;
+  border: darkred 3px solid;
 }
 
 #welcome .welcome-text {
   width: auto;
-  height: 100%;
+  height: 50%;
+  object-fit: contain;
 
   display: block;
   object-fit: cover;
   justify-content: flex-start;
   padding: 5%;
-  text-align: flex-start;
-  border: 3px darkblue solid;
+  border: 1px red solid;
+}
+
+#welcome .welcome-image {
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+
+  display: block;
+  border: 1px red solid;
 }
 
 img {
@@ -59,7 +76,35 @@ img {
   margin-left: auto;
   margin-right: auto;
 
-  border: red 3px solid;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  border: darkred 3px solid;
+}
+
+#cakes .cake-div {
+  width: 45%;
+  height: 45%;
+  margin: 1%;
+  object-fit: cover;
+
+  position: relative;
+
+  display: block;
+  border: 1px red solid;
+}
+
+#cakes .cake-div:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
+#cakes .cake-div img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
 }
 
 footer {
@@ -72,16 +117,15 @@ footer {
   flex-direction: column;
   justify-content: space-around;
 
-  border: 3px royalblue solid;
+  border: 3px darkblue solid;
 }
 
 footer .first,
 .second,
 .third {
-  width: 45%;
+  width: 40%;
   height: auto;
-  padding: 1%;
-  margin: 1%;
+  margin: 2%;
   background-color: darkslategrey;
-  border: 3px darkgreen solid;
+  border: 3px darkblue solid;
 }
