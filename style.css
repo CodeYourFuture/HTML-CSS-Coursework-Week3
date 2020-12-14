@@ -1,1 +1,58 @@
 /*  Add your styling here */
+html {
+  /* overflow: none; */
+}
+.who-we-are {
+  display: block;
+}
+.big-cupcake {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  max-height: 100px;
+}
+img {
+  /* max-width: 50%; */
+  height: auto;
+  aspect-ratio: attr(width) / attr(height);
+}
+
+.cake-selections {
+  /* min-height: 100%; */
+  /* display: flex; */
+  /* flex-wrap: wrap; */
+  /* flex-direction: row; */
+}
+
+/* .cake-selections > section {
+  display: flex;
+  flex-basis: calc(50%-40px);
+  justify-content: center;
+  flex-direction: column;
+}
+
+.cake-selections > img {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+} */
+
+/* .box {
+  padding: 0 20px 20px;
+}
+.wrapper {
+  width: 500px;
+}
+.cake-selections {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+ .img {
+  width: 100%;
+} 
+.cake-selections > * {
+  flex: 0 0 50%;
+} */
