@@ -23,6 +23,7 @@ When you're ready to start coding:
 - Remember to link your CSS file to your HTML file inside the `<head>` in `index.html`
 - You don't need to use any media queries yet, because we're following a [Mobile First](https://www.invisionapp.com/inside-design/mobile-first-design/) approach!
 
+
 ### Then adapt the page for larger screens
 - Now add media queries to your CSS, and change the layout and sizing of elements so they make better use of a wider screen (see the desktop wireframe design below).
 - To follow Mobile First principles, we will only be using `min-width` in our media queries (no max-width!)
