@@ -1,17 +1,36 @@
 /*  Add your styling here */
-* {
+body {
   font: 1em sans-serif;
+  align-content: center;
+  align-items: center;
 }
 
 header {
-  background-color: brown;
+  width: 95%;
+  height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: gray;
   border: 3px blue solid;
 }
 
-.welcome {
+#welcome {
+  width: 100%;
+  height: 200px;
   border: cadetblue 3px solid;
 }
 
-.cake {
-  border: cornflowerblue 3px solid;
+#cakes {
+  width: 100%;
+  height: 200px;
+  border: red 3px solid;
+}
+
+footer {
+  width: 100%;
+  height: 100px;
+  border: 3px royalblue solid;
 }
