@@ -1,1 +1,137 @@
+
 /*  Add your styling here */
+
+*{
+ box-sizing: border-box;
+ margin: 0;  
+ padding: 0; 
+}
+
+/*Default Styles*/
+
+
+.desktop_nav_links{
+    display: none;
+}
+.nav_links_mobile{
+    display: none;
+}
+
+
+
+.header{
+    width: 100%;
+   display: flex;
+   background-color: darkslategray;
+  padding-bottom: 20px;
+}
+
+.hamburger_menu_and_text{
+   
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.logo{
+    width: 120px;
+    height: 120px;
+    margin-top: 20px;
+}
+
+
+.banner_text{
+    font-size: 1.2rem;
+    color: floralwhite;
+    padding-top: 10px;
+    padding-left: 20px;
+    
+}
+/*welcome section*/
+.text_and_img_container{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+
+.welcome_text_img img{
+  
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    width: 100%;
+  
+   
+}
+.welcome_text_img{
+    order: 2;
+}
+.welcome_text_container{
+    padding: 15px;
+order: 1;
+}
+
+.cakes_images img{
+    max-width: 80%;
+   
+}
+.cakes_images{
+    
+   
+}
+.products_img{
+    
+    background-color: greenyellow;
+}
+
+/*HamBurger Menu*/
+.hamburger_menu_box{
+position: relative;
+width: 80px;
+height: 80px;
+cursor: pointer;
+display: flex;
+align-items:  center;
+justify-content: center;
+transition: all 0.5s ease-in-out;
+
+}
+.line{
+width: 50px;
+height: 6px;
+border-radius: 5px;
+background-color: rgb(250, 245, 245);
+transition: all 0.5s ease-in-out;
+}
+
+.line::before,
+.line::after{
+content: '';
+position: absolute;
+width: 50px;
+height: 6px;
+border-radius: 5px;
+background-color: rgb(248, 241, 241);
+transition: all .5s ease-in-out;
+    
+}
+.line::before{
+  transform: translateY(-14px);
+}
+.line::after{
+  transform: translateY(14px);
+}
+
+/* Apply Cross when clicked */
+.menu_box.open .line{
+  background: transparent;
+}
+
+.menu_box.open .line::before{
+  transform: rotate(45deg) ; 
+}
+.menu_box.open .line::after{
+  transform: rotate(-45deg);   
+}
