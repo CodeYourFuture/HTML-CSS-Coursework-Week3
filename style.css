@@ -22,7 +22,7 @@ body {
 }
 
 .header-img img {
-    width: 25vw;
+    /* width: 25vw; */
     height: 15vh;
     margin-top: 1rem;
     margin-left: 1rem;
@@ -40,6 +40,40 @@ body {
     font-size: 2.5rem;
     color: rgb(190, 110, 35);
     transition: all 0.5s ease;
+}
+
+/* Navigation Menu */
+
+.navbar {
+    display: none;
+}
+
+.navbar-list {
+    display: flex;
+    list-style-type: none;
+    justify-content: flex-end;
+    padding-right: 5rem;
+    font-size: 1rem;
+}
+
+.navbar-list a {
+    cursor: pointer;
+    text-decoration: none;
+    color: rgb(190, 110, 35);
+    margin-left: 3rem;
+}
+
+.navbar-list a:hover {
+    font-size: 1.1rem;
+    transition: all 0.4s ease;
+}
+
+.navbar-list a {
+    padding: 0.5rem;
+    background-color: rgb(190, 110, 35);
+    color: #f2f2f2;
+    border-radius: 5px;
+    text-transform: uppercase;
 }
 
 /* Main */
@@ -60,7 +94,8 @@ main {
 }
 
 .hero h1 {
-    margin-top: 0.5rem;
+    margin-top: 1rem;
+    padding-top: 0.5rem;
     text-align: center;
     margin-bottom: 0.5rem;
     border-top: 1px solid rgb(190, 110, 35);;
@@ -113,4 +148,78 @@ main {
 .footer-list-GetInTouch, 
 .footer-list-policies {
     margin-bottom: 1rem;
+}
+
+.company-name {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+/* Media Queries */
+
+@media (min-width: 540px) {
+
+}
+
+
+@media (min-width: 900px) {
+
+    .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .header-img img {
+        margin-top: 1rem;
+        padding-left: 5rem;
+        height: 25vh;
+        width: 25vw;
+    }
+
+    .header p {
+        font-size: 1.4rem;
+        padding-right: 1rem;
+    }
+
+    .menu-btn {
+        display: none;
+    }
+
+    .navbar {
+        display: block;
+        height: 15vh;
+    }
+
+    .hero {
+        display: flex;
+    }
+
+    .hero img {
+        height: 60vh;
+    }
+
+    .hero h1 {
+        padding-top: 0;
+        margin-top: 0;
+        border-top: 0;
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1.5rem;
+    }
+
+    .hero-desc {
+        order:2;
+        width: 50%
+    }
+
+    /* Footer */
+
+    .footer-list {
+        display: flex;
+        justify-content: space-around;
+        padding-right: 10rem;
+    }
 }
