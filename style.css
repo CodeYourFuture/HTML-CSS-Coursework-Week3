@@ -1,9 +1,17 @@
 /*  Add your styling here */
+
+body{
+    background-color: rgb(255, 162, 209);
+}
+
+
 header{
     width:100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    background-color: rgb(156, 229, 245);
+    margin-bottom: 20px;
 }
 
 .bakery-icon{
@@ -12,6 +20,7 @@ header{
     justify-content: space-around;
     flex-wrap: nowrap;
     margin:0px;
+    
 }
 
 .cupcake-icon img{
@@ -22,10 +31,10 @@ header{
     display: none;
 }
 
+/* Check how to situate icon on extreme right*/
 .hamburger-icon{
-    margin-top: 50px;
-    width: 15%;
-    justify-content: right;
+    margin-top: 20px;
+    width: 100%;
 }
 
 .welcome-image{
@@ -35,13 +44,37 @@ header{
     margin-bottom: 25px;
 }
 
+.welcome-msg{
+    width:500%;
+    start
+    text-align: right;
+    margin-top: 90px;
+    
+}
+
 .welcome{
     width: auto;
     text-align: justify;
     text-justify: inter-word;
+    color: rgb(255, 255, 255);
 }
 
 .products img{
     width: 49%;
-    justify-content: center;
+    display: inline;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.media-icons img{
+    width: 25px;
+    mar
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    background-color: rgb(156, 229, 245);
 }
