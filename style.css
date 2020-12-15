@@ -1,41 +1,81 @@
-/*  Add your styling here */
+/* General body */
 
 body{
-    background-color: rgb(255, 162, 209);
+    background-color: rgb(255, 255, 255);
+    font-family: Arial !important;
 }
 
+/* Header / Upper part */
 
 header{
     width:100%;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    background-color: rgb(156, 229, 245);
+    background-color: rgb(255, 212, 229);
+    color: rgb(88, 88, 88);
     margin-bottom: 20px;
 }
 
+.bakery-icon p{
+    font-size: calc(15px + 1vw);
+}
+
 .bakery-icon{
-    width:25%;
+    width: 21%;
     display: flex;
     justify-content: space-around;
-    flex-wrap: nowrap;
-    margin:0px;
-    
 }
 
 .cupcake-icon img{
     width:450%;
 }
 
-#links{
-    display: none;
+.welcome-msg{
+    flex-wrap: nowrap;
+    margin-top: 90px;
+    width: 500%;
+    float: left;
+    justify-content: right;
+    
 }
 
-/* Check how to situate icon on extreme right*/
-.hamburger-icon{
-    margin-top: 20px;
-    width: 100%;
+/* Navigation bar */
+
+#links{
+    display:none;
 }
+
+.hamburger-icon{
+    margin-top:16px;
+    left: -10px;
+    width: 80%;
+    
+}
+.menu-nav {
+    overflow: hidden;
+    background-color:rgb(207, 144, 155);
+    position: absolute;
+    display:none;
+    min-width: 100vw;
+    right:0px;
+    top:calc(65px + 3vw);
+}
+
+
+.menu-nav li{
+      list-style-type: none;
+      display: inline;
+}
+  
+.menu-nav a {
+    color: rgb(85, 85, 85);
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+}
+
+/* Main */
 
 .welcome-image{
     width: 100%;
@@ -44,19 +84,11 @@ header{
     margin-bottom: 25px;
 }
 
-.welcome-msg{
-    width:500%;
-    start
-    text-align: right;
-    margin-top: 90px;
-    
-}
-
 .welcome{
     width: auto;
     text-align: justify;
     text-justify: inter-word;
-    color: rgb(255, 255, 255);
+    color: rgb(150, 150, 150);
 }
 
 .products img{
@@ -66,15 +98,19 @@ header{
     justify-content: space-between;
 }
 
-.media-icons img{
-    width: 25px;
-    mar
-}
+/* Footer */
 
 footer{
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 20px;
-    background-color: rgb(156, 229, 245);
+    background-color: rgb(255, 212, 229);
+    color: rgb(255, 255, 255);
+
+}
+
+.media-icons img{
+    width: 25px;
+    mar
 }
