@@ -16,24 +16,24 @@ header{
     margin-bottom: 20px;
 }
 
-.bakery-icon p{
-    font-size: calc(15px + 1vw);
-}
-
 .bakery-icon{
-    width: 21%;
+    width: 100%;
     display: flex;
     justify-content: space-around;
 }
 
+.bakery-icon p{
+    font-size: calc(15px + 1vw);
+}
+
 .cupcake-icon img{
-    width:450%;
+    width:125px;
 }
 
 .welcome-msg{
     flex-wrap: nowrap;
     margin-top: 90px;
-    width: 500%;
+    width: 100%;
     float: left;
     justify-content: right;
     
