@@ -1,7 +1,19 @@
-h1 {
+navbar {
    flex-direction: row;
    background-color: blue;
    color: white;
    text-align: justify;
    justify-content: flex-end;
+   position: fixed;
 }
+
+body {
+   background-color: blue;
+}
+
+.row {
+   background-color: blue;
+}
+ navbar {
+    position: fixed;
+ }
