@@ -7,9 +7,11 @@ body {
 
 header {
   width: 95%;
-  height: 100px;
   margin-left: auto;
   margin-right: auto;
+  height: auto;
+  padding-top: 2%;
+  padding-bottom: 2%;
 
   display: flex;
   flex-direction: row;
@@ -20,14 +22,39 @@ header {
 }
 
 header img {
-  width: 30px;
-  height: 30px;
-  object-position: 10% 10%;
+  width: 50px;
+  height: 50px;
+
+  border: 1px red solid;
 }
 
-header .ads-words {
-  width: 40%;
-  height: auto;
+header div {
+  width: 60%;
+  display: block;
+  overflow: auto;
+
+  border: 1px red solid;
+}
+
+header div:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+header h4 {
+  width: auto;
+  text-align: right;
+  opacity: 0.6;
+  font-style: italic;
+
+  border: 1px red solid;
+}
+
+header nav {
+  text-align: right;
+
+  border: 1px red solid;
 }
 
 #welcome {
