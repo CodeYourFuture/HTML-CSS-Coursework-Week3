@@ -1,1 +1,66 @@
 /*  Add your styling here */
+
+body{
+    margin:0px;
+}
+
+header {
+    position: relative;
+    text align: center;
+}
+
+.wrapper {
+    position:absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top:50%;
+    left:50%;
+}
+
+nav{
+ /*   content: "\2261";*/
+}
+
+header img {
+    max-width: 100%;
+    max-height: height 500px;
+    position:relative;
+}
+
+h2{
+    color: black;
+}
+
+p {
+}
+
+.intro{
+    text-align:center;
+}
+
+.fullimage{
+    width:90%;
+}
+
+.quad{
+    display:flex;
+    justify-content: space-evenly;
+    align-content: space-between;
+    flex-wrap:wrap;
+}
+
+.quad img{
+    width:40%;
+    height:auto;
+    padding:10px;
+}
+
+media (min-width:768px){
+
+}
+
+media (min-width:640px){
+
+}
+
