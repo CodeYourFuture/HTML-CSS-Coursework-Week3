@@ -12,7 +12,7 @@ header{
     display: flex;
     justify-content: space-between;
     background-color: rgb(255, 212, 229);
-    color: rgb(88, 88, 88);
+    color: rgb(134, 134, 134);
     margin-bottom: 20px;
 }
 
@@ -28,6 +28,8 @@ header{
 
 .cupcake-icon img{
     width:125px;
+    margin-top: 10px;
+
 }
 
 .welcome-msg{
@@ -36,7 +38,8 @@ header{
     width: 100%;
     float: left;
     justify-content: right;
-    
+    text-align: end;
+    font-weight: bold;
 }
 
 /* Navigation bar */
@@ -89,6 +92,7 @@ header{
     text-align: justify;
     text-justify: inter-word;
     color: rgb(150, 150, 150);
+    
 }
 
 .products img{
@@ -107,6 +111,8 @@ footer{
     margin-top: 20px;
     background-color: rgb(255, 212, 229);
     color: rgb(255, 255, 255);
+    font-weight: bold;
+
 
 }
 
