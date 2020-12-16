@@ -1,1 +1,5 @@
 /*  Add your styling here */
+.cakeDisp {
+display: flex;
+flex-direction: column;
+}
