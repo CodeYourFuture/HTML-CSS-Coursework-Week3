@@ -1,392 +1,335 @@
-
 /*  Add your styling here */
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Rajdhani:wght@300&display=swap");
-*{
- box-sizing: border-box;
- margin: 0;  
- padding: 0; 
+
+/*this applies to all elements */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-body{
+body {
   font-family: "Rajdhani", sans-serif;
-    
 }
-
-
 
 /*Default Styles*/
 
-
-.mobile_nav_links li{
+.mobile_nav_links li {
   padding-top: 40px;
   list-style: none;
 }
 
-.mobile_nav_links li a{
+.mobile_nav_links li a {
   text-decoration: none;
   color: #fff;
   font-size: 2rem;
- 
 }
-.mobile_nav{
+.mobile_nav {
   background-color: rgb(88, 15, 27);
   position: fixed;
   right: 0;
-  bottom:  0px;
+  bottom: 0px;
   top: 160px;
   height: 100vh;
   opacity: 0.9;
   width: 0%;
   transition: all 0.3s ease-out;
   text-align: center;
- 
 }
 
-.mobile_nav.openNav{
+.mobile_nav.openNav {
   width: 100%;
   opacity: 0.9;
 }
 
-.header{
+.header {
   width: 100%;
   display: flex;
   background-color: #250902;
   padding-bottom: 20px;
 }
 
-.hamburger_menu_and_text{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    flex: 2;
+.hamburger_menu_and_text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  flex: 2;
 }
 
-.logo{
-    width: 120px;
-    height: 120px;
-    margin-top: 20px;
+.logo {
+  width: 120px;
+  height: 120px;
+  margin-top: 20px;
 }
 
-
-.banner_text{
-    font-size: 1.3rem;
-    color: floralwhite;
-    padding-top: 10px;
-    padding-left: 20px;
-    margin-top: 30px;
-    margin-right:40px ;
-    
+.banner_text {
+  font-size: 1.3rem;
+  color: floralwhite;
+  padding-top: 10px;
+  padding-left: 20px;
+  margin-top: 30px;
+  margin-right: 40px;
 }
 /*welcome section*/
-.text_and_img_container{
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-content: center;
-  background-color:#800e13;
-   position: relative;
-   
+.text_and_img_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #800e13;
+  position: relative;
 }
 
-.welcome_text_img img{
-  
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    max-width: 90%;
-    width: 100%;
-
+.welcome_text_img img {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 90%;
+  width: 100%;
   max-height: 300px;
   border-radius: 10px;
--webkit-box-shadow: 5px 5px 15px -3px #000000; 
-box-shadow: 5px 5px 15px -3px #000000;
- 
-   
+  -webkit-box-shadow: 5px 5px 15px -3px #000000;
+  box-shadow: 5px 5px 15px -3px #000000;
 }
 
-h1{
+h1 {
   width: 100%;
   text-align: center;
   padding-bottom: 20px;
   font-size: 2rem;
   color: rgb(245, 221, 11);
 }
-.text_and_img_container{
+.text_and_img_container {
   padding-bottom: 30px;
-  
 }
-.welcome_text_img{
-    order: 2;
-    text-align: center;
-    
-  
+.welcome_text_img {
+  order: 2;
+  text-align: center;
 }
-.welcome_text_container{
-  
-    padding: 15px;
-order: 1;
+.welcome_text_container {
+  padding: 15px;
+  order: 1;
 }
-.welcome_text_content{
+.welcome_text_content {
   width: 100%;
   color: #fff;
   font-size: 1.5rem;
   text-align: center;
   padding-bottom: 40px;
-
 }
-.cakes_images img{
-    max-width: 80%;
-   max-height: 300px;
-   margin:  0 auto;
-   border-radius: 10px;
-   border: 2px solid white;
-   -webkit-box-shadow: 5px 5px 15px -3px #000000; 
-box-shadow: 5px 5px 15px -3px #000000;
+.cakes_images img {
+  max-width: 80%;
+  max-height: 300px;
+  margin: 0 auto;
+  border-radius: 10px;
+  border: 2px solid white;
+  -webkit-box-shadow: 5px 5px 15px -3px #000000;
+  box-shadow: 5px 5px 15px -3px #000000;
 }
 
 .cakes_images {
   display: grid;
   grid-template-columns: 1fr 1fr;
-row-gap: 20px;
-
-
-  
+  row-gap: 20px;
 }
 
-.cakes_images img{
+.cakes_images img {
   opacity: 0.5;
-cursor: pointer;
-transition: 0.5s ease-in-out;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
 }
-.cakes_images img:hover{
+.cakes_images img:hover {
   opacity: 1;
 }
 
-.products_img{
+.products_img {
   padding-top: 30px;
-    text-align: center;
-    padding-bottom: 40px;
-     background-color: #38040e;
+  text-align: center;
+  padding-bottom: 40px;
+  background-color: #38040e;
 }
 
 /*HamBurger Menu*/
-.hamburger_menu_box{
-position: relative;
-width: 80px;
-height: 80px;
-cursor: pointer;
-display: flex;
-align-items:  center;
-justify-content: center;
-transition: all 0.5s ease-in-out;
-
+.hamburger_menu_box {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s ease-in-out;
 }
-.line{
-width: 50px;
-height: 6px;
-border-radius: 5px;
-background-color: rgb(250, 245, 245);
-transition: all 0.5s ease-in-out;
+.line {
+  width: 50px;
+  height: 6px;
+  border-radius: 5px;
+  background-color: rgb(250, 245, 245);
+  transition: all 0.5s ease-in-out;
 }
 
 .line::before,
-.line::after{
-content: '';
-position: absolute;
-width: 50px;
-height: 6px;
-border-radius: 5px;
-background-color: rgb(248, 241, 241);
-transition: all .5s ease-in-out;
-    
+.line::after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 6px;
+  border-radius: 5px;
+  background-color: rgb(248, 241, 241);
+  transition: all 0.5s ease-in-out;
 }
-.line::before{
+.line::before {
   transform: translateY(-14px);
 }
-.line::after{
+.line::after {
   transform: translateY(14px);
 }
 
 /* Apply Cross when clicked */
-.hamburger_menu_box.open .line{
+.hamburger_menu_box.open .line {
   background: transparent;
 }
 
-.hamburger_menu_box.open .line::before{
-  transform: rotate(45deg) ; 
+.hamburger_menu_box.open .line::before {
+  transform: rotate(45deg);
 }
-.hamburger_menu_box.open .line::after{
-  transform: rotate(-45deg);   
+.hamburger_menu_box.open .line::after {
+  transform: rotate(-45deg);
 }
-
-
-
-
 
 /*footer*/
-footer{
+footer {
   background-color: #250902;
   text-align: center;
 }
 footer p {
   color: cornsilk;
 }
-.footer_icon img{
-   width: 30px;
-   height: 30px;
+.footer_icon img {
+  width: 30px;
+  height: 30px;
   margin-left: 20px;
 }
 
-.footer_icon{
+.footer_icon {
   padding: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
- 
 }
 
-.desktop_nav{
+.desktop_nav {
   display: none;
 }
 
-/* Tablet view*/
-
-@media (min-width:768px){
-
-
-}
-
 /*laptop or any larger screen*/
-@media (min-width:900px){
- .hamburger_menu_box{
-   display: none;
- }
- .desktop_nav{
- display: flex;
-   /*background-color:rgba(61, 16, 16, 0.9);*/
-   width: 100%;
-   flex-direction: row;
-   order:3;
-  flex: 2;
-  align-items: center;
-  justify-content: center;
-padding: 40px;
-margin: 0 auto;
-background-color: #38040e;
+@media (min-width: 900px) {
+  .hamburger_menu_box {
+    display: none;
+  }
+  .desktop_nav {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    order: 3;
+    flex: 2;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    margin: 0 auto;
+    background-color: #38040e;
+  }
+  .cakes_images {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    position: relative;
+  }
 
-  
- }
-.cakes_images{
-  display: grid;
-grid-template-columns: repeat(4,1fr);
-  position: relative;
-}
+  .products_img {
+    padding: 80px;
+    background-color: #38040e;
+  }
 
-.products_img{
-  padding: 80px;
- background-color: #38040e;
+  .cakes_images img {
+    max-width: 100%/4;
+    margin: 0 auto;
+    border-radius: 10px;
+    border: 2px solid white;
+    -webkit-box-shadow: 5px 5px 15px -3px #000000;
+    box-shadow: 5px 5px 15px -3px #000000;
+    opacity: 0.4;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+  }
+  .cakes_images img:hover {
+    cursor: pointer;
+    opacity: 1;
+  }
 
-}
+  .text_and_img_container {
+    display: flex;
+    flex-direction: row;
+    padding: 100px;
+    background-color: #800e13;
+  }
+  .welcome_text_img img {
+    width: 100%;
+    height: auto;
+  }
+  .welcome_text_img {
+    flex: 1;
+  }
+  .welcome_text_container {
+    flex: 1;
+    order: 2;
+  }
 
+  .welcome_text_content {
+    text-align: left;
+  }
 
+  .desktop_nav_links {
+    display: flex;
+  }
+  .desktop_nav li a {
+    font-size: 1.3rem;
+    padding: 40px;
+    text-decoration: none;
+    color: honeydew;
+    background-color: #ad2831;
+    padding: 20px;
+    margin-left: 5px;
+    transition: 0.8s ease-out;
+    border-radius: 5px;
+  }
 
-.cakes_images img{
-    max-width: 4/100%;
-   margin:  0 auto;
-   border-radius: 10px;
-   border: 2px solid white;
-   -webkit-box-shadow: 5px 5px 15px -3px #000000; 
-box-shadow: 5px 5px 15px -3px #000000;
-opacity: 0.4;
-cursor: pointer;
-transition: 0.5s ease-in-out;
-}
-.cakes_images img:hover{
-  cursor: pointer;
-  opacity: 1;
-}
+  .desktop_nav li a:hover {
+    background-color: rgb(104, 32, 32);
+  }
 
- .text_and_img_container{
-   display: flex;
-   flex-direction: row;
-/*background-color:rgba(56, 3, 3, 0.9);*/
-padding: 100px;
-background-color:#800e13;
- }
- .welcome_text_img img{
-  width: 100%;
-  height: auto;
+  .desktop_nav li {
+    list-style: none;
+  }
 
- }
- .welcome_text_img{
-   flex: 1;
- }
- .welcome_text_container{
-   flex: 1;
-   order: 2;
+  .header {
+    width: 100%;
+    display: flex;
+    background-color: #250902;
+  }
 
- }
-
- .welcome_text_content{
-   text-align: left;
- }
-
- .desktop_nav_links{
-   display: flex;
-   
- }
- .desktop_nav li a{
-font-size: 1.3rem;
-padding: 40px;
-text-decoration: none;
-color: honeydew;
- background-color:#ad2831;
-  padding: 20px;
-  margin-left: 5px;
-  transition:  0.8s ease-out;
-  border-radius: 5px;
- }
-
-.desktop_nav li a:hover{
- background-color: rgb(104, 32, 32);
-
-}
-
- .desktop_nav li{
-   list-style: none;
- }
-
- .header{
-  width: 100%;
- display: flex;
- /* background-color: #450920;*/
-background-color: #250902;
- 
-}
-
-
-.logo{
+  .logo {
     width: 150px;
     height: 150px;
     margin-top: 20px;
-    
-    
-}
-
-
-.banner_text{
+  }
+  .banner_text {
     font-size: 2rem;
     color: floralwhite;
     padding-top: 70px;
     padding-left: 20px;
-    
-   
-    
-    
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
 }
-
-
-}
-
-
-
