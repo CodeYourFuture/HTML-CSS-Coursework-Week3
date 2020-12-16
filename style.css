@@ -1,7 +1,8 @@
 /*  Add your styling here */
 .intro {
   width: 290px;
-  background-color: rgb(199, 196, 196);
+  text-align: justify;
+  font-weight: lighter;
 }
 
 .intro-image {
@@ -16,7 +17,6 @@
 .products {
   width: 290px;
   display: flex;
-  background-color: rgb(199, 196, 196);
 }
 .products-img {
   justify-content: center;
