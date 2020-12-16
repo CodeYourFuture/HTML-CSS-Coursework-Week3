@@ -6,30 +6,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Nigel's Responsive Cake webpage</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- Hamburger -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+
+
+    
+<!-- Top Navigation Menu -->
+<div class="topnav">
+  <a href="#home" class="active">Cake Shop</a>
+  <!-- Navigation links (hidden by default) -->
+  <div id="myLinks">
+    <a href="#news">News</a>
+    <a href="#contact">Contact</a>
+    <a href="#about">About</a>
+  </div>
+  <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+<script>
+    /* Toggle between showing and hiding the hamburger menu links */
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+
     <header>
-        
+  
         <img src="design/header.jpg" alt="Cake Header">
+        
+        <!-- <p class="burger">
+            &#x2261;    
+        </p> -->
         <div class="wrapper">
-            
-            <nav>
-                <ul>
-                    <li>Alpha</li>
-                    <li>Beta</li>
-                    <li>Gamma</li>
-                </ul>
-            </nav>
             <h2>
                The best cakes in town delivered to your door
             </h2>
         </div>
     </header>
     <section class="intro">
-        <h1>Welcome</h1>
+        <section class="welcome"><h1>Welcome
+        </h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et lobortis mauris. Aliquam consequat luctus condimentum. Nunc ornare id leo non volutpat. Nunc a ligula ut elit aliquet porttitor in malesuada purus. Nullam sit amet mi pulvinar, dignissim orci ac, lobortis urna. Nunc pellentesque lectus sem, non vulputate nisi mattis in. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam varius convallis ornare. Integer venenatis semper eros. Proin vel erat ut quam semper pulvinar. Fusce hendrerit molestie sagittis.</p>
+        </section>
         <img class="fullimage" src="design/pratiksha-mohanty-SxHxyNx-6YI-unsplash.jpg" alt="">
     </section>
     <section class="quad">
@@ -43,13 +72,13 @@
     </section>
     <footer>
         <ul>
-            <li></li>
+            <li>Lorem ipsum dolor sit amet</li>
             
-            <li></li>
+            <li>Consectetur adipiscing elit</li>
             
-            <li></li>
+            <li>Aenean et lobortis mauris</li>
         </ul>
-        
+        <p>Lorem ipsum dolor sit amet</p>
     </footer>
 </body>
 

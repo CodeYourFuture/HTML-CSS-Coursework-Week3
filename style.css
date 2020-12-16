@@ -2,8 +2,70 @@
 
 body{
     margin:0px;
+    background-color: #FFA5CB;
+font-family: 'Nunito', sans-serif;
 }
 
+
+
+
+/* Style the navigation menu */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+  display: none;
+}
+
+/* Style navigation menu links */
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* Add a grey background color on mouse-over */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Style the active link (or home/logo) */
+.active {
+  background-color:#FFA5CB;
+  color: black;
+}
+
+
+
+
+
+
+
+/* burger {
+    margin:0px;
+    font-size:2.5em;
+    position:fixed;
+    top: 0;
+    right:5px;
+    font-weight:800;
+    background-color: transparent;
+} */
 header {
     position: relative;
     text align: center;
@@ -18,22 +80,23 @@ header {
     left:50%;
 }
 
-nav{
- /*   content: "\2261";*/
-}
-
 header img {
     max-width: 100%;
-    max-height: height 500px;
+    max-height: 500px;
     position:relative;
 }
 
 h2{
     color: black;
+    text-align:center;
+    padding:1px 0px;
+    background-color:#FFA5CB;
 }
 
-p {
+h1{
+    margin:10px 0px;
 }
+
 
 .intro{
     text-align:center;
@@ -51,16 +114,84 @@ p {
 }
 
 .quad img{
-    width:40%;
+    width:43.5%;
     height:auto;
     padding:10px;
 }
 
-media (min-width:768px){
-
+ul{
+    list-style:none
 }
 
-media (min-width:640px){
+li{
+    
+    margin:10px 0px;
+}
+
+footer p{
+    text-align:center;
+}
+
+@media (min-width:768px){
+.topnav a {
+  display: flex;
+  flex-direction:row;
+}
+.topnav a:hover {
+    
+display: flex;
+flex-direction:row;
+}
+/* makes hamburger disappear */
+.topnav a.icon {
+  display: none;
+}
+.active {
+  display: none;
+}
+.topnav a {
+  display: none;
+}
+.topnav {
+  display: none;
+}
+.topnav #myLinks {
+display: flex;
+flex-direction:row;
+color:black;
+border: solid black 10px;
+}
+.intro {
+    display:flex;
+    flex-direction:row-reverse;
+}
+.fullimage {
+    width:50%;
+}
+.quad img{
+    width:23%;
+    height:auto;
+    padding:5px;
+}
+.intro {
+    margin: 10px 0px;
+}
+.quad {
+    margin: 10px 0px;
+}
+.welcome {
+    padding:0px 10px;
+}
+footer ul{
+    display:flex;
+    justify-content:center;
+}
+footer ul li{
+    margin: 1em;
+}
+}
+
+@media (min-width:640px){
 
 }
 
