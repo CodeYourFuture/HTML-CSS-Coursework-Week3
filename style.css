@@ -1,1 +1,53 @@
 /*  Add your styling here */
+head {
+  font-family: ;
+}
+
+body {
+}
+
+.menu-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  border: 3px solid rgb(99, 17, 230);
+}
+
+.menu-btn_burger {
+  width: 50px;
+  height: 6px;
+  background: rgb(99, 17, 230);
+  border-radius: 5px;
+  transition: all 0.5s ease-in-out;
+}
+
+.menu-btn_burger::before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 6px;
+  background: rgb(99, 17, 230);
+  border-radius: 5px;
+  transition: all 0.5s ease-in-out;
+}
+.menu-btn_burger::after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 6px;
+  background: rgb(99, 17, 230);
+  border-radius: 5px;
+  transition: all 0.5s ease-in-out;
+}
+
+.menu-btn_burger::before {
+  transform: translateY(-16px);
+}
+
+.menu-btn_burger::after {
+  transform: translateY(16px);
+}
