@@ -167,8 +167,21 @@ main {
 
 /* Responsive Rules */
 
-@media (min-width: 540px) {
+@media (min-width: 600px) and (max-width: 900px) {
+    
+    .hero img {
+        padding: 0 3rem;
+    }
 
+    .footer-list {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    .footer-list li {
+        line-height: 1.5rem;
+    }
 }
 
 
@@ -237,8 +250,18 @@ main {
 
     .footer-list {
         display: flex;
-        justify-content: space-around;
+        justify-content: flex-start;
         width: 100%;
-        /* padding-left: 5rem; */
+       
     }
+
+    .footer-list li {
+        line-height: 1.5rem;
+        margin-right: 8rem;
+    }
+
+    .footer-list p {
+        font-size: 1.3rem
+    }
+
 }
