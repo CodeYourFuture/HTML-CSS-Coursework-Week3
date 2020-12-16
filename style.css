@@ -1,1 +1,44 @@
 /*  Add your styling here */
+
+body {
+  background-color: #abc4ff;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  width: auto;
+  height: 200px;
+
+  background-color: #edf2fb;
+}
+.logo-box {
+  width: auto;
+  height: 75%;
+  margin: 0px;
+}
+.logo {
+  width: auto;
+  height: 100%;
+}
+
+.menu-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  margin: 7px;
+}
+.header-text {
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: large;
+  font-style: oblique;
+  font-weight: 800;
+}
+
+.intro-text {
+  margin-top: 25px;
+  padding: 5px;
+  background-color: #d7e3fc;
+}
