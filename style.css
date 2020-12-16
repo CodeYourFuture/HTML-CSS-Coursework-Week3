@@ -1,15 +1,17 @@
 /*  Add your styling here */
+
 /*Navigation*/
 /*Products*/
 h3{
     text-align: center;
 }
+p{
+    padding: 2%;
+}
 #products{
     display:flex;
     flex-direction: column;
-    margin:auto;
-    gap: 35px;
-    margin-bottom: 20px;
+    
     
 }
 .card:first-child{
