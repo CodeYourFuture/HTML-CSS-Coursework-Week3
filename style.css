@@ -73,3 +73,49 @@ header {
   height: 100%;
   object-fit: cover;
 }
+
+footer {
+  background-color: #b6ccfe;
+  font-size: small;
+  margin-top: 25px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+}
+
+.social-media {
+  width: 50%;
+  height: 50%;
+
+  text-align: center;
+}
+.social-media ul {
+  padding: 0px;
+  margin: 0px;
+  list-style-type: none;
+
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.social-media img {
+  height: 30px;
+  width: 30px;
+  background-color: #edf2fb;
+  border-radius: 25%;
+}
+.shop-info {
+  width: 50%;
+  height: 50%;
+}
+.shop-info a {
+  text-decoration: none;
+  color: black;
+}
+.copy-info {
+  color: rgb(173, 173, 173);
+  font-size: 20px;
+  text-align: center;
+}
