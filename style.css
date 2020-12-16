@@ -1,1 +1,15 @@
 /*  Add your styling here */
+:root {
+  --main-color: #ede0d4;
+  --secondary-color: #7f5539;
+  --third-color: #9c6644;
+}
+
+body {
+  background-color: var(--main-color);
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+}
