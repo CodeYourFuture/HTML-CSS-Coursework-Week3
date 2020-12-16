@@ -1,16 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Responsive Cake webpage</title>
     <!-- Add a link to your css file here -->
-</head>
+    <link rel="stylesheet" type="text/css" href=".\style.css" />
+  </head>
 
-<body>
-    <!-- Add your markup here -->
-</body>
+  <body>
+    <header>
+      <div class="container">
+        <div id="logo-image">
+          <h1>
+            <span style="color: #ff6666">Cake Masters</span> Home of cakes
+          </h1>
+        </div>
+        <div id="logo-intro">
+          <p>Brief one line intro</p>
+        </div>
+        <nav>
+          <ul>
+            <li class="current"><a href="index.html">Home</a></li>
+            <li><a href="about.html">Cakes</a></li>
+            <li><a href="services.html">Ordering</a></li>
+            <li><a href="services.html">Lessons</a></li>
+            <li><a href="services.html">About</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section id="welcome-section">
+        <h3 id="welcome-header">Welcome</h3>
+        <p id="welcome-text">Welcome text here</p>
+      </section>
 
+      <section id="top-ordered-section">
+        <h3>All time most ordered cake</h3>
+        <img src="" alt="Photo of most ordered cake" />
+        <button>Order now</button>
+      </section>
+
+      <section id="cake-showcase-section">
+        <div id="row1">
+          <img src="" alt="cake photo 1" />
+          <img src="" alt="cake photo 2" />
+        </div>
+        <div id="row2">
+          <img src="" alt="cake photo 3" />
+          <img src="" alt="cake photo 4" />
+        </div>
+      </section>
+    </main>
+    <footer>
+        
+        <div class="footer-social-media">
+            <div>
+                <img src="/img/twitter-icon.svg" class="footer-icon" alt="Twitter">
+                <p>Follow us on Twitter</p>
+            </div>
+            <div>
+                <img src="/img/facebook-icon.svg" class="footer-icon" alt="Facebook">
+                <p>Follow us on Facebook</p>
+            </div>
+            <div>
+                <img src="/img/instagram-icon.svg" class="footer-icon" alt="Instagram">
+                <p>Follow us on Instagram</p>
+            </div>  
+        </div>
+        <p>&copy; Cake Masters International, 2020</p>
+
+    </footer>
+  </body>
 </html>
