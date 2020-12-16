@@ -133,13 +133,11 @@ h1 {
   row-gap: 20px;
 }
 
-.cakes_images img {
-  opacity: 0.5;
-  cursor: pointer;
-  transition: 0.5s ease-in-out;
-}
+
 .cakes_images img:hover {
-  opacity: 1;
+  opacity: 0.9;
+  cursor: pointer;
+
 }
 
 .products_img {
