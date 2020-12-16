@@ -4,8 +4,24 @@
 h3{
     text-align: center;
 }
+#products{
+    display:flex;
+    flex-direction: column;
+    margin:auto;
+    gap: 35px;
+    margin-bottom: 20px;
+    
+}
 .card:first-child{
     
-    margin-left: 20px;
     background-color: chocolate;
+}
+.card:nth-child(2){
+    background-color: yellowgreen;
+}
+.card:nth-child(3){
+    background-color: pink;
+}
+.card:last-child{
+    background-color: peachpuff;
 }
