@@ -5,11 +5,30 @@
   --third-color: #9c6644;
 }
 
-body {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
   background-color: var(--main-color);
+  padding: 1rem;
+}
+
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
 }
 
 .logo {
   width: 40px;
   height: 40px;
+}
+
+.header-text {
+  display: flex;
+  text-align: right;
 }
