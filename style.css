@@ -14,9 +14,10 @@ header {
   padding-bottom: 2%;
 
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
+
+  background-color: rgb(253, 236, 239);
 
   border: 3px darkblue solid;
 }
@@ -30,27 +31,20 @@ header img {
 
 header div {
   width: 60%;
-  display: block;
-  overflow: auto;
+  display: table;
 
   border: 1px red solid;
 }
 
-header div:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-header h4 {
+header div h4 {
   width: auto;
   text-align: right;
   opacity: 0.6;
   font-style: italic;
+  margin: 0;
 
   border: 1px red solid;
 }
-
 header nav {
   text-align: right;
 
@@ -104,7 +98,7 @@ img {
   margin-right: auto;
 
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
 
   border: darkred 3px solid;
@@ -113,7 +107,7 @@ img {
 #cakes .cake-div {
   width: 45%;
   height: 45%;
-  margin: 1%;
+  margin: 2%;
   object-fit: cover;
 
   position: relative;
@@ -140,6 +134,7 @@ footer {
   margin-right: auto;
   height: auto;
 
+  background-color: rgb(253, 236, 239);
   border: 3px darkblue solid;
 }
 
@@ -148,17 +143,20 @@ footer .footer-divs {
   flex-direction: column;
   justify-content: space-around;
 
+  padding: 2%;
+
   border: 1px red solid;
 }
 
 footer .footer-divs .first,
 .second,
 .third {
-  width: 40%;
+  width: 35%;
   height: auto;
   margin: 2%;
-  background-color: darkslategrey;
-  border: 3px darkblue solid;
+
+  background-color: rgb(214, 214, 214);
+  border: 1px red solid;
 }
 
 footer .copyright {
@@ -168,7 +166,7 @@ footer .copyright {
   margin-right: auto;
   height: auto;
 
-  background-color: darkslategrey;
+  background-color: rgb(214, 214, 214);
   border: 1px red solid;
   text-align: center;
 }
