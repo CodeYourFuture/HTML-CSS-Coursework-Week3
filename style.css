@@ -1,1 +1,11 @@
 /*  Add your styling here */
+/*Navigation*/
+/*Products*/
+h3{
+    text-align: center;
+}
+.card:first-child{
+    
+    margin-left: 20px;
+    background-color: chocolate;
+}
