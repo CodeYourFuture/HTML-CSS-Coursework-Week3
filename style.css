@@ -12,16 +12,18 @@ h1 {
     flex-grow: 2;
     margin-right: 50px;
     font-family: 'Lobster', cursive;
+    font-size: 14px;
 }
 
 .logo {
-    width: 200px;
-    height: auto;
+    width: 175px;
+    height: 200px;
 }
 
 .intro {
     background-color: rgb(243, 236, 141);
     text-align: justify;
+    font-size: 14px;
 }
 
 h2, p {
@@ -34,9 +36,14 @@ h2 {
     padding-bottom: 10px;
 }
 
+.giantCupcake {
+    width: 200px;
+    height: 250px;
+}
+
 .cakes {
-    width: 275px;
-    height: 150px;
+    width: 100px;
+    height: 75px;
     padding: 5px;
 }
 
@@ -59,6 +66,7 @@ h2 {
 footer {
     background-color: rgb(33, 248, 248);
     text-align: justify;
+    font-size: 10px;
 }
 
 .topnav {
@@ -96,3 +104,43 @@ footer {
     background-color: rgb(33, 248, 248);
     color: white;
 }
+
+@media (min-width: 540px) {
+    .logo {
+        width: 200px;
+        height: auto;
+    }
+    h1 {
+        font-size: 25px;
+    }
+    .giantCupcake {
+        width: 300px;
+        height: 450px;
+    }
+    .cakes {
+        width: 210px;
+        height: 140px;
+    }
+    .intro, p {
+        font-size: 20px;
+    }
+
+@media (min-width: 900px) {
+    .logo {
+        width: 200px;
+        height: auto;
+    }
+    h1 {
+        font-size: 40px;
+    }
+    .giantCupcake {
+        width: 500px;
+        height: 750px;
+    }
+    .cakes {
+        width: 350px;
+        height: 200px;
+    }
+    .intro, p {
+        font-size: 25px;
+    }
