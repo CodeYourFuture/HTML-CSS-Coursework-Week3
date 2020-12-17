@@ -2,6 +2,7 @@
 
 header{
     background-image: url(https://cdn.pixabay.com/photo/2018/01/17/15/33/streamer-3088458_1280.jpg);
+    background-image: fixed;
     padding: 10px;
     box-shadow: 1px 2px 3px #ccc;
     color: white;
@@ -9,7 +10,89 @@ header{
     flex-flow: row nowrap;
     justify-content: space-between;
 }
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
 }
-.header-content{
-    flex: 1 0 auto;
+
+.topnav a {
+  display: flex;
+  justify-content: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.dropdown {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.dropdown .dropbtn {
+  font-size: 17px;    
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: flex;
+  justify-content: left;
+}
+
+
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.topnav a:nth-child(n), .dropdown .dropbtn {
+	display: none;
+}
+.topnav a.icon {
+	display: flex;
+}
+
+.topnav.responsive {position: relative;}
+.topnav.responsive .icon {
+	position: absolute;
+    right: 0;
+    top: 0;
+}
+.topnav.responsive a {
+	display: flex;
+    justify-content: row;
+    display: block;
+    text-align: left;
+}
+.topnav.responsive .dropdown {display: flex;
+justify-content: column;}
+.topnav.responsive .dropdown-content {position: relative;}
+.topnav.responsive .dropdown .dropbtn {
+	display: block;
+    width: 100%;
+    text-align: left;
 }

@@ -13,10 +13,35 @@
     <header>
         <img src="https://images.unsplash.com/photo-1558301211-0d8c8ddee6ec?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHw%3D&auto=format&fit=crop&w=50&q=10" alt="logo">
         <nav class="header-content">
-            <a>Cakes</a>
-            <a>Designs</a>
-            <a>Events</a>
-            <a>Contact us</a>
+            <div class="topnav" id="myTopnav">
+                <a href="#home">Home</a>
+                <a href="#news">Cakes</a>
+                <a href="#contact">Designs</a>
+                <div class="dropdown">
+                    <button class="dropbtn">Events
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="#">Birthdays</a>
+                        <a href="#">Weddings</a>
+                        <a href="#">Parties</a>
+                    </div>
+                </div>
+                <a href="#about">About</a>
+                <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+            </div>
+            
+            
+            <script>
+                function myFunction() {
+                    var x = document.getElementById("myTopnav");
+                    if (x.className === "topnav") {
+                        x.className += " responsive";
+                    } else {
+                        x.className = "topnav";
+                    }
+                }
+            </script>
+
         </nav>
     </header>
     <!-- Add your markup here -->
