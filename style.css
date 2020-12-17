@@ -1,11 +1,12 @@
 /*  Add your styling here */
 @font-face{
     font-family: Libre;
-    src:url(fonts\LibreFont\LibreBaskerville-Regular.ttf);
+    src:url(fonts/LibreBaskerville-Regular.ttf);
 }
+
 @font-face {
     font-family: Langar;
-    src: url(fonts\Langar\Langar-Regular.ttf);
+    src: url(fonts/Langar-Regular.ttf);
 }
 
 html {
@@ -16,5 +17,5 @@ html {
     width:10%;
 }
 body{
-    font-family: Libre, Langar, Verdana;
-}
+    font-family: Libre, Langar;
+} 
