@@ -1,1 +1,71 @@
 /*  Add your styling here */
+
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+
+/* - Cover -  Custom default button */
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:focus {
+  color: rgb(37, 44, 30);
+  /* text-shadow: none; Prevent inheritance from `body` */
+}
+
+
+/*
+ * Base structure
+ */
+
+main {
+  text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+  box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+}
+
+.cover-container {
+  max-width: 42em;
+  
+}
+
+/*styling for the albums*/
+/*Sticky footer*/
+.container {
+  width: auto;
+  max-width: 680px;
+  padding: 0 15px;
+}
+
+.footer-list {
+  list-style: none;
+  display: flex;
+  padding-right: 30%;
+}
+.footer-list li {
+  justify-content: flex-start;
+  padding-right: 3%;
+}
+.footer-a {
+  color:rgb(37, 44, 30);
+  text-decoration: none;
+}
+.footer-a:hover {
+  color: salmon;
+}
+
+  /*breakpoints*/
+@media (min-width: 700px) {
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+    }
+  }
+
+  @media (min-width: 1000px) {
+    .bd-placeholder-img-lg {
+        font-size: 5.5rem;
+      }
+  }
