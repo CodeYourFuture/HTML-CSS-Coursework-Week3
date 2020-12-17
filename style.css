@@ -49,15 +49,15 @@ h3.header-text {
   text-align: right;
 }
 
+/* Main section */
+
 main {
   padding: 1rem;
   text-align: center;
-  /* background-color: var(--main-color); */
   color: var(--font-color);
 }
 
 .hero-text {
-  /* background-color: var(--main-color); */
   padding: 1rem;
   text-align: left;
 }
@@ -66,8 +66,11 @@ main {
   font-family: "Lobster", cursive;
   font-size: 1.8rem;
   font-weight: 300;
-
   padding: 1rem 0;
+}
+
+.hero-text p {
+  line-height: 1.5rem;
 }
 
 .hero-img {
@@ -87,4 +90,25 @@ main {
 .cards-container img {
   width: 50%;
   padding: 0.5rem;
+}
+
+/* Footer */
+
+footer {
+  text-align: center;
+}
+
+.social {
+  display: flex;
+  justify-content: space-between;
+}
+
+.social img {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.social li {
+  list-style: none;
 }
