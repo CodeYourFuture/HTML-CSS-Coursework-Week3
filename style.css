@@ -1,5 +1,10 @@
 /*  Add your styling here */
+
+article {
+  color: blue;
+}
+
 p {
-  font-size: 2rem;
-  background-color: brown;
+  color: blueviolet;
+  font-size: 4rem;
 }
