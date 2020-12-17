@@ -1,7 +1,7 @@
-/*  Add your styling here */
+/*  DEFAULT */
 :root {
-  --main-color: #ede0d4;
-  --secondary-color: #7f5539;
+  --main-color: #ffffdf;
+  --secondary-color: #f7eae2;
   --third-color: #9c6644;
 }
 
@@ -10,36 +10,56 @@
   box-sizing: border-box;
 }
 
-header {
-  background-color: var(--third-color);
+body {
+  font-family: "Lato", sans-serif;
+  /* font-family: "Lobster", cursive; */
+}
+
+header,
+footer {
+  background-color: var(--secondary-color);
   padding: 1rem;
 }
 
 .banner {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
-  height: 15vh;
+  align-items: center;
+  /* padding: 1rem; */
+  /* background-color: aqua; */
+  /* height: 15vh; */
 }
 
 .logo {
-  width: 90px;
-  height: 90px;
+  width: 50px;
+  height: 50px;
 }
 
-.header-text {
-  display: flex;
+.header-shop-name {
+  font-family: "Lobster", cursive;
+  font-size: 1.5rem;
+}
+
+h3.header-text {
+  width: 250px;
+  position: relative;
+  left: 18vw;
+  font-size: 1rem;
+  bottom: 10%;
+  padding: 2rem 1rem 1rem 1rem;
+  margin: 0 auto;
   text-align: right;
 }
 
 main {
   padding: 1rem;
   text-align: center;
+  background-color: var(--main-color);
 }
 
 .hero-text {
   /* height: 20vh; */
-  background-color: var(--main-color);
+  /* background-color: var(--main-color); */
   padding: 2rem 1rem;
 }
 
