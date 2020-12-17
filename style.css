@@ -87,7 +87,7 @@ header{
 }
 
 .welcome{
-    width: 100%;
+    width: 100;
     text-align: justify;
     text-justify: inter-word;
     color: rgb(150, 150, 150);
@@ -180,30 +180,35 @@ footer{
       font-size: 15px;
       background-color: rgb(134, 134, 134);
       margin:0 5px;
-      border-radius: 10px;
       
    } 
 
      /* Main */
 
-   .welcome-image{
-       order: 1;
-       
-   }
-
+     .welcome-image{
+        order: 1;
+        width: 100%;  
+        padding-right: 600px;
+        margin-left: 20px;
+    }
+ 
      .welcome{
-    display: flex;
-    margin-top: 120px;
-    margin-bottom: 20px;
-}
-
-    /* Menu products */
-
-    .products img{
-    width: 22%;
-    margin-left: 20px;
-    align-items: center;
-    flex-wrap: wrap;
-   
-}
+         display: flex;
+         flex-direction: row-reverse;
+         align-items: flex-start;        
+         justify-content: right;
+         text-align: left;
+         margin-top: 130px;
+     }
+ 
+     .welcome-p{
+         margin-left: 40px;
+     }
+     /* Menu products */
+ 
+     .products img{
+     width: 22%;
+     margin-left: 20px;
+     align-items: flex-start;
+     flex-wrap: wrap;
 }
