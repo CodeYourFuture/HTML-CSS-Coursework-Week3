@@ -13,7 +13,7 @@
     <header>
         <img src="https://images.unsplash.com/photo-1558301211-0d8c8ddee6ec?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHw%3D&auto=format&fit=crop&w=50&q=10" alt="logo">
         <nav class="header-content">
-            <div class="topnav" id="myTopnav">
+            <div class="topnav" id="parttopnav">
                 <a href="#home">Home</a>
                 <a href="#news">Cakes</a>
                 <a href="#contact">Designs</a>
@@ -30,10 +30,10 @@
                 <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
             </div>
             
-            
+        </nav>
             <script>
                 function myFunction() {
-                    var x = document.getElementById("myTopnav");
+                    var x = document.getElementById("parttopnav");
                     if (x.className === "topnav") {
                         x.className += " responsive";
                     } else {
@@ -42,10 +42,25 @@
                 }
             </script>
 
-        </nav>
+
     </header>
     <!-- Add your markup here -->
+    <section class="main">
+    <h1>Welcome</h1>
+    <p>We are a company here for you - whatever your needs. We make and construct personalised cakes for:</p>
+    <ol class="lists">
+        <li><a>Birthdays</a></li>
+        <li><a>Weddings</a></li>
+        <li>General parties</li>
+    </ol>
+    <div class="Birthday">
+    <h2> We would love it if you can wish us a happy 1st birthday as a company by clicking the image below to follow us</h2>
+    <a href="#">
+    <img class="birthdayimage" src="https://images.unsplash.com/photo-1562686620-13afe5e9ddfa?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxleHBsb3JlLWZlZWR8NTh8fHxlbnwwfHx8&auto=format&fit=crop" alt="Follow us link">
+    </a>
+    </div>
     <img src="../HTML-CSS-Coursework-Week2/img/menu-hamburger.svg" alt="hamburger menue">
+    </section>
 </body>
 
 </html>
