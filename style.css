@@ -80,6 +80,7 @@ main {
 .cards {
   display: flex;
   flex-direction: column;
+  margin: 1rem auto;
 }
 
 .cards-container {
@@ -105,6 +106,7 @@ footer h4 {
 ul.social {
   display: flex;
   justify-content: space-around;
+  padding: 0;
 }
 
 .social img {
@@ -117,7 +119,6 @@ ul.social {
   list-style: none;
   padding: 1.5rem 0;
   border-radius: 50%;
-  /* margin: 7px; */
   display: flex;
   justify-content: center;
   align-items: center;
