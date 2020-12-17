@@ -1,0 +1,27 @@
+/*  Add your styling here */
+
+article {
+  color: blue;
+}
+
+p {
+  color: blueviolet;
+  font-size: 4rem;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+}
+
+.header-image {
+  align-items: flex-end;
+}
