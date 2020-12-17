@@ -1,1 +1,15 @@
 /*  Add your styling here */
+
+.main-image {
+  width: 414px;
+  height: 500px;
+}
+
+.collections {
+  display: flex;
+}
+
+.collections-img {
+  width: 190px;
+  height: 207px;
+}
