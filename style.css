@@ -64,13 +64,41 @@ padding: 1rem;
 
 .socialMedia {
     display: flex;
-    align-: space-around;
+    justify-content: center;
 
 }
 
-.socialIcon {
 
+
+.socialIcon {
+margin: 0.5rem;
     height: 2.2rem;
     width: 2.2rem;
 
 }
+
+@media (min-width:540px){
+    .hamburgerIcon {
+    width: 2.1em;
+    height:2.2rem;
+
+}
+
+
+
+
+
+}
+
+@media (min-width:900px){
+    .hamburgerIcon {
+    display: none;
+
+}
+
+
+
+
+
+}
+
