@@ -10,12 +10,37 @@
 }
 
 html {
-    background-color: slategrey;
+    background-color: slateblue;
 }
 #logo{
-    display:block;
-    width:10%;
+    /* display:block; */
+    width:40%;
 }
 body{
     font-family: Libre, Langar;
+    background-color: slategrey;
+
 } 
+header{
+    /* display:flex; */
+    background-color: lightblue;
+
+}
+h2{
+    width:50%;
+}
+h1{
+    width:50%;
+}
+section img{
+    /* display:block; */
+    width:80%;
+    /* background-color: slategrey; */
+}
+#images{
+    display:flex;
+    flex-wrap: wrap;
+}
+footer{
+    background-color: crimson;
+}
