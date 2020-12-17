@@ -1,1 +1,51 @@
-/*  Add your styling here */
+/*  
+ */
+
+/* General Styles */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Cormorant', serif;
+    margin: 0;
+
+}
+
+nav {
+    font-family: 'Roboto', sans-serif;
+    color: darkgray;
+    height: 200px;
+}
+
+/* Navbar Styles */
+
+.navbar__container {
+    display: flex;
+    margin-bottom: 4rem;
+    background-color: #eee;
+}
+
+.nav__hamburger-menu {
+    position: absolute;
+    top: 0.75rem;
+    right: 1rem;
+}
+
+.logo {
+    width: 200px;
+    height: 200px;
+}
+
+.navbar__slogan {
+    position: relative;
+    right: 0.75rem;
+    left: auto;
+    top: 8rem;
+    text-align: end;
+    margin-left: 3rem;
+}
+.slogan {
+    font-size: 1.2rem;
+}
+
