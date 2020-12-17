@@ -98,9 +98,13 @@ footer {
   text-align: center;
 }
 
-.social {
+footer h4 {
+  text-transform: uppercase;
+}
+
+ul.social {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .social img {
@@ -111,4 +115,10 @@ footer {
 
 .social li {
   list-style: none;
+  padding: 1.5rem 0;
+  border-radius: 50%;
+  /* margin: 7px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
