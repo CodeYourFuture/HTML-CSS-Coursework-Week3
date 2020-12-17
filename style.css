@@ -40,7 +40,21 @@ section img{
 #images{
     display:flex;
     flex-wrap: wrap;
+    align-items: center;
+}
+.body-img{
+    width:50%;
 }
 footer{
     background-color: crimson;
+}
+footer ul{
+    display: flex;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+li{
+    width:30%;
 }
