@@ -8,10 +8,12 @@ h3{
 p{
     padding: 2%;
 }
-#products{
+.card{
     display:flex;
-    flex-direction: column;
-    
+    flex-direction: column;  
+    margin: auto;
+    align-self: stretch;
+    top:auto;
     
 }
 .card:first-child{
@@ -26,4 +28,16 @@ p{
 }
 .card:last-child{
     background-color: peachpuff;
+}
+/*Media Queris*/
+@media screen and (min-width:801px){
+    .card{
+        display:inline-block;
+        flex-direction:reverse-row;
+        width: 20px;
+
+    }
+    img{
+        
+    }
 }
