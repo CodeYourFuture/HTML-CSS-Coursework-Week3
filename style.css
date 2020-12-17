@@ -59,6 +59,7 @@ main{
 }
 
 img{
+    border-radius: 5%;
     width: 100%;
     height: auto;
 }
@@ -104,5 +105,60 @@ footer{
 
     .welcome{
         font-size: 1.25rem;
+    }
+}
+
+@media (min-width: 900px){
+    nav{
+        display: flex;
+        justify-content: flex-end;
+        padding: 1rem;
+        margin: 1rem;
+        border-radius: 20px;
+        background-color: rgb(255,179,230, 0.9);
+    }
+
+    nav ul a{
+        text-decoration: none;
+        color:  #fb0667;
+        margin: 1rem;
+        font-size: 1.5rem;
+    }
+
+    .fa-bars{
+        visibility: hidden;
+    }
+
+    .header-text{
+        width: 100%;
+        font-size: 2rem;
+    }
+
+    .logo{
+        font-size: 7rem;
+    }
+
+    .welcome{
+        width: 50%;
+
+        font-size: 1.5rem;
+    }
+
+    .main-image{
+        width: 50%;
+    }
+
+    .first{
+        display: flex;
+        flex-flow: wrap-reverse;
+    }
+
+    .sub-image-container{
+        width: 25%;
+    }
+
+    footer{
+        text-align: center;
+        font-size: 1.5rem;
     }
 }
