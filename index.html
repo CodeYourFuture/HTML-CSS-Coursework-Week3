@@ -5,17 +5,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="scripts.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Cupcake Queen</title>
     <!-- Add a link to your css file here -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Add your markup here -->
     <main>
+        <!-- Top Navigation Menu -->
+        <nav>
+            <div class="topnav">
+                <a href="#home" class="active"></br></a>
+                <div id="myLinks">
+                    <a href="#news">News</a>
+                    <a href="#contact">Contact</a>
+                    <a href="#about">About</a>
+                </div>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </nav>
         <header>
             <img class = "logo" src = "/cupcake-logo.png" alt = "Cupcake Queen Logo">
             <h1>&#10084 The best cakes in town,<br>delivered to your door &#10084</h1>
