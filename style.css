@@ -1,5 +1,4 @@
-/*  
- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
 
 /* General Styles */
 * {
@@ -7,41 +6,46 @@
 }
 
 body {
-    font-family: 'Cormorant', serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
-
+    padding: 0;
 }
 
-nav {
+
+
+/* Header Styles */
+
+header {
     font-family: 'Roboto', sans-serif;
-    color: darkgray;
+    color: #264653;
     height: 200px;
 }
 
-/* Navbar Styles */
-
-.navbar__container {
+.header__container {
     display: flex;
-    margin-bottom: 4rem;
-    background-color: #eee;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #a8dadc;
+    padding: 1rem;
 }
 
-.nav__hamburger-menu {
+.header__hamburger-menu {
     position: absolute;
-    top: 0.75rem;
+    top: 1rem;
     right: 1rem;
 }
 
 .logo {
-    width: 200px;
-    height: 200px;
+    width: 12.5rem;
+    height: 12.5rem;
+    padding: 1rem;
 }
 
-.navbar__slogan {
+.header__slogan {
     position: relative;
     right: 0.75rem;
     left: auto;
-    top: 8rem;
+    top: 4rem;
     text-align: end;
     margin-left: 3rem;
 }
@@ -49,3 +53,164 @@ nav {
     font-size: 1.2rem;
 }
 
+/* Navbar Styles */
+
+nav {
+    display: none;
+    background-color: #a8dadc;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    text-align: end;
+}
+
+.navbar__links a {
+    text-decoration: none;
+    padding: 0 1.5rem;
+    color: #fff;
+    background-color:  #3a86ff;
+    margin: 0.4rem;
+}
+
+.navbar__links a:hover {
+    color: orangered;
+    opacity: 0.8;
+}
+
+/*Main Section*/
+
+article h1 {
+    font-size: 2.75rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+
+article p {
+   line-height: 1.5;
+}
+
+article {
+    padding: 1rem 1rem;
+}
+
+.cake-images--big {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.cake-img1 {
+    width: 25rem;
+    height: 22rem;
+}
+
+.cake-images--small {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 2rem;
+}
+
+.cake-img--sm {
+    width: 14.5rem;
+    height: 15rem;
+    padding: 1rem;
+}
+
+/*Footer Styles*/
+
+footer {
+    display: block;
+    color: #264653;
+    background-color: #a8dadc;
+    padding: 1rem;
+}
+
+.copyright {
+    text-align: center;
+}
+
+.footer__heading h2 {
+    margin-bottom: 0.75rem;
+}
+
+/* Media Queries */
+
+@media screen and (min-width: 540px) {
+    .cake-img1 {
+        width: 29rem;
+        height: 27rem;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    header {
+        height: 9.375rem;
+    }
+
+    .logo {
+        width: 11.5rem;
+        height: 10rem;
+    }
+
+    .header__slogan {
+        top: 3rem;
+    }
+
+    .header__hamburger-menu {
+        display: none;
+    }
+
+    nav {
+        display: inline-block;
+        width: 80vw;
+        margin: 3rem 7.6rem;
+    }
+
+    main {
+        width: 80vw;
+        margin: auto;
+    }
+
+    .welcome-section--flex {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    article h1, article p {
+        text-align: end;
+    }
+
+    .cake-img1 {
+        width: 40vw;
+    }
+
+    .welcome-section {
+        margin-top: -4.5rem;
+    }
+
+    .cake-img--sm {
+        width: 15.3rem;
+        height: 15rem;
+        padding-right: 1rem;
+        padding-left: 0;
+    }
+
+    .cake-img--sm:last-child {
+        padding-right: 0;
+    }
+
+    .cake-images--small {
+        justify-content: start;
+    }
+    
+    .footer__container {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-end;
+    }
+
+    footer {
+        padding: 3rem 9rem;
+    }
+   
+}
