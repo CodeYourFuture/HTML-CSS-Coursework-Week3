@@ -1,4 +1,25 @@
 /*  Add your styling here */
-.bigCake {
-    width = 100%;
+
+
+header {
+    background-color: rgb(33, 248, 248);
+    display: flex;
+}
+
+h1{
+    align-self: flex-end;
+    text-align: right;
+    flex-grow: 2;
+    margin-right: 50px;
+    font-family: 'Lobster', cursive;
+}
+
+.logo {
+    width: 200px;
+    height: auto;
+}
+
+.cakes {
+    width: 600px;
+    height: 300px;
 }
