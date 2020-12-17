@@ -2,6 +2,7 @@
 
 header {
     background-color: rgb(33, 248, 248);
+    padding-bottom: 40px;
     display: flex;
 }
 
@@ -20,6 +21,7 @@ h1 {
 
 .intro {
     background-color: rgb(243, 236, 141);
+    text-align: justify;
 }
 
 h2, p {
@@ -33,10 +35,31 @@ h2 {
 }
 
 .cakes {
-    width: 600px;
-    height: 300px;
+    width: 275px;
+    height: 150px;
+    padding: 5px;
 }
 
+.giantCake, .cupcakes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 149, 193);
+    margin-top: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.cupcakes {
+    padding: 40px;
+    flex-flow: row wrap;
+    background-color:rgb(243, 236, 141);
+}
+
+footer {
+    background-color: rgb(33, 248, 248);
+    text-align: justify;
+}
 
 .topnav {
     overflow: hidden;
