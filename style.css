@@ -1,1 +1,103 @@
 /*  Add your styling here */
+
+body{
+    background-image: linear-gradient(90deg, rgba(86, 207, 255, 0.3), rgb(248, 214, 224));
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+	height: 100%;
+    margin: 0pt 40pt 0pt 0pt;
+}
+
+section{
+    padding: 0px 15px 0px 15px;
+}
+
+/* ==============header start============== */
+header{
+    background-color: rgb(170, 223, 255);
+    height: 130px;
+    padding: 10px;
+}
+
+.logo{
+    width: 110px;
+}
+
+.hamburger{
+    float: right;
+    font-size: 30px;
+    color: blue;
+}
+
+.slogan{
+    float: right;
+    color: blue;
+}
+/* ==============header ends============== */
+
+/* ==============nav start============== */
+nav{
+    display: none;
+}
+/* ==============nav ends============== */
+
+/* ==============Welcome-sec start============== */
+.welcome-sec{
+    text-align: center;
+}
+
+.welcome-p{
+    sadsa
+}
+
+.main-img{
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+/* ==============Welcome-sec ends============== */
+
+/* ==============img-sec start============== */
+.img-sec{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+
+.photo-grid{
+    width: 100%;
+    border: 0px solid lightskyblue;
+}
+/* ==============img-sec ends============== */
+
+/* ==============footer-group start============== */
+footer{
+    background-color: lightskyblue;
+    margin-top: 40px;
+    padding: 10px 20px 10px 20px;
+}
+
+.footer-group{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-link{
+    padding: 9px 10px 9px 10px;
+    margin: 10px 7px 0px 7px;
+    border-radius: 20px;
+    background-color: #2E81FF;
+    color: #F8D6E0;
+    border: 2px solid #E75A76;
+}
+
+h2{
+    text-align: center;
+    color: #E75A76;
+    font-size: 21px;
+}
+/* ==============footer=group ends============== */
