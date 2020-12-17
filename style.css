@@ -1,1 +1,45 @@
-/*  Add your styling here */
+
+body{
+    font-family: 'Langar', cursive;
+    background-color: rgb(255, 214, 77);
+}
+
+.cake-logo {
+    width: 200px;
+    height: 200px;
+}
+
+.footerClass{
+    background-color:rgb(245, 37, 73);
+}
+
+.marginContainer{
+    margin: 0.75em 0;
+}
+
+.navLink{
+    background-color: rgb(245, 37, 73);
+}
+
+a{
+    color: inherit;
+}
+
+a:hover{
+    color: grey;
+    text-decoration: none;
+}
+
+.navBar{
+    display: none;
+}
+
+.Copy-right{
+    color:black;
+}
+
+@media only screen and (min-width: 420px) {
+    .lgDisplay{
+        display: block;
+    }
+} 
