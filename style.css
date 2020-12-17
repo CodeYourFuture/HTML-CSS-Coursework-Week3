@@ -1,7 +1,7 @@
 /*  DEFAULT */
 :root {
-  --main-color: #ffffdf;
-  --secondary-color: #f7eae2;
+  --main-color: #faf1da;
+  --font-color: #5f4501;
   --third-color: #9c6644;
 }
 
@@ -12,38 +12,36 @@
 
 body {
   font-family: "Lato", sans-serif;
-  /* font-family: "Lobster", cursive; */
 }
 
 header,
 footer {
-  background-color: var(--secondary-color);
+  background-color: var(--main-color);
   padding: 1rem;
+  color: var(--font-color);
 }
 
 .banner {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* padding: 1rem; */
-  /* background-color: aqua; */
-  /* height: 15vh; */
 }
 
 .logo {
-  width: 50px;
-  height: 50px;
+  width: 90px;
+  height: 90px;
 }
 
 .header-shop-name {
   font-family: "Lobster", cursive;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
+  padding: 0.8rem;
 }
 
 h3.header-text {
   width: 250px;
   position: relative;
-  left: 18vw;
+  left: 8vw;
   font-size: 1rem;
   bottom: 10%;
   padding: 2rem 1rem 1rem 1rem;
@@ -54,13 +52,22 @@ h3.header-text {
 main {
   padding: 1rem;
   text-align: center;
-  background-color: var(--main-color);
+  /* background-color: var(--main-color); */
+  color: var(--font-color);
 }
 
 .hero-text {
-  /* height: 20vh; */
   /* background-color: var(--main-color); */
-  padding: 2rem 1rem;
+  padding: 1rem;
+  text-align: left;
+}
+
+.hero-text h1 {
+  font-family: "Lobster", cursive;
+  font-size: 1.8rem;
+  font-weight: 300;
+
+  padding: 1rem 0;
 }
 
 .hero-img {
@@ -70,13 +77,10 @@ main {
 .cards {
   display: flex;
   flex-direction: column;
-  /* flex-wrap: wrap; */
-  /* padding: 3rem; */
 }
 
 .cards-container {
   display: flex;
-  /* flex-direction: column; */
   width: 100%;
 }
 
