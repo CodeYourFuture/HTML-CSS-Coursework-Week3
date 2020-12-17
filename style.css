@@ -1,11 +1,17 @@
 /*  Add your styling here */
 /* styling header section */
+body{
+    margin:0px;
+    font-family: 'Langar', cursive;
+    
+}
 header{
     width:100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
+  
    
 }
 .icon{
@@ -23,7 +29,7 @@ header{
 .icon-text{
     width:90%;
     text-align: center;
-}
+ }
 .icon-img img{
     width:100%;
 }
@@ -44,7 +50,6 @@ nav{
 
 .hamburger-icon{
     margin-top:16px;
-    margin-left: 15px;
     width: 60%;
     align-items: flex-start;
  }
@@ -77,6 +82,9 @@ nav{
 .welcome-image{
     max-width:100%;
 }
+.welcome-image:hover{
+    border:5px solid pink;
+}
 .welcome{
     display: flex;
     flex-direction: column;
@@ -103,6 +111,9 @@ nav{
     color:rgb(143, 63, 76);
     font-size: calc(8px + 1vw);
 }
+.monthly-deals img:hover{
+    border:5px solid pink;
+} 
 .welcome-deal-wrapper{
     width: 100%;
     display:flex;
@@ -122,8 +133,12 @@ nav{
 
  .products img{
     max-width:45%;
-
+    
 } 
+
+.products img:hover{
+    border:5px solid pink;
+}
 .square-cakes, .rounded-cakes p{
     text-align:center;
     font-size: calc(10px + 1vw);
@@ -227,5 +242,9 @@ footer p{
     .welcome-deal-wrapper{
         width: 60%;
     }
+    .products img{
+        max-width:25%;
+        
+    } 
 }
 
