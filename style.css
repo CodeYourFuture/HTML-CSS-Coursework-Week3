@@ -60,19 +60,18 @@ header{
     position: absolute;
     display:none;
     min-width: 100vw;
-    right:0px;
     top:calc(65px + 3vw);
 }
 
 
 .menu-nav li{
       list-style-type: none;
-      display: inline;
+
 }
   
 .menu-nav a {
     color: rgb(85, 85, 85);
-    padding: 14px 16px;
+    padding: 25px 25px;
     text-decoration: none;
     font-size: 17px;
     display: block;
@@ -88,7 +87,7 @@ header{
 }
 
 .welcome{
-    width: auto;
+    width: 100%;
     text-align: justify;
     text-justify: inter-word;
     color: rgb(150, 150, 150);
@@ -118,5 +117,93 @@ footer{
 
 .media-icons img{
     width: 25px;
-    mar
+}
+
+/* Media Query */
+@media(min-width:900px){
+
+    .bakery-icon{
+        justify-content: left;
+        
+    }
+
+    .welcome-msg{
+        text-align: right;
+        width: 155%;
+    }
+
+    .hamburger-icon{
+        display:none;
+    }
+
+    header{
+        flex-direction: column;
+    }
+
+    nav{
+        width: 100%;
+    }
+
+    .mobile-nav{
+        width: 100%;
+    }
+
+    /* Menu Options */
+
+    .menu-nav{
+        width: 100%;
+        display: block;
+        display: flex;
+        background-color: white;
+        margin-top: 70px;
+        
+
+    }
+    #links{
+        display: flex;
+    }
+
+    .menu-nav ul{
+        display:flex;
+        justify-content: flex-end;
+        width: 100%;
+        margin-right: 2rem;
+   }
+
+    .menu-nav ul li a:hover{
+       color:white;
+       background-color: pink;
+       
+    }
+
+    .menu-nav ul li a{
+      font-size: 15px;
+      background-color: rgb(134, 134, 134);
+      margin:0 5px;
+      border-radius: 10px;
+      
+   } 
+
+     /* Main */
+
+   .welcome-image{
+       order: 1;
+       
+   }
+
+     .welcome{
+    display: flex;
+    margin-top: 120px;
+    margin-bottom: 20px;
+}
+
+    /* Menu products */
+
+    .products img{
+    width: 22%;
+    margin-left: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+   
+}
 }
