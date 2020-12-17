@@ -1,1 +1,25 @@
 /*  Add your styling here */
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+
+}
+.div-logo{
+    flex: 20%;
+}
+.img-logo{
+  width: 100%;
+}
+.div-hammenu{
+    flex: 80%;
+}
+.p-description {
+text-align: center;
+font-size: 2.2rem;
+}
+.img-sec{
+    width: 50px;
+}
