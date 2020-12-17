@@ -7,28 +7,60 @@
 
 * {
   margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
 
 header {
-  background-color: var(--main-color);
+  background-color: var(--third-color);
   padding: 1rem;
 }
 
 .banner {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  height: 10vh;
+  align-items: flex-start;
+  height: 15vh;
 }
 
 .logo {
-  width: 40px;
-  height: 40px;
+  width: 90px;
+  height: 90px;
 }
 
 .header-text {
   display: flex;
   text-align: right;
+}
+
+main {
+  padding: 1rem;
+  text-align: center;
+}
+
+.hero-text {
+  /* height: 20vh; */
+  background-color: var(--main-color);
+  padding: 2rem 1rem;
+}
+
+.hero-img {
+  width: 100%;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  /* flex-wrap: wrap; */
+  /* padding: 3rem; */
+}
+
+.cards-container {
+  display: flex;
+  /* flex-direction: column; */
+  width: 100%;
+}
+
+.cards-container img {
+  width: 50%;
+  padding: 0.5rem;
 }
