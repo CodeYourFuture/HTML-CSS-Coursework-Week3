@@ -1,3 +1,5 @@
-ul {
+#nav-link {
     background-color: blue;
+    color: rgb(25, 187, 152);
+    margin-top: 10%;
 }
