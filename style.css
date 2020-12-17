@@ -1,9 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Niconne&display=swap');
+
 body{
-    /*
-    background-color: #ffff20;
+    background-color:rgb(255,179,230, 0.5);
     color: #fb0667;
-    */
     margin: 0;
+    font-family: 'Niconne', cursive;
 }
 
 /*Header*/
@@ -25,14 +26,22 @@ header{
     justify-content: space-around;
 }
 
+.fa-bars{
+    font-size: 1.5rem;
+}
+
 .header-text{
     width: 60%;
     text-align: end;
 }
 
+nav{
+    display: none;
+}
+
 /*Main*/
 main{
-    padding: 1rem;
+    padding: 0 1rem;
     display: flex;
     flex-direction: column;
 }
@@ -41,9 +50,17 @@ main{
     padding-bottom: 1rem;
 }
 
+.welcome h2{
+    margin: 0;
+}
+
+.welcome p{
+    margin: 0;
+}
+
 img{
-    display: block;
     width: 100%;
+    height: auto;
 }
 
 .main-image{
@@ -59,16 +76,33 @@ img{
 
 .sub-image-container{
     width: 50%;
+    
 }
 
 /*Footer*/
 footer{
     padding: 1rem;
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
 }
 
 .name{
     width: 100%;
     padding-top: 0.1rem;
     text-align: center;
-    color: #eee;
+    color: #fff;
+}
+
+@media (min-width: 540px){
+    .fa-birthday-cake{
+        font-size: 6rem;
+    }
+
+    .header-text{
+        font-size: 1.4rem;
+    }
+
+    .welcome{
+        font-size: 1.25rem;
+    }
 }
