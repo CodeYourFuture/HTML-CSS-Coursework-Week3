@@ -17,17 +17,28 @@ html {
     width:40%;
 }
 body{
-    font-family: Libre, Langar;
+    font-family: Libre, Langar, fantasy;
     background-color: slategrey;
 
 } 
 header{
     /* display:flex; */
     background-color: lightblue;
-
 }
 h2{
     width:50%;
+}
+ul{
+    display: flex;
+    list-style: none;
+    visibility: hidden;
+}
+a{
+    text-decoration: none;
+}
+li{
+    width:30%;
+    font-family: Langar, Impact, Georgia;
 }
 h1{
     width:50%;
@@ -47,14 +58,4 @@ section img{
 }
 footer{
     background-color: crimson;
-}
-footer ul{
-    display: flex;
-    list-style: none;
-}
-a{
-    text-decoration: none;
-}
-li{
-    width:30%;
 }
