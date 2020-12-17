@@ -1,1 +1,76 @@
 /*  Add your styling here */
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  
+}
+
+.sectionOne{
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.flexContainer {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    
+}
+
+.logo {
+    width: 13rem;
+    height: 13rem;
+}
+
+.hamburgerIcon {
+    margin-top:0.5rem;
+    width: 1.9em;
+    height:2rem;
+
+}
+
+
+.bestCake {
+    font-weight: bold;
+    padding-left: 10rem;
+    font-size: 1.2rem;
+
+}
+
+.heroImg {
+
+  width: 100%;
+ padding: 1rem;
+  
+ 
+}
+
+.flexContainer {
+
+    display:flex;
+    flex-wrap: wrap;
+
+
+}
+
+.articleImg {
+width: 100%;
+padding: 1rem;
+}
+
+.footerText {
+    font-weight: bold;
+}
+
+.socialMedia {
+    display: flex;
+    align-: space-around;
+
+}
+
+.socialIcon {
+
+    height: 2.2rem;
+    width: 2.2rem;
+
+}
