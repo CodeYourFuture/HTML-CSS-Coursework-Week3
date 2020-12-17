@@ -185,25 +185,28 @@ footer{
 
      /* Main */
 
-     .welcome-image{
-        order: 1;
-        width: 100%;  
-        padding-right: 600px;
-        margin-left: 20px;
+    .welcome{
+        display: flex;
+        justify-content: space-between;
+        margin: 2rem 2 rem ;
+        margin-top: 120px;
+        margin-bottom: 20px;
     }
- 
-     .welcome{
-         display: flex;
-         flex-direction: row-reverse;
-         align-items: flex-start;        
-         justify-content: right;
-         text-align: left;
-         margin-top: 130px;
-     }
- 
-     .welcome-p{
-         margin-left: 40px;
-     }
+    .welcome-content {
+        width: 50%;
+        margin: auto 1rem;
+        order: 1
+    }
+    .welcome-content h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+    .welcome-content p {
+        font-size: 1.5rem;
+    }
+    .welcome-img {
+        width: 50%;
+}
      /* Menu products */
  
      .products img{
