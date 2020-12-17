@@ -32,6 +32,10 @@ main {
   
 }
 
+.background-image {
+  z-index: 99;
+}
+
 /*styling for the albums*/
 /*Sticky footer*/
 .container {
