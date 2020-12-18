@@ -162,4 +162,24 @@ footer {
     padding: 5px;
     margin: 5px;
   }
+  #contact-us {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 100px;
+    align-items: center;
+  }
+  #contact-us a {
+    width: 30%;
+    text-align: center;
+    font-size: 0.8rem;
+  }
+  #contact-us div {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+  }
+  #social-media img {
+    width: 60%;
+  }
 }
