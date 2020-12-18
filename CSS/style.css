@@ -1,27 +1,35 @@
-/*  Add your styling here */
 /* Table of Content 
 ___________________
     Imported Fonts
     General Styling
     Hero Styling
+    Main Content :
+    -Welcome Section
 ___________________
+*/
 
+/* Imported Fonts 
+_________________
+*/
 
-/* Imported Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Lato:wght@300&display=swap');
 /* font-family: 'Dancing Script', cursive; */
 
 
-/* General Styling */
+/* General Styling 
+__________________
+*/
+
 * {
     padding: 0%;
     margin: 0%;
     box-sizing: border-box;
 }
 
+/* Setting up variables to for the main color scheme and font-family. */
 :root {
     --primary-color: #d291bc;
-    --secondary-color: #e0bbe4;
+    --secondary-color: #c479cc;
     --third-color: #957dad;
     --Dancing: 'Dancing Script', cursive;
 }
@@ -32,7 +40,7 @@ body {
 
 .container {
     display: flex;
-    max-width: 100%;
+    min-width: 100%;
 }
 
 /* Hero styling 
@@ -73,4 +81,30 @@ _______________
     color: var(--third-color);
     font-family: var(--Dancing);
     font-weight: 100;
+}
+
+/* Main Content
+_______________
+ */
+
+/* Styling the welcome section */
+.welcome {
+    font-family: var(--Dancing);
+    text-align: center;
+    padding: 1em;
+}
+
+.welcome > h2 {
+    color: var(--third-color);
+    font-size: 1.6rem;
+    margin: 0px;
+    padding: 1.5em;
+}
+
+.welcome > p {
+    color: var(--secondary-color);
+}
+
+.display-image {
+    width: 100%;
 }
