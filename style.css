@@ -8,6 +8,12 @@
   user-select: none;
 }
 
+/*styling my banner?*/
+
+
+.text {
+  z-index: 10;
+}
 
 /* - Cover -  Custom default button */
 .btn-secondary,
@@ -43,9 +49,10 @@ main {
   display: flex;
 }
 .figure-caption {
-margin-left: 70px;
-margin-top: 140px;
+width: 40%;
+height: auto;
 color: slategrey;
+padding: 3%;
 
 }
 /*styling for the albums*/
