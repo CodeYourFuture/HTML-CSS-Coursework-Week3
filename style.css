@@ -1,14 +1,19 @@
 /*  Add your styling here */
+@font-face{
+    font-family: mainFont;
+    src: url(font/smooth.TTF);
+}
+
+@font-face{
+    font-family: bodyFont;
+    src: url(font/sensation.ttf);
+}
 
 body{
-    background-image: linear-gradient(90deg, rgba(86, 207, 255, 0.3), rgb(248, 214, 224));
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
     width: 100%;
 	height: 100%;
-    margin: 0pt 40pt 0pt 0pt;
+    margin: 0pt 0pt 0pt 0pt;
+    font-family: bodyFont;
 }
 
 section{
@@ -17,24 +22,29 @@ section{
 
 /* ==============header start============== */
 header{
-    background-color: rgb(170, 223, 255);
-    height: 130px;
+    background-color: lightskyblue;
+    height: 50vw;
     padding: 10px;
 }
 
 .logo{
-    width: 110px;
+    width: 40vw;
 }
 
 .hamburger{
     float: right;
-    font-size: 30px;
-    color: blue;
+    font-size: 10vw;
+    color: #2E81FF;
 }
 
 .slogan{
-    float: right;
-    color: blue;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    color: #2E81FF;
+    font-size: 6.5vw;
+    font-weight: 800;
+    font-family: mainFont;
 }
 /* ==============header ends============== */
 
@@ -49,8 +59,14 @@ nav{
     text-align: center;
 }
 
+h1{
+    font-size: 9vw;
+    color: white;
+    background-image: linear-gradient(90deg, rgba(255, 255, 255, 1), rgb(135, 206, 250, 1.0), rgba(255, 255, 255, 1));
+}
+
 .welcome-p{
-    sadsa
+    font-size: 6vw;
 }
 
 .main-img{
@@ -71,6 +87,12 @@ nav{
     width: 100%;
     border: 0px solid lightskyblue;
 }
+
+.photo-grid:hover{
+    box-shadow: 0em 0em 0.5em #2E81FF;
+    transition: 0.5s;
+    border-radius: 20px;
+}
 /* ==============img-sec ends============== */
 
 /* ==============footer-group start============== */
@@ -87,17 +109,133 @@ footer{
 }
 
 .footer-link{
-    padding: 9px 10px 9px 10px;
+    padding: 9px 4vw 9px 4vw;
     margin: 10px 7px 0px 7px;
     border-radius: 20px;
-    background-color: #2E81FF;
-    color: #F8D6E0;
+    background-color: white;
+    color: #E75A76;
     border: 2px solid #E75A76;
+    text-decoration: none;
+    font-size: 21px;
+    box-shadow: 0em 0em 2em #E75A76;
 }
 
 h2{
     text-align: center;
     color: #E75A76;
-    font-size: 21px;
+    font-size: 8vw;
 }
 /* ==============footer=group ends============== */
+
+
+/* ========================@media========================== */
+@media(min-width: 540px){
+    header{
+        height: 270px;
+    }
+    
+    .logo{
+        width: 220px;
+    }
+
+    .hamburger{
+        font-size: 50px;
+    }
+
+    .slogan{
+        font-size: 35px;
+    }
+
+    h1{
+        font-size: 50px;
+    }
+
+    .welcome-p{
+        font-size: 32px;
+    }
+
+    .photo-grid:hover{
+        box-shadow: 0em 0em 1.7em #2E81FF;
+        border-radius: 40px;
+    }
+
+    .footer-link{
+        background-color: white;
+    }
+
+    h2{
+        font-size: 40px;
+    }
+}
+
+@media(min-width: 900px){
+    .hamburger{
+        display: none;
+    }
+
+    nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: lightskyblue;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        margin-top: 40px;
+    }
+
+    .nav-link{
+        background-color: white;
+        text-decoration: none;
+        font-size: 30px;
+        padding: 10px 20px 10px 20px;
+        margin-right: 10px;
+        margin-left: 10px;
+        border-radius: 50%;
+        border: 2px solid #2E81FF;
+        color: #2E81FF;
+        box-shadow: 0em 0em 0.6em #2E81FF;
+    }
+
+    .nav-link:hover{
+        background-color: white;
+        box-shadow: 0em 0em 2em white;
+        border: 2px solid white;
+        transition: 0.6s;
+        margin-top: -9px;
+    }
+
+    .welcome-sec{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+
+    .welcome-p{
+        font-size: 2vw;
+    }
+
+    .photo-grid{
+        width: 100%;
+    }
+
+    .photo-grid:hover{
+        cursor: pointer;
+        box-shadow: 0em 0em 3em #2E81FF;
+        border-radius: 70px;
+    }
+
+    .footer-link{
+        box-shadow: 0em 0em 2em #E75A76;
+        background-color: ;
+        color: #E75A76;
+    }
+
+    .footer-link:hover{
+        box-shadow: 0em 0em 2em white;
+        transition: 0.6s;
+        border: 2px solid  white;
+        margin-top: -4px;
+    }
+}
