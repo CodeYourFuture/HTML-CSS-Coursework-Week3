@@ -39,6 +39,30 @@ ul a {
   position: relative;
 }
 
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+  width: 16px;
+  height: 3px;
+  background: black;
+  /*transition: transform 250ms ease-in-out;*/
+}
+
+.hamburger::before,
+.hamburger::after {
+  content: "";
+  position: absolute;
+  left: 0;
+}
+
+.hamburger::before {
+  bottom: 6px;
+}
+
+.hamburger::after {
+  top: 6px;
+}
+
 .nav-open .nav {
   transform: translateX(0);
 }
