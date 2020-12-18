@@ -1,5 +1,129 @@
 /*  Add your styling here */
-.cakeDisp {
-display: flex;
-flex-direction: column;
+
+body{
+    text-align: center;
+    background-color: rgb(116, 72, 72);
 }
+
+.head-bar{
+    display:flex;
+    justify-content: space-between ;
+
+}
+
+.img-logo{
+    width: 20%;
+    height: auto;
+}
+
+.hamburger {
+    display: inline-block;
+}
+
+/* hero section starts here */
+.welcomeHero {
+    display: flex;
+    text-align: justify;
+    text-justify: inter-word;
+
+
+}
+
+.imageHero {
+
+}
+
+.cakeDisp img {
+display: inline-block;
+flex-direction: row;
+width: 45%;
+height: auto;
+justify-content: space-between;
+padding: 5px;
+}
+
+.imgChocoBig {
+flex:auto;
+width: 100%;
+height: ;
+
+}
+/* hero section ends here*/
+
+
+
+/* img {
+    padding: 10px; */
+    /* list-style-type: none; */
+}
+
+
+
+ul{
+    list-style-type: none;
+    display: flex;
+    
+}
+ul li{
+    margin: 10px;
+    list-style: none;
+}
+nav {
+    display: none;
+    }
+
+
+ h1 {
+    font-family: Verdana, Tahoma, sans-serif;
+    }
+
+ul.social li a img{
+    width:50px;
+    height:50px;
+    
+}
+
+.socialOrd {
+    display:flex;
+    padding: 0;
+    justify-content: space-around;
+}
+
+/* media query */
+@media (min-width: 400px) {
+    .hamburger {
+        display: none;
+     }
+
+     nav {
+        display: inline-block;
+
+        }
+ 
+     
+     main {
+         font-size: small;
+     }
+     .flex-icons {
+         flex-direction: row;
+     }
+     .bar {
+         flex-direction: column;
+     }
+     h1 {
+       font-family: 'Courier New', Courier, monospace;  
+     }
+     .cta {
+         font-size: small;
+         color: white;
+         padding: 15px 20px;
+         margin: 10px;
+         border: 2px solid rgb(66, 64, 64);
+         border-radius: 50px;
+         background-color: orangered;
+     }
+ }
+
+ @media (min-width: 900px) {
+
+ }
