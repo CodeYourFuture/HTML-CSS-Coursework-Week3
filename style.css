@@ -29,8 +29,7 @@ nav{
     border-radius: 5%;
 
 }
-header{
-    margin-bottom: 0%;
+
 }
 body{
     font-family: Langar, fantasy, sans-serif;
@@ -91,7 +90,6 @@ p{
 }
 /*Hero image styling*/
 section img{
-    /* display:block; */
     width:60%;
     border-radius: 15%;
     margin-left: 20%;
@@ -139,4 +137,61 @@ footer img{
         padding:3%;
     }
 
+}
+
+@media screen and (min-width: 950px){
+    #logo{
+        width:25vh;
+    }
+    h2{
+        font-size:5vh;
+    }
+    nav{
+        height:65vh;
+        z-index: 1;
+    }
+    #top-nav{
+        display: block;
+        height: 10vh;
+        position: relative;
+        background-color: rgba(179, 222, 248, 0.205);
+        left:0.1%;
+        top:29%;
+        z-index: -1;
+    }
+    #top-nav li{
+        width:10%;
+        float:right;
+        margin:0.5%;
+        position:relative;
+        top:25%;
+    }
+    #hero{
+        display:block;
+        height:180vh;
+    }
+    P{
+        width:50%;
+        float:right;
+    }
+    section img{
+        width:30%;
+        height:45%;
+        display:inline-block;
+        position: relative;
+        left:-10%;
+        top:-15%;
+
+    }
+    #images{
+        display:block;
+        position:relative;
+        left:15%;
+        bottom:10%;
+    }
+    .body-img{
+        display:inline-block;
+        width:40%;
+        margin: 2%;
+    }
 }
