@@ -28,32 +28,51 @@ a{
 .nav_link5{
     display: none;
 }
+/*---- Card with Cake images and text ----*/
+
+.cardCakes{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start
+}
+.card-img-top1{
+    background-image: url(./images/cake2.png);
+    height: 180px;
+    width: 286px;
+}
+
+.card-img-top2{
+    display: flex;
+    background-image: url(./images/cake3.jpg);
+    height: 180px;
+    width: 286px;
+}
+
+.card-img-top3{
+    background-image: url(./images/cake4.jpg);
+    height: 180px;
+    width: 286px;
+}
+
+.card-img-top4{
+    background-image: url(./images/cake5.jpg);
+    height: 286px;
+    width: 180px;
+}
+
+.card-body,
+.card-title{
+    background-color: black;
+    color:  white;
+}
+
+.card-text{
+    color: white;
+}
 
 .Copy-right{
     color:black;
 }
-
-/*---- Image Styling ----*/
-.img1:hover{
-    opacity: 75%;
-    }
-
-.img2:hover{
-    opacity: 75%;
-    }
-
-.img3:hover{
-    opacity: 75%;
-    }
-
-.img4:hover{
-    opacity: 75%;
-    }
-
-.img5:hover{
-    opacity: 75%;
-    }
-
 /* ----Media Queries----*/
 
 @media screen and (min-width: 540px) {
@@ -81,7 +100,7 @@ a{
     .nav_link3,
     .nav_link4,
     .nav_link5{
-        display: flex-end;
+        display: inline-flex;
         justify-content: space-evenly;
         padding: 5px 50px;
         overflow: hidden;
