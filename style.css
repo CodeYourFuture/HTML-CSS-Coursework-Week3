@@ -1,15 +1,20 @@
-/*  Add your styling here */
-html,
-body,
-.overflowWrap {
-  /* position: absolute; */
-  overflow: hidden;
-}
 .message {
-  /* position: relative; */
-  display: block;
-  /* width: 100%; */
+  background-color: blue;
 }
 .cake-selections {
   display: flex;
+  flex-wrap: wrap;
+  border: 5px solid red;
+  justify-content: space-evenly;
+  gap: 5px;
+}
+
+.images {
+  display: flex;
+  border: 5px solid blue;
+}
+/* Use this for a typical mobile screen size 
+for a 2 by 2 grid layout */
+img {
+  flex: 1 50%;
 }
