@@ -4,40 +4,18 @@ ___________________
     Imported Fonts
     General Styling
     Text Styling
-    Image Styling*/
+    Hero Styling
+___________________
+
+
 /* Imported Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Lato:wght@300&display=swap');
 /* font-family: 'Dancing Script', cursive; */
+
+
 /* General Styling */
 * {
     padding: 0%;
     margin: 0%;
     box-sizing: border-box;
-}
-
-body {
-    background-color: #ffbcd9;
-    font-family: var(--first-font)
-}
-
-a {
-    color: var(--secondary-color);
-    text-decoration: none;
-    font-size: 1.2rem;
-}
-
-:root {
-    --primary-color: #B57792;
-    --secondary-color: white; 
-}
-
-/* Text Styling */
-h1 {
-    color: var(--primary-color);
-}
-
-/* Image Styling */
-img {
-    max-width: 100%;
-    max-height: 100%;
 }
