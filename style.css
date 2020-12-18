@@ -1,6 +1,9 @@
 /*  Add your styling here */
 
 /*Navigation*/
+.nav-item{
+  margin-left: 95%;
+}
 /*Products*/
 h3 {
   text-align: center;
@@ -46,7 +49,8 @@ th,tr{
   margin-bottom: 2%;
 }
 button{
-  margin-bottom: 2%;
+  margin-top: 2%;
+  margin-bottom: 4%;
 }
 button:hover{
   background-color:salmon;
@@ -91,7 +95,7 @@ footer {
         font-family: 'Architects Daughter', cursive;
     }
   .card {
-    display: inline-block;
+    display: grid;
     width: 90%;
     margin-left: 20px;
     margin-right: 20px;
