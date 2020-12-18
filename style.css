@@ -24,12 +24,12 @@ nav {
 }
 
 header {
-  border-bottom:0.1rem solid hsl(281, 78%, 49%);
+  
   margin-bottom: 1rem;
 }
 
 footer{
-  border-top:0.1rem solid  hsl(281, 78%, 49%);
+  
   margin: 2rem 0rem;
 }
 .sectionOne{
@@ -119,8 +119,8 @@ margin: 1rem;
 }
 
 h3 {
-   margin-left: 2rem;
-   text-align: right;
+   padding-left: 2rem;
+   /* text-align: right; */
 }
 
 .pl {
@@ -245,8 +245,8 @@ height: 20rem;
 .heroImg {
 
   width: 99%;
-  height:100vh;
- 
+  /* height:100vh;
+  */
   
  
 }
