@@ -14,7 +14,7 @@ header {
   background-color: rgb(254, 254, 254);
 }
 .logo {
-  flex: 100%;
+  flex:20%;
   margin:0;
 }
 .logo img {
@@ -35,7 +35,7 @@ header {
 .text {
   margin-top: 50px;
   margin-right: 50px;
-  font-size: 30px;
+  font-size: 20px;
 }
 .hamburger-menu {
   display: none;
