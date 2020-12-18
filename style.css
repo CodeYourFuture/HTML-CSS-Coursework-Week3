@@ -3,3 +3,19 @@
     color: rgb(25, 187, 152);
     margin-top: 10%;
 }
+
+h1 {
+    color: blueviolet;
+    text-align: center;
+    text-decoration: darkgrey;
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: rgb(194, 46, 194);
+    background-color: white;
+    
+}
+
+#home {
+    background-color: teal;
+    
+
+}
