@@ -4,6 +4,8 @@
     margin-top: 10%;
 }
 
+ 
+
 h1 {
     color: blueviolet;
     text-align: center;
@@ -16,10 +18,14 @@ h1 {
 
 #home {
     background-color: teal;
-    
-
+    margin: 10px 10px 10px 10px;
 }
 
 i {
     color: rgb(255, 187, 0);
 }
+.header-img {
+    height: 40%;
+    width: 40%;
+}
+
