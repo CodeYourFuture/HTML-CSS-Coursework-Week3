@@ -1,1 +1,14 @@
 /*  Add your styling here */
+
+body {
+    margin: 0 auto;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.container-fluid {
+    background-color: aquamarine;
+}
