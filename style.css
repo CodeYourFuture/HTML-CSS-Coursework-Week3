@@ -3,28 +3,6 @@
 /* hamburger */
 
 /* head */
-#heading-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 100%;
-  background-color: rgb(249, 249, 249);
-}
-
-.heading-image {
-  width: 30%;
-  display: block;
-  justify-content: left;
-}
-.heading-text {
-  font-size: 20;
-  display: block;
-  width: 150px;
-  position: absolute;
-  align-self: flex-end;
-  text-align: right;
-}
-//////
 header {
   display: flex;
   flex-direction: column;
@@ -33,22 +11,32 @@ header {
 .image-container {
   display: flex;
   flex-direction: row;
+  background-color: rgb(254, 254, 254);
 }
 .logo {
-  flex: 29%;
+  flex: 100%;
+  margin:0;
 }
 .logo img {
-  width: 200px;
+  width: 50%;
 }
 .textMenu-container {
   flex: 60%;
   text-align: right;
-  
+}
+.textMenu-container p {
+  flex: 60%;
+  text-align: right;
+  color: rgb(85, 5, 5);
 }
 .textMenu-container img {
   float: right;
 }
-
+.text {
+  margin-top: 50px;
+  margin-right: 50px;
+  font-size: 30px;
+}
 .hamburger-menu {
   display: none;
 }
@@ -64,6 +52,8 @@ header {
   width: 100%;
   text-align: justify;
   display: block;
+  background-color: rgb(230, 230, 230);
+  color: rgb(128, 8, 8);
 }
 
 .intro-image {
@@ -87,6 +77,8 @@ header {
 
 .product-text {
   text-align: center;
+  background-color: ;
+  color: rgb(179, 146, 40);
 }
 
 .product-image {
@@ -100,10 +92,10 @@ header {
   width: 100%;
   display: flex;
   justify-content: space-around;
-  background-color: rgb(156, 156, 156);
+  background-color: rgb(179, 176, 176);
 }
 
 .footer-item {
   text-decoration: none;
-  color: white;
+  color: rgb(255, 226, 231);
 }
