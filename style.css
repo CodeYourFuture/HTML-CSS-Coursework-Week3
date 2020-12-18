@@ -1,4 +1,4 @@
-/*  Add your styling here */
+/*  Downloaded fonts */
 @font-face{
     font-family: Libre;
     src:url(fonts/LibreBaskerville-Regular.ttf);
@@ -8,13 +8,15 @@
     font-family: Langar;
     src: url(fonts/Langar-Regular.ttf);
 }
-
+/*Page styling*/
 html {
-    background-color: slateblue;
+    background-color: rgba(118, 110, 182, 0.5);
 }
 #logo{
-    /* display:block; */
     width:40%;
+    padding-left: 2%;
+    padding-top: 2%;
+    border-radius: 10%;
 }
 .hmbrgr{
     width:10%;
@@ -23,20 +25,25 @@ html {
     right:5%
 }
 nav{
-    background-color: rgb(58, 108, 158);
+    background-color: rgb(74, 183, 216);
+    border-radius: 5%;
+
+}
+header{
+    margin-bottom: 0%;
 }
 body{
     font-family: Langar, fantasy, sans-serif;
 
 } 
-/* header{
-    display:flex;
-} */
+/* slogan and nav styling*/
+
 h2{
     width:50%;
     position: absolute;
-    left:45%;
+    left:47%;
     top:30%;
+    color: grey;
 }
 ul{
     display: flex;
@@ -51,11 +58,10 @@ li{
     font-family: Libre, Impact, Georgia;
 }
 #hero{
-    /* display:flex;
-    justify-content: center; */
-    /* align-items: center; */
     background-color: lightblue;
+    border-radius: 5%;
 }
+/*Welcome styling and paragraph*/
 h1{
     width:50%;
     font-size: 10vh;
@@ -65,13 +71,16 @@ h1{
 p{
     padding-left: 5%;
     color: grey;
+    font-size: 3vh;
 }
+/*Hero image styling*/
 section img{
     /* display:block; */
     width:60%;
     padding-left: 15%;
     /* background-color: slategrey; */
 }
+/*Image container and image styling*/
 #images{
     display:flex;
     flex-wrap: wrap;
@@ -80,10 +89,15 @@ section img{
 }
 .body-img{
     width:50%;
+
 }
 footer{
     background-color: rgb(74, 183, 216);
+    margin-top: 2%;
+    border-radius: 5%;
 }
+/*Footer hamburger*/
 footer img{
     width:20%;
 }
+/*Media Queries below*/
