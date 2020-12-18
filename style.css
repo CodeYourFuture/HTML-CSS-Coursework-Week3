@@ -14,8 +14,8 @@ html {
 }
 #logo{
     width:40%;
-    padding-left: 2%;
-    padding-top: 2%;
+    margin-left: 2%;
+    margin-top: 2%;
     border-radius: 10%;
 }
 .hmbrgr{
@@ -77,8 +77,9 @@ p{
 section img{
     /* display:block; */
     width:60%;
-    padding-left: 15%;
-    /* background-color: slategrey; */
+    border-radius: 15%;
+    margin-left: 20%;
+
 }
 /*Image container and image styling*/
 #images{
