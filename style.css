@@ -1,7 +1,15 @@
 /*  Add your styling here */
 
+nav {
+  display: flex;
+}
+
 .logo {
   width: 80px;
+}
+
+ul {
+  list-style: none;
 }
 
 .main-image {
