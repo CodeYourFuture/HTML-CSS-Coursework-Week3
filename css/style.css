@@ -13,12 +13,13 @@ body {
     justify-content: center;
     align-items: center;
     background-color: #dee2ff;
+    
 }
 
 .hamburger-menu {
     align-self: flex-end;
     margin-top: 10px;
-    margin-right: 10px;
+    margin-right: 20px;
 }
 
 .hamburger-menu img {
@@ -47,6 +48,7 @@ body {
 .logo-text {
     width: 65%;
     align-self: flex-end;
+    padding: 10px 10px;
 }
 
 .logo-text p {
@@ -57,14 +59,48 @@ body {
 }
 
 /* Main First Section */
+
+main {
+    background-color: #feeafa;
+    width: 100%;
+}
+.navbar {
+    display: none;
+    width: 100%;
+    font-size: 1.25em;
+}
+
+.navbar ul {
+    display: flex;
+    flex-flow: nowrap;
+    justify-content: flex-end;
+    align-items: center;
+ }
+
+.navbar ul li {
+   list-style-type: none;
+   margin: 10px;
+   padding: 5px;
+
+}
+.navbar ul li a {
+   text-decoration: none;
+   color: #9d8189;
+   color: black;
+}
+
+.navbar ul li a:hover {
+   color: orangered;
+}
+
+/* Main Second Section */
+
 .hero {
-    width: 92%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 10px 15px;
-    background-color: #feeafa;
 }
 
 .hero-text {
@@ -90,8 +126,9 @@ body {
     width: 100%;
 }    
 
-/* Main Second Section */
+/* Main Third Section */
 .container {
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -99,12 +136,11 @@ body {
     flex-flow: wrap;
     padding-top: 30px;
     padding-bottom: 30px;
-    background-color: #feeafa;
+    
 }
 
 .container-image {
     margin: 10px;
-    
 }
 
 .container-image img{
@@ -113,8 +149,8 @@ body {
 }
 
 /* footer */
-
 footer {
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -123,7 +159,7 @@ footer {
 }
 
 .footer-heading {
-    font-size: 20px;
+    font-size: 1.1em;
     font-weight: bold;
     text-align: center;
     
@@ -153,6 +189,72 @@ footer {
     font-size: 1em;
     text-align: center;
 }
+
+
+/* Tablet design */
+@media (min-width: 600px) {
+    header {
+        width: 100%;
+        height: 250px;
+    }
+        
+    .hamburger-menu {
+        display: none;
+    }
+    
+    .logo {
+        height: 250px;
+    }
+    
+    .logo-text p {
+        font-size: 1.35em;
+    }
+    
+    /* Main First Section */
+    .navbar {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    
+    /* Main Second Section */
+    .hero-text {
+        margin: 10px;
+        padding: 15px;
+    }
+    
+    .hero-text h2{
+        font-size: 2.5em;
+        padding: 5px;
+    }
+    
+    .hero-text p {
+        font-size: 1.5em;
+        padding: 5px;
+        text-align: justify;
+    }
+    
+    .hero-image {
+        padding: 40px;
+    }
+    
+    /* Main Third Section */
+    .container-image {
+        padding: 20px;
+    }
+    
+    .container-image img{
+        width: 300px;
+        height: 300px;
+    }
+    
+    /* footer */
+    .footer-heading {
+        font-size: 1.5em;
+    }
+}
+
+
 
 
 
