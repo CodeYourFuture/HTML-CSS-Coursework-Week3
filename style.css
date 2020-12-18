@@ -3,11 +3,16 @@ body {
     background-color: whitesmoke;
 }
 
+.top {
+   background-color: aquamarine;
+}
+
 img {
     height: 100px;
     width: 100px;
 }
 
+/*
 @media (min-width: 370px){
     .cake {
         width:50%;
@@ -27,3 +32,4 @@ img {
         margin:10px;
     }
 }
+*/

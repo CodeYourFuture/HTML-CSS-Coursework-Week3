@@ -5,38 +5,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Responsive Cake webpage</title>
+    <title>Joy's Cakeshop</title>
+    <link rel="shortcut icon" type="image/png" href="Img/favic.png">
     <link rel="stylesheet" href="style.css">
-    <!-- Add a link to your css file here -->
 </head>
 
 <body>
+<!--First top section-->
+    <header class="top">
+        <p>The best cakes in town delivered to your door</p>
+        <a href=".cake-gallery" class="btn">Shop Cakes</a>
+    </header>
+<!--Central section-->
     <main>
-        <section>
+        <section id="welcome-page">
             <h1>Welcome</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quae neque 
-                illum sapiente praesentium minus nesciunt odit esse? Ratione repudiandae praesentium 
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quae neque
+                illum sapiente praesentium minus nesciunt odit esse? Ratione repudiandae praesentium
                 reiciendis provident ex excepturi, voluptas quam quidem laudantium nostrum!</p>
-            </section>
-        <section class="cake">
-            <img src="Img/cheese.jpeg">
+            <div class="welcome-cake">
+                <img src="Img/cheese.jpeg">
+            </div>
         </section>
-        <section class="candle">
+        <section id="cake-gallery">
             <div>
-                <img src="Img/pexels-photo-4110012.jpeg">
+                <img src="Img/pexels-photo-4110012.jpeg" alt="cake-1">
             </div>
             <div>
-                <img src="Img/choc.jpeg">
+                <img src="Img/choc.jpeg" alt="cake-2">
             </div>
             <div>
-                <img src="Img/platter.jpeg">
+                <img src="Img/platter.jpeg" alt="cake-2" >
             </div>
             <div>
-                <img src="Img/cupcake.jpeg">
+                <img src="Img/cupcake.jpeg" alt="cake-2" >
             </div>
         </section>
     </main>
-    <!-- Add your markup here -->
+<!--Bottom section-->
+    <footer>
+        <h2>Subscribe & Save</h2>
+        <p>Join our monthly newsletter to stay up to date with the latest Freddie's news, receive exclusive discounts and be the
+        first to know about competitions & events.</p>
+        <input type="email" id="email" name="email" placeholder="Email Address">
+        <button>Join</button>
+    </footer>
 </body>
 
 </html>
