@@ -33,6 +33,29 @@ a{
     color:black;
 }
 
+/*---- Image Styling ----*/
+.img1:hover{
+    opacity: 75%;
+    }
+
+.img2:hover{
+    opacity: 75%;
+    }
+
+.img3:hover{
+    opacity: 75%;
+    }
+
+.img4:hover{
+    opacity: 75%;
+    }
+
+.img5:hover{
+    opacity: 75%;
+    }
+
+/* ----Media Queries----*/
+
 @media screen and (min-width: 540px) {
     .nav_links{
         display: block;
