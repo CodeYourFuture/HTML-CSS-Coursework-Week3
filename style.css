@@ -1,1 +1,76 @@
+#head {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+header {
+  display: flex;
+  flex-flow: row wrap;
+  background-color: #ffcdb2;
+}
+#head h1 {
+  width: 90%;
+}
+.logo {
+  width: 20%;
+}
+.nav-bar,
+.item7 {
+  display: none;
+}
+.products {
+  display: flex;
+  flex-flow: row wrap;
+}
+.products .item:first-child,
+.products img {
+  width: 100%;
+}
+.products .item {
+  width: 44%;
+  margin: 3%;
+}
+@media screen and (min-width: 540px) {
+  main {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .hamburger,
+  .item:first-child {
+    display: none;
+  }
+  .nav-bar {
+    display: inline;
+    justify-content: flex-end;
+  }
+  .nav-items ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+  }
+  .introduction {
+    display: flex;
+  }
+  .item7 {
+    display: flex;
+  }
+  .article {
+    width: 70%;
+  }
+  .introduction .item7 {
+    width: 30%;
+    margin-right: 5%;
+  }
+  .item7 img {
+    width: 100%;
+  }
+  .products {
+    display: flex;
+    flex-flow: row;
+  }
+  .product .items {
+    width: 20%;
+    margin: 3%;
+  }
+}
 /*  Add your styling here */
