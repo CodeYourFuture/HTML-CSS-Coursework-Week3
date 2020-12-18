@@ -1,7 +1,10 @@
 /*  Add your styling here */
 
-nav {
+header {
+  background-color: hsl(82, 39%, 30%, 0.5);
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .logo {
@@ -10,6 +13,34 @@ nav {
 
 ul {
   list-style: none;
+}
+
+ul a {
+  text-decoration: none;
+}
+
+.nav {
+  transform: translateX(100%);
+  position: absolute;
+  right: 0;
+  transition: transform 300ms cubic-bezier(0.5, 0, 0.5, 1);
+}
+
+.nav-button {
+  position: absolute;
+  top: 32px;
+  left: 0;
+  padding: 16px 8px;
+  transform: translateX(-100%);
+}
+
+.hamburger {
+  display: block;
+  position: relative;
+}
+
+.nav-open .nav {
+  transform: translateX(0);
 }
 
 .main-image {
