@@ -1,1 +1,29 @@
 /*  Add your styling here */
+body {
+    background-color: whitesmoke;
+}
+
+img {
+    height: 100px;
+    width: 100px;
+}
+
+@media (min-width: 370px){
+    .cake {
+        width:50%;
+        height:80px;
+    }
+    
+    .candle {
+        display: flex;
+        justify-content: center;
+        width:100%;
+        flex-wrap: wrap;
+    }
+
+    .candle div {
+        height:50px;
+        width: 40%;
+        margin:10px;
+    }
+}
