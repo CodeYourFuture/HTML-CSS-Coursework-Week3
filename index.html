@@ -42,7 +42,7 @@
       <!--Home Section-->
       <section id="home">
         <h3>Welcome</h3>
-        <img src="/images/logo.png" alt="Kudah Cakes" style="width:100%">
+        <img src="/images/logo.png" alt="Kudah Cakes" style="width: 100%" />
         <p>
           Welcome to Kudah Cakes. A bakery that specializes in nothing else but
           cakes. Don't miss out the sweet flavours made out from the world's
@@ -53,7 +53,9 @@
         </p>
         <p>
           Our Cakes are priced according to sizes. For customized products,
-          prices are not pre-set.<a href="#prices">Click here to view our prices</a>
+          prices are not pre-set.<a href="#prices"
+            >Click here to view our prices</a
+          >
         </p>
       </section>
       <!--Our Products Section-->
@@ -117,34 +119,56 @@
       <section id="prices">
         <h3>Prices</h3>
 
-        <table style="width: 100%;">
+        <table style="width: 100%">
           <th>Size</th>
           <th>Price</th>
           <tr>
-             <td>Small</td>
-             <td>R100</td>
+            <td>Small</td>
+            <td>R100</td>
           </tr>
           <tr>
             <td>Medium</td>
             <td>R200</td>
           </tr>
-        <tr>
-          <td>Large</td>
-          <td>R300</td>
-        </tr>
-        <tr>
-          <td>Extra Large</td>
-          <td>R450</td>
-        </tr>
-        <tr>
-          <td>Customized</td>
-          <td>Visit our bakeries</td>
-        </tr>
-
-
+          <tr>
+            <td>Large</td>
+            <td>R300</td>
+          </tr>
+          <tr>
+            <td>Extra Large</td>
+            <td>R450</td>
+          </tr>
+          <tr>
+            <td>Customized</td>
+            <td>Visit our bakeries</td>
+          </tr>
         </table>
       </section>
     </div>
+    <section id="orders">
+      <form>
+        <fieldset>
+          <legend>Place Your Orders</legend>
+          <label for="cake-size">Cake Size</label>
+          <select name="cake-sizes" id="">
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+            <option value="extra-large">Extra Large</option>
+            <option value="custom">Custom</option></select
+          ><br /><br />
+          <label for="email">Email:</label>
+          <input type="email" placeholder="example@example.com" /><br /><br />
+          <label for="custom">For Customized Cakes Only</label>
+          <textarea
+            name="custom"
+            id="custom"
+            placeholder="For your custom cake,write your specifications here."
+          ></textarea><br><br>
+          <button><span style="color: red;">Submit</span></button>
+        </fieldset>
+      </form>
+    </section>
   </body>
   <footer></footer>
 </html>

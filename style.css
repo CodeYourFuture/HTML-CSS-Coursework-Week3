@@ -27,29 +27,79 @@ p {
 .card:last-child {
   background-color: peachpuff;
 }
+/*Table*/
+table{
+    margin-bottom:2%;
+  /* margin-left: 25%;*/
+    border:solid;
+    width:65%;
+}
+th,tr{
+    text-align: center;
+}
+/*Form*/
+#orders{
+  font-size: smaller;
+  
+  border: solid;
+  width:100%;
+  margin-bottom: 2%;
+}
+button{
+  margin-bottom: 2%;
+}
+button:hover{
+  background-color:salmon;
+  color:slategrey;
+  float:right;
+}
+
 /*Footer*/
 footer {
   height: 30px;
-  background-color: darkgrey;
+  background-color: rgb(14,6,10);
 }
 /*Media Queries*/
 @media screen and (min-width: 501px) {
+    *{
+        font-size: large;
+    }
   .card {
     display: grid;
     grid-template-columns: auto auto;
     margin-bottom: 50px;
   }
+  th,tr{
+      background-color: rgb(248, 237, 235);
+  }
+  #orders{
+    text-align: center;
+    border: solid;
+    width:50%;
+    margin-left:25%;
+    margin-bottom: 2%;
+  }
+ 
+ 
   footer {
     height: 40px;
   }
 }
 @media screen and (min-width: 901px) {
+    *{
+        font-size: x-large;
+        font-family: 'Architects Daughter', cursive;
+    }
   .card {
     display: inline-block;
     width: 90%;
     margin-left: 20px;
     margin-right: 20px;
   }
+  th,tr{
+      color:rgb(0, 109, 119);
+  }
+ 
   footer {
     height: 50px;
   }
