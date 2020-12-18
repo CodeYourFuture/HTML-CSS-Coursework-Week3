@@ -17,15 +17,15 @@ body{
     margin: 0.75em 0;
 }
 
-.navLinks{
-    background-color: rgb(255, 214, 77);
-}
-
 a{
     color: inherit;
 }
 
-.nav_links{
+.nav_link1,
+.nav_link2,
+.nav_link3,
+.nav_link4,
+.nav_link5{
     display: none;
 }
 
@@ -57,6 +57,11 @@ a{
 /* ----Media Queries----*/
 
 @media screen and (min-width: 540px) {
+    .cake-logo{
+        width: 290px;
+        height: 290px;
+    }
+
     .nav_links{
         display: block;
     }
