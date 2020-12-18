@@ -7,7 +7,7 @@ body {
  /* Header  */
  header {
     width: 100%;
-    height: 200px;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -32,7 +32,7 @@ body {
     flex-direction: row;
     justify-content: space-between;
     padding: 5px 8px;
-    height: 200px;
+    height: 150px;
 }
 
 .logo-icon {
@@ -41,12 +41,12 @@ body {
 }
 
 .logo-icon img {
-    width: 100%;
-    height: 100%;
+    width: 90%;
+    height: 90%;
 }
 
 .logo-text {
-    width: 65%;
+    width: 70%;
     align-self: flex-end;
     padding: 10px 10px;
 }
@@ -193,19 +193,21 @@ footer {
 
 /* Tablet design */
 @media (min-width: 600px) {
-    header {
-        width: 100%;
-        height: 250px;
-    }
+    
         
     .hamburger-menu {
         display: none;
     }
     
-    .logo {
-        height: 250px;
+    .logo-icon img {
+        width: 60%;
+        height: 60%;
     }
     
+    .logo-text {
+        width: 70%;
+    }
+        
     .logo-text p {
         font-size: 1.35em;
     }
@@ -244,16 +246,119 @@ footer {
     }
     
     .container-image img{
-        width: 300px;
-        height: 300px;
+        width: 250px;
+        height: 250px;
+    }
+ 
+    /* footer */
+    .footer-heading {
+        font-size: 1.25em;
+    }
+
+    .footer-text {
+        font-size: 1.1em;
+        text-align: center;
+    }      
+
+}
+
+/* Desktop design */
+@media (min-width: 900px) {
+    header {
+        width: 100%;
+        height: 150px;
+        
+    }    
+    
+    
+    .logo {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        
+    }
+    
+    .logo-icon {
+        width: 10%;
+        align-self: flex-start;
+        
+    }
+    
+    .logo-icon img {
+        width: 80%;
+        height: 80%;   
+    }
+    
+    .logo-text {
+        width: 80%;
+        padding: 3px;
+        
+    }
+    
+    .logo-text p {
+        font-size: 1.5em;
+    }
+    
+
+    /* Main First Section */
+    .navbar {
+        font-size: 1.5em;
+    }
+    
+    /* Main Second Section */
+    .hero {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .hero-image {
+        width: 50%;
+    }
+    
+    .hero-text {
+        width: 50%;
+        order: 1;
+        margin-top: 30px;
+        
+        
+    }
+    
+    .hero-text h2{
+        font-size: 2.5em;
+        padding: 15px;
+        text-align: right;
+    }
+    
+    .hero-text p {
+        font-size: 1.5em;
+        padding: 15px;
+        direction: rtl;
+        text-align: justify;
+        
+    }
+    
+
+    
+    /* Main Third Section */
+    .container-image {
+        padding: 20px;
+    }
+    
+    .container-image img{
+        width: 350px;
+        height: 350px;
     }
     
     /* footer */
     .footer-heading {
         font-size: 1.5em;
     }
+    .footer-text {
+        padding-bottom: 20px;
+    }
 }
-
 
 
 
