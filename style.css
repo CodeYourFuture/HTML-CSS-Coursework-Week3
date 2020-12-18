@@ -17,8 +17,8 @@ body{
     margin: 0.75em 0;
 }
 
-.navLink{
-    background-color: rgb(245, 37, 73);
+.navLinks{
+    background-color: rgb(255, 214, 77);
 }
 
 a{
@@ -38,8 +38,20 @@ a:hover{
     color:black;
 }
 
-@media only screen and (min-width: 420px) {
-    .lgDisplay{
+@media screen and (min-width: 540px) {
+    .navBar{
         display: block;
     }
-} 
+
+    .nav_link{
+        display: inline-flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        padding: 5px 50px;
+        overflow: hidden;
+        background-color: rgb(255, 214, 77);
+    }
+    .navbar-toggler{
+        display: none;
+    }
+}
