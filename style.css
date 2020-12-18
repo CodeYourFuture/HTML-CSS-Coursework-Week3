@@ -4,6 +4,14 @@ body {
     margin: 0 auto;
 }
 
+h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #7e7d7d;
+    margin: 20px;
+    opacity: 1;
+    transition: opacity 1s;
+}
+
 .row {
     padding-bottom: 50px;
 }
@@ -11,3 +19,113 @@ body {
 .container-fluid {
     background-color: aquamarine;
 }
+
+.container_four {
+    background-color: #fce4e4;
+    height: 100vh;
+    width: 100vw;
+    max-height: 800px;
+    max-width: 1280px;
+    min-height: 600px;
+    min-width: 1000px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.effect {
+    height: 369px;
+    width: 290px;
+    background: none;
+    border-radius: 10px;
+    transition: border 1s;
+    position: relative;
+}
+
+.effect:hover {
+    box-shadow: 2px 1px 6px 2px #ffffffb3;
+}
+
+.card {
+    height: 379px;
+    width: 300px;
+    border-radius: 10px;
+    transition: background 0.8s;
+    overflow: hidden;
+    box-shadow: 0 70px 63px -60px #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.card:hover h2 {
+    opacity: 1;
+}
+
+.card:hover .fa {
+    opacity: 1;
+}
+
+.card1 {
+    background: url(./assets/icons-cake.png) center center no-repeat;
+    background-size: 350px;
+}
+
+.card1:hover {
+    background: url(./assets/icons-cake.png) left center no-repeat;
+    background-size: 600px;
+}
+
+.card2 {
+    background: url(./assets/icons-cupcake.png) center center no-repeat;
+    background-size: 350px;
+}
+
+.card2:hover {
+    background: url(./assets/icons-cupcake.png) left center no-repeat;
+    background-size: 600px;
+}
+
+.card3 {
+    background: url(./assets/icons-cake-slice.png) center center no-repeat;
+    background-size: 350px;
+}
+
+.card3:hover {
+    background: url(./assets/icons-cake-slice.png) left center no-repeat;
+    background-size: 600px;
+}
+
+.card4 {
+    background: url(./assets/icons-biscuit.png) center center no-repeat;
+    background-size: 350px;
+}
+
+.card4:hover {
+    background: url(./assets/icons-biscuit.png) left center no-repeat;
+    background-size: 600px;
+}
+
+.icons {
+    position: absolute;
+    fill: #fff;
+    color: #fff;
+    height: 130px;
+    top: 226px;
+    width: 50px;
+    display: fle;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.fa:hover {
+    cursor: pointer;
+    transform: scale(1.5);
+    transition: 0.5s ease-in;
+}
+
+
+/***************       FOOTER       ***************/
