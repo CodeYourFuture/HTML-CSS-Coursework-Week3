@@ -3,7 +3,6 @@
 ___________________
     Imported Fonts
     General Styling
-    Text Styling
     Hero Styling
 ___________________
 
@@ -18,4 +17,60 @@ ___________________
     padding: 0%;
     margin: 0%;
     box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #d291bc;
+    --secondary-color: #e0bbe4;
+    --third-color: #957dad;
+    --Dancing: 'Dancing Script', cursive;
+}
+
+body {
+    background-color: rgba(251, 209, 204, 0.4);
+}
+
+.container {
+    display: flex;
+    max-width: 100%;
+}
+
+/* Hero styling 
+_______________
+*/
+
+/* Setting the background image to responde relative to the screen size of the device */
+.hero {
+    background-image: url(../Images/deva-williamson-ymy-t_sKkNk-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    min-height: 90vh;
+}
+ 
+/* Because it is designed in mobile view first, I have to make the nav-bar display: none so that I can style it in a hamburger form, which is shown with the image below. */
+.nav-bar {
+    display: none;
+}
+
+.hero-hambuger-image {
+    padding: 1em;
+}
+
+/* Styling the hero text here */
+.main-header {
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-header h1 {
+    color: var(--primary-color);
+    font-size: 2.5rem;
+    font-family: var(--Dancing);
+    font-weight: 900;
+}
+
+.main-header h3 {
+    color: var(--third-color);
+    font-family: var(--Dancing);
+    font-weight: 100;
 }
