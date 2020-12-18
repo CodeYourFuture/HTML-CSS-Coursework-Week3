@@ -1,1 +1,150 @@
 /*  Add your styling here */
+/*  Add your styling here */
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+
+  
+
+  nav a:hover {
+    color: rgb(224, 68, 11);
+    font-weight: bold;
+}
+
+
+#top-ordered-section {
+  width: 100%;
+  margin: 3%;
+}
+
+#welcome-section {
+  width: 100%;
+  margin: 3%;
+  padding: 2%;
+  background-color: rgb(174, 211, 243);
+}
+
+p, #welcome-header, nav, #page-header, .card{
+  font-family: 'Gloria Hallelujah', cursive;
+}
+
+/*CAKES SHOWCASE*/
+#row1,
+#row2 {
+  margin: 3%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+}
+
+#row1 .card, #row2 .card{
+    margin-left: 2em;
+}
+
+/*CARD*/
+.card {
+  padding: 2%;
+  margin-bottom: 3%;
+}
+
+.card-img-top {
+  width: 40%;
+  justify-content: center;
+}
+
+.card-top-title {
+  text-align: center;
+}
+
+
+
+/*Footer*/
+footer {
+  border-top: 2px solid rgb(168, 164, 164);
+  margin: 3%;
+}
+
+.footer-icon {
+  width: 40px;
+}
+.social-media-container {
+  display: flex;
+  flex-direction: row;
+  margin-top: 2em;
+}
+
+.social-media-container p {
+  margin-left: 2em;
+  margin-right: 2em;
+}
+
+#company-name {
+  margin-top: 2em;
+  text-align: center;
+}
+
+/*MEDIA QUERIES */
+@media (min-width: 900px) {
+  /*INTRO SECTION*/
+  #intro,
+  #cake-showcase-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-bottom: 2%;
+  }
+
+  #top-ordered-section {
+    width: 50%;
+    margin: 3%;
+  }
+
+  #welcome-section {
+    width: 50%;
+    margin: 3%;
+    padding: 2%;
+    background-color: rgb(174, 211, 243);
+  }
+
+  .card2 {
+    width: 25%;
+  }
+
+  .card-footer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .container{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    margin-top: 2em;
+  }
+
+  nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+   
+    margin-left: 2%;
+    float: right;
+  }
+
+  .card-footer h4{
+    margin-right: 10px;
+  }
+  .footer-social-media {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
