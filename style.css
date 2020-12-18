@@ -25,12 +25,7 @@ a{
     color: inherit;
 }
 
-a:hover{
-    color: grey;
-    text-decoration: none;
-}
-
-.navBar{
+.nav_links{
     display: none;
 }
 
@@ -39,18 +34,65 @@ a:hover{
 }
 
 @media screen and (min-width: 540px) {
-    .navBar{
+    .nav_links{
         display: block;
     }
 
-    .nav_link{
-        display: inline-flex;
-        justify-content: space-between;
-        align-items: flex-end;
+    a:hover.nav_link1,
+    a:hover.nav_link2,
+    a:hover.nav_link3,
+    a:hover.nav_link4,
+    a:hover.nav_link5{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    background-color: rgb(245, 37, 73);
+} 
+
+    .nav_link1,
+    .nav_link2,
+    .nav_link3,
+    .nav_link4,
+    .nav_link5{
+        display: flex-end;
+        justify-content: space-evenly;
         padding: 5px 50px;
         overflow: hidden;
         background-color: rgb(255, 214, 77);
     }
+
+    .navbar-toggler{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .nav_links{
+        display: block;
+    }
+
+    a:hover.nav_link1,
+    a:hover.nav_link2,
+    a:hover.nav_link3,
+    a:hover.nav_link4,
+    a:hover.nav_link5{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    background-color: rgb(255, 214, 77);
+    }
+
+    .nav_link1,
+    .nav_link2,
+    .nav_link3,
+    .nav_link4,
+    .nav_link5
+    {
+        display: flex-end;
+        justify-content: space-between;
+        padding: 5px 50px;
+        overflow: hidden;
+        background-color: rgb(245, 37, 73);
+    }
+
     .navbar-toggler{
         display: none;
     }
