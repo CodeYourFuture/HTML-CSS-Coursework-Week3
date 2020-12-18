@@ -7,14 +7,25 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Joy's Cakeshop</title>
     <link rel="shortcut icon" type="image/png" href="Img/favic.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Langar&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 <!--First top section-->
-    <header class="top">
-        <p>The best cakes in town delivered to your door</p>
-        <a href=".cake-gallery" class="btn">Shop Cakes</a>
+    <header id="top">
+        <img src="Img/favi.png" class="header-img" alt="bim">
+        <nav id="navbar">
+            <a href="#">Home</a>
+            <a href="#">Cakes</a>
+            <a href="#">Franchise</a>
+            <a href="#">Lessons</a>
+        </nav>
+        <div class="header-text">
+            <p>The best cakes in town delivered to your door</p>
+            <a href=".cake-gallery" class="btn">Shop Cakes</a>
+        </div>
     </header>
 <!--Central section-->
     <main>
@@ -44,11 +55,32 @@
     </main>
 <!--Bottom section-->
     <footer>
-        <h2>Subscribe & Save</h2>
-        <p>Join our monthly newsletter to stay up to date with the latest Freddie's news, receive exclusive discounts and be the
-        first to know about competitions & events.</p>
-        <input type="email" id="email" name="email" placeholder="Email Address">
-        <button>Join</button>
+        <div id="subscribe">
+            <h2>Subscribe & Save</h2>
+            <p>Join our monthly newsletter to stay up to date with the latest news from Joy's Cakeshop, receive exclusive discounts and be the
+                first to know about competitions & events.</p>
+            <input type="email" id="email" name="email" placeholder="Email Address">
+            <button>Join</button>
+        </div>
+        <div id="contact">
+            <h3>Contact</h3>
+            <p>For all online orders and cake delivery enquiries, please feel free to contact our friendly staff at</p>
+            <address>
+                Email us at<a href="mailto:hello@joyscakeshop.co.uk"> Joy's Cakeshop</a>.<br>
+                Visit us at:<br>
+                1024 Joy's Cakeshop<br>
+                Box 564, Cakeland<br>
+                UK
+            </address>
+        </div>
+        <br>
+        <div class="footer-nav">
+            <a href="#">About Us</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">General Enquiries</a>
+            <a href="#">FAQS</a>
+        </div>
+        
     </footer>
 </body>
 

@@ -1,10 +1,22 @@
-/*  Add your styling here */
 body {
-    background-color: whitesmoke;
+    font-family: 'Langar', cursive;
 }
 
-.top {
-   background-color: aquamarine;
+/* Header */
+
+#navbar {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    margin-top: -100px;
+}
+
+.header-img {
+    margin-right: 50px;
+}
+
+.header-text {
+    
 }
 
 img {
@@ -12,6 +24,12 @@ img {
     width: 100px;
 }
 
+/* Footer */
+footer{
+    background-color: aquamarine;
+}
+
+/* Media Query */
 /*
 @media (min-width: 370px){
     .cake {
