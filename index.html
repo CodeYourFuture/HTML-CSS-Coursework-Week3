@@ -7,71 +7,166 @@
     <title>Responsive Cake webpage</title>
     <!-- Add a link to your css file here -->
     <link rel="stylesheet" type="text/css" href=".\style.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
     <header>
       <div class="container">
-        <div id="logo-image">
-          <h1>
-            <span style="color: #ff6666">Cake Masters</span> Home of cakes
-          </h1>
-        </div>
-        <div id="logo-intro">
-          <p>Brief one line intro</p>
-        </div>
+        <h1 id="page-header" style="color: #ff6666">Cake Masters</h1>
         <nav>
-          <ul>
-            <li class="current"><a href="index.html">Home</a></li>
-            <li><a href="about.html">Cakes</a></li>
-            <li><a href="services.html">Ordering</a></li>
-            <li><a href="services.html">Lessons</a></li>
-            <li><a href="services.html">About</a></li>
-          </ul>
+          <a href="/">Home</a>
+          <a href="/">Cakes</a>
+          <a href="/">Ordering</a>
+          <a href="/">Lessons</a>
+          <a href="/">About</a>
         </nav>
       </div>
     </header>
     <main>
-      <section id="welcome-section">
-        <h3 id="welcome-header">Welcome</h3>
-        <p id="welcome-text">Welcome text here</p>
-      </section>
+      <div id="intro">
+        <section id="welcome-section">
+          <h3 id="welcome-header">Welcome</h3>
+          <p id="welcome-text">
+            If you are looking for cakes, cupcakes, macarons, brownies & cookies
+            that look like art & taste like dessert, you are in the right place.
+            Whether you are looking for a birthday cake, a baby shower cake, or
+            some simpler treats for dessert, you can shop everything you need
+            right here online. Browse over 100 cakes, choose your design,
+            flavours, size & customisations, select a delivery or collection
+            date & pay securely at checkout. Anything you order online will be
+            ready within 48 hours! If you are looking for something a little more
+            last-minute or you feel like popping in to watch us create our
+            edible art, visit our store in Cedar Square, Fourways. We stock a
+            wide range of desserts including cakes-to-go in beautiful designs
+            that are available 7 days a week, with no need to pre-order. If you
+            have any questions, feel free to contact our team via WhatsApp or
+            Email. Good things come to those who read the fine print â€“ please
+            see our Ts & Cs.
+            <br /><br />
+            STORE TRADING HOURS <br />Monday - Friday: 08:00 - 17:00
+            <br />Saturdays: 9:00 - 17:00 <br />Sundays & public holidays: 09:00
+            â€“ 15:00 <br />Christmas Day, Boxing Day & New Yearâ€™s Day: closed
+          </p>
+        </section>
 
-      <section id="top-ordered-section">
-        <h3>All time most ordered cake</h3>
-        <img src="" alt="Photo of most ordered cake" />
-        <button>Order now</button>
-      </section>
+        <section id="top-ordered-section">
+          <div class="card">
+            <h3 class="card-top-title">All time most ordered cake</h3>
+            <img
+              class="card-img-top"
+              src="./img/img1.jpg"
+              alt="Photo of most ordered cake"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Festive spirit cake</h5>
+              <div class="card-footer">
+                <h4>R1170</h4>
+                <a href="#" class="btn btn-primary">Order now</a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
 
       <section id="cake-showcase-section">
         <div id="row1">
-          <img src="" alt="cake photo 1" />
-          <img src="" alt="cake photo 2" />
+          <div class="card" class="card2">
+            <img class="card-img-top" src="./img/img2.jpg" alt="cake photo 1" />
+            <div class="card-body">
+              <h5 class="card-title">Chocolate splatter</h5>
+              <div class="card-footer">
+                <h4>R1035</h4>
+                <a href="#" class="btn btn-primary">Order now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card" class="card2">
+            <img class="card-img-top" src="./img/img3.jpg" alt="cake photo 1" />
+            <div class="card-body">
+              <h5 class="card-title">Golden wafer cake</h5>
+              <div class="card-footer">
+                <h4>R1070</h4>
+                <a href="#" class="btn btn-primary">Order now</a>
+              </div>
+            </div>
+          </div>
         </div>
         <div id="row2">
-          <img src="" alt="cake photo 3" />
-          <img src="" alt="cake photo 4" />
+          <div class="card" class="card2">
+            <img class="card-img-top" src="./img/img4.jpg" alt="cake photo 1" />
+            <div class="card-body">
+              <h5 class="card-title">Silver wafer cake</h5>
+              <div class="card-footer">
+                <h4>R999</h4>
+                <a href="#" class="btn btn-primary">Order now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card" class="card2">
+            <img class="card-img-top" src="./img/img5.jpg" alt="cake photo 1" />
+            <div class="card-body">
+              <h5 class="card-title">Pink rose cascade</h5>
+              <div class="card-footer">
+                <h4>R1299</h4>
+                <a href="#" class="btn btn-primary">Order now</a>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </main>
     <footer>
-        
-        <div class="footer-social-media">
-            <div>
-                <img src="/img/twitter-icon.svg" class="footer-icon" alt="Twitter">
-                <p>Follow us on Twitter</p>
-            </div>
-            <div>
-                <img src="/img/facebook-icon.svg" class="footer-icon" alt="Facebook">
-                <p>Follow us on Facebook</p>
-            </div>
-            <div>
-                <img src="/img/instagram-icon.svg" class="footer-icon" alt="Instagram">
-                <p>Follow us on Instagram</p>
-            </div>  
+      <div class="footer-social-media">
+        <div class="social-media-container">
+          <img src="/img/twitter-icon.svg" class="footer-icon" alt="Twitter" />
+          <p>Follow us on Twitter</p>
         </div>
-        <p>&copy; Cake Masters International, 2020</p>
-
+        <div class="social-media-container">
+          <img
+            src="/img/facebook-icon.svg"
+            class="footer-icon"
+            alt="Facebook"
+          />
+          <p>Follow us on Facebook</p>
+        </div>
+        <div class="social-media-container">
+          <img
+            src="/img/instagram-icon.svg"
+            class="footer-icon"
+            alt="Instagram"
+          />
+          <p>Follow us on Instagram</p>
+        </div>
+      </div>
+      <p id="company-name">Cake Masters International, &copy; 2020</p>
     </footer>
   </body>
+  <script
+    src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"
+  ></script>
 </html>
