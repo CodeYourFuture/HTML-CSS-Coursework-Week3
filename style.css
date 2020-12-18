@@ -1,19 +1,34 @@
 /*  Add your styling here */
 
-header{
-    background-image: url(https://cdn.pixabay.com/photo/2018/01/17/15/33/streamer-3088458_1280.jpg);
-    background-image: fixed;
-    padding: 10px;
-    box-shadow: 1px 2px 3px #ccc;
-    color: white;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
+header {
+  background-image: url(https://cdn.pixabay.com/photo/2018/01/17/15/33/streamer-3088458_1280.jpg);
+  background-image: fixed;
+  padding: 10px;
+  box-shadow: 1px 2px 3px #ccc;
+  color: white;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+nav {
+  justify-content: left;
+  flex-direction: column;
+}
+.header-content {
+  display: flex;
+  justify-content: right;
+  flex-direction: column;
+}
+nav {
+  display: flex;
+  justify-content: flex-end;
 }
 
 .topnav {
   overflow: hidden;
   background-color: #333;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .topnav a {
@@ -30,11 +45,10 @@ header{
 .dropdown {
   display: flex;
   flex-direction: column;
-  
 }
 
 .dropdown .dropbtn {
-  font-size: 17px;    
+  font-size: 17px;
   color: white;
   padding: 14px 16px;
   background-color: inherit;
@@ -57,8 +71,6 @@ header{
   justify-content: left;
 }
 
-
-
 .dropdown-content a:hover {
   background-color: #ddd;
   color: black;
@@ -67,41 +79,69 @@ header{
 .dropdown:hover .dropdown-content {
   display: block;
 }
-.topnav a:nth-child(n), .dropdown .dropbtn {
-	display: none;
+.topnav a:nth-child(n),
+.dropdown .dropbtn {
+  display: none;
 }
 .topnav a.icon {
-	display: flex;
+  display: flex;
 }
 
-.topnav.responsive {position: relative;}
+.topnav.responsive {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
 .topnav.responsive .icon {
-	position: absolute;
-    right: 0;
-    top: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 .topnav.responsive a {
-	display: flex;
-    justify-content: row;
-    display: block;
-    text-align: left;
+  display: flex;
+  justify-content: column;
+  display: block;
+  text-align: left;
 }
-.topnav.responsive .dropdown {display: flex;
-justify-content: column;}
-.topnav.responsive .dropdown-content {position: relative;}
+.topnav.responsive .dropdown {
+  display: flex;
+  justify-content: right;
+  flex-direction: column;
+}
+.topnav.responsive .dropdown-content {
+  position: relative;
+}
 .topnav.responsive .dropdown .dropbtn {
-	display: block;
-    width: 100%;
-    text-align: left;
+  display: block;
+  width: 100%;
+  text-align: left;
 }
-.main{
+.main {
   background-color: pink;
   color: white;
 }
-body{
+body {
   background-color: pink;
 }
-.birthdayimage{
+.Birthday {
+  padding: 50px;
+  padding-top: 0px;
+}
+.birthdayimage {
   width: 100%;
-  height:auto;
+  height: auto;
+}
+.images {
+  width: 100%;
+  height: auto;
+  padding: 20px;
+}
+.imagescss1 {
+  display: flex;
+  justify-content: center;
+  padding-inline-start: 10px;
+}
+.imagescss2 {
+  display: flex;
+  justify-content: space-between;
 }
