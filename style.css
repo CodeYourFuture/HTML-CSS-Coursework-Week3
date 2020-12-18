@@ -24,7 +24,7 @@ nav {
 
 .flexContainer {
     display:flex;
-    flex-wrap:wrap;
+    
     justify-content: space-between;
     
 }
@@ -57,14 +57,7 @@ nav {
  
 }
 
-.flexContainer {
 
-    display:flex;
-    flex-wrap: wrap;
-    
-
-
-}
 
 .articleImg {
 width: 100%;
@@ -86,6 +79,17 @@ padding: 1rem;
     color: hsl(281, 78%, 49%);
 }
 
+.socialMContainer {
+  margin: 1rem;
+  border: 1px solid  hsl(281, 78%, 49%);
+  border-radius: 50%;
+  display: flex;
+}
+
+.socialMContainer:hover {
+
+    background-color:hsl(281, 78%, 49%);
+}
 
 
 .socialIcon {
@@ -95,8 +99,12 @@ margin: 1rem;
 
 }
 
+
+}
+
 h3 {
-   padding-left: 1rem;
+   margin-left: 2rem;
+   text-align: right;
 }
 
 .pl {
@@ -183,7 +191,7 @@ nav {
 }
 
 .list {
-  padding-right: 50px;
+  padding-right: 0rem;
 }
 
 li {
@@ -201,9 +209,8 @@ li:hover {
 }
 
 .bestCake {
-    display: none;
-    
 
+   text-align: right;
 }
 
 .flexContainerTwo {
@@ -216,15 +223,30 @@ li:hover {
 
 
 height: 20rem;
-  width: 20rem;
+  width: 22rem;
 }
 
 .heroImg {
 
   width: 99%;
+  height:100vh;
  
   
  
+}
+
+.socialMedia {
+    display: flex;
+    justify-content: center;
+
+}
+
+.pl{
+    text-align:center;
+}
+
+h3{
+    text-align: center;
 }
 
 
