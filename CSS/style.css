@@ -5,6 +5,8 @@ ___________________
     Hero Styling
     Main Content :
     -Welcome Section
+    -Gallery
+    Footer
 ___________________
 */
 
@@ -107,4 +109,26 @@ _______________
 
 .display-image {
     width: 100%;
+}
+
+/* Styling of the gallery images starts here, setting them at a 35% of the screen width */
+.gallery {
+    flex-direction: column;
+}
+.gallery-image {
+    width: 40%;
+    margin: 5% 0px;
+}
+
+.gallery-spacing {
+    justify-content: space-around;
+}
+
+/* Footer Styling
+_________________
+*/
+
+footer {
+    color: var(--secondary-color);
+    padding: 1em;
 }
