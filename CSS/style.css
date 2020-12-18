@@ -7,6 +7,7 @@ ___________________
     -Welcome Section
     -Gallery
     Footer
+    Media Queries
 ___________________
 */
 
@@ -54,7 +55,7 @@ _______________
     background-image: url(../Images/deva-williamson-ymy-t_sKkNk-unsplash.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
-    min-height: 90vh;
+    padding-bottom: 30%;
 }
  
 /* Because it is designed in mobile view first, I have to make the nav-bar display: none so that I can style it in a hamburger form, which is shown with the image below. */
@@ -70,6 +71,7 @@ _______________
 .main-header {
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 .main-header h1 {
@@ -93,7 +95,8 @@ _______________
 .welcome {
     font-family: var(--Dancing);
     text-align: center;
-    padding: 1em;
+    margin-top: 0px;
+    padding: 0px 1em 2em 1em;
 }
 
 .welcome > h2 {
@@ -131,4 +134,55 @@ _________________
 footer {
     color: var(--secondary-color);
     padding: 1em;
+}
+
+/* Media Styling Query Styling
+______________________________
+*/
+
+@media screen and (min-width: 500px) {
+    .main-header h1 {
+        font-size: 3rem;
+    } 
+}
+
+/* First major change in the layout of the website, introducing the nav-bar and removing the hamburger. */
+@media screen and (min-width: 600px) {
+    .hero {
+        padding: 30% 0px;
+    }
+    .hero-hambuger-image {
+        display: none;
+    }
+
+/* Styling the nav-bar to fit design */
+    .nav-bar {
+        display: block;
+    }
+
+    a {
+        text-decoration: none; 
+    }
+
+    li {
+        list-style: none;
+    }
+
+    .nav-list {
+        margin: 0px;
+        padding-top: 3em;
+    }
+    .nav-list + .nav-list {
+        margin-left: 2em;
+    }
+
+    .nav-link {
+        color: var(--primary-color);
+        font-family: var(--Dancing);
+        font-size: 1.3rem;
+    }
+
+    .nav-link:hover {
+        color: var(--third-color);
+    }
 }
