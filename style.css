@@ -2,59 +2,55 @@
 
 /*Navigation*/
 /*Products*/
-h3{
-    text-align: center;
+h3 {
+  text-align: center;
 }
-p{
-    padding: 2%;
+p {
+  padding: 2%;
 }
-.card{
-    display:flex;
-    flex-direction: column;  
-    margin: auto;
-    align-self: stretch;
-    top:auto;
-    
+.card {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  align-self: stretch;
+  top: auto;
 }
-.card:first-child{
-    
-    background-color: chocolate;
+.card:first-child {
+  background-color: chocolate;
 }
-.card:nth-child(2){
-    background-color: yellowgreen;
+.card:nth-child(2) {
+  background-color: yellowgreen;
 }
-.card:nth-child(3){
-    background-color: pink;
+.card:nth-child(3) {
+  background-color: pink;
 }
-.card:last-child{
-    background-color: peachpuff;
+.card:last-child {
+  background-color: peachpuff;
 }
 /*Footer*/
-footer{
-    height:30px;
-    background-color: darkgrey;
+footer {
+  height: 30px;
+  background-color: darkgrey;
 }
 /*Media Queries*/
-@media screen and (min-width:501px){
-    .card{
-        display:grid;
-        grid-template-columns: auto auto ;
-        margin-bottom: 50px;
-    }
-    footer{
-        height: 40px;
-    }
+@media screen and (min-width: 501px) {
+  .card {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-bottom: 50px;
+  }
+  footer {
+    height: 40px;
+  }
 }
-@media screen and (min-width:801px){
-    .card{
-        display:inline-block;
-        flex-direction:reverse-row;
-        width: 90%;
-        margin-left: 20px;
-        margin-right: 20px;
-
-    }
-    footer{
-        height:50px;
-    }
+@media screen and (min-width: 901px) {
+  .card {
+    display: inline-block;
+    width: 90%;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  footer {
+    height: 50px;
+  }
 }
