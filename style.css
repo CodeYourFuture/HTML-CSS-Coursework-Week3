@@ -1,5 +1,9 @@
 /*  Add your styling here */
 
+.logo {
+  width: 80px;
+}
+
 .main-image {
   width: 414px;
   height: 500px;
