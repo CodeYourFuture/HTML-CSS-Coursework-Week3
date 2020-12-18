@@ -16,17 +16,27 @@ html {
     /* display:block; */
     width:40%;
 }
+.hmbrgr{
+    width:10%;
+    float:right;
+    position: relative;
+    right:5%
+}
+nav{
+    background-color: rgb(58, 108, 158);
+}
 body{
-    font-family: Libre, Langar, fantasy;
-    background-color: slategrey;
+    font-family: Langar, fantasy, sans-serif;
 
 } 
-header{
-    /* display:flex; */
-    background-color: lightblue;
-}
+/* header{
+    display:flex;
+} */
 h2{
     width:50%;
+    position: absolute;
+    left:45%;
+    top:30%;
 }
 ul{
     display: flex;
@@ -38,24 +48,42 @@ a{
 }
 li{
     width:30%;
-    font-family: Langar, Impact, Georgia;
+    font-family: Libre, Impact, Georgia;
+}
+#hero{
+    /* display:flex;
+    justify-content: center; */
+    /* align-items: center; */
+    background-color: lightblue;
 }
 h1{
     width:50%;
+    font-size: 10vh;
+    padding-left: 5%;
+    color:grey;
+}
+p{
+    padding-left: 5%;
+    color: grey;
 }
 section img{
     /* display:block; */
-    width:80%;
+    width:60%;
+    padding-left: 15%;
     /* background-color: slategrey; */
 }
 #images{
     display:flex;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
 }
 .body-img{
     width:50%;
 }
 footer{
-    background-color: crimson;
+    background-color: rgb(74, 183, 216);
+}
+footer img{
+    width:20%;
 }
