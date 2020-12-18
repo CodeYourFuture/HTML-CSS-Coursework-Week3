@@ -4,9 +4,8 @@ body {
     margin: 0 auto;
 }
 
-img {
-    width: 100%;
-    height: auto;
+.row {
+    padding-bottom: 50px;
 }
 
 .container-fluid {
