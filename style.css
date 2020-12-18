@@ -7,6 +7,11 @@ body {
   
 }
 
+main{
+  margin: 2rem 0rem;
+  
+}
+
 p {
     
     text-align:justify;
@@ -16,6 +21,16 @@ p {
 }
 nav {
     display: none;
+}
+
+header {
+  border-bottom:0.1rem solid hsl(281, 78%, 49%);
+  margin-bottom: 1rem;
+}
+
+footer{
+  border-top:0.1rem solid  hsl(281, 78%, 49%);
+  margin: 2rem 0rem;
 }
 .sectionOne{
     padding-left: 1rem;
@@ -71,6 +86,7 @@ padding: 1rem;
 .socialMedia {
     display: flex;
     justify-content: flex-start;
+    margin: 1rem 0rem;
 
 }
 
