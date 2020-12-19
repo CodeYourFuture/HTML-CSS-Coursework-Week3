@@ -1,74 +1,5 @@
 /*  Add your styling here */
 
-header {
-    background-color: rgb(33, 248, 248);
-    padding-bottom: 40px;
-    display: flex;
-}
-
-h1 {
-    align-self: flex-end;
-    text-align: right;
-    flex-grow: 2;
-    margin-right: 50px;
-    font-family: 'Lobster', cursive;
-    font-size: 14px;
-}
-
-.logo {
-    width: 175px;
-    height: 200px;
-}
-
-.intro {
-    background-color: rgb(243, 236, 141);
-    text-align: justify;
-    font-size: 14px;
-}
-
-h2, p {
-    font-family: 'Lobster', cursive;
-    margin-left: 40px;
-    padding: 40px 40px 40px 10px;
-}
-
-h2 {
-    padding-bottom: 10px;
-}
-
-.giantCupcake {
-    width: 200px;
-    height: 250px;
-}
-
-.cakes {
-    width: 100px;
-    height: 75px;
-    padding: 5px;
-}
-
-.giantCake, .cupcakes {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgb(255, 149, 193);
-    margin-top: 20px;
-    padding-top: 40px;
-    padding-bottom: 40px;
-}
-
-.cupcakes {
-    padding: 40px;
-    flex-flow: row wrap;
-    background-color:rgb(243, 236, 141);
-}
-
-footer {
-    background-color: rgb(33, 248, 248);
-    text-align: justify;
-    font-size: 10px;
-}
-
 nav {
     font-family: 'Lobster', cursive;
     font-size: 14px;
@@ -102,6 +33,83 @@ nav {
     border:rgb(255, 149, 193);
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
+}
+
+header {
+    background-color: rgb(33, 248, 248);
+    padding-bottom: 40px;
+    display: flex;
+}
+
+h1 {
+    align-self: flex-end;
+    text-align: right;
+    flex-grow: 2;
+    margin-right: 50px;
+    font-family: 'Lobster', cursive;
+    font-size: 14px;
+}
+
+.logo {
+    width: 175px;
+    height: 200px;
+}
+
+.intro {
+    background-color: rgb(243, 236, 141);
+    text-align: justify;
+    font-size: 14px;
+}
+
+h2, p {
+    font-family: 'Lobster', cursive;
+    margin-left: 40px;
+    padding: 40px 40px 40px 10px;
+}
+
+p {
+    padding-top: 20px;
+}
+
+h2 {
+    padding-bottom: 10px;
+}
+
+.giantCupcake {
+    width: 200px;
+    height: 250px;
+    border: 2px solid rgb(243, 236, 141);
+}
+
+.cakes {
+    width: 100px;
+    height: 75px;
+    margin: 2px;
+    border: 2px solid rgb(255, 149, 193);
+}
+
+.giantCake, .cupcakes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 149, 193);
+    margin-top: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.cupcakes {
+    padding: 40px;
+    flex-flow: row wrap;
+    background-color:rgb(243, 236, 141);
+}
+
+footer {
+    background-color: rgb(33, 248, 248);
+    text-align: justify;
+    font-size: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 @media (min-width: 540px) {
