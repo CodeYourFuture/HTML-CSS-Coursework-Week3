@@ -28,6 +28,11 @@ footer{
     background-color:rgb(223, 171, 201);
 }
 
+.footer-nav a {
+    display: flex;
+    justify-content: space-around;
+}
+
 /* Header */
 
 #navbar {
@@ -94,6 +99,59 @@ button {
 @media (min-width: 540px){
     #background {
          background-size: cover;
+         display: flex;
+         flex-direction: column;
+         justify-content: flex-start;
+         margin-top: -230px;
+         width: 50%;
+
+    }
+    #navbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        margin-top: 50px;
+        background-color: rgb(223, 171, 201);
+    }
+    #navbar a {
+        padding: 10px;
+    }
+    
+    .header-img {
+        padding-top: 20px;
+    }
+    .header-text {
+        display: flex;
+        justify-content: flex-end;
+    }
+    .btn {
+        display: flex;
+        justify-content: flex-end;
+    }
+    .welcome-text {
+        display: flex;
+        flex-direction: column;
+        text-align: right;
+        padding-top: 120px;
+        width: 450px;
+        margin-left: auto;
+    }
+    #welcome-page {
+        margin-top: -50px;
+    }
+    #top {
+        margin-top: -20px;
+    }
+    h1,h2 {
+        font-size: 40px;
+    }
+    #cake-gallery {
+        display: flex;
+        flex-direction: row;
+    }
+    .footer-nav a{
+        padding: 20px;
+        display: inline-flex;
     }
 }
 
