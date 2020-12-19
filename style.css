@@ -212,4 +212,80 @@ hr {
 }
 
 @media (min-width: 600px) {
+  header {
+    justify-content: center;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  div h1 {
+    padding-left: 0px;
+  }
+  .nav-menu {
+    padding-right: 10px;
+  }
+  h2 {
+    padding-top: 0px;
+    margin-bottom: 25px;
+    font-size: 30px;
+  }
+
+  p {
+    font-size: 26px;
+    font-style: normal;
+  }
+
+  h3 {
+    font-size: 28px;
+  }
+
+  .main-image {
+    width: 800px;
+    height: 900px;
+  }
+
+  .collections-img {
+    width: 350px;
+    height: 300px;
+    padding: 4px;
+  }
+
+  footer {
+    background-color: #f3e0dc;
+  }
+
+  .sitemap-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sitemap-container li {
+    padding: 8px;
+  }
 }
+
+@media (min-width: 900px) {
+  body {
+    background-color: #ffee8e;
+  }
+
+  header {
+    height: 120px;
+  }
+
+  .logo {
+    width: 110px;
+  }
+
+h1 {
+    font-size: 40px;
+    font-style: normal;
+}
+
+.nav-menu {
+  top: 70px;
+}
+
