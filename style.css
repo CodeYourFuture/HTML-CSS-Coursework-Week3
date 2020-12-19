@@ -1,18 +1,11 @@
-/*  Add your styling here */
-
 body{
     margin:0px;
     background-color: #a5f2ff;
-font-family: 'Nunito', sans-serif;
+    font-family: 'Nunito', sans-serif;
 }
-
-
-
 
 /* Style the navigation menu */
 .topnav {
- /* overflow: hidden;*/
- 
   background-color: #a5f2ff;
   position: relative;
 }
@@ -33,7 +26,6 @@ font-family: 'Nunito', sans-serif;
 
 /* Style the hamburger menu */
 .topnav a.icon {
-  
   background-color: #a5f2ff;
   display: block;
   position: absolute;
@@ -41,7 +33,7 @@ font-family: 'Nunito', sans-serif;
   top: 0;
 }
 
-/* Add a grey background color on mouse-over */
+/* Add a yellow background color on mouse-over */
 .topnav a:hover {
   background-color: #ffeca5;
   color: black;
@@ -52,11 +44,6 @@ font-family: 'Nunito', sans-serif;
   background-color:#FFA5CB;
   color: black;
 }
-
-
-
-
-
 
 header {
     position: relative;
@@ -90,7 +77,6 @@ h1{
     font-size:1.4em;
 }
 
-
 .intro{
     text-align:center;
 }
@@ -118,14 +104,13 @@ ul{
     list-style:none
 }
 
-li{
-    
+li{ 
     margin:0px 0px;
 }
 
-
 .deskheader{
   display:none;
+  background-color: #a5f2ff;
 }
 
 footer p{
@@ -133,48 +118,56 @@ footer p{
     padding: 10px 0px;
 }
 
-
-
-.deskheader{
-    background-color: #a5f2ff;
-}
-
 .intro {
     padding: 10px 0px;
     margin:0px;
     background-color: #a5f2ff;}
 
+a:link {
+  text-decoration: none;
+  color: black;
+  font-weight:500;
+}
 
-
+a:visited {
+  text-decoration: none;
+  color: black;
+  font-weight:500;
+}
 
 @media (min-width:768px){
-.topnav a {
-  display: flex;
-  flex-direction:row;
-}
-.topnav a:hover {
-    
-display: flex;
-flex-direction:row;
-}
-/* makes hamburger disappear */
-.topnav a.icon {
-  display: none;
-}
-.active {
-  display: none;
-}
-.topnav a{
-  display: none;
-}
-.topnav {
-  display: none;
-}
-.topnav #myLinks {
-display: flex;
-flex-direction:row;
-color:black;
-border: solid black 10px;
+  .topnav a {
+    display: flex;
+    flex-direction:row;
+  }
+
+  .topnav a:hover {  
+    display: flex;
+    flex-direction:row;
+  }
+
+  /* makes hamburger disappear */
+  .topnav a.icon {
+    display: none;
+  }
+
+  .active {
+    display: none;
+  }
+
+  .topnav a{
+    display: none;
+  }
+
+  .topnav {
+    display: none;
+  }
+
+  .topnav #myLinks {
+    display: flex;
+    flex-direction:row;
+    color:black;
+    border: solid black 10px;
 }
 
 .intro {
@@ -211,7 +204,6 @@ footer ul li{
 }
 footer{
 background-color: #a5f2ff;
-}
 }
 
 @media (min-width:640px){
