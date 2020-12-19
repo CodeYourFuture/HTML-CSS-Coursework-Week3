@@ -11,7 +11,7 @@ font-family: 'Nunito', sans-serif;
 
 /* Style the navigation menu */
 .topnav {
-  overflow: hidden;
+ /* overflow: hidden;*/
   background-color: #333;
   position: relative;
 }
@@ -82,7 +82,6 @@ header {
 
 header img {
     max-width: 100%;
-    max-height: 500px;
     position:relative;
 }
 
@@ -91,10 +90,12 @@ h2{
     text-align:center;
     padding:1px 0px;
     background-color:#FFA5CB;
+    font-size:1.1em;
 }
 
 h1{
     margin:10px 0px;
+    font-size:1.4em;
 }
 
 
@@ -126,6 +127,11 @@ ul{
 li{
     
     margin:10px 0px;
+}
+
+
+.deskheader{
+  display:none;
 }
 
 footer p{
@@ -165,13 +171,23 @@ border: solid black 10px;
     display:flex;
     flex-direction:row-reverse;
 }
-.fullimage {
-    width:50%;
+header{
+  overflow:hidden;
+  max-height:600px;
+}
+.fullimage{
+    width:47%;
+    margin:0px 15px;
 }
 .quad img{
     width:23%;
     height:auto;
     padding:5px;
+}
+.deskheader{
+  display:flex;
+  justify-content: space-evenly;
+  margin: 10px 0px;
 }
 .intro {
     margin: 10px 0px;
@@ -192,6 +208,8 @@ footer ul li{
 }
 
 @media (min-width:640px){
-
+  h1{
+    font-size:1.6em;
+}
 }
 
