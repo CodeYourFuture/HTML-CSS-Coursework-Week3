@@ -25,6 +25,10 @@ a:hover {
 .nav-menu {
   display: none;
 }
+header {
+  display: block;
+  /* justify-content: center; */
+}
 .brand {
   display: flex;
   /* flex-direction: row; */
@@ -35,7 +39,8 @@ a:hover {
   margin: 5px auto;
 }
 .logo {
-  height: 20vh;
+  height: 15vh;
+  /* width: 10vw; */
   /* flex-grow: 3; */
   /* width: auto 0px auto; */
   border: 2px solid yellow;
@@ -49,11 +54,20 @@ a:hover {
   /* min-width: 50%; */
 }
 .tag-line {
-  padding: 20px;
-  line-height: 1em;
+  width: 50%;
+  margin-top: auto;
+  margin-left: auto;
+  /* padding: 20px; */
+  /* line-height: 1em; */
+  /* font-size: 20px; */
   /* flex: 1 50%; */
   align-self: flex-end;
   border: 2px solid blue;
+  text-align: right;
+}
+.tagline {
+  /* margin-left: auto; */
+  /* align-self: flex-end; */
   /* text-align: right; */
 }
 /* Navigation */
@@ -74,18 +88,21 @@ a:hover {
 /* Intro to the cake business  */
 .introduction {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  /* flex-wrap: wrap; */
 }
 .message {
-  background-color: blue;
+  border: 2px solid blue;
+  flex: 1;
   /* margin-top: 50px; */
 }
 /* Cake Selections  */
 .big-cake-wrapper {
   border: 5px solid orange;
-  margin: 5px auto;
-  display: flex;
-  justify-content: center;
+  margin: 0 auto;
+  /* display: flex;
+  justify-content: center; */
 }
 
 .big-cake {
@@ -93,7 +110,11 @@ a:hover {
   /* min-width: 70vw; */
 }
 .big-cake img {
-  flex-direction: column;
+  width: 100%;
+  height: auto;
+  max-width: 425px;
+  /* flex: 1 100%; */
+  /* flex-direction: column; */
   /* margin: 0 auto; */
   /* shape-outside: circle(); */
 }
@@ -102,7 +123,7 @@ a:hover {
   flex-wrap: wrap;
   border: 5px solid red;
   justify-content: center;
-  gap: 5px;
+  gap: 10px;
 }
 
 .images {
@@ -111,8 +132,8 @@ a:hover {
 }
 /* Use this for a typical mobile screen size 
 for a 2 by 2 grid layout */
-img {
-  flex: 1 50%;
+.images img {
+  flex: 0 50%;
 }
 /* Media Queries */
 @media only screen and (min-width: 992px) {
@@ -121,5 +142,14 @@ img {
   }
   .hamburger-icon {
     display: none;
+  }
+  .introduction {
+    display: inline-flex;
+    flex-direction: row-reverse;
+    flex-wrap: no-wrap;
+    /* justify-content: space-between; */
+  }
+  .message {
+    /* shape-outside: circle(50%); */
   }
 }
