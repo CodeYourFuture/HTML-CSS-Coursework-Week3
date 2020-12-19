@@ -160,7 +160,7 @@ header {
   flex-wrap: wrap;
   border: 5px solid red;
   justify-content: center;
-  /* gap: 10px; */
+  gap: 10px;
 }
 
 .images {
