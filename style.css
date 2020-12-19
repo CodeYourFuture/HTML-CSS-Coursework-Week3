@@ -151,33 +151,30 @@ ul.social {
 
   h3.header-text {
     font-size: 1.5rem;
-    /* padding: 1.2rem; */
-    /* text-align: right; */
   }
 
   .nav {
-    padding: 1.3rem;
+    /* padding: 1rem; */
     background-color: var(--font-color);
     display: block;
+    margin: 1rem;
   }
 
   ul.nav-list {
     display: flex;
-    gap: 3rem;
+    gap: 2rem;
     padding: 1rem;
-    /* background: greenyellow; */
     text-transform: uppercase;
   }
 
   ul.nav-list a {
-    /* line-height: 3; */
     color: var(--third-color);
   }
 
   .nav-list li {
     background-color: var(--main-color);
-    padding: 0.5rem 0.9rem;
-    font-size: 0.9rem;
+    padding: 0.3rem 0.7rem;
+    font-size: 0.8rem;
     cursor: pointer;
   }
 
