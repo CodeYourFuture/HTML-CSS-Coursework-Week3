@@ -22,7 +22,7 @@ header {
 }
 
 div h1 {
-  padding-left: 120px;
+  padding-left: 110px;
 }
 
 h1 {
@@ -144,6 +144,7 @@ p {
   color: rgb(65, 47, 4);
   font-size: 18px;
   font-style: oblique;
+  width: 80%;
 }
 
 .text-box p {
@@ -208,4 +209,7 @@ hr {
 .sitemap-link:hover {
   color: rgb(255, 255, 255);
   cursor: pointer;
+}
+
+@media (min-width: 600px) {
 }
