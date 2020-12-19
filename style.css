@@ -10,6 +10,15 @@
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
+li {
+  list-style: none;
+}
+
 body {
   font-family: "Lato", sans-serif;
 }
@@ -122,4 +131,26 @@ ul.social {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media (min-width: 718px) {
+  /* header {
+    display: flex;
+  } */
+  .nav {
+    padding: 2rem;
+    background-color: pink;
+    /* display: flex; */
+  }
+
+  ul.nav-list {
+    display: flex;
+    gap: 1rem;
+    padding: 0;
+    background: greenyellow;
+  }
+
+  ul.nav-list a {
+    line-height: 3;
+  }
 }
