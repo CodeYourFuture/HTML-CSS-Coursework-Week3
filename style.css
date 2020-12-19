@@ -4,29 +4,18 @@ html {
 body {
   font-family: sans-serif;
   margin: 0;
-  /* background: rgb(238, 174, 202); */
-  /* background: linear-gradient(
-    270deg,
-    rgba(238, 174, 202, 1) 30%,
-    rgba(148, 233, 231, 1) 70%
-  ); */
   background: rgb(238, 174, 202);
   background: linear-gradient(
     300deg,
     rgba(238, 174, 202, 1) 30%,
     rgba(148, 233, 231, 1) 70%
   );
-
-  /* background: linear-gradient(90deg, #eeaeca 70% #94e9e7 30%); */
-  /* background-color: HEX(A2D2FF); */
-  /* background-image: linear-gradient(270deg, "Baby Blue Eyes"); */
-  /* background-image: linear-gradient(260deg, #2376ae 0%, #c16ecf 100%); */
+  
 }
 
 p {
   font-family: "Dancing Script", cursive;
-  font-size: 20px;
-  /* font-weight: bold; */
+  font-size: 1.25em;
 }
 a {
   color: white;
@@ -49,60 +38,33 @@ a:hover {
 }
 header {
   display: block;
-  /* justify-content: center; */
 }
 .brand {
   display: flex;
-  /* background-color: rgb(233, 196, 106); */
-  /* flex-direction: row; */
   flex-wrap: wrap;
   justify-content: space-between;
-  /* align-items: center; */
-  border: 5px solid black;
-  margin: 5px auto;
+  margin: 0.32em auto;
   width: 100%;
 }
 .logo {
   height: 25vh;
-  /* width: 10vw; */
-  /* flex-grow: 3; */
-  /* width: auto 0px auto; */
-  border: 2px solid yellow;
 }
 .hamburger-icon {
-  border: 2px solid red;
-  padding: 20px;
-
-  /* align-self: flex-start; */
-  /* text-align: top; */
-  /* flex-grow: 5; */
-  /* min-width: 50%; */
+  padding: 1.25em;
+  
 }
 .tag-line {
   /* width: 50%; */
   margin-top: auto;
   margin-left: auto;
-  /* if you don't fit
-  in 50% of the viewport
-  do not grow */
-  flex: 0 50%;
+    flex: 0 50%;
 
-  padding: 10px 20px;
-  /* line-height: 1em; */
-  /* font-size: 20px; */
-  /* flex: 1 50%; */
-  /* align-self: flex-end; */
-  border: 2px solid blue;
+  padding: 0.62em 1.25em;
   text-align: right;
 }
-.tagline {
-  /* margin-left: auto; */
-  /* align-self: flex-end; */
-  /* text-align: right; */
-}
+
 /* Navigation */
 .nav-menu ul {
-  border: 1px solid black;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -111,105 +73,64 @@ header {
 }
 .nav-menu li {
   flex: 1;
-
-  /* May be redundant */
-  /* flex: 2; */
+  
 }
 /* Intro to the cake business  */
 .introduction {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* flex-wrap: wrap; */
+  
 }
 .message {
-  /* background-color: rgb(42, 157, 143); */
-
-  border: 5px solid blue;
   flex: 1 100%;
-  padding: 5px;
+  padding: 0.32em;
   text-align: justify;
-  /* margin-top: 50px; */
+  
 }
 /* Cake Selections  */
 .big-cake-wrapper {
-  border: 5px solid orange;
   margin: 0 auto;
-  /* display: flex;
-  justify-content: center; */
-}
+  }
 
-.big-cake {
-  border: 6px solid black;
-  /* min-width: 70vw; */
-}
+
 .big-cake img {
-  /* this makes the image 
-  resize with the screen 
-  dimensions */
   width: 100%;
   height: auto;
-  max-width: 425px;
-  /* flex: 1 100%; */
-  /* flex-direction: column; */
-  /* margin: 0 auto; */
-  /* shape-outside: circle(); */
+  max-width: 26.5em;
+  
 }
 .cake-selections {
   display: flex;
   flex-wrap: wrap;
-  border: 5px solid red;
+  min-height: 100%;
   justify-content: center;
-  gap: 10px;
+  align-items: center;
+  
 }
 
-.images {
-  /* display: flex; */
-  /* flex-wrap: wrap; */
-  /* width: 100%; */
-  border: 5px solid blue;
-}
-/* Use this for a typical mobile screen size 
-for a 2 by 2 grid layout */
-.images > section {
-  flex: 0 50%;
-}
-/* Footer */
 .footer-container {
   display: flex;
   flex-direction: column;
-  /* flex-wrap: wrap; */
-  /* align-items: stretch; */
-  border: 2px solid green;
 }
 footer {
-  /* background-color: #fff; */
-  /* background-color: rgb(233, 196, 106); */
-  /* color: white; */
-  /* padding: 5px; */
+  
   background-color: rgb(205, 180, 219);
-  border: 5px solid yellow;
-  /* text-align: center; */
+  
 }
 .footer-social-icons {
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
-  /* align-items: center; */
-  border: 5px solid black;
 }
 
 .fa {
   color: navy;
-  font-size: 50px;
-  padding: 20px;
+  font-size: 4em;
+  padding: 1.5em;
 
   text-align: left;
 }
-.site-info {
-  /* display:block; */
-  /* content: 2020; */
-  /* font-size: :10px; */
+
 }
 
 /* Media Queries */
@@ -218,14 +139,14 @@ footer {
   .nav-menu {
     display: block;
   }
+  
   .hamburger-icon {
     display: none;
   }
   .introduction {
-    display: flex;
+    display: inline-flex;
     flex-direction: row-reverse;
     flex-wrap: no-wrap;
-    /* justify-content: space-between; */
   }
   .footer-social-icons {
     display: flex;
@@ -237,14 +158,63 @@ footer {
   .fa {
     text-align: center;
   }
-  /* footer {
-    display: flex;
-    justify-content: center;
-  } */
+  
   .message > p,
   h1 {
     text-align: right;
-    padding: 5px;
-    /* shape-outside: circle(50%); */
+    /* padding: 0.32em; */
   }
 }
+
+@media only screen and (min-width: 2560px) { 
+  .nav-menu {
+    display: block;
+  }
+  .hamburger-icon {
+    display: none;
+  }
+  .introduction {
+    display: inline-flex;
+    flex-direction: row-reverse;
+    flex-wrap: no-wrap;
+  }
+  .footer-social-icons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: no-wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .fa {
+    text-align: center;
+  }
+  
+  .message > p,
+  h1 {
+    text-align: right;
+    /* padding: 0.32em; */
+  }
+  p,
+  h1 {
+    font-family: "Dancing Script", cursive;
+    font-size: 2.5em;
+    
+  }
+    
+  .footer-container{
+    display:flex;
+    
+  }
+  .footer-social-icons{
+    display:flex;
+
+    justify-content: center;
+       
+  }
+  .fa {
+    color: navy;
+    font-size: 100em;
+    padding: 5em;
+    
+  }
+} 
