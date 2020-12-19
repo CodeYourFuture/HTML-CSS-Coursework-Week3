@@ -7,6 +7,9 @@ body {
 .navbar{
     display: none;
 }
+.nav{
+    display: none;
+}
 header{
     display:flex;
     flex-direction: row-reverse;
@@ -36,6 +39,13 @@ header{
     font-size: 1.2rem;
     color:lightgoldenrodyellow;
 }
+img{
+    transition: 1sec;
+}
+img:hover{
+    transform: scale(0.97);
+}
+
 section{
     padding: 10px 20px 10px 10px;
 }
@@ -48,9 +58,9 @@ section{
     font-size: 1rem;
     font-weight: 100;
     text-align: justify;
-    padding-right: ;
+   
 }
-.topsection{
+.imgsection{
     width: 100%;
 }
 
@@ -60,16 +70,18 @@ section{
     align-items: center;
 
 }
+
 .produce{
     width:70%;
     padding: 5% 15% 5% 15%;
-    
 }
+
 
 footer{
     background-color:#7B3F00;
     color:lightgoldenrodyellow;
-    margin: 0px 0px -20px -10px;;
+    margin: 0px 0px -20px -10px;
+    
 }
 a:link{
     color:lightgoldenrodyellow;
@@ -87,4 +99,80 @@ li{
     text-align: center;
     padding-bottom: 30px;
     margin-top: 0px;
+}
+@media only screen and (min-width: 540px) {
+    .bottomsection{
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+    }
+    .produce{
+        width:245px;
+        padding: 15px 1% 15px 1%;
+    }     
+    footer{
+        background-color:#7B3F00;
+        color:lightgoldenrodyellow;
+        margin: 0px 0px -20px -10px;;
+    }
+} 
+@media only screen and (min-width: 900px) {
+    .hamburger{
+        display: none;
+    }
+
+    
+    .nav{
+        display: block;
+        background-color:#c56a08; 
+        width:80%; 
+        margin-left: 8%;  
+        margin-right: 10%; 
+        margin-top: 20px; 
+        margin-bottom: 20px;   
+    }
+
+    .navbar{
+        display: flex;
+        justify-content: flex-end;
+    }
+    .middlesection{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .divsection{
+        display: flex;
+        flex-direction: column;
+        width:50%;           
+    }
+    .maintext1{
+        height: 20%;
+        text-align: right;
+        margin-top: 100px;
+        font-size: 2.5rem;
+    }
+    .maintext2{
+        height: 80%;
+        text-align: right;
+        margin-left: 100px;
+        font-size: 1.5rem;
+    }
+
+    .imgsection{
+        width:50%
+    }
+    
+    .footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    footer{
+        background-color:#7B3F00;
+        color:lightgoldenrodyellow;
+        margin: 0px 0px -20px -10px;
+    }
+
 }
