@@ -211,7 +211,9 @@ footer {
     display: flex;
     justify-content: center;
   } */
-  .message {
+  .message > p,
+  h1 {
+    text-align: right;
     /* shape-outside: circle(50%); */
   }
 }
