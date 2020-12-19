@@ -37,6 +37,7 @@ header {
   /* align-items: center; */
   border: 5px solid black;
   margin: 5px auto;
+  width: 100%;
 }
 .logo {
   height: 25vh;
@@ -47,18 +48,23 @@ header {
 }
 .hamburger-icon {
   border: 2px solid red;
-  padding: 5px;
+  padding: 20px;
 
-  align-self: flex-start;
+  /* align-self: flex-start; */
   /* text-align: top; */
   /* flex-grow: 5; */
   /* min-width: 50%; */
 }
 .tag-line {
-  width: 50%;
+  /* width: 50%; */
   margin-top: auto;
   margin-left: auto;
-  /* padding: 20px; */
+  /* if you don't fit
+  in 50% of the viewport
+  do not grow */
+  flex: 0 50%;
+
+  padding: 10px 20px;
   /* line-height: 1em; */
   /* font-size: 20px; */
   /* flex: 1 50%; */
@@ -111,6 +117,9 @@ header {
   /* min-width: 70vw; */
 }
 .big-cake img {
+  /* this makes the image 
+  resize with the screen 
+  dimensions */
   width: 100%;
   height: auto;
   max-width: 425px;
@@ -124,17 +133,36 @@ header {
   flex-wrap: wrap;
   border: 5px solid red;
   justify-content: center;
-  gap: 10px;
+  /* gap: 10px; */
 }
 
 .images {
-  display: flex;
+  /* display: flex; */
+  /* flex-wrap: wrap; */
+  /* width: 100%; */
   border: 5px solid blue;
 }
 /* Use this for a typical mobile screen size 
 for a 2 by 2 grid layout */
-.images img {
+.images > section {
   flex: 0 50%;
+}
+
+footer {
+  background-color: #fff;
+  color: white;
+  padding: 15px;
+  /* text-align: center; */
+}
+
+.fa {
+  color: black;
+  font-size: 50px;
+}
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 /* Media Queries */
 @media only screen and (min-width: 992px) {
@@ -145,10 +173,20 @@ for a 2 by 2 grid layout */
     display: none;
   }
   .introduction {
-    display: inline-flex;
+    display: flex;
     flex-direction: row-reverse;
     flex-wrap: no-wrap;
     /* justify-content: space-between; */
+  }
+  .footer-social-icons {
+    display: flex;
+    /* flex-direction: row; */
+    align-items: center;
+    justify-content: center;
+  }
+  footer {
+    display: flex;
+    justify-content: center;
   }
   .message {
     /* shape-outside: circle(50%); */
