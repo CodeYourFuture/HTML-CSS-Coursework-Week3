@@ -2,7 +2,7 @@
 
 nav {
     font-family: 'Lobster', cursive;
-    font-size: 14px;
+    font-size: 20px;
 }
 
 .topnav {
@@ -51,8 +51,8 @@ h1 {
 }
 
 .logo {
-    width: 175px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
 }
 
 .intro {
@@ -116,6 +116,7 @@ footer {
     width: 20px;
     height: 20px;
     padding: 5px;
+    padding-left: 12px;
     filter: sepia(200%) hue-rotate(280deg) saturate(250%);
 }
 
@@ -124,7 +125,7 @@ footer {
     text-align: center;
 }
 
-@media (min-width: 540px) {
+@media (min-width: 420px) {
     .logo {
         width: 200px;
         height: auto;
@@ -133,7 +134,35 @@ footer {
         font-size: 25px;
     }
     .giantCupcake {
-        width: 300px;
+        width: 350px;
+        height: 450px;
+    }
+    .cakes {
+        width: 150px;
+        height: 100px;
+    }
+    .intro, p {
+        font-size: 20px;
+    }
+    .socialMedia {
+        width: 40px;
+        height: 40px;
+        padding: 10px;
+    }
+    .contact {
+        font-size: 20px;
+    }
+
+@media (min-width: 532px) {
+    .logo {
+        width: 200px;
+        height: auto;
+    }
+    h1 {
+        font-size: 25px;
+    }
+    .giantCupcake {
+        width: 350px;
         height: 450px;
     }
     .cakes {
@@ -144,15 +173,15 @@ footer {
         font-size: 20px;
     }
     .socialMedia {
-        width: 30px;
-        height: 30px;
+        width: 40px;
+        height: 40px;
         padding: 10px;
     }
     .contact {
         font-size: 20px;
     }
 
-@media (min-width: 900px) {
+@media (min-width: 740px) {
     .logo {
         width: 200px;
         height: auto;
@@ -161,11 +190,11 @@ footer {
         font-size: 40px;
     }
     .giantCupcake {
-        width: 500px;
+        width: 550px;
         height: 750px;
     }
     .cakes {
-        width: 350px;
+        width: 320px;
         height: 200px;
     }
     .intro, p {
