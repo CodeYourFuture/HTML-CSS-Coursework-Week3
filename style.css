@@ -8,6 +8,11 @@ header {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
+  position: fixed;
+  width:90%;
+  margin-top: 0px;
+
+
 }
 nav {
   justify-content: left;
@@ -25,7 +30,7 @@ nav {
 
 .topnav {
   overflow: hidden;
-  background-color: #333;
+  background-color: pink;
   display: flex;
   justify-content: flex-end;
 }
@@ -118,6 +123,7 @@ nav {
 .main {
   background-color: pink;
   color: white;
+  padding-top: 100px;
 }
 body {
   background-color: pink;
@@ -149,4 +155,27 @@ body {
 }
 .image2{
   padding-inline-start: 10px;
+}
+footer{
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+ul{
+  list-style-type: none;
+  justify-content: center;
+  flex-direction: column;
+}
+.list{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-right:10px;
+}
+
+
+.copyrightnote{
+  display: flex;
+  justify-content:center;
+
 }
