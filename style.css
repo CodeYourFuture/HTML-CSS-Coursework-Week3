@@ -29,15 +29,12 @@ body{
 
 }
 
-.imageHero {
-
-}
-
 .cakeDisp img {
 display: inline-block;
-flex-direction: row;
+/* flex-direction: row; */
 width: 45%;
-height: auto;
+height:;
+
 justify-content: space-between;
 padding: 5px;
 }
@@ -59,14 +56,17 @@ height: ;
 
 
 
-ul{
+.ulNav li a{
     list-style-type: none;
     display: flex;
     
+    
 }
 ul li{
+    display: inline-flex;
     margin: 10px;
     list-style: none;
+    flex-direction: row;
 }
 nav {
     display: none;
@@ -94,15 +94,15 @@ ul.social li a img{
     .hamburger {
         display: none;
      }
-
+    
      nav {
-        display: inline-block;
-
+        display: flex;
+        flex-direction: row;
         }
  
      
      main {
-         font-size: small;
+         font-size: large
      }
      .flex-icons {
          flex-direction: row;
@@ -113,17 +113,17 @@ ul.social li a img{
      h1 {
        font-family: 'Courier New', Courier, monospace;  
      }
-     .cta {
-         font-size: small;
-         color: white;
-         padding: 15px 20px;
-         margin: 10px;
-         border: 2px solid rgb(66, 64, 64);
-         border-radius: 50px;
-         background-color: orangered;
-     }
+     
  }
 
  @media (min-width: 900px) {
-
+    .cakeDisp img {
+        display: inline-block;
+        flex-direction: row;
+        width: 23.61%;
+        height:;
+        
+        justify-content: space-between;
+        padding: 5px;
+        }
  }
