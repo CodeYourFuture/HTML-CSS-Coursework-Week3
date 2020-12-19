@@ -1,12 +1,90 @@
 /*  Add your styling here */
-header{
-    display:flex;
+body {
+    font-family: 'Roboto', sans-serif;    
+    width: 100%;
 }
 
-
-
-
-
-ul{
+.navbar{
     display: none;
+}
+header{
+    display:flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;    
+    background-color:#7B3F00;
+    margin:-10px 0px 0px -10px;
+}
+.header{
+    width:60%
+}
+.sideimg{
+    width:40%
+}
+.headerimg{
+    width:150px;
+    padding:25px 0px 35px 25px;
+}
+.hamburger{
+    width: 30px;
+    position: absolute;
+    top:30px;
+    right: 30px;
+}
+.sitemoto{
+    text-align: right;
+    padding:100px 30px 0px 25px;
+    font-size: 1.2rem;
+    color:lightgoldenrodyellow;
+}
+section{
+    padding: 10px 20px 10px 10px;
+}
+.maintext1{
+    font-size: 2rem;
+    font-weight: 100;
+    margin-bottom: 20px;
+}
+.maintext2{
+    font-size: 1rem;
+    font-weight: 100;
+    text-align: justify;
+    padding-right: ;
+}
+.topsection{
+    width: 100%;
+}
+
+.bottomsection{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.produce{
+    width:70%;
+    padding: 5% 15% 5% 15%;
+    
+}
+
+footer{
+    background-color:#7B3F00;
+    color:lightgoldenrodyellow;
+    margin: 0px 0px -20px -10px;;
+}
+a:link{
+    color:lightgoldenrodyellow;
+    text-decoration: none;
+}
+a:visited{
+    color:lightgoldenrodyellow;
+}
+li{
+    padding: 0px 20px 0px 20px;
+    list-style-type: none;
+    font-size: 1rem;
+}
+.footer2{
+    text-align: center;
+    padding-bottom: 30px;
+    margin-top: 0px;
 }
