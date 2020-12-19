@@ -43,7 +43,7 @@ header {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 1.2rem;
   text-align: center;
-  color: rgb(223, 202, 202);
+  color: #457b9d;
   padding-left: 25%;
 }
 
@@ -108,7 +108,7 @@ footer {
   flex-direction: column;
   justify-content: space-around;
   margin: 4%;
-  background-color: rgb(237, 250, 237);
+  background-color: #f1faee;
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 0.7rem;
 }
@@ -162,14 +162,14 @@ footer {
     justify-content: space-around;
     list-style-type: none;
     font-size: 1.2rem;
-    background-color: rgb(220, 220, 228);
+    background-color: #f1faee;
   }
 
   .rectangle {
     display: flex;
     justify-content: center;
-    background-color: gray;
-    color: white;
+    background-color: #a8dadc;
+    color: #e63946;
     font-size: 1rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     width: 100px;
