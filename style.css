@@ -1,12 +1,15 @@
 :root {
-  --main-color: #fff8e6;
+  --main-color: #fefae0;
   --font-color: #5f4501;
-  --third-color: #9c6644;
+  --third-color: #e9edc9;
+  --forth-color: #d4a373;
+  --fifth-color: #ccd5ae;
 }
 
 * {
   margin: 0;
   box-sizing: border-box;
+  color: var(--font-color);
 }
 
 a {
@@ -45,23 +48,22 @@ header {
   height: 90px;
 }
 
-/* .header-shop-name {
+.header-shop-name {
   font-family: "Lobster", cursive;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   padding: 0.8rem;
-} */
+}
 
 h3.header-text {
-  /* font-size: 1.2rem; */
   padding: 1.2rem;
+  font-size: 1rem;
   text-align: right;
 }
 
 /* ---------- Main section ---------- */
 main {
-  /* padding: 1rem; */
   text-align: center;
-  color: var(--font-color);
+  /* color: var(--font-color); */
 }
 
 .hero-text {
@@ -102,16 +104,29 @@ main {
 /* Footer */
 
 footer {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  background-color: var(--fifth-color);
+  margin-top: 3rem;
+  padding: 1rem;
 }
 
 footer h4 {
   text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: bold;
+  padding: 1rem 0;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
 }
 
 ul.social {
   display: flex;
-  justify-content: space-around;
+  margin-top: 0.7rem;
   padding: 0;
 }
 
@@ -121,20 +136,19 @@ ul.social {
   cursor: pointer;
 }
 
-.social li {
-  list-style: none;
-  padding: 1.5rem 0;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.social li a {
+  padding-right: 0.5rem;
 }
+
+.social li a img {
+  margin-right: 0.5rem;
+}
+
+/* media for mid screen */
 
 @media (min-width: 375px) {
   h3.header-text {
     font-size: 1.3rem;
-    /* padding: 1.2rem; */
-    /* text-align: right; */
   }
 
   .cards-container {
@@ -143,6 +157,8 @@ ul.social {
     margin: 0;
   }
 }
+
+/* media for desktop screen */
 
 @media (min-width: 700px) {
   .hamburger {
@@ -154,8 +170,8 @@ ul.social {
   }
 
   .nav {
-    /* padding: 1rem; */
-    background-color: var(--font-color);
+    padding: 1rem;
+    background-color: var(--fifth-color);
     display: block;
     margin: 1rem;
   }
@@ -167,12 +183,8 @@ ul.social {
     text-transform: uppercase;
   }
 
-  ul.nav-list a {
-    color: var(--third-color);
-  }
-
   .nav-list li {
-    background-color: var(--main-color);
+    background-color: var(--third-color);
     padding: 0.3rem 0.7rem;
     font-size: 0.8rem;
     cursor: pointer;
@@ -180,5 +192,36 @@ ul.social {
 
   .nav-list li:nth-of-type(1) {
     margin-left: auto;
+  }
+
+  .hero {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+  }
+
+  .hero-text {
+    text-align: justify;
+  }
+
+  .hero-text h1 {
+    font-size: 1.9rem;
+  }
+
+  .hero-img {
+    width: 50%;
+    padding: 1rem;
+    object-fit: fill;
+  }
+
+  .cards {
+    display: flex;
+    flex-direction: row;
+    margin: 3rem 0.5rem;
+  }
+
+  .cards-first img,
+  .cards-second img {
+    width: 50%;
   }
 }
