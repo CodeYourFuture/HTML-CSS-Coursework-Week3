@@ -1,1 +1,156 @@
 /*  Add your styling here */
+* {
+    font-family: 'Texturina', serif;
+}
+
+body {
+    width: 100%;
+}
+
+header {
+    background-color: #d9e4f5;
+    background-image: linear-gradient(315deg, #d9e4f5 0%, #f5e3e6 74%);
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+#header-left {
+    flex-basis: 30%;
+}
+
+#logoImage {
+    padding: 30px;
+    width: 140px;
+    height: 150px;
+}
+
+#header-right {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 70%;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+#motto {
+    color: #19bed3;
+    font-style: italic;
+    font-size: 24px;  
+    text-align: right;
+    padding-right: 20px;
+}
+
+#menu {
+    width: 20px;
+    height: 20px;
+    padding-top: 20px;
+    padding-right: 20px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+main h4 {
+    font-size: 30px;
+    font-weight: bolder;
+    font-family: 'Bungee Outline', cursive;
+    color: deeppink; 
+    padding: 0px;
+    margin: 15px;
+}
+
+main p {
+    padding: 0px;
+    margin: 10px;
+    font-size: 14px;
+}
+
+#final-product {
+    padding: 10px;
+    padding-right: 2.5%;
+}
+
+#finished-cake {
+    width: 100%;
+    height: 300px; 
+    border-radius: 15px;  
+    align-self: center;
+} 
+
+#step {
+    width: 48.5%;
+    height: 200px;
+    padding: 3px;
+    border-radius: 15px;
+}
+
+footer {
+    background-color: #ddd;
+    height: 8.5rem;
+    margin-top: 0.3125rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#footer-top {
+    align-items: center;
+    float: left;
+    padding-left: 10px;
+}
+
+#footer-bottom {
+    align-self: center;
+}
+
+footer span a {
+    color: #000080;
+    padding: 0 0.3125rem 0 1.25rem;
+    text-decoration: none;
+    font-size: 10px;
+}
+
+.copyright {
+    color: #000080;
+    margin-right: 0.3125rem;
+    font-size: 10px;
+}
+
+h3 {
+    margin: 0.5rem;
+}
+  
+.social-media {
+    margin: 0.09rem 0 0.09rem 0;
+    padding: 0.05rem;
+}
+  
+.fa {
+    border-radius: 50%;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    width: 1rem;
+}
+  
+.fa:hover {
+    opacity: 0.7;
+}
+  
+.fa-facebook {
+    background: #3b5998;
+}
+  
+.fa-twitter {
+    background: #55acee;
+}
+  
+.fa-instagram {
+    background: #a5678e;
+}
