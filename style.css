@@ -63,7 +63,6 @@ h3.header-text {
 /* ---------- Main section ---------- */
 main {
   text-align: center;
-  /* color: var(--font-color); */
 }
 
 .hero-text {
@@ -88,6 +87,10 @@ main {
   padding: 0.3rem;
 }
 
+.cards {
+  margin: 2rem 0;
+}
+
 .cards-container {
   display: flex;
   flex-direction: column;
@@ -98,7 +101,7 @@ main {
 
 .cards-container img {
   width: 100%;
-  padding: 0.5rem;
+  padding: 0 0.5rem 0.5rem;
 }
 
 /* Footer */
@@ -107,8 +110,7 @@ footer {
   display: flex;
   flex-direction: column;
   text-align: left;
-  background-color: var(--fifth-color);
-  margin-top: 3rem;
+  background-color: var(--main-color);
   padding: 1rem;
 }
 
@@ -156,6 +158,24 @@ ul.social {
     width: 50%;
     margin: 0;
   }
+
+  footer {
+    text-align: center;
+  }
+
+  footer h4 {
+    font-size: 0.9rem;
+  }
+
+  .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  ul.social {
+    margin-top: 1.4rem;
+  }
 }
 
 /* media for desktop screen */
@@ -163,10 +183,6 @@ ul.social {
 @media (min-width: 700px) {
   .hamburger {
     display: none;
-  }
-
-  h3.header-text {
-    font-size: 1.5rem;
   }
 
   .nav {
