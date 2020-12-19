@@ -153,3 +153,19 @@ h1 {
 h3 {
   text-align: center;
 }
+
+hr {
+  width: 90%;
+  margin-top: 20px;
+  padding: 0.3px;
+  border: none;
+  background-color: rgb(17, 14, 14);
+}
+
+.sitemap-container ul {
+  padding: 15px 15px 15px 40px;
+}
+
+.sitemap-container li {
+  list-style: none;
+}
