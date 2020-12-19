@@ -226,8 +226,8 @@ footer {
     }
     .cakes {
         flex-direction: row;
-        width: 320px;
-        height: 200px;
+        width: 450px;
+        height: 275px;
     }
     .intro, p {
         font-size: 25px;
