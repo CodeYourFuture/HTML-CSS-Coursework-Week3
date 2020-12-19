@@ -161,7 +161,19 @@ ul{
   justify-content:center;
 
 }
-@media only screen and (min-width: 600px) {
+@media screen and (min-width: 600px){
+.rowofimages,.main{
+display: flex;
+flex-direction: row;
+}
+.position{
+  width:3000px;
+}
+.list{
+  flex-direction: row;
+}
+}
+@media only screen and (min-width: 900px) {
 .rowofimages, .main{
   display: flex;
   justify-content: center;
@@ -175,5 +187,6 @@ ul{
 }
 .topnav a:nth-child(n),
 .dropdown .dropbtn {
-display: flex;
+display:inline-table;
+}
 }
