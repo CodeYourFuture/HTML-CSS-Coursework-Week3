@@ -1,12 +1,19 @@
 /*  Add your styling here */
+
+/* Adding base font to all elements */
 html {
   font-size: 20px;
 }
 
+/* Adding a font family and color to the body */
 body {
   background-color: #abc4ff;
   font-family: "Cardo", serif;
 }
+
+/* ---------------------HEADER PART--------------------- */
+
+/* Decorating the header contents and adjusting them */
 .header-intro {
   display: flex;
   justify-content: space-between;
@@ -15,16 +22,21 @@ body {
 
   background-color: #edf2fb;
 }
+
+/* Setting dimensions to the shop logo container */
 .logo {
   width: 30%;
   height: auto;
   margin: 0px;
 }
+
+/* Settings the logo image dimensions */
 .logo img {
   width: auto;
   height: 75%;
 }
 
+/* Setting a dimension for this parent element and adjusting its contents    */
 .hamburger-bar {
   width: 100%;
   height: auto;
@@ -36,24 +48,36 @@ body {
 
   margin: 7px;
 }
+
+/* Setting a dimension for the hamburger-icon image */
 .hamburger-bar img {
   width: 14%;
   height: auto;
 }
+
+/* Changing the font of the text inside the header */
 .hamburger-text {
   margin-bottom: 10px;
-
-  /* text-align: center; */
 
   font-size: 1.1rem;
   font-style: oblique;
   font-weight: 800;
 }
 
+/* Removing the <nav> element inside the header when 'min-width' is smaller than 768px */
+.desktop-bar {
+  display: none;
+}
+
+/* ---------------------MAIN PART--------------------- */
+
+/* ?? Is this necessary ?? */
 /* .intro {
   width: 100%;
   height: auto;
 } */
+
+/* Decorating the long text */
 .intro-text {
   margin-top: 25px;
   padding: 5px;
@@ -62,6 +86,7 @@ body {
   font-size: 1rem;
 }
 
+/* Setting dimensions for the big image */
 .intro-image {
   width: 100%;
   height: auto;
@@ -70,17 +95,22 @@ body {
   margin-top: 25px;
 }
 
+/* Fitting the big image inside its parent element */
 .intro-image img {
   width: 100%;
   height: auto;
   display: block;
 }
 
+/* Creating a 'Hoover' effect for the big image */
 .intro-image img:hover {
   transform: rotateY(180deg);
   transition: 1.5s ease-out;
 }
+
+/* Adjusting this element contents */
 .album {
+  /* ?? Is this necessary ?? */
   /* width: 100%;
   height: auto; */
 
@@ -94,23 +124,32 @@ body {
 
   background-color: #ccdbfd;
 }
+
+/* Setting dimensions for the small images */
 .pics {
   width: 45%;
   height: 250px;
   margin: 5px;
 }
+
+/* Fitting the images inside its parent element */
 .pics img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
+/* Creating a 'Hoover' effect for the small images  */
 .pics img:hover {
   opacity: 0.6;
   transition: 1.5s ease-out;
 }
 
+/* ---------------------FOOTER PART--------------------- */
+
+/* Decorating the Footer */
 footer {
+  /* ?? Is this necessary */
   /* width: 100%;
   height: auto; */
 
@@ -118,28 +157,34 @@ footer {
   margin-top: 25px;
 }
 
+/* Adjusting the contents inside the footer (NOTE: Not applied to the Copyright text)  */
 .footer-content {
   font-size: 0.9rem;
   display: flex;
   justify-content: space-around;
 }
 
+/* Setting dimensions for the 'lorem ipsum dolor' parent element */
 .shop-info {
   width: 50%;
   height: 50%;
 }
 
+/* Decorating the 'lorem ipsum dolor' text */
 .shop-info a {
   text-decoration: none;
   color: black;
 }
 
+/* Setting dimensions for the social media icons parent element  */
 .social-media {
   width: 50%;
   height: 50%;
 
   text-align: center;
 }
+
+/* Decorating the list of the social media icons */
 .social-media ul {
   padding: 0px;
   margin: 0px;
@@ -149,6 +194,7 @@ footer {
   justify-content: space-evenly;
 }
 
+/* Decorating the social media icons images */
 .social-media img {
   height: 30px;
   width: 30px;
@@ -156,26 +202,29 @@ footer {
   border-radius: 25%;
 }
 
+/* Decorating the Copyright info */
 .copy-info {
   color: rgb(173, 173, 173);
   font-size: 1rem;
   text-align: center;
 }
 
-/* media query */
-.desktop-bar {
-  display: none;
-}
+/* ---------------------MEDIA QUERY PART--------------------- */
 
+/* Setting a 'min-width' for devices such as tablets */
 @media (min-width: 768px) {
+  /* Changing the font size of the text inside the header bigger */
   .hamburger-text {
     font-size: 1.5rem;
   }
+
+  /* Adding space to the main body */
   main {
     margin-right: 40px;
     margin-left: 40px;
   }
 
+  /* Displaying the contents inside the 'intro' element side by side */
   .intro {
     display: flex;
     justify-content: space-between;
@@ -186,32 +235,42 @@ footer {
     margin-top: 25px;
   }
 
+  /* Changing the font size of the long text bigger and adding length */
   .intro-text {
     font-size: 1.3rem;
 
     margin: 7px;
     flex-basis: 45%;
   }
+
+  /* Adding length to the big image container */
   .intro-image {
     margin: 7px;
 
     flex-basis: 45%;
   }
 
+  /* Fitting the big image inside its container */
   .intro-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
   }
+
+  /* Changing the font size inside the footer to be bigger  */
   .footer-content {
     font-size: 1rem;
   }
+
+  /* Decreasing the space between the social media icons */
   .social-media {
     width: 20%;
   }
 }
 
+/* Setting a 'min-width' for devices such as laptops/desktops */
 @media (min-width: 992px) {
+  /* Changing the layout of the contents inside this parent element, when the hamburger image icon is not displayed */
   .hamburger-bar {
     display: flex;
     flex-direction: column;
@@ -219,17 +278,25 @@ footer {
 
     margin: 7px;
   }
+
+  /* Not displaying the hamburger image icon */
   .hamburger-bar img {
     display: none;
   }
+
+  /* Changing the font size of the text inside the header */
   .hamburger-text {
     margin-right: 10%;
 
     font-size: 1.5rem;
   }
+
+  /* Removing the breaking line inside the header text  */
   .hamburger-bar br {
     display: none;
   }
+
+  /* Adding a menu bar and decorating it */
   .desktop-bar {
     display: flex;
     justify-content: flex-end;
@@ -240,10 +307,14 @@ footer {
     margin-right: 40px;
     margin-left: 40px;
   }
+
+  /* Adjusting the contents inside the menu bar */
   .desktop-bar ul {
     display: flex;
     justify-content: space-evenly;
   }
+
+  /* Decorating the list of the menu bar */
   .desktop-bar li {
     list-style-type: none;
 
@@ -251,6 +322,7 @@ footer {
     margin-left: 30px;
   }
 
+  /* Decorating the <button> element inside the menu bar */
   .desktop-bar button {
     width: 130px;
     height: 40px;
@@ -260,15 +332,19 @@ footer {
     border-style: none;
     background-color: #a8dadc;
   }
+
+  /* Adding 'Hoover' effect to the <button> element */
   .desktop-bar button:hover {
     background-color: #e63946;
   }
-  /* adding margin to main, so it have the same width as the 'desktop-bar' */
+
+  /* Adding margin to the main body, so it have the same width as the 'desktop-bar' */
   main {
     margin-right: 40px;
     margin-left: 40px;
   }
 
+  /* Displaying the contents inside the 'intro' element side by side */
   .intro {
     display: flex;
     justify-content: space-between;
@@ -279,35 +355,43 @@ footer {
     margin-top: 25px;
   }
 
+  /* Changing the font size of the long text bigger and adding length */
   .intro-text {
     font-size: 1.2rem;
 
     margin: 7px;
     flex-basis: 45%;
   }
+
+  /* Adding length to the big image container */
   .intro-image {
     margin: 7px;
 
     flex-basis: 45%;
   }
-
+  /* Fitting the big image inside its container */
   .intro-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
   }
 
+  /* Displaying the contents inside the footer as a column */
   .footer-content {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
   }
+
+  /* Displaying the contents inside this element as a row */
   .shop-info {
     display: flex;
     justify-content: space-evenly;
     text-align: center;
   }
+
+  /* Decreasing the space between the social media icons images */
   .social-media {
     width: 15%;
   }
