@@ -124,7 +124,9 @@ button {
     
     .header-img {
         padding-top: 20px;
+        width: 5%;
     }
+
     .header-text {
         display: flex;
         justify-content: flex-end;
