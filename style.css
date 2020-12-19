@@ -34,15 +34,17 @@ header {
     align-items: flex-end;
 }
 
-.dropdown {
+.mobile-menu {
     position: relative;
     display: inline-block;
+    padding: 30px;
+    border-radius: 10px;
 }
 
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f1f1f1;
+    background-color: #E6E6FA;
     right: 0;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -50,17 +52,17 @@ header {
 }
 
 .dropdown-content a {
-    color: black;
+    color: #0E7771;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
 }
 
 .dropdown-content a:hover {
-    background-color: #ddd;
+    background-color: #19D2C9;
 }
 
-.dropdown:hover .dropdown-content {
+.mobile-menu:hover .dropdown-content {
     display: block;
 }
 
@@ -73,16 +75,17 @@ header {
 }
 
 #menu {
-    width: 50px;
-    height: 50px;
-    padding-top: 30px;
-    padding-right: 30px;
+    width: 40px;
+    height: 5px;
+    border-radius: 10px;
+    background-color: #19bed3;
+    margin: 5px;
 }
 
-main {
+#welcoming-page {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
 
 main h4 {
@@ -111,6 +114,13 @@ main p {
     border-radius: 15px;  
     align-self: center;
 } 
+
+#step-by-step {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 5px;
+}
 
 #step {
     width: 48.5%;
@@ -183,4 +193,209 @@ h3 {
   
 .fa-instagram {
     background: #a5678e;
+}
+
+@media (max-width: 539px) {
+
+    #desktop-menu {
+        visibility: hidden;
+    }
+
+    #desktop-menu a {
+        visibility: hidden;
+    }
+
+}
+
+@media (max-width: 408px) {
+
+    #step {
+        width: 46%;
+        height: 100px;
+        padding: 3px;
+        border-radius: 15px;
+        align-content: center;
+    }    
+
+}
+
+@media (min-width: 540px) and (max-width: 899px) {
+
+    #logoImage {
+        width: 90px;
+        height: 90px;
+    }
+
+    .mobile-menu {
+        padding: 20px;
+    }
+
+    #motto {
+        padding-right: 20px;
+    }
+
+    #desktop-menu {
+        visibility: hidden;
+    }
+
+    #desktop-menu a {
+        visibility: hidden;
+    }
+
+    #welcoming-page {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    #main-text {
+        flex-basis: 40%;
+        margin-bottom: 2px;
+    }
+
+    main h4 {
+        font-size: 20px;
+        padding-left: 10px;
+        margin: 1px;
+    }
+    
+    main p {
+        font-size: 11px;
+    }
+
+    #final-product {
+        flex-basis: 60%;
+    }
+
+    #finished-cake {
+        height: 200px; 
+    }   
+    
+    #step-by-step {
+        display: flex;
+        flex-flow: row nowrap;
+    }
+
+    #step {
+        width: 22%;
+        height: 90px;
+        margin: 0px 10px 0px 10px;
+    }
+
+    footer {
+        background-color: #ddd;
+        height: 3.5rem;
+        margin-top: 0.3125rem;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    h3 {
+        margin: 0.6rem;
+        float: left;
+    }
+      
+    .social-media {
+        margin: 0.15;
+        padding: 0.04rem;
+        float: right;
+    }
+
+}
+
+@media (min-width: 900px) {
+    
+    #main-text {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: space-between;
+        text-align: end;
+        align-self: center;
+    }
+
+    main h4 {
+        font-size: 50px;
+        font-weight: 1000;
+        font-family: 'Bungee Outline', cursive;
+        color: deeppink; 
+        padding: 0px;
+        margin: 15px;
+    }
+    
+    main p {
+        padding: 2px;
+        margin: 10px;
+        font-size: 16px;
+    }
+
+    #welcoming-page {
+        display: flex;
+        flex-direction: row-reverse;
+        flex-wrap: nowrap;
+    }
+
+    #step-by-step {
+        display: flex;
+        flex-flow: row nowrap;
+    }
+
+    #step {
+        width: 24.25%;
+        height: 200px;
+        padding: 3px;
+        border-radius: 15px;
+    }
+
+    footer {
+        background-color: #ddd;
+        height: 4.5rem;
+        margin-top: 0.3125rem;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    h3 {
+        margin: 0.7rem;
+        float: left;
+    }
+      
+    .social-media {
+        margin: 0.20;
+        padding: 0.05rem;
+        float: right;
+    }
+    
+    .mobile-menu {
+        visibility: hidden;
+    }
+
+    #desktop-menu {
+        background-color: #f7efef;
+        margin-top: 10px;
+        padding: 5px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-end;
+        text-align: center;
+    }
+
+    #desktop-menu a {
+        border: 4px dotted darkgrey;
+        text-decoration: none;
+        font-family: 'Texturina', serif;
+        color: darkgrey;
+        font-weight: bolder;
+        padding: 5px 10px;
+        width: 100px;
+        margin: 10px;
+    }
+
 }
