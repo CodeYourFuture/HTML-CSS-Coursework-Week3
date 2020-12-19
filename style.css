@@ -39,7 +39,7 @@ header {
   margin: 5px auto;
 }
 .logo {
-  height: 15vh;
+  height: 25vh;
   /* width: 10vw; */
   /* flex-grow: 3; */
   /* width: auto 0px auto; */
@@ -48,6 +48,7 @@ header {
 .hamburger-icon {
   border: 2px solid red;
   padding: 5px;
+
   align-self: flex-start;
   /* text-align: top; */
   /* flex-grow: 5; */
@@ -61,7 +62,7 @@ header {
   /* line-height: 1em; */
   /* font-size: 20px; */
   /* flex: 1 50%; */
-  align-self: flex-end;
+  /* align-self: flex-end; */
   border: 2px solid blue;
   text-align: right;
 }
