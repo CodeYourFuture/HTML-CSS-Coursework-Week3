@@ -147,7 +147,8 @@ footer {
     .socialMedia {
         width: 40px;
         height: 40px;
-        padding: 10px;
+        padding-left: 20px;
+        padding-bottom: 10px;
     }
     .contact {
         font-size: 20px;
@@ -175,13 +176,14 @@ footer {
     .socialMedia {
         width: 40px;
         height: 40px;
-        padding: 10px;
+        padding-left: 20px;
+        padding-bottom: 10px;
     }
     .contact {
         font-size: 20px;
     }
 
-@media (min-width: 740px) {
+@media (min-width: 752px) {
     .logo {
         width: 200px;
         height: auto;
@@ -203,7 +205,41 @@ footer {
     .socialMedia {
         width: 60px;
         height: 60px;
-        padding: 10px;
+        padding-left: 20px;
+        padding-bottom: 10px;
+    }
+    .contact {
+        font-size: 25px;
+    }
+
+@media (min-width: 1025px) {
+    .logo {
+        width: 200px;
+        height: auto;
+    }
+    h1 {
+        font-size: 40px;
+    }
+    .giantCupcake {
+        width: 550px;
+        height: 750px;
+    }
+    .cakes {
+        flex-direction: row;
+        width: 320px;
+        height: 200px;
+    }
+    .intro, p {
+        font-size: 25px;
+    }
+    .socialMedia {
+        display: inline;
+        transform: translateX(50%);
+        width: 60px;
+        height: 60px;
+        padding-top: 20px;
+        padding-left: 20px;
+        padding-bottom: 10px;
     }
     .contact {
         font-size: 25px;
