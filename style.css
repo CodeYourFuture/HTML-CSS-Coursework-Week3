@@ -1,8 +1,7 @@
 /*  Add your styling here */
 
 header {
-  background-image: url(https://cdn.pixabay.com/photo/2018/01/17/15/33/streamer-3088458_1280.jpg);
-  background-image: fixed;
+  background-color: white;
   padding: 10px;
   box-shadow: 1px 2px 3px #ccc;
   color: white;
@@ -139,9 +138,15 @@ body {
 .imagescss1 {
   display: flex;
   justify-content: center;
-  padding-inline-start: 10px;
+  padding: 10px;
+  margin-right: 40px;
 }
 .imagescss2 {
   display: flex;
   justify-content: space-between;
+   padding: 10px;
+  margin-right: 40px;
+}
+.image2{
+  padding-inline-start: 10px;
 }
