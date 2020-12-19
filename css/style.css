@@ -13,6 +13,7 @@ header {
 
 .image-frame {
   max-width: 50%;
+  margin-left: 5%;
 }
 
 .img-header {
@@ -31,7 +32,7 @@ header {
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
-  margin-right: 40px;
+  margin-right: 4%;
 }
 
 .menu-header {
@@ -40,10 +41,14 @@ header {
 
 .header-text {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   text-align: center;
   color: rgb(223, 202, 202);
   padding-left: 25%;
+}
+
+.the-nav {
+  display: none;
 }
 
 main {
@@ -57,6 +62,7 @@ main {
   margin: 2%;
   padding-left: 6%;
   font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.1rem;
 }
 
 .main-text {
@@ -66,6 +72,7 @@ main {
   padding-right: 4%;
   font-family: Arial, Helvetica, sans-serif;
   text-align: left;
+  font-size: 0.8rem;
 }
 
 .div-main-img {
@@ -103,11 +110,116 @@ footer {
   margin: 4%;
   background-color: rgb(237, 250, 237);
   font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 1rem;
+  font-size: 0.7rem;
 }
 
 .last-footer {
   display: flex;
   flex-direction: row-reverse;
   justify-content: center;
+}
+
+@media (min-width: 540px) {
+  .header-text {
+    font-size: 1.8rem;
+  }
+
+  .welcome {
+    font-size: 2rem;
+  }
+
+  .main-text {
+    font-size: 1.4rem;
+  }
+
+  footer {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 900px) {
+  header {
+    justify-content: space-between;
+    max-width: 80%;
+  }
+
+  .menu-frame {
+    display: none;
+  }
+
+  .the-nav {
+    display: inline;
+  }
+
+  .free-li-dev {
+    width: 40%;
+  }
+
+  .un-order-list {
+    display: flex;
+    flex-direction: row;
+    padding: 2%;
+    justify-content: space-around;
+    list-style-type: none;
+    font-size: 1.2rem;
+    background-color: rgb(220, 220, 228);
+  }
+
+  .rectangle {
+    display: flex;
+    justify-content: center;
+    background-color: gray;
+    color: white;
+    font-size: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 100px;
+    padding: 0.3%;
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+
+  .new-order-main {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+  }
+
+  .div-main-img {
+    width: 40%;
+  }
+
+  .main-right {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+  }
+
+  .header-text {
+    width: 100%;
+  }
+
+  .photos-sec {
+    flex-direction: row;
+    justify-content: space-around;
+    width: 90%;
+  }
+
+  .div-photos {
+    width: 100%;
+  }
+
+  .image1 {
+    margin: 2%;
+    width: 50%;
+  }
+
+  .footer-sec {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: 30%;
+    margin-right: 30%;
+  }
 }
