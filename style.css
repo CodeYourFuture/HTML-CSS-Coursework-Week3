@@ -1,5 +1,9 @@
 /*  Add your styling here */
 
+body {
+  background-color: burlywood;
+}
+
 header {
   background-color: hsl(82, 39%, 30%, 0.5);
   display: flex;
@@ -11,60 +15,86 @@ header {
   width: 80px;
 }
 
-ul {
-  list-style: none;
-}
-
-ul a {
-  text-decoration: none;
-}
-
-.nav {
-  transform: translateX(100%);
+.nav-menu {
+  display: block;
   position: absolute;
-  right: 0;
+  top: 50px;
+  right: 0px;
+  z-index: 1;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.nav-menu input {
+  display: block;
+  width: 40px;
+  height: 30px;
+  position: absolute;
+  top: -8px;
+  right: 9px;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 2;
+}
+
+.menu-box {
+  padding-right: 15px;
+}
+
+.nav-menu .hamburger {
+  display: block;
+  position: relative;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  background-color: black;
+  border-radius: 3px;
+  z-index: 1;
+  transform-origin: 4px 0px;
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+    background-color 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+}
+
+.nav-menu span::before {
+  transform-origin: 0% 0%;
+}
+
+.nav-menu span::after {
+  transform-origin: 0% 100%;
+}
+
+.nav-menu-list {
+  list-style: none;
+  position: absolute;
+  width: 300px;
+  margin: 30px -50px 0px 0px;
+  padding: 5px;
+  padding-top: 50px;
+  background-color: cornsilk;
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
   transition: transform 300ms cubic-bezier(0.5, 0, 0.5, 1);
 }
 
-.nav-button {
-  position: absolute;
-  top: 32px;
-  left: 0;
-  padding: 16px 8px;
-  transform: translateX(-100%);
+.nav-menu-list li {
+  font-size: 25px;
+  padding-top: 40px;
+  padding-right: 0px;
+  padding-bottom: 40px;
 }
 
-.hamburger {
-  display: block;
-  position: relative;
+.nav-menu input:checked ~ ul {
+  transform: translateX(100%);
 }
 
-.hamburger,
-.hamburger::before,
-.hamburger::after {
-  width: 16px;
-  height: 3px;
-  background: black;
-  /*transition: transform 250ms ease-in-out;*/
+.menu-link {
+  text-decoration: none;
+  color: olivedrab;
 }
 
-.hamburger::before,
-.hamburger::after {
-  content: "";
-  position: absolute;
-  left: 0;
-}
-
-.hamburger::before {
-  bottom: 6px;
-}
-
-.hamburger::after {
-  top: 6px;
-}
-
-.nav-open .nav {
-  transform: translateX(0);
+.menu-link:hover {
+  padding-left: 50px;
+  color: brown;
 }
 
 .main-image {
@@ -76,7 +106,15 @@ ul a {
   display: flex;
 }
 
+.img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
 .collections-img {
   width: 190px;
   height: 207px;
+  padding: 4px;
 }
