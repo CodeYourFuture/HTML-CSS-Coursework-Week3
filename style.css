@@ -25,7 +25,37 @@ a:hover {
 .nav-menu {
   display: none;
 }
-
+.brand {
+  display: flex;
+  /* flex-direction: row; */
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /* align-items: center; */
+  border: 5px solid black;
+  margin: 5px auto;
+}
+.logo {
+  height: 20vh;
+  /* flex-grow: 3; */
+  /* width: auto 0px auto; */
+  border: 2px solid yellow;
+}
+.hamburger-icon {
+  border: 2px solid red;
+  padding: 5px;
+  align-self: flex-start;
+  /* text-align: top; */
+  /* flex-grow: 5; */
+  /* min-width: 50%; */
+}
+.tag-line {
+  padding: 20px;
+  line-height: 1em;
+  /* flex: 1 50%; */
+  align-self: flex-end;
+  border: 2px solid blue;
+  /* text-align: right; */
+}
 /* Navigation */
 .nav-menu ul {
   border: 1px solid black;
@@ -37,13 +67,18 @@ a:hover {
 }
 .nav-menu li {
   flex: 1;
+
   /* May be redundant */
   /* flex: 2; */
 }
 /* Intro to the cake business  */
+.introduction {
+  display: flex;
+  flex-wrap: wrap;
+}
 .message {
   background-color: blue;
-  margin-top: 50px;
+  /* margin-top: 50px; */
 }
 /* Cake Selections  */
 .big-cake-wrapper {
@@ -55,6 +90,7 @@ a:hover {
 
 .big-cake {
   border: 6px solid black;
+  /* min-width: 70vw; */
 }
 .big-cake img {
   flex-direction: column;
@@ -77,4 +113,13 @@ a:hover {
 for a 2 by 2 grid layout */
 img {
   flex: 1 50%;
+}
+/* Media Queries */
+@media only screen and (min-width: 992px) {
+  .nav-menu {
+    display: block;
+  }
+  .hamburger-icon {
+    display: none;
+  }
 }
