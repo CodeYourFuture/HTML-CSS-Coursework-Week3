@@ -2,7 +2,6 @@
 
 body {
   background-color: #f0d7d2;
-  /*background-color: #ffee8e;*/
   color: #4285f4;
   font-family: "Karla", sans-serif;
   display: flex;
@@ -280,12 +279,67 @@ hr {
     width: 110px;
   }
 
-h1 {
+  h1 {
     font-size: 40px;
     font-style: normal;
-}
+  }
 
-.nav-menu {
-  top: 70px;
-}
+  .nav-menu .hamburger {
+    background-color: #ff34d5;
+  }
 
+  h2 {
+    color: #ff34d5;
+    font-size: 38px;
+    font-style: normal;
+    text-transform: none;
+  }
+
+  p {
+    color: rgb(189, 113, 113);
+    font-size: 30px;
+  }
+
+  .nav-menu {
+    top: 70px;
+  }
+
+  .nav-menu input {
+    right: 18px;
+  }
+
+  .nav-menu-list {
+    width: 850px;
+  }
+
+  .menu-link {
+    color: #ff34d5;
+    font-style: normal;
+  }
+
+  h3 {
+    color: #ff34d5;
+    font-size: 32px;
+  }
+
+  .img-container {
+    flex-wrap: nowrap;
+  }
+
+  .main-img {
+    width: 1000px;
+    height: auto;
+  }
+
+  footer {
+    background-color: #f6df85;
+  }
+
+  .sitemap-container ul {
+    background-color: #f6df85;
+  }
+
+  .sitemap-container a {
+    color: #ff34d5;
+  }
+}
