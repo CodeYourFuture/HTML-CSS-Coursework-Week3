@@ -2,7 +2,7 @@
 
 body{
     margin:0px;
-    background-color: #FFA5CB;
+    background-color: #a5f2ff;
 font-family: 'Nunito', sans-serif;
 }
 
@@ -12,7 +12,8 @@ font-family: 'Nunito', sans-serif;
 /* Style the navigation menu */
 .topnav {
  /* overflow: hidden;*/
-  background-color: #333;
+ 
+  background-color: #a5f2ff;
   position: relative;
 }
 
@@ -23,7 +24,7 @@ font-family: 'Nunito', sans-serif;
 
 /* Style navigation menu links */
 .topnav a {
-  color: white;
+  color: black;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
@@ -32,7 +33,8 @@ font-family: 'Nunito', sans-serif;
 
 /* Style the hamburger menu */
 .topnav a.icon {
-  background: black;
+  
+  background-color: #a5f2ff;
   display: block;
   position: absolute;
   right: 0;
@@ -41,7 +43,7 @@ font-family: 'Nunito', sans-serif;
 
 /* Add a grey background color on mouse-over */
 .topnav a:hover {
-  background-color: #ddd;
+  background-color: #ffeca5;
   color: black;
 }
 
@@ -56,16 +58,6 @@ font-family: 'Nunito', sans-serif;
 
 
 
-
-/* burger {
-    margin:0px;
-    font-size:2.5em;
-    position:fixed;
-    top: 0;
-    right:5px;
-    font-weight:800;
-    background-color: transparent;
-} */
 header {
     position: relative;
     text align: center;
@@ -86,15 +78,15 @@ header img {
 }
 
 h2{
-    color: black;
+    color:black;
     text-align:center;
     padding:1px 0px;
-    background-color:#FFA5CB;
+    background-color:#ffeca5;
     font-size:1.1em;
 }
 
 h1{
-    margin:10px 0px;
+    padding:10px 0px;
     font-size:1.4em;
 }
 
@@ -112,6 +104,8 @@ h1{
     justify-content: space-evenly;
     align-content: space-between;
     flex-wrap:wrap;
+    padding: 10px 0px;
+    background-color: #ffeca5;
 }
 
 .quad img{
@@ -126,7 +120,7 @@ ul{
 
 li{
     
-    margin:10px 0px;
+    margin:0px 0px;
 }
 
 
@@ -136,7 +130,22 @@ li{
 
 footer p{
     text-align:center;
+    padding: 10px 0px;
 }
+
+
+
+.deskheader{
+    background-color: #a5f2ff;
+}
+
+.intro {
+    padding: 10px 0px;
+    margin:0px;
+    background-color: #a5f2ff;}
+
+
+
 
 @media (min-width:768px){
 .topnav a {
@@ -155,7 +164,7 @@ flex-direction:row;
 .active {
   display: none;
 }
-.topnav a {
+.topnav a{
   display: none;
 }
 .topnav {
@@ -167,6 +176,7 @@ flex-direction:row;
 color:black;
 border: solid black 10px;
 }
+
 .intro {
     display:flex;
     flex-direction:row-reverse;
@@ -187,13 +197,7 @@ header{
 .deskheader{
   display:flex;
   justify-content: space-evenly;
-  margin: 10px 0px;
-}
-.intro {
-    margin: 10px 0px;
-}
-.quad {
-    margin: 10px 0px;
+  padding: 10px 0px;
 }
 .welcome {
     padding:0px 10px;
@@ -203,7 +207,10 @@ footer ul{
     justify-content:center;
 }
 footer ul li{
-    margin: 1em;
+    padding: 1em;
+}
+footer{
+background-color: #a5f2ff;
 }
 }
 
