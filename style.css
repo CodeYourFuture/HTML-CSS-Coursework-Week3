@@ -14,8 +14,8 @@ header {
   background-color: rgb(254, 254, 254);
 }
 .logo {
-  flex:20%;
-  margin:0;
+  flex: 20%;
+  margin: 0;
 }
 .logo img {
   width: 50%;
@@ -42,17 +42,20 @@ header {
   display: flex;
   justify-content: space-around;
   background-color: rgb(179, 176, 176);
-  margin:20px
 }
 
+.hamburger-menu a {
+  display: none;
+}
 .hamburger-item {
   text-decoration: none;
   color: rgb(85, 5, 5);
-  font-size:20px;
+  font-size: 20px;
 }
 .hamburger-menu a {
   text-decoration: none;
 }
+
 /* main*/
 #intro-container {
   width: 100%;
@@ -64,7 +67,6 @@ header {
 
 .intro-image {
   width: 100%;
-
   margin: auto;
   margin-bottom: 20px;
 }
@@ -73,7 +75,7 @@ header {
 }
 
 .intro-text {
-  text-align: justify;
+  text-align: left;
 }
 
 /*product*/
@@ -84,7 +86,6 @@ header {
 
 .product-text {
   text-align: center;
-  background-color: ;
   color: rgb(179, 146, 40);
 }
 
@@ -105,53 +106,55 @@ header {
 .footer-item {
   text-decoration: none;
   color: rgb(255, 226, 231);
-  font-size:20px;
+  font-size: 10px;
 }
 
-@media (min-width: 540px){
+@media (min-width: 540px) {
   /* head*/
-  .image-container {
+  .hamburger-menu a {
     display: flex;
-   justify-content: space-between;
+    font-size: 25px;
   }
-  .hamburger-menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: fle;
+  .menu-icon {
+    display: none;
   }
 
   /* main*/
- #intro-container {
-  display:flex;
-  flex-direction:row-reverse;
-}
+  #intro-container {
+    display: flex;
+    flex-direction: row-reverse;
+  }
 
-.intro-image {
-  justify-content: left;
-  width: 90%;
-}
+  .intro-image {
+    justify-content: left;
+    width: 90%;
+  }
 
-.intro-heading {
-  text-align: right;
-}
+  .intro-heading {
+    text-align: right;
+    padding-right: 40px;
+  }
 
-.intro-text {
-  text-align: right;
-}
+  .intro-text {
+    text-align: justify;
+    padding-right: 40px;
+  }
 
-/*product*/
-.product-text {
- font-size: 40px;
-}
+  /*product*/
 
-.product-image {
-  width: 21%;
-  justify-content: space-between;
-  padding: 20px;
-}  
-  
-/* Footer*/
-.footer-item {
-  font-size: 35px 
-}
+  #Footer-container {
+    flex-direction: row;
+  }
+
+  .product-image {
+    width: 21%;
+    justify-content: space-between;
+    padding: 20px;
+  }
+
+  /* Footer*/
+
+  .footer-item {
+    font-size: 25px;
+  }
 }
