@@ -9,27 +9,21 @@ header {
   flex-flow: row nowrap;
   justify-content: space-between;
   position: fixed;
-  width:90%;
+  width:97.5%;
   margin-top: 0px;
-
-
 }
+
 nav {
   justify-content: left;
   flex-direction: column;
 }
-.header-content {
-  display: flex;
-  justify-content: right;
-  flex-direction: column;
-}
+
 nav {
   display: flex;
   justify-content: flex-end;
 }
 
 .topnav {
-  overflow: hidden;
   background-color: pink;
   display: flex;
   justify-content: flex-end;
@@ -91,16 +85,6 @@ nav {
   display: flex;
 }
 
-.topnav.responsive {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-}
-.topnav.responsive .icon {
-  position: absolute;
-  right: 0;
-  top: 0;
-}
 .topnav.responsive a {
   display: flex;
   justify-content: column;
@@ -168,14 +152,28 @@ ul{
 }
 .list{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   padding-right:10px;
 }
-
-
 .copyrightnote{
   display: flex;
   justify-content:center;
 
+}
+@media only screen and (min-width: 600px) {
+.rowofimages, .main{
+  display: flex;
+  justify-content: center;
+  flex-direction:row-reverse;
+}
+.position{
+  width: 3000px;
+}
+.list{
+  flex-direction: row;
+}
+.topnav a:nth-child(n),
+.dropdown .dropbtn {
+display: flex;
 }
