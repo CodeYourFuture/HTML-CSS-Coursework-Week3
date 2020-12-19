@@ -106,10 +106,22 @@ h2 {
 
 footer {
     background-color: rgb(33, 248, 248);
-    text-align: justify;
-    font-size: 10px;
     margin-top: 20px;
     margin-bottom: 20px;
+}
+
+.socialMedia {
+    display: flex;
+    flex-flow: column;
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    filter: sepia(200%) hue-rotate(280deg) saturate(250%);
+}
+
+.contact {
+    font-size: 12px;
+    text-align: center;
 }
 
 @media (min-width: 540px) {
@@ -131,6 +143,14 @@ footer {
     .intro, p {
         font-size: 20px;
     }
+    .socialMedia {
+        width: 30px;
+        height: 30px;
+        padding: 10px;
+    }
+    .contact {
+        font-size: 20px;
+    }
 
 @media (min-width: 900px) {
     .logo {
@@ -149,5 +169,13 @@ footer {
         height: 200px;
     }
     .intro, p {
+        font-size: 25px;
+    }
+    .socialMedia {
+        width: 60px;
+        height: 60px;
+        padding: 10px;
+    }
+    .contact {
         font-size: 25px;
     }
