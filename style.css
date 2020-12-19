@@ -102,7 +102,7 @@ button {
          display: flex;
          flex-direction: column;
          justify-content: flex-start;
-         margin-top: -230px;
+         margin-top: -320px;
          width: 50%;
 
     }
@@ -133,7 +133,7 @@ button {
         flex-direction: column;
         text-align: right;
         padding-top: 120px;
-        width: 450px;
+        width: 230px;
         margin-left: auto;
     }
     #welcome-page {
@@ -156,9 +156,19 @@ button {
 }
 
 @media (min-width: 900px) {
-    
-}
+    .welcome-text {
+        width: 450px;
+    }
+    #background {
+         background-size: cover;
+         display: flex;
+         flex-direction: column;
+         justify-content: flex-start;
+         margin-top: -230px;
+         width: 50%;
 
+    }
+}
 /* Footer */
 
 /* Media Query */
