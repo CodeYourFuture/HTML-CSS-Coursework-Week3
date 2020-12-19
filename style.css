@@ -6,6 +6,12 @@ body {
   margin: 0;
   /* background-image: linear-gradient(260deg, #2376ae 0%, #c16ecf 100%); */
 }
+
+p {
+  font-family: "Dancing Script", cursive;
+  font-size: 20px;
+  /* font-weight: bold; */
+}
 a {
   color: white;
   font-weight: 100;
@@ -100,8 +106,10 @@ header {
   /* flex-wrap: wrap; */
 }
 .message {
-  border: 2px solid blue;
-  flex: 1;
+  border: 5px solid blue;
+  flex: 1 100%;
+  padding: 5px;
+  text-align: justify;
   /* margin-top: 50px; */
 }
 /* Cake Selections  */
@@ -158,7 +166,7 @@ for a 2 by 2 grid layout */
 footer {
   background-color: #fff;
   /* color: white; */
-  padding: 15px;
+  /* padding: 5px; */
   border: 5px solid yellow;
   /* text-align: center; */
 }
@@ -173,7 +181,7 @@ footer {
 .fa {
   color: navy;
   font-size: 50px;
-  padding: 15px;
+  padding: 20px;
 
   text-align: left;
 }
@@ -184,6 +192,7 @@ footer {
 }
 
 /* Media Queries */
+/* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   .nav-menu {
     display: block;
@@ -214,6 +223,7 @@ footer {
   .message > p,
   h1 {
     text-align: right;
+    padding: 5px;
     /* shape-outside: circle(50%); */
   }
 }
