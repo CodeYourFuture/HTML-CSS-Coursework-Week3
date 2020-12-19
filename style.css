@@ -38,11 +38,17 @@ header {
   font-size: 20px;
 }
 .hamburger-menu {
-  display: none;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(179, 176, 176);
+  margin:20px
 }
-.hamburger-menu ul li {
-  display: inline-block;
-  margin: 10px;
+
+.hamburger-item {
+  text-decoration: none;
+  color: rgb(85, 5, 5);
+  font-size:20px;
 }
 .hamburger-menu a {
   text-decoration: none;
@@ -69,6 +75,7 @@ header {
 .intro-text {
   text-align: justify;
 }
+
 /*product*/
 #product-container {
   width: 100%;
@@ -98,4 +105,53 @@ header {
 .footer-item {
   text-decoration: none;
   color: rgb(255, 226, 231);
+  font-size:20px;
+}
+
+@media (min-width: 540px){
+  /* head*/
+  .image-container {
+    display: flex;
+   justify-content: space-between;
+  }
+  .hamburger-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: fle;
+  }
+
+  /* main*/
+ #intro-container {
+  display:flex;
+  flex-direction:row-reverse;
+}
+
+.intro-image {
+  justify-content: left;
+  width: 90%;
+}
+
+.intro-heading {
+  text-align: right;
+}
+
+.intro-text {
+  text-align: right;
+}
+
+/*product*/
+.product-text {
+ font-size: 40px;
+}
+
+.product-image {
+  width: 21%;
+  justify-content: space-between;
+  padding: 20px;
+}  
+  
+/* Footer*/
+.footer-item {
+  font-size: 35px 
+}
 }
