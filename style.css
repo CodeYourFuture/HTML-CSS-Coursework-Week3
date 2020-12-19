@@ -4,6 +4,22 @@ html {
 body {
   font-family: sans-serif;
   margin: 0;
+  /* background: rgb(238, 174, 202); */
+  /* background: linear-gradient(
+    270deg,
+    rgba(238, 174, 202, 1) 30%,
+    rgba(148, 233, 231, 1) 70%
+  ); */
+  background: rgb(238, 174, 202);
+  background: linear-gradient(
+    300deg,
+    rgba(238, 174, 202, 1) 30%,
+    rgba(148, 233, 231, 1) 70%
+  );
+
+  /* background: linear-gradient(90deg, #eeaeca 70% #94e9e7 30%); */
+  /* background-color: HEX(A2D2FF); */
+  /* background-image: linear-gradient(270deg, "Baby Blue Eyes"); */
   /* background-image: linear-gradient(260deg, #2376ae 0%, #c16ecf 100%); */
 }
 
@@ -37,6 +53,7 @@ header {
 }
 .brand {
   display: flex;
+  /* background-color: rgb(233, 196, 106); */
   /* flex-direction: row; */
   flex-wrap: wrap;
   justify-content: space-between;
@@ -106,6 +123,8 @@ header {
   /* flex-wrap: wrap; */
 }
 .message {
+  /* background-color: rgb(42, 157, 143); */
+
   border: 5px solid blue;
   flex: 1 100%;
   padding: 5px;
@@ -164,9 +183,11 @@ for a 2 by 2 grid layout */
   border: 2px solid green;
 }
 footer {
-  background-color: #fff;
+  /* background-color: #fff; */
+  /* background-color: rgb(233, 196, 106); */
   /* color: white; */
   /* padding: 5px; */
+  background-color: rgb(205, 180, 219);
   border: 5px solid yellow;
   /* text-align: center; */
 }
