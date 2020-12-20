@@ -1,0 +1,182 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*************  GRID LAYOUT   ***************/
+
+.container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 1.5fr 1.2fr 0.8fr;
+    grid-template-areas: "nav nav nav nav" "main main main main" "Content1 Content2 Content3 Content4" "footer footer footer footer";
+    gap: 0.2rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #616161;
+    text-align: center;
+    align-content: center;
+}
+
+nav {
+    background-color: #00ffff;
+    grid-area: nav;
+}
+
+main {
+    background-color: #3a70e4;
+    grid-area: main;
+}
+
+#Content1 {
+    grid-area: Content1;
+}
+
+#Content2 {
+    grid-area: Content2;
+}
+
+#Content3 {
+    grid-area: Content3;
+}
+
+#Content4 {
+    grid-area: Content4;
+}
+
+footer {
+    background-color: #fd2020;
+    grid-area: footer;
+}
+
+@media only screen and (max-width: 550px) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.4fr 0.4fr 2.2fr 1.2fr 1.2fr 1.2fr 1fr;
+        grid-template-areas: "nav" "main" "Content1" "Content2" "Content3" "Content4" "footer";
+        font-size: 17px;
+    }
+}
+
+
+/*************  V-CARD   ***************/
+
+h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #7e7d7d;
+    margin: 20px;
+    opacity: 1;
+    transition: opacity 1s;
+}
+
+.container_four {
+    background-color: #fce4e4;
+    height: 100vh;
+    width: 100vw;
+    max-height: 800px;
+    max-width: 1280px;
+    min-height: 600px;
+    min-width: 1000px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.effect {
+    height: 369px;
+    width: 290px;
+    background: none;
+    border-radius: 10px;
+    transition: border 1s;
+    position: relative;
+}
+
+.effect:hover {
+    box-shadow: 2px 1px 6px 2px #ffffffb3;
+}
+
+.card {
+    height: 379px;
+    width: 300px;
+    border-radius: 10px;
+    transition: background 0.8s;
+    overflow: hidden;
+    box-shadow: 0 70px 63px -60px #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.card:hover h2 {
+    opacity: 1;
+}
+
+.card:hover .fa {
+    opacity: 1;
+}
+
+.card1 {
+    background: url(./assets/icons-cake.png) center center no-repeat;
+    background-size: 350px;
+}
+
+.card1:hover {
+    background: url(./assets/icons-cake.png) left center no-repeat;
+    background-size: 600px;
+}
+
+.card2 {
+    background: url(./assets/icons-cupcake.png) center center no-repeat;
+    background-size: 350px;
+}
+
+.card2:hover {
+    background: url(./assets/icons-cupcake.png) left center no-repeat;
+    background-size: 600px;
+}
+
+.card3 {
+    background: url(./assets/icons-cake-slice.png) center center no-repeat;
+    background-size: 350px;
+}
+
+.card3:hover {
+    background: url(./assets/icons-cake-slice.png) left center no-repeat;
+    background-size: 600px;
+}
+
+.card4 {
+    background: url(./assets/icons-biscuit.png) center center no-repeat;
+    background-size: 350px;
+}
+
+.card4:hover {
+    background: url(./assets/icons-biscuit.png) left center no-repeat;
+    background-size: 600px;
+}
+
+.icons {
+    position: absolute;
+    fill: #fff;
+    color: #fff;
+    height: 130px;
+    top: 226px;
+    width: 50px;
+    display: fle;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.fa:hover {
+    cursor: pointer;
+    transform: scale(1.5);
+    transition: 0.5s ease-in;
+}
