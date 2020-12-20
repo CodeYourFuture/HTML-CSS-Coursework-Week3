@@ -2,22 +2,22 @@
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
         list-style: none;
         text-decoration: none;
     }
     
-    body {}
+    body {
+        color: #38201F;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
     
     .header p {
-        color: #38201F;
         padding-top: 50px;
         font-style: italic;
         font-size: 14px;
     }
     
     .header {
-        background-color: #acf3f3;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -30,7 +30,7 @@
     /************* NAVBAR ****************/
     
     .navbar {
-        background-color: #065319;
+        background-color: #bcf5ca;
         height: 60px;
         width: 100%;
     }
@@ -48,9 +48,9 @@
     
     .navbar ul li a {
         border-radius: 5px;
-        color: white;
         text-transform: uppercase;
-        font-size: 12px;
+        font-size: 14px;
+        font-weight: bold;
         padding: 7px 13px;
     }
     
@@ -58,4 +58,66 @@
     a:hover {
         background: #509461;
         transition: .5s;
+    }
+    
+    .checkbtn {
+        font-size: 30px;
+        float: right;
+        line-height: 55px;
+        margin-right: 40px;
+        cursor: pointer;
+        display: none;
+    }
+    
+    #check {
+        display: none;
+    }
+    /************* HERO ****************/
+    
+    .main-pic {
+        width: 70%;
+    }
+    
+    aside {
+        float: right;
+    }
+    /************* MEDIA QUERIES ****************/
+    
+    @media (max-width: 952px) {
+        .navbar ul li a {
+            font-size: 16px;
+        }
+    }
+    
+    @media (max-width: 858px) {
+        .checkbtn {
+            display: block;
+        }
+        ul {
+            position: fixed;
+            width: 100%;
+            height: 100vh;
+            background-color: #0d3802;
+            top: 180px;
+            left: -100%;
+            text-align: center;
+            transition: all .5s;
+        }
+        .navbar ul li {
+            color: #ffffff;
+            display: block;
+            margin: 50px 0;
+            line-height: 30px;
+        }
+        .navbar ul li a {
+            font-size: 20px;
+        }
+        a.active,
+        a:hover {
+            background: none;
+            color: white;
+        }
+        #check:checked~ul {
+            left: 0;
+        }
     }
