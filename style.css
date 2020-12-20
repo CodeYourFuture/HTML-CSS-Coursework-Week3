@@ -103,9 +103,6 @@ button {
     transition: all 0.5s ease-in-out;
 }
 
-.header-text p {
-    margin-top: -180px;
-}
 
 
 @media (min-width: 540px){
@@ -167,6 +164,9 @@ button {
         padding: 20px;
         display: inline-flex;
     }
+    .header-text p {
+    margin-top: -180px;
+}
 }
 
 @media (min-width: 900px) {
@@ -182,6 +182,7 @@ button {
          width: 50%;
 
     }
+    
 }
 /* Footer */
 
