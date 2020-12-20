@@ -8,7 +8,7 @@ a {
 }
 
 #background {
-    background-image: url(img/cheese.jpeg);
+    background-image: url(./img/cheese.jpeg);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
