@@ -25,14 +25,14 @@ body {
 
 /* Setting dimensions to the shop logo container */
 .logo {
-  max-width: 30%;
+  width: 30%;
   height: auto;
   margin: 0px;
 }
 
 /* Settings the logo image dimensions */
 .logo img {
-  max-width: 100%;
+  width: auto;
   height: 75%;
 }
 
