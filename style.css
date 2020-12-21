@@ -220,7 +220,18 @@ footer p {
   display: none;
 }
 
-/*laptop or any larger screen*/
+/*Medium Size Screen*/
+@media (min-width: 540px) {
+  .welcome_text_img img {
+    width: 70%;
+  }
+
+  .welcome_text_content{
+    padding: 30px;
+  }
+}
+
+/*Larger Size  screen*/
 @media (min-width: 900px) {
   .hamburger_menu_box {
     display: none;
@@ -258,6 +269,7 @@ footer p {
     opacity: 0.4;
     cursor: pointer;
     transition: 0.5s ease-in-out;
+ 
   }
   .cakes_images img:hover {
     cursor: pointer;
@@ -267,12 +279,13 @@ footer p {
   .text_and_img_container {
     display: flex;
     flex-direction: row;
-    padding: 100px;
+    padding: 50px;
     background-color: #800e13;
   }
   .welcome_text_img img {
     width: 100%;
-    height: auto;
+   
+    
   }
   .welcome_text_img {
     flex: 1;
