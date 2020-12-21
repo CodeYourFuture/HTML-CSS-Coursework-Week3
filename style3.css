@@ -21,7 +21,9 @@
 .section{
     min-height: 150px;
     background: #dbdfe5;
+    padding: 20%;
 }
 .section.bg-alt{
     background: #b4bac0;
+    padding: 20%;
 }
