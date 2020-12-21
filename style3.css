@@ -1,0 +1,27 @@
+.row > div{
+    margin-bottom: 15px;
+}
+.header{
+    min-height: 90px;
+}
+.footer{
+    min-height: 60px;
+    color: rgb(253, 252, 252);
+}
+.header, .footer{
+    background: #2f2f2f;
+}
+.sidebar{
+    background: #dbdfe5;
+}
+.intro{
+    background: #7e8aa0;
+    min-height: 250px;
+}
+.section{
+    min-height: 150px;
+    background: #dbdfe5;
+}
+.section.bg-alt{
+    background: #b4bac0;
+}
