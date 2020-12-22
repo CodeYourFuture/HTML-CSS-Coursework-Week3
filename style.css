@@ -1,1 +1,15 @@
 /*  Add your styling here */
+
+div.header-img{
+    width: 100%;
+    background-color:white;
+    overflow:hidden;
+    position:; 
+  }
+  
+  #header-img{  
+    height:110px;
+    filter:invert(000%);
+    margin:left;
+    display:block;
+  }
