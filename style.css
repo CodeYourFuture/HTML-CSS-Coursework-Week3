@@ -1,3 +1,15 @@
 .top-header {
-    background-color: blue;
+    background-color: rgb(236, 191, 11);
+}
+
+.flex-container > div {
+    background-color: rgb(9, 107, 83);
+    width: 100px;
+    margin: 10px;
+}
+
+.flex-container {
+    display: inline-flexbox;
+    flex-wrap: wrap;
+
 }
