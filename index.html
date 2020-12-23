@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Responsive Cake webpage</title>
     <!-- Add a link to your css file here -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./css/bodystyle.css" />
+    <link rel="stylesheet" href="./css/navbarstyle.css" />
   </head>
 
   <body>
@@ -14,22 +15,54 @@
     <header>
       <img src="./images/logo_cake.svg" alt="logo" />
       <div>
-        <nav class="menu">
-          &#9776;
+        <nav class="hamburger-menu">
+          <input type="checkbox" id="check" />
+          <label for="check" class="menubutton">
+            &#9776;
+          </label>
+          <ul class="header-ul">
+            <li>
+              <a href="index.html" style="font-weight: bold;">HOME</a>
+            </li>
+            <li><a href="#">CAKES</a></li>
+            <li><a href="#">ORDERIN</a></li>
+            <li><a href="#">LESSON</a></li>
+            <li><a href="#">ABOUT</a></li>
+          </ul>
         </nav>
-        <h4>
-          The best cakes in town delivered to your door
-        </h4>
+        <div class="header-words">
+          <p>
+            The best cakes in town
+          </p>
+          <p>
+            &nbsp;delivered to your door
+          </p>
+        </div>
       </div>
     </header>
-
     <main>
+      <section>
+        <nav class="main-nav">
+          <ul class="main-ul">
+            <li>
+              <a href="index.html" style="font-weight: bold;">HOME</a>
+            </li>
+            <li><a href="#">CAKES</a></li>
+            <li><a href="#">ORDERIN</a></li>
+            <li><a href="#">LESSON</a></li>
+            <li><a href="#">ABOUT</a></li>
+          </ul>
+        </nav>
+      </section>
       <section id="welcome">
         <div class="welcome-text">
           <h2>Welcome</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud ullamco laboris nisi ut aliquip ex ea
+            commodo consequat. Duis aute irure dolor in in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur.
           </p>
         </div>
         <div class="welcome-image">

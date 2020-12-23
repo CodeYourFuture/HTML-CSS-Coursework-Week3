@@ -1,0 +1,130 @@
+/*  Add your styling here */
+body {
+  font: 1em sans-serif;
+}
+
+#welcome {
+  width: 96%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#welcome .welcome-text {
+  width: 100%;
+
+  height: 100%;
+  font-size: 1rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+#welcome h2 {
+  margin: 5%;
+}
+#welcome p {
+  margin: 5%;
+  width: fit-content;
+  text-justify: auto;
+}
+
+#welcome .welcome-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  display: block;
+}
+
+.welcome-image img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+#cakes {
+  width: 96%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#cakes .cake-div {
+  width: 48%;
+  height: 48%;
+  margin: 1%;
+  object-fit: cover;
+
+  position: relative;
+
+  display: block;
+}
+
+#cakes .cake-div:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+#cakes .cake-div img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+footer {
+  width: 96%;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+}
+
+footer .footer-divs {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  padding: 2%;
+}
+
+footer .first,
+.second,
+.third {
+  width: 35%;
+  height: auto;
+  margin: 2%;
+
+  background: rgb(252, 234, 237);
+}
+
+footer .copyright {
+  opacity: 0.6;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+
+  background: rgb(252, 234, 237);
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  #welcome {
+    flex-direction: row-reverse;
+  }
+  #cakes {
+    flex-wrap: nowrap;
+  }
+  footer .footer-divs {
+    flex-direction: row;
+  }
+}

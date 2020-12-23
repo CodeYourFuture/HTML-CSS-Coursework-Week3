@@ -1,0 +1,157 @@
+header {
+  width: 96%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 8rem;
+
+  display: flex;
+  justify-content: space-between;
+
+  background: rgb(252, 234, 237);
+}
+
+header img {
+  width: 6rem;
+  height: 6rem;
+
+  margin: 1rem;
+}
+
+header div {
+  width: 100%;
+  height: auto;
+  margin-right: 2%;
+  display: flex;
+  flex-direction: column;
+}
+
+.header-words {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+header p {
+  margin: 0;
+  text-align: end;
+}
+
+.header-nav {
+  width: auto;
+  height: 4rem;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.menubutton {
+  float: right;
+  color: darkslategrey;
+  font-size: 1.6rem;
+
+  line-height: 4rem;
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+
+  cursor: pointer;
+  display: block;
+}
+#check {
+  display: none;
+}
+#check:checked ~ ul {
+  right: 3%;
+}
+/*
+.header-nav input {
+  position: fixed;
+  top: 0;
+  right: 2%;
+
+  border: 1px green solid;
+}
+*/
+
+.header-ul {
+  position: fixed;
+  top: 4rem;
+  right: -90%;
+  text-align: center;
+
+  float: right;
+  margin: 0 0;
+  width: 40%;
+  height: auto;
+
+  background: rgba(252, 234, 237, 0.7);
+
+  transition: all 1s;
+}
+
+.main-nav {
+  display: none;
+}
+
+nav ul li {
+  display: block;
+  margin: 0.5rem;
+  line-height: 2rem;
+}
+
+nav ul li a {
+  color: rgb(8, 4, 4);
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(197, 58, 58);
+  transition: 0.5s;
+}
+
+/*Hamburger Menu*/
+@media (min-width: 768px) {
+  header {
+    width: 100%;
+  }
+  .menubutton {
+    display: none;
+  }
+  .header-ul {
+    display: none;
+  }
+  .header-words {
+    width: 100%;
+    margin-top: 5rem;
+    flex-direction: row;
+  }
+  .main-nav {
+    position: static;
+
+    width: 96%;
+    height: 4rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    background: rgb(252, 234, 237);
+  }
+  header img {
+    margin-left: 2%;
+  }
+  header div {
+    margin-right: 3%;
+  }
+  nav ul li {
+    display: inline;
+  }
+}
