@@ -1,4 +1,8 @@
-/*  Add your styling here */
+/*  Add your styling here 
+/*Page Layout*/
+*{
+  margin:1%;
+}
 
 /*Navigation*/
 .nav-item {
