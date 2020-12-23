@@ -4,6 +4,98 @@ body {
     -webkit-font-smoothing: antialiased;
     overflow-x: hidden;
 }
-
-@media (min-width: 600px) {
+/* HEADER */
+nav{
+    display: none;
 }
+.thick{
+    display: none;
+
+    
+}
+.burger{
+        position: absolute;
+        color: white;
+        right: 20px;
+        width: 40px;
+        height: 40px;
+        }
+header img.logo{
+    width: 65px;
+    height: 65px;
+}
+
+header p {
+    display: contents;
+}
+/* nav */
+
+/* MAIN */
+
+/* First Section */
+
+ img.birth{
+    width: 100%;
+    height:100vh;
+}
+/* Second Section */
+.cakes{
+    width: 65px;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+.one{
+    
+}
+.one img{
+    flex: 1;
+}
+.two img{
+    flex: 1;
+}
+
+/* FOOTER */
+.social{
+    text-align: center;
+    
+  }
+  .social img{
+  width: 15px;
+  height: 15px;
+  margin: 5px;
+  border: 1px solid rgb(230, 230, 230);
+  border-radius: 40%;
+  margin-top: -25px;
+  }
+  .social p{
+  font-weight:lighter;
+  font-size:10px ;
+  margin-top: 0px;
+  }
+
+
+/* TABLET VERSION */
+
+@media (min-width: 540px) {
+
+
+}/* Tablet Closing Tag */
+
+/* DESKTOP VERSION */
+@media (min-width: 900px) {
+
+    .burger{
+        display:s none;
+    }
+    nav {
+
+        list-style: none; 
+         text-decoration: none;
+        
+        } 
+       
+
+    
+}/* Desktop Closing Tag */
