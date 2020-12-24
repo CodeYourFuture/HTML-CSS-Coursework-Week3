@@ -5,6 +5,7 @@ div.header-img{
     background-color:white;
     overflow:hidden;
     position:; 
+    
   }
   
   #header-img{  
@@ -12,4 +13,71 @@ div.header-img{
     filter:invert(000%);
     margin:left;
     display:block;
+    width: 12.5rem;
+    height: 12.5rem;
+    padding: 1rem;
+    
   }
+
+  .header-text {
+    text-align: end;
+    font-size: 10px;
+    top: 12rem;
+    right: 1rem;
+
+  }
+
+  div.nav-bar{
+    overflow:hidden;
+    position:;
+    background-color:yellow;
+    width:100%;
+    top:22%;
+    height:15%;
+    color:white;
+    text-align: right;
+    border-top-right-radius: ;
+    border: 2px;
+    border-color: black;
+  }
+  
+.main {
+    display: flex;
+    flex-flow: column;
+    padding: 1rem;
+  }
+
+#main-image {
+  width: 40%;
+  float: left;
+  
+  
+}
+   .main-paragraph {
+    font-size: 2rem;
+    font-weight: 200;
+    margin-bottom: 1rem;
+    padding: 1rem 1rem;
+    text-align: right;
+    line-height: 3rem;
+  }
+
+  .product{
+      display: flex;
+      flex-flow: column;
+  }
+
+#product-img{
+  width: 100%;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 33.33%;
+  padding: 5px;
+}
+
+ 
