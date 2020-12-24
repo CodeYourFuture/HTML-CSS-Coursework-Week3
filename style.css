@@ -1,5 +1,11 @@
 /*  Add your styling here */
 
+
+#header {
+  border: 1px solid rgb(114, 113, 113);
+  padding: 1px;
+}
+
 div.header-img{
     width: 100%;
     background-color:white;
@@ -27,19 +33,33 @@ div.header-img{
 
   }
 
-  div.nav-bar{
+  .nav-bar{
     overflow:hidden;
-    position:;
-    background-color:yellow;
+    background-color:#7ec9cf;
     width:100%;
-    top:22%;
-    height:15%;
     color:white;
     text-align: right;
-    border-top-right-radius: ;
-    border: 2px;
-    border-color: black;
+    border: 1px solid rgb(114, 113, 113);
+    padding: 1rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
+
+  .nav-link{
+    color:blue;
+    text-decoration:none;
+    text-align:center;
+    font-size:20px;
+    padding:10px 30px;
+    float:right;
+    transition:background .5s ease;
+    color:black;
+    font-family:Gotham;
+  }
+
+  .nav-link:hover{
+    background-color:#1acdd6; 
+    }
   
 .main {
     display: flex;
@@ -80,4 +100,14 @@ div.header-img{
   padding: 5px;
 }
 
- 
+.footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: rgb(92, 92, 92);
+  border: 1px solid rgb(114, 113, 113);
+  text-align: center;
+  
+
+}
+
