@@ -1,7 +1,7 @@
 body {
     font-family: "Roboto", sans-serif;
     width: 100%;
-    margin:0px;
+    margin:px;
   }
   
   .navbar {
@@ -10,6 +10,10 @@ body {
   }
   .nav {
     display: none;
+  }
+  .welcome {
+    background-color: #8a2be2;
+  
   }
 
   header {
@@ -51,10 +55,9 @@ body {
   section {
     padding: 10px;
   }
-  .maintext1 {
-    font-size: 2rem;
-    font-weight: 100;
-    margin-bottom: 20px;
+  .section-1 {
+    display: flex;
+    flex-direction: row-reverse;
     color: red
   }
   
