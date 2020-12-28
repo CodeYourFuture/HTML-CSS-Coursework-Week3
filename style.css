@@ -16,17 +16,17 @@ header {
     flex-wrap: nowrap;
 }
 
-#header-left {
+.header-left {
     flex-basis: 30%;
 }
 
-#logoImage {
+.logoImage {
     padding: 30px;
     width: 140px;
     height: 150px;
 }
 
-#header-right {
+.header-right {
     display: flex;
     flex-direction: column;
     flex-basis: 70%;
@@ -66,7 +66,7 @@ header {
     display: block;
 }
 
-#motto {
+.motto {
     color: #19bed3;
     font-style: italic;
     font-size: 24px;  
@@ -74,7 +74,7 @@ header {
     padding-right: 30px;
 }
 
-#menu {
+.menu {
     width: 40px;
     height: 5px;
     border-radius: 10px;
@@ -82,7 +82,7 @@ header {
     margin: 5px;
 }
 
-#welcoming-page {
+.welcoming-page {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -103,26 +103,26 @@ main p {
     font-size: 14px;
 }
 
-#final-product {
+.final-product {
     padding: 10px;
     padding-right: 2.5%;
 }
 
-#finished-cake {
+.finished-cake {
     width: 100%;
     height: 300px; 
     border-radius: 15px;  
     align-self: center;
 } 
 
-#step-by-step {
+.step-by-step {
     display: flex;
     align-items: flex-start;
     flex-wrap: wrap;
     padding: 5px;
 }
 
-#step {
+.step {
     width: 48.5%;
     height: 200px;
     padding: 3px;
@@ -138,13 +138,13 @@ footer {
     flex-direction: column;
 }
 
-#footer-top {
+.footer-top {
     align-items: center;
     float: left;
     padding-left: 10px;
 }
 
-#footer-bottom {
+.footer-bottom {
     align-self: center;
 }
 
@@ -197,11 +197,11 @@ h3 {
 
 @media (max-width: 539px) {
 
-    #desktop-menu {
+    .desktop-menu {
         visibility: hidden;
     }
 
-    #desktop-menu a {
+    .desktop-menu a {
         visibility: hidden;
     }
 
@@ -209,7 +209,7 @@ h3 {
 
 @media (max-width: 408px) {
 
-    #step {
+    .step {
         width: 46%;
         height: 100px;
         padding: 3px;
@@ -221,7 +221,7 @@ h3 {
 
 @media (min-width: 540px) and (max-width: 899px) {
 
-    #logoImage {
+    .logoImage {
         width: 90px;
         height: 90px;
     }
@@ -230,25 +230,25 @@ h3 {
         padding: 20px;
     }
 
-    #motto {
+    .motto {
         padding-right: 20px;
     }
 
-    #desktop-menu {
+    .desktop-menu {
         visibility: hidden;
     }
 
-    #desktop-menu a {
+    .desktop-menu a {
         visibility: hidden;
     }
 
-    #welcoming-page {
+    .welcoming-page {
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
     }
 
-    #main-text {
+    .main-text {
         flex-basis: 40%;
         margin-bottom: 2px;
     }
@@ -263,20 +263,20 @@ h3 {
         font-size: 11px;
     }
 
-    #final-product {
+    .final-product {
         flex-basis: 60%;
     }
 
-    #finished-cake {
+    .finished-cake {
         height: 200px; 
     }   
     
-    #step-by-step {
+    .step-by-step {
         display: flex;
         flex-flow: row nowrap;
     }
 
-    #step {
+    .step {
         width: 22%;
         height: 90px;
         margin: 0px 10px 0px 10px;
@@ -308,7 +308,7 @@ h3 {
 
 @media (min-width: 900px) {
     
-    #main-text {
+    .main-text {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
@@ -332,18 +332,18 @@ h3 {
         font-size: 16px;
     }
 
-    #welcoming-page {
+    .welcoming-page {
         display: flex;
         flex-direction: row-reverse;
         flex-wrap: nowrap;
     }
 
-    #step-by-step {
+    .step-by-step {
         display: flex;
         flex-flow: row nowrap;
     }
 
-    #step {
+    .step {
         width: 24.25%;
         height: 200px;
         padding: 3px;
@@ -376,7 +376,7 @@ h3 {
         visibility: hidden;
     }
 
-    #desktop-menu {
+    .desktop-menu {
         background-color: #f7efef;
         margin-top: 10px;
         padding: 5px;
@@ -387,7 +387,7 @@ h3 {
         text-align: center;
     }
 
-    #desktop-menu a {
+    .desktop-menu a {
         border: 4px dotted darkgrey;
         text-decoration: none;
         font-family: 'Texturina', serif;
