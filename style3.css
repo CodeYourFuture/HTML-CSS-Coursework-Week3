@@ -9,7 +9,7 @@
     color: rgb(253, 252, 252);
 }
 .header, .footer{
-    background: #2f2f2f;
+    background: lightblue;
     border: 5px solid lightblue;
     border-radius: 5px;
     box-shadow: 5px 5px 5px lightgrey;
@@ -23,7 +23,7 @@
     box-shadow: 5px 5px 5px lightgrey;
 }
 .intro{
-    background: #7e8aa0;
+    background:lightblue;
     min-height: 250px;
     border: 5px solid lightblue;
     border-radius: 5px;
