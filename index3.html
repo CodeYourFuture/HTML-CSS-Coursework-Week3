@@ -87,11 +87,42 @@
 <!-- Footer Section -->
         <div class="row">
             <div class="col-md-12">
-                <div class="footer">                    
-                    <img src="img/twitter-icon.svg" class="img-fluid" alt="twitter-icon">
-                    <img src="img/facebook-icon.svg" class="img-fluid" alt="facebook-icon">
-                    <img src="img/instagram-icon.svg" class="img-fluid" alt="instagram-icon">
-                    <p class="text-center"><small>Copyright &copy; 2020 Retreat Cakes, Inc.</small></p> 
+                <div class="footer">
+                    <!-- Sign-up Form -->
+                    <h3>Sign-up Here, for more info.</h3>
+                    <div class="bs-example">
+                        <form action="/examples/actions/confirmation.php" method="post">
+                          <div class="form-group row">
+                                <label for="inputUsername" class="col-sm-2 col-form-label">Username</label>
+                                <div class="col-6 col-sm-6">
+                                    <input type="text" class="form-control" id="inputUsername" placeholder="Username" required>
+                                </div>
+                            </div>  
+                          <div class="form-group row">
+                                <label for="inputEmail" class="col-sm-2 col-form-label">Email</label>
+                                <div class="col-6 col-sm-6">
+                                    <input type="email" class="form-control" id="inputEmail" placeholder="Email" required>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+                                <div class="col-6 col-sm-6">
+                                    <input type="password" class="form-control" id="inputPassword" placeholder="Password" required>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-sm-10 offset-sm-2">
+                                    <label class="form-check-label"><input type="checkbox"> Remember me</label>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-sm-10 offset-sm-2">
+                                    <button type="submit" class="btn btn-info">Sign in</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                                        <p class="text-center"><small>Copyright &copy; 2020 Retreat Cakes, Inc.</small></p> 
 
                 </div>
             </div>
