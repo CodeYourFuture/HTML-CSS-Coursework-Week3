@@ -10,18 +10,35 @@
 }
 .header, .footer{
     background: #2f2f2f;
+    border: 5px solid lightblue;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px lightgrey;
+}
+    
 }
 .sidebar{
     background: #dbdfe5;
+    border: 5px solid lightblue;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px lightgrey;
 }
 .intro{
     background: #7e8aa0;
     min-height: 250px;
+    border: 5px solid lightblue;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px lightgrey;
 }
 .section{
     min-height: 150px;
     background: #dbdfe5;
+    border: 5px solid lightblue;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px lightgrey;
 }
 .section.bg-alt{
     background: #b4bac0;
+    border: 5px solid lightblue;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px lightgrey;
 }
