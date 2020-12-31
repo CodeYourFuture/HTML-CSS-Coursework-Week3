@@ -74,12 +74,40 @@
     }
     /************* HERO ****************/
     
-    .main-pic {
-        width: 70%;
+    .hero {
+        display: flex;
+        margin: 50px 100px;
     }
     
-    aside {
-        float: right;
+    .hero_pic {
+        margin-right: 50px;
+        width: 550px;
+    }
+    
+    .hero_greet {
+        line-height: 1.5;
+        font-size: 20px;
+        text-align: right;
+    }
+    
+    .hero_greet h1 {
+        font-size: 50px;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+    /************* MEDIA QUERIES ****************/
+    
+    .links {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .cards {
+        border: 1px solid #38201F;
+        width: 450px;
+        margin-right: 20px;
     }
     /************* MEDIA QUERIES ****************/
     
