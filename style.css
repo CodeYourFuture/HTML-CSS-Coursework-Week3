@@ -1,4 +1,8 @@
-
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: rgb(201, 189, 189);
+  margin: 1px;
+}
 
 .slogan{
   color: red;
@@ -7,9 +11,41 @@
   font-weight: 700;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-
+.main {
+  margin-left: 5%;
+  margin-right: 5%;
+  
+}
 .section-1 {
   background-color: greenyellow;
-  margin-right: 40px;
-  margin-left: 40px;
+  
+}
+
+.section-2 {
+  display: flex;  
+}
+h2 {
+  display: flex;
+  justify-content: flex-end;
+  color: rgb(65, 14, 133);
+  float: inline-end;
+  font-family: fantasy;
+  text-shadow: 2px 2px brown;
+}
+
+
+.image-group {
+  display: flex;
+  flex-direction: row;
+  align-content: space-between;
+}
+
+#welcome {
+  padding-left: 30px;
+}
+
+.image {
+  display: flex;
+  width: 90%;
+  margin: 10px;
 }
