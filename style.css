@@ -233,7 +233,6 @@ footer p{
      }
      .topnav{
          width: 100%;
-         display: block;
          display: flex;
          background-color: white;
          
