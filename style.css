@@ -1,1 +1,13 @@
 /*  Add your styling here */
+
+body {
+    margin: 0;
+    padding: 0;
+    color: #2f4f4f;
+    box-sizing: border-box;
+}
+
+.hero-img {
+    width: auto;
+    padding: 0;
+}
