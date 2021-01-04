@@ -1,265 +1,252 @@
 /*  Add your styling here */
 /* styling header section */
-body{
-    margin:0px;
-    font-family: 'Langar', cursive;
+body {
+  margin: 0px;
+  font-family: "Langar", cursive;
 }
-.layout-header{
-    width:100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;  
-  
+.layout-header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
 }
-.icon{
-    width:100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: nowrap;
-    margin:0px;
-}  
-.icon-img{
+.icon {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  margin: 0px;
+}
+.icon-img {
   width: 15%;
-} 
-.icon-text{
-    width:90%;
-    text-align: center;
- }
-.icon-img img{
-    width:100%;
 }
-.icon p{
-    font-size: calc(10px + 1vw);
-    width:100%;
-    color:rgb(143, 63, 76);
+.icon-text {
+  width: 90%;
+  text-align: center;
 }
-
-.layout-nav{
-    display: flex;
-    align-items: center;
+.icon-img img {
+  width: 100%;
+}
+.icon p {
+  font-size: calc(10px + 1vw);
+  width: 100%;
+  color: rgb(143, 63, 76);
 }
 
-#myLinks{
-    display:none;
+.layout-nav {
+  display: flex;
+  align-items: center;
 }
 
-.hamburger-icon{
-    margin-top:16px;
-    width: 60%;
-    align-items: flex-start;
- }
- .mobile-screen img{
-    background-color:pink;
- }
+#myLinks {
+  display: none;
+}
+
+.hamburger-icon {
+  margin-top: 16px;
+  width: 60%;
+  align-items: flex-start;
+}
+.mobile-screen img {
+  background-color: pink;
+}
 .topnav {
-    overflow: hidden;
-    background-color:pink;
-    position: absolute;
-    display:none;
-    min-width: 100vw;
-    right:0px;
-    top:calc(65px + 3vw);
- }
-  
-
- .topnav li{
-      list-style-type: none;
- }
- .topnav a {
-    color: black;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    display: block;
- }
- /* styling main section */
-.welcome-image{
-    max-width:100%;
-}
-.welcome-image:hover{
-    border:5px solid pink;
-}
-.welcome{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-.welcome h1{
-    font-size: calc(15px + 1.5vw);
-    color:rgb(143, 63, 76);
-    letter-spacing: 1vw;
-}
-.welcome-text p{
-    text-align: justify;
-    font-size: calc(10px + 1vw);
-    margin: 0px 10px;
-}
-.monthly-deals{
-    display: flex;
-    flex-direction: column;
-    display:none;
-    justify-content: center;
-}
-.monthly-deals p{
-    color:rgb(143, 63, 76);
-    font-size: calc(8px + 1vw);
-}
-.monthly-deals img:hover{
-    border:5px solid pink;
-} 
-.welcome-deal-wrapper{
-    width: 100%;
-    display:flex;
-    justify-content:space-around;
-    align-items: center;
-    flex-wrap:nowrap;
-}
-.products{
-    display: flex;
-    flex-direction: column;
-    row-gap:25px;
-}
-.cake-box{
-    display:flex;
-    flex-direction: column;
-    align-items: center;
+  overflow: hidden;
+  background-color: pink;
+  position: absolute;
+  display: none;
+  min-width: 100vw;
+  right: 0px;
+  top: calc(65px + 3vw);
 }
 
-
-.products img{
-    max-width:45%;
-} 
-
-.products img:hover{
-    border:5px solid pink;
+.topnav li {
+  list-style-type: none;
 }
-.cake-box p{
-    text-align:center;
-    font-size: calc(10px + 1vw);
-    color:rgb(143, 63, 76);
+.topnav a {
+  color: black;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+/* styling main section */
+.welcome-image {
+  max-width: 100%;
+}
+.welcome-image:hover {
+  border: 5px solid pink;
+}
+.welcome {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.welcome h1 {
+  font-size: calc(15px + 1.5vw);
+  color: rgb(143, 63, 76);
+  letter-spacing: 1vw;
+}
+.welcome-text p {
+  text-align: justify;
+  font-size: calc(10px + 1vw);
+  margin: 0px 10px;
+}
+.monthly-deals {
+  display: flex;
+  flex-direction: column;
+  display: none;
+  justify-content: center;
+}
+.monthly-deals p {
+  color: rgb(143, 63, 76);
+  font-size: calc(8px + 1vw);
+}
+.monthly-deals img:hover {
+  border: 5px solid pink;
+}
+.welcome-deal-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.products {
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
+}
+.cake-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
+.products img {
+  max-width: 45%;
+}
 
-.button-buy{
-    background-color: pink; 
-    height: 3em;   
-    max-width:20em;
-    border: none;
-    border-radius: 5%;
-    font-size: 1em;
-    /* font-size: calc(0.75em + 0.5vw); */
-    /* padding: 5px 10px; */
-    margin-top: 30px;
-    transition-duration: 0.4s;
+.products img:hover {
+  border: 5px solid pink;
+}
+.cake-box p {
+  text-align: center;
+  font-size: calc(10px + 1vw);
+  color: rgb(143, 63, 76);
+}
+
+.button-buy {
+  background-color: pink;
+  height: 3em;
+  max-width: 20em;
+  border: none;
+  border-radius: 5%;
+  font-size: 1em;
+  /* font-size: calc(0.75em + 0.5vw); */
+  /* padding: 5px 10px; */
+  margin-top: 30px;
+  transition-duration: 0.4s;
 }
 .button-buy:hover {
-    background-color:plum;
-    cursor: pointer;
-  }
-
-.products-first-images{
- 
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-
+  background-color: plum;
+  cursor: pointer;
 }
 
-.products-second-images{
- 
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+.products-first-images {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
 
+.products-second-images {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 /* styling footer section */
-.footer-icons img{
-    width:25px;
+.footer-icons img {
+  width: 25px;
 }
-.layout-footer{
-    display: flex;
+.layout-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.layout-footer p {
+  font-size: calc(10px + 1vw);
+}
+
+@media (min-width: 540px) {
+  .monthly-deals {
+    display: block;
+  }
+  .monthly-deals img {
+    max-width: 50%;
+  }
+  .welcome-image {
+    max-width: 50%;
+  }
+  .products {
+    margin-top: 50px;
+  }
+  .products img {
+    max-width: 35%;
+  }
+}
+@media (min-width: 900px) {
+  .icon-img {
+    z-index: 2;
+  }
+  .icon-text {
+    text-align: right;
+  }
+  .hamburger-icon {
+    display: none;
+  }
+  .layout-header {
     flex-direction: column;
-    align-items: center;
+  }
+  .layout-nav {
+    width: 100%;
+  }
+  .mobile-screen {
+    width: 100%;
+  }
+  .topnav {
+    width: 100%;
+    display: flex;
+    background-color: white;
+  }
+  #myLinks {
+    display: block;
+  }
+  .topnav ul {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+  }
+  .topnav ul li a:hover {
+    color: white;
+    background-color: pink;
+  }
+  .topnav ul li a {
+    font-size: calc(1em + 1vw);
+    background-color: rgb(255, 223, 251);
+    margin: 0 5px;
+  }
+  .welcome {
+    flex-direction: row-reverse;
+  }
+  .welcome-text {
+    width: 90%;
+  }
+  .welcome-deal-wrapper {
+    width: 60%;
+  }
 }
-
-.layout-footer p{
-    font-size: calc(10px + 1vw);
-}
-
-@media(min-width:540px){
-    .monthly-deals{
-       display:block;
-     }
-    .monthly-deals img{
-        max-width:50%;
-    }
-    .welcome-image{
-        max-width:50%
-    }
-    .products{
-        margin-top: 50px;
-    }   
-    .products img{
-        max-width:35%;
-        
-    } 
-}
-@media(min-width:900px){
-    .icon-img{
-        z-index: 2;
-      } 
-      .icon-text{
-        text-align: right;
-    }
-    .hamburger-icon{
-         display:none;
-     }
-     .layout-header{
-         flex-direction: column;
-     }
-     .layout-nav{
-         width: 100%;
-     }
-     .mobile-screen{
-         width: 100%;
-     }
-     .topnav{
-         width: 100%;
-         display: flex;
-         background-color: white;
-         
-     }
-     #myLinks{
-         display: block;
-     }
-     .topnav ul{
-        display:flex;
-        justify-content: flex-end;
-        flex-wrap:nowrap;
-    }
-   .topnav ul li a:hover{
-        color:white;
-        background-color: pink;
-     }
-    .topnav ul li a{
-       font-size:calc(1em + 1vw);
-       background-color: rgb(255, 223, 251);
-       margin:0 5px;
-           
-    } 
-    .welcome{
-        flex-direction: row-reverse;
-    }
-    .welcome-text{
-        width: 90%;
-    }
-    .welcome-deal-wrapper{
-        width: 60%;
-    }
-   
-}
-
