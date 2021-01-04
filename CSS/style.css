@@ -119,12 +119,12 @@ _______________
     flex-direction: column;
 }
 .gallery-image {
-    width: 40%;
+    width: 100%;
     margin: 5% 0px;
 }
 
 .gallery-spacing {
-    justify-content: space-around;
+    flex-direction: column;
 }
 
 /* Footer Styling
@@ -147,7 +147,7 @@ ______________________________
 }
 
 /* First major change in the layout of the website, introducing the nav-bar and removing the hamburger. */
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 540px) {
     .hero {
         padding: 30% 0px;
     }
@@ -184,5 +184,28 @@ ______________________________
 
     .nav-link:hover {
         color: var(--third-color);
+    }
+
+    .gallery-image {
+        width: 40%;
+    }
+
+    .gallery-spacing {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 900px) {
+
+    .gallery-image {
+        width: 50%;
+    }
+
+    .gallery {
+        display: grid;
+        grid-template-columns: 50% 50% 50% 50%;
+        grid-template-rows: 100%;
     }
 }
