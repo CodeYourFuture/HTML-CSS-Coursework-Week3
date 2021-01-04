@@ -1,11 +1,12 @@
-#head {
+.head {
   display: flex;
-  flex-flow: row wrap;
+  flex-direction: row;
 }
-
-header {
+.div-hamburger {
   display: flex;
-  flex-flow: row wrap;
+  padding-left: 50%;
+}
+header {
   background-color: #ffcdb2;
 }
 #head h1 {
@@ -14,9 +15,20 @@ header {
 .logo {
   width: 20%;
 }
+.slogan p {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.5em;
+  font-weight: 900;
+}
 .nav-bar,
-.item7 {
+.item7,
+.article :first-child {
   display: none;
+}
+.article :last-child {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1em;
+  font-weight: 700;
 }
 .products {
   display: flex;
@@ -30,13 +42,24 @@ header {
   width: 44%;
   margin: 3%;
 }
-@media screen and (min-width: 540px) {
+/* footer */
+footer .footers {
+  width: 30%;
+}
+footer .footers img {
+  width: 100%;
+}
+footer :last-child {
+  color: #e8eae6;
+}
+@media (min-width: 540px) {
   main {
     margin-left: 5%;
     margin-right: 5%;
   }
   .hamburger,
-  .item:first-child {
+  .item:first-child,
+  .article p > p {
     display: none;
   }
   .nav-bar {
@@ -48,11 +71,16 @@ header {
     justify-content: space-between;
     list-style: none;
   }
+  a:hover {
+    font-family: cursive;
+    font-size: 1, 5em;
+  }
   .introduction {
     display: flex;
   }
   .item7 {
     display: flex;
+    margin-left: 3%;
   }
   .article {
     width: 70%;
@@ -72,5 +100,19 @@ header {
     width: 20%;
     margin: 3%;
   }
+  p {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 2em;
+  }
+  /*  footer */
+  footer {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+  }
 }
-/*  Add your styling here */
+@media (min-width: 900px) {
+  .article :last-child {
+    font-size: 2em;
+  }
+}
