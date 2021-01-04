@@ -46,6 +46,6 @@ h2 {
 
 .image {
   display: flex;
-  width: 90%;
-  margin: 10px;
+  flex-direction: column;
+  position: relative;
 }
