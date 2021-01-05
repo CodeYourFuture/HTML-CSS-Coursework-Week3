@@ -7,6 +7,10 @@ body {
     box-sizing: border-box;
 }
 
+.clearfix {
+    clear: both;
+}
+
 .container {
     margin-bottom: 50px;
 }
@@ -14,4 +18,8 @@ body {
 .hero-img {
     width: auto;
     padding: 0;
+}
+
+.footer {
+    background-color: #D09DD6;
 }
