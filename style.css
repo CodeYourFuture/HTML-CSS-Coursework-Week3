@@ -1,6 +1,7 @@
 .head {
   display: flex;
   flex-direction: row;
+  height: 10%;
 }
 .div-hamburger {
   display: flex;
@@ -9,11 +10,8 @@
 header {
   background-color: #ffcdb2;
 }
-#head h1 {
-  width: 90%;
-}
 .logo {
-  width: 20%;
+  width: 50%;
 }
 .slogan p {
   font-family: "Courier New", Courier, monospace;
@@ -21,11 +19,10 @@ header {
   font-weight: 900;
 }
 .nav-bar,
-.item7,
-.article :first-child {
+.item7 {
   display: none;
 }
-.article :last-child {
+.article p {
   font-family: "Courier New", Courier, monospace;
   font-size: 1em;
   font-weight: 700;
@@ -58,8 +55,7 @@ footer :last-child {
     margin-right: 5%;
   }
   .hamburger,
-  .item:first-child,
-  .article p > p {
+  .item:first-child {
     display: none;
   }
   .nav-bar {
@@ -100,7 +96,7 @@ footer :last-child {
     width: 20%;
     margin: 3%;
   }
-  p {
+  .article p {
     font-family: "Courier New", Courier, monospace;
     font-size: 2em;
   }
@@ -112,7 +108,7 @@ footer :last-child {
   }
 }
 @media (min-width: 900px) {
-  .article :last-child {
+  .article p {
     font-size: 2em;
   }
 }
