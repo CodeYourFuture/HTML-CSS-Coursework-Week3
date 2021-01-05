@@ -30,10 +30,26 @@ body {
         font-size: 17px;
         text-align: justify;
     }
+    .jumbotron p,
+    .figure-caption {
+        font-size: 17px;
+        font-weight: bold;
+        text-align: center;
+    }
+    .footer {
+        font-size: 12px;
+    }
+    .greeting {
+        text-align: center;
+        margin-bottom: 50px;
+    }
 }
 
 @media screen and (min-width: 1200px) {
     .header {
         position: absolute;
+    }
+    .hero-img {
+        width: 1110px;
     }
 }
