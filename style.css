@@ -10,8 +10,8 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
- a {
+a {
     color: red;
     text-decoration: none;
-    align-items: flex-end;   
+    align-items: flex-end;
 }
