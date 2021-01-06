@@ -1,5 +1,8 @@
 /*  Add your styling here */
 
+body {
+  background-color: rgb(172, 243, 239);
+}
 
 #header {
   border: 1px solid rgb(114, 113, 113);
@@ -32,7 +35,7 @@ div.header-img{
 
   .nav-bar{
     overflow:hidden;
-    background-color:#7ec9cf;
+    background-color:#2794be;
     width:100%;
     color:white;
     text-align: right;
@@ -43,7 +46,6 @@ div.header-img{
   }
 
   .nav-link{
-    color:blue;
     text-decoration:none;
     text-align:center;
     font-size: 24px;
@@ -52,6 +54,7 @@ div.header-img{
     transition:background .5s ease;
     color:black;
     font-family:unset;
+    background-color: rgb(211, 211, 211);
   }
 
   .nav-link:hover{
@@ -62,6 +65,7 @@ div.header-img{
     display: flex;
     flex-flow: column;
     padding: 1rem;
+    background-color: rgb(255, 255, 255);
   }
 
 #main-image {
@@ -84,20 +88,20 @@ div.header-img{
     line-height: 3rem;
   }
 
+  .row {
+    display: grid;
+    flex-direction: row;
+  }
+  
+  .product {
+    flex: 33.33%;
+    padding: 5px;
+  }
+  
 #product-img{
-  width:  120px;
-  height: 250px;
-  object-fit: cover;
+  display: grid;
   padding: 1px;
-}
-
-.row {
-  display: flex;
-}
-
-.product {
-  flex: 33.33%;
-  padding: 5px;
+   object-fit: cover;
 }
 
 .footer{
@@ -107,6 +111,7 @@ div.header-img{
   color: rgb(92, 92, 92);
   border: 1px solid rgb(114, 113, 113);
   text-align: center;
+  background-color: white;
 }
 
 .responsive {
@@ -115,15 +120,55 @@ div.header-img{
   width: 24.99999%;
 }
 
-@media only screen and (max-width: 700px){
-  .responsive {
-    width: 49.99999%;
-    margin: 6px 0;
-  }
-}
 
-@media only screen and (max-width: 500px){
-  .responsive {
+@media screen and (min-width: 540px) {
+  /* Navigation Bar */
+  
+  .nav-link {
+    text-decoration: none;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    margin-right: 1rem;
+    background-color: rgb(211, 211, 211);
+    color: black;
+    padding: 1rem;
+    margin-left: auto;
     width: 100%;
   }
+
+  
+
+  /* End of navigation bar */
+
+
+  @media screen and (min-width: 900px) {
+
+  .nav-link{
+    text-decoration:none;
+    text-align:center;
+    padding:10px 40px;
+    float:right;
+    transition:background .5s ease;
+    color:black;
+    font-family:unset;
+    display: flex;
+    width: auto;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .product {
+    flex: 33.33%;
+    padding: 5px;
+  }
+ 
+  #product-img{
+  width:  120px;
+  height: 250px;
+  object-fit: cover;
+  padding: 1px;
 }
