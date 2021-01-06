@@ -15,3 +15,10 @@ a {
     text-decoration: none;
     align-items: flex-end;
 }
+
+.gallery {
+    display: inline-flex;
+    flex-wrap: nowrap;
+    justify-items: center;
+    padding: 50px;
+}
