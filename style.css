@@ -1,1 +1,213 @@
 /*  Add your styling here */
+/* Initial html and body styles */
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    background-color: rgb(46, 39, 43);
+}
+body {
+    font-size: 1.2rem;
+    color: rgb(189, 182, 182);
+    font-family: 'Big Shoulders Display', cursive;
+    /* font-family: 'Niconne', cursive; */
+}
+
+/* Company logo and navigation bar for small screen sizes - based on iPhone 6/7/8 */
+.banner {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    background-color: teal;
+    background-size: contain;
+    margin-top: -85px;
+    margin-left: -8px;
+    position: fixed;
+}
+.banner .brand a{
+    font-size: 2.5rem;
+    font-family: 'Niconne', cursive;
+    font-weight: normal;
+    color: rgb(49, 43, 31);
+    text-align: start;
+    padding: 0;
+    margin-top: -20px;
+    margin-left: -30px;
+    width: 100%;
+    text-shadow: 2px 2px 2px white;
+}
+.banner .brand a:hover {
+    background-color: darkgray;
+}
+.banner li {
+    list-style: none;
+}
+.banner a {
+    text-decoration: none;
+    display: block;
+    color: white;
+}
+
+/* navigation links styled below */
+.nav-bar {
+    display: flex;
+    align-self: flex-start;
+    width: 100%;
+}
+.navbar {
+    display: flex;
+    align-items: space-between;
+}
+.navbar li {
+    padding: 0 0px;
+}
+.nav-item {
+    display: none;
+}
+.navbar li a {
+    font-size: 1.5rem;
+    font-family: 'Niconne', cursive;
+    text-shadow: 2px 2px 2px black;
+    margin-top: 10px;
+    margin-right: 20px;
+    /* margin-right: 50px; */
+    margin-left: 0;
+    margin-bottom: 0;
+    width: 100%;
+    padding: 0;
+}
+.navbar li a:hover {
+    color: teal;
+}
+
+/* The main section starts here */
+.container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 80px;
+}
+.image {
+    width: 100%;
+    display: block;
+    margin: auto;
+    height: auto;
+}
+.text-and-image {
+    width: 100%;
+}
+.text {
+    margin: auto;
+    text-align: justify;
+}
+h1 {
+    text-align: center;
+    font-size: 1.7rem;
+    font-weight: initial;
+}
+
+/* footer style */
+.footer ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 0 10px;
+}
+.footer ul {
+    align-items: center;
+    justify-content: center;
+}
+.footer {
+    text-align: center;
+    background-color: rgb(65, 52, 3);
+    color: rgb(150, 135, 135);
+}
+
+/* First break point */
+@media screen and (min-width: 595px) {
+    .navbar li a {
+        margin-right: 60px;
+    }
+    .main {
+        padding-top: 0px;
+    }
+    .banner {
+        margin-left: -8px;
+    }
+} 
+
+/* A minor break point */
+@media screen and (min-width: 690px) {
+    .navbar li a {
+        margin-left: 0px;
+    }
+}
+
+/* For medium size devices like iPad */
+@media screen and (min-width: 750px) {
+    .container {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .banner {
+        margin-left: -8px;
+        height: 80px;
+    }
+    .navbar li a {
+        font-size: 1.85rem;
+    }
+    .text-and-image {
+        width: 50%;
+    }
+    .text {
+        width: 80%;
+    }
+    .image {
+        width: 90%;
+    }
+    .banner .brand a {
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+
+}
+
+/* For big screen sizes */
+@media screen and (min-width: 1100px) {
+    .text-and-image {
+        width: 33%;
+    }
+    .nav-item {
+        display: inline;
+    }
+    .item {
+        margin-left: 0;
+    }
+    .navbar {
+        align-items: flex-start;
+        margin-right: 40px;
+        justify-content: space-between;
+        justify-items: self-start;
+    }
+    .navbar li a {
+        padding: 0 15px;
+        margin-top: -10px;
+    }
+    .banner {
+        justify-content: space-between;
+        height: 50px;
+        position: fixed;
+        margin-top: -60px;
+        margin-left: -10px;
+    }
+    .banner .brand a {
+        margin-top: -20px;
+        margin-left: 0;
+    }
+    .container {
+        margin-top: 60px;
+    }
+}
+
