@@ -9,7 +9,7 @@
     color: rgb(253, 252, 252);
 }
 .header, .footer{
-    background: lightblue;
+    /* background: lightblue; */
     border: 2px solid lightblue;
 
 }
