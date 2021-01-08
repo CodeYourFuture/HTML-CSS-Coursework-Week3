@@ -1,24 +1,8 @@
-.top-bar {
-    background: red;
-    height: 120px;
+body {
 }
 
 .slogan {
-    float: right;
-    margin-bottom: auto;
     font-style: italic;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-a {
-    color: red;
-    text-decoration: none;
-    align-items: flex-end;
-}
-
-.gallery {
-    display: inline-flex;
-    flex-wrap: nowrap;
-    justify-items: center;
-    padding: 50px;
+    color: rgb(118, 141, 218);
+    margin-left: 50%;
 }
