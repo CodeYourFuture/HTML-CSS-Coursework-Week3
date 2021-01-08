@@ -4,6 +4,21 @@ head {
 }
 
 body {
+  width: 600px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  height: 160px;
+  background-color: aquamarine;
+  flex-wrap: wrap-reverse;
+}
+
+.header-text {
+  word-wrap: break-word;
+  width: 150px;
 }
 
 .menu-btn {
@@ -50,4 +65,44 @@ body {
 
 .menu-btn_burger::after {
   transform: translateY(16px);
+}
+
+.top-img {
+  width: 130px;
+  height: 130px;
+}
+
+.main {
+  width: 600px;
+}
+
+.cake-container {
+  width: 600px;
+  height: 600px;
+  display: flex;
+}
+
+.image1 {
+  width: 100%;
+  height: 500px;
+}
+
+.image2 {
+  width: 298px;
+  height: 298px;
+}
+
+.image3 {
+  width: 298px;
+  height: 298px;
+}
+
+.image4 {
+  width: 298px;
+  height: 298px;
+}
+
+.image5 {
+  width: 298px;
+  height: 298px;
 }
