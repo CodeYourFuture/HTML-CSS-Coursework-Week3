@@ -1,1 +1,117 @@
 /*  Add your styling here */
+body {
+    background-color: #ffffff;
+    font-family: 'Nanum Myeongjo', serif;
+  }
+  
+  .section-wrapper {
+    width: 96%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .welcome {
+    color: #0a0908;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .welcome .welcome-text {
+    width: 100%;
+    height: 100%;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  .welcome h1 {
+    margin: 5%;
+  }
+  .welcome p {
+    margin: 5%;
+    width: fit-content;
+    text-justify: auto;
+  }
+  
+  .welcome .welcome-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  
+  .welcome-image img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .cakes {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .cakes .cake-div {
+    width: 48%;
+    height: 48%;
+    margin: 1%;
+    object-fit: cover;
+    position: relative;
+    display: block;
+  }
+  
+  .cakes .cake-div:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+  }
+
+  .cakes .cake-div img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  
+  footer .footer-divs {
+    color: #0a0908;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 2%;
+  }
+
+  footer .first,
+  .second,
+  .third {
+    width: 35%;
+    height: auto;
+    margin: 2%;
+    background: #f86624;
+  }
+
+  footer .company-name {
+    color: #0a0908;
+    opacity: 0.6;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    background: #e5383b;
+    text-align: center;
+  }
+
+  @media (min-width: 900px) {
+    .welcome {
+      flex-direction: row-reverse;
+    }
+    .cakes {
+      flex-wrap: nowrap;
+    }
+    footer .footer-divs {
+      flex-direction: row;
+    }
+  }
