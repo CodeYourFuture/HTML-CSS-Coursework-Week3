@@ -57,7 +57,7 @@
     padding: 15px;
     text-align: center;
   }
-  
+
   .column {
     float: left;
     width: 33.33%;
@@ -123,6 +123,14 @@
       width: 100%;
       padding: 0;
     }
+  }
+
+  @media(max-width:1200px){
+      .column{
+        width: 100%;
+        padding: 0;
+      }
+
   }
 
 
