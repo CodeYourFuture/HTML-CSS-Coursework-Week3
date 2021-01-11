@@ -1,3 +1,33 @@
 body {
-    background-color: rgb(176, 201, 68);
+    background-color: rgb(237, 238, 231);
+}
+
+.gradient {
+    background-color: cadetblue
+}
+
+.page-header {
+    margin-top: 4rem;
+    font-size: 1.25rem;
+}
+
+.welcome {
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    color: crimson;
+
+}
+
+
+.bg-success {
+    background-color: darkkhaki ! important;
+}
+
+.img-thumbnail {
+    padding: 0.5rem;
+    border-radius: 0;
+    background-colo: rgb(91, 68, 245);
+    height: 30vh;
+    width: 100%;
+
 }
