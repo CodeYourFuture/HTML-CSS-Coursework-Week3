@@ -1,14 +1,23 @@
 body {
-    background-color: rgb(237, 238, 231);
+    background-color: rgb(224, 200, 223);
+}
+
+.jumbotron {
+    background-color: rgb(113, 163, 163) ! important;
 }
 
 .gradient {
-    background-color: cadetblue
+    background-image: linear-gradient(rgb(231, 138, 52), yellow, green);
 }
 
 .page-header {
     margin-top: 4rem;
     font-size: 1.25rem;
+}
+
+i {
+    font-weight: 700;
+    color: rgb(30, 8, 92);
 }
 
 .welcome {
@@ -26,8 +35,25 @@ body {
 .img-thumbnail {
     padding: 0.5rem;
     border-radius: 0;
-    background-colo: rgb(91, 68, 245);
+    background-color: rgb(91, 68, 245);
     height: 30vh;
     width: 100%;
+}
 
+.main-page {
+    padding: 1px 50px 1px 50px;
+}
+
+a:hover {
+    background-color: rgb(91, 122, 18);
+}
+
+li {
+    font-weight: bold;
+    padding: 10px;
+}
+
+
+footer {
+    background-color: darkviolet;
 }
