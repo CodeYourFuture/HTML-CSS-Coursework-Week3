@@ -1,87 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Responsive Cake webpage</title>
-    <!-- Add a link to your css file here -->
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Texturina:wght@100&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Bungee+Outline&display=swap" rel="stylesheet">
-</head>
-
-<body>
-    <!-- Add your markup here -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Icons link -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- CSS file -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Texturina:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee+Outline&display=swap"
+      rel="stylesheet"
+    />
+    <title>Responsive Cake Website</title>
+  </head>
+  <body>
+    <!-- Navigation bar -->
     <header>
-        <div class="header-left">
-            <img src="design/cake-logo-transparent.png" alt="We teach cakes!" class="logoImage"/>
-        </div>
-        <div class="header-right"> 
-            <div class="mobile-menu">
-                <div class="menu"></div>
-                <div class="menu"></div>
-                <div class="menu"></div>
-                <div class="dropdown-content">
-                  <a href="#Learn">Learn</a>
-                  <a href="#Order">Order</a>
-                  <a href="#About">About</a>
-                </div>
-            </div>
-            <h1 class="motto">
-                Your guide to cake making and baking!
-            </h1>
-        </div>
+      <div class="menu-wrap">
+        <img
+          src="design/cake-logo-transparent.png"
+          class="logo-img"
+          alt="We teach cakes!"
+        />
+        <input type="checkbox" id="checkbox" />
+        <nav>
+          <ul>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#Learn">Learn</a></li>
+            <li><a href="#Order">Order</a></li>
+            <li><a href="#About">About</a></li>
+          </ul>
+        </nav>
+        <label for="checkbox">
+          <i class="fa fa-bars menu-icon"></i>
+        </label>
+      </div>
+      <div>
+        <h1 class="motto">Your guide to cake making and baking!</h1>
+      </div>
     </header>
-    <section>
-        <div class="desktop-menu">
-            <a class="active" href="#home">Home</a>
-            <a href="#Learn">Learn</a>
-            <a href="#Order">Order</a>
-            <a href="#About">About</a>
-        </div>
-    </section>
+    <!-- Main section -->
     <main>
-        <div class="welcoming-page">
-            <div class="main-text">
-                <h4>Cake-ing!</h4>
-                <p>
-                    The term "cake" has a long history. The word itself is of Viking origin, from the Old Norse word "kaka". 
-                    Early cakes in England were also essentially bread. Sponge cakes, leavened with beaten eggs, originated during the Renaissance, possibly in Spain.
-                    At Cake, we hope to share with you different ways of making and baking these items, so you can do it yourself at home... or just order it from the professionals!
-                </p>
-            </div>
-            <div class="final-product">
-                <img src="design/cake-final-product.jpeg" alt="Finished cake" class="finished-cake"/>
-            </div>
+      <!-- Text and finished image -->
+      <div class="container">
+        <div class="main-text">
+          <h4>Cake-ing!</h4>
+          <p>
+            The term "cake" has a long history. The word itself is of Viking
+            origin, from the Old Norse word "kaka". Early cakes in England were
+            also essentially bread. Sponge cakes, leavened with beaten eggs,
+            originated during the Renaissance, possibly in Spain. At Cake, we
+            hope to share with you different ways of making and baking these
+            items, so you can do it yourself at home... or just order it from
+            the professionals!
+          </p>
         </div>
-        <div class="step-by-step">
-            <img src="design/cake-first-step.jpeg" alt="First step" class="step"/>
-            <img src="design/cake-second-step.jpeg" alt="Second step" class="step"/>
-            <img src="design/cake-third-step.jpeg" alt="Third step" class="step"/>
-            <img src="design/cake-fourth-step.jpeg" alt="Fourth step" class="step"/>
+        <div class="final-product">
+          <img
+            src="design/cake-final-product.jpeg"
+            alt="Finished cake"
+            class="finished-cake"
+          />
         </div>
+      </div>
+      <!-- Text and finished image -->
+
+      <div class="step-by-step">
+        <img src="design/cake-first-step.jpeg" alt="First step" class="step" />
+        <img
+          src="design/cake-second-step.jpeg"
+          alt="Second step"
+          class="step"
+        />
+        <img src="design/cake-third-step.jpeg" alt="Third step" class="step" />
+        <img src="design/cake-fifth-step.jpeg" alt="Fifth step" class="step" />
+      </div>
     </main>
-</body>
-
-<footer>
-    <div class="footer-top">
-        <h3>Follow us!</h3>
-        <div class="social-media">
-          <a href="https://www.facebook.com/" class="fa fa-facebook" target="_blank"></a>
-          <a href="https://twitter.com/home" class="fa fa-twitter" target="_blank"></a>
-          <a href="https://www.instagram.com/?hl=en" class="fa fa-instagram" target="_blank"></a>
-        </div>
-    </div>
-    <div class="footer-bottom">
-        <span><a href="https://cake.com/privacy-policy/" target="_blank">Privacy</a></span>
-        <span><a href="https://cake.com/terms/" target="_blank">Terms</a></span>
-        <span><a href="https://cake.com/regions/" target="_blank">Regions</a></span>
-        <span class="copyright"><a href="https://www.cake.com/copyright-policy/" target="_blank">&copy;2020</a></span>
-    </div>
-</footer>
-
+    <footer class="container">
+      <div class="footer-top">
+        <h3 class="follow">Follow us!</h3>
+        <ul class="social-media">
+          <li class="fb">
+            <a href="https://www.facebook.com/"
+            target="_blank"><img src="design/icon_fb.png" alt="facebook"
+            /></a>
+          </li>
+          <li class="in">
+            <a href="https://www.instagram.com/"
+            target="_blank"><img src="design/icon_insta.png" alt="instagram"
+            /></a>
+          </li>
+          <li class="tw">
+            <a href="https://www.twitter.com/"
+            target="_blank"><img src="design/icon_tw.png" alt="twitter"
+            /></a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-bottom">
+        <ul class="internal">
+          <li>
+            <a href="https://cake.com/privacy-policy/" target="_blank"
+              >Privacy</a
+            >
+          </li>
+          <li><a href="https://cake.com/terms/" target="_blank">Terms</a></li>
+          <li>
+            <a href="https://cake.com/regions/" target="_blank">Regions</a>
+          </li>
+          <li>
+            <a href="https://www.cake.com/copyright-policy/" target="_blank"
+              >&copy;2020</a
+            >
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
 </html>
