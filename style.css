@@ -1,13 +1,24 @@
 body {
     background-color: rgb(224, 200, 223);
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
+
+.logo {
+    background-color: rgb(128, 0, 6);
+    border: 3px solid #fffafaee;
+    border-radius: 4px;
+}
+
+
 
 .jumbotron {
-    background-color: rgb(113, 163, 163) ! important;
+    background-color: #022b3a ! important;
 }
 
+
+
 .gradient {
-    background-image: linear-gradient(rgb(231, 138, 52), yellow, green);
+    background-image: linear-gradient(#e780e2, #2af3dc, #495867);
 }
 
 .page-header {
@@ -17,13 +28,14 @@ body {
 
 i {
     font-weight: 700;
-    color: rgb(30, 8, 92);
+    color: whitesmoke ! important
 }
 
 .welcome {
     font-weight: 700;
     font-family: Arial, Helvetica, sans-serif;
-    color: crimson;
+    color: rgb(37, 68, 206);
+    text-shadow: 2px 2px #ff0000;
 
 }
 
@@ -35,7 +47,7 @@ i {
 .img-thumbnail {
     padding: 0.5rem;
     border-radius: 0;
-    background-color: rgb(91, 68, 245);
+    background-color: rgb(132, 115, 243);
     height: 30vh;
     width: 100%;
 }
@@ -44,8 +56,17 @@ i {
     padding: 1px 50px 1px 50px;
 }
 
+
 a:hover {
-    background-color: rgb(91, 122, 18);
+    background-color: rgb(18, 42, 122);
+    border-radius: 10px;
+    text-shadow: 1px 1px red;
+}
+
+.navbar {
+    letter-spacing: 5px;
+    font-weight: bold;
+    padding: 10px;
 }
 
 li {
@@ -60,4 +81,11 @@ footer {
     margin-bottom: 3%;
     margin-top: 4%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+@media (min-width: 540px) {
+    body {
+        background-image: linear-gradient(#f2b5d4, #ea8c55, );
+    }
 }
