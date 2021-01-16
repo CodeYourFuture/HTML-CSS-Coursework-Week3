@@ -1,1 +1,254 @@
 /*  Add your styling here */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  /* bar icon font awesome */
+  .ba_icon {
+    margin-top: -139px;
+    margin-right: 31px;
+    font-size: 1.9em;
+    color:white;
+    float: right;
+    cursor: pointer;
+    display: block;
+  }
+  #responsive_bar {
+    display: none;
+  }
+  
+  ul {
+    position: absolute;
+    width: 90%;
+    height: 100vh;
+    background: rgb(47, 47, 48);
+    top: 67px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+  .nav_bar ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  #responsive_bar:checked ~ ul {
+    left: 0;
+  }
+  .nav_bar ul li a {
+    padding-right: 0.7em;
+    text-transform: uppercase;
+    color: #800000;
+    font-size: 20px;
+    text-decoration-line: none;
+  }
+  .nav_bar a:hover {
+    color:black;
+    transition: 0.5s;
+    font-weight: bold;
+  }
+  /* cake  for logo  */
+  .cake_logo {
+    background-color:#800000;
+    width: 100%;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  .cake_logo img {
+    width: 10rem;
+  }
+  .cake_logo p {
+    color: white;
+    font-size: 1.2rem;
+    text-align: end;
+  }
+  /* Welcome Container */
+  .welcome_container {
+    display: flex;
+    margin-top: 8rem;
+    flex-direction: column-reverse;
+    width: 88%;
+    justify-items: center;
+    margin-left: 1rem;
+    justify-content: space-around;
+  }
+  .welcome_cakediv {
+    
+    padding: 0.5rem;
+    width: 100%;
+    height: fit-content;
+    margin-top: 1rem;
+  }
+  .welcome_cakediv img {
+    width: 100%;
+  }
+  .welcome_description {
+    width: 100%;
+    text-align: justify-center;
+    margin-left: auto;
+  }
+  .welcome_description p {
+    font-size: 1.1rem;
+    line-height: 1.6rem;
+  }
+  .welcome_description header {
+    font-size: 2rem;
+    text-align: center;
+    padding-bottom: 2rem;
+  }
+  /* cakes_images sections */
+  .cakes_images {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 2rem;
+  }
+  .cakes_images img {
+    width: 17.5rem;
+    margin-top: 2rem;
+  }
+  .cakes_images img:hover{
+    filter: drop-shadow(2px 14px 16px #800000);
+     transform: scale(1.1);
+  }
+  /* footer section of the page */
+  .footercontainer {
+    background-color: #800000;
+    color: white;
+    padding: 3rem;
+    text-align: center;
+    margin-top: 4rem;
+    max-width: 100%;
+  }
+  .letUsSocial header {
+    font-size: 1rem;
+  }
+  .letUsSocial a {
+    font-size: 1.3rem;
+    padding: 1rem;
+    color: #fff;
+  }
+  .letUsSocial .fa {
+    margin-top: 1.2rem;
+  }
+  .footercontainer p {
+    margin-top: 1.2rem;
+  }
+  .footercontainer p .fa {
+    color: #fff;
+  }
+  @media (min-width: 540px) {
+    ul {
+      top: 69px;
+      left: 36px;
+    }
+    .ba_icon {
+      display: none;
+    }
+    /* nav bars section */
+    .nav_bar {
+      width: 90%;
+      height: 80px;
+      display: block;
+      float: right;
+      background: #800000;
+      margin-right: 18px;
+    }
+    ul {
+      background: none;
+    }
+  
+    .nav_bar ul {
+      float: right;
+      margin-right: 3em;
+    }
+    .nav_bar > ul li {
+      display: inline-block;
+      line-height: 80px;
+      text-decoration-line: none;
+      list-style: none;
+      margin: 0 5px;
+    }
+    #responsive_bar ~ ul {
+      margin-top: 3rem;
+      text-align: end;
+      display: inline-block;
+    }
+    .nav_bar ul li a {
+      background: #fff;
+      padding: 0.4rem;
+    }
+    /* cake for logo */
+    .cake_logo p {
+      font-size: 1.3rem;
+      margin-top: -3rem;
+    }
+  
+    /* welcome container */
+    .welcome_container {
+      flex-direction: row;
+    }
+    .welcome_cakediv {
+      width: 55%;
+    }
+    .welcome_description {
+      width: 40%;
+    }
+    /* cakes_images sections */
+    .cakes_images {
+      flex-wrap: wrap;
+    }
+    .cakes_images {
+      display: flex;
+      flex-flow: row wrap;
+    }
+   
+    .listimage{
+      margin:auto
+    }
+    
+    .letUsSocial {
+      display: inline-flex;
+    }
+    .letUsSocial header {
+      font-size: 1.3rem;
+      text-transform: capitalize;
+    }
+    .letUsSocial .fa {
+      margin-top: 0;
+      margin-left: 1.2rem;
+    }
+    /* footer */
+    .footercontainer{
+      width:100%;
+    }
+  }
+  
+  /* media for a 900px screen sizes */
+  @media (min-width: 900px) {
+    /* cake for logo */
+    .cake_logo img {
+      margin-left: 6rem;
+    }
+    /* welcome container */
+    .welcome_container {
+      margin-left: 8.3%;
+    }
+    .welcome_cakediv {
+      width: 45%;
+      margin-top: 1.8rem;
+    }
+    .welcome_description {
+      margin-top: 1.8rem;
+    }
+    .welcome_description p {
+      margin-top: 2rem;
+    }
+    .welcome_description header {
+      font-size: 2.5rem;
+    }
+  }
+  

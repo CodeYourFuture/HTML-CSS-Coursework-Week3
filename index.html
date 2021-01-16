@@ -2,15 +2,103 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Responsive Cake webpage</title>
-    <!-- Add a link to your css file here -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Responsive Cake webpage</title>
+  <!-- Add a link to your css file here -->
+  <link href="style.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <!-- external google font "Roboto Mono" -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,300&display=swap" rel="stylesheet" />
+
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <!--External boostrap plugin for font awesome to be display-->
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 
 <body>
-    <!-- Add your markup here -->
+  <!-- Add your markup here -->
+  <main>
+    <!-- logo image for the cake -->
+    <section class="cake_logo">
+      <picture>
+        <img src="https://www.logodesign.net/logo-new/chocolate-cake-with-cherries-8707ld.png?size=1&industry=cake-shop&bg=0" />
+      </picture>
+      <p>
+        The best cakes in town delivered to your door
+      </p>
+    </section>
+    <!-- nav bar menu list section -->
+    <nav class="nav_bar">
+      <input type="checkbox" id="responsive_bar">
+      <label for="responsive_bar" class="ba_icon">
+        <i class="fas fa-bars"></i>
+      </label>
+
+      <ul>
+        <li><a href="#" title="Home">home</a></li>
+        <li><a href="#" title="Cakes">cakes</a></li>
+        <li><a href="#" title="Orderin">orders</a></li>
+        <li><a href="#" title="Lessons">lessons</a></li>
+        <li><a href="#" title="about">about</a></li>
+      </ul>
+    </nav>
+
+    <!-- welcome description section -->
+    <section class="welcome_container">
+      <div class="welcome_cakediv">
+        <picture>
+          <img src="https://images.unsplash.com/photo-1562023692-9283c11284bd?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=634&q=80" />
+        </picture>
+      </div>
+      <aside class="welcome_description">
+        <header>
+          <h1>Welcome</h1>
+        </header>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+        </p>
+        <p>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis
+        Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu. Cras consequat.</p>
+        <p>Praesent dapibus, neque id cursus faucibus, tortor neque egestas auguae, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus.</p>
+        
+      </aside>
+    </section>
+
+    <!-- list of cakes items section  -->
+    <section class="cakes_images">
+      <div class="listimage">
+        <img src="https://images.unsplash.com/photo-1541780054671-b9a8504291ec?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxleHBsb3JlLWZlZWR8NTI0fHx8ZW58MHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60" />
+      </div>
+      <div class="listimage">
+        <img src="https://images.unsplash.com/photo-1557308536-ee471ef2c390?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=634&q=80" alt="unplash_cakeImagetwo" />
+      </div>
+      <div class="listimage">
+        <img src="https://images.unsplash.com/photo-1573671008065-8a6f1854a527?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MzU4fHx8ZW58MHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60" />
+      </div>
+      <div class="listimage">
+        <img src="https://images.unsplash.com/photo-1610202017635-17a327cb604b?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=634&q=80" alt="unplash_cakeImagefour" />
+      </div>
+    </section>
+
+    <!-- footer section of the page -->
+    <footer class="footercontainer">
+      <div class="letUsSocial">
+        <header>
+          <h2>follow us:</h2>
+        </header>
+        <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+        <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+        <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+        <a href="#"><i class="fa fa-google" aria-hidden="true"></i></a>
+
+      </div>
+      <p>&copy; Copyright 2020 <i class="fa fa-heart" aria-hidden="true"></i>  Adeline Boka</p>
+    </footer>
+  </main>
 </body>
 
 </html>
