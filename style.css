@@ -16,9 +16,9 @@ nav {
 /* Logo*/
 
 .logo {
-    width: 200px;
-    height: 400px;
-    border-radius: 25%;
+    width: 50px;
+    height: 500px;
+    border-radius: 10%;
 }
 
 /*Nav Bar*/
@@ -40,7 +40,7 @@ nav {
  }
 
 /*First section*/
-.first-section, .second-section {
+.first-section, .second-section, .footer {
     margin: 3%;
     height: 30%;
     width: 90%;
@@ -51,13 +51,16 @@ nav {
 
  /*Second section*/
  .row img:first-of-type {
-    
     margin-left: 10px;
-    
     width: 400px;
  }
 
  
+ /*Footer*/
+.bottom-list a {
+    text-decoration: none;
+}
+
 
 
 
