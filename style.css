@@ -1,8 +1,16 @@
 /*  Add your styling here */
 /* Logo*/
+* {
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+body {
+    background-color: silver;
+}
+
 .menu-bar img {
     width: 10%;
     height: auto;
-    border: 1px solid rgb(185, 57, 99);
-    border-radius: 15%;
+    border: 2px solid rgb(185, 57, 99);
+    border-radius: 25%;
 }
