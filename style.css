@@ -12,11 +12,12 @@ body {
 nav {
     background-color: white;
 }
+
 /* Logo*/
 
 .logo {
     width: 200px;
-    height: 250px;
+    height: 400px;
     border-radius: 25%;
 }
 
@@ -31,5 +32,33 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    
+    margin: 3%;
+    height: 30%;
+    width: 90%;
+    overflow: hidden;
+    padding: 3%;  
  }
+
+/*First section*/
+.first-section, .second-section {
+    margin: 3%;
+    height: 30%;
+    width: 90%;
+    overflow: hidden;
+    padding: 3%;
+
+}
+
+ /*Second section*/
+ .row img:first-of-type {
+    
+    margin-left: 10px;
+    
+    width: 400px;
+ }
+
+ 
+
+
+
+
