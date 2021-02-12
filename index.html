@@ -5,21 +5,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+
+
     <title>Responsive Cake webpage</title>
     <!-- Add a link to your css file here -->
     <!--The font-->
+    <!--light font-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300&display=swap" rel="stylesheet">
+    <!--italic font-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@1,300&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <!-- Add your markup here -->
-    <nav class="menu-bar">
-    <!--Cake logo-->
-    <img src="img/cake-logo.jfif" alt="image-logo">
-    </nav>
+    <!--First Section with the logo and navigation bar-->
+<div class="container-fluid bg-light text-dark  ">
+    <div class="row d-flex justify-content-around">
+        <div class="col-md-2">
+        <img src="img/cake-logo.jfif" alt="image-logo" class="logo p-3">
+        </div>
+        <div class="col-md-6 d-flex align-items-end flex-column ">
+            <h4 class= "text-end mt-auto p-2" >The best cakes in town delivered to your door</h1>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12 ">
+
+            <nav class="menu-bar">
+                <ul class="navigation-icons d-flex align-items-end ">
+                   <li><a class="text-uppercase fw-bold text-muted ms-auto mb-2 bg-dark text-white " href="#">Home</a></li>
+                   <li><a class="text-uppercase fw-bold text-muted ms-auto p-2 bg-dark text-white" href="#">Cakes</a></li>
+                   <li><a class="text-uppercase fw-bold text-muted ms-auto p-2 bg-dark text-white" href="#">Ordering</a></li>
+                   <li><a class="text-uppercase fw-bold text-muted ms-auto p-2 bg-dark text-white" href="#">Lessons</a></li>
+                   <li><a class="text-uppercase fw-bold text-muted ms-auto p-2 bg-dark text-white" href="#">About</a></li>
+                </ul>
+                </nav>
+
+        </div>
+    </div>
+</div>
+
+<!-- First Section-->
+<section class="first-section">
+    <img src="/img/cake-first-section.jfif" alt="cake-first-section" class="highlight-image">
+</section>
+    
 </body>
 
 </html>
+
+

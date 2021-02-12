@@ -1,5 +1,5 @@
 /*  Add your styling here */
-/* Logo*/
+
 * {
     font-family: 'IBM Plex Mono', monospace;
 }
@@ -8,9 +8,28 @@ body {
     background-color: silver;
 }
 
-.menu-bar img {
-    width: 10%;
-    height: auto;
-    border: 2px solid rgb(185, 57, 99);
+
+nav {
+    background-color: white;
+}
+/* Logo*/
+
+.logo {
+    width: 200px;
+    height: 250px;
     border-radius: 25%;
 }
+
+/*Nav Bar*/
+ nav a, li {
+    text-decoration: none;
+    list-style-type: none;
+
+ }
+
+ .menu-bar  {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    
+ }
