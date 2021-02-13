@@ -1,0 +1,174 @@
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+
+}
+
+/**
+ * Add your custom styles below
+ * 
+ * Remember: 
+ * - Be organised, use comments and separate your styles into meaningful chunks
+ *    for example: General styles, Navigation styles, Hero styles, Footer etc.
+ * 
+ * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
+ */
+
+
+/* General  styles */
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+.navbar {
+    /* position: absolute !important; */
+    background: transparent !important;
+    z-index: 1;
+}
+
+header h4 {
+    text-align: right;
+    margin-right: 10%;
+    font-size: 125%;
+    color: black !important;
+    /* opacity: 1; */
+}
+
+
+#navbarSupportedContent {
+    position: absolute;
+    right: 20%;
+    top: 1em;
+    background:red;
+    opacity: 0.6;
+    padding: 1em;
+    border-radius: 5px;
+
+}
+
+a.nav-link {
+    /* color: black !important; */
+    font-weight: 500;
+    font-size: 125%;
+    color: white  !important;
+    /* opacity: 1; */
+}
+
+h4 {
+    margin-top: 3em;
+    color: white !important;
+}
+
+#header-img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 15em;
+    object-fit: cover;
+    z-index: -1;
+    opacity: 0.5;
+
+}
+
+/* .container.header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height: 300px;
+    background-image: url("../img/photo-1552689486-f6773047d19f.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+} */
+
+/* Navigation styles */
+
+
+
+#logo {
+    margin-top: 1em;
+    margin-left: 2em;
+    width: 5em;
+}
+
+
+
+
+
+/* Content styles */
+main {
+    margin-top: 5em;
+    margin-bottom: 5em;
+}
+
+
+
+
+
+/* Actions style */
+main h2 {
+    margin-top: 5em;
+}
+
+.cakes {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.item {
+    margin: 2em;
+}
+
+.item img {
+    width: 60%;
+    height: auto;
+}
+
+
+/* Footer styles */
+hr {
+    width: 80%;
+}
+
+footer img {
+    display: inline-block;
+    height: 2em;
+    border: 1px solid gray;
+    border-radius: 50%;
+    margin: 1em 0.25em;
+    padding: 1em;
+}
+
+
+
+body {
+    font-size: 75%;
+}
+
+
+
+
+
+@media screen and (min-width: 540px) {
+    body {
+        font-size: 100%;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    body {
+        font-size: 125%;
+    }
+}
