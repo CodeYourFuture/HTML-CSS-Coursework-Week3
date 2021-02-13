@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Responsive Cake webpage</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
-        integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/normalize.css">
+
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,300' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Slabo:400,500,300' rel='stylesheet' type='text/css'>
     <link rel="shortcut icon" type="image/x-icon" href="img/cake2.ico">
@@ -18,30 +19,41 @@
 
 
 <body>
-
-
-
-
     <header>
-        <img id="logo" src="img/logo.png" alt="logo">
-        <input id="menu__toggle" type="checkbox">
-        <label class="menu__btn" for="menu__toggle"><span></span></label>
-        <ul class="menu__box">
-            <li class="menu__item"><a href="#">Menu1</a></li>
-            <li class="menu__item"><a href="#">Menu2</a></li>
-            <li class="menu__item"><a href="#">Menu3</a></li>
-            <li class="menu__item"><a href="#">Menu4</a></li>
-            <li class="menu__item"><a href="#">Menu5</a></li>
-            <li class="menu__item"><a href="#">Menu6</a></li>
-        </ul>
-        <p>The best cakes in town delivered to your door</p>
-        </div>
-        <div class="nav-bar nabar-dark bg-dark box-shadow"></div>
+        <img id="header-img" src="img/background-575-370.jpg" alt="header-img">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <img id="logo" src="img/logo.png" alt="logo">
 
+            <a id="home">
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-        </label>
-        <!-- <img id="menu" src="img/menu-hamburger.svg" alt="menu-hamburger"> -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#projects">My Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#cv">CV</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contacts">Contact me</a>
+
+                    </ul>
+
+                </div>
+        </nav>
+
+        <h4>The best cakes in town delivered to your door</h4>
     </header>
+
 
 
     <main role="main">
@@ -164,9 +176,9 @@
 
         <div class="container">
             <ul class="list-group">
-                <li class="list-group-item">Cras justo odio</li>
-                <li class="list-group-item">Dapibus ac facilisis in</li>
-                <li class="list-group-item">Morbi leo risus</li>
+                <li class="list-group-item">Order cake</li>
+                <li class="list-group-item">About us</li>
+                <li class="list-group-item">Contacts</li>
             </ul>
             <!-- 
                     <h4>Join us on</h4>
