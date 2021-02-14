@@ -1,1 +1,88 @@
-/*  Add your styling here */
+/***** GENERAL *****/
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 100;
+}
+
+/***** HEADER *****/
+
+header {
+  background-color: lightgrey;
+  display: flex;
+  flex-direction: column;
+}
+
+nav {
+  border: 2px solid black;
+  display: flex;
+  align-self: flex-start;
+}
+
+nav img {
+  width: 4em;
+}
+
+header img {
+  display: flex;
+  align-self: flex-end;
+  width: 25%;
+}
+
+header p {
+  display: flex;
+  align-self: flex-start;
+  color: grey;
+  text-decoration: italic;
+}
+
+/***** MAIN *****/
+
+main {
+  display: flex;
+  flex-direction: column;
+  margin: 15% 5%;
+}
+
+main p {
+  background-color: grey;
+}
+
+main img {
+  width: 100%;
+}
+
+.gallery {
+  display: flex;
+  align-content: space-between;
+  flex-wrap: wrap;
+}
+.gallery-img {
+  border: 4px solid green;
+  width: 25%;
+  height: auto;
+  margin: 3%;
+}
+/* .gallery .gallery-img doesn't affect anything so the styles aren't reflecting */
+
+.gallery img {
+  object-fit: fill;
+}
+
+/***** FOOTER *****/
+
+footer {
+  background-color: lightgrey;
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-links {
+  display: flex;
+  align-self: flex-end;
+}
+footer h5 {
+  display: flex;
+  align-self: center;
+}
