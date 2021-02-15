@@ -40,13 +40,12 @@ nav {
  }
 
 /*First section*/
-.first-section, .second-section, .footer {
+.first-section, .second-section,.third-section, .footer {
     margin: 3%;
     height: 30%;
     width: 90%;
     overflow: hidden;
     padding: 3%;
-
 }
 
  /*Second section*/
