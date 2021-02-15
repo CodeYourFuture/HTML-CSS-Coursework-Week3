@@ -1,0 +1,58 @@
+/* /
+h1 {
+    color: blueviolet;
+    font-size: medium;
+}
+/*
+h1 = selector
+color = is a Property
+blueviolet = is a Value
+{color: blueviolet} = is a Declaration
+; = is used to add another declaration inside the curly braces
+{} = surrounds a Declaration Block
+
+Element Selector
+p {
+    text-align: center;
+    color: chocolate;
+}
+
+id Selector
+#cake {
+    text-align: center;
+    color: chocolate;
+}
+
+class Selector
+.cake {
+    text-align: center;
+    color: chocolate;
+}
+
+element with class Selector
+p.cake {
+    text-align: center;
+    color: chocolate;
+}
+*/
+body {
+    height: 0px;
+    width: 500px;
+    padding: 50px;
+    margin: 20px;
+    background-color: cornflowerblue;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-rows: 300px 300px;
+    grid-row-gap: 10px;
+    /* background-color: blueviolet; */
+    padding: 10px;
+}
+.grid-container > div {
+    background-color: cornflowerblue;
+    text-align: center;
+    font-size: 30px;
+    
+}
