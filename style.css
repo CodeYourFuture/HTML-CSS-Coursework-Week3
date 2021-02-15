@@ -1,1 +1,119 @@
 /*  Add your styling here */
+
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+/* header */
+header {
+  background-color: #eee3e7;
+  height: auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+h3 {
+  padding: 0px 15px 0px 10px;
+}
+
+nav {
+  display: none;
+}
+
+.burger-menu {
+  width: 40px;
+  padding: 20px 15px 0px 0px;
+}
+.logo {
+  align-self: flex-start;
+}
+
+.header-left {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  justify-content: flex-end;
+}
+/* main */
+main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+#sec1 {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 10px 0px 15px 0px;
+}
+.intro {
+  padding: 5px 25px 5px 25px;
+}
+.photo1 {
+  display: flex;
+  justify-content: center;
+}
+.main-cake {
+  width: 87%;
+}
+#photo2 {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 35px;
+  width: 100%;
+}
+.cake {
+  width: 300px;
+  height: 170px;
+}
+/* footer */
+
+.icons {
+  display: flex;
+  justify-content: center;
+}
+ul.social {
+  background-color: #eee3e7;
+  margin: 10;
+  padding: 0;
+  width: 70%;
+  text-align: center;
+}
+
+ul.social > li {
+  display: inline-block;
+  padding: 0px 0px 15px;
+}
+
+ul.social > li > a {
+  display: inline-block;
+  font-size: 18px;
+  line-height: 40px;
+  width: 40px;
+  height: 40px;
+  border-radius: 36px;
+  background-color: #fff;
+  color: #ead5dc;
+  margin: 16px 60px 3px 0;
+}
+.copy {
+  padding: 3%;
+  background: #f1e5e9;
+  text-align: center;
+}
+.cp-text {
+  color: rgba(44, 41, 41, 0.5);
+  text-shadow: 0 1px rgba(255, 255, 255, 0.1);
+}
+@media only screen and (min-width: 780px) {
+  .burger-menu {
+    display: none;
+  }
+  .header-left {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    justify-content: flex-end;
+  }
+}
