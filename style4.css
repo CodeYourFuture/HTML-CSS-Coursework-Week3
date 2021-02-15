@@ -48,15 +48,15 @@ img {
     height: auto;
 }
 
-.header { grid-area: header; }
-.welcome { grid-area: welcome; }
-.main-image { grid-area: main-image; }
-.product-image1 { grid-area: product-image1; }
-.product-image2 { grid-area: product-image2; }
-.product-image3 { grid-area: product-image3; }
-.product-image4 { grid-area: product-image4; }
-.form { grid-area: form; }
-.copyright { grid-area: copyright; }
+.item1 { grid-area: header; }
+.item2 { grid-area: welcome; }
+.item3 { grid-area: main-image; }
+.item4 { grid-area: product-image1; }
+.item5 { grid-area: product-image2; }
+.item6 { grid-area: product-image3; }
+.item7 { grid-area: product-image4; }
+.item8 { grid-area: form; }
+.item9 { grid-area: copyright; }
 
 .grid-container {
     display: grid;
