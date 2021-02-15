@@ -43,6 +43,11 @@ body {
     background-color: cornflowerblue;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 .grid-container {
     display: grid;
     grid-template-rows: 300px 300px;
@@ -53,6 +58,12 @@ body {
 .grid-container > div {
     background-color: cornflowerblue;
     text-align: center;
-    font-size: 30px;
-    
+    font-size: 30px;    
+}
+.grid-container > div.grid-container > div {
+    display: grid;
+    grid-column: auto;
+    grid-row-gap: 50px;
+    background-color: crimson;
+    padding: 50px;
 }
