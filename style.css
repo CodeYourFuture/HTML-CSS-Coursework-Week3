@@ -62,11 +62,9 @@ nav {
 }
 
 /*Contact elements*/
-.contact-elements img  {
-    max-width: 50%;
-    height:auto;
+.contact-elements img {
+    max-width: 20%;
 }
-
 
 
 
