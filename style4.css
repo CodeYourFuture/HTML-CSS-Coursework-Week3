@@ -35,12 +35,12 @@ p.cake {
     color: chocolate;
 }
 */
+* {
+    box-sizing: border-box;
+}
+
 body {
-    height: 0px;
-    width: 500px;
-    padding: 50px;
-    margin: 20px;
-    background-color: cornflowerblue;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 img {
@@ -48,34 +48,14 @@ img {
     height: auto;
 }
 
-.item1 { grid-area: header; }
-.item2 { grid-area: welcome; }
-.item3 { grid-area: main-image; }
-.item4 { grid-area: product-image1; }
-.item5 { grid-area: product-image2; }
-.item6 { grid-area: product-image3; }
-.item7 { grid-area: product-image4; }
-.item8 { grid-area: form; }
-.item9 { grid-area: copyright; }
-
-.grid-container {
-    display: grid;
-    grid-template-areas:
-        'header header'
-        'welcome welcome'
-        'main-image main-image'
-        'product-image1 product-image2'
-        'product-image3 product-image4'
-        'form form'
-        'copyright copyright';
-
-    grid-row-gap: 10px;
-    grid-column-gap: 10px;
-    /* background-color: blueviolet; */
+.flex-container {
+    display: flex;
+    background-color: blueviolet;
     padding: 10px;
 }
-.grid-container > div {
+.flex-container > div {
     background-color: cornflowerblue;
-    text-align: center;
+    margin: 10px;
+    padding: 20px;
     font-size: 30px;    
 }
