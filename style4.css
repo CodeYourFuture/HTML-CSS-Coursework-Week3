@@ -50,6 +50,7 @@ img {
 
 .flex-container {
     display: flex;
+    flex-direction: column;
     background-color: blueviolet;
     padding: 10px;
 }
