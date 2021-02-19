@@ -60,3 +60,9 @@ img {
     padding: 20px;
     font-size: 30px;    
 }
+
+@media (min-width: 540px) {
+    .flex-container {
+        flex-direction: row;
+    }
+}
