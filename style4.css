@@ -40,8 +40,10 @@ p.cake {
 }
 
 body {
+    margin: 0;
     font-family: 'Courier New', Courier, monospace;
 }
+
 
 img {
     max-width: 100%;
