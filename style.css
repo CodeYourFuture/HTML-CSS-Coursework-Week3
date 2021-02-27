@@ -6,10 +6,10 @@
 }
 /* bar icon font awesome */
 .ba_icon {
-  margin-top: -168px;
+  margin-top: -139px;
   margin-right: 31px;
   font-size: 1.9em;
-  color: white;
+  color:white;
   float: right;
   cursor: pointer;
   display: block;
@@ -44,7 +44,7 @@ ul {
   text-decoration-line: none;
 }
 .nav_bar a:hover {
-  color: black;
+  color:black;
   transition: 0.5s;
   font-weight: bold;
 }
@@ -110,11 +110,10 @@ ul {
   width: 17.5rem;
   margin-top: 2rem;
 }
-.cakes_images img:hover {
+.cakes_images img:hover{
   filter: grayscale(1);
-  transform: scale(1.1);
+   transform: scale(1.1);
 }
-
 /* footer section of the page */
 .footercontainer {
   background-color: rgb(47, 47, 48);
@@ -158,6 +157,9 @@ ul {
     background: black;
     margin-right: 18px;
   }
+  ul {
+    background: none;
+  }
 
   .nav_bar ul {
     float: right;
@@ -195,17 +197,19 @@ ul {
   .welcome_description {
     width: 40%;
   }
-
   /* cakes_images sections */
+  .cakes_images {
+    flex-wrap: wrap;
+  }
   .cakes_images {
     display: flex;
     flex-flow: row wrap;
   }
-
-  .listimage {
-    margin: auto;
+ 
+  .listimage{
+    margin:auto
   }
-
+  
   .letUsSocial {
     display: inline-flex;
   }
@@ -218,8 +222,8 @@ ul {
     margin-left: 1.2rem;
   }
   /* footer */
-  .footercontainer {
-    width: 100%;
+  .footercontainer{
+    width:100%;
   }
 }
 
