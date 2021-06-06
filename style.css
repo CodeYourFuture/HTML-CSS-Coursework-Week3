@@ -1,8 +1,10 @@
 /*  Add your styling here */
 .navbar-text{
     display: flex;
-    
-    justify-content: flex-end;
+    align-items: right;
+   flex-wrap:wrap;
+  
+   text-align:right;
    font-weight: bold;
    font-style: italic;
    font-size:2em;
@@ -25,5 +27,30 @@ button{
 a{
 
 
-    text-align: right;
+    text-align: right;}
+
+     .banner{
+
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+    }
+ 
+.banner-img{
+
+    max-width: 100%;
+}
+.card{
+    
+    margin:10px;
+    border:2px black solid;
+}
+.card-group{
+    display: flex;
+    flex-direction: column;
+
+}
+.first,.second{
+    display: flex;
 }
