@@ -4,10 +4,10 @@ header {
 }
 .img-logo {
   width: 75px;
-  
+
   position: absolute;
-  left:0;
-  top:0;
+  left: 0;
+  top: 0;
 }
 .p {
   font-weight: 50;
@@ -15,9 +15,6 @@ header {
   color: black;
   text-align: right;
   margin: 20px;
-  line-height: 35px;
-}
-i {
   font-size: normal;
   font-weight: 50;
   font-size: 15px;
@@ -37,7 +34,6 @@ html {
 .nav {
   border-bottom: 1px solid gray;
   text-align: right;
-
 }
 .menu a {
   clear: right;
@@ -61,6 +57,9 @@ label {
   display: none;
   cursor: pointer;
 }
+.cake1 {
+  width: 100px;
+}
 @media only screen and (max-width: 540px) {
   label {
     display: block;
@@ -75,14 +74,40 @@ label {
     border-bottom: 1px solid #eaeaeb;
     margin: 0px;
     line-height: 20px;
-    
   }
-#toggle:checked + .menu {
+  #toggle:checked + .menu {
     display: block;
     cursor: pointer;
   }
-  .nav{
-      font-size: 10px;
-      margin:0px
+  .nav {
+    font-size: 10px;
+    margin: 0px;
   }
+}
+.cake {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.cake1 {
+  width: 40%;
+  padding: 0px;
+  margin: 5px;
+  position: absolute;
+  left: 0;
+}
+.cake2 {
+  display: block;
+  width: 45%;
+  margin: 5px;
+  padding: 5px;
+}
+footer {
+  background-color: brown;
+}
+.section {
+  width: 40%;
+  float: right;
+  margin: auto;
+  padding: 5px;
 }
