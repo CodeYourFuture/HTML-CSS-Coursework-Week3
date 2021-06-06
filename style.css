@@ -1,1 +1,29 @@
 /*  Add your styling here */
+.navbar-text{
+    display: flex;
+    
+    justify-content: flex-end;
+   font-weight: bold;
+   font-style: italic;
+   font-size:2em;
+}
+.brand{
+
+    width:200px;
+    height:200px;
+}
+button{
+
+    margin-top:-140px;
+}
+.navbar{
+  display:flex;
+ 
+
+   align-content: flex-start;
+}
+a{
+
+
+    text-align: right;
+}
