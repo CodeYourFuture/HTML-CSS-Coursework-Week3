@@ -1,1 +1,283 @@
 /*  Add your styling here */
+
+body {
+  font-family: "Mate SC", serif;
+  background-color: #edf2fb;
+  margin: 0;
+}
+/*Default Style*/
+/*header*/
+
+header {
+  background-color: #247b7b;
+  display: grid;
+  grid-template-areas:
+    "box1 box3"
+    "box1 box2";
+}
+
+.logo {
+  grid-area: box1;
+  margin: 20px 30px;
+}
+
+.title {
+  grid-area: box2;
+  font-size: 0.5em;
+  text-align: end;
+  margin-right: 20px;
+  color: azure;
+  text-shadow: 3px 3px black;
+}
+
+.nav-bar {
+  grid-area: box3;
+  text-align: right;
+  line-height: 70px;
+}
+
+.menu {
+  text-align: center;
+  width: 100%;
+  display: none;
+  background-color: rgb(207, 235, 236);
+  position: fixed;
+  left: 0;
+  top: 170px;
+}
+
+.menu a {
+  display: block;
+  border-bottom: 1px solid #eaeaeb;
+  text-decoration: none;
+  cursor: pointer;
+  color: black;
+}
+
+.menu a:hover {
+  color: white;
+  background-color: #247b7b;
+}
+
+label {
+  margin-right: 20px;
+  font-size: 26px;
+  display: block;
+  float: right;
+  cursor: pointer;
+  color: azure;
+}
+
+#toggle {
+  display: none;
+}
+
+#toggle:checked + .menu {
+  display: block;
+}
+
+/*article*/
+main {
+  margin: 50px 30px;
+  background-color: #edf2fb;
+}
+
+article {
+  display: grid;
+  grid-template-areas:
+    "boxB"
+    "boxC"
+    "boxA";
+}
+
+article > img {
+  grid-area: boxA;
+  border: 1px solid rgb(151, 210, 233);
+}
+
+article > h1 {
+  grid-area: boxB;
+}
+
+article > p {
+  grid-area: boxC;
+  text-align: justify;
+}
+
+/*section*/
+
+section {
+  display: grid;
+  grid-template-areas:
+    "pic1 pic2"
+    "pic3 pic4";
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.pic1 {
+  grid-area: pic1;
+  border: 1px solid rgb(7, 68, 92);
+}
+
+.pic2 {
+  grid-area: pic2;
+  border: 1px solid rgb(7, 68, 92);
+}
+
+.pic3 {
+  grid-area: pic3;
+  border: 1px solid rgb(7, 68, 92);
+}
+
+.pic4 {
+  grid-area: pic4;
+  border: 1px solid rgb(7, 68, 92);
+}
+
+.sec-pic {
+  opacity: 1;
+  transition: 0.5s ease;
+  backface-visibility: visible;
+  cursor: pointer;
+}
+
+.sec-pic:hover {
+  opacity: 0.3;
+  transform: scale(1.1);
+  box-shadow: 10px 20px #247b7b;
+}
+
+/*footer*/
+
+footer {
+  background-color: #457b9d;
+  padding-bottom: 20px;
+}
+
+.footer-a {
+  display: flex;
+  flex-direction: column;
+  line-height: 30px;
+  padding: 20px 20px;
+  text-align: center;
+  cursor: pointer;
+  font-weight: bold;
+  width: 20%;
+}
+
+.footer-a > a {
+  text-decoration: none;
+  color: black;
+}
+
+footer a:hover {
+  background-color: darkslategrey;
+  color: white;
+}
+
+footer > p {
+  text-align: center;
+}
+
+/*Medium style*/
+@media screen and (min-width: 540px) {
+  header {
+    grid-template-areas:
+      "box1 box2"
+      "box3 box3";
+  }
+
+  label {
+    display: none;
+  }
+
+  .title {
+    margin-top: 30%;
+    font-size: 1.3em;
+  }
+
+  .menu {
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    margin: 20px;
+    width: 90%;
+    top: auto;
+  }
+
+  .menu a {
+    padding: 0 10px;
+    margin: 10px;
+    background-color: gainsboro;
+  }
+
+  .nav-bar {
+    line-height: 50px;
+  }
+
+  main {
+    margin-top: 90px;
+    font-size: 30px;
+  }
+
+  .footer-a {
+    flex-direction: row;
+    font-size: 30px;
+    width: 90%;
+    justify-content: center;
+  }
+
+  .footer-a > a {
+    padding-inline: 20px;
+    margin-left: 50px;
+  }
+}
+
+/*Large style*/
+@media screen and (min-width: 900px) {
+  .menu {
+    width: 98%;
+    font-size: 1.5em;
+  }
+
+  .menu a {
+    padding-inline: 50px;
+    border: 1px solid grey;
+    transition: 1.5s ease;
+    backface-visibility: hidden;
+  }
+
+  article {
+    display: grid;
+    grid-template-areas:
+      "boxA . boxB"
+      "boxA boxC boxC";
+    margin-top: 50px;
+    gap: 30px;
+  }
+
+  main {
+    font-size: 50px;
+    margin-top: 200px;
+  }
+
+  section {
+    display: grid;
+    grid-template-areas: "pic1 pic2 pic3 pic4";
+    gap: 30px;
+    margin-top: 50px;
+  }
+
+  .logo {
+    width: 50%;
+    height: 70%;
+    align-self: center;
+    padding-left: 50px;
+  }
+
+  footer > p {
+    font-size: 2em;
+    margin-right: 50px;
+  }
+}
