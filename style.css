@@ -1,44 +1,42 @@
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
-    background-color:rgb(179, 201, 248);
+    background-color: whitesmoke;
     margin: 0;
+    border: 3px solid red;
 }
-
+/* header style */
 .header-container {
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-areas: 
+    "box1 box2"
+    "box1 box3";
     background-color: #fff;
     box-shadow: 0 10px 5px gray;
-}
-
-.logo {
-    margin: 20px 30px;
-}
-
-/* .header-container {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: space-between;
-    height: 400px;
-    background-image:url(../img/choc_cupcake.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
     
-
-} */
-
+}
+/* logo style */
+.logo {
+    margin: 30px 30px;
+    grid-area: box1;
+    width: 20vw;
+}
+/* header heading style */
 .welcome h2 {
     color:black ;
-    font-size: 30px;
+    font-size: 26px;
     font-style: italic;
+    letter-spacing: 2px;
     font-weight: normal;
     padding-right: 20px;
-    grid-template-columns: 2/3;
+    grid-area: box3;
     text-align: end;
 }
+
+.welcome-img {
+    width: 90vw;
+}
+/* nav-bar style */
 .menu { 
     text-align: center;
     width: 100vw;
@@ -52,19 +50,20 @@ body {
 }
  .menu a {
     display: block;
-    border-bottom: 1px solid #f56346;
+    border-bottom: 1px solid azure;
     margin: 0;
-    color:black;
+    color:whitesmoke;
     padding: 10px;
     text-decoration: none;
     
 }
 .menu a:hover {
     cursor: pointer;
-    background-color: #f56346;
+    background-color: azure;
     color: black;
+    font-weight: bolder;
 }
-
+/* hamburger menu style */
  #toggle:checked + .menu {
     display: block;
 
@@ -77,7 +76,7 @@ body {
 
 label {
     margin: 0 40px 0 0;
-    font-size: 24px;
+    font-size: 30px;
     line-height: 70px;
     display: block;
     width: 26px;
@@ -88,25 +87,26 @@ label {
 #toggle {
     display: none;
 }
-
+/* introduction section style */
 .intro {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    justify-content: space-between;
     margin: 50px 20px;
 }
 
-.intro h3 {
-    font-size: 30px;
-    letter-spacing: 3px;;
+.int-wel h3 {
+    font-size: 36px;
+    letter-spacing: 5px;
 }
 
-.intro p {
+.int-wel p {
     letter-spacing: 2px;
     line-height: 26px;
+    margin-bottom: 40px;
 }
-
-.albume {
+/* gallery images style */
+.gallery {
     margin-top: 80px;
     margin-left: 20px;
     margin-right: 20px ;
@@ -114,5 +114,99 @@ label {
     grid-template-columns: 1fr 1fr;
     justify-content: space-between;
     grid-gap: 20px;
-    min-width: 100%;
+}
+.gallery img {
+    width: 40vw;
+    height: 40vw;
+
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+}
+/* footer style */
+.footer-button a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color:whitesmoke;
+}
+
+.footer-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* margin: 40px auto 40px 20px;  */
+
+}
+
+button {
+    background-color:teal ;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    margin: 20px 20px auto;
+    width: 30vw;
+
+}
+
+.copyright {
+    text-align: center;
+    font-size: 1rem;
+}
+/* media queries */
+@media screen and (min-width: 540px) {
+   label {
+        display: none;
+   }
+
+   .menu {
+        margin-top: 200px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-content: flex-end;
+        position: absolute;
+        background-color: white;
+        box-shadow: 0 10px 5px gray;
+        width: 90vw;
+   }
+
+    .menu a {
+        background-color: teal;
+        margin: 10px;
+        border: none;
+        border-radius: 5px;
+        
+    }
+
+    .intro {
+        flex-direction: row-reverse;
+    }
+
+    .welcome-img {
+        width: 60vw;
+    }
+
+    .int-wel {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        text-align: right;
+    }
+    .int-wel p {
+        font-size: 30px;
+        letter-spacing: 2px;
+        line-height: 36px;
+    } 
+    .int-wel h3 {
+        font-size: 40px;
+    }
+
+    /* .gallery {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .gallery img {
+        
+    } */
 }

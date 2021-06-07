@@ -8,8 +8,9 @@
     <title>Responsive Cake webpage</title>
     <!-- Add a link to your css file here -->
     <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,300' rel='stylesheet' type='text/css'>
+    <link rel="shortcut icon" type="image/x-icon"  href="favicon.ico">
 </head>
-
 <body>
     <!-- Add your markup here -->
     <header class="header-container">
@@ -26,7 +27,7 @@
                 <div class="menu">
                         <a href="#">HOME</a>
                         <a href="#">CAKES</a>
-                        <a href="#">ORDERIN</a>
+                        <a href="#">ORDER IN</a>
                         <a href="#">LESSONS</a>
                         <a href="#">ABOUT</a>
                 </div>
@@ -35,28 +36,29 @@
             <h2>The best cakes in town <br> delivered to your door</h2>
         </div>
     </header>
+    <main>
     <section class="intro">
-        <h3>Welcome</h3>
-        <p>Our gooey Delicious Brownies are baked fresh every day.  All made with proper butter, free-range eggs and real Belgian chocolate, they make an indulgent treat and a perfect gift.</p>
-        <img class="welcome-img" src="/img/character-cakes.png" width="500" height="450" alt="character-cakes"/>  
-        
+        <div class="int-wel"> 
+            <h3>Welcome</h3>
+            <p>Our gooey Delicious Brownies are baked fresh every day.  All made with proper butter, free-range eggs and real Belgian chocolate, they make an indulgent treat and a perfect gift.</p>
+        </div>
+       
+        <img class="welcome-img" src="/img/colorful-blossom-cake1.png" alt="flowers-cake"/>    
     </section>
-    <section class="albume">
-        <img src="/img/cake-pot.png" width="250" height="250" alt="flower-pot-cake"/> 
-        <img src="/img/candy-world-cake.png" width="250" height="250" alt="sprinkle-cupcake"/>  
-        <img src="/img/gold-black-cake.png" width="250" height="250" alt="sprinkle-cupcake"/>  
-        <img src="/img/wiking-cake.png" width="250" height="250" alt="sprinkle-cupcake"/>  
+    <section class="gallery">
+        <img src="/img/character-cakes.png" alt="characters-icingsugar"/> 
+        <img src="/img/candy-world-cake.png" alt="sprinkle-cupcake"/>  
+        <img src="/img/gold-black-cake.png" alt="sprinkle-cupcake"/>  
+        <img src="/img/wiking-cake.png" alt="sprinkle-cupcake"/>  
     </section>
+    </main>
     <footer>
-        <ul>
-            <li>##</li>
-            <li>##</li>
-            <li>##</li>
-        </ul>
-        <span>
-            copyright ##
-        </span>
+        <div class="footer-button">
+            <button><a href="#" target="_blank">Info</a></button>
+            <button><a href="#" target="_blank">FAQs</a></button>
+            <button><a href="#" target="_blank">Contact</a></button>
+        </div>
+        <p class="copyright">&copy; CakesCo 2021</p>  
     </footer>
-</body>
-    
+</body>    
 </html>
