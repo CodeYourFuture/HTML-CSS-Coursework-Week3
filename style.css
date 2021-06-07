@@ -6,6 +6,17 @@ body {
 }
 
 .header-container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    background-color: #fff;
+    box-shadow: 0 10px 5px gray;
+}
+
+.logo {
+    margin: 20px 30px;
+}
+
+/* .header-container {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -17,7 +28,7 @@ body {
     background-position: center;
     
 
-}
+} */
 
 .welcome h2 {
     color:black ;
@@ -25,6 +36,8 @@ body {
     font-style: italic;
     font-weight: normal;
     padding-right: 20px;
+    grid-template-columns: 2/3;
+    text-align: end;
 }
 .menu { 
     text-align: center;
