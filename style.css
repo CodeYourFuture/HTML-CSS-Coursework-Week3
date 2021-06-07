@@ -24,7 +24,7 @@ h2{
     flex-direction: column;
     
 }
-.brand,.icon{
+.brand{
     width:200px;
     height:200px;
 }
