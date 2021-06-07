@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
 
 /************* general styles********** */
@@ -14,6 +14,7 @@ body {
 }
 /************* Header styles ********** */
 header {
+  background-color: #fae1dd3d;
   display: flex;
   justify-content: space-between;
   /* max-width: 200px; */
@@ -67,5 +68,48 @@ header p {
   
 }
 /************* Main styles ********** */
+main {
+  max-width: 90vw;
+  margin: auto;
+}
+.section1 {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.section1 img {
+  width: 100%;
+  object-fit: cover;
+}
+.section1 article {
+  grid-row: 1/2;
+}
+.section1 article p {
+  text-align: justify;
+  font-size: 1rem;
+}
+.section1 h1 {
+  font-size: 1.75rem;
+  font-weight: 600;
+}
+
+.section2 ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px 26px;
+  justify-items: center;
+ 
+}
+.section2 li {
+  list-style-type: none;
+}
+.section2 img {
+  border: 1px solid purple;
+  /* max-width: 100%; */
+  height: 30vw;
+  width: 40vw;
+}
 /************* Footer styles********** */
+footer img {
+  width: 48px;
+}
 /************* Responsive styles********** */
