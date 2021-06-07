@@ -1,1 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Spinnaker&display=swap");
+
+/* CSS RESET */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Spinnaker", sans-serif;
+}
+
 /*  Add your styling here */
+
+.navbar {
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #6fceb5;
+  color: #fff;
+  height: 6rem;
+}
+
+.navbar .logo {
+  width: 4rem;
+  height: auto;
+  margin: 0 2rem;
+}
+
+.hamburger-icon {
+  width: 4rem;
+  margin: 0 2rem;
+  display: flex;
+  color: #fff;
+}
+
+.navbar-links {
+  display: none;
+}
+
+/* **** FIRST BREAK POINT OF 540PX ****  */
+
+@media (min-width: 540px) {
+  body {
+    background-color: lightgreen;
+  }
+}
+
+/* **** SECOND BREAK POINT OF 900PX ****  */
+
+@media (min-width: 900px) {
+  body {
+    background-color: lightgray;
+  }
+
+  .hamburger-icon {
+    display: none;
+  }
+
+  .navbar-links {
+    display: flex;
+    margin-right: 2rem;
+  }
+
+  .navbar-links li:hover {
+    background-color: #ff0066;
+    border: 2px solid white;
+    margin: -2px;
+    border-radius: 50px;
+  }
+
+  .navbar-links ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+
+  .navbar-links li {
+    list-style: none;
+  }
+
+  .navbar-links li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 0.3rem;
+    margin: 0 2rem;
+    display: block;
+  }
+}
