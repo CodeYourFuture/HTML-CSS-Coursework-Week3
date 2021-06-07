@@ -1,51 +1,50 @@
 /*  Add your styling here */
+/* general styles */
 body{
-background-color: #e7c6ff62;
- width:100%;
- margin:auto;
+    background-color: #e7c6ff62;
+    width:100%;
+    margin:auto;
     box-sizing:border-box;
     font-family: myFirstFont;
     
 }
 
-h2{display: none;}
+h2{
+    display: none;
+}
 @font-face {
-  font-family: myFirstFont;
-  src: url(Underdog-Regular.ttf);
+    font-family: myFirstFont;
+    src: url(Underdog-Regular.ttf);
 }
 
-
-
+/* header styles */
 .navbar-item{
     display:flex;
     justify-content:space-between;
     flex-direction: column;
-   
-   
-   
+    
 }
 .brand,.icon{
-
     width:200px;
     height:200px;
 }
 
 .navbar{
-     width:100%;
-  display:flex;
- background-color:#c8e7ff46;
-   align-items:flex-start;
-   flex-direction: row;
-   flex-wrap: wrap;
-   justify-content: space-between;
+    width:100%;
+    display:flex;
+    background-color:#c8e7ff46;
+    align-items:flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .icon{
-          
-    align-items:right;
     width:40px;
     height:40px;
 }
+
+/* hero styles */
 .text{
     width:100%;
     display: flex;
@@ -143,7 +142,7 @@ img:hover{
 
 }
 
-.footer-container>p{ align-items: left;}
+
 .copyright>p{
     display:flex;
     justify-content: center;
