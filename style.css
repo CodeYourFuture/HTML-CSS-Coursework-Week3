@@ -1,1 +1,71 @@
-/*  Add your styling here */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+
+/************* general styles********** */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  border: 1px solid red;;
+}
+/************* Header styles ********** */
+header {
+  display: flex;
+  justify-content: space-between;
+  /* max-width: 200px; */
+  padding: 1.25rem 1.5rem;
+  position: relative;
+}
+header nav {
+  /* display: none; */
+  background-color: rgba(255, 255, 255, 0.672);
+  border-radius: 1rem;
+  position: fixed;
+  overflow: hidden;
+  top:162px;
+  width: 90vw;
+  text-align: center;
+  transform:translateX(120%);
+  transition:transform .5s ease;
+}
+header nav.open {
+  transform: translateX(0);
+}
+header nav ul {
+  display: flex;
+  flex-direction: column;
+  /* justify-items: flex-end;
+  justify-content: end; */
+}
+header nav li {
+  border-bottom: 1px dotted #000;
+  list-style-type: none;
+  padding: 1rem;
+}
+header nav a {
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+header .hamburger {
+  position: absolute;
+  top:20px;
+  right: 20px;
+}
+header .logo {
+  height: 120px;
+}
+header p {
+  align-self:flex-end;
+  font-style: italic;
+  text-align: right;
+  
+}
+/************* Main styles ********** */
+/************* Footer styles********** */
+/************* Responsive styles********** */
