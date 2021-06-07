@@ -94,16 +94,7 @@ h2{
     font-size:1.5rem;
 }
 
-.cake-types:first-child{
-    align-items: center;
-}
-.cake-types:nth-child(2){
-    align-items: center;
-}
-.cake-types:nth-child(3){
-    align-items: center;
-}
-.cake-types:last-child{
+.cake-types{
     align-items: center;
 }
 .cake-types>p{
@@ -117,6 +108,8 @@ h2{
     height:auto;
 }
 img:hover{
+	transform: scale(1.2);
+	transition: .3s ease-in-out;
     box-shadow: 0 0 20px #ff10b7;
 }
 
