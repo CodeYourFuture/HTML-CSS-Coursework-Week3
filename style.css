@@ -80,16 +80,20 @@ p{
   grid-template-columns: repeat(2, 1fr);
 margin:40px 10px 60px 10px;
   gap:20px;
+  font-size:1.5rem;
 }
 
 .cake-types:first-child{
 
-
+    
   align-items: center;
   
 }
 
+p{
 
+    justify-content: center;
+}
 .cake-types:nth-child(2){
 
 
@@ -119,7 +123,7 @@ height:auto;
 
     display:flex;
     margin-left: 10px;
-    font-size:1em;
+    font-size:1.5rem;
     flex-direction: column;
     align-items: flex-start;
  
@@ -148,14 +152,19 @@ height:auto;
 
   
   
-  
+  align-items: center;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
  
 
 }
 .footer-container> h2{ 
       display:none;
+}
+.footer-container> p{ 
+     
+      text-align: center;
+
 }
 
 }
