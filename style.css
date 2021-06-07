@@ -7,6 +7,8 @@ background-color: #e7c6ff62;
     font-family: myFirstFont;
     
 }
+
+h2{display: none;}
 @font-face {
   font-family: myFirstFont;
   src: url(Underdog-Regular.ttf);
@@ -140,9 +142,7 @@ img:hover{
  
 
 }
-.footer-container> h2{ 
-      display:none;
-}
+
 .footer-container>p{ align-items: left;}
 .copyright>p{
     display:flex;
@@ -191,9 +191,9 @@ button{
 
 cursor:pointer;
 	/* position:relative; */
-	padding:10px 20px;
+	padding:10px 10px;
 	background:white;
-	font-size:28px;
+	font-size:1em;
 	border-top-right-radius:10px;
 	border-bottom-left-radius:10px;
 	transition:all 1s;
@@ -205,10 +205,7 @@ button:hover{
 }
 
 
-}
-.footer-container> h2{ 
-      display:none;
-}
+
 .footer-container> p{ 
      margin: 10px;
       
@@ -220,18 +217,17 @@ justify-content: flex-end;
 }
 
 }
-
 @media screen and (min-width:900px) {
     
-
 .cake-grid{
+ display: grid;
   grid-template-columns: repeat(4, 1fr);
-  
+margin:40px 10px 60px 10px;
+  gap:20px;
+  font-size:1.5rem;
 }
-.footer-container{
 
-  
-  
+.footer-container{
   
     flex-direction: row;
     justify-content: center;
@@ -244,8 +240,7 @@ justify-content: flex-end;
 .hero{
 
     display:grid;
-    
-     grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
 }
 .banner-img{
 
@@ -262,6 +257,12 @@ justify-content: flex-end;
 
     margin:auto;
     padding-top:10px;
+}
+
+button{
+    padding:10px 20px;
+	
+	font-size:2em;
 }
 
 }
