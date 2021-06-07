@@ -1,1 +1,112 @@
 /*  Add your styling here */
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: dancingscript-regular,dancing script,cursive;
+    color: rgb(199, 87, 27);
+    text-align: center;
+}
+
+body {
+    /* background-image: url(/images/henry-be-_y5CCcYWTjU-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    background-repeat: no-repeat;
+    color: wheat; */
+    background: wheat;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    background: white;
+}
+
+header nav {
+    display: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.hamburger-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.hamburger  {
+    background-color: black;
+    color: black;
+    margin: 2px;
+    width: 30px;
+    height: 5px;
+    cursor: pointer;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+main {
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    /* border: 1px solid black; */
+}
+
+main img {
+    margin: 30px 0px;
+    border-radius: 10px;
+}
+
+.img-container {
+    display: grid;
+    grid-template-areas: 
+    "pic1 pic2"
+    "pic3 pic4"
+    "pic5 pic5"
+    ;
+    justify-items: center;
+    gap: 5px;
+    border: 1px solid black;
+}
+
+.img-container img {
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid black;
+    width: 60%;
+}
+
+.pic1 {
+    grid-area: pic1;
+}
+
+.pic2 {
+    grid-area: pic4;
+}
+
+.pic3 {
+    grid-area: pic3;
+    
+}
+
+.pic4 {
+    grid-area: pic2;
+}
+
+.pic5 {
+    grid-area: pic5;
+}
+
+footer {
+}
+
