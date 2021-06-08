@@ -73,6 +73,9 @@ h1 {
 .hamburger.is-active .bar {
   opacity: 0;
 }
+
+/* --MOBILE NAV-- */
+
 .mobile-nav {
   position: fixed;
   top: 0;
@@ -106,4 +109,13 @@ h1 {
 
 .mobile-nav a:hover {
   background-color: #bcb8b1;
+}
+
+/* --INTRO SECTION-- */
+.intro-section {
+  padding: 20px;
+  justify-content: justify;
+  text-align: left;
+  font-weight: 100;
+  font-size: 20px;
 }
