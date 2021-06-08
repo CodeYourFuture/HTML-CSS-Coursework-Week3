@@ -84,6 +84,10 @@ h1 {
 
 /* --MOBILE NAV-- */
 
+.nav-bar {
+  display: none;
+}
+
 .mobile-nav {
   position: fixed;
   top: 0;
@@ -215,4 +219,63 @@ h1 {
   color: #f4f1de;
   text-align: center;
   padding-bottom: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  /* --NAV-- */
+
+  .mobile-nav {
+    display: none;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .nav-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: 20px;
+    margin: 20px 30px 0px 30px;
+    background-color: #0d1b2a;
+  }
+
+  .nav-bar a {
+    padding: 5px 5px;
+    margin: 5px;
+    text-decoration: none;
+    text-align: center;
+    background-color: #463f3a;
+    color: #f4f1de;
+  }
+
+  .nav-bar a:hover {
+    background-color: #f4f1de;
+    color: #463f3a;
+    transition: 0.4s;
+  }
+
+  /* --INTRO SECTION-- */
+
+  .intro-section {
+    font-size: 2rem;
+    line-height: 1em;
+  }
+
+  /* --IMAGES-- */
+
+  .image-two,
+  .image-three,
+  .image-four,
+  .image-five {
+    height: 350px;
+  }
+
+  /* --FOOTER-- */
+
+  .footer-buttons {
+    font-size: 1rem;
+  }
 }
