@@ -1,6 +1,66 @@
 /*  Universal Styles */
-body {
-font-size: 16px;
 
+body {
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
 }
+
 /*Header Styles*/
+header {
+  margin: 0;
+}
+.topnav {
+  margin: 0;
+  overflow: hidden;
+  background-color: #efd3d7;
+  position: relative;
+}
+
+.topnav #links {
+  display: none;
+}
+
+.topnav a {
+  float: left;
+  color: #22223b;
+  padding: 0.8em 0.5em;
+  text-decoration: none;
+  font-size: 1em;
+  font-family: 'Noto Sans JP', sans-serif;
+  display: block;
+}
+
+/*Style the hamburger menu*/
+.topnav a.icon {
+  float: right;
+}
+
+.topnav a:hover {
+  background-color: #e5989b;
+}
+
+#logo {
+  width:48px;
+  height: 48px;
+  padding: 0.3em;
+}
+
+.topnav p {
+  color: #22223b;
+  font-size: 0.9rem;
+  font-style: italic;
+  max-width: 60%;
+  float: right;
+}
+
+/* Main Styles*/
+main {
+  margin: 2%;
+}
+
+.hero img {
+  object-fit: contain;
+  max-width: 100%;
+}
+
+

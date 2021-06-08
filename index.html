@@ -4,42 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="shortcut icon" type="image/x-icon"  href="favicon.ico">
-    <link rel="manifest" href="/site.webmanifest">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400&family=Poppins:ital,wght@0,200;0,300;1,100;1,200;1,300&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>Responsive Cake Webpage</title>
+    
 </head>
 
 <body>
   <header>
+    <!--Top Navigation Menu-->
+    <nav>
       <div class="topnav">
-          <a href="#home" class="active"><img id="logo" src="images/cupcake.png" width="40px" height="40px"></a>
-          <!-- Navigation links (hidden by default) -->
-          <div class="links">
+          <a href="#home" class="active"><img id="logo" src="images/cupcake.png" ></a>
+          <!--Navigation links (hidden by default)-->
+          <div id="links">
             <a href="#about">About Us</a>
             <a href="#gallery">Gallery</a>
             <a href="#order">Order</a>
-            <a href="#contact">Contact Us</a>
           </div>
-          <!--"Hamburger menu" / "Bar icon" to toggle the navigation links-->
-          <a href="javascript:void(0);" class="icon" onclick="btnClick">
-            <i class="fa fa-bars"></i>
+            <a href="javascript:void(0);" class="icon" onclick="btnClick()">
+              <i class="fa fa-bars"></i>
         </a>
+        <p>The best cakes in town delivered to your door</p>
       </div>
-    </header>
-    <main>
-    </main>
-    <footer>
-    </footer>
-  
-</body>
+    </nav>
+  </header>
 
+    <main>
+      <section class="welcome">
+        <h1>Welcome</h1>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam rerum ratione vero. Ab molestiae tempore similique, cumque dignissimos aspernatur, quisquam architecto officiis consectetur laudantium in nostrum placeat ex reiciendis labore.</p>
+      </section>
+      <section class="hero">
+        <img src="images/hero-mobile.png">
+      </section>
+    </main>
+    <script> 
+      function btnClick() {
+        var menuButton = document.getElementById("links");
+        if (menuButton.style.display === "block") {
+          menuButton.style.display = "none";
+        } else {
+          menuButton.style.display = "block";
+        }
+      }
+  </script>
+</body>
+<footer>
+  <p> Hero photo by <a href="https://unsplash.com/@lycan?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Velizar Ivanov</a> on <a href="https://unsplash.com/s/photos/cake?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  </p>
+  Photo 1 by <a href="https://unsplash.com/@juniorreisfoto?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Junior REIS</a> on <a href="https://unsplash.com/s/photos/cake?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  Photo 2 by <a href="https://unsplash.com/@jasminesky?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jasmine Bartel</a> on <a href="https://unsplash.com/s/photos/cake?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  Photo 3 by <a href="https://unsplash.com/@thomasw?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Thomas William</a> on <a href="https://unsplash.com/s/photos/cake?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  
+  Photo 4 by <a href="https://unsplash.com/@phinehasadams?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Phinehas Adams</a> on <a href="https://unsplash.com/s/photos/cake?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  
+</footer>
 </html>
