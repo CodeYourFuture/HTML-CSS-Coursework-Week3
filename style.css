@@ -116,6 +116,10 @@ main {
 .section2 img {
   height: 60vw;
   width: 80vw;
+  transition: opacity .5s ease;
+}
+.section2 img:hover {
+  opacity: 0.5;
 }
 /************* Footer styles********** */
 footer {
@@ -172,7 +176,7 @@ footer p {
     margin: auto;
   }
   header nav {
-    /* display: none; */
+    display: block;
     border-radius: unset;
     position: absolute;
     transform: translateX(0);
@@ -218,11 +222,8 @@ footer p {
   .section2 img {
     width: 20vw;
     height: 20vw;
-    transition: opacity .5s ease;
   }
-  .section2 img:hover {
-    opacity: 0.5;
-  }
+ 
 
   footer ul {
     flex-direction: row;
