@@ -64,6 +64,7 @@ main {
 .hero img {
   object-fit: contain;
   max-width: 100%;
+  padding-bottom: 5%;
 }
 
 .hero-ctn {
@@ -72,12 +73,9 @@ main {
 
 .hero-ctn .hero-btn {
   position: absolute;
-  top: 80%;
+  top: 75%;
   left: 5%;
-  transform: translate(-50% -50%);
-  -ms-transform: translate(-50% -50%);
   background-color: #efd3d7;
-  
   padding: 0.5em;
   border: none;
   border-radius: 3px;
@@ -89,5 +87,45 @@ main {
 }
 
 .hero-ctn .hero-btn:hover {
+  background-color: #f28482;
+}
+
+/*Gallery Section*/
+.gallery {
+  display: grid;
+  grid-template-areas: 
+  "box1"
+  "box2"
+  "box3"
+  "box4";
+}
+
+.box1, .box2, .box3, .box4 {
+  position: relative;
+  
+}
+
+.gallery-ctn img {
+  width: 100%;
+  padding-bottom: 5%;
+  
+}
+
+ .grid-btn {
+  position: absolute;
+  top: 87%;
+  left: 5%;
+  background-color: #efd3d7;
+  padding: 0.5em;
+  border: none;
+  border-radius: 3px;
+}
+
+.grid-btn a {
+  color: #7400b8;
+  text-decoration: none;
+}
+
+.grid-btn:hover {
   background-color: #f28482;
 }
