@@ -154,6 +154,7 @@ h1 {
   padding-right: 8px;
   padding-top: 30px;
 }
+
 .image-three {
   order: 1;
   width: 46%;
@@ -162,6 +163,7 @@ h1 {
   padding-left: 8px;
   padding-top: 30px;
 }
+
 .image-four {
   order: 2;
   width: 47%;
@@ -171,6 +173,7 @@ h1 {
   padding-top: 30px;
   padding-bottom: 30px;
 }
+
 .image-five {
   order: 3;
   width: 46%;
@@ -179,4 +182,37 @@ h1 {
   padding-left: 8px;
   padding-top: 30px;
   padding-bottom: 30px;
+}
+
+/* --FOOTER-- */
+
+.footer-container {
+  background-color: #0d1b2a;
+  margin-bottom: -40px;
+  margin-top: 20px;
+  padding-top: 20px;
+}
+
+.footer-buttons {
+  display: block;
+  width: 100%;
+  max-width: 150px;
+  margin: 15px;
+  text-align: center;
+  padding: 5px;
+  background-color: #f4f1de;
+  color: #463f3a;
+}
+
+.footer-buttons:hover {
+  background-color: #463f3a;
+  color: #f4f1de;
+  transition: 0.4s;
+}
+
+.copyright-para {
+  font-size: 0.9rem;
+  color: #f4f1de;
+  text-align: center;
+  padding-bottom: 10px;
 }
