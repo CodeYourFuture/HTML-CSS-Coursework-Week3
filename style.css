@@ -3,7 +3,7 @@ body {
     -webkit-font-smoothing: antialiased;
     background-color: whitesmoke;
     margin: 0;
-    border: 3px solid red;
+    /* border: 3px solid red; */
 }
 /* header style */
 .header-container {
@@ -20,9 +20,13 @@ body {
 .logo {
     margin: 30px 30px;
     grid-area: box1;
-    width: 20vw;
+    width: 150px;
 }
 /* header heading style */
+.welcome {
+    align-self:flex-end;
+    grid-area: box3;
+}
 .welcome h2 {
     color:black ;
     font-size: 26px;
@@ -30,7 +34,6 @@ body {
     letter-spacing: 2px;
     font-weight: normal;
     padding-right: 20px;
-    grid-area: box3;
     text-align: end;
 }
 
@@ -44,9 +47,9 @@ body {
     width: 100vw;
     display: none;
     background-color: white;
-    position: fixed; 
+    position: absolute; 
     left: 0;
-    top: 50px;
+    top: 200px;
     margin-top: 20px;
         
 }
@@ -121,7 +124,7 @@ label {
 .gallery img {
     width: 40vw;
     height: 40vw;
-
+    transition: transform 0.5s ease;
 }
 
 .gallery img:hover {
@@ -148,7 +151,7 @@ button {
     border-radius: 5px;
     text-align: center;
     margin: 20px 20px auto;
-    width: 30vw;
+    width: 100px;
 
 }
 
@@ -162,15 +165,19 @@ button {
         display: none;
    }
 
+   #toggle:checked + .menu {
+       display: flex;
+   }
+
    .menu {
-        margin-top: 200px;
+        top: 250px;
         display: flex;
         flex-direction: row;
         justify-content: flex-end;
         align-content: flex-end;
         position: absolute;
         background-color: white;
-        box-shadow: 0 10px 5px gray;
+        /* box-shadow: 0 10px 5px gray; */
         width: 100vw;
    }
 
@@ -184,6 +191,10 @@ button {
         font-weight: bold;
         
     }
+
+   .intro {
+       margin-top: 200px;
+   }
 }
 
 @media screen and (min-width:900px) {
