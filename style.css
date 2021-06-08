@@ -24,11 +24,11 @@ header {
     padding: 30px;
     /* width: 100%; */
     background: rgb(238, 191, 134);
-    text-shadow: 2px 2px 4px rgb(163, 113, 65);
+    text-shadow: 2px 5px 3px rgb(122, 69, 19);
 }
 
 .title {
-    background-color: rgba(131, 81, 27, 0.692);
+    background-color: rgb(196, 145, 91);
     border-radius: 50%;
 }
 
@@ -165,7 +165,7 @@ footer a {
         margin: 5px 20px;
         width: 110px;
         font-size: 20px;
-        background: rgba(131, 81, 27, 0.705);
+        background: rgb(196, 145, 91);
         border-radius: 10px;
         color: whitesmoke;
 
