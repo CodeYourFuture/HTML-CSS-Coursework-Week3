@@ -18,9 +18,9 @@ body {
 }
 /* logo style */
 .logo {
-    margin: 30px 30px;
+    margin: 40px 30px;
     grid-area: box1;
-    width: 150px;
+    width: 120px;
 }
 /* header heading style */
 .welcome {
@@ -49,8 +49,9 @@ body {
     background-color: white;
     position: absolute; 
     left: 0;
-    top: 200px;
+    top: 30px;
     margin-top: 20px;
+    
         
 }
  .menu a {
@@ -60,6 +61,8 @@ body {
     color:teal;
     padding: 10px;
     text-decoration: none;
+    padding: 15px;
+    box-shadow: 0 3px 3px gray;
     
 }
 .menu a:hover {
@@ -82,7 +85,7 @@ body {
 
 label {
     margin: 0 40px 0 0;
-    font-size: 30px;
+    font-size: 36px;
     line-height: 70px;
     display: block;
     width: 26px;
@@ -131,6 +134,11 @@ label {
     transform: scale(1.1);
 }
 /* footer style */
+footer {
+    margin-top: 60px;
+    margin-bottom: 0;
+    background-color: azure;
+}
 .footer-button a {
     text-decoration: none;
     font-size: 1.2rem;
@@ -167,6 +175,7 @@ button {
 
    #toggle:checked + .menu {
        display: flex;
+       
    }
 
    .menu {
@@ -178,7 +187,7 @@ button {
         position: absolute;
         background-color: white;
         /* box-shadow: 0 10px 5px gray; */
-        width: 100vw;
+        width: 90vw;
    }
 
     .menu a {
@@ -190,6 +199,11 @@ button {
         letter-spacing: 2px;
         font-weight: bold;
         
+    }
+
+    .menu a:hover {
+        transform: scale(1.1);
+        transition: transform 0.5s ease;
     }
 
    .intro {
@@ -217,6 +231,7 @@ flex-direction: row-reverse;
     font-size: 30px;
     letter-spacing: 2px;
     line-height: 36px;
+    padding-left: 10px;
 } 
 .int-wel h3 {
     font-size: 40px;
