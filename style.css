@@ -1,5 +1,5 @@
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Karla', sans-serif;
     -webkit-font-smoothing: antialiased;
     background-color: whitesmoke;
     margin: 0;
@@ -13,6 +13,7 @@ body {
     "box1 box3";
     background-color: #fff;
     box-shadow: 0 10px 5px gray;
+
     
 }
 /* logo style */
@@ -34,7 +35,8 @@ body {
 }
 
 .welcome-img {
-    width: 90vw;
+    width: 100%;
+    object-fit:cover;
 }
 /* nav-bar style */
 .menu { 
@@ -50,18 +52,19 @@ body {
 }
  .menu a {
     display: block;
-    border-bottom: 1px solid azure;
+    /* border-bottom: 1px solid azure; */
     margin: 0;
-    color:whitesmoke;
+    color:teal;
     padding: 10px;
     text-decoration: none;
     
 }
 .menu a:hover {
     cursor: pointer;
-    background-color: azure;
-    color: black;
+    background-color: teal;
+    color: white;
     font-weight: bolder;
+    transition: color 0.5s ease;
 }
 /* hamburger menu style */
  #toggle:checked + .menu {
@@ -168,7 +171,7 @@ button {
         position: absolute;
         background-color: white;
         box-shadow: 0 10px 5px gray;
-        width: 90vw;
+        width: 100vw;
    }
 
     .menu a {
@@ -176,37 +179,49 @@ button {
         margin: 10px;
         border: none;
         border-radius: 5px;
-        
-    }
-
-    .intro {
-        flex-direction: row-reverse;
-    }
-
-    .welcome-img {
-        width: 60vw;
-    }
-
-    .int-wel {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        text-align: right;
-    }
-    .int-wel p {
-        font-size: 30px;
+        color: white;
         letter-spacing: 2px;
-        line-height: 36px;
-    } 
-    .int-wel h3 {
-        font-size: 40px;
-    }
-
-    /* .gallery {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-    }
-
-    .gallery img {
+        font-weight: bold;
         
-    } */
+    }
+}
+
+@media screen and (min-width:900px) {
+.intro {
+flex-direction: row-reverse;
+}
+
+.welcome-img {
+    width: 60vw;
+    margin-left: 20px;
+}
+
+.int-wel {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: right;
+}
+.int-wel p {
+    font-size: 30px;
+    letter-spacing: 2px;
+    line-height: 36px;
+} 
+.int-wel h3 {
+    font-size: 40px;
+}
+.gallery {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.gallery img {
+    width: 20vw;
+    height: 20vw;
+}
+
+.footer-button {
+    flex-direction: row;
+    justify-content: center;
+}
 }
