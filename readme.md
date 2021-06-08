@@ -41,7 +41,7 @@ When you're ready to start coding:
 ### Define your own style
   - Choose 1-2 fonts to use (lots of [free fonts here](https://fonts.google.com/))
   - Choose 2-3 colours that you think go together well, and try to limit yourself to those in your CSS ([look here](https://coolors.co/palettes/trending) for inspiration)
-  - Select some nice cake pictures to replace the placeholders in the wireframes (good [photo source here](https://unsplash.com/images/food/cake)).
+  - Select some nice cake pictures to replace the placeholders in the wireframes (good [photo source here](:/https/unsplash.com/images/food/cake)).
   - Get creative! Can you add some cool hover effects to buttons and [images](https://www.wix.com/website-template/view/html/1911?siteId=c1c72d26-c040-41f2-80ce-0b0f8aef01b4&metaSiteId=5d77fab8-f068-4228-8b61-4181af054ca6&originUrl=https%3A%2F%2Fwww.wix.com%2Fwebsite%2Ftemplates&tpClick=view_button)?
 
 ### Also
