@@ -21,7 +21,6 @@ header {
 }
 
 .topnav a {
-  float: left;
   color: #22223b;
   padding: 0.8em 0.5em;
   text-decoration: none;
@@ -32,7 +31,10 @@ header {
 
 /*Style the hamburger menu*/
 .topnav a.icon {
-  float: right;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 
 .topnav a:hover {
@@ -58,9 +60,34 @@ main {
   margin: 2%;
 }
 
+/*Hero styles*/
 .hero img {
   object-fit: contain;
   max-width: 100%;
 }
 
+.hero-ctn {
+  position: relative;
+}
 
+.hero-ctn .hero-btn {
+  position: absolute;
+  top: 80%;
+  left: 5%;
+  transform: translate(-50% -50%);
+  -ms-transform: translate(-50% -50%);
+  background-color: #efd3d7;
+  
+  padding: 0.5em;
+  border: none;
+  border-radius: 3px;
+}
+
+.hero-btn a {
+  color: #7400b8;
+  text-decoration: none;
+}
+
+.hero-ctn .hero-btn:hover {
+  background-color: #f28482;
+}
