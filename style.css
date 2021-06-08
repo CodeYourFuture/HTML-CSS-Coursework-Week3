@@ -1,1 +1,78 @@
 /*  Add your styling here */
+
+/* General Styles */
+body {
+    background: #eee;
+    font-family: "Roboto", sans-serif;
+    text-decoration: none;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    overflow: auto;
+    
+}
+
+main {
+    background: #fff;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+
+/* Header */
+.wrapper-header {
+    display: flex;
+    justify-content: space-between;
+    height: 30vh;
+}
+
+.logo {
+    background: url("/images/cupcakelogo.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 20vh;
+    flex: 0 1 30%;
+}
+
+/* Navigation */
+nav {
+    flex: 0 1 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-right: 1rem;
+}
+
+.hamburger-menu {
+    width: 10vw;
+    padding-top: 1rem;
+}
+
+.nav-bar {
+    display: none;
+}
+
+.page-header {
+    font-size: 1rem;
+    text-align: end;
+    text-transform: capitalize;
+}
+
+/* Section Welcome */ 
+.welcome {
+    height: 50vh;
+    background: #fff;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+/* Section Cake */ 
+.wrapper-cake {
+
+}
