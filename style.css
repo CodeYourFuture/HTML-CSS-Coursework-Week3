@@ -4,7 +4,7 @@
     padding: 0;
     margin: 0;
     font-family: dancingscript-regular,dancing script,cursive;
-    color: rgb(199, 87, 27);
+    color: rgb(133, 73, 20);
     text-align: center;
 }
 
@@ -22,7 +22,18 @@ header {
     display: flex;
     justify-content: space-between;
     padding: 30px;
-    background: white;
+    /* width: 100%; */
+    background: rgb(238, 191, 134);
+    text-shadow: 2px 2px 4px rgb(163, 113, 65);
+}
+
+.title {
+    background-color: rgba(131, 81, 27, 0.692);
+    border-radius: 50%;
+}
+
+a {
+    color: whitesmoke;
 }
 
 header nav {
@@ -42,13 +53,11 @@ ul {
 }
 
 .hamburger  {
-    background-color: black;
-    color: black;
+    background-color: rgb(53, 31, 8);
     margin: 2px;
     width: 30px;
     height: 5px;
     cursor: pointer;
-
 }
 
 a {
@@ -56,15 +65,18 @@ a {
 }
 
 main {
-    margin: 10px;
-    padding: 10px;
-    text-align: center;
-    /* border: 1px solid black; */
+    margin: 20px 0px;
+    /* padding: 10px 0px; */
 }
 
-main img {
-    margin: 30px 0px;
-    border-radius: 10px;
+main p {
+    margin: 10px 40px;
+    padding: 10px 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.p1 {
+    fonts-size: 28px;
 }
 
 .img-container {
@@ -75,15 +87,17 @@ main img {
     "pic5 pic5"
     ;
     justify-items: center;
-    gap: 5px;
-    border: 1px solid black;
+    gap: 10px;
+    /* border: 1px solid black; */
+    padding: 30px;
+    margin: 40px 0px;
+    background: rgb(238, 191, 134);
 }
 
 .img-container img {
-    padding: 10px;
-    margin: 10px;
-    border: 1px solid black;
-    width: 60%;
+    /* width: 150px; */
+    margin: 10px 0px;
+    box-shadow: 2px 2px 10px black;
 }
 
 .pic1 {
@@ -108,5 +122,69 @@ main img {
 }
 
 footer {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+    padding: 10px;
 }
 
+footer a {
+    padding: 10px;
+    color: rgb(133, 73, 20)
+}
+
+@media screen and (min-width: 540px) {
+    .img-container img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .hero-img {
+        display: none;
+        /* height: 100px; */
+    }
+
+    .hamburger-container {
+        display: none;
+
+    }
+
+    header nav {
+        display: inline-block;
+    }
+
+    .top-list {
+
+    }
+
+    .top-list li {
+        float: left;
+        padding: 10px;
+        margin: 5px 20px;
+        width: 110px;
+        font-size: 20px;
+        background: rgba(131, 81, 27, 0.705);
+        border-radius: 10px;
+        color: whitesmoke;
+
+    }
+
+    .top-list li:hover {
+        background: rgba(131, 81, 27);
+        transition: .3s ease;
+    }
+
+    .title {
+        font-size: 26px;
+    }
+
+    footer a {
+        font-size: 24px;
+    }
+
+    main p {
+        font-size: 20px;
+    }
+}
