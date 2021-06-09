@@ -48,7 +48,7 @@ body {
   text-align: right;
   width: 138px;
   margin: 43px 0;
-  color: #F291C4;
+  color: #3C372C;
 }
 @media screen and (min-width: 540px) {
   .toggle-title h1 {
@@ -180,12 +180,13 @@ input[type=checkbox]:checked ~ ul {
 
 .welcome-text h2 {
   margin-bottom: 20px;
-  color: #FF8080;
+  color: #3C372C;
 }
 
 .welcome-text p {
   line-height: 30px;
   margin-bottom: 20px;
+  color: #3C372C;
 }
 @media screen and (min-width: 540px) {
   .welcome-text h2 {
@@ -264,6 +265,7 @@ footer {
 address {
   margin: 20px 20px 0 20px;
   line-height: 30px;
+  color: #3C372C;
 }
 @media screen and (min-width: 540px) {
   address {
