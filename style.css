@@ -25,16 +25,23 @@ body {
 .container-content {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+
   justify-content: space-between;
   flex-wrap: wrap;
 }
-h1 {
+.brand-name {
   align-self: flex-start;
+  padding-left: 10px;
+  margin-top: 10px;
+  padding-top: 10px;
 }
-.container-content p {
+
+.hero-text {
+  align-self: flex-end;
+  text-align: end;
   width: 300px;
   font-weight: bolder;
+  padding-right: 20px;
 }
 
 /* --HAMBURGER-- */
@@ -110,6 +117,7 @@ h1 {
   padding: 12px 16px;
   background-color: #463f3a;
   color: #f4f1de;
+  transition: 0.4s;
   text-decoration: none;
 }
 
@@ -198,13 +206,13 @@ h1 {
   margin: 15px;
   text-align: center;
   padding: 5px;
-  background-color: #f4f1de;
-  color: #463f3a;
+  background-color: #463f3a;
+  color: #f4f1de;
 }
 
 .footer-buttons:hover {
-  background-color: #463f3a;
-  color: #f4f1de;
+  background-color: #f4f1de;
+  color: #463f3a;
   transition: 0.4s;
 }
 
@@ -270,39 +278,52 @@ h1 {
 
   /* --FOOTER-- */
 
+  .footer-btn-container {
+    display: flex;
+    justify-content: center;
+  }
   .footer-buttons {
-    font-size: 1rem;
+    font-size: 2rem;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  /* --NAV-- */
+  /* --HEADER-- */
+  .container-content {
+    padding: 20px;
+  }
+  .brand-name {
+    font-size: 3rem;
+  }
+
+  .hero-text {
+    width: 600px;
+    font-size: 2rem;
+  }
 
   /* --INTRO SECTION-- */
 
-  .intro-section {
-    order: 1;
-    width: 60vw;
-    height: 200px;
-    object-fit: cover;
+  .intro-container {
+    display: flex;
+    flex-direction: row;
+  }
+  .image-one {
+    order: 0;
+    width: 50vw;
+    height: auto;
+    margin-top: 20px;
+    padding: 17px;
+  }
+
+  .intro-text {
+    padding: 20px;
   }
 
   /* --IMAGES-- */
-  .image-container {
-    display: block;
-  }
 
   .four-img-container {
     display: flex;
-    width: auto;
-  }
-
-  .image-one {
-    order: 0;
-    width: 60vw;
-    height: auto;
-    margin-top: 80px;
-    padding: 17px;
+    justify-content: space-around;
   }
 
   .image-two {
@@ -312,20 +333,15 @@ h1 {
   .image-three {
     order: 3;
     width: 20vw;
+    padding-right: 8px;
   }
   .image-four {
     order: 4;
     width: 20vw;
+    padding-left: 8px;
   }
   .image-five {
     order: 5;
     width: 20vw;
-    margin-top: 20px;
-  }
-
-  /* --FOOTER-- */
-  .footer-container {
-    display: flex;
-    flex-wrap: wrap;
   }
 }
