@@ -134,19 +134,19 @@ footer {
     gap: 1rem;
 }
 
-.img-container1 {
+.img-container .1 {
     grid-area: cake1;
 }
 
-.img-container2 {
+.img-container .2 {
     grid-area: cake2;
 }
 
-.img-container3 {
+.img-container .3 {
     grid-area: cake3;
 }
 
-.img-container4 {
+.img-container .4 {
     grid-area: cake4;
 }
 
