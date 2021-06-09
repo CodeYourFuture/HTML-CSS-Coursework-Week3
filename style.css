@@ -4,11 +4,19 @@
 /* General Styles */
 body {
     font-family: "Roboto Condensed", Roboto, sans-serif;
-    text-decoration: none;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     overflow-x: hidden;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
 }
 
 h1, h2, h3, h4 {
@@ -22,7 +30,7 @@ img {
     overflow: auto;
     border-radius: 10px;
     box-shadow: 3px 0px 3px, -3px 0px 3px;
-    object-fit: cover;
+    object-fit: contain;
 
 }
 
@@ -43,7 +51,8 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;text-align: center;
+    align-items: center;
+    text-align: center;
     
 }
 
@@ -75,6 +84,7 @@ footer {
     justify-content: space-between;
     align-items: flex-end;
     padding-right: 1rem;
+    position: relative;
 }
 
 .hamburger-menu {
@@ -91,6 +101,8 @@ footer {
     font-size: 1.18rem;
     text-align: end;
     text-transform: capitalize;
+    position: absolute;
+    bottom: 0;
 }
 
 /* Section Welcome */ 
@@ -122,24 +134,19 @@ footer {
     gap: 1rem;
 }
 
-.img-container {
-    width: 43vw;
-    height: auto;
-}
-
-#cake1 {
+.img-container1 {
     grid-area: cake1;
 }
 
-#cake2 {
+.img-container2 {
     grid-area: cake2;
 }
 
-#cake3 {
+.img-container3 {
     grid-area: cake3;
 }
 
-#cake4 {
+.img-container4 {
     grid-area: cake4;
 }
 
@@ -147,6 +154,12 @@ footer {
     
     h1, h2, h3, h4 {
         font-size: 1.5em;
+    }
+    h1 {
+        font-size: 1.5rem;
+    }
+    .hamburger-menu {
+        width: 7vw;
     }
     .welcome {
         height: 35vh;
@@ -156,6 +169,50 @@ footer {
     }
 }
 
+/* large screens */
 @media screen and (min-width: 900px) {
-    
+    .hamburger-menu {
+        display: none;
+    }
+    .navigation {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 2rem;
+    }
+    .navigation li {
+        margin-left: 1rem;
+    }
+    .navigation a {
+        padding: 15px;
+        font-size: 1.3rem;
+        transition: all 300ms ease;
+        background-color: #ffadad;
+    }
+    .navigation a:hover {
+        color: #ffadad;
+        background-color: rgb(31, 24, 24);
+    }
+    .container {
+        margin-top: 2rem;
+        display: flex;
+        justify-content: space-between;
+    }
+    .cake {
+        flex: 0 1 48%;
+        order: -1;
+    }
+    .welcome {
+        flex: 0 1 45%;
+        margin-top: 0;
+        font-size: 1.4rem;
+    }
+    .wrapper-images {
+        grid-template-areas: 
+        "cake1 cake2 cake3 cake4";
+        gap: 2rem;
+    }
+    footer {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
 }
