@@ -147,6 +147,7 @@ h1 {
   flex-wrap: wrap;
   width: 100%;
   justify-content: center;
+  min-width: 320px;
 }
 
 .image-two {
@@ -263,6 +264,7 @@ h1 {
   .image-three,
   .image-four,
   .image-five {
+    width: 47.5%;
     height: 350px;
   }
 
