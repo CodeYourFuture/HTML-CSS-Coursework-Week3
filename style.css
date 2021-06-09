@@ -1,12 +1,17 @@
 /*  Add your styling here */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
 
 /* General Styles */
 body {
     background: #eee;
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     text-decoration: none;
     margin: 0;
     box-sizing: border-box;
+}
+
+h1, h2, h3, h4 {
+    font-weight: 400;
 }
 
 img {
@@ -14,13 +19,28 @@ img {
     height: auto;
     display: block;
     overflow: auto;
-    
+    border-radius: 10px;
+    box-shadow: 3px 0px 3px, -3px 0px 3px;
+
+}
+
+main, footer {
+    padding-right: 1rem;
+    padding-left: 1rem;
 }
 
 main {
     background: #fff;
-    padding-right: 1rem;
-    padding-left: 1rem;
+}
+
+section {
+    margin-top: 1rem;
+}
+
+footer {
+    background: #eee;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
 
@@ -41,7 +61,7 @@ main {
 
 /* Navigation */
 nav {
-    flex: 0 1 70%;
+    flex: 0 1 50%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -52,6 +72,7 @@ nav {
 .hamburger-menu {
     width: 10vw;
     padding-top: 1rem;
+    box-shadow: none;
 }
 
 .nav-bar {
@@ -74,5 +95,41 @@ nav {
 
 /* Section Cake */ 
 .wrapper-cake {
+    width: 100%;
+    height: 50vh;
+    background: url("/images/cake images/american-heritage-chocolate-vdx5hPQhXFk-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 3rem;
+    border-radius: 15px;
+}
 
+/* Cake-images section */
+.wrapper-images {
+    display: grid;
+    grid-template-areas: 
+    "cake1 cake2"
+    "cake3 cake4";
+    gap: 1rem;
+}
+
+.img-container {
+    width: 43vw;
+    height: auto;
+}
+
+#cake1 {
+    grid-area: cake1;
+}
+
+#cake2 {
+    grid-area: cake2;
+}
+
+#cake3 {
+    grid-area: cake3;
+}
+
+#cake4 {
+    grid-area: cake4;
 }
