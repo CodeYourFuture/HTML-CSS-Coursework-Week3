@@ -92,3 +92,33 @@ main {
 .second img {
   width: 47vw;
 }
+
+/********** Footer Styles **********/
+
+.social-media h1 {
+  font-size: 20px;
+  width: 80%;
+  margin-top: 5%;
+  text-align: left;
+  font-weight: 700;
+}
+
+.social-links {
+  display: flex;
+  flex-direction: column;
+  width: 12%;
+  padding: 15px;
+}
+
+.social-links img {
+  align-items: flex-start;
+  width: 70%;
+  padding: 9px;
+}
+
+footer p {
+  text-align: left;
+  color: rgb(62, 62, 62);
+  margin-bottom: 10%;
+  font-weight: 700;
+}
