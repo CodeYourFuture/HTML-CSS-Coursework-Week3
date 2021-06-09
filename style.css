@@ -1,1 +1,82 @@
-/*  Add your styling here */
+:root {
+  --standard-gap-Y: 5vh;
+  --standard-gap-X: 5vw;
+}
+
+body {
+  margin: 0;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+header {
+  position: fixed;
+  display: flex;
+  border: 2px solid black;
+  background-color: grey;
+}
+
+header img {
+  max-width: 100px;
+}
+
+nav {
+  text-align: end;
+}
+
+label {
+  font-size: 30px;
+  padding-right: 5vw;
+}
+
+.header_right p {
+  display: flex;
+  text-align: end;
+  font-style: italic;
+  margin-top: 7vh;
+  padding-left: 10vw;
+  padding-right: 5vw;
+}
+
+main {
+  box-sizing: content-box;
+  padding-top: 150px;
+  padding-left: var(--standard-gap-X);
+  padding-right: var(--standard-gap-X);
+  text-align: center;
+  font-size: 1.3em;
+  line-height: 2em;
+}
+
+main h1,
+p {
+  text-align: left;
+}
+
+main img {
+  max-width: 75vw;
+  background-color: white;
+}
+
+aside img {
+  width: 35vw;
+  max-width: 150px;
+}
+
+aside {
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 2;
+  gap: 30px;
+  box-sizing: content-box;
+  justify-content: center;
+  padding-top: 250px;
+  padding-left: var(--standard-gap-X);
+  padding-right: var(--standard-gap-X);
+  padding-top: var(--standard-gap-Y);
+}
+
+footer {
+  margin-top: var(--standard-gap-Y);
+  border: 2px solid black;
+  background-color: grey;
+}
