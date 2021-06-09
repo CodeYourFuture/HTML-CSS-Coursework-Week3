@@ -1,1 +1,320 @@
 /*  Add your styling here */
+<<<<<<< Updated upstream
+=======
+
+/* general */
+body {
+  font-family: Roboto, Helvetic, sans-serif;
+  font-size: 1em;
+  line-height: 1.25em;
+  box-sizing: border-box;
+  margin: auto;
+}
+
+header,
+main,
+footer {
+  width: 100%;
+}
+
+.banner,
+footer,
+nav {
+  background-color: #ffe5d9;
+}
+
+a {
+  text-decoration: none;
+  color: #713a1b;
+  transition: background-color 0.6s ease;
+}
+
+a:hover {
+  color: #a9114e;
+  padding: 2px 1px 2px 0;
+  background-color: white;
+  border-radius: 5px;
+}
+
+/* HEADER */
+header {
+  height: 20vh;
+}
+
+.banner {
+  height: inherit;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-between;
+}
+
+.logo-wrapper {
+  width: 30%;
+  height: 100%;
+  order: -1;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  align-self: start;
+}
+
+.logo {
+  width: 50px;
+}
+
+.name {
+  font-weight: 900;
+  color: #713a1b;
+}
+
+.h1-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  position: relative;
+  top: -80px;
+}
+
+h1 {
+  font-size: 1.2em;
+  font-weight: 100;
+  text-align: right;
+  width: 60%;
+  padding: 15px 10px 0px 0px;
+  color: #545454;
+}
+
+/* Nav */
+
+.hamburger {
+  align-self: flex-start;
+  padding: 15px;
+  width: 30px;
+}
+
+nav {
+  display: none;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+/* MAIN */
+section {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Hero */
+.hero-text {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px 15px 0 15px;
+}
+
+.name,
+nav,
+h2 {
+  font-family: "Quicksand", cursive;
+}
+
+.hero-description {
+  margin-top: -5px;
+}
+
+.hero-img-container {
+  width: 100%;
+  order: 0;
+}
+
+.hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.sml-img {
+  width: 48%;
+  height: 140px;
+  object-fit: cover;
+}
+
+/* FOOTER */
+
+footer {
+  padding: 10px;
+}
+
+.footer-links {
+  position: relative;
+  left: -25px;
+}
+
+footer a {
+}
+
+footer li {
+  list-style: none;
+}
+
+footer p {
+  text-align: center;
+  margin: 30px 0;
+}
+
+footer p,
+footer li {
+  font-size: 14px;
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 540px) {
+  header {
+    height: 20vh;
+  }
+
+  .banner {
+    padding-bottom: 10px;
+  }
+
+  .logo-wrapper {
+    transform: scale(1.4);
+  }
+
+  .logo {
+    padding-top: 30px;
+    margin-bottom: -15px;
+  }
+
+  h1 {
+    position: relative;
+    top: 4px;
+    width: 60%;
+    margin-right: 0px;
+    padding: 5px 9px 15px 0;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  nav {
+    display: block;
+    position: relative;
+    top: -45px;
+    background-color: #ffe5d9;
+    width: 100%;
+    text-align: right;
+  }
+
+  nav ul li {
+    padding: 0 12px;
+    font-weight: 600;
+  }
+
+  section {
+    margin-top: 100px;
+  }
+
+  .hero-text {
+    order: 0;
+    width: 40%;
+    margin-left: 0px;
+    text-align: right;
+    justify-content: flex-end;
+  }
+
+  .hero-img-container {
+    width: 49%;
+    order: -1;
+    margin-left: 10px;
+  }
+
+  .hero-img {
+    transition: transform 0.5s ease;
+  }
+
+  .hero-img:hover {
+    transform: scale(1.1);
+  }
+
+  .sml-img {
+    width: 23%;
+    height: 200px;
+    transition: transform 0.5s ease;
+  }
+
+  .sml-img:hover {
+    transform: scale(1.3);
+    box-shadow: 0px 10px 13px -7px #e47e4f,
+      5px 5px 15px 5px rgba(79, 246, 255, 0);
+  }
+
+  .footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+  }
+}
+
+@media (min-width: 900px) {
+  body {
+    width: 960px;
+  }
+
+  h1 {
+    margin-right: 22px;
+    top: 40px;
+  }
+
+  nav ul li {
+    padding: 0 25px;
+  }
+
+  section {
+    margin-top: 80px;
+  }
+
+  .hero-text {
+    order: 0;
+    width: 45%;
+  }
+
+  h2 {
+    font-size: 2em;
+  }
+
+  .hero-description {
+    font-size: 1.2em;
+    margin-top: -20px;
+    line-height: 1.5em;
+  }
+
+  .hero-img-container {
+    width: 45%;
+    order: -1;
+  }
+
+  .sml-img {
+    width: 24%;
+    height: 140px;
+  }
+
+  .footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+  }
+}
+>>>>>>> Stashed changes
