@@ -63,9 +63,13 @@ h1 {
   color: rgba(0, 0, 0, 0.76);
 }
 
+.image-container {
+  margin: 1.5rem;
+}
+
 .main-image {
-  width: 90%;
-  margin: 1rem;
+  width: 100%;
+  margin: 1rem auto;
   border: 2px solid #6fceb5;
   border-radius: 5px;
 }
@@ -78,44 +82,80 @@ h1 {
   margin: 1rem;
 }
 
-img {
+.main-image img {
   width: 8rem;
   margin: 0.5rem;
   border: 2px solid #6fceb5;
   border-radius: 5px;
 }
 
+.image-cards img {
+  width: 9rem;
+  margin: 0.5rem;
+  border: 2px solid #6fceb5;
+  border-radius: 5px;
+}
+
+.social-media ul li {
+  list-style: none;
+}
+
+.social-media img {
+  list-style: none;
+  width: 2.5rem;
+  margin: 5% 1% 1% 1%;
+}
+
+.copyright p {
+  text-align: center;
+}
+
 /* **** FIRST BREAK POINT OF 540PX ****  */
 
 @media (min-width: 540px) {
-  body {
-    background-color: lightgreen;
+  h1 {
+    color: rgba(0, 0, 0, 0.76);
+    font-size: 1.6rem;
+    margin: 5rem 1rem 1rem 1rem;
+    font-weight: bold;
+    letter-spacing: 0.6px;
   }
 }
 
 /* **** SECOND BREAK POINT OF 900PX ****  */
 
 @media (min-width: 900px) {
-  body {
-    background-color: lightgray;
-  }
-
   .hamburger-icon {
     display: none;
   }
 
+  .logo {
+    width: 8rem;
+  }
+
+  h1 {
+    color: rgba(0, 0, 0, 0.76);
+    font-size: 2rem;
+    margin: 1rem 1rem 1rem 40%;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+  }
+
   .navbar-container {
-    border: 2px solid purple;
+    /* border: 2px solid #ff00ff; */
     display: flex;
-    overflow: hidden;
-    margin: 1rem auto;
-    width: 80%;
+    justify-content: flex-end;
+    margin: auto;
+    width: 90vw;
+    border-radius: 15px;
   }
 
   .navbar-links {
+    width: 90vw;
     margin: 1rem 0.5rem 1rem 5rem;
     display: flex;
-    /* align-items: flex-end; */
+    align-items: flex-end;
+    justify-content: flex-end;
   }
 
   .navbar-links li {
@@ -125,9 +165,10 @@ img {
   .navbar-links li a {
     align-items: flex-end;
     text-decoration: none;
-    color: #fff;
-    /* padding: 0.1rem; */
-    margin: 0 3rem;
+    font-size: 1rem;
+    color: #000;
+    padding: 1rem;
+    margin: 0 1rem;
     display: block;
   }
 
@@ -139,8 +180,23 @@ img {
   }
 
   .navbar-links ul {
-    margin: 0;
+    margin: 0.5rem 2rem 0.5rem 7rem;
     padding: 0;
     display: flex;
+  }
+
+  footer ul {
+    display: flex;
+    justify-content: center;
+    width: 2.5rem;
+    margin: 1rem auto;
+  }
+
+  .social-media img {
+    margin: 1.5rem;
+  }
+
+  footer img {
+    margin: 1rem;
   }
 }
