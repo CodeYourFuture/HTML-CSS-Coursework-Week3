@@ -1,6 +1,5 @@
 /*  Add your styling here */
-<<<<<<< Updated upstream
-=======
+
 html {
   width: 100%;
 }
@@ -193,7 +192,7 @@ body {
 }
 
 img:hover {
-  opacity: 0.7;
+  opacity: 0.8;
 }
 
 /* --FOOTER-- */
@@ -357,4 +356,3 @@ img:hover {
     font-size: 2rem;
   }
 }
->>>>>>> Stashed changes

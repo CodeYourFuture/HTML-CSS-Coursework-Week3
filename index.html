@@ -1,16 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Responsive Cake webpage</title>
     <!-- Add a link to your css file here -->
-</head>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
+  <body>
     <!-- Add your markup here -->
-</body>
+    <header>
+      <div class="hero-container">
+        <div class="container-content">
+            <div>
+          <h1 class="brand-name">Cakes Co</h1>
+          </div>
+          <button class="hamburger" aria-label="hamburger">
+            <div class="bar"></div>
+          </button>
+          <div class="hero-text">
+            <p>The best cakes in town delivered to your door</p>
+          </div>
+        </div>
+      </div>
+    </header>
+    <nav class="mobile-nav">
+      <a href="#">HOME</a>
+      <a href="#">CAKES</a>
+      <a href="#">ORDER IN</a>
+      <a href="#">LESSONS</a>
+      <a href="#">ABOUT</a>
+    </nav>
+    <nav class="nav-bar">
+        <div class="nav-buttons"> <a href="#">HOME</a> </div>
+      <div class="nav-buttons"> <a href="#">CAKES</a> </div>
+      <div class="nav-buttons"> <a href="#">ORDER IN</a> </div>
+      <div class="nav-buttons"> <a href="#">LESSONS</a> </div>
+      <div class="nav-buttons"> <a href="#">ABOUT</a> </div>
+    </nav>
+    <main>
+      <section class="intro-section">
+<div class="intro-container">
+    <div class="intro-image">
+        <img
+            class="image-one"
+            src="./images/imageone.jpg"
+            alt="cake image one"
+          />
+        </div>
+        <div class="intro-text">
+        <h2 class="Welcome-heading">Welcome</h2>
+        <p>
+          Cakes Co. is a family owned business providing customers with state of
+          the art cake designs and flavours never tasted before. We cater
+          everyone including customers with special dietary requirements. All
+          our cakes are specially made to order, which creates the possibility of
+          endless customization for our customers.
+        </p>
+        </div>
+        </div>
+      </section>
+      <section class="image-container">
+        
+          
+          <div class="four-img-container">
+            <img
+              class="image-two"
+              src="./images/imagetwo.jpg"
+              alt="cake image two"
+            />
+          
+          
+            <img
+              class="image-three"
+              src="./images/imagethree.jpg"
+              alt="cupcake image one"
+            />
+          
+          
+            <img
+              class="image-four"
+              src="./images/imagefour.jpg"
+              alt="cupcake image two"
+            />
+          
+          
+            <img
+              class="image-five"
+              src="./images/imagefive.jpg"
+              alt="cake image three"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer-container">
+        <div class="footer-btn-container">
+        <div class="footer-btn">
+            <button class="footer-buttons" type="button">Order In</button>
+        </div>
+        <div class="footer-btn">
+            <button class="footer-buttons" type="button">Lessons</button>
+        </div>
+        <div class="footer-btn">
+            <button class="footer-buttons" type="button">About</button>
+        </div>
+        </div>
+        <div class="copyright">
+            <p class="copyright-para">
+                © Copyright Cakes Co. 2021.
+            </p>
+        </div>
+    </footer>
 
+    <script src="./main.js"></script>
+  </body>
 </html>
