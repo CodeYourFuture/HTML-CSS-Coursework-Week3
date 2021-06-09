@@ -1,1 +1,110 @@
 /*  Add your styling here */
+html,
+body,
+main {
+  width: 100%;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  font-size: 16px;
+  background-color: rgb(229, 219, 230);
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.25rem 1.5rem;
+  position: relative;
+}
+.hero-text h1 {
+  font-family: "Tangerine", serif;
+  font-size: 1.8rem;
+}
+header p {
+  align-self: flex-end;
+  text-align: right;
+}
+
+header .hamburger-menu {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+header .hamburger-menu {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+/* main section hero */
+.hero {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.hero-image {
+  width: 100%;
+  height: auto;
+  display: grid;
+  place-items: center;
+  margin: 20px 0;
+}
+.hero-text {
+  width: 100%;
+  text-align: center;
+}
+/*  Main (product section)*/
+
+.product-images {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px;
+  place-items: center;
+  width: 100%;
+  height: auto;
+}
+/* .product-images img {
+  object-fit: cover;
+  max-width: fit-content;
+} */
+/* footer */
+.p1 {
+  text-align: center;
+  margin: 50px auto 10px;
+}
+.media-icons svg {
+  border: rgb(41, 41, 39) solid 1px;
+  border-radius: 50%;
+  padding: 5px;
+}
+.media-icons {
+  display: flex;
+  justify-content: center;
+}
+.p2 {
+  text-align: center;
+}
+/* media queries */
+@media screen and (min-width: 550px) {
+  .hero {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+  }
+}
+@media screen and (min-width: 750px) {
+  header .hamburger-menu {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: none;
+  }
+  .logo-p {
+    font-family: cursive, sans-serif;
+    font-size: 1.6rem;
+    font-weight: lighter;
+  }
+}
