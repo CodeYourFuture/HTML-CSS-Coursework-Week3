@@ -190,6 +190,10 @@ body {
   padding: 30px 0px 30px 8px;
 }
 
+img:hover {
+  opacity: 0.8;
+}
+
 /* --FOOTER-- */
 
 .footer-container {
