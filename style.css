@@ -9,6 +9,7 @@ body {
 header {
   margin: 0;
 }
+
 .topnav {
   margin: 0;
   overflow: hidden;
@@ -53,8 +54,14 @@ header {
   font-style: italic;
   max-width: 60%;
   float: right;
+  margin-right: -10%;
 }
 
+@media screen and (max-width: 539px) {
+  .header, .nav-list {
+  display: none;
+  }
+}
 /* Main Styles*/
 main {
   margin: 2%;
@@ -149,3 +156,49 @@ footer p {
   font-weight: 200;
   text-align: center;
 }
+
+@media screen and (min-width: 540px) { 
+  .topnav {
+    display: none;
+  }
+
+  .header {
+    position: relative;
+    background-color: #efd3d7;
+  }
+
+  #logo {
+    padding: 1em;
+    width: 100px;
+    height: auto;
+  }
+
+  .header p {
+    padding-right: 2%;
+    font-style: italic;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+  .nav-list {
+    padding: 2em;
+    background-color: #cddafd;
+    justify-content: end;
+  }
+
+  .nav-list li {
+    
+    display: inline;
+    list-style-type: none;
+  }
+
+  .nav-list .nav-btn {
+    background-color: #fff1e6;
+    color: #013a63;
+    padding: 0.5em;
+    margin-right: 0.5em;
+    
+  }
+}
+  
