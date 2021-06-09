@@ -7,10 +7,108 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Responsive Cake webpage</title>
     <!-- Add a link to your css file here -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="medium_query.css">
+    <link rel="stylesheet" href="large_query.css">
 </head>
 
 <body>
     <!-- Add your markup here -->
+    <header id="header">
+        <img class="bg-heading" src="/images/heading_bg.jpeg" alt="header background image" height="90%" width="100%">
+        <div class="logo">
+            <img src="/images/cake logo-2.jpeg" alt="fairy_cake logo image" class="logo_pic" height="30%" width="30%">
+            <p class="shop-name">Fairy Cup Cake</p>
+        </div>
+        <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <nav class="navigation">
+            <ul class="nav-bar">
+                <li class="nav-link active"><a href="#home">Home</a></li>
+                <li class="nav-link"><a href="#about">About Us</a></li>
+                <li class="nav-link"><a href="#featured">Featured</a></li>
+                <li class="nav-link"><a href="#menu">Menu</a></li>
+                <li class="nav-link"><a href="#blog">Blog</a></li>
+                <li class="nav-link"><a href="contact">Contact</a></li>
+            </ul>
+        </nav>
+        <aside class="intro-1">
+            <p>The best cakes in town delivered to your door</p>
+        </aside>
+    </header>
+    <!--Header ends here -->
+    <main class="container">
+        <section id="home">
+            <h1 class="lead">Welcome</h1>
+        </section>
+    <!--about section-->    
+        <section id="about">
+            <article class="intro-2">
+                <h2>Lorem ipsum dolor sit amet.</h2>
+                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quibusdam, ipsam eaque magni laboriosam magnam corrupti molestiae odio, et sunt consequuntur assumenda? Eum, at nisi.</p>
+            </article>
+            <article id="feature">
+                <img class="jumbotron" src="" alt="featured cake image of the fairy cake company" height="500px" width="400px">
+            </article>
+           </section>
+        <section id="menu">
+                <h3>Menu</h3>
+            <div class="cards">Birthday Specials</div>
+            <div class="cards">Fruit Cakes</div>
+            <div class="cards">Desserts</div>
+            <div class="cards">chocolate</div>
+        </section>
+        <section id="blog">
+            <article class="sweet_blogs">
+                <h3 class="blog_entry">Festive Season Collection</h3>
+            </article>
+            <article class ="sweet_blogs">
+                <h3 class="blog_entry">Lockdown Initiatives in the Community</h3>
+            </article>
+            <article class ="sweet_blogs">
+                <h3 class="blog_entry">Training and apprenticeship </h3>
+            </article>
+</section>
+</main>
+<footer class="container">
+    <section id="contact">
+        <!--sign up form for newsletter-->
+        <form action="" class="form-control">
+            <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+            <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+            <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            <label for="phone">Phone Number:</label>
+                <input type="number" id="phone" name="phone">
+            <label for="comment">Please Feel Free to Leave Feedbacks</label>
+                <textarea name="comment" id="commnet" cols="30" rows="10" maxlength="500" minlength="50" placeholder="Write Here..."></textarea>
+            
+            <fieldset id="radio_buttons">
+                <legend>Gender</legend>
+                <label for="Female">Female</label>
+                    <input type="radio" name="female" id="female" value="Female" required>
+                
+                <label for="Male">Male</label>
+                    <input type="radio" name="male" id="male" value="Male" required>
+                
+                <label for="prefer not to say">Prefer Not to Say</label>
+                    <input type="radio" name="prefer not to say" id="prefer not to say" value="Prefer not to say" required>
+                
+            </fieldset>
+        </form>
+    </section>
+    <aside class="footnote_pic">
+        <img src="" alt="picture of our future endeavor" class="footer_img" width="200px" heigh="200px">
+    </aside>
+    <p class="copyright"><span>&#169;</span>Fairy Cake, inc.</p>
+</footer>
 </body>
 
 </html>

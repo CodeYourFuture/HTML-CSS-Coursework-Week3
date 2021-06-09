@@ -1,1 +1,188 @@
 /*  Add your styling here */
+:root{
+    --primary-color:#F9BEC7;
+    --secondary-color:#FF477E;
+    --text-color:#261d1d;
+}
+/*general styles*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    background-color:#F9F1F0;
+}
+h1,h2,h3,p,a{
+    color:var(--text-color);
+}
+li ,a{
+    list-style-type: none;
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+}
+/*heading styles*/
+#header{
+    display: grid;
+    grid-template-columns: 2fr;
+    margin: 0 auto;
+    gap:1em;
+}
+#header .bg-heading{
+position: relative;
+margin: 0 auto;
+opacity: 0.2;
+}
+#header .logo{
+position: absolute;
+top: 10px;;
+left: 20px;
+cursor: pointer;
+}
+#header .logo .logo_pic{
+border-radius: 100%;
+box-shadow: 5px 5px 15px 1px rgba(22, 26, 0, 0.6); 
+border: 1px solid var(--secondary-color);
+}
+
+#header .logo .shop-name{
+font-style: italic;
+font-weight: 900;
+font-size: 1.3em;
+color: var(--text-color);
+position: absolute;
+top: 95%;
+left:4px;
+text-shadow: 0 2px 2px rgba(255,255,255,.75);
+}
+#header .navigation{
+grid-column: 2/3;
+position: absolute;
+right: 30px;
+top: 30px;
+}
+.nav-bar{
+display: flex;
+flex-flow:column wrap;
+align-items:center ;
+justify-content: space-between;
+}
+ .nav-bar .nav-link{
+padding: 0.3em;
+margin: 0.3em;
+transition: all .5s;
+
+}
+.nav-bar .nav-link a{
+font-weight: 800;
+font-size: 1em;
+border-radius: 0.4em;
+background-color: var(--primary-color);
+padding: 0.3em;
+margin:0.5 0.5 0 0;
+}
+.nav-bar .nav-link a:hover{
+    background-color: #FF477E;
+    color: aliceblue;
+}
+.nav-bar .nav-link:first-child > a{
+    font-weight: 700;
+    font-size: 1.1em;
+    color:var(--text-color);
+} 
+.navigation .hamburger{
+
+}
+.navigation .open_menubar{
+
+}
+#header .intro-1{
+position: absolute;
+top: 20%;
+left: 30px;
+font-size: 1.1em;
+text-align: center;
+
+}
+
+/*main section styles*/
+.container{
+
+}
+section{
+
+}
+
+#home{
+}
+
+#home .lead{
+
+}
+/*about section styles*/
+#about{
+
+}
+.intro-2{
+
+}
+.intro-2 h2{
+
+}
+.description{
+
+}
+/*feature section*/
+.jumbotron{
+
+}
+/*menu section*/
+#menu{
+
+}
+#menu h3{
+
+}
+#menu .cards{
+
+}
+/*blog*/
+#blog{
+
+}
+#blog .sweet_blog{
+
+}
+.sweet_blog .blog_entry{
+
+}
+/*footer styles*/
+#contact{
+
+}
+/*sign up form*/
+#contact .form-control{
+
+}
+.form-control label{
+
+}
+.form-control #fieldset{
+
+}
+.footnote_pic{
+
+}
+.footer_img{
+
+}
+.copyright{
+
+}
+
