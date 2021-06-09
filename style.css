@@ -1,1 +1,360 @@
 /*  Add your styling here */
+<<<<<<< Updated upstream
+=======
+html {
+  width: 100%;
+}
+
+body {
+  font-family: "Source Sans Pro", arial, sans-serif;
+  font-size: 24px;
+  color: #0d1b2a;
+  background-color: #f4f1de;
+  margin: 0px;
+  width: 100%;
+}
+
+/* --HEADER-- */
+
+.hero-container {
+  background-image: url("./images/hero.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  justify-items: center;
+  color: #f4f1de;
+  width: 100%;
+}
+.container-content {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.brand-name {
+  align-self: flex-start;
+  padding-left: 10px;
+  margin-top: 10px;
+  padding-top: 10px;
+}
+
+.hero-text {
+  align-self: flex-end;
+  text-align: end;
+  width: 300px;
+  font-weight: bolder;
+  padding-right: 20px;
+}
+
+/* --HAMBURGER-- */
+
+.hamburger {
+  position: absolute;
+  top: 25px;
+  right: 20px;
+  display: block;
+  width: 45px;
+  z-index: 99;
+
+  cursor: pointer;
+  appearance: none;
+  background: none;
+  outline: none;
+  border: none;
+}
+
+.hamburger .bar,
+.hamburger::after,
+.hamburger::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 5px;
+  background-color: #f4f1de;
+  margin: 6px 0px;
+  transition: 0.4s;
+}
+
+.hamburger.is-active:before {
+  transform: rotate(-45deg) translate(-7px, 6px);
+}
+.hamburger.is-active:after {
+  transform: rotate(45deg) translate(-9px, -9px);
+}
+.hamburger.is-active .bar {
+  opacity: 0;
+}
+
+/* --MOBILE NAV-- */
+
+.nav-bar {
+  display: none;
+}
+
+.mobile-nav {
+  position: fixed;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  min-height: 100vh;
+  display: block;
+  z-index: 98;
+  background-color: #0d1b2a;
+  padding-top: 120px;
+  transition: 0.4s;
+  font-weight: bolder;
+}
+
+.mobile-nav.is-active {
+  left: 0;
+}
+
+.mobile-nav a {
+  display: block;
+  width: 100%;
+  max-width: 200px;
+  margin: 0 auto 16px;
+  text-align: center;
+  margin-bottom: 16px;
+  padding: 12px 16px;
+  background-color: #463f3a;
+  color: #f4f1de;
+  transition: 0.4s;
+  text-decoration: none;
+}
+
+.mobile-nav a:hover {
+  background-color: #bcb8b1;
+  color: #463f3a;
+}
+
+/* --INTRO SECTION-- */
+
+.intro-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 30px 8px 10px 8px;
+}
+.image-one {
+  order: 1;
+  width: 100%;
+}
+
+.intro-section {
+  order: 0;
+  text-align: left;
+  font-weight: 100;
+  font-size: 20px;
+  text-align: justify;
+  width: 100%;
+}
+
+/* --IMAGES SECTION-- */
+
+.image-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  min-width: 320px;
+}
+
+.image-two {
+  order: 1;
+  width: 45%;
+  height: 140px;
+  object-fit: cover;
+  padding: 30px 8px 10px 8px;
+}
+
+.image-three {
+  order: 1;
+  width: 45%;
+  height: 140px;
+  object-fit: cover;
+  padding: 30px 0px 10px 8px;
+}
+
+.image-four {
+  order: 2;
+  width: 45%;
+  height: 140px;
+  object-fit: cover;
+  padding: 30px 8px 30px 8px;
+}
+
+.image-five {
+  order: 3;
+  width: 45%;
+  height: 140px;
+  object-fit: cover;
+  padding: 30px 0px 30px 8px;
+}
+
+img:hover {
+  opacity: 0.7;
+}
+
+/* --FOOTER-- */
+
+.footer-container {
+  background-color: #0d1b2a;
+  margin-bottom: -40px;
+  margin-top: 20px;
+  padding-top: 20px;
+}
+
+.footer-buttons {
+  display: block;
+  width: 100%;
+  max-width: 150px;
+  margin: 15px;
+  text-align: center;
+  padding: 5px;
+  background-color: #463f3a;
+  color: #f4f1de;
+}
+
+.footer-buttons:hover {
+  background-color: #f4f1de;
+  color: #463f3a;
+  transition: 0.4s;
+}
+
+.copyright-para {
+  font-size: 0.9rem;
+  color: #f4f1de;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  /* --NAV-- */
+
+  .mobile-nav {
+    display: none;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .nav-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: 20px;
+    margin: 20px 30px 0px 30px;
+    background-color: #0d1b2a;
+  }
+
+  .nav-bar a {
+    padding: 5px 5px;
+    margin: 5px;
+    text-decoration: none;
+    text-align: center;
+    background-color: #463f3a;
+    color: #f4f1de;
+  }
+
+  .nav-bar a:hover {
+    background-color: #f4f1de;
+    color: #463f3a;
+    transition: 0.4s;
+  }
+
+  /* --INTRO SECTION-- */
+
+  .intro-section {
+    font-size: 2rem;
+    line-height: 1em;
+  }
+
+  /* --IMAGES-- */
+
+  .image-two,
+  .image-three,
+  .image-four,
+  .image-five {
+    width: 47.5%;
+    height: 350px;
+  }
+
+  /* --FOOTER-- */
+
+  .footer-btn-container {
+    display: flex;
+    justify-content: center;
+  }
+  .footer-buttons {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  /* --HEADER-- */
+  .container-content {
+    padding: 20px;
+  }
+  .brand-name {
+    font-size: 3rem;
+  }
+
+  .hero-text {
+    width: 600px;
+    font-size: 2rem;
+  }
+
+  /* --INTRO SECTION-- */
+
+  .intro-container {
+    display: flex;
+    flex-direction: row;
+  }
+  .image-one {
+    order: 0;
+    width: 50vw;
+    height: auto;
+    margin-top: 20px;
+    padding: 17px;
+  }
+
+  .intro-text {
+    padding: 20px;
+  }
+
+  /* --IMAGES-- */
+
+  .four-img-container {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .image-two {
+    order: 2;
+    width: 20vw;
+  }
+  .image-three {
+    order: 3;
+    width: 20vw;
+    padding-right: 8px;
+  }
+  .image-four {
+    order: 4;
+    width: 20vw;
+    padding-left: 8px;
+  }
+  .image-five {
+    order: 5;
+    width: 20vw;
+  }
+
+  /* --FOOTER-- */
+
+  .copyright-para {
+    font-size: 2rem;
+  }
+}
+>>>>>>> Stashed changes
