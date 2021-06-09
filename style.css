@@ -1,17 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&display=swap");
 /*  Add your styling here */
 
 body {
-  background-color: darkgray;
+  background-color: chocolate;
   margin: auto;
   width: 100%;
+  font-family: Montserrat;
+  font-weight: 700;
 }
+
+/********** Header Styles **********/
 
 header {
   background-color: rgb(250, 250, 250);
-  position: relative;
   padding: 20px 25px;
+  margin-top: 0.5%;
   display: flex;
   justify-content: space-between;
+  border: 3px solid chocolate;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px red;
 }
 
 .logo {
@@ -20,19 +28,67 @@ header {
 
 .hamburger {
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: 25px;
+  right: 25px;
 }
 
 header p {
   margin-left: 10%;
   font-size: 20px;
   font-style: italic;
+  font-weight: 900;
   align-self: flex-end;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   text-align: right;
 }
 
 .navbar {
   display: none;
+}
+
+/********** Main Styles **********/
+
+main {
+  max-width: 95%;
+  margin: auto;
+  display: grid;
+  grid-template-areas:
+    "first first"
+    "first first"
+    "second second"
+    "second second";
+  gap: 10px;
+}
+
+.first {
+  grid-area: first;
+}
+
+.first img {
+  margin: 20px auto;
+  object-fit: cover;
+  width: 95vw;
+}
+
+.first div p {
+  font-size: 18px;
+  text-align: justify;
+}
+
+.first h1 {
+  margin: 60px auto;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.second {
+  grid-area: second;
+  grid-row-gap: 10px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.second img {
+  width: 47vw;
 }
