@@ -3,6 +3,7 @@
 /* CSS RESET */
 * {
   box-sizing: border-box;
+  list-style-type: none;
 }
 
 body {
@@ -51,6 +52,23 @@ h1 {
 
 .navbar-links {
   display: none;
+  flex-direction: column;
+  background-color: white;
+  align-items: center;
+}
+
+.navbar-links.hamburger-toggle {
+  display: flex;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+}
+
+.navbar-links li {
+  margin-bottom: 1rem;
 }
 
 .welcome h2 {
@@ -79,7 +97,7 @@ h1 {
   flex-wrap: wrap;
   justify-content: space-around;
   width: 90%;
-  margin: 1rem;
+  margin: 1rem auto;
 }
 
 .main-image img {
@@ -120,6 +138,9 @@ h1 {
     font-weight: bold;
     letter-spacing: 0.6px;
   }
+  .navbar-links li {
+    margin-bottom: 1;
+  }
 }
 
 /* **** SECOND BREAK POINT OF 900PX ****  */
@@ -141,8 +162,11 @@ h1 {
     letter-spacing: 0.5px;
   }
 
+  .navbar-links {
+    background-color: rgb(248, 142, 130);
+  }
+
   .navbar-container {
-    /* border: 2px solid #ff00ff; */
     display: flex;
     justify-content: flex-end;
     margin: auto;
@@ -160,6 +184,7 @@ h1 {
 
   .navbar-links li {
     list-style: none;
+    margin-bottom: 0;
   }
 
   .navbar-links li a {
@@ -173,7 +198,7 @@ h1 {
   }
 
   .navbar-links li:hover {
-    background-color: #ff0066;
+    background-color: #72efdd;
     border: 2px solid white;
     margin: -2px;
     border-radius: 50px;
@@ -183,6 +208,46 @@ h1 {
     margin: 0.5rem 2rem 0.5rem 7rem;
     padding: 0;
     display: flex;
+  }
+
+  .hero {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+  }
+
+  .welcome {
+    width: 50%;
+    height: 60vh;
+    margin: 1rem;
+  }
+
+  .welcome p {
+    width: 100%;
+    padding-top: 8rem;
+    font-size: 1.3rem;
+  }
+
+  .welcome h2 {
+    font-size: 2.5rem;
+    text-align: end;
+    padding-right: 2rem;
+    margin-top: 8rem;
+  }
+
+  .main-image {
+    justify-content: flex-end;
+    min-width: 32rem;
+  }
+
+  .image-cards img {
+    width: 20%;
+    margin: 0.5rem auto;
+    border: 2px solid #6fceb5;
+    border-radius: 5px;
   }
 
   footer ul {
