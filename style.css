@@ -21,6 +21,7 @@ body {
 header {
     display: flex;
     justify-content: space-between;
+    flex-flow: row wrap;
     padding: 30px;
     /* width: 100%; */
     background: rgb(238, 191, 134);
@@ -32,8 +33,19 @@ header {
     border-radius: 50%;
 }
 
+header h3 {
+    color: white;
+    width: 70%;
+    position: relative;
+    left: 100px;
+    top: 20px;
+    /* border: 1px solid black; */
+    text-align: right;
+}
+
 a {
     color: whitesmoke;
+    text-decoration: none;
 }
 
 header nav {
@@ -60,23 +72,17 @@ ul {
     cursor: pointer;
 }
 
-a {
-    text-decoration: none;
-}
-
 main {
     margin: 20px 0px;
     /* padding: 10px 0px; */
 }
 
-main p {
-    margin: 10px 40px;
+main p, h1 {
+    margin: 50px 30px;
+    /* border: 1px solid black; */
     padding: 10px 0;
     font-family: Arial, Helvetica, sans-serif;
-}
-
-.p1 {
-    fonts-size: 28px;
+    text-align: left;
 }
 
 .img-container {
@@ -121,6 +127,7 @@ main p {
     grid-area: pic5;
 }
 
+
 footer {
     display: flex;
     justify-content: space-evenly;
@@ -133,17 +140,57 @@ footer a {
     color: rgb(133, 73, 20)
 }
 
+
+
 @media screen and (min-width: 540px) {
     .img-container img {
         width: 100%;
         height: 100%;
     }
+
+    header h3 {
+        position: relative;
+        left: 150px;
+        font-size: 25px;
+    }
+
+    .pic:hover {
+        background: black;
+        transition: .5s ease;
+        transform: rotate(5deg) scale(1.1);
+        box-shadow: 10px 10px 30px black;
+
+    }
 }
 
 @media screen and (min-width: 900px) {
+
+    main {
+        display: flex;
+        flex-direction: row-reverse;
+        margin-top: 100px;
+    }
+
+    .text-container p, h1 {
+        text-align: end;
+    }
+
     .hero-img {
+        /* display: none; */
+        width: 30%;
+        margin: 0 30px;
+    }
+
+    .img-container {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .img-container img {
+        width: 20%;
+    }
+
+    .pic5 {
         display: none;
-        /* height: 100px; */
     }
 
     .hamburger-container {
@@ -153,9 +200,7 @@ footer a {
 
     header nav {
         display: inline-block;
-    }
-
-    .top-list {
+        border-radius: 10px;
 
     }
 
@@ -168,6 +213,7 @@ footer a {
         background: rgb(196, 145, 91);
         border-radius: 10px;
         color: whitesmoke;
+        text-align: center;
 
     }
 
@@ -187,4 +233,25 @@ footer a {
     main p {
         font-size: 20px;
     }
+
+    .Nav-container {
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+        position: relative;
+        top: 150px;
+        background: rgb(196, 145, 91);
+    }
+
+    .title {
+        position: absolute;
+        top: 60px
+    }
+
+    header h3 {
+            position: relative;
+            left: 250px;
+            font-size: 28px;
+    }
+
 }
