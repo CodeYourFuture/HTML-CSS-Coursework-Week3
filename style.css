@@ -3,11 +3,12 @@
 
 /* General Styles */
 body {
-    background: #ffadad;
     font-family: "Roboto Condensed", Roboto, sans-serif;
     text-decoration: none;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 h1, h2, h3, h4 {
@@ -21,16 +22,14 @@ img {
     overflow: auto;
     border-radius: 10px;
     box-shadow: 3px 0px 3px, -3px 0px 3px;
+    object-fit: cover;
 
-}
-
-main, footer {
-    padding-right: 1rem;
-    padding-left: 1rem;
-    padding-bottom: 2rem;
 }
 
 main {
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 2rem;
     background: #fffffc;
 }
 
@@ -40,7 +39,11 @@ section {
 
 footer {
     background: #ffadad;
-    padding-top: 1rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;text-align: center;
     
 }
 
@@ -50,6 +53,8 @@ footer {
     display: flex;
     justify-content: space-between;
     height: 30vh;
+    background: #ffadad;
+    margin: 0;
 }
 
 .logo {
@@ -63,13 +68,13 @@ footer {
 }
 
 /* Navigation */
-nav {
+.nav-bar {
     flex: 0 1 50%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-end;
-    margin-right: 1rem;
+    padding-right: 1rem;
 }
 
 .hamburger-menu {
@@ -78,19 +83,19 @@ nav {
     box-shadow: none;
 }
 
-.nav-bar {
+.navigation {
     display: none;
 }
 
-.page-header {
-    font-size: 1rem;
+ h1 {
+    font-size: 1.18rem;
     text-align: end;
     text-transform: capitalize;
 }
 
 /* Section Welcome */ 
 .welcome {
-    height: 50vh;
+    height: 40vh;
     background: #fff;
     padding-top: 1rem;
     padding-bottom: 1rem;
@@ -136,4 +141,21 @@ nav {
 
 #cake4 {
     grid-area: cake4;
+}
+
+@media screen and (min-width: 540px) {
+    
+    h1, h2, h3, h4 {
+        font-size: 1.5em;
+    }
+    .welcome {
+        height: 35vh;
+    }
+    .wrapper-cake {
+        height: 75vh;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    
 }
