@@ -3,8 +3,8 @@
 
 /* General Styles */
 body {
-    background: #eee;
-    font-family: "Roboto Condensed", sans-serif;
+    background: #ffadad;
+    font-family: "Roboto Condensed", Roboto, sans-serif;
     text-decoration: none;
     margin: 0;
     box-sizing: border-box;
@@ -27,10 +27,11 @@ img {
 main, footer {
     padding-right: 1rem;
     padding-left: 1rem;
+    padding-bottom: 2rem;
 }
 
 main {
-    background: #fff;
+    background: #fffffc;
 }
 
 section {
@@ -38,9 +39,9 @@ section {
 }
 
 footer {
-    background: #eee;
+    background: #ffadad;
     padding-top: 1rem;
-    padding-bottom: 1rem;
+    
 }
 
 
@@ -52,11 +53,13 @@ footer {
 }
 
 .logo {
-    background: url("/images/cupcakelogo.png");
+    background: url("/images/tastycupcake.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: 20vh;
     flex: 0 1 30%;
+    border: none;
+    border-radius: 10px;
 }
 
 /* Navigation */
@@ -102,6 +105,7 @@ nav {
     background-repeat: no-repeat;
     margin-bottom: 3rem;
     border-radius: 15px;
+    box-shadow: 3px 0px 3px, -3px 0px 3px;
 }
 
 /* Cake-images section */
