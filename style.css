@@ -9,35 +9,80 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Spinnaker", sans-serif;
+  background-color: rgb(248, 142, 130);
 }
 
 /*  Add your styling here */
 
-.navbar {
+header {
   font-size: 1.2rem;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background-color: #6fceb5;
+  background-color: #72efdd;
   color: #fff;
-  height: 6rem;
+  height: 12rem;
 }
 
-.navbar .logo {
-  width: 4rem;
+.logo {
+  width: 6rem;
   height: auto;
-  margin: 0 2rem;
+  margin: 1rem;
+}
+
+h1 {
+  color: rgba(0, 0, 0, 0.76);
+  font-size: 1.1rem;
+  margin: 5rem 1rem 1rem 1rem;
+  font-weight: bold;
+  letter-spacing: 0.5px;
 }
 
 .hamburger-icon {
-  width: 4rem;
+  position: absolute;
+  right: 0.5rem;
+  top: 0.5rem;
+  width: 3rem;
   margin: 0 2rem;
   display: flex;
-  color: #fff;
+  color: rgba(0, 0, 0, 0.76);
 }
 
 .navbar-links {
   display: none;
+}
+
+.welcome h2 {
+  margin: 1rem;
+  color: rgba(0, 0, 0, 0.76);
+}
+
+.welcome p {
+  margin: 1rem;
+  color: rgba(0, 0, 0, 0.76);
+}
+
+.main-image {
+  width: 90%;
+  margin: 1rem;
+  border: 2px solid #6fceb5;
+  border-radius: 5px;
+}
+
+.image-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 90%;
+  margin: 1rem;
+}
+
+img {
+  width: 8rem;
+  margin: 0.5rem;
+  border: 2px solid #6fceb5;
+  border-radius: 5px;
 }
 
 /* **** FIRST BREAK POINT OF 540PX ****  */
@@ -59,9 +104,31 @@ body {
     display: none;
   }
 
-  .navbar-links {
+  .navbar-container {
+    border: 2px solid purple;
     display: flex;
-    margin-right: 2rem;
+    overflow: hidden;
+    margin: 1rem auto;
+    width: 80%;
+  }
+
+  .navbar-links {
+    margin: 1rem 0.5rem 1rem 5rem;
+    display: flex;
+    /* align-items: flex-end; */
+  }
+
+  .navbar-links li {
+    list-style: none;
+  }
+
+  .navbar-links li a {
+    align-items: flex-end;
+    text-decoration: none;
+    color: #fff;
+    /* padding: 0.1rem; */
+    margin: 0 3rem;
+    display: block;
   }
 
   .navbar-links li:hover {
@@ -75,17 +142,5 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
-  }
-
-  .navbar-links li {
-    list-style: none;
-  }
-
-  .navbar-links li a {
-    text-decoration: none;
-    color: #fff;
-    padding: 0.3rem;
-    margin: 0 2rem;
-    display: block;
   }
 }
