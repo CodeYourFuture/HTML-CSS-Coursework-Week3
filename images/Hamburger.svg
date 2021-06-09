@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="31" height="22" viewBox="0 0 31 22">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="31" height="22" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Hamburger" clip-path="url(#clip-path)">
+    <g transform="translate(-303 -24)">
+      <rect id="Rectangle_12" data-name="Rectangle 12" width="31" height="4" rx="2" transform="translate(303 26)" fill="#171717"/>
+    </g>
+    <g transform="translate(-303 -17)">
+      <rect id="Rectangle_12-2" data-name="Rectangle 12" width="31" height="4" rx="2" transform="translate(303 26)" fill="#171717"/>
+    </g>
+    <g transform="translate(-303 -10)">
+      <rect id="Rectangle_12-3" data-name="Rectangle 12" width="31" height="4" rx="2" transform="translate(303 26)" fill="#171717"/>
+    </g>
+    <g transform="translate(-303 -3)">
+      <rect id="Rectangle_12-4" data-name="Rectangle 12" width="31" height="4" rx="2" transform="translate(303 26)" fill="#171717"/>
+    </g>
+  </g>
+</svg>
