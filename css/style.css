@@ -94,6 +94,16 @@ header{
     margin-top: 10%;
     margin-right: 10px;
 }
+
+.footer-hamburger {
+    text-align: left;
+    font-size: 40px;
+}
+
+footer p {
+    text-align: center;
+}
+
 .footer-link {
     display: none;
 }
@@ -102,7 +112,7 @@ header{
 /*Default layout ends here look above for small
 screen sizes.
 ------------------------------------------
-mediam screen size looke below here
+mediam screen size look below here
 */
 
 @media screen and (min-width:540px) {
