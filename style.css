@@ -58,7 +58,7 @@ body {
     display: block;
     /* border-bottom: 1px solid azure; */
     margin: 0;
-    color:teal;
+    color: #31ac72;
     padding: 10px;
     text-decoration: none;
     padding: 15px;
@@ -67,10 +67,10 @@ body {
 }
 .menu a:hover {
     cursor: pointer;
-    background-color: teal;
+    background-color: #9FDCC0;
     color: white;
     font-weight: bolder;
-    transition: color 0.5s ease;
+    transition: background-color 0.5s ease;
 }
 /* hamburger menu style */
  #toggle:checked + .menu {
