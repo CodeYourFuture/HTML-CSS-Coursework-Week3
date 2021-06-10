@@ -1,0 +1,182 @@
+body{
+    background-color: cornsilk;
+    font-family: sans-serif, 'Times New Roman', Times, serif, Arial, Helvetica, sans-serif;
+}
+
+/*Header design starts here*/
+header{
+    background-color:palegoldenrod;
+    display: grid;
+    grid-template-areas: "img hamburger"
+                         "img header-p ";
+    
+}
+.logo-image {
+    grid-area: img;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    animation: rotation 2s infinite linear;
+}
+
+/*Added the header image to rotate vertically*/
+@keyframes rotation{
+    from{
+        transform: rotateY(180deg);
+    }
+    to{
+        transform: rotateY(359deg);
+    }    
+}
+
+.hamburger {
+    grid-area: hamburger;
+    font-size: 50px;
+    margin: 10px;
+    text-align: right;
+    
+}
+.header-p {
+    grid-area:"header-p";
+    font-size: 100%;
+    margin: 10px;
+    text-align: right;
+    padding: 5px;    
+}
+
+.nav{
+    display: none;
+}
+
+/*Header design ends here look above*/
+
+/*main layout starts here*/
+
+.main, .welcome {
+    display: block;
+    margin: 5px;
+    
+}
+
+.welcome{
+    padding: 10px;
+    width: 92%;
+    margin-top:10px;
+    margin-bottom:10px;
+    margin-right:10px;
+}
+
+.intro-img{
+    width:inherit;
+    margin-right: 10px;
+    height: 15em;
+    
+}
+.options {
+    display: grid;
+    margin: 10px;
+    grid-template-areas: "cake1 cake2"
+                         "cake3 cake4";
+    justify-content: center;
+    gap: 10%;
+}
+.cake1 { grid-area: cake1; width: 90%;}
+.cake2 { grid-area: cake2; width: 90%}
+.cake3 { grid-area: cake3; width: 90%}
+.cake4 { grid-area: cake4; width: 90%}
+
+/*main layout ends here look above*/
+
+/*footer layout starts here*/
+.footer{
+    display: block;
+    background-color: white;
+    margin-top: 10%;
+    margin-right: 10px;
+}
+.footer-link {
+    display: none;
+}
+/*footer layout ends here*/
+
+/*Default layout ends here look above for small
+screen sizes.
+------------------------------------------
+mediam screen size looke below here
+*/
+
+@media screen and (min-width:540px) {
+    body{
+        background-color:wheat;
+    }
+
+    /*Header design starts here*/
+    header {
+    display:flexbox;
+    height: 80px;
+     }
+
+     .logo-image {
+         width: 50%;
+        
+         }
+        .header-p{
+            background-color: yellow;
+        }
+
+    .hamburger{
+        display: none;
+     }
+
+     .welcome {
+         display: grid;
+         grid-template-areas: "nav nav"
+                              "intro-image intro-title"
+                              "intro-image intro-p";
+         gap: 10px;
+     }
+
+     .nav {
+         display: inline;
+         grid-area: nav;
+         text-align: right;
+         justify-content: space-between;
+         background-color: yellow;
+     }
+     
+     .intro-img {
+         grid-area: intro-image;
+     }
+
+     .intro-title {
+         grid-area: intro-title;
+        text-align: right;
+     }
+
+     .intro-p {
+         grid-area: intro-p;
+         text-align: right;
+     }
+
+     .options {
+         display: flex;
+     }
+
+     .option-cakes {
+       width: 50px;
+       height: 50px;
+     }
+     
+     footer{
+         
+         text-align: center;
+     }
+
+     .footer-link{
+         display: inline-flex;
+     }
+  
+}
+
+
+
