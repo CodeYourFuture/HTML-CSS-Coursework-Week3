@@ -2,9 +2,9 @@
 header {
   position: fixed;
   display: flex;
-  /*border: 2px solid black;*/
-  background-color: rgb(187, 187, 187);
+  height: 150px;
   width: 100%;
+  
 }
 
 .header_left {
@@ -23,7 +23,6 @@ nav {
 }
 
 label {
-   display: none; 
   font-size: 40px;
   padding-right: 5vw;
 }
@@ -44,8 +43,8 @@ label {
   font-style: italic;
   font-size: 1.6em;
   justify-items: end;
- align-items: center;
-   padding-top: 140px
+  align-items: center;
+   padding-top: 10px;
  
 }
 

@@ -7,15 +7,17 @@ body {
   margin: 0;
   font-family: "Source Sans Pro", sans-serif;
   color: rgb(51, 51, 51);
-  background-color: rgb(238, 238, 238);
+  background-color: #EAE7DC;
 }
 
 header {
   position: fixed;
   display: flex;
-  /*border: 2px solid black;*/
-  background-color: rgb(187, 187, 187);
+  border-bottom: 1px solid #8e8d8a9c;
+  background-color:#D8C3A5;
   width: 100%;
+  height:150px;
+  z-index: 1;
 }
 
 header img {
@@ -27,22 +29,37 @@ nav {
   text-align: end;
 }
 
-label {
-  font-size: 40px;
-  padding-right: 5vw;
+.hidden_nav {
+  display: flex;
+  justify-content: space-around;
+  align-self: center;
+  position: absolute;
+  left: 0;
+  display: none;
+  z-index: -1;
 }
 
-.hidden_nav {
+label {
   display: none;
+}
+
+#toggle {
+  display: none;
+}
+
+.pre_main_nav_hidden {
+    display: none;
 }
 
 .header_right p {
   display: flex;
   text-align: end;
   font-style: italic;
-  margin-top: 7vh;
+  font-weight: bolder;
+  
   padding-left: 10vw;
   padding-right: 5vw;
+  color: #E85A4F;
 }
 
 main {
@@ -54,6 +71,11 @@ main {
   font-size: 1.3em;
   line-height: 2em;
 }
+
+main h1{
+    color: #E85A4F;
+}
+
 
 main h1,
 p {
@@ -86,13 +108,18 @@ aside {
 
 footer {
   margin-top: var(--standard-gap-Y);
-  background-color: rgb(187, 187, 187);
+  background-color: #d8c3a5a9;
   display: grid;
   padding-bottom: 3vh;
 }
 
 .short_contact {
   display: none;
+}
+
+.long_contact span{
+    color: #E85A4F;
+    font-weight: bolder;
 }
 
 footer p {
@@ -103,4 +130,51 @@ footer p {
 footer h3 {
   margin-bottom: 0px;
   text-align: center;
+}
+
+
+
+@media screen and (max-width: 900px) {
+  label {
+    display: block;
+    cursor: pointer;
+    font-size: 40px;
+    padding-right: 5vw;
+    padding-top: 20px;
+    
+
+}
+  
+
+  .hidden_nav {
+    display: none;
+   
+  }
+
+  .nav-a {
+    display: block;
+    box-sizing:border-box;
+    border: 2px solid #E98074;
+    background-color: #8e8d8a;
+      color: black;
+    font-size: 1.5rem;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+   
+  }
+  
+  #toggle:checked + .hidden_nav {
+    display: block;
+    padding-top: 75px;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    height: 500px;
+  }
+
+  
+  #toggle:checked + .label {
+   
+   
+  }
 }
