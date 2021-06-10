@@ -14,6 +14,7 @@ body {
 header {
   background-color: rgb(250, 250, 250);
   padding: 20px 25px;
+  margin: auto;
   margin-top: 0.5%;
   display: flex;
   justify-content: space-between;
@@ -68,6 +69,7 @@ main {
   margin: 20px auto;
   object-fit: cover;
   width: 95vw;
+  border-radius: 8px;
 }
 
 .first div p {
@@ -87,38 +89,132 @@ main {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin-bottom: 2%;
 }
 
 .second img {
+  border-radius: 5px;
   width: 47vw;
+}
+
+.second img:hover {
+  box-shadow: 0px 0px 40px red;
 }
 
 /********** Footer Styles **********/
 
+footer {
+  background-color: rgb(250, 250, 250);
+  margin: auto;
+  padding: 20px 25px;
+  border: 3px solid chocolate;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px red;
+}
+
 .social-media h1 {
   font-size: 20px;
-  width: 80%;
+  text-align: center;
   margin-top: 5%;
-  text-align: left;
+  margin-bottom: 1%;
   font-weight: 700;
 }
 
 .social-links {
   display: flex;
   flex-direction: column;
-  width: 12%;
+  align-items: center;
   padding: 15px;
 }
 
 .social-links img {
-  align-items: flex-start;
-  width: 70%;
+  width: 5%;
   padding: 9px;
 }
 
 footer p {
-  text-align: left;
+  text-align: center;
   color: rgb(62, 62, 62);
-  margin-bottom: 10%;
+  margin-top: 1%;
+  margin-bottom: 1%;
   font-weight: 700;
+}
+
+/********** Responsive Styles **********/
+
+@media screen and (min-width: 540px) {
+  .hamburger {
+    display: none;
+  }
+  .navbar {
+    display: block;
+    border-radius: unset;
+    position: absolute;
+    top: 35%;
+    width: 90vw;
+  }
+  .navbar ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .navbar li {
+    border-bottom: none;
+    padding: 8px 20px;
+    list-style-type: none;
+  }
+  .navbar a {
+    background-color: rgb(250, 250, 250);
+    border-radius: 8px;
+    padding: 8px 40px;
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  .navbar a:hover {
+    box-shadow: 0px 0px 20px red;
+  }
+
+  main {
+    margin-top: 10%;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .navbar {
+    left: 5%;
+  }
+
+  .navbar ul {
+    justify-content: flex-end;
+  }
+
+  .first {
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: right;
+  }
+
+  .first img {
+    object-fit: contain;
+    width: 45vw;
+  }
+
+  .first div p {
+    text-align: right;
+  }
+
+  .second img {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 20vw;
+  }
+  .social-media h1 {
+    margin-top: 0%;
+  }
+
+  .social-links {
+    flex-direction: row;
+    justify-content: center;
+  }
 }
