@@ -37,7 +37,7 @@ header h3 {
     color: white;
     width: 70%;
     position: relative;
-    left: 100px;
+    left: 30%;
     top: 20px;
     /* border: 1px solid black; */
     text-align: right;
@@ -127,6 +127,9 @@ main p, h1 {
     grid-area: pic5;
 }
 
+.hero-img {
+
+}
 
 footer {
     display: flex;
@@ -148,19 +151,35 @@ footer a {
         height: 100%;
     }
 
+    .title {
+        font-size: 35px;
+    }
+
     header h3 {
-        position: relative;
-        left: 150px;
-        font-size: 25px;
+        font-size: 24px;
     }
 
     .pic:hover {
         background: black;
-        transition: .5s ease;
-        transform: rotate(5deg) scale(1.1);
+        transition: .4s ease-in-out;
+        transform:  scale(1.1);
         box-shadow: 10px 10px 30px black;
-
     }
+}
+
+@media screen and (min-width: 800px) and (max-width: 900px) {
+
+    header h3 {
+        /* border: black 1px solid; */
+        position: absolute;
+        top: 15%;
+        left: 27%;
+    }
+
+    header {
+        padding-bottom: 80px;
+    }
+
 }
 
 @media screen and (min-width: 900px) {
@@ -177,7 +196,7 @@ footer a {
 
     .hero-img {
         /* display: none; */
-        width: 30%;
+        width: 300px;
         margin: 0 30px;
     }
 
@@ -187,6 +206,10 @@ footer a {
     }
     .img-container img {
         width: 20%;
+    }
+
+    .pic2:hover, .pic3:hover {
+        transform: translateY(50px) scale(1.3);
     }
 
     .pic5 {
@@ -204,10 +227,16 @@ footer a {
 
     }
 
+    .top-list {
+        padding: 5px;
+    }
+
     .top-list li {
         float: left;
-        padding: 10px;
+        padding: 5px;
         margin: 5px 20px;
+        border-left: 2px rgba(131, 81, 27) solid;
+        border-bottom: 2px rgba(131, 81, 27) solid;
         width: 110px;
         font-size: 20px;
         background: rgb(196, 145, 91);
@@ -218,12 +247,11 @@ footer a {
     }
 
     .top-list li:hover {
-        background: rgba(131, 81, 27);
-        transition: .3s ease;
+        background: rgba(131, 81, 27);        transition: .3s ease;
     }
 
     .title {
-        font-size: 26px;
+        font-size: 50px;
     }
 
     footer a {
@@ -250,7 +278,8 @@ footer a {
 
     header h3 {
             position: relative;
-            left: 250px;
+            left: 30%;
+            top: 10px;
             font-size: 28px;
     }
 
