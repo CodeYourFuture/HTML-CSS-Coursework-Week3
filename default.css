@@ -7,8 +7,7 @@ body {
   margin: 0;
   font-family: "Source Sans Pro", sans-serif;
   color: rgb(51, 51, 51);
-  background-color: rgb(238, 238, 238)
-;
+  background-color: rgb(238, 238, 238);
 }
 
 header {
@@ -16,6 +15,7 @@ header {
   display: flex;
   /*border: 2px solid black;*/
   background-color: rgb(187, 187, 187);
+  width: 100%;
 }
 
 header img {
@@ -28,7 +28,7 @@ nav {
 }
 
 label {
-  font-size: 30px;
+  font-size: 40px;
   padding-right: 5vw;
 }
 
@@ -61,7 +61,8 @@ p {
 }
 
 main img {
-  max-width: 75vw;
+  width: 75vw;
+  max-width: 400px;
   padding-top: var(--standard-gap-Y);
 }
 
@@ -87,7 +88,11 @@ footer {
   margin-top: var(--standard-gap-Y);
   background-color: rgb(187, 187, 187);
   display: grid;
-  
+  padding-bottom: 3vh;
+}
+
+.short_contact {
+  display: none;
 }
 
 footer p {

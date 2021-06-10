@@ -1,0 +1,96 @@
+.header_right {
+  width: 70%;
+}
+
+main {
+  display: flex;
+  padding-top: 30vh;
+}
+
+.main_right {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+
+  margin: 0px;
+  font-size: 2rem;
+  line-height: 2em;
+}
+
+main img {
+  padding-top: 0px;
+}
+
+.main_img {
+  display: flex;
+  order: 1;
+  flex: 0 0 30%; /* I use this flex to set size as 30vw and then use flex in other div and set to 1 for remaining width */
+  flex-shrink: 0;
+  padding-top: 0px;
+  padding-right: 5vw;
+  max-height: 390px;
+  align-self: center;
+  justify-self: center;
+  /*contain:content;*/
+}
+
+.main_img img {
+  width: 100%;
+  height: 100%;
+}
+
+main h1 {
+  order: 2;
+  text-align: end;
+}
+
+main div,
+p {
+  order: 3;
+  text-align: end;
+}
+
+aside {
+  gap: 5vw;
+  justify-content: space-between;
+}
+
+aside img {
+  width: 15vw;
+  max-width: 250px;
+}
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 2rem;
+}
+
+.short_contact_wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.short_contact {
+  display: flex;
+  padding-right: 11vw;
+}
+
+.long_contact {
+  display: none;
+}
+
+footer h3 {
+  order: 2;
+  display: flex;
+  width: 100%;
+  text-align: center;
+  padding-top: 30px;
+  justify-content: center;
+}
+
+footer p {
+  order: 1;
+  flex-direction: column;
+}
