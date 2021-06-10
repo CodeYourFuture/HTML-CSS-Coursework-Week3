@@ -1,1 +1,173 @@
-/*  Add your styling here */
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1, p {
+   color: #A4A2A2;
+}
+
+label {
+  margin: 0 40px 0 0;
+  font-size: 26px;
+  line-height: 70px;
+  display: none;
+}
+
+#toggle {
+  display: none;
+}
+
+
+.navbar1 {
+  color: #A4A2A2;
+  padding: 1em;
+  background-color: #DEDEDE;
+  display: flex;
+  gap: 1.5em;
+}
+
+.navbar2 {
+  background-color: #DEDEDE;
+  padding: 1.75em;
+  margin: 0.5em;
+}
+
+.header {
+  position: sticky;
+  width: 100%;
+  padding: 2em;
+}
+
+.header .menu {
+  clear: both;
+  transition: max-height .2s ease-out;
+}
+
+.header li {
+  display: inline;
+  padding: 20px;
+}
+
+.header li a {
+  text-decoration: none;
+}
+
+a {
+  border: solid #C8C6C6 10px;
+  background-color: #C8C6C6;
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+  color: white;
+}
+
+.features {
+  display: flex;
+  margin-left: 28%;
+  width: 50%;
+  padding: 1em;
+}
+
+.main-area {
+  display: flex;
+  flex-direction: row;
+  padding: 3em;
+  margin: 3em;
+  text-align: justify;
+  gap: 3em;
+}
+
+.features1 i, .features2 i {
+  border: solid #DEDEDE 10px;
+  background-color: #DEDEDE;
+  color: #A4A2A2;
+}
+
+footer {
+  color: #A4A2A2;
+  padding: 2em;
+  background-color: #DEDEDE;
+}
+
+#main-footer {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+footer p {
+  text-align: center;
+  
+}
+
+@media only screen and (max-width: 900px) {
+  .features {
+    display: flex;
+  }
+  .main-area img {
+    width: 30%;
+  }
+
+  .features i {
+    margin-left: -20px;
+    border: solid #DEDEDE 4px;
+}
+
+
+@media only screen and (max-width: 540px) {
+  label {
+    display: block;
+    cursor: pointer;
+    width: 26px;
+    float: right;
+  }
+  
+  .navbar1 {
+
+  }
+  
+  .navbar2 {
+    padding: 0;
+    margin: 0;
+  }
+  
+  .menu {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    display: none;
+  }
+  
+  .menu a {
+    display: block;
+  }
+  
+  #toggle:checked + .menu {
+    display: block;
+  }
+  
+  .features1, .features2 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  
+  .features2 {
+    padding-bottom: 2em;
+  }
+
+  .main-area {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  
+  .main-area img {
+    width: 100%;
+  }
+  
+  #main-footer {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+}
