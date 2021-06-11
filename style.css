@@ -106,10 +106,9 @@ footer {
   }
   .nav {
     border-bottom: 1px solid gray;
-    right: 0px;
-    bottom: 2.5in;
     position: absolute;
-    border: solid 1px;
+    top: 100px;
+    right: 0%;
   }
   .menu {
     border: solid 1px chocolate;
@@ -174,10 +173,7 @@ footer {
   }
   .nav {
     position: absolute;
-    left: 10px;
-  }
-  .menu {
-    text-align: center;
+    left: 35%;
   }
   footer {
     text-align: center;
