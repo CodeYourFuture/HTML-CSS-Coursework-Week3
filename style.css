@@ -107,7 +107,7 @@ footer {
   .nav {
     border-bottom: 1px solid gray;
     right: 0px;
-    bottom: 3.5in;
+    bottom: 2.5in;
     position: absolute;
     border: solid 1px;
   }
@@ -150,5 +150,36 @@ footer {
   }
   .menu {
     display: flex;
+  }
+  footer {
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 900px) {
+  .cake1 {
+    width: 100%;
+    padding: 0px;
+    margin: 5px;
+  }
+  .cake2 {
+    width: 100%;
+    padding: 0px;
+    margin: 5px;
+  }
+  .section {
+    width: 100%;
+    margin: auto;
+    padding: 5px;
+    float: none;
+  }
+  .nav {
+    position: absolute;
+    left: 10px;
+  }
+  .menu {
+    text-align: center;
+  }
+  footer {
+    text-align: center;
   }
 }
