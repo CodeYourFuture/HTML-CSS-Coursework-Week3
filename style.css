@@ -106,14 +106,25 @@ footer {
   }
   .nav {
     border-bottom: 1px solid gray;
-    text-align: right;
+    right: 0px;
+    bottom: 3.5in;
+    position: absolute;
+    border: solid 1px;
   }
+  .menu {
+    border: solid 1px chocolate;
+    background-color: maroon;
+    border-radius: 10px;
+  }
+
   .menu a {
     clear: right;
     text-decoration: none;
     color: black;
     margin: 0 10px;
-    line-height: 70px;
+    line-height: 40px;
+    border: solid 1px maroon;
+    border-radius: 10px;
   }
   span {
     color: #54d17a;
