@@ -1,188 +1,415 @@
-/*  Add your styling here */
 :root{
+    --header-height:4rem;
+    /*color*/
     --primary-color:#F9BEC7;
     --secondary-color:#FF477E;
     --text-color:#261d1d;
+
+/*font sizes*/
+  
+    --biggest-font-size:2.5rem;
+    --h1-font-size:1.5rem;
+    --h2-font-size:1.25rem;
+    --h3-font-size:1.125rem;
+    --normal-font-size:.938rem;
+    --small-font-size:.813rem;
+    --smaller-font-size:.75rem;
+
+    /*margins*/
+    --mb-1: .5rem;
+    --mb-2: 1rem;
+    --mb-3: 1.5rem;
+    --mb-4: 2rem;
+    --mb-5: 2.5rem;
+    --mb-6: 3rem;
+  
+
+/*z index*/
+--z-normal:1;
+--z-tooltip:10;
+--z-fixed:100;
 }
+
 /*general styles*/
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body{
-    height: 100vh;
-    font-family: 'Playfair Display', serif;
-    font-size: 16px;
-    background-color:#F9F1F0;
-}
-h1,h2,h3,p,a{
-    color:var(--text-color);
-}
-li ,a{
     list-style-type: none;
     text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: initial;
+    transition: all .2s ease-in;
 }
+::selection{
+    background-color:var(--primary-color) ;
+}
+html{
+    /*font-size: 62.5%;*/
+    overflow-x: hidden;
+}
+html::-webkit-scrollbar{
+    width: 1.4rem;
+}
+html::-webkit-scrollbar-track{
+    background-color: var(--secondary-color);
+}
+html::-webkit-scrollbar-thumb{
+    background-color: var(--primary-color);
+}
+body{
+    overflow-x: hidden;
+    height: 200rem;
+    font-family: 'Playfair Display', serif;
+    font-size: var(--normal-font-size);
+    color:var(--text-color);
+    line-height: 1.6;
+}
+
 img{
     max-width: 100%;
+    height: auto;
 }
-/*heading styles*/
-#header{
+/*lay out*/
+
+.container{
+    max-width: 1024px;
+    width: calc(100% - 2rem);
+    margin-left:var(--mb-2) ;
+    margin-right: var(--mb-2);
+}
+.bd-grid{
     display: grid;
-    grid-template-columns: 2fr;
-    margin: 0 auto;
-    gap:1em;
+    gap:1.5rem;
 }
-#header .bg-heading{
-position: relative;
-margin: 0 auto;
-opacity: 0.2;
+/*header style*/
+#header{
+    background-image: url(/image/cakes.jpg);
+    position:relative;
+    top:0;left:0;
+    width: 100%;
+    z-index: var(--z-fixed);
+    box-shadow: 0 0.3rem 2rem rgba(241, 185, 125, 0.7);
+    opacity: 0.9;
+    
 }
-#header .logo{
-position: absolute;
-top: 10px;;
-left: 20px;
+#navigation{
+    height:var(--header-height) ;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+#navigation .logo img{
+    border-radius:25% ;
+    border: 2px dotted var(--primary-color); 
+}
+/*mobile style*/
+ .nav_menu{
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    transition: .5s;
+    background-color: var(--primary-color);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-radius: 0 0 1rem 1rem ;
+}
+
+.nav-item{
+margin-bottom: var(--mb-3);
+}
+.nav-link{
+    color: var(--text-color);
+    font-weight: 600;
+    transition: .3s;
+    padding:0.4rem ;
+    border-radius: 0.5rem;
+}
+.nav-link:hover{
+    color:var(--primary-color);
+    background-color: var(--secondary-color);
+}
+.active{
+    color:rgb(20, 2, 18);
+    font-weight: 900;
+    font-size: 1.3rem;
+    transition: all 1s ease-in;
+}
+
+#navigation .nav_toggle{
+color:var(--text-color);
+font-size: 2rem;
 cursor: pointer;
 }
-#header .logo .logo_pic{
-border-radius: 100%;
-box-shadow: 5px 5px 15px 1px rgba(22, 26, 0, 0.6); 
-border: 1px solid var(--secondary-color);
+/*show menu*/
+.show-menu{
+    top:var(--header-height);
 }
-
-#header .logo .shop-name{
-font-style: italic;
-font-weight: 900;
-font-size: 1.3em;
-color: var(--text-color);
-position: absolute;
-top: 95%;
-left:4px;
-text-shadow: 0 2px 2px rgba(255,255,255,.75);
+/*aside  intro style */
+.intro-1{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
 }
-#header .navigation{
-grid-column: 2/3;
-position: absolute;
-right: 30px;
-top: 30px;
+ .sub-heading {
+   
+    text-align: center;
+    color: var(--text-color);
+    font-style:oblique;
+    font-weight: 900;
+    font-size: var(--h1-font-size);
+    margin-top: 4rem;
+    padding: 0.5rem;
+    line-height: 2rem;
+    text-shadow:0 2px 3px whitesmoke ;
+    text-decoration: 1px solid var(--secondary-color) underline;
 }
-.nav-bar{
-display: flex;
-flex-flow:column wrap;
-align-items:center ;
-justify-content: space-between;
+.btn{
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    padding: 1rem;
+    border-radius: 0.8rem;
+    font-size: var(--h3-font-size);
+    margin-bottom: 0.7rem;
+    font-weight: 700;  
 }
- .nav-bar .nav-link{
-padding: 0.3em;
-margin: 0.3em;
-transition: all .5s;
-
+.btn:hover{
+    background-color: var(--primary-color);
+    transition: all .5s ease-in;
+  
 }
-.nav-bar .nav-link a{
-font-weight: 800;
-font-size: 1em;
-border-radius: 0.4em;
-background-color: var(--primary-color);
-padding: 0.3em;
-margin:0.5 0.5 0 0;
+/*main section styles here*/
+main.container{
+    position: absolute;
 }
-.nav-bar .nav-link a:hover{
-    background-color: #FF477E;
-    color: aliceblue;
-}
-.nav-bar .nav-link:first-child > a{
-    font-weight: 700;
-    font-size: 1.1em;
-    color:var(--text-color);
-} 
-.navigation .hamburger{
+ .lead{
+    font-size: var(--biggest-font-size);
+    text-align: center;
+    color: var(--secondary-color);
+    margin: 0.7rem 0;
 
 }
-.navigation .open_menubar{
-
-}
-#header .intro-1{
-position: absolute;
-top: 20%;
-left: 30px;
-font-size: 1.1em;
-text-align: center;
-
-}
-
-/*main section styles*/
-.container{
-
-}
-section{
-
-}
-
-#home{
-}
-
-#home .lead{
-
-}
-/*about section styles*/
 #about{
-
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
 }
-.intro-2{
 
-}
-.intro-2 h2{
-
+ .introduction{
+    text-align: center;
+    color: var(--secondary-color);
+    font-weight: 800;
 }
 .description{
+    color: var(--text-color);
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin: 1.2em auto;
+    text-align: center;
+    
+}
+#feature{
+    margin: 0.2em auto;
+    padding: 0.5rem;
+    border: 1px solid var(--primary-color);
+
 
 }
-/*feature section*/
-.jumbotron{
+/*manu section starts here*/
 
+#menu .card{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    
 }
-/*menu section*/
-#menu{
-
+.cards{
+    flex: 0 1 calc(50% - 0.8em);
+    text-align: center;
+    margin-top: 1rem;
 }
-#menu h3{
-
+.cards .introduction{
+    margin-bottom: 20px;
 }
-#menu .cards{
-
+.cards img{
+    margin-bottom: 20px;
 }
-/*blog*/
+.cards .btn{
+    padding:0.2rem;
+    color:seashell; 
+    
+    
+}
+.cards .btn:hover{
+    background-color: seashell;
+    color:var(--secondary-color);
+    border: 1px solid var(--primary-color); 
+}
+/*blog section*/
 #blog{
-
+    margin-top: 1rem;
+    display: none;
+    grid-template-columns: 1fr;
+    gap:1rem;
+   align-items: center;
 }
-#blog .sweet_blog{
-
+.sweet_blogs{
+    margin: 0 auto;
+    text-align: left;
+    color: var(--secondary-color);
+    
 }
-.sweet_blog .blog_entry{
-
+.blog-entry{
+    font-weight: 900;
 }
-/*footer styles*/
+.sweet_blogs p{
+    text-align: left;
+    color: var(--text-color);
+}
+/*footer section starts here*/
+footer{
+background-image: url(/image/cakes.jpg);
+background-repeat: no-repeat;
+opacity: 0.9;
+}
 #contact{
-
+display: grid;
+grid-template-columns:1fr;
+width:300px;
+max-width: 100%;
+height:100%;
+justify-items: center;
+align-items:start;
+margin: 0 auto;
+background-color: var(--primary-color);
 }
-/*sign up form*/
-#contact .form-control{
-
+.form-control{
+    text-align: center;
+    display: flex;
+    flex-flow:column wrap;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    
+    }
+    .form-control.intro label{
+        display: flex;
+        font-size: var(--small-font-size);
+        color: var(--text-color);
+        font-weight: 600;
+        align-content: flex-end;
+        margin-left: 0.5rem ;
+    }
+    .intro input{
+        border: none;
+        min-height: 1.7em;
+        width: 90%;
+        outline: none;
+        margin: 0 auto;
+        text-align: center;
+        background-color: transparent;
+        border-bottom: 1px solid var(--text-color);
+        
+    }
+    .input-focus{
+        position: absolute;
+        height:2px;
+        top:8em;
+        bottom:0;
+        left:50%;
+        width: 0;
+    }
+     input:focus ~ .input-focus{
+        width: 100%;
+        background-color: var(--primary-color);
+        transition: all 3s ease-in;
+        left:0;
+    }
+    
+    .form-control input::placeholder{
+        color: transparent;
+    }
+    .form-control fieldset{
+    border:none;
+    }
+    
+     .form-control.radio-buttons{
+        background-color:rgba(235, 220, 220, 0.7);
+        padding: 0.6em;
+        border-radius: 3px;
+    }
+    .radio-buttons legend{
+     margin: 1em 0;
+     font-size: 0.9em;
+     font-weight: 600;
+    }
+    
+    .radio-buttons label{
+        display: block;
+        font-weight: 600;
+        font-size: 0.8em;
+        color: var(--text-color);
+    }
+    /*submit*/
+.form-control .btn{
+    
+    margin: 0 auto;
 }
-.form-control label{
 
+.btn:hover{
+    background-color: var(--primary-color);
+    color: whitesmoke;
+    border-radius: 75%;
 }
-.form-control #fieldset{
+.footer{
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+}
+.footer_aside{
+display: grid;
+grid-template-columns: 1fr;
+margin-top: 3em;
+}
+.social-media {
+display:flex;
+flex-direction: row;
+flex-wrap:wrap;
+padding:0;
+margin:0 auto;
+}
 
+
+.sm-link{
+display: flex;
+justify-content: flex-start;
+align-items: center;
+height: 3em;
+margin:0 1rem 1rem;
+margin-bottom: 1rem;
+width: 3em;
+border:1px solid #9c9c9c;
+border-radius: 25%;
+padding: 0.9em;
+font-weight: 900;
+color:var(--text-color);
+background-color: rgb(223, 202, 202);
+transition: all 0.5s ease-in-out;
 }
 .footnote_pic{
-
-}
-.footer_img{
-
+ 
+    margin: 0.5rem auto;
 }
 .copyright{
-
+    font-size: var(--body-font-size);
+    color:var(--text-color);
+    margin-top: 0.5rem;
+    font-weight: 600;
+    text-align: center;
 }
-

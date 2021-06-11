@@ -17,81 +17,123 @@
 <body>
     <!-- Add your markup here -->
     <header id="header">
-        <img class="bg-heading" src="/images/heading_bg.jpeg" alt="header background image" height="90%" width="100%">
-        <div class="logo">
-            <img src="/images/cake logo-2.jpeg" alt="fairy_cake logo image" class="logo_pic" height="30%" width="30%">
-            <p class="shop-name">Fairy Cup Cake</p>
-        </div>
-        <a href="#" class="toggle-button">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </a>
-        <nav class="navigation">
-            <ul class="nav-bar">
-                <li class="nav-link active"><a href="#home">Home</a></li>
-                <li class="nav-link"><a href="#about">About Us</a></li>
-                <li class="nav-link"><a href="#featured">Featured</a></li>
-                <li class="nav-link"><a href="#menu">Menu</a></li>
-                <li class="nav-link"><a href="#blog">Blog</a></li>
-                <li class="nav-link"><a href="contact">Contact</a></li>
-            </ul>
+        <nav id="navigation" class="container">
+            <a href="#" class="logo"><img src="/image/logo-small.jpg" alt="logo picture of the Fairy Cup Cake shop" height="50px" width="50px"></a>
+             <!--hamburger menu-->
+             <div class="nav_toggle" id="nav-toggle">
+                <i class="fas fa-hamburger"></i>
+            </div>
+            <div class="nav_menu" id="nav-menu">
+                <ul id="nav-bar">
+                    <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">About Us</a></li>
+                    <li class="nav-item"><a href="#feature" class="nav-link">Featured</a></li>
+                    <li class="nav-item"><a href="#menu" class="nav-link ">Menu</a></li>
+                    <li class="nav-item"><a href="#blog" class="nav-link">Blogs</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link"><span>Contact Us</span></a></li><!--for desktop styling-->
+                </ul>
+            </div>
+            <!--hamburger menu-->
+            <div class="nav_toggle" id="nav-toggle">
+                <i class="fas fa-hamburger"></i>
+            </div>
         </nav>
         <aside class="intro-1">
-            <p>The best cakes in town delivered to your door</p>
-        </aside>
+            <p class="sub-heading">The Best Cakes in Town Delivered to Your Door</p>
+            <button class="btn" type="submit">Shop Now</button>
+        </aside>       
     </header>
     <!--Header ends here -->
-    <main class="container">
+    <!--main section starts here-->
+    <main>
         <section id="home">
-            <h1 class="lead">Welcome</h1>
+            <h1 class="lead">Welcome</h1>           
         </section>
+
     <!--about section-->    
         <section id="about">
             <article class="intro-2">
-                <h2>Lorem ipsum dolor sit amet.</h2>
+                <h2 class="introduction">We Are Bakers From Leeds</h2>
                 <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quibusdam, ipsam eaque magni laboriosam magnam corrupti molestiae odio, et sunt consequuntur assumenda? Eum, at nisi.</p>
             </article>
             <article id="feature">
-                <img class="jumbotron" src="" alt="featured cake image of the fairy cake company" height="500px" width="400px">
+                <img class="jumbotron" src="/image/jumbotron.jpeg" alt="jumbotron image of the fairy cake company" height="500px" width="400px">
             </article>
            </section>
-        <section id="menu">
-                <h3>Menu</h3>
-            <div class="cards">Birthday Specials</div>
-            <div class="cards">Fruit Cakes</div>
-            <div class="cards">Desserts</div>
-            <div class="cards">chocolate</div>
-        </section>
-        <section id="blog">
-            <article class="sweet_blogs">
-                <h3 class="blog_entry">Festive Season Collection</h3>
-            </article>
-            <article class ="sweet_blogs">
-                <h3 class="blog_entry">Lockdown Initiatives in the Community</h3>
-            </article>
-            <article class ="sweet_blogs">
-                <h3 class="blog_entry">Training and apprenticeship </h3>
-            </article>
+
+           <!--Menu section starts here-->
+           <section id="menu">
+            <h2 class="lead">Our Menu</h2>
+         <div class="card">  
+        <div class="cards">
+            <h3 class="introduction" >Birthday Specials</h3>
+            <img src="/image/card-pic-special-occasion.jpg"alt="wedding cake picture">
+            <a href="#" class="btn">Click to Learn More</a>
+        </div>
+        <div class="cards">
+            <h3 class="introduction">Fruit Cakes</h3>
+            <img src="/image/card-pic-fresh.jpg" alt="Fresh fruit cakes and biscuit">
+            <a href="#" class="btn">Click to Learn More</a>
+        </div>
+        <div class="cards">
+            <h3 class="introduction">Desserts</h3>
+            <img src="/image/card-pic-desserts.jpg" alt=" picture of a delicious delicious ice cream ">
+            <a href="#" class="btn">Click to Learn More</a>
+        </div>
+        <div class="cards">
+            <h3 class="introduction">Chocolate</h3>
+            <img src="/image/card-pic-choc.jpg" alt="Chocolate cake picture">
+            <a href="#" class="btn">Click to Learn More</a>
+        </div>
+    </div> 
+    </section>
+
+    <!--blog section goes here-->
+    <section id="blog">
+        <h2 class="lead">Our Blogs</h2>
+
+        <article class="sweet_blogs">
+            <h3 class="blog_entry">Festive Season Collection</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi tempora voluptatem molestiae corrupti in perspiciatis corporis nobis. Eligendi neque voluptatum provident? Veniam, iste veritatis? Omnis excepturi aliquam obcaecati autem sed facilis non illum, temporibus sit quas aperiam quis enim vel, incidunt provident ducimus necessitatibus quasi molestiae ad laudantium nam unde.
+            </p>
+        </article>
+        <article class ="sweet_blogs">
+            <h3 class="blog_entry">Lockdown Initiatives in the Community</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi tempora voluptatem molestiae corrupti in perspiciatis corporis nobis. Eligendi neque voluptatum provident? Veniam, iste veritatis? Omnis excepturi aliquam obcaecati autem sed facilis non illum, temporibus sit quas aperiam quis enim vel, incidunt provident ducimus necessitatibus quasi molestiae ad laudantium nam unde.
+            </p>
+        </article>
+        <article class ="sweet_blogs">
+            <h3 class="blog_entry">Training and apprenticeship </h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi tempora voluptatem molestiae corrupti in perspiciatis corporis nobis. Eligendi neque voluptatum provident? Veniam, iste veritatis? Omnis excepturi aliquam obcaecati autem sed facilis non illum, temporibus sit quas aperiam quis enim vel, incidunt provident ducimus necessitatibus quasi molestiae ad laudantium nam unde.
+            </p>
+        </article>
 </section>
 </main>
-<footer class="container">
+<!--footer starts here-->
+<footer>
+    <h2 class="lead">Contact</h2>
     <section id="contact">
+        <p class="introduction">Please Fill Out the Following Form </p>
         <!--sign up form for newsletter-->
-        <form action="" class="form-control">
+        <form action="" class="form-control intro">
             <label for="name">Full Name:</label>
                 <input type="text" id="name" name="name" required>
+
             <label for="email">Your Email:</label>
                 <input type="email" id="email" name="email" required>
+
             <label for="password">Password:</label>
                 <input type="password" id="password" name="password" required>
+
             <label for="phone">Phone Number:</label>
                 <input type="number" id="phone" name="phone">
-            <label for="comment">Please Feel Free to Leave Feedbacks</label>
-                <textarea name="comment" id="commnet" cols="30" rows="10" maxlength="500" minlength="50" placeholder="Write Here..."></textarea>
             
             <fieldset id="radio_buttons">
                 <legend>Gender</legend>
+
                 <label for="Female">Female</label>
                     <input type="radio" name="female" id="female" value="Female" required>
                 
@@ -99,16 +141,33 @@
                     <input type="radio" name="male" id="male" value="Male" required>
                 
                 <label for="prefer not to say">Prefer Not to Say</label>
-                    <input type="radio" name="prefer not to say" id="prefer not to say" value="Prefer not to say" required>
-                
+                    <input type="radio" name="prefer not to say" id="prefer not to say" value="Prefer not to say" required>                
             </fieldset>
+                <label for="comment">Please Feel Free to Leave Feedbacks</label>
+                    <textarea name="comment" id="commnet" cols="30" rows="10" maxlength="500" minlength="50" placeholder="Write Here..."></textarea>
+                   <button class="btn" type="submit">Submit</button>
         </form>
     </section>
-    <aside class="footnote_pic">
-        <img src="" alt="picture of our future endeavor" class="footer_img" width="200px" heigh="200px">
+
+    <aside class="footer_aside"> 
+    <div class="social-media">
+        <a href="www.facebook.com" class="sm-link"><i class="fab fa-facebook-square"></i> </a>
+        <a href="www.twitter" class="sm-link"><i class="fab fa-twitter-square"></i></a>
+        <a href="www.instagram.com" class="sm-link"><i class="fab fa-instagram-square"></i></a>
+        <a href="www.youtube.com" class="sm-link"><i class="fab fa-youtube-square"></i></a>
+    </div>
+    <div class="footnote_pic">
+        <img src="/image/dessert.jpg" alt="picture of our future endeavor" class="footer_img" width="300px" heigh="300px">
+    </div>
     </aside>
+    
     <p class="copyright"><span>&#169;</span>Fairy Cake, inc.</p>
-</footer>
+    </footer>
+
+
+
+<script src="/main.js"></script>
+<script src="https://kit.fontawesome.com/0356ac57d3.js"></script>
 </body>
 
 </html>
