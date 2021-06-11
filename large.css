@@ -9,51 +9,69 @@
   align-items: center;
 }
 
-main {
-  display: flex;
-  padding-top: 30vh;
-}
-
 .nav_element_main_nav {
   color: white;
   width: 100vw;
   justify-content: center;
+
+  height: 30vh;
+  align-items: center;
+  display: flex;
 }
 
 .pre_main_nav_hidden {
   display: flex;
-
+  flex-grow: 1;
   position: absolute;
   margin-top: calc(150px + 10vh);
   width: 70vw;
-  margin-left: 22vw;
+  margin-left: 12vw;
   height: 10vh;
   align-content: flex-end;
   justify-content: space-around;
 }
 
-.nav-b {
+.nav-b.nav-b.is-main {
+  display: flex;
   color: black;
   background-color: #e98074;
   font-weight: bolder;
   font-size: 1.4rem;
   box-sizing: border-box;
   height: 55px;
-  width: 130px;
+  width: 150px;
   border: 2px solid #8e8d8a9c;
   text-align: center;
   justify-content: center;
   padding-top: 12px;
   border-radius: 0.2rem;
+  cursor: pointer;
 }
 
-.nav-b:hover {
+.nav-b.completed {
+  animation: blink 1s linear 0s 1 alternate;
+}
+
+@keyframes blink {
+  0% {
+    color: #fff;
+    text-shadow: 0 0 1rem #fff;
+  }
+}
+
+.nav-b.is-main:hover {
+  /* this may be wrong sytax */
   transform: scale(1.3);
   transition: transform 0.4s;
   cursor: pointer;
   color: #e85a4f;
   background-color: #8e8d8a86;
   border: #e85a4f 2px solid;
+}
+
+main {
+  display: flex;
+  padding-top: 0px;
 }
 
 .main_right {
