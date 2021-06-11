@@ -176,6 +176,9 @@ footer p:last-of-type{
     main{
         top:200px;
     }
+    nav{
+        top:185px;
+    }
     .welcome{
         margin-top:30px;
     }
