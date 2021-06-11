@@ -7,10 +7,73 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Responsive Cake webpage</title>
     <!-- Add a link to your css file here -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <!-- Add your markup here -->
+    <header>
+        <section class="head">
+            <img class="logo" src="img/cakelogo.png" alt="Mimi's cakes logo">
+            <div class="menu-container">
+                <img class="hamburger" src="img/hamburger.svg" onclick="myFunction()" alt="navigation">
+                <p>The best cakes in town delivered to you door</p>
+            </div>
+        </section>
+        <nav id="main_navigation">
+            <ul>
+                <li><a href="">HOME</a></li>
+                <li><a href="">CAKES</a></li>
+                <li><a href="">ORDER</a></li>
+                <li><a href="">LESSONS</a></li>
+                <li><a href="">ABOUT</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="welcome">
+            &nbsp;<br>
+            <h5>Welcome</h5>
+            <div class="welcome_note">
+                <p>Have an enchanting  event with <strong>mimi's cakes</strong>. Our cakes are made sugar free, preservative free and full of bursting nutritious purely natural flavours. Your take pride in your satisfaction </p>
+                <img src="img/rainbow.jpg" alt="A picture of one of our cakes from this season's rainbow inspired collection">
+            </div>
+        </section>
+        <section class="categories">
+            <a href=""><div class="cake_container">
+                <img  class="cake" src="img/cupcake.png" alt="cupcakes">
+                <p>Cupcakes</p>
+            </div></a>
+            <a href=""><div class="cake_container">
+                <img  class="cake" src="img/fullcake.png" alt="full cakes">
+                <p>Full cakes</p>
+            </div></a>
+            <a href=""><div class="cake_container">
+                <img class="cake" src="img/taster.png" alt="tasters">
+                <p>Tasters</p>
+            </div></a>
+            <a href=""><div class="cake_container">
+                <img class="cake" src="img/cupcake.png" alt="wedding cakes">
+                <p>Wedding cakes</p>
+            </div></a>
+        </section>
+    </main>
+    <footer>
+        <div class="footer_container">
+            <p>Subscribe to our newsletter:</p>
+            <button type="submit">Subscribe</button>
+            <p>Follow us on:</p>
+            <section class="socail_media_icons">
+                <ul>
+                    <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                </ul>
+            </section>
+            <p>&copy; 2021, Amanda Obiajulu Nwadukwe</p>
+        </div>
+    </footer>
+    <script src="js/cakes.js"></script>
+    <script src="https://kit.fontawesome.com/9bb64d8c48.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
