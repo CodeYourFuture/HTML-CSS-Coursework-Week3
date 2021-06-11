@@ -1,1 +1,93 @@
 /*  Add your styling here */
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    font-family: 'Poppins', sans-serif;
+  
+}
+.logo{
+    width:75px;
+}
+.hamburger{
+  width:  30px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+header{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width:100vw;
+    background-color: rgb(175, 231, 231);
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+nav{
+    display:none;
+}
+header p{
+ align-self:flex-end;
+ text-align: right;
+
+}
+/* section1 styles*/
+.section1{
+    width:90vw;
+    margin:auto;
+
+}
+.section1 p{
+    text-align: justify;
+    margin-top:20px;
+    margin-bottom: 20px;
+}
+ .main-img{
+    width:90vw;
+    margin:auto;
+
+}
+/* section2 */
+.section2{
+    display:grid;
+    grid-template-columns:  1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    gap:5px;
+    width:90vw;
+    margin:auto;
+    background-color: rgb(32, 121, 223);
+
+    
+}
+.section2 img{
+    width:45vw;
+    height:45vw ;
+    
+}
+/* footer */
+footer{
+    background-color: rgb(176, 206, 204);
+  
+    margin-top:20px;
+    padding:15px;
+}
+footer p{
+    text-align: center;
+}
+
+footer a{
+    text-decoration: none;
+    color: black;
+    font-size:0.4rem;
+    text-align:left;
+}
+footer li{
+    list-style-type: none;
+}
