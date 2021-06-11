@@ -6,10 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Responsive Cake webpage</title>
     <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/a0a5d92153.js"
+      crossorigin="anonymous"
+    ></script>
 
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Tangerine&display=swap");
-    </style>
     <!-- link to your css file here -->
   </head>
 
@@ -17,15 +18,18 @@
     <header class="header">
       <img
         class="logo-image"
-        src="cake photos/company logo.png"
+        src="cake photos/company logo fixed.png"
         alt="company logo-image"
         height="150px"
         width="150px"
       />
       <p class="logo-p">The best cake in town delivered to your door!</p>
+      <div class="hamburger" id="hamburger">
+        <i class="fas fa-bars"></i>
+      </div>
 
-      <nav class="nav-bar">
-        <ul>
+      <nav>
+        <ul class="nav-bar" id="nav-bar">
           <li class="nav-links"><a href="#">Home</a></li>
           <li class="nav-links"><a href="#">Cakes</a></li>
           <li class="nav-links"><a href="#">Order</a></li>
@@ -33,11 +37,11 @@
           <li class="nav-links"><a href="#">About</a></li>
         </ul>
       </nav>
-      <img
+      <!-- <img
         class="hamburger-menu"
         src="cake photos/menu-hamburger.svg"
         alt="hamburger menu icon"
-      />
+      /> -->
     </header>
 
     <main>
@@ -56,7 +60,7 @@
             src="cake photos/pexels-pixabay-264892-chocolate-cake.jpg"
             alt="Melt-in-middle dome cake"
             height="300"
-            width="300"
+            width="200"
           />
         </div>
       </section>
@@ -68,7 +72,7 @@
               src="cake photos/pexels-elli-1854652-cheesecake-slice.jpg"
               alt="chocolate cheese cake"
               height="200"
-              width="200"
+              width="140"
             />
           </a>
           <a href="#">
@@ -77,7 +81,7 @@
               src="cake photos/pexels-jess-bailey-designs-913136-cupcake.jpg"
               alt="cupcake"
               height="200"
-              width="200"
+              width="140"
             />
           </a>
           <a href="#">
@@ -86,7 +90,7 @@
               src="cake photos/pexels-sharon-mccutcheon-3779937-donut.jpg"
               alt="donut"
               height="200"
-              width="200"
+              width="140"
             />
           </a>
           <a href="#">
@@ -95,7 +99,7 @@
               src="cake photos/pexels-kristina-paukshtite-1998635-dome-cake.jpg"
               alt="Dome chocolate cake"
               height="200"
-              width="200"
+              width="140"
             />
           </a>
         </div>
@@ -166,5 +170,6 @@
       </div>
       <p class="p2">Lorem Ipsum Dolar</p>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>

@@ -1,9 +1,5 @@
 /*  Add your styling here */
-html,
-body,
-main {
-  width: 100%;
-}
+
 * {
   box-sizing: border-box;
 }
@@ -12,10 +8,10 @@ body {
   background-color: rgb(229, 219, 230);
   padding: 0;
   margin: 0;
-  overflow-x: hidden;
 }
 a {
   text-decoration: none;
+  color: rgb(14, 8, 8);
 }
 header {
   display: flex;
@@ -23,6 +19,7 @@ header {
   padding: 1.25rem 1.5rem;
   position: relative;
 }
+
 .hero-text h1 {
   font-family: "Tangerine", serif;
   font-size: 1.8rem;
@@ -36,28 +33,34 @@ header p {
   padding-bottom: 15px;
 }
 
-header .hamburger-menu {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-}
-
-header nav ul {
-  display: flex;
-  flex-direction: column;
-  background-color: rgb(226, 202, 202);
+.hamburger {
+  font-size: 30px;
+  cursor: pointer;
 }
 
 .nav-bar {
   background-color: rgb(196, 147, 147);
   border-radius: 5px;
   position: absolute;
-  overflow: hidden;
-  top: 162px;
-  left: 2.5vw;
-  width: 95%;
-  text-align: center;
+  right: 0px;
+  width: 50vw;
+  height: 70vw;
+  top: 0px;
+  align-items: center;
   display: none;
+}
+.nav-bar.show {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  top: 35px;
+}
+
+nav ul li {
+  list-style: none;
+  height: 40px;
+  /* display: grid; */
+  place-items: center;
 }
 
 /* main section hero */
@@ -89,10 +92,7 @@ header nav ul {
   width: 100%;
   height: auto;
 }
-/* .product-images img {
-  object-fit: cover;
-  max-width: fit-content;
-} */
+
 /* footer */
 .p1 {
   text-align: center;
@@ -119,10 +119,7 @@ header nav ul {
   }
 }
 @media screen and (min-width: 750px) {
-  header .hamburger-menu {
-    position: absolute;
-    top: 20px;
-    right: 20px;
+  .hamburger {
     display: none;
   }
   .logo-p {
@@ -138,12 +135,16 @@ header nav ul {
   .nav-bar {
     border-radius: 5px;
     position: absolute;
-    overflow: hidden;
     top: 162px;
-    left: 2.5vw;
-    width: 95%;
+    width: 100vw;
     text-align: center;
-    display: list-item;
+    display: flex;
+    height: 9vh;
+  }
+  .nav-bar.show {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
   .nav-links {
     font-size: medium;
@@ -157,5 +158,8 @@ header nav ul {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
     place-items: center;
+  }
+  body {
+    overflow-x: hidden;
   }
 }
