@@ -1,1 +1,175 @@
 /*  Add your styling here */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.logo{
+    width: 100px;
+}
+
+
+.nav{
+    display: none;
+
+}
+
+.check{
+    display: none;
+}
+
+.hamburger{
+    position:absolute;
+    top: 20px;
+    right: 20px;
+
+}
+
+header{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: burlywood;
+}
+
+header p {
+    align-self: flex-end;
+    text-align: right;
+}
+
+/* section 1 style */
+
+.section_1{
+    /* 90% of viwer width */
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+
+    /* make the margin 20px top and bottom 
+    and 0 for right and left */        
+    margin: 20px auto;
+
+}
+
+.section_1 img{
+    width: 90vw;/*90 % of the view port*/
+}
+
+.section_1 p {
+    /* make the margin 20px top and bottom 
+    and 0 for right and left */
+    margin: 20px 0;
+}
+
+
+/* section 2 style */
+.section_2{
+    width: 90vw;
+    margin: 20px auto;
+    display: flex;
+    /* flex-wrap put the number of img in the line
+    depending on the img size. 
+    each img size is 42vw that mean 2 img in the line because
+    42 + 42 = 82 so the space left is 100-82 = 18vw
+    so the third img will not fit in the same line and will
+    go to the next line and put third and fourth in the same line
+    */
+    flex-wrap: wrap;
+    /* justify-content: space-between
+    to make speace betrwen the img in the same line */
+    justify-content: space-between;
+
+
+}
+/* vw meaning view port width */
+/* we put the vw 42 because we need tow img in each line
+ and give it the same number because it is square */
+.section_2 img{
+    width: 42vw;
+    height: 42vw;
+    margin-bottom: 20px;/* to make speace between each line 
+                         the top 2 imgs and the bottom 2 */
+}
+
+footer{
+    background-color: burlywood;
+    padding: 20px;
+}
+
+footer li{
+    list-style: none;/* to delete the dots in the li */
+    padding: 25px;
+}
+
+footer p{
+    padding-top: 15px;
+    text-align: center;
+}
+
+/*  **2 breakpoints**:  
+  > - breakpoint 1 --> 540px  
+  > - breakpoint 2 --> 900px  */
+
+  /* minimum 540px or more */
+  @media screen and (min-width:540px){
+      footer ul{
+          display: flex;
+          justify-content: center;
+      }
+
+      footer li{
+          margin-right:10px; 
+      }
+  }
+
+   /* minimum 900px or more */
+   @media screen and (min-width:900px){
+       .section_2 img{
+           width: 20vw;
+           height: 20vw;
+
+       }
+
+       .section_1{
+        flex-direction: row;
+       }
+
+       .section_1 img{
+           width: 40vw;
+           order: -1 ;
+       }
+
+       .section_1 article h1{
+           text-align: right;
+       }
+
+       .section_1 article {
+           margin-left: 20px;
+       }
+
+       .section_1 p {
+           text-align: justify;
+       }
+
+       .nav{
+        display: block;
+        background-color: burlywood;
+        width: 90vw;/* width 90 % of the viewer port*/
+        margin: 20px auto; 
+        display: flex;
+        justify-content: flex-end;
+        }
+       .nav a {
+           color: black;
+           text-decoration: none;
+           padding: 20px  ;
+   }
+   }
