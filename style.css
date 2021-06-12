@@ -179,7 +179,8 @@ img:hover {
 	left: 100%;
 	width: 100%;
 	min-height: 100vh;
-	display: block;
+	display: flex;
+	flex-direction: column;
 	z-index: 98;
 	background-color: #54779c;
 	padding-top: 120px;
@@ -191,7 +192,7 @@ img:hover {
 	left: 0;
 }
 
-.mobile-nav a {
+.mobile-nav a{
 	display: block;
 	width: 100%;
 	max-width: 200px;
@@ -208,11 +209,11 @@ img:hover {
 .mobile-nav a:hover {
 	background-color: #bcb8b1;
 	color: #463f3a;
-}
+} 
 
 /*First Breakpoint*/
 @media screen and (min-width: 540px) {
-	.hidden-nav {
+	.hidden-nav{
 		margin-top: 100px;
 		margin-bottom: 100px;
 		display: flex;
