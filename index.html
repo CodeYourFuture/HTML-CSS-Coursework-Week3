@@ -6,12 +6,115 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/style.css" >
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
     <title>Responsive Cake webpage</title>
-    <!-- Add a link to your css file here -->
+    <script src="JS/main.js"></script>
 </head>
 
 <body>
     <!-- Add your markup here -->
-</body>
+    <header>
+        <section class="navbar">
+            <h2>Cake Business</h2>
+            <div>
+                <img class="brand" src="img/brand.jpeg" alt="brand" />
+            </div>
 
+            <div class="text">
+                <p>The best cakes delivered at your door</p>
+            </div>
+            <button class="hamburger" aria-label="hamburger">
+                <div class="bar"></div>
+            </button>
+            <nav class="mobile-nav">
+                <a href="#">HOME</a>
+                <a href="#">CAKES</a>
+                <a href="#">ORDERING</a>
+                <a href="#">LESSONS</a>
+                <a href="#">ABOUT</a>
+            </nav>
+        </section>
+        
+        <nav class="hidden-nav">
+            <button>Home</button>
+            <button>Cakes</button>
+            <button>Ordering</button>
+            <button>Classes</button>
+            <button>About</button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Welcome to my celebration cakes</h1>
+            <div class="header-text">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit. Maxime mollitia, molestiae quas vel sint
+                    commodi repudiandae consequuntur voluptatum
+                    laborum numquam blanditiis harum quisquam eius sed
+                    odit fugiat iusto fuga praesentium optio, eaque
+                    rerum! Provident similique accusantium nemo autem.
+                    Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit. Maxime mollitia, molestiae quas vel sint
+                    commodi repudiandae consequuntur voluptatum
+                    laborum numquam blanditiis harum quisquam eius sed
+                    odit fugiat iusto fuga praesentium optio, eaque
+                    rerum! Provident similique accusantium nemo autem.
+                </p>
+            </div>
+            <img
+                class="banner-img"
+                src="img/cakebanner.jpeg"
+                alt="banner cakes"
+            />
+        </section>
+
+        <section class="cake-grid">
+            <h2>Cake Business</h2>
+            <div class="cake-types">
+                <img
+                    class="img"
+                    src="img/wedding.jpeg"
+                    alt="wedding cake"
+                />
+                <p>Wedding Cakes</p>
+            </div>
+            <div class="cake-types">
+                <img
+                    class="img"
+                    src="img/afternoon.jpeg"
+                    alt="afternoon tea"
+                />
+                <p>Afternoon Tea</p>
+            </div>
+            <div class="cake-types">
+                <img class="img" src="img/cup.jpeg" alt="cupcakes" />
+                <p>Small Cup cakes</p>
+            </div>
+            <div class="cake-types">
+                <img
+                    class="img"
+                    src="img/occassions.jpeg"
+                    alt="occasions"
+                />
+                <p>Hand-made for Occasions</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section class="footer-container">
+            <h2>Cake Business</h2>
+            <p>free delivery</p>
+            <p>flowers and cards free</p>
+            <p>ingredients/allergens list provided</p>
+        </section>
+
+        <section class="copyright">
+            <h2>Cake Business</h2>
+            <p>&copy; A A CYF</p>
+        </section>
+    </footer>
+</body>
 </html>
