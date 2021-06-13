@@ -1,1 +1,45 @@
 /*  Add your styling here */
+
+.header-wrapper {
+	text-align: right;
+}
+
+.header li {
+	list-style-type: none;
+	padding-left: 0;
+}
+
+.logo {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+}
+
+/* Burger menu - start ------------------------------- */
+
+#toggle {
+	display: none;
+}
+
+#toggle-close {
+	display: none;
+}
+
+.menu {
+	display: none;
+}
+
+#toggle:checked ~ .menu {
+	display: block;
+}
+
+#toggle:checked ~ #toggle-close {
+	display: block;
+}
+
+#toggle:checked ~ #toggle-open {
+	display: none;
+}
+
+/* Burger menu - end ------------------------------- */
+
