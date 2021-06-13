@@ -1,46 +1,52 @@
 
-*{
-font-family: 'Roboto', sans-serif;
-}
-
-/**
- * /*  Add your styling here
- *
- * @format
- */
-
 /* general styles */
 body {
-	background-color: #e7c6ff62;
+	background-color: white;
 	width: 100%;
 	margin: auto;
 	box-sizing: border-box;
-	font-family: myFirstFont;
+	font-family: 'Roboto', sans-serif;
 }
 
 h2 {
 	display: none;
 }
-@font-face {
-	font-family: myFirstFont;
-	src: url(Underdog-Regular.ttf);
-}
 
 /* header styles */
+.section-top{
+    background-image: url(https://www.cakeshopco.com/img/header.png);
+    background-size: 100%;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center top;
+}
 .navbar-item {
 	display: flex;
 	justify-content: space-between;
 	flex-direction: column;
 }
+.header{
+    display: flex;
+    flex-direction: column;
+	flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+	
+}
 .brand {
-	width: 200px;
-	height: 200px;
+   /* margin-left: 2%;
+    margin-top: 2%;*/
+	max-width: 50%;
+    margin-top: 10%;
+	
 }
 
 .navbar {
 	width: 100%;
 	display: flex;
-	background-color: #c8e7ff46;
+	background-color: white;
 	align-items: flex-start;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -55,20 +61,43 @@ h2 {
 /* hero styles */
 .text {
 	width: 100%;
-	padding-right: 5px;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: flex-end;
-	font-size: 2em;
-	text-align: right;
+	flex-wrap: nowrap;
+    font-size: 3rem;
+    font-weight: bolder;
+    margin:0%;
+    color: #cb997e;
+    
 }
 .hero {
+    background-image: url(https://www.cakeshopco.com/content/articles/2016/2/29/Slide1_1585x475.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
 	font-size: 1.5em;
 	display: flex;
 	flex-wrap: wrap;
 	width: 100%;
 	flex-direction: column;
 	justify-content: center;
+}
+.hero > p {
+	margin: 10px;
+	padding: 10px;
+}
+.hero h5{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin:0%;
+    padding:1%;
+    font-weight: bolder;
+    font-size: 1.5rem;
+    color: white;
+    font-style: oblique;
+    
+}
+.hero h5:nth-child(2){
+    font-style: normal;
 }
 .header-text {
 	display: flex;
@@ -84,10 +113,7 @@ h2 {
 	margin: 50px 0px 10px 0px;
 	max-width: 100%;
 }
-.hero > p {
-	margin: 10px;
-	padding: 10px;
-}
+
 .hidden-nav {
 	display: none;
 }
@@ -129,6 +155,7 @@ img:hover {
 	margin-top: 10px;
 	flex-direction: column;
 	align-items: flex-start;
+    background-color: grey;
 }
 .copyright > p {
 	display: flex;
@@ -187,7 +214,7 @@ img:hover {
 	display: flex;
 	flex-direction: column;
 	z-index: 98;
-	background-color: #54779c;
+	background-color: #d4a373;
 	padding-top: 120px;
 	transition: 0.4s;
 	font-weight: bolder;
@@ -199,38 +226,44 @@ img:hover {
 
 .mobile-nav a{
 	display: block;
-	width: 100%;
+	width: 80%;
 	max-width: 200px;
 	margin: 0 auto 16px;
 	text-align: center;
 	margin-bottom: 16px;
 	padding: 12px 16px;
-	background-color: #463f3a;
-	color: #f4f1de;
-	transition: 0.4s;
+	background-color: #03071e;
+	color: #ffafcc;
+	transition: 0.2s;
 	text-decoration: none;
+    border-radius : 10%;
+    font-size: large;
+    font-weight: bolder;
+
 }
 
 .mobile-nav a:hover {
-	background-color: #bcb8b1;
-	color: #463f3a;
+	background-color: #f0f0f0;
+	color: #000000;
 } 
 
 /*First Breakpoint*/
 @media screen and (min-width: 540px) {
 	.hidden-nav{
-		margin-top: 100px;
-		margin-bottom: 100px;
+		/*margin-top: 100px;
+		margin-bottom: 100px;*/
 		display: flex;
 		flex-direction: row;
+        flex-wrap: wrap;
 		width: 100%;
-		background-color: rgba(173, 216, 230, 0.438);
-		padding-top: 50px;
-		padding-bottom: 50px;
-		flex-wrap: wrap;
-		justify-content: flex-end;
-		align-items: flex-end;
+		background-color: white;
+		justify-content: center;
+		align-items: center;
 	}
+    .button{
+        margin-left: 1%;
+        margin-right: 1%;
+    }
 	.header-text {
 		display: flex;
 		justify-content: flex-end;
@@ -255,6 +288,7 @@ img:hover {
 	.footer-container {
 		flex-direction: row;
 		justify-content: center;
+        
 	}
 	.footer-container > p {
 		margin: 10px;
