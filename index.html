@@ -58,15 +58,49 @@
                     , supported by a staff of mena alliances.
                 </p>
             </div>
+           <!-- Tab links -->
+<div class="tab">
+    <button class="tablinks" onclick="openCity(event, 'Today')">Today Cake</button>
+    <button class="tablinks" onclick="openCity(event, 'Hacks')">Hacks </button>
+    <button class="tablinks" onclick="openCity(event, 'Facts')">Facts </button>
+  </div>
+  
+  <!-- Tab content -->
+  <div id="Today" class="tabcontent">
+    <h3>Today Cake</h3>
+    <p><img
+        class="banner-img"
+        src="img/swapnil-dwivedi.jpg"
+        alt="banner cakes"
+    /></p>
+  </div>
+  
+  <div id="Hacks" class="tabcontent">
+    <h3>Cake hacks</h3>
+    <p>Here are some boxed-mix hacks to make your cakes rich and flavorful.</p>
+        <ol>
+        <li>Start with the holy grail of cake hacks: Add an extra egg, swap oil for butter, and replace water with milk.</li>
+        <li>Add hot water to chocolate boxed mix.</li>
+        <li>Change the egg structure for a new texture. </li>
+        <li>Use coffee instead of water. </li>
+        <li>Add mayonnaise to your cake.</li>
+    </ol>
+  </div>
+  
+  <div id="Facts" class="tabcontent">
+    <h3>Fun Facts About Birthday Cakes!</h3>
+    <ol> 
+        <li>The first birthday cakes were Geburtstagskuchen. </li>
+        <li>We spend over £1million a day on birthday cake. </li>
+        <li>Before birthday cake candles, the candles on cake were saved for the Goddesses of the Moon. </li>
+        <li>The number of candles on a cake traditionally represent the years of your life you're celebrating.</li>
+    </ol>
+  </div>
 
             <div class="Favorite-list">
-                <h3>Favorite Products</h3>
-            <img
-                class="banner-img"
-                src="img/swapnil-dwivedi.jpg"
-                alt="banner cakes"
-            />
-        </div>
+                <h3></h3>
+                
+            </div>
         </section>
        
         <section class="cake-grid">
@@ -114,5 +148,21 @@
             <p>&copy; Copyright © 2021 by The Cake Shop All rights reserved. Powered by ibmmtr</p>
         </section>
     </footer>
+    <script>
+        function openCity(evt, cityName) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablinks");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+          }
+          document.getElementById(cityName).style.display = "block";
+          evt.currentTarget.className += " active";
+        }
+        </script>
 </body>
+
 </html>

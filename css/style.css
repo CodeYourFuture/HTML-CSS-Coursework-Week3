@@ -15,10 +15,10 @@ h2 {
 /* header styles */
 .section-top{
     background-image: url(https://www.cakeshopco.com/img/header.png);
-    background-size: 100%;
+    background-size: 95%;
     position: relative;
     background-repeat: no-repeat;
-    background-position: center top;
+    /*background-position: center top;*/
 }
 .navbar-item {
 	display: flex;
@@ -36,10 +36,10 @@ h2 {
 	
 }
 .brand {
-   /* margin-left: 2%;
-    margin-top: 2%;*/
+  	margin-right:5%;
 	max-width: 50%;
     margin-top: 10%;
+	
 	
 }
 
@@ -100,21 +100,29 @@ h2 {
     font-style: normal;
 }
 .header-text {
+	background-color: honeydew;
 	display: flex;
-	justify-content: flex-start;
+	flex-direction: column;
 	flex-wrap: wrap;
 	width: 100%;
+	font-family: sans-serif;
 }
 .header-text h3 {
     text-align: left;
 	padding: 1%;
     margin:1%;
     margin-top: 4%;
+	font-family: sans-serif;
+	font-style: normal;
+	font-weight: bold;
 }
 .header-text > p {
 	text-align: left;
 	padding: 1%;
     margin:1%;
+	font-size: 1rem ;
+	word-wrap: break-word;
+	width: 90%;
 }
 .banner-img {
     justify-self: center;
@@ -167,9 +175,10 @@ img:hover {
 /*Footer Styles*/
 
 .footer-container {
+	font-family: sans-serif;
     display: flex;
     flex-direction: row;
-    width: 100%;
+    width: 90%;
     flex-wrap: nowrap;
     color:  #fff;
 	margin-top: 10px;
@@ -182,6 +191,8 @@ img:hover {
     text-align: center;
 }
 .copyright {
+	width: 90%;
+	font-family: sans-serif;
     display: flex;
     flex-direction: row;
     color:  #fff;
@@ -281,6 +292,68 @@ img:hover {
 	color: #000000;
 } 
 
+
+/* Style the tab */
+.tab {
+	margin-top: 2%;
+	width: 100%;
+	overflow: hidden;
+	border: 1px solid #ccc;
+	background-color: #f1f1f1;
+  }
+  
+  /* Style the buttons that are used to open the tab content */
+  .tab button {
+	border-radius: 10%;
+	background-color: inherit;
+	float: left;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 14px 16px;
+	transition: 0.3s;
+  }
+  
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+	background-color: #ddd;
+  }
+  
+  /* Create an active/current tablink class */
+  .tab button.active {
+	background-color: #fae1dd;
+  }
+  
+  /* Style the tab content */
+  .tabcontent {
+	background-color: #edf2fb;
+	display: none;
+	padding: 6px 12px;
+	border: 1px solid #ccc;
+	border-top: none;
+	
+  }
+  .tabcontent p{
+	  font-size: 1rem;
+	  width: 90%;
+	  font-family: sans-serif;
+  }
+  .tabcontent h3{
+	  font-size: 2rem;
+	  color: #1d3557;
+	  font-family: sans-serif;
+	  font-style: normal;
+	  font-weight: bold;
+	  width: 90%;
+  }
+  .tabcontent li{
+	  font-size: 1rem;
+	  width: 90%;
+	  font-family: sans-serif;
+  }
+	.tabcontent img{
+		width: 98%;
+	}
 /*First Breakpoint*/
 @media screen and (min-width: 540px) {
 	.hidden-nav{
