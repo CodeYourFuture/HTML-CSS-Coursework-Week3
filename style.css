@@ -62,34 +62,9 @@ header .text-mneu p{
 /* Nav Start */
 
 nav{
-    /* display: none; */
-    display: block;
-    position: absolute;
-    top: 90px;
-    right: 0;
-    max-height: 0;
-    overflow: hidden;
+    display: none;
 }
-nav .container{
-    padding: 0;
-}
-nav .container .nav-box{
-    background: #555;
-    padding: 15px;
-}
-nav ul li{
-    list-style-type: none;
-    padding: 10px 50px;
-    width: 250px;
-    text-align: right;
-}
-nav ul li:not(:last-child){
-    border-bottom: 1px solid #ccc;
-}
-nav ul li a{
-    text-decoration: none;
-    color: #fff;
-}
+
 /* Start Welcome */
 .welcome{
     margin-top: 15px;
@@ -231,7 +206,7 @@ footer p{
         padding: 40px;
     }
     nav .container .nav-box{
-        background: #a6808c;
+        background: #d86e8f;
         padding: 0px;
     }
     nav ul{
@@ -244,7 +219,6 @@ footer p{
         margin: 0 10px;
         padding: 0;
         width: unset;
-        border-bottom: none !important;
     }
     nav ul li a{
         width: 100px;
@@ -253,7 +227,7 @@ footer p{
         display: block;
         background-color: #fff;
         padding: 7px 5px;
-        color: #a6808c;
+        color: #d86e8f;
         transition: all 0.3s ease-in-out;
     }
     nav ul a:hover{
