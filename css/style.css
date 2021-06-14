@@ -65,7 +65,7 @@ h2 {
     font-size: 8vw;
     font-weight: bolder;
     margin:0%;
-    color: #cb997e;
+    color: #d86323;
     
 }
 .hero {
@@ -202,30 +202,27 @@ img:hover {
 	justify-content: center;
     align-items: center;
     align-content: center;
+	font-size: 2vw;
 }
 .footer-container p{
 	font-family: sans-serif;
     margin-left: 1%;
     margin-right: 1%;
-    font-size: .7rem;
-
     text-align: center;
 }
 .copyright {
 	width: 100%;
 	font-family: sans-serif;
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
+	align-items: center;
+	justify-content: center;
     color:  #fff;
     background-color: #373737; 
-
+	font-size: 2vw;
 }
 .copyright > p {
-	font-size: .7rem;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    text-align: center;
+
 }
 
 .hamburger {
@@ -338,6 +335,7 @@ img:hover {
 	cursor: pointer;
 	padding: 14px 16px;
 	transition: 0.3s;
+	font-size: 4vw;
   }
   
   /* Change background color of buttons on hover */
@@ -373,7 +371,7 @@ img:hover {
 	  width: 90%;
   }
   .tabcontent li{
-	  font-size: 1rem;
+	  font-size: 3vw;
 	  width: 90%;
 	  font-family: sans-serif;
   }
@@ -403,6 +401,7 @@ img:hover {
 		align-items: center;
 	}
     .button{
+		font-size: 2vw;
         margin-left: 1%;
         margin-right: 1%;
     }
@@ -418,7 +417,7 @@ img:hover {
 		display: none;
 	}
 	button {
-		font-size: larger;
+		font-size: 4vw;
 		cursor: pointer;
 		padding: 10px 10px;
 		background: white;
@@ -432,6 +431,7 @@ img:hover {
 		color: rgb(10, 0, 100);
 	}
 	.footer-container {
+		
 		flex-direction: row;
 		justify-content: center;
         
