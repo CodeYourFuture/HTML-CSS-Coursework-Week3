@@ -1,1 +1,133 @@
-/*  Add your styling here */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: #eee;
+}
+
+.container{
+    max-width: 1170;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+/* Start Header */
+
+header{
+    background-color: #292929;
+}
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+header .logo{
+    width: 50%;
+    padding: 10px;
+}
+header .logo img{
+    max-width: 100%;
+}
+header .text-mneu{
+    padding: 10px 0;
+    width: 50%;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header .text-mneu img{
+    width: 40px;
+    filter: invert(1);
+}
+
+header .text-mneu p{
+    color: #fff;
+    font-size: .9rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+/* Start Welcome */
+
+.welcome{
+    margin-top: 30px;
+}
+
+.welcome-text h1{
+    margin-bottom: 15px;
+    font-size: 2rem;
+    color: rgb(194, 52, 52);
+}
+
+.welcome-text p{
+    line-height: 25px;
+    text-align: justify;
+    font-size: 1.1rem;
+    color: #333;
+}
+.welcome-image{
+    margin-top: 20px;
+}
+.welcome-image img{
+    max-width: 100%;
+}
+
+/* Start Gallary */
+
+.gallary .container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.img-box{
+    width: 49%;
+    padding: 5px;
+    border: 1px solid #080;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+.img-box img{
+    max-width: 100%;
+}
+
+/* Start Footer */
+
+footer{
+    background-color: #333;
+}
+
+footer h3{
+    color: #eee;
+    margin-bottom: 10px;
+}
+footer ul{
+    padding-left: 15px;
+    margin-bottom: 30px;
+}
+
+footer ul li{
+    list-style-type: none;
+    margin-bottom: 5px;
+}
+footer ul li a{
+    text-decoration: none;
+    color: #bbb;
+}
+footer ul li a:hover{
+    color: #fff;
+}
+footer p{
+    color: #757575;
+    text-align: center;
+    font-size: 1.1rem;
+}
