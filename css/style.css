@@ -14,16 +14,13 @@ h2 {
 
 /* header styles */
 .section-top{
-    background-image: url(https://www.cakeshopco.com/img/header.png);
+    /*background-image: url(../img/header.png);*/
+	background-color: #edf2fb;
     background-size: 100%;
     position: relative;
     background-repeat: no-repeat;
     background-position: center top;
-}
-.navbar-item {
-	display: flex;
-	justify-content: space-between;
-	flex-direction: column;
+	
 }
 .header{
     display: flex;
@@ -33,15 +30,36 @@ h2 {
     justify-content: center;
     align-items: center;
     text-align: center;
-	
+	background-color: #edf2fb;
 }
+.header-title{
+	background-color: #edf2fb;
+	z-index: 1;
+}
+.navbar-item {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+}
+.top-img{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	background-repeat: no-repeat;
+	background-size: content;
+	width:100%;}
+
+
+
 .brand {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
 	max-width: 55%;
-    margin-top: 10%;
+    margin-top: -10%;
+   
 }
+
 .navbar {
 	width: 100%;
 	display: flex;
@@ -50,6 +68,7 @@ h2 {
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: space-between;
+	background-color: #edf2fb;
 }
 
 .icon {
@@ -66,6 +85,7 @@ h2 {
     font-weight: bolder;
     margin:0%;
     color: #d86323;
+	background-color: #edf2fb;
     
 }
 .hero {
@@ -104,7 +124,7 @@ h2 {
 	background-color: #edf2fb;
 	display: flex;
 	flex-direction: column;
-	flex-wrap: wrap;
+	flex-wrap: nowrap;
 	width: 100%;
 	font-family: sans-serif;
 }
@@ -112,11 +132,14 @@ h2 {
 	font-size: 5vw;
     text-align: left;
 	padding: 1%;
-    margin:1%;
-    margin-top: 4%;
-	font-family: sans-serif;
-	font-style: normal;
+    margin-top: 1%;
+	font-family: cursive;
+	font-style:italic;
 	font-weight: bold;
+	color: #5f0f40;
+	border-radius: 1%;
+	border: 0px solid #ccc;
+	background-color: #f1f1f1;
 }
 .header-text > p {
 	text-align: left;
@@ -131,22 +154,17 @@ h2 {
     margin:1%;
 	max-width: 50%;
 }
-
+.banner-img img:hover {
+	transform: scale(1.0);
+	transition:none;
+	box-shadow: 0 0 20px #ffffff;}
 .hidden-nav {
 	display: none;
 	margin-bottom: 0%;
+	background-color: #edf2fb;
 }
 /* Bottom section */
-.Favorite-list{
-    margin: 0%;
-    padding: 0%;
-}
-.Favorite-list h3{
-    margin: 0%;
-    margin-top:4%;
-    margin-bottom:2%;
-    padding: 1%;
-}
+
 .full-width-borders {	
 		border: 1px solid #ccc;
 		background-color: #f1f1f1;		
@@ -155,8 +173,10 @@ h2 {
 .full-width-borders h1 {
 	font-family: cursive;
 	color: #5f0f40;
-	font-size: 7vw;
+	font-size: 5vw;
 	margin-left: 3%;
+	font-style:italic;
+	font-weight: bold;
 }
 .cake-grid {
 	background-color: #edf2fb;
@@ -178,7 +198,6 @@ h2 {
 	font-size: 3vw;
 }
 .img {
-	
 	height: auto;
 	display: block;
 	margin-left: auto;
@@ -186,10 +205,10 @@ h2 {
 	margin-top:4vw;
 	width: 60%;
 }
-img:hover {
-	transform: scale(1.01);
-	transition: 0.5s ease-in-out;
-	box-shadow: 0 0 20px #fffb03;
+.cake-types img:hover {
+	transform: scale(1.1);
+	transition: 0.2s ease-in-out;
+	box-shadow: 0 0 20px #ff038e;
 }
 
 .hamburger {
@@ -386,6 +405,7 @@ img:hover {
 		flex-direction: row;
 		flex-wrap: wrap;
 		justify-content: space-between;
+		
 	}
 	.hidden-nav{
 		display: flex;
@@ -395,6 +415,8 @@ img:hover {
 		background-color: white;
 		justify-content: center;
 		align-items: center;
+		padding-bottom: 1%;
+		background-color: #edf2fb;
 	}
     .button{
 		font-size: 2vw;
@@ -444,6 +466,7 @@ img:hover {
 	padding: 6px 12px;
 	border: 1px solid #ccc;
 	border-top: none;
+	margin-bottom: 2%;
 	
   }
   .tabcontent p{
