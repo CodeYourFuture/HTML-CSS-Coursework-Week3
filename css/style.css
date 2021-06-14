@@ -36,13 +36,12 @@ h2 {
 	
 }
 .brand {
-  	
-	max-width: 50%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 55%;
     margin-top: 10%;
-	
-	
 }
-
 .navbar {
 	width: 100%;
 	display: flex;
@@ -60,9 +59,10 @@ h2 {
 
 /* hero styles */
 .text {
+	font-family: cursive;
 	width: 100%;
 	flex-wrap: nowrap;
-    font-size: 3rem;
+    font-size: 5rem;
     font-weight: bolder;
     margin:0%;
     color: #cb997e;
@@ -84,11 +84,12 @@ h2 {
 	padding: 10px;
 }
 .hero h5{
+	font-family: Georgia, 'Times New Roman', Times, serif;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin:0%;
+    margin:1%;
     padding:0%;
     font-weight: bolder;
     font-size: 1.5rem;
@@ -122,16 +123,17 @@ h2 {
     margin:1%;
 	font-size: 1rem ;
 	word-wrap: break-word;
-	width: 90%;
+	width: 98%;
 }
 .banner-img {
     justify-self: center;
     margin:1%;
-	max-width: 95%;
+	max-width: 100%;
 }
 
 .hidden-nav {
 	display: none;
+	margin-bottom: 1%;
 }
 /* Bottom section */
 .Favorite-list{
@@ -144,10 +146,22 @@ h2 {
     margin-bottom:2%;
     padding: 1%;
 }
-
+	.full-width-borders {
+	
+	background-color: rgb(221, 180, 180);	
+	margin: 0%;
+	padding: 1%;
+	border-radius: 1%;
+}
+	.full-width-borders h1 {
+	font-family: cursive;
+	color: #5f0f40;
+	font-size: 2rem;
+	margin-left: 3%;
+  }
 .cake-grid {
 	background: rgba(137, 185, 185, 0.1);
-	width: 95%;
+	/*width: 95%;*/
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	margin: 3%;
@@ -367,6 +381,15 @@ img:hover {
 	}
 /*First Breakpoint*/
 @media screen and (min-width: 540px) {
+	.navbar {
+		width: 100%;
+		display: block;
+		background-color: white;
+		align-items: flex-start;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
 	.hidden-nav{
 		/*margin-top: 100px;
 		margin-bottom: 100px;*/
@@ -400,8 +423,8 @@ img:hover {
 		transition: ease-in 1s;
 	}
 	button:hover {
-		background-color: lightseagreen;
-		color: rgb(204, 56, 19);
+		background-color: rgb(255, 230, 0);
+		color: rgb(10, 0, 100);
 	}
 	.footer-container {
 		flex-direction: row;
@@ -412,7 +435,9 @@ img:hover {
 		margin: 10px;
 	}
 }
-/*Second Breakpoint*/
+
+
+/*Second Breakpoint
 @media screen and (min-width: 900px) {
 	.hero {
 		display: grid;
@@ -449,3 +474,4 @@ img:hover {
 		margin: 10px;
 	}
 }
+*/

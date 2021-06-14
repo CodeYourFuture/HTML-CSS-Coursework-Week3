@@ -19,7 +19,7 @@
             
             <div class="header" >
                 <img class="brand" src="img/Cake-Header.png" alt="brand" />
-                <p class="text">The Cake You Want</p>
+                <h1 class="text">The Cake You Want</h1>
             </div>
             <button class="hamburger" aria-label="hamburger">
                 <div class="bar"></div>
@@ -47,6 +47,16 @@
             <h5>Cooking.</h5>
             <h5>Tasting.</h5>
             <h5>Living.</h5>
+           
+
+
+            <div class="Favorite-list">
+                <h3></h3>
+                
+            </div>
+        </section>
+        <section >
+
             <div class="header-text">
                 <h3>Who are we?</h3>
                 <p>
@@ -58,51 +68,53 @@
                     , supported by a staff of mena alliances.
                 </p>
             </div>
-           <!-- Tab links -->
-<div class="tab">
-    <button class="tablinks" onclick="openCity(event, 'Today')">Today Cake</button>
-    <button class="tablinks" onclick="openCity(event, 'Hacks')">Hacks </button>
-    <button class="tablinks" onclick="openCity(event, 'Facts')">Facts </button>
-  </div>
-  
-  <!-- Tab content -->
-  <div id="Today" class="tabcontent">
-    <h3>Today Cake</h3>
-    <p><img
-        class="banner-img"
-        src="img/swapnil-dwivedi.jpg"
-        alt="banner cakes"
-    /></p>
-  </div>
-  
-  <div id="Hacks" class="tabcontent">
-    <h3>Cake hacks</h3>
-    <p>Here are some boxed-mix hacks to make your cakes rich and flavorful.</p>
-        <ol>
-        <li>Start with the holy grail of cake hacks: Add an extra egg, swap oil for butter, and replace water with milk.</li>
-        <li>Add hot water to chocolate boxed mix.</li>
-        <li>Change the egg structure for a new texture. </li>
-        <li>Use coffee instead of water. </li>
-        <li>Add mayonnaise to your cake.</li>
-    </ol>
-  </div>
-  
-  <div id="Facts" class="tabcontent">
-    <h3>Fun Facts About Birthday Cakes!</h3>
-    <ol> 
-        <li>The first birthday cakes were Geburtstagskuchen. </li>
-        <li>We spend over £1million a day on birthday cake. </li>
-        <li>Before birthday cake candles, the candles on cake were saved for the Goddesses of the Moon. </li>
-        <li>The number of candles on a cake traditionally represent the years of your life you're celebrating.</li>
-    </ol>
-  </div>
-
-            <div class="Favorite-list">
-                <h3></h3>
-                
-            </div>
         </section>
-       
+
+    <!-- Tab Section -->
+        <section >
+           <!-- Tab links -->
+           <div class="tab">
+            <button class="tablinks" onclick="openCity(event, 'Today')" id="defaultOpen">Today Cake</button>
+            <button class="tablinks" onclick="openCity(event, 'Hacks')">Hacks </button>
+            <button class="tablinks" onclick="openCity(event, 'Facts')">Facts </button>
+            </div>
+          
+            <!-- Tab content -->
+            <div id="Today" class="tabcontent">
+                <h3>Today Cake</h3>
+                <img
+                    class="banner-img"
+                    src="img/swapnil-dwivedi.jpg"
+                    alt="banner cakes"
+                />
+            </div>
+          
+            <div id="Hacks" class="tabcontent">
+                <h3>Cake hacks</h3>
+                <p>Here are some boxed-mix hacks to make your cakes rich and flavorful.</p>
+                    <ol>
+                    <li>Start with the holy grail of cake hacks: Add an extra egg, swap oil for butter, and replace water with milk.</li>
+                    <li>Add hot water to chocolate boxed mix.</li>
+                    <li>Change the egg structure for a new texture. </li>
+                    <li>Use coffee instead of water. </li>
+                    <li>Add mayonnaise to your cake.</li>
+                </ol>
+            </div>
+          
+          <div id="Facts" class="tabcontent">
+            <h3>Fun Facts About Birthday Cakes!</h3>
+            <ol> 
+                <li>The first birthday cakes were Geburtstagskuchen. </li>
+                <li>We spend over £1million a day on birthday cake. </li>
+                <li>Before birthday cake candles, the candles on cake were saved for the Goddesses of the Moon. </li>
+                <li>The number of candles on a cake traditionally represent the years of your life you're celebrating.</li>
+            </ol>
+          </div>
+
+        </section>
+         <div class="full-width-borders">
+            <h1>Best Collection</h1>
+         </div>
         <section class="cake-grid">
             
             <div class="cake-types">
@@ -162,6 +174,8 @@
           document.getElementById(cityName).style.display = "block";
           evt.currentTarget.className += " active";
         }
+        // Get the element with id="defaultOpen" and click on it
+            document.getElementById("defaultOpen").click();
         </script>
 </body>
 
