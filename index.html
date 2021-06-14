@@ -6,11 +6,120 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Responsive Cake webpage</title>
-    <!-- Add a link to your css file here -->
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 
 <body>
-    <!-- Add your markup here -->
+
+    <header class="header">
+
+        <div class="topnav">
+            <div class="background">
+                <img src="img/logo.png" alt="">
+
+                <div class="info">
+                    <p>The best Donut in town delivered to your door</p>
+                </div>
+            </div>
+            
+            <div id="myLinks">
+            <a href="#">News</a>
+            <a href="#">Category</a>
+            <a href="#">About</a>
+            </div>
+
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+            </a>
+
+        </div>
+
+    </header>
+
+    <hr>
+
+    <main class="main">
+
+        <section class="section-one">
+            <h1 class="section-one-heading">Welcome</h1>
+            <p class="section-one-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui vel, recusandae,
+                dicta necessitatibus quas amet placeat praesentium eaque dolores blanditiis, iusto esse dignissimos
+                reprehenderit exercitationem architecto repudiandae pariatur alias debitis sit provident laborum minima?
+                Nisi deleniti id sint dolorum atque.</p>
+        </section>
+
+        <section class="section-two" style="background-image: url(img/main.jpg);">
+
+            <div class="section-two-div">
+                <p class="section-two-heading">Lorem, ipsum.</p>
+                <p class="section-two-info">Lorem ipsum dolor sit amet consectetur adipisicing.s</p>
+            </div>
+
+        </section>
+
+        <div class="grid-main">
+
+            <section class="section-display text-left" style="background-image: url(img/main2.jpg);">
+
+            </section>
+
+            <section class="section-display text-right">
+                <h1 class="section-display-two-heading">Welcome</h1>
+                <p class="section-display-two-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui vel, recusandae,
+                    dicta necessitatibus quas amet placeat praesentium eaque dolores blanditiis, iusto esse dignissimos
+                    reprehenderit exercitationem architecto repudiandae pariatur alias debitis sit provident laborum minima?
+                    Nisi deleniti id sint dolorum atque.</p>
+            </section>
+
+
+        </div>
+        <section class="section-three">
+
+            <div class="item" style="background-image: url(img/img1.jpg);">
+                <div class="section-three-div">
+                    <p class="section-three-heading">Lorem, ipsum.</p>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(img/img2.jpg);">
+                <div class="section-three-div">
+                    <p class="section-three-heading">Lorem, ipsum.</p>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(img/img3.jpg);">
+                <div class="section-three-div">
+                    <p class="section-three-heading">Lorem, ipsum.</p>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(img/img4.jpg);">
+                <div class="section-three-div">
+                    <p class="section-three-heading">Lorem, ipsum.</p>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+
+
+
+    <footer class="footer">
+
+        <div class="footer-nav">
+            <a href="#">News</a>
+            <a href="#">Category</a>
+            <a href="#">About</a>
+        </div>
+
+
+            <p class="copyright">&copy;donut Mobility, Inc.</p>
+
+    </footer>
+
+    <script src="JS/main.js"></script>
 </body>
 
 </html>
