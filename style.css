@@ -12,16 +12,17 @@ body{
 }
 
 .container{
-    max-width: 1170;
     padding: 20px;
     margin: 0 auto;
 }
 
+header,
+footer{
+    background-color: #f15bb5;
+}
+
 /* Start Header */
 
-header{
-    background-color: #292929;
-}
 
 header .container{
     display: flex;
@@ -31,13 +32,15 @@ header .container{
 header .logo{
     width: 50%;
     padding: 10px;
+    display: flex;
+    align-items: center;
 }
 header .logo img{
     max-width: 100%;
 }
 header .text-mneu{
     padding: 10px 0;
-    width: 50%;
+    min-width: 50%;
     text-align: right;
     display: flex;
     flex-direction: column;
@@ -47,6 +50,7 @@ header .text-mneu{
 header .text-mneu img{
     width: 40px;
     filter: invert(1);
+    margin-bottom: 30px;
 }
 
 header .text-mneu p{
@@ -54,6 +58,33 @@ header .text-mneu p{
     font-size: .9rem;
     font-weight: 600;
     letter-spacing: 1px;
+}
+/* Nav Start */
+
+nav{
+    display: none;
+}
+nav .nav-box{
+    background: #f15bb5;
+}
+nav ul{
+    text-align: right;
+    padding: 20px;
+}
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    margin: 0 10px;
+}
+nav ul li a{
+    width: 100px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    background-color: #fff;
+    padding: 7px 5px;
+    color: #f15bb5;
 }
 
 /* Start Welcome */
@@ -73,6 +104,7 @@ header .text-mneu p{
     text-align: justify;
     font-size: 1.1rem;
     color: #333;
+    margin-bottom: 25px;
 }
 .welcome-image{
     margin-top: 20px;
@@ -80,6 +112,7 @@ header .text-mneu p{
 .welcome-image img{
     max-width: 100%;
 }
+
 
 /* Start Gallary */
 
@@ -91,7 +124,7 @@ header .text-mneu p{
 .img-box{
     width: 49%;
     padding: 5px;
-    border: 1px solid #080;
+    border: 1px solid #f15bb5;
     margin-bottom: 10px;
     display: flex;
     align-items: center;
@@ -102,17 +135,14 @@ header .text-mneu p{
 
 /* Start Footer */
 
-footer{
-    background-color: #333;
-}
-
 footer h3{
-    color: #eee;
+    color: #dfdfdf;
     margin-bottom: 10px;
+    text-shadow: 0px 1px 2px #000;
 }
 footer ul{
     padding-left: 15px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 footer ul li{
@@ -121,13 +151,87 @@ footer ul li{
 }
 footer ul li a{
     text-decoration: none;
-    color: #bbb;
+    color: #dddddd;
+    font-size: 14px;
 }
 footer ul li a:hover{
     color: #fff;
 }
 footer p{
-    color: #757575;
+    color: #dfdfdf;
     text-align: center;
-    font-size: 1.1rem;
+    font-size: .8rem;
+}
+@media (min-width:500px) {
+    .container{
+        padding: 40px;
+    }
+    header .logo{
+        width: 45%;
+        padding: 10px;
+    }
+    header .logo img{
+        max-width: 100%;
+    }
+    header .text-mneu img{
+        width: 50px;
+    }
+    header .text-mneu p{
+        font-size: 1.2em;
+    }
+
+
+    .welcome-text p{
+        font-size: 1rem;
+    }
+
+
+
+    footer h3{
+        font-size: 1.5rem;
+    }
+    footer ul{
+        padding-left: 30px;
+    }
+    footer ul li a{
+        font-size: 16px;
+    }
+    footer p{
+        font-size: 1rem;
+    }
+}
+
+@media (min-width:900px){
+    header .text-mneu img{
+        display: none;
+    }
+    nav{
+        display: block;
+    }
+
+    .welcome .container{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .welcome-text{
+        width: 50%;
+        padding: 30px;
+        text-align: right;
+    }
+    .welcome-image{
+        width: 50%;
+    }
+    .welcome-text h1{
+        font-size: 50px;
+        margin-bottom: 60px;
+    }
+    .welcome-text p{
+        text-align: right;
+    }
+    .gallary .container{
+        flex-flow: row nowrap;
+    }
+    .img-box{
+        width: 24%;
+    }
 }
