@@ -148,8 +148,9 @@ h2 {
     padding: 1%;
 }
 .full-width-borders {	
-	background-color: #edf2fb;	
-	border-radius: 1%;
+		border: 1px solid #ccc;
+		background-color: #f1f1f1;		
+		border-radius: 1%;
 }
 .full-width-borders h1 {
 	font-family: cursive;
@@ -159,15 +160,14 @@ h2 {
 }
 .cake-grid {
 	background-color: #edf2fb;
-	width: 95%;
+	width: 100%;
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
-	margin: 2%;
+	margin: 0%;
 	margin-top: 0%;
 	gap: 2%;
-	font-size: 5vw;
+	
 }
-
 .cake-types {
 	align-items: center;
 }
@@ -175,11 +175,16 @@ h2 {
 	text-align: center;
 	font-style: italic;
 	font-weight: bold;
+	font-size: 3vw;
 }
-
 .img {
-	width: 100%;
+	
 	height: auto;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top:4vw;
+	width: 60%;
 }
 img:hover {
 	transform: scale(1.01);
@@ -273,7 +278,6 @@ img:hover {
 /* Style the tab */
 .tab {
 	margin-top: 2%;
-	
 	overflow: hidden;
 	border: 1px solid #ccc;
 	background-color: #f1f1f1;
@@ -477,8 +481,8 @@ img:hover {
 	  }
 	.full-width-borders {
 		
-		background-color: #edf2fb;	
-		
+		border: 1px solid #ccc;
+		background-color: #f1f1f1;		
 		border-radius: 1%;
 	}
 	.full-width-borders h1 {
