@@ -15,10 +15,10 @@ h2 {
 /* header styles */
 .section-top{
     background-image: url(https://www.cakeshopco.com/img/header.png);
-    background-size: 95%;
+    background-size: 100%;
     position: relative;
     background-repeat: no-repeat;
-    /*background-position: center top;*/
+    background-position: center top;
 }
 .navbar-item {
 	display: flex;
@@ -36,7 +36,7 @@ h2 {
 	
 }
 .brand {
-  	margin-right:5%;
+  	
 	max-width: 50%;
     margin-top: 10%;
 	
@@ -146,11 +146,12 @@ h2 {
 }
 
 .cake-grid {
+	width: 95%;
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
-	margin: 40px 10px 60px 10px;
-	gap: 20px;
-	font-size: 1.5rem;
+	margin: 3%;
+	gap: 2%;
+	font-size: 1rem;
 }
 
 .cake-types {
@@ -178,7 +179,7 @@ img:hover {
 	font-family: sans-serif;
     display: flex;
     flex-direction: row;
-    width: 90%;
+    width: 100%;
     flex-wrap: nowrap;
     color:  #fff;
 	margin-top: 10px;
@@ -191,7 +192,7 @@ img:hover {
     text-align: center;
 }
 .copyright {
-	width: 90%;
+	width: 100%;
 	font-family: sans-serif;
     display: flex;
     flex-direction: row;
@@ -208,13 +209,17 @@ img:hover {
 }
 
 .hamburger {
+	display: inline-block;
+	position: fixed;
+	
+	/*
+	top: 20px;
 	position: absolute;
 	top: 25px;
 	right: 20px;
-	display: block;
-	width: 45px;
+	display: block;*/
+	width: 12%;
 	z-index: 99;
-
 	cursor: pointer;
 	appearance: none;
 	background: none;
@@ -259,10 +264,11 @@ img:hover {
 	display: flex;
 	flex-direction: column;
 	z-index: 98;
-	background-color: #d4a373;
+	background-color: #d8e2dc;
 	padding-top: 120px;
 	transition: 0.4s;
 	font-weight: bolder;
+	opacity: 0.9;
 }
 
 .mobile-nav.is-active {
