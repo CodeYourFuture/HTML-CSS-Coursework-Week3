@@ -1,0 +1,160 @@
+
+/* breekPoint 900 or less to next break point  from 900 to 440*/
+
+/* 320px — 480px: Mobile devices
+481px — 768px: iPads, Tablets
+769px — 1024px: Small screens, laptops
+1025px — 1200px: Desktops, large screens
+1201px and more —  Extra large screens, TV */
+
+
+@media (min-width: 900px)  { 
+
+.row-body .col {
+    width: 350px;
+}
+#cake2 {
+    width: 300px;
+    height: 270px;
+
+    }
+ button {
+         width: 180px;
+         font-size: 16px;
+           height: 70px;
+           border: 12px solid rgb(236, 158, 236);
+           background-color: rgb(103, 140, 141);
+     }
+}
+
+
+
+
+@media  (min-width: 200px) and (max-width: 540px) {
+  .row-body {
+    width: 160px; 
+   height: 80px;
+
+    display: flex;
+     flex-direction: column-reverse;
+      margin-top: 130px;
+       margin-left: 20px;
+  
+  }  
+    .row-body p {
+      font-size: 8px;
+
+
+    }
+
+.row-body .col {
+width: 220px;
+ height: 160px;
+   /* text-overflow: ellipsis; */
+  
+    }
+
+#cake2{
+        width: 140px;
+        height: 100px;
+      }
+
+
+  h1,h2{
+    font-size: 1.3em;
+  }
+  #logo {
+    width: 60px;
+    height: 30px;
+  }
+
+div.img-wrapper {
+  width: 280px;
+   height: 160px;
+
+   margin-bottom: 10px;
+   /* padding: 20px; */
+   /* background-color: #a70e1b; */
+}
+
+.img-responsive {
+ width: 230px;
+ height: 120px;
+  margin-bottom: 8px;
+  /* margin-left: 30px; */
+}
+
+.cake {
+    width: 280px;
+    height: 180px;
+}
+   
+.cake .row {
+    width: 350px;
+    height: 380px;
+    /* background-color: #a70e1b; */
+     margin-top: 140px;
+    display: flex;
+    flex-wrap: wrap;
+   
+}
+
+.cake .row img {
+    width: 130px;
+    height: 100px;
+  
+}
+
+
+footer .col {
+    /* width: 300px;
+    width: 300px; */
+    display: flex;
+    flex-direction: column;
+}
+
+footer .col img {
+    width: 45px;
+    height: 40px;
+}
+.row-footer p {
+    font-size: 8px;
+}
+
+ nav .container{
+width: 16%;
+margin-left: 160px;
+background-color: #ffc0f6;
+display:block;
+justify-content: flex-end;
+padding: 7px 5px;
+}
+
+nav a{
+    font-size: 1.1em;
+    margin-left: 2px;
+    background-color: #885a76;
+    padding-left: 2px;
+    color: #fff;
+    text-transform: uppercase;
+    width: 100px;
+    border: #e9e0e0 solid 2px;
+    padding-top: 2px;
+}
+
+nav a:first-child{
+      background-color: #885a76;
+}
+
+ button {
+         width: 100px;
+         height: 40px;
+         font-size: 12px;
+         border-radius: 10px;
+         background-color: #d4acc1;
+     }
+
+ 
+}
+
+

@@ -1,1 +1,181 @@
 /*  Add your styling here */
+/*  font from googl font */
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    }
+ html {
+     font-family: 'Roboto' , cursive ;
+ }
+body{
+   background-image: linear-gradient(to bottom, #ff9aef, #fedacf,#d5e1cf);
+}
+
+
+ img {
+     width: 130px;
+     height: 150px;
+      border: solid 2px wheat;
+      margin-top: 22px;
+      padding: 5px;
+ }
+
+ #logo {
+     width: 130px;
+     height: 110px;
+ }
+ footer {
+     background-color: rgb(231, 188, 235);
+ }
+
+ #cake2 {
+     width: 350px;
+     height: 270px;
+ }
+
+
+
+/*  bootstrap image */
+.img-wrapper {
+  position: relative;
+}
+
+.img-responsive {
+  width: 100%;
+  height: auto;
+}
+
+.img-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.img-overlay:before {
+  content: ' ';
+  display: block;
+  /* adjust 'height' to position overlay content vertically */
+  height: 50%;
+}
+
+
+#headlogo{
+margin-left: 98px;
+
+}
+
+
+.row-footer  {
+    display: flex;
+    flex-direction: row;
+
+     justify-content: center;
+  font-size: 18px;
+  text-align: center;
+}
+.row-footer .col {
+    padding-left: 10px;
+    color: brown;
+    font-weight: bolder;
+    height: auto;
+}
+
+.row-footer .col .img {
+    padding-left: 50px;
+}
+
+
+.cake .row {
+  display: flex;
+    flex-direction: row;
+     justify-content: center;
+  font-size: 18px;
+  text-align: center;
+}
+
+
+.row-body {
+      display: flex;
+    flex-direction: row;
+
+     justify-content: center;
+  font-size: 18px;
+  text-align: center;
+}
+
+
+.row-body .col {
+    width: 400px;
+     border: solid 3px rgb(194, 141, 141);
+     padding: 20px;
+      margin: 10px;
+}
+
+
+.text-center {
+display: flex;
+  justify-content: center;
+ }
+
+
+ /*  */
+
+  ul{
+        list-style-type: none;
+    }
+    
+    a{
+        text-decoration: none;
+    }
+    
+ nav .container{
+width: 90%;
+margin: 0 auto;
+background-color: #9c8f9a;
+display: flex;
+justify-content: flex-end;
+padding: 20px 15px;
+}
+
+nav a{
+    font-size: 1.1em;
+    margin-left: 15px;
+    background-color: #885a76;
+    padding: 5px 30px;
+    color: #fff;
+    text-transform: uppercase;
+}
+nav a:first-child{
+    margin-left: 0;
+}
+
+nav a:hover,
+nav a:focus{
+transition: 0.6s;
+color: #7c0d03;
+background-color: rgb(230, 195, 195);
+
+} 
+
+ 
+   h1{
+    margin-bottom: 10px;
+    font-size: 2.5em;
+}
+
+ button {
+         width: 200px;
+         height: 80px;
+         font-size: 22px;
+         border-radius: 30px;
+         background-color: #d4acc1;
+     }
+
+
+
+
+
