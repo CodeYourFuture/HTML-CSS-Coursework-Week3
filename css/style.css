@@ -89,7 +89,7 @@ h2 {
     align-items: center;
     justify-content: center;
     margin:0%;
-    padding:1%;
+    padding:0%;
     font-weight: bolder;
     font-size: 1.5rem;
     color: white;
@@ -146,6 +146,7 @@ h2 {
 }
 
 .cake-grid {
+	background: rgba(137, 185, 185, 0.1);
 	width: 95%;
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
@@ -176,19 +177,23 @@ img:hover {
 /*Footer Styles*/
 
 .footer-container {
-	font-family: sans-serif;
+	
     display: flex;
     flex-direction: row;
     width: 100%;
-    flex-wrap: nowrap;
     color:  #fff;
 	margin-top: 10px;
     background-color: #373737;
+	justify-content: center;
+    align-items: center;
+    align-content: center;
 }
 .footer-container p{
+	font-family: sans-serif;
     margin-left: 1%;
     margin-right: 1%;
-    font-size: 1rem;
+    font-size: .7rem;
+
     text-align: center;
 }
 .copyright {
@@ -201,7 +206,7 @@ img:hover {
 
 }
 .copyright > p {
-	font-size: 1rem;
+	font-size: .7rem;
     justify-content: center;
     align-items: center;
     align-content: center;
