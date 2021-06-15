@@ -427,11 +427,15 @@ nav a {
 	color: #13060D;
 }
 
+.header-wrapper.container {
+	position: relative;
+}
+
 .logo {
 	position: absolute;
-	top: 20px;
-	left: 20px;
-	width: 100px;
+	top: 30px;
+	left: 0px;
+	width: 140px;
 }
 
 .header p {
@@ -452,6 +456,7 @@ nav a {
 
 .welcome-img {
 	width: 100%;
+	max-height: 400px;
 }
 
 /* Welcome section end ------------------------------- */
@@ -509,15 +514,32 @@ footer p {
 }
 
 @media screen and (min-width: 540px) {
+	
+	.logo {
+		width: 200px;
+		top: 0px;
+	}
+	
 	.welcome__inner {
 		display: flex;
 		flex-direction: row-reverse;
 		text-align: right;
+		align-items: flex-start;
 	}
 
 	.welcome-img {
-		width: 48%;
+		width: 60%;
 		margin-right: 1rem;
+	}
+
+	footer ul {
+		display: flex;
+		justify-content: center;
+	}
+
+	footer li {
+		margin: 0px 20px;
+
 	}
 }
 
@@ -525,6 +547,10 @@ footer p {
 	.container {
 		max-width: 1100px;
 		margin: 0px auto;
+	}
+
+	.header p {
+		margin-top: 50px;
 	}
 	
 	#toggle-open {
@@ -534,7 +560,6 @@ footer p {
 	.menu-desktop .menu {
 		display: block;
 		background-color: #F9EBEB;
-
 	}
 
 	.menu-desktop ul {
@@ -547,8 +572,22 @@ footer p {
 		padding: 0;
 		margin: 20px 10px;
 		padding: 2px 20px;
-		background-color: #f3d7d7;
+		background-color: #D35122;
+		color: white;
 	}
 
+	.gallery {
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+	.gallery-wrapper {
+		flex-flow: row nowrap;
+	}
+
+	.gallery-item-box {
+		width: 24%;
+		height: 200px;
+		margin-bottom: 0px;
+	}
 
 }
