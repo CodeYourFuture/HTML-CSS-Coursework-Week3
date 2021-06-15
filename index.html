@@ -8,28 +8,57 @@
 	<title>Responsive Cake webpage</title>
 	<!-- Add a link to your css file here -->
 	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap"
+		rel="stylesheet">
 </head>
 
 <body>
 	<!-- Add your markup here -->
 	<section class="header">
 		<div class="header-wrapper">
-			<img src="" alt="logo-cake" class="logo">
+			<img src="img/logo.svg" alt="logo-cake" class="logo">
 			<input type="checkbox" id="toggle" />
 			<label for="toggle" id="toggle-open">&#9776</label>
 			<label for="toggle" id="toggle-close">&#10006</label>
 			<nav class="menu">
 				<ul>
-					<li><a href=""></a>Home</li>
-					<li><a href=""></a>Cakes</li>
-					<li><a href=""></a>Orderin</li>
-					<li><a href=""></a>Lessons</li>
-					<li><a href=""></a>About</li>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Cakes</a></li>
+					<li><a href="#">Orderin</a></li>
+					<li><a href="#">Lessons</a></li>
+					<li><a href="#">About</a></li>
 				</ul>
 			</nav>
 			<p>The best cakes in town delivered to your door</p>
 		</div>
 	</section>
+	<main>
+		<section class="welcome container">
+			<h2>Welcome</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+				dolore magna aliqua. </p>
+			<img src="img/welcome-img.jpg" alt="cakes on a table" class="welcome-img">
+		</section>
+		<section class="gallery container">
+			<div class="gallery-wrapper">
+				<div class="gallery-item-box"><img src="img/gallery-1.jpg" alt="" class="gallery-item"></div>
+				<div class="gallery-item-box"><img src="img/gallery-2.jpg" alt="" class="gallery-item"></div>
+				<div class="gallery-item-box"><img src="img/gallery-3.jpg" alt="" class="gallery-item"></div>
+				<div class="gallery-item-box"><img src="img/gallery-4.jpg" alt="" class="gallery-item"></div>
+
+			</div>
+		</section>
+	</main>
+	<footer class="container">
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">Cakes</a></li>
+			<li><a href="#">Ordering</a></li>
+		</ul>
+		<p>Created by Ivan Zhukov</p>
+	</footer>
 </body>
 
 </html>
