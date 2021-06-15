@@ -358,6 +358,10 @@
 
 /* Burger menu - start ------------------------------- */
 
+.header label {
+	font-size: 1.4rem;
+}
+
 #toggle {
 	display: none;
 }
@@ -413,7 +417,6 @@
 
 li {
 	list-style-type: none;
-	/* cursor: pointer; */
 }
 
 nav a {
@@ -442,6 +445,10 @@ nav a {
 }
 
 /* Welcome section start ------------------------------- */
+
+.welcome {
+	padding: 1rem;
+}
 
 .welcome-img {
 	width: 100%;
@@ -499,4 +506,49 @@ footer p {
 	padding-bottom: .75rem;
 	text-align: center;
 	font-size: .8rem;
+}
+
+@media screen and (min-width: 540px) {
+	.welcome__inner {
+		display: flex;
+		flex-direction: row-reverse;
+		text-align: right;
+	}
+
+	.welcome-img {
+		width: 48%;
+		margin-right: 1rem;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.container {
+		max-width: 1100px;
+		margin: 0px auto;
+	}
+	
+	#toggle-open {
+		display: none;
+	}
+
+	.menu-desktop .menu {
+		display: block;
+		background-color: #F9EBEB;
+
+	}
+
+	.menu-desktop ul {
+		display: flex;
+		justify-content: flex-end;
+	}
+
+	.menu-desktop a {
+		border: none;
+		padding: 0;
+		margin: 20px 10px;
+		padding: 2px 20px;
+		background-color: #f3d7d7;
+	}
+
+
 }
