@@ -51,3 +51,8 @@ justify-content: center;
  width: 100%;
  margin: 20px 5px;
 }
+
+/*Media*/
+@media screen and (min-width: 540px) {
+ 
+}
