@@ -53,3 +53,23 @@ header .menu p{
 nav{
     display: none;
 }
+/* welcome section*/
+.home{
+    background: #eee;    
+}
+.home .home-content h1{
+    padding: 50px 0px ;
+    font-size: 1.7rem;
+    font-weight:600;
+    color: #832bb9;
+}
+.home .home-content p{
+    
+    padding-bottom: 40px;
+    font-size: 17px;
+    opacity: .4.5;
+    color: #832bb9;
+}
+.home .home-img{
+    max-width: 100%;
+}
