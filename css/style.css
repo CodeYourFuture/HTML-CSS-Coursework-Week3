@@ -1,0 +1,55 @@
+/*  Add your styling here */
+*{
+    margin: 0;padding: 0;
+    font-weight: normal;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+header,footer{
+    background:#deaaff;
+}
+/* header section */
+header{
+   display: flex;
+    justify-content: space-between;
+   box-shadow: 0 .5rem 1rem rgba(0,0,0,.1); 
+   
+}
+.logo{
+    width:50%;
+    mix-blend-mode: multiply;
+    
+}
+.logo img{
+    max-width: 100%;
+}
+
+ header .menu{
+     min-width: 50%;
+    display: flex;
+    text-align: right;
+   flex-direction: column;
+   justify-content: space-between;
+}
+header .menu img{
+    padding: 17px 20px 0px 0px;
+
+}
+header .menu p{
+    padding:17px 20px 17px 0px;
+    
+    font-size: .9rem;
+    font-weight: bold;
+    color: rgb(36, 35, 35);
+    
+}
+nav{
+    display: none;
+}
