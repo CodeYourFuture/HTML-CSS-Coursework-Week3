@@ -134,3 +134,21 @@ footer .footer-content p{
     font-style: italic;
     padding: 8px;
 }
+/* start media!!*/
+@media screen and (min-width:540px){
+    header .menu p{
+        font-size:20px;
+        font-weight:450;
+        padding-bottom:30px;
+           
+       }
+       .home .home-content h1{
+        font-size:2rem;
+        color:#481269;
+    }
+    .home .home-content p{
+        font-size: 20px;
+        opacity: .7;
+    }
+  
+}
