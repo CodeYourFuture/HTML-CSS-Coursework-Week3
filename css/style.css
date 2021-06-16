@@ -152,3 +152,90 @@ footer .footer-content p{
     }
   
 }
+
+@media screen and (min-width:900px){
+    header .menu img{
+        display: none;
+    }
+    .logo{
+        width:50%;
+        mix-blend-mode: multiply;
+        
+    }
+    .logo img{
+        width: 45%;
+    }
+    .navbar{
+       margin: 55px;
+        background: #deaaff;
+        display: block;
+        position: relative;
+        top: 0;
+        right: 0;
+        max-height: unset;
+    }
+    .navbar ul{
+        text-align: right;
+        padding: 22px;
+       
+    }
+    .navbar ul li {
+        list-style: none;
+        display: inline-block;
+        width: unset;
+        margin: 0px 12px;
+        padding: 12px;
+    }
+    .navbar ul li a{
+        width: 100px;
+        text-align: center;
+        display: block;
+        background-color: #eee;
+        padding: 7px 5px;
+        color:#481269 ;
+       border-radius: 10px;
+       font-weight: bold;
+    }
+    .navbar ul li a:hover{
+        background:#481269 ;
+        color: #fff;
+        transform:scale(1.15);
+    }
+    .home .container{
+     display: flex;
+     flex-direction: row-reverse; 
+     padding: 0 45px;   
+    }
+    .home .container .home-content{
+        width: 50%;
+        padding: 20px;
+        text-align: right;
+    }
+    .home .container .home-img{
+        width: 50%;
+        padding: 50px 0px 0px 12px;
+    }
+    .gallery{
+        display: flex;
+        flex-direction: row;
+    }
+    .gallery .item{
+        width: 25%;
+        justify-content: space-between;
+    }
+    .gallery .item img{
+        width: 100%;
+    }
+    footer{
+        text-align: center;
+        padding-top: 33px;
+
+    }
+    footer .contact{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+  
+}
