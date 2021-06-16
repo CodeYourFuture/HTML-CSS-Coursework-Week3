@@ -25,7 +25,6 @@ justify-content: center;
  height: 10rem;
 }
 .header-side {
- 
  display: flex;
  flex-direction: column;
  align-items: flex-end;
