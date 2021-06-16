@@ -42,11 +42,13 @@ header p{
     width:90vw;
     margin:auto;
 
+
 }
 .section1 p{
     text-align: justify;
     margin-top:20px;
     margin-bottom: 20px;
+
 }
  .main-img{
     width:90vw;
@@ -62,7 +64,7 @@ header p{
     gap:5px;
     width:90vw;
     margin:auto;
-    background-color: rgb(32, 121, 223);
+ 
 
     
 }
@@ -90,4 +92,91 @@ footer a{
 }
 footer li{
     list-style-type: none;
+
 }
+ @media screen and (min-width:540px) { 
+     footer ul{
+         display:flex;
+         justify-content: center;
+         
+
+     }
+      footer li{
+          margin:10px;
+          
+
+     }
+     footer a{
+        font-size:0.6rem;
+        padding:10px; 
+
+     }
+ }
+ @media screen and (min-width:900px) { 
+     .logo{
+         width:125px;
+     }
+     .hamburger{
+         display:none;
+     }
+     nav{
+         display: block;
+         position:absolute;
+         top:200px ;
+         left:4vw;
+         width:90vw;
+         background-color: cornflowerblue;
+         padding:15px;
+     }
+     nav ul{
+         display:flex;
+         justify-content:flex-end;
+
+     }
+     nav a{
+         
+         text-decoration: none;
+         color:rgb(209, 78, 30);
+         background-color: cornsilk;
+         padding-left: 5px;
+         padding-right: 5px;
+         text-transform: uppercase;
+         border-radius: 5px;
+         
+       
+     }
+     nav li{
+         list-style-type: none;
+         
+         margin:10px;
+     }
+     .section1{
+         margin-top: 100px;
+         display: flex;
+     }
+     .section1 img{ 
+         width:45vw;
+         margin-left: 0;
+
+         
+        
+
+     }
+     #section1-div{
+         text-align: right;
+
+     }
+     .section2{
+        grid-template-columns:  1fr 1fr 1fr 1fr;
+        margin-top: 35px;
+        background-color: rgb(240, 170, 184);
+     }
+     .section2 img{
+         width:22vw;
+         height: 22vw;
+        
+     }
+     body{
+         background-color: #efefef;
+     }
+ }
