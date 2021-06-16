@@ -1,1 +1,53 @@
 /*  Add your styling here */
+* {
+ font-family:'Times New Roman', Times, serif;
+}
+
+body {
+ background-color: rgb(201, 198, 198);
+}
+main, footer {
+ margin: 0 20px;
+}
+.header-container {
+ display: flex;
+ justify-content: space-between;
+ background-color: white;
+ width:100%;
+ height: 20rem;
+}
+.logo-container {
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+.image-logo {
+ height: 10rem;
+}
+.header-side {
+ 
+ display: flex;
+ flex-direction: column;
+ align-items: flex-end;
+ justify-content: space-between;
+}
+
+/*Main*/
+/*Welcome section*/
+.welcome-container {
+ word-spacing: 5px;
+ font-style: italic;
+ text-align: justify;
+ margin: 3rem 0;
+}
+.image-1 {
+  margin: 3rem 0;
+}
+.image-container {
+ display: flex;
+ flex-direction: row;
+ flex-wrap: wrap;
+ justify-content: space-between;
+ width: 100%;
+ margin: 20px 5px;
+}

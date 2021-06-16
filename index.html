@@ -9,42 +9,55 @@
     <!-- Add a link to your css file here -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <!-- Add your markup here -->
     <!--Header-->
-    <header>
-        <div class="header-container">
-            <div class="image-logo">
-                <img src="" alt="image-logo">
-            </div>
-            <div>
-                <p>The best cakes in town delivered to your door</p>
-            </div>
+    <header class="header-container">
+        <div class="logo-container">
+            <img class="image-logo" src="./Images/cakes-logo.png" alt="image-logo">
         </div>
+        
+        <div class="header-side">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-list"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+            </svg>
+            <p>The best cakes in town delivered to your door</p>
+        </div>
+        
     </header>
     <!--Main-->
     <main>
         <!--Welcome Section-->
-        <section>
-            <h1>Welcome</h1>
-            <div>
+        <section class="welcome-container">
+                <h1>Welcome</h1>
+            
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat provident debitis obcaecati, suscipit dicta ea itaque reiciendis, modi quia perferendis quae maxime officia amet laboriosam. Reprehenderit neque quos illum officiis est cupiditate quod culpa eos. Minus unde laborum, distinctio fugiat aut dicta similique porro quo voluptates adipisci repellat mollitia nesciunt excepturi. Aliquid eum quas suscipit, ea maiores, corrupti officia autem amet quam nihil alias corporis quibusdam molestiae, magnam impedit fuga. Recusandae provident, rem corrupti numquam quam fugiat veniam voluptatibus ab enim, consectetur sapiente similique repellat vel quaerat ullam. Sint consectetur ullam tenetur velit modi eos ratione voluptatum eligendi sed suscipit.</p>
-            </div>
         </section>
         <!--Photo Section-->
-        <section>
+        <section class="image-1">
             <div>
-                <img src="" alt="Wedding Cakes">
+                <img src="./Images/Wedding Cake.jpg" alt="Wedding Cakes" width="100%" height="500rem">
             </div>
         </section>
         <section>
             <div class="image-container">
-                <img src="" alt="Candle Cakes">
-                <img src="" alt="Cheese Cakes">
-                <img src="" alt="Cupcake">
-                <img src="" alt="Donuts">
+                <img class="my-3" src="./Images/Candle Cake.jpg" alt="Candle Cakes" width="40%" height="250rem">
+                
+                
+                <img class="my-3" src="./Images/Cheese Cake.jpg" alt="Cheese Cakes" width="40%" height="250rem">
+                
+                
+                <img class="my-3" src="./Images/Cupcake.jpg" alt="Cupcake" width="40%" height="250rem">
+                
+                
+                <img class="my-3" src="./Images/Donut.jpg" alt="Donuts" width="40%" height="250rem">
+                
+                
             </div>
         </section>
     </main>
@@ -52,11 +65,11 @@
     <footer>
         <h2>Content Us</h2>
         <ul>
-            <li></li>
-            <li></li>
-            <li></li>
+            <li>Phone : 07543 072315</li>
+            <li>Email : example@gmail.com</li>
+            <li> Fax : 0141 54896</li>
         </ul>
-        <p>&copy;Cakes Co.</p>
+        <p class="d-flex justify-content-center">&copy;Cakes Co.</p>
     </footer>
 </body>
 
