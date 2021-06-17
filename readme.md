@@ -16,6 +16,7 @@ Two wireframes are provided down below (scroll to the bottom).
  - Before you start coding, **create a new branch** following this format `your-class-name/your-name`, for example: `london-class-7/adam-smith`. Your branch name should be all lowercase, with no spaces. 
 
 When you're ready to start coding:
+//Done
 
 ### Start with mobile
 - Write the HTML following the mobile design
