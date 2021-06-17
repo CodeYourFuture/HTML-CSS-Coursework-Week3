@@ -1,0 +1,103 @@
+@media screen and (min-width:540px){
+    /*header*/
+    .navbar .logo-pic{
+        max-width: 170px;
+        max-height: 120px;
+    }
+    .hamburger_menu .nav_toggle{
+        display: none;
+    }
+    .hamburger_menu .navbar{
+        flex-direction: row;
+    }
+    .navbar .nav-item{
+        display: block;  
+    }
+    .navbar > .nav-item:first-child{  
+        border-bottom:none
+        }
+    .navbar > .nav-item{
+            background-color:transparent;
+    }
+    .navbar .nav-link{
+        font-size: 1.1em;
+        color: var(--primary-color); 
+        font-weight: 700;   
+    }
+    .active:hover{
+        color:var(--text-color);
+        font-size: 1.5rem;
+        text-decoration: underline;
+    }
+    .sub-heading{
+        font-size: 1.5em;
+        margin-left: 9em;
+        font-weight: 900;
+    }
+    /*main- home section*/
+    #home{
+        padding-top:0;
+    }
+    .grid-box{
+        width: 1200px;
+        display: grid;
+        grid-template-columns: 100%;
+        gap:2em;
+        width:calc(100% - 3em) ;
+        margin: 0 auto;
+    }
+    .lead h1{
+    padding: 0;
+    height: max-content;
+    font-size: 1.7em;
+    }
+    /*featured section*/
+    #featured{
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    
+    }
+    .feature-img{
+        width:320px;
+        height: 320px;
+        max-width:100%;
+    }
+    .special-offer h2{   
+        font-size: 1.9em;
+        line-height: 1em;
+        margin:1em 1em;
+        
+    }
+    .special-offer p{
+        font-size: 0.9em;
+        margin-bottom: 1.2em;
+        font-weight: 800;
+        text-shadow:0 2px 3px rgba(160, 231, 229,0.4); 
+    }
+    /*menu section*/
+    .menu-container{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap:5px;
+    }    
+    .menu-card{
+        padding: .5em 0.8em 0; 
+    }
+    .menu-img{
+        width: 220px;
+        max-width: 100%;
+    }
+    .new-notification{
+        left: 1.1em;
+        top:2em;
+    }
+    /*foote and contact form*/
+    .contact-form{
+        width: 400px;
+        margin: 0 auto;
+    }
+    .footer_container{
+        padding: 2em 0;
+    }
+}
