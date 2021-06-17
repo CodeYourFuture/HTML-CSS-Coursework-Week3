@@ -1,1 +1,137 @@
 /*  Add your styling here */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+nav ul {
+   
+    display: none;
+    margin-top: 20px;
+    background-color: rgb(231, 227, 220);
+
+
+}
+.top{
+    background-color: rgb(255, 170, 234);
+}
+nav .humb{
+    position: absolute;
+    padding: 13px;
+    left: 90%;
+    top: 7px;
+    
+}
+header .top{
+    display: flex;
+}
+header .top img{
+    width: 100%;
+    height: 100%;
+    max-width: 100px;
+    max-height: 100px;
+    margin-bottom:30px ;
+}
+header .top .des {
+    align-self: flex-end;
+    margin: 30px;
+    color: white;
+}
+
+
+.welcome{
+    padding: 20px;
+    
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.welcome h1{
+    margin: 20px;
+}
+.welcome p {
+    line-height: 1.5;
+}
+.welcome img{
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+}
+.product {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 50px 0;
+}
+.product img{
+    width: 100%;
+    height: 100%;
+    margin: 5px 0px;
+    max-width: 150px;
+
+}
+.socil{
+    background-color: rgb(255, 170, 234);
+    padding: 10px;
+
+}
+.socil ul li{
+    margin: 15px;
+    list-style: none;
+    color: rgb(203, 21, 248);
+    font-size: 20px;
+
+}
+.socil p{
+    text-align: center;
+    color: rgb(88, 2, 88);
+}
+@media (min-width: 900px) {
+
+    .welcome{
+        flex-wrap: nowrap;
+        justify-content: space-between;
+
+    }
+    .welcome img{
+        width: 40%;
+        height: 300px;
+    }
+    .humb {
+        display: none;
+    }
+    nav ul {
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+
+    }
+    nav ul li {
+        margin: 20px ;
+        list-style: none;
+
+    }
+    footer{
+        text-align: center;
+    }
+    footer ul li {
+        display: inline-block;
+   
+    }
+    
+
+
+
+}
+@media (min-width: 540px) {
+    footer{
+        text-align: center;
+    }
+    footer ul li {
+        display: inline-block;
+   
+    }
+
+
+}
