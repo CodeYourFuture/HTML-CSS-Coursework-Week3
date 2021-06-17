@@ -50,14 +50,14 @@ img{
 }
 .logo-pic{
     margin-left: 0.5em;
-}
+    }
 /*main nav*/
 .navigation{
     width: 100%;
     display:flex;
     justify-content: space-evenly;
     align-items: center;
-}
+    }
 /*ham menu*/
 .hamburger_menu .nav_toggle{
     position: absolute;
@@ -66,20 +66,20 @@ img{
     right:0;
     margin: 0 1em;
     transition: .5s;
-    }
-    .hamburger_menu .nav_toggle i.menu-icon{
-        font-size:1.8em;
-        color:var(--text-color);
-    }
-    .hamburger_menu .nav_toggle i.fa-times{
+}
+.hamburger_menu .nav_toggle i.menu-icon{
+    font-size:1.8em;
+    color:var(--text-color);
+}
+.hamburger_menu .nav_toggle i.fa-times{
+display: none;
+}
+.hamburger_menu .nav_toggle i.fa-bars{
+    margin-top: 0.2em;
+}
+.hamburger_menu .nav_checkbox{
     display: none;
-    }
-    .hamburger_menu .nav_toggle i.fa-bars{
-        margin-top: 0.2em;
-    }
-    .hamburger_menu .nav_checkbox{
-        display: none;
-    }
+}
 /*ul menu*/
 .hamburger_menu .navbar{
     display: flex;

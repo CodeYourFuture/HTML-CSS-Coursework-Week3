@@ -13,9 +13,6 @@
     .navbar .nav-item{
         display: block;  
     }
-    .navbar > .nav-item:first-child{  
-        border-bottom:none
-        }
     .navbar > .nav-item{
             background-color:transparent;
     }
@@ -47,9 +44,9 @@
         margin: 0 auto;
     }
     .lead h1{
-    padding: 0;
-    height: max-content;
-    font-size: 1.7em;
+        padding: 0;
+        height: max-content;
+        font-size: 1.7em;
     }
     /*featured section*/
     #featured{
