@@ -1,1 +1,220 @@
 /*  Add your styling here */
+*{
+    margin: 0;padding: 0;
+    font-weight: normal;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    font-family: 'Roboto', Viaoda Libre;
+
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+header,footer{
+    background: rgb(247, 179, 102);;
+}
+/* header section */
+header{
+   display: flex;
+    justify-content: space-between;   
+}
+.logo{
+    width:50%;  
+    mix-blend-mode: multiply;
+  
+}
+.logo img{
+    max-width: 100%;
+}
+
+ header .menu{
+     min-width: 50%;
+    display: flex;
+    text-align: right;
+   flex-direction: column;
+   justify-content: space-between;
+}
+header .menu img{
+    padding: 10px 10px 0px 0px;
+    width: 10%;
+
+}
+header .menu p{
+    padding:15px 20px 15px 0px;
+    font-weight: bold;
+    color: #264653;
+    
+}
+nav{
+    display: none;
+}
+/* welcome section*/
+.home{
+    background: #e9c46a;    
+}
+.home .home-content h1{
+    padding: 50px 0px ;
+    font-size: 1.7rem;
+    font-weight:600;
+    color: #264653;
+}
+.home .home-content p{
+    
+    padding-bottom: 40px;
+    font-size: 20px;
+    color: black;
+}
+.home .home-img{
+    width: 100%;
+}
+#big-cake{
+    width: 100%;
+}
+
+/* gallery section*/
+.photos{
+    margin-top: 55px;
+    background: #e9c46a;
+    display: flex;
+    flex-flow: row wrap;
+}
+.photos .pic{
+    padding: 12px;
+    width: 49%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+   overflow: hidden;
+  
+}
+.photos .pic img{
+    width: 100%;
+    height:38vh;
+}
+
+/* footer section*/
+footer{
+    margin-top: 25px;    
+}
+
+footer>h2{
+    padding: 22px 0px 0px 12px ;
+    color:black;
+}
+footer .social{
+    text-align: left;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+}
+footer .social img{
+    margin: 3px;
+    width: 40px;
+    height: 40px;
+    padding: 3px;
+}
+
+footer .footer-content p{
+    color: black;
+    padding: 8px;
+}
+
+/* break point 540*/
+@media screen and (min-width:540px){
+    header .menu p{
+        font-size:20px;
+        font-weight:450;
+        padding-bottom:30px;
+           
+       }
+       .home .home-content h1{
+        font-size:2rem;
+    
+    }
+    .home .home-content p{
+        font-size: 20px;
+    }
+  
+}
+
+/* break point 900*/
+@media screen and (min-width:900px){
+    header .menu img{
+        display: none;
+    }
+    .logo{
+        width:50%;
+        mix-blend-mode: multiply;
+    }
+    .logo img{
+        width: 45%;
+    }
+    .navbar{
+       margin: 55px;
+        background: rgb(247, 179, 102);
+        display: block;
+        position: relative;
+        top: 0;
+        right: 0;
+    }
+    .navbar ul{
+        text-align: right;
+        padding: 22px;
+
+    }
+    .navbar ul li {
+        display: inline-block;
+        margin: 0px 12px;
+        padding: 12px;
+    }
+    .navbar ul li a{
+        width: 100px;
+        text-align: center;
+        display: block;
+        background-color: white;
+        padding: 7px 5px;
+        color: #264653;
+       border-radius: 12px;
+       font-weight: bold;
+    }
+   
+    .home .container{
+     display: flex;
+     flex-direction: row-reverse; 
+     padding: 0 45px;   
+    }
+    .home .container .home-content{
+        width: 75%;
+        padding: 20px;
+        text-align: right;
+    }
+    .home .container .home-img{
+        width: 25%;
+        padding: 50px 0px 0px 12px;
+    }
+    .photos{
+        display: flex;
+        flex-direction: row;
+    }
+    .photos .pic{
+        width: 25%;
+        justify-content: space-between;
+    }
+    .photos .pic img{
+        width: 100%;
+    }
+    footer{
+        text-align: center;
+        padding-top: 33px;
+
+    }
+    footer .social{
+        display: flex;
+        flex-direction: row;
+        align-items: right;
+        justify-content: center;
+    }
+  
+}
