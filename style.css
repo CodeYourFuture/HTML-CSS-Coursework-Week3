@@ -1,1 +1,206 @@
-/*  Add your styling here */
+        /*  Add your styling here */
+        
+        @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap');
+        * {
+            margin: 0px;
+            padding: 0px;
+            font-family: 'Hind Siliguri', sans-serif;
+        }
+        /* header */
+        
+        nav {
+            display: none;
+        }
+        
+        header img {
+            width: 100%;
+            opacity: 0.7;
+            height: 150px;
+        }
+        
+        header p {
+            font-family: 'Courgette', cursive;
+            position: relative;
+            bottom: 80px;
+            padding-left: 60%;
+            color: #b5838d;
+        }
+        
+        header div {
+            position: absolute;
+            margin-left: 85%;
+        }
+        
+        .menu {
+            width: 40px;
+            height: 40px;
+        }
+        /* section  #1 */
+        
+        section:nth-child(2) {
+            padding: 15px;
+        }
+        
+        section div h3 {
+            margin-bottom: 5px;
+        }
+        
+        section .img {
+            width: 100%;
+            height: 150px;
+            margin-top: 20px;
+            border-radius: 7px;
+        }
+        
+        .p-Cont {
+            border: 1px solid rgba(247, 231, 244, 0.781);
+            padding: 15px;
+            border-radius: 6px;
+            color: #b5838d;
+        }
+        /* section #2 */
+        
+        section .display-Cont {
+            display: flex;
+            flex-direction: column;
+            margin-top: 20px;
+        }
+        
+        section .display-Cont img {
+            width: 150px;
+            height: 150px;
+            padding: 10px;
+        }
+        
+        section .display-Cont2 {
+            display: flex;
+            justify-content: space-around;
+        }
+        /* section #3 */
+        
+        section:nth-child(4) {
+            margin: 20px;
+            border: 1px solid rgba(245, 190, 235, 0.781);
+            border-radius: 7px;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            color: #b5838d;
+        }
+        
+        section:nth-child(4) div {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        section:nth-child(4) img {
+            width: 250px;
+            height: 100px;
+            opacity: 0.6;
+            border-radius: 10px;
+            margin-left: 5px;
+        }
+        
+        section:nth-child(4) div p {
+            width: 100px;
+            margin-right: 7px;
+            font-size: 14px;
+        }
+        
+        section:nth-child(4) div {
+            align-items: center;
+            margin: 10px;
+        }
+        
+        button {
+            height: 50px;
+            margin-top: 10px;
+            border-radius: 7px;
+            width: 130px;
+            border: 1px outset rgba(245, 190, 235, 0.781);
+            background: #f1e6e8;
+            border: none;
+            color: #b5838d;
+        }
+        /* media queries */
+        
+        @media screen and (min-width: 900px) {
+            * {
+                font-size: large;
+            }
+            /* header */
+            header {
+                margin: 0px;
+            }
+            .menu {
+                display: none;
+            }
+            header img {
+                width: 100%;
+                height: 350px;
+            }
+            header p {
+                position: relative;
+                bottom: 200px;
+                font-size: x-large;
+            }
+            nav {
+                display: block;
+                margin: 50px;
+                width: 90%;
+                border-radius: 6px;
+                border: 1px solid rgba(245, 190, 235, 0.781);
+            }
+            nav ul {
+                display: flex;
+                list-style: none;
+                margin-left: 50%;
+                font-family: 'Rajdhani', sans-serif;
+            }
+            nav ul li {
+                border-radius: 6px;
+                display: flex;
+                width: 100px;
+                border: 1px outset rgba(245, 190, 235, 0.781);
+                background: #f1e6e8;
+                color: #b5838d;
+                height: 50px;
+                margin: 10px;
+                justify-content: center;
+                align-items: center;
+            }
+            /* section #1 */
+            section:nth-child(2) {
+                display: flex;
+                width: 90%;
+                flex-direction: row-reverse;
+                border: 1px solid rgba(245, 190, 235, 0.781);
+                margin: 20px;
+                border-radius: 6px;
+            }
+            section:nth-child(2) img {
+                opacity: 0.7;
+            }
+            .p-Cont {
+                border: none;
+            }
+            .p-Cont h3,
+            p {
+                text-align: end;
+            }
+            /* section #2 */
+            section:nth-child(3) .display-Cont {
+                display: flex;
+                flex-direction: row;
+            }
+            section .display-Cont img {
+                width: 29%;
+                height: 250px;
+            }
+            /* sction #3 */
+            section:nth-child(4) div {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+            }
+        }
