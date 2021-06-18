@@ -56,3 +56,10 @@ li {
     height: 20vh;
     width: 100vw;
 }
+
+
+@media (min-width: 540px) { 
+    .slogan p {
+        font-size: 1.5rem;
+    }
+}
