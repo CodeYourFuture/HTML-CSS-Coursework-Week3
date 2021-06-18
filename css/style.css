@@ -42,11 +42,6 @@ li {
     font-weight: bold;
 }
 
-.img-text {
-    display: flex;
-    align-items: flex-end;
-}
-
 .img-text figure {
     width: 100%;
 }
@@ -64,4 +59,8 @@ li {
     }
 }
 
-/* @media (min-width: 900px) {...} */
+@media (min-width: 992px) {
+    .img-text figure {
+        width: 20%;
+    }
+}
