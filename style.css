@@ -61,7 +61,7 @@ main, footer {
   }
   nav ul li {
     display: block;
-    margin: 0 10px;
+    margin: 0 30px;
   }
   .welcome-container {
     display: flex;
