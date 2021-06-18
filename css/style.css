@@ -63,4 +63,15 @@ li {
     .img-text figure {
         width: 20%;
     }
+
+    li.nav-item.text-uppercase {
+    background-color: #1d3557;
+    }
+    li.nav-item.text-uppercase a{
+        color: #fff;
+        }
+    
+    .lg-custom-nav ul {
+        background-color: #a4e1d94a;
+    }
 }
