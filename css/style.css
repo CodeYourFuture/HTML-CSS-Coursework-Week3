@@ -3,6 +3,18 @@ header, footer {
     background-color: #a4e1d94a;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    color: #1d3557;
+}
+
+p {
+    color: #457b9d;
+}
 .slogan p {
     width: 51%;
 }
