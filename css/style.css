@@ -52,6 +52,11 @@ li {
     width: 100vw;
 }
 
+footer .fs-6 {
+    background: #1d3557;
+    color: white;
+    padding: 0.5rem 1rem;
+}
 
 @media (min-width: 540px) { 
     .slogan p {
@@ -73,5 +78,9 @@ li {
     
     .lg-custom-nav ul {
         background-color: #a4e1d94a;
+    }
+
+    .welcome-text {
+        width: 80%;
     }
 }
