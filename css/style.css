@@ -2,10 +2,14 @@ header {
     background-color: #a4e1d9;
 }
 
-.slogan {
-    width: 50%;
+.slogan p {
+    width: 51%;
 }
 
 .navbar-toggler {
     height: 100%;
+}
+
+.navbar-brand { 
+    margin-right: 4rem;
 }
