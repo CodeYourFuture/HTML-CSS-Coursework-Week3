@@ -20,6 +20,7 @@ header, footer {
 }
 
 .grid-img {
-    height: 100%;
     background-color: #a4e1d94a;
+    height: 20vh;
+    width: 100vw;
 }
