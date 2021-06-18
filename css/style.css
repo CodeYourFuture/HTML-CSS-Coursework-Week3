@@ -1,5 +1,6 @@
 header {
-    background-color: #a4e1d9;
+    /* background-color: #a4e1d9; */
+    background-color: #a4e1d94a;
 }
 
 .slogan p {
@@ -16,4 +17,9 @@ header {
 
 .welcome h1 {
     font-weight: bold;
+}
+
+.grid-img {
+    height: 100%;
+    background-color: #a4e1d94a;
 }
