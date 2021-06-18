@@ -5,3 +5,7 @@ header {
 .slogan {
     width: 50%;
 }
+
+.navbar-toggler {
+    height: 100%;
+}
