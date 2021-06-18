@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Jua&family=Kirang+Haerang&display=swap');
+
+body {
+    font-family: 'Kirang Haerang', cursive;
+}
+
 header, footer {
     /* background-color: #a4e1d9; */
     background-color: #a4e1d94a;
@@ -13,11 +19,13 @@ h6{
 }
 
 p {
+    font-family: 'Jua', sans-serif;
     color: #457b9d;
 }
-.slogan p {
+
+/* .slogan p {
     width: 51%;
-}
+} */
 
 .navbar-toggler {
     height: 100%;
@@ -29,6 +37,15 @@ p {
 
 .welcome h1 {
     font-weight: bold;
+}
+
+.img-text {
+    display: flex;
+    align-items: flex-end;
+}
+
+.img-text figure {
+    width: 100%;
 }
 
 .grid-img {
