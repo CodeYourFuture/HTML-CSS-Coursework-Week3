@@ -35,6 +35,9 @@ p {
     margin-right: 4rem;
 }
 
+li {
+    color: #1d3557;
+}
 .welcome h1 {
     font-weight: bold;
 }
