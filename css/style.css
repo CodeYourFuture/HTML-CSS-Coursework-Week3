@@ -52,11 +52,10 @@ li {
     width: 100vw;
 }
 
-footer .fs-6 {
-    background: #1d3557;
-    color: white;
-    padding: 0.5rem 1rem;
+.item {
+    margin: 0.8rem 0;
 }
+
 
 @media (min-width: 540px) { 
     .slogan p {
@@ -83,4 +82,19 @@ footer .fs-6 {
     .welcome-text {
         width: 80%;
     }
+
+    .grid-img {
+        height: 100%;
+    }
+
+    .item {
+        margin: 0;
+    }
+
+
+footer .fs-6 {
+    background: #1d3557;
+    color: white;
+    padding: 0.5rem 1rem;
+}
 }
