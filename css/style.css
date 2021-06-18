@@ -13,3 +13,7 @@ header {
 .navbar-brand { 
     margin-right: 4rem;
 }
+
+.welcome h1 {
+    font-weight: bold;
+}
