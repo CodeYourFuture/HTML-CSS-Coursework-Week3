@@ -1,1 +1,18 @@
-/*  Add your styling here */
+/*  Add custom google fonts */
+
+@import url("https://fonts.gootleapis.com/css2?family=Eczar&family=Kavoon&display=swap");
+
+* {
+  font-family: "Kavoon", cursive;
+  color: #ff5d8f;
+}
+
+/*  Define two custom classes to make light and dark pink backgrounds available as it is not possible to add 
+    these colours directly through Bootstrap without recompiling SASS */
+.bg-light-pink {
+  background-color: #ffc4d6;
+}
+
+.bg-dark-pink {
+  background-color: #ff5d8f;
+}
