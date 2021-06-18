@@ -1,1 +1,7 @@
 /*  Add your styling here */
+.logo > img {
+  width: 100px;
+  height: 75px;
+}
+@media (min-width: 540px) {
+}
