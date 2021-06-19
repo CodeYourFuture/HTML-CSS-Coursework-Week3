@@ -7,6 +7,10 @@
   color: #ff5d8f;
 }
 
+.text-font-eczar {
+  font-family: "Eczar", serif;
+}
+
 /*  Define two custom classes to make light and dark pink backgrounds available as it is not possible to add 
     these colours directly through Bootstrap without recompiling SASS */
 .bg-light-pink {
