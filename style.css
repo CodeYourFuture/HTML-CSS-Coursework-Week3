@@ -20,3 +20,7 @@
 .bg-dark-pink {
   background-color: #ff5d8f;
 }
+
+.mw-1440 {
+  max-width: 1440px;
+}
