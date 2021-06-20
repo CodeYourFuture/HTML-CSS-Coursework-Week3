@@ -1,1 +1,18 @@
 /*  Add your styling here */
+.wf{
+    outline: 1px solid black;
+}
+
+.ns
+{
+    background-color: silver;
+}
+
+.ns2
+{
+    background-color: gray;
+}
+
+.row {
+    min-height: 500px;
+}
