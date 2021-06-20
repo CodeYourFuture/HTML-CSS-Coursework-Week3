@@ -25,7 +25,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="img/CakeCo.ico" />
   </head>
 
-  <body>
+  <body class="w-100">
     <header>
       <nav class="navbar navbar-expand-lg navbar-light p-0">
         <div class="container-fluid flex-wrap p-0">
@@ -37,6 +37,10 @@
               flex-wrap
               w-100
               bg-light-pink
+              pt-4
+              pb-1
+              pb-lg-2
+              pe-4
             "
           >
             <a class="navbar-brand" href="#">
@@ -52,10 +56,10 @@
               aria-expanded="false"
               aria-label="Toggle navigation"
             >
-              <span class="navbar-toggler-icon"></span>
+              <span class="navbar-toggler-icon "></span>
             </button>
 
-            <p class="w-100 text-end ms-5 ps-5 fw-bold">
+            <p class="w-100 text-end ms-5 ps-5 pt-3 fs-5 fst-italic lh-1">
               The best cakes in town delivered to your door
             </p>
           </div>
@@ -65,6 +69,7 @@
               navbar-collapse
               bg-light-pink
               mt-2
+              mt-lg-4
               text-center
               mx-lg-5
             "
@@ -86,46 +91,48 @@
                   class="
                     nav-link
                     active
+                    text-uppercase
                     mx-lg-1
                     bg-dark-pink
                     text-white
                     py-lg-1
+                    fw-bold
                   "
                   aria-current="page"
                   href="#"
-                  >HOME</a
+                  >Home</a
                 >
               </li>
 
               <li class="nav-item">
                 <a
-                  class="nav-link mx-lg-1 bg-dark-pink text-white py-lg-1"
+                  class="nav-link text-uppercase mx-lg-1 bg-dark-pink text-white fw-bold py-lg-1"
                   href="#"
-                  >CAKES</a
+                  >Cakes</a
                 >
               </li>
 
               <li class="nav-item">
                 <a
-                  class="nav-link mx-lg-1 bg-dark-pink text-white py-lg-1"
+                  class="nav-link text-uppercase mx-lg-1 bg-dark-pink text-white fw-bold py-lg-1"
                   href="#"
-                  >ORDER IN</a
+                  >Order In</a
                 >
               </li>
 
               <li class="nav-item">
                 <a
-                  class="nav-link mx-lg-1 bg-dark-pink text-white py-lg-1"
+                  class="nav-link text-uppercase mx-lg-1 bg-dark-pink text-white fw-bold py-lg-1"
                   href="#"
-                  >LESSON</a
+                  >Lesson</a
                 >
               </li>
 
               <li class="nav-item">
                 <a
-                  class="nav-link mx-lg-1 bg-dark-pink text-white py-lg-1"
+                  class="nav-link text-uppercase mx-lg-1 bg-dark-pink text-white fw-bold py-lg-1"
                   href="#"
-                  >ABOUT</a
+                  >About</a
                 >
               </li>
             </ul>
@@ -134,12 +141,12 @@
       </nav>
     </header>
     <main class="mx-lg-5">
-      <div class="container-fluid mt-4">
+      <div class="container-fluid mt-4 px-lg-0">
         <section class="row flex-lg-row-reverse">
           <div class="col-12-sm col-12-md col-lg-6 mb-4 mb-lg-0">
-            <div class="card border-dark mb-3 h-100">
-              <div class="card-body">
-                <h5 class="card-title text-end text-font-eczar">Welcome</h5>
+            <div class="card border-dark mb-3 h-100 ">
+              <div class="card-body text-start text-lg-end">
+                <h5 class="card-title text-font-eczar fs-1 my-4 fw-bolder">Welcome</h5>
                 <p class="card-text">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
                   viverra, velit sit amet maximus dignissim, felis eros ultrices
@@ -148,8 +155,7 @@
                   diam tellus feugiat nisi. Donec pulvinar odio sit amet lacus
                   commodo, et ullamcorper felis tincidunt. Lorem ipsum dolor sit
                   amet, consectetur adipiscing elit. In viverra, velit sit amet
-                  maximus dignissim, felis eros ultrices turpis, nec maximus
-                  lacus arcu ut nisl. Proin hendrerit, eros ut euismod eleifend.
+
                 </p>
               </div>
             </div>
@@ -226,24 +232,33 @@
     <footer class="bg-light-pink pt-1">
       <div class="container-fluid mt-4">
         <section class="row">
-          <div
-            class="col-5 col-lg-12 d-lg-inline-flex justify-content-lg-center"
-          >
-            <div
-              class="
-                col-10 col-sm-8 col-md-6 col-lg-2 col-xl-2
-                mx-lg-3
-                my-1
-                bg-dark-pink
-                text-center
-              "
-            >
-              <a href="https://www.instagram.com/" target="_blank">
-                <i class="bi bi-instagram text-white"></i>
-              </a>
-            </div>
 
-            <div
+          <div class="col-5 col-lg-12 d-lg-inline-flex justify-content-lg-center">
+
+
+
+
+
+
+            <div class="col-10 col-sm-8 col-md-6 col-lg-2 col-xl-2 mx-lg-3 my-1 bg-dark-pink text-center">
+            
+            <a href="https://www.instagram.com/" target="_blank">
+              
+              <i class="bi bi-instagram text-white"></i>
+            
+            </a>
+          
+    
+          </div>
+
+
+
+
+
+
+
+              
+              <div
               class="
                 col-10 col-sm-8 col-md-6 col-lg-2 col-xl-2
                 mx-lg-3
@@ -256,6 +271,9 @@
                 <i class="bi bi-facebook text-white"></i
               ></a>
             </div>
+
+
+            
 
             <div
               class="
