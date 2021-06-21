@@ -4,7 +4,7 @@
 
 * {
   font-family: "Kavoon", cursive;
-  color: #ff5d8f;
+  color: #de0681;
 }
 
 .text-font-eczar {
@@ -20,7 +20,7 @@
 }
 
 .bg-dark-pink {
-  background-color: #ff5d8f;
+  background-color: #de0681;
 }
 
 /* Misc */
@@ -31,7 +31,7 @@
 /* Button hover effects */
 
 .border-bottom-pink {
-  border-bottom: 3px solid #ff5d8f;
+  border-bottom: 3px solid #de0681;
 }
 
 .border-bottom-pink:hover,
