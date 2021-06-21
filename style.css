@@ -1,1 +1,35 @@
-/*  Add your styling here */
+
+/*CSS Document8/
+body {
+    margin-top: 3rem;
+}
+.bg-light {
+    background-color: rgb(186, 226, 43)!important;
+}
+.figure-caption {
+    font-size: 90%;
+    color:white;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+    /* Footer*/
+    footer {
+     background:rgba(0,0,0,0.815)  
+     padding: 14vmin 18vmin;
+    }
+    footer input{
+border:none !important;
+    }
+  footer input::placeholder{
+      color: white!important;
+  }
+  footer .input-group .input-group-text{
+      background:blueviolet;
+      border:none;
+  }
+  footer.column i{
+     color:# yellow;
+      }
+   footer.column i+i  {
+       padding: 0 0.5em;
+   } 
