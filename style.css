@@ -28,7 +28,27 @@
   max-width: 1440px;
 }
 
+/* Button hover effects */
 
-/* Effects & Pseudo classes */
+.border-bottom-pink {
+  border-bottom: 3px solid #ff5d8f;
+}
 
+.border-bottom-pink:hover,
+.border-bottom-pink:focus {
+  border-bottom: 3px solid #fff;
+}
 
+/* Image hover effects */
+
+.grow {
+  transition: 1s ease;
+}
+
+.grow:hover {
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+  transition: 1s ease;
+  pointer-events: fill;
+}
