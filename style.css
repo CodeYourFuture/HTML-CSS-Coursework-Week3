@@ -1,7 +1,9 @@
-/*  Fonts */
+/* Misc */
+.mw-1440 {
+  max-width: 1440px;
+}
 
-@import url("https://fonts.gootleapis.com/css2?family=Eczar&family=Kavoon&display=swap");
-
+/* Fonts */
 * {
   font-family: "Kavoon", cursive;
   color: #de0681;
@@ -12,9 +14,6 @@
 }
 
 /* Colours */
-
-/*  Define two custom classes to make light and dark pink backgrounds available as it is not possible to add 
-    these colours directly through Bootstrap without recompiling SASS */
 .bg-light-pink {
   background-color: #ffc4d6;
 }
@@ -23,13 +22,7 @@
   background-color: #de0681;
 }
 
-/* Misc */
-.mw-1440 {
-  max-width: 1440px;
-}
-
-/* Button hover effects */
-
+/* Button hover effect */
 .border-bottom-pink {
   border-bottom: 3px solid #de0681;
 }
@@ -39,8 +32,7 @@
   border-bottom: 3px solid #fff;
 }
 
-/* Image hover effects */
-
+/* Image hover effect */
 .grow {
   transition: 1s ease;
 }
