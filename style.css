@@ -1,4 +1,4 @@
-/*  Add custom google fonts */
+/*  Fonts */
 
 @import url("https://fonts.gootleapis.com/css2?family=Eczar&family=Kavoon&display=swap");
 
@@ -11,6 +11,8 @@
   font-family: "Eczar", serif;
 }
 
+/* Colours */
+
 /*  Define two custom classes to make light and dark pink backgrounds available as it is not possible to add 
     these colours directly through Bootstrap without recompiling SASS */
 .bg-light-pink {
@@ -21,6 +23,12 @@
   background-color: #ff5d8f;
 }
 
+/* Misc */
 .mw-1440 {
   max-width: 1440px;
 }
+
+
+/* Effects & Pseudo classes */
+
+
