@@ -45,6 +45,7 @@ re-compiling bootstraps SASS files. */
 /* Image hover effect */
 .grow {
   transition: transform 1s ease;
+  opacity: 0.6;
 }
 
 .grow:hover {
@@ -52,4 +53,7 @@ re-compiling bootstraps SASS files. */
   -ms-transform: scale(1.05);
   transform: scale(1.05);
   transition: transform 1s ease;
+  opacity: 1;
+  font-size: 140%;
+  text-align-last: center;
 }
