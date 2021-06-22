@@ -1,3 +1,7 @@
+/* The following CSS was necessary to achieve the correct look and feel for the website 
+and I could not find a way to implement custom fonts, colours, hover/focus effects without 
+re-compiling bootstraps SASS files. */
+
 /* Misc */
 .mw-1440 {
   max-width: 1440px;
@@ -27,20 +31,25 @@
   border-bottom: 3px solid #b72470;
 }
 
+.border-bottom-pink,
+.border-bottom-pink {
+  transition: border-bottom 0.3s ease-out;
+}
+
 .border-bottom-pink:hover,
 .border-bottom-pink:focus {
   border-bottom: 3px solid #fff;
+  transition: border-bottom 0.5s ease-in;
 }
 
 /* Image hover effect */
 .grow {
-  transition: 1s ease;
+  transition: transform 1s ease;
 }
 
 .grow:hover {
   -webkit-transform: scale(1.05);
   -ms-transform: scale(1.05);
   transform: scale(1.05);
-  transition: 1s ease;
-  pointer-events: fill;
+  transition: transform 1s ease;
 }
