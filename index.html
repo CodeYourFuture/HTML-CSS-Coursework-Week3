@@ -21,8 +21,11 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
     />
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Eczar&family=Kavoon&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Eczar&family=Kavoon&display=swap"
+      rel="stylesheet"
+    />
     <link rel="shortcut icon" type="image/x-icon" href="img/CakeCo.ico" />
   </head>
   <body>
@@ -40,6 +43,7 @@
               pt-4
               pb-1 pb-lg-2
               pe-4
+              shadow
             "
           >
             <a class="navbar-brand" href="#">
@@ -68,6 +72,7 @@
               mt-2 mt-lg-4
               text-center
               mx-lg-5
+              shadow
             "
             id="navbar-toggle"
           >
@@ -189,23 +194,91 @@
                   Welcome
                 </h5>
                 <p class="card-text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-                  viverra, velit sit amet maximus dignissim, felis eros ultrices
-                  turpis, nec maximus lacus arcu ut nisl. Proin hendrerit, eros
-                  ut euismod eleifend adipiscing elit. In viverra, velit sit
-                  amet maximus
+                  Sugar plum muffin chupa chups cheesecake sesame snaps biscuit
+                  ice cream dessert. Wafer donut jelly-o powder. Tootsie roll
+                  macaroon pudding muffin carrot cake. Chupa chups marzipan
+                  dragée pie cotton candy. Gummies toffee tootsie roll sesame
+                  snaps caramels.
                 </p>
               </div>
             </div>
           </div>
 
           <div class="col-12-sm col-12-md col-lg-6">
-            <div class="card">
-              <img
-                src="img/welcome-image.jpg"
-                class="card-img shadow"
-                alt="Cupcakes"
-              />
+            <div
+              id="carouselExampleIndicators"
+              class="carousel slide shadow card"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="2"
+                  aria-label="Slide 3"
+                ></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="img/welcome-image.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="img/welcome-image-2.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="img/welcome-image-3.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
             </div>
           </div>
         </section>
@@ -228,6 +301,8 @@
                     text-center
                     shadow
                     m-0
+                    badge
+                    rounded-1
                   "
                 >
                   Cupcakes
@@ -253,6 +328,8 @@
                     text-center
                     shadow
                     m-0
+                    badge
+                    rounded-1
                   "
                 >
                   Birthday
@@ -278,6 +355,8 @@
                     text-center
                     shadow
                     m-0
+                    badge
+                    rounded-1
                   "
                 >
                   Donuts
@@ -303,6 +382,8 @@
                     text-center
                     shadow
                     m-0
+                    badge
+                    rounded-1
                   "
                 >
                   Slices
@@ -313,7 +394,7 @@
         </section>
       </div>
     </main>
-    <footer class="bg-light-pink pt-1">
+    <footer class="bg-light-pink pt-1 shadow">
       <div class="container-fluid pt-4 pt-lg-5">
         <section class="row pb-lg-3">
           <div class="d-md-inline-flex justify-content-md-center">
@@ -378,7 +459,7 @@
           </div>
           <div class="pt-4 pb-5">
             <p class="mb-0 small footer-copyright text-center">
-             © All rights reserved | Cake Co. 2021
+              © All rights reserved | Cake Co. 2021
             </p>
           </div>
         </section>

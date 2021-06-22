@@ -6,7 +6,7 @@
 /* Fonts */
 * {
   font-family: "Kavoon", cursive;
-  color: #de0681;
+  color: #b72470;
 }
 
 .text-font-eczar {
@@ -15,16 +15,16 @@
 
 /* Colours */
 .bg-light-pink {
-  background-color: #ffc4d6;
+  background-color: #f7d9ea;
 }
 
 .bg-dark-pink {
-  background-color: #de0681;
+  background-color: #b72470;
 }
 
 /* Button hover effect */
 .border-bottom-pink {
-  border-bottom: 3px solid #de0681;
+  border-bottom: 3px solid #b72470;
 }
 
 .border-bottom-pink:hover,
