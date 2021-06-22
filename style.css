@@ -29,17 +29,13 @@ re-compiling bootstraps SASS files. */
 /* Button hover effect */
 .border-bottom-pink {
   border-bottom: 3px solid #b72470;
-}
-
-.border-bottom-pink,
-.border-bottom-pink {
-  transition: border-bottom 0.3s ease-out;
+  transition: border-bottom 0.4s ease-out;
 }
 
 .border-bottom-pink:hover,
 .border-bottom-pink:focus {
   border-bottom: 3px solid #fff;
-  transition: border-bottom 0.5s ease-in;
+  transition: border-bottom 0.1s ease-in;
 }
 
 /* Image hover effect */
