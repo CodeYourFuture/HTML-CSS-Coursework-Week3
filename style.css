@@ -1,8 +1,6 @@
 header {
-  /*  position: sticky;*/
     min-height: 30vh;
     width: 100%;
-    /*background-image: url('https://images.unsplash.com/photo-1562440499-64c9a111f713?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60');*/
     background-repeat: no-repeat;
   }
 
@@ -29,4 +27,46 @@ p {
       width: 100%;
       position: absolute;
       padding-left: 3vh;
+
+  }
+
+
+
+@media screen and (min-width: 415px) {
+    .subtitle {
+        padding-left: 70vw;
+    }
+
+    .img-text-container {
+        display: flex;
+        flex-flow: row-reverse;
+
+    }
+
+    .title-text-container {
+        display: flex;
+        flex-direction: column;
+        text-align: end;
+        margin-right: 5vw;
+     
+    }
+
+    .main-image {
+        width: 40%;
+    }
+  
+    .four-images-container {
+        display: flex;
+        justify-content: space-between;
+        margin-right: 5vw;
+        
+    }
+
+    .button-container {
+        display: flex;
+        flex-direction: row;
+        
+    }
+
+}
 
