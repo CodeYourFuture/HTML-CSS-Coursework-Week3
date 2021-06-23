@@ -1,4 +1,3 @@
-/*  Add your styling here */
 * {
   font-family: "Times New Roman", Times, serif;
 }
@@ -40,59 +39,67 @@ footer {
   margin: 20px 5px;
 }
 
-/*Media*/
-@media screen and (max-width: 540px) {
+@media (max-width: 575.98px) {
   .nav-container {
     display: none;
   }
 }
-@media screen and (min-width: 540px) {
+@media (min-width: 575.98px) {
   svg {
     display: none;
   }
-  header  p {
+
+  header p {
     height: 100%;
     display: flex;
     align-items: flex-end;
   }
-  .nav-container{
+
+  .nav-container {
     margin-top: 20px;
     display: flex;
     justify-content: flex-end;
   }
+
   nav ul {
     display: flex;
   }
+
   nav ul li {
     display: block;
     margin: 0 30px;
   }
+
   .welcome-container {
     display: flex;
     flex-direction: row-reverse;
   }
+
   .welcome-container .welcome-side {
     text-align: end;
     margin-left: 20px;
   }
+
   .welcome-side h1 {
     margin-bottom: 50px;
   }
+
   footer {
     display: flex;
     align-items: center;
     flex-direction: column;
   }
+
   footer h2 {
     display: flex;
-    
   }
+
   footer ul {
     display: flex;
   }
+
   footer ul li {
     display: block;
     margin: 0 10px;
   }
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

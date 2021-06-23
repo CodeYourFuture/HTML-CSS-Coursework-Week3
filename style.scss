@@ -1,0 +1,97 @@
+* {
+  font-family: "Times New Roman", Times, serif;
+}
+
+body {
+  background-color: #c9c6c6;
+}
+
+main,
+footer {
+  margin: 0 20px;
+}
+
+.header-container {
+  background-color: white;
+  width: 100%;
+  height: 20rem;
+}
+
+.image-logo {
+  height: 10rem;
+}
+
+
+/*Main*/
+/*Welcome section*/
+.welcome-container {
+  word-spacing: 5px;
+  font-style: italic;
+  text-align: justify;
+  margin: 3rem 0;
+}
+
+.image-1 {
+  margin: 3rem 0;
+}
+
+.image-container {
+  width: 100%;
+  margin: 20px 5px;
+}
+
+@media (max-width: 575.98px) {
+  .nav-container {
+    display: none;
+  }
+}
+
+@media (min-width: 575.98px) {
+  svg {
+    display: none;
+  }
+  header  p {
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+  }
+  .nav-container{
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  nav ul {
+    display: flex;
+  }
+  nav ul li {
+    display: block;
+    margin: 0 30px;
+  }
+  .welcome-container {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .welcome-container .welcome-side {
+    text-align: end;
+    margin-left: 20px;
+  }
+  .welcome-side h1 {
+    margin-bottom: 50px;
+  }
+  footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  footer h2 {
+    display: flex;
+    
+  }
+  footer ul {
+    display: flex;
+  }
+  footer ul li {
+    display: block;
+    margin: 0 10px;
+  }
+}
