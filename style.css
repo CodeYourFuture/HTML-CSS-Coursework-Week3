@@ -1,67 +1,66 @@
-
-
-*{
-    box-sizing:border-box;
-
-}
-header,section{
-    overflow:hidden;
+* {
+  box-sizing: border-box;
 }
 
 /*secttion 1*/
-.section-1{
-    padding: 20vmin 0;
+.section-1 {
+  padding: 20vmin 0;
 }
-.section-1 .row .col-md-6 .pray img{
-    opacity: 0.8;
-    width: 80%;
-    border-radius:0.2em;
+.section-1 .row .col-md-6 .pray img {
+  opacity: 0.8;
+  width: 80%;
+  border-radius: 0.2em;
 }
 
-header{
-    background-color: rgb(255, 145, 0);
-} 
- 
-header.nav-item:last-child{
-    padding-right:10.5em;
+/* Navbar Decoration */
+.mynav {
+  background: rgb(20, 219, 30);
 }
- header.nav-item{
-     padding:0.9em;
- }
-header.navbar-brand{
-    padding-left: 8rem;
+.mynav a {
+  margin-right: 30px;
+  font-size: 0.9em;
+  color: hsl(240, 92%, 53%);
 }
-header.nav-link:hover{
-    color: black;
+
+.mynav a:hover {
+  border-bottom: 2px solid #181174;
+}
+.active a {
+  font-style: inherit;
+  background-color: #fcac00;
+  border-bottom: 2px solid #181174;
+}
+
+header {
+  background-color: rgb(255, 145, 0);
 }
 
 /* Footer*/
-    footer{
-        display: -webkit-flex;
-        display: -moz-flex;
-        display: -ms-flex;
-        display: flex;
-        flex-flow: row wrap;
-        padding: 50px;
-        color: rgb(255, 250, 250);
-    
-     background:#dd6f08d0;
-        }
-     footer input::placeholder{
-      color: white!important;
-  }
-  footer .input-group .input-group-text{
-      background:rgb(226, 116, 43);
-      }
-  footer.column i{
-     color:rgb(255, 94, 0);
-      }
-   footer.column i + i{
-       padding: 0 0.5em;
-   } 
-   .footer-bottom{
-       text-align:center;
-       color:rgb(19, 17, 17);
-       padding-top: 50px;
+footer {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-flow: row wrap;
+  padding: 50px;
+  color: rgb(255, 250, 250);
 
-   }
+  background: #dd6f08d0;
+}
+footer input::placeholder {
+  color: white !important;
+}
+footer .input-group .input-group-text {
+  background: rgb(226, 116, 43);
+}
+footer.column i {
+  color: rgb(255, 94, 0);
+}
+footer.column i + i {
+  padding: 0 0.5em;
+}
+.footer-bottom {
+  text-align: center;
+  color: rgb(19, 17, 17);
+  padding-top: 50px;
+}
