@@ -5,6 +5,7 @@
 
 .col-sm{
     padding: 1.5rem;
+   
 }
 
 footer{
@@ -13,5 +14,5 @@ footer{
 
 .btn{
     align-items: baseline;
-    margin: 1rem;
+    margin: 0.5rem;
 }
