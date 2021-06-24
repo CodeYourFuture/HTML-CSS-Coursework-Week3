@@ -6,4 +6,34 @@
 
 * {
     border: 1px solid black;
+    font-family: 'Libre Baskerville', serif;
+}
+
+header {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+/*-------introduction area setup-----------*/
+.introduction-area {
+    display: flex;
+    flex-direction: column;
+}
+
+/*----------nav bar setup---------------*/
+
+.nav-bar {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: end;
+    align-items: center;
+    background-color: rgb(185, 249, 252);
+}
+
+.nav-bar ul {
+    display: none;
+}
+
+.nav-bar i {
+    padding: 0.5em;
 }
