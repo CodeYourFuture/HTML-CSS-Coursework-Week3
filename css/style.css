@@ -5,7 +5,7 @@
 /*font-family: 'Archivo Narrow', sans-serif;*/
 
 * {
-    border: 1px solid black;
+    /*border: 1px solid black;*/
     font-family: 'Libre Baskerville', serif;
 }
 
@@ -18,6 +18,21 @@ header {
 .introduction-area {
     display: flex;
     flex-direction: column;
+    background-color: rgba(185, 249, 252, 0.1);
+}
+
+.introduction-area > img {
+    width: 150px;
+}
+
+.introduction-area > p {
+    width: 50%;
+    margin: -40px 0 0 170px;
+    padding-bottom: 1em;
+    font-size: 12px;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 900;
 }
 
 /*----------nav bar setup---------------*/
@@ -27,7 +42,7 @@ header {
     flex-direction: row-reverse;
     justify-content: end;
     align-items: center;
-    background-color: rgb(185, 249, 252);
+    background-color: rgba(185, 249, 252, 0.1);
 }
 
 .nav-bar ul {
@@ -35,5 +50,5 @@ header {
 }
 
 .nav-bar i {
-    padding: 0.5em;
+    padding: 0.5em 1em 0 0;
 }
