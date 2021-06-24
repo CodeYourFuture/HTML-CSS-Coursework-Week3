@@ -1,75 +1,121 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="mw-1440 mx-auto">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Responsive Cake webpage</title>
+    <meta name="description" content="Cake Co: Making delicious cakes for all occasions since 2021" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
 </head>
 
 <body>
-    <nav class="navbar  navbar-expand-sm navbar-dark bg-dark p-3">
-        <img style="height: 150px; width: 150px; "
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSI8UO3cAIOeYPiW-r_9NcZOz15cpw_xsSiQ&usqp=CAU">
-        <a href="#" class="navbar-brand p-4"><strong>Best Cakes In Edinburgh</strong></a>
-        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse p-5" id="navbarMenu">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Home</a>
-                </li>
-                <li class="nav-item"></li>
-                <a href="#" class="nav-link">Cakes</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Ordering</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Lessons</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">About</a>
-                </li>
-            </ul>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-ligh tp-0">
+            <div class="container-fluid flex-wrap  p-0">
+                <div
+                    class="container-fluid d-flex justify-content-between flex-wrap border pt-4 pb-1 pb-lg-2 pe-4 bg-light">
+                    <a class="navbar-brand " href="#">
+                        <img class="w-80 "
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIXx10_u5jARam5br05vKTwElgGSoM3D4NZg&usqp=CAU"
+                            alt="logo" /></a>
+                    <button class="navbar-toggler border-0 align-self-baseline p-0 text-white " type="button"
+                        data-bs-toggle="collapse" data-bs-target="#navbar-toggle" aria-controls="navbar-toggle"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <p class="w-100 text-end ms-7 ps-7 pt-3 fs-5 ">
+                        The Best Cakes In Edinburgh
+                    </p>
+                </div>
+                <div class="collapse navbar-collapse text-center border mt-2 mt-lg-4 mx-lg-5 bg-dark "
+                    id="navbar-toggle">
+                    <ul class="navbar-nav justify-content-end me-auto mb-2 mb-lg-0  p-lg-4 w-100 ">
+                        <li class="nav-item">
+                            <a class="nav-link active text-uppercase text-dark fw-bold border bg-light mx-lg-2 py-lg-1 px-lg-4
+                    " aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase text-dark fw-bold border bg-light mx-lg-2 py-lg-1 px-lg-4
+                    " href="#">Cakes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class=" nav-link text-uppercase text-dark fw-bold border bg-light mx-lg-2 py-lg-1 px-lg-4
+                    " href="#">Orderin</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase text-dark fw-bold border bg-light mx-lg-2 py-lg-1 px-lg-4
+                    " href="#">Lesson</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class=" nav-link text-uppercase text-dark fw-bold border bg-light mx-lg-2 py-lg-1 px-lg-4
+                    " href="#">About</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="mx-lg-5">
+        <div class="container-fluid mt-4 px-lg-0">
+            <section class="row flex-lg-row-reverse ">
+                <div class="col-12-sm col-12-md col-lg-6 mb-4 mb-lg-0 ">
+                    <div class="card border-0 mb-3">
+                        <div class="card-body text-start text-lg-end ">
+                            <h5 class="card-title text-font-eczar fs-1 my-4 fw-bolder">
+                                Welcome
+                            </h5>
+                            <p class="card-text">
+                                We strive to create the most innovative and tastiest products using the finest locally
+                                sourced ingredients. Whether it be a birthday party, new baby, hen party, anniversary or
+                                just because you've had a rubbish Monday, our baked goods not only look divine but taste
+                                delicious too and put a massive smile on anyone's face. We've been catering to Edinburgh
+                                folks cake requirements since 2011 and have been awarded the winner of the "Best Cake in
+                                Scotland" 2014/15, 2015/16, and 2017/18! We believe the proof of the pudding truly is in
+                                the eating!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12-sm col-12-md col-lg-6 ">
+                    <img src="https://images.unsplash.com/photo-1542826438-bd32f43d626f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTF8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=600&q=60"
+                        class="d-block w-100" alt="Cake 1" />
+                </div>
         </div>
-
-    </nav>
-    <article>
-        <div class="container mt-5 mb-5 bg-light p-5">
-            <h1 class="text-center">Celebration Cakes</h1>
-            <p class="text-center">For a truly memorable slice of delight, order one of our celebration or birthday
-                cakes! Always baked
-                fresh
-                from scratch in our Edinburgh bakery using local free-range eggs and Scottish butter. Our bakers will
-                even
-                ice your personal message on the top for no extra charge.
-
-                The following cakes can be baked with gluten-free flour: Sticky Toffee Pudding, Banana & Sea Salted
-                Caramel,
-                or Carrot.
-
-                Order online for collection or delivery in Edinburgh. We offer FREE delivery to Edinburgh and
-                surrounding
-                areas for online orders over £35 (Normally £5.95).</p>
         </div>
-    </article>
-    <section>
-        <div class="d-flex flex-column">
-            <img
-                src="https://images.unsplash.com/photo-1426869884541-df7117556757?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8ODN8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=600&q=60">
+        </section>
+        <section class="row mt-4">
+            <div class="col-6 col-lg-3 ">
+                <div class="card grow btn m-0 p-0">
+                    <img src="https://images.unsplash.com/photo-1505253149613-112d21d9f6a9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8NDB8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=600&q=60"
+                        class="card-img shadow" alt="Cake 2" />
+                </div>
+            </div>
+            <div class="col-6 col-lg-3 mb-4 ">
+                <div class="card grow btn m-0 p-0">
+                    <img src="https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTR8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=600&q=60"
+                        alt="Cake 3" />
+                </div>
+            </div>
+            <div class="col-6 col-lg-3 mb-4">
+                <div class="card grow btn m-0 p-0">
+                    <img src="https://images.unsplash.com/photo-1574085733277-851d9d856a3a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MjJ8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=600&q=60"
+                        class="card-img shadow" alt="Cake 4" />
+                </div>
+            </div>
+            <div class="col-6 col-lg-3 mb-4">
+                <div class="card grow btn m-0 p-0">
+                    <img
+                        src="https://images.unsplash.com/photo-1559620192-032c4bc4674e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MjF8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=600&q=60">
+                </div>
+        </section>
         </div>
-    </section>
-    <section class="container mb-5 d-flex flex-wrap justify-content-around img-fluid">   
-        <img src="https://images.unsplash.com/photo-1588195538326-c5b1e9f80a1b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8M3x8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=60"   alt="Cake1" style="width:200px;height: 200px" class="img-thumbnail p-2">
-        <img src="https://images.unsplash.com/photo-1586985289688-ca3cf47d3e6e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8NXx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=60"   alt="Cake2" style="width:200px; height: 200px" class="img-thumbnail p-2">
-        <img src="https://images.unsplash.com/photo-1602351447937-745cb720612f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8N3x8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=60"   alt="Cake3" style="width:200px;height: 200px" class="img-thumbnail p-2">
-        <img src="https://images.unsplash.com/photo-1542826438-bd32f43d626f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTF8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=600&q=60"   alt="Cake4" style="width:200px; height: 200px" class="img-thumbnail p-2">
-      </section>
+    </main>
 
     <footer class="bg-secondary d-flex flex-column justify-content-start align-items-center mt-3 "
         style="height: 150px; width: 100%;">
@@ -95,17 +141,7 @@
         </div>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
-</body>
 
-</html>
+</body>
 
 </html>
