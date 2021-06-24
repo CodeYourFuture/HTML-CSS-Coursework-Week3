@@ -5,34 +5,45 @@
 /*secttion 1*/
 .section-1 {
   padding: 20vmin 0;
+  background-color: #ff9100;
 }
 .section-1 .row .col-md-6 .pray img {
   opacity: 0.8;
   width: 80%;
   border-radius: 0.2em;
+  
 }
 
 /* Navbar Decoration */
 .mynav {
-  background: rgb(20, 219, 30);
+  background-color: #ff9100;
 }
 .mynav a {
   margin-right: 30px;
   font-size: 0.9em;
-  color: hsl(240, 92%, 53%);
+  background-color: #ff9100;
 }
 
 .mynav a:hover {
-  border-bottom: 2px solid #181174;
+  border-bottom: 2px solid #ff9100;
 }
 .active a {
-  font-style: inherit;
-  background-color: #fcac00;
+  font-style: normal;
+  background-color: #6f00ff);
   border-bottom: 2px solid #181174;
 }
 
 header {
   background-color: rgb(255, 145, 0);
+}
+.bg-light{
+  background-color: hsl(34, 100%, 50%);
+}
+.figure-caption{
+  font-size: 90%;
+  color: #ff9100;
+  text-transform:uppercase;
+  font-weight:600;
 }
 
 /* Footer*/
@@ -63,4 +74,10 @@ footer.column i + i {
   text-align: center;
   color: rgb(19, 17, 17);
   padding-top: 50px;
+}
+
+@media (min-width: 540px) {
+   p{
+       font-size: 1.25rem;
+   } 
 }
