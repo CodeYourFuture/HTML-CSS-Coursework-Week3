@@ -138,3 +138,11 @@ footer {
 .icons-container span {
     font-size: 12px;
 }
+
+footer > p {
+    width: 90%;
+    margin: 3em auto;
+    font-size: 12px;
+    text-align: center;
+    color: rgb(87, 3, 3);
+}
