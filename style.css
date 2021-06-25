@@ -1,1 +1,45 @@
-/*  Add your styling here */
+body {
+    background-color: antiquewhite;
+}
+
+header {
+    background-color: aqua;
+    position: relative;
+    top: 1rem;
+}
+
+#left {
+    position: relative;
+    top: 60px;
+}
+
+
+/*
+background-image: url(https://assets.epicurious.com/photos/5af4550baf6ece1dfcaf1a83/master/pass/persian-love-cake-051018.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+*/
+
+#img-welcome {
+    background-image: url(https://assets.epicurious.com/photos/5af4550baf6ece1dfcaf1a83/master/pass/persian-love-cake-051018.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-style: oblique;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+}
+
+#cakes {
+    margin-top: 90px;
+    margin-bottom: 40px;
+}
+
+#footer {
+    width: 100%;
+    height: 300px;
+    border-radius: .5rem;
+    background-color: aqua;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: black;
+}
