@@ -38,6 +38,12 @@ header {
     }
 }
 
+@media (min-width: 1024px) {
+    .introduction-area > img {
+        width: 350px;
+    }
+}
+
 .introduction-area > p {
     width: 50%;
     margin: -40px 0 0 170px;
@@ -51,6 +57,13 @@ header {
 @media (min-width: 768px) {
     .introduction-area > p {
         margin: 0 0 0 350px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .introduction-area > p {
+        font-size: 35px;
+        margin: -2em 0 0 450px;
     }
 }
 
@@ -133,6 +146,14 @@ header {
     align-content: center;
 }
 
+@media (min-width: 1024px) {
+    .cakes-main-area {
+        margin-top: 6em;
+        grid-template-columns: repeat(4, 25%);
+        grid-template-rows: 50% auto;
+    }
+}
+
 .cakes-main-area > img {
     border-radius: 10px;
 }
@@ -143,10 +164,22 @@ header {
     margin-bottom: 1em;
 }
 
+@media (min-width: 1024px) {
+    .welcome-area {
+        grid-column: 3/5;
+    }
+}
+
 .welcome-area > h2 {
     font-weight: 700;
     font-style: italic;
     text-align: center;
+}
+
+@media (min-width: 1024px) {
+    .welcome-area > h2 {
+        padding-top: 1.5em;
+    }
 }
 
 .welcome-area > p {
@@ -155,6 +188,13 @@ header {
     font-family: 'Archivo Narrow', sans-serif;
     font-size: 15px;
     text-align: center;
+}
+
+@media (min-width: 1024px) {
+    .welcome-area > p {
+        margin-top: 1.5em;
+        text-align: justify;
+    }
 }
 
 .main-cake {
@@ -174,12 +214,25 @@ header {
     background-size: 100% 100%;
 }
 
+@media (min-width: 1024px) {
+    .main-cake {
+        grid-column: 1/3;
+        grid-row: 1/2;
+    }
+}
+
 /*-------------footer area setup-----------------*/
 
 footer {
     margin-top: 4em;
     width: 100%;
     background-color: rgba(185, 249, 252, 0.1);
+}
+
+@media (min-width: 1024px) {
+    footer {
+        padding-top: 1em;
+    }
 }
 
 .icons-container {
