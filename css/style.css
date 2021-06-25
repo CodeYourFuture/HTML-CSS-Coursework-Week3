@@ -67,6 +67,12 @@ header {
     }
 }
 
+@media (min-width: 1440px) {
+    .introduction-area > p {
+        margin: -2em 0 0 650px;
+    }
+}
+
 /*----------nav bar setup---------------*/
 
 .nav-bar {
@@ -154,6 +160,12 @@ header {
     }
 }
 
+@media (min-width: 1440px) {
+    .cakes-main-area {
+        margin-top: 8em;
+    }
+}
+
 .cakes-main-area > img {
     border-radius: 10px;
 }
@@ -232,6 +244,12 @@ footer {
 @media (min-width: 1024px) {
     footer {
         padding-top: 1em;
+    }
+}
+
+@media (min-width: 1440px) {
+    footer {
+        margin-top: 7em;
     }
 }
 
