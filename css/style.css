@@ -106,3 +106,35 @@ header {
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
+
+/*-------------footer area setup-----------------*/
+
+footer {
+    margin-top: 4em;
+    width: 100%;
+    background-color: rgba(185, 249, 252, 0.1);
+}
+
+.icons-container {
+    width: 90%;
+    height: auto;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+}
+
+.icons-container > a {
+    text-decoration: none;
+    color: rgb(87, 3, 3);
+}
+
+.icons-container > a > i {
+    margin-top: 1em;
+    border: 1px solid rgb(87, 3, 3);
+    padding: 0.5em;
+    border-radius: 50%;
+}
+
+.icons-container span {
+    font-size: 12px;
+}
