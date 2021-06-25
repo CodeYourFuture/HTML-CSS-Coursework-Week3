@@ -1,1 +1,224 @@
-/*  Add your styling here */
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+body,
+h1,
+p {
+  margin: 0;
+}
+
+/**Header**/
+
+header {
+  align-items: flex-end;
+  background-image: url(img/glen-carrie-aDeM4FxaK0c-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  height: 40vh;
+  justify-content: space-between;
+  padding-top: 1.5rem;
+}
+
+header p,
+nav span {
+  margin-right: 1rem;
+}
+
+header p {
+  color: #d82436;
+  font-weight: 700;
+  font-size: 1.2rem;
+  line-height: 1;
+  padding-bottom: 1rem;
+  text-align: right;
+  width: 60%;
+}
+
+/*Burger menu*/
+
+nav span {
+  background-color: #d82436;
+  cursor: pointer;
+  display: block;
+  height: 4px;
+  width: 1.4rem;
+}
+
+nav span:first-child {
+  margin-bottom: 0.4rem;
+}
+
+#menu {
+  background-color: #fda0a9c9;
+  display: flex;
+  display: none;
+  flex-direction: column;
+  height: 100vh;
+  padding-top: 0.5rem;
+  position: absolute;
+  width: 100vw;
+}
+
+#menu a {
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: 600;
+  padding: 0.4rem 0 0.4rem 3rem;
+  text-decoration: none;
+}
+
+#menu p {
+  color: #fff;
+  font-size: 2rem;
+  padding-left: 3rem;
+  text-align: left;
+}
+
+#menu a:hover,
+#menu a:focus {
+  background-color: rgb(253, 216, 4);
+}
+
+/**Content**/
+
+img {
+  object-fit: cover;
+  width: 100%;
+}
+
+/*First Section*/
+
+.intro div {
+  border: 1rem solid #fda0aa;
+  padding: 2rem;
+}
+
+.intro h2 {
+  color: #fda0aa;
+  font-size: 2rem;
+  margin-top: 0;
+}
+
+/*Second Section*/
+
+.img-cont-flex {
+  display: flex;
+  margin-top: 1rem;
+}
+
+.img-cont-flex img {
+  height: 20rem;
+}
+.img-cont-flex div:last-child {
+  margin-left: 0.3rem;
+}
+
+/**Footer**/
+
+footer {
+  text-align: center;
+}
+
+footer div {
+  background-color: #fda0aa;
+  color: #fff;
+  padding: 2rem;
+}
+
+footer h2 {
+  margin-top: 0;
+}
+
+footer > p:last-child {
+  background-color: #fff;
+  color: #000;
+  padding: 1rem;
+}
+
+/**Media queries**/
+
+@media (min-width: 500px) {
+  header p {
+    width: 50%;
+  }
+}
+
+@media (min-width: 800px) {
+  /*Nav bar*/
+
+  header {
+    background-image: url(img/brooke-lark-pGM4sjt_BdQ-unsplash.jpg);
+    background-position: center;
+    background-position-y: 65%;
+  }
+
+  #burger-menu {
+    display: none;
+  }
+
+  #menu {
+    all: unset;
+    background-color: #fff;
+    order: 3;
+    text-align: center;
+    width: 100%;
+    padding: 2rem 0;
+  }
+
+  #menu a {
+    color: #fda0aa;
+    margin: 2rem;
+    padding: 0;
+  }
+
+  #menu a:hover,
+  #menu a:focus {
+    background-color: #fff;
+    color: rgb(253, 216, 4);
+  }
+
+  /*Content*/
+
+  main {
+    margin: 0 4rem;
+  }
+
+  /*First Section*/
+
+  .intro {
+    display: flex;
+    flex-direction: row-reverse;
+    height: 90vh;
+    text-align: right;
+  }
+
+  .main-img,
+  .intro div {
+    width: 50%;
+  }
+
+  .main-img {
+    object-position: center;
+  }
+
+  /*Second Section*/
+
+  .img-cont-flex {
+    margin-bottom: 1rem;
+  }
+
+  .img-cont-flex div {
+    display: flex;
+  }
+
+  .img-cont-flex img {
+    width: 50%;
+  }
+
+  .img-cont-flex img:first-child {
+    margin-right: 0.3rem;
+  }
+}
