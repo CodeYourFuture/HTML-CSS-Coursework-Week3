@@ -14,6 +14,12 @@ header {
     flex-direction: column-reverse;
 }
 
+@media (min-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+}
+
 /*-------introduction area setup-----------*/
 .introduction-area {
     display: flex;
@@ -35,6 +41,12 @@ header {
     font-weight: 900;
 }
 
+@media (min-width: 768px) {
+    .introduction-area > p {
+        margin: 0;
+    }
+}
+
 /*----------nav bar setup---------------*/
 
 .nav-bar {
@@ -45,12 +57,60 @@ header {
     background-color: rgba(185, 249, 252, 0.1);
 }
 
+@media (min-width: 768px) {
+    .nav-bar {
+        margin-top: 2em;
+    }
+}
+
 .nav-bar ul {
     display: none;
 }
 
+@media (min-width: 768px) {
+    .nav-bar ul {
+        display: flex;
+        list-style: none;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav-bar ul > li {
+        padding-top: 1em;
+    }
+
+    .nav-bar ul > a {
+        margin-right: 3em;
+        font-size: 12px;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: black;
+        font-weight: 700;
+        padding: 0.4em;
+        background-color: coral;
+        border-radius: 10px;
+    }
+
+    .nav-bar ul > a:hover {
+        transform: scale(1.2);
+    }
+
+    .list-nav-bar {
+        margin-top: 1em;
+        width: 70%;
+        display: flex;
+        align-items: center;
+    }
+}
+
 .nav-bar i {
     padding: 0.5em 1em 0 0;
+}
+
+@media (min-width: 768px) {
+    .nav-bar i {
+        display: none;
+    }
 }
 
 /*-----------cakes main area setup-------------*/
@@ -141,7 +201,8 @@ footer {
 
 footer > p {
     width: 90%;
-    margin: 3em auto;
+    margin: 2em auto 0;
+    padding-bottom: 2em;
     font-size: 12px;
     text-align: center;
     color: rgb(87, 3, 3);
