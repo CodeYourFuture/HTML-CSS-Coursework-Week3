@@ -31,6 +31,13 @@ header {
     width: 150px;
 }
 
+@media (min-width: 768px) {
+    .introduction-area > img {
+        width: 250px;
+        margin: 1em 0 0 2em;
+    }
+}
+
 .introduction-area > p {
     width: 50%;
     margin: -40px 0 0 170px;
@@ -43,7 +50,7 @@ header {
 
 @media (min-width: 768px) {
     .introduction-area > p {
-        margin: 0;
+        margin: 0 0 0 350px;
     }
 }
 
@@ -183,8 +190,20 @@ footer {
     flex-direction: column;
 }
 
+@media (min-width: 768px) {
+    .icons-container {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
 .icons-container > a {
     text-decoration: none;
+    color: rgb(87, 3, 3);
+}
+
+.icons-container > a:hover {
     color: rgb(87, 3, 3);
 }
 
@@ -195,8 +214,20 @@ footer {
     border-radius: 50%;
 }
 
+@media (min-width: 768px) {
+    .icons-container > a > i {
+        margin: 0 2em 0;
+    }
+}
+
 .icons-container span {
     font-size: 12px;
+}
+
+@media (min-width: 768px) {
+    .icons-container span {
+        margin: 0 0 0 -2em;
+    }
 }
 
 footer > p {
