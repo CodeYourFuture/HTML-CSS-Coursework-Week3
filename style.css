@@ -35,7 +35,7 @@ a {
 }
 
 .grow:hover {
-  transform: scale(1.15);
+  transform: scale(1.10);
 }
 .img-effect:hover {
   box-shadow: 0px 2px 4px #b27dbb;
