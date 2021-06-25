@@ -15,28 +15,28 @@
 
 <body>
     <header style="background-image: url('https://images.unsplash.com/photo-1562440499-64c9a111f713?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60');">
-    
-        <nav class="navbar navbar-expand-lg navbar-light bg-light float-right">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-                <a class="navbar-brand" href="#"></a>
+        <div class="header-container">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light float-right mt-0-sm">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                    <a class="navbar-brand" href="#"></a>
+                    
+                        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                        <div class="navbar-nav float-right text-right pr-3">
+                            <a class="nav-btn nav-item nav-link" href="#">HOME </a>
+                            <a class="nav-btn nav-item nav-link" href="#">CAKES</a>
+                            <a class="nav-btn nav-item nav-link" href="#">ORDERIN</a>
+                            <a class="nav-btn nav-item nav-link" href="#">LESSONS</a>
+                            <a class="nav-btn nav-item nav-link" href="#">ABOUT</a>
+                        </div>
+                        </div>
+                </nav>
+       
                 
-                    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-                    <div class="navbar-nav float-right text-right pr-3">
-                        <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-                        <a class="nav-item nav-link" href="#">CAKES</a>
-                        <a class="nav-item nav-link" href="#">ORDERIN</a>
-                        <a class="nav-item nav-link" href="#">LESSONS</a>
-                        <a class="nav-item nav-link" href="#">ABOUT</a>
-                    </div>
-                    </div>
-            </nav>
-
             
-        
-            <p class="subtitle"><i><b>The best cakes in town delivered to your door</b></i></p>
-      
+            <p class="subtitle"><i><b >The best cakes in town delivered to your door</b></i></p>
+        </div>
     </header>
 
     <main>
@@ -80,7 +80,7 @@
     </main>
 
     <footer>
-        <div class="button-container me-2 d-flex " role="group">
+        <div class="button-container me-2-sm d-flex w-100" role="group">
             <button type="button" class="btn btn-info  rounded">Buy Cakes</button>
             <button type="button" class="btn btn-info  rounded">Buy Muffins</button>
             <button type="button" class="btn btn-info   rounded">Buy Sweets</button>

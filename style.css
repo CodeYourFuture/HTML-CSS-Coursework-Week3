@@ -4,10 +4,12 @@ header {
     background-repeat: no-repeat;
   }
 
+ 
 .subtitle {
     color: black;
     padding-top: 28vh;
     padding-left: 50vw;
+
     
 }
 
@@ -33,17 +35,48 @@ p {
   .button-container {
       display: flex;
       flex-direction: column;
+      margin-right: 60vw;
   }
 
-  .btn {
-      margin: 0.25rem;
-      width: 25%;
-  }
+ .btn {
+     width: 25vw;
+ }
+
 
 @media screen and (min-width: 415px) {
-   .subtitle {
-        padding-left: 70vw;
-       /* top: 1rem;*/
+   
+    header {
+        height: 1rem;
+        margin-left: 10rem;
+        margin-right: 10rem;
+    }
+
+    main {
+        margin-left: 10rem;
+        margin-right: 10rem;
+    }
+    
+    nav {
+        margin-top: 3rem !important;
+        align-items: 5vw;
+        margin-left: 30vw;
+        margin-right: 10vw;
+    }
+
+    .nav-item {
+        background-color:darkkhaki;
+        margin-right: 6vw;
+        
+    }
+
+   
+    i {
+        padding-left: 10rem;     
+    }
+
+    .subtitle {
+        height: 5rem;
+        margin-top: -5rem;
     }
 
     .img-text-container {
@@ -61,28 +94,25 @@ p {
     }
 
     .main-image {
-        width: 30em;
+        width: 30rem !important;
     }
   
     .four-images-container {
         display: flex;
         justify-content: space-between;
-        margin-right: 3vw;
+        margin-right: 5vw;
         
-    }
-
-     .btn {
-        width: 10%;
-        margin: 90;
     }
     
     .button-container {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
-        margin: 3rem;
+        justify-content: space-evenly;
+        margin-right: 5vw;
+        margin: 4rem;
    
     }
+
 
     .nav {
         top: 0rem;
@@ -93,8 +123,10 @@ p {
     .header-container {
         display: flex;
         flex-direction: column-reverse;
+      
         
     }
+
 }
 
 
