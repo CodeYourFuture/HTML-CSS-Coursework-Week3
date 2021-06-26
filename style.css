@@ -160,18 +160,25 @@ footer > p:last-child {
   }
 
   #menu {
+    align-items: center;
     all: unset;
     background-color: #fff;
+    display: flex;
+    justify-content: center;
     order: 3;
     text-align: center;
     width: 100%;
-    padding: 2rem 0;
+    padding: 0;
   }
 
   #menu a {
     color: #fda0aa;
     margin: 2rem;
     padding: 0;
+  }
+
+  #close-menu {
+    display: none;
   }
 
   #menu a:hover,
