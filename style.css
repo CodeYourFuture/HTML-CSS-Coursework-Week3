@@ -26,20 +26,22 @@ h1{
 }
 
 .top-img{
-    margin-top: 10rem;
+    /* margin-top: 10rem; */
+    width: 170px;
+    height: 180px;
     
 }
 
 .our-slogan{
-    font-size: 2.6rem;
+    font-size: 2.5rem;
     font-weight: bold;
 }
 
 /* <!-- ------ WELCOME SECTION starts------ --> */
 
 .welcome{
-    background-color: rgb(223, 185, 185);
-    height: 250px;
+    background-color: rgb(255, 238, 238);
+    height: auto;
     
 }
 
@@ -75,6 +77,22 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
+    
+}
+
+.other-item-container-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    flex-wrap: wrap;
+    
+}
+
+.other-item-container-1 img{
+    width: 138px;
+    height: 100px;
+    margin-right: 2px;
 }
 
   /* ----Footer------- */
@@ -83,6 +101,7 @@ h1{
     justify-content: center;
     align-items: center;
     font-size: 5rem;
+    background-color: rgb(255, 238, 238);
 }
 
 
@@ -94,6 +113,7 @@ li a{
 .logo a {
     text-decoration: none;
     font-size: large;
+    margin: .5rem 0;
     
 }
 
@@ -109,3 +129,15 @@ li a{
     margin-right: .5rem;
     list-style: none;
 }
+
+.social-container li a, .contact-container li a{
+    margin: .2rem 1rem;
+    font-weight: bold;
+    
+}
+
+.social-container li a:hover, .contact-container li a:hover{
+    color: rgb(134, 60, 60);
+    
+}
+
