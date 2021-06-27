@@ -36,12 +36,12 @@ re-compiling bootstraps SASS files. */
 .border-bottom-pink:focus {
   border-bottom: 3px solid #fff;
   transition: border-bottom 0.1s ease-in;
-  opacity: 0.9;
+  opacity: 0.8;
 }
 
 /* Image hover effect */
 .grow {
-  opacity: 0.6;
+  opacity: 0.7;
   transition: transform 1s ease, opacity 1s ease-out 0.5s;
 }
 
