@@ -16,6 +16,90 @@ h1{
     padding: 2rem;
 }
 
+/* ------   HAMVURGER MENU STARTS--------- */
+.hamBurger-Menu{
+    font-size: 9.6rem;
+    margin-left: 5rem;
+}
+.menu_list{
+    transform: translateX(-100%);
+    transition: transform 0.4s ease-in-out;
+    
+    
+}
+
+.menu_list li{
+    list-style: none;
+    font-size: bolder;
+    color: pink;
+    
+    
+}
+
+.hamBurger-Menu input[type="checkbox"]{
+    width: 5rem;
+    height: 4rem;
+    position: relative;
+    z-index: 5;
+    opacity: 0;
+}
+
+.hamBurger-Menu input[type="checkbox"]:checked ~ .menu_list{
+    display: block;
+    transform: translateX(0%);
+    
+}
+
+.hamBurger-lines{
+    /* background-color: orange; */
+    color: orangered;
+    /* margin: black solid 3px; */
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 48px;
+    left: 52px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.hamBurger-lines .line{
+    background-color: black;
+    width: 50px;
+    height: 10px;
+    margin-top: 5px;
+    display: block;
+}
+
+
+
+.hamBurger-lines .line-1{
+    transform-origin: 0% 0%;
+}
+
+.hamBurger-lines .line-3{
+    transform-origin: 0% 100%;
+    
+}
+
+.hamBurger-Menu input[type="checkbox"]:checked ~ .hamBurger-lines .line-1{
+    transform: rotate(20deg);
+}
+
+.hamBurger-Menu input[type="checkbox"]:checked ~ .hamBurger-lines .line-2{
+    display: none;
+}
+
+.hamBurger-Menu input[type="checkbox"]:checked ~ .hamBurger-lines .line-3{
+    transform: rotate(-20deg);
+}
+
+
+
+
+     /* ------   HAMVURGER MENU  ENDS--------- */
+
 
 .top-cup-section{
     background-color: pink;
@@ -43,7 +127,7 @@ h1{
 /* <!-- ------ WELCOME SECTION starts------ --> */
 
 .welcome{
-    background-color: rgb(255, 238, 238);
+    background-color: #e8e8e4;
     height: auto;
     
 }
@@ -78,6 +162,7 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #e8e8e4;
     
 }
 
@@ -110,7 +195,7 @@ h1{
     justify-content: center;
     align-items: center;
     font-size: 5rem;
-    background-color: rgb(255, 238, 238);
+    background-color: #fae1dd;
 }
 
 
@@ -149,6 +234,7 @@ h1{
         /* 1st media query----------- */
 @media screen and (min-width: 540px){
 
+    
     .top-cup-section{
         height: 200px;
     }
@@ -193,12 +279,9 @@ h1{
 
     @media screen and (min-width: 900px){
 
-        body{
-            background-color: red;
-        }
 
         .top-cup-section{
-            height: 200px;
+            height: 300px;
         }
     
         .top-img{
@@ -207,7 +290,7 @@ h1{
             margin-left: 9px;
         }
 
-         .t-img{
+        .t-img{
             width: 300px;
             height: 282px;
             margin-left: 30px;
@@ -217,33 +300,6 @@ h1{
             font-size: 3rem;
             margin: 7rem 3rem;
         }
-    
-        .mq-540{
-            display: none;
-        }
-    
-        .social-container, .logo{
-            display: flex; 
-            justify-content: space-around;
-            align-items: center;
-            margin: 1rem;
-          
-        }
-    
-        .other-item-container-1, .other-item-container-2{
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            width: 100vw;
-            flex-wrap: wrap;
-            
-        }
-        
-        .other-item-container-1 img, .other-item-container-2 img{
-            width: 200px;
-            height: 200px;
-            margin: 1rem;
-        }
-    
+
     
     }    
