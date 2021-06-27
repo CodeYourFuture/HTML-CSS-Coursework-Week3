@@ -39,9 +39,12 @@ header p {
 
 /*Burger menu*/
 
+#burger-menu {
+  cursor: pointer;
+}
+
 nav span {
   background-color: #d82436;
-  cursor: pointer;
   display: block;
   height: 4px;
   width: 1.4rem;
@@ -51,18 +54,23 @@ nav span:first-child {
   margin-bottom: 0.4rem;
 }
 
-#menu {
+.menu-links {
   background-color: #fda0a9c9;
   display: flex;
   display: none;
   flex-direction: column;
   height: 100vh;
+  margin-top: 2rem;
   padding-top: 0.5rem;
   position: absolute;
   width: 100vw;
 }
 
-#menu a {
+.active {
+  display: flex;
+}
+
+.menu-links a {
   color: #fff;
   font-size: 1.25rem;
   font-weight: 600;
@@ -159,11 +167,11 @@ footer > p:last-child {
     display: none;
   }
 
-  #menu {
+  .menu-links {
     align-items: center;
     all: unset;
     background-color: #fff;
-    display: flex;
+    display: none;
     justify-content: center;
     order: 3;
     text-align: center;
@@ -171,14 +179,10 @@ footer > p:last-child {
     padding: 0;
   }
 
-  #menu a {
+  .menu-links a {
     color: #fda0aa;
     margin: 2rem;
     padding: 0;
-  }
-
-  #close-menu {
-    display: none;
   }
 
   #menu a:hover,
