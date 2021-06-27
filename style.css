@@ -23,6 +23,7 @@ h1{
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+    gap: 2px;
 }
 
 .t-img{
@@ -70,10 +71,6 @@ h1{
     
 }
 
-/* .other-item img{
-    width: 19rem;
-    height: 12rem;
-} */
 
         /* <!-- ------ other item SECTION starts------ --> */
 
@@ -149,21 +146,12 @@ h1{
     
 }
 
+        /* 1st media query----------- */
 @media screen and (min-width: 540px){
 
     .top-cup-section{
         height: 200px;
     }
-
-    .top-img{
-        width: 240px;
-        height: 282px;
-        margin-left: 9px;
-    }
-
-
-
-
 
     .social-container, .logo{
         display: flex; 
@@ -184,14 +172,78 @@ h1{
     
     .other-item-container-1 img, .other-item-container-2 img{
         width: 200px;
-        height: 180px;
+        height: 200px;
         margin: 1rem;
     }
 
     .t-img{
         width: 300px;
         height: 282px;
-        margin-left: 30px;
+        margin-left: 10px;
+    }
+
+    .mq-540{
+        display: none;
     }
 }
 
+
+    /* ---------2nd media query----------- */
+
+
+    @media screen and (min-width: 900px){
+
+        body{
+            background-color: red;
+        }
+
+        .top-cup-section{
+            height: 200px;
+        }
+    
+        .top-img{
+            width: 240px;
+            height: 282px;
+            margin-left: 9px;
+        }
+
+         .t-img{
+            width: 300px;
+            height: 282px;
+            margin-left: 30px;
+        }
+
+        .our-slogan{
+            font-size: 3rem;
+            margin: 7rem 3rem;
+        }
+    
+        .mq-540{
+            display: none;
+        }
+    
+        .social-container, .logo{
+            display: flex; 
+            justify-content: space-around;
+            align-items: center;
+            margin: 1rem;
+          
+        }
+    
+        .other-item-container-1, .other-item-container-2{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 100vw;
+            flex-wrap: wrap;
+            
+        }
+        
+        .other-item-container-1 img, .other-item-container-2 img{
+            width: 200px;
+            height: 200px;
+            margin: 1rem;
+        }
+    
+    
+    }    
