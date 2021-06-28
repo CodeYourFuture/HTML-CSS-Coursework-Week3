@@ -34,9 +34,9 @@ re-compiling bootstraps SASS files. */
 
 .border-bottom-pink:hover,
 .border-bottom-pink:focus {
+  background-color: #9e1c5f;
   border-bottom: 3px solid #fff;
   transition: border-bottom 0.1s ease-in;
-  opacity: 0.8;
 }
 
 /* Image hover effect */
