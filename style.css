@@ -17,36 +17,43 @@ h1{
 }
 
 /* ------   HAMVURGER MENU STARTS--------- */
+
+nav{
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+    /* background-color: rgb(236, 233, 234); */
+    opacity: 2;
+    
+
+}
 .hamBurger-Menu{
-    font-size: 9.6rem;
-    margin-left: 5rem;
+    font-size: 3.6rem;
+    /* margin-left: 5rem; */
+    height: 175px;
 }
 .menu_list{
-    transform: translateX(-100%);
+    transform: translateX(-155%);
     transition: transform 0.4s ease-in-out;
+    display: none;
     
-    
+  
 }
 
-.menu_list li{
-    list-style: none;
-    font-size: bolder;
-    color: pink;
-    
-    
-}
 
 .hamBurger-Menu input[type="checkbox"]{
-    width: 5rem;
+    width: 2rem;
     height: 4rem;
     position: relative;
     z-index: 5;
     opacity: 0;
+    top: 17px;
 }
 
 .hamBurger-Menu input[type="checkbox"]:checked ~ .menu_list{
     display: block;
     transform: translateX(0%);
+    
     
 }
 
@@ -54,11 +61,11 @@ h1{
     /* background-color: orange; */
     color: orangered;
     /* margin: black solid 3px; */
-    width: 50px;
-    height: 50px;
+    width: 10px;
+    height: 25px;
     position: absolute;
-    top: 48px;
-    left: 52px;
+    top: 8px;
+    left: 5px;
     z-index: 2;
     display: flex;
     flex-direction: column;
@@ -66,13 +73,11 @@ h1{
 
 .hamBurger-lines .line{
     background-color: black;
-    width: 50px;
-    height: 10px;
+    width: 30px;
+    height: 3px;
     margin-top: 5px;
     display: block;
 }
-
-
 
 .hamBurger-lines .line-1{
     transform-origin: 0% 0%;
@@ -95,19 +100,26 @@ h1{
     transform: rotate(-20deg);
 }
 
-
-
+.menu_list li{
+    list-style: none;
+    font-size: bolder;
+    color: pink;
+    z-index: 4;
+      
+}
 
      /* ------   HAMVURGER MENU  ENDS--------- */
 
 
 .top-cup-section{
-    background-color: pink;
+    
     height: 150px;
+    border: black solid 1px;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    gap: 2px;
+    /* gap: 2px; */
+    z-index: 3;
 }
 
 .t-img{
@@ -234,6 +246,24 @@ h1{
         /* 1st media query----------- */
 @media screen and (min-width: 540px){
 
+
+    .hamBurger-Menu input[type="checkbox"]{
+        width: 3rem;
+        height: 4rem;
+        position: relative;
+        z-index: 5;
+        opacity: 0;
+        top: -20px;
+    }
+
+    .hamBurger-lines{
+        position: absolute;
+        top: 13px;
+        left: 6px;
+    
+    }
+
+
     
     .top-cup-section{
         height: 200px;
@@ -277,7 +307,7 @@ h1{
     /* ---------2nd media query----------- */
 
 
-    @media screen and (min-width: 900px){
+    /* @media screen and (min-width: 900px){
 
 
         .top-cup-section{
@@ -301,5 +331,7 @@ h1{
             margin: 7rem 3rem;
         }
 
+
+        
     
-    }    
+    }     */
