@@ -1,18 +1,20 @@
-/*  Add your styling here */
-.wf{
-    outline: 1px solid black;
+/*background-image: var(--bs-gradient);*/
+
+body {
+  background-image: url('design/bkgr.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-.ns
-{
-    background-color: silver;
+.teal-color {
+  background: #1ed1d1;
 }
-
-.ns2
-{
-    background-color: gray;
+.pink-color {
+  color: #d63384;
 }
-
-.row {
-    min-height: 500px;
+/*@media (min-width: 992px) {
+  #intro {
+    margin-top: -58.59px;
+  }
 }
+*/
