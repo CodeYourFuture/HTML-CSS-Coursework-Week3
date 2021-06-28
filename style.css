@@ -49,8 +49,8 @@ re-compiling bootstraps SASS files. */
   opacity: 1;
   font-size: 150%;
   text-align-last: center;
-  -webkit-transform: scale(1.09);
-  -moz-transform: scale(1.09);
+  -webkit-transform: scale(0.9);
+  -moz-transform: scale(0.9);
   transform: scale(0.9);
   -webkit-transition: transform 1s ease, opacity 1s ease-out 0.5s;
   -moz-transition: transform 1s ease, opacity 1s ease-out 0.5s;
