@@ -7,10 +7,113 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Responsive Cake webpage</title>
     <!-- Add a link to your css file here -->
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <!-- Add your markup here -->
+      <header>
+        <!--Navigation -->
+
+            <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
+                <a class="navbar-brand" href="#">
+                    <img src="img/cupcake.jpg" width="50" height="50" alt="Logo">
+                  </a>
+
+
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#">The best cakes in town </a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav justify-content-end">
+
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Cakes</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Orderin</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Lessons</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                      </li>
+
+                    </ul>
+                  </div>
+                </div>
+
+        </nav>
+
+    </header>
+
+    <main>
+
+
+        <section class="container welcome">
+            <div class="row">
+
+                <div class="col-sm">
+                    <img src="img/wedding-cake.jpg" class="img-fluid" alt="wedding cack">
+                </div>
+                <div class="col-sm text-center">
+                    <h1 class="text-end">Welcome</h1>
+                    <p>
+                        Our hand-made sponge cakes are perfect for birthdays no matter what your age! We have a great range to choose from and lots of ways to make personalised birthday cakes including candles, balloons, cake toppers and more!
+                    </p>
+                </div>
+
+              </div>
+
+          </section>
+
+
+
+        <section class="container">
+            <div class="row">
+
+                <div class="col-sm">
+                    <img src="img/cream-cake.jpg" class="img-fluid" alt="wedding cack">
+                </div>
+
+                <div class="col-sm">
+                    <img src="img/food.jpg" class="img-fluid" alt="wedding cack">
+                </div>
+
+                <div class="col-sm">
+                    <img src="img/sweet-dessert.jpg" class="img-fluid" alt="wedding cack">
+                </div>
+                <div class="col-sm">
+                    <img src="img/cake1.jpg" class="img-fluid" alt="wedding cack">
+                </div>
+              </div>
+
+
+
+        </section>
+
+    </main>
+
+
+    <footer class="page-footer font-small pt-4 bottom">
+      <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+        <button type="button" class="btn btn-danger btn-lg">Order Now</button>
+        <button type="button" class="btn btn-success btn-lg">Lessons</button>
+        <button type="button" class="btn btn-primary btn-lg">About</button>
+      </div>
+
+      <div class="footer-copyright text-center py-3">© 2018 Copyright@
+         Cakes.com
+      </div>
+    </footer>
 </body>
 
 </html>

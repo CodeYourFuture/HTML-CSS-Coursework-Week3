@@ -1,1 +1,18 @@
 /*  Add your styling here */
+.col-sm p, h1{
+    padding: 2.0rem;
+}
+
+.col-sm{
+    padding: 1.5rem;
+
+}
+
+footer{
+    background-color: #e3f2fd;
+}
+
+.btn{
+    align-items: baseline;
+    margin: 0.5rem;
+}
