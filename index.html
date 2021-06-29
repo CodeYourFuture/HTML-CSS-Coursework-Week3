@@ -5,12 +5,100 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6042a9b9f0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css">
     <title>Responsive Cake webpage</title>
     <!-- Add a link to your css file here -->
 </head>
 
 <body>
     <!-- Add your markup here -->
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="./img/Frame_1-removebg-preview.png" alt="">
+            </div>    
+             <ul class="nav-links">
+                    <li><a class="now" href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#cakes">Cakes</a></li>
+                    <li><a href="#courses">Courses</a></li>
+                    <li><a href="#contacts">Contacts</a></li>
+                </ul>
+             <div class="burger">
+                <div class="line-1"></div>
+                <div class="line-2"></div>
+                <div class="line-3"></div>
+            </div>   
+        </nav>
+    </header>
+    <main>
+        <section class="section-first" id="home">
+            <h2>Welcome to <span>MiCupCake Cafe</span> </h2>
+        </section>
+        <section class="section-second" id="about">
+            <h4>Share your happiness with us.</h4>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                Aliquam facilis natus.</p>
+                <div class="sharing-happiness grid">
+                    <a href="#">
+                        <img src="./img/sharing2.jpg" alt="shring with love">
+                        <h5>Share it with your love ones.</h5>
+                    </a>
+                    <a href="#">
+                        <img src="./img/sharing3.jpg" alt="shring with love">
+                        <h5>Share it with your besties.</h5>
+                    </a>
+                    <a href="#">
+                        <img src="./img/sharing4.jpg" alt="shring with love">
+                        <h5>Make memory with your kids.</h5>
+                    </a>
+                </div>
+        </section>
+        <section class="cakes" id="cakes">
+            <h4> Cakes</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, ducimus neque! Ratione debitis earum temporibus.</p>
+            <ul class="grid">
+                <li><img src="./img/third1.jpg" alt="cake"></li>
+                <li><img src="./img/third3.jpg" alt="cake"></li>
+                <li><img src="./img/third4.jpg" alt="cake"></li>
+                <li><img src="./img/third5.jpg" alt="cake"></li>
+            </ul>
+        </section>
+        <section class="section-four" id="courses">
+            <h4>Baking and Desigining</h4>
+            <p>If you are dreaming to be a perfect cupcake designer,
+                we are offering 6 weeks courses.
+            <p>Yes! you can achieve your dream.</p>
+            </p>
+            <p class="final-p">(To know more please fill up the form with quires in the message box.)</p>
+            <div class="form grid">
+                <img src="./img/forth1.jpg" alt="chef-image">
+                <form>
+                    <input class="form-to-fill" type="text" placeholder="First-name">
+                    <input class="form-to-fill" type="text" placeholder="Last-name">
+                    <input class="form-to-fill" type="email" placeholder="Email">
+                    <textarea class="form-to-fill" placeholder="Message"></textarea>
+                    <button class="button">Send Me</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contacts">
+        <div class="grid">
+            <p> &copy; Copyright 2020 MiCupCake</p>
+            <ul> 
+                <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram-square"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+
 </body>
 
 </html>
