@@ -22,6 +22,8 @@ body{
 }
 
 
+
+
 .navgation{
   background-image: url("../img/cake-one.jpg");
   background-size: cover;
@@ -46,6 +48,12 @@ body{
 }
 @media(min-width:1000px){
   .navgation h4 {font-size: 55px;}
+
+}
+@media(min-width:768px){
+  .textformovil{
+    display: none;
+  }
 
 }
 
@@ -91,9 +99,11 @@ body{
   }
 
 
-
 .hero-one img{
   margin-left: 10px;
+  
+  
+  
 }
 
 @media(min-width: 768px){
@@ -104,12 +114,20 @@ body{
     padding-top: 30px;
     
   }
+ .welcom{
+   display: flex;
+   
+ }
   }
 @media(min-width:768px){
-  .hero-one{
+  .welcom{
     display: flex;
+    justify-content: center;
   }
 }
+
+
+
 
 .hero-text{
   font-size: 15px;
@@ -119,8 +137,18 @@ body{
 @media(min-width: 768px){
   .hero-text{
     font-size: 30px;
+    margin-top: 100px;
+    text-align: right;
+    margin-left: 50px;
   }
 }
+
+@media(min-width: 0px)and(max-width:767px){
+  .hero-text{
+    display: none;
+  }
+}
+
 
 .hero-two:nth-of-type(2n+1){
   margin-left: 30px;
@@ -172,13 +200,6 @@ body{
   font-size: large;
 }
 }
-/* @media(min-width: 768px){
-.hero-three a:hover{
-  color: rgb(240, 114, 139);
-  transition: color 0.5;
-}
-} */
-
 
 
 
