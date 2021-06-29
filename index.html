@@ -15,6 +15,7 @@
   </head>
   <body>
     <header>
+      <nav>
       <div class="bg-light me-3 ms-3">
         <div
           class="
@@ -33,7 +34,7 @@
               alt="cupcacke image vector created by gstudioimagen"
             />
           </a>
-          <div class="d-flex flex-column align-items-end">
+          <div class="d-flex flex-column align-items-end navbar-expand-md">
             <button
               class="navbar-toggler"
               type="button"
@@ -61,7 +62,8 @@
           </div>
         </div>
       </div>
-      <div class="navbar-collapse collapse show" id="bdNavbar" style="">
+      <!--navbar mobile-->
+      <div class="navbar-collapse collapse " id="bdNavbar" style="">
         <ul
           class="
             navbar-nav
@@ -85,7 +87,7 @@
             >
           </li>
           <li class="nav-item col-6 col-md-auto">
-            <a class="nav-linkp-2 m-1 pink-color btn" href="">Orderin</a>
+            <a class="nav-link p-2 m-1 pink-color btn" href="">Orderin</a>
           </li>
           <li class="nav-item col-6 col-md-auto">
             <a class="nav-link p-2 m-1 pink-color btn" href="">Lessons</a>
@@ -95,15 +97,42 @@
           </li>
         </ul>
       </div>
-      <nav>
-        <ul>
-          <li></li>
-        </ul>
+      <!--navbar desktop-->
+      <div>
+        <ul
+          class="
+            d-none d-md-block d-xl-block d-xxl-block
+            navbar-nav
+            flex-row
+            py-md-0
+            mx-3
+            text-center
+            teal-color
+          "
+        >
+         <ul class="navbar-nav bd-navbar-nav flex-row justify-content-end p-2 m-3">
+           <li class="nav-item">
+            <a class="nav-link pink-color p-2 m-1 btn bg-secondary" href="/">Home</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link pink-color p-2 m-1 btn bg-secondary " href="/">cakes</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link pink-color p-2 m-1 btn bg-secondary " href="/">Orderin</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link pink-color p-2 m-1 btn bg-secondary" href="/">Lessons</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link pink-color p-2 m-1 btn bg-secondary" href="/">About</a>
+           </li>
+         </ul>
+      </div>
       </nav>
     </header>
     <main>
       <section>
-        <div class="card mb-3" style="max-width: 540px">
+        <!--<div class="card mb-3" style="max-width: 540px">
           <div class="row g-0">
             <div class="col-md-4">
               <img src="..." class="img-fluid rounded-start" alt="..." />
@@ -122,11 +151,21 @@
               </div>
             </div>
           </div>
-        </div>
-        <!--<div>
-          <div></div>
-          <div></div>
         </div>-->
+        <div class="container-md">
+          <div>
+            <h1>Welcome</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit impedit deserunt similique doloremque officia officiis vel, repellendus inventore quibusdam laudantium pariatur perferendis dolore quod, delectus, alias at tempora? Odit ad at modi impedit quia reiciendis natus numquam accusamus non molestiae ex molestias atque eveniet voluptatem commodi minus, saepe ipsa! Eligendi!</p>
+          </div>
+          <div>
+            <a class="pointer" href="#">
+            <img
+              src="/design/WhatsApp Image 2021-06-27 at 11.28.41 PM (1).jpeg"
+              alt="cupcacke image vector created by gstudioimagen"
+            />
+          </a>  
+          </div>
+        </div>
       </section>
       <div>
         <div>
