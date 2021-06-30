@@ -1,1 +1,191 @@
 /*  Add your styling here */
+
+
+
+#logo{
+    width: 40px;
+}
+h1{font-family: 'EB Garamond', serif;
+    text-align: center;
+    padding-top: 50px;
+
+
+
+}
+#welcoming{
+margin-top: 30px;
+margin-bottom: 30px;
+background-image: url("paper.gif");
+background-color: #cccccc;
+justify-content: center;
+
+}
+p{
+    
+    padding: 100px 100px 100px 100px;
+    
+    justify-content: center;
+}
+@media (max-width: 800px) {
+    p {
+       font-size: 10px;
+       text-align: center;
+     }
+   }
+
+   .learn-more{
+       background-color: rgb(71, 77, 75);
+
+
+
+    margin: 30px;
+    padding:10px;
+       
+    
+   }
+
+
+#lol{
+    height: 500px;
+    width: 300px;
+    border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  
+}
+@media (max-width: 800px) {
+    #lol { width: 100%;
+        height: auto;
+       
+     }
+   }
+
+.card{background-color: blueviolet;
+    
+
+}
+
+img{width:250px;
+    
+    
+
+}
+@media (max-width: 800px) {
+    img { width: 100%;
+        height: auto;
+       
+     }
+   }
+.products{
+    
+    justify-content: center;
+    padding:  10px 10px 10px 10px;
+
+    
+}
+
+
+.cupcake{
+    padding:  10px 10px 10px 10px;
+
+
+    border-style: groove;
+    justify-items: center;
+    margin-right:20px ;
+    
+}
+
+
+.cheese-cake{
+    padding:  10px 10px 10px 10px;
+
+
+    border-style: groove;
+    justify-items: center;
+    margin-right:20px ;
+
+    
+
+
+}
+.pancake{
+    padding:  10px 10px 10px 10px;
+
+
+    border-style: groove;
+    justify-items: center;
+    margin-right:20px ;
+
+
+
+}
+
+.fruitcake{
+    padding: 10px 10px 10px 10px;
+
+    border-style: groove;
+    justify-items: center;
+    margin-right:20px ;
+
+
+}
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 50px;
+    margin-right: 50px;
+    
+    
+  }
+  
+  /* Responsive layout - makes a one column layout instead of a two-column layout */
+  @media (max-width: 800px) {
+   .flex-container {
+      flex-direction: column;
+    }
+  }
+
+  ul{
+    display: flex;
+    text-align:center;
+    list-style: none;
+    
+    
+}
+@media (max-width:800px) {
+    ul{
+        display:block;
+    }
+    
+}
+
+  
+
+  a:link{
+    text-decoration: none;
+
+  }
+  
+
+  
+  .copyright{
+      text-align: center;
+
+  }
+
+  @media(max-width:800px) {
+
+.copyright{
+    font-size: 10px;
+
+}
+
+
+  }
+  footer{
+      background-color: black;
+      padding: 50px 50px 10px 5px;
+      margin-top: 30px;
+      
+  }
