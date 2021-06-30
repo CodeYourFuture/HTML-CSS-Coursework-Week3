@@ -16,7 +16,7 @@
   <body>
     <header>
       <nav>
-      <div class="bg-light me-3 ms-3">
+      <div class="bg-light">
         <div
           class="
             logo
@@ -24,8 +24,9 @@
             flex-row
             justify-content-between
             align-items-end
-            ps-3
-            pe-3
+            container-md
+
+
           "
         >
           <a class="pointer" href="#">
@@ -63,7 +64,7 @@
         </div>
       </div>
       <!--navbar mobile-->
-      <div class="navbar-collapse collapse " id="bdNavbar" style="">
+      <div class="navbar-collapse collapse  " id="bdNavbar" style="">
         <ul
           class="
             navbar-nav
@@ -98,7 +99,7 @@
         </ul>
       </div>
       <!--navbar desktop-->
-      <div>
+      <div class="container-md">
         <ul
           class="
             d-none d-md-block d-xl-block d-xxl-block
@@ -111,86 +112,90 @@
           "
         >
          <ul class="navbar-nav bd-navbar-nav flex-row justify-content-end p-2 m-3">
-           <li class="nav-item">
-            <a class="nav-link pink-color p-2 m-1 btn bg-secondary" href="/">Home</a>
+           <li class="nav-item px-1 ">
+            <a class="nav-link pink-color p-2 m-1 btn bg-warning " href="/">Home</a>
            </li>
-           <li class="nav-item">
-             <a class="nav-link pink-color p-2 m-1 btn bg-secondary " href="/">cakes</a>
+           <li class="nav-item px-1"">
+             <a class="nav-link pink-color p-2 m-1 btn bg-warning " href="/">cakes</a>
            </li>
-           <li class="nav-item">
-             <a class="nav-link pink-color p-2 m-1 btn bg-secondary " href="/">Orderin</a>
+           <li class="nav-item px-1"">
+             <a class="nav-link pink-color p-2 m-1 btn bg-warning " href="/">Orderin</a>
            </li>
-           <li class="nav-item">
-             <a class="nav-link pink-color p-2 m-1 btn bg-secondary" href="/">Lessons</a>
+           <li class="nav-item px-1">
+             <a class="nav-link pink-color p-2 m-1 btn bg-warning" href="/">Lessons</a>
            </li>
-           <li class="nav-item">
-             <a class="nav-link pink-color p-2 m-1 btn bg-secondary" href="/">About</a>
+           <li class="nav-item px-1"">
+             <a class="nav-link pink-color p-2 m-1 btn bg-warning" href="/">About</a>
            </li>
          </ul>
       </div>
       </nav>
     </header>
     <main>
-      <section>
-        <!--<div class="card mb-3" style="max-width: 540px">
-          <div class="row g-0">
-            <div class="col-md-4">
-              <img src="..." class="img-fluid rounded-start" alt="..." />
-            </div>
-            <div class="col-md-8">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  This is a wider card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
-                </p>
-                <p class="card-text">
-                  <small class="text-muted">Last updated 3 mins ago</small>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>-->
+      <section> <!--Welcome container-->
         <div class="container-md">
-          <div>
-            <h1>Welcome</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit impedit deserunt similique doloremque officia officiis vel, repellendus inventore quibusdam laudantium pariatur perferendis dolore quod, delectus, alias at tempora? Odit ad at modi impedit quia reiciendis natus numquam accusamus non molestiae ex molestias atque eveniet voluptatem commodi minus, saepe ipsa! Eligendi!</p>
-          </div>
-          <div>
-            <a class="pointer" href="#">
-            <img
-              src="/design/WhatsApp Image 2021-06-27 at 11.28.41 PM (1).jpeg"
-              alt="cupcacke image vector created by gstudioimagen"
-            />
-          </a>  
+          <div class="row flex-row-reverse flex-column mt-5">
+            <div class="col">
+              <h1>Welcome</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit impedit deserunt similique doloremque officia officiis vel, repellendus inventore quibusdam laudantium pariatur perferendis dolore quod, delectus, alias at tempora? Odit ad at modi impedit quia reiciendis natus numquam accusamus non molestiae ex molestias atque eveniet voluptatem commodi minus, saepe ipsa! Eligendi!</p> 
+            </div>
+            <div class="col">
+              <a class="pointer" href="#">
+                <img
+                  class="img-fluid-md"
+                  src="/design/cakes-1.jpg"
+                  alt="cupcacke image vector created by gstudioimagen"
+                />
+              </a>
+            </div>
           </div>
         </div>
       </section>
-      <div>
-        <div>
-          <img src="" alt="" />
+      <section> <!--Images section flex-->
+          <div class="container-md mt-4">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
+              <div class="col">
+                <a class="pointer" href="#">
+                <img
+                  class="img-fluid"
+                  src="/design/birthday-cake-300x300.png"
+                  alt="cupcacke image vector created by gstudioimagen"
+                />
+              </a>
+                </div>
+              <div class="col">
+                 <a class="pointer" href="#">
+                <img
+                  class="img-fluid"
+                  src="/design/cropped-BBCakes-300x300.jpg"
+                  alt="cupcacke image vector created by gstudioimagen"
+                />
+              </a>
+                </div>
+              <div class="col">
+                 <a class="pointer" href="#">
+                <img
+                  class="img-fluid"
+                  src="/design/fathers-day-cake_300x300.jpg"
+                  alt="cupcacke image vector created by gstudioimagen"
+                />
+              </a>
+                </div>
+              <div class="col">
+                 <a class="pointer" href="#">
+                <img
+                  class="img-fluid"
+                  src="/design/reese-cake-300x300.webp"
+                  alt="cupcacke image vector created by gstudioimagen"
+                />
+              </a>
+                </div>
+          </div>
         </div>
-        <div>
-          <img src="" alt="" />
-        </div>
-        <div>
-          <img src="" alt="" />
-        </div>
-        <div>
-          <img src="" alt="" />
-        </div>
-      </div>
-      <section></section>
+      </section>
     </main>
     <footer>
-      <div>
-        <ul>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
-      </div>
+
       <p>&copy;Cakes Fun 2021 CYF Israel-Quintanilla</p>
     </footer>
     <script
