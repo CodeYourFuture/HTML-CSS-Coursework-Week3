@@ -15,8 +15,8 @@
   </head>
   <body>
     <header>
-      <nav>
-      <div class="bg-light">
+      <nav class="container">
+      <div class="bg-light shadow-sm p-lg-3 bg-body rounded">
         <div
           class="
             logo
@@ -24,20 +24,18 @@
             flex-row
             justify-content-between
             align-items-end
-            container-md
-
-
-          "
+            container-lg
+            "
         >
           <a class="pointer" href="#">
             <img
               src="/design/54679logo.png"
-              alt="cupcacke image vector created by gstudioimagen"
+              alt="cupcacke picture logo"
             />
           </a>
           <div class="d-flex flex-column align-items-end navbar-expand-md">
             <button
-              class="navbar-toggler"
+              class="navbar-toggler px-1 space-between"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#bdNavbar"
@@ -56,10 +54,11 @@
                 <path
                   fill-rule="evenodd"
                   d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
-                ></path>
+                >
+                </path>
               </svg>
             </button>
-            <h5><em> best cakes in town delivered to your door</em></h5>
+            <h5 class="fs-6 text-end mt-5  pb-2 fst-italic ">The best cakes in town delivered to your door</h5>
           </div>
         </div>
       </div>
@@ -77,15 +76,11 @@
           "
         >
           <li class="nav-item col-6 col-md-auto">
-            <a class="nav-link pink-color p-2 m-1 btn" href="/">Home</a>
+            <a class="nav-link pink-color p-2 m-1 btn " href="/">Home</a>
           </li>
           <li class="nav-item col-6 col-md-auto">
             <a
-              class="nav-link p-2 m-1 active pink-color btn"
-              aria-current="true"
-              href=""
-              >Cakes</a
-            >
+              class="nav-link p-2 m-1 active pink-color btn" href="/">Cakes</a>
           </li>
           <li class="nav-item col-6 col-md-auto">
             <a class="nav-link p-2 m-1 pink-color btn" href="">Orderin</a>
@@ -99,33 +94,33 @@
         </ul>
       </div>
       <!--navbar desktop-->
-      <div class="container-md">
+      <div class="container-lg">
         <ul
           class="
             d-none d-md-block d-xl-block d-xxl-block
             navbar-nav
             flex-row
             py-md-0
-            mx-3
+            shadow-sm p-3 mb-5  rounded
             text-center
             teal-color
           "
         >
          <ul class="navbar-nav bd-navbar-nav flex-row justify-content-end p-2 m-3">
            <li class="nav-item px-1 ">
-            <a class="nav-link pink-color p-2 m-1 btn bg-warning " href="/">Home</a>
-           </li>
-           <li class="nav-item px-1"">
-             <a class="nav-link pink-color p-2 m-1 btn bg-warning " href="/">cakes</a>
-           </li>
-           <li class="nav-item px-1"">
-             <a class="nav-link pink-color p-2 m-1 btn bg-warning " href="/">Orderin</a>
+            <a class="nav-link text-dark  p-2 m-1 btn bg-warning" href="/">Home</a>
            </li>
            <li class="nav-item px-1">
-             <a class="nav-link pink-color p-2 m-1 btn bg-warning" href="/">Lessons</a>
+             <Cakes class="nav-link text-dark  p-2 m-1 btn bg-warning" href="/">Cakes</a>
            </li>
-           <li class="nav-item px-1"">
-             <a class="nav-link pink-color p-2 m-1 btn bg-warning" href="/">About</a>
+           <li class="nav-item px-1">
+             <a class="nav-link text-dark  p-2 m-1 btn bg-warning" href="/">Orderin</a>
+           </li>
+           <li class="nav-item px-1">
+             <a class="nav-link text-dark  p-2 m-1 btn bg-warning" href="/">Lessons</a>
+           </li>
+           <li class="nav-item px-1">
+             <a class="nav-link text-dark p-2 m-1 btn bg-warning" href="/">About</a>
            </li>
          </ul>
       </div>
@@ -133,60 +128,60 @@
     </header>
     <main>
       <section> <!--Welcome container-->
-        <div class="container-md">
-          <div class="row flex-row-reverse flex-column mt-5">
-            <div class="col">
-              <h1>Welcome</h1>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit impedit deserunt similique doloremque officia officiis vel, repellendus inventore quibusdam laudantium pariatur perferendis dolore quod, delectus, alias at tempora? Odit ad at modi impedit quia reiciendis natus numquam accusamus non molestiae ex molestias atque eveniet voluptatem commodi minus, saepe ipsa! Eligendi!</p> 
+       <div class="container mt-2">
+        <div class="card mb-3" >
+          <div class="row g-0 flex-wrap-reverse flex-sm-wrap-reverse">
+            <div class="col-md-7">
+              <img src="design/338-fiesta-fantasy-cake.jpeg" class="img-fluid rounded-start" alt="Cake picture">
             </div>
-            <div class="col">
-              <a class="pointer" href="#">
-                <img
-                  class="img-fluid-md"
-                  src="/design/cakes-1.jpg"
-                  alt="cupcacke image vector created by gstudioimagen"
-                />
-              </a>
+            <div class="col-md-5">
+              <div class="card-body">
+                <h5 class="card-title fs-1 ">Welcome</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis magnam animi id, soluta commodi consectetur iure optio alias natus fugit cum debitis nam illum a quia ratione molestiae nostrum odit.</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              </div>
             </div>
           </div>
         </div>
+        </div>
+       </div>
       </section>
       <section> <!--Images section flex-->
-          <div class="container-md mt-4">
-            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
-              <div class="col">
-                <a class="pointer" href="#">
+          <div class="container mt-4">
+            <div class="row row-cols-1 row-cols-2 row-cols-sm-2 row-cols-md-4">
+               <div class="col py-2">
+                 <a class="pointer" href="#">
                 <img
-                  class="img-fluid"
-                  src="/design/birthday-cake-300x300.png"
-                  alt="cupcacke image vector created by gstudioimagen"
+                  class="img-fluid rounded"
+                  src="/design/1-cake.jpg"
+                  alt="Cake picture"
                 />
               </a>
                 </div>
-              <div class="col">
+               <div class="col py-2">
                  <a class="pointer" href="#">
                 <img
-                  class="img-fluid"
-                  src="/design/cropped-BBCakes-300x300.jpg"
-                  alt="cupcacke image vector created by gstudioimagen"
+                  class="img-fluid rounded"
+                  src="/design/2-cake.jpg"
+                  alt="Cake picture"
                 />
               </a>
                 </div>
-              <div class="col">
+               <div class="col py-2">
                  <a class="pointer" href="#">
                 <img
-                  class="img-fluid"
-                  src="/design/fathers-day-cake_300x300.jpg"
-                  alt="cupcacke image vector created by gstudioimagen"
+                  class="img-fluid rounded"
+                  src="/design/3-cakes.jpg"
+                  alt="Cake picture"
                 />
               </a>
                 </div>
-              <div class="col">
+               <div class="col py-2 ">
                  <a class="pointer" href="#">
                 <img
-                  class="img-fluid"
-                  src="/design/reese-cake-300x300.webp"
-                  alt="cupcacke image vector created by gstudioimagen"
+                  class="img-fluid rounded"
+                  src="/design/4-cakes.webp"
+                  alt="Cake picture"
                 />
               </a>
                 </div>
@@ -194,9 +189,33 @@
         </div>
       </section>
     </main>
-    <footer>
-
-      <p>&copy;Cakes Fun 2021 CYF Israel-Quintanilla</p>
+    <footer class="mt-4">
+      <div class="container teal-color">
+          <div class="d-flex ">
+            <ul class="navbar-nav text">
+              <li class="nav-item px-1  ">
+                <a class="nav-link text-dark text-start p-2 m-1 btn bg-warning text-nowrap" href="/"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                  <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path>
+                </svg> Recipes and More</a>
+              </li>
+              <li class="nav-item px-1">
+                <Cakes class="nav-link text-dark text-start p-2 m-1 btn bg-warning text-nowrap" href="/"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                  <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"></path>
+                </svg>
+                Follow us</a>
+              </li>
+              <li class="nav-item px-1">
+                <a class="nav-link text-dark text-start p-2 m-1 btn bg-warning text-nowrap" href="/"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                  <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"></path>
+                </svg>
+                News every day</a>
+              </li>
+            </ul>
+            
+          </div>
+          <p class="pb-3 text-center  "><strong>&copy;Cakes Fun 2021 CYF Israel-Quintanilla</strong></p> 
+      </div>
+      
     </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
