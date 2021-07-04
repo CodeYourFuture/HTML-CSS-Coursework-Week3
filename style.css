@@ -10,10 +10,15 @@ body{
 .header_section{
     padding:10px;
 }
+.menu{
+    margin-bottom: 10px;
+}
+
 .menu ui{
     display:flex;
     flex-direction: row;
     gap:10px;
+    justify-content:flex-end; 
 }
 
 .menu li {
@@ -27,8 +32,8 @@ body{
     justify-content:flex-end;
     text-decoration:none;
     display:flex;
-    font-size:8px;
-   
+    font-size:7px;
+    padding:4px; 
 }
 
 .logo_of_cake img{
@@ -46,14 +51,22 @@ body{
     gap: 20px;
     padding-left:19px;
     padding-top:10px; 
+    margin-left: 10px;
 }
 
 .header_txt {
-     position:relative;
-     top:-85px;
+    position:relative;
+    top:-85px;
     font-size:20px;
     color:#d90166;
     text-decoration:none;   
+}
+.flex-container{
+    display:flex; 
+    /*flex-direction:row;*/
+    justify-content: center;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 .container{
     border: 20px solid pink;
@@ -61,10 +74,10 @@ body{
     top:10px;
     justify-content:space-around; 
     background-size: auto;
-    margin-left: 10px;
+    
     padding:19px;
-    margin-right: 10px;
-    width: 300px;
+    
+    width: 100%;
 }
 .container h2{
     position:relative;
@@ -89,31 +102,33 @@ body{
 .photos img{
     position:relative;
     top:30px;
-    width: 300px;
+    width: 280px;
     border: 20px solid pink;
 }
 
 .bakery_container{
     position:relative;
-    top:60px; 
-    background-color:#ece9ebde;
-    text-align:center;
-    margin-left: 10px; 
-    margin-right: 10px;
+    top:30px;  
+     
+    width: 100%;
+    padding:13px;
 }
 .bakery_container img{
     position:relative;
     top:2px;
-    padding:3px;
-    height:130px; 
-    width:130px;
+    padding:1px;
+    height:140px; 
+    width:140px;
 }
 .bakery_container-group{
     display: flex;
-    justify-content:space-around;
+    padding:1px;
+    justify-content:space-evenly;
+    background-color:#ece9ebde;
+    flex-wrap: wrap;
 }
 .footer{
-    top:75px;
+    top:40px;
     position:relative;
     /*align-items: start ;*/
 }
@@ -149,10 +164,10 @@ body{
         width:300px;
     }
     .header_txt { 
-       font-size:30px; 
+       font-size:34px; 
    }
    .menu a{ 
-        font-size:15px;
+        font-size:18px;
     }
     .footer-social-links img{
         width:35px;
@@ -172,14 +187,14 @@ body{
         top:10px;
         width: 100%;
         height: 450px; 
-        margin-left: 50px;
+        margin-left: 10px;
         margin-right: 10px;
     }
     .container{
         text-align: right;
-        width: 48%;
+        width: 40%;
         font-size: 19px;
-        margin-right: 40px;
+        margin-right: 10px;
         margin-left:20px;
     }
 }
@@ -198,10 +213,10 @@ body{
         width:210px;
     }
     .header_txt { 
-       font-size:25px; 
+       font-size:28px; 
    }
    .menu a{ 
-        font-size:12px;
+        font-size:15px;
     }
     .footer-social-links img{
         width:35px;
@@ -221,11 +236,10 @@ body{
     }
     .flex-container{
         display:flex; 
-        flex-direction:column;
         justify-content: center;
     }
     .container{
-         width: 100%;
+        width: 100%;
         font-size: 17px;
         padding-right: 20px;
         padding-left:20px;
