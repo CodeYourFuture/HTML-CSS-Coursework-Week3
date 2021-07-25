@@ -13,6 +13,10 @@ body{
     font-family: 'Comfortaa', cursive;
 }
 
+main{
+    margin: 3rem;
+}
+
 /* -------------------------------Header style--------------------------- */
 #logo{
     width: 8rem;
@@ -35,3 +39,29 @@ header{
     flex-direction: column;
     align-items: flex-end;
 }
+
+
+/* ----------------------------------Welcome section styles------------------------------------ */
+h1{
+    font-size: 180%;
+    color: #B15962;
+    text-shadow: 2px 2px 2px #b1596291;
+}
+
+button{
+    background-color: #B15962;
+    color: white;
+    border: none;
+    padding: 1rem;
+    border-radius: 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+button:hover,
+button:focus {
+    background-color: #DCA869;
+}
+
+
+
