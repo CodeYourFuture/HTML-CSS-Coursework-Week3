@@ -3,29 +3,26 @@ body {
   font-family: Helvetica, sans-serif;
   /*background-image: linear-gradient(to top, #9890e3 0%, #b1f4cf 100%);*/
   width:100%;
-  border:cornflowerblue,solid;
+  /*border:cornflowerblue,solid;*/
 }
-
 
 a {
   color: #000;
 }
-
+h1{
+    font-family: 'Dancing Script', cursive;
+}
 
 h3 {
    float: right;
    margin: 20px 20px;
    padding: 30px;
-   border: solid;
-   border-color: aqua;
-   
+  /* border-color: solid aqua;*/
 }
-
-
 
 .container {
     width:90%;
-    border: solid white;
+    /*border: solid white;*/
     margin: 0 auto;
     background-color:#feeafa;
 }
@@ -33,14 +30,14 @@ h3 {
 
 .logo{
     padding:1em;
-    border:red solid;
+    /*border:red solid;*/
     background-color:#feeafa;
 }
 
 .burger-header{
     float:right;
-   padding: .5em;
-    border: solid blue;
+    padding: .5em;
+    /*border: solid blue;*/
     margin: 0 auto;
     background-color: #e7e9ee;
 }
@@ -48,37 +45,36 @@ h3 {
 .strapline {
 padding:2em;
 margin-left:1em;
-border: solid;
-border-color: aqua;
+/*border-color: solid aqua;*/
 text-align:end;
- margin: 0 auto;
+margin: 0 auto;
 background-color:#feeafa;
- color:#a79bab;
+color:#a79bab;
+font-family: 'Dancing Script', cursive;
+font-size:1.2em;
 }
 
 .wel-title {
-   /*margin-top:20px;
-   margin-left:10px;*/
-   border: solid;
-   border-color: royalblue;
+  /* border-color: solid royalblue;*/
    margin: 0 auto;
-background-color:#dee2ff;
    color:#a79bab;
 }
+
 .caketext {
     font-size: 1em;
-    border:pink solid;
+    /*border:pink solid;*/
     margin: 0 auto;
-    background-color:#dee2ff;
-    
+    font-family: 'Dancing Script', cursive;
+    color:#a79bab;  
 }
+
 .jumbotron{
     margin:0 auto;
     padding-top:2em;
 }
 .jumbotron-img {
 width:98%;
-border: solid orange; 
+/*border: solid orange; */
 }
 
 .flex-gallery{
@@ -89,15 +85,16 @@ border: solid orange;
  flex-wrap: wrap;
  align-content: flex-end;
     margin: 0 auto;
-    border:solid green;
+    /*border:solid green;*/
     background-color:#dee2ff;
 }
  .flex-item-gallery{
-     width: 40%;
+     width: 38%;
      height: 5em;
      border-radius: 4px;
      padding:.1em;
      margin-top:.5em;
+     margin-bottom: .5em;
  }
 
  .burger-footer {
@@ -105,7 +102,7 @@ float:left;
 margin: 0 auto;
 padding: .5em;
  background-color: #e7e9ee;
- border:solid brown;
+ /*border:solid brown;*/
  }
 
  .foot{
