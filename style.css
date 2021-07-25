@@ -18,7 +18,7 @@ a {
 
 h3 {
    float: right;
-   margin: 60px 60px;
+   margin: 20px 20px;
    padding: 30px;
    border: solid;
    border-color: aqua;
@@ -28,6 +28,10 @@ p {
 margin:1em;
 border: solid;
 border-color: aqua;
+}
+
+img{
+    width: 100%;
 }
 /* header */
 
@@ -142,6 +146,26 @@ border-color: aqua;
 }
 
 
+.caketext {
+    font-size: 1.2em;
+}
+
+
+
+
+.flex-gallery{
+  display:flex;
+  flex-direction: center;
+ justify-content: center;
+ flex-direction: row;
+ flex-wrap: wrap;
+ align-content: flex-end;
+   
+}
+ .flex-item-gallery{
+     width: 30%;
+     
+ }
 
 /* 48em = 768px */
 /*
