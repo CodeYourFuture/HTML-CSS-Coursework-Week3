@@ -7,16 +7,20 @@ html{
 }
 
 body{
-    font-size:16px;
+    font-size:12px;
     text-align: justify;
     margin: 0;
     font-family: 'Comfortaa', cursive;
 }
 
 main{
-    margin: 3rem;
+    margin: 0 2rem;
 }
 
+.welcome-section,
+.jumbotron{
+    margin-top: 3rem;
+}
 /* -------------------------------Header style--------------------------- */
 #logo{
     width: 8rem;
@@ -42,10 +46,11 @@ header{
 
 
 /* ----------------------------------Welcome section styles------------------------------------ */
-h1{
-    font-size: 180%;
+.heading{
+    font-size: 2rem;
     color: #B15962;
     text-shadow: 2px 2px 2px #b1596291;
+    margin-top:0;
 }
 
 button{
@@ -63,5 +68,51 @@ button:focus {
     background-color: #DCA869;
 }
 
+/* ------------------------------------------Jumbotron section styles--------------------------------- */
+.jumbotron{
+    background-image:linear-gradient(to right, rgba(58, 53, 53, 0.877), #b1596249), url("https://images.unsplash.com/photo-1613574471680-02c1f7c31056?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80");
+    background-size:cover;
+    background-position: center;
+    padding:1rem;
+}
+
+.jumbotron-text-container{
+    margin: 1rem;
+    color: white;
+    text-align: center;
+}
+
+.jumbotron-heading{
+    font-size: 1.8rem;
+}
+
+.jumbotron-subheading{
+    font-size:1.5rem;
+}
+
+.jumbotron-paragraph{
+    background-color:#B15962;
+    width: max-content;
+    padding: 1rem;
+    border-radius: 100%;
+    color:white;
+    font-size: 1rem;
+    animation-name:jumbotron-tag;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes jumbotron-tag {
+    0% {
+        background-color: #B15962;
+    }
+    50% {
+        background-color: #D89E5D;
+    }
+    100% {
+        background-color: #B15962;
+        color:white;
+    };
+  }
 
 
