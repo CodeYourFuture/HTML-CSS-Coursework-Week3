@@ -18,7 +18,8 @@ main{
 }
 
 .welcome-section,
-.jumbotron{
+.jumbotron,
+.cake-section{
     margin-top: 3rem;
 }
 /* -------------------------------Header style--------------------------- */
@@ -115,4 +116,56 @@ button:focus {
     };
   }
 
+
+  /* ---------------------------------------------products section styles------------------------------ */
+
+
+#cupcakes-container{
+      background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.7), #b1596249), url("https://images.unsplash.com/photo-1596223575327-99a5be4faf1e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80");
+}
+
+#donuts-container{
+    background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.7), #b1596249), url("https://images.unsplash.com/photo-1612240498936-65f5101365d2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80");
+}
+
+#celebration-cake-container{
+    background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.7), #b1596249), url("https://images.unsplash.com/photo-1565987164841-7132b384293b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80");
+}
+
+#fruit-cakes-container{
+    background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.7), #b1596249), url("https://images.unsplash.com/photo-1495147466023-ac5c588e2e94?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80");
+}
+
+.cake-container{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    width: 40%;
+    margin-bottom: 2rem;
+    height: 25rem;
+    transition: 0.2s linear;
+}
+
+.cakes-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+}
+
+.cake-container:hover{
+    transform: scale(1.02);
+}
+
+.heading-cake{
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    justify-self: center;
+    text-shadow: 1px 1px 2px white;
+}
 
