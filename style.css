@@ -2,6 +2,7 @@
 body {
   margin: 0;
   font-family: Helvetica, sans-serif;
+  background-image: linear-gradient(to top, #9890e3 0%, #b1f4cf 100%);
 }
 
 a {
@@ -17,12 +18,28 @@ h3 {
    border-color: aqua;
 }
 
-p {
-margin:1em;
-border: solid;
-border-color: aqua;
+footer {
+padding: 2em;
 }
 
+.logo{
+    padding:1em;
+    border:red solid;
+}
+
+.burger-header{
+    float:right;
+    margin-right:2em;
+    border: solid blue;
+}
+
+.strapline {
+padding:2em;
+margin-left:1em;
+border: solid;
+border-color: aqua;
+text-align:end;
+}
 
 .wel-title {
    margin-top:20px;
@@ -38,8 +55,6 @@ border-color: aqua;
 width:100%;
 }
 
-
-
 .flex-gallery{
   display:flex;
   flex-direction: center;
@@ -50,13 +65,20 @@ width:100%;
    
 }
  .flex-item-gallery{
-     width: 50%;
+     width: 40%;
      height: 5em;
-     
+     border-radius: 4px;
+     padding:.1em;
+     margin-top:.5em;
  }
 
-/* 48em = 768px */
+ .burger-footer {
+float:left;
+margin-left:.5em;
 
+ }
+/* 48em = 768px */
+/*
 @media (min-width: 48em) {
   .header li {
     float: left;
@@ -73,5 +95,5 @@ width:100%;
     display: none;
   }
 }
-
+*/
 
