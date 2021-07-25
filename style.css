@@ -169,3 +169,44 @@ button:focus {
     text-shadow: 1px 1px 2px white;
 }
 
+
+/* --------------------------------Footer section styles------------------------------- */
+footer{
+    background-color: #B15962;
+    color: white;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+.icons-container{
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.footer-info{
+    font-size: 1.8rem;
+    border-bottom: 1px solid rgb(153, 79, 79);
+    padding-bottom: 1rem;
+    width: max-content;
+}
+.icon{
+    width:30px;
+    margin: 0.8rem;
+}
+
+.copyright{
+    text-align: center;
+    font-size: 1rem;
+}
+
+.icon-details{
+    width:2rem;
+    margin-right:0.5rem;
+}
+
+.details-container{
+    display: flex;
+}
+
+

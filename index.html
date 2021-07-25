@@ -1,63 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
-    <title>Responsive Cake webpage</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
+        <title>Responsive Cake webpage</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
 
-<body>
-    <header>
-        <img id="logo" src="images/cake-slice.svg" alt="sweet-cakes-logo">
-        <div class="header-container">
-            <img id="hamburger-menu" src="images/square (1).svg" alt="hamburger-menu-image">
-            <h3>The best cakes in town delivered to your door</h3>
-        </div>
-    </header>
+    <body>
+        <header>
+            <img id="logo" src="images/cake-slice.svg" alt="sweet-cakes-logo">
+            <div class="header-container">
+                <img id="hamburger-menu" src="images/square (1).svg" alt="hamburger-menu-image">
+                <h3>The best cakes in town delivered to your door</h3>
+            </div>
+        </header>
 
-    <main>
-        <section class="welcome-section">
-            <h2 class="heading">Welcome</h2>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-            <button>Find out more</button>
-        </section>
+        <main>
+            <section class="welcome-section">
+                <h2 class="heading">Welcome</h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                <button>Find out more</button>
+            </section>
 
-        <section class="jumbotron">
-            <div class="jumbotron-text-container">
-                <h1 class="jumbotron-heading">～Cake Sweet Cake～</h1>
-                <h3 class="jumbotron-subheading">Wedding & Celebration Cakes <br> Cupcakes & Yummy Biscuits <br> For Every Occasion</h3>
-                <div class="jumbotron-paragraph">
-                    <p>Seriously <br> Tasty <br> Cakes</p>
+            <section class="jumbotron">
+                <div class="jumbotron-text-container">
+                    <h1 class="jumbotron-heading">～Cake Sweet Cake～</h1>
+                    <h3 class="jumbotron-subheading">Wedding & Celebration Cakes <br> Cupcakes & Yummy Biscuits <br> For Every Occasion</h3>
+                    <div class="jumbotron-paragraph">
+                        <p>Seriously <br> Tasty <br> Cakes</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="cake-section">
+                <h1 class="heading">Our Cake Collection</h1>
+                <div class="cakes-container">
+                    <div class="cake-container" id="cupcakes-container">
+                        <h2 class="heading-cake">Cupcakes</h2>
+                        <button>View more</button>
+                    </div>
+                    <div class="cake-container" id="donuts-container">
+                        <h2 class="heading-cake">Donuts</h2>
+                        <button>View more</button>
+                    </div>
+                    <div class="cake-container" id="celebration-cake-container">
+                        <h2 class="heading-cake">Celebration cakes</h2>
+                        <button>View more</button>
+                    </div>
+                    <div class="cake-container" id="fruit-cakes-container">
+                        <h2 class="heading-cake">Fruit Cakes</h2>
+                        <button>View more</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div>
+                <p class="footer-info"><strong>Location</strong></p>
+                <div class="details-container">
+                    <img class="icon-details" src="images/pin.svg" alt="icon location">
+                    <p>24 Queen Street, B17 7AC, Birmingham</p>
                 </div>
             </div>
-        </section>
 
-        <section class="cake-section">
-            <h1 class="heading">Our Cake Collection</h1>
-            <div class="cakes-container">
-                <div class="cake-container" id="cupcakes-container">
-                    <h2 class="heading-cake">Cupcakes</h2>
-                    <button>View more</button>
+            <div>
+                <p class="footer-info"><strong>Contact details</strong></p>
+                <div class="details-container">
+                    <img class="icon-details" src="images/telephone.svg" alt="icon phone">
+                    <p>07766666666<p>
                 </div>
-                <div class="cake-container" id="donuts-container">
-                    <h2 class="heading-cake">Donuts</h2>
-                    <button>View more</button>
-                </div>
-                <div class="cake-container" id="celebration-cake-container">
-                    <h2 class="heading-cake">Celebration cakes</h2>
-                    <button>View more</button>
-                </div>
-                <div class="cake-container" id="fruit-cakes-container">
-                    <h2 class="heading-cake">Fruit Cakes</h2>
-                    <button>View more</button>
+                <div class="details-container">
+                    <img class="icon-details" src="images/email.svg" alt="icon mail">
+                    <p>cakesweetcake@gmail.com</p>
                 </div>
             </div>
-        </section>
-    </main>
-</body>
+            
+            <div class="icons-container">
+                <img class="icon" src="images/facebook.svg" alt="icon facebook">
+                <img class="icon" src="images/twitter.svg" alt="icon-twitter">
+                <img class="icon" src="images/instagram.svg" alt="icon-instagram">
+            </div>
+            <p class="copyright">&copy Copyrights Maria Chira 2021</p>
+        </footer>
+    </body>
 
 </html>
