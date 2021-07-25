@@ -1,1 +1,37 @@
 /*  Add your styling here */
+
+
+/* --------------------------------------General styles--------------------------------- */
+html{
+    font-size: 10px;
+}
+
+body{
+    font-size:16px;
+    text-align: justify;
+    margin: 0;
+    font-family: 'Comfortaa', cursive;
+}
+
+/* -------------------------------Header style--------------------------- */
+#logo{
+    width: 8rem;
+}
+
+#hamburger-menu{
+    width: 4rem;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #B15962;
+    padding: 1rem;
+}
+
+.header-container{
+    margin-left: 30px;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
