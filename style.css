@@ -212,7 +212,7 @@ footer{
     display: flex;
 }
 
-/* ------------------------------------------------------------------------------------------------------------------------------------------------Media queries for min screen 540px------------------------------------- */
+/* -----------------------------------------------------------------------------------------------------------------------------------------Media queries for min screen 540px------------------------------------- */
 
 @media only screen and (min-width: 540px) {
 
@@ -279,5 +279,69 @@ footer{
         flex-direction: column;
         align-items: center;
         text-align: center;
+    }
+}
+
+/* -----------------------------------------------------------------------------------------------------------------------------------------Media queries for min screen 540px------------------------------------- */
+@media only screen and (min-width: 900px) {
+    /* -------------------------------------General styles------------------------------------- */
+    body{
+        font-size: 16px;
+    }
+    main{
+        margin: 0 5rem;
+    }
+    /* ---------------------------------------Navigation bar styles------------------------------- */
+    .nav-bar{
+        margin: 0 5rem;
+    }
+    /* --------------------------------------Header+Jumbotron sections styles----------------------------- */
+    .welcome-jumbo-container{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    .welcome-section{
+        width:48%;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .jumbotron{
+        width:48%;
+    }
+
+    /* ---------------------------------------------Products section styles--------------------------- */
+    .cake-container{
+        width: 20%;
+    }
+
+    .heading{
+        text-align: center;
+        font-size: 3rem;
+    }
+
+    .cake-section{
+        margin: 5rem 0;
+    }
+
+    .cakes-container{
+        margin-top: 4rem;
+    }
+
+    .cake-container:hover{
+        transform: scale(1.1);
+    }
+
+    /* -------------------------------------------------Footer section styles------------------------ */
+    #footer-contact{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    footer p{
+        margin: 1rem;
     }
 }
