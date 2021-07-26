@@ -22,6 +22,9 @@ main{
 .cake-section{
     margin-top: 3rem;
 }
+.nav-bar{
+    display: none;
+}
 /* -------------------------------Header style--------------------------- */
 #logo{
     width: 8rem;
@@ -117,8 +120,7 @@ button:focus {
   }
 
 
-  /* ---------------------------------------------products section styles------------------------------ */
-
+  /* ---------------------------------------------Products section styles------------------------------ */
 
 #cupcakes-container{
       background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.7), #b1596249), url("https://images.unsplash.com/photo-1596223575327-99a5be4faf1e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80");
@@ -189,6 +191,7 @@ footer{
     border-bottom: 1px solid rgb(153, 79, 79);
     padding-bottom: 1rem;
     width: max-content;
+    margin-bottom: 0;
 }
 .icon{
     width:30px;
@@ -209,4 +212,72 @@ footer{
     display: flex;
 }
 
+/* ------------------------------------------------------------------------------------------------------------------------------------------------Media queries for min screen 540px------------------------------------- */
 
+@media only screen and (min-width: 540px) {
+
+    /* -------------------------------------General styles------------------------------------- */
+    body{
+        font-size: 14px;
+    }
+
+    /* ---------------------------------------Navigation bar styles------------------------------- */
+    .nav-bar{
+        display: block;
+        margin:0 2rem;
+        background-color: #B15962;
+    }
+
+    .nav-link-container{
+        display: flex;
+        justify-content: flex-end;
+        list-style: none;
+        padding: 1.5rem;
+    }
+
+    .nav-link{
+        margin: 1rem;
+        text-decoration: none;
+        color: white;
+        padding: 1rem;
+    }
+
+    .nav-link:hover{
+        color: black;
+    }
+
+    /* --------------------------------------------Header section styles----------------------------- */
+    #hamburger-menu{
+        display: none;
+    }
+
+    .header-container{
+        justify-content: flex-end;
+    }
+
+    #main-heading{
+        color:white;
+    }
+
+    /* --------------------------------------------------Jumbotron styles-------------------------  */
+    .jumbotron-heading{
+        font-size: 2.8rem;
+    }
+    
+    .jumbotron-subheading{
+        font-size:2.5rem;
+    }
+    
+    /* ---------------------------------------------Products section styles--------------------------- */
+    .cake-container{
+       height:30rem;
+    }
+
+    /* -------------------------------------------------Footer section styles------------------------ */
+    .footer-info-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
