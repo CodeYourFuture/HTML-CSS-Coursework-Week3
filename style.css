@@ -11,11 +11,11 @@ body{
 }
 .head-text {
     display: block;
-    margin-left: 12rem;
+    margin-left: 60%;
     margin-top: -2rem;
 
     width: fit-content;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
 }
 .hamburger-icon {
     display: block;
