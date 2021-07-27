@@ -1,5 +1,30 @@
 /*  Add your styling here */
 
+/* 
+palette (in ascending order of brightness and from brown to teal): 
+#503D3F
+#615756
+#52FFB8
+*/
+
+
+/* fonts */
+h1 {
+    font-family: 'Lobster', cursive;
+}
+p {
+    color: #503D3F;
+    font-weight: 600;
+}
+
+/* --------------------------------------------------- */
+
+/* default (mobile build) */
+
+html {
+    background-color: #615756;
+}
+
 body{
     margin: 0px;
 }
@@ -7,15 +32,21 @@ body{
 .head-section {
     width: 100%;
     max-height: 30vmax;
-    background-color: aquamarine;
+    background-color: #52FFB8;
+
+    border: #503D3F;
+    border-left: 0vmax;
+    border-top: 0vmax;
+    border-right: 0vmax;
+    border-style: solid;
 }
+
 .head-text {
     display: block;
-    margin-left: 60%;
+    margin-left: 50%;
     margin-top: -2rem;
-
-    width: fit-content;
-    font-size: 0.8rem;
+    font-size: 1rem;
+    color: #503D3F;
 }
 .hamburger-icon {
     display: block;
@@ -28,6 +59,88 @@ body{
 }
 .head-image {
     width: 20vmax;
-    border-radius: 10vmax;
     margin: 3vmax;
+
+    border: #503D3F solid;
+    border-width: 0.5vmax;
+
+    /* this can be anything higher than about 10 */
+    border-radius: 120vmax;
+    
+}
+
+.welcome-section {
+    margin: 1vmax;
+    background-color: #615756;
+    color: #52FFB8;
+    font-size: 2rem;
+    
+}
+.welcome-section p {
+    color: #52FFB8;
+    font-size: 1.5rem;
+}
+
+.image-index-section {
+    width: 100%;
+    background-color: #615756;
+}
+.image-index-section .top-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    height: auto;
+
+    border: #615756 solid 1vmax;
+    border-radius: 3vmax;
+}
+.image-index-section .smaller-image-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.image-index-section .smaller-image-container .smaller-image {
+    width: 40%;
+    height: auto;
+    border: #615756 solid 2vmax;
+    border-radius: 4vmax;
+}
+
+footer {
+    width: 100%;
+    margin: 0px;
+    background-color: #52FFB8;
+}
+footer p {
+    display: block;
+
+    margin-left: 2vmax;
+    margin-top: 0vmax;
+    width: 40%;
+}
+footer .footer-base-p {
+    margin: 0px;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 3vmax;
+}
+
+/* media queries for larger screens */
+
+/* breakpoint 1 (540px) */
+/* if screen is wider than 540px: */
+@media (min-width: 540px) {
+    .head-section .head-text {
+        margin-left: 45%;
+        margin-top: -4rem;
+        font-size: 1.8rem;
+    }
+    p {
+        font-size: 2rem;
+    }
+    .welcome-section p {
+        font-size: 2rem;
+    }
 }
