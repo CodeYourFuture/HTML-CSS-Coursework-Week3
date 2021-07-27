@@ -9,12 +9,13 @@ body{
     max-height: 30vmax;
     background-color: aquamarine;
 }
-.head-section h1 {
+.head-text {
     display: block;
-    position: absolute;
-    margin-left: 45%;
-    top: 18vmax;
-    font-size: 1.2rem;
+    margin-left: 12rem;
+    margin-top: -2rem;
+
+    width: fit-content;
+    font-size: 0.7rem;
 }
 .hamburger-icon {
     display: block;
