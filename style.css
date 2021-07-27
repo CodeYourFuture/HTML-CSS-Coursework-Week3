@@ -1,1 +1,32 @@
 /*  Add your styling here */
+
+body{
+    margin: 0px;
+}
+
+.head-section {
+    width: 100%;
+    max-height: 30vmax;
+    background-color: aquamarine;
+}
+.head-section h1 {
+    display: block;
+    position: absolute;
+    margin-left: 45%;
+    top: 18vmax;
+    font-size: 1.2rem;
+}
+.hamburger-icon {
+    display: block;
+    position: absolute;
+    float: right;
+    margin-left: 85%;
+    top: 2vmax;
+    width: 5vmax;
+    height: auto;
+}
+.head-image {
+    width: 20vmax;
+    border-radius: 10vmax;
+    margin: 3vmax;
+}
