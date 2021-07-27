@@ -11,6 +11,15 @@ h1 {
   color: #003566;
   font-weight: 800;
 }
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+a {
+  color: rgb(255, 255, 255);
+}
 .header {
   padding: 40px;
   background-color: #ffc300;
@@ -33,6 +42,36 @@ h1 {
   position: absolute;
   right: 10px;
   top: 10px;
+}
+/* ***************************navigation************************ */
+.navigation {
+  display: none;
+}
+.navigation__content {
+  background-color: #ffc300;
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 15px 0;
+}
+
+.navigation__list {
+  display: flex;
+  width: 60%;
+  justify-content: space-between;
+}
+
+.navigation__list li {
+  background-color: #43aa8b;
+  text-align: center;
+  /* make all the li have same size */
+  flex: 1;
+  margin: 0 5px;
+  transition: background-color 0.3s ease-in;
+}
+
+.navigation__list li:hover {
+  cursor: pointer;
+  background-color: #4d908e;
 }
 
 /* ******************hero******************** */
@@ -85,4 +124,14 @@ h1 {
 }
 .footer p {
   text-align: center;
+}
+
+/* ****************Media query ****************** */
+@media screen and (min-width: 540px) {
+  .navigation {
+    display: block;
+  }
+  .menu {
+    display: none;
+  }
 }
