@@ -175,4 +175,14 @@ a {
   .hero__title {
     margin: 20px 0 70px 0;
   }
+  /**********************************products  */
+  .products__image-wrapper {
+    flex-basis: 20%;
+  }
+  .products__image {
+    /* to make your image fit in your container ,must use width height and object fit property */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 }
