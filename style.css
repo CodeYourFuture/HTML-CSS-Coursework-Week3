@@ -1,1 +1,83 @@
-/*  Add your styling here */
+body {
+    font-family: sans-serif, "PT Sans";
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px; 
+    position:relative;
+}
+
+.logo {
+    padding-left :0;
+    margin-top: 0;
+    width: auto;
+    height:20%; 
+    background-color: lavender;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: flex-end; 
+    text-align: right;
+} 
+
+.logo img {
+    width:10%;
+    height:20%;
+    background-color: lavender; 
+}
+
+nav {
+    display:flex;
+    margin-left: 0;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+ul {
+    display:flex;
+    padding-top: 1em;
+    margin: 2em 0em 2em 10em;
+    justify-content:space-around;
+}
+.carousel-container img {
+    width: 500px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    text-align:inherit;
+    float:left;
+}
+
+.container {
+    font-size: x-large;
+    text-align:right;
+    display: inline;
+    color:grey;
+}
+
+slide {
+    width: 25%;
+    height:min-content;
+    position: relative;
+
+}
+
+.slider-img {
+    float: left;
+    margin: 20px;
+    padding: 20px;
+    max-width: 100%;
+    height:min-content;
+    /* object-fit:initial */
+}
+
+
+
+
+
+
+    
+      
+
+
