@@ -1,1 +1,40 @@
 /*  Add your styling here */
+html, body, header{
+    font-family: 'Gowun Batang', serif;
+    background-color: #FFF1E6;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content:right;
+    background-color: #F0EFEB;
+    width: 100%;
+    margin:0;
+}
+
+.header-img{
+    width: 30%;
+    height: 50%;
+    border-radius: 4%;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 0.2rem;
+}
+.menu-img{
+    width: 25%;
+    border-radius: 15%;
+    float: right;
+    margin-top: 0.5rem;
+}
+h1{
+    font-size: 1rem;
+    float: right;
+    text-align: right;
+
+}
+.nav-bar{
+    display: none;
+}
