@@ -108,6 +108,18 @@ padding: .5em;
  .foot{
      background-color:#feeafa;
  }
+
+
+/*media queries*/
+@media 
+ (min-width: 540px) {
+    .gallery {
+        width: 33%;
+    }
+}
+
+
+
 /* 48em = 768px */
 /*
 @media (min-width: 48em) {
