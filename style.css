@@ -158,6 +158,10 @@ a {
 }
 /* ******************************************************** */
 @media screen and (min-width: 900px) {
+  .menu {
+    display: none;
+  }
+
   .header__desc {
     font-size: 24px;
   }
