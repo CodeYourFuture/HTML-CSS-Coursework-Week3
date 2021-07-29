@@ -7,119 +7,131 @@ body {
 
 header {
   width: 100%;
-  height: auto;
+  height: 20rem;
   display: flex;
   flex-direction: column;
   margin: 10px 0px;
+  align-items: center;
   border: 1px solid black;
 }
 
 .headstrip {
   display: flex;
   height: 3rem;
-  width: 100%;
-  border: 1px solid black;
+  width: 90%;
+  /* border: 1px solid black; */
+  justify-content: flex-end;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid black;
 }
 
 .headstrip img {
-  height: 80%;
-  width: 2.4rem;
+  height: 70%;
+  width: 2.1rem;
+  margin-top: 0.5rem;
+  margin-left: 0.5rem;
 }
 
-.header-image {
+.head-img-name {
   display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  height: 17rem;
+  width: 90%;
+  border: 1px solid black;
+}
+
+.head-image {
+  height: 100%;
   width: 50%;
 }
 
-.image-box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-}
-
-.image-box img {
-  max-width: 90%;
-  display: flex;
-  max-height: 90%;
+.head-image img {
+  max-width: 100%;
+  max-height: 100%;
   border-radius: 0.5rem;
 }
 
-.nav-bar {
-  width: 50%;
+.head-name {
+  max-width: 50%;
+  height: 100%;
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: flex-start;
+  font-family: Papyrus;
 }
 
-.nav-bar h1 {
-  margin-top: 7rem;
+.head-name h2 {
+  margin-bottom: 0rem;
+  max-width: 90%;
 }
 
-.hamburger-image {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  /* height: 2rem;
-  width: 2.5rem; */
-}
-
-.hamburger-image img {
-  height: 1.7rem;
-  width: 2.2rem;
+.head-name h3 {
+  padding: 1rem;
+  text-align: center;
+  margin-top: 0rem;
 }
 
 /* Main section and images */
 
 .information {
   width: 100%;
-  height: auto;
+  height: 30rem;
   display: flex;
   flex-direction: column;
+  /* align-items: center; */
 }
 
 .information h2 {
-  margin-bottom: 0px;
+  font-family: papyrus;
+  margin-bottom: 0rem;
+  margin-top: 1rem;
+  display: flex;
 }
 
-.information p {
-  padding: 0rem 1.5rem 0rem 1.5rem;
+.hi-text {
+  display: flex;
+  padding: 1rem;
 }
 
 .greetings-container {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  max-width: 100%;
   height: 50%;
   align-items: center;
+  margin-top: 1rem;
 }
 
 .info-image-container {
   display: flex;
   width: 100%;
   justify-content: center;
+  height: 50%;
 }
 
 .info-image {
   display: flex;
-  height: auto;
+  /* height: auto; */
   max-width: 100%;
-  max-height: 12.5rem;
+  height: 100%;
   border-radius: 0.5rem;
 }
 
 .occasions {
   text-align: center;
   font-size: 1.4rem;
+  font-family: papyrus;
 }
 
 .cake-types {
   display: flex;
   flex-wrap: wrap;
+  align-content: flex-start;
   width: 100%;
-  height: 25rem;
-  margin-top: 1rem;
+  height: 26rem;
+  margin-top: 2rem;
   border: 1px solid green;
 }
 
@@ -129,33 +141,30 @@ header {
 .muffins {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  width: auto;
-  height: 12.5rem;
-  max-width: 50%;
-  max-height: 50%;
-
-  border: 1px solid green;
+  height: 50%;
+  width: 50%;
 }
 
 .cake-types p {
   margin: 0.5rem auto;
   font-size: 1.3rem;
+  font-family: papyrus;
 }
 
 .cake-pic {
   display: flex;
-  max-height: 80%;
-  max-width: 100%;
+  height: 80%;
+  max-width: 80%;
   border-radius: 0.5rem;
+  margin-left: 1rem;
 }
 
 .footer {
   display: flex;
   flex-direction: column;
   text-align: center;
-  margin: 2rem 0rem;
-  width: 100%;
+  margin: 1rem 0rem;
+  max-width: 100%;
   border: 1px solid green;
 }
 
@@ -174,5 +183,42 @@ header {
   .donuts,
   .muffins {
     max-height: 17.5rem;
+  }
+}
+
+@media screen and (min-width: 540px) {
+  .cake-types {
+    height: 45rem;
+    width: 100%;
+  }
+
+  .birthday,
+  .wedding,
+  .donuts,
+  .muffins {
+    max-height: 22.5rem;
+  }
+
+  .information {
+    height: 40rem;
+  }
+
+  .head-name {
+    justify-content: center;
+  }
+
+  .head-name h2 {
+    font-size: 2.5rem;
+  }
+
+  .head-name h3,
+  .hi-text,
+  .cake-types p {
+    font-size: 1.5rem;
+  }
+
+  .information h2,
+  .occasions {
+    font-size: 2rem;
   }
 }
