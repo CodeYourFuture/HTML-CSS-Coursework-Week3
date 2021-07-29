@@ -42,6 +42,36 @@ h3 {
     background-color: #e7e9ee;
 }
 
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color:#dee2ff;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: right;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 1.2em;
+  font-family: 'Dancing Script', cursive;
+  color:#a79bab;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color:#c2c8f2; 
+  color: white;
+}
+
+/* Add a color to the active/current link */
+/*.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+} */
+
 .strapline {
 padding:2em;
 margin-left:1em;
@@ -84,9 +114,8 @@ width:98%;
  flex-direction: row;
  flex-wrap: wrap;
  align-content: flex-end;
-    margin: 0 auto;
-    /*border:solid green;*/
-    background-color:#dee2ff;
+  margin: 0 auto;
+  background-color:#dee2ff;
 }
  .flex-item-gallery{
      width: 38%;
@@ -101,8 +130,8 @@ width:98%;
 float:left;
 margin: 0 auto;
 padding: .5em;
- background-color: #e7e9ee;
- /*border:solid brown;*/
+background-color: #e7e9ee;
+ 
  }
 
  .foot{
@@ -111,42 +140,45 @@ padding: .5em;
 
 
 /*media queries*/
+@media screen and (max-width: 540px) {
+     .topnav {
+    display: none;
+     }
+}
+
+
 @media screen and (min-width: 540px) {
     .gallery .flex-item-gallery {
         width: 20%;
     }
+   
 }
 @media screen and (min-width: 540px) {
 .flex-item-gallery {
   padding:  .5em;
 }
+}
+
+@media screen and (min-width: 900px) {
+.lower-text ,.flexbox-container-lower-text .flex-items-lower-text {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width:100%;
+}
+}
 
 
 @media screen and (min-width: 900px) {
-.lower-text .flexbox-container-lower-text .flex-items-lower-text {
+.lower-text ,.flexbox-container-lower-text .flex-items-lower-text {
   display: flex;
   flex-direction: row;
-  width:30%;
+  align-items: center;
+  width:100%;
+}
+.burger-header {
+  display: none;
 }
 }
 
-/* 48em = 768px */
-/*
-@media (min-width: 48em) {
-  .header li {
-    float: left;
-  }
-  .header li a {
-    padding: 20px 30px;
-  }
-  .header .menu {
-    clear: none;
-    float: right;
-    max-height: none;
-  }
-  .header .menu-icon {
-    display: none;
-  }
-}
-*/
 
