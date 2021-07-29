@@ -1,9 +1,8 @@
 
 body {
   font-family: Helvetica, sans-serif;
-  /*background-image: linear-gradient(to top, #9890e3 0%, #b1f4cf 100%);*/
   width:100%;
-  /*border:cornflowerblue,solid;*/
+
 }
 
 a {
@@ -17,12 +16,10 @@ h3 {
    float: right;
    margin: 20px 20px;
    padding: 30px;
-  /* border-color: solid aqua;*/
 }
 
 .container {
     width:90%;
-    /*border: solid white;*/
     margin: 0 auto;
     background-color:#feeafa;
 }
@@ -30,25 +27,24 @@ h3 {
 
 .logo{
     padding:1em;
-    /*border:red solid;*/
     background-color:#feeafa;
 }
 
 .burger-header{
     float:right;
     padding: .5em;
-    /*border: solid blue;*/
     margin: 0 auto;
     background-color: #e7e9ee;
+  
 }
 
-/* Add a black background color to the top navigation */
+/* background color to the top nav */
 .topnav {
   background-color:#dee2ff;
   overflow: hidden;
 }
 
-/* Style the links inside the navigation bar */
+/*links inside nav bar */
 .topnav a {
   float: right;
   color: #f2f2f2;
@@ -60,22 +56,15 @@ h3 {
   color:#a79bab;
 }
 
-/* Change the color of links on hover */
+/* Change color of links on hover */
 .topnav a:hover {
   background-color:#c2c8f2; 
   color: white;
 }
 
-/* Add a color to the active/current link */
-/*.topnav a.active {
-  background-color: #04AA6D;
-  color: white;
-} */
-
 .strapline {
 padding:2em;
 margin-left:1em;
-/*border-color: solid aqua;*/
 text-align:end;
 margin: 0 auto;
 background-color:#feeafa;
@@ -85,7 +74,6 @@ font-size:1.2em;
 }
 
 .wel-title {
-  /* border-color: solid royalblue;*/
    margin: 0 auto;
    color:#a79bab;
 }
@@ -104,18 +92,14 @@ font-size:1.2em;
 }
 .jumbotron-img {
 width:98%;
-/*border: solid orange; */
 }
 
 .flex-gallery{
-  display:flex;
-  flex-direction: center;
+ display:flex;
  justify-content: center;
- flex-direction: row;
  flex-wrap: wrap;
  align-content: flex-end;
-  margin: 0 auto;
-  background-color:#dee2ff;
+ background-color:#dee2ff;
 }
  .flex-item-gallery{
      width: 38%;
@@ -136,6 +120,14 @@ background-color: #e7e9ee;
 
  .foot{
      background-color:#feeafa;
+     display:flex;
+     
+ }
+ .lower-text {
+   font-family: 'Dancing Script', cursive;
+   line-height:70%;
+   color:#a79bab; 
+   padding: 1em;
  }
 
 
@@ -162,23 +154,13 @@ background-color: #e7e9ee;
 @media screen and (min-width: 900px) {
 .lower-text ,.flexbox-container-lower-text .flex-items-lower-text {
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  width:100%;
+  justify-content: space-around;
 }
 }
 
-
-@media screen and (min-width: 900px) {
-.lower-text ,.flexbox-container-lower-text .flex-items-lower-text {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  width:100%;
-}
 .burger-header {
   display: none;
 }
-}
+
 
 
