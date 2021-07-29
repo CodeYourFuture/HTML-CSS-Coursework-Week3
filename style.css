@@ -1,16 +1,67 @@
 /*  Add your styling here */
+
 .page-header{
     background-image: url(https://qph.fs.quoracdn.net/main-qimg-37e0e2989bb3098c2385d774fa503749);
     background-repeat: no-repeat;
     background-size: contain;
     width: 100%;
-    height: 500px;
+    height: 300px;
+    object-fit: cover;
     }
 
     .main-heading{
+        font-size: 40px;
         font-style: italic;
         font-family: 'Courier New', Courier, monospace;
         color: black;
         text-align: center;
-       
+        font-weight: 600;
+        border: 2px solid plum;
     }
+
+    .sub-heading{        
+        background-color: aquamarine;
+        background-repeat: no-repeat;
+        
+    }
+    main{
+        background-color: silver;
+    }
+    .hero-image{
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+    h3{
+        text-align: center;
+    }
+    .images-container{
+        margin-top: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .images-container img{
+        margin: 20px;
+        border: 5px solid greenyellow;
+        border-radius: 10px;
+    }
+    .news-letter{
+        margin-top: 40px;
+    }
+    legend {
+        font-size: 20px;
+        font-weight: bold;
+        background: pink;
+        padding: 10px;
+        box-shadow: -3px 3px 0px skyblue;
+      }
+    fieldset {
+        background: #f0f0f0;
+        border: 3px solid white;
+        
+      }
+
+
+
+    

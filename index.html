@@ -8,22 +8,20 @@
     <title>Responsive Cake webpage</title>
     <!-- Add a link to your css file here -->
     <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 
 <body>
     <!-- Add your markup here -->
     <header class="page-header">
-            <h1 class="main-heading">Cake Cloud</h1>
-    
-
-       
-        <nav class="navbar navbar-expand-md navbar-light bg-light">
-            <a href="#">Order</a>
+            
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+           
             <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarMenu">
+        <div class="collapse navbar-collapse" id="navbarMenu">
             <ul class="navbar-nav">
                 <li class="nav-items"><a class="nav-link" href="#">Buy now</a></li>
                 <li class="nav-items"><a class="nav-link" href="#">Build your own Cake</a></li>
@@ -34,7 +32,77 @@
         </div>
 
         </nav>
+        
+        <h1 class="main-heading">Cake Cloud</h1>
+        
     </header>
+    <main>
+        <section class="hero"> 
+            <h2 class="sub-heading">Welcome</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur praesentium magnam sunt suscipit ut illum cumque odio ipsum eaque quas, necessitatibus nostrum sequi atque rerum minus blanditiis accusamus nesciunt ea!</p>
+            <img class="hero-image" src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8&w=1000&q=80" alt=" large-cake image">
+            <h3>Our Top Selection of cakes</h3>
+        </section>
+
+        <section class="images-container">
+            <a class="image-1" href="#"><img src="https://storcpdkenticomedia.blob.core.windows.net/media/recipemanagementsystem/media/recipe-media-files/recipes/retail/x17/16714-birthday-cake-600x600.jpg?ext=.jpg" alt="Birthday-cake"   width= "150px" height= "150px"></a>
+            <a class="image-2" href="#"><img src="https://hungryhappenings.com/wp-content/uploads/2019/01/panda-bear-cake-valentines-day-recipes-decorated-cakes-1.jpg" alt="Panda-cake" width= "150px" height= "150px"></a>
+            <a class="image-3" href="#"><img src="https://i.pinimg.com/originals/ab/67/53/ab6753ec1cef75f1cc2052487b1f4059.jpg" alt="Round-cake" width= "150px" height= "150px"></a>
+            <a class="image-4" href="#"><img src="https://ichef.bbci.co.uk/food/ic/food_16x9_832/recipes/rainbow_cake_20402_16x9.jpg" alt="Rainbow-cake" width= "150px" height= "150px"></a>
+            
+        </section>
+
+        <section class="news-letter">
+            <h3>Sign-up for our news-letter and special discount offers</h3>
+            <form>
+                <fieldset class="val-fieldset">
+
+                    <legend class="val-legend">Sign-up</legend>
+
+                    <label for="first-name">First-name</label>
+                    <input id="first-name" type="text" name="first-name" minlength="4" maxlength="pattern=[A-Za-z]{4,}" required>
+
+                    <label for="last-name">Last-name</label>
+                    <input id="last-name" type="text" name="last-name" minlength="4" maxlength="pattern=[A-Za-z]{4,}" required>
+
+                    <label for="email-address">Email:</label>
+                    <input id="email-address" type="text" name="email-address" required>
+
+                    <label for="phone-number">Phone-number:</label>
+                    <input id="phone-number" type="text" name="phone-number" minlength="4" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                    <!--Checkbox-->
+                    <legend>Preferred contact method</legend>
+                    <input id="text" type="checkbox" name="contact-method">
+                    <label for="text">Text</label>
+
+                    <input id="call" type="checkbox" name="contact-method">
+                    <label for="call">Call</label>
+
+                    <input id="email" type="checkbox" name="contact-method">
+                    <label for="email">Email</label>
+
+                    <!--Dropdown-->
+                    <label for="gender">gender</label>
+                    <select name="gender" id="gender">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="prefer-not-to-say" selected>Prefer not to say</option>
+                    </select>
+                    <button>Sign-up</button>
+
+
+
+                </fieldset>
+             </form>
+
+        </section>
+    
+    </main>
+
+
+
+
+    <!--Bootstrap JS-->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
