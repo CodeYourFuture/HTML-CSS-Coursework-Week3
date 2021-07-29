@@ -1,52 +1,124 @@
 /*  Add your styling here */
-html, body, header{
+html, body, header, ul{
     font-family: 'Gowun Batang', serif;
-    background-color: #FFF1E6;
+   
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
+body{
+    background-color: #FFF1E6;
+
+}
 header{
     display: flex;
     flex-direction: row;
-    justify-content:right;
+    justify-content:space-between;
     background-color: #F0EFEB;
     width: 100%;
+    
     margin:0;
 }
 
-.header-img{
-    width: 30%;
-    height: 50%;
+.logo{
+    width: 20%;
+    height: 100%;
     border-radius: 4%;
     margin-top: auto;
     margin-bottom: auto;
     margin-left: 0.2rem;
+    border: 2px solid #FEC89A;
 }
-.menu-h1{
+h1{
+    font-size: 1.3rem;
+}
+.menu-p{
     margin-right: 1rem;
 }
-.menu-img{
-    width: 25%;
+.menu-icon{
+    width: 15%;
     border-radius: 15%;
     float: right;
     margin-top: 0.5rem;
+    margin-bottom: 0;
 }
-h1{
-    font-size: 1rem;
+header p{
     float: right;
     text-align: right;
+    font-size: 1rem;
 
 }
-.nav-bar{
-    display: none;
+.nav-bar {
+    background-color: #FCD5CE;
+    height: 3rem;
+   
 }
 .hero-img{
     width: 100%;
 }
 .description{
     margin: auto 0.5rem;
+    font-size: 0.9rem;
 }
 .cake-img{
     width: 100%;
 }
+footer{
+    font-size: 0.9rem;
+} 
+.nav-link li{
+    list-style: none;
+}
+
+.nav-link{
+    display: flex;
+    justify-content:space-around;
+    padding-top: 1rem;
+}
+.nav-link a{
+    text-decoration: none;
+    color: black;
+    
+}
+.nav-link a:hover{
+    text-decoration: underline;
+}
+footer p{
+    text-align: center;
+    margin-bottom: 0;    
+}
+
+/* media queries */
+@media screen and (max-width:549px){
+    .nav-bar{
+        display: none;
+    }
+}
+@media screen and (min-width:550px){
+    .menu-icon{
+        display: none;
+    }
+  
+    
+    logo{
+        width: 20%;
+    
+    }
+    p{
+        font-size: 1.5rem;
+        margin-top: 2rem;
+    }
+    .img-container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .cake-img{
+        width: 44%;
+        margin: 1rem;
+    }
+}
+
+/* desktop image hover effect
+img:hover{
+    transform: scale(1.03);
+ } */
