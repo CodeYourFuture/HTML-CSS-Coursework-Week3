@@ -111,14 +111,24 @@ padding: .5em;
 
 
 /*media queries*/
-@media 
- (min-width: 540px) {
-    .gallery {
-        width: 33%;
+@media screen and (min-width: 540px) {
+    .gallery .flex-item-gallery {
+        width: 20%;
     }
+}
+@media screen and (min-width: 540px) {
+.flex-item-gallery {
+  padding:  .5em;
 }
 
 
+@media screen and (min-width: 900px) {
+.lower-text .flexbox-container-lower-text .flex-items-lower-text {
+  display: flex;
+  flex-direction: row;
+  width:30%;
+}
+}
 
 /* 48em = 768px */
 /*
