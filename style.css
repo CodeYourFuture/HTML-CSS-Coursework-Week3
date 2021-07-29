@@ -1,1 +1,250 @@
 /*  Add your styling here */
+body,
+html {
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+}
+.logo {
+  display: block;
+  width: 150px;
+  height: 150px;
+  margin: 9% 0 0 5%;
+}
+.hamberger {
+  text-align: right;
+  margin: 10%;
+}
+label {
+  font-size: 45px;
+  display: none;
+}
+#toggle {
+  display: none;
+}
+.nav div {
+  height: 4px;
+  background-color: white;
+  margin: 4px 0;
+  border-radius: 50px;
+  transition: 0.2s;
+}
+.nav {
+  display: none;
+  width: 35px;
+  padding: 35px;
+}
+.one {
+  width: 35px;
+}
+.two {
+  width: 35px;
+}
+.three {
+  width: 35px;
+}
+.nav:hover div {
+  width: 30px;
+}
+.header {
+  display: inline-flex;
+  background-color: rgb(212, 212, 212);
+  width: 100%;
+}
+
+.navp {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: flex-end;
+}
+.pofheader {
+  display: inline-flex;
+  justify-content: flex-start;
+}
+.menu {
+  font-size: 2vw;
+  text-align: right;
+  width: 100%;
+  margin: 4% -15% 1% 0;
+  height: 70px;
+  line-height: 70px;
+}
+.menu a {
+  text-decoration: none;
+  padding-right: 5%;
+  color: grey;
+}
+.hero {
+  position: relative;
+  padding: 0 5% 0 5%;
+}
+
+h1 {
+  font-size: 7vw;
+  font-weight: 500;
+}
+.pofhero {
+  padding: 0 10px 30px 10px;
+}
+.big-image {
+  width: 100%;
+  margin-top: 0;
+}
+
+#four-pics {
+  caret-color: whitesmoke;
+  padding: 0 5% 0 5%;
+}
+
+.top-left,
+.top-right,
+.buttomn-left,
+.buttomn-right {
+  width: 45%;
+  height: 20%;
+}
+.top {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 9%;
+}
+.buttomn {
+  display: flex;
+  flex-direction: row;
+  align-items: space-between;
+  justify-content: space-between;
+  padding-top: 8%;
+}
+footer {
+  margin-top: 20%;
+  background-color: rgb(212, 212, 212);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 9%;
+}
+/**
+.footer1,
+.footer2,
+.footer3 {
+  margin-top: -3%;
+}
+*/
+
+/* social media logos */
+
+.facebook-icon,
+.twitter-icon,
+.instagram-icon {
+  width: 4vw;
+  height: 4vw;
+  padding: 1%;
+}
+.social-media-logos {
+  margin-top: 2%;
+  padding-top: 2%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+  label {
+    display: block;
+    cursor: pointer;
+  }
+
+  .menu {
+    display: none;
+    float: right;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+    margin-bottom: 85%;
+  }
+  .menu a {
+    display: flex;
+  }
+  #toggle:checked + .menu a {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  .pofheader {
+    font-size: 30px;
+    display: block;
+    padding-bottom: 2%;
+    float: right;
+    padding-top: 20%;
+    float: right;
+    margin-right: -40%;
+  }
+  #four-pics {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row;
+  }
+
+  .top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+  }
+
+  .buttomn {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+    padding-top: 9%;
+  }
+  .hero {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: stretch;
+    position: relative;
+    margin-top: 8%;
+  }
+  h1 {
+    margin: 22% 0 0 0;
+  }
+
+  .h1andp {
+    display: flex;
+    flex-direction: column;
+    padding-left: 5%;
+    margin-top: -11.7%;
+    align-items: flex-end;
+  }
+  .big-image {
+    width: 50%;
+    height: 50%;
+  }
+  .pofhero {
+    font-size: 2vw;
+    margin-right: -10%;
+  }
+  .bottom-nav-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 30px;
+  }
+  .social-media-logos img {
+    width: 48px;
+  }
+  footer {
+    margin-top: 8%;
+  }
+}
