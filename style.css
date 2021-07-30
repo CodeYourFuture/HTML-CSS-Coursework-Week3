@@ -1,5 +1,6 @@
 :root {
   --main-background-color: #fff;
+  --darker-background-color: #f5f3f3;
   --main-text-color: black;
 
   background-color: var(--main-background-color);
@@ -20,6 +21,8 @@
 
 2.0 MAIN CONTENT
   2.1 HERO IMAGE
+
+3.0 FOOTER
 
 */
 
@@ -45,7 +48,9 @@ h6 {
   justify-content: space-between;
   align-content: space-between;
   flex-direction: column;
-  background-color: #eee; /* little darker than our #fff background */
+  background-color: var(
+    --darker-background-color
+  ); /* little darker than our #fff background */
 }
 
 /* 1.1 HEADER CONTENT */
@@ -61,7 +66,7 @@ h6 {
   text-align: right;
   justify-content: flex-end;
   align-self: flex-end;
-  padding: 0 0.5em 0.5em 0;
+  padding: 0 0.5em 1em 0;
 }
 
 .header-hamburger {
@@ -105,10 +110,26 @@ h6 {
   justify-content: center;
   gap: 1em; /* gap between the elements */
   font-size: 1.2rem;
+  margin-bottom: 4em;
 }
 
 .gallery-item img {
   width: 175px;
-  aspect-ratio: 1/1; /* so the images stay square */
+  aspect-ratio: 1.5/1; /* so the images stay in a rectangle */
   cursor: pointer;
+}
+
+/* FOOTER */
+.page-footer {
+  background-color: var(--darker-background-color);
+  height: 100%;
+  text-align: left;
+  line-height: 2em;
+  padding: 2em;
+}
+
+.footer-copyright {
+  opacity: 0.5;
+  text-align: center;
+  padding-top: 2em; /* adds some space between the items */
 }
