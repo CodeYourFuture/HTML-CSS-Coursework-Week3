@@ -1,0 +1,41 @@
+/* remove any basic browser style I don't like */
+
+:root {
+  font-size: 16px;
+}
+
+html,
+*,
+body,
+header,
+div,
+section,
+nav,
+aside,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ol,
+li,
+ul,
+footer,
+article {
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  border: 0;
+  font-size: 100%;
+}
+
+nav ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
