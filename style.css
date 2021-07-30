@@ -1,14 +1,24 @@
 /*  Add your styling here */
+body{
+  background-color: #f2d7ee;
+}
+
+main{
+  background-color: #e8c2ca;
+}
 main, nav{
   margin: 5em;
 }
+
 nav{
   display:none;
+  
 }
 
 
 h1,article{
   font-size: 2em;
+  color: #5d1d6b;
 }
 
 
@@ -19,16 +29,24 @@ li{
 
 a{
 text-decoration: none;
+color: #f2d7ee;
 }
 header {
   display: flex;
   justify-content: space-between;
-  background: rgb(219, 120, 139);
+  background: #b392ac;
   padding: 1em;
 } 
 
-button{
-  margin-top: 2em;
+button {
+    margin-top: 2em;
+    padding: 1em;
+    font-size: 1em;
+    width: 9em;
+    border-radius: 0.5em;
+    background-color: #735d78;
+    border-style: none;
+    color: #f2d7ee;
 }
 footer p{
   text-align: center;
@@ -101,7 +119,7 @@ footer p{
   justify-content: flex-end;
   flex-wrap: wrap;
   margin: 2em;
-  background: rgb(219, 120, 139);
+  background: #d1b3c4;
 }
 
   ul {
@@ -134,10 +152,11 @@ header p{
   padding-top: 1em;
   text-align: right;
   font-size: 2rem;
+  color: #f2d7ee;
   
 }
 footer{
-  background: rgb(219, 120, 139);
+  background: #b392ac;
 }
 ul {
   display: flex;
@@ -147,7 +166,8 @@ ul {
 
 li{
   margin-right: 13%;
-  background-color: crimson;
+  background-color: #735d78;
+  padding: 1em;
 }
 
   header{
@@ -155,7 +175,8 @@ li{
 }
 
   a{
-  font-size: 1.5em;
+    font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.3em;
   }
 
 .hamburger {
