@@ -11,7 +11,7 @@
   }
 
   #motto{
-      font-size: 0.5em;
+      font-size: 1em;
       text-align: right;
   }
   
@@ -21,11 +21,45 @@
         
   }
 
-  .container-img{
-      display:gir;
+  .gallery{
+    display:flex;
+    flex-direction: row;
 
   }
+
+  .gallery-img{
+      margin:5px;
+      flex-basic:23%;
+    
+  }
+
+
+  .gallery-img img{
+    width: 100%;
+   
+  
+}
   @media only screen and (max-width: 540px) 
 {
      
+}
+
+.contact-us{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+#social-media{
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+    margin-top: 50px;
+}
+
+#follow-us{
+    font-size: 1em;
+    text-align: center;
+    
 }
