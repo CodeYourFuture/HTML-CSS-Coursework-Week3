@@ -69,7 +69,6 @@ h6 {
   width: 30px;
   height: auto;
   align-self: flex-end;
-  justify-content: baseline;
   padding: 1em 1em 0 0; /* adds some space to the top and right */
   cursor: pointer;
 }
@@ -95,4 +94,21 @@ h6 {
   height: auto;
   margin: 0.5em; /* adds some white space above and below the element */
   align-self: center;
+}
+
+/* 2.2 GALLERY */
+.gallery-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+  gap: 1em; /* gap between the elements */
+  font-size: 1.2rem;
+}
+
+.gallery-item img {
+  width: 175px;
+  aspect-ratio: 1/1; /* so the images stay square */
+  cursor: pointer;
 }
