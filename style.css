@@ -28,9 +28,11 @@
         text-shadow: -1px 1px 0px silver;
     }
     .page-header img{
+        width: 150px;
+        height: 150px;
         margin-left: 20px;
         border: 2px solid plum;
-        border-radius: 3px;
+        border-radius: 50%;
     }
 
     .sub-heading{    
@@ -65,6 +67,8 @@
         justify-content: space-evenly;
     }
     .images-container img{
+        width: 150px;
+        height: 150px;
         margin: 20px;
         border: 5px solid greenyellow;
         border-radius: 10px;
@@ -86,14 +90,17 @@
         
       }
       .val-fieldset{
+          width: 100%;
           display: flex;
           flex-direction: column;
           justify-content: space-around;
           margin-bottom: 30px;
       }
-      button{
+      .sign-up{
           background-color: skyblue;
+          width: 100px;
       }
+      
       .line{
           width: 80%;
       }
@@ -112,9 +119,77 @@
           margin-bottom: 20px;
           margin-top: 10px;
       }
-      
-      
+      .social-media img{
+          width: 30px;
+          height: 30px;
+      }
+
+
+                        /*****************************Screen Break points***************************************/
+                        /*****************************Screen break point at 540px***************************************/
+        
+          @media screen and (min-width: 540px) {
+              .navbar-nav{
+                  font-size: 20px;
+              }
+              
+
+            .main-heading{
+                font-size: 50px;
+                border: none;
+            }
+            .images-container img{
+                width: 170px;
+                height: 170px;
+            }
+
+
+            .page-footer {
+                  font-size: 1.2rem;
+                  background-color: black;
+                  color: white;
+              }
+              
+        }
+              
+                        
+
+    
 
 
 
     
+                        /*****************************Screen break point at 900px***************************************/
+          
+                        @media screen and (min-width: 900px) { 
+                        .val-fieldset{
+                            font-size: 20px;
+                            display: block;
+                            margin-left: auto;
+                            margin-right: auto;
+                            
+                        }
+                        html{
+                            border: 2px solid red;
+                            width: 1400px;
+                            display: block;
+            
+                            margin-left: auto;
+                            margin-right: auto;
+                        }
+
+                        .page-header img{
+                            width: 170px;
+                            height: 170px;
+                        }
+                        .images-container img{
+                            width: 200px;
+                            height: 200px;
+                        }
+                        .social-media img{
+                            width: 50px;
+                            height: 50px;
+                            padding: 10px;
+                        }
+
+                    }         
