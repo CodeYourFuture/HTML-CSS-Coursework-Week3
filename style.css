@@ -2,7 +2,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Zen+Loop:ital@1&display=swap");
 
 body {
-  /* background-color: rgb(69, 123, 157); */
   font-family: "Zen Loop", cursive;
   background: #232323;
   color: #cdcdcd;
@@ -12,13 +11,14 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* align-content: flex-end;
-  flex-wrap: wrap;
-  flex-direction: column; */
 }
 
 .logo img {
-  max-width: 20%;
+  max-width: 15%;
+}
+
+.logo h1 {
+  font-size: 1.5rem;
 }
 
 #menuToggle {
@@ -57,9 +57,7 @@ body {
   -webkit-touch-callout: none;
 }
 
-/*
- * Just a quick hamburger
- */
+/* hamburger */
 #menuToggle span {
   display: block;
   width: 33px;
@@ -98,9 +96,7 @@ body {
   font-size: 22px;
 }
 
-/*
- * And let's slide it in from the left
- */
+/* slide it in from the left */
 #menuToggle input:checked ~ ul {
   transform: none;
 }
@@ -125,7 +121,7 @@ body {
   padding: 1.5em;
 }
 
-.order-button {
+.btn {
   border: none;
   outline: 0;
   display: inline-block;
@@ -136,11 +132,11 @@ body {
   cursor: pointer;
   margin: 1.5em;
 }
-.order-button a{
-    text-decoration: none;
-    font-family: "Avenir Next", "Avenir", sans-serif;
+a {
+  text-decoration: none;
+  font-family: "Avenir Next", "Avenir", sans-serif;
 }
-.order-button:hover {
+.btn:hover {
   background-color: rgb(180, 44, 44);
   color: rgb(238, 232, 232);
 }
