@@ -74,3 +74,20 @@ h1{
     height: 45%;
 }
 
+/* Footer */
+
+footer {
+    text-align: center;
+}
+
+footer img {
+    width: 30px;
+}
+
+.footer_icon {
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+    padding-left: 15px;
+}
+
