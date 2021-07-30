@@ -1,1 +1,65 @@
-/*  Add your styling here */
+:root {
+  --main-background-color: #fff;
+  --main-text-color: black;
+
+  background-color: var(--main-background-color);
+  color: var(--main-text-color);
+
+  --highlight-font: "Bebas Neue", Arial; /* grabs attention but not good for paragraphs */
+  --normal-font: "Roboto", Arial; /* all around font */
+}
+
+/* 
+
+0.1 WHOLE PAGE  
+
+1.0 HEADER
+  1.1 HEADER CONTENT
+
+
+
+*/
+
+/* 0.1 WHOLE PAGE */
+.hidden-on-mobile {
+  opacity: 0;
+  display: none;
+}
+
+/* 1.0 HEADER */
+.header-content {
+  display: flex;
+  width: 100%;
+  height: 200px;
+  justify-content: space-between;
+  align-content: space-between;
+  flex-direction: column;
+  background-color: #eee; /* little darker than our #fff background */
+}
+
+/* HEADER CONTENT */
+.header-logo {
+  position: absolute;
+  width: 100px;
+  height: auto;
+  padding: 3em 0 0 1em; /* pushes the element away from the left wall */
+}
+
+.header-text {
+  font-size: 1.3rem;
+  text-align: right;
+  justify-content: flex-end;
+  align-self: flex-end;
+  padding: 0 0.5em 0.5em 0;
+  font-family: var(--highlight-font);
+}
+
+.header-hamburger {
+  position: absolute;
+  width: 30px;
+  height: auto;
+  align-self: flex-end;
+  justify-content: baseline;
+  padding: 1em 1em 0 0; /* adds some space to the top and right */
+  cursor: pointer;
+}
