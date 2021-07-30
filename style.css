@@ -9,115 +9,39 @@ body {
 
 .logo {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
+  justify-content: space-between;
 }
 
 .logo img {
-  max-width: 15%;
+  max-width: 35%;
 }
 
 .logo h1 {
   font-size: 1.5rem;
 }
 
-#menuToggle {
-  display: block;
-  position: relative;
-  top: 50px;
-  z-index: 1;
-  -webkit-user-select: none;
-  user-select: none;
-  font-family: "Avenir Next", "Avenir", sans-serif;
-}
-
-#menuToggle a {
-  text-decoration: none;
-  color: #232323;
-  transition: color 0.3s ease;
-}
-
-#menuToggle a:hover {
-  color: tomato;
-}
-
-#menuToggle input {
-  display: block;
-  width: 40px;
-  height: 32px;
-  position: absolute;
-  top: -7px;
-  left: -5px;
-
-  cursor: pointer;
-
-  opacity: 0; /* hide this */
-  z-index: 2; /* and place it over the hamburger */
-
-  -webkit-touch-callout: none;
-}
-
-/* hamburger */
-#menuToggle span {
+.ham-line {
+  background-color: #fff;
   display: block;
   width: 33px;
   height: 4px;
   margin-bottom: 5px;
-  position: relative;
-
-  background: #cdcdcd;
   border-radius: 3px;
-
-  z-index: 1;
-
-  transform-origin: 4px 0px;
-
-  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
-    background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
 }
 
-#menu {
-  position: absolute;
-  width: 50%;
-  margin: -100px 0 0 -50px;
-  padding: 50px;
-  padding-top: 105px;
-  background: #ededed;
-  list-style-type: none;
-  -webkit-font-smoothing: antialiased;
-  /* to stop flickering of text in safari */
-  transform-origin: 0% 0%;
-  transform: translate(-100%, 0);
-  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
-}
-
-#menu li {
-  padding: 10px 0;
-  font-size: 22px;
-}
-
-/* slide it in from the left */
-#menuToggle input:checked ~ ul {
-  transform: none;
+.nav-bar {
+  display: none;
 }
 
 /* HERO */
-.hero {
-  background-image: url("https://images.unsplash.com/photo-1601409751311-cbecfe223af4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2100&q=80");
-  background-position: bottom;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 50%;
-  width: 100%;
-}
 
 .hero-text {
-  background: rgba(0, 0, 0, 0.2);
-  backdrop-filter: blur(4px);
-  max-height: 50%;
-  max-width: 100%;
-  text-align: center;
-  color: rgb(0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  color: rgb(131, 127, 127);
   padding: 1.5em;
 }
 
@@ -139,4 +63,26 @@ a {
 .btn:hover {
   background-color: rgb(180, 44, 44);
   color: rgb(238, 232, 232);
+}
+
+.hero-image {
+  width: 100%;
+  height: auto;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card-image {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+.card {
+  width: 45%;
+  border-radius: 5px;
+ margin-top: 10px;
 }
