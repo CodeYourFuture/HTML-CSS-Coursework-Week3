@@ -18,12 +18,15 @@ body {
     margin: 20px;    
 }
 
-.container {
+.container, .footer-container {
     display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+    flex-direction: column;   
     margin: 10px;
     padding-top: 15px;    
+}
+
+.container {
+    align-items: flex-end;
 }
 
 .toggle {
@@ -55,11 +58,9 @@ h1{
     padding: 10px;
 }
 
-.cake-container {
+.cake-container, .showcake-container {
     display: flex;
     flex-direction: row ;
-   
-    /* order: 1; */
     flex-wrap: wrap;
     justify-content: space-around;
     padding:15px;
@@ -72,6 +73,7 @@ h1{
     width: 45%;
     margin: 5px;
     height: 45%;
+   
 }
 
 /* Footer */
@@ -91,3 +93,59 @@ footer img {
     padding-left: 15px;
 }
 
+@media screen and (min-width: 540px) {
+    .show-cake {
+            
+            align-items: center;
+    }
+    footer p {
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .toggle {
+        display: none;
+    }
+    .container, .nav-container, .welcome-container {
+        display: flex;
+        justify-content: flex-end;
+        
+    }
+    .container {
+        font-size: 20px;
+    }
+    .nav-container {
+        
+        align-items: center;
+        background-color: #ecc496;
+        width: 96%;
+        height: 60px;
+        margin-top: 10px;        
+    }
+    ul{
+        margin: 0;
+        padding: 0;
+    }
+    li {
+        text-transform: uppercase;
+    }
+    nav li{
+        display: inline;
+        padding: 0 20px 0 20px;  
+    }
+    .welcome-container {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .cakes-container , .footer-container{
+        display: flex;
+        flex-direction: row;  
+        justify-content: center;    
+        
+    }
+    .cakes-container img {
+        width: 200px;
+        height: 200px;
+    }
+}
