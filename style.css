@@ -16,7 +16,6 @@ header{
     justify-content:space-between;
     background-color: #F0EFEB;
     width: 100%;
-    
     margin:0;
 }
 
@@ -26,24 +25,25 @@ header{
     border-radius: 4%;
     margin-top: auto;
     margin-bottom: auto;
-    margin-left: 0.2rem;
     border: 2px solid #FEC89A;
 }
 h1{
     font-size: 1.3rem;
 }
-.menu-p{
+.para-box{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
     margin-right: 1rem;
 }
 .menu-icon{
     width: 15%;
     border-radius: 15%;
-    float: right;
     margin-top: 0.5rem;
     margin-bottom: 0;
 }
 header p{
-    float: right;
     text-align: right;
     font-size: 1rem;
 
@@ -52,6 +52,13 @@ header p{
     background-color: #FCD5CE;
     height: 3rem;
    
+}
+button{
+    background-color: #FEC89A;
+    border: 1px solid #e79d96;
+    border-radius: 6%;
+    width: 5rem;
+    padding: 0.3rem 0.7rem;
 }
 .hero-img{
     width: 100%;
@@ -63,6 +70,9 @@ header p{
 .cake-img{
     width: 100%;
 }
+.cake-img:hover{
+    transform: scale(1.03);
+}
 footer{
     font-size: 0.9rem;
 } 
@@ -73,7 +83,10 @@ footer{
 .nav-link{
     display: flex;
     justify-content:space-around;
-    padding-top: 1rem;
+    align-items: center;
+    height: 3rem;
+    
+
 }
 .nav-link a{
     text-decoration: none;
@@ -88,24 +101,43 @@ footer p{
     margin-bottom: 0;    
 }
 
-/* media queries */
+/* media query for default mobile screen*/
 @media screen and (max-width:549px){
     .nav-bar{
         display: none;
     }
 }
+
+/* Media query for tablet screen */
 @media screen and (min-width:550px){
     .menu-icon{
         display: none;
     }
-  
-    
-    logo{
-        width: 20%;
+   .hero{
+       margin: 3%;
+   }
+    .logo{
+        width: 15%;
     
     }
-    p{
+    
+   header p{
         font-size: 1.5rem;
+        margin-top: 2rem;
+    }
+    .nav-bar{
+        margin: 2% 8%;
+        
+    }
+    button:hover{
+        background-color: #FFB5A7;
+    }
+    .description{
+        font-size: 1.2rem;
+    }
+    footer{
+        font-size: 1rem;
+        background-color: #FBC4AB;
         margin-top: 2rem;
     }
     .img-container{
@@ -114,11 +146,56 @@ footer p{
     }
     .cake-img{
         width: 44%;
-        margin: 1rem;
+        margin: 3%;
     }
+
 }
 
-/* desktop image hover effect
-img:hover{
-    transform: scale(1.03);
- } */
+
+ /* Media query to desktop screen */
+@media screen and (min-width:900px) {
+    .logo{
+        width: 7%;
+    }
+    header p{
+        font-size: 2rem;
+    }
+    nav .nav-link{
+        margin-left: 30%;
+        justify-content: space-evenly;
+    
+    }
+    button{
+        font-size: 1rem;
+    }
+ .hero{
+     display: flex;
+     flex-direction: row-reverse;
+     justify-content: space-between;
+     margin: 8%;
+
+ }
+ .hero-img{
+     width: 55%;
+ }
+.description{
+    width: 40%;
+    text-align: right;
+    font-size: 1.5rem;
+}
+h1{
+    font-size: 3rem;
+}
+.img-container{
+    display: flex;
+    justify-content:space-between;
+    margin: 8%;
+}
+.cake-img{
+    width: 20%;
+    margin: 0;
+}
+footer{
+    font-size: 1.3rem;
+}
+}
