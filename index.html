@@ -1,16 +1,111 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Responsive Cake webpage</title>
-    <!-- Add a link to your css file here -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" href="style.css">
+<title>Responsive Cake webpage</title>
+<!-- Add a link to your css file here -->
 </head>
-
+ 
 <body>
-    <!-- Add your markup here -->
+<!-- The overlay -->
+<div id="myNav" class="overlay">
+
+    <!-- Button to close the overlay navigation -->
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  
+    <!-- Overlay content -->
+    <div class="overlay-content">
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Clients</a>
+      <a href="#">Contact</a>
+    </div>
+  
+  </div>
+  
+  <!-- Use any element to open/show the overlay navigation menu -->
+  <span onclick="openNav()">open</span>
+
+
+  <script>
+      /* Open when someone clicks on the span element */
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+/* Close when someone clicks on the "x" symbol inside the overlay */
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+  </script>
+
+
+<!-- Add your markup here -->
+<section class="header_section">
+    <div class="header_container">
+        <div class="logo_of_cake">
+            <image src="https://images.unsplash.com/photo-1579306194872-64d3b7bac4c2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MjF8fHxlbnwwfHx8fA%3D%3D&w=1000&q=80 "></image>
+        </div>
+
+        <div class="header_txt">
+            <p>The best cakes in town delivered to your door</p>   
+        </div>
+    </div>
+   
+    
+    <!-- <div class="menu">
+        <ui>
+            <li><a href="">HOME</a></li>  |
+            <li><a href="">CATERING</a></li>    |
+            <li><a href="">CAKES</a></li>   |
+            <li><a href="">OCASSIONS</a></li>   | 
+            <li><a href="">ABOUT US</a></li>   
+        </ui>
+    </div> -->
+
+</section>
+<section class="flex-container">
+    <div class="container">
+        <h2>WELCOME</h2> <br><br>
+        <p>If you are in the mood to have some sweets and you don't have time this is the place to eat and order. 
+            The selection is amazing and you can not decide, Hard to make choice for what to take home with u as there are so much delicious cakes and doughnut to grab. But as soon as you take a bite you just realize how soft and delicious they are and you could spend the whole day just eating them
+            your expert team of chefs and patisserie experts from across the country are constantly innovating, reformulating and re-engineering traditional and modern recipes to create the 
+            perfect tasting Eggless savories that is loved by all ages and enjoyed by everyone in the family!</p>
+    </div>
+    <div class="photos">
+        <image src="https://food-images.files.bbci.co.uk/food/recipes/funfetti_cake_49993_16x9.jpg"></image>
+    </div>
+</section>
+
+
+<section class="bakery_container">
+
+        <div class="bakery_container-group">
+            <div class="test" >
+                <img class="image-container" src="https://www.ruchiskitchen.com/wp-content/uploads/2015/12/Eggless-Pineapple-pastry3.jpg">               
+                 <img class="image-container" src="https://biancazapatka.com/wp-content/uploads/2021/03/donuts-720x1008.jpg">
+            </div>
+            <div class="test" > 
+                <img class="image-container"   src="https://www.seriouseats.com/thmb/p1UTiC0PEeji0tXB-xvxcYc5j_A=/1500x1125/filters:fill(auto,1)/__opt__aboutcom__coeus__resources__content_migration__serious_eats__seriouseats.com__recipes__images__2014__11__BakedOccasions_BirthdayCake-02af7038d93647d9a7339f0802b03079.jpg">
+                <img class="image-container"  src="https://veganfoodandliving-1321f.kxcdn.com/wp-content/uploads/2020/09/vegan-pinata-cake-recipe.jpg">
+            </div>
+        </div> 
+
+</section>
+<section  >
+    <div class="footer">
+        <p>Join us on</p> 
+        <div class="footer-social-links">
+            <a href=""><image src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/1024px-Instagram_icon.png"></image></a> 
+
+            <a href=""><image src="https://facebookbrand.com/wp-content/uploads/2019/04/f_logo_RGB-Hex-Blue_512.png?w=512&h=512"></image></a>  
+            <a href=""><image src="https://image.flaticon.com/icons/png/512/124/124021.png"></image></a>  
+        </div> 
+
+    </div>
+    <p class="copyright">&copy copyrights Krishan Kumar2021</p>
+</section>
+
 </body>
 
-</html>
+</html> 
