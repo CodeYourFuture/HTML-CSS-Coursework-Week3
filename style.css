@@ -1,1 +1,31 @@
 /*  Add your styling here */
+* {
+    font-family: sans-serif;
+    letter-spacing: 0.1em;
+}
+
+#logo{
+    width: 15%;
+    height:15%;
+    padding 1%;
+  }
+
+  #motto{
+      font-size: 0.5em;
+      text-align: right;
+  }
+  
+  .card-img-top {
+        display: flex;
+      flex-direction: re;
+        
+  }
+
+  .container-img{
+      display:gir;
+
+  }
+  @media only screen and (max-width: 540px) 
+{
+     
+}
