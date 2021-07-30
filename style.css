@@ -1,33 +1,33 @@
 body {
   /* font-family: ; */
-  border: 1px solid green;
+  /* border: 1px solid green; */
 }
 
 /* header and nav bar styling */
 
 header {
   width: 100%;
-  height: 20rem;
+  /* height: 20rem; */
   display: flex;
   flex-direction: column;
   margin: 10px 0px;
   align-items: center;
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 
-.headstrip {
+.head-strip {
   display: flex;
   height: 3rem;
   width: 90%;
   /* border: 1px solid black; */
   justify-content: flex-end;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
   border-bottom: 1px solid black;
 }
 
-.headstrip img {
-  height: 70%;
-  width: 2.1rem;
+.head-strip img {
+  height: 60%;
+  width: 1.7rem;
   margin-top: 0.5rem;
   margin-left: 0.5rem;
 }
@@ -36,20 +36,21 @@ header {
   display: flex;
   justify-content: space-between;
   flex-direction: row-reverse;
-  height: 17rem;
+  height: 15rem;
   width: 90%;
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 
 .head-image {
   height: 100%;
-  width: 50%;
+  max-width: 50%;
 }
 
 .head-image img {
   max-width: 100%;
-  max-height: 100%;
+  height: 80%;
   border-radius: 0.5rem;
+  margin-left: 10%;
 }
 
 .head-name {
@@ -58,19 +59,47 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
   font-family: Papyrus;
 }
 
 .head-name h2 {
+  display: flex;
   margin-bottom: 0rem;
   max-width: 90%;
+  font-size: 1.7rem;
 }
 
 .head-name h3 {
-  padding: 1rem;
+  display: flex;
+  padding: 0.5rem;
   text-align: center;
+  font-size: 1.3rem;
   margin-top: 0rem;
+}
+
+.nav-bar {
+  display: none;
+  width: 100%;
+  min-height: 50%;
+  align-items: center;
+}
+
+.nav-bar ul {
+  display: flex;
+  width: 100%;
+  height: 50%;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style: none;
+}
+
+.nav-item {
+  display: flex;
+  font-size: 1.6rem;
+  text-decoration: none;
+  font-family: papyrus;
+  border-top: 0.3rem solid black;
+  border-bottom: 0.3rem solid black;
 }
 
 /* Main section and images */
@@ -80,19 +109,19 @@ header {
   height: 30rem;
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
 }
 
 .information h2 {
   font-family: papyrus;
   margin-bottom: 0rem;
-  margin-top: 1rem;
+  margin-top: 0rem;
   display: flex;
 }
 
 .hi-text {
+  font-size: 1.2rem;
   display: flex;
-  padding: 1rem;
+  padding: 0rem 1.5rem;
 }
 
 .greetings-container {
@@ -101,7 +130,6 @@ header {
   max-width: 100%;
   height: 50%;
   align-items: center;
-  margin-top: 1rem;
 }
 
 .info-image-container {
@@ -113,7 +141,6 @@ header {
 
 .info-image {
   display: flex;
-  /* height: auto; */
   max-width: 100%;
   height: 100%;
   border-radius: 0.5rem;
@@ -130,9 +157,25 @@ header {
   flex-wrap: wrap;
   align-content: flex-start;
   width: 100%;
-  height: 26rem;
   margin-top: 2rem;
-  border: 1px solid green;
+  /* border: 1px solid green; */
+}
+
+.other-bakes {
+  display: none;
+  width: 100%;
+  margin-top: 2rem;
+  height: 18.4rem;
+}
+
+.crepes,
+.cake-box,
+.sourdough,
+.gluten-free {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 50%;
 }
 
 .birthday,
@@ -145,7 +188,8 @@ header {
   width: 50%;
 }
 
-.cake-types p {
+.cake-types p,
+.other-bakes p {
   margin: 0.5rem auto;
   font-size: 1.3rem;
   font-family: papyrus;
@@ -154,9 +198,9 @@ header {
 .cake-pic {
   display: flex;
   height: 80%;
-  max-width: 80%;
+  max-width: 70%;
   border-radius: 0.5rem;
-  margin-left: 1rem;
+  margin-left: 1.7rem;
 }
 
 .footer {
@@ -165,30 +209,45 @@ header {
   text-align: center;
   margin: 1rem 0rem;
   max-width: 100%;
-  border: 1px solid green;
+  /* border: 1px solid green; */
+}
+
+.media-icons {
+  display: flex;
+  justify-content: center;
+}
+
+.soc-media {
+  height: 1.6rem;
+  width: 1.6rem;
+  margin: 0.5rem 0.3rem;
 }
 
 .footer h4 {
   margin: 0.8rem 0rem 0rem 0rem;
 }
 
-@media screen and (min-width: 400px) {
-  .cake-types {
-    height: 35rem;
-    width: 100%;
-  }
-
-  .birthday,
-  .wedding,
-  .donuts,
-  .muffins {
-    max-height: 17.5rem;
-  }
-}
-
 @media screen and (min-width: 540px) {
+  .head-strip {
+    height: 4rem;
+  }
+
+  .head-strip img {
+    width: 2.2rem;
+    margin-top: 1rem;
+    margin-left: 2rem;
+  }
+
+  .head-img-name {
+    height: 20rem;
+  }
+
+  .head-image img {
+    margin-left: 4rem;
+  }
+
   .cake-types {
-    height: 45rem;
+    height: auto;
     width: 100%;
   }
 
@@ -196,7 +255,11 @@ header {
   .wedding,
   .donuts,
   .muffins {
-    max-height: 22.5rem;
+    max-height: 50%;
+  }
+
+  .cake-pic {
+    margin-left: 2.4rem;
   }
 
   .information {
@@ -220,5 +283,69 @@ header {
   .information h2,
   .occasions {
     font-size: 2rem;
+  }
+
+  .information p {
+    margin: 2rem;
+  }
+
+  .footer h4 {
+    font-size: 1.3rem;
+  }
+
+  .soc-media {
+    height: 2rem;
+    width: 2rem;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .head-strip,
+  .head-image {
+    display: none;
+  }
+
+  .head-img-name {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .head-name {
+    height: 50%;
+    padding-top: 2rem;
+  }
+
+  .nav-bar {
+    display: flex;
+  }
+
+  .information {
+    flex-direction: row-reverse;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+
+  .info-image-container {
+    max-width: 45%;
+    margin-top: 1rem;
+  }
+
+  .greetings-container {
+    max-width: 50%;
+  }
+
+  .greetings-container p {
+    margin-top: 1rem;
+  }
+
+  .cake-types {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  .other-bakes {
+    display: flex;
   }
 }
