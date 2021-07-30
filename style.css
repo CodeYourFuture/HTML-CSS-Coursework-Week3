@@ -1,1 +1,27 @@
 /*  Add your styling here */
+/* Overall styles */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+html, body {
+    box-sizing: border-box;
+    font-family: "montserrat","roboto", sans-serif;
+    font-size: 16px;
+    height: 100vh;
+}
+
+/* Header styles */
+
+/* Navbar styles */
+
+/* Main section styles */
+
+/* Image styles */
+
+.cakes {
+    width: 400px;
+    height: 400px;
+}
+
+/* Footer styles */
