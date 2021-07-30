@@ -36,3 +36,16 @@ body {
 nav {
     display: none;
 }
+
+/* Main */
+
+h1{
+    padding: 10px;
+    margin-top:30px;
+}
+
+.content p {
+    word-spacing: 10px;
+    line-height: 1.5rem;
+    padding: 7px;
+}
