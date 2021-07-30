@@ -112,7 +112,9 @@ footer p{
 
 
 @media screen and (min-width: 540px) {
-
+  header p{
+    width: 183%;
+  }
   nav {
   display: flex;
   margin-left: 0;
@@ -134,6 +136,9 @@ footer p{
 }
   .hamburger {
   display: none;
+}
+a{
+  color: #5d1d6b;
 }
 
 }
