@@ -8,7 +8,7 @@ body {
 .header {
     display: flex;
     justify-content: space-between;
-    background-color: #e0dcdd;
+    background-color: #ece4db;
     padding: 15px;
 }
 .logo {
@@ -29,4 +29,10 @@ body {
 
 .toggle {
     width: 15%;
+}
+
+
+/* NavBar */
+nav {
+    display: none;
 }
