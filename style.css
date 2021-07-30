@@ -1,7 +1,7 @@
 /*  Add your styling here */
-
-.page-header{
-    background-image: url(https://qph.fs.quoracdn.net/main-qimg-37e0e2989bb3098c2385d774fa503749);
+ 
+   .page-header{
+    background-color: aquamarine;
     background-repeat: no-repeat;
     background-size: contain;
     width: 100%;
@@ -16,16 +16,39 @@
         color: black;
         text-align: center;
         font-weight: 600;
+        text-shadow: -3px 3px 0px silver;
         border: 2px solid plum;
     }
+    .page-header p{
+        margin-right: 20px;
+        margin-left: auto;
+        text-align: right;
+        font-style: italic;
+        font-weight: 600;
+        text-shadow: -1px 1px 0px silver;
+    }
+    .page-header img{
+        margin-left: 20px;
+        border: 2px solid plum;
+        border-radius: 3px;
+    }
 
-    .sub-heading{        
-        background-color: aquamarine;
+    .sub-heading{    
+        margin-left: 10px;    
+        margin-right: auto;
+        background-color: cornflowerblue;
         background-repeat: no-repeat;
         
     }
     main{
-        background-color: silver;
+        background-color: whitesmoke;
+    }
+    .hero p{
+        margin-left: 10px;
+        margin-right: 10px;
+        font-size: 1.2rem;
+        font-weight: 400;
+        word-spacing: 0.5em;
     }
     .hero-image{
         width: 100%;
@@ -60,7 +83,37 @@
         background: #f0f0f0;
         border: 3px solid white;
         
+        
       }
+      .val-fieldset{
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          margin-bottom: 30px;
+      }
+      button{
+          background-color: skyblue;
+      }
+      .line{
+          width: 80%;
+      }
+      .footer-text{
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-evenly;
+      }
+      .facebook-icon, .instagram-icon, .twitter-icon{
+          margin-left: 5px;
+          margin-right: 5px;
+      }
+      .social-media{
+          display: flex;
+          justify-content: center;
+          margin-bottom: 20px;
+          margin-top: 10px;
+      }
+      
+      
 
 
 
