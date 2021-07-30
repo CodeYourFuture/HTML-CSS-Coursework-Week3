@@ -18,11 +18,14 @@
 
 1.0 HEADER
   1.1 HEADER CONTENT
+  1.2 HEADER NAV
 
 2.0 MAIN CONTENT
   2.1 HERO IMAGE
 
 3.0 FOOTER
+
+4.0 BREAKPOINTS
 
 */
 
@@ -67,6 +70,7 @@ h6 {
   justify-content: flex-end;
   align-self: flex-end;
   padding: 0 0.5em 1em 0;
+  max-width: 300px; /* so the text aligns on two times */
 }
 
 .header-hamburger {
@@ -76,6 +80,38 @@ h6 {
   align-self: flex-end;
   padding: 1em 1em 0 0; /* adds some space to the top and right */
   cursor: pointer;
+}
+
+/* 1.2 HEADER NAV */
+
+.header-nav {
+  position: absolute;
+  padding-top: 2em;
+  padding-left: 0.5em;
+}
+
+.header-nav ul {
+  display: flex;
+  gap: 2em;
+  background-color: var(--darker-background-color);
+  padding: 3em;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+.header-nav a {
+  background-color: #c4c4c4;
+  padding: 0.3em 2em;
+  color: white;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+.header-nav a:hover,
+.header-nav a:focus {
+  color: black;
+  background-color: white;
+  transition: all 300ms ease-out;
 }
 
 /* 2.0 MAIN CONTENT */
@@ -99,6 +135,7 @@ h6 {
   height: auto;
   margin: 0.5em; /* adds some white space above and below the element */
   align-self: center;
+  max-width: 400px;
 }
 
 /* 2.2 GALLERY */
@@ -119,7 +156,12 @@ h6 {
   cursor: pointer;
 }
 
-/* FOOTER */
+.gallery-item img:hover {
+  opacity: 0.7;
+  transition: all 300ms ease-in;
+}
+
+/* 3.0 FOOTER */
 .page-footer {
   background-color: var(--darker-background-color);
   height: 100%;
@@ -132,4 +174,69 @@ h6 {
   opacity: 0.5;
   text-align: center;
   padding-top: 2em; /* adds some space between the items */
+}
+
+/* 4.0 BREAKPOINTS */
+
+/* 4.1 MEDIUM  */
+@media (min-width: 540px) {
+  .header-logo {
+    width: 150px;
+    padding: 1.5em 0 0 1em;
+  }
+  .header-hamburger {
+    width: 40px;
+  }
+  .header-text {
+    font-size: 1.6rem;
+  }
+  .gallery-container {
+    font-size: 1.5rem;
+  }
+  .gallery-item img {
+    width: 230px;
+  }
+  .page-footer {
+    font-size: 1.3rem;
+  }
+}
+
+/* 4.2 LARGE */
+@media (min-width: 900px) {
+  .hidden-on-mobile {
+    display: initial;
+  }
+  .header-hamburger {
+    display: none;
+  }
+  .header-text {
+    max-width: 900px;
+  }
+  .main-content {
+    flex-direction: row-reverse;
+    text-align: right;
+    width: 95%;
+    padding-top: 4em;
+  }
+  .main-content > h2 {
+    position: absolute;
+  }
+  .main-content-text {
+    padding-top: 3em;
+    font-size: 1.3rem;
+  }
+  .hero-img {
+    align-self: flex-start;
+  }
+  .gallery-item img {
+    padding-top: 2em;
+    width: 185px;
+  }
+  .page-footer nav > ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 6em;
+    font-size: 1.7rem;
+  }
 }
