@@ -9,6 +9,7 @@ html, body {
     font-family: "montserrat","roboto", sans-serif;
     font-size: 16px;
     height: 100vh;
+    width: 550px;
 }
 
 /* Header styles */
@@ -21,11 +22,36 @@ html, body {
 
 /* Main section styles */
 
+.hero {
+    width: 100%;
+    height: 300px;
+    background: url("images/hero_cake.jpg") no-repeat center center/cover;
+    margin: 5% 0;
+}
+
+.welcome-heading {
+    width: 90%;
+}
+
+.welcoming-text {
+    width: 90%;
+}
+
 /* Image styles */
 
+#cakes-selection {
+    width: 100%;
+    height: 600px;
+    display: flex;
+}
+
 .cakes {
-    width: 400px;
-    height: 400px;
+    width: 200px;
+    height: 200px;
+    flex-wrap: wrap;
+    flex: 1;
+    justify-content: space-around;
 }
 
 /* Footer styles */
+
