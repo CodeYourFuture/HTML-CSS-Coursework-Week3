@@ -1,5 +1,6 @@
 /*  Add your styling here */
- 
+
+ /*Syling page header*/
    .page-header{
     background-color: aquamarine;
     background-repeat: no-repeat;
@@ -8,7 +9,16 @@
     height: 300px;
     object-fit: cover;
     }
+    .page-header p{
+        margin-right: 20px;
+        margin-left: auto;
+        text-align: right;
+        font-style: italic;
+        font-weight: 600;
+        text-shadow: -1px 1px 0px silver;
+    }
 
+    /*Styling page's main heading*/
     .main-heading{
         font-size: 40px;
         font-style: italic;
@@ -19,14 +29,8 @@
         text-shadow: -3px 3px 0px silver;
         border: 2px solid plum;
     }
-    .page-header p{
-        margin-right: 20px;
-        margin-left: auto;
-        text-align: right;
-        font-style: italic;
-        font-weight: 600;
-        text-shadow: -1px 1px 0px silver;
-    }
+
+   /*Styling page logo*/
     .page-header img{
         width: 150px;
         height: 150px;
@@ -35,6 +39,7 @@
         border-radius: 50%;
     }
 
+ /*Styling page sub heading */
     .sub-heading{    
         margin-left: 10px;    
         margin-right: auto;
@@ -42,9 +47,13 @@
         background-repeat: no-repeat;
         
     }
+
+     /*Setting background color of the whole main content */
     main{
         background-color: whitesmoke;
     }
+    
+    /*Styling paragraph of sub heading*/
     .hero p{
         margin-left: 10px;
         margin-right: 10px;
@@ -52,6 +61,8 @@
         font-weight: 400;
         word-spacing: 0.5em;
     }
+
+      /*Styling bigger image of page under paragraph*/
     .hero-image{
         width: 100%;
         height: auto;
@@ -60,12 +71,16 @@
     h3{
         text-align: center;
     }
+
+      /*Styling Images container with flex box*/
     .images-container{
         margin-top: 10px;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
     }
+
+      /*Styling each image of the images container*/
     .images-container img{
         width: 150px;
         height: 150px;
@@ -73,6 +88,8 @@
         border: 5px solid greenyellow;
         border-radius: 10px;
     }
+
+      /*Styling sign up form*/
     .news-letter{
         margin-top: 40px;
     }
@@ -96,19 +113,26 @@
           justify-content: space-around;
           margin-bottom: 30px;
       }
+
+        /*Styling submit button of the form*/
       .sign-up{
           background-color: skyblue;
           width: 100px;
       }
-      
+
+        /*Styling horizontal line*/
       .line{
           width: 80%;
       }
+
+        /*Styling footer text*/
       .footer-text{
           display: flex;
           flex-wrap: wrap;
           justify-content: space-evenly;
       }
+
+        /*Styling footer social media icons*/
       .facebook-icon, .instagram-icon, .twitter-icon{
           margin-left: 5px;
           margin-right: 5px;
@@ -119,6 +143,8 @@
           margin-bottom: 20px;
           margin-top: 10px;
       }
+
+       /*Styling footer social media icons size*/
       .social-media img{
           width: 30px;
           height: 30px;
@@ -179,8 +205,8 @@
                         }
 
                         .page-header img{
-                            width: 170px;
-                            height: 170px;
+                            width: 175px;
+                            height: 175px;
                         }
                         .images-container img{
                             width: 200px;
