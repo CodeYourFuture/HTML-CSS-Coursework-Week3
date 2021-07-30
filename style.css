@@ -7,6 +7,8 @@
 
   --highlight-font: "Bebas Neue", Arial; /* grabs attention but not good for paragraphs */
   --normal-font: "Roboto", Arial; /* all around font */
+
+  font-family: var(--normal-font);
 }
 
 /* 
@@ -16,14 +18,23 @@
 1.0 HEADER
   1.1 HEADER CONTENT
 
-
+2.0 MAIN CONTENT
+  2.1 HERO IMAGE
 
 */
 
 /* 0.1 WHOLE PAGE */
 .hidden-on-mobile {
-  opacity: 0;
-  display: none;
+  display: none; /* removes the element from the flow of the page */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--highlight-font);
 }
 
 /* 1.0 HEADER */
@@ -37,7 +48,7 @@
   background-color: #eee; /* little darker than our #fff background */
 }
 
-/* HEADER CONTENT */
+/* 1.1 HEADER CONTENT */
 .header-logo {
   position: absolute;
   width: 100px;
@@ -51,7 +62,6 @@
   justify-content: flex-end;
   align-self: flex-end;
   padding: 0 0.5em 0.5em 0;
-  font-family: var(--highlight-font);
 }
 
 .header-hamburger {
@@ -62,4 +72,27 @@
   justify-content: baseline;
   padding: 1em 1em 0 0; /* adds some space to the top and right */
   cursor: pointer;
+}
+
+/* 2.0 MAIN CONTENT */
+.main-content {
+  width: 90%;
+  margin: 0 auto; /* aligns the elements to the center of the screen */
+  display: flex;
+  flex-direction: column;
+  font-size: 3rem;
+  padding-top: 1em; /* pushes the element down from the top */
+}
+
+.main-content-text {
+  margin-top: 2em; /* pushes the element down from the top */
+  font-size: 1rem;
+}
+
+/* 2.1 HERO IMAGE  */
+.hero-img {
+  width: 100%;
+  height: auto;
+  margin: 0.5em; /* adds some white space above and below the element */
+  align-self: center;
 }
