@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <title>Responsive Cake webpage</title>
+    <!-- style sheets -->
+    <link rel="stylesheet" href="resetstyle.css" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- meta info -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Responsive Cake webpage</title>
-    <link rel="stylesheet" href="resetstyle.css" />
-    <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
-    <header class="page-header">
+    <header id="page-header" class="page-header">
       <section id="header-content">
         <img id="header-image" src="" />
         <img id="header-hamburger" src="" />
@@ -18,7 +20,7 @@
         <!-- header nav -->
         <aside id="header-nav-container">
           <nav id="top-bar-nav">
-            <ul>
+            <ul id="top-bar-nav-list">
               <li><a href="">Home</a></li>
               <li><a href="">Cakes</a></li>
               <li><a href="">Orderin</a></li>
@@ -29,5 +31,43 @@
         </aside>
       </section>
     </header>
+    <main id="main-content">
+      <section id="top-section-content">
+        <img id="top-section-img" src="" />
+        <h1 id="main-header">Welcome</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque amet
+          dolorum debitis neque delectus, aperiam ratione ex inventore
+          consequatur, dolores nobis voluptatem repudiandae iste vero sed est
+          minima, odio doloribus.
+        </p>
+      </section>
+      <section id="gallery-container">
+        <ul id="gallery-list">
+          <li>
+            <article><img id="gallery-image-1" src="" /></article>
+          </li>
+          <li>
+            <article><img id="gallery-image-2" src="" /></article>
+          </li>
+          <li>
+            <article><img id="gallery-image-3" src="" /></article>
+          </li>
+          <li>
+            <article><img id="gallery-image-4" src="" /></article>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer id="page-footer">
+      <nav id="footer-nav">
+        <ul id="footer-nav-list">
+          <li><a href="">Home</a></li>
+          <li><a href="">F&Q</a></li>
+          <li><a href="">About</a></li>
+        </ul>
+      </nav>
+      <p id="footer-copyright">&#169; 2021 Awesome Cake Company</p>
+    </footer>
   </body>
 </html>
