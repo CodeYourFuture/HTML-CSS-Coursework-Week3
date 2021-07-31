@@ -1,1 +1,161 @@
 /*  Add your styling here */
+a{
+    text-decoration: none;
+}
+
+ul{
+    display: none;
+    list-style: none;
+}
+
+.hamburger{
+    position: absolute;
+    display: block;
+    top: 25px;
+    right: 10px;
+}
+
+
+body{
+    background-color: black;
+    color: white;
+    font-family: serif;
+}
+
+h2{
+    font-size: 1.2em;
+    margin: 10px;
+}
+
+.header-content{
+    margin: 10px;
+
+}
+
+h3{
+    font-size: 1.7em;
+    margin-top: 10px;
+}
+
+ h4{
+    font-size: 1.4em;
+}
+
+p{
+    font-size: 1.4em;
+    word-spacing: 0.3em;
+}
+
+.first-Image{
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 150px;
+    height: 100px;
+}
+
+.header{
+    display: flex;
+}
+
+.header-content{
+    display: flex;
+}
+
+/* styling the middle image*/
+
+.top-image{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    
+}
+
+/*styling bottom images*/
+
+.bottom-Images{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+.bottom-Images img{
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+}
+
+/*links*/
+
+.links{
+    display: flex;
+    text-align: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+     /*footer*/
+
+.footer{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+                              /* media queries*/
+                              /*Screen break point at 540px*/
+
+    @media screen and (min-width: 540px) {
+ 
+        .bottom-Images img{
+            width: 150px;
+            height: 150px;
+            border: 2px solid plum;
+        }
+        h4{
+            font-size: 1.6em;
+        }
+        .links a{
+            font-size: 1.2em;
+        }
+
+        
+    }
+                                  /*Screen break point at 900px*/
+ 
+    @media screen and (min-width: 900px){
+        ul{
+            display: flex;
+            justify-content: space-evenly;
+            
+            
+        } 
+        li{
+            margin-left: 10px;
+            margin-right: 10px;
+            
+        }
+        .nav-link{
+            list-style: none;
+            color: silver;
+        }
+        .nav-link:hover{
+            font-size: 1.1em;
+
+        }
+        .hamburger{
+            display: none;
+            
+        } 
+        h2{
+            font-size: 1.6em;
+        }
+        p{
+            font-size: 1.5em;
+        }
+        html{
+            width: 1400px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+                           
