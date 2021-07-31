@@ -1,1 +1,75 @@
 /*  Add your styling here */
+.navbar img{
+    width: 15%;
+}
+.head p{
+    font-size:smaller;
+    font-weight: lighter;
+    background-color:rgb(248,249,250);
+    width: 100%;
+    margin-left: 50%;
+}
+.card{
+    display: flex;
+    align-items: center;
+    margin-left: 5%;
+    width: 15rem;
+}
+.img-grid{
+    width: 100%;
+    padding: 8%;
+}
+.service{
+    display: flex;
+    flex-direction: column;
+    
+    padding-left: 3%;
+}
+
+footer{
+    background-color: rgb(248,249,250);
+    margin-top: 3%;
+}
+.copyright{
+    text-align: center;
+}
+
+@media screen and (min-width: 540px) and (max-width: 980px) {
+    .head p{
+        font-size: 1.2rem;
+        margin-left: 70%;
+    }
+    .card{
+        margin-left: 35%;
+        width: 40%;
+    }
+    
+}
+@media screen and (min-width: 980px) {
+    .seperator{
+        display: none;
+    }
+    .head p{
+        font-size: 2rem;
+        margin-left: 50%;
+    }
+    .intro{
+        width: 30%;
+        float: right;
+        margin-right: 3%;
+    }
+    .card{
+        width: 60%;
+    }
+    .img-seperator{
+        display: none;
+    }
+    .service{
+        flex-direction: row;
+        padding: 3%;
+        margin-left: 30%;
+    }
+    .service p{
+        padding: 3%;
+    }
+}
