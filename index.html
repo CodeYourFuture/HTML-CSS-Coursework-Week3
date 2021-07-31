@@ -5,8 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <title>Responsive Cake webpage</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="screen and (min-width:500px)" href="css/responsive.css">
+    
+    
 </head>
 
 <body>
@@ -14,66 +18,153 @@
     <!-- header -->
      <header class="header-container">
             <div class= "logo">
-                <!-- <style>
-style = "float-left"
-                </style> -->
+              <div>
                 <img
                    src="images/cakelogo.jpg"
                    alt="cake logo"
                  /> 
-                 <p>
-                  <h1> Ashbell Eggless Cakes</h1>    
+               <h1> Ashbell Eggless Cakes</h1>      
         <h2>The best cakes in town delivered to your door </h2>
-    </p>
-               </div>
+    
+             </div>
+
+               <div class="mobile">
+                <div class ="hamburger">
+                  <div class="line">
+                  </div>
+                  <div class="line">
+                  </div>
+                  <div class="line">
+                  </div>
+                </div> 
+      </header>
      
-          <hr>
-          <nav class="nav">
+          <!-- <nav class="nav"> -->
+            <nav>
               <ul>
-                <li> <a href="#" >HOME</a></li> 
-                <li> <a href="#" >ABOUT</a></li> 
-                <li> <a href="#" >CONTACT US</a></li> 
-                <li> <a href="#" >DELIVERY</a></li> 
-                <li> <a href="#" >GALLERY</a></li> 
-               </ul>
-            </nav> 
+                <li><a class="nav-link" href="#"><button>HOME</button></a>
+           </li>
+           <li><a class="nav-link" href="#"><button>CAKES</button></a>
+           </li>
+           <li><a class="nav-link" href="#"><button>ORDERING</button></a>
+           </li>
+           <li><a class="nav-link" href="#"><button>LESSONS</button></a>
+           </li>
+           <li><a class="nav-link" href="#"><button>ABOUT US</button></a>
+           </li>
+         </ul>
+        </nav>
+     
+        
 
-            <div class="mobile">
-                <div class= "hamburger">
-                    <div class="line">
-                        </div>
-                        <div class="line">
-                        </div>
-                        <div class="line">
-                        </div>
-                        </div>       
-        <header>
-
-            <!-- hero carousel with images -->
+            <!-- hero carousel with image -->
         <section class="carousel-container">
             <div class="slide">
                 <img
-                   src="images/welcomesection.jpg" width="500px" height="100px"
+                    src="images/welcomesection.jpg" 
                    alt="cake logo"
                  />  
                  
             </div>
         <!-- Welcome section-->
         <section class="container">
-            <h1>
+            <h2>
                 <strong> Welcome To Ashbell Eggless Cakes</strong> 
-            </h1>
-            <h2></h2>
+            </h2>
             <p>
-               Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem reiciendis non sed impedit similique quibusdam fugiat vel, optio excepturi porro. Fuga nulla ea aliquid expedita blanditiis dolore sequi delectus porro facere soluta consectetur maxime beatae cum ipsum sit qui neque natus vitae quis, saepe inventore voluptates? Dignissimos veritatis nisi ea alias officia atque esse vero et neque natus! In quia a illum dolore sit totam repellendus velit molestiae dolor dignissimos incidunt aspernatur odit, deleniti est consequuntur. Sint dolores quibusdam natus accusamus ipsam! Quo, quam, ad nesciunt, accusantium odit consequatur iste aperiam vel placeat architecto ratione. Officiis iusto voluptates blanditiis.
+               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis animi atque, labore possimus quasi vel nostrum accusantium delectus magni, fuga, maxime suscipit cum distinctio qui ipsa cumque neque officiis ad similique quaerat! Expedita doloribus voluptatibus voluptate iure, quos dolore, tenetur culpa minima repellat praesentium esse quisquam facere incidunt cum in eius omnis aliquid voluptates facilis ex. Saepe porro delectus impedit.
             </p>
         </section>
-        </main>
-</body>
 
+        <!-- /cake image section   -->
+        <div class="card-deck">
+
+          <div class="card">
+            <img src="images/cake1.jpg" class="card-img-top" alt="cake1">
+            <div class="card-body">
+              <h5 class="card-title">TIERED CAKE</h5>
+              <p class="card-text">Perfect for your special occasion.</p>
+              <p class="card-text"><small class="text-muted">Last updated 1 day ago</small></p>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="images/cake2.jpg" class="card-img-top" alt="cake2">
+            <div class="card-body">
+              <h5 class="card-title">FRUITY CAKE</h5>
+              <p class="card-text">Get your 5 a day in a cake!</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 days ago</small></p>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="images/cake3.jpg" class="card-img-top" alt="cake3">
+            <div class="card-body">
+              <h5 class="card-title">GOODNESS IN A CUP</h5>
+              <p class="card-text">Perfect for a cuppa!</p>
+              <p class="card-text"><small class="text-muted">Last updated 1 week ago</small></p>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="images/cake4.jpg" class="card-img-top" alt="cake4">
+            <div class="card-body">
+              <h5 class="card-title">CREAMY CAKE</h5>
+              <p class="card-text">Leaves you wanting more!</p>
+              <p class="card-text"><small class="text-muted">Last updated 1 month ago</small></p>
+            </div>
+          </div>
+        </div>
+        <!-- <section class ="row">
+          <!- <div class="column"></div> -->
+                <!-- <div class="cake">
+                    <h2> TIERED CAKE</h2>
+                    <img
+                    src="images/cake1.jpg" 
+                    alt="cake1">
+                    <h3>Perfect for your special occasion. </h3>
+                </div> -->
+                <!-- <div class="cake">
+                    <h2>FRUITY CAKE</h2>
+                    <img
+                    src="images/cake2.jpg" 
+                    alt="cake2">
+                    <h3>Get your 5 a day in a cake!</h3>
+                </div> -->
+                <!-- <div class="cake">
+                    <h2>GOODNESS IN A CUP</h2>
+                    <img
+                    src="images/cake3.jpg" 
+                    alt="cake3"> 
+                    <h3>Perfect for a cuppa!</h3>
+                </div> -->
+                <!-- <div class="cake">
+                    <h2>CREAMY CAKE</h2>
+                    <img
+                    src="images/cake4.jpg" 
+                    alt="cake4">
+                    <h3>Leaves you wanting more!</h3>
+                </div>
+            </div>
+        </section> --> 
+      
+        <!-- footer section starts -->
+        <section>
+          <footer>
+            <a href=""><i class="fa fa-facebook"></i></a>
+            <a href=""><i class="fa fa-twitter"></i></a>
+            <a href=""><i class="fa fa-instagram"></i></a>
+        </footer>
+        </section>
+       
+    </main>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> 
+</body>
 </html>
 
-
+      
           
 
           
