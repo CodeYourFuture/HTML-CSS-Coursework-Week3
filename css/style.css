@@ -151,8 +151,18 @@ footer p {
     display: none;
   }
 
-  .br {
+  br {
     display: none;
+  }
+
+  .header-img-wrapper {
+    flex-wrap: nowrap;
+  }
+
+  .header-img-wrapper h5 {
+    white-space: nowrap;
+    font-size: 2vw;
+    margin-bottom: 2vh;
   }
 
   .nav-bar {
