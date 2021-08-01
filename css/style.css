@@ -4,21 +4,27 @@
   margin: 0;
 }
 
+:root {
+  --PeachPuff: #ffdab9;
+  --DarkSlateGrey: #2f4f4f;
+}
+
 html {
   width: 100%;
   height: 100%;
   font-family: "Gowun Dodum", sans-serif;
-  font-size: 16px;
 }
 
 main,
 footer {
   padding: 4vw;
 }
+/* Header*/
 
-.header-container {
-  background-color: #fff5ee;
+.header-container,
+footer {
   height: 20%;
+  background-color: var(--PeachPuff);
 }
 
 .header-img-wrapper {
@@ -34,59 +40,81 @@ footer {
 }
 
 .header-container h5 {
-  font-size: 4vw;
   font-style: italic;
   align-self: flex-end;
-  color: #2f4f4f;
+  color: var(--DarkSlateGrey);
   margin-right: 4vw;
 }
 
-.header-container::after {
-  content: "";
-  clear: both;
-  display: table;
+.main-container p,
+.header-container h5,
+footer a,
+footer p {
+  font-size: 4vw;
 }
+
+/*main*/
 
 .main-container p {
   text-align: justify;
-  font-size: 4vw;
 }
 
 .main-container h1 {
   font-size: 10vw;
+  padding-top: 2vh;
 }
 .main-images-container {
   width: 100%;
 }
 
-.box {
-  width: 100%;
-  height: auto;
-  margin-bottom: 3vh;
-}
-
-.column {
+.sub-img-wrapper {
   display: flex;
+  flex-direction: column;
+}
+
+.pair-img-wrapper {
+  display: inherit;
   flex-direction: row;
-  justify-content: space-between;
 }
-
-.img-wrapper {
-}
-
-.img-wrapper img {
+.main-img img,
+.sub-img img {
   width: 100%;
-  margin-bottom: 2vh;
+  height: 100%;
+  object-fit: contain;
 }
 
-.left {
-  padding-right: 0.5rem;
+.main-img {
+  padding: 2vh 0;
 }
-.right {
-  padding-left: 0.5rem;
+
+.sub-img {
+  flex: 50%;
+  padding-top: 2vh;
 }
+
+.sub-img-left {
+  padding-right: 2vw;
+}
+
+.sub-img-right {
+  padding-left: 2vw;
+}
+
+/* Footer*/
 
 footer {
-  background-color: #fff5ee;
-  height: 20%;
+  margin-top: 4vh;
+}
+
+footer a {
+  display: block;
+  text-decoration: none;
+  color: var(--DarkSlateGrey);
+  text-align: justify;
+}
+
+footer p {
+  text-align: center;
+  margin-top: 2vh;
+  color: var(--DarkSlateGrey);
 }
