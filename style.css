@@ -1,240 +1,224 @@
 /*  Add your styling here */
 
- /*Syling page header*/
-   .page-header{
-    background-color: aquamarine;
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-    }
-    .page-header p{
-        margin-right: 20px;
-        margin-left: auto;
-        text-align: right;
-        font-style: italic;
-        font-weight: 600;
-        text-shadow: -1px 1px 0px silver;
-    }
+/*Syling page header*/
+.page-header {
+  background-color: aquamarine;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+.page-header p {
+  margin-right: 20px;
+  margin-left: auto;
+  text-align: right;
+  font-style: italic;
+  font-weight: 600;
+  text-shadow: -1px 1px 0px silver;
+}
 
-    /*Styling page's main heading*/
-    .main-heading{
-        font-size: 2em;
-        font-style: italic;
-        font-family: 'Courier New', Courier, monospace;
-        color: black;
-        text-align: center;
-        font-weight: 600;
-        text-shadow: -3px 3px 0px silver;
-        border: 2px solid plum;
-        
-    }
+/*Styling page's main heading*/
+.main-heading {
+  font-size: 2em;
+  font-style: italic;
+  font-family: "Courier New", Courier, monospace;
+  color: black;
+  text-align: center;
+  font-weight: 600;
+  text-shadow: -3px 3px 0px silver;
+  border: 2px solid plum;
+}
 
-   /*Styling page logo*/
-    .page-header img{
-        width: 150px;
-        height: 150px;
-        margin-left: 20px;
-        border: 2px solid plum;
-        border-radius: 50%;
-    }
+/*Styling page logo*/
+.page-header img {
+  width: 150px;
+  height: 150px;
+  margin-left: 20px;
+  border: 2px solid plum;
+  border-radius: 50%;
+}
 
- /*Styling page sub heading */
-    .sub-heading{    
-        margin-left: 10px;    
-        margin-right: auto;
-        background-color: cornflowerblue;
-        background-repeat: no-repeat;
-        
-    }
+/*Styling page sub heading */
+.sub-heading {
+  margin-left: 10px;
+  margin-right: auto;
+  background-color: cornflowerblue;
+  background-repeat: no-repeat;
+}
 
-     /*Setting background color of the whole main content */
-    main{
-        background-color: whitesmoke;
-    }
-    
-    /*Styling paragraph of sub heading*/
-    .hero p{
-        margin-left: 10px;
-        margin-right: 10px;
-        font-size: 1.2em;
-        font-weight: 400;
-        word-spacing: 0.5em;
-    }
+/*Setting background color of the whole main content */
+main {
+  background-color: whitesmoke;
+}
 
-      /*Styling bigger image of page under paragraph*/
-    .hero-image{
-        width: 100%;
-        height: auto;
-        object-fit: cover;
-    }
-    h3{
-        text-align: center;
-    }
+/*Styling paragraph of sub heading*/
+.hero p {
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 1.2em;
+  font-weight: 400;
+  word-spacing: 0.5em;
+}
 
-      /*Styling Images container with flex box*/
-    .images-container{
-        margin-top: 10px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-    }
+/*Styling bigger image of page under paragraph*/
+.hero-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+h3 {
+  text-align: center;
+}
 
-      /*Styling each image of the images container*/
-    .images-container img{
-        width: 150px;
-        height: 150px;
-        margin: 20px;
-        border: 5px solid greenyellow;
-        border-radius: 10px;
-    }
+/*Styling Images container with flex box*/
+.images-container {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
 
-      /*Styling sign up form*/
-    .news-letter{
-        margin-top: 40px;
-    }
-    legend {
-        font-size: 1.1em;
-        font-weight: bold;
-        background: pink;
-        padding: 10px;
-        box-shadow: -3px 3px 0px skyblue;
-      }
-    fieldset {
-        background: #f0f0f0;
-        border: 3px solid white;
-        
-        
-      }
-      .val-fieldset{
-          width: 100%;
-          display: flex;
-          flex-direction: column;
-          justify-content: space-around;
-          margin-bottom: 30px;
-      }
+/*Styling each image of the images container*/
+.images-container img {
+  width: 150px;
+  height: 150px;
+  margin: 20px;
+  border: 5px solid greenyellow;
+  border-radius: 10px;
+}
 
-        /*Styling submit button of the form*/
-      .sign-up{
-          background-color: skyblue;
-          width: 100px;
-      }
+/*Styling sign up form*/
+.news-letter {
+  margin-top: 40px;
+}
+legend {
+  font-size: 1.1em;
+  font-weight: bold;
+  background: pink;
+  padding: 10px;
+  box-shadow: -3px 3px 0px skyblue;
+}
+fieldset {
+  background: #f0f0f0;
+  border: 3px solid white;
+}
+.val-fieldset {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-bottom: 30px;
+}
 
-        /*Styling horizontal line*/
-      .line{
-          width: 80%;
-      }
+/*Styling submit button of the form*/
+.sign-up {
+  background-color: skyblue;
+  width: 100px;
+}
 
-        /*Styling footer text*/
-      .footer-text{
-          display: flex;
-          flex-wrap: wrap;
-          justify-content: space-evenly;
-      }
+/*Styling horizontal line*/
+.line {
+  width: 80%;
+}
 
-        /*Styling footer social media icons*/
-      .facebook-icon, .instagram-icon, .twitter-icon{
-          margin-left: 5px;
-          margin-right: 5px;
-      }
-      .social-media{
-          display: flex;
-          justify-content: center;
-          margin-bottom: 20px;
-          margin-top: 10px;
-      }
+/*Styling footer text*/
+.footer-text {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
 
-       /*Styling footer social media icons size*/
-      .social-media img{
-          width: 30px;
-          height: 30px;
-      }
+/*Styling footer social media icons*/
+.facebook-icon,
+.instagram-icon,
+.twitter-icon {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.social-media {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
 
+/*Styling footer social media icons size*/
+.social-media img {
+  width: 30px;
+  height: 30px;
+}
 
-                        /*****************************Screen Break points***************************************/
-                        /*****************************Screen break point at 540px***************************************/
-        
-          @media screen and (min-width: 540px) {
-              .navbar-nav{
-                  font-size: 1.1em;
-              }
-              
+/*****************************Screen Break points***************************************/
+/*****************************Screen break point at 540px***************************************/
 
-            .main-heading{
-                font-size: 2em;
-                border: none;
-            }
+@media screen and (min-width: 540px) {
+  .navbar-nav {
+    font-size: 1.1em;
+  }
 
-            .page-header p{
-                margin-bottom: 5px;
-            }
+  .main-heading {
+    font-size: 2em;
+    border: none;
+  }
 
-            .images-container img{
-                width: 170px;
-                height: 170px;
-            }
+  .page-header p {
+    margin-bottom: 5px;
+  }
 
+  .images-container img {
+    width: 170px;
+    height: 170px;
+  }
 
-            .page-footer {
-                  font-size: 1.2em;
-                  background-color: black;
-                  color: white;
-              }
-              
-        }
-              
-                        
+  .page-footer {
+    font-size: 1.2em;
+    background-color: black;
+    color: white;
+  }
+}
 
-    
+/*****************************Screen break point at 900px***************************************/
 
+@media screen and (min-width: 900px) {
+  .navbar-nav {
+    font-size: 1.2em;
+  }
 
+  .main-heading {
+    font-size: 2.2em;
+  }
 
-    
-                        /*****************************Screen break point at 900px***************************************/
-          
-                        @media screen and (min-width: 900px) { 
+  .page-header p {
+    margin-bottom: 5px;
+  }
 
-                            .navbar-nav{
-                                font-size: 1.2em;
-                            }
+  .val-fieldset {
+    font-size: 1.2em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  html {
+    border: 2px solid red;
+    width: 1400px;
+    display: block;
 
-                            .main-heading{
-                                font-size: 2.2em;
-                            }
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-                            .page-header p{
-                                margin-bottom: 5px;
-                            }
-                            
-                        .val-fieldset{
-                            font-size: 1.2em;
-                            display: block;
-                            margin-left: auto;
-                            margin-right: auto;
-                            
-                        }
-                        html{
-                            border: 2px solid red;
-                            width: 1400px;
-                            display: block;
-            
-                            margin-left: auto;
-                            margin-right: auto;
-                        }
-
-                        .page-header img{
-                            width: 175px;
-                            height: 175px;
-                        }
-                        .images-container img{
-                            width: 200px;
-                            height: 200px;
-                        }
-                        .social-media img{
-                            width: 50px;
-                            height: 50px;
-                            padding: 10px;
-                        }
-
-                    }         
+  .page-header img {
+    width: 175px;
+    height: 175px;
+  }
+  .images-container img {
+    width: 200px;
+    height: 200px;
+  }
+  .social-media img {
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+  }
+}
