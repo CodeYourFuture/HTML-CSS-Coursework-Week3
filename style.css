@@ -7,7 +7,7 @@ main{
   background-color: #e8c2ca;
 }
 main, nav{
-  margin: 5em;
+  margin: 2em;
 }
 
 nav{
@@ -70,7 +70,7 @@ footer p{
   width: auto;
 
 }
-.e {
+.main-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -197,7 +197,7 @@ li{
   display: flex;
   flex-direction: row;
 }
-.e{
+.main-container{
   display: flex;
   flex-direction: row-reverse;
   margin-bottom: 1em;
