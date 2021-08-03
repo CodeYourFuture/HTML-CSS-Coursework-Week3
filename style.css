@@ -1,1 +1,162 @@
 /*  Add your styling here */
+
+html, body, main{
+    height:100%;
+    width:100%;
+}
+  
+body {
+    font-family: "Roboto", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+header, main{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    width:100%;
+}
+
+
+header{
+    
+    position:fixed;
+    height: 200px;
+    background-color: rgba(226,201,0,255);
+}
+
+.header-img{    
+    width:40%;
+    height:100%;
+    background-image: url("design/header_cupcake.jpeg");
+    background-size:160px 200px;    
+    background-repeat: no-repeat;
+    
+}
+
+.header-container{
+    display: flex;
+    flex-flow: row wrap;
+    width: 60%;
+    justify-content: flex-end;
+    height:100%;
+}
+
+
+
+.container {
+    
+    
+    width:100%;
+    height:50%;
+    background-color: rgba(233,192,0,255);
+    
+    
+}
+
+.menu {
+    padding-top: 13px;
+    width:200px;
+    height:auto;
+    position:absolute;
+    transform: translate(5000px, 0);
+    transition:transform 0.3s ease;
+    background:rgba(119, 113, 118, 0.959);
+    border-radius: 20%;
+
+}
+.menu li:hover{
+    background-color: rgba(128, 128, 128, 0.486);
+    border-style: groove;
+
+
+    font-size: 50px;
+    font-weight:600;
+}
+
+.menu a:hover{
+
+    color:rgb(92, 22, 86);
+    font-size: 30px;
+    font-weight:400;
+    opacity:0.8;
+
+}
+
+.menu a{
+  
+    text-decoration:none;
+    font-size: 20px;
+    font-weight:bold;
+    color:rgb(247, 247, 247);
+    padding: -1.5em;
+}
+  
+li {
+    list-style: none;
+}
+  
+.bar1, .bar2, .bar3 {
+    
+    width: 25px;
+    height: 4px;
+    background-color: #333;
+    margin: 6px 80%;
+    transition: 0.4s;
+}
+  
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+  
+.change .bar2 {opacity: 0;}
+  
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+  
+.change .menu {
+    -webkit-transform: translate(-30px, 0);
+    
+}
+
+.header-ad {
+    
+    width:100%;
+    max-height: 100%;
+    background-color: rgba(233,192,0,255);
+    /* border:rgba(235,191,0,255); */
+    
+
+}
+
+.header-ad p {
+    
+    width: 80%;
+    max-height: 100%;
+    font-size: medium;
+    text-align: end;
+    font-weight: 600;
+    color: rgba(107, 105, 105, 0.952);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
