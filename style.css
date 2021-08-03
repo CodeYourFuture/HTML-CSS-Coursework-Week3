@@ -147,8 +147,128 @@ li {
 }
 
 
+main{
+    margin-top: 200px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    background-color: rgba(227, 204, 0, 0.89);
+}
 
+.weclome-section {
+    display: flex;
+    flex-flow: row wrap;
+    width:70%;
+    justify-content: center;
+    
 
+}
+
+.welcome-section h1, .welcome-section article {
+    display: flex;
+    flex-flow: row wrap;
+    width:90%;
+    background-color: rgba(105, 92, 90, 0.418);
+    justify-content: center;
+    margin-left: 5%;
+    text-align:start;
+    color:white;
+    border:none;
+    
+}
+
+main article {
+    font-size: 20px;
+}
+
+.welcome-image {
+    display: flex;
+    flex-flow: row wrap;
+    width:90%;
+    height:150px;
+    background-color: yellowgreen;
+    margin: 50px 0 0 5%;
+    background-image: url("design/main_cupcake.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    
+}
+
+.img-collection {
+    display:flex;
+    flex-flow: row wrap;
+    justify-content:space-around;
+    width:100%;
+    height:200px;
+
+}
+
+.img-collection div {
+    margin-top: 50px;
+    width: 35%;
+    height: 50%;
+    
+}
+
+#first-img {
+    background-image: url("design/collection_one.jpg");
+    background-size: 100% 100%;
+}
+
+#second-img {
+    background-image: url("design/collection_two.jpg");
+    background-size: 100% 100%;
+}
+
+#third-img  {
+    background-image: url("design/collection_three.jpg");
+    background-size: 100% 100%;
+}
+
+#fourth-img  {
+    background-image: url("design/collection_one.jpg");
+    background-size: 100% 100%;
+}
+
+footer {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    width:100%;
+    margin-top: 120px;
+    background-color: rgba(227, 204, 0, 0.89);
+    padding: 0 5% 0 5%;
+    height:150px;
+}
+
+footer p {
+    width:100%;
+    height:2px;
+}
+
+/* 
+@media screen and (min-width: 500px) {
+    main h1{
+        font-size:40px;
+    }
+
+    main article {
+        font-size:30px;
+    }
+    .welcome-image {
+        height:300px;
+    }
+
+    .img-collection div {
+        width:40%;
+        height:100px;
+    }
+
+    .footer{
+        margin-top: 95%;
+    }
+
+} */
 
 
 
