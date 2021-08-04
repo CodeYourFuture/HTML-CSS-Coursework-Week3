@@ -41,6 +41,7 @@
 }
   @media only screen and (max-width: 540px) 
 {
+     align-content: .nav-items;
      
 }
 
