@@ -116,8 +116,38 @@ img {
 
 
 /* CAKES */
+ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+li {
+  height: 40vh;
+  flex-grow: 1;
+}
 
-.product-cake {
+li:last-child {
+  flex-grow: 10;
+}
+
+img {
+  /* max-height: 100%;
+  min-width: 100%;
+  object-fit: cover; */
+  display: flex;
+  vertical-align: bottom;
+}
+
+
+
+
+
+@media (max-height: 480px) {
+  li {
+    height: 80vh;
+  }
+}
+
+/* .product-cake {
     display: grid;
     margin: 10px;
     grid-template-areas: 
@@ -142,7 +172,7 @@ img {
 .pc4 { 
   grid-area: cake4; 
   width: 50%
-}
+} */
 
 
 
