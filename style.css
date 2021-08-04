@@ -9,7 +9,9 @@ html, body {
     font-family: "montserrat","roboto", sans-serif;
     font-size: 16px;
     height: 100vh;
-    width: 550px;
+    width: 500px;
+    margin: 0;
+    padding: 0;
 }
 
 /* Header styles */
@@ -19,6 +21,15 @@ html, body {
 }
 
 /* Navbar styles */
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+}
 
 /* Main section styles */
 
@@ -55,3 +66,24 @@ html, body {
 
 /* Footer styles */
 
+.footer-grid {
+    width: 100%;
+    display: inline;
+    text-align: center;
+}
+
+.prices {
+    padding: 0 1em;
+}
+
+/* Styles for medium size screen */
+
+@media screen and (min-width: 500px) {
+    
+}
+
+/* Styles for large size screen */
+
+@media screen and (min-width: 768px) {
+    
+}
