@@ -17,11 +17,14 @@
 <body>
     <!-- Add your markup here -->
 <header>
-  <div class="Top">   
+  <section class="Top">   
     <nav class ="navbar  navbar-expand-sm navbar-light bg-dark mt-0-sm">
         <!--The Logo-->  
-        <img src ="Picture/CupcakeLogo.jpg"  id= "logo" alt ="cupcake logo" >
-        
+        <img src ="Picture/CupcakeLogo.jpg"  class= "logo" alt ="cupcake logo" >
+
+        <p id="motto"> <i><b>The best cakes in town delivered to your door</b></i></p>
+
+          <!-- Mobile Nav bar -->
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -44,18 +47,42 @@
                     <a href="#" class ="nav-link"> About </a>
                 </li>
             </ul>
-        </div>
+          </section>
     </nav>  
-    <p id="motto"> <i><b>The best cakes in town delivered to your door</b></i></p>
+   
+    <!-- Desktop Nav bar -->
+    <aside class ="header-nav hidden-on-mobile" id = "header-nav-container">
+     <nav id= "top-navbar-nav">
+      <ul class ="top-navbar-list">
+          <li class ="nav-item">
+              <a href="#" class ="nav-link"> Home </a>
+          </li>
+          <li class ="nav-item">
+              <a href="#" class ="nav-link"> Cakes </a>
+          </li>
+          <li class ="nav-item">
+              <a href="#" class ="nav-link"> Orderin </a>
+          </li>
+          <li class ="nav-item">
+              <a href="#" class ="nav-link"> Lessons </a>
+          </li>
+          <li class ="nav-item">
+              <a href="#" class ="nav-link"> About </a>
+          </li>
+      </ul>
+    </nav>
+    </aside>
+
 </header>
 
-  
+ <main id= "main-page">
 
 <div class= "welcome">
-<h1>Welcome</h1>
+<h2 id= "welcome header">Welcome</h2>
 <p id = "intro">Planning for a special occasion and need a tailored cake made for your dietary needs? Call us for your custom designed cake.<br>
     Alternatively choose from our signature design and select from our varities of falvour for a cake design to meet your expectation.
 </p>
+<img id ="hero-img" src="Picture/GardenWeddingCake.jpg"  alt= "center section picture" class ="hero-img">
 </div>
 
 
@@ -84,9 +111,11 @@
     <img src ="Picture/instagram-icon.svg" alt "instagram icon" width=30 height=30>
   </div>
 
-  <footer
+</main> 
+<footer
   <p id ="follow-us">follow us </p>
   <p id = "copyright">&#169 GemPearl Design </p> 
+   </main> 
 </footer>
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

@@ -1,26 +1,52 @@
 /*  Add your styling here */
+/* The Whole Webpage */ 
+
 * {
     font-family: sans-serif;
     letter-spacing: 0.1em;
 }
 
-#logo{
+.hidden-on-mobile{
+    display: none;
+}
+
+/* Header*/ 
+.logo{
     width: 15%;
     height:15%;
     padding 1%;
   }
 
+  .top{
+    display: flex;
+    width: 100%;
+    height: 200px;
+    justify-content: space-between;
+    align-content: space-between;
+    flex-direction: column;
+    background-color: var(
+      --darker-background-color
+  }
   #motto{
       font-size: 1em;
       text-align: right;
   }
   
+ .navbar-toggler-icon{
+     cursor: pointer;
+ }
+
   .card-img-top {
         display: flex;
       flex-direction: re;
         
   }
-
+  
+  #hero-img{
+    justify-content: center;
+    padding-bottom: 10%;
+    margin-bottom: 50px;
+}
   .gallery{
     display:flex;
     flex-direction: row;
@@ -36,14 +62,8 @@
 
   .gallery-img img{
     width: 100%;
-   
-  
-}
-  @media only screen and (max-width: 540px) 
-{
-     align-content: .nav-items;
-     
-}
+    padding: top: 20em;
+  }
 
 .contact-us{
     display: flex;
@@ -64,3 +84,52 @@
     text-align: center;
     
 }
+
+  /* BreakPoint  of 540px*/
+
+
+  @media (mini-width: 540px)
+{
+  .logo{
+      width:25%;
+      padding:1.5em 0 0 1em;
+  } 
+  .navbar-toggler-icon{
+      width:40px;
+  }
+.gallery-img{
+    width:230px;
+}
+}
+
+ /* BreakPoint  of 900px*/
+@media(min-width:900px){
+    .header-nav hidden-on-mobile{
+        display: inital;
+    }
+    .navbar-toggler-icon{
+       display: none;
+    }
+
+    #hero-img{
+        justify-content: center;
+    }
+
+    .gallery-img {
+        padding-top: 2em;
+        width: 185px;
+      }
+
+      #motto{
+          max-width:900px;
+      }
+
+      .main-page {
+        flex-direction: row-reverse;
+        text-align: right;
+        width: 95%;
+        padding-top: 4em;
+      }
+    
+    }
+
