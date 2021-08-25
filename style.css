@@ -1,1 +1,351 @@
 /*  Add your styling here */
+
+html,
+body,
+main {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgba(226, 201, 0, 255);
+}
+
+header,
+main {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+header {
+  position: fixed;
+  height: 200px;
+  background-color: rgba(226, 201, 0, 255);
+  order: 1;
+}
+
+.header-img {
+  width: 40%;
+  height: 100%;
+  background-image: url("design/header_cupcake.jpeg");
+
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-color: rgba(153, 50, 204, 0.137);
+}
+
+.header-container {
+  display: flex;
+
+  height: 100%;
+  flex-flow: row wrap;
+}
+
+.header-container {
+  display: flex;
+  flex-flow: row wrap;
+  width: 60%;
+  justify-content: flex-end;
+  max-height: 100%;
+}
+
+.container {
+  width: 100%;
+  height: 40%;
+  background-color: rgba(233, 192, 0, 255);
+}
+
+.menu {
+  padding-top: 13px;
+  width: 200px;
+  height: auto;
+  position: absolute;
+  transform: translate(5000px, 0);
+  transition: transform 0.3s ease;
+  background: rgba(119, 113, 118, 0.959);
+  border-radius: 20%;
+}
+.menu li:hover {
+  background-color: rgba(128, 128, 128, 0.486);
+  border-style: groove;
+
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.menu a:hover {
+  color: rgb(92, 22, 86);
+  font-size: 30px;
+  font-weight: 400;
+  opacity: 0.8;
+}
+
+.menu a {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(247, 247, 247);
+  padding: -1.5em;
+}
+
+li {
+  list-style: none;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 25px;
+  height: 4px;
+  background-color: #333;
+  margin: 6px 80%;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+.change .menu {
+  -webkit-transform: translate(-30px, 0);
+}
+
+.header-container .header-ad {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  width: 100%;
+  height: 60%;
+  background-color: rgba(233, 192, 0, 255);
+  /* border:rgba(235,191,0,255); */
+  /* margin-right: 25px; */
+}
+
+.header-ad p {
+  width: 100%;
+  max-height: 60%;
+  font-size: medium;
+  text-align: center;
+  font-weight: bolder;
+  color: rgba(107, 105, 105, 0.952);
+}
+
+main {
+  margin-top: 220px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  background-color: rgba(226, 201, 0, 255);
+  order: 3;
+}
+
+main nav {
+  display: none;
+  order: 4;
+}
+
+.weclome-section {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  justify-content: center;
+  height: auto;
+  order: 6;
+}
+
+.welcome-section h1,
+.welcome-section article {
+  display: flex;
+  flex-flow: row wrap;
+  width: 90%;
+  background-color: rgba(105, 92, 90, 0.63);
+  justify-content: center;
+  margin-left: 5%;
+  text-align: start;
+  color: rgba(255, 255, 255, 0.664);
+  border: none;
+  text-indent: 30px;
+  order: 8;
+}
+
+main article {
+  font-size: 20px;
+}
+
+.welcome-image {
+  display: flex;
+  flex-flow: row wrap;
+  width: 90%;
+  height: 200px;
+  background-color: rgba(226, 201, 0, 255);
+  margin: 50px 0 0 5%;
+  background-image: url("design/main_cupcake.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  order: 10;
+  align-self: center;
+}
+
+.img-collection {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  background-color: rgba(226, 201, 0, 255);
+  width: 90%;
+  height: 250px;
+  order: 12;
+  margin-top: 100px;
+}
+
+.img-collection div {
+  width: 45%;
+  height: 100px;
+  margin-top: 10px;
+}
+
+#first-img {
+  background-image: url("design/collection_one.jpg");
+  background-size: 100% 100%;
+}
+
+#second-img {
+  background-image: url("design/collection_two.jpg");
+  background-size: 100% 100%;
+}
+
+#third-img {
+  background-image: url("design/collection_three.jpg");
+  background-size: 100% 100%;
+}
+
+#fourth-img {
+  background-image: url("design/collection_one.jpg");
+  background-size: 100% 100%;
+}
+
+footer {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  width: 100%;
+  margin-top: 50px;
+  background-color: rgba(226, 201, 0, 255);
+  padding: 0 5% 0 5%;
+  height: 150px;
+  order: 14;
+}
+
+footer p {
+  width: 30%;
+  height: 2px;
+}
+
+@media screen and (min-width: 550px) {
+  .img-collection {
+    height: 400px;
+    justify-content: space-evenly;
+  }
+
+  .img-collection div {
+    width: 230px;
+    height: 150px;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .header-img {
+    width: 30%;
+    background-size: contain;
+  }
+
+  .welcome-image {
+    margin-top: 0px;
+    order: 7;
+    width: 40%;
+    height: 100%;
+  }
+
+  .welcome-section h1,
+  .welcome-section article {
+    order: 9;
+    width: 40%;
+    justify-content: flex-end;
+    text-align: end;
+  }
+  .welcome-section {
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .container {
+    display: none;
+  }
+
+  .header-ad p {
+    align-self: flex-end;
+    background-color: rgba(226, 201, 0, 255);
+    text-align: end;
+  }
+
+  .mainnavMenu {
+    display: flex;
+    flex-flow: row noWrap;
+    justify-content: flex-end;
+
+    order: 0;
+    width: 90%;
+    height: 50px;
+    background-color: rgba(233, 150, 122, 0.363);
+  }
+  .mainnav_menu {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .mainnav_menu li {
+    width: 110px;
+    height: 30px;
+    background-color: rgba(184, 135, 11, 0.432);
+    display: flex;
+    justify-content: center;
+    margin-left: 20px;
+  }
+
+  .mainnav_menu li a {
+    text-decoration: none;
+    color: rgb(235, 225, 230);
+    font-weight: bold;
+    align-self: center;
+  }
+  .img-collection {
+    height: 300px;
+  }
+}
+
+/* background-size:contain; */
