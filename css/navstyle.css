@@ -1,0 +1,43 @@
+.box {
+  width: 100%;
+  text-align: center;
+}
+
+.container {
+  display: grid;
+  gap: 0.8em;
+  grid-template-areas:
+    "header"
+    "content"
+    "sidebar"
+    "footer";
+}
+
+.header {
+  background-color: hotpink;
+  grid-area: header;
+}
+
+.content {
+  background-color: indigo;
+  grid-area: content;
+}
+
+.sidebar {
+  background-color: green;
+  grid-area: sidebar;
+}
+
+.footer {
+  background-color: yellow;
+  grid-area: footer;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    grid-template-areas:
+      "header header header header"
+      "content content sidebar sidebar"
+      "footer footer footer footer";
+  }
+}
