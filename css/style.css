@@ -1,1 +1,60 @@
 /*  Add your styling here */
+body {
+  margin: 0;
+}
+
+/* Header Section */
+.header {
+  background-color: #ffca6e;
+  padding: 1.5rem;
+}
+
+.home-icon {
+  width: 100px;
+  height: 100px;
+  margin-top: 50px;
+}
+
+.hamburger-menu {
+  width: 50px;
+  height: 50px;
+  float: right;
+}
+
+.navigation-quote {
+  text-align: end;
+}
+
+.navigation {
+  display: none;
+}
+
+/* Main Section */
+.main {
+  margin: 1rem;
+}
+
+.cake {
+  width: 100%;
+  height: 500px;
+}
+
+.cake-grid {
+  margin: 1.5rem;
+}
+
+.cake-image {
+  width: 200px;
+  height: 200px;
+}
+
+/* Footer Section */
+.footer {
+  text-align: center;
+}
+
+.social-icon {
+  width: 35px;
+  height: 35px;
+  margin-right: 1rem;
+}
