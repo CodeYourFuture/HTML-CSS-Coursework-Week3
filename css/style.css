@@ -1,0 +1,62 @@
+:root {
+    --main-light: #94618E; 
+    --main-dark: #49274A;
+    --secondary-light: #F8EEE7;
+    --secondary-dark: #F4DECB
+}
+* {
+    margin: 0;
+    border: 0px solid black;
+}
+body {
+    display:grid; 
+    grid-template-areas:
+    "header"
+    "main"
+    "footer";
+}
+header {
+    padding: 0.5rem 1rem;
+    background-color: var(--main-light);
+    display: grid;
+    grid-template-areas: 
+        "logo menu"
+        "logo text"
+        "nav nav";
+    grid-gap: 0.4rem;
+    color: var(--secondary-light);
+}
+.logo {
+    grid-area: logo;
+    display: flex;
+    align-items: center;
+}
+.logo img {
+    height:6rem;
+}
+.menu-toggle {
+    grid-area: menu;
+    text-align: right;
+}
+header h1 {
+    grid-area: text;
+    font-size: 1.5rem;
+    text-align: right;
+}
+nav {
+    display: none;
+    grid-area: nav;
+}
+@media screen and (min-width:540px) {
+    nav {
+        display: block;
+    }
+    .menu-toggle {
+        display: none;
+    }
+    header {
+        grid-template-areas:
+            "logo ."
+            "logo text;
+    }
+}
