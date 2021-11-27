@@ -1,1 +1,45 @@
-/*  Add your styling here */
+* {
+    outline: 1px solid red;
+}
+
+html, body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0; 
+    width: 100vw;      
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Header */
+
+.logo {
+    width: 50px;
+    max-width: 100px;
+    display: inline-block;
+}
+
+.hamburger-icon {
+    width: 30px;
+    float: right;
+}
+
+/* Main */
+
+header, main {
+    min-width: 200px;
+    margin: 0 auto;
+    width: 90%;
+}
+
+/* .top-image {
+    width: 400;
+} */
+
+.cupcake-image {
+    
+}
