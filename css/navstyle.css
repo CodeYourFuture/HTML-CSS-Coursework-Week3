@@ -6,11 +6,12 @@
 .container {
   height: 100vh;
   font-family: "Roboto", sans-serif;
+  color: #ffffe8;
   border: 2px solid black;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 170px 140px 100px;
-  gap: 0.8em;
+  grid-template-rows: 170px 400px 100px;
+  gap: 1em;
   grid-template-areas:
     "header header"
     "content content"
@@ -21,7 +22,6 @@
 /* HEADER */
 .header {
   background-color: #d972ff;
-  color: #ffffe8;
   grid-area: header;
   display: flex;
   flex-direction: row;
@@ -55,11 +55,25 @@ button.menu__burger {
   font-size: 2rem;
 }
 
-.content {
-  background-color: indigo;
+/* CONTENT */
+.homepage__main {
   grid-area: content;
 }
 
+.homepage__hero {
+  color: #d972ff;
+  text-align: left;
+}
+
+.hero__image {
+  width: 100%;
+  height: 540px;
+  background-image: url("https://images.pexels.com/photos/1179002/pexels-photo-1179002.jpeg?auto=compress&cs=tinysrgb&dpr=2");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/* SIDEBAR */
 .sidebar {
   background-color: green;
   grid-area: sidebar;
