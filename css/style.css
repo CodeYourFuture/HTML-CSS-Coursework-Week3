@@ -3,28 +3,23 @@
     --main-dark: #49274A;
     --secondary-light: #F8EEE7;
     --secondary-dark: #F4DECB
+    --grey-dark: #848993;
+    --grey-darker: #4D5057;
 }
 * {
     margin: 0;
-    border: 0px solid black;
-}
-body {
-    display:grid; 
-    grid-template-areas:
-    "header"
-    "main"
-    "footer";
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 header {
-    padding: 0.5rem 1rem;
     background-color: var(--main-light);
     display: grid;
-    grid-template-areas: 
-        "logo menu"
-        "logo text"
-        "nav nav";
-    grid-gap: 0.4rem;
+    grid-template-columns: 1fr 0.3fr 1fr 1fr;
+    grid-template-areas:
+    "logo . . toggle"
+    "logo . text text"
+    "logo . text text";
     color: var(--secondary-light);
+    padding: 1rem 2rem;
 }
 .logo {
     grid-area: logo;
@@ -35,19 +30,53 @@ header {
     height:6rem;
 }
 .menu-toggle {
-    grid-area: menu;
+    grid-area: toggle;
     text-align: right;
 }
 header h1 {
     grid-area: text;
     font-size: 1.5rem;
     text-align: right;
+    display:flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    
 }
 nav {
     display: none;
     grid-area: nav;
 }
-@media screen and (min-width:540px) {
+h2 {
+    font-size: 3rem;
+    font-weight: 600;
+}
+main {
+    display: grid;
+    grid-gap:0.5rem;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 1rem;
+    padding: 1rem 2rem;
+}
+.hero-text, .hero-img {
+    grid-column: 1 / -1;
+    padding-top:1rem;
+}
+.hero-img img{
+    width: 100%;
+    align-self: center;
+}
+.featured {
+    height: 30vw;
+    grid-column: auto / span 6;
+    overflow: hidden;
+}
+.featured img{
+    width: 100%;
+}
+footer {
+    grid-area: footer;
+}
+@media screen and (min-width:850px) {
     nav {
         display: block;
     }
@@ -58,5 +87,12 @@ nav {
         grid-template-areas:
             "logo ."
             "logo text;
+    }
+    .hero-text, .hero-img {
+        grid-column: auto / span 6;
+    }
+    .featured {
+        grid-column: auto / span 3;
+        height:20vw;
     }
 }
