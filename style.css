@@ -1,12 +1,29 @@
-* {
+/* * {
     outline: 1px solid red;
-}
+} */
 
 html, body {
     box-sizing: border-box;
     margin: 0;
     padding: 0; 
-    width: 100vw;      
+    width: 100%;  
+    font-family: 'Montserrat', sans-serif; 
+}
+
+header {
+    background-color: #33304b;
+    color: rgb(228, 210, 210);
+    font-size: 2rem;
+    font-weight: 800;
+    font-style: italic;
+    padding: 20px; 
+}
+
+header p {
+    text-align: right;
+    margin-top: 40px;
+    padding: 20px;
+    font-size: 1.4rem;    
 }
 
 img {
@@ -20,26 +37,71 @@ img {
 .logo {
     width: 50px;
     max-width: 100px;
-    display: inline-block;
 }
 
-.hamburger-icon {
-    width: 30px;
-    float: right;
+.header-logo_and_hamburger-icon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 /* Main */
 
-header, main {
-    min-width: 200px;
+main {
+    /* min-width: 200px; */
     margin: 0 auto;
-    width: 90%;
+    width: 90%;    
 }
 
-/* .top-image {
-    width: 400;
-} */
+h1 {
+    text-align: center;
+}
 
-.cupcake-image {
-    
+.text {
+    padding: 20px;
+    font-size: 1.1rem;
+}
+
+.images {
+    padding: 20px 10px;
+    margin: 0 auto;
+    margin-bottom: 50px;    
+}
+
+.cupcake-image {    
+    padding: 8px;    
+}
+
+/* Grid */
+
+
+
+
+
+/* Footer */
+
+footer {
+    background-color: #33304b;
+    padding: 20px;   
+}
+
+p a {
+    text-decoration: none;
+    color: #f5a182;
+}
+
+footer p:last-child {
+    text-align: center;
+    color: aliceblue;
+    font-weight: 100;
+    font-size: 0.8rem;
+    padding-top: 20px;
+}
+
+
+footer p:not(:last-child) {
+    font-size: 0.9rem;
+    font-weight: 300;
+    text-align: center;
+    font-style: italic;
 }
