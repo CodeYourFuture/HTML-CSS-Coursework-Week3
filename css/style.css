@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap');
+
 :root {
     --main-light: #94618E; 
     --main-dark: #49274A;
@@ -8,7 +10,7 @@
 }
 * {
     margin: 0;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family:'Outfit', sans-serif;
 }
 header {
     background-color: var(--main-light);
@@ -17,14 +19,17 @@ header {
     grid-template-areas:
     "logo . . toggle"
     "logo . text text"
-    "logo . text text";
+    "logo . text text"
+    ". . . ."
+    "nav nav nav nav";
     color: var(--secondary-light);
-    padding: 1rem 2rem;
 }
 .logo {
     grid-area: logo;
     display: flex;
     align-items: center;
+    margin: 1rem 2rem;
+    z-index: 2;
 }
 .logo img {
     height:6rem;
@@ -32,6 +37,12 @@ header {
 .menu-toggle {
     grid-area: toggle;
     text-align: right;
+    margin: 1rem 2rem 0 0;
+    z-index: 2;
+}
+.menu-toggle svg {
+    height: 2rem;
+    fill: var(--secondary-light);
 }
 header h1 {
     grid-area: text;
@@ -40,18 +51,52 @@ header h1 {
     display:flex;
     justify-content: flex-end;
     align-items: flex-end;
-    
+    margin: 0 2rem 1rem 0;
+    z-index: 2;
 }
 nav {
-    display: none;
+    display: flex;
     grid-area: nav;
+    position: fixed;
+    height: 100vh;
+    padding-top:8rem;
+    width:100%;    
+    background-color: var(--main-light);
+    clip-path: circle(0px at 95% -5%);
+    -webkit-clip-path: circle(0px at 95% -5%);
+    transition: all 0.5s ease-out;
+}
+nav.open {
+    clip-path: circle(150vh at 95% -5%);
+    -webkit-clip-path: circle(150vh at 95% -5%);
+}
+nav ul {
+    list-style: none;
+    width: 100%;
+    padding:0;
+}
+nav li:hover {
+    background-color: var(--main-dark);
+}
+.navlink {
+    padding: 0.5rem 0;
+    text-align: center;
+}
+.navlink a{
+    color: var(--secondary-light);
+    text-decoration: none; 
+    width: 100%;
+    display: block;
+    padding: 1rem 0;
 }
 h2 {
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: 600;
+    padding-bottom: 2rem;
 }
 main {
     display: grid;
+    grid-auto-flow: dense;
     grid-gap:0.5rem;
     grid-template-columns: repeat(12, 1fr);
     grid-gap: 1rem;
@@ -60,6 +105,8 @@ main {
 .hero-text, .hero-img {
     grid-column: 1 / -1;
     padding-top:1rem;
+    font-size: 1.5rem;
+    margin-bottom:2rem;
 }
 .hero-img img{
     width: 100%;
@@ -88,8 +135,12 @@ footer {
             "logo ."
             "logo text;
     }
-    .hero-text, .hero-img {
-        grid-column: auto / span 6;
+    .hero-text {
+        grid-column: 7 / span 6;
+        text-align: right;
+    }
+    .hero-img{
+        grid-column: 1 / span 6;
     }
     .featured {
         grid-column: auto / span 3;
