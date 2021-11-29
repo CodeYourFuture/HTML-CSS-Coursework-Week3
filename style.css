@@ -260,7 +260,7 @@ footer p:last-child {
   }
 } */
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 600px) {
     main {
         display: grid;
         grid-template-columns: 50% 50%; 
