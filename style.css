@@ -39,6 +39,7 @@ img {
     margin: 0 auto;
     width: 100px;
     max-width: 200px;
+    cursor: pointer;
 
 }
 
@@ -50,11 +51,59 @@ img {
     color:#fae0a8;
 }
 
+.hamburger-icon {
+    cursor: pointer;
+}
+
 .header-logo_and_hamburger-icon {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
+
+/* NavBar */
+
+nav {
+    background-color: #43386b;
+    /* height: 70px; */
+    /* clear: both; */
+    width: 90%;
+    display: none;
+    font-weight: 600;
+    margin: 0 auto;
+    padding: 0;
+
+}
+
+nav ul {
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    align-content: center;
+}
+
+nav ul li {
+    width: 100px;   
+    text-align:center;
+    background-color: #7d66cf;  
+    margin: 0 5px;
+    padding: 5px;
+    text-transform: uppercase;     
+    
+}
+
+nav ul li a {
+    /* background-color: #7d66cf;  */
+     
+}
+
+nav ul {
+    clear: both;
+}
+
 
 /* Main */
 
@@ -167,14 +216,23 @@ footer ul li{
     font-size: 0.9rem;
     font-weight: 300;
     text-align: center;
-    font-style: italic;
+    font-style: italic;    
+}
+
+
+
+ul li {
     list-style: none;
+    display: block;
 }
 
 ul li a {
     text-decoration: none;
     color: #f5a182;
+    display: block;
 }
+
+
 
 footer p:last-child {
     text-align: center;
@@ -243,6 +301,10 @@ footer p:last-child {
 }  
 
 @media screen and (min-width: 996px) {
+
+    nav {
+        display: block;
+    }
     main {
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-auto-rows: auto;
