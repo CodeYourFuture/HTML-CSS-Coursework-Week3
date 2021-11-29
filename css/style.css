@@ -1,0 +1,124 @@
+/*  Add your styling here */
+body {
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+  padding: 0;
+  
+}
+
+.grid-container {
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto:
+  
+}
+
+
+
+/* Header CSS*/
+
+.header__container{
+  display:grid;
+  justify-content:end;
+  gap:1rem;
+  grid-template-columns: 1fr 2fr;
+  grid-template-areas:
+    "header__image header__hamburgermenu"
+    "header__image header__textbox";
+    
+}
+
+.item__header__image{
+  grid-area: header__image;
+  width:100%;
+  object-fit: cover;
+  background-repeat: no-repeat;
+   background-position: center;
+  background-image:url("/images/cake-heart.jpg");
+}
+
+.item__header__hamburgermenu{
+  grid-area: header__hamburgermenu;
+
+}
+
+.header__hamburgermenu__container{
+  justify-self: right;
+}
+
+
+.item__header__textbox{
+  grid-area: header__textbox;
+  
+}
+
+.the__best__cakes{
+font-size: 2rem;
+font-style: italic;
+
+}
+
+
+/* Main CSS*/
+
+
+
+
+.top__cake__image {
+  width: 100%;
+  object-fit: cover;
+  
+}
+
+/* colour scheme
+#2b6777
+#c8d8e5
+#52ab98
+*/
+
+.item-a {
+  grid-area: cake1;
+  width: 100%;
+  height:100%;
+  object-fit: cover;
+  
+}
+.item-b {
+  grid-area: cake2;
+  width: 100%;
+  height:100%;
+  object-fit: cover;
+ 
+}
+.item-c {
+  grid-area: cake3;
+  width: 100%;
+  height:100%;
+  object-fit: cover;
+}
+.item-d {
+  grid-area: cake4;
+  width: 100%;
+  height:100%;
+  object-fit: cover;
+}
+
+.multiple__image__grid__box {
+  display: grid;
+  gap: 1rem;
+  width: 100%;
+  align-items: end;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "cake1 cake2"
+    "cake3 cake4";
+}
+
+.multiple__image__images{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
