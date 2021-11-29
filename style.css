@@ -1,1 +1,9 @@
 /*  Add your styling here */
+
+body {
+  font-family: "Rochester", cursive;
+  -webkit-font-smoothing: antialiased;
+  background-color: pink;
+  margin: 0;
+  text-align: center;
+}
