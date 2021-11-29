@@ -147,30 +147,20 @@ footer p:last-child {
   }
 } */
 
-/* @media screen and (min-width: 768px) {
-    .four-images {
-        display: grid;
-        grid-template-columns: 50% 50%;
-        grid-column-gap: 20px;
-        grid-gap : 1rem;
-     }
-}   */
-
-@media screen and (min-width: 996px) {
+@media screen and (min-width: 768px) {
     main {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-auto-rows: auto;
+        grid-template-columns: 50% 50%; 
         grid-template-areas: 
-        "top top text text"
-        "one two three four";
-    }
+        "text text"
+        "top top"
+        "one two"
+        "three four";      
+        /* grid-gap : 1rem; */
+     }
 
-    .one {
-        grid-area: one;
-        /* grid-row-start: 1;
-        grid-row-end: 3; */
-        
+     .one {
+        grid-area: one;        
     }
 
     .two {
@@ -186,22 +176,25 @@ footer p:last-child {
     }
 
     .top {
-        grid-area: top;
-        /* grid-column-start: 1;
-        grid-column-end: 3; */
+        grid-area: top;      
     }
 
     .text {
-        grid-area: text;
-        /* grid-column-start: 3;
-        grid-column-end: -1; */
+        grid-area: text;     
     }
 
-    /* .four-images {
-        grid-template-columns: repeat(4, 1fr);
-    } */
     footer ul li {
         text-align: left;
     }
-    
+}  
+
+@media screen and (min-width: 996px) {
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-auto-rows: auto;
+        grid-template-areas: 
+        "top top text text"
+        "one two three four";
+    }    
 }
