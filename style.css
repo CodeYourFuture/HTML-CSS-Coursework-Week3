@@ -1,1 +1,110 @@
 /*  Add your styling here */
+
+
+.homepage-main {
+  /* border: 1px solid black; */
+  background-color: rgb(248, 248, 250);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1em;
+  /* grid-template-rows: 200px 200px 200px 200px; */
+  /*  grid-template-areas must follow the exact number of columns and rows defined above (4 columns and 4 rows)  */
+  padding: 1em;
+  grid-auto-rows: minmax(200px,auto);
+  grid-template-areas:
+    "feature    feature"
+    "hero   hero"
+    "cakes slice-cakes"
+    "cupcakes cheese-cakes"
+}
+
+header {
+  height: 250px;
+  border: 1px solid gray;
+  display: flex; 
+}
+
+.company-logo {
+  width: 30%;
+  padding-top: 20px;
+}
+
+.company-logo-img {
+  width: 140px;
+  height: 140px;
+}
+
+.hamburger-motto {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  text-align: right;
+  padding: 20px 20px 0 0;
+}
+
+.hamburger {
+    display: block;
+    cursor: pointer;
+}
+
+  .bar {
+  display: block;
+  width: 35px;
+  height: 4px;
+  margin: 5px auto;
+  background-color: #101010;
+}
+
+img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.hero img {
+  height: 300px;
+}
+
+.feature {
+  background-color: rgb(242, 242, 247);
+  grid-area: feature;
+}
+
+.hero {
+  grid-area: hero;
+}
+
+.cakes {
+  grid-area: cakes;
+}
+
+.slice-cakes {
+  grid-area: slice-cakes;
+}
+
+.cupcakes {
+  grid-area: cupcakes;
+}
+
+.cheese-cakes {
+  grid-area: cheese-cakes;
+}
+
+footer {
+  border: 1px solid gray;
+  height: 200px;
+
+}
+
+    
+
+
+
+
+
+
+
+
+
