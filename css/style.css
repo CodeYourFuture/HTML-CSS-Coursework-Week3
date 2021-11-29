@@ -4,7 +4,7 @@
     --main-light: #94618E; 
     --main-dark: #49274A;
     --secondary-light: #F8EEE7;
-    --secondary-dark: #F4DECB
+    --secondary-dark: #F4DECB;
     --grey-dark: #848993;
     --grey-darker: #4D5057;
 }
@@ -23,6 +23,10 @@ header {
     ". . . ."
     "nav nav nav nav";
     color: var(--secondary-light);
+ 
+}
+.sticky {
+    position:fixed;
 }
 .logo {
     grid-area: logo;
@@ -43,6 +47,7 @@ header {
 .menu-toggle svg {
     height: 2rem;
     fill: var(--secondary-light);
+    stroke: var(--secondary-light);
 }
 header h1 {
     grid-area: text;
@@ -75,7 +80,7 @@ nav ul {
     width: 100%;
     padding:0;
 }
-nav li:hover {
+nav li a:hover {
     background-color: var(--main-dark);
 }
 .navlink {
@@ -123,17 +128,112 @@ main {
 footer {
     grid-area: footer;
 }
-@media screen and (min-width:850px) {
+.e {
+    display: hidden;
+}
+
+@media screen and (min-width: 540px) {
+    header {
+        position: fixed;
+        width: 20vw;
+        height: 100vh;
+        grid-template-rows: 20vh 10vh 20vh;
+        grid-template-areas: 
+        "logo logo logo logo"
+        "text text text text"
+        "nav nav nav nav";
+    }
+    .logo {
+        margin: 2rem auto;
+        align-self: center;
+        height:100%;
+    }
+    .logo img{
+        min-height: 9vw;
+    }
+    header h1{
+        margin:0 1rem;
+        text-align: center;
+        font-size: large;
+    }
     nav {
-        display: block;
+        display: inline-block;
+        padding-top: 3rem;
+        position:unset;
+        clip-path: none;
+        -webkit-clip-path: none;
     }
     .menu-toggle {
         display: none;
     }
+    main {
+        padding-left:calc(20vw + 2rem);
+    }
+}
+
+@media screen and (min-width: 900px) {
     header {
+        position:unset;
+        height: auto;
+        width:100%; 
+        padding: 1rem 0 0 0;
+        grid-template-rows: auto;
         grid-template-areas:
-            "logo ."
-            "logo text;
+            "logo . . ."
+            "logo . text text"
+            "e e e e"
+            "nav nav nav nav";
+    }
+    .e {
+        grid-area: e;
+        display:block;
+        height:2rem;
+        width: 100%;
+        background-color:white;
+    }
+    nav {
+        background-color:white;
+        height: auto;
+        width: calc(100% - 4rem);
+        padding: 0 2rem;
+    }
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        padding: 1rem 0;
+        background-color: var(--main-light);
+    }
+    .navlink {
+        min-width: 10vw;
+        padding:0;
+        margin: 0 1rem;
+    }
+    .navlink a {
+        background-color: var(--main-dark);
+        border-radius: 0.3rem;
+        width: 100%;
+        margin:0;
+        padding: 0.5rem 0;
+        text-align: center;
+    }
+    .navlink a:hover {
+        background-color: var(--grey-dark);
+    }
+    .logo {
+        width: auto;
+        align-self: center;
+        margin:0 2rem 1rem 2rem;
+    }
+    header h1 {
+        font-size: x-large;
+        margin: 0 2rem 1rem 0;
+    }
+    .logo img {
+        min-height: auto;
+    }
+    main {
+        padding-left: 2rem;
     }
     .hero-text {
         grid-column: 7 / span 6;
@@ -142,8 +242,10 @@ footer {
     .hero-img{
         grid-column: 1 / span 6;
     }
-    .featured {
-        grid-column: auto / span 3;
-        height:20vw;
-    }
+
+}
+
+
+.hidden {
+    display: none;
 }
