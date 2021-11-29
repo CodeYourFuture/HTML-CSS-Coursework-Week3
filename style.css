@@ -1,1 +1,233 @@
-/*  Add your styling here */
+/* Fonts */
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@font-face {
+    font-family: "self-deception";
+    src: url("./fonts/self-deception/Self\ Deception\ -\ TTF.ttf") format("woff2"), url("myfont.woff") format("woff");
+}
+
+
+/* Variables */
+
+:root {
+    --light-pink: rgb(250, 211, 237);
+    --lighter-pink: rgba(255, 231, 246, 0.5);
+    --transparent-white: rgba(255, 255, 255, 0.35);
+}
+
+
+/* Content */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    display: grid;
+    grid-template-areas: "header" "main" "footer";
+}
+
+.header-items {
+    display: grid;
+    grid-template-areas: "logo hamburger hamburger" "logo texts texts";
+    justify-items: end;
+    padding: 20px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "welcome welcome" "about about" "events events" "cakes ice-cream" "milk-shakes doughnuts";
+    grid-gap: 10px;
+    padding: 20px;
+    text-align: center;
+    background: var(--lighter-pink);
+}
+
+
+/* Grid Areas */
+
+header {
+    grid-area: header;
+}
+
+.welcome {
+    grid-area: welcome;
+}
+
+.about {
+    grid-area: about;
+}
+
+.hero {
+    grid-area: events;
+}
+
+.cakes {
+    grid-area: cakes;
+}
+
+.ice-cream {
+    grid-area: ice-cream;
+}
+
+.milk-shakes {
+    grid-area: milk-shakes;
+}
+
+.doughnuts {
+    grid-area: doughnuts;
+}
+
+footer {
+    grid-area: footer;
+}
+
+
+/* Header */
+
+header {
+    background: var(--light-pink);
+}
+
+header img {
+    width: 100px;
+    border-radius: 50%;
+    grid-area: logo;
+    margin: 10px 20px 10px 0;
+}
+
+nav {
+    display: none;
+}
+
+.hamburger-menu {
+    grid-area: hamburger;
+}
+
+header p {
+    grid-area: texts;
+    text-align: end;
+    align-self: flex-end;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+    grid-area: nav;
+    align-self: start;
+}
+
+.fas {
+    font-size: 30px;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "self-deception";
+}
+
+h1 {
+    font-size: 60px;
+    padding-top: 30px;
+}
+
+h2 {
+    font-size: 50px;
+    padding: 200px 0;
+    color: rgb(0, 0, 0);
+}
+
+h3 {
+    font-size: 40px;
+    padding: 50px 0;
+}
+
+h2,
+h3 {
+    background-color: var(--transparent-white);
+}
+
+
+/* About us */
+
+.about {
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+
+/* Hire us */
+
+.hero {
+    background-image: url(./images/colin-lee-1FXyOIpoIlI-unsplash.jpeg);
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+
+/* Menu */
+
+.cakes {
+    background-image: url("./images/marina-grynykha-_JAXgr12AJY-unsplash.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+
+.ice-cream {
+    background-image: url("./images/najla-cam-f8TajCVv4s8-unsplash.jpeg");
+    background-size: contain;
+}
+
+.milk-shakes {
+    background-image: url(./images/toa-heftiba-HbUEtK9vnJc-unsplash.jpeg);
+    background-size: cover;
+    background-position: right bottom;
+}
+
+.doughnuts {
+    background-image: url(./images/the-blackrabbit-RfSLoXGSdsI-unsplash.jpeg);
+    background-size: cover;
+}
+
+
+/* Footer */
+
+footer {
+    background: rgb(250, 211, 237);
+    padding: 40px;
+    font-size: 0.8em;
+    display: grid;
+    grid-template-areas: "call" "email" "find" "designer";
+}
+
+.call {
+    grid-area: call;
+}
+
+.email {
+    grid-area: email;
+}
+
+.find {
+    grid-area: find;
+}
+
+.designer {
+    text-align: center;
+    padding-top: 20px;
+    grid-area: designer;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
+
+@media screen and (min-width: px) {}
