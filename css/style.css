@@ -97,88 +97,30 @@ main {
 }
 
 h1 {
-    text-align: center;
     font-size: 1.2rem;
 }
 
 .text {
     padding: 20px;
     margin:20px;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     background: #eee;
 }
 
 .images {
-    /* padding: 20px 10px; */
     margin: 0 auto;
     margin-bottom: 50px;    
 }
 
 .cupcake-image {    
     margin: 20px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;    
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;      
 }
 
 .cupcake-image:hover {
-    transform: scale(0.9);
+    transform: scale(0.8);
     animation: swing 1s ease-in-out;
     animation-iteration-count: 1;
-}
-
-@-webkit-keyframes swing
-{
-    15%
-    {
-        transform: translateX(5px);
-    }
-    30%
-    {
-        transform: translateX(-5px);
-    } 
-    50%
-    {
-        transform: translateX(3px);
-    }
-    65%
-    {
-        transform: translateX(-3px);
-    }
-    80%
-    {
-        transform: translateX(2px);
-    }
-    100%
-    {
-        transform: translateX(0);
-    }
-}
-@keyframes swing
-{
-    15%
-    {
-        transform: translateX(5px);
-    }
-    30%
-    {
-        transform: translateX(-5px);
-    }
-    50%
-    {
-        transform: translateX(3px);
-    }
-    65%
-    {
-        transform: translateX(-3px);
-    }
-    80%
-    {
-        transform: translateX(2px);
-    }
-    100%
-    {
-        transform: translateX(0);
-    }
 }
 
 /* Footer */
@@ -198,8 +140,6 @@ footer ul li{
     text-align: center;
     font-style: italic;    
 }
-
-
 
 ul li {
     list-style: none;
