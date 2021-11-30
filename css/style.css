@@ -2,28 +2,14 @@
     outline: 1px solid red;
 } */
 
+/* General Styles */
+
 html, body {
     box-sizing: border-box;
     margin: 0;
     padding: 0; 
     width: 100%;  
     font-family: 'Montserrat', sans-serif; 
-}
-
-header {
-    background-color: #33304b;
-    color: rgb(228, 210, 210);
-    font-size: 2rem;
-    font-weight: 800;
-    font-style: italic;
-    padding: 20px; 
-}
-
-header p {
-    text-align: right;
-    margin-top: 40px;
-    padding: 20px;
-    font-size: 1.4rem;    
 }
 
 img {
@@ -37,10 +23,7 @@ img {
 .logo {
     display: block;
     margin: 0 auto;
-    width: 100px;
-    max-width: 200px;
-    cursor: pointer;
-
+    width: 100px;    
 }
 
 .logo-text {
@@ -55,25 +38,38 @@ img {
     cursor: pointer;
 }
 
-.header-logo_and_hamburger-icon {
+.logo_and_hamburger-icon {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 15px;
 }
 
+header {
+    background-color: #33304b;   
+    padding: 20px; 
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;  
+}
+
+header p {
+    color: #e4d2d2;
+    font-weight: 800;
+    font-style: italic;
+    text-align: right;
+    font-size: 1.4rem;    
+}
 
 /* NavBar */
 
 nav {
     background-color: #43386b;
-    /* height: 70px; */
-    /* clear: both; */
     width: 90%;
     display: none;
     font-weight: 600;
     margin: 0 auto;
     padding: 0;
-
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;  
+    
 }
 
 nav ul {
@@ -95,20 +91,9 @@ nav ul li {
     
 }
 
-nav ul li a {
-    /* background-color: #7d66cf;  */
-     
-}
-
-nav ul {
-    clear: both;
-}
-
-
 /* Main */
 
 main {
-    /* min-width: 200px; */
     margin: 0 auto;
     width: 90%;    
 }
@@ -242,74 +227,3 @@ footer p:last-child {
     padding-top: 20px;
 }
 
-/* @media screen and (min-width: 600px) { */
-  /* .four-images {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-  } */
-
-  /* main {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-  }
-
-} */
-  /* .top-image {
-      grid-column: 1/3;
-      grid-row: 1/3;
-  }
-} */
-
-@media screen and (min-width: 600px) {
-    main {
-        display: grid;
-        grid-template-columns: 50% 50%; 
-        grid-template-areas: 
-        "text text"
-        "top top"
-        "one two"
-        "three four";          
-     }
-
-     .one {
-        grid-area: one;        
-    }
-
-    .two {
-        grid-area: two;
-    }
-
-    .three {
-        grid-area: three;
-    }
-
-    .four {
-        grid-area: four;
-    }
-
-    .top {
-        grid-area: top;      
-    }
-
-    .text {
-        grid-area: text;     
-    }
-
-    footer ul li {
-        text-align: left;
-    }
-}  
-
-@media screen and (min-width: 996px) {
-
-    nav {
-        display: block;
-    }
-    main {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-auto-rows: auto;
-        grid-template-areas: 
-        "top top text text"
-        "one two three four";
-    }    
-}
