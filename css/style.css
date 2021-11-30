@@ -10,6 +10,7 @@ html, body {
     padding: 0; 
     width: 100%;  
     font-family: 'Montserrat', sans-serif; 
+    
 }
 
 img {
@@ -32,6 +33,7 @@ img {
     font-size: 0.8rem;
     text-align: center;
     color:#fae0a8;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
 }
 
 .hamburger-icon {
@@ -56,7 +58,9 @@ header p {
     font-weight: 800;
     font-style: italic;
     text-align: right;
-    font-size: 1.4rem;    
+    font-size: 1.4rem; 
+    /* color: white; */
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
 }
 
 /* NavBar */
@@ -86,7 +90,10 @@ nav ul li {
     background-color: #7d66cf;  
     margin: 0 5px;
     padding: 5px;
-    text-transform: uppercase;     
+    text-transform: uppercase;   
+    color:#fae0a8;	
+    /* text-shadow: 0px 10px 10px #234D3C; */
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;  
 }
 
 /* Main */
@@ -98,13 +105,16 @@ main {
 
 h1 {
     font-size: 1.2rem;
+    color:#fae0a8;	
+    /* text-shadow: 0px 10px 10px #234D3C; */
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
 }
 
 .text {
     padding: 20px;
     margin:20px;
     font-size: 0.9rem;
-    background: #eee;
+    /* background: #eee; */
 }
 
 .images {
