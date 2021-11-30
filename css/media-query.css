@@ -4,6 +4,8 @@
         font-size: 1.7rem;
     }
 
+  
+
 /* Main */
     main {
         display: grid;
@@ -70,8 +72,8 @@
     header {
         display: flex;
         justify-content: space-between;
-        align-items: baseline;    
-        padding-bottom: 10px;    
+        align-items: baseline;            
+        padding: 20px 60px; 
     }
 
     /* Navbar */

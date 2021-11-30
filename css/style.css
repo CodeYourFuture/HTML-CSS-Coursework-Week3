@@ -70,9 +70,11 @@ header {
     padding: 20px; 
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;  
     background: rgb(121,9,19);
-    background: linear-gradient(39deg, rgba(121,9,19,1) 5%, rgba(103,11,61,1) 93%)
+    background: linear-gradient(39deg, rgba(121,9,19,1) 5%, rgba(103,11,61,1) 93%);
+    padding-bottom: 10px;
+    }
 
-}
+
 
 header p {
     color: #e4d2d2;
@@ -143,7 +145,7 @@ h1 {
     padding: 20px;
     margin:10px;
     font-size: 0.9rem;
-    /* background: #eee; */
+    
 }
 
 .text p {
