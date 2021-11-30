@@ -13,6 +13,7 @@
     --light-pink: rgb(250, 211, 237);
     --lighter-pink: rgba(255, 231, 246, 0.5);
     --transparent-white: rgba(255, 255, 255, 0.35);
+    --lavender-pink: rgb(255, 173, 224);
 }
 
 
@@ -96,6 +97,7 @@ header img {
     width: 100px;
     border-radius: 50%;
     grid-area: logo;
+    justify-self: left;
     margin: 10px 20px 10px 0;
 }
 
@@ -137,13 +139,15 @@ h1 {
 
 h2 {
     font-size: 50px;
-    padding: 200px 0;
+    padding: 100px 0;
+    padding-top: 130px;
     color: rgb(0, 0, 0);
 }
 
 h3 {
     font-size: 40px;
     padding: 50px 0;
+    padding-top: 70px;
 }
 
 h2,
@@ -159,6 +163,11 @@ h3 {
     text-align: left;
 }
 
+.about p {
+    letter-spacing: 0.03rem;
+    word-spacing: 0.3rem;
+}
+
 
 /* Hire us */
 
@@ -172,35 +181,40 @@ h3 {
 
 /* Menu */
 
-.cakes {
-    background-image: url("./images/marina-grynykha-_JAXgr12AJY-unsplash.jpeg");
+.cakes,
+.ice-cream,
+.milk-shakes,
+.doughnuts {
     background-size: cover;
     background-position: center;
 }
 
+.cakes {
+    background-image: url("./images/marina-grynykha-_JAXgr12AJY-unsplash.jpeg");
+}
+
 .ice-cream {
     background-image: url("./images/najla-cam-f8TajCVv4s8-unsplash.jpeg");
-    background-size: contain;
 }
 
 .milk-shakes {
     background-image: url(./images/toa-heftiba-HbUEtK9vnJc-unsplash.jpeg);
-    background-size: cover;
-    background-position: right bottom;
 }
 
 .doughnuts {
     background-image: url(./images/the-blackrabbit-RfSLoXGSdsI-unsplash.jpeg);
-    background-size: cover;
 }
 
 
 /* Footer */
 
 footer {
-    background: rgb(250, 211, 237);
+    background: var(--light-pink);
     padding: 40px;
-    font-size: 0.8em;
+    font-size: 0.9em;
+}
+
+.footer-links-wrapper {
     display: grid;
     grid-template-areas: "call" "email" "find" "designer";
 }
@@ -230,4 +244,94 @@ a {
     margin-bottom: 10px;
 }
 
-@media screen and (min-width: px) {}
+@media screen and (min-width: 1024px) {
+    .hamburger-menu {
+        display: none;
+    }
+    nav {
+        display: grid;
+        grid-area: nav;
+        width: 100%;
+        justify-items: end;
+    }
+    main {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas: "nav nav nav nav" "events events welcome welcome" "events events about about" "events events about about" "cakes ice-cream milk-shakes doughnuts";
+        grid-gap: 20px;
+        padding: 40px;
+        text-align: center;
+        background: var(--lighter-pink);
+    }
+    nav ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: "home about-us hire-us our-treats find-us";
+        justify-content: right;
+        width: 50vw;
+    }
+    .about p,
+    header p {
+        line-height: 1.5em;
+        letter-spacing: 0.05em;
+        text-align: right;
+        font-size: 20px;
+        word-spacing: 0.1rem;
+        width: 90%;
+        margin-left: auto;
+    }
+    .header-items {
+        padding: 0 40px;
+    }
+    .home {
+        grid-area: home;
+    }
+    .about-us {
+        grid-area: about-us;
+    }
+    .hire-us {
+        grid-area: hire-us;
+    }
+    .our-treats {
+        grid-area: our-treats;
+    }
+    .find-us {
+        grid-area: find-us;
+    }
+    nav li {
+        list-style-type: none;
+    }
+    .footer-links-wrapper {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: "call email find" "designer designer designer";
+        justify-items: center;
+        width: 70%;
+        margin: auto;
+    }
+    footer {
+        font-size: 1em;
+    }
+    h1 {
+        font-size: 90px;
+        text-align: right;
+        padding-top: 0;
+    }
+    h2 {
+        font-size: 80px;
+        padding: 200px 0;
+        padding-top: 230px;
+    }
+    h3 {
+        font-size: 60px;
+        padding: 50px;
+        padding-top: 80px;
+    }
+    nav {
+        background: var(--lavender-pink);
+        margin-bottom: 20px;
+    }
+    li {
+        background: var(--light-pink);
+        padding: 10px;
+        margin: 10px;
+    }
+}
