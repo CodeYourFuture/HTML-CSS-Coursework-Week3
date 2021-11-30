@@ -6,4 +6,70 @@ body {
   background-color: pink;
   margin: 0;
   text-align: center;
+  padding: 10px;
+}
+
+main {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 300px 300px 150px 150px 100px;
+
+  grid-template-areas:
+    "hero hero"
+    "hero hero"
+    "product product"
+    "product product"
+    "footer footer";
+}
+
+.hero {
+  grid-area: hero;
+  background-color: aqua;
+}
+
+.hero img {
+  width: 200px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+footer {
+  grid-area: footer;
+}
+
+h1 {
+  font-size: 4em;
+  font-weight: bold;
+}
+
+.cake-menu-squares {
+  border: 3px solid black;
+  grid-area: product;
+}
+
+.cake-menu-squares img {
+  width: 150px;
+  padding: 10px;
+}
+
+header {
+}
+
+header img {
+  width: 120px;
+  padding: 20px;
+}
+
+nav img {
+  width: 40px;
+}
+
+p {
+  font-size: 30px;
+}
+
+footer img {
+  width: 50px;
 }
