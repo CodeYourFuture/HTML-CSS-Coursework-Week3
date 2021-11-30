@@ -68,8 +68,7 @@ nav {
     font-weight: 600;
     margin: 0 auto;
     padding: 0;
-    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;  
-    
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;      
 }
 
 nav ul {
@@ -88,7 +87,6 @@ nav ul li {
     margin: 0 5px;
     padding: 5px;
     text-transform: uppercase;     
-    
 }
 
 /* Main */
@@ -121,7 +119,6 @@ h1 {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;    
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;      
 }
-
 
 .cupcake-image:hover {
     transform: scale(0.9);
@@ -184,8 +181,6 @@ h1 {
     }
 }
 
-/* Grid */
-
 /* Footer */
 
 footer {
@@ -216,8 +211,6 @@ ul li a {
     color: #f5a182;
     display: block;
 }
-
-
 
 footer p:last-child {
     text-align: center;
