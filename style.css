@@ -1,1 +1,84 @@
-/*  Add your styling here */
+body {
+    display: grid;   
+    margin: 0 auto;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 130px 190px 150px 130px 130px 150px;
+    grid-template-areas: 
+    "header    header"
+    "welcome   welcome"
+    "hero      hero"
+    "birthday  cupcakes"
+    "gluten    wedding"
+    "footer    footer";
+}
+
+.header {
+    background-color: aqua;
+    grid-area: header;
+}
+
+.nav-bar {
+    background-color: rgb(235, 220, 13);
+    grid-area: nav;
+}
+
+.welcome-intro {
+    background-color: rgb(135, 71, 196);
+    grid-area: welcome;
+}
+
+.hero {
+    background-color: coral;
+    grid-area: hero;
+}
+
+.birthday {
+    background-color: burlywood;
+    grid-area: birthday;
+}
+
+.cupcakes {
+    background-color: darkcyan;
+    grid-area: cupcakes;
+}
+
+.gluten-vegan {
+    background-color: darkkhaki;
+    grid-area: gluten;
+}
+
+.wedding {
+    background-color: darkgrey;
+    grid-area: wedding;
+}
+
+footer {
+    background-color: crimson;
+    grid-area: footer;
+}
+
+/* TABLET */
+@media screen and (min-width: 540px) {
+    body {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 100px 80px 170px 140px 110px;
+        grid-template-areas: 
+        "header     header     header     header"
+        "nav        nav        nav        nav"
+        "hero       hero       welcome    welcome"
+        "birthday   cupcakes   gluten     wedding"
+        "footer     footer     footer     footer";
+    }    
+}
+
+/* DESKTOP */
+@media screen and (min-width: 900px) {
+    body {
+        grid-template-areas: 
+        "header     header     header     header"
+        ".          nav        nav        ."
+        ".          hero       welcome    ."
+        "birthday   cupcakes   gluten     wedding"
+        "footer     footer     footer     footer";
+    }    
+}
