@@ -1,6 +1,5 @@
 /* Fonts */
 
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 @font-face {
     font-family: "self-deception";
     src: url("./fonts/self-deception/Self\ Deception\ -\ TTF.ttf") format("woff2"), url("myfont.woff") format("woff");
