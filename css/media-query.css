@@ -8,7 +8,9 @@
         "text text"
         "top top"
         "one two"
-        "three four";          
+        "three four";     
+        grid-row-gap: 20px; 
+        grid-column-gap: 20px;     
      }
 
      .one {
@@ -79,6 +81,8 @@
         grid-template-areas: 
         "top top text text"
         "one two three four";
+        grid-row-gap: 20px; 
+        grid-column-gap: 20px;
     }    
 
     /* Main */
@@ -90,7 +94,24 @@
     
     .text {      
         font-size: 1rem;
-        text-align: right;         
+        text-align: right;  
+        display: flex;
+        flex-direction: column;
+        align-self: center;      
      }
-}
+
+
+     /* Footer */
+
+     footer ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+         }
+
+         footer ul li {
+             padding: 10px;
+         }
+     }
+
 
