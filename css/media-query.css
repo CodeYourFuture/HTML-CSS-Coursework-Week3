@@ -73,7 +73,8 @@
         display: flex;
         justify-content: space-between;
         align-items: baseline;            
-        padding: 20px 60px; 
+        padding: 30px 60px; 
+        
     }
 
     /* Navbar */
