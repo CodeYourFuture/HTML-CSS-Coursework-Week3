@@ -1,5 +1,9 @@
 @media screen and (min-width: 600px) {
 
+    h1 {
+        font-size: 1.7rem;
+    }
+
 /* Main */
     main {
         display: grid;
@@ -89,7 +93,7 @@
 
     h1 {
         text-align: right;
-        font-size: 2rem;
+        font-size: 2.2rem;
     }
     
     .text {      

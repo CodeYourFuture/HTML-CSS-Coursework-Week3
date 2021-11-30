@@ -121,6 +121,11 @@ nav ul li a:hover {
     transition: 0.2s ease-in;
 }
 
+.hamburger-icon:hover {
+    transform: scale(1.5);
+    transition: 0.4s ease-in-out;
+}
+
 /* Main */
 
 main {
@@ -130,25 +135,27 @@ main {
 
 h1 {
     font-size: 1.2rem;
-    color:#fae0a8;	
-    
+    color:#fae0a8;	    
     text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
 }
 
 .text {
     padding: 20px;
-    /* margin:20px; */
+    margin:10px;
     font-size: 0.9rem;
-    background: #eee;
+    /* background: #eee; */
 }
 
+.text p {
+    font-weight: 500;
+}
 .images {
     margin: 0 auto;
-    margin-bottom: 50px;    
+    
 }
 
 .cupcake-image {    
-    /* margin: 20px; */
+    margin: 10px;
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px; 
         
 }
