@@ -1,12 +1,14 @@
 /*  Add your styling here */
 body {
   margin: 0;
+  font-size: 1.5rem;
 }
 
 /* Header Section */
 .header {
-  background-color: #ffca6e;
+  background-color: #ebe1c5;
   padding: 1.5rem;
+  margin-bottom: 4rem;
 }
 
 .home-icon {
@@ -21,17 +23,27 @@ body {
   float: right;
 }
 
-.navigation-quote {
+.header-quote {
   text-align: end;
+}
+
+/* Main Section */
+.main {
+  margin: 1.5rem;
 }
 
 .navigation {
   display: none;
 }
 
-/* Main Section */
-.main {
-  margin: 1rem;
+.brand-name {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.brand-description,
+.cake {
+  margin-bottom: 3rem;
 }
 
 .cake {
@@ -40,21 +52,28 @@ body {
 }
 
 .cake-grid {
-  margin: 1.5rem;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: auto auto;
+  width: 100%;
+  margin-bottom: 4rem;
 }
 
 .cake-image {
-  width: 200px;
+  width: 100%;
   height: 200px;
 }
 
 /* Footer Section */
 .footer {
   text-align: center;
+  background-color: #ebe1c5;
+  padding: 2.5rem 0;
 }
 
 .social-icon {
   width: 35px;
   height: 35px;
   margin-right: 1rem;
+  margin-bottom: 1.5rem;
 }
