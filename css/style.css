@@ -50,7 +50,8 @@ ul li a {
     padding: 0;
     font-size: 0.8rem;
     text-align: center;
-    color:#fae0a8;
+    
+    color: white;
     text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
 }
 
@@ -69,8 +70,9 @@ header {
     background-color: #33304b;   
     padding: 20px; 
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;  
-    background: rgb(121,9,19);
-    background: linear-gradient(39deg, rgba(121,9,19,1) 5%, rgba(103,11,61,1) 93%);
+ 
+    background: rgb(22,6,10);
+    background: linear-gradient(335deg, rgba(22,6,10,1) 22%, rgba(27,1,7,1) 42%, rgba(60,4,4,1) 68%, rgba(182,165,175,1) 99%);
     padding-bottom: 10px;
     }
 
@@ -82,8 +84,10 @@ header p {
     font-style: italic;
     text-align: right;
     font-size: 1.4rem; 
-    color: white;
+    
+    color:#fae0a8;
     text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    text-shadow: 1px 1px 2px black, 0 0 25px rgb(255, 73, 1), 0 0 5px rgb(229, 229, 231);
 }
 
 /* NavBar */
@@ -139,12 +143,14 @@ h1 {
     font-size: 1.2rem;
     color:#fae0a8;	    
     text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    
 }
 
 .text {
     padding: 20px;
     margin:10px;
     font-size: 0.9rem;
+    line-height: 1.7rem;
     
 }
 
@@ -172,6 +178,8 @@ h1 {
 
 footer {
     background-color: #33304b;
+    background: rgb(121,9,19);
+    background: linear-gradient(39deg, rgba(121,9,19,1) 5%, rgba(103,11,61,1) 93%);
     padding: 20px;   
 }
 
