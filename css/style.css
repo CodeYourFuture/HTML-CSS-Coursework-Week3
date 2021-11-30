@@ -137,8 +137,8 @@ h1 {
 
 .cupcake-image:hover {
     transform: scale(0.8);
-    animation: swing 1s ease-in-out;
-    animation-iteration-count: 1;
+    animation: swing 1s ease-in-out; 
+    animation-iteration-count: 1; /*this animation gets triggered after I deleted my keyframes, but how?*/
 }
 
 /* Footer */
