@@ -1,4 +1,11 @@
 /*  Add your styling here */
+:root {
+  --green-dark: #264653;
+  --green-light: #2a9d8f;
+  --orange-light: #f4a261;
+  --white: #fff;
+}
+
 body {
   font-family: 'Lato', sans-serif;
 }
