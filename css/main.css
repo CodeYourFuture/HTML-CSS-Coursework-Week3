@@ -1,0 +1,35 @@
+/* Main */
+
+main {
+    margin: 0 auto;
+    width: 90%;    
+}
+
+h1 {
+    font-family: 'Luckiest Guy', cursive;
+    letter-spacing: .1rem;
+    font-size: 1.2rem;
+    color:#fae0a8;	    
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;    
+}
+
+.text {
+    margin: 10px;
+    font-size: 0.9rem;
+    line-height: 1.6rem;
+}
+
+.text p {
+    font-weight: 500;
+}
+
+.cupcake-image {    
+    margin: 10px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;         
+}
+
+.cupcake-image:hover {
+    transform: scale(0.8);
+    animation: swing 1s ease-in-out; 
+    animation-iteration-count: 1; /* activated by external library*/
+}

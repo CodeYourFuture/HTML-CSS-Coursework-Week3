@@ -1,0 +1,31 @@
+/* Footer */
+
+footer {
+    background: rgb(121,9,19);
+    background: linear-gradient(39deg, rgba(121,9,19,1) 5%, rgba(103,11,61,1) 93%);
+    padding: 20px;   
+}
+
+footer ul {
+    padding: 0;
+}
+
+footer ul li{
+    font-size: 0.9rem;
+    font-weight: 400;
+    text-align: center;
+    font-style: italic;  
+    line-height: 1.2rem;  
+}
+
+footer ul li a:hover {
+ color: #e7d8d8;
+}
+
+footer p:last-child {
+    text-align: center;
+    color: aliceblue;
+    font-weight: 100;
+    font-size: 0.8rem;
+    padding-top: 20px;
+}

@@ -2,9 +2,7 @@
 
     h1 {
         font-size: 1.7rem;
-    }
-
-  
+    }  
 
 /* Main */
     main {
@@ -15,9 +13,7 @@
         "top top"
         "one two"
         "three four";     
-        grid-row-gap: 20px; 
-        grid-column-gap: 20px;     
-     }
+    }
 
      .one {
         grid-area: one;        
@@ -61,7 +57,7 @@
     }
     
     .logo-text {
-        font-size: 1.4rem;        
+        font-size: 1.1rem;        
     }   
  
     header p {
@@ -73,8 +69,7 @@
         display: flex;
         justify-content: space-between;
         align-items: baseline;            
-        padding: 30px 60px; 
-        
+        padding: 30px 62px;         
     }
 
     /* Navbar */
@@ -82,14 +77,13 @@
     nav {
         display: block;
     }
+
     main {
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-auto-rows: auto;
         grid-template-areas: 
         "top top text text"
         "one two three four";
-        grid-row-gap: 20px; 
-        grid-column-gap: 20px;
     }    
 
     /* Main */
