@@ -1,1 +1,121 @@
 /*  Add your styling here */
+
+*{
+    margin:0;
+    padding:0;
+}
+ body{
+    display: grid;
+    grid-template-areas: "header" "main" "footer";  
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+header{
+    padding: 1rem;
+    grid-area: header;
+}
+
+.header{
+    display: grid;
+    grid-template-areas: "logo hamburger" "logo intro";
+}
+
+.logo{
+    grid-area: logo;
+}
+
+.hamburger{
+    grid-area: hamburger;
+    border: none;
+    background: transparent;
+    text-align: end;
+}
+
+.intro{
+    grid-area: intro;
+    text-align: end;
+}
+
+nav{
+    display: none;
+}
+main{   
+display: grid;
+grid-area: main;
+grid-template-columns: 1fr 1fr;
+grid-template-areas: "welcome welcome" "info info" "home-img home-img" "services services" "cheese birthday" "cupcakes specials";
+grid-gap: 3px;
+width: 100%;
+padding: 1rem;
+box-sizing: border-box;
+}
+.home{
+    grid-area: welcome;
+   
+}
+.info{
+    grid-area: info;
+}
+.home-section{
+    grid-area: home-img; 
+}
+
+.home-section img{
+    width: 100%;
+}
+
+.cheese{
+    grid-area: cheese;
+    background: url("./img/fruitcake2.jpg");
+    background-size: cover;
+    
+}
+
+.birthday{
+    grid-area: birthday;
+    background: url("./img/birthday.jpg");
+    background-size: cover;
+    
+}
+.cupcakes{
+    grid-area: cupcakes;
+    background: url("./img/cupcakes.jpg");
+    background-size: cover;
+}
+.specials{
+    grid-area: specials;
+    background: url("./img/specials2.jpg");
+    background-size: cover;
+    background-position: center bottom;
+}
+
+.services{
+    grid-area: services;
+}
+
+
+
+.services-img{
+    box-sizing: border-box;
+
+}
+
+.services-img p{
+    padding: 4rem 0 ;
+    text-align: center;
+
+}
+
+
+footer{
+    display: grid;
+    grid-area: footer;
+    grid-template-areas: "contact-links";
+    padding: 1rem;
+
+} 
+.contact-links{
+    grid-area: contact-links;
+    text-decoration: none;
+}
