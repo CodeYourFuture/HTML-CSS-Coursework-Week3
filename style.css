@@ -3,58 +3,59 @@
 body {
   font-family: "Rochester", cursive;
   -webkit-font-smoothing: antialiased;
-  background-color: pink;
+  color: black;
+  background-color: #fad390;
   margin: 0;
   text-align: center;
-  padding: 10px;
+  /* padding: 10px; */
 }
 
 main {
+  padding: 1em 3em;
   display: grid;
   grid-gap: 10px;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 300px 300px 150px 150px 100px;
 
   grid-template-areas:
-    "hero hero"
-    "hero hero"
-    "product product"
-    "product product"
+    "header header"
+    "welcome welcome"
+    "products products"
     "footer footer";
 }
 
-.hero {
-  grid-area: hero;
-  background-color: aqua;
-}
-
-.hero img {
-  width: 200px;
-  background-color: white;
-  border-radius: 10px;
-  padding: 10px;
-}
-
+header,
 footer {
-  grid-area: footer;
+  background-color: #78e08f;
 }
 
-h1 {
-  font-size: 4em;
-  font-weight: bold;
+.welcome {
+  grid-area: welcome;
+  padding-bottom: 30px;
 }
 
-.cake-menu-squares {
+.welcome img {
+  padding: 40px 80px;
+  width: 50%;
   border: 3px solid black;
-  grid-area: product;
+  border-radius: 20px;
+  background-color: #fa983a;
 }
 
-.cake-menu-squares img {
-  width: 150px;
+.products {
+  grid-area: products;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2rem;
+}
+
+.product-img {
+}
+
+.products img {
+  border: 3px solid black;
+  border-radius: 20px;
+  width: 100%;
   padding: 10px;
-}
-
-header {
 }
 
 header img {
@@ -68,6 +69,18 @@ nav img {
 
 p {
   font-size: 30px;
+  text-align: left;
+}
+
+h1 {
+  font-size: 4em;
+  font-weight: bold;
+  margin-top: 0;
+  text-align: left;
+}
+
+footer {
+  grid-area: footer;
 }
 
 footer img {
