@@ -1,1 +1,134 @@
 /*  Add your styling here */
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%
+}
+
+main{
+    margin: 1rem;
+    padding: 1rem;
+}
+
+/* background image */
+.bg-imgb {
+    /* The image used */
+    background-image: url("img/jordane-mathieu-nvCeLoxu0Cw-unsplash.jpg");
+    min-height: 200px;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    /* Needed to position the navbar */
+    position: relative;
+   /* overflow: hidden; */
+  }
+
+  /* button */ 
+  .toggle-button{
+      position: absolute;
+      top: .75rem;
+      right: 1rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 25px;
+      height: 21px;
+  }
+
+  .toggle-button .bar{
+      height: 3px;
+      width: 100%;
+      background-color: white;
+      border-radius: 10px;
+  }
+
+  /* navbar */
+  .brand-title{
+    font-size: 1.2rem;
+    padding: .5rem
+    }
+
+  .navbar{
+        color: white;
+    }
+
+  .navbar-links ul{
+        display: none;
+    }
+
+  @media screen and (min-width: 540px) {
+
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: white;
+    }
+  
+    .navbar-links ul{
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+  
+    .navbar-links li{
+        list-style: none;
+    }
+    .navbar-links li a{
+        text-decoration: none;
+        color: white;
+        padding: 1rem;
+        display: block;
+    }
+  
+    .navbar-links li:hover{
+        background-color: #555;
+        border-radius: .5rem;
+    }
+    
+    .toggle-button{
+      display:none;
+      
+    }
+    
+}
+/* take this out*/
+img{
+    width: 30%;
+    height: auto;
+}
+
+/* footer section */
+.social {
+    max-height: 30px;
+    width: 30px;
+    padding: 5px; 
+    border-radius: 70px;
+    border: solid #dddddd 1px;
+    margin: 13px;
+   }
+   .social_icon {
+    max-height: 19.5px;
+    width: auto;
+   }
+  
+   .socials {
+    display: flex;
+    flex-direction: column;
+    /*justify-content: center;*/
+   }
+
+   .footer-text {
+       margin: 0;
+   }
+
+   /* grid content */
+   

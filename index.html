@@ -6,11 +6,100 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Responsive Cake webpage</title>
+    <link rel="stylesheet" href="style.css">
     <!-- Add a link to your css file here -->
 </head>
 
 <body>
-    <!-- Add your markup here -->
+    
+        <!-- header section -->
+        <header class="bg-imgb"> <!-- section 1 grid-->
+            <nav class="navbar">
+                <a href="#" class="toggle-button">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </a>
+                <div class="brand-title">Brand Name</div>
+                <div class="navbar-links">
+                    <ul class="nav-list">
+                        <li class="list-item"><a href="#">Home</a></li>
+                        <li class="list-item"><a href="#">Cakes</a></li>
+                        <li class="list-item"><a href="#">Orderin</a></li>
+                        <li class="list-item"><a href="#">Lessons</a></li>
+                        <li class="list-item"><a href="#">About</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- main section --> <!-- this is for css grid, dont forget to uncomment it-->
+        <div class="grid-container"></div>
+        <main>
+            <section class="welcome"> 
+                <div class="welcome-text"> <!-- section 1 grid-->
+                    <h1>Welcome</h1>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                    when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                    It has survived not only five centuries, but also the leap.</p>
+                </div>
+                <div class="welcome-image">
+                    <img src="img/ruth-georgiev-dvmiNXMh9d8-unsplash.jpeg" alt="chocolate cheese cake with grapefruit">
+                </div>
+                
+            </section>
+
+            <section class="products"> 
+                <div class="product-image"> <!-- section 2 grid -->
+                    <img src="img/jordane-mathieu-lwkuaGoDTXE-unsplash.jpg" alt="sponge cake topped with cream and chocolate">
+                </div>
+                <div class="product-image"> <!-- section 3 grid-->
+                    <img src="img/jordane-mathieu-83sgp9jxW8k-unsplash.jpg" alt="raspberry cake">
+                </div>
+                <div class="product-image"> <!-- section 4 grid-->
+                    <img src="img/jordane-mathieu-5RHodALXtzM-unsplash.jpg" alt="sponge cake topped with cream and chocolate">
+                </div>
+                <div class="product-image"> <!-- section 5 grid-->
+                    <img src="img/jordane-mathieu-eDC7851HvYk-unsplash.jpg" alt="chocolate cake with coconut flakes">
+                </div>
+            </section>
+        </main>
+    </div> 
 </body>
+<!-- footer section -->
+ <footer class="footer">  
+        <div class="footer__content"> <!-- section 6 grid-->
+            <p class="footer-text">
+               text text text 
+            </p>
+        </div>
+    
+        <div class="socials">
+            <div class="social">
+                <img
+                 src="img/twitter-icon.svg"
+                 alt="twitter"
+                 class="social_icon"
+                />
+          </div>
+    
+          <div class="social">
+                <img
+                 src="img/facebook-icon.svg"
+                 alt="facebook"
+                 class="social_icon"
+                />
+          </div>
+    
+          <div class="social">
+                <img
+                 src="img/instagram-icon.svg"
+                 alt="instagram"
+                 class="social_icon"
+                />
+          </div>   
+        </div>
+            <p>© Designed by Teniola Ogunjinrin</p>
+</footer>
 
 </html>
