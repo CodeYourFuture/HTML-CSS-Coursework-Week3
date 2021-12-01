@@ -1,11 +1,105 @@
-/*  Add your styling here */
+/*  Baseline */
 :root {
-  --green-dark: #264653;
-  --green-light: #2a9d8f;
-  --orange-light: #f4a261;
+  --green-dark:rgb(39, 69, 83, 1);
+  --green-light: rgb(103, 201, 184, 1);
+  --orange-light: rgb(232, 111, 81, .9);
   --white: #fff;
 }
 
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 body {
+  margin: 0;
   font-family: 'Lato', sans-serif;
 }
+
+/* Header/Navigation */
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--orange-light);
+  text-align: left;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+}
+
+nav {
+  position: absolute;
+  text-align: right;
+  top: 100%;
+  right: 0;
+  background-color: var(--orange-light);
+  width: 100%;
+  transform: scale(1, 0);
+  transform-origin: top;
+  transition: transform 400ms ease-in-out;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  margin-bottom: 1em;
+  margin-right: 1.5em;
+}
+
+nav a {
+  color: var(--green-dark);
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  transition: opacity 100ms ease-in-out;
+  opacity: 0;
+
+}
+
+nav a:hover {
+  color: var(--white);
+}
+
+.nav-toggle:checked ~ nav {
+  transform: scale(1, 1);
+}
+
+.nav-toggle:checked ~ nav a {
+  opacity: 1;
+  transition: opacity 250ms ease-in-out 350ms;
+}
+
+.nav-toggle {
+  display: none;
+}
+.nav-toggle-label {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+}
+
+label ~ p {
+  text-align: right;
+  padding-top: 5rem; 
+  padding-right: 2rem;
+}
+
+.logo {
+  height: 7rem;
+  width: auto;
+  padding: 1rem 0 0 1rem;
+}
+
+
+.grid-container {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(12, [col-start] 1fr);
+
+}
+
+
