@@ -1,16 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Responsive Cake webpage</title>
-    <!-- Add a link to your css file here -->
-</head>
-
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Responsive Cake webpage</title>
+        <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,300' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/style.css"> 
+        <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="css/footer.css">
+    </head>
 <body>
-    <!-- Add your markup here -->
+    <div class="grid-container">
+        <header class= "header__container">
+            <div class = "item__header__image">
+            </div>
+            <div class = "header__hamburgermenu__container" >
+                <img src = "images/hamburger menu.png" class = "item__header__hamburgermenu"/>
+            </div>
+            <div class = "item__header__textbox">
+                <p class = "the__best__cakes">The Best cakes in town delivered to your door</p>
+            </div>
+        </header>
+        <main>
+            <div >
+                <nav>
+                    <ul class= "nav__flexbox">
+                        <li class="nav__text">HOME</li>
+                        <li class="nav__text">CAKES</li>
+                        <li class="nav__text">ORDER IN</li>
+                        <li class="nav__text">LESSONS</li>
+                    </ul>
+                </nav>
+                <div class ="welcome__container">
+                    <div class = "welcome__justify__text">
+                        <btn class = "order__cake">Order Cake</btn>
+                        <h1>Welcome to LA Cakes</h1>
+                        <p> Home of LA's finest Cakes. Artisan Cakes that you can order online a wide range of Cakes for all occasions</p>
+                    </div>
+                    <div class ="welcome__container__image">
+                        <img src ="images/lakers-cake.jpeg"class="top__cake__image"/>    
+                    </div>
+                </div>
+            <div class = "multiple__image__grid__box">
+                <div class ="item-a">
+                    <img src = "images/cake-heart.jpg" class= "multiple__image__images"/>
+                </div>   
+                <div class ="item-b">
+                    <img src ="images/cake-sparkle.jpg" class= "multiple__image__images"/>
+                </div>    
+                <div class ="item-c">
+                    <img src ="images/Choc-cake.jpg" class= "multiple__image__images"/>
+                </div>  
+                <div class ="item-d">
+                    <img src ="images/cupcakes-choc.jpeg" class= "multiple__image__images"/>
+                </div>
+            </div>
+        </main>
+        <footer class = "footer__container">
+            <div class = "gray__box__1">
+                <p>About Us</p>
+            </div>
+            <div class = "gray__box__2">
+                <p>Delivery</p>
+            </div>
+            <div class = "gray__box__3">
+                <p>Careers</p>
+            </div>
+            <div class = "gray__box__4">
+                <p>Franchise</p>
+            </div>
+        </footer>
+    </div>
 </body>
-
 </html>

@@ -1,0 +1,321 @@
+/*  Add your styling here */
+body {
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.grid-container {
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: 1fr;
+}
+
+/* Header CSS*/
+
+.header__container {
+  display: grid;
+  justify-items: end;
+  column-gap: 0.5rem;
+  width: 100%;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(4, 3rem);
+  background-color: #b5ead7;
+}
+
+.item__header__image {
+  grid-column: 1 / 7;
+  grid-row: 2 / 4;
+  width: 80%;
+  border-radius: 10%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("/images/yellow-cupcake.jpeg");
+  margin-right: 1rem;
+  background-size: cover;
+}
+
+.item__header__hamburgermenu {
+  width: 5rem;
+  object-fit: cover;
+  mix-blend-mode: darken;
+}
+
+.header__hamburgermenu__container {
+  grid-column: 9 / 12;
+  grid-row: 1 / 1;
+}
+
+.item__header__textbox {
+  grid-column: 8 / 12;
+  grid-row: 2 / 3;
+  display: flex;
+  justify-self: right;
+}
+
+.the__best__cakes {
+  font-size: 0.8rem;
+  font-style: italic;
+  text-align: end;
+  padding-right: 1rem;
+  padding-top: 1.5rem;
+  color: #8334eb;
+}
+
+/* Main CSS*/
+
+.order__cake {
+  justify-self: center;
+  display: inline-block;
+  padding: 0.5em 0.5em;
+  border: 0.16em solid #ffffff;
+  margin: 0 0.3em 0.3em 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  color: #8334eb;
+  text-align: center;
+  transition: all 0.15s;
+  border-radius: 2em;
+  background-color: #b5ead7;
+}
+.nav__flexbox {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}
+
+.nav__text {
+  display: none;
+  background: gray;
+  color: #b5ead7;
+  width: 5rem;
+  padding: 0.2rem;
+  text-align: center;
+  list-style-type: none;
+  margin: 0.5rem;
+  color: #8334eb;
+}
+
+.welcome__justify__text {
+  text-align: left;
+  padding: 0 1rem 1rem 1rem;
+  color: #8334eb;
+}
+
+.welcome__justify__text p {
+  color: black;
+}
+
+.top__cake__image {
+  width: 100%;
+  object-fit: cover;
+  padding-bottom: 2rem;
+}
+
+.item-a {
+  grid-area: cake1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.item-b {
+  grid-area: cake2;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.item-c {
+  grid-area: cake3;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.item-d {
+  grid-area: cake4;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.multiple__image__grid__box {
+  display: grid;
+  gap: 1rem;
+  width: 100%;
+  align-items: end;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "cake1 cake2"
+    "cake3 cake4";
+}
+
+.multiple__image__images {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5%;
+}
+
+/* Footer CSS*/
+
+.footer__container {
+  display: grid;
+  grid-template-columns: repeat(13, 1fr);
+  grid-template-rows: repeat(12, 1em);
+  background-color: #b5ead7;
+}
+
+.gray__box__1 {
+  background-color: gray;
+  grid-column: 2 / span 4;
+  grid-row: 2 / span 1;
+  text-align: center;
+  color: white;
+}
+
+.gray__box__2 {
+  background-color: gray;
+  grid-column: 2 / span 4;
+  grid-row: 4 / span 1;
+  text-align: center;
+  color: white;
+}
+
+.gray__box__3 {
+  background-color: gray;
+  grid-column: 2 / span 4;
+  grid-row: 6 / span 1;
+  text-align: center;
+  color: white;
+}
+
+.gray__box__4 {
+  background-color: gray;
+  grid-column: 4 / span 7;
+  grid-row: 9 / span 1;
+  text-align: center;
+  color: white;
+}
+
+/* Tablet Media Queries */
+
+@media only screen and (min-device-width: 500px) {
+  .item__header__image {
+    grid-column: 1 / 7;
+    grid-row: 2 / 4;
+    width: 80%;
+    border-radius: 10%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("/images/yellow-cupcake.jpeg");
+    margin-right: 1rem;
+  }
+}
+
+/* Desktop Media Queries */
+
+@media only screen and (min-device-width: 800px) {
+  .item__header__image {
+    grid-column: 2 / 6;
+    grid-row: 2 / 4;
+    width: 80%;
+    border-radius: 10%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("/images/yellow-cupcake.jpeg");
+    margin-right: 1rem;
+  }
+
+  .the__best__cakes {
+    font-size: 1.3rem;
+  }
+
+  .nav__text {
+    display: block;
+    background-color: #b5ead7;
+  }
+
+  .order__cake {
+    display: none;
+  }
+
+  .header__hamburgermenu__container {
+    display: none;
+  }
+
+  .multiple__image__grid__box {
+    display: grid;
+    gap: 1rem;
+    width: 100%;
+    align-items: end;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "cake1 cake2 cake3 cake4";
+  }
+
+  .welcome__container {
+    display: flex;
+    flex-direction: row-reverse;
+    box-sizing: border-box;
+  }
+
+  .welcome__container__image {
+    height: 100%;
+    width: 50%;
+  }
+
+  .welcome__justify__text {
+    text-align: right;
+    height: 100%;
+    width: 50%;
+  }
+
+  .top__cake__image {
+    width: 100%;
+  }
+
+  .footer__container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1em);
+  }
+
+  .gray__box__1 {
+    background-color: gray;
+    grid-column: 3 / span 2;
+    grid-row: 5 / span 2;
+  }
+
+  .gray__box__2 {
+    background-color: gray;
+    grid-column: 6 / span 2;
+    grid-row: 5 / span 2;
+  }
+
+  .gray__box__3 {
+    background-color: gray;
+    grid-column: 9 / span 2;
+    grid-row: 5 / span 2;
+  }
+
+  .gray__box__4 {
+    background-color: gray;
+    grid-column: 5 / span 4;
+    grid-row: 9 / span 2;
+  }
+}
