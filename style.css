@@ -39,7 +39,7 @@ body {
 main {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-areas: "welcome welcome" "about about" "events events" "cakes ice-cream" "milk-shakes doughnuts";
+    grid-template-areas: "welcome welcome" "about about" "events events" "cakes ice-cream" "milk-shakes  doughnuts";
     grid-gap: 10px;
     padding: 20px;
     text-align: center;
@@ -138,20 +138,11 @@ h1 {
 
 h2 {
     font-size: 50px;
-    padding: 150px 0;
-    padding-top: 180px;
     color: rgb(0, 0, 0);
 }
 
 h3 {
-    font-size: 40px;
-    padding: 50px 0;
-    padding-top: 70px;
-}
-
-h2,
-h3 {
-    background-color: var(--transparent-white);
+    font-size: 2rem;
 }
 
 
@@ -170,38 +161,44 @@ h3 {
 
 /* Hire us */
 
-.hero {
-    background-image: url(./images/colin-lee-1FXyOIpoIlI-unsplash_50.jpeg);
-    width: 100%;
-    background-position: center;
-    background-size: cover;
-}
-
 
 /* Menu */
 
-.cakes,
-.ice-cream,
-.milk-shakes,
-.doughnuts {
-    background-size: cover;
-    background-position: center;
+.hero,
+.treats {
+    position: relative;
 }
 
-.cakes {
-    background-image: url("./images/marina-grynykha-_JAXgr12AJY-unsplash_1_10.jpeg");
+.hero>img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
 }
 
-.ice-cream {
-    background-image: url("./images/najla-cam-f8TajCVv4s8-unsplash_1_10.jpeg");
+.treats>img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    /* z-index: 1; */
 }
 
-.milk-shakes {
-    background-image: url("./images/toa-heftiba-HbUEtK9vnJc-unsplash_10.jpeg");
+.hero h2,
+.treats h3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
 }
 
-.doughnuts {
-    background-image: url("./images/the-blackrabbit-RfSLoXGSdsI-unsplash_10.jpeg");
+.treats-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: var(--transparent-white);
+    width: 100%;
+    height: 100%;
+    z-index: 2;
 }
 
 
@@ -209,7 +206,7 @@ h3 {
 
 footer {
     background: var(--light-pink);
-    padding: 40px;
+    padding: 20px;
     font-size: 0.9em;
 }
 
@@ -243,30 +240,81 @@ a {
     margin-bottom: 10px;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 660px) {
+    main {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 10vh 10vh 40vh 50vh 50vh 50vh 50vh;
+        grid-template-areas: "nav nav" "events welcome" "events about" "cakes cakes" "ice-cream ice-cream" "milk-shakes milk-shakes" "doughnuts doughnuts";
+    }
     .hamburger-menu {
         display: none;
     }
     nav {
         display: grid;
         grid-area: nav;
-        width: 100%;
-        justify-items: end;
-    }
-    main {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-areas: "nav nav nav nav" "events events welcome welcome" "events events about about" "events events about about" "cakes ice-cream milk-shakes doughnuts";
-        grid-gap: 20px;
-        padding: 40px;
-        text-align: center;
-        background: var(--lighter-pink);
+        justify-items: center;
+        background: var(--lavender-pink);
+        margin-bottom: 10px;
     }
     nav ul {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
         grid-template-areas: "home about-us hire-us our-treats find-us";
-        justify-content: right;
-        width: 50vw;
+        width: fit-content;
+        align-self: center;
+        justify-content: center;
+    }
+    nav li {
+        list-style-type: none;
+    }
+    h1 {
+        font-size: 3.5rem;
+        padding-top: 0;
+    }
+    h2 {
+        font-size: 3rem;
+        color: rgb(0, 0, 0);
+    }
+    h3 {
+        font-size: 70px;
+        padding: 100px 0;
+        padding-top: 130px;
+    }
+    footer {
+        font-size: 1em;
+    }
+    .about p,
+    header p {
+        font-size: 1.1rem;
+    }
+    .about p {
+        line-height: 1.1rem;
+    }
+    li {
+        background: var(--light-pink);
+        padding: 10px 1vw;
+        margin: 0 10px;
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (min-width: 1216px) {
+    main {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas: "nav nav nav nav" "events events welcome welcome" "events events about about" "cakes ice-cream milk-shakes doughnuts";
+        grid-template-rows: 15vh 15vh 40vh 40vh;
+        grid-gap: 20px;
+        padding: 40px;
+        text-align: center;
+        background: var(--lighter-pink);
+    }
+    nav {
+        justify-items: end;
+    }
+    nav ul {
+        width: calc(50vw - 1vw);
+        justify-content: space-between;
+        align-items: center;
     }
     .about p,
     header p {
@@ -296,18 +344,15 @@ a {
     .find-us {
         grid-area: find-us;
     }
-    nav li {
-        list-style-type: none;
-    }
     .footer-links-wrapper {
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-areas: "call email find" "designer designer designer";
         justify-items: center;
-        width: 70%;
+        width: 75%;
         margin: auto;
     }
     footer {
-        font-size: 1em;
+        font-size: 1.1em;
     }
     h1 {
         font-size: 90px;
@@ -316,21 +361,13 @@ a {
     }
     h2 {
         font-size: 80px;
-        padding: 200px 0;
-        padding-top: 230px;
     }
     h3 {
         font-size: 60px;
-        padding: 50px;
+        padding: 50px 0;
         padding-top: 80px;
     }
     nav {
-        background: var(--lavender-pink);
         margin-bottom: 20px;
-    }
-    li {
-        background: var(--light-pink);
-        padding: 10px;
-        margin: 10px;
     }
 }
