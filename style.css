@@ -1,6 +1,4 @@
 /*  Add your styling here */
-<<<<<<< Updated upstream
-=======
 body {
   margin: 0;
   padding: 0;
@@ -88,8 +86,8 @@ main {
   display: grid;
   grid-area: ham;
   padding-top: 10px;
-  margin-left: 10px;
-  height: 22px;
+  margin-left: 15px;
+  height: 20px;
 }
 
 header > p:nth-child(3) {
@@ -298,4 +296,3 @@ footer {
     height: 200px;
   }
 }
->>>>>>> Stashed changes
