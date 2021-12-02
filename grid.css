@@ -139,4 +139,8 @@ footer {
     footer {
         grid-template-areas: "ca ca ca ca em em em em fi fi fi fi" ". . . . de de de de . . . .";
     }
+    nav ul.grid {
+        grid-template-columns: repeat(10, 1fr);
+        grid-template-areas: "hm hm ab ab hi hi ou ou f f";
+    }
 }

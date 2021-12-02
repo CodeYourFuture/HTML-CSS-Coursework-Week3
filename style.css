@@ -212,10 +212,8 @@ a {
     nav {
         justify-items: end;
     }
-    nav ul {
-        width: calc(50vw - 1vw);
-        justify-content: space-between;
-        align-items: center;
+    nav ul.grid {
+        width: calc(50vw - 25px);
     }
     .about p,
     header p {
