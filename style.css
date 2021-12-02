@@ -1,3 +1,10 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+
 /* Fonts */
 
 @font-face {
@@ -16,150 +23,78 @@
 }
 
 
-/* Content */
-
-* {
-    margin: 0;
-    padding: 0;
-    font-family: "Montserrat", sans-serif;
-}
-
-body {
-    display: grid;
-    grid-template-areas: "header" "main" "footer";
-}
-
-.header-items {
-    display: grid;
-    grid-template-areas: "logo hamburger hamburger" "logo texts texts";
-    justify-items: end;
-    padding: 20px;
-}
-
-main {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: "welcome welcome" "about about" "events events" "cakes ice-cream" "milk-shakes  doughnuts";
-    grid-gap: 10px;
-    padding: 20px;
-    text-align: center;
-    background: var(--lighter-pink);
-}
-
-
-/* Grid Areas */
-
-header {
-    grid-area: header;
-}
-
-.welcome {
-    grid-area: welcome;
-}
-
-.about {
-    grid-area: about;
-}
-
-.hero {
-    grid-area: events;
-}
-
-.cakes {
-    grid-area: cakes;
-}
-
-.ice-cream {
-    grid-area: ice-cream;
-}
-
-.milk-shakes {
-    grid-area: milk-shakes;
-}
-
-.doughnuts {
-    grid-area: doughnuts;
-}
-
-footer {
-    grid-area: footer;
-}
-
-
 /* Header */
 
-header {
+header,
+main,
+footer {
+    padding: 20px;
+}
+
+header,
+footer {
     background: var(--light-pink);
 }
 
 header img {
     width: 100px;
     border-radius: 50%;
-    grid-area: logo;
     justify-self: left;
     margin: 10px 20px 10px 0;
 }
 
-nav {
-    display: none;
-}
-
-.hamburger-menu {
-    grid-area: hamburger;
-}
-
 header p {
-    grid-area: texts;
     text-align: end;
-    align-self: flex-end;
 }
 
 button {
     border: none;
     background-color: transparent;
-    grid-area: nav;
-    align-self: start;
 }
 
 .fas {
-    font-size: 30px;
+    font-size: 1.875rem;
 }
 
 h1,
 h2,
 h3 {
-    font-family: "self-deception";
+    font-family: "self-deception", fantasy, cursive;
 }
 
 h1 {
-    font-size: 60px;
+    font-size: 3.75rem;
     padding-top: 30px;
+    text-align: center;
 }
 
 h2 {
-    font-size: 50px;
-    color: rgb(0, 0, 0);
+    font-size: 3.125rem;
 }
 
 h3 {
     font-size: 2rem;
 }
 
+main {
+    background: var(--lighter-pink);
+}
+
+nav {
+    display: none;
+}
+
+footer {
+    font-size: 0.9rem;
+}
+
 
 /* About us */
-
-.about {
-    margin-bottom: 30px;
-    text-align: left;
-}
 
 .about p {
     letter-spacing: 0.03rem;
     word-spacing: 0.3rem;
 }
-
-
-/* Hire us */
 
 
 /* Menu */
@@ -179,7 +114,6 @@ h3 {
     object-fit: cover;
     width: 100%;
     height: 100%;
-    /* z-index: 1; */
 }
 
 .hero h2,
@@ -204,33 +138,9 @@ h3 {
 
 /* Footer */
 
-footer {
-    background: var(--light-pink);
-    padding: 20px;
-    font-size: 0.9em;
-}
-
-.footer-links-wrapper {
-    display: grid;
-    grid-template-areas: "call" "email" "find" "designer";
-}
-
-.call {
-    grid-area: call;
-}
-
-.email {
-    grid-area: email;
-}
-
-.find {
-    grid-area: find;
-}
-
 .designer {
     text-align: center;
     padding-top: 20px;
-    grid-area: designer;
 }
 
 a {
@@ -241,42 +151,33 @@ a {
 }
 
 @media screen and (min-width: 660px) {
-    main {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 10vh 10vh 40vh 50vh 50vh 50vh 50vh;
-        grid-template-areas: "nav nav" "events welcome" "events about" "cakes cakes" "ice-cream ice-cream" "milk-shakes milk-shakes" "doughnuts doughnuts";
-    }
     .hamburger-menu {
         display: none;
     }
     nav {
         display: grid;
-        grid-area: nav;
         justify-items: center;
         background: var(--lavender-pink);
         margin-bottom: 10px;
     }
     nav ul {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        grid-template-areas: "home about-us hire-us our-treats find-us";
         width: fit-content;
         align-self: center;
         justify-content: center;
     }
     nav li {
         list-style-type: none;
+        text-align: center;
     }
     h1 {
-        font-size: 3.5rem;
         padding-top: 0;
     }
+    h1,
     h2 {
-        font-size: 3rem;
-        color: rgb(0, 0, 0);
+        font-size: 3.8rem;
     }
     h3 {
-        font-size: 70px;
+        font-size: 4.375rem;
         padding: 100px 0;
         padding-top: 130px;
     }
@@ -286,26 +187,26 @@ a {
     .about p,
     header p {
         font-size: 1.1rem;
+        text-align: right;
+        width: 90%;
+        margin-left: auto;
     }
     .about p {
         line-height: 1.1rem;
     }
     li {
         background: var(--light-pink);
-        padding: 10px 1vw;
+        padding: 7px 4px;
         margin: 0 10px;
         font-size: 0.9rem;
     }
 }
 
-@media screen and (min-width: 1216px) {
+@media screen and (min-width: 1024px) {
     main {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-areas: "nav nav nav nav" "events events welcome welcome" "events events about about" "cakes ice-cream milk-shakes doughnuts";
         grid-template-rows: 15vh 15vh 40vh 40vh;
         grid-gap: 20px;
         padding: 40px;
-        text-align: center;
         background: var(--lighter-pink);
     }
     nav {
@@ -320,54 +221,39 @@ a {
     header p {
         line-height: 1.5em;
         letter-spacing: 0.05em;
-        text-align: right;
-        font-size: 20px;
+        font-size: 1.25rem;
         word-spacing: 0.1rem;
-        width: 90%;
-        margin-left: auto;
     }
     .header-items {
         padding: 0 40px;
     }
-    .home {
-        grid-area: home;
-    }
-    .about-us {
-        grid-area: about-us;
-    }
-    .hire-us {
-        grid-area: hire-us;
-    }
-    .our-treats {
-        grid-area: our-treats;
-    }
-    .find-us {
-        grid-area: find-us;
-    }
-    .footer-links-wrapper {
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-areas: "call email find" "designer designer designer";
-        justify-items: center;
-        width: 75%;
-        margin: auto;
-    }
-    footer {
-        font-size: 1.1em;
-    }
     h1 {
-        font-size: 90px;
+        font-size: 5.625rem;
         text-align: right;
         padding-top: 0;
     }
     h2 {
-        font-size: 80px;
+        font-size: 5rem;
     }
     h3 {
-        font-size: 60px;
+        font-size: 2.6rem;
         padding: 50px 0;
         padding-top: 80px;
     }
     nav {
         margin-bottom: 20px;
+    }
+    .call {
+        justify-self: end;
+    }
+    .email {
+        justify-self: center;
+    }
+    .find {
+        justify-self: start;
+    }
+    footer {
+        font-size: 1.1rem;
+        padding: 35px 0;
     }
 }
