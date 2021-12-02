@@ -1,12 +1,14 @@
 /*  Add your styling here */
 body {
   margin: 0;
-  font-size: 1.5rem;
+  font-size: 50px;
+  --theme: #ebe1c5;
+  font-family: "Gwendolyn", cursive;
 }
 
 /* Header Section */
 .header {
-  background-color: #ebe1c5;
+  background-color: var(--theme);
   padding: 1.5rem;
   margin-bottom: 4rem;
 }
@@ -25,20 +27,26 @@ body {
 
 .header-quote {
   text-align: end;
+  font-style: italic;
+}
+
+/* Navigation Section */
+.nav {
+  display: none; /* Hidden in mobile and tablet */
+}
+
+li {
+  list-style-type: none;
 }
 
 /* Main Section */
 .main {
   margin: 1.5rem;
-}
-
-.navigation {
-  display: none;
+  display: grid;
 }
 
 .brand-name {
-  font-size: 2rem;
-  font-weight: 600;
+  font-size: 5rem;
 }
 
 .brand-description,
@@ -48,27 +56,32 @@ body {
 
 .cake {
   width: 100%;
-  height: 500px;
+  height: 100%;
 }
 
 .cake-grid {
   display: grid;
   grid-gap: 1rem;
-  grid-template-columns: auto auto;
+  grid-template-columns: repeat(2, auto);
   width: 100%;
-  margin-bottom: 4rem;
+  margin: 4rem 0;
 }
 
 .cake-image {
   width: 100%;
-  height: 200px;
+  height: 100%;
 }
 
 /* Footer Section */
 .footer {
   text-align: center;
-  background-color: #ebe1c5;
+  background-color: var(--theme);
   padding: 2.5rem 0;
+}
+
+.social-links {
+  text-align: left;
+  margin-left: 2rem;
 }
 
 .social-icon {
@@ -76,4 +89,92 @@ body {
   height: 35px;
   margin-right: 1rem;
   margin-bottom: 1.5rem;
+}
+
+.footer-text {
+  font-weight: 500;
+}
+
+/* Tablet Mode */
+@media screen and (min-width: 540px) {
+  .main {
+    grid-template-columns: 1fr auto;
+    grid-gap: 2rem;
+  }
+
+  .cake {
+    grid-column-start: 2; /* Places the cake on the right hand side of the screen */
+    height: 95%;
+  }
+
+  .cake-grid {
+    grid-column: 1 / 3;
+    margin: 0; /* Uses grid gap instead */
+  }
+
+  .hidden-text {
+    display: none; /* The brand description is too long for tablet mode */
+  }
+}
+
+/* Desktop Mode */
+@media screen and (min-width: 900px) {
+  .header {
+    padding: 2.5rem;
+  }
+
+  .hamburger-menu {
+    display: none; /* Hides the hamburger menu */
+  }
+
+  .nav {
+    display: block;
+    background-color: var(--theme);
+    padding: 1rem;
+    margin: 5rem;
+  }
+
+  .navigation {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .navigation-list {
+    margin-right: 1.5rem;
+    padding: 1rem 2rem;
+    background-color: #b5838d;
+    color: #000;
+    font-weight: 600;
+  }
+
+  .main {
+    margin: 5rem;
+    grid-gap: 3rem;
+  }
+
+  .text {
+    grid-column-start: 2;
+  }
+
+  .cake {
+    grid-column-start: 3;
+    grid-row-end: 1;
+  }
+
+  .hidden-text {
+    display: block;
+  }
+
+  .cake-grid {
+    grid-column: 1 / 4;
+    grid-template-columns: repeat(4, auto);
+  }
+
+  .social-links {
+    text-align: center;
+  }
+
+  .social-icon {
+    margin-right: 2rem;
+  }
 }
