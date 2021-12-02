@@ -109,8 +109,8 @@ main {
 }
 .hero-text, .hero-img {
     grid-column: 1 / -1;
-    padding-top:1rem;
-    font-size: 1.5rem;
+    padding-top:0.5rem;
+    font-size: 1.35rem;
     margin-bottom:2rem;
 }
 .hero-img img{
@@ -118,20 +118,76 @@ main {
     align-self: center;
 }
 .featured {
-    height: 30vw;
     grid-column: auto / span 6;
     overflow: hidden;
+    border-radius: 1rem;
+    transition: all 0.3s ease-in-out;
+    background-color: var(--secondary-light);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.featured h3 {
+    font-size: 2rem;
+    padding: 0.3rem 0 0.5rem 1rem;
+}
+.featured p {
+    font-size: 1.1rem;
+    padding: 0.3rem 1rem 1rem 1rem;
+    letter-spacing: 0.05rem;
+}
+.featured:hover {
+    background-color: var(--secondary-dark);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 .featured img{
     width: 100%;
 }
-footer {
-    grid-area: footer;
-}
 .e {
     display: hidden;
 }
-
+.button {
+    padding: 0.5rem ;
+    text-decoration: none;
+    background-color: var(--main-dark);
+    color: var(--secondary-dark);
+    width: 80%;
+    text-align: center;
+    border-radius: 0.5rem;
+    align-self: center;
+    margin-top: auto;
+    margin-bottom:1rem;
+    transition: all 0.3s ease-in;
+}
+.button:hover{
+    background-color: var(--main-light);
+    color: var(--secondary-light);
+}
+footer {
+    grid-area: footer;
+    margin-top:2rem;
+    width: 100%;
+    background-color: var(--secondary-light);
+    text-align: center;
+}
+footer hr {
+    width:80%;
+    margin: 0 auto 2rem auto;
+}
+.social-container {
+    display: flex;
+    justify-content: center;
+}
+.social-logo {
+    padding: 0.4rem;
+    border-radius: 15px;
+    border: 1px solid var(--main-light);
+    margin: 0 1rem 1rem;
+}
+.social-logo:hover{
+    background-color:var(--secondary-dark);
+}
 @media screen and (min-width: 540px) {
     header {
         position: fixed;
@@ -166,8 +222,11 @@ footer {
     .menu-toggle {
         display: none;
     }
-    main {
+    main,footer {
         padding-left:calc(20vw + 2rem);
+    }
+    .button {
+        width:60%;
     }
 }
 
@@ -242,10 +301,16 @@ footer {
     .hero-img{
         grid-column: 1 / span 6;
     }
-
+    .featured {
+        grid-column: auto / span 3;
+    }
+    .button {
+        width: 40%;
+    }
+    footer {
+        padding-left: 0;
+    }
 }
-
-
 .hidden {
     display: none;
 }
