@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap');
+
+:root {
+    --main-light: #94618E; 
+    --main-dark: #49274A;
+    --secondary-light: #F8EEE7;
+    --secondary-dark: #F4DECB;
+    --grey-dark: #848993;
+    --grey-darker: #4D5057;
+}
+* {
+    margin: 0;
+    font-family:'Outfit', sans-serif;
+}
+header {
+    background-color: var(--main-light);
+    display: grid;
+    grid-template-columns: 1fr 0.3fr 1fr 1fr;
+    grid-template-areas:
+    "logo . . toggle"
+    "logo . text text"
+    "logo . text text"
+    ". . . ."
+    "nav nav nav nav";
+    color: var(--secondary-light);
+ 
+}
+.sticky {
+    position:fixed;
+}
+.logo {
+    grid-area: logo;
+    display: flex;
+    align-items: center;
+    margin: 1rem 2rem;
+    z-index: 2;
+}
+.logo img {
+    height:6rem;
+}
+.menu-toggle {
+    grid-area: toggle;
+    text-align: right;
+    margin: 1rem 2rem 0 0;
+    z-index: 2;
+}
+.menu-toggle svg {
+    height: 2rem;
+    fill: var(--secondary-light);
+    stroke: var(--secondary-light);
+}
+header h1 {
+    grid-area: text;
+    font-size: 1.5rem;
+    text-align: right;
+    display:flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin: 0 2rem 1rem 0;
+    z-index: 2;
+}
+nav {
+    display: flex;
+    grid-area: nav;
+    position: fixed;
+    height: 100vh;
+    padding-top:8rem;
+    width:100%;    
+    background-color: var(--main-light);
+    clip-path: circle(0px at 95% -5%);
+    -webkit-clip-path: circle(0px at 95% -5%);
+    transition: all 0.5s ease-out;
+}
+nav.open {
+    clip-path: circle(150vh at 95% -5%);
+    -webkit-clip-path: circle(150vh at 95% -5%);
+}
+nav ul {
+    list-style: none;
+    width: 100%;
+    padding:0;
+}
+nav li a:hover {
+    background-color: var(--main-dark);
+}
+.navlink {
+    padding: 0.5rem 0;
+    text-align: center;
+}
+.navlink a{
+    color: var(--secondary-light);
+    text-decoration: none; 
+    width: 100%;
+    display: block;
+    padding: 1rem 0;
+}
+h2 {
+    font-size: 4rem;
+    font-weight: 600;
+    padding-bottom: 2rem;
+}
+main {
+    display: grid;
+    grid-auto-flow: dense;
+    grid-gap:0.5rem;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 1rem;
+    padding: 1rem 2rem;
+}
+.hero-text, .hero-img {
+    grid-column: 1 / -1;
+    padding-top:0.5rem;
+    font-size: 1.35rem;
+    margin-bottom:2rem;
+}
+.hero-img img{
+    width: 100%;
+    align-self: center;
+}
+.featured {
+    grid-column: auto / span 6;
+    overflow: hidden;
+    border-radius: 1rem;
+    transition: all 0.3s ease-in-out;
+    background-color: var(--secondary-light);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.featured h3 {
+    font-size: 2rem;
+    padding: 0.3rem 0 0.5rem 1rem;
+}
+.featured p {
+    font-size: 1.1rem;
+    padding: 0.3rem 1rem 1rem 1rem;
+    letter-spacing: 0.05rem;
+}
+.featured:hover {
+    background-color: var(--secondary-dark);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.featured img{
+    width: 100%;
+}
+.e {
+    display: hidden;
+}
+.button {
+    padding: 0.5rem ;
+    text-decoration: none;
+    background-color: var(--main-dark);
+    color: var(--secondary-dark);
+    width: 80%;
+    text-align: center;
+    border-radius: 0.5rem;
+    align-self: center;
+    margin-top: auto;
+    margin-bottom:1rem;
+    transition: all 0.3s ease-in;
+}
+.button:hover{
+    background-color: var(--main-light);
+    color: var(--secondary-light);
+}
+footer {
+    grid-area: footer;
+    margin-top:2rem;
+    background-color: var(--secondary-light);
+    text-align: center;
+}
+footer hr {
+    width:80%;
+    margin: 0 auto 2rem auto;
+}
+.social-container {
+    display: flex;
+    justify-content: center;
+}
+.social-logo {
+    padding: 0.4rem;
+    border-radius: 15px;
+    border: 1px solid var(--main-light);
+    margin: 0 1rem 1rem;
+}
+.social-logo:hover{
+    background-color:var(--secondary-dark);
+}
+@media screen and (min-width: 540px) {
+    header {
+        position: fixed;
+        width: 20vw;
+        height: 100vh;
+        grid-template-rows: 20vh 10vh 20vh;
+        grid-template-areas: 
+        "logo logo logo logo"
+        "text text text text"
+        "nav nav nav nav";
+    }
+    .logo {
+        margin: 2rem auto;
+        align-self: center;
+        height:100%;
+    }
+    .logo img{
+        min-height: 9vw;
+    }
+    header h1{
+        margin:0 1rem;
+        text-align: center;
+        font-size: large;
+    }
+    nav {
+        display: inline-block;
+        padding-top: 3rem;
+        position:unset;
+        clip-path: none;
+        -webkit-clip-path: none;
+    }
+    .menu-toggle {
+        display: none;
+    }
+    main,footer {
+        padding-left:calc(20vw + 2rem);
+    }
+    .button {
+        width:60%;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    header {
+        position:unset;
+        height: auto;
+        width:100%; 
+        padding: 1rem 0 0 0;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "logo . . ."
+            "logo . text text"
+            "e e e e"
+            "nav nav nav nav";
+    }
+    .e {
+        grid-area: e;
+        display:block;
+        height:2rem;
+        width: 100%;
+        background-color:white;
+    }
+    nav {
+        background-color:white;
+        height: auto;
+        width: calc(100% - 4rem);
+        padding: 0 2rem;
+    }
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        padding: 1rem 0;
+        background-color: var(--main-light);
+    }
+    .navlink {
+        min-width: 10vw;
+        padding:0;
+        margin: 0 1rem;
+    }
+    .navlink a {
+        background-color: var(--main-dark);
+        border-radius: 0.3rem;
+        width: 100%;
+        margin:0;
+        padding: 0.5rem 0;
+        text-align: center;
+    }
+    .navlink a:hover {
+        background-color: var(--grey-dark);
+    }
+    .logo {
+        width: auto;
+        align-self: center;
+        margin:0 2rem 1rem 2rem;
+    }
+    header h1 {
+        font-size: x-large;
+        margin: 0 2rem 1rem 0;
+    }
+    .logo img {
+        min-height: auto;
+    }
+    main {
+        padding-left: 2rem;
+    }
+    .hero-text {
+        grid-column: 7 / span 6;
+        text-align: right;
+    }
+    .hero-img{
+        grid-column: 1 / span 6;
+    }
+    .featured {
+        grid-column: auto / span 3;
+    }
+    .button {
+        width: 40%;
+    }
+    footer {
+        padding-left: 0;
+    }
+}
+.hidden {
+    display: none;
+}

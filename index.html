@@ -1,16 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Responsive Cake webpage</title>
-    <!-- Add a link to your css file here -->
+    <title>Responsive Cake Website for Code Your Future</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./scripts/script.js"></script>
 </head>
-
 <body>
-    <!-- Add your markup here -->
+    <header id="header">
+        <a href="#" class="logo"><img src="./img/bakery-logo.png" alt="Logo"></a>
+        <a href="#" class="menu-toggle" id="hamburger">
+            <svg id="hamb-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32">
+                <path d="M0 1C0 0.447715 0.447715 0 1 0H23C23.5523 0 24 0.447715 24 1V1.28572C24 1.838 23.5523 2.28572 23 2.28572H1C0.447716 2.28572 0 1.838 0 1.28572V1ZM0 7.85714C0 7.30485 0.447715 6.85713 1 6.85713H23C23.5523 6.85713 24 7.30485 24 7.85713V8.14285C24 8.69513 23.5523 9.14285 23 9.14285H1C0.447716 9.14285 0 8.69513 0 8.14285V7.85714ZM1 13.7143C0.447715 13.7143 0 14.162 0 14.7143V15C0 15.5523 0.447716 16 1 16H23C23.5523 16 24 15.5523 24 15V14.7143C24 14.162 23.5523 13.7143 23 13.7143H1Z"></path>
+            </svg>
+            <svg version="1.1" id="close-icon" class="hidden" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                <g transform="translate(1.632 1.6339)" label="Layer 1">
+                        <path d="m-2.5783e-4 -0.0014681 17.436 18.214"  stroke-linecap="round" stroke-width="3.2316"/>
+                        <path d="m-2.5783e-4 18.212 17.436-18.214"  stroke-linecap="round" stroke-width="3.2316"/>
+                        <title>Layer 1</title>
+                </g>
+        </svg>
+        </a>
+        <h1>The Best cakes in town delivered to your door</h1>
+        <div class="e"></div> 
+        <nav id="navigation">
+            <ul>
+                <li class="navlink"><a href="#">Home</a></li>
+                <li class="navlink"><a href="#">Cakes</a></li>
+                <li class="navlink"><a href="#">Orderin</a></li>
+                <li class="navlink"><a href="#">Lessons</a></li>
+                <li class="navlink"><a href="#">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>        
+        <div class="hero-text">
+            <h2>Welcome</h2>
+            <p>Here at CYF cake shop we prepare our cakes and muffins with only the best ingreduents. Why not check out our custom cake order page.</p>
+        </div>
+        <div class="hero-img">
+            <img src="./img/chocolate-cake.jpeg" alt="Delicious chocolate cake"/>
+        </div>
+        <div class="featured">
+            <img src="./img/featured-1.jpg" alt="Catering Service"/>
+            <h3>Catering Service</h3>
+            <p>We offer cater for all kinds of parties, let us know the dates and we will bring freshly made sweets for you and your guests to enjoy.</p>
+            <a href="#" class="button">Learn More</a>
+        </div>
+        <div class="featured">
+            <img src="./img/featured-2.jpg" alt="Birthday Cakes"/>
+            <h3>Birthday Cakes</h3>
+            <p>Your loved ones birthday is coming up? Why not contact us for a bespoke cake for their special day. We offer variety of sizes and can customize if you provide us a theme.</p>
+            <a href="#" class="button">Learn More</a>
+        </div>
+        <div class="featured">
+            <img src="./img/featured-4.jpg" alt="Parties for Kids"/>
+            <h3>Parties for Kids</h3>
+            <p>We offer a variety of bespoke cakes and will ensure that all kids are left asking for more cake. Batman? Superman? Wonder Woman? We can customize the cake to favourite hero's theme.</p>
+            <a href="#" class="button">Learn More</a>
+        </div>
+        <div class="featured">
+            <img src="./img/featured-5.jpg" alt="Traditional Cakes"/>
+            <h3>Traditional Cakes</h3>
+            <p>Who says you need a reason to eat cake? That's right - noone. Why not visit our store and treat yourself? You've earned it!</p>
+            <a href="#" class="button">Learn More</a>
+        </div>
+    </main>
+    <footer> 
+        <hr/>
+        <div class="social-container">
+            <a class="social-logo" href="">
+                <img src="./img/instagram-icon.svg" alt="Find us on instagram"/>
+            </a>
+            <a class="social-logo" href="">
+                <img src="./img/facebook-icon.svg" alt="Find us on facebook"/>
+            </a>
+            <a class="social-logo" href="">
+                <img src="./img/twitter-icon.svg" alt="Find us on twitter"/>
+            </a>
+        </div>
+        <p>Best cakes in the Universe &copy;</p>
+    </footer>
 </body>
-
 </html>
