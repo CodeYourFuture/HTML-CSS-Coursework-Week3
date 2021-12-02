@@ -54,7 +54,7 @@ main {
 
 main p {
   font-size: x-large;
-  line-height:6rem;
+  
 
 }
 
@@ -181,14 +181,14 @@ nav a {
   nav {
     display: flex;
     justify-content: flex-end;
-    padding: 3rem;
+    
   }
 
   nav ul {
     display: flex;
     flex-direction: row;
     align-items: flex-end;
-    justify-content: flex-end;
+    justify-content: space-around;
     font-size:xx-large;
     border: 1px solid black;
     width: 100%;
@@ -199,12 +199,12 @@ nav a {
 
   nav li {
     list-style-type: none;
-    padding: 2rem;
+    padding: 2%;
   }
 
   nav a {
-    font-size: xx-large;
-    padding: 1em;
+    font-size: 0.75em;
+    
     
   }
 
@@ -212,6 +212,9 @@ nav a {
   nav a:hover{
     animation-name: yellowtowhite;
     animation-duration:1000ms;
+  }
+  main p{
+    line-height:2rem;
   }
   @keyframes yellowtowhite {
     0%   {color: #ffe047;
@@ -235,12 +238,10 @@ nav a {
   }
 
   main h1 {
-    font-size: 5em;
+    font-size: 4em;
   }
 
-  main p {
-    font-size: 3em;
-  }
+  
 
   section {
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -278,16 +279,24 @@ nav a {
 
 @media screen and (min-width: 900px) {
 
+nav ul{
+    background-color: #5390d9;
+}
 
+footer {
+    background-color: #5390d9;
+}
 
-
-
-
-
-
-
-
-
-
-
+section {
+    background-color: #5390d9;
+}
+.grid-container{
+    background-color: #caf0f8;
+}
+main p {
+    font-size: 4rem;
+    
+    line-height:5rem;
+  
+  }
 }
