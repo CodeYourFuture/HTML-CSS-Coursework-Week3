@@ -5,12 +5,88 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Responsive Cake webpage</title>
+    <title>Pastahane Society, Co.</title>
     <!-- Add a link to your css file here -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <!-- Add your markup here -->
+    <div class="grid-container">
+        <!-- Add your markup here -->
+        <!-- Header -->
+        <header class="header">
+            <a href="#">
+                <img class="logo" src="images/Logo.svg" alt="Logo for Pastahane Society">
+            </a>
+            <!-- Navbar -->
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <nav>
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Cakes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Ordering</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Lessons</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <label for="nav-toggle" class="nav-toggle-label">
+                    <span><img src="images/menu-hamburger.svg"></span>
+                </label>
+                <p><q>The best cake's in town delivered to your door</q></p>
+            </div>
+        </header>
+
+
+        <!-- Main -->
+        <main class="main">
+            <!-- Intro -->
+            <section class="intro">
+                <div class="intro-primary">
+                    <h1>Welcome</h1>
+                    <p>This bakery’s filled doughnuts are the stuff of legend. Piped with vanilla, chocolate, jam or
+                        honeycomb custard and sprinkled with sugar, they are worth every bite of the high-calorie count.
+                        We’ve nabbed their famous recipe so you can try and make them at home, too. And some exciting
+                        news for North Londoners.</p>
+                </div>
+                <div class="intro-secondary">
+                    <img src="./images/main-cake.jpeg" alt="tropical pink cake">
+                </div>
+            </section>
+            <!-- Products -->
+            <section class="products">
+                <img src="images/cake-one.jpeg" alt="cake with creme brulee and cones">
+                <img src="images/cake-two.jpeg" alt="chocalate cake with cherries">
+                <img src="images/cake-three.jpeg" alt="pink fruit cake with sprinkles">
+                <img src="images/cake-four.jpg" alt="white wedding cake">
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <div class="footer-content">
+               <ul>
+                   <li><a href="#">Locations</a></li>
+                   <li><a href="#">Opening Times</a></li>
+                   <li><a href="#">Contact Us</a></li>
+               </ul>
+            </div>
+            <h4 class="heading-copyright">&copy Pastahane Society, Co.</h4>
+        </footer>
+    </div>
 </body>
 
 </html>
