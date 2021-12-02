@@ -1,17 +1,17 @@
+@import url(https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Roboto:wght@100&display=swap);
 
-        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Roboto:wght@100&display=swap');
 .grid-container {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(8, auto);
-  grid-template-areas:
-    "h h h h h h h h h h h h"
-    "m m m m m m m m m m m m"
-    "i i i i i i i i i i i i"
-    "s s s s s s s s s s s s"
-    "f f f f f f f f f f f f";
+  grid-template-areas: 
+  "h h h h h h h h h h h h" 
+  "m m m m m m m m m m m m" 
+  "i i i i i i i i i i i i" 
+  "s s s s s s s s s s s s" 
+  "f f f f f f f f f f f f";
 }
-
+ 
 header {
   background-image: url("./img/3\ rainbow_cake_20402_16x9.jpeg");
   background-size: 100%;
@@ -24,13 +24,9 @@ header {
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-end;
-  color: white;
-  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
-
+  color: #fff;
+  text-shadow: 1px 1px 2px #000, 0 0 25px #00f, 0 0 5px #00008b;
   font-size: small;
-
-
-
 }
 
 header p {
@@ -47,15 +43,11 @@ main {
   padding: 5%;
   text-align: justify;
   border: 2px solid #000;
-  font-family: 'Dancing Script', cursive;
-  
-
+  font-family: "Dancing Script", cursive;
 }
 
 main p {
   font-size: x-large;
-  
-
 }
 
 .img {
@@ -161,10 +153,7 @@ nav a {
   font-weight: bold;
 }
 
-
-
-
-@media screen and (min-width:540px) {
+@media screen and (min-width: 540px) {
   /* hamburger menu disabled */
   .topnav {
     display: none;
@@ -181,7 +170,6 @@ nav a {
   nav {
     display: flex;
     justify-content: flex-end;
-    
   }
 
   nav ul {
@@ -189,12 +177,12 @@ nav a {
     flex-direction: row;
     align-items: flex-end;
     justify-content: space-around;
-    font-size:xx-large;
-    border: 1px solid black;
+    font-size: xx-large;
+    border: 1px solid #000;
     width: 100%;
     border-radius: 20px;
-  background-color: #9d4edd;
-  box-shadow:10px 10px 5px #3d0066;
+    background-color: #9d4edd;
+    box-shadow: 10px 10px 5px #3d0066;
   }
 
   nav li {
@@ -204,29 +192,42 @@ nav a {
 
   nav a {
     font-size: 0.75em;
-    
-    
   }
 
-
-  nav a:hover{
+  nav a:hover {
     animation-name: yellowtowhite;
-    animation-duration:1000ms;
+    animation-duration: 1000ms;
   }
-  main p{
-    line-height:2rem;
+
+  main p {
+    line-height: 2rem;
   }
+
   @keyframes yellowtowhite {
-    0%   {color: #ffe047;
-  text-shadow: 2px 2px 4px #000000;}
-    25%  {color: #fce15d;
-  text-shadow: 2px 2px 4px #000000;}
-    50%  {color: #f7e690;
-  text-shadow: 2px 2px 4px #000000;}
-    75%  {color: #f3ecca;
-  text-shadow: 2px 2px 4px #000000;}
-    100% {color: #ffffff;
-  text-shadow: 2px 2px 4px #000000;}
+    0% {
+      color: #ffe047;
+      text-shadow: 2px 2px 4px #000;
+    }
+
+    25% {
+      color: #fce15d;
+      text-shadow: 2px 2px 4px #000;
+    }
+
+    50% {
+      color: #f7e690;
+      text-shadow: 2px 2px 4px #000;
+    }
+
+    75% {
+      color: #f3ecca;
+      text-shadow: 2px 2px 4px #000;
+    }
+
+    100% {
+      color: #fff;
+      text-shadow: 2px 2px 4px #000;
+    }
   }
 
   main {
@@ -241,8 +242,6 @@ nav a {
     font-size: 4em;
   }
 
-  
-
   section {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
@@ -250,13 +249,13 @@ nav a {
   }
 
   .grid-container {
-    grid-template-areas:
-      "h h h h h h h h h h h h"
-      ". n n n n n n n n n n ."
-      ". i i i i i m m m m m ."
-      ". s s s s s s s s s s ."
-      "f f f f f f f f f f f f";
-      gap: 1rem;
+    grid-template-areas: 
+    "h h h h h h h h h h h h" 
+    ". n n n n n n n n n n ." 
+    ". i i i i i m m m m m ." 
+    ". s s s s s s s s s s ." 
+    "f f f f f f f f f f f f";
+    gap: 1rem;
   }
 
   footer {
@@ -275,28 +274,31 @@ nav a {
   }
 }
 
-
-
 @media screen and (min-width: 900px) {
-
-nav ul{
+  nav ul {
     background-color: #5390d9;
-}
+  }
 
-footer {
+  footer {
     background-color: #5390d9;
-}
+  }
 
-section {
+  section {
     background-color: #5390d9;
-}
-.grid-container{
+  }
+
+  .grid-container {
     background-color: #caf0f8;
-}
-main p {
-    font-size: 4rem;
-    
-    line-height:5rem;
-  
+  }
+
+  main p {
+    font-size: 3rem;
+    line-height: 5rem;
+  }
+  nav a {
+    font-size: 2.5rem;
+  }
+  footer a {
+    font-size: 2.5rem;
   }
 }
