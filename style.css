@@ -210,10 +210,10 @@ nav a {
 
 
   nav a:hover{
-    animation-name: example;
+    animation-name: yellowtowhite;
     animation-duration:1000ms;
   }
-  @keyframes example {
+  @keyframes yellowtowhite {
     0%   {color: #ffe047;
   text-shadow: 2px 2px 4px #000000;}
     25%  {color: #fce15d;
