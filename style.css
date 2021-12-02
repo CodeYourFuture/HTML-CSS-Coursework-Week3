@@ -28,6 +28,50 @@ footer {
   background-color: #78e08f;
 }
 
+header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "image burger"
+    "image best-cakes";
+}
+
+header img {
+  grid-area: image;
+  width: 60%;
+  padding: 20px;
+}
+
+header p {
+  grid-area: best-cakes;
+  text-align: right;
+  padding-right: 1em;
+}
+
+nav {
+  display: grid;
+  justify-items: end;
+  padding-right: 1em;
+}
+
+nav img {
+  grid-area: burger;
+  width: 15%;
+  padding-top: 40px;
+}
+
+h1 {
+  font-size: 4em;
+  font-weight: bold;
+  margin-top: 0;
+  text-align: left;
+}
+
+p {
+  font-size: 30px;
+  text-align: left;
+}
+
 .welcome {
   grid-area: welcome;
   padding-bottom: 30px;
@@ -56,27 +100,6 @@ footer {
   border-radius: 20px;
   width: 100%;
   padding: 10px;
-}
-
-header img {
-  width: 120px;
-  padding: 20px;
-}
-
-nav img {
-  width: 40px;
-}
-
-p {
-  font-size: 30px;
-  text-align: left;
-}
-
-h1 {
-  font-size: 4em;
-  font-weight: bold;
-  margin-top: 0;
-  text-align: left;
 }
 
 footer {
