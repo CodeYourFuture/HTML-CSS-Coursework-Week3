@@ -147,9 +147,40 @@ height: auto;
         display: flex;
         flex-direction: row-reverse;
         justify-content: space-around;
-        text-align: right;
-        
+        text-align: right;        
     }
       
+    .products {
+        grid-column: 1 / - 1;
+        border: blueviolet 2px dashed;
     
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        grid-templates-row: 200px;                       
+        background-color: rgb(248, 231, 225);  
+       
+    }
+    
+    .products-image {
+        background-color: crimson;
+        width: 50%;
+    
+    }
+        
+    .products-image img {        
+       margin-top: 5px;
+       width: 80%;
+    }
+   
+    .products-1-2 {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .products-3-4 {
+        display: flex;
+        flex-direction: row;
+    }
+
+
 }
