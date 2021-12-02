@@ -1,16 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Responsive Cake webpage</title>
-    <!-- Add a link to your css file here -->
-</head>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gwendolyn&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
-    <!-- Add your markup here -->
-</body>
+  <body>
+    <header class="header">
+      <img src="img/menu.png" class="hamburger-menu" />
+      <a href="index.html">
+        <img src="img/cake.png" class="home-icon" />
+      </a>
+      <blockquote class="header-quote">
+        One of the finest bakers in London
+      </blockquote>
+    </header>
 
+    <nav class="nav">
+      <!-- Desktop only-->
+      <ul class="navigation">
+        <li class="navigation-list"><a>Home</a></li>
+        <li class="navigation-list"><a>Cakes</a></li>
+        <li class="navigation-list"><a>Ordering</a></li>
+        <li class="navigation-list"><a>Lessons</a></li>
+        <li class="navigation-list"><a>About</a></li>
+      </ul>
+    </nav>
+
+    <main class="main">
+      <section class="text">
+        <h1 class="brand-name">Cakes Co</h1>
+        <p class="brand-description">
+          Cakes Co is a family business founded in 1925 at Baker Street in
+          London.
+          <span class="Hidden-text">
+            <!-- Hidden in tablet mode -->
+            Our cakes are baked using our iconic and finest ingredients. We
+            undertake orders for parties, birthdays, weddings, etc. During the
+            holiday season, we make special cakes using rich ingredients like
+            cinnamon and cloves.</span
+          >
+        </p>
+      </section>
+      <img src="img/main-cake.jpg" alt="cake" class="cake" />
+      <!-- Main image-->
+      <div class="cake-grid">
+        <img src="img/cake1.jpg" alt="" class="cake-image" />
+        <img src="img/cake2.jpg" alt="" class="cake-image" />
+        <img src="img/cake3.jpg" alt="" class="cake-image" />
+        <img src="img/cake4.jpg" alt="" class="cake-image" />
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="social-links">
+        <img src="img/facebook-icon.svg" class="social-icon" />
+        <img src="img/instagram-icon.svg" class="social-icon" />
+        <img src="img/twitter-icon.svg" class="social-icon" />
+      </div>
+
+      <p class="footer-text">&copy; 2021 Cakes & Co</p>
+    </footer>
+  </body>
 </html>
