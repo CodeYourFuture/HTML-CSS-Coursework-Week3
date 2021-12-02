@@ -276,3 +276,44 @@ footer {
     justify-content: center;
   }
 }
+
+/* Desktop Media */
+@media only screen and (min-width: 900px) {
+  /* Header */
+  label ~ p {
+    padding-right: 2rem;
+    letter-spacing: 2px;
+    word-spacing: 4px;
+  }
+
+  /* Navbar */
+  nav {
+    width: 115rem;
+  }
+
+  nav ul {
+    justify-content: space-around;
+    background-color: var(--white);
+  }
+
+  nav a:hover {
+    color: var(--green-dark);
+  }
+
+  /* Main-Products */
+  .products {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 4rem;
+  }
+
+  /* Footer */
+  .footer-content ul {
+    margin: 4rem;
+    justify-content: flex-start;
+  }
+
+  .footer-content ul li {
+    background: var(--green-dark);
+    margin: 5px;
+  }
+}
