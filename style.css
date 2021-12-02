@@ -4,7 +4,7 @@ body {
   font-family: "Rochester", cursive;
   -webkit-font-smoothing: antialiased;
   color: black;
-  background-color: #fad390;
+  background-color: #fff1e6;
   margin: 0;
   text-align: center;
   /* padding: 10px; */
@@ -24,8 +24,9 @@ main {
 }
 
 header,
-footer {
-  background-color: #78e08f;
+footer,
+.products img {
+  background-color: #eddcd2;
 }
 
 header {
@@ -82,7 +83,7 @@ p {
   width: 50%;
   border: 3px solid black;
   border-radius: 20px;
-  background-color: #fa983a;
+  background-color: #ddbea9;
 }
 
 .products {
