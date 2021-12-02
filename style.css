@@ -19,21 +19,23 @@ body {
 
 .main,
 .footer_wrapper {
-  border: 1px solid black;
-  padding: 10px;
+  padding: 20px;
 }
+
+/* ______________________ header ____________________ */
 
 .header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   background-color: var(--grey-light);
-  border: 1px solid black;
 }
+
 .logo {
   width: 60px;
   padding: 20px 0 20px 20px;
 }
+
 .header_items {
   display: flex;
   flex-direction: column;
@@ -42,6 +44,7 @@ body {
   text-align: right;
   padding: 10px 10px 0 0;
 }
+
 .header_title {
   flex-wrap: wrap;
   font-size: 1rem;
@@ -49,6 +52,7 @@ body {
 .nav_wrapper {
   display: none;
 }
+
 /* ______________________ main ____________________ */
 
 .main {
@@ -57,9 +61,15 @@ body {
   grid-template-rows: auto;
   grid-gap: 8px;
 }
-.welcome_tite {
-  font-size: 2.5rem;
+
+.welcome_wrapper {
+  padding: 10px 0 15px 0;
 }
+
+.welcome_tite {
+  font-size: 2rem;
+}
+
 .bigcake_img {
   width: 100%;
 }
@@ -70,24 +80,42 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
-  grid-gap: 8px;
+  grid-gap: 12px;
+  padding: 10px 0 10px 0;
 }
+
 .product_image {
   overflow: hidden;
 }
+
 .product_image img {
   width: 100%;
 }
+
 /* ______________________ footer ____________________ */
 
 .footer_wrapper {
   background-color: var(--grey-light);
 }
+
 .copyright {
   text-align: center;
 }
 
 @media screen and (min-width: 540px) {
+  .welcome_wrapper {
+    padding: 15px 0 15px 0;
+  }
+
+  .welcome_tite {
+    font-size: 2.1rem;
+    padding: 10px 0 0 0;
+  }
+
+  .welcome_text {
+    font-size: 1rem;
+    padding: 10px 0 10px 0;
+  }
 }
 
 /**
@@ -105,11 +133,11 @@ body {
 
   .main,
   .footer_wrapper {
-    border: 1px solid black;
     padding: 15px 35px;
   }
 
   /* ______________________ header ____________________ */
+
   .header_title {
     padding: 50px 30px 0 0;
   }
@@ -129,6 +157,7 @@ body {
     flex-direction: row;
     padding: 5px 50px 5px 0;
   }
+
   .nav_item {
     list-style: none;
     padding: 5px 28px;
@@ -150,6 +179,7 @@ body {
   .nav_list:hover {
     color: var(--raspberry);
   }
+
   /* ______________________ main ____________________ */
 
   .welcome {
@@ -158,19 +188,23 @@ body {
     grid-template-rows: auto;
     padding: 10px 0;
   }
+
   .welcome_wrapper {
-    order: 2;
+    order: 2; /*  welcome wrapper become second on desktop, it switch place with bigcake photo  */
     text-align: right;
   }
+
   .welcome_tite {
     font-size: 2.5rem;
   }
+
   .welcome_text {
+    font-size: 1.2rem;
     padding: 25px 0 0 20px;
   }
 
   .bigcake_wrapper {
-    order: 1;
+    order: 1; /* bigcake photo become first on desktop, switching place with welcome wrapper */
   }
 
   .bigcake_img {
@@ -178,15 +212,18 @@ body {
   }
 
   /* ______________________ products ____________________ */
+
   .products {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
-    grid-gap: 8px;
+    grid-gap: 15px;
   }
+
   .product_image {
     overflow: hidden;
   }
+
   .product_image img {
     width: 100%;
   }
