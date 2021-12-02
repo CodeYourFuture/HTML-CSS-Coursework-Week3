@@ -1,16 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Responsive Cake webpage</title>
     <!-- Add a link to your css file here -->
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/navstyle.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-<body>
+  <body>
     <!-- Add your markup here -->
-</body>
+    <div class="container">
+      <header class="header box">
+        <div class="logo">
+          <img src="img/Yummy-Cupcake-PNG-Pic.png" alt="cupcake logo" />
+        </div>
 
+        <div class="header__content">
+          <button class="menu__burger">
+            <i class="fas fa-bars"></i>
+          </button>
+          <p>The best cakes in town delivered to your door</p>
+        </div>
+      </header>
+      <nav class="navbar">
+        <ul>
+          <li class="link"><a href="#">HOME</a></li>
+          <li class="link"><a href="#">CAKES</a></li>
+          <li class="link"><a href="#">ORDER</a></li>
+          <li class="link"><a href="#">LESSONS</a></li>
+          <li class="link"><a href="#">ABOUT</a></li>
+        </ul>
+      </nav>
+      <main class="welcome box">
+        <section class="welcome__content">
+          <div class="welcome_text_paragraph">
+            <h1 class="hero__title">Welcome To MyCupcake...</h1>
+            <p class="hero__paragraph">
+              Offering deliciously gooey, ornamental, multi-layered and
+              drool-worthy sweet treats! All products are made-to-order and are
+              customisable upon request..
+            </p>
+          </div>
+          <div class="welcome__image" title="cupcake image"></div>
+        </section>
+        <section class="products box">
+          <div class="product-cakes-images">
+            <div class="cakes-image one">
+              <img
+                src="https://images.unsplash.com/photo-1562440499-64c9a111f713?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+                alt="cake"
+              />
+            </div>
+            <div class="cakes-image two">
+              <img
+                src="https://images.unsplash.com/photo-1596151227289-74af7765c16e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+                alt="cupcake"
+              />
+            </div>
+          </div>
+          <div class="product-cakes-images">
+            <div class="cakes-image three">
+              <img
+                src="https://images.unsplash.com/photo-1599785209707-a456fc1337bb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=686&q=80"
+                alt="cupcake"
+              />
+            </div>
+            <div class="cakes-image four">
+              <img
+                src="https://images.unsplash.com/photo-1569289522127-c0452f372d46?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=681&q=80"
+                alt="cake"
+              />
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer box">
+        <ul>
+          <li>
+            <a href="#"><h5>Cakes</h5></a>
+          </li>
+          <li>
+            <a href="#"><h5>Cupcakes</h5></a>
+          </li>
+        </ul>
+
+        <div class="Social Media">
+          <h5>Social Media</h5>
+          <div class="footer-social-medias">
+            <a href="https://www.instagram.com/" title="instagram icon"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="https://en-gb.facebook.com/" title="facebook icon"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="https://twitter.com/" title="twitter icon"
+              ><i class="fab fa-twitter"></i
+            ></a>
+          </div>
+        </div>
+        <h6>&copy;Marina Almeida 2021</h6>
+      </footer>
+    </div>
+  </body>
 </html>
