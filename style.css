@@ -111,4 +111,7 @@ footer img {
   width: 50px;
 }
 
-@media screen ();
+@media screen and (min-with: 600px);
+.welcome {
+  background-color: cadetblue;
+}
