@@ -1,121 +1,176 @@
 /*  Add your styling here */
 
-*{
-    margin:0;
-    padding:0;
+* {
+  margin: 0;
+  padding: 0;
 }
- body{
-    display: grid;
-    grid-template-areas: "header" "main" "footer";  
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-
-header{
-    padding: 1rem;
-    grid-area: header;
+body {
+  display: grid;
+  grid-template-areas: "header" "main" "footer";
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.header{
-    display: grid;
-    grid-template-areas: "logo hamburger" "logo intro";
+header {
+  padding: 1rem;
+  grid-area: header;
+  background-color: #ffe5cc;
 }
 
-.logo{
-    grid-area: logo;
+.header {
+  display: grid;
+  grid-template-areas: "logo hamburger" "logo intro" "nav nav ";
 }
 
-.hamburger{
-    grid-area: hamburger;
-    border: none;
-    background: transparent;
-    text-align: end;
+.logo {
+  grid-area: logo;
+  background-color: snow;
 }
 
-.intro{
-    grid-area: intro;
-    text-align: end;
+.hamburger {
+  grid-area: hamburger;
+  border: none;
+  background: transparent;
+  text-align: end;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
 }
 
-nav{
-    display: none;
-}
-main{   
-display: grid;
-grid-area: main;
-grid-template-columns: 1fr 1fr;
-grid-template-areas: "welcome welcome" "info info" "home-img home-img" "services services" "cheese birthday" "cupcakes specials";
-grid-gap: 3px;
-width: 100%;
-padding: 1rem;
-box-sizing: border-box;
-}
-.home{
-    grid-area: welcome;
-   
-}
-.info{
-    grid-area: info;
-}
-.home-section{
-    grid-area: home-img; 
+.intro {
+  grid-area: intro;
+  text-align: end;
+  display: flex;
+  justify-content: end;
+  align-items: flex-end;
 }
 
-.home-section img{
-    width: 100%;
+nav {
+  display: none;
+  grid-area: nav;
 }
 
-.cheese{
-    grid-area: cheese;
-    background: url("./img/fruitcake2.jpg");
-    background-size: cover;
-    
+.nav-links {
+  display: flex;
 }
 
-.birthday{
-    grid-area: birthday;
-    background: url("./img/birthday.jpg");
-    background-size: cover;
-    
-}
-.cupcakes{
-    grid-area: cupcakes;
-    background: url("./img/cupcakes.jpg");
-    background-size: cover;
-}
-.specials{
-    grid-area: specials;
-    background: url("./img/specials2.jpg");
-    background-size: cover;
-    background-position: center bottom;
+nav ul li {
+  padding: 10px;
+  list-style-type: none;
 }
 
-.services{
-    grid-area: services;
+a {
+  text-decoration: none;
 }
 
-
-
-.services-img{
-    box-sizing: border-box;
-
+main {
+  display: grid;
+  grid-area: main;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "welcome welcome" "info info" "home-img home-img" "services services" "cheese birthday" "cupcakes specials";
+  grid-gap: 5px;
+  width: 100%;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+.home {
+  grid-area: welcome;
+}
+.info {
+  grid-area: info;
+  padding: 1rem 0;
+  line-height: 1.5;
+}
+.home-section {
+  grid-area: home-img;
 }
 
-.services-img p{
-    padding: 4rem 0 ;
-    text-align: center;
-
+.home-section img {
+  width: 100%;
 }
 
+.cheese {
+  grid-area: cheese;
+  background: url("./img/fruitcake2.jpg");
+  background-size: cover;
+}
 
-footer{
-    display: grid;
-    grid-area: footer;
-    grid-template-areas: "contact-links";
-    padding: 1rem;
+.birthday {
+  grid-area: birthday;
+  background: url("./img/birthday.jpg");
+  background-size: cover;
+}
+.cupcakes {
+  grid-area: cupcakes;
+  background: url("./img/cupcakes.jpg");
+  background-size: cover;
+}
+.specials {
+  grid-area: specials;
+  background: url("./img/specials2.jpg");
+  background-size: cover;
+  background-position: center bottom;
+}
 
+.services {
+  grid-area: services;
+  padding: 1rem 0;
+}
+
+.services-img {
+  box-sizing: border-box;
+}
+
+.services-img p {
+  padding: 4rem 0;
+  text-align: center;
+}
+
+footer {
+  display: grid;
+  grid-area: footer;
+  padding: 1rem;
+  background-color: #e0e0e0;
+}
+
+ .contact-links a{
+    color: black;
 } 
-.contact-links{
-    grid-area: contact-links;
-    text-decoration: none;
+footer ul li{
+list-style-type: none;
+padding: 8px;
+}
+
+footer h2{
+    padding-bottom: 0.5rem;
+}
+
+footer p{
+    text-align: center;
+    padding: 10px;
+}
+
+
+@media screen and (min-width: 900px) {
+  header {
+    background-color: rgb(248, 233, 246);
+  }
+  .hamburger {
+    display: none;
+  }
+  nav {
+    display: flex;
+    justify-content: flex-end;
+    padding: 15px;
+    top: 0;
+    left: 0;
+  }
+  nav ul li {
+    margin: 0 15px;
+  }
+  a {
+    color: black;
+  }
+  .intro {
+    padding-bottom: 3rem;
+  }
 }
