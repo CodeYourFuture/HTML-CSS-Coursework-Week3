@@ -1,1 +1,252 @@
-/*  Add your styling here */
+body{
+    margin:0;
+}
+/* imported colors */
+:root {
+    --raspberry:#F5025F;
+    --yellow:#D6F202;
+    --orange:#F24602;
+    --pink: #FD317F;
+    --purple:#a90fe6;
+}
+.body-div{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-auto-rows: auto;
+    grid-template-areas: 
+        "h h h h h h h h h h h h"
+        "m m m m m m m m m m m m"
+        "f f f f f f f f f f f f";
+}
+/* header image, paragraph and hamburger menu */
+.body-div .header{
+    background-color: transparent;
+    grid-area: h;
+    background-image: url('img/brooke-lark-pGM4sjt_BdQ-unsplash.jpg');
+    background-size:cover;
+    background-position:top;
+    background-repeat: no-repeat;
+    padding: 2.5em;
+    overflow: hidden;
+}
+.hamburger-menu{
+    display:flex;
+    height: 35px;
+    width: 40px;
+    position: fixed;
+    right: 1em;
+    top: 1em;
+    }
+.hamburger-menu img{
+    width: 100%;
+}
+.header-paragraph{
+    font-family: 'Cookie', cursive;
+    text-align: end;
+    margin: 1em 1em 2.6em 0;
+    color:var(--raspberry);
+    font-weight: 600;
+    font-size: 1.6em;
+    letter-spacing: 2.5px;
+}
+/* //main  */
+.body-div .main{
+    color: var(--raspberry);
+    background-image: url('img/products.jpg');
+    background-size: cover;
+    grid-area: m;
+    padding: 0 2em;
+    font-family: 'Roboto Slab', serif;
+}
+/* welcome section */
+.welcome-section{
+    background-color: white;
+    padding:10px;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: auto;
+    grid-template-areas: 
+        "welcome welcome"
+        "image image";
+}
+.main-texts{
+    grid-area: welcome;
+}
+.main-image{
+    grid-area: image;
+}
+.main .main-texts h1{
+    color: var(--purple);
+    font-size: 2.3em;
+}
+.main-image img{
+    width: 100%;
+    border-radius: 8px;
+}
+/* extended paragraph for desktop */
+.main-paragraph-for-desktop{
+    font-family: 'Roboto Slab', serif;
+    display: none;
+}
+/* navbar for wider screens */
+.navbar-for-widerscreen{
+    font-family: 'Roboto Slab', serif;
+    display: none;
+}
+
+/* products image setion */
+.products-section{
+    background-color: white;
+    padding:1.5em 0.5em;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 160px 160px;
+    grid-gap: .6em;
+}
+.product-image img{
+   width: 100%;
+   object-fit: cover; /* please let me know an alternate of object-fit */
+   height:100%;
+   border-radius: 8px;
+}
+ hr{
+     margin: 2em 0 0 0;
+ }
+ /* footer */
+.footer{
+    font-family: 'Roboto Slab', serif;
+    background-color: var(--orange);
+    grid-area: f;
+    padding:1em;
+    color: white;
+    font-weight: small;
+    margin: 0.4em 0;
+}
+.footer-links-div{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5em;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    color:var(--yellow);
+}
+.footer-copywrites{
+    text-align: center;
+}
+/* media screen 540px min-width */
+@media screen and (min-width:540px){
+    .body-div{
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-auto-rows: auto;
+        grid-template-areas: 
+            "h h h h h h h h h h h h"
+            "n n n n n n n n n n n n"
+            "m m m m m m m m m m m m"
+            "m m m m m m m m m m m m"
+            "f f f f f f f f f f f f";
+    }
+    /* background-image of the .header */
+    .body-div .header{
+        background-position-y:-5.5em; 
+        height: 10rem;
+    }
+    .header-paragraph{
+        font-size: 2em;
+    }
+    /* welcome section */
+    .welcome-section{
+        margin-top: 15%;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "image welcome"
+        "image welcome";
+    }
+    .main .main-texts{
+        grid-area: welcome;
+        padding:0 2em;
+    }
+    .main .main-image{
+        grid-area: image;
+    }
+    /* .hamburger-menu */
+    .hamburger-menu{
+        display: none;
+    }
+    /* navbar for wider screen , grid-area n used from grid-template-area*/
+    .navbar-for-widerscreen{
+        grid-area: n;
+        background-color: var(--raspberry);
+    }
+    .nav-list{
+        list-style: none;
+        display: flex;
+        padding: 0.4em 0;
+        justify-content: flex-end;
+    }
+    .nav-items{
+        background-color: var(--pink);
+        color: white;
+        border-radius: 8px;
+        margin: 0 .8em;
+        padding:4px;
+    }
+    .nav-link{
+        font-weight: 700;
+        font-size: 1.08em;
+        margin: 0 4px;
+        padding:5px 0;
+        color:whitesmoke
+    }
+    .nav-link:hover{
+        color:var(--purple);
+    }
+    .navbar-for-widerscreen{
+        display: block;
+    }
+    /* product section */
+    .products-section{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 170px;
+    }
+    /* footer */
+    .footer-links-div{
+        flex-direction: row;
+        justify-content: center;
+    }
+    .footer-link{
+        margin: .6em;
+    }
+}
+@media screen and (min-width:900px) and (max-width:1100px){
+    .main{
+        font-size: x-large;
+    }
+    .body-div .header{
+        background-position-y:-13em; 
+        height:15em;
+    }
+    .products-section{
+        grid-template-rows: 220px;
+    }
+}
+@media screen and (min-width:1200px){
+    .body-div .header{
+        background-position-y:-19em; 
+        height:19em;
+    }
+    .main{
+        font-size: larger;
+    }
+    .main-paragraph-for-desktop{
+        display: block;
+    }
+    .products-section{
+        grid-template-rows: 280px;
+    }
+}
