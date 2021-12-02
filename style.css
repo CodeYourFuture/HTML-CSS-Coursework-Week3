@@ -1,1 +1,175 @@
 /*  Add your styling here */
+body {
+  font-family: "Nunito", sans-serif;
+  color: #333;
+  font-weight: 300;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+}
+h1 {
+  color: green;
+  font-family: fantasy;
+  font-weight: bold;
+}
+.grid-container {
+  grid-auto-rows: auto;
+  grid-template-areas:
+    "header header"
+    "main main"
+    "footer footer";
+  padding: 2em;
+  grid-gap: 1em;
+}
+
+header {
+  grid-area: header;
+}
+main {
+  grid-area: main;
+}
+footer {
+  grid-area: footer;
+}
+.navbar {
+  display: none;
+}
+
+.logo {
+  position: relative;
+  display: flex;
+  padding: 0.5em;
+}
+.logo-image {
+  grid-area: logo-image;
+  position: absolute;
+  right: 0%;
+  bottom: 10px;
+  height: 45px;
+  width: 50px;
+}
+
+.logo-text {
+  justify-content: flex-end;
+  font-size: 18px;
+  position: absolute;
+  right: 0%;
+  top: 50px;
+}
+
+.welcome {
+  display: grid;
+  grid-template-areas:
+    "welcome-text welcome-text welcome-text welcome-text welcome-text welcome-text"
+    ". . welcome-image welcome-image  . .";
+}
+
+.welcome-image {
+  grid-area: welcome-image;
+}
+.welcome-text {
+  grid-area: welcome-text;
+}
+/* styling products */
+
+.products {
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 400px 400px;
+  display: grid;
+  grid-gap: 1em;
+}
+.product-1 {
+  background-image: url("./images/chocolate-cake.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.product-2 {
+  background-image: url("./images/vanilla-cake.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.product-3 {
+  background-image: url("./images/fancy.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.product-4 {
+  background-size: cover;
+  background-image: url("./images/vegan-cake.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/* styling footer */
+.footer {
+  grid-area: footer;
+  grid-gap: 1em;
+  padding: 2em;
+}
+
+figcaption {
+  font-family: fantasy;
+  color: black;
+  font-weight: bold;
+}
+
+button {
+  padding: 18px;
+  background: linear-gradient(orange, white);
+  color: black;
+  border-radius: 5px;
+  border-style: none;
+  justify-items: center;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* For tablet version */
+@media screen and (min-width: 560px) {
+  .products {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 500px;
+    grid-gap: 1em;
+    overflow: hidden;
+  }
+  .logo-image {
+    display: none;
+  }
+  .navbar {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+  }
+  .nav ul li {
+    padding: 2em;
+    background: linear-gradient(orange, white);
+  }
+
+  .nav ul li a {
+    font-size: 16px;
+
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    transition: font-size 1s linear;
+  }
+  .nav a:hover {
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+  }
+  .welcome {
+    grid-template-areas: "welcome-image welcome-image welcome-image welcome-text welcome-text welcome-text";
+    grid-gap: 10px;
+    padding: 10px;
+    text-align: end;
+  }
+  .logo-text {
+    font-size: 20px;
+  }
+}
