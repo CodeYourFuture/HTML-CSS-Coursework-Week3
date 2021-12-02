@@ -1,16 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Responsive Cake webpage</title>
-    <!-- Add a link to your css file here -->
-</head>
-
-<body>
-    <!-- Add your markup here -->
-</body>
-
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Responsive Cake webpage</title>
+        <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,300' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body class="body-grid-container">
+        <header>
+            <div class="logo-container">
+                <img src="./img/logo.jpeg" alt="Logo Image"/>
+            </div>
+            <nav class="hamburger-nav"> 
+                <img src="./img/menu-hamburger.svg" alt="Hamburger Menu "/>
+            </nav>
+            <h3>The best cakes in town delivered to your home</h3>   
+        </header> 
+        <nav class="desktop-nav">
+                <ul class="flex">
+                    <li><a class="nav-list" href="#">HOME</a></li>
+                    <li><a class="nav-list" href="#">CAKES</a></li>
+                    <li><a class="nav-list" href="#">ORDERIN</a></li>
+                    <li><a class="nav-list" href="#">LESSONS</a></li>
+                    <li><a class="nav-list" href="#">ABOUT</a></li>
+                </ul>
+        </nav>
+        <main>
+            <section class="welcome">
+                <div class="welcome-title">
+                    <h1>Welcome</h1>
+                    <p>We are a company dedicated to the preparation of birthday and wedding cakes,cupcakes and afternoon tee ,providing our customer with a product always fresh from the oven.<p>
+                </div>
+                <div class="welcome-image">
+                    <img src="./img/herocake.jpeg" alt="cake picture" />
+                </div>
+            </section> 
+            <section class="product">
+                <div class="product-image">
+                    <img src="./img/cupcake.webp" alt="cupcake picture" />
+                </div>
+                <div class="product-image">
+                    <img src="./img/weddingcake.jpg" alt="Wedding Cake Picture" />
+                </div>
+                <div class="product-image">
+                    <img src="./img/birthdaycake.jpeg" alt="Birthday Cake Picture" />
+                </div>
+                <div class="product-image">
+                    <img src="./img/afternoontea.jpg" alt="Afternoon Tea Picture" />
+                </div>  
+            </section>
+        </main>
+        <footer>
+            <div class="social-icons">
+                <img src="./img/facebook.jpeg" alt="facebook logo"/>
+                <img src="./img/instagram.jpeg" alt="instagram logo"/>
+                <img src="./img/twitter.jpeg" alt="twitter logo"/>     
+            </div>
+            <div class="email-us">
+                <a href="#">info@mycake.co.uk</a>
+            </div>
+        </footer>
+    </body>
 </html>
