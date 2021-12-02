@@ -167,7 +167,6 @@ main {
 footer {
     grid-area: footer;
     margin-top:2rem;
-    width: 100%;
     background-color: var(--secondary-light);
     text-align: center;
 }
