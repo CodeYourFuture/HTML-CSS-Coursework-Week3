@@ -19,6 +19,7 @@ body {
 
 /* HEADER */
 .header {
+  width: 100%;
   background-color: #ffffe8;
   color: #ffafcc;
   grid-area: header;
@@ -45,7 +46,7 @@ body {
 }
 
 button.menu__burger {
-  margin-bottom: 2rem;
+  margin-top: 0.5rem;
   margin-right: 0.5rem;
   background-color: #ffffe8;
   border: none;
@@ -64,7 +65,7 @@ button.menu__burger {
 }
 
 .welcome__content {
-  margin-top: 10rem;
+  margin-top: 14rem;
   font-size: 1.2rem;
   padding: 0 2.4rem;
 }
@@ -91,6 +92,7 @@ button.menu__burger {
 }
 
 .product-cakes-images {
+  margin-top: 1rem;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
