@@ -1,1 +1,155 @@
 /*  Add your styling here */
+
+.container {
+    /*height: 100%;*/
+    margin: 0;
+    font-size: 1 em;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: 1fr;
+    grid-auto-rows: minmax(200px, auto);
+           
+}
+
+header {
+    border: red 2px solid;
+    background-color: darkkhaki;
+    grid-column: 1 / - 1;
+
+    
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    margin-bottom: 5px;
+
+}
+
+
+main {
+    border: green 2px solid;
+   
+    display: grid;
+    grid-template-columns: 1 fr;
+    grid-template-rows: 1 fr 1fr;
+    grid-gap: 5px;
+
+   
+}
+
+.welcome {
+    grid-column: 1 / - 1;
+    border: blueviolet 2px dashed;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+
+    background-color: rgb(230, 241, 211);
+    margin-left: 1rem;
+    margin-right: 1rem;
+
+}
+  
+
+.products {
+    grid-column: 1 / - 1;
+    border: blueviolet 2px dashed;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 200px 200px;
+    
+    background-color: rgb(248, 231, 225);
+
+}
+
+   
+footer {
+    border: orange 2px solid;  
+    grid-column: 1 / - 1;
+}
+
+
+.nav-mob {
+    overflow: hidden;
+    position: relative; 
+
+}
+
+.nav-list {
+    display: none;
+    list-style: none;
+    
+}
+
+.nav-item {
+    margin-right: 5px;
+    padding: 5px 25px; 
+    background-color: rgb(61, 61, 61);
+    color: white;
+}
+.nav-link{
+    color: grey;
+    padding: 14px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+
+
+
+
+.logo {
+    
+max-width: 15%;
+height: auto;
+
+       
+}
+
+.slogan {
+    margin-top: 3rem;
+    margin-bottom: 2px;
+   
+    
+
+}
+
+.products-image {
+    background-color: crimson;
+    
+  
+
+}
+
+.products-image img {
+    width: 90%;
+    display: block;
+    margin-left: auto; 
+    margin-right: auto;
+    margin-top: 5px;
+
+}
+    
+
+
+.main-picture {
+    width: 100%;
+}
+
+
+@media screen and (min-width: 600px) {
+    
+    .welcome {
+       
+        
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        text-align: right;
+        
+    }
+      
+    
+}
