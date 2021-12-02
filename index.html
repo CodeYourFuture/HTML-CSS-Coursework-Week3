@@ -2,15 +2,64 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Responsive Cake webpage</title>
-    <!-- Add a link to your css file here -->
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./hamburger.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 </head>
 
 <body>
-    <!-- Add your markup here -->
+    <div class="grid-container">
+        <header>
+            <div class="mobile-container">
+                <div class="topnav">
+                    <a href="#home" class="active"></a>
+                    <div id="hamburger">
+                        <a href=".">Home</a>
+                        <a href="#img">Photo</a>
+                        <a href="#main">Main</a>
+                    </div>
+                    <a href="javascript:void(0);" class="icon" onclick="hamburgerMenu()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </div>
+            </div>
+            <p>The best cakes in town delivered to your door</p>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="*">Home</a></li>
+                <li><a href="#">Cakes</a></li>
+                <li><a href="#">Ordering</a></li>
+                <li><a href="#">Lesson</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+
+        <main id="main">
+            <h1>Welcome</h1>
+            <p>
+                Old favourites, traditional bakes and new flavours – take your pick
+                from our timeless collection of layered, fruit and the most indulgent
+                chocolate cakes. The perfect pit stop after a morning at the nearby
+                flower market.
+            </p>
+        </main>
+        <div class="img" id="img"><img src="./img/las vegas.jpg" /></div>
+        <section>
+            <img class="cake1" src="./img/2 Best-Birthday-Cake-with-milk-chocolate-buttercream-SQUARE.jpeg" />
+            <img class="cake2" src="./img/5 Lemon-layer-cake-d2a2df0.jpeg" />
+            <img class="cake3" src="./img/6 image.jpeg" />
+            <img class="cake4" src="./img/Pound_layer_cake.jpeg" />
+        </section>
+        <footer>
+            <p><a href="#">About us</a></p>
+            <p><a href="#">Contact Us</a></p>
+        </footer>
+    </div>
 </body>
 
 </html>

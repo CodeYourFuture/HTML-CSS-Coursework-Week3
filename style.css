@@ -1,1 +1,237 @@
-/*  Add your styling here */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(8, auto);
+  grid-template-areas:
+    "h h h h h h h h h h h h"
+    "m m m m m m m m m m m m"
+    "i i i i i i i i i i i i"
+    "s s s s s s s s s s s s"
+    "f f f f f f f f f f f f";
+}
+
+header {
+  background-image: url("./img/3\ rainbow_cake_20402_16x9.jpeg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  grid-area: h;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  color: #660f68;
+  font-size: small;
+}
+
+header p {
+  font-weight: bold;
+  padding: 2rem;
+}
+
+main {
+  grid-area: m;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-items: stretch;
+  padding: 5%;
+  text-align: justify;
+  border: 2px solid #000;
+}
+
+main p {
+  font-size: x-large;
+}
+
+.img {
+  grid-area: i;
+}
+
+.img img {
+  width: 100%;
+}
+
+section {
+  grid-area: s;
+  background-color: #b203b6;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  column-gap: 10px;
+  row-gap: 15px;
+  align-items: center;
+}
+
+.cake1 {
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 1;
+  grid-row-end: span 1;
+  width: 100%;
+  height: auto;
+}
+
+.cake2 {
+  width: 100%;
+  height: auto;
+}
+
+.cake3 {
+  width: 100%;
+  height: auto;
+}
+
+.cake4 {
+  width: 100%;
+  height: auto;
+}
+
+footer {
+  grid-area: f;
+  background-color: #b203b6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #3cf743;
+}
+
+footer a {
+  color: #3cf743;
+  font-weight: bold;
+}
+
+/* Hamburger menu */
+
+.mobile-container {
+  background-color: transparent;
+  color: rgb(0, 0, 0);
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: transparent;
+}
+
+.topnav #hamburger {
+  display: none;
+}
+
+.topnav a {
+  color: rgb(0, 0, 0);
+  padding: 5px 5px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.topnav a.icon {
+  background: transparent;
+  display: block;
+  right: 0;
+  top: 0;
+}
+
+.topnav a:hover {
+  background-color: transparent;
+  color: #000;
+}
+
+nav {
+  display: none;
+  background-color: #b203b6;
+  grid-area: n;
+}
+
+nav a {
+  color: #3cf743;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #fed100;
+}
+
+@media screen and (min-width: 1000px) {
+  /* hamburger menu disabled */
+  .topnav {
+    display: none;
+  }
+
+  header {
+    padding: 100px 0;
+  }
+
+  header p {
+    font-size: xx-large;
+  }
+
+  nav {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    font-size: large;
+  }
+
+  nav li {
+    list-style-type: none;
+  }
+
+  nav a {
+    font-size: xx-large;
+    padding: 1em;
+  }
+
+  main {
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 5%;
+    text-align: justify;
+    border: 2px solid #000;
+  }
+
+  main h1 {
+    font-size: 5em;
+  }
+
+  main p {
+    font-size: 3em;
+  }
+
+  section {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    border: 1px solid #000;
+  }
+
+  .grid-container {
+    grid-template-areas:
+      "h h h h h h h h h h h h"
+      "n n n n n n n n n n n n"
+      ". i i i i i m m m m m ."
+      ". s s s s s s s s s s ."
+      "f f f f f f f f f f f f";
+  }
+
+  footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  footer p {
+    padding: 2rem;
+  }
+
+  footer a {
+    font-size: x-large;
+  }
+}
