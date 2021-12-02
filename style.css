@@ -1,1 +1,240 @@
-/*  Add your styling here */
+:root {
+  --grey-dark: #505050;
+  --grey-mid: #b3b3b3;
+  --grey-light: #eeecec;
+  --raspberry: #e30b5c;
+  --white: #fff;
+  font-size: 1rem;
+  color: var(--grey-dark);
+}
+
+body {
+  margin: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.main,
+.footer_wrapper {
+  padding: 20px;
+}
+
+/* ______________________ header ____________________ */
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: var(--grey-light);
+}
+
+.logo {
+  width: 60px;
+  padding: 20px 0 20px 20px;
+}
+
+.header_items {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+  text-align: right;
+  padding: 10px 10px 0 0;
+}
+
+.header_title {
+  flex-wrap: wrap;
+  font-size: 1rem;
+}
+.nav_wrapper {
+  display: none;
+}
+
+/* ______________________ main ____________________ */
+
+.main {
+  display: grid;
+  grid-template-columns: repeat(4, fr);
+  grid-template-rows: auto;
+  grid-gap: 8px;
+}
+
+.welcome_wrapper {
+  padding: 10px 0 15px 0;
+}
+
+.welcome_tite {
+  font-size: 2rem;
+}
+
+.bigcake_img {
+  width: 100%;
+}
+
+/* ______________________ products ____________________ */
+
+.products {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 12px;
+  padding: 10px 0 10px 0;
+}
+
+.product_image {
+  overflow: hidden;
+}
+
+.product_image img {
+  width: 100%;
+}
+
+/* ______________________ footer ____________________ */
+
+.footer_wrapper {
+  background-color: var(--grey-light);
+}
+
+.copyright {
+  text-align: center;
+}
+
+@media screen and (min-width: 540px) {
+  .welcome_wrapper {
+    padding: 15px 0 15px 0;
+  }
+
+  .welcome_tite {
+    font-size: 2.1rem;
+    padding: 10px 0 0 0;
+  }
+
+  .welcome_text {
+    font-size: 1rem;
+    padding: 10px 0 10px 0;
+  }
+}
+
+/**
+ *****************************************************
+ *
+ *       desktop
+ *
+ ********************************************
+*/
+
+@media screen and (min-width: 900px) {
+  .hamburger_menu {
+    display: none;
+  }
+
+  .main,
+  .footer_wrapper {
+    padding: 15px 35px;
+  }
+
+  /* ______________________ header ____________________ */
+
+  .header_title {
+    padding: 50px 30px 0 0;
+  }
+
+  /* ______________________ navigation ____________________ */
+
+  .nav_wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: auto;
+    background-color: var(--grey-light);
+  }
+
+  .list {
+    display: flex;
+    flex-direction: row;
+    padding: 5px 50px 5px 0;
+  }
+
+  .nav_item {
+    list-style: none;
+    padding: 5px 28px;
+    background-color: var(--grey-mid);
+    margin: 0 5px;
+  }
+
+  .nav_list {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 1.2rem;
+    justify-content: space-between;
+  }
+
+  .nav_list:active {
+    color: var(--grey-dark);
+  }
+
+  .nav_list:hover {
+    color: var(--raspberry);
+  }
+
+  /* ______________________ main ____________________ */
+
+  .welcome {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    padding: 10px 0;
+  }
+
+  .welcome_wrapper {
+    order: 2; /*  welcome wrapper become second on desktop, it switch place with bigcake photo  */
+    text-align: right;
+  }
+
+  .welcome_tite {
+    font-size: 2.5rem;
+  }
+
+  .welcome_text {
+    font-size: 1.2rem;
+    padding: 25px 0 0 20px;
+  }
+
+  .bigcake_wrapper {
+    order: 1; /* bigcake photo become first on desktop, switching place with welcome wrapper */
+  }
+
+  .bigcake_img {
+    width: 100%;
+  }
+
+  /* ______________________ products ____________________ */
+
+  .products {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 15px;
+  }
+
+  .product_image {
+    overflow: hidden;
+  }
+
+  .product_image img {
+    width: 100%;
+  }
+
+  /* ______________________ footer ____________________ */
+
+  .footer_text {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: auto;
+    padding: 0 50px;
+  }
+}

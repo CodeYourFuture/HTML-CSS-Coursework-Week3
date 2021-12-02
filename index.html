@@ -1,16 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Responsive Cake webpage</title>
     <!-- Add a link to your css file here -->
-</head>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,500,300"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
-    <!-- Add your markup here -->
-</body>
+  <body>
+    <!--___________________ header ___________________-->
 
+    <header class="header">
+      <img class="logo" src="img/logo.svg" alt="cubcake logo" />
+      <div class="header_items">
+        <img
+          class="hamburger_menu"
+          src="img/menu-hamburger.svg"
+          width="30px"
+          alt="hamburger menu"
+        />
+        <p class="header_title">
+          The best cakes in town delivered to your door
+        </p>
+      </div>
+    </header>
+    <main class="main">
+      <!--___________________ navigation  ___________________-->
+
+      <nav class="nav_wrapper">
+        <ul class="list">
+          <li class="nav_item">
+            <a class="nav_list" href="#">HOME</a>
+          </li>
+          <li class="nav_item">
+            <a class="nav_list" href="#">CAKES</a>
+          </li>
+          <li class="nav_item">
+            <a class="nav_list" href="#">ORDERING</a>
+          </li>
+          <li class="nav_item">
+            <a class="nav_list" href="#">LESSONS</a>
+          </li>
+          <li class="nav_item">
+            <a class="nav_list" href="#">ABOUT</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!--______________________ main content  ___________________-->
+
+      <section class="welcome">
+        <div class="welcome_wrapper">
+          <h1 class="welcome_tite">Welcome</h1>
+          <p class="welcome_text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+            tempus ante vitae ante tincidunt, ac blandit nunc tempor. Quisque
+            rhoncus sapien ac tellus vulputate luctus. Integer maximus, metus ut
+            ultrices interdum.
+          </p>
+        </div>
+        <div class="bigcake_wrapper">
+          <img class="bigcake_img" src="img/cake.jpg" alt="raspberry cake" />
+        </div>
+      </section>
+
+      <section class="products">
+        <div class="product_image">
+          <img src="img/cake1.jpg" alt="cream layer tartlet" />
+        </div>
+        <div class="product_image">
+          <img src="img/cake2.jpg" alt="fruits and cream tartlets" />
+        </div>
+        <div class="product_image">
+          <img src="img/cake3.jpg" alt="small cake pieces" />
+        </div>
+        <div class="product_image">
+          <img src="img/cake4.jpg" alt="raspberry and pistachio cake piece" />
+        </div>
+      </section>
+    </main>
+
+    <!--______________________ footer  _____________________-->
+    <footer class="footer_wrapper">
+      <div class="footer_text">
+        <p class="footer_item">Lorem ipsum</p>
+        <p class="footer_item">Lorem ipsum</p>
+        <p class="footer_item">Lorem ipsum</p>
+      </div>
+      <p class="copyright">© Responsive Cake webpage</p>
+    </footer>
+  </body>
 </html>
