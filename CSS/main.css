@@ -4,7 +4,14 @@
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(10, 1fr);
-  background: linear-gradient(90deg, pink, white);
+  background: linear-gradient(90deg, rgba(255, 192, 203, 0.681), white);
+}
+.nav {
+  display: none;
+}
+.nav ul li:hover {
+  color: black;
+  transform: scale(1.2);
 }
 .hero {
   grid-column: 2/12;
@@ -31,6 +38,8 @@
 .hero_img img {
   width: 100%;
 }
+.hero_text {
+}
 .products {
   grid-column: 2/12;
   grid-row: 7/10;
@@ -43,20 +52,117 @@
 .birthday_products {
   grid-column: 1/3;
   grid-row: 1/2;
-  background: red;
+  background: url(../img/__opt__aboutcom__coeus__resources__content_migration__serious_eats__seriouseats.com__recipes__images__2014__11__BakedOccasions_BirthdayCake-02af7038d93647d9a7339f0802b03079.jpg);
+  background-size: cover;
+  background-position: center;
 }
 .wedding_products {
   grid-column: 3/5;
   grid-row: 1/2;
-  background: blue;
+  background: url(../img/Unicorn-Cake_EXPS_HCA18_223966_D02_22_2b-1.jpeg);
+  background-size: cover;
+  background-position: center;
 }
 .cupcakes_products {
   grid-column: 1/3;
   grid-row: 2/3;
-  background: peru;
+  background: url(../img/PinkSweetheartCake_2000x.jpeg);
+  background-size: cover;
+  background-position: center;
 }
-.vegan_products {
+.dietary_products {
   grid-column: 3/5;
   grid-row: 2/3;
-  background: black;
+  background: url(../img/flavourtown-bakery-london-cakes_vegan-rainbow-new-01_2048x2048.jpeg);
+  background-size: cover;
+  background-position: center;
+}
+main h1 {
+  color: rgb(230, 8, 86);
+}
+
+main p {
+  color: black;
+  font-size: 4vw;
+}
+
+@media screen and (min-width: 481px) {
+}
+@media screen and (min-width: 721px) {
+  .main {
+    grid-template-rows: 20px auto repeat(5, 1fr) 50px;
+    grid-row-gap: 50px;
+  }
+  .nav {
+    display: block;
+    grid-row: 2/3;
+    grid-column: 2/12;
+    background-color: rgb(230, 8, 86);
+    text-align: right;
+    padding: 1em;
+  }
+  .nav ul {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .nav ul li {
+    list-style: none;
+    background-color: white;
+    padding: 0.5em 1em;
+    margin: 0 0.5em;
+    cursor: pointer;
+  }
+
+  .nav ul li a {
+    color: rgb(230, 8, 86);
+    text-decoration: none;
+    font-weight: bold;
+  }
+  .hero {
+    grid-column: 2/12;
+    grid-row: 3/6;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .hero_text {
+    width: 50%;
+    padding-left: 1em;
+    align-self: center;
+  }
+  .hero_text h1 {
+    font-size: 3.5vw;
+  }
+  .hero_text p {
+    font-size: 2vw;
+    margin-top: 2em;
+    line-height: 1.4em;
+  }
+  .hero_img {
+    width: 50%;
+  }
+  .products {
+    grid-column: 2/12;
+    grid-row: 6/8;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 20px;
+  }
+  .birthday_products {
+    grid-column: 1/2;
+    grid-row: 1;
+  }
+  .wedding_products {
+    grid-column: 2/3;
+    grid-row: 1;
+  }
+  .cupcakes_products {
+    grid-column: 3/4;
+    grid-row: 1;
+  }
+  .dietary_products {
+    grid-column: 4/5;
+    grid-row: 1;
+  }
+}
+@media screen and (min-width: 1024px) {
 }

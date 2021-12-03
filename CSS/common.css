@@ -14,5 +14,12 @@ body {
     "footer";
 }
 h1 {
+  width: 100%;
   font-size: 6vw;
+}
+@media screen and (min-width: 481px) {
+}
+@media screen and (min-width: 721px) {
+}
+@media screen and (min-width: 1024px) {
 }

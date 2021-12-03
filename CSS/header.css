@@ -2,7 +2,7 @@
   width: 100%;
   grid-area: header;
   display: flex;
-  background: rgb(234, 49, 123);
+  background: rgb(230, 8, 86);
   align-items: end;
   padding: 1em;
   color: white;
@@ -22,6 +22,15 @@
 }
 .burger_item {
   padding: 0.5em 2em;
-  background: linear-gradient(100deg, rgb(219, 190, 44), rgb(109, 13, 138));
+  background: linear-gradient(150deg, rgb(230, 8, 86), white);
   margin: 2px 0px;
+}
+@media screen and (min-width: 481px) {
+}
+@media screen and (min-width: 721px) {
+  .burger_btn {
+    display: none;
+  }
+}
+@media screen and (min-width: 1024px) {
 }
