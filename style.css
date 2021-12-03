@@ -1,7 +1,7 @@
 /*  Add your styling here */
 
 body {
-    background-color: rgb(221, 232, 235);
+    background-color: rgb(234, 239, 241);
 }
 
 
@@ -23,6 +23,7 @@ header {
     background-image: url("../HTML-CSS-Coursework-Week3/img/american-heritage-chocolate-vdx5hPQhXFk-unsplash.jpg");
 }
 
+
 .banner-text {
     display: flex;
     position: relative;
@@ -33,6 +34,7 @@ header {
 }
 
 h1 {font-weight:1000;}
+
 
 .welcome {
     grid-area: welcome;
@@ -49,6 +51,7 @@ h2 {
     font-family: 'Comforter', cursive;
     font-size: 40px;
     font-weight: 100;
+    margin-bottom: -20px;
 }
 
 p {
@@ -87,4 +90,58 @@ p {
 .footer-text {
     font-family: 'Estonia', cursive;
     font-size: 30px;
+    text-align: center;
+}
+
+
+@media screen and (min-width: 412px) {
+    header {
+    background-size: cover;
+    }   
+}
+
+
+@media screen and (min-width: 768px) {
+    .banner-text {
+        font-size: 30px;
+        margin-top: -15px;
+    }
+    .main {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        margin-bottom: -10px;
+        margin-top: 20px;
+    }
+
+    .main-text {
+        width: 70%;
+    }
+
+    h2 {
+        font-size: 50px;
+        margin-bottom: -20px;
+    }
+
+    .main-img { 
+        height: 500px;
+    }
+
+    .img-container {
+        margin-bottom: -10px;
+    }
+
+    .gallery-img {
+        height: 300px;
+    }
+
+
+    .footer-text {
+        font-size: 50px;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    
+    
 }
