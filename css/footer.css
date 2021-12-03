@@ -1,0 +1,20 @@
+.footer {
+  width: 100%;
+  grid-area: footer;
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  background: rgb(26, 10, 0);
+}
+.links_div h2 {
+  margin: 10px;
+}
+.links_div h2 a {
+  color: rgb(239 196 147);
+  text-decoration: none;
+}
+.watermark {
+  text-align: center;
+  margin-top: 1em;
+  color: rgb(143, 111, 75);
+}

@@ -1,0 +1,27 @@
+.header {
+  width: 100%;
+  grid-area: header;
+  display: flex;
+  background: rgb(26, 10, 0);
+  align-items: end;
+  padding: 1em;
+  color: rgb(239 196 147);
+  text-align: right;
+}
+.logo_div {
+  width: 60%;
+}
+.logo_div img {
+  width: 100%;
+}
+.burger_btn {
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  cursor: pointer;
+}
+.burger_item {
+  padding: 0.3em 2em;
+  background: linear-gradient(90deg, rgb(209, 143, 68), rgb(24, 16, 0));
+  margin: 4px 0px;
+}
