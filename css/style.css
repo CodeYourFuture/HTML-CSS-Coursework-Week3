@@ -182,8 +182,8 @@ footer {
 footer .footer-text {
   padding-top: 1rem;
   font-size: 0.9rem;
-  display: block;
-  width: 270px;
+  display: flex;
+  flex-direction: column-reverse;
   margin: auto;
 }
 
