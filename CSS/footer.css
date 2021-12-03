@@ -1,0 +1,42 @@
+.footer {
+  width: 100%;
+  grid-area: footer;
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  background: rgb(230, 8, 86);
+}
+.links_div h2 {
+  margin: 10px;
+}
+.links_div h2 a {
+  color: white;
+  text-decoration: none;
+}
+.watermark {
+  text-align: center;
+  margin-top: 1em;
+  color: white;
+}
+@media screen and (min-width: 481px) {
+}
+@media screen and (min-width: 721px) {
+  .links_div {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+  }
+  .links_div:hover {
+    color: black;
+    transform: scale(1.2);
+  }
+  .watermark {
+    color: rgb(215, 207, 207);
+  }
+  .watermark:hover {
+    color: rgb(14, 181, 223);
+    transform: scale(1.5);
+  }
+}
+@media screen and (min-width: 1024px) {
+}

@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  display: grid;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+}
+h1 {
+  width: 100%;
+  font-size: 6vw;
+}
+@media screen and (min-width: 481px) {
+}
+@media screen and (min-width: 721px) {
+}
+@media screen and (min-width: 1024px) {
+}
