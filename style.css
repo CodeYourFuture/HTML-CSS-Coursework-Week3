@@ -26,11 +26,12 @@ body {
   background-color: rgb(190, 190, 190);
   padding: 4px 22px;
   color: white;
+  transition: background-color 1s;
 }
-
 .nav-link:hover {
-  color: #e0633a;
+  color: #3a3939;
   cursor: pointer;
+  background-color: rgb(233, 233, 233);
 }
 /* grid */
 .content {
