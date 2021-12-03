@@ -17,6 +17,8 @@ _Desktop wireframe:_
 Make a template for the three screen scenarios
 Template 
 img/Slide6.JPG
+![alt text](./design/cakes%20wireframe%20-%20mobile.png "Cakes Co mobile design")
+https://github.com/LovesPictures/WowCakes/blob/4d2139c334692438dcca671bda7c780e79b64417/img/Slide6.JPG
 
 ### Define your own style
 
