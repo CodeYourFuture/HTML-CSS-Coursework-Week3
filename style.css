@@ -1,1 +1,222 @@
 /*  Add your styling here */
+
+body {
+  font-family: "Rochester", cursive;
+  -webkit-font-smoothing: antialiased;
+  color: black;
+  background-color: #fff1e6;
+  margin: 0;
+  text-align: center;
+  /* padding: 10px; */
+}
+
+main {
+  padding: 1em 3em;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(2, 1fr);
+
+  grid-template-areas:
+    "header header"
+    "welcome welcome"
+    "products products"
+    "footer footer";
+}
+
+header,
+footer,
+.products img {
+  background-color: #eddcd2;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "image burger"
+    "image best-cakes";
+}
+
+header img {
+  grid-area: image;
+  width: 60%;
+  padding: 20px;
+}
+
+header p {
+  grid-area: best-cakes;
+  text-align: right;
+  padding-right: 1em;
+}
+
+nav {
+  display: grid;
+  justify-items: end;
+  padding-right: 1em;
+}
+
+nav img {
+  grid-area: burger;
+  width: 15%;
+  padding-top: 40px;
+}
+
+nav ul {
+  display: none;
+}
+
+h1 {
+  font-size: 4em;
+  font-weight: bold;
+  margin-top: 0;
+  text-align: left;
+}
+
+p {
+  font-size: 30px;
+  text-align: left;
+}
+
+.welcome {
+  grid-area: welcome;
+  padding-bottom: 30px;
+}
+
+.welcome img {
+  padding: 40px 80px;
+  width: 50%;
+  border: 3px solid black;
+  border-radius: 20px;
+  background-color: #ddbea9;
+}
+
+.products {
+  grid-area: products;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2rem;
+}
+
+.products img {
+  border: 3px solid black;
+  border-radius: 20px;
+  width: 100%;
+  padding: 10px;
+}
+
+footer {
+  grid-area: footer;
+  justify-items: start;
+
+  border: 2px solid black;
+}
+
+footer img {
+  width: 200px;
+}
+
+@media screen and (min-width: 540px) {
+  main {
+    grid-template-columns: repeat (4, 1fr);
+
+    grid-area: "header header header header" "nav nav nav nav"
+      "image image welcome welcome" "products products products products"
+      "footer footer footer footer";
+  }
+
+  header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "image best-cakes";
+  }
+
+  header img {
+    grid-area: image;
+    width: 60%;
+    padding: 20px;
+  }
+
+  header p {
+    grid-area: best-cakes;
+    align-self: end;
+  }
+
+  .welcome-text {
+    display: welcome;
+  }
+
+  .welcome-image {
+    display: image;
+  }
+
+  .burger {
+    display: none;
+  }
+
+  header img {
+    width: 100px;
+  }
+
+  nav ul {
+    display: nav;
+    display: flex;
+    list-style: none;
+    font-size: 30px;
+    background-color: #eddcd2;
+  }
+
+  nav ul li {
+    /* padding: 0px 5px; */
+    margin: 0px 10px;
+    background-color: #ddbea9;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+  a:visited {
+    text-decoration: none;
+    color: black;
+  }
+
+  a:hover {
+    text-decoration: none;
+    color: white;
+  }
+
+  .welcome {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .welcome-text {
+    margin-left: 100px;
+  }
+
+  .welcome-image {
+    display: grid;
+    align-items: center;
+    margin: 10px;
+  }
+
+  .products {
+    display: flex;
+  }
+
+  .products img {
+    width: 70%;
+  }
+
+  footer img {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  nav ul li {
+    margin: 0px 40px;
+    background-color: #ddbea9;
+  }
+}

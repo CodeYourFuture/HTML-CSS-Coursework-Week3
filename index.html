@@ -1,16 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Responsive Cake webpage</title>
     <!-- Add a link to your css file here -->
-</head>
 
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rochester&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
     <!-- Add your markup here -->
-</body>
+    <header>
+      <img src="images/piece-of-cake.png" />
+      <p>The best cakes in town delivered to your door</p>
+      <div class="burger">
+        <img src="images/burger-menu.png" />
+      </div>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">CAKES</a></li>
+        <li><a href="#">ORDERING</a></li>
+        <li><a href="#">LESSONS</a></li>
+        <li><a href="#">ABOUT</a></li>
+      </ul>
+    </nav>
 
+    <main>
+      <section class="welcome">
+        <div class="welcome-text">
+          <h1>Welcome</h1>
+          <p>
+            Welcome to Harsheek's Cakes, your favourite online cake shop!
+            Established in 1969, we bake and serve a tantalising selection of
+            traditional and affordable cakes and pies that brighten everyone’s
+            mood! Grab some cakes your family and friends for every occasion.
+          </p>
+        </div>
+        <div class="welcome-image">
+          <img src="images/birthday-cake.png" />
+        </div>
+      </section>
+      <section class="products">
+        <div class="product-img"><img src="images/apple-pie.png" /></div>
+        <div class="product-img"><img src="images/candle-cake.png" /></div>
+        <div class="product-img"><img src="images/cupcake.png" /></div>
+        <div class="product-img"><img src="images/donut.png" /></div>
+      </section>
+    </main>
+    <footer>
+      <img src="images/burger-menu.png" />
+    </footer>
+  </body>
 </html>
