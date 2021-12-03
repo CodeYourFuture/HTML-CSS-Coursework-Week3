@@ -142,6 +142,52 @@ p {
 }
 
 @media screen and (min-width: 1025px) {
+    header {
+        height: 300px;
+        background-size: 1500px 500px;
+        margin-bottom: 20px;
+    }
+
+    .banner-text {
+        top: 125px;
+        left: 35%;
+        font-size: 50px;
+    }
+
+    main {
+        margin-bottom: 50px;
+    }
+
+   h2 {
+       font-size: 80px;
+   }
+
+   p {
+       font-size: 50px;
+   }
+
+
+    .img-container {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+
+        margin-bottom: -300px;
+    }
+   
     
-    
+    .footer-text {
+        height:fit-content;
+        background-color: rgb(151, 207, 204);
+    }
+}
+
+@media screen and (min-width: 1503px) {
+
+    header {
+        background-size: 1700px 500px;
+    }
+
+    .main {
+        background-color: rgb(151, 207, 204);
+    }
+
 }
