@@ -61,6 +61,10 @@ nav img {
   padding-top: 40px;
 }
 
+nav ul {
+  display: none;
+}
+
 h1 {
   font-size: 4em;
   font-weight: bold;
@@ -93,9 +97,6 @@ p {
   grid-gap: 2rem;
 }
 
-.product-img {
-}
-
 .products img {
   border: 3px solid black;
   border-radius: 20px;
@@ -105,13 +106,67 @@ p {
 
 footer {
   grid-area: footer;
+  justify-items: start;
+
+  border: 2px solid black;
 }
 
 footer img {
-  width: 50px;
+  width: 200px;
 }
 
-@media screen and (min-with: 600px);
-.welcome {
-  background-color: cadetblue;
+@media screen and (min-width: 540px) {
+  main {
+    grid-template-columns: repeat (4, 1fr);
+
+    grid-area: "header header header header" "nav nav nav nav"
+      "image image welcome welcome" "products products products products"
+      "footer footer footer footer";
+  }
+
+  header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "image best-cakes";
+  }
+
+  header img {
+    grid-area: image;
+    width: 60%;
+    padding: 20px;
+  }
+
+  header p {
+    grid-area: best-cakes;
+    align-self: end;
+  }
+
+  .welcome-text {
+    display: welcome;
+    background-color: cyan;
+  }
+
+  .welcome-image {
+    display: image;
+  }
+
+  nav img {
+    display: none;
+  }
+
+  nav ul {
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns: ;
+    display: unset;
+    list-style: none;
+    font-size: 30px;
+  }
+
+  footer img {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 900px) {
 }
