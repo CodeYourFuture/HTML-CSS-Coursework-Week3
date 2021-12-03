@@ -46,7 +46,7 @@ body{
     margin: 1em 1em 2.6em 0;
     color:var(--raspberry);
     font-weight: 600;
-    font-size: 1.6em;
+    font-size: 1.7em;
     letter-spacing: 2.5px;
 }
 /* //main  */
@@ -102,13 +102,17 @@ body{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 160px 160px;
-    grid-gap: .6em;
+    grid-gap: 2em .5em;
 }
 .product-image img{
    width: 100%;
    object-fit: cover; /* please let me know an alternate of object-fit */
    height:100%;
    border-radius: 8px;
+}
+figcaption{
+    text-align: center;
+    color:var(--purple);
 }
  hr{
      margin: 2em 0 0 0;
@@ -128,11 +132,12 @@ body{
     flex-direction: column;
     font-size: 1.5em;
 }
-a{
+.footer-links-div a, a{
     text-decoration: none;
+    color:var(--yellow);
 }
 a:hover{
-    color:var(--yellow);
+    color:rgb(3, 233, 221);
 }
 .footer-copywrites{
     text-align: center;
@@ -215,6 +220,9 @@ a:hover{
         grid-template-rows: 170px;
     }
     /* footer */
+    .footer{
+        margin-top: 1.5em;
+    }
     .footer-links-div{
         flex-direction: row;
         justify-content: center;
