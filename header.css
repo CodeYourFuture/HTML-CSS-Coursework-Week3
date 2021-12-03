@@ -1,0 +1,31 @@
+.header {
+    width: 100%;
+    grid-area: header;
+    display: flex;
+    background: pink;
+    align-items: end;
+    padding: 1em;
+    text-align: right;
+}
+
+.logo_div {
+    width: 80%;
+}
+
+.logo_div img {
+    width: 100%;
+}
+
+.hamburger_btn {
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    cursor: pointer;
+}
+
+.burger_item {
+    padding: 0.2em 1em;
+    background: purple;
+    margin: 4px 0px;
+
+}

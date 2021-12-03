@@ -1,0 +1,92 @@
+/* mobile */
+.main {
+    width: 100%;
+    grid-area: main;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    background: linear-gradient(180deg, rgb(231, 112, 132), transparent);
+}
+
+.hero {
+    grid-column: 2/12;
+    grid-row: 2/6;
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: 1fr;
+    grid-row-gap: 20px;
+}
+
+.hero h1 {
+    grid-column: 1;
+    grid-row: 1/2;
+}
+
+.hero p {
+    grid-column: 1;
+    grid-row: 2/3;
+    font-size: 5vw;
+}
+
+.hero_img {
+    grid-column: 1;
+    grid-row: 3/4;
+
+}
+
+.hero_img img {
+    width: 100%;
+}
+
+.products {
+    grid-column: 2/12;
+    grid-row: 7/10;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 20px 20px;
+}
+
+.birthday_product {
+    grid-column: 1/3;
+    grid-row: 1/2;
+    background: magenta;
+    background-image: url(image/Pexel/birthday\ cake.jpg);
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+
+.wedding_product {
+    grid-column: 3/5;
+    grid-row: 1/2;
+    background: mediumvioletred;
+    background-image: url(image/Pexel/wedding\ cake.jpg);
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+
+.cupcake_product {
+    grid-column: 1/3;
+    grid-row: 2/3;
+    background: olive;
+    background-image: url(image/Pexel/cupcake.jpg);
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+
+.glutenfree_product {
+    grid-column: 3/5;
+    grid-row: 2/3;
+    background: black;
+    background-image: url(image/Pexel/choc\ cake.jpg);
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+
+.products img {
+    width: 100%;
+}

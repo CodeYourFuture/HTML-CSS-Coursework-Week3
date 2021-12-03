@@ -1,0 +1,23 @@
+.footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    grid-area: footer;
+    background: linear-gradient(transparent, pink);
+}
+
+.links_div h2 {
+    margin: 10px;
+
+}
+
+.links_div h2 a {
+    color: purple;
+    text-decoration: none;
+
+}
+
+.watermark {
+    text-align: center;
+}
