@@ -8,6 +8,7 @@ body {
   display: grid;
   grid-template-areas: "header" "main" "footer";
   font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
 }
 
 header {
@@ -67,9 +68,9 @@ main {
   grid-area: main;
   grid-template-columns: 1fr 1fr;
   grid-template-areas: "welcome welcome" "info info" "home-img home-img" "services services" "cheese birthday" "cupcakes specials";
-  grid-gap: 5px;
+  grid-gap: 10px;
   width: 100%;
-  padding: 1rem;
+  padding: 2rem;
   box-sizing: border-box;
 }
 .home {
@@ -84,8 +85,11 @@ main {
   grid-area: home-img;
 }
 
-.home-section img {
-  width: 100%;
+.home-section>img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+
 }
 
 .cheese {
@@ -113,7 +117,7 @@ main {
 
 .services {
   grid-area: services;
-  padding: 1rem 0;
+   padding: 1rem 0; 
 }
 
 .services-img {
@@ -150,7 +154,7 @@ footer p{
 }
 
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 600px) {
   header {
     background-color: rgb(248, 233, 246);
   }
@@ -173,4 +177,40 @@ footer p{
   .intro {
     padding-bottom: 3rem;
   }
+
+
+  main {
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas: "home-img home-img welcome welcome" "home-img home-img info info" "services services services services" "cheese birthday cupcakes specials";
+  grid-template-rows: 5vh 40vh 15vh 30vh;
+  
+}
+
+.home{
+    font-size: 30px;
+    text-align: right;
+    padding-bottom: 3em;
+}
+
+.info{
+    font-size: 20px;
+    text-align: right;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    color: black;
+}
+
+footer h2{
+    text-align: center;
+    padding-bottom: 1rem;
+    font-size: 25px;
+}
+.services {
+  text-align: center;
+  padding-top: 2rem;
+  font-size: 20px;
+}
 }
