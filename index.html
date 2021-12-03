@@ -6,11 +6,106 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Responsive Cake webpage</title>
-    <!-- Add a link to your css file here -->
+    <link rel='stylesheet' href="style.css">
+    <!-- Google fonts link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Lexend+Deca&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
-    <!-- Add your markup here -->
+    <div class='body-div'>
+        <!-- header section -->
+        <header class='header'>
+            <!-- hamburger menu -->
+            <div class='hamburger-menu'>
+                <a href="#"><img src="img/menu.png" alt="red-gradient hamburger menu"></a>
+            </div>
+            <!-- header paragraph -->
+            <div class='header-paragraph'>
+                <p class='header-paragraph1'> The best cake in town 
+                Delivered to you </p>
+            </div>
+        </header>
+        <!-- navbar for wider screens -->
+        <nav class='navbar-for-widerscreen'>
+            <ul class='nav-list'>
+                <li class='nav-items'> <a href="#" class='nav-link'>HOME</a></li>
+                <li class='nav-items'> <a href="#" class='nav-link'>CAKES</a></li>
+                <li class='nav-items'> <a href="#" class='nav-link'>ORDERING</a></li>
+                <li class='nav-items'> <a href="#" class='nav-link'>LESSONS</a></li>
+                <li class='nav-items'> <a href="#" class='nav-link'>ABOUT</a></li>
+            </ul>
+        </nav>
+        <!-- Hero headings and picture -->
+        <main class='main'>
+            <section class="welcome-section">
+                <!-- main text section -->
+                <div class='main-texts'>
+                    <h1 class='main-h1'> Cake for all occations</h1>
+                    <p class='main-paragraph'> We pride ourselves in using the finest quality 
+                        ingredients, and taking the upmost care in the production of our cakes. 
+                        It is a great honour for us to share our customers’ most important occasions, and we pride ourselves 
+                        in delivering first-rate customer service as well as delicious and beautiful cakes.
+                    </p>
+                    <!-- extended paragraph only for desktop -->
+                    <p class='main-paragraph-for-desktop'> <strong>History :</strong>
+                        The term "cake" has a long history. The word itself is of Viking origin, from the Old Norse word "kaka".
+                        
+                        The ancient Greeks called cake πλακοῦς (plakous), which was derived from the word for "flat", πλακόεις (plakoeis). It was baked using flour mixed with eggs, milk, nuts, and honey. They also had a cake called "satura", which was a flat heavy cake. During the Roman period, the name for cake became "placenta" which was derived from the Greek term. A placenta was baked on a pastry base or inside a pastry case.
+                        
+                        The Greeks invented beer as a leavener, frying fritters in olive oil, and cheesecakes using goat's milk. In ancient Rome, the basic bread dough was sometimes enriched with butter, eggs, and honey, which produced a sweet and cake-like baked good. Latin poet Ovid refers to his and his brother's birthday party and cake in his first book of exile, Tristia.
+                        
+                        Early cakes in England were also essentially bread: the most obvious differences between a "cake" and "bread" were the round, flat shape of the cakes, and the cooking method, which turned cakes over once while cooking, while bread was left upright throughout the baking process.
+                        
+                        Sponge cakes, leavened with beaten eggs, originated during the Renaissance, possibly in Spain. (Wikipedia)
+                    </p>
+                </div>
+                <!-- main img section -->
+                <div class='main-image'>
+                    <img src="img/deva-williamson-pZZJwwNPy2k-unsplash.jpg" alt="big wedding cake of pink and white creme">
+                </div>
+            </section>
+            <!-- products section for image of various cakes, I used as 
+                backgrund image in the divs to fit them well-->
+            <section class='products-section'>
+                    <div class='product-image' alt='picture of '>
+                        <img src="img/velizar-ivanov-rXB9YjOQX8I-unsplash.jpg" 
+                        alt="pink and white cheesecakes with orio on top">
+                        <figcaption>Cheesecakes</figcaption>
+                    </div>
+                    <div class='product-image'>
+                        <img src="img/birthdaycupcakes.jpg" 
+                        alt="cup cakes with happy birthday pink sings">
+                        <figcaption>Birthday cakes</figcaption>
+                    </div>
+                    <div class='product-image'>
+                        <img src="img/deva-williamson-rHz-DkDgA1k-unsplash.jpg" 
+                        alt="big white wedding cake with pink stuffing on top and chocolate biscuits">
+                        <figcaption>Wedding Cake</figcaption>
+                    </div>
+                    <div class='product-image'>
+                        <img src="img/brooke-lark-V4MBq8kue3U-unsplash.jpg" 
+                        alt="muliple small rounded fruits places on white creme cakes">
+                        <figcaption>Mini fruit cake</figcaption>
+                    </div>
+            </section>
+        </main>
+        <!-- footer -->
+        <footer class='footer'>
+            <div class='footer-links-div'>
+                <a href='#' class='footer-link'>Branches</a>
+                <a href='#'class='footer-link'>About</a>
+                <a href='#'class='footer-link'>Contact Us</a>
+            </div>
+            <hr>
+            <div class='footer-copywrites'>
+                <p class='footer-copywrites'>&copy 2021 Created with love</p>
+            </div>
+        </footer>
+    </div>
 </body>
 
 </html>
