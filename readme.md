@@ -15,7 +15,8 @@ _Desktop wireframe:_
 ## Approach
 
 Make a template for the three screen scenarios
-(Insert images)
+Template 
+img/Slide6.JPG
 
 ### Define your own style
 
