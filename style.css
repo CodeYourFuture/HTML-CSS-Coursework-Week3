@@ -1,7 +1,6 @@
 /*  Add your styling here */
-h1,
-p {
-  margin: 0;
+.nav_bar {
+  display: none;
 }
 .grid {
   display: grid;
@@ -10,98 +9,91 @@ p {
 .pad {
   padding: 1.5rem;
 }
-.text_al {
-  text-align: justify;
-}
 
-.space {
-  justify-content: space-between;
-}
 .container {
   row-gap: 2rem;
   width: 100vw;
   margin: 0;
-  padding: 0;
-  grid-template-areas:
-    "head head head head head head head head head head head head"
-    "cont cont cont cont cont cont cont cont cont cont cont cont"
-    "foot foot foot foot foot foot foot foot foot foot foot foot";
   grid-template-rows: 0.5fr 4fr 0.5fr;
 }
-.header_container {
-  grid-area: head;
+header {
+  grid-column: 1 / -1;
+  grid-row: 1;
   grid-template-areas:
-    "logo logo logo logo . . . . . . . m"
-    "logo logo logo logo . . . . . . . m"
-    "logo logo logo logo . sl sl sl sl sl sl sl"
-    ". . . . . sl sl sl sl sl sl sl";
+    "logo logo logo logo . . . . . . . menu"
+    "logo logo logo logo . . . . . . . menu"
+    "logo logo logo logo . slogan slogan slogan slogan slogan slogan slogan"
+    ". . . . . slogan slogan slogan slogan slogan slogan slogan";
   background-color: #d8d7d7;
 }
-.main_container {
-  grid-area: cont;
+main {
+  grid-row: 2;
+  grid-column: 1 / -1;
   gap: 1.5rem 1.3rem;
-  grid-template-rows: 0.5fr 1.5fr 2fr 1.5fr 1.5fr;
+  grid-template-rows: 2fr 2fr 1.5fr 1.5fr;
   grid-template-areas:
-    "h h h h h h h h h h h h"
     "intro intro intro intro intro intro intro intro intro intro intro intro"
-    "hi hi hi hi hi hi hi hi hi hi hi hi"
-    "f1 f1 f1 f1 f1 f1 f2 f2 f2 f2 f2 f2 "
-    "f4 f4 f4 f4 f4 f4 f3 f3 f3 f3 f3 f3 ";
+    "img img img img img img img img img img img img"
+    "p1 p1 p1 p1 p1 p1 p2 p2 p2 p2 p2 p2 "
+    "p4 p4 p4 p4 p4 p4 p3 p3 p3 p3 p3 p3 ";
 }
-.footer_container {
-  grid-area: foot;
+
+footer {
+  grid-row: 3;
+  grid-column: 1 / -1;
   background-color: #d8d7d7;
-  grid-template-areas:
-    "soc soc soc soc soc . . . . . . ."
-    "cr cr cr cr cr cr cr cr cr cr cr cr";
 }
 
 .logo_container {
   grid-area: logo;
 }
 
-.logo_img {
+.logo_container img {
   max-width: 150px;
   width: 100%;
 }
+
 .menu {
-  grid-area: m;
+  grid-area: menu;
   text-align: right;
 }
 
 .slogan {
   font-size: 1.3rem;
   font-family: "PT Sans Caption", sans-serif;
-  grid-area: sl;
+  grid-area: slogan;
   align-self: end;
   text-align: right;
+  font-style: italic;
+  margin: 0;
 }
-.welcome {
-  font-size: 1.5rem;
-  font-weight: 700;
-  font-family: "PT Sans Caption", sans-serif;
-  grid-area: h;
+.intro {
+  grid-area: intro;
 }
 
-.intro {
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: "PT Sans Caption", sans-serif;
+}
+
+.intro p {
   font-family: "Barlow", sans-serif;
-  grid-area: intro;
   line-height: 2rem;
   font-size: 1.3rem;
+  text-align: justify;
 }
-.hero_img {
+.intro_img {
   background-image: url("img/hero_image.jpeg");
-  grid-area: hi;
+  grid-area: img;
   background-size: cover;
   background-position: center;
 }
-.feature_img {
-  width: 100%;
-}
-.feature1,
-.feature2,
-.feature3,
-.feature4 {
+
+.product1,
+.product2,
+.product3,
+.product4 {
   display: flex;
   background-size: cover;
   background-position: center;
@@ -109,76 +101,139 @@ p {
   align-items: flex-start;
   justify-content: center;
 }
-.feature1 {
-  grid-area: f1;
+.product1 {
+  grid-area: p1;
   background-image: url("img/christmas.jpg");
 }
 
-.feature2 {
+.product2 {
   background-image: url("img/cakes.jpeg");
-  grid-area: f2;
+  grid-area: p2;
 }
-.feature3 {
+.product3 {
   background-image: url("img/truffles.jpg");
-  grid-area: f3;
+  grid-area: p3;
 }
-.feature4 {
+.product4 {
   background-image: url("img/loafs.jpeg");
-  grid-area: f4;
+  grid-area: p4;
 }
-.feature1:hover,
-.feature2:hover,
-.feature3:hover,
-.feature4:hover {
+.product1:hover,
+.product2:hover,
+.product3:hover,
+.product4:hover {
   box-shadow: none;
 }
 
-.features_text {
+.product_text {
+  background-color: #d8d7d7;
+  border-radius: 4px;
   text-align: center;
   width: 75%;
-  color: white;
+  color: black;
   font-family: "PT Sans Caption", sans-serif;
 }
-.social_links {
-  grid-area: soc;
+.footer_links {
+  grid-column: 1/-1;
+  display: flex;
+  flex-direction: column;
 }
+.footer_links a {
+  padding: 0.5rem 0;
+  font-size: 1rem;
+  font-family: "PT Sans Caption", sans-serif;
+  color: black;
+  text-decoration: none;
+}
+
 .copyright {
-  grid-area: cr;
+  grid-column: 1/-1;
+  text-align: center;
+  color: #434242;
+  font-family: "Barlow", sans-serif;
 }
 
 @media screen and (min-width: 765px) {
   .container {
     grid-template-rows: 0.5fr 6fr 0.5fr;
   }
-  .main_container {
-    grid-template-rows: 0.5fr 1fr 2fr 2fr 2fr;
+  .container main {
+    grid-template-rows: 1.5fr 2fr 2fr 2fr;
   }
 }
 @media screen and (min-width: 1024px) {
   .pad {
-    padding: 3rem;
+    padding: 1.5rem 2.5rem;
   }
-  .hamburger_menu {
+  .menu img {
     display: none;
   }
-  .text_al {
-    direction: rtl;
+  .slogan {
+    font-size: 1.5rem;
   }
+  .intro {
+    text-align: right;
+  }
+  h1 {
+    margin-top: 0;
+    font-size: 3rem;
+  }
+
   .container {
-    grid-template-rows: 0.5fr 3.5fr 0.5fr;
+    grid-template-rows: 0.5fr auto 3.5fr 0.5fr;
   }
-  .header_container {
+  header {
     grid-template-areas:
       "logo logo logo logo . . . . . . . ."
       "logo logo logo logo . . . . . . . ."
-      "logo logo logo logo . sl sl sl sl sl sl sl";
+      "logo logo logo logo . slogan slogan slogan slogan slogan slogan slogan";
   }
-  .main_container {
-    grid-area: cont;
-    grid-template-rows: 0.5fr 1.5fr 2fr;
+
+  .nav_bar {
+    grid-row: 2;
+    grid-column: 1/-1;
+    display: grid;
+  }
+  ul {
+    background-color: #d8d7d7;
+    padding: 1.5rem 0;
+    justify-content: end;
+    display: flex;
+  }
+  ul div {
+    display: flex;
+    justify-content: center;
+    background-color: #545454;
+    padding: 0.5rem 1.5rem;
+    margin: 0 1rem;
+    border-radius: 4px;
+  }
+  li {
+    list-style: none;
+  }
+  li a {
+    width: 100%;
+    font-size: 1rem;
+    font-family: "PT Sans Caption", sans-serif;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+  }
+  .container main {
+    grid-row: 3;
+    grid-template-rows: 2fr 2fr;
     grid-template-areas:
-      "hi hi hi hi hi hi h h h h h h"
-      "hi hi hi hi hi hi intro intro intro intro intro intro"
-      "f1 f1 f1 f2 f2 f2 f4 f4 f4 f3 f3 f3";
+      "img img img img img img  intro intro intro intro intro intro"
+      "p1 p1 p1 p2 p2 p2 p4 p4 p4 p3 p3 p3";
+  }
+  footer {
+    grid-row: 4;
+  }
+  .footer_links {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .footer_links a {
+    padding: 0 1rem;
   }
 }
