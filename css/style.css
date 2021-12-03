@@ -1,1 +1,167 @@
 /*  Add your styling here */
+/* font-family: 'Architects Daughter', cursive;
+font-family: 'Fuzzy Bubbles', cursive;
+font-family: 'M PLUS 1p', sans-serif; */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  font-size: 16px;
+  line-height: 1.5rem;
+  font-family: "M PLUS 1p", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  color: var(--Grey-900);
+  position: relative;
+  overflow: auto;
+  padding-bottom: 1rem;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.container {
+  width: 100%;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  /* grid-template-areas:
+    "header"
+    "nav"
+    "main"
+    "footer"; */
+}
+
+header {
+  /* header area */
+  grid-column: 1/-1;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  align-items: center;
+  padding: 1.5rem;
+  background-color: rgb(255, 255, 255);
+}
+
+.header-wrapper {
+  grid-column: 2/-1;
+  grid-row: 1/-1;
+  padding-right: 0.5rem;
+  text-align: right;
+}
+.header-logo {
+  grid-column: 1/2;
+  grid-row: 1/3;
+}
+
+#logo-image {
+  width: 60px;
+  height: auto;
+}
+
+header .hamburger {
+  position: relative;
+  margin-right: 0.2rem;
+  height: 40px;
+  align-items: center;
+}
+
+.hamburger label {
+  position: absolute;
+  top: 0;
+  left: 10;
+  display: inline-block;
+  color: rgb(92, 89, 89);
+  background: #f5f2f2;
+  font-style: normal;
+  font-size: 1.5em;
+  padding: 5px 8px;
+  border-radius: 4px;
+}
+
+.hamburger input[type="checkbox"] {
+  width: 1.8rem;
+  height: 1.8rem;
+  margin: 3px;
+  border: none;
+}
+
+header .header-text {
+  color: rgb(197, 61, 156);
+  font-family: "Architects Daughter", cursive;
+  font-size: 0.8rem;
+  font-weight: 400;
+  margin-top: 3rem;
+}
+nav {
+  display: none;
+}
+
+main {
+  /* main area */
+  grid-column: 1/-1;
+  padding: 1.5rem;
+  align-items: center;
+}
+
+.introduction .intro-text {
+  color: rgb(75, 71, 71);
+  font-family: "Fuzzy Bubbles";
+  font-size: 1.2rem;
+  text-align: justify;
+}
+
+.introduction h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding-bottom: 8px;
+}
+
+.intro-image {
+  width: 100%;
+  height: 220px;
+  margin: 1.5rem 0;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 130px 130px;
+  grid-gap: 1rem;
+}
+
+.product-image {
+  overflow: hidden;
+}
+.product-image img {
+  width: 100%;
+  height: 100%;
+}
+footer {
+  /* footer area */
+  display: grid;
+  /* grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr); */
+  grid-column: 1/-1;
+  padding: 1.5rem;
+  align-items: center;
+  text-align: center;
+  background-color: rgb(255, 244, 237);
+}
+.intro-footer {
+  display: flex;
+  flex-direction: column;
+}
+
+footer .address {
+  width: 70%;
+  margin: auto;
+}
