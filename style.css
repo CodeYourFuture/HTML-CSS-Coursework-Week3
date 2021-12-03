@@ -1,1 +1,54 @@
 /*  Add your styling here */
+
+body {
+  margin: 0;
+  font-family: "cairo";
+  font-style: normal;
+  text-align: center;
+}
+.header_grid {
+  display: grid;
+}
+
+.header_container {
+  flex-direction: column;
+}
+
+.logo_image {
+  display: inline-block;
+  width: 17rem;
+  height: auto;
+  padding-left: 10rem;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+.grid-content {
+  margin-top: 20rem;
+}
+.header-paragraph {
+  grid-row: 2;
+}
+
+.navbar {
+  grid-column: 3;
+}
+
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+li {
+  display: inline;
+  padding-right: 1.5rem;
+}
+
+h1 {
+  padding-top: 20rem;
+}
+
+.images {
+  width: 50px;
+  height: 50px;
+}
