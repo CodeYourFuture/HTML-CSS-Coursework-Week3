@@ -18,7 +18,7 @@ Two wireframes are provided down below (scroll to the bottom).
 When you're ready to start coding:
 
 ### Start with mobile
-- Write the HTML following the  mobile design
+- Write the HTML following the mobile design
 - Then write your CSS for everything to look great on mobile
 - Remember to link your CSS file to your HTML file inside the `<head>` in `index.html`
 - You don't need to use any media queries yet, because we're following a [Mobile First](https://www.invisionapp.com/inside-design/mobile-first-design/) approach!
