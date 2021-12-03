@@ -1,0 +1,41 @@
+.footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    grid-area: footer;
+    background: pink;
+}
+
+.links_div h2 {
+    margin: 10px;
+
+}
+
+.links_div h2 a {
+    color: purple;
+    text-decoration: none;
+
+}
+
+.watermark {
+    text-align: center;
+}
+
+/* Media */
+@media screen and (min-width: 481px) {}
+
+@media screen and (min-width: 721px) {
+    .links_div {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+    }
+
+    .links_div h2 {
+        margin-left: 50px;
+    }
+}
+
+@media screen and (min-width: 1024px) {}

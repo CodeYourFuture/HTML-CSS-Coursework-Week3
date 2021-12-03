@@ -1,0 +1,36 @@
+* {
+    border: 0;
+    outline: 0;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    width: 100%;
+    display: grid;
+    grid-template-areas:
+        'header'
+        'main'
+        'footer';
+    font-family: sans-serif;
+
+}
+
+h1 {
+    font-size: 6vw;
+    font-weight: bolder;
+}
+
+h2 {
+    font-size: 4vw;
+}
+
+/* Media */
+
+@media screen and (min-width: 481px) {}
+
+@media screen and (min-width: 721px) {}
+
+@media screen and (min-width: 1024px) {}
