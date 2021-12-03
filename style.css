@@ -1,84 +1,366 @@
 body {
-    display: grid;   
+    display: grid;
     margin: 0 auto;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 130px 190px 150px 130px 130px 150px;
-    grid-template-areas: 
-    "header    header"
-    "welcome   welcome"
-    "hero      hero"
-    "birthday  cupcakes"
-    "gluten    wedding"
-    "footer    footer";
+    grid-template-columns: 1rem auto 0.5rem 0.5rem auto 1rem;
+    grid-template-rows: 130px 1rem 190px 1rem 200px 1rem 160px 1rem 160px 1rem 150px;
+    grid-template-areas: "header  header header header header header" ". . . . . ." ". welcome welcome welcome welcome ." ". . . . . ." ". hero  hero  hero  hero ." ". . . . . ." ". birthday . . cupcakes ." ". . . . . ." ". wedding  . . gluten ." ". . . . . ." "footer footer footer footer footer footer";
+    margin: 0;
 }
 
 .header {
-    background-color: aqua;
+    background-color: #f1d6d4;
+    /* For browsers that do not support gradients */
+    background-image: linear-gradient(to bottom right, #ecddf3, #ede7d2, #ffd5de, #e6dbeb, #ede7d2, #f9ddf6);
     grid-area: header;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-left: 10px;
 }
 
+
+/* LOGO css */
+
+.logo-container {
+    display: flex;
+}
+
+.logo-img {
+    max-width: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cupcake {
+    width: 100%;
+    height: auto;
+}
+
+.logo-title {
+    max-width: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+/* hamburger nav icon */
+
+.hamburger-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+}
+
+.hamburger-icon {
+    font-size: 2.1rem;
+    font-weight: 500;
+    color: #482ff7;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #101010;
+}
+
+
+/* navigation menu */
+
 .nav-bar {
-    background-color: rgb(235, 220, 13);
+    background-color: #ebdae86e;
     grid-area: nav;
 }
 
+.nav-menu {
+    display: none;
+}
+
+
+/* TEXT COLOR */
+
+h1,
+h2,
+p,
+h5 {
+    color: #292b2f;
+}
+
+
+/* WELCOME Section */
+
 .welcome-intro {
-    background-color: rgb(135, 71, 196);
     grid-area: welcome;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.welcome-intro h2 {
+    padding: 0.3em;
+    margin: 0;
+}
+
+.welcome-intro p {
+    padding: 0.3em;
+    margin: 0;
+}
+
+
+/* HERO Section */
+
+.bday-img,
+.cupcake-img,
+.wedding-cake,
+.vegan {
+    object-fit: cover;
+    width: 100%;
+    max-height: 100%;
 }
 
 .hero {
-    background-color: coral;
     grid-area: hero;
 }
 
+.feature-img {
+    object-fit: cover;
+    width: 100%;
+    max-height: 100%;
+}
+
+.product-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #ffffff6e;
+}
+
+.product-container:hover .overlay {
+    opacity: 1;
+}
+
+.product-title {
+    color: #646262;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
 .birthday {
-    background-color: burlywood;
     grid-area: birthday;
 }
 
 .cupcakes {
-    background-color: darkcyan;
     grid-area: cupcakes;
 }
 
 .gluten-vegan {
-    background-color: darkkhaki;
     grid-area: gluten;
 }
 
 .wedding {
-    background-color: darkgrey;
     grid-area: wedding;
 }
 
-footer {
-    background-color: crimson;
+
+/* FOOTER Section */
+
+.footer-container {
+    background-color: #cdafdb;
+    background-image: linear-gradient(to bottom right, #ecddf3, #ede7d2, #ffd5de, #e6dbeb, #ede7d2, #f9ddf6);
     grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1.1em;
+    font-weight: 500;
 }
 
+.footer-links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-links a {
+    font-size: 1.1em;
+    font-weight: 500;
+    color: #292b2f;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #292b2f;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.footer-links a:hover {
+    cursor: pointer;
+}
+
+.newsletter-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.newsletter-container h5 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+    padding-top: 30px;
+    font-size: 1.1em;
+    font-weight: 500;
+}
+
+.newsletter {
+    display: flex;
+    margin-top: 10px;
+}
+
+input[type="submit"] {
+    background-color: #617cbc;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 1.4;
+    padding: 10px;
+    margin-left: 5px;
+}
+
+input[type="email"] {
+    border: 1px solid #ccc;
+    width: 200px;
+    padding-right: 40px;
+}
+
+#email::placeholder {
+    padding-left: 10px;
+}
+
+#email-label {
+    margin: 5px;
+}
+
+
 /* TABLET */
+
 @media screen and (min-width: 540px) {
     body {
         grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: 100px 80px 170px 140px 110px;
-        grid-template-areas: 
-        "header     header     header     header"
-        "nav        nav        nav        nav"
-        "hero       hero       welcome    welcome"
-        "birthday   cupcakes   gluten     wedding"
-        "footer     footer     footer     footer";
-    }    
+        grid-template-rows: 120px 80px 340px 240px 200px;
+        grid-template-areas: "header     header     header     header" "nav        nav        nav        nav" "hero       hero       welcome    welcome" "birthday   cupcakes   wedding    gluten" "footer     footer     footer     footer";
+        grid-row-gap: 30px;
+        margin: 0;
+    }
+    /* hamburger nav icon */
+    .hamburger-navbar {
+        display: none;
+    }
+    /* navigation menu */
+    .nav-bar {
+        display: flex;
+        align-items: center;
+        padding: 1rem 1.5rem;
+        grid-area: nav;
+        justify-content: flex-end;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    .nav-menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .nav-item {
+        margin: 0;
+        padding: 0;
+        padding-left: 20px;
+    }
+    .nav-link {
+        font-size: 1.6rem;
+        font-weight: 400;
+        color: #475569;
+    }
+    .nav-link:hover {
+        color: #482ff7;
+    }
+    li {
+        list-style: none;
+    }
+    a {
+        text-decoration: none;
+    }
+    /* HERO Section */
+    .bday-img,
+    .cupcake-img,
+    .wedding-cake,
+    .vegan {
+        object-fit: cover;
+        width: 96%;
+        max-height: 100%;
+    }
+    .feature-img {
+        object-fit: cover;
+        width: 96%;
+        max-height: 100%;
+    }
+    .birthday {
+        margin-left: 1rem;
+    }
+    .bday-img {
+        width: 94%;
+    }
+    .gluten-vegan {
+        margin-right: 1rem;
+    }
+    .welcome-intro {
+        font-size: 1.2em;
+    }
+    .hero {
+        margin-left: 1rem;
+    }
 }
 
+
 /* DESKTOP */
+
 @media screen and (min-width: 900px) {
     body {
-        grid-template-areas: 
-        "header     header     header     header"
-        ".          nav        nav        ."
-        ".          hero       welcome    ."
-        "birthday   cupcakes   gluten     wedding"
-        "footer     footer     footer     footer";
-    }    
+        grid-template-areas: "header     header     header     header" "nav        nav        nav        nav" "hero       hero       welcome    welcome" "birthday   cupcakes   wedding    gluten" "footer     footer     footer     footer";
+    }
+    /* WELCOME Section */
+    .welcome-intro {
+        font-size: 1.5em;
+        display: inline-block;
+    }
 }
