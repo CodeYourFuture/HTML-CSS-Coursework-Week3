@@ -1,12 +1,147 @@
 /*  Add your styling here */
 
 body {
-    width:100%;
-    height: 100%;
-    margin: auto;
+  box-sizing: border-box;
+  width: 100%;
+  /* max-width: 62rem; */
+  height: auto;
+  margin: 0 auto;
+  padding: 1, 5rem;
+  margin: 1rem;
 }
 
-/* .backgroundphoto {
-    width:50%;
-    height: 80% ;
-} */
+.header {
+  width: 100%;
+  height: 240px;
+  padding: 1rem;
+  background-image: url(img/mneckelogo.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border: 2px solid black;
+  grid-column: 1/-1;
+  display: grid;
+  grid-template-areas: "left center right";
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.menu-intro {
+  grid-column: 3/-1;
+  margin-left: 100px;
+  /* grid-area: right;    */
+}
+.humburger {
+  margin-left: 100px;
+}
+
+.menu-intro h1 {
+  font-family: "Work Sans", sans-serif;
+  font-size: 1rem;
+  text-align: right;
+  color: rgb(12, 1, 1);
+  letter-spacing: 3px;
+  line-height: 1.8;
+  padding-left: 40px;
+}
+
+h2,
+h3,
+p {
+  font-family: "Work Sans", sans-serif;
+  font-size: 1rem;
+  text-align: center;
+  color: rgb(12, 1, 1);
+  letter-spacing: 3px;
+  line-height: 1.8;
+}
+
+.welcome {
+  font-family: "Work Sans", sans-serif;
+  font-size: 1rem;
+  letter-spacing: 3px;
+  line-height: 1.8;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto;
+  gap: 2rem;
+}
+
+.main {
+  grid-column: 1/-1;
+  padding: 1rem;
+}
+
+.footer {
+  grid-column: 1/-1;
+  padding: 1rem;
+}
+
+.intro {
+  width: 100%;
+  height: 500px;
+  margin-bottom: 200px;
+}
+
+.image-grid {
+  width: o auto;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  gap: 10px;
+  padding-top: 2rem;
+}
+
+.product-image img {
+  width: 100%;
+  height: 200px;
+  object-fit: scale-down;
+  overflow: hidden;
+  margin-top: 1rem;
+}
+
+.cover-image img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  margin-top: 2rem ;
+}
+
+.social-icon {
+  height: 20px;
+  width: 20px;
+  border: 1px solid lightgrey;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+footer a {
+  text-decoration: none;
+  margin-right: 15px;
+}
+footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background-color: #afc4c0;
+  border: 2px solid black;
+}
+/* big big questions here */
+/* desktop */
+@media only screen and (min-width: 1200px) {
+    .image-grid {
+        grid-column: 1/-1;
+        /* background-color: #afc4c0; */
+    }
+}
+/* tablet */
+@media (min-width: 768px) {
+    .image-grid {
+        grid-column: 1/-1;
+}
+ 
