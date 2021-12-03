@@ -1,5 +1,5 @@
 
-
+/* General*/
 :root {
     --beige: rgb(233, 224, 214);
     --yellow: rgb(238, 231, 167);
@@ -12,7 +12,6 @@
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
-
 }
 
 body {
@@ -20,16 +19,19 @@ body {
     margin: 0;
 }
 
+/*End of general*/
+
+/* Header */
+
 .header {
     background-color: var(--yellow);
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: 50px 100px 100px 50px;
-    grid-gap: 2rem;
     grid-template-areas: 
     ". . . . . . . nav"
-    "img img img . . . . ."
-    "img img img . t t t t"
+    "img img img img . . . ."
+    "img img img img t t t t"
     ". . . . t t t t";
 }
 .header-logo{
@@ -37,14 +39,15 @@ body {
 }
 
 .header-logo > img {
-     width: 100%;
+    width: 100%;
     height:100%;
-    object-fit: cover;
+    object-fit: contain;
 }
 .hamburger {
     border: none;
-    background-color: var(--beige);
+    background-color: var(--yellow);
     grid-area: nav;
+    justify-self: end;
 }
 .navigation-list a{
     display: none;
@@ -53,71 +56,47 @@ body {
     grid-area: t;
     font-family: 'Comforter Brush', cursive;
     letter-spacing: 5px;
-    font-size: 2.5em;
+    font-size: 1.4em;
     text-align: right;
-    font-weight: 300;
-
-}
-/*
- main {
-     display: grid;
-     grid-template-columns: repeat(2, 1fr);
-     grid-template-rows: repeat(2, 400px);
-     grid-gap: 1rem;
-     grid-template-areas: 
-     "welcome welcome"
-     "text text"
-     "img img"
-     "cake1 cake2"
-     "cake3 cake4";
-
-
-.feature-section-container > div > img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
+    padding-top: 0.5rem;
+    padding-right: 0.3rem;
 }
 
-.feature-section-container {
-    display: grid;
-    grid-gap: 1rem;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto auto;
-}*/
 
-
+/* Main section */
 
 .main {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 200px 400px 600px 400px 400px;
+    grid-template-rows: 200px auto 600px 300px 300px;
     grid-gap: 1rem;
+    padding: 1rem;
 }
 
 .main > div > img {
     width: 100%;
     height:100%;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .main-section-image > img {
-    
+    border-bottom: 5px var(--yellow) solid;
+    border-top: 5px var(--yellow) solid; 
 }
-.feature-section > img {
-    padding: 2rem;
-}
+
 
 h1 {
     font-family: 'Comforter Brush', cursive;
-    grid-column: 1/-1;
+    grid-column: 1/ -1;
     font-size: 5em;
     font-weight: 300;
     letter-spacing: 5px;
+    align-items: center;
 }
 .welcome-section-article {
     grid-column: 1/-1;
     grid-row: 2/3;
-    line-height: 2;
+    line-height: 2em;
     font-size: 1em;
 }
 .main-section-image {
@@ -127,46 +106,56 @@ h1 {
 
 .main :nth-child(4) {
     grid-column: 1/2;
-    grid-row: 4/5;
+    grid-row: 4/ 5;
 }
 .main :nth-child(5) {
     grid-column: 2/3;
-    grid-row: 4/5;
+    grid-row: 4/ 5;
 }
 .main :nth-child(6) {
     grid-column: 1/2;
-    grid-row: 5/6;
+    grid-row: 5/ 6;
 }
 .main :nth-child(7) {
     grid-column: 2/3;
-    grid-row: 5/6;
+    grid-row: 5/ 6;
 }
  
+
+
+/* Foooter */
 .footer {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: 100px 100px 100px auto;
     grid-template-areas: 
-    "email email email . . . . . "
-    "insta insta insta . . . . . "
-    "twt twt twt . . . . . "
-    ". . . copy copy copy . .";
+    "email email email email . . . . "
+    "insta insta insta insta . . . . "
+    "twt twt twt twt . . . . "
+    ". . copy copy copy copy copy .";
     background-color: var(--yellow);
+    padding-left: 1rem;
+    padding-top: 1rem;
+    
 }
 
-.footer > p > a > img {
+.footer > div> a > img {
     width: 50px;
     height: 50px;
     object-fit: cover;
 }
 
-.footer > p {
+.footer > div > p {
     letter-spacing: 5px;
-    font-size: 1em;
+    font-size: 1em; 
 }
+
+.footer > div {
+    display: inline-flex;
+}
+
  .footer :nth-child(1) {
-    grid-area: email;
-   
+    grid-area: email; 
  }
 
  .footer :nth-child(2) {
@@ -177,4 +166,98 @@ h1 {
  }
  .footer :nth-child(4) {
     grid-area: copy;
+    font-size: 0.8em;
+    justify-content: center;
+ }
+
+ /* Media query for Desktop */
+
+ @media screen and (min-width: 1025px) {
+    .header {
+        grid-template-areas: 
+    ". . . . . . . nav"
+    "img img img . . . . ."
+    "img img img t t t t t"
+    ". . . t t t t t";
+    }
+    .header-p {
+        grid-area: t;
+        font-size: 1.8em;  
+    }
+    .header-logo {
+        grid-area: img;
+    }
+    .hamburger {
+        display: none;
+    }
+    .main {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 200px auto 400px;
+        grid-gap: 1rem;
+        grid-template-areas: 
+        "img img . w"
+        "img img t t"
+        "c1 c2 c3 c4"; 
+    }
+    h1{
+        grid-area: w;
+              
+    }
+    .welcome-section-article {
+        grid-area: t;
+        text-align: right;
+    }
+    .main-section-image {
+        grid-area: img;        
+    }
+    .main :nth-child(4) {
+        grid-area: c1;
+    }
+    .main :nth-child(5) {
+        grid-area: c2;
+    }
+    .main :nth-child(6) {
+        grid-area: c3;
+    }
+    .main :nth-child(7) {
+        grid-area: c4;
+    }
+
+    .footer {
+        grid-template-rows: 150px auto;
+        grid-template-areas:
+        ". i i t t m m . "
+        ". . c c c c . . ";
+    }
+
+    .footer :nth-child(1) {
+        grid-area: i;
+        justify-content: center;
+    }
+    .footer :nth-child(2) {
+        grid-area: t;
+        justify-content: center;
+    }
+    .footer :nth-child(3) {
+        grid-area: m;
+        justify-content: center;
+    }
+    .footer :nth-child(4) {
+        grid-area: c;
+    }
+
+    
+    
+
+
+
+ 
+
+
+
+ }
+
+ @media screen and (min-width: 481px ) {
+
  }
