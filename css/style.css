@@ -48,7 +48,7 @@ header {
   grid-template-rows: repeat(3, 1fr);
   align-items: center;
   padding: 1.5rem;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(222, 245, 235);
 }
 
 .header-wrapper {
@@ -63,7 +63,7 @@ header {
 }
 
 #logo-image {
-  width: 60px;
+  width: 100px;
   height: auto;
 }
 
@@ -80,7 +80,7 @@ header .hamburger {
   left: 10;
   display: inline-block;
   color: rgb(92, 89, 89);
-  background: #f5f2f2;
+  background: #89a190;
   font-style: normal;
   font-size: 1.5em;
   padding: 5px 8px;
@@ -95,9 +95,10 @@ header .hamburger {
 }
 
 header .header-text {
-  color: rgb(197, 61, 156);
+  color: rgb(151, 64, 132);
   font-family: "Architects Daughter", cursive;
-  font-size: 0.8rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
   font-weight: 400;
   margin-top: 3rem;
 }
@@ -115,7 +116,7 @@ main {
 .introduction .intro-text {
   color: rgb(75, 71, 71);
   font-family: "Fuzzy Bubbles";
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   text-align: justify;
 }
 
@@ -134,7 +135,7 @@ main {
 .products {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 130px 130px;
+  grid-template-rows: 140px 140px;
   grid-gap: 1rem;
 }
 
@@ -154,14 +155,144 @@ footer {
   padding: 1.5rem;
   align-items: center;
   text-align: center;
-  background-color: rgb(255, 244, 237);
+  background-color: rgb(222, 245, 235);
 }
 .intro-footer {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
+  width: 170px;
+  margin-left: 1rem;
 }
 
-footer .address {
-  width: 70%;
+.info-button {
+  border: none;
+  border-radius: 4px;
+  background-color: #cdabe4;
+  color: #270b3a;
+  padding: 7px;
+  margin-bottom: 8px;
+}
+
+.info-button:hover {
+  background-color: blueviolet;
+}
+
+footer .footer-text {
+  padding-top: 1rem;
+  font-size: 0.9rem;
+  display: block;
+  width: 270px;
   margin: auto;
+}
+
+@media screen and (min-width: 650px) {
+  header,
+  main,
+  footer {
+    padding: 0 1.5rem;
+    min-width: 1100px;
+    margin: 0 auto;
+  }
+
+  main {
+    max-width: 1100px;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  header {
+    grid-template-rows: 1fr;
+  }
+
+  .header-logo {
+    grid-row: 1/2;
+  }
+
+  .header-wrapper {
+    grid-row: 1/2;
+  }
+
+  #logo-image {
+    width: 150px;
+  }
+
+  nav {
+    grid-row: 2/3;
+    grid-column: 1/-1;
+    display: flex;
+    justify-content: right;
+    background-color: rgb(236, 234, 227);
+    min-width: 1052px;
+    margin: auto;
+    padding: 1.5rem 0;
+  }
+
+  .nav-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .list-item {
+    list-style: none;
+    margin-right: 25px;
+  }
+  .nav-link {
+    text-decoration: none;
+    padding: 5px 10px;
+    background-color: rgb(223, 115, 223);
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: rgb(48, 46, 44);
+    border-radius: 4px;
+    border: none;
+  }
+  .nav-link:hover {
+    color: #fcfbfd;
+    background-color: rgb(104, 56, 109);
+  }
+
+  .introduction {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 1.5rem 0;
+  }
+
+  .intro-image,
+  .intro-text {
+    width: 50%;
+    height: 100%;
+    margin: 0;
+  }
+
+  .introduction .intro-text {
+    padding-left: 1.1rem;
+    text-align: right;
+    line-height: 2rem;
+  }
+
+  .intro-text h1 {
+    font-size: 1.8rem;
+    padding-bottom: 1.6rem;
+  }
+
+  .products {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 80%;
+  }
+
+  .intro-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    margin-top: 1.5rem;
+  }
+  .info-button {
+    padding: 0.5rem 1.5rem;
+    margin-left: 1rem;
+  }
 }
