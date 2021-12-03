@@ -97,9 +97,10 @@ header .hamburger {
 header .header-text {
   color: rgb(151, 64, 132);
   font-family: "Architects Daughter", cursive;
-  font-size: 1rem;
+  font-size: 0.8rem;
   line-height: 1.5rem;
   font-weight: 400;
+  letter-spacing: 0.1rem;
   margin-top: 3rem;
 }
 nav {
@@ -205,6 +206,10 @@ footer .footer-text {
 
   header {
     grid-template-rows: 1fr;
+  }
+
+  header .header-text {
+    font-size: 0.9rem;
   }
 
   .header-logo {
