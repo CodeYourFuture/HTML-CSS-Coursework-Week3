@@ -13,7 +13,7 @@ _Template for mobile ipad and desktop _
 ![alt text](https://github.com/LovesPictures/WowCakes/blob/master/img/Slide6.JPG "twireframe template")
 
 _completed sites for mobile iPad and desktop_
-![alt text](https://github.com/LovesPictures/WowCakes/blob/719a56639bce232919bbd27e95472ddb930e5b7b/img/Slide7_.JPG "twireframe template")
+![alt text](https://github.com/LovesPictures/WowCakes/blob/a7997c4eae1f66f808008e8c8892c5c5054c7691/img/Slide7.JPG "twireframe template")
 
 ### Define your own style
 
