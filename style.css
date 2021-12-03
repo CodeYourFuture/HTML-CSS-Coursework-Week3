@@ -1,1 +1,279 @@
 /*  Add your styling here */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+html, body {
+    margin: 0;
+    height: 100%;
+    font-family: 'Montserrat';
+}
+
+/* css grid */
+.wrapper {
+    margin: 0;
+    padding: 25px;
+    grid-gap: 1em;  /* space inbetween the boxes/borders */
+    display: grid;
+    grid-template-columns: repeat(12,1fr); /* Makes 12 equal spaced rows */
+    grid-auto-rows: minmax(20px, auto);
+    box-sizing: border-box;
+}
+  /* grid-template layout start */
+  .brand-logo{ /* start of first row */
+    display: grid;
+    grid-column: 1/ 4;   /*Starts on column 1 and ends on columns 5 */
+    grid-row: 1;           /* Starts on row 1 and ends on row 6*/
+    font-size: .85rem;
+    color: #7D5A5A;/*rgb(218, 80, 80)*/
+    }
+
+  .navbar{ 
+    grid-column: 5/-1;     /*Starts on column 1 and ends on columns 3 */
+    grid-row: 1; /* Starts on row 1 and ends on row 6*/
+    
+  }
+
+/* button */
+  .toggle-button{
+       display: flex;
+       flex-direction: column;
+       justify-content: space-between;
+       width: 25px;
+       height: 21px;
+       position: absolute;
+       top: 1.5rem;
+       right: 1.5rem;
+       padding-top:.25em;
+   }
+
+   .toggle-button .bar{
+       height: 3px;
+       width: 100%;
+       background-color: #7D5A5A;
+       border-radius: 10px;
+   }
+
+   /* navbar */
+  .navbar-links ul{
+        display: none;
+    }
+
+    .welcome > h1{ 
+       margin-bottom: .2em;
+    } 
+
+    footer > p {
+        text-align: center;
+        color: #F9C0C0;
+    }
+    /* more than 540px */
+    @media screen and (min-width: 540px) {
+
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+       
+        color: pink; /* edit colour */
+    }
+
+    .navbar-links ul{
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+
+    .navbar-links li{
+        list-style: none;
+    }
+    .navbar-links li a{
+        text-decoration: none;
+        color: #7D5A5A; /* edit colour */
+        padding: .5rem;
+        align-items: end;
+        display: block;
+        font-size: 1em;
+        font-weight: bold;
+
+    }
+
+    .nav-list > li:nth-child(5) {
+        margin-right: 16px;
+    }
+
+    .navbar-links li:hover{
+        background-color: rgb(250, 245, 218);
+        border-radius: .5rem;
+    }
+
+    .toggle-button{
+      display:none;
+    }
+
+    .brand-logo {
+        font-size: 1em;
+    }
+}/* end of first row 1 */
+
+/* welcome section */
+.welcome > h1{ /* start of second row */
+    margin-top: 0 0 .5em;
+} 
+
+.welcome-message {
+    line-height: 1.5em;
+}
+
+.welcome > .welcome-text{
+    margin-right: 1em;
+}
+
+.welcome { 
+    grid-column: 1/-1;    /*Starts on column 3 and ends on columns 12 */
+    grid-row: 3;            
+    background-color: #F3E1E1;
+    padding: 1em;
+    color: #625757;
+}
+
+button{
+    background-color: #FAB7B7;
+    color: #625757;
+    border: 1px solid #7D5A5A;
+    padding: .7em;
+    border-radius: .7em;
+    margin-top: .9em;
+    font-weight: bold;
+}/* end of second row */
+
+.welcome-image { /* start of third row */
+    grid-column: 1/-1;   
+    grid-row: 4;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1em;
+    border-style: solid;
+    color: #8BCDCD;
+}/* end of third row */
+
+.nested { /* start of fourth row */
+  display: grid;
+  grid-column: 1/-1;   
+  grid-row: 5;
+  grid-template-columns: repeat(2, 1fr);
+  border-style: solid;
+  color: pink;
+  grid-gap: 1em;
+  background-color: #F3E1E1;
+  border-radius: 10px;
+} 
+
+.nested > img { /* image size */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1em;
+}/* end of fourth row */
+
+.footer { /* start of fifth row */
+    grid-column: 1/-1;
+    grid-row: 6;
+    height: 5em;
+    background-color: #7D5A5A;
+    
+    
+}/* end of fourth row */
+
+@media screen and (min-width: 900px){
+
+    .wrapper{
+        grid-gap: 1em;
+    }
+    .brand-logo{
+        font-size: 1.4em;
+        margin-top: 0;
+    }
+
+    .navbar-links li a{
+        padding: 1.5em;
+        font-size: 1.2em;
+    }
+
+    .navbar{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .nav-list > li:nth-child(5) {
+        margin-right: 16px;
+    }
+
+    .welcome{
+        grid-column: 7/-1;    
+        grid-row: 2;
+        border-radius: 1em;
+        padding: 2.5em;
+    }
+
+    button {
+        font-weight: bold;
+        padding: 1em 1.5em;
+        margin-top: 2em;
+    }
+        
+
+    .welcome-image{
+        grid-column: 1/7;
+        grid-row: 2; 
+    }
+
+    .nested{
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .navbar-links li a{
+        padding-bottom: .5em
+    }
+
+    .footer  > p{
+        text-align: center;
+        
+    }
+
+    h1{
+        font-size: 4em;
+        margin: .25em 0;
+    }
+
+    .welcome-message{
+        font-size: 1.5em;
+    }
+
+}
+
+/* This is the code for the image grid before it was nested
+.chestnut-cake {
+     grid-column: 1/7;/*Starts on column 5 and ends on columns 12
+    grid-row: 4;     /* Starts on row 6 and ends on row 12
+    border-style:solid;
+    color: pink;
+}
+
+.raspberry-cake {
+    grid-column: 7/-1;
+    grid-row: 4;
+    border-style: solid;
+    color:red;
+}
+.sponge-cake {
+    grid-column: 1/7;
+    grid-row: 5;
+    border-style:solid;
+    color: blue;
+}
+.dome-coke {
+    grid-column: 7/-1;
+    grid-row: 5;
+    border-style:solid;
+    color: green;
+}
+*/
+/* grid-template layout end */

@@ -1,16 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Responsive Cake webpage</title>
-    <!-- Add a link to your css file here -->
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Responsive Cake webpage</title>
+        <link rel="stylesheet" href="style.css">
+        <script
+      src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
+    ></script>
+        <!-- Add a link to your css file here -->
+    </head>
 
-<body>
-    <!-- Add your markup here -->
-</body>
+    <body>
+        
+        <div class="wrapper">
+            <div class="brand-logo"> <i class="fas fa-birthday-cake"></i> Indulge Cakes</div>
 
+            <nav class="navbar"> <!-- one -->
+                <a href="#" class="toggle-button">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </a>
+                
+                <div class="navbar-links">
+                    <ul class="nav-list">
+                        <li class="list-items"><a href="#">Home</a></li>
+                        <li class="list-items"><a href="#">Cakes</a></li>
+                        <li class="list-items"><a href="#">Orderin</a></li>
+                        <li class="list-items"><a href="#">Lessons</a></li>
+                        <li class="about"><a href="#">About</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            
+            <div class="welcome"><!-- two -->
+                <h1>Welcome</h1>
+                    <span class="welcome-message">Treat yourself or someone you love with a boxed gift wrapped cake. The best cakes in town delivered to your door
+                    </span>
+                    <div></div>
+                <!--<div id="welcome-text">
+                        The best cakes in town delivered to your door
+                    </div> i could not figure out how to position the text to the botton-->
+                    <button>enquire now</button>
+            </div>
+            <img class="welcome-image" src="img/ruth-georgiev-dvmiNXMh9d8-unsplash.jpeg" alt=""> <!-- three -->
+            
+            <div class="nested"><!-- four -->
+                <img class="chestnut-cake" src="img/jordane-mathieu-lwkuaGoDTXE-unsplash.jpg" alt="chocolate chesnut cake">
+                <img class="raspberry-cake" src="img/jordane-mathieu-83sgp9jxW8k-unsplash.jpg" alt="raspberry cake">
+                <img class="sponge-cake" src="img/jordane-mathieu-5RHodALXtzM-unsplash.jpg" alt="sponge cake topped with cream and chocolate">
+                <img class="dome-coke" src="img/jordane-mathieu-eDC7851HvYk-unsplash.jpg" alt="mousse dome cake with coconut flakes">
+            </div><!-- closed nessted div -->
+            <!-- footer section -->
+            <footer class="footer"> <p>© Designed by Teniola Ogunjinrin</p></footer> <!-- five -->
+        </div>
+    </body>
 </html>
