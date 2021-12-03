@@ -1,0 +1,40 @@
+/* FOOTER STYLING */
+.footer-border-line {
+    border-top: 2px solid #dfdfdf;
+    margin: 0 150px 0 150px;
+    width: 100%;
+    margin-left: auto;
+    background-color: rgb(244, 114,208);
+    margin-right: auto;
+
+} 
+
+.footer h1 {
+    text-align: center;
+    font-size: 23px;
+    font-weight: 400;
+    color: black;  
+    margin-bottom: 20px;
+    margin-top: 30px;
+
+    
+    
+}
+
+.footer-content {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    color: black;
+   
+    
+}
+
+
+.copyright {
+    text-align: center;
+    color: black;
+    margin-bottom: 100px;
+    
+} 
