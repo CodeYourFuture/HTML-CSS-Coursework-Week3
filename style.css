@@ -21,7 +21,7 @@ html, body {
     display: grid;
     grid-column: 1/ 4;   /*Starts on column 1 and ends on columns 5 */
     grid-row: 1;           /* Starts on row 1 and ends on row 6*/
-    font-size: 1rem;
+    font-size: .85rem;
     color: #7D5A5A;/*rgb(218, 80, 80)*/
     }
 
@@ -33,14 +33,15 @@ html, body {
 
 /* button */
   .toggle-button{
-       position: absolute;
-       top: 1.5rem;
-       right: 1.5rem;
        display: flex;
        flex-direction: column;
        justify-content: space-between;
        width: 25px;
        height: 21px;
+       position: absolute;
+       top: 1.5rem;
+       right: 1.5rem;
+       padding-top:.25em;
    }
 
    .toggle-button .bar{
