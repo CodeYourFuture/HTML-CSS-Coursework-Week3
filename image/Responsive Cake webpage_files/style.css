@@ -1,0 +1,49 @@
+/*  Add your styling here */
+
+.color {
+  color: blueviolet;
+}
+.top-header {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+}
+.header-text {
+  padding-top: 5rem;
+  text-align: center;
+}
+.homepage-main {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: auto;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+.products-main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: auto;
+}
+.products-image {
+  padding: 0.5rem;
+}
+.bottom-footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: auto;
+  text-align: left;
+}
+.footer-icon {
+  display: grid;
+  grid-column: 1fr;
+  grid-row: repeat (3, 1fr);
+}
+.footer-text {
+  padding-top: 10em;
+}
+.icon-size {
+  padding: 0.2em;
+  border-radius: 50%;
+}
+.right {
+  padding-left: 50rem;
+}
