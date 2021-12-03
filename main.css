@@ -5,7 +5,7 @@
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(10, 1fr);
-    background: linear-gradient(180deg, rgb(231, 112, 132), transparent);
+    background: linear-gradient(90deg, rgb(242 0 134), transparent);
 }
 
 .nav {
@@ -101,6 +101,15 @@
 @media screen and (min-width: 481px) {}
 
 @media screen and (min-width: 721px) {
+    h1 {
+        font-size: 4vw;
+
+    }
+
+    .hero_text p {
+        font-size: 2vw;
+    }
+
     .main {
         grid-template-rows: 20px 80px repeat(6, 1fr) 50px;
         grid-row-gap: 50px;
@@ -120,34 +129,61 @@
     .nav ul {
         display: flex;
         justify-content: right;
-
     }
 
     .nav ul li {
         padding: 0.2em 1em;
         margin: 0 0.4em;
         list-style: none;
-        background: rosybrown;
+        background: #b13e89;
     }
 
     .nav ul li a {
         color: black;
-
         text-decoration: none;
-
     }
 
     .hero {
         grid-row: 3/6;
+        display: flex;
+    }
+
+    .hero_text {
+        width: 50%;
+        align-self: center;
+    }
+
+    .hero_img {
+        width: 50%;
     }
 
     .products {
-        grid-row: 6/9;
+        grid-row: 6/8;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 15px;
+    }
+
+    .birthday_product {
+        grid-column: 1/2;
+        grid-row: 1;
+
+    }
+
+    .wedding_product {
+        grid-column: 2/3;
+        grid-row: 1;
+    }
+
+    .cupcake_product {
+        grid-column: 3/4;
+        grid-row: 1;
+    }
+
+    .glutenfree_product {
+        grid-column: 4/5;
+        grid-row: 1;
     }
 }
-
-
-
-
 
 @media screen and (min-width: 1024px) {}
