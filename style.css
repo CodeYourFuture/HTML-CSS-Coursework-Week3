@@ -1,94 +1,80 @@
 /*  Add your styling here */
 
 .container {
-    /*height: 100%;*/
     margin: 0;
     font-size: 1 em;
     display: grid;
     grid-gap: 5px;
     grid-template-columns: 1fr;
-    grid-auto-rows: minmax(200px, auto);
-           
+    grid-auto-rows: minmax(200px, auto);           
 }
 
-header {
-    border: red 2px solid;
-    background-color: darkkhaki;
+header {   
     grid-column: 1 / - 1;
-
-    
+    background-color: rgb(236, 234, 234);
     display: flex;
     justify-content: space-around;
     flex-direction: row;
-    margin-bottom: 5px;
-
+    margin-bottom: 5px;   
 }
 
 
-main {
-    border: green 2px solid;
-   
+main {       
     display: grid;
     grid-template-columns: 1 fr;
     grid-template-rows: 1 fr 1fr;
-    grid-gap: 5px;
-
-   
+    grid-gap: 5px;  
 }
 
 .welcome {
-    grid-column: 1 / - 1;
-    border: blueviolet 2px dashed;
-    
+    grid-column: 1 / - 1;   
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    
-
-    background-color: rgb(230, 241, 211);
+    justify-content: space-around;      
     margin-left: 1rem;
     margin-right: 1rem;
-
 }
   
 
 .products {
     grid-column: 1 / - 1;
-    border: blueviolet 2px dashed;
-
     display: grid;
     grid-template-columns: 1fr 1fr; 
-    grid-template-rows: 200px 200px;
-    
-    background-color: rgb(248, 231, 225);
-
+    grid-template-rows: 200px 200px; 
 }
 
    
-footer {
-    border: orange 2px solid;  
+footer {  
     grid-column: 1 / - 1;
 }
 
+.nav-section {
+    display: none;
+    background-color: rgb(192, 192, 192);
+    width:auto;
+    height: fit-content;
+    margin: 20px;
+}
 
 .nav-mob {
     overflow: hidden;
     position: relative; 
-
 }
 
 .nav-list {
     display: none;
-    list-style: none;
-    
+    list-style: none;   
 }
 
 .nav-item {
     margin-right: 5px;
     padding: 5px 25px; 
-    background-color: rgb(61, 61, 61);
-    color: white;
+    border: 2px black solid;
+    padding: 4px 20px;
+    background-color: rgb(37, 37, 37);
+    color: rgb(255, 255, 255);
 }
+
 .nav-link{
     color: grey;
     padding: 14px 16px;
@@ -96,31 +82,21 @@ footer {
     display: block;
 }
 
-
-
-
-
-.logo {
-    
+.logo {    
 max-width: 15%;
-height: auto;
-
-       
+height: 30%;       
 }
 
 .slogan {
-    margin-top: 3rem;
+    margin-top: 7rem;
     margin-bottom: 2px;
-   
-    
-
+    font-size: 1 em;
+    font-weight: bolder;   
 }
 
-.products-image {
-    background-color: crimson;
-    
-  
-
+.icon {
+    margin-top: 15px;
+    margin-right: 10px;
 }
 
 .products-image img {
@@ -129,7 +105,6 @@ height: auto;
     margin-left: auto; 
     margin-right: auto;
     margin-top: 5px;
-
 }
     
 
@@ -138,33 +113,42 @@ height: auto;
     width: 100%;
 }
 
+.footer {
+    display: flex;
+    background-color: rgb(236, 234, 234);
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+}
+
+.footer-p {
+    margin-left: 30px;
+    margin-right: 50px;
+    padding: 5px 25px; 
+    border: 2px black solid;
+    padding: 4px 20px;
+    background-color: rgb(37, 37, 37);
+    color: rgb(255, 255, 255);     
+}
+
+
 
 @media screen and (min-width: 600px) {
     
-    .welcome {
-       
-        
+    .welcome {               
         display: flex;
         flex-direction: row-reverse;
         justify-content: space-around;
         text-align: right;        
     }
       
-    .products {
-        grid-column: 1 / - 1;
-        border: blueviolet 2px dashed;
-    
+    .products {           
         display: grid;
-        grid-template-columns: repeat(2, 1fr); 
-        grid-templates-row: 200px;                       
-        background-color: rgb(248, 231, 225);  
-       
+        grid-template-columns: repeat(2, 1fr);       
     }
     
-    .products-image {
-        background-color: crimson;
-        width: 50%;
-    
+    .products-image {   
+        width: 50%;    
     }
         
     .products-image img {        
@@ -174,7 +158,7 @@ height: auto;
    
     .products-1-2 {
         display: flex;
-        flex-direction: row;
+        flex-direction: row;        
     }
 
     .products-3-4 {
@@ -182,5 +166,30 @@ height: auto;
         flex-direction: row;
     }
 
+    .nav-list {
+        margin-left: 250px;
+        display: flex;
+    }
+
+    .icon {
+        display: none;
+    }
+
+    .nav-section {
+        display: flex;
+        justify-content: space-around;        
+    }
+    
+    .slogan {
+        margin-left: 25rem;
+        margin-top: 10rem;
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: row;
+    }
 
 }
