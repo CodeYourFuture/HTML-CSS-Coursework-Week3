@@ -11,8 +11,7 @@ body {
   list-style: none;
   background-color: rgb(247, 247, 247);
   margin: 12px 115px 5px 45px;
-  padding: 8px 7px 8px 490px;
-  float: right;
+  padding: 8px 7px 8px 900px;
 }
 
 .nav-item {
@@ -23,15 +22,15 @@ body {
   color: rgb(160, 155, 155);
   text-decoration: none;
   font-size: 0.7rem;
-  background-color: rgb(190, 190, 190);
+  background-color: rgb(219, 217, 217);
   padding: 4px 22px;
-  color: white;
-  transition: background-color 1s;
+  color: rgb(7, 7, 7);
+  transition: background-color 2s;
 }
 .nav-link:hover {
-  color: #3a3939;
+  color: #f5f0f0;
   cursor: pointer;
-  background-color: rgb(233, 233, 233);
+  background-color: rgb(48, 48, 48);
 }
 /* grid */
 .content {
@@ -70,7 +69,7 @@ header {
 }
 
 main {
-  margin: 15px 115px 15px 45px;
+  margin: 15px 115px 30px 45px;
 }
 
 /* header style */
@@ -182,7 +181,7 @@ footer {
 }
 
 .social-media {
-  background-color: rgb(190, 190, 190);
+  background-color: rgb(143, 140, 140);
   border-radius: 3%;
   margin: 4px;
   display: flex;
@@ -203,7 +202,7 @@ footer {
 }
 
 .footer-p {
-  color: rgb(156, 154, 154);
+  color: rgb(82, 81, 81);
   margin-top: 1rem;
   text-align: center;
 }
