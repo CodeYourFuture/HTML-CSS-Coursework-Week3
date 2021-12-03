@@ -11,11 +11,24 @@ body {
   grid-template-areas:
     "header"
     "main"
-    "main"
     "footer";
   background: rgb(243 193 118);
+  font-family: sans-serif;
 }
 h1 {
   font-size: 6vw;
   font-weight: bolder;
+}
+/* =======================================Media======================= */
+@media screen and (min-width: 481px) {
+}
+@media screen and (min-width: 721px) {
+  h1 {
+    font-size: 4vw;
+  }
+  p {
+    font-size: 2vw !important;
+  }
+}
+@media screen and (min-width: 1024px) {
 }

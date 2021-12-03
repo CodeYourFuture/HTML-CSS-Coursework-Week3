@@ -18,3 +18,16 @@
   margin-top: 1em;
   color: rgb(143, 111, 75);
 }
+/* ======================================Media========================= */
+@media screen and (min-width: 481px) {
+}
+
+@media screen and (min-width: 721px) {
+  .links_div {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+}
