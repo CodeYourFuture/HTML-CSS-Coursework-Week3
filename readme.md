@@ -6,19 +6,14 @@ Made to create a **responsive webpage** showcasing your cake business, based on 
 
 Build the mobile wireframe first, then adapt it for larger screens.
 
-_Mobile wireframe:_  
-![alt text](./design/cakes%20wireframe%20-%20mobile.png "Cakes Co mobile design")
-
-_Desktop wireframe:_  
-![alt text](./design/cakes%20wireframe%20-%20desktop.png "Cakes Co desktop design")
-
 ## Approach
 
 Make a template for the three screen scenarios
-Template 
-
+_Template for mobile ipad and desktop _
 ![alt text](https://github.com/LovesPictures/WowCakes/blob/master/img/Slide6.JPG "twireframe template")
-https://github.com/LovesPictures/WowCakes/blob/4d2139c334692438dcca671bda7c780e79b64417/img/Slide6.JPG
+
+_completed sites for mobile iPad and desktop_
+![alt text](https://github.com/LovesPictures/WowCakes/blob/a3b8b6cb8999be3171b8fe4498b9fefb5d3a5a2b/img/Slide7.JPG "twireframe template")
 
 ### Define your own style
 
@@ -28,12 +23,12 @@ https://github.com/LovesPictures/WowCakes/blob/4d2139c334692438dcca671bda7c780e7
 
 ### mobile first
 
-- Page desinged with a mobile first design approach
+- Page designed with a mobile first design approach
 - Then write your CSS for everything to look great on mobile
 
 ### larger screens
 
-- Following the mobile fist apprache the page was adjusted with media queries larger screen layouts and sizing of elements so they make better use of a wider screen
+- Following the mobile first approach the page was adjusted with media queries larger screen layouts and sizing of elements so they make better use of a wider screen
 
 ### breakpoints
 
