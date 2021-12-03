@@ -143,24 +143,70 @@ footer img {
 
   .welcome-text {
     display: welcome;
-    background-color: cyan;
   }
 
   .welcome-image {
     display: image;
   }
 
-  nav img {
+  .burger {
     display: none;
   }
 
+  header img {
+    width: 100px;
+  }
+
   nav ul {
-    border: 2px solid black;
-    display: grid;
-    grid-template-columns: ;
-    display: unset;
+    display: nav;
+    display: flex;
     list-style: none;
     font-size: 30px;
+    background-color: #eddcd2;
+  }
+
+  nav ul li {
+    /* padding: 0px 5px; */
+    margin: 0px 40px;
+    background-color: #ddbea9;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+  a:visited {
+    text-decoration: none;
+    color: black;
+  }
+
+  a:hover {
+    text-decoration: none;
+    color: white;
+  }
+
+  .welcome {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .welcome-text {
+    margin-left: 100px;
+  }
+
+  .welcome-image {
+    display: grid;
+    align-items: center;
+    margin: 10px;
+  }
+
+  .products {
+    display: flex;
+  }
+
+  .products img {
+    width: 70%;
   }
 
   footer img {
@@ -168,5 +214,15 @@ footer img {
   }
 }
 
+@media screen and (min-width: 600px) {
+  nav ul li {
+    margin: 0px 40px;
+    background-color: #ddbea9;
+  }
+}
+
 @media screen and (min-width: 900px) {
+  main {
+    background-color: yellow;
+  }
 }
