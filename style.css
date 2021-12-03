@@ -10,7 +10,7 @@ html, body {
 .wrapper {
     margin: 0;
     padding: 25px;
-    grid-gap: 10px;  /* space inbetween the boxes/borders */
+    grid-gap: 1em;  /* space inbetween the boxes/borders */
     display: grid;
     grid-template-columns: repeat(12,1fr); /* Makes 12 equal spaced rows */
     grid-auto-rows: minmax(20px, auto);
@@ -56,17 +56,22 @@ html, body {
         display: none;
     }
 
+    .welcome > h1{ 
+       margin-bottom: .2em;
+    } 
+
     footer > p {
         text-align: center;
-        color: #7D5A5A;
+        color: #F9C0C0;
     }
     /* more than 540px */
     @media screen and (min-width: 540px) {
-        
+
     .navbar{
         display: flex;
         justify-content: space-between;
         align-items: center;
+       
         color: pink; /* edit colour */
     }
 
@@ -109,7 +114,7 @@ html, body {
 }/* end of first row 1 */
 
 /* welcome section */
-h1{ /* start of second row */
+.welcome > h1{ /* start of second row */
     margin-top: 0 0 .5em;
 } 
 
@@ -133,10 +138,10 @@ button{
     background-color: #FAB7B7;
     color: #625757;
     border: 1px solid #7D5A5A;
-    padding: 1em 1.5em;
+    padding: .7em;
     border-radius: .7em;
-     /* is there a better button positioning alternative?*/
-    font-size: 15px;
+    margin-top: .9em;
+    font-weight: bold;
 }/* end of second row */
 
 .welcome-image { /* start of third row */
@@ -211,6 +216,7 @@ button{
     button {
         font-weight: bold;
         padding: 1em 1.5em;
+        margin-top: 2em;
     }
         
 
@@ -229,7 +235,7 @@ button{
 
     .footer  > p{
         text-align: center;
-        color: #F9C0C0;
+        
     }
 
     h1{
