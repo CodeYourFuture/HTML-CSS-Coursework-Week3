@@ -49,9 +49,8 @@ body {
     grid-area: nav;
     justify-self: end;
 }
-.navigation-list a{
-    display: none;
-}
+
+
 .header-p {
     grid-area: t;
     font-family: 'Comforter Brush', cursive;
@@ -84,7 +83,6 @@ body {
     border-top: 5px var(--yellow) solid; 
 }
 
-
 h1 {
     font-family: 'Comforter Brush', cursive;
     grid-column: 1/ -1;
@@ -93,12 +91,14 @@ h1 {
     letter-spacing: 5px;
     align-items: center;
 }
+
 .welcome-section-article {
     grid-column: 1/-1;
     grid-row: 2/3;
     line-height: 2em;
     font-size: 1em;
 }
+
 .main-section-image {
     grid-column:1/-1;
     grid-row: 3/4;
@@ -108,14 +108,17 @@ h1 {
     grid-column: 1/2;
     grid-row: 4/ 5;
 }
+
 .main :nth-child(5) {
     grid-column: 2/3;
     grid-row: 4/ 5;
 }
+
 .main :nth-child(6) {
     grid-column: 1/2;
     grid-row: 5/ 6;
 }
+
 .main :nth-child(7) {
     grid-column: 2/3;
     grid-row: 5/ 6;
@@ -161,14 +164,26 @@ h1 {
  .footer :nth-child(2) {
     grid-area: insta;
  }
+
  .footer :nth-child(3) {
     grid-area: twt;
  }
+
  .footer :nth-child(4) {
     grid-area: copy;
     font-size: 0.8em;
     justify-content: center;
  }
+
+
+/*Media query fot mpbile */
+    @media screen and (min-width: 480px) {
+        .navigation-list a{
+            display: none;
+        }
+    }
+        
+
 
  /* Media query for Desktop */
 
@@ -190,6 +205,23 @@ h1 {
     .hamburger {
         display: none;
     }
+    nav {
+    
+        display: grid;
+        grid-template-columns: repeat(8,1fr);
+        grid-template-rows: 100px;
+        grid-gap: 0.5rem;
+        grid-template-areas: 
+        ". . . h c o l a";
+        
+    }
+    ul :nth-child(1) a  {
+        grid-area: h;
+     
+    }
+
+
+  
     .main {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
