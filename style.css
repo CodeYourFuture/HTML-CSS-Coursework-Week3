@@ -26,10 +26,11 @@ header > p:nth-child(4) {
 }
 .logo-img{
     width:5rem;
-    height: 7rem;
+    height: 7rem ; 
 }
 nav{
-  grid-position: end;
+  grid-template-areas: inherit;
+  justify-self:end;
 }
 /* welcome section's styles */
 .wlc > p:nth-child(1) {
