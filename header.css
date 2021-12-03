@@ -24,8 +24,20 @@
 }
 
 .burger_item {
-    padding: 0.2em 1em;
+    padding: 0.3em 2em;
     background: purple;
     margin: 4px 0px;
 
 }
+
+/* Media */
+
+@media screen and (min-width: 481px) {}
+
+@media screen and (min-width: 721px) {
+    .hamburger_btn {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1024px) {}

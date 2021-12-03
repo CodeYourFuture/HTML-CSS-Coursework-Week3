@@ -21,3 +21,10 @@
 .watermark {
     text-align: center;
 }
+
+/* Media */
+@media screen and (min-width: 481px) {}
+
+@media screen and (min-width: 721px) {}
+
+@media screen and (min-width: 1024px) {}

@@ -8,6 +8,10 @@
     background: linear-gradient(180deg, rgb(231, 112, 132), transparent);
 }
 
+.nav {
+    display: none;
+}
+
 .hero {
     grid-column: 2/12;
     grid-row: 2/6;
@@ -26,6 +30,8 @@
     grid-column: 1;
     grid-row: 2/3;
     font-size: 5vw;
+    line-height: 1.4em;
+    margin-top: 1em;
 }
 
 .hero_img {
@@ -90,3 +96,58 @@
 .products img {
     width: 100%;
 }
+
+/* Media */
+@media screen and (min-width: 481px) {}
+
+@media screen and (min-width: 721px) {
+    .main {
+        grid-template-rows: 20px 80px repeat(6, 1fr) 50px;
+        grid-row-gap: 50px;
+    }
+
+    .nav {
+        display: block;
+        grid-column: 2/12;
+        grid-row: 2/3;
+        padding: 1em;
+        text-align: right;
+        font-size: 2.2vw;
+        font-weight: bolder;
+        background: pink;
+    }
+
+    .nav ul {
+        display: flex;
+        justify-content: right;
+
+    }
+
+    .nav ul li {
+        padding: 0.2em 1em;
+        margin: 0 0.4em;
+        list-style: none;
+        background: rosybrown;
+    }
+
+    .nav ul li a {
+        color: black;
+
+        text-decoration: none;
+
+    }
+
+    .hero {
+        grid-row: 3/6;
+    }
+
+    .products {
+        grid-row: 6/9;
+    }
+}
+
+
+
+
+
+@media screen and (min-width: 1024px) {}
