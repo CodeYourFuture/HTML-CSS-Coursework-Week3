@@ -167,7 +167,7 @@ footer img {
 
   nav ul li {
     /* padding: 0px 5px; */
-    margin: 0px 40px;
+    margin: 0px 10px;
     background-color: #ddbea9;
   }
 
@@ -214,15 +214,9 @@ footer img {
   }
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 900px) {
   nav ul li {
     margin: 0px 40px;
     background-color: #ddbea9;
-  }
-}
-
-@media screen and (min-width: 900px) {
-  main {
-    background-color: yellow;
   }
 }
