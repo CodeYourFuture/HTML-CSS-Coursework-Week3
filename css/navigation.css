@@ -1,0 +1,55 @@
+/* HEADER*/
+.header2 {
+    display: flex;
+    justify-content:space-evenly;
+}
+
+.header-image {
+    height: 50px;
+    width: 50px;
+   
+    
+}
+
+/* NAVIGATION */
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    padding-right: 100px;
+    
+}
+
+.nav-item {
+    padding: 17px;
+}
+
+.nav-link:hover {
+    color: #eb6728;
+}
+
+.nav-link {
+   text-decoration: none; 
+   color: #888;
+}
+
+/* TABLET: */
+@media screen and (min-width: 550px) {
+    .homepage-main {
+        /*  we need more columns for a more complex layout  */
+        grid-template-columns: repeat(6, 1fr); 
+        /*  we need less rows now  */
+        grid-template-rows: 140px 100px 80px; 
+        /*  our template now has 6 columns and 3 rows  */
+        grid-template-areas:
+          "hero    hero    hero    hero  hero     hero"
+          "feature feature feature .     aside    aside"
+          "product product product .     aside    aside";
+      }
+      
+    /* 
+      We don't need to re-define the grid-area for each block because these haven't changed. The hero is still the hero, the feature is still the feature etc. 
+    */
+      
+    } 
+    
