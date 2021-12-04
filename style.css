@@ -185,9 +185,7 @@
     justify-content: center;
    
   }
-
-
-    
+ 
   
 
 
@@ -208,7 +206,7 @@
   
   
   /* TABLET: */
-  @media screen and (min-width: 550px) {
+  @media screen and (min-width: 614px) {
   
    
   
@@ -288,7 +286,7 @@
       grid-column-end: 7;
       padding: 0.5em;
       margin: 1em;
-      padding-left: 10em;
+      justify-content: end;
      
   
 }
