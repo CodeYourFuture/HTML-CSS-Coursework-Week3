@@ -1,11 +1,10 @@
 
 /* General*/
 :root {
-    --beige: rgb(233, 224, 214);
     --yellow: rgb(238, 231, 167);
-    --pink: rgb(226, 171, 203);
-    --light-blue: rgb(157,213,230);
-    --blue:rgb(109,189,199);
+    --black: rgb(0, 0, 0);
+    --navigation-color :#ffff00;
+
 }
 
 * {
@@ -66,7 +65,7 @@ body {
 
 .main {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(100px, 1fr));
     grid-template-rows: 200px auto 600px 300px 300px;
     grid-gap: 1rem;
     padding: 1rem;
@@ -173,11 +172,12 @@ h1 {
     grid-area: copy;
     font-size: 0.8em;
     justify-content: center;
+    text-align: center;
  }
 
 
-/*Media query fot mpbile */
-    @media screen and (min-width: 480px) {
+/*Media query fot mobile */
+    @media screen and (max-width: 480px) {
         .navigation-list a{
             display: none;
         }
@@ -205,23 +205,28 @@ h1 {
     .hamburger {
         display: none;
     }
-    nav {
-    
-        display: grid;
-        grid-template-columns: repeat(8,1fr);
-        grid-template-rows: 100px;
-        grid-gap: 0.5rem;
-        grid-template-areas: 
-        ". . . h c o l a";
-        
-    }
-    ul :nth-child(1) a  {
-        grid-area: h;
-     
+
+   
+    .navigation-list {
+        display: flex;
+        flex-direction: row;
+        padding: 1rem 0;
+        justify-content: flex-end;
+        background-color: var(--yellow);
+        font-weight: bold;
+        letter-spacing: 5px;
     }
 
+    .navigation-list a {
+        color: var(--black);
+        padding: 0.5rem 1rem;
+        margin: 0 1.5rem;
+    }
 
-  
+    .navigation-list li a:hover {
+        background-color: var(--navigation-color);
+    }
+
     .main {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -232,26 +237,34 @@ h1 {
         "img img t t"
         "c1 c2 c3 c4"; 
     }
-    h1{
+
+    h1 {
         grid-area: w;
-              
+        text-align: right; 
+          
     }
+
     .welcome-section-article {
         grid-area: t;
         text-align: right;
     }
+
     .main-section-image {
         grid-area: img;        
     }
+
     .main :nth-child(4) {
         grid-area: c1;
     }
+
     .main :nth-child(5) {
         grid-area: c2;
     }
+
     .main :nth-child(6) {
         grid-area: c3;
     }
+
     .main :nth-child(7) {
         grid-area: c4;
     }
@@ -267,14 +280,17 @@ h1 {
         grid-area: i;
         justify-content: center;
     }
+
     .footer :nth-child(2) {
         grid-area: t;
         justify-content: center;
     }
+
     .footer :nth-child(3) {
         grid-area: m;
         justify-content: center;
     }
+    
     .footer :nth-child(4) {
         grid-area: c;
     }
