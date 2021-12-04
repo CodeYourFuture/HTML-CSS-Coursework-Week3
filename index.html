@@ -2,15 +2,85 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Responsive Cake webpage</title>
-    <!-- Add a link to your css file here -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Responsive Cake webpage</title>
+  <!-- Add a link to your css file here -->
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/9569a39f56.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
-    <!-- Add your markup here -->
+  <!-- Header -->
+  <header id="header">
+    <section class="header">
+      <img src="./img/cakelogo.png" alt="K-logo" class="logo" width="100" />
+      <button class="hamburger" id="hamburger">
+        <i class="fas fa-bars"></i>
+      </button>
+      <p class="intro">The best cakes in town delivered to your door</p>
+
+        <!-- Nav starts here -->
+      <nav id="nav-bar">
+        <ul class="nav-links">
+          <li>
+            <a href="#home">HOME</a>
+          </li>
+          <li><a href="#cakes">CAKES</a></li>
+          <li><a href="orderin">ORDERIN</a></li>
+          <li><a href="#lessons">LESSONS</a></li>
+          <li><a href="#about">ABOUT</a></li>
+        </ul>
+      </nav>
+    </section>
+  </header>
+
+<!-- Main section -->
+  <main>
+    <section id="home" class="home">
+      <h1 class="welcome">Welcome</h1>
+    </section>
+    <section class="info">
+      <p>At K, we give you a taste of heaven. We make edible incredible!! Give your guests the royal treatment and visit
+        us today.All our cakes are crafted by hand and made with love. Always remember that good cake isn't cheap, cheap
+        cake isn't good.</p>
+    </section>
+    <div class="home-section">
+      <img src="./img/welcome.jpg">
+    </div>
+
+<!-- Services -->
+    <section id="cakes" class="services">
+      <h2>Services</h2>
+    </section>
+    <div class="services-img cheese">
+      <p>Cheese Cakes</p>
+    </div>
+    <div class="services-img birthday">
+      <p>Birthday Cakes</p>
+    </div>
+    <div class="services-img cupcakes">
+      <p>Cupcakes</p>
+    </div>
+    <div class="services-img specials">
+      <p>Specials</p>
+    </div>
+  </main>
+
+  <!-- Footer section -->
+  <footer>
+    <section id="contact">
+      <h2>Get in Touch</h2>
+      <ul class="contact-links">
+        <li><a href="#"><i class="far fa-envelope"></i>info@kcakes.co.uk</a></li>
+        <li><a href="#"><i class="fas fa-phone-square-alt"></i>0203 000 0000</a></li>
+        <li><a href="#"><i class="fab fa-whatsapp"></i>+44790000000</a></li>
+    </section>
+    <p>&copy;2021 K Cakes. All rights reserved</p>
+
+  </footer>
 </body>
 
 </html>
