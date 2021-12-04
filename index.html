@@ -1,16 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Responsive Cake webpage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100&family=PT+Sans+Caption:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="img/logo.png" />
     <!-- Add a link to your css file here -->
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- Add your markup here -->
-</body>
+    <body class="container grid">
+      <header class="grid pad">
+        <div class="logo_container">
+          <img src="img/logo.png" alt="logo" />
+        </div>
+        <div class="menu">
+          <img src="img/menu-hamburger.svg" />
+        </div>
+          <p class="slogan">The best cakes in town delivered to your door..</p>
+        <nav hidden>
+        <ul class="navigation__list flex">
+          <div>
+            <li class="navigation__item">
+            <a
+              class="navigation__link"
+              href="#"
+              >Home</a
+            >
+          </li>
+          </div>
 
+          <div>
+            <li class="navigation__item">
+            <a class="navigation__link" href="#">Cakes</a>
+          </li>
+        </div>
+
+        <div>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#"
+              >Ordering</a
+            >
+          </li>
+          </div>
+
+          <div>
+            <li class="navigation__item">
+            <a class="navigation__link" href="#">Lessons</a>
+          </li>
+          </div>
+
+          <div>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">About</a>
+          </li>
+          </div>
+          
+        </ul>
+      </nav>
+      </header>
+      <nav class="nav_bar pad">
+        <ul class="navigation__list flex">     
+            <li class="navigation__item">
+            <a
+              class="navigation__link"
+              href="#"
+              >Home</a
+            >
+            </li>        
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">Cakes</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#"
+                >Ordering</a
+              >
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">Lessons</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">About</a>
+            </li>         
+        </ul>
+      </nav>
+      <main class="grid pad">
+        <section class="intro">
+          <h1>Welome</h1>
+          <p>
+           Whether it’s special afternoon tea with friends, a luxury wedding, or a cosy family dinner, our and bakery offer a range of experiences. We take pride in what we do. With our family at heart, we are thrilled to share secret recipes from our grandma cupboards.
+          </p>
+        </section>
+          
+        <div class="intro_img"></div>
+        <a href="#" class="product1">
+          <h2 class="product_text">Christmas specials</h2>
+          </a>
+        <a href="#" class="product2">
+          <h2 class="product_text">Signature cakes</h2>
+        </a>
+        <a href="#" class="product3">
+          <h2 class="product_text">Delicious truffles</h2>
+        </a>
+        <a href="#" class="product4">
+          <h2 class="product_text">Unforgettable loafs</h2>
+        </a>
+      </main>
+      <footer class="grid pad">
+        
+        <div class="footer_links">
+            <a href="#">Terms & Conditions</a>       
+            <a href="#">Locations</a>    
+            <a href="#">Instagram</a>
+        </div>
+        <div class="copyright">
+          <p>© 2021 She Bakes Ltd. All rights Reserved.</p></p>
+        </div>
+      </footer>
+    </body>
+  </body>
 </html>

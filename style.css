@@ -1,1 +1,269 @@
-/*  Add your styling here */
+/*  Setting up fonts */
+a,
+h1,
+.slogan {
+  font-family: "PT Sans Caption", sans-serif;
+}
+.intro p,
+.copyright {
+  font-family: "Barlow", sans-serif;
+}
+/*adding common style for multiple elements*/
+
+a {
+  text-transform: lowercase;
+  text-decoration: none;
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.pad {
+  padding: 1.5rem;
+}
+/* setting up grids*/
+
+.container {
+  row-gap: 2rem;
+  margin: 0;
+  grid-template-rows: 0.5fr 4fr 0.5fr;
+}
+
+header {
+  grid-column: 1 / -1;
+  grid-row: 1;
+  grid-template-areas:
+    "logo logo logo logo . . . . . . . menu"
+    "logo logo logo logo . . . . . . . menu"
+    "logo logo logo logo . slogan slogan slogan slogan slogan slogan slogan"
+    ". . . . . slogan slogan slogan slogan slogan slogan slogan";
+  background-color: #d8d7d7;
+}
+
+main {
+  grid-row: 2;
+  grid-column: 1 / -1;
+  gap: 1.5rem 1.3rem;
+  grid-template-rows: 2fr 2fr 1.5fr 1.5fr;
+  grid-template-areas:
+    "intro intro intro intro intro intro intro intro intro intro intro intro"
+    "img img img img img img img img img img img img"
+    "p1 p1 p1 p1 p1 p1 p2 p2 p2 p2 p2 p2 "
+    "p4 p4 p4 p4 p4 p4 p3 p3 p3 p3 p3 p3 ";
+}
+
+footer {
+  grid-row: 3;
+  grid-column: 1 / -1;
+  background-color: #d8d7d7;
+}
+
+/* styling header and nav*/
+
+.nav_bar {
+  display: none;
+}
+
+.logo_container {
+  grid-area: logo;
+}
+
+.logo_container img {
+  max-width: 150px;
+  width: 100%;
+}
+
+.menu {
+  grid-area: menu;
+  text-align: right;
+}
+
+.slogan {
+  font-size: 1.3rem;
+  grid-area: slogan;
+  align-self: end;
+  text-align: right;
+  font-style: italic;
+  margin: 0;
+}
+
+/*styling main*/
+
+.intro {
+  grid-area: intro;
+}
+h1 {
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  font-size: 2rem;
+  font-weight: 700;
+  color: black;
+}
+.intro p {
+  line-height: 2rem;
+  font-size: 1.3rem;
+  text-align: justify;
+}
+.intro_img {
+  background-image: url("img/hero_image.jpeg");
+  grid-area: img;
+  background-size: cover;
+  background-position: center;
+}
+
+.product1,
+.product2,
+.product3,
+.product4 {
+  display: flex;
+  background-size: cover;
+  background-position: center;
+  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.3);
+  align-items: flex-start;
+  justify-content: center;
+}
+.product1 {
+  grid-area: p1;
+  background-image: url("img/christmas.jpg");
+}
+.product2 {
+  background-image: url("img/cakes.jpeg");
+  grid-area: p2;
+}
+.product3 {
+  background-image: url("img/truffles.jpg");
+  grid-area: p3;
+}
+.product4 {
+  background-image: url("img/loafs.jpeg");
+  grid-area: p4;
+}
+.product1:hover,
+.product2:hover,
+.product3:hover,
+.product4:hover {
+  box-shadow: none;
+}
+.product_text {
+  font-size: 1.5rem;
+  padding: 0.2rem;
+  background-color: white;
+  border-radius: 4px;
+  width: 75%;
+  color: #5f2b2f;
+}
+
+/*styling footer*/
+
+.footer_links {
+  grid-column: 1/-1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.footer_links a {
+  color: black;
+  padding: 0.5rem 0;
+  margin: 0;
+  font-weight: bold;
+}
+.footer_links a:hover {
+  color: #5f2b2f;
+}
+.copyright {
+  grid-column: 1/-1;
+  text-align: center;
+  color: #434242;
+}
+
+/*responsive design*/
+
+@media screen and (min-width: 765px) {
+  .container {
+    grid-template-rows: 0.5fr 6fr 0.5fr;
+  }
+  .container main {
+    grid-template-rows: 1.5fr 2fr 2fr 2fr;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .pad {
+    padding: 1.5rem 2.5rem;
+  }
+
+  .container {
+    grid-template-rows: 0.5fr auto 3.5fr 0.5fr;
+  }
+  header {
+    grid-template-areas:
+      "logo logo logo logo . . . . . . . ."
+      "logo logo logo logo . . . . . . . ."
+      "logo logo logo logo . slogan slogan slogan slogan slogan slogan slogan";
+  }
+  .container main {
+    grid-row: 3;
+    grid-template-rows: 2fr 2fr;
+    grid-template-areas:
+      "img img img img img img  intro intro intro intro intro intro"
+      "p1 p1 p1 p2 p2 p2 p4 p4 p4 p3 p3 p3";
+  }
+
+  .menu img {
+    display: none;
+  }
+  .slogan {
+    font-size: 1.5rem;
+  }
+
+  .nav_bar {
+    grid-row: 2;
+    grid-column: 1/-1;
+    display: grid;
+  }
+  .navigation__list {
+    background-color: #d8d7d7;
+    padding: 1.5rem 0;
+    justify-content: end;
+    display: flex;
+  }
+
+  .navigation__item {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    background-color: #5f2b2f;
+    padding: 0.5rem 1.5rem;
+    margin: 0 1rem;
+    border-radius: 4px;
+  }
+  .navigation__link {
+    letter-spacing: 0.05rem;
+    width: 100%;
+    font-size: 1rem;
+    color: white;
+  }
+
+  .intro {
+    text-align: right;
+  }
+  h1 {
+    margin-top: 0;
+    font-size: 3rem;
+  }
+
+  footer {
+    grid-row: 4;
+  }
+  .footer_links {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .footer_links a {
+    padding: 0.5rem 1rem;
+  }
+}
