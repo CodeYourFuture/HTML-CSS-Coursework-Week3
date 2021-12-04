@@ -91,7 +91,7 @@ p {
   height: auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: auto;
+  grid-template-rows: repeat (2, 200px);
   gap: 10px;
   padding-top: 2rem;
 }
@@ -135,13 +135,18 @@ footer {
 /* desktop */
 @media only screen and (min-width: 1200px) {
     .image-grid {
-        grid-row: 1/-1;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1/-1;
         /* background-color: #afc4c0; */
     }
 }
 /* tablet */
 @media (min-width: 768px) {
-    .image-grid {
-        grid-column: 1/-1;
+  .intro { 
+    display: flex;
+    flex-direction: row-reverse;
+} 
+.image-grid {
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1/-1;} 
 }
- 
