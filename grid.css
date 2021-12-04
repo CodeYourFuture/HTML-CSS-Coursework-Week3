@@ -1,0 +1,146 @@
+/* Layout */
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+body {
+    grid-template-areas: "he he he he he he he he he he he he" "ma ma ma ma ma ma ma ma ma ma ma ma" "fo fo fo fo fo fo fo fo fo fo fo fo";
+}
+
+header {
+    grid-template-areas: "l l l . . . . . . . h h " "l l l t t t t t t t t t ";
+    justify-items: end;
+}
+
+main {
+    grid-template-areas: "w w w w w w w w w w w w" "a a a a a a a a a a a a" "e e e e e e e e e e e e" "c c c c c c i i i i i i" "m m m m m m d d d d d d";
+    grid-gap: 10px;
+}
+
+footer {
+    grid-template-areas: "ca ca ca ca ca ca ca ca ca ca ca ca" "em em em em em em em em em em em em" "fi fi fi fi fi fi fi fi fi fi fi fi" "de de de de de de de de de de de de";
+}
+
+
+/* Grid Areas */
+
+header {
+    grid-area: he;
+}
+
+header img {
+    grid-area: l;
+}
+
+.hamburger-menu {
+    grid-area: h;
+}
+
+header p {
+    grid-area: t;
+}
+
+main {
+    grid-area: ma;
+}
+
+nav {
+    grid-area: n;
+}
+
+.home {
+    grid-area: hm;
+}
+
+.about-us {
+    grid-area: ab;
+}
+
+.hire-us {
+    grid-area: hi;
+}
+
+.our-treats {
+    grid-area: ou;
+}
+
+.find-us {
+    grid-area: f;
+}
+
+.welcome {
+    grid-area: w;
+}
+
+.about {
+    grid-area: a;
+}
+
+.hero {
+    grid-area: e;
+}
+
+.cakes {
+    grid-area: c;
+}
+
+.ice-cream {
+    grid-area: i;
+}
+
+.milk-shakes {
+    grid-area: m;
+}
+
+.doughnuts {
+    grid-area: d;
+}
+
+footer {
+    grid-area: fo;
+}
+
+.call {
+    grid-area: ca;
+}
+
+.email {
+    grid-area: em;
+}
+
+.find {
+    grid-area: fi;
+}
+
+.designer {
+    grid-area: de;
+}
+
+@media screen and (min-width: 660px) {
+    main {
+        grid-template-rows: 10vh 10vh 40vh 50vh 50vh 50vh 50vh;
+        grid-template-areas: "n n n n n n n n n n n n" "e e e e e e w w w w w w" "e e e e e e a a a a a a" "c c c c c c c c c c c c" "i i i i i i i i i i i i" "m m m m m m m m m m m m" "d d d d d d d d d d d d";
+    }
+    nav ul {
+        grid-template-areas: ". hm hm ab ab hi hi ou ou f f .";
+        width: fit-content;
+        align-self: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    main {
+        grid-template-rows: 15vh 15vh 52vh 50vh;
+        grid-template-areas: "n n n n n n n n n n n n" "e e e e e e w w w w w w" "e e e e e e a a a a a a" "c c c i i i m m m d d d";
+    }
+    footer {
+        grid-template-areas: "ca ca ca ca em em em em fi fi fi fi" ". . . . de de de de . . . .";
+    }
+    nav ul.grid {
+        grid-template-columns: repeat(10, 1fr);
+        grid-template-areas: "hm hm ab ab hi hi ou ou f f";
+    }
+}

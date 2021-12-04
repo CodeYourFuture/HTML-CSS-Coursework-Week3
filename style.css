@@ -1,1 +1,257 @@
-/*  Add your styling here */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+/* Fonts */
+
+@font-face {
+    font-family: "self-deception";
+    src: url("./fonts/self-deception/Self\ Deception\ -\ TTF.ttf") format("woff2"), url("myfont.woff") format("woff");
+}
+
+
+/* Variables */
+
+:root {
+    --light-pink: rgb(250, 211, 237);
+    --lighter-pink: rgba(255, 231, 246, 0.5);
+    --transparent-white: rgba(255, 255, 255, 0.35);
+    --lavender-pink: rgb(255, 173, 224);
+}
+
+
+/* Header */
+
+header,
+main,
+footer {
+    padding: 20px;
+}
+
+header,
+footer {
+    background: var(--light-pink);
+}
+
+header img {
+    width: 100px;
+    border-radius: 50%;
+    justify-self: left;
+    margin: 10px 20px 10px 0;
+}
+
+header p {
+    text-align: end;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+}
+
+.fas {
+    font-size: 1.875rem;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "self-deception", fantasy, cursive;
+}
+
+h1 {
+    font-size: 3.75rem;
+    padding-top: 30px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 3.125rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+main {
+    background: var(--lighter-pink);
+}
+
+nav {
+    display: none;
+}
+
+footer {
+    font-size: 0.9rem;
+}
+
+
+/* About us */
+
+.about p {
+    letter-spacing: 0.03rem;
+    word-spacing: 0.3rem;
+}
+
+
+/* Menu */
+
+.hero,
+.treats {
+    position: relative;
+}
+
+.hero>img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.treats>img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.hero h2,
+.treats h3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+}
+
+.treats-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: var(--transparent-white);
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
+
+/* Footer */
+
+.designer {
+    text-align: center;
+    padding-top: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
+
+@media screen and (min-width: 660px) {
+    .hamburger-menu {
+        display: none;
+    }
+    nav {
+        display: grid;
+        justify-items: center;
+        background: var(--lavender-pink);
+        margin-bottom: 10px;
+    }
+    nav ul {
+        width: fit-content;
+        align-self: center;
+        justify-content: center;
+    }
+    nav li {
+        list-style-type: none;
+        text-align: center;
+    }
+    h1 {
+        padding-top: 0;
+    }
+    h1,
+    h2 {
+        font-size: 3.8rem;
+    }
+    h3 {
+        font-size: 4.375rem;
+        padding: 100px 0;
+        padding-top: 130px;
+    }
+    footer {
+        font-size: 1em;
+    }
+    .about p,
+    header p {
+        font-size: 1.1rem;
+        text-align: right;
+        width: 90%;
+        margin-left: auto;
+    }
+    .about p {
+        line-height: 1.1rem;
+    }
+    li {
+        background: var(--light-pink);
+        padding: 7px 4px;
+        margin: 0 10px;
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    main {
+        grid-template-rows: 15vh 15vh 40vh 40vh;
+        grid-gap: 20px;
+        padding: 40px;
+        background: var(--lighter-pink);
+    }
+    nav {
+        justify-items: end;
+    }
+    nav ul.grid {
+        width: calc(50vw - 25px);
+    }
+    .about p,
+    header p {
+        line-height: 1.5em;
+        letter-spacing: 0.05em;
+        font-size: 1.25rem;
+        word-spacing: 0.1rem;
+    }
+    .header-items {
+        padding: 0 40px;
+    }
+    h1 {
+        font-size: 5.625rem;
+        text-align: right;
+        padding-top: 0;
+    }
+    h2 {
+        font-size: 5rem;
+    }
+    h3 {
+        font-size: 2.6rem;
+        padding: 50px 0;
+        padding-top: 80px;
+    }
+    nav {
+        margin-bottom: 20px;
+    }
+    .call {
+        justify-self: end;
+    }
+    .email {
+        justify-self: center;
+    }
+    .find {
+        justify-self: start;
+    }
+    footer {
+        font-size: 1.1rem;
+        padding: 35px 0;
+    }
+}
