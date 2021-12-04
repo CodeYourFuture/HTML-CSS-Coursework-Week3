@@ -116,12 +116,13 @@ main {
 
 .introduction .intro-text {
   color: rgb(75, 71, 71);
-  font-family: "Fuzzy Bubbles";
   font-size: 1.1rem;
+  font-weight: 600;
   text-align: justify;
 }
 
 .introduction h1 {
+  font-family: "Fuzzy Bubbles";
   font-size: 1.5rem;
   font-weight: 600;
   padding-bottom: 8px;
@@ -144,6 +145,7 @@ main {
   overflow: hidden;
 }
 .product-image img {
+  border-radius: 4px;
   width: 100%;
   height: 100%;
 }
