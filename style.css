@@ -28,7 +28,6 @@ a {
 
 .container {
   row-gap: 2rem;
-  width: 100vw;
   margin: 0;
   grid-template-rows: 0.5fr 4fr 0.5fr;
 }
@@ -232,16 +231,15 @@ h1 {
     justify-content: end;
     display: flex;
   }
-  .link_box {
+
+  .navigation__item {
+    list-style: none;
     display: flex;
     justify-content: center;
     background-color: #5f2b2f;
     padding: 0.5rem 1.5rem;
     margin: 0 1rem;
     border-radius: 4px;
-  }
-  .navigation__item {
-    list-style: none;
   }
   .navigation__link {
     letter-spacing: 0.05rem;
