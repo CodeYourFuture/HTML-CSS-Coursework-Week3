@@ -85,11 +85,10 @@ main {
   grid-area: home-img;
 }
 
-.home-section>img {
-    object-fit: cover;
-    height: 100%;
-    width: 100%;
-
+.home-section > img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
 }
 
 .cheese {
@@ -117,7 +116,7 @@ main {
 
 .services {
   grid-area: services;
-   padding: 1rem 0; 
+  padding: 1rem 0;
 }
 
 .services-img {
@@ -136,25 +135,26 @@ footer {
   background-color: #e0e0e0;
 }
 
- .contact-links a{
-    color: black;
-} 
-footer ul li{
-list-style-type: none;
-padding: 8px;
+.contact-links a {
+  color: black;
+}
+footer ul li {
+  list-style-type: none;
+  padding: 8px;
 }
 
-footer h2{
-    padding-bottom: 0.5rem;
+footer h2 {
+  padding-bottom: 0.5rem;
 }
 
-footer p{
-    text-align: center;
-    padding: 10px;
+footer p {
+  text-align: center;
+  padding: 10px;
 }
 
+/*Desktop Version*/
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 900px) {
   header {
     background-color: rgb(248, 233, 246);
   }
@@ -174,43 +174,54 @@ footer p{
   a {
     color: black;
   }
+
+  main {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "home-img home-img welcome welcome" "home-img home-img info info" "services services services services" "cheese birthday cupcakes specials";
+    grid-template-rows: 5vh 40vh 15vh 30vh;
+  }
+  .logo {
+    width: 20%;
+  }
   .intro {
     padding-bottom: 3rem;
   }
 
-
-  main {
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-areas: "home-img home-img welcome welcome" "home-img home-img info info" "services services services services" "cheese birthday cupcakes specials";
-  grid-template-rows: 5vh 40vh 15vh 30vh;
-  
-}
-
-.home{
+  .home {
     font-size: 30px;
     text-align: right;
     padding-bottom: 3em;
-}
+  }
 
-.info{
+  .info {
     font-size: 20px;
     text-align: right;
-}
+  }
 
-.contact-links {
+  .contact-links {
     display: flex;
     justify-content: center;
     color: black;
-}
+  }
 
-footer h2{
+  footer h2 {
     text-align: center;
     padding-bottom: 1rem;
     font-size: 25px;
+  }
+  .services {
+    text-align: center;
+    padding-top: 2rem;
+    font-size: 20px;
+  }
 }
-.services {
-  text-align: center;
-  padding-top: 2rem;
-  font-size: 20px;
-}
+/* ipad version */
+@media only screen and(min-width: 600px) {
+  footer {
+    background: black;
+  }
+
+  .contact-links {
+    color: white;
+  }
 }
