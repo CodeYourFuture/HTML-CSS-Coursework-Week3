@@ -5,12 +5,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    
     <title>Responsive Cake webpage</title>
     <!-- Add a link to your css file here -->
 </head>
 
 <body>
-    <!-- Add your markup here -->
+     
+    <header class="header-container">
+        <img src="./images/sweet-4214168_640.png" alt="Brand logo Sweet Treats">
+        <div class="toggle-title">
+            <label for="hamburger">&#9776</label>
+            <input type="checkbox" id="hamburger">
+            <h1>The best cakes in town delivered to your door</h1>
+                <ul>
+                    <li><a href="#welcome" class="nav-link">Welcome</a></li>
+                    <li><a href="#page-images" class="nav-link">Photos</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+        </div>
+    </header>
+
+    <main class="page-wrapper">
+        <article class="welcome" id="welcome">
+            <div class="welcome-text">
+                <h2>Welcome</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore illum culpa numquam possimus hic quibusdam alias
+                officia praesentium vero deserunt aliquam explicabo necessitatibus porro, harum nam rerum nulla nobis corporis?</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore illum culpa numquam possimus hic quibusdam alias
+                    officia praesentium vero deserunt aliquam explicabo necessitatibus porro, harum nam rerum nulla nobis corporis?</p>
+            </div>
+            <div class="hero-img">
+                <img src="./images/jeanie-de-klerk-WddjbJWlQ34-unsplash.jpg" alt="Chocolate Velvet Cake with berries">
+            </div>
+        </article>
+
+        <section class="page-images" id="page-images">
+            <div class="container">
+                <img src="./images/kristin-brown-eEgq3bWijpI-unsplash.jpg" alt="Unicorn Cake">
+                <img src="./images/pranjall-kumar-Ak4XaExjT2s-unsplash.jpg" alt="A slice of chocolate cake on a plate">
+                <img src="./images/nickie-joseph-T6oD9CIlpGA-unsplash.jpg" alt="Cupcake with white icing on the top">
+                <img src="./images/sergio-arze-wp3yOyh0xB4-unsplash.jpg" alt="A tray of cinnamon buns">
+            </div>
+        </section>
+    </main>
+
+    <footer clas="footer" id="contact">
+        <address>
+            Sweet Treat<br>
+            593 Wilbraham Rd,<br>
+            Chorlton-cum-Hardy,<br>
+            Manchester,<br>
+            M21 9AF
+        </address>
+        <div class="icons">
+            
+            <a href="https://www.instagram.com
+            " target="_blank"><img src="./images/iconfinder_5296765_camera_instagram_instagram logo_icon_512px.png" alt="instagram"></a>
+            
+            <a href="https://www.pinterest.co.uk
+            " target="_blank"><img src="./images/iconfinder_5296503_inspiration_pin_pinned_pinterest_social network_icon_512px.png" alt="Pinterest"</a>
+
+
+            <a href="https://www.facebook.com/" target="_blank"><img src="./images/iconfinder_5296499_fb_facebook_facebook logo_icon_512px.png" alt="Facebook"></a>
+        </div>
+    </footer>
+
+
+
+    
+    
 </body>
 
 </html>

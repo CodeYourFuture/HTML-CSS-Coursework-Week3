@@ -16,21 +16,24 @@ Please complete the details below this message
 
 # Your Details
 
-- Your Name:
-- Your City:
-- Your Slack Name:
+- Your Name: Sharmaine Taylor
+- Your City: Manchester
+- Your Slack Name: Sharmaine
 
 # Homework Details
 
-- Module:
-- Week:
+- Module:HTML / CSS
+- Week: week 3
 
 # Notes
 
 - What did you find easy?
+using dev tools to  help me figure out what to do on my page
 
 - What did you find hard?
+Creating a dropdown nav bar
 
 - What do you still not understand?
+The grid best ways to use them
 
 - Any other notes?
