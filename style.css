@@ -211,6 +211,7 @@ footer {
 @media screen and (min-width: 540px) {
   .navbar {
     display: flex;
+    justify-content: flex-end;
   }
   .hamburger-menu {
     display: none;
