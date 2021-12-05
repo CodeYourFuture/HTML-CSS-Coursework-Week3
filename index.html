@@ -3,14 +3,82 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Responsive Cake webpage</title>
-    <!-- Add a link to your css file here -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>The Cake</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
+
 <body>
-    <!-- Add your markup here -->
+
+    <div class="home">
+        <header class="home-header">
+            <h1>The Cake</h1>
+        </header>
+
+        <nav class="home-nav">
+            <img src="img/ic_hamburguer.png" alt="">
+            <ul class="home-nav-links">
+                <li><a href="#" class="nav-link_on">HOME</a></li>
+                <li><a href="#">CAKES</a></li>
+                <li><a href="#">ORDERING</a></li>
+                <li><a href="#">LESSONS</a></li>
+                <li><a href="#">ABOUT</a></li>
+            </ul>
+        </nav>
+
+        <div class="home-welcome">
+            <section class="home-welcome-section1">
+                <h2>WELCOME</h2><span>
+                    <h2> TO THE BEST CAKES</h2>
+                    <H3>IN LONDON </H3>
+            </section>
+
+            <section class="home-welcome-section2">
+                <div>
+                    <img class="home-welcome-section2--img-tablet" src="img/ic_delivery_tablet.png"
+                        alt="Icon man delivering in a scooter">
+                    <img class="home-welcome-section2--img-phone" src="img/ic_delivery.png"
+                        alt="Icon man delivering in a scooter">
+                </div>
+                <div class="delivery">
+                    <p>Delivered to your door</p>
+                    <button>ORDER NOW</button>
+                </div>
+            </section>
+        </div>
+
+        <hero class="home-hero">
+            <img class="home-hero--img" src="img/hero_photo.png" alt="cupcake photo">
+        </hero>
+
+        <div class="products">
+            <div class="products-cards">
+                <div>
+
+                    <h2>Pick of The Day</h2>
+
+                    <div class="products-cards-items">
+                        <div><img src="img/prod_01.png" alt="chocolate cake"></div>
+                        <div><img src="img/prod_02.png" alt="mix fruit cake"></div>
+                        <div><img src="img/prod_03.png" alt="mint cupcake"></div>
+                        <div><img src="img/prod_04.png" alt="triple chocolate cake"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <footer class="home-footer">
+            © The Cake, since 2006 delivering flavor.
+        </footer>
+    </div>
+
 </body>
 
 </html>
