@@ -200,7 +200,7 @@ button{
 @media only screen and (min-width:540px)  {
     .home {
     justify-content: center;
-    grid-template-columns:repeat(7, 1fr);
+    grid-template-columns:repeat(6, 1fr);
     grid-template-areas:
 
     "h    h    h    h    h    h    h   h"
@@ -287,7 +287,7 @@ button{
 @media only screen and (min-width:768px)  {
     .home {
     justify-content: center;
-    grid-template-columns:repeat(7, 1fr);
+    grid-template-columns:repeat(6, 1fr);
     grid-template-areas:
 
     "h    h    h    h    h    h    h   h"
