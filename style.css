@@ -1,5 +1,11 @@
 /*  Add your styling here */
 
+:root {
+  --light-pink: rgb(247, 229, 239);
+  --light-orange: rgb(243, 239, 237);
+  ;
+}
+
 .grid-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -11,6 +17,7 @@ header {
   grid-column: 1 / -1;
   display: flex;
   justify-content: space-between;
+  background-color: var(--light-orange);
 }
 
 .company-logo-img {
@@ -42,6 +49,7 @@ background-color: #101010;
 main {
   grid-column: 1 / -1;
   padding: 15px;
+  background-color: var(--light-pink);
 }
 
 .welcome {
@@ -80,6 +88,10 @@ main {
 
 footer {
   grid-column: 1 / -1;
+  display:grid;
+  background-color: var(--light-orange);
+  padding-top: 10px;
+  align-content: center;
 }
 
 .social-icons {
@@ -123,6 +135,8 @@ footer {
     display: flex;
     justify-content: flex-end;
     margin-bottom: 2rem;
+    background-color: var(--light-orange);
+    padding-right: 10px;
   }
 
   .navigation-list {
@@ -134,9 +148,10 @@ footer {
   }
 
   .navigation-list li {
-  background-color: black;
+  background-color: var(--light-pink);
   padding: 0.2rem 1rem ;
-  color: white;
+  color: rgb(10, 10, 10);
+  font-weight: 600;
   }
 
   .products {
@@ -162,7 +177,7 @@ footer {
   }
 
   header {
-  grid-column: 2 / 12;
+  grid-column: 1 / -1;
 }
 
   main {
