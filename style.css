@@ -13,10 +13,11 @@ body {
   width: 100%;
   height: 240px;
   padding: 2rem;
-  background-image: url(img/mneckelogo.png);
+  /* background-image: url(img/mneckelogo.png);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: cover; */
+  background-color: #afc4c0;
   border: 2px solid black;
   grid-column: 1/-1;
   display: grid;
@@ -24,12 +25,13 @@ body {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
 }
-
+/* include cakelogo h1 and navbar */
 .menu-intro {
   grid-column: 3/-1;
   margin-left: 100px;
   /* grid-area: right;    */
 }
+
 .humburger {
   margin-left: 100px;
 }
@@ -43,14 +45,14 @@ body {
   line-height: 1.8;
   padding-left: 40px;
 }
-
+/* navigation */
 .dropright a {
-  float: left;
+  float: right;
   color: rgb(0, 0, 0);
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
-  grid-column: 3/-1;
+  grid-column: 11/-1;
 
 h2,
 h3,
@@ -63,7 +65,7 @@ p {
   line-height: 1.8;
 }
 
-.welcome {
+.mnecake {
   font-family: "Work Sans", sans-serif;
   font-size: 1rem;
   letter-spacing: 3px;
@@ -91,7 +93,6 @@ p {
   width: 100%;
   height: 500px;
   margin-bottom: 200px;
-
 }
 
 .image-grid {
@@ -105,6 +106,7 @@ p {
 .product-image {
   overflow: hidden;
 }
+
 .product-image img {
   width: 100%;
   height:200px;
