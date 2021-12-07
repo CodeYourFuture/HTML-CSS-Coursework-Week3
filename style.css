@@ -7,6 +7,7 @@
     "header header header header"
     "main main main main" 
     "footer footer footer footer";
+    
 }
 
 /* Header */
@@ -20,10 +21,10 @@
     padding:1px;
 }
 .logo_img{
-    width: 50%;
-    height: 50%;
+    width: 30%;
     border-radius:80%;
     object-fit: cover;
+    margin-left: 8px;
 
 }
 .hamburger_logo {
@@ -33,8 +34,8 @@
 .header p {
     font-family:system-ui;
     color:rebeccapurple;
-    font-size: 20px;
-    margin: 10px 20px 0 0 ;
+    font-size: 17px;
+    margin: 10px 20px 10px 0 ;
     text-align: right;
 
 } .nav_bar{
@@ -43,31 +44,34 @@
 /* main */
 .main {
     grid-area: main;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 .homepage_welcome{
     margin-bottom: 50px;
 } 
 h1{
-    font-size: 50px;
+    font-size: 40px;
     color:rebeccapurple;
     text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
 }
 .homepage_welcome p{
     font-size:22px;
+    text-align: justify;
 }
 .hero img{
-    width:100%; 
+    height: 100%;
 }
 .hero{
-    width: 100%;
-    margin-bottom: 50px;  
+    /* width: 100%; */
+    /* margin-bottom: 50px; */
 }
 
 .homepage_products{
     display: grid;
     grid-template-columns:repeat(2,1fr);
     grid-template-rows: 200px 200px;
-    grid-gap:30px;
+    grid-gap:21px;
     padding: 0 20px;
     margin-bottom: 150px; 
 } 
@@ -106,12 +110,14 @@ h1{
 /* TABLET VERSION*/
 @media screen and (min-width: 550px) {
   .homepage_header {
+      background-color: brown;
       margin-top: 50px 0;
       display: flex;
       justify-content: space-between;
 
     }
    .hamburger_logo {
+    display: none;
     width: 80px;
     height: 60px;
     text-align: right;
@@ -120,10 +126,27 @@ h1{
     font-size:30px;
    }
    .logo_img{
-    width: 50%;
-    height: 50%;
+    width: 25%;
     border-radius:70%;
     object-fit: cover;
+   }
+   .herolayout{
+       display: grid;
+       grid-template-areas: "hero homepage_welcome";
+       grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: 50vh;
+   }
+   .hero{
+       grid-area: hero;
+       /* height: 50vh; */
+   }
+
+   .hero img {
+       object-fit: contain;
+   }
+   .homepage_welcome{
+       grid-area: homepage_welcome;
+       
    }
 
    .homepage_products{
@@ -143,13 +166,11 @@ h1{
         grid-template-rows:auto
     }
     .homepage_welcome {
-        width:50%;
+       
         text-align: right;
         padding:0 30px;
     }
-    .hero {
-        width:50%;
-    }
+ 
     .homepage_welcome p{
         position: right;
         font-size:22px;
@@ -193,4 +214,4 @@ h1{
 }
 /* *{
         border: 1px solid red;
-      /* } */  
+       } */  
