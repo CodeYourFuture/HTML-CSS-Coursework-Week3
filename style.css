@@ -9,7 +9,7 @@ body {
 
 /*Overall Grid Layout*/
 .grid-container {
-  border: 1px solid black;
+  border: none;
   display: grid;
   /*height: 100vh;*/
   grid-gap: 1rem;
@@ -23,41 +23,6 @@ body {
     "products products products products"
     "footer footer footer footer";
 }
-
-/* navbar */
-nav {
-  background-color: none;
-}
-.navbar {
-  grid-area: navbar;
-  margin-left: 2rem;
-  margin-right: 2rem;
-  background-color: none;
-  overflow: hidden;
-}
-
-/* Style the links inside the navigation bar */
-.navbar a {
-  float: right;
-  color: darkgrey;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 2rem;
-}
-
-/* Change the color of links on hover */
-.navbar a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-/* Add a color to the active/current link */
-.navbar a.active {
-  background-color: darkslategrey;
-  color: white;
-}
-
 /* header */
 header {
   background-color: lightgray;
@@ -81,6 +46,50 @@ header {
   font-size: 2rem;
 }
 
+/* ham icon */
+.ham-icon-container {
+display: flex;
+flex-direction: flex-end;
+}
+.ham-icon {
+height: 25px;
+width: 25px;
+}
+
+/* navbar */
+nav {
+  background-color: none;
+}
+.navbar {
+  grid-area: navbar;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  background-color: none;
+  overflow: hidden;
+}
+
+/* Links inside the navigation bar */
+.navbar a {
+  float: right;
+  color: darkgrey;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+/* Color of links on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Color to the active/current link */
+.navbar a.active {
+  background-color: darkslategrey;
+  color: white;
+}
+
 /* welcome */
 .main-welcome {
   background-color: none;
@@ -97,6 +106,7 @@ h2 {
 
 /* hero */
 .main-hero {
+  display: flex;
   background-color: none;
   grid-area: hero;
   margin-left: 2rem;
@@ -131,7 +141,7 @@ h2 {
 }
 .img-product-1-1 {
   height: 180px;
-  width: 910px;
+  width: 915px;
   object-fit: cover;
   border-radius: 5px;
 }
@@ -142,7 +152,7 @@ h2 {
 }
 .img-product-1-2 {
   height: 180px;
-  width: 910px;
+  width: 915px;
   object-fit: cover;
   border-radius: 5px;
 }
@@ -153,7 +163,7 @@ h2 {
 }
 .img-product-2-1 {
   height: 180px;
-  width: 910px;
+  width: 915px;
   object-fit: cover;
   border-radius: 5px;
 }
@@ -164,7 +174,7 @@ h2 {
 }
 .img-product-2-2 {
   height: 180px;
-  width: 910px;
+  width: 915px;
   object-fit: cover;
   border-radius: 5px;
 }
@@ -217,4 +227,12 @@ h2 {
   color: gray;
   position: relative;
   padding: 1rem;
+}
+
+@media (min-width: 540px) {
+
+}
+
+@media (min-width: 900px) {
+
 }
