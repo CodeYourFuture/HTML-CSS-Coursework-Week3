@@ -1,100 +1,99 @@
 /*  Add your styling here */
 body {
   font-family: "Dancing Script", cursive;
+}
+* {
   margin: 0%;
   padding: 0%;
 }
 
 /*Overall Grid Layout*/
-.homepage-main {
+.grid-container {
   border: 1px solid black;
   display: grid;
+  /*height: 100vh;*/
   grid-gap: 1rem;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 225px 180px 180px 380px 180px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 225px 45px 180px 360px 360px 180px;
   grid-template-areas:
     "header header header header"
+    "navbar navbar navbar navbar"
     "welcome welcome welcome welcome"
-    "cake cake cake cake"
+    "hero hero hero hero"
     "products products products products"
     "footer footer footer footer";
 }
 
-/*Header Section*/
-.main-header {
-  background-color: coral;
-  grid-area: header;
-  display: flex;
-  position: absolute;
-  width: 1900px;
-  padding: 1rem;
+/* navbar */
+nav {
+background-color: coral;
 }
-.img-header {
-  /*background-image: url("img/ulysse-pointcheval-1WmlAiYgnoI-unsplash.jpg");*/
-  object-fit: cover;
-  /*background-repeat: no-repeat;*/
-  position: relative;
-  width: 100%;
-  height: 225px;
+.navbar {
+  grid-area: navbar;
 }
 
-/*Welcome Section*/
+/* header */
+header {
+ background-color: lightgray;
+ grid-area: header;
+ border: solid 5px black;
+}
+.main-header {
+}
+
+.img-header {
+  height: 180px;
+  width: 180px;
+  margin: 1rem;
+}
+  
+.hp {
+  position: relative;
+  text-align: center;
+  font-size: 2rem;
+}
+
+/* welcome */
 .main-welcome {
   background-color: darkSeaGreen;
   grid-area: welcome;
-  margin-left: 2rem;
-  margin-right: 2rem;
-  display: flex;
 }
-
-.welcome {
-  font-weight: bold;
-  font-size: 50px;
-  position: relative;
-  top: -50px;
-}
-
+ h2 {
+    font-size: 3rem;
+ }
 .welcome-text {
-  display: flex;
-  font-size: 25px;
-  position: relative;
-  top: -85px;
+font-size: 1.5rem;
 }
 
-/*Main Cake*/
-.main-cake {
+/* hero */
+.main-hero {
   background-color: rgb(188, 156, 143);
-  grid-area: cake;
-  margin-left: 2rem;
-  margin-right: 2rem;
+  grid-area: hero;
 }
 
-.img-cake {
-  background-image: url("img/katie-rosario-QNyRp21hb5I-unsplash.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  position: relative;
+.img-hero {
+  height: 360px;
   width: 1900px;
-  height: 180px;
+  object-fit: cover;
+
 }
 
-/*Selection Of Cakes*/
+/* products */
 .main-products {
-  /* background-color: darkTurquoise;*/
-  margin-left: 2rem;
-  margin-right: 2rem;
+  background-color: darkTurquoise;
   grid-area: products;
+  border: solid 2px black;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 180px 180px;
-  grid-gap: 1rem;
+  grid-gap: 10px 10px;
+  grid-column: span 4;
+}
+.product-images {
+   border: solid 1px black;
 }
 
-.product-image {
-  background-color: crimson;
-}
-
-/*Footer*/
+/* footer */
 .main-footer {
   background-color: rgb(202, 0, 209);
   grid-area: footer;
