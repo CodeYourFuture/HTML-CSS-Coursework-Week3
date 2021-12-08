@@ -8,7 +8,7 @@
     grid-template-areas:
     "hero       hero        hero        hero"
     "content    content     content     content"
-    "cake      cake         cake        cake"
+    "cake       cake        cake        cake"
     "flex       flex        flex        flex"  
     "footer     footer      footer      footer";
 }
@@ -45,10 +45,25 @@ IMPORTED FONTS FROM
     https://fonts.google.com/specimen/Fuzzy+Bubbles#standard-styles
 */
 
+:root{
+  --pink-colour: #fce0df;
+  --pink-colour:#fce0df;
+  --white-colour: #fff;
+  --white-colour-no2: #f9f9f9;
+  --verydark-shade-grey: #1a1a1a;
+  --verydark-shade-grey-no2: #333;
+  --brown-colour: #401408;
+  --blue-colour:#1f42c3;
+  --blue-colour-no2:#482ff7;
+  --blue-colour-no3:#475569;
+  --Orleans-Tune:#95d4e7;
+  --FourCakesDisplaySize: 30em; /* 480px */
+}
+
 @font-face {
     font-family: FuzzyBubbles;
     src: url("img/FuzzyBubbles-Regular.ttf") 
-    }
+}
 
 @font-face {
         font-family: myFirstFont;
@@ -59,12 +74,12 @@ IMPORTED FONTS FROM
 
 .hero-box {
     width: 100%;
-    background-color: #fce0df;    
+    background-color: var(--pink-colour);    
     grid-area: hero;
- }
+    padding-bottom:2em; /* Make space to overlay the menu */
+}
   
-.hero-flexbox
-  {
+.hero-flexbox {
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -76,71 +91,142 @@ The Logo for Asterisk Et Obelix Cakes
   
 .AsterixetObelix {
   width:9.375em; /* 150px; THUMBNAIL SIZE */
-  object-fit: contain;
-  padding-top:1em;
+  max-width: 100%;
+  /* object-fit: contain; */
+  /* padding-top:1em; */
+}
+
+
+/* Push the text to the right */
+.mobile-heading {
+  padding-left:3.5em;
+  display:flex;
+  justify-content: space-inbetween;
+}
+
+.hamnav label {
+    margin-left:13em;
+}
+
+/* 
+For the hamburger menu button I have chosen to use the functionality found at https://code-boxx.com/simple-responsive-pure-css-hamburger-menu/
+I Changed IDs to Classes
+*/
+
+/* [ON BIG SCREENS] */
+/* (A) WRAPPER */
+.hamnav {
+  width: 100%;
+  background: var(--pink-colour);
+  font-size:1.2rem; /* the hamburger menu icon */
+}
+
+/* (B) HORIZONTAL MENU ITEMS */
+.hamitems { display: flex; }
+.hamitems a {
+  flex-grow: 1;
+  flex-basis: 0;
+  padding: 10px;
+  color: brown;
+  text-decoration: none;
+  text-align: center;
+}
+
+.hamitems a:hover { background: var(--brown-colour); }
+
+/* (C) HIDE HAMBURGER */
+.hamnav label, #hamburger { display: none; }
+
+/* [ON SMALL SCREENS] */
+  /* (A) BREAK INTO VERTICAL MENU */
+.hamitems a {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    border-top: 1px solid var(--verydark-shade-grey-no2);
+}
+
+  /* (B) SHOW HAMBURGER ICON */
+.hamnav label {
+    display: inline-block;
+    color: brown;
+    background: var(--pink-colour);
+    font-style: normal;
+    font-size: 1.2rem;
+    padding: 10px;
+}
+
+  /* (C) TOGGLE SHOW/HIDE MENU */
+.hamitems { display: none; }
+/* Modified code in order to overlay the menu as oppose to pushing items down */
+.hamnav input:checked ~ .hamitems {
+        z-index:100; 
+        position:absolute;  
+        left:40%;
+        top:0; 
+        display: block;
+        background: var(--pink-colour);
+}
+
+
+/**** CSS CODE FOR HAMBURGER MENU ENDS ****/
+
+.menu-quote-container {
+  padding-bottom:1em;
 }
 
 .menu-header {
   display:none;
 }
 
-.tablet-prompt{
+.mobile-prompt {
+  display:block;
+}
+
+.tablet-prompt {
   display:none;
 }
 
-.desktop-prompt{
-  display:none;
-}
-
-
-/* Two ways of displaying the heading depending on the screen size */
-/* If screen size is 480px wide, or less: */
-@media screen and (max-width:480px) {
-
-
-      .mainheading {
-          font-size:140%;
-          line-height: 1.3em;
-          text-align: center;
-          padding-right:1.2em;
-      }
-
-      .thequote {
-        padding-left:1.7em;
-        text-align: justify;
-      } 
-
-  
-}
-
-/* Otherwise: */
-@media screen and (min-width: 481px) {
-
-      .mainheading{
-          font-size:400%;
-          text-align:right;
-          margin-left:12em;
-          padding-top:1em;
-        }
-
-     .thequote {
-          font-size:300%;
-          text-align:right;
-          line-height: 0.5;
-          padding-left:1.7em;
-          margin-bottom:2em;
-     }
-
+.logo1 {
+  width:10%;
 }
 
 .content-box {
-    font-family: 'FuzzyBubbles';
-    background-color: #1f42c3;
+  text-align: justify;
+  font-size: 1.2rem; /* 120%; 19.2px */
+}
+
+.content-box p span, .mainheading p span, .thequote p span {
+    white-space: pre-wrap;
+    display: block;
+  
+  }
+  
+  .content-box p span::after, .mainheading p span:after, .thequote p span:after {
+    content: '\a';
+    white-space: pre;
+  }
+
+.mainheading {
+  font-family: 'Courier New', monospace;
+  font-weight:bold;
+  text-align: center;
+  margin:0;
+  padding-left: 1.2em;
+  padding-bottom:1em;
+}
+
+.thequote {
+  text-align: right;
+} 
+
+.content-box {
+    /* font-family: 'FuzzyBubbles'; */
+    background-color: var(--blue-colour);
     color:  white;
     text-align: justify;
     padding:1em;
     grid-area: content;
-
 }
 
 .cake-box {
@@ -161,7 +247,8 @@ THE ACTUAL SIZE OF THE IMAGE IS 433 x 398.75px
 
 /* SOURCES OF IMAGES: https://www.dreamstime.com/ */
 .FourCakes-FlexBox {
-    width: 30em; /* NOTE: Have to use the value 480px (30em) for everything to work. Haven't been able to figure out why. 100% will not work! */
+    width: 100%;
+    min-width:var(--FourCakesDisplaySize); /* NOTE: Had to use the value 480px (30em) for everything to work properly. */
     grid-area: flex;
 }
 
@@ -201,18 +288,19 @@ THE ACTUAL SIZE OF THE IMAGE IS 433 x 398.75px
    /* Use imported text */
    font-family: 'FuzzyBubbles';
    text-align: justify;   
-  }
+}
   
   /* (D) SHOW/HIDE */
-  .hovercap {
+.hovercap {
     visibility: none;
     opacity: 0;
     transition: opacity 0.3s; 
-  }
-  .hoverwrap:hover .hovercap {
+}
+
+.hoverwrap:hover .hovercap {
     visibility: visible;
     opacity: 1;
-  }
+}
 
   /**** CSS CODE - METHOD 1 ENDS ****/
 
@@ -221,80 +309,18 @@ THE ACTUAL SIZE OF THE IMAGE IS 433 x 398.75px
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-  }
+}
   
 .ColumnFlexBox {
     display: flex;
 
     flex-direction: column;
-  }
-
-/* 
-For the hamburger menu button I have chosen to use the functionality found at https://code-boxx.com/simple-responsive-pure-css-hamburger-menu/
-I Changed IDs to Classes
-*/
-
-/* [ON BIG SCREENS] */
-/* (A) WRAPPER */
-.hamnav {
-    width: 100%;
-    background: #fce0df;
-    font-size:110%; /* Make the hamburger icon bigger */
- }
-  
-  /* (B) HORIZONTAL MENU ITEMS */
- .hamitems { display: flex; }
- .hamitems a {
-    flex-grow: 1;
-    flex-basis: 0;
-    padding: 10px;
-    color: brown;
-    text-decoration: none;
-    text-align: center;
- }
- 
- .hamitems a:hover { background: #401408; }
-  
-  /* (C) HIDE HAMBURGER */
- .hamnav label, #hamburger { display: none; }
-  
-  /* [ON SMALL SCREENS] */
-    /* (A) BREAK INTO VERTICAL MENU */
-.hamitems a {
-      box-sizing: border-box;
-      display: block;
-      width: 100%;
-      border-top: 1px solid #333;
-}
-  
-    /* (B) SHOW HAMBURGER ICON */
-.hamnav label {
-      display: inline-block;
-      color: brown;
-      background: #fce0df;
-      font-style: normal;
-      font-size: 1.2em;
-      padding: 10px;
-}
-  
-    /* (C) TOGGLE SHOW/HIDE MENU */
-.hamitems { display: none; }
-.hamnav input:checked ~ .hamitems { display: block; }
-
-.menugap {
-    padding-right:16em;
-}  
-
-/**** CSS CODE FOR HAMBURGER MENU ENDS ****/
-
-.menu-quote-container {
-    padding-bottom:1em;
 }
 
 
 
 .FooterContainer {
-    background-color: #1f42c3;
+    background-color: var(--blue-colour);
     grid-area: footer;
     max-width: 480px;
 }
@@ -316,33 +342,32 @@ Buttons used for the Footer
     width:26%;
     border: 2px solid black;
     border-radius: 5px;
-    background-color: #95d4e7;
+    background-color: var(--Orleans-Tune);
     color: black;
     padding: 0px 0px;
-    font-size: 16px;
+    font-size: 1rem; /* 16px; */
     cursor: pointer;
     text-align: center;
-  }
+}
 
 .footer-button:hover {
     background: skyblue;
 }
 
-  .copyright {
-      padding-top:1rem;
-      margin-bottom:1rem;
-      font-size:14px;
-      color: mistyrose;
-      text-align:center;
-  }
+.copyright {
+    padding-top:1rem;
+    margin-bottom:1rem;
+    font-size: 0.875rem; /* 14px; */
+    color: mistyrose;
+    text-align:center;
+}
 
 
 /* THE GRIDS AND MEDIA QUERIES START HERE */
 
 .homepage-container {
-    width: 320px;
+    min-width: 20em; /* 320px; */
     grid-template-columns: repeat(4, 1fr);
-    /* grid-template-rows: 360px 180px 400px 470px 150px; */
     grid-template-rows: auto;
     display: grid;
     grid-template-areas:
@@ -357,7 +382,7 @@ Buttons used for the Footer
 
 
 /* TABLET: */
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 769px) {
 
    /*  
     We only define rules which are DIFFERENT from the mobile version defined above. 
@@ -366,9 +391,7 @@ Buttons used for the Footer
           .homepage-container {
             margin:3em;
             width:100%; /* Use the full screen */
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-
+ 
             grid-template-areas:
             "hero       hero        hero        hero"
             "menu       menu        menu        menu"
@@ -391,19 +414,31 @@ Buttons used for the Footer
     */
 
           .AsterixetObelix {
-              width:30em; /* Increase taking advantage of more space */
+              width:50%; /* Increase taking advantage of more space */
+              max-width:unset;
               margin-top:2em;
           }
 
+/* Change the way that the heading is displayed when the the screen size is above 768px*/
+
+          .mainheading {
+            font-size:3.5em;
+            text-align:center;
+            padding-top:1em;
+            padding-bottom:2em;
+          }
+
           .thequote {
-            font-size:300%;
+            font-size:4rem;
             text-align:right;
-            line-height: 0.5;
+            line-height: 1;
+            padding-left:1em;
             margin-bottom:2em;
           } 
 
-          .mobile-heading{
-            padding-right:4em;
+          .mobile-heading {
+            padding-right:1em;
+            display:flex;
           }
 
           .hamnav {
@@ -411,15 +446,15 @@ Buttons used for the Footer
           }  
 
 
-          .menu-header{
+          .menu-header {
             display:block;
             grid-area: menu;
             margin-top:5em;
             margin-bottom:2em;
-        }
+          }
     
           .navigation-bar {
-              margin-left:36em;
+              margin-left:16em;
           }
 
           .navigation-bar ul {
@@ -428,7 +463,7 @@ Buttons used for the Footer
               padding: 0;
               overflow: hidden;
               background-color: royalblue;
-            }
+          }
       
           .navigation-bar li {
               float: left;
@@ -444,7 +479,7 @@ Buttons used for the Footer
       
           .navigation-bar li a:hover {
               background-color: skyblue;
-            }
+          }
         
           .navigation-bar {
               display: flex;
@@ -466,32 +501,28 @@ Buttons used for the Footer
           .navigation-link{
               font-size: 1.6rem;
               font-weight: 400;
-              color: #475569;
+              color: var(--blue-colour-no3);
           }
           
-          .navigation-link:hover{
-              color: #482ff7;
+          .navigation-link:hover {
+              color: var(--blue-colour-no2);
           }
 
-          .mobile-prompt{
+          .mobile-prompt {
             display:none;
           }
 
-          .desktop-prompt{
-            display:none;
-          }
-
-          .tablet-prompt{
-            padding-top:4em;
+          .tablet-prompt {
             display:block;
           }
         
-          .content-box{
+          .content-box {
             background-color: transparent; /* NOTE: 'none' is not an option */
             color:black;
-            font-size:200%;
+            font-size:2rem;
             margin-right:2em;
             margin-bottom:6em;
+            padding-top:4em;
           }
 
           .cake-box {
@@ -506,32 +537,31 @@ Buttons used for the Footer
             grid-area: flex;
           }
 
-          .display-a-cake{
+          .display-a-cake {
             margin-top:2em;
             padding-top:2em;
           }
 
           .ColumnFlexBox {
             display: flex;
-            flex-direction: row; /* Despite the name, when non-mobile change the direction from column to row */
+            flex-direction: row; /* Despite the name when non-mobile, change the direction from column to row */
             gap:10em;
           }
 
-          .RowFlexBox{
+          .RowFlexBox {
             gap:10em;
           }
 
-          .hoverwrap{
-            max-width: 1001%; /* 100% Needed to align and display all four cake images */
+          .hoverwrap {
+            max-width: 100%; /* 100% Needed to align and display all four cake images */
             position: relative;
           }
 
-          .hovercap{
+          .hovercap {
             bottom:6em; /* For non-mobile, raise up the hover text */
           }
 
           .ButtonsContainer {
-              /* margin:1em 0 1em 1em; */
               display: flex;
               flex-direction: row; /* non-mobile: change from column to row */
               align-items:stretch;
@@ -551,53 +581,31 @@ Buttons used for the Footer
 }
 
  /* DESKTOP */
-@media screen and (min-width: 769px) {
-    .homepage-container {
-      margin:3em;
-      width:100%; /* Use the full screen */
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      grid-template-areas:
-        ".  hero    hero      ."
-        ".  menu    menu      ."
-        ".  cake    content   ."
-        ".  flex    flex      ." 
-        ".  footer  footer    .";
-    } 
+@media screen and (min-width: 1025px) {
+          .homepage-container {
+            grid-template-areas:
+              ".  hero    hero      ."
+              ".  menu    menu      ."
+              ".  cake    content   ."
+              ".  flex    flex      ." 
+              ".  footer  footer    .";
+          } 
 
-    .navigation-bar {
-      margin-left:21em;
-      }
-
-    .mobile-prompt{
-        display:none;
-    }
-
-    .tablet-prompt{
-        display:none;
-    }
-
-    .desktop-prompt{
-      padding-top:2em;
-      display:block;
-    }
+          .navigation-bar {
+            margin-left:21em;
+            }
 }
 
 
 /*
     TWO DIFFERENT WAYS OF SHOWING HOVER TEXT ARE USED
-    HOVER METHOD 2 - TAKEN FROM https://code-boxx.com/text-over-image-hover-html-css/ 
+    HOVER METHOD 2 - TAKEN FROM https://codepen.io/ArnaudBalland/pen/vGZKLr
     This method is used to display the hover text pertaining to the large cake image
-*/
-/*
-CSS Code to show hover text over images
-Taken from 
-https://codepen.io/ArnaudBalland/pen/vGZKLr 
 */
 
 @import url(https://fonts.googleapis.com/css?family=Raleway);
 
-*, *:before, *:after{
+*, *:before, *:after {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
@@ -605,30 +613,30 @@ https://codepen.io/ArnaudBalland/pen/vGZKLr
   box-sizing: border-box;
 }
 
-.hover-container{
-  background: #f9f9f9;
-  font-size: 16px;
+.hover-container {
+  background: var(--white-colour-no2);
+  font-size: 1rem; /* 16px; */
   font-family: 'Raleway', sans-serif;
   padding: 1em 0;
   float: left;
   width: 50%;
 }
 
-@media screen and (max-width: 640px){
+@media screen and (max-width: 640px) {
   .hover-container{
     display: block;
     width: 100%;
   }
 }
 
-@media screen and (min-width: 900px){
+@media screen and (min-width: 900px) {
   .hover-container{
     width: 33.33333%;
   }
 }
 
-.hover-container .hover-title{
-  color: #1a1a1a;
+.hover-container .hover-title {
+  color: var(--verydark-shade-grey);
   text-align: center;
   margin-bottom: 10px;
 }
@@ -660,8 +668,8 @@ https://codepen.io/ArnaudBalland/pen/vGZKLr
   opacity: 1;
 }
 
-.hover-content-image{
-  width: 100%;
+.hover-content-image {
+  width: 100%; 
 }
 
 .hover-content-details {
@@ -685,43 +693,39 @@ https://codepen.io/ArnaudBalland/pen/vGZKLr
   text-align: justify;  
 }
 
-.hover-content:hover .hover-content-details{
+.hover-content:hover .hover-content-details {
   top: 50%;
   left: 50%;
   opacity: 1;
 }
 
-.hover-content-details h3{
-  color: #fff;
+.hover-content-details h3 {
+  color: var(--white-colour);
   font-weight: 500;
   letter-spacing: 0.15em;
   margin-bottom: 0.5em;
   text-transform: uppercase;
 }
 
-.hover-content-details p{
-  color: #fff;
-  font-size: 0.8em;
+.hover-content-details p {
+  color: var(--white-colour);
+  font-size: 0.8rem;
 }
 
-.fadeIn-bottom{
+.fadeIn-bottom {
   top: 80%;
 }
 
-.fadeIn-top{
+.fadeIn-top {
   top: 20%;
 }
 
-.fadeIn-left{
+.fadeIn-left {
   left: 20%;
 }
 
-.fadeIn-right{
+.fadeIn-right {
   left: 80%;
 }
 
   /**** CSS CODE - METHOD 2 ENDS ****/
-
-
-
-

@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Responsive Cake webpage</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style3.css" />
 </head>
 
 <body>
-    <section class="homepage-container">
+    <main class="homepage-container">
         <section class="hero-box">
                 <section class="hero-flexbox">
                     <img src="img/AsterixetObelix.jpg"  class="AsterixetObelix" alt="Obelix holding cakes with Asterix standing next to him">
@@ -21,56 +21,66 @@
 For the hamburger menu button I have chosen to use the functionality found at https://code-boxx.com/simple-responsive-pure-css-hamburger-menu/
 -->
 
-                    <!--
-                        <figure>
-                            <img
-                                src="img/menu-hamburger.svg"
-                                alt="Menu Button"
-                        </figure>
-                    --> 
-
-                        <section>
+                        <header>
                         <!-- (A) MENU WRAPPER -->
                             <nav class="hamnav">
                         
                                 <!-- (B) THE HAMBURGER -->
     
                                 <!-- &#9776; is the HTML symbol for the “3 lines hamburger icon” -->
-                                    <span class="menugap"></span> <!-- Push the icon at the far right-->
                                     <label for="hamburger">&#9776;</label>
                                     <input type="checkbox" id="hamburger"/>
 
                                 <!-- (C) MENU ITEMS -->
                                 <div class="hamitems">
-                                    <a href="#">HOME</a>
-                                    <a href="#">CAKES</a>
-                                    <a href="#">ORDERING</a>
-                                    <a href="#">LESSONS</a>
-                                    <a href="#">ABOUT US</a>
+                                    <ul>
+                                        <li>
+                                            <a href="#">HOME</a>
+                                        </li>
+                                        
+                                        <li>
+                                            <a href="#">CAKES</a>
+                                        </li>
+                                        
+                                        <li>
+                                            <a href="#">ORDERING</a>
+                                        </li>
+                                        
+                                        <li>
+                                             <a href="#">LESSONS</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="#">ABOUT US</a>
+                                        </li>
+                                    </ul>
                                 </div>
                             </nav>    
-                        </section>   
+                        </header>   
 
-                        <section class="mobile-heading">
-                             <h1 class="mainheading"><em>ASTERISK ET OBELIX<br/>CAKES!</em></h1>
-                            <br/>
-                            <div class="thequote">
-                                <p><em>We Just Do Great Cakes!<br/><br/>The best cakes in town delivered to your door</em></p>
-                            </div>
-                        </section>
 
-                        <!-- <section class="desktop-heading">
-                            <h1 class="mainheading2">ASTERISK ET OBELIX<br/>CAKES!</h1>
-                           <br/>
-                           <div class="thequote2">
-                               <p><em>We Just Do Great Cakes!<br/><br/>The best cakes in town delivered to your door</em></p>
+                        <header class="mobile-heading">
+                            <div class="mainheading">
+                                <p>
+                                    <span><em>ASTERISK ET OBELIX</em></span>
+                                    <span><em>CAKES!</em></span>
+                               </p>
                            </div>
-                        </section> -->
+                           <div class="thequote">
+                               <p><em>
+                                   <span>We Just Do Great Cakes!</span>
+                                   <span></span>
+                                   <span></span>The best cakes in town</span>
+                                   <span>delivered to your door</span>
+                               </em></p>
+                           </div>
+                       </header>
+
 
                     </section>
                 </section>  
                 
-                <section class="menu-header">
+                <header class="menu-header">
                     <nav class="navigation-bar">
                         <ul>
                             <li class="navigation-item">
@@ -90,40 +100,27 @@ For the hamburger menu button I have chosen to use the functionality found at ht
                           </li>
                         </ul>
                     </nav>
-                </section>                    
+                </header>                    
         </section>
 
         <section class="content-box">
-                <p class="mobile-prompt">
-                    We make all types of same-day cakes from Cupcakes,
-                    </br>Celebration Cakes, Birthday Cakes, Chocolate cakes,
-                    </br>Novelty cakes, Bespoke cakes and even same-day Wedding Cakes.
-                    <br/><br/>If you can dream of it we can make it.<br/><br/>
+                <p>
+                    <span>We make all types of same-day cakes</span>
+                    <span>from Cupcakes, Celebration Cakes,</span>
+                    <span>Birthday Cakes, Chocolate cakes, Novelty cakes,</span>
+                    <span>Bespoke cakes and even same-day Wedding Cakes.</span>
+                    <span></span>
+                </p>
 
+                <p class="mobile-prompt">
                      <!-- &#8595; is the symbol for a down-pointing arrow-->
                     &#8595;Hover over the images below for more information&#8595;
                 </p>
                 
                 <p class="tablet-prompt">
-                    We make all types of same-day cakes from
-                    </br> Cupcakes, Celebration Cakes, Birthday Cakes,
-                    </br> Chocolate cakes, Novelty cakes, Bespoke cakes and even same-day Wedding Cakes.
-                    <br/><br/>If you can dream of it we can make it.<br/><br/>
-                    
                     Hover over the image to the left and the images below for more information
                 </p>
-
-                <p class="desktop-prompt">
-                    We make all types of same-day cakes
-                    </br> from Cupcakes, Celebration Cakes,
-                    </br> Birthday Cakes, Chocolate cakes, Novelty cakes, Bespoke cakes
-                    </br> and even same-day Wedding Cakes.
-                    <br/><br/>If you can dream of it we can make it.<br/><br/>
-                    
-                    Hover over the image to the left and the images below for more information
-                </p>
-
-            </section>
+        </section>
 
         <!-- NOTE: In order for this to work properly, the hierarchy and placement of these classes matters!! -->
         <section class="cake-box">
@@ -136,13 +133,13 @@ For the hamburger menu button I have chosen to use the functionality found at ht
                             <h3 class="hover-content-title">Cakes</h3>
                             <p>From Chocolate Cakes, to Fruity Cakes, to cheesecakes and so many more, there is a cake for any celebration and occasion.
                                 Why not personalise a special birthday message on your chosen cake to make the celebration extra special.
-                               ASTERISK ET OBELIX online cake range from classic cakes to the more showstopping cakes,
+                                ASTERISK ET OBELIX online cake range from classic cakes to the more showstopping cakes,
                                 there really is something for everyone.
                             </p>
                         </div>
                 </section>
         </section>
-
+       
         <section class="FourCakes-FlexBox ">
 
                 <section class="ColumnFlexBox">
@@ -153,7 +150,7 @@ For the hamburger menu button I have chosen to use the functionality found at ht
                                 <img id="close" src="img/cheesecakeHW3.jpg" class="display-a-cake" alt="A Cheese Cake">
                                 <!-- THE HOVER TEXT: -->
                                 <div class="hovercap">Our collection includes cakes that also make for delectable desserts, such as our elegant,
-                                                   creamy Strawberry Summer Cheesecake and Apricot Cheesecake
+                                                       creamy Strawberry Summer Cheesecake and Apricot Cheesecake
                                 </div>
                         </figure>
 
@@ -172,7 +169,7 @@ For the hamburger menu button I have chosen to use the functionality found at ht
                             <!-- THE HOVER TEXT: -->
                             <div class="hovercap">We can help you deliver cakes all over London within the scheduled delivery time.
                                                   You can avail the same day and next day delivery services.
-                                                   For making any celebration truly special, we are always available with your desired cake on time
+                                                  For making any celebration truly special, we are always available with your desired cake on time
                                                    to offer you our unique taste.</div>
                         </figure>
 
@@ -192,7 +189,7 @@ For the hamburger menu button I have chosen to use the functionality found at ht
 
         </section>      
 
-        <section class="FooterContainer">
+        <footer class="FooterContainer">
                     <section class="ButtonsContainer">
                         <p class="footer-button">ORDER NOW</p>
                         <p class="footer-button">FAQ</p>
@@ -202,15 +199,11 @@ For the hamburger menu button I have chosen to use the functionality found at ht
                     <section class="copyright">
                         <p>ASTERISK ET OBELIX CAKES &copy; 2021</p>
                     </section>
-        </section>
+        </footer>
 
-    </section>
+    </main>
    
 </body>
 
 
 </html>
-
-
-
-
