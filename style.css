@@ -5,9 +5,14 @@
 
 header{
     background-color: lightcoral;
-    display: flex;
-    grid-column:1/-1
+    grid-column: 1/-1;
+    grid-auto-rows: minmax(100px, auto);
+    grid-gap: 3px;
 }
+header img {
+    width: 100px;
+}
+
 header h1{text-align: center;
 margin-top: 100px;
 margin-left: 100px;}
@@ -19,9 +24,9 @@ main{
 .product-varieties{
     display: grid;
     background-color: magenta;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 100px 100px;
-    grid-gap: 3px:
+    grid-template-columns: 1fr;
+    grid-auto-rows: minmax(100px, auto);
+    grid-gap: 3px;
 }
 .cake-type{
 
@@ -46,9 +51,14 @@ main{
     font-style: italic;
 }
 @media screen and (min-width:768px){
-
+    .product-varieties{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 100px 100px;
+    }
+    header{
+        display: flex;
+    }
 }
-
 
 footer{
     display:flex;
@@ -58,5 +68,3 @@ footer{
     justify-content: center;
     
 }
-
-
