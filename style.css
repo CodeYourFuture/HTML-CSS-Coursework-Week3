@@ -61,6 +61,8 @@ h1{
 }
 .hero img{
     height: 100%;
+    width: 100%;
+    margin-bottom: 15px;
 }
 .hero{
     /* width: 100%; */
@@ -105,12 +107,17 @@ h1{
 
 }
 .copy_right{
+    background-color: gray;
+    margin-left: 60px;
+    margin-right: 60px;
     text-align: center;
 }
 /* TABLET VERSION*/
 @media screen and (min-width: 550px) {
+  .header{
+    background-color:darkkhaki;
+    }
   .homepage_header {
-      background-color: brown;
       margin-top: 50px 0;
       display: flex;
       justify-content: space-between;
@@ -160,6 +167,9 @@ h1{
 }
 
 @media screen and (min-width:900px) {
+    .header{
+      background-color: rgb(243, 242, 152);
+    }
     .homepage_products{
         display: grid;
         grid-template-columns:repeat(4,1fr);
