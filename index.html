@@ -6,11 +6,204 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Responsive Cake webpage</title>
-    <!-- Add a link to your css file here -->
+    <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-    <!-- Add your markup here -->
+    <main class="homepage-container">
+        <section class="hero-box">
+                <section class="hero-flexbox">
+                    <img src="img/AsterixetObelix.jpg"  class="AsterixetObelix" alt="Obelix holding cakes with Asterix standing next to him">
+
+                    <section class="menu-quote-container">
+
+<!-- 
+For the hamburger menu button I have chosen to use the functionality found at https://code-boxx.com/simple-responsive-pure-css-hamburger-menu/
+-->
+
+                        <header>
+                        <!-- (A) MENU WRAPPER -->
+                            <nav class="hamnav">
+                        
+                                <!-- (B) THE HAMBURGER -->
+    
+                                <!-- &#9776; is the HTML symbol for the “3 lines hamburger icon” -->
+                                    <label for="hamburger">&#9776;</label>
+                                    <input type="checkbox" id="hamburger"/>
+
+                                <!-- (C) MENU ITEMS -->
+                                <div class="hamitems">
+                                    <ul>
+                                        <li>
+                                            <a href="#">HOME</a>
+                                        </li>
+                                        
+                                        <li>
+                                            <a href="#">CAKES</a>
+                                        </li>
+                                        
+                                        <li>
+                                            <a href="#">ORDERING</a>
+                                        </li>
+                                        
+                                        <li>
+                                             <a href="#">LESSONS</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="#">ABOUT US</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </nav>    
+                        </header>   
+
+
+                        <header class="mobile-heading">
+                            <div class="mainheading">
+                                <p>
+                                    <span><em>ASTERISK ET OBELIX</em></span>
+                                    <span><em>CAKES!</em></span>
+                               </p>
+                           </div>
+                           <div class="thequote">
+                               <p><em>
+                                   <span>We Just Do Great Cakes!</span>
+                                   <span></span>
+                                   <span></span>The best cakes in town</span>
+                                   <span>delivered to your door</span>
+                               </em></p>
+                           </div>
+                       </header>
+
+
+                    </section>
+                </section>  
+                
+                <header class="menu-header">
+                    <nav class="navigation-bar">
+                        <ul>
+                            <li class="navigation-item">
+                                    <a class="navigation-link" href="#">HOME</a>
+                            </li>
+                            <li class="navigation-item">
+                                <a class="navigation-link" href="#">CAKES</a>
+                            </li>
+                            <li class="navigation-item">
+                                <a class="navigation-link" href="#">ORDERING</a>
+                            </li>
+                            <li class="navigation-item">
+                                <a class="navigation-link" href="#">LESSONS</a>
+                            </li>
+                            <li class="navigation-item">
+                                <a class="navigation-link" href="#">ABOUT US</a>
+                          </li>
+                        </ul>
+                    </nav>
+                </header>                    
+        </section>
+
+        <section class="content-box">
+                <p>
+                    <span>We make all types of same-day cakes</span>
+                    <span>from Cupcakes, Celebration Cakes,</span>
+                    <span>Birthday Cakes, Chocolate cakes, Novelty cakes,</span>
+                    <span>Bespoke cakes and even same-day Wedding Cakes.</span>
+                    <span></span>
+                </p>
+
+                <p class="mobile-prompt">
+                     <!-- &#8595; is the symbol for a down-pointing arrow-->
+                    &#8595;Hover over the images below for more information&#8595;
+                </p>
+                
+                <p class="tablet-prompt">
+                    Hover over the image to the left and the images below for more information
+                </p>
+        </section>
+
+        <!-- NOTE: In order for this to work properly, the hierarchy and placement of these classes matters!! -->
+        <section class="cake-box">
+
+                <section class="hover-content"> 
+                        <div class="hover-content-overlay"></div>
+                        <img src="img/cake-cherriesHW3.jpg" class="maincake" class="hover-content-image" alt="A cake topped with cherries">
+                
+                        <div class="hover-content-details fadeIn-bottom">
+                            <h3 class="hover-content-title">Cakes</h3>
+                            <p>From Chocolate Cakes, to Fruity Cakes, to cheesecakes and so many more, there is a cake for any celebration and occasion.
+                                Why not personalise a special birthday message on your chosen cake to make the celebration extra special.
+                                ASTERISK ET OBELIX online cake range from classic cakes to the more showstopping cakes,
+                                there really is something for everyone.
+                            </p>
+                        </div>
+                </section>
+        </section>
+       
+        <section class="FourCakes-FlexBox ">
+
+                <section class="ColumnFlexBox">
+
+                    <section class="RowFlexBox">
+
+                         <figure class="hoverwrap">
+                                <img id="close" src="img/cheesecakeHW3.jpg" class="display-a-cake" alt="A Cheese Cake">
+                                <!-- THE HOVER TEXT: -->
+                                <div class="hovercap">Our collection includes cakes that also make for delectable desserts, such as our elegant,
+                                                       creamy Strawberry Summer Cheesecake and Apricot Cheesecake
+                                </div>
+                        </figure>
+
+                        <figure class="hoverwrap">
+                            <img src="img/chocolate-cakeHW3.png" class="display-a-cake" alt="A Chocolate Cake">
+                            <!-- THE HOVER TEXT: -->
+                            <div class="hovercap">We are a little health-conscious and like to make sure our cakes are irresistibly delicious
+                                                   without using too much fat and sugar "just as much as needed to make something delicious". 
+                            </div>
+                        </figure>   
+                    </section>
+
+                    <section class="RowFlexBox">
+                         <figure class="hoverwrap">
+                            <img src="img/donutHW3.jpg" class="display-a-cake" alt="A Donut">
+                            <!-- THE HOVER TEXT: -->
+                            <div class="hovercap">We can help you deliver cakes all over London within the scheduled delivery time.
+                                                  You can avail the same day and next day delivery services.
+                                                  For making any celebration truly special, we are always available with your desired cake on time
+                                                   to offer you our unique taste.</div>
+                        </figure>
+
+                        <figure class="hoverwrap">    
+                            <img src="img/happy-birthday-cakeHW3.png" class="display-a-cake" alt="A Birthday Cake with the words HAPPY BIRTHDAY">
+                            <!-- THE HOVER TEXT: -->
+                            <div class="hovercap">So, whether you're looking for an extra special birthday cake,
+                                                   a cheesecake to top off a dinner party
+                                                   or simply fancy some office treats,
+                                                   we're ready to whisk, pipe and sprinkle some 
+                                                   happiness into your day.
+                                </div>
+                        </figure>
+                   </section>
+                
+                </section>
+
+        </section>      
+
+        <footer class="FooterContainer">
+                    <section class="ButtonsContainer">
+                        <p class="footer-button">ORDER NOW</p>
+                        <p class="footer-button">FAQ</p>
+                        <p class="footer-button">CONTACT US</p>
+                    </section>
+                    
+                    <section class="copyright">
+                        <p>ASTERISK ET OBELIX CAKES &copy; 2021</p>
+                    </section>
+        </footer>
+
+    </main>
+   
 </body>
+
 
 </html>
