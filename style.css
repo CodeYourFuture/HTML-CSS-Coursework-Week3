@@ -12,8 +12,7 @@ body,
 a,
 ul,
 li,
-p,
-h3 {
+p {
   padding: 0;
   margin: 0;
   text-decoration: none;
@@ -86,7 +85,7 @@ h1 {
   font-family: Questrial-Regular;
 }
 
-.h3header {
+.h1header {
   margin: auto auto 0 12em;
   text-align: right;
   padding-right: 1em;
@@ -96,11 +95,6 @@ h1 {
 .cake {
   text-align: justify;
   margin: 20px 10px 10px 0px;
-}
-
-p {
-  text-align: left;
-  margin-top: 40px;
 }
 
 .homepage-feature {
@@ -145,10 +139,10 @@ svg {
   margin: 1.5em 0 0 0;
 }
 
-h4 {
-  font-size: larger;
-  margin-left: 2em;
-  margin-top: 0;
+.p-logo {
+  margin: -50px;
+  padding-left: 110px;
+  font-weight: bold;
 }
 
 .image {
@@ -156,21 +150,11 @@ h4 {
   padding-left: 1em;
 }
 
-.tablet,
-.desktop {
-  display: none;
-}
-
 .social {
   display: flex;
   flex-direction: column;
   align-content: center;
   justify-content: center;
-}
-
-h5 {
-  font-family: cursive;
-  font-size: 2em;
 }
 
 .footer {
@@ -258,19 +242,14 @@ h5 {
     text-decoration: none;
   }
 
-  h4 {
+  .p-logo {
     margin: -50px;
     padding-left: 110px;
-  }
-
-  h5 {
-    margin: 5em auto 5em 0em;
-    font-family: cursive;
-    font-size: 2em;
+    font-weight: bold;
   }
 
   .social {
-    display: grid;
+    display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     padding-right: 2em;
@@ -279,30 +258,12 @@ h5 {
 
 /* DESKTOP */
 @media screen and (min-width: 1200px) {
-  .homepage-main {
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: auto auto auto;
-    grid-auto-rows: minmax(100px, auto);
-  }
-
   .homepage-feature {
-    grid-column-start: 1;
-    grid-column-end: 7;
-    grid-row: 2;
+    display: grid;
+    grid-template-columns: 50% 50%;
     margin-top: 20px;
     padding: 10px;
-  }
-
-  .featureimg {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row: 2;
-  }
-
-  .welcome {
-    grid-column-start: 5;
-    grid-column-end: -1;
-    grid-row: 2;
+    width: 100vw;
   }
 
   .homepage-products {
