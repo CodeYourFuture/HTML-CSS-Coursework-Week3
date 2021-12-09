@@ -10,26 +10,27 @@ body {
 }
 
 .header {
-  width: 100%;
   height: 240px;
   padding: 2rem;
-  /* background-image: url(img/mneckelogo.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover; */
   background-color: #afc4c0;
   border: 2px solid black;
   grid-column: 1/-1;
   display: grid;
   grid-template-areas: "left center right";
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: auto;
+  /* grid-template-rows: 150px 50px; */
 }
 /* include cakelogo h1 and navbar */
 .menu-intro {
   grid-column: 3/-1;
   margin-left: 100px;
+  padding-bottom: 30px;
   /* grid-area: right;    */
+}
+.cake-logo  img{
+  width:50px;
+  height:50px;
 }
 
 .humburger {
@@ -44,15 +45,23 @@ body {
   letter-spacing: 3px;
   line-height: 1.8;
   padding-left: 40px;
+  padding-bottom: 20px;
 }
-/* navigation */
+
+.navigation {
+  grid-column: 2/-1;
+  /* grid-row:2/-1 ; */
+  
+}
+
 .dropright a {
   float: right;
   color: rgb(0, 0, 0);
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
-  grid-column: 11/-1;
+  display:block;
+}
 
 h2,
 h3,
@@ -60,7 +69,7 @@ p {
   font-family: "Work Sans", sans-serif;
   font-size: 1rem;
   text-align: center;
-  color: rgb(12, 1, 1);
+  color:#133032;
   letter-spacing: 3px;
   line-height: 1.8;
 }
@@ -82,6 +91,7 @@ p {
 .main {
   grid-column: 1/-1;
   padding: 1rem;
+  /* background-color:#EDEDEE; */
 }
 
 .footer {
@@ -98,78 +108,74 @@ p {
 .image-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 150px 150px;
-  gap: 10px;
+  grid-template-rows: auto;
+  gap: 30px;
   padding-top: 2rem;
-}
-
-.product-image {
-  overflow: hidden;
 }
 
 .product-image img {
   width: 100%;
-  height:200px;
   object-fit:scale-down;
   margin-top: 1rem;
 }
 
 .cover-image img {
   width: 100%;
-  height: 500px;
+  height: auto;
   object-fit: cover;
   margin-top: 2rem ;
+}
+
+.social_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  padding: 10px;
+  border: 1px solid grey;
+  border-radius: 100%;
+  text-align: center;
+  margin: 0 5px;
 }
 
 .social-icon {
   height: 20px;
   width: 20px;
-  border: 1px solid lightgrey;
-  border-radius: 50%;
-  padding: 10px;
 }
 
 footer a {
   text-decoration: none;
-  margin-right: 15px;
+}
+
+footer p {
+  letter-spacing: 5px;
 }
 
 footer {
-  left: 0;
-  bottom: 0;
-  width: 100%;
   text-align: center;
   background-color: #afc4c0;
   border: 2px solid black;
 }
-
-/* big big questions here */
-/* desktop */
-@media only screen and (min-width: 1200px) {
-    .image-grid {
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: 1/-1;
-        /* background-color: #afc4c0; */
-    }
-    .cover-image {
-      grid-column: 1/6;
-    }
-    
+.inc {
+  margin-left: 7px;
 }
 /* tablet */
 @media (min-width: 768px) {
   .intro { 
     display: flex;
     flex-direction: row-reverse;
-    
-
-} 
-.image-grid {
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 1/-1;
-  }
+   } 
 
   .main {
     padding: 0 20px;
-  }
+   }
+
+  .image-grid {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1/-1;
+   }
 }
