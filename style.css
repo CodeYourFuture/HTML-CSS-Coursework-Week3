@@ -18,20 +18,19 @@ html, body {
 
 .fas {
     font-size: 4em;
+    margin-left: 1rem;
 }
 
 /* Navbar styles Hamburger menu while in mobile view */
 
-nav ul li {
-    list-style: none;
-}
 
-nav ul li a {
-    text-decoration: none;
-    color: #000;
-}
 
 /* Main section styles */
+
+main {
+    width: 90%;
+    margin: auto;
+}
 
 .hero {
     width: 100%;
@@ -52,7 +51,7 @@ nav ul li a {
 
 #cakes-selection {
     width: 100%;
-    height: 550px;
+    min-height: 550px;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
@@ -76,6 +75,10 @@ nav ul li a {
     padding: 0 1em;
 }
 
+#contact {
+    margin-left: 1rem;
+}
+
 /* Styles for medium size screen */
 
 @media screen and (min-width: 500px) {
@@ -86,7 +89,7 @@ nav ul li a {
         font-size: 16px;
         height: 100vh;
         max-width: 768px;
-        margin: 0;
+        margin: auto;
         padding: 0;
     }
 
@@ -97,13 +100,45 @@ nav ul li a {
     #motto {
         align-items: flex-end;
         margin-left: auto;
+        margin-right: 1rem;
         margin-top: auto;
+    }
+
+    /* Nav bar two */
+
+    nav ul li {
+        list-style: none;
+        padding: 1rem;
+        border-radius: 3px;
+        background-color: cyan;
+    }
+        
+    nav ul li a {
+        text-decoration: none;
+        color: #000;
+    }
+        
+    #nav-bar-two ul {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    /* Image styles */
+
+    #cakes-selection {
+        max-height: 550px;
+    }
+
+    /* Footer styles*/
+
+    #footer-grid {
+        display: flex;
     }
 }
 
 /* Styles for large size screen */
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1000px) {
     html, body {
         box-sizing: border-box;
         background-color: chocolate;
@@ -111,7 +146,7 @@ nav ul li a {
         font-size: 16px;
         height: 100vh;
         max-width: 100%;
-        margin: 0;
+        margin: auto;
         padding: 0;
     }
 
@@ -121,6 +156,43 @@ nav ul li a {
     #motto {
         align-items: flex-end;
         margin-left: auto;
+        margin-right: 1rem;
         margin-top: auto;
+    }
+
+    /* Nav bar two */
+
+    nav ul li {
+        list-style: none;
+        margin: 1.5rem;
+        padding: 1rem;
+        border-radius: 3px;
+        background-color: cyan;
+    }
+    
+    nav ul li a {
+        text-decoration: none;
+        color: #000;
+    }
+    
+    #nav-bar-two ul {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    /* Image section*/
+
+    #cakes-selection {
+        height: 255px;
+    }
+
+    /* Footer styles*/
+
+    #footer-grid {
+        display: flex;
+    }
+
+    .prices {
+        justify-content: space-evenly;
     }
 }
