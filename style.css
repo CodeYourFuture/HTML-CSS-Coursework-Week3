@@ -1,1 +1,181 @@
 /*  Add your styling here */
+
+body {
+  box-sizing: border-box;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding: 1, 5rem;
+  margin: 0;
+}
+
+.header {
+  height: 240px;
+  padding: 2rem;
+  background-color: #afc4c0;
+  border: 2px solid black;
+  grid-column: 1/-1;
+  display: grid;
+  grid-template-areas: "left center right";
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  /* grid-template-rows: 150px 50px; */
+}
+/* include cakelogo h1 and navbar */
+.menu-intro {
+  grid-column: 3/-1;
+  margin-left: 100px;
+  padding-bottom: 30px;
+  /* grid-area: right;    */
+}
+.cake-logo  img{
+  width:50px;
+  height:50px;
+}
+
+.humburger {
+  margin-left: 100px;
+}
+
+.menu-intro h1 {
+  font-family: "Work Sans", sans-serif;
+  font-size: 1rem;
+  text-align: right;
+  color: rgb(12, 1, 1);
+  letter-spacing: 3px;
+  line-height: 1.8;
+  padding-left: 40px;
+  padding-bottom: 20px;
+}
+
+.navigation {
+  grid-column: 2/-1;
+  /* grid-row:2/-1 ; */
+  
+}
+
+.dropright a {
+  float: right;
+  color: rgb(0, 0, 0);
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display:block;
+}
+
+h2,
+h3,
+p {
+  font-family: "Work Sans", sans-serif;
+  font-size: 1rem;
+  text-align: center;
+  color:#133032;
+  letter-spacing: 3px;
+  line-height: 1.8;
+}
+
+.mnecake {
+  font-family: "Work Sans", sans-serif;
+  font-size: 1rem;
+  letter-spacing: 3px;
+  line-height: 1.8;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto;
+  gap: 2rem;
+}
+
+.main {
+  grid-column: 1/-1;
+  padding: 1rem;
+  /* background-color:#EDEDEE; */
+}
+
+.footer {
+  grid-column: 1/-1;
+  padding: 1rem;
+}
+
+.intro {
+  width: 100%;
+  height: 500px;
+  margin-bottom: 200px;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  gap: 30px;
+  padding-top: 2rem;
+}
+
+.product-image img {
+  width: 100%;
+  object-fit:scale-down;
+  margin-top: 1rem;
+}
+
+.cover-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin-top: 2rem ;
+}
+
+.social_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  padding: 10px;
+  border: 1px solid grey;
+  border-radius: 100%;
+  text-align: center;
+  margin: 0 5px;
+}
+
+.social-icon {
+  height: 20px;
+  width: 20px;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer p {
+  letter-spacing: 5px;
+}
+
+footer {
+  text-align: center;
+  background-color: #afc4c0;
+  border: 2px solid black;
+}
+.inc {
+  margin-left: 7px;
+}
+/* tablet */
+@media (min-width: 768px) {
+  .intro { 
+    display: flex;
+    flex-direction: row-reverse;
+   } 
+
+  .main {
+    padding: 0 20px;
+   }
+
+  .image-grid {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1/-1;
+   }
+}
