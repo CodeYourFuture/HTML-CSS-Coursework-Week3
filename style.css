@@ -1,1 +1,227 @@
-/*  Add your styling here */
+.content{
+    background-color: skyblue;
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;  
+    grid-template-areas: 
+    "header header header header"
+    "main main main main" 
+    "footer footer footer footer";
+    
+}
+
+/* Header */
+.header{
+    grid-area: header;
+    background-color:rgb(122, 230, 167) ;
+}
+.homepage_header {
+    display: flex;
+    justify-content: space-between;
+    padding:2px;
+}
+.logo_img{
+    width: 30%;
+    border-radius:80%;
+    object-fit: cover;
+    margin-left: 8px;
+
+}
+.hamburger_logo {
+    width: 60px;
+    height: 40px;
+}
+.header p {
+    font-family:system-ui;
+    color:rebeccapurple;
+    font-size: 17px;
+    margin: 10px 20px 10px 0 ;
+    text-align: right;
+
+} .nav_bar{
+    display: none;;
+} 
+/* main */
+.main {
+    grid-area: main;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.homepage_welcome{
+    margin-bottom: 50px;
+} 
+h1{
+    font-size: 40px;
+    color:rebeccapurple;
+    text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+}
+.homepage_welcome p{
+    font-size:22px;
+    text-align: justify;
+}
+.hero img{
+    height: 100%;
+    width: 100%;
+    margin-bottom: 15px;
+}
+.hero{
+    /* width: 100%; */
+    /* margin-bottom: 50px; */
+}
+
+.homepage_products{
+    display: grid;
+    grid-template-columns:repeat(2,1fr);
+    grid-template-rows: 200px 200px;
+    grid-gap:21px;
+    padding: 0 20px;
+    margin-bottom: 150px; 
+} 
+.products,figcaption{
+    text-align: center;
+    font-size:15px;
+    font-weight: bold;
+    color:black
+}
+.products img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    border-radius: 35px;
+    border: 3px solid rgb(226, 213, 213);
+} 
+/* Footer */
+.footer{
+    background-color: snow;
+    grid-area: footer;
+}
+.homepage_footer  {
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+.homepage_footer a {
+    text-decoration: none;
+    margin-bottom: 10px;
+
+}
+.copy_right{
+    background-color: gray;
+    margin-left: 60px;
+    margin-right: 60px;
+    text-align: center;
+}
+/* TABLET VERSION*/
+@media screen and (min-width: 550px) {
+  .header{
+    background-color:darkkhaki;
+    }
+  .homepage_header {
+      margin-top: 50px 0;
+      display: flex;
+      justify-content: space-between;
+
+    }
+   .hamburger_logo {
+    display: none;
+    width: 80px;
+    height: 60px;
+    text-align: right;
+   }
+  .header p{
+    font-size:30px;
+   }
+   .logo_img{
+    width: 25%;
+    border-radius:70%;
+    object-fit: cover;
+   }
+   .herolayout{
+       display: grid;
+       grid-template-areas: "hero homepage_welcome";
+       grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: 50vh;
+   }
+   .hero{
+       grid-area: hero;
+       /* height: 50vh; */
+   }
+
+   .hero img {
+       object-fit: contain;
+   }
+   .homepage_welcome{
+       grid-area: homepage_welcome;
+       
+   }
+
+   .homepage_products{
+    display: grid;
+    grid-template-columns:repeat(2,1fr);
+    grid-template-rows: 350px 350px;
+    grid-gap:30px;
+    padding: 0 20px;
+    margin-bottom: 100px; 
+    } 
+}
+
+@media screen and (min-width:900px) {
+    .header{
+      background-color: rgb(243, 242, 152);
+    }
+    .homepage_products{
+        display: grid;
+        grid-template-columns:repeat(4,1fr);
+        grid-template-rows:auto
+    }
+    .homepage_welcome {
+       
+        text-align: right;
+        padding:0 30px;
+    }
+ 
+    .homepage_welcome p{
+        position: right;
+        font-size:22px;
+    }
+    .homepage_products {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .change-position { 
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+    }
+    .hamburger_logo img {
+        display:none;
+    }
+    .nav_bar {
+        display:block;
+        margin-bottom: 50px;
+    }
+    .nav_bar ul {
+        display: flex;
+        list-style: none;
+        text-decoration: none;
+        justify-content: flex-end;
+    }
+    .nav_bar a{
+        text-decoration: none;
+        padding: 15px;
+    }
+    .products {
+        width: 250px;
+        height: 250px;
+        object-fit: cover;
+    }
+    .homepage_footer {
+        display: flex;
+
+    }
+
+}
+/* *{
+        border: 1px solid red;
+       } */  
