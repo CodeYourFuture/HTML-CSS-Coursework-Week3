@@ -18,7 +18,7 @@
 .homepage_header {
     display: flex;
     justify-content: space-between;
-    padding:1px;
+    padding:2px;
 }
 .logo_img{
     width: 30%;
