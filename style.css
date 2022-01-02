@@ -117,7 +117,7 @@ a {
 /* ..........main/big image div style start..........  */
 .big-image {
     height: 300px; 
-    width: 100vw;
+    /* width: 100vw; */
     background-image: url("../images/cake2.jpg");
     background-position: center;
     background-size: cover;
