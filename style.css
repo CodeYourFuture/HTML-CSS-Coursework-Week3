@@ -1,1 +1,239 @@
 /*  Add your styling here */
+body {
+  font-family: "Dancing Script", cursive;
+}
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+/*Overall Grid Layout*/
+.grid-container {
+  border: none;
+  display: grid;
+  /*height: 100vh;*/
+  grid-gap: 1rem;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 225px 45px 180px 360px 360px 180px;
+  grid-template-areas:
+    "header header header header"
+    "navbar navbar navbar navbar"
+    "welcome welcome welcome welcome"
+    "hero hero hero hero"
+    "products products products products"
+    "footer footer footer footer";
+}
+/* header */
+header {
+  background-color: lightgray;
+  grid-area: header;
+  border: none;
+}
+.main-header {
+  display: flex;
+  align-items: flex-end;
+}
+
+.img-header {
+  height: 180px;
+  width: 180px;
+  margin: 1rem;
+}
+
+.hp {
+  position: relative;
+  text-align: center;
+  font-size: 2rem;
+}
+
+/* ham icon */
+.ham-icon-container {
+display: flex;
+flex-direction: flex-end;
+}
+.ham-icon {
+height: 50px;
+width: 50px;
+}
+
+/* navbar */
+nav {
+  background-color: none;
+}
+.navbar {
+  grid-area: navbar;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  background-color: none;
+  overflow: hidden;
+}
+
+/* Links inside the navigation bar */
+.navbar a {
+  float: right;
+  color: darkgrey;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+/* Color of links on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Color to the active/current link */
+.navbar a.active {
+  background-color: darkslategrey;
+  color: white;
+}
+
+/* welcome */
+.main-welcome {
+  background-color: none;
+  grid-area: welcome;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+h2 {
+  font-size: 3rem;
+}
+.welcome-text {
+  font-size: 1.5rem;
+}
+
+/* hero */
+.main-hero {
+  display: flex;
+  background-color: none;
+  grid-area: hero;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  
+}
+
+.img-hero {
+  height: 360px;
+  width: 1835px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+/* products */
+.main-products {
+  background-color: none;
+  grid-area: products;
+  border: none;
+  border-radius: solid 1px black;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 180px 180px;
+  grid-gap: 10px 10px;
+  grid-column: span 4;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+/* product container 1 */
+.product-images-containers-1-1 {
+  border: solid 1px black;
+  border-radius: 5px;
+}
+.img-product-1-1 {
+  display: flex;
+  height: 180px;
+  width: 915px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+/* product container 2 */
+.product-images-containers-1-2 {
+  border: solid 1px black;
+  border-radius: 5px;
+}
+.img-product-1-2 {
+  display: flex;
+  height: 180px;
+  width: 910px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+/* product container 3 */
+.product-images-containers-2-1 {
+  border: solid 1px black;
+  border-radius: 5px;
+}
+.img-product-2-1 {
+  display: flex;
+  height: 180px;
+  width: 915px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+/* product container 4 */
+.product-images-containers-2-2 {
+  border: solid 1px black;
+  border-radius: 5px;
+}
+.img-product-2-2 {
+  display: flex;
+  height: 180px;
+  width: 910px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+/* Footer- Start */
+.footer_container {
+  background-color: none;
+  grid-area: footer;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100px;
+  margin-top: 100px;
+  position: relative;
+}
+
+/* Footer - Follow Us On */
+.footer_heading {
+  text-align: center;
+  font-size: 15px;
+  color: gray;
+  letter-spacing: 0.1rem;
+  padding: 1rem;
+}
+/* Footer Align Images */
+.media_image_align {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+/* Footer Media Images */
+.media_icon_img {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  max-height: 20px;
+  max-width: 20px;
+  padding: 1.5rem;
+}
+/* Footer End Company Mark */
+.footer_end {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-size: 15px;
+  color: gray;
+  position: relative;
+  padding: 1rem;
+}
+
+@media (min-width: 540px) {
+
+}
+
+@media (min-width: 900px) {
+
+}
