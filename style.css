@@ -1,1 +1,369 @@
 /*  Add your styling here */
+body {
+  display: flow-root;
+  margin: 0;
+  padding: 0;
+}
+header {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 10px;
+  height: 150px;
+  background-color: rgb(189, 224, 238);
+  padding: 20px;
+}
+
+.flexImg img {
+  width: 100%;
+}
+
+section img {
+  width: 100%;
+}
+
+footer div {
+  display: flex;
+  /* flex-flow: column wrap; */
+  justify-content: center;
+  width: 150px;
+  border: solid 1px blue;
+  margin: 5px;
+}
+
+.socialMedia {
+  border: none;
+  align-self: center;
+  width: 100%;
+}
+
+.fa {
+  padding: 16px;
+  text-align: center;
+  text-decoration: none;
+  margin: 20px 5px 0;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+@media screen and (max-width: 600px) /*Mobile*/ {
+  header img {
+    grid-column: 1 / 3;
+    width: 130px;
+  }
+
+  header div {
+    grid-column: 3 / 4;
+    text-align: right;
+  }
+
+  header nav {
+    grid-column: -1/ -1;
+    justify-self: end;
+  }
+
+  main {
+    display: inline-block;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+  }
+
+  main div {
+    width: 100%;
+  }
+
+  section {
+    display: grid;
+    grid-template-columns: 23.4% 23.4%;
+    column-gap: 2%;
+    row-gap: 3%;
+    grid-template-rows: auto;
+    margin-bottom: 30px;
+    margin: 4%;
+  }
+
+  .flexImg {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .flexImg div {
+    width: 43.8%;
+    margin: 2%;
+  }
+
+  .fullImage {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 3;
+  }
+  .fullImage img {
+    width: 100%;
+  }
+  .text {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    text-align: justify;
+  }
+
+  footer {
+    position: relative;
+    background-color: rgb(189, 224, 238);
+    padding: 15px 30px;
+    margin-top: 30px;
+  }
+
+  /* hamburger menu */
+
+  #menuToggle {
+    display: block;
+    position: relative;
+    top: -3px;
+    right: 0;
+
+    z-index: 1;
+
+    -webkit-user-select: none;
+    user-select: none;
+  }
+
+  #menuToggle a {
+    text-decoration: none;
+    color: #232323;
+
+    transition: color 0.3s ease;
+  }
+
+  #menuToggle a:hover {
+    color: tomato;
+  }
+
+  #menuToggle input {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+
+    cursor: pointer;
+
+    opacity: 0; /* hide this */
+    z-index: 2; /* and place it over the hamburger */
+
+    -webkit-touch-callout: none;
+  }
+
+  /*
+ * Just a quick hamburger
+ */
+  #menuToggle span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+
+    background: #383838;
+    border-radius: 3px;
+
+    z-index: 1;
+
+    transform-origin: 4px 0px;
+
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+      background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+  }
+
+  #menuToggle span:first-child {
+    transform-origin: 0% 0%;
+  }
+
+  #menuToggle span:nth-last-child(2) {
+    transform-origin: 0% 100%;
+  }
+
+  /* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+  #menuToggle input:checked ~ span {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: #232323;
+  }
+
+  /*
+ * But let's hide the middle one.
+ */
+  #menuToggle input:checked ~ span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+  }
+
+  /*
+ * The last one should go the other direction
+ */
+  #menuToggle input:checked ~ span:nth-last-child(2) {
+    transform: rotate(-45deg) translate(0, -1px);
+  }
+
+  /*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+  #menu {
+    position: absolute;
+    width: 300px;
+    margin: -60px 0 0 -330px;
+    padding: 50px;
+    padding-top: 130px;
+    padding-bottom: 40px;
+
+    background: #ededed;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    /* to stop flickering of text in safari */
+
+    transform-origin: 0% 0%;
+    transform: translate(0, -100%);
+
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  }
+
+  #menu li {
+    padding: 10px 0;
+    font-size: 22px;
+  }
+
+  /*
+ * And let's slide it in from the left
+ */
+  #menuToggle input:checked ~ ul {
+    transform: none;
+  }
+
+  #navFull {
+    display: none;
+  }
+}
+
+/*******************************************/
+/*******************************************/
+/*******************************************/
+/************* Full Screen Mode ************/
+/*******************************************/
+/*******************************************/
+/*******************************************/
+
+@media screen and (min-width: 600px) {
+  header img {
+    grid-column: 1;
+    grid-row: 1 / 3;
+    height: 120px;
+  }
+
+  header div {
+    grid-column: 6;
+    grid-row: 2 / 2;
+    text-align: right;
+    align-self: flex-end;
+  }
+
+  main {
+    margin: 40px 40px 100px;
+  }
+
+  nav {
+    display: flex;
+    background-color: green;
+    margin: 0 0 40px;
+    padding: 0px 40px;
+    align-items: center;
+    justify-content: end;
+  }
+
+  nav ul {
+    margin: 20px 10px;
+  }
+
+  nav li {
+    display: inline;
+    list-style-type: none;
+    margin: 5px;
+    padding: 4px 24px;
+    background-color: indigo;
+  }
+
+  nav ul a {
+    text-decoration: none;
+    color: white;
+
+    transition: color 0.3s ease;
+  }
+
+  nav ul a:hover {
+    color: tomato;
+  }
+
+  section {
+    display: grid;
+    grid-template-columns: 23.4% 23.4%;
+    column-gap: 2%;
+    row-gap: 8%;
+  }
+
+  .flexImg {
+    display: flex;
+    margin: 12px -12px;
+  }
+
+  .flexImg div {
+    width: 23%;
+    margin: 14px 13px;
+  }
+
+  .fullImage {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+
+  .fullImage img {
+    width: 100%;
+  }
+
+  .text {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    text-align: right;
+  }
+
+  footer {
+    background-color: rgb(189, 224, 238);
+    padding: 15px 30px;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+
+  #navMobile {
+    display: none;
+  }
+  #menuToggle {
+    display: none;
+  }
+}
