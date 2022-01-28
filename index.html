@@ -6,11 +6,108 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Responsive Cake webpage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
     <!-- Add a link to your css file here -->
 </head>
 
 <body>
     <!-- Add your markup here -->
+    <div class="container">
+        <div class="row">
+            <header class="header">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <img src="https://www.biggerbolderbaking.com/wp-content/uploads/2017/08/1C5A0056.jpg" width="150px" height="150px" alt="cackes">
+
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#"></a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                      </button>
+                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                            <div class="navbar-nav">
+                                <a class="nav-link active" aria-current="page" href="#footer">subscrib</a>
+                                <a class="nav-link" href="#cackes">Cacke</a>
+                                <a class="nav-link" href="#img-welcome">lessons</a>
+                                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">about</a>
+                            </div>
+                        </div>
+                    </div>
+                    <h5 class="d-flex-row text-center">The best cack in town delivered to your door</h5>
+                 </nav>
+
+            </header>
+        </div>
+    </div>
+
+    <main class="main">
+        <div class="container" id="left">
+            <div class="row">
+                <div class="col">
+                    <img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimg1.cookinglight.timeinc.net%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmedium_2x%2Fpublic%2F1542062283%2Fchocolate-and-cream-layer-cake-1812-cover.jpg%3Fitok%3DrEWL7AIN" widht="400px"
+                        height="450px" alt="puctuer">
+
+                </div>
+                <div id="img-welcome" class="col">
+                    <h1><strong>Welcome to cacke's Glasgow</strong></h1>
+                    <p>
+                        2014 Winner of The Scottish Wedding Awards "Cake Designer Of The Year" and Twice VOWS Awards Winner. 3D Cakes is one of Europe's leading bespoke cake designers. David and the team have been honoured to create cakes for HRH The Queen and Prince William
+                        as well as brands such as Chanel and Dior. Featured in Vogue Magazine, designing bespoke cakes for Copenhagen Fashion Week, David Duncan’s cutting edge designs have rapidly become some of the most influential in the UK. Based in
+                        Glasgow, 3D Cakes supply a range of birthday cakes, wedding cakes and cakes for any occasion. Choose from our extensive cake gallery, or call us today to have your dream cake personally designed by a member of the 3D Cakes team.</p>
+                </div>
+
+            </div>
+        </div>
+        <div id="cakes" class="container">
+            <div class="row row-cols-2 row-cols-lg-4">
+
+                <div class="col">
+                    <img src="https://preppykitchen.com/wp-content/uploads/2019/06/Chocolate-cake-recipe-1200a.jpg" width="200px" height="200px" alt="puctuer">
+                </div>
+                <div class="col">
+                    <img src="https://i2-prod.glasgowlive.co.uk/incoming/article11093050.ece/ALTERNATES/s615b/Glasgow-Cakes.jp" width="200px" height="200px" alt="puctuer">
+                </div>
+
+                <div class="col">
+                    <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/spring-daisy-lemon-layer-cake-1581442583.jpg" width="200px" height="200px" alt="puctuer">
+                </div>
+
+                <div class="col">
+                    <img src="https://tatyanaseverydayfood.com/wp-content/uploads/2018/07/Summer-Sangria-Cake-4.jpg" width="200px" height="200px" alt="puctuer">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer id="footer" class="container d-flex justify-content-center">
+        <form class="row gy-2 gx-3 align-items-center">
+            <div class="col-auto">
+                <label class="visually-hidden" for="autoSizingInput">Name</label>
+                <input type="text" class="form-control" id="autoSizingInput" placeholder="Jane Doe">
+            </div>
+            <div class="col-auto">
+                <label class="visually-hidden" for="autoSizingInputGroup">Username</label>
+                <div class="input-group">
+                    <div class="input-group-text">@</div>
+                    <input type="text" class="form-control" id="autoSizingInputGroup" placeholder="Username">
+                </div>
+            </div>
+            <div class="col-auto">
+                <label class="visually-hidden" for="autoSizingSelect">Preference</label>
+                <select class="form-select" id="autoSizingSelect">
+                <option selected>Choose...</option>
+                <option value="1">larg</option>
+                <option value="2">medium</option>
+                <option value="3">small</option>
+                </seclect>  
+            </div>
+        </form>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>   
 </body>
 
 </html>
