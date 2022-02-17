@@ -1,1 +1,11 @@
-/*  Add your styling here */
+* {
+  font-family: ;
+}
+
+nav {
+  background-color: #f1c0e8;
+}
+
+#p-footer {
+  text-align: center;
+}
