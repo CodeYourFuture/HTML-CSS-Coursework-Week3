@@ -2,6 +2,14 @@
 
 .image-logo{
     height: auto;
-    width: 8em;
+    width: 45%x;
 }
 
+.medium-image{
+    height: auto;
+    width: 45%;
+}
+
+.header-pink{
+    background-color: #f4f0d2;
+}
