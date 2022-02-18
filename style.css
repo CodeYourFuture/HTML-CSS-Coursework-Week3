@@ -1,9 +1,27 @@
 * {
   font-family: ;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  text-align: center;
 }
 
 nav {
   background-color: #f1c0e8;
+}
+
+li a {
+  display: inline;
+  text-decoration: none;
+}
+
+.bd-highlight {
+  border: 1px solid black;
+  color: black;
+  background-color: #cfbaf0;
 }
 
 #p-footer {

@@ -12,14 +12,15 @@
 </head>
 
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light">
+    <header class="mobile-navibar">
+        <nav class="navbar navbar-light">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#"><img class="img-thumbnail img-fluid" src="images/Logo-Cake-Shop.png"
                         alt=""></a>
-                <p class="navbar-text">The best cakes in town <br> delivered to your door</p>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <p>The best cakes in town <br> delivered to your door</p>
+                <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
@@ -28,19 +29,16 @@
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Home</a>
+                            <a class="nav-link active" aria-current="page" href="#">Cakes</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Cakes</a>
+                            <a class="nav-link active" aria-current="page">Orderin</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link">Orderin</a>
+                            <a class="nav-link active" aria-current="page">Lessons</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link">Lessons</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link">About</a>
+                            <a class="nav-link active" aria-current="page">About</a>
                         </li>
                     </ul>
                 </div>
@@ -48,6 +46,35 @@
             </div>
         </nav>
     </header>
+
+    <header class="desktop-navbar">
+
+        <nav class="navbar d-none d-lg-block">
+            <div class="container-fluid">
+                <ul class="navbar-nav">
+                    <li class="nav-item d-inline-flex p-2 bd-highlight">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item d-inline-flex p-2 bd-highlight">
+                        <a class="nav-link active" aria-current="page" href="#">Cakes</a>
+                    </li>
+                    <li class="nav-item d-inline-flex p-2 bd-highlight">
+                        <a class="nav-link active" aria-current="page">Orderin</a>
+                    </li>
+                    <li class="nav-item d-inline-flex p-2 bd-highlight">
+                        <a class="nav-link active" aria-current="page">Lessons</a>
+                    </li>
+                    <li class="nav-item d-inline-flex p-2 bd-highlight">
+                        <a class="nav-link active" aria-current="page">About</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+
+
 
     <main>
         <div class="container-fluid">
@@ -59,18 +86,32 @@
                 ipsum cumque totam debitis repellendus dolorem voluptatem.
             </p>
         </div>
-        <div class="container-fluid">
-            <img src="..." class="img-fluid" alt="...">
+        <div class="container-fluid border-bottom">
+            <img src="images/photos-by-lanty-22JxStzTxwo-unsplash.jpg" class="img-fluid" alt="big cake">
         </div>
 
         <div class="container-fluid">
-            <img src="..." class="img-fluid" alt="...">
-            <img src="..." class="img-fluid" alt="...">
-            <img src="..." class="img-fluid" alt="...">
-            <img src="..." class="img-fluid" alt="...">
-        </div>
+            <div class="container">
+                <div class="row justify-content-btween border-bottom">
+                    <div class="col-6 p-0">
+                        <img src="images/principal-cake.jpg" class="img-fluid" alt="">
+                    </div>
+                    <div class="col-6 p-0">
+                        <img src="images/monika-grabkowska-EbRBhZ-I_p8-unsplash.jpg" class="img-fluid" alt="">
+                    </div>
 
-
+                    <div class="container">
+                        <div class="row justify-content-btween border-bottom">
+                            <div class="col-6 p-0">
+                                <img src="images/deva-williamson-sjsG1yrwJxY-unsplash.jpg" class="img-fluid" alt="">
+                            </div>
+                            <div class="col-6 p-0">
+                                <img src="images/brooke-lark-V4MBq8kue3U-unsplash.jpg" class="img-fluid" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
     </main>
 
     <footer>
