@@ -17,17 +17,14 @@ h1{
     h1{
         font-size: 50px;
     }
-    .img{
-        width: auto;
-        height: auto;
-    }
 }
+
 @media (min-width: 900px){
     h1{
         font-size: 60px;
     }
-    .principal{
-        height: 80px;
+    .container{
+        height: 60px;
     }
 }
 
