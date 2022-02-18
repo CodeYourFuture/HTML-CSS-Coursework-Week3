@@ -1,6 +1,100 @@
 /*  Add your styling here */
-h1 {
-  color: red;
-  font-family: "Caveat", cursive;
-  font-family: "Dancing Script", cursive;
+
+.container{
+  width:100%;
+  height:200px;
+
+  margin-top: 4px;
+}
+header{
+  top:0;
+  width:100%;
+  background-color:pink;
+  height:250px;
+  margin:auto;
+}
+.top-image
+{
+  height: 150px;
+  width:45%
+}
+.menu{
+  display:flex-end;
+  flex-direction: column;
+ 
+  
+}
+.title{
+  width:100%;
+  height: 40px;
+  font-family: 'Caveat', cursive;
+  font-family: 'Dancing Script', cursive;
+font-weight: bolder;
+}
+p{
+  margin-top:2px;
+  background-color: pink;
+}
+#full-image,img{
+  height:150px;
+  width:100%
+}
+#full-image,img:hover {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+
+.multiple-images {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  margin: 0 10px 10px 10px;
+  padding: 2px 2px 2px 2px;
+}
+.multiple-images section {
+  width: 48%;
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+.fa:hover {
+  opacity: 0.7;
+}
+
+footer{
+ 
+  padding-top: 50px;
+  padding-left: 70px;
+  justify-items: center;
+  /* align-items: center; */
+  width:100%;
+  background-color: pink;
+}
+h4{
+  font-size: 30px;
+  font-family: 'Caveat', cursive;
+  font-family: 'Dancing Script', cursive;
+font-weight: bolder;
 }
