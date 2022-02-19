@@ -1,5 +1,4 @@
 * {
-  font-family: ;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -26,4 +25,8 @@ li a {
 
 #p-footer {
   text-align: center;
+}
+
+.flex-auto {
+  flex: auto;
 }
