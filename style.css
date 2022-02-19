@@ -1,1 +1,201 @@
 /*  Add your styling here */
+@import url('https://fonts.googleapis.com/css2?family=Redressed&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #60AE75;
+    background-color:  ;
+    font-family: 'Redressed', cursive;
+}
+.head{
+    color: #356e44;
+    height: 300px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.back-image{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTe3hJuHs1HoBbPu4VWfqa_Ml6EqCI5kXMgOpAYwfMR5zsYB4yQtcEi9JF6qAkq3eGxSmE&usqp=CAU);
+    width: auto;
+    background-size: cover;
+    background-position: -10rem;
+    margin: 5px;
+    
+}
+
+.presentacion{
+    text-align: right;
+    display: flex;
+    margin: 0 15px 1rem 0;
+    
+}
+
+.contenido{
+    margin: 1rem 2rem;
+    height: auto;
+}
+
+.menú{
+    background-color: #4C7155;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    border-radius: 10px;
+}
+
+.opciones li{
+    list-style: none;
+    display: inline;
+    padding: 0 20px;
+    margin: 10px;
+    background-color: #49D06D;
+    border-radius: 20px;
+
+}
+
+.tortas{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box-torta{
+    
+    flex-grow: 01;
+    margin: 10px;
+    height: 500px;
+    width: 500px;  
+}
+
+.img-torta{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxBQuTz231jAAzECQR96fWe1PZtXY_JixD6v66ZFG_cjG1nqHu4IQ0AskoIt2hZ-Sa1m0&usqp=CAU);
+    background-position: center;
+    background-size: cover;
+    border-radius: 50px;
+    border: #50BC6D solid 20px;
+    
+}
+
+.descripcion-torta{
+    text-align: right;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+
+}
+
+.categorias-tortas{
+    height: auto;
+    width: auto;
+    margin: 10px;
+}
+
+.bloques-tortas{
+    display: flex;
+    height: auto;
+}
+
+.categorias-tortas{
+    border-radius: 20px;
+    border: #49D06D solid 10px;
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+}
+
+.torta01{
+    background-image: url(https://annaspasteleria.com/images/2020post/_videoCover/DSC_7007web.jpg);
+}
+
+.torta02{
+    background-image: url(https://annaspasteleria.com/images/2019post/_videoCover/DSC_1492web.jpg);
+
+}
+
+.torta03{
+    background-image: url(https://annaspasteleria.com/images/2020post/_videoCover/DSC_5092web.jpg);
+}
+
+.torta04{
+    background-image: url(https://annaspasteleria.com/images/2020post/_videoCover/DSC_5323web.jpg);
+}
+
+.footer{
+    background-color: #4C7155;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.footer p, .footer ul{
+    margin: 50px;
+}
+
+.footer li{
+    margin:0 50px;
+    font-size: 20px;
+}
+
+@media (max-width: 570px){
+    .presentacion{
+        margin-left: 35%;
+    }
+    .menú{
+        display: none;
+    }
+    .box-torta{
+        height:150px;
+        border: 15px;
+    }
+    .categorias-tortas{
+        height: 100px;
+    }
+    .bloques-tortas{
+        height: auto;
+    }
+    .head h2{
+        font-size:18px;
+        margin-left: 60%;
+    }
+    .footer li{
+        display: list-item;
+        margin:30px 0;
+    }
+
+    .footer p{
+        margin: 10px auto;
+    }
+
+    .footer ul{
+        margin: 10px;
+    }
+
+    .footer{
+        align-items: flex-start;
+        justify-content: right;
+    }
+}
+
+@media (max-width: 1100px){
+    .presentacion-torta{
+        flex-wrap: wrap-reverse;
+    }
+    .descripcion-torta{
+        height: auto;
+        text-align: justify;
+        font-size: 20px;
+    }
+    
+    .head h2{
+        font-size:18px;
+        margin-left: 60%;
+    }
