@@ -1,1 +1,22 @@
-/*  Add your styling here */
+
+.cakes {
+  padding: 15px;
+}
+body {
+    font-size: 16px;
+}
+.intro{
+  margin-top: 30px;
+}
+.policy-container{
+  background-color: #313d4c;
+  color: white;
+}
+.policy-text{
+  padding: 20px 20%;
+  font-size: 12px;
+  border-bottom: 1.5px solid white;
+}
+#chococake{
+  margin: 20px;
+}
