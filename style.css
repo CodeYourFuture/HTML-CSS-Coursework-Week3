@@ -4,10 +4,6 @@
   padding: 0;
 }
 
-header {
-  text-align: center;
-}
-
 nav {
   background-color: #f1c0e8;
 }
@@ -21,10 +17,6 @@ li a {
   border: 1px solid black;
   color: black;
   background-color: #cfbaf0;
-}
-
-#p-footer {
-  text-align: center;
 }
 
 .flex-auto {
