@@ -5,12 +5,101 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Responsive Cake webpage</title>
-    <!-- Add a link to your css file here -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Welcome to the Cake Cube</title>
 </head>
 
 <body>
-    <!-- Add your markup here -->
+    <style>
+        * {
+            font-family: arial;
+        }
+
+        .mycustomrow {
+            background-color: pink;
+            max-height: 200px;
+        }
+
+        .logo {
+            max-width: 100%;
+            height: auto;
+            padding: 20px;
+        }
+
+        .slogan {
+            color: white;
+            font-size: 2rem;
+            font-weight: 200;
+        }
+
+        .navigation {
+            background-color: pink;
+            margin-top: 12px;
+            padding: 10px;
+        }
+
+        .nav-item {
+            padding: 10px;
+            background-color: white;
+        }
+
+        .cake {
+            padding: 0px;
+            max-width: 100%;
+            height: 100%;
+        }
+    </style>
+
+
+    <header>
+        <div class="container-fluid mycustomrow">
+                <img src="logo.svg" class="img-responsive logo" alt="logo">
+                <p class="slogan rounded float-end">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+
+        <div class="container navigation">
+            <div class="row">
+                <ul class="nav justify-content-end">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Recipes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled">About us</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="container introduction">
+            <div class="row">
+                <div class="col-sm-6">
+                    <img src="https://img.taste.com.au/hbNtzI2Q/taste/2021/08/clinkers-cake-173208-2.jpg"
+                        class="img-fluid cake" alt="cake"> </div>
+                <div class="col-sm-6">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum minima ab odit earum
+                        expedita quidem, maiores odio aliquid alias illo tenetur ipsam dignissimos deserunt dolorum?
+                        Sunt non pariatur minus unde.</p>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+
+
+
+
+
+
+
+
 </body>
 
 </html>
