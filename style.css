@@ -1,1 +1,19 @@
-/*  Add your styling here */
+#cake-place{
+    width: 400px;
+    height: 300px;
+    float: right ;
+
+}
+img {
+    width: 300px;
+    height: 200px;
+    border-radius: 50%;
+    padding-left: 30%;
+}
+.card{
+    min-height: 500px;
+}
+.btn{
+    position:absolute;
+
+}

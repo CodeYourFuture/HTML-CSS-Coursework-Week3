@@ -5,12 +5,137 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Responsive Cake webpage</title>
-    <!-- Add a link to your css file here -->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
-
 <body>
-    <!-- Add your markup here -->
+
+    <div class="navbar navbar-expand-md bg-danger bg-gradient navbar-dark text-white">
+        <div class="container">
+            <a href="#" class="navbar-brand">CAKESHOP</a>
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#mainmenu"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainmenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a href="#"  class="nav-link">HOME</a></li>
+                    <li class="nav-item"><a href="#"  class="nav-link">CAKES</a></li>
+                    <li class="nav-item"><a href="#"  class="nav-link">ORDERIN</a></li>
+                    <li class="nav-item"><a href="#"  class="nav-link">LESSONS</a></li>
+                    <li class="nav-item"><a href="#"  class="nav-link">ABOUT</a></li>
+                 </ul>
+            </div>
+        </div>
+    </div >
+
+
+    <section id="hero" class=" bg-danger text-light text-center text-sm-start py-5" >
+        <div class="container row">
+            <div class="d-sm-flex align-items-center justify-content-center">
+                <div>
+                    <h1>ONLY <span class="text-warning">CAKE</span></h1>
+                    <p>Bakers make the world smell better.</p>
+                    <button class="btn btn-info">DISCOVER MORE</button>
+                </div>
+                <img id="cake-place" src="/HTML-CSS-Coursework-Week3/design/cake-place.svg" alt="cake place">
+            </div>
+        </div>
+
+    </section>
+
+
+    <section class="py-5">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-sm col-md-6 col-lg-4">
+                    <div class="card text-light">
+                        <div class="card body bg-danger bg-gradient ">
+                            <img id="Chiffon-cake" src="/HTML-CSS-Coursework-Week3/design/chiffon-cake.webp" alt="Chiffon cake">
+                            <h4 class="card-title">Chiffon Cake</h4>
+                            <p class="card-text text-start">Chiffon cake is a cross between a sponge and oil cake. The addition of oil gives it a richness similar to a shortened cake, and whipped egg whites and baking powder make it light and airy.</p>
+                            <a href="#" class="btn btn-info">LEARN MORE</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="card text-center">
+                            <div class="card bg-danger bg-gradient text-light">
+                            <img id="sponge-cake" src="/HTML-CSS-Coursework-Week3/design/sponge-cake.webp" alt="Sponge Cake">
+                            <h4 class="card-title">Sponge Cake</h4>
+                            <p class="card-text text-start">This is a foam-style cake that has no artificial leaveners (baking powder or baking soda). It gets its volume solely from whipped eggs —either whole eggs or simply whites. This cake takes well to being soaked in a flavored syrup (try soaking with a lemon syrup and serve with a dollop of lemon curd), layered with whipped cream and smashed berries, or if baked up thin, rolled in the Christmas classic, Buche de Noel.</p>
+                            <a href="#" class="btn btn-info">LEARN MORE</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="card text-center">
+                            <div class="card bg-danger bg-gradient text-light">
+                            <img id="red-cake" src="/HTML-CSS-Coursework-Week3/design/red-velvet-cake.jpg" alt="Red Velvet Cake">
+                            <h4 class="card-title">Red Velvet Cake</h4>
+                            <p class="card-text text-start">This is a true favorite, especially in the south. Made with either butter or oil, red velvet cake's color classically comes from the reaction of buttermilk and cocoa powder. Modern versions often achieve this hue by using red food coloring, or in the case of the raspberry velvet cake, shown here, pink.</p>
+                            <a href="#" class="btn btn-info">LEARN MORE</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="card text-center">
+                            <div class="card bg-danger bg-gradient text-light">
+                            <img id="carrot-cake" src="/HTML-CSS-Coursework-Week3/design/carrot-cake.webp" alt="carrot cake">
+                            <h4 class="card-title">Carrot Cake</h4>
+                            <p class="card-text text-start">Leavened with baking soda and baking powder, this shortened cake uses oil as its main fat rather than butter. The addition of grated carrots makes the cake extra moist. Carrot cake is also flavored with warm spices and frosted with a rich cream cheese frosting. Pecans or walnuts are optional!</p>
+                            <a href="#" class="btn btn-info">LEARN MORE</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="card text-center">
+                            <div class="card bg-danger bg-gradient text-light">
+                            <img id="opera-cake" src="/HTML-CSS-Coursework-Week3/design/opera-cake.jpg" alt="Opera Cake">
+                            <h4 class="card-title">Opera Cake</h4>
+                            <p class="card-text text-start">The history of this type of cake is a bit muddled. One thing we do know, however, is that its thin layers of coffee-soaked almond cake are sandwiched between an espresso-flavored buttercream, a bittersweet chocolate ganache, and topped off with a second rich chocolate ganache. Light but rich, this pastry is a real showstopper.</p>
+                            <a href="#" class="btn btn-info">LEARN MORE</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="card text-center">
+                            <div class="card bg-danger bg-gradient text-light">
+                            <img id="fruit-cake" src="/HTML-CSS-Coursework-Week3/design/fruit-cake.jpg" alt="Fruit Cake">
+                            <h4 class="card-title">Fruit Cake</h4>
+                            <p class="card-text text-start">Universally loathed and joked about, this holiday staple is full of dried or candied fruit, nuts, and spices. Once cooked, the cake is wrapped and soaked in a spirit like brandy or rum. (Despite the jokes, we think it's very delicious.)</p>
+                            <a href="#" class="btn btn-info">LEARN MORE</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-4 bg-dark text-white text-center">
+        <div class="container">
+            <p class="lead">
+                Made By Much Love and Sweet Wishes 
+            </p>
+        </div>
+    </footer>
+    
+
+
+
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 
 </html>
