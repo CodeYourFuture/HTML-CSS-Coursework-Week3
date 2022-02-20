@@ -4,90 +4,72 @@
     margin: 0px;
     padding: 0px;
     font-family: 'Akaya Telivigala', cursive;
-    text-align: center;
-}
-
-h1{
-    font-size: 30px;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-@media (min-width: 540px){
-    h1{
-        font-size: 50px;
-    }
-}
-
-@media (min-width: 900px){
-    h1{
-        font-size: 60px;
-    }
-    .container{
-        height: 60px;
-    }
-}
-
-.container .link {
-   display: flex;
-   background-color:#414833;
-   justify-content: space-around;
-   justify-items: center;
-   text-align: center;
-   list-style: none;
-   position: fixed;
-   width: 100%;
-   height: 50px;
-   margin-bottom: 20px;
-   align-items: center;
-}
-
-.link li a {
-    color:beige;
-    text-decoration: none;
     list-style: none;
 }
 
-.link a:hover {
+.navbar {
+    background-color: #656d4a;
+    margin-bottom: 10px;
+}
+
+.nav-item a {
+    color:#414833;
+}
+
+/*Caja1*/
+
+.caja1 {
+    background-color: #b5c99a;
+    margin-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.caja1 h1 {
+    font-size: 40px;
+    text-align: center;
+    color: #414833;   
+}
+/*caja2*/
+
+.caja2 {
+    display: inline-block;
+    vertical-align: top;
+    align-items:
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/*caja3*/
+
+.caja3 {
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.caja3 .mini3 {
+    padding-bottom: 10px;
+}
+
+@media (max-width: 540px){
+    .caja3 .mini3 img{
+        width: 160px;
+    }
+
+}
+
+.nav {
+    background-color: #b5c99a;
+    height: 50px;
+    font-size: 20px;
+}   
+.nav a:hover {
     color: green;
 }
 
-.repo {
-    text-decoration: none;
-    color: beige;
-    padding: 20px;
-    border-radius: 5px;
-    border: 2px solid beige;
-}
-
-.reposteria p {
-    margin-bottom: 10px;
-    color: beige;
-}
-
-.reposteria { 
-    display: flex;
-    background-image: url(https://images.unsplash.com/photo-1614145121029-83a9f7b68bf4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTZ8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60);
-    height: 700px;
-    background-size: cover;
-    justify-content: center;
-    align-items: center;
-    color: beige;
-}
-
-.foot {
-    background-color: #656d4a;
-}
-
-.a1 {
-    height: 300px;
+h3 {
+    color: #414833;
+    background-color: #b5c99a;
     text-align: center;
-    padding-top: 50px;
-    background-image: url(https://images.unsplash.com/photo-1574085733277-851d9d856a3a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mjh8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60);
-    background-size: cover;
-}
-
-.a1 p {
-    color: beige;
-    font-size: 30px;
 }
