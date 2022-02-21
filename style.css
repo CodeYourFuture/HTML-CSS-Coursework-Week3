@@ -29,14 +29,27 @@
     text-align: center;
     color: #414833;   
 }
+@media (min-width:540px){
+    .caja1 h1{
+        font-size: 50px;
+    }
+}
+
+@media (min-width:900px){
+    .caja1 h1{
+        font-size: 60px;
+    }
+}
+
 /*caja2*/
 
 .caja2 {
-    display: inline-block;
-    vertical-align: top;
-    align-items:
-    justify-content: space-between;
+    display: flex;
+    justify-content: space-around;
     flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    color:#414833;
 }
 
 /*caja3*/
@@ -54,15 +67,21 @@
 
 @media (max-width: 540px){
     .caja3 .mini3 img{
+        width: 180px;
+    }
+}
+
+@media (max-width: 900px){
+    .caja3 .mini3 img{
         width: 160px;
     }
-
 }
 
 .nav {
     background-color: #b5c99a;
     height: 50px;
     font-size: 20px;
+    margin-top: 20px;
 }   
 .nav a:hover {
     color: green;
@@ -73,3 +92,4 @@ h3 {
     background-color: #b5c99a;
     text-align: center;
 }
+
