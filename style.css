@@ -1,1 +1,95 @@
 /*  Add your styling here */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Akaya Telivigala', cursive;
+    list-style: none;
+}
+
+.navbar {
+    background-color: #656d4a;
+    margin-bottom: 10px;
+}
+
+.nav-item a {
+    color:#414833;
+}
+
+/*Caja1*/
+
+.caja1 {
+    background-color: #b5c99a;
+    margin-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.caja1 h1 {
+    font-size: 40px;
+    text-align: center;
+    color: #414833;   
+}
+@media (min-width:540px){
+    .caja1 h1{
+        font-size: 50px;
+    }
+}
+
+@media (min-width:900px){
+    .caja1 h1{
+        font-size: 60px;
+    }
+}
+
+/*caja2*/
+
+.caja2 {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    color:#414833;
+}
+
+/*caja3*/
+
+.caja3 {
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.caja3 .mini3 {
+    padding-bottom: 10px;
+}
+
+@media (max-width: 540px){
+    .caja3 .mini3 img{
+        width: 180px;
+    }
+}
+
+@media (max-width: 900px){
+    .caja3 .mini3 img{
+        width: 160px;
+    }
+}
+
+.nav {
+    background-color: #b5c99a;
+    height: 50px;
+    font-size: 20px;
+    margin-top: 20px;
+}   
+.nav a:hover {
+    color: green;
+}
+
+h3 {
+    color: #414833;
+    background-color: #b5c99a;
+    text-align: center;
+}
+
