@@ -8,6 +8,14 @@ nav {
   background-color: #f1c0e8;
 }
 
+#principal-cake {
+  width: 100%;
+}
+
+span {
+  color: red;
+}
+
 li a {
   display: inline;
   text-decoration: none;
@@ -21,4 +29,10 @@ li a {
 
 .flex-auto {
   flex: auto;
+}
+
+#p-footer {
+  display: flex;
+  align-content: center;
+  margin: inherit;
 }
