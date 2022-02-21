@@ -2,10 +2,13 @@
   box-sizing: border-box;
   margin: 0;
   padding: 4px;
+  line-height: 1.6;
 }
 
 nav {
   background-color: #f1c0e8;
+  font-family: "Dancing Script", cursive;
+  color: #007bff;
 }
 
 #principal-cake {
