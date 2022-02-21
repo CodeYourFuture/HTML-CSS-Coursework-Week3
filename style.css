@@ -34,6 +34,10 @@ li a {
   flex: auto;
 }
 
+.card-body {
+  background-color: #f1c0e8;
+}
+
 #p-footer {
   display: flex;
   align-content: center;
