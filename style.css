@@ -1,15 +1,58 @@
 /*  Header */
-
-.image-logo{
-    height: auto;
-    width: 45%x;
+body {
+  font-family: "Merriweather", serif;
 }
 
-.medium-image{
-    height: auto;
-    width: 45%;
+.desktop-visible {
+  display: none;
+}
+.movile-visible {
+  display: none;
 }
 
-.header-pink{
-    background-color: #f4f0d2;
+pull-right-lg {
+    float: left;
+    text-align: left;
+}
+
+@media (min-width: 992px) {
+  .desktop-visible {
+    display: block;
+    margin: 0 auto;
+
+  }
+
+  pull-right-lg {
+    float: right;
+    text-align: right;
+  }
+}
+
+@media all and (max-width: 991px) {
+  .movile-visible {
+    display: block;
+    
+  }
+  
+
+}
+
+.image-logo {
+  height: 15em;
+  width: auto;
+}
+
+.medium-image {
+  height: auto;
+  width: 45%;
+}
+
+.header-pink {
+  background-color: #f4f0d2;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
