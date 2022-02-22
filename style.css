@@ -10,10 +10,6 @@ body {
   display: none;
 }
 
-pull-right-lg {
-    float: left;
-    text-align: left;
-}
 
 @media (min-width: 992px) {
   .desktop-visible {
@@ -22,10 +18,11 @@ pull-right-lg {
 
   }
 
-  pull-right-lg {
-    float: right;
-    text-align: right;
+  header p {
+    font-size: 25px;
   }
+
+
 }
 
 @media all and (max-width: 991px) {
@@ -38,13 +35,14 @@ pull-right-lg {
 }
 
 .image-logo {
-  height: 15em;
-  width: auto;
+
+  width: 100%;
 }
 
-.medium-image {
-  height: auto;
-  width: 45%;
+.medium-image img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
 }
 
 .header-pink {
