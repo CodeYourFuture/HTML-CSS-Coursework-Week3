@@ -1,1 +1,56 @@
-/*  Add your styling here */
+/*  Header */
+body {
+  font-family: "Merriweather", serif;
+}
+
+.desktop-visible {
+  display: none;
+}
+.movile-visible {
+  display: none;
+}
+
+
+@media (min-width: 992px) {
+  .desktop-visible {
+    display: block;
+    margin: 0 auto;
+
+  }
+
+  header p {
+    font-size: 25px;
+  }
+
+
+}
+
+@media all and (max-width: 991px) {
+  .movile-visible {
+    display: block;
+    
+  }
+  
+
+}
+
+.image-logo {
+
+  width: 100%;
+}
+
+.medium-image img, .image-logo {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+}
+
+.header-pink {
+  background-color: #f4f0d2;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
