@@ -1,1 +1,32 @@
-/*  Add your styling here */
+* {
+    font-family: arial;
+}
+
+.mycustomrow {
+    background-color: pink;
+    max-height: 200px;
+}
+
+
+.slogan {
+    color: white;
+    font-size: 2rem;
+    font-weight: 200;
+}
+
+.navigation {
+    background-color: pink;
+    margin-top: 12px;
+    padding: 10px;
+}
+
+.nav-item {
+    padding: 10px;
+    background-color: white;
+}
+
+.img {
+    display: block;
+    width: 100%;
+    height: auto; }
+}

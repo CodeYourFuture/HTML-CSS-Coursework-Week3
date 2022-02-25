@@ -7,56 +7,22 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
     <title>Welcome to the Cake Cube</title>
 </head>
 
 <body>
-    <style>
-        * {
-            font-family: arial;
-        }
-
-        .mycustomrow {
-            background-color: pink;
-            max-height: 200px;
-        }
-
-        .logo {
-            max-width: 100%;
-            height: auto;
-            padding: 20px;
-        }
-
-        .slogan {
-            color: white;
-            font-size: 2rem;
-            font-weight: 200;
-        }
-
-        .navigation {
-            background-color: pink;
-            margin-top: 12px;
-            padding: 10px;
-        }
-
-        .nav-item {
-            padding: 10px;
-            background-color: white;
-        }
-
-        .cake {
-            padding: 0px;
-            max-width: 100%;
-            height: 100%;
-        }
-    </style>
-
 
     <header>
         <div class="container-fluid mycustomrow">
-                <img src="logo.svg" class="img-responsive logo" alt="logo">
-                <h1>Welcome!</h1>
-                <p class="slogan rounded float-end">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <div class="row">
+                <div class="col-lg-3 left">
+                    <img src="logo.svg" class="top-image" alt="logo">
+                </div>
+                <div class="col-lg-5 right">
+                    <p class="slogan float-end">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
         </div>
 
         <div class="container navigation">
@@ -76,14 +42,18 @@
                     </li>
                 </ul>
             </div>
+    </header>
 
+
+    <main>
         </div>
         <div class="container introduction">
             <div class="row">
-                <div class="col-sm-6">
+                <div class="col-lg-6">
                     <img src="https://img.taste.com.au/hbNtzI2Q/taste/2021/08/clinkers-cake-173208-2.jpg"
-                        class="img-fluid cake" alt="cake"> </div>
-                <div class="col-sm-6">
+                        class="img-fluid" alt="cake"> </div>
+                <div class="col-lg-6">
+                    <h1>Welcome!</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum minima ab odit earum
                         expedita quidem, maiores odio aliquid alias illo tenetur ipsam dignissimos deserunt dolorum?
                         Sunt non pariatur minus unde.</p>
@@ -91,7 +61,28 @@
             </div>
         </div>
 
-    </header>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <img src="https://img.delicious.com.au/pkTPC5NE/w1200/del/2016/11/peach-melba-cake-39925-1.jpg"
+                        class="img-fluid" alt="cake1">
+                </div>
+                <div class="col-lg-3">
+                    <img src="https://madus.com.np/wp-content/uploads/2020/12/Chocolate-cake-recipe-1200a.jpg"
+                        class="img-fluid" alt="cake2">
+                </div>
+                <div class="col-lg-3">
+                    <img src="https://www.cakes99.com/media/image/1071417birthday%20cake.jpg" class="img-fluid"
+                        alt="cake3">
+                </div>
+                <div class="col-lg-3">
+                    <img src="https://www.thespruceeats.com/thmb/Me6ctWectGK1MqGIxGIhLwBK_YE=/2998x2000/filters:fill(auto,1)/AngelFoodCakeHERO-35c72869f62443638bd2b033d6d381bd.jpg"
+                        class="img-fluid" alt="cake4">
+                </div>
+            </div>
+        </div>
+    </main>
+
 
 
 
