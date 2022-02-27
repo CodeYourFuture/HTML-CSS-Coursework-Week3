@@ -21,6 +21,13 @@ li a {
   display: inline;
   text-decoration: none;
 }
+ 
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
 
 .bd-highlight {
   border: 1px solid black;
