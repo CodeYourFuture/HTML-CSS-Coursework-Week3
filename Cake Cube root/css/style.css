@@ -5,6 +5,12 @@
 .mycustomrow {
     background-color: pink;
     max-height: 200px;
+    display: flex;
+    padding: 12px;
+}
+
+.logo {
+    max-width: 100%;
 }
 
 
@@ -17,16 +23,14 @@
 .navigation {
     background-color: pink;
     margin-top: 12px;
-    padding: 10px;
+    padding: 12px;
 }
 
 .nav-item {
-    padding: 10px;
+    padding: 12px;
     background-color: white;
 }
 
-.img {
-    display: block;
+img {
     width: 100%;
-    height: auto; }
 }
