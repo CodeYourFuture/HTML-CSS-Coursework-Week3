@@ -2,6 +2,8 @@
     font-family: Arial;
 }
 
+/* header styles */
+
 .mycustomrow {
     background-color: #ffc0cb;
     max-height: auto;
@@ -12,16 +14,14 @@
     padding: 6px;
 }
 
-.dropdown {
-    display: none;
-}
-
 .slogan {
     color: #ffffff;
     display: flex;
     justify-content: end;
     align-items: end;
 }
+
+/* navbar styles */
 
 .nav {
     background-color: #ffc0cb;
@@ -56,10 +56,14 @@ li:hover {
     color: #ff8398;
 }
 
+/** gallery styles **/
+
 .slideshow {
     padding-top: 24px;
     padding-bottom: 24px;
 }
+
+/** footer styles **/
 
 .bottom {
     background-color: #ffc0cb;
@@ -95,12 +99,14 @@ svg {
         display: none;
     }
 
-    .col-sm-12 {
+    .col-sm-6 {
+        width: 50%;
         padding: 12px;
     }
 
-    .col-sm-6 {
-        padding: 12px
+    .bigcake {
+        padding-top: 24px;
+        padding-bottom: 24px;
     }
 
     .socials {
