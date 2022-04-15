@@ -1,69 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Responsive Cake webpage</title>
-    <!-- Add a link to your css file here -->
     <link rel="stylesheet" href="style.css">
+    <title>Cakes & Co.</title>
 </head>
-
 <body>
-    <!-- Add your markup here -->
-
-    <!-- Grid Container -->
     <div class="grid-container">
-
-        <!-- Header -->
-        <header class="header">
-            <img class="logo" src="images/logo.png" alt="muffin logo">
-            <div class="header-right">
-                <img class="hamburger" src="images/menu.png" alt="hamburger menu">
-                <p class="header-text">The best cakes in town delivered to your door</p>
-            </div>
+        <header class="header-grid-container">
+            <img class="header-img-logo" src="images/logo.png" alt="cupcake logo">
+            <img class="menu" src="images/menu.png" alt="menu">
+            <p class="header-text">The best cakes in town delivered to your door</p>
         </header>
-
-        <!-- Navbar -->
         <nav class="nav">
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Cakes</a></li>
-                <li><a href="#">Order</a></li>
-                <li><a href="#">Lessons</a></li>
-                <li><a href="#">About</a></li>
+                <li>Home</li>
+                <li>Cakes</li>
+                <li>Order</li>
+                <li>Lessons</li>
+                <li>About</li>
             </ul>
         </nav>
-
-        <!-- Main -->
-        <!-- <main class="main"> -->
-            <section class="main-text">
+        <main class="main-grid-container">
+            <div class="main-text">
                 <h1>Welcome</h1>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam pariatur, aspernatur minus quibusdam facere sequi iusto sint aliquid, itaque voluptates vel maxime suscipit, deleniti hic.</p>
-            </section>
-            <img class="main-image" src="images/cake.png" alt="pixel art cake">
-        <!-- </main> -->
-
-        <!-- Articles -->
-        <article class="articale">
-            <img class="a1 cakeimg" src="images/cake1.png" alt="pixel art slice of strawberry cake">
-            <img class="a2 cakeimg" src="images/cake2.png" alt="pixel art shake">
-            <img class="a3 cakeimg" src="images/cake3.png" alt="pixel art mini strawberry tart">
-            <img class="a4 cakeimg" src="images/cake4.png" alt="pixel art slice of apricot cake">
-        </article>
-
-        <!-- Footer -->
-        <footer class="footer">
-            <p class="call-to-action">Join us now on</p>
-            <section class="footer-flex-container">
-                <div class="social-container"><img class='socials' src="images/twitter-icon.svg" alt="twitter logo"></div>
-                <div class="social-container"><img class='socials' src="images/facebook-icon.svg" alt="facebook logo"></div>
-                <div class="social-container"><img class='socials' src="images/instagram-icon.svg" alt="instagramm logo"></div>
-            </section>
-            <p class="ip">&copy; Best Cakes, Inc.</p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa repellendus exercitationem temporibus porro consequuntur maxime dolor ipsum omnis earum facere veritatis impedit magni neque, accusantium accusamus dignissimos saepe quam itaque impedit magni neque, accusantium accusamus dignissimos saepe quam itaque impedit magni neque, accusantium accusamus dignissimos saepe quam itaque.
+                </p>
+            </div>
+            <img src="images/cake.png" alt="strawberry cake" class="main-img">
+            <img src="images/cake1.png" alt="slice of strawberry cake" class="a1 article-img">
+            <img src="images/cake2.png" alt="strawberry shake" class="a2 article-img">
+            <img src="images/cake3.png" alt="strawberry scone" class="a3 article-img">
+            <img src="images/cake4.png" alt="slice of apricot cake" class="a4 article-img">
+        </main>
+        <footer class="footer-grid-container">
+            <ul class="contacts">
+                <li>Email</li>
+                <li>Phone</li>
+                <li>Address</li>
+            </ul>
+            <p class="disclaimer">Lorem ipsum dolor sit amet consectetur.</p>
         </footer>
     </div>
 </body>
-
 </html>
