@@ -1,1 +1,273 @@
-/*  Add your styling here */
+body {
+    background-color: burlywood;
+    margin: 0;
+}
+
+.grid-container {
+    background-color: rgb(240, 58, 170);
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    grid-template-areas: 
+    "h h h h h h h h h h h h"
+    ". m m m m m m m m m m ."
+    ". m m m m m m m m m m ."
+    ". m m m m m m m m m m ."
+    ". m m m m m m m m m m ."
+    ". m m m m m m m m m m ."
+    "f f f f f f f f f f f f";
+    grid-gap: 0.5rem;
+}
+
+.header-grid-container {
+    background-color: dodgerblue;
+    grid-area: h;
+
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
+    "logo logo . . . menu"
+    "logo logo . . . . "
+    "logo logo ht ht ht ht ";
+}
+
+    .header-img-logo {
+        grid-area: logo;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .menu {
+        grid-area: menu;
+        width: 75%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .header-text {
+        grid-area: ht;
+        width: 100%;
+        font-weight: bold;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+
+.nav {
+    display: none;
+}
+
+.main-grid-container {
+    background-color: coral;
+    grid-area: m;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, min-content) repeat(4, 1fr);
+    grid-template-areas: 
+    "mt mt"
+    "mt mt"
+    "mi mi"
+    "mi mi"
+    "a1 a2"
+    "a3 a4";
+    padding: 0;
+    align-content: center;
+    justify-content: center;
+    grid-gap: 0.5rem;
+}
+
+    .main-text {
+        grid-area: mt;
+        width:100%;
+        margin-bottom: 0;
+        align-self: center;
+    }
+        .main-text h1 {
+            margin-top: 0;
+        }
+        .main-text p {
+            margin: 0 auto;
+        }
+
+    .main-img {
+        grid-area: mi;
+        width: 100%;
+        margin: auto auto;
+    }
+
+    .article-img {
+        width: 100%;
+        justify-self: center;
+        align-self: center;
+    }
+
+.footer-grid-container {
+    background-color: darkolivegreen;
+    grid-area: f;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+    "c . ."
+    "c . ."
+    "d d d";
+}
+
+    .contacts {
+        grid-area: c;
+        background-color: white;
+        margin: auto !important;
+        height: 100%;
+        width: 100%;
+        padding: 0;
+        list-style-type: none;
+    }
+
+    .disclaimer {
+        grid-area: d;
+        background-color: aqua;
+        text-align: center;
+    }
+
+/* TABLET SIZE */
+@media screen and (min-width: 540px) {
+
+    .grid-container {
+        grid-template-rows: 7.5rem 2.5rem repeat(3, 1fr) min-content;
+        grid-template-areas:
+            "h h h h h h h h h h h h"
+            ". n n n n n n n n n n ."
+            ". m m m m m m m m m m ."
+            ". m m m m m m m m m m ."
+            ". m m m m m m m m m m ."
+            "f f f f f f f f f f f f";
+    }
+
+        .header-grid-container {
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            grid-template-areas:
+                "logo . . . ."
+                "logo ht ht ht ht ";
+        }
+            
+                .header-img-logo {
+                    max-height: 100%;
+                    width: auto;
+                }
+                
+                .menu {
+                    display: none;
+                }
+        /* NAV APPEARS AT TABLE SIZE */
+        .nav {
+            display: inline-block;
+            grid-area: n;
+            background-color: green;
+        }
+
+            .nav ul {
+            list-style-type: none;
+            width: 100%;
+            display: flex;
+            background-color: yellowgreen;
+            justify-content: space-evenly;
+            padding: 0;
+            }
+        
+        .main-grid-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, min-content) repeat(2, 15rem);
+            grid-template-areas:
+                "mt mt"
+                "mi mi"
+                "mi mi"
+                "a1 a2"
+                "a3 a4";
+        }
+            
+            .main-img {
+                grid-area: mi;
+                max-width: 30rem;
+                margin: auto auto;
+            }
+            
+            .article-img {
+                max-height: 100%;
+                max-width: 100%;
+                align-self: center;
+                width: auto;
+            }
+
+        .footer-grid-container {
+            background-color: darkolivegreen;
+            grid-area: f;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            grid-template-areas:
+                "c c c"
+                "d d d";
+        }
+            
+            .contacts {
+                grid-area: c;
+                background-color: white;
+                margin: auto !important;
+                height: 100%;
+                width: 100%;
+                padding: 0;
+                list-style-type: none;
+                display: flex;
+                flex-direction: row;
+                justify-items: center;
+                justify-content: space-evenly;
+                
+            }
+
+                .contacts li {
+                    margin: 2rem;
+                    display: inline;
+                }
+            
+            .disclaimer {
+                grid-area: d;
+                background-color: aqua;
+                text-align: center;
+            }
+    }
+
+/* LAPTOP SIZE */
+@media screen and (min-width: 900px) {
+
+    .main-grid-container {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, min-content) 15rem;
+        grid-template-areas:
+            "mi mi mt mt"
+            "mi mi mt mt"
+            "a1 a2 a3 a4";
+        text-align: right;
+    }
+
+    .main-text {
+        align-self: baseline;
+    }
+
+    .main-img {
+        grid-area: mi;
+        max-width: 75%;
+        margin: 2rem auto;
+    }
+    
+    .article-img {
+        max-height: 100%;
+        max-width: 100%;
+        align-self: center;
+        width: auto;
+    }
+
+}
