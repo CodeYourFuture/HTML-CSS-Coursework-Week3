@@ -1,1 +1,92 @@
 /*  Add your styling here */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(14, 1fr);
+    /* grid-template-rows: 10vh, 10vh, 20vh, 20vh, 20vh, 20vh, 10vh; */
+    grid-template-rows: 10vh 10vh 100px 80px;
+    grid-template-areas: 
+    "h h h h h h h h h h h h h h"
+    "h h h h h h h h h h h h h h"
+    ". mt mt mt mt mt mt mt mt mt mt mt mt ."
+    ". mi mi mi mi mi mi mi mi mi mi mi mi ."
+    ". a1 a1 a1 a1 a1 a1 a2 a2 a2 a2 a2 a2 ."
+    ". a3 a3 a3 a3 a3 a3 a4 a4 a4 a4 a4 a4 ."
+    "f f f f f f f f f f f f f f";
+}
+
+.header {
+    grid-area: h;
+    background-color: aqua;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    height: 100%;
+}
+
+.header-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+
+}
+.hamburger {
+    height: 20%;
+    
+}
+
+.header-text {
+    vertical-align: baseline;
+
+}
+
+.nav {
+    display: none;
+}
+
+.main-text {
+    grid-area: mt;
+
+}
+
+.main-image {
+    grid-area: mi;
+    height: 100%;
+}
+
+.a1 {
+    grid-area: a1;
+    size: cover;
+
+}
+
+.a2 {
+    grid-area: a2;
+    size: cover;
+}
+
+.a3 {
+    grid-area: a3;
+    size: cover;
+}
+
+.a4 {
+    grid-area: a4;
+    size: cover;
+}
+
+.footer {
+    grid-area: f;
+
+}
+
+.socials {
+    width: 2rem;
+}
+
+.cakeimg {
+    height: 100%;
+}
