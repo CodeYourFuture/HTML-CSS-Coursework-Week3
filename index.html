@@ -5,12 +5,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Responsive Cake webpage</title>
-    <!-- Add a link to your css file here -->
-</head>
+    <title>Responsive Cake webpage</title> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">   
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/text-on-hover.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media-query.css">
+   </head>
 
 <body>
-    <!-- Add your markup here -->
-</body>
+    <header>
+        <div class="logo_and_hamburger-icon">           
+            <div>
+                <img class="logo animate__animated animate__rollIn" src="images/cupcake-logo-2.png" alt="cupcake logo"/>
+                <p class="logo-text animate__animated animate__slideInLeft">Mighty Cupcakes</p>
+            </div>
+            <img class="hamburger-icon" src="images/menu-hamburger.svg" alt="hamburger icon" />        
+        </div>        
+        <p class="animate__animated animate__zoomInDown">The best cupcakes in town delivered to your door</p>
+    </header>
 
+    <nav class="animate__animated animate__slideInRight">
+        <ul class="menu">
+            <li><a class="active" href="#">home</a></li>
+            <li><a href="#">cakes</a></li>
+            <li><a href="#">order</a></li>
+            <li><a href="#">lessons</a></li>
+            <li><a href="#">about</a></li>
+        </ul>
+    </nav>
+
+    <main class="wrapper">    
+        <div class="text">
+            <h1 class="animate__animated animate__zoomIn">Welcome</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla numquam ullam modi? Dolor ex dicta, nulla exercitationem, neque cupiditate facere deserunt, cumque perspiciatis maxime impedit inventore. Veritatis, quo eum! Alias?</p>
+        </div>        
+            <div class="cupcake-image top tooltip"><span class="tooltiptext">Eat Me</span><img src="images/cupcakes-table.jpg" alt="cupcake" /></div>    
+            <div class="cupcake-image one tooltip"><span class="tooltiptext">Eat Me</span><img src="images/cupcakes-7.jpg" alt="cupcake" /></div>
+            <div class="cupcake-image two tooltip"><span class="tooltiptext">Eat Me</span><img src="images/caramel-cupcake.jpg" alt="cupcake" /></div>
+            <div class="cupcake-image three tooltip"><span class="tooltiptext">Eat Me</span><img src="images/cupcakes-4.jpg" alt="cupcake"  /></div>
+            <div class="cupcake-image four tooltip"><span class="tooltiptext">Eat Me</span><img src="images/cupcakes-6.jpg" alt="cupcake"/></div>            
+    </main>
+
+    <footer>
+        <ul>
+            <li><a href="#">Lorem ipsum dolor sit</a></li>
+            <li><a href="#">Lorem ipsum dolor sit </a></li>
+            <li><a href="#">Lorem ipsum dolor sit</a></li>
+        </ul>
+        <p>&copy Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </footer>       
+</body>
 </html>

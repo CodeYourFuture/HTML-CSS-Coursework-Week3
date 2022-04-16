@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Grandstander:wght@400;900&family=Lalezar&family=Lemon&family=Luckiest+Guy&family=Montserrat:wght@200;300;400;600;700;800&display=swap');
+/* * {
+    outline: 1px solid red;
+} */
+
+/* General Styles */
+
+html, body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0; 
+    width: 100%;
+    font-family: 'Grandstander', cursive, sans-serif;  
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+ul li {
+    list-style: none;
+    display: block;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #f5a182;
+    display: block;
+}
+
+.active {
+    color: white;
+}
+
+header, nav, main {
+    margin-bottom: 50px; /*had to place it on the bottom because to overwrite earlier margin properties */
+}
