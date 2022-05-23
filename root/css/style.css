@@ -7,7 +7,7 @@
 .mycustomrow {
     background-color: #ffc0cb;
     max-height: auto;
-    display: flex;
+    display: block;
 }
 
 .logo {
@@ -19,6 +19,10 @@
     display: flex;
     justify-content: end;
     align-items: end;
+}
+
+.hamMenu {
+    display: none;
 }
 
 /* navbar styles */
@@ -99,9 +103,32 @@ svg {
         display: none;
     }
 
+    .hamMenu {
+        display: flex;
+        padding: 0;
+    }
+
+    .hamIcon {
+        padding: 0;
+        display: flex;
+        flex-wrap: inherit;
+        align-items: center;
+        justify-content: flex-end !important;
+    }
+
+    h1 {
+        text-align: right;
+    }
+
     .col-sm-6 {
         width: 50%;
         padding: 12px;
+    }
+
+    .slogan {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
 
     .bigcake {
