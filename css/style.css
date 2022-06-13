@@ -1,0 +1,93 @@
+/*  Add your styling here */
+
+/*  Using font from Google. */
+
+html, body{
+    font-family:'Roboto', sans-serif;
+    background-color: #f8edeb;
+    display: grid;
+    font-family: "Avenir Next", 
+    display: grid;
+}
+
+
+
+
+.main{
+
+
+min-height: 500px;
+
+}
+/* header and menu  */
+.header{
+  background-image: url();
+}
+.logo-top{
+  font-family: monospacNanumPenScript-Regular.ttf, monospace;
+  font-weight:bold;
+  margin-left: 1em;
+}
+
+.nav-bar{
+    background-color: #ffcdb2;
+    color: blue;
+    display: flex;
+    flex-direction: row;
+}
+.nav-bar-list{
+  list-style: none;
+
+}
+.menu-bar-list{
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+}
+.picture-main{
+  width: 100vh;
+}
+.footer{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+
+
+
+
+
+/* footer css code */
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+  }
+  .fa:hover{
+      opacity:0.7
+  }
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }
