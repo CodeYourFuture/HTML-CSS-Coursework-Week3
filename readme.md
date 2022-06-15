@@ -1,5 +1,19 @@
 # Cakes Co
 
+# Challenge: "Responsive landing page (CSS Grid)"
+
+## Completed project
+
+### Responsive mobile
+![Example Screenshot from the finished challenge](./img/WC__completed-03.JPG)
+
+### Ipad and desktop 
+![Example Screenshot from the finished challenge](./img/WC__completed-04.JPG)
+
+_________________________
+
+## Challenge Overview
+
 Made to create a **responsive webpage** showcasing your cake business, based on two provided wireframes.
 
 ## Wireframes
