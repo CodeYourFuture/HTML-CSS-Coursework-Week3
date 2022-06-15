@@ -5,10 +5,10 @@
 ## Completed project
 
 ### Responsive mobile
-![Example Screenshot from the finished challenge]([.https://github.com/LovesPictures/WowCakes/blob/master/img/WC__completed-03.jpg))
+![Example Screenshot from the finished challenge](./img/WC__completed-03.JPG)
 
 ### Tablet and desktop 
-![Example Screenshot from the finished challenge]([./img/WC__completed-04.JPG](https://github.com/LovesPictures/WowCakes/blob/master/img/WC__completed-04.jpg)
+![Example Screenshot from the finished challenge](./img/WC__completed-04.JPG)
 
 _________________________
 
@@ -24,10 +24,10 @@ Build the mobile wireframe first, then adapt it for larger screens.
 
 Make a template for the three screen scenarios
 _Template for mobile ipad and desktop _
-![alt text](https://github.com/LovesPictures/WowCakes/blob/master/img/Slide6.JPG "twireframe template")
+![alt text](./img/Slide6.JPG "twireframe template")
 
 _completed sites for mobile iPad and desktop_
-![alt text](https://github.com/LovesPictures/WowCakes/blob/a7997c4eae1f66f808008e8c8892c5c5054c7691/img/Slide7.JPG "twireframe template")
+![alt text](./img/Slide7.JPG "wireframe template")
 
 ### Define your own style
 
