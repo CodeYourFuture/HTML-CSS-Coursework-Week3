@@ -5,10 +5,10 @@
 ## Completed project
 
 ### Responsive mobile
-![Example Screenshot from the finished challenge](https://github.com/LovesPictures/WowCakes/blob/master/img/WC__completed-03.JPG "mobile view")
+![Example Screenshot from the finished challenge]([https://github.com/LovesPictures/WowCakes/blob/master/img/WC__completed-03.JPG](https://github.com/LovesPictures/WowCakes/blob/master/img/WC__completed-04.jpg))
 
 ### Ipad and desktop 
-![Example Screenshot from the finished challenge](./img/WC__completed-04.JPG)
+![Example Screenshot from the finished challenge]([./img/WC__completed-04.JPG](https://github.com/LovesPictures/WowCakes/blob/master/img/WC__completed-04.jpg)
 
 _________________________
 
