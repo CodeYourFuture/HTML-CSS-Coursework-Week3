@@ -16,20 +16,20 @@ Please complete the details below this message
 
 # Your Details
 
-- Your Name:
-- Your City:
-- Your Slack Name:
+- Your Name: Judith Ricketts
+- Your City: Ldn8
+- Your Slack Name: Loves Pictures
 
 # Homework Details
 
-- Module:
-- Week:
+- Module: CSS Grid
+- Week: W4
 
 # Notes
 
-- What did you find easy?
+- What did you find easy? - I really lone working with CSS Grid
 
-- What did you find hard?
+- What did you find hard? In general it all wnet well.
 
 - What do you still not understand?
 
