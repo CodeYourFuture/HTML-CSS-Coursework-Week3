@@ -5,7 +5,7 @@
 ## Completed project
 
 ### Responsive mobile
-![alt text](./img/WC__completed-03.JPG "mobile")
+![alt text](https://github.com/LovesPictures/WowCakes/blob/master/img/WC__completed-03.jpg "mobile")
 
 
 ### Tablet and desktop 
