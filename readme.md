@@ -5,10 +5,11 @@
 ## Completed project
 
 ### Responsive mobile
-![Example Screenshot from the finished challenge](./img/WC__completed-03.JPG)
+![alt text](./img/WC__completed-03.JPG "mobile")
+
 
 ### Tablet and desktop 
-![Example Screenshot from the finished challenge](./img/WC__completed-04.JPG)
+![alt text](./img/WC__completed-04.JPG "tablet and desktop")
 
 _________________________
 
