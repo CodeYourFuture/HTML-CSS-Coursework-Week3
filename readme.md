@@ -9,7 +9,7 @@
 
 
 ### Tablet and desktop 
-![alt text](./img/WC__completed-04.JPG "tablet and desktop")
+![alt text](https://github.com/LovesPictures/WowCakes/blob/master/img/WC__completed-04.jpg "tablet and desktop")
 
 _________________________
 
