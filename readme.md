@@ -5,7 +5,7 @@
 ## Completed project
 
 ### Responsive mobile
-![Example Screenshot from the finished challenge](./img/WC__completed-03.JPG)
+![Example Screenshot from the finished challenge](https://github.com/LovesPictures/WowCakes/blob/master/img/WC__completed-03.JPG "mobile view")
 
 ### Ipad and desktop 
 ![Example Screenshot from the finished challenge](./img/WC__completed-04.JPG)
