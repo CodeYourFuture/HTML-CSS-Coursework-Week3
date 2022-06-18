@@ -1,1 +1,53 @@
 /*  Add your styling here */
+.topnav {
+  height: auto;
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+.active h1 {
+  font-size: 1.4rem;
+  font-weight: 530;
+  width: 250px;
+  position: absolute;
+  bottom: 0;
+  right: 15px;
+  color: red;
+  padding: 0;
+  text-align: center;
+}
+
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.active {
+  background-color: #04aa6d;
+  color: white;
+  height: auto;
+}
+.active img {
+  height: 200px;
+  width: 200px;
+}
