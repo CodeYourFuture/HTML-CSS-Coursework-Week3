@@ -26,7 +26,7 @@
   color: white;
   padding: 10px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 1em;
   display: block;
 }
 
@@ -58,10 +58,10 @@
 }
 .active h2 {
   position: relative;
-  bottom: 60px;
-  font-size: 1.4rem;
-  font-weight: 530;
-  width: 45%;
+  bottom: 65px;
+  font-size: 3.8vw;
+  font-weight: 80;
+  width: 40vw;
   text-align: center;
   margin-left: auto;
   color: red;
@@ -75,15 +75,21 @@
   display: block;
   text-align: center;
   height: 80vh;
+  margin-top: 20px;
+}
+
+.welcome h1 {
+  font-size: 10vw;
+  padding: 15px 0;
 }
 
 .welcome p {
-  padding: 0 30px 30px 30px;
-  width: 90%;
+  padding: 0 10px 30px 10px;
+  width: 85%;
   margin: auto;
 }
 
 .welcome img {
-  width: 90%;
-  height: 400px;
+  width: 90vw;
+  height: 58vh;
 }
