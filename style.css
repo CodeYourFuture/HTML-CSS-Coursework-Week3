@@ -160,9 +160,10 @@ footer h3 {
   text-align: center;
   font-size: 3vw;
   color: #9dd9d2;
-
-  /* *** MEDIA QUERIES *** */
 }
+
+/* *** MEDIA QUERIES *** */
+
 @media only screen and (min-width: 540px) {
   .topnav {
     background-color: #f4d06f;
