@@ -7,8 +7,8 @@
 }
 
 html {
-  background-color: #;
-  color: #520f1b;
+  background-color: #f4d06f;
+  color: #392f5a;
 }
 
 /* NAVIGATION BAR */
@@ -50,10 +50,9 @@ html {
 
 .active {
   padding-bottom: 35px;
-
   margin: 0;
   height: 150px;
-  background-color: #204b0e;
+  background-color: #ff8811;
 }
 .active img {
   padding: 5px;
@@ -69,6 +68,7 @@ html {
   width: 45vw;
   text-align: center;
   margin-left: auto;
+  color: #392f5a;
 }
 
 /* NAVIGATION BAR END */
@@ -86,12 +86,15 @@ html {
 .welcome h1 {
   font-size: 10vw;
   padding: 15px 0;
+  color: #392f5a;
 }
 
 .welcome p {
   padding: 0 10px 30px 10px;
   width: 85%;
   margin: auto;
+  font-size: 2.8vw;
+  font-weight: 80;
 }
 
 .welcome img {
@@ -129,7 +132,7 @@ html {
 /* footer */
 
 footer {
-  background-color: #204b0e;
+  background-color: #ff8811;
   padding: 10px 0;
 }
 
@@ -156,4 +159,35 @@ footer {
 footer h3 {
   text-align: center;
   font-size: 3vw;
+  color: #9dd9d2;
+
+  /* *** MEDIA QUERIES *** */
+}
+@media only screen and (min-width: 540px) {
+  .topnav {
+    background-color: #f4d06f;
+  }
+  .active h2 {
+    bottom: 45px;
+    right: 20px;
+    font-size: 2.4vw;
+  }
+  .active img {
+    padding: 0px;
+  }
+  #myLinks {
+    display: flex;
+    justify-content: flex-end;
+    width: 95%;
+    margin: 20px auto;
+    background-color: #ff8811;
+  }
+  #myLinks a {
+    display: inline-flex;
+    padding: 20px;
+    color: #392f5a;
+  }
+  .topnav a.icon {
+    display: none;
+  }
 }
