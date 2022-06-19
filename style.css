@@ -1,4 +1,6 @@
 /*  Add your styling here */
+
+/* NAVIGATION BAR */
 .topnav {
   height: auto;
   overflow: hidden;
@@ -17,10 +19,10 @@
   font-size: 17px;
   display: block;
 }
-.active h1 {
+.active h2 {
   font-size: 1.4rem;
   font-weight: 530;
-  width: 250px;
+  width: 54%;
   position: absolute;
   bottom: 0;
   right: 15px;
@@ -48,6 +50,28 @@
   height: auto;
 }
 .active img {
-  height: 200px;
-  width: 200px;
+  height: 35%;
+  width: 35%;
+  padding: 0;
+}
+
+/* NAVIGATION BAR END */
+
+/* WELCOME SCREEN*/
+
+.welcome {
+  display: block;
+  text-align: center;
+  height: 80vh;
+}
+
+.welcome p {
+  padding: 0 30px 30px 30px;
+  width: 90%;
+  margin: auto;
+}
+
+.welcome img {
+  width: 90%;
+  height: 400px;
 }
