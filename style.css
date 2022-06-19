@@ -1,5 +1,7 @@
 /*  Add your styling here */
 
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -7,6 +9,7 @@
 }
 
 html {
+  font-family: "Roboto", sans-serif;
   background-color: #f4d06f;
   color: #392f5a;
 }
@@ -227,7 +230,7 @@ footer h3 {
 
   .welcome p {
     font-size: 3.2vw;
-    text-align: end;
+    text-align: justify;
     margin-right: 0;
     width: 100%;
     padding: 0;
@@ -265,5 +268,76 @@ footer h3 {
 
   footer h3 {
     font-size: 2vw;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  /* NAVBAR */
+
+  .active h2 {
+    bottom: 50px;
+    text-align: end;
+    font-size: 1.8vw;
+    width: 65%;
+  }
+
+  #myLinks a {
+    padding: 30px 20px;
+    margin-right: 35px;
+    font-size: 1.2vw;
+  }
+  .topnav a.icon {
+    display: none;
+  }
+
+  /* END OF NAVBAR */
+
+  /* COVER */
+
+  .welcome-content {
+    height: 80vh;
+    width: 98%;
+  }
+
+  .welcome h1 {
+    padding: 0 0 40px 0;
+    font-size: 5vw;
+  }
+
+  .welcome p {
+    font-size: 2.5vw;
+    text-align: justify;
+  }
+  .welcome .box {
+    width: 100%;
+    margin: 0;
+  }
+  .welcome .box img {
+    width: 80%;
+    height: 95%;
+    padding: 0px 0px;
+  }
+
+  /* END OF COVER */
+
+  /* PRODUCTS GRID */
+
+  .grid {
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    margin: 0px auto 100px auto;
+    width: 97%;
+  }
+
+  /* PRODUCTS END */
+
+  /* footer */
+
+  .foot-cont li {
+    font-size: 1.5vw;
+    padding: 25px 100px;
+  }
+
+  footer h3 {
+    font-size: 1.1vw;
   }
 }
