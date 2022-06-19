@@ -93,3 +93,23 @@
   width: 90vw;
   height: 58vh;
 }
+
+/* END OF WELCOME SCREEN */
+
+/* PRODUCTS START */
+.products {
+  height: auto;
+  margin-top: 150px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.box img {
+  width: 35vw;
+  height: 35vh;
+}
+
+/* PRODUCTS END */
