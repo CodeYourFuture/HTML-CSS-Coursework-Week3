@@ -165,13 +165,16 @@ footer h3 {
 /* *** MEDIA QUERIES *** */
 
 @media only screen and (min-width: 540px) {
+  /* NAVBAR */
+
   .topnav {
     background-color: #f4d06f;
   }
   .active h2 {
     bottom: 45px;
     right: 20px;
-    font-size: 2.4vw;
+    font-size: 3vw;
+    width: 60%;
   }
   .active img {
     padding: 0px;
@@ -185,10 +188,47 @@ footer h3 {
   }
   #myLinks a {
     display: inline-flex;
-    padding: 20px;
+    padding: 25px 15px;
     color: #392f5a;
+    font-size: 2.7vw;
   }
   .topnav a.icon {
     display: none;
+  }
+
+  /* END OF NAVBAR */
+
+  /* COVER */
+
+  .welcome-content {
+    display: flex;
+    flex-direction: row-reverse;
+    margin: auto;
+    width: 95%;
+    height: 60vh;
+  }
+
+  .welcome h1 {
+    padding: 10px;
+    margin: 0 0 15px 0;
+    font-size: 6vw;
+    text-align: end;
+  }
+
+  .welcome p {
+    font-size: 3.2vw;
+    text-align: end;
+    margin-right: 0;
+    width: 100%;
+    padding: 0;
+  }
+  .welcome .box {
+    width: 100%;
+    padding: 25 px;
+    margin: 0 10px;
+  }
+  section .box img {
+    width: 100%;
+    height: 100%;
   }
 }
