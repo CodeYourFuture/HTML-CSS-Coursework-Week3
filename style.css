@@ -1,34 +1,33 @@
 /*  Add your styling here */
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 /* NAVIGATION BAR */
+
 .topnav {
-  height: auto;
   overflow: hidden;
   background-color: #333;
   position: relative;
 }
 
-.topnav #myLinks {
+#myLinks {
   display: none;
+}
+
+#myLinks ul {
+  list-style: none;
 }
 
 .topnav a {
   color: white;
-  padding: 14px 16px;
+  padding: 10px;
   text-decoration: none;
   font-size: 17px;
   display: block;
-}
-.active h2 {
-  font-size: 1.4rem;
-  font-weight: 530;
-  width: 54%;
-  position: absolute;
-  bottom: 0;
-  right: 15px;
-  color: red;
-  padding: 0;
-  text-align: center;
 }
 
 .topnav a.icon {
@@ -46,13 +45,26 @@
 
 .active {
   background-color: #04aa6d;
+  padding-bottom: 35px;
   color: white;
-  height: auto;
+  margin: 0;
+  height: 150px;
 }
 .active img {
-  height: 35%;
-  width: 35%;
-  padding: 0;
+  padding: 5px;
+  width: auto;
+  height: 100%;
+  margin-top: 0px;
+}
+.active h2 {
+  position: relative;
+  bottom: 60px;
+  font-size: 1.4rem;
+  font-weight: 530;
+  width: 45%;
+  text-align: center;
+  margin-left: auto;
+  color: red;
 }
 
 /* NAVIGATION BAR END */
