@@ -11,6 +11,10 @@ html {
   color: #392f5a;
 }
 
+li:hover {
+  color: #f4d06f;
+}
+
 /* NAVIGATION BAR */
 
 .topnav {
@@ -170,6 +174,12 @@ footer h3 {
   .topnav {
     background-color: #f4d06f;
   }
+
+  .topnav a:hover {
+    background-color: #ff8811;
+    color: #f4d06f;
+  }
+
   .active h2 {
     bottom: 45px;
     right: 20px;
@@ -230,5 +240,30 @@ footer h3 {
   section .box img {
     width: 100%;
     height: 100%;
+  }
+
+  /* END OF COVER */
+
+  /* PRODUCTS GRID */
+
+  .products {
+    height: auto;
+  }
+
+  .grid {
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  }
+
+  /* PRODUCTS END */
+
+  /* footer */
+
+  .foot-cont li {
+    font-size: 2.5vw;
+    padding: 15px 40px;
+  }
+
+  footer h3 {
+    font-size: 2vw;
   }
 }
