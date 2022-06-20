@@ -8,7 +8,7 @@
 }
 
 
-*, *::before, *::after {
+*, ::before, ::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -117,6 +117,7 @@ main {
   "article2";
   margin: 0 auto;
   width: 100%;
+  padding: 1rem;
   background-color: var(--rose);
 }
 
@@ -130,18 +131,24 @@ main {
 
 .welcome{
   grid-area: seem;
+  margin-bottom: .5rem;
  
 }
 
 .welcome-text{
   grid-area: text;
   text-align: left;
- 
+  padding: 1rem;
 }
 
 .welcome-text h2{
   font-size: 2.3rem;
+  text-transform: capitalize;
   margin-bottom: .778rem;
+}
+
+.welcome-text p{
+  letter-spacing: 1.4;
 }
 
 .second-art{
@@ -153,5 +160,6 @@ main {
 .second-art {
   grid-area: article2;
   display: grid;
-  grid-template-columns: repeat(2, minmax(250px, 1fr));
+  grid-template-columns: repeat(2, minmax(250px, auto));
+  gap: 10px;
 }
