@@ -1,1 +1,22 @@
 /*  Add your styling here */
+:root{
+  --white: #ffffff;
+  --black: #000000;
+  --rose: #FF007F;
+}
+
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body{
+  font-size: 1rem;
+  line-height: 1.8;
+  color: var(--white);
+  background: var(--black);
+  font-family: 'Open Sans', sans-serif;
+}
