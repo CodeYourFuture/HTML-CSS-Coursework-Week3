@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Responsive Cake webpage</title>
-    <!-- Add a link to your css file here -->
+    
  </head>
 
  <body>
@@ -17,75 +17,56 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Cakes & Co.</title>
+    <link rel="stylesheet" href="/style.css">
+    <title>Letlala & Co.</title>  
  </head>
- <body>
- <div class="grid-container">
- <header class="header-grid-container">
- <img class="header-img-logo" src="images/logo.png" alt="cupcake logo">
- <img class="menu" src="images/menu.png" alt="menu">
- <p class="header-text">The best cakes in town delivered to your door</p>
- <header class="header">
- <div class="header-logo"><img src="images/—Pngtree—delicious snack rice cake illustration_4691066.png"
- alt="logo" /></div>
- <div class="header-p">
- <p>The best rice cakes in town delivered to your door</p>
- </div>
- <button class="hamburger"><img src="images/menu-hamburger.svg" alt="icon"></button>
- </header>
-        
- <!--Nav bar-->      
- <nav class="navigation">images/rice cake 2.jpg
- <ul class="navigation-list">
- <li><a href="#">HOME</a></li>
- <li><a href="#">CAKES</a></li>
- <li><a href="#">ORDERING</a></li>
- <li><a href="#">LESSONS</a></li>
- <li><a href="#">ABOUT</a></li>
- </ul>
- </nav>
- <!---Main content-->      
- <main class="main">
- <div>
- <h1>Welcome</h1>
- </div>
- <div class="welcome-section-article">
- <p>Some text about rice cakes and how we make them. Some more text about how delicious they are and why you
- should try them. Some more about us and what can you do on this website. Also you can order our cakes
- this and this way. Some text about rice cakes and how we make them. Some more text about how delicious
- they are and why you should try them.</p>
- </div>
- <div class="main-section-image"><img src="images/—Pngtree—rice cake slices_5625760.png" /></div>
- <div class="feature-section"><img src="image.png" alt="Chocolate Romantic wedding cake" /></div>
- <div class="feature-section"><img src="images/rice cake 2.jpg" alt="rice cake" /></div>
- <div class="feature-section"><img src="images/rice cake 3.jpg" alt="rice cake" /></div>
- <div class="feature-section"><img src="images/rice cake 4.jpg" alt="rice cake" /></div>
- </main>
- <!---Footer-->     
- <footer class="footer">
- <div>
- <p>Follow us on</p>
- <a href="#">
-  <img src="images/instagram-brands.svg" alt="instagram-logo" />
-                    </a>
-                </div>
-                <div>
-                    <p>Find us on</p>
-                    <a href="#">
-                        <img src="images/twitter-brands.svg" alt="twitter-logo" />
-                    </a>
-                </div>
-                <div>
-                    <p>Contact us at</p>
-                    <a href="#">
-                        <img src="images/envelope-regular.svg" alt="email-logo" />
-                    </a>
-                </div>
-                <div>
-                    <p class="copyright">COPYRIGHT<span>&copy;</span>Letlala Cake Company</p>
-                </div>
-            </footer>
- </body>
+ <!---Header content--> 
+ <header class="header-container">
+ <img src="./images/sweet-4214168_640.png" alt="Brand logo Sweet Treats">
+ <div class="toggle-title">
+ <label for="hamburger">&#9776</label>
+ <input type="checkbox" id="hamburger">
+ <h1>The best cakes in town delivered to your door</h1>
 
+ <!---Nav bar-->       
+ <ul>
+ <li><a href="#welcome" class="nav-link">About Us</a></li>
+ <li><a href="#page-images" class="nav-link">Gallery</a></li>
+ <li><a href="#contact" class="nav-link">Contact</a></li>
+ </ul>
+ </div>
+ </header>
+
+ <main class="page-wrapper">
+ <article class="welcome" id="welcome">
+ <div class="welcome-text">
+ <h2>About Us</h2>
+ <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore illum culpa numquam possimus hic quibusdam alias
+ officia praesentium vero deserunt aliquam explicabo necessitatibus porro, harum nam rerum nulla nobis corporis?
+ Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore illum culpa numquam possimus hic quibusdam alias
+ officia praesentium vero deserunt aliquam explicabo necessitatibus porro, harum nam rerum nulla nobis corporis?</p>
+ </div>
+ <div class="hero-img">
+ <img src="./images/jeanie-de-klerk-WddjbJWlQ34-unsplash.jpg" alt="Chocolate Velvet Cake with berries">
+ </div>
+ </article>
+ <section class="page-images" id="page-images">
+ <div class="container">
+ <img src="./images/kristin-brown-eEgq3bWijpI-unsplash.jpg" alt="Unicorn Cake">
+ <img src="./images/pranjall-kumar-Ak4XaExjT2s-unsplash.jpg" alt="A slice of chocolate cake on a plate">
+ <img src="./images/nickie-joseph-T6oD9CIlpGA-unsplash.jpg" alt="Cupcake with white icing on the top">
+ <img src="./images/sergio-arze-wp3yOyh0xB4-unsplash.jpg" alt="A tray of cinnamon buns">
+ </div>
+ </section>
+ </main>
+ <!--Footer-->
+ <footer clas="footer" id="contact">
+ <p class="copyright">COPYRIGHT<span>&copy;</span>Kabelo Letlala 2022</p>
+ <div class="icons">
+ <a href="https://www.instagram.com" target="_blank"><img src="./images/iconfinder_5296765_camera_instagram_instagram logo_icon_512px.png" alt="instagram"></a>
+ <a href="https://www.pinterest.co.uk" target="_blank"><img src="./images/iconfinder_5296503_inspiration_pin_pinned_pinterest_social network_icon_512px.png" alt="Pinterest"</a>
+ <a href="https://www.facebook.com/" target="_blank"><img src="./images/iconfinder_5296499_fb_facebook_facebook logo_icon_512px.png" alt="Facebook"></a>
+ </div>
+ </footer>
+ </body>
  </html>
