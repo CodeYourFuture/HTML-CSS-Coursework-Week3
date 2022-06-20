@@ -32,12 +32,10 @@ img {
 /***************header styles**********************/
 
 header{
-
   display: grid;
   grid-template-areas: 
   "top" 
   "navbar";
-  background: var(--gray);
   min-height: 100vh;
 }
 
@@ -46,6 +44,7 @@ header{
   display: grid;
   grid-template-areas: 
   'logo text';
+  background: var(--gray);
 }
 
 .logo{
@@ -162,4 +161,87 @@ main {
   display: grid;
   grid-template-columns: repeat(2, minmax(250px, auto));
   gap: 10px;
+}
+
+
+/***************************************************************footer styles***********************************/
+
+.footer{
+  padding: 1rem;
+}
+
+.footer .footer-left{
+  display: grid;
+}
+
+.footer-left ul{
+  width: 50%;
+  list-style: none;
+}
+
+.footer-left ul li{
+  padding: .30rem;
+  text-align: left;
+  margin: 10px;
+  border-radius: 4px;
+  background-color: var(--white)
+}
+
+.footer-left ul li a{
+  color: var(--black);
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.footer .socio-left {
+  margin: 0 auto;
+}
+
+.socio-left .socio-links {
+  display: flex;
+  list-style: none;
+  font-size: .445rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+
+/******************************************Media queries***************************************/
+
+@media (min-width: 540px){
+
+
+  header{
+   padding: 0;
+  }
+
+  .btn-toggle img{
+    display: none;
+    }
+
+    .text-content .text{
+      text-align: right;
+      font-size: 2rem;
+      color: var(--white);
+    }
+
+    .navbar{ 
+      display: block; 
+      padding: 1rem;
+      margin: 10px;
+      background-color: var(--gray);
+    }
+
+    .navbar ul {
+      display: flex;
+      justify-content: flex-end;
+    }
+ 
+}
+
+@media (min-width: 900px){
+
+  header{
+    border: 2px solid green;
+  }
 }
