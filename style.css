@@ -1,1 +1,44 @@
 /*  Add your styling here */
+body{
+	display: grid;
+	/* background-color: black; */
+	grid-template-columns: 1fr;
+	grid-template-rows: 20% 10% 15% 20% 20% auto;
+	grid-template-areas:
+		"header"
+		"heading"
+		"description"
+		"focus_image"
+		"quad_image"
+		"footer";
+}
+
+#banner{
+	grid-area: header;
+	background-color: blue;
+}
+
+#heading{
+	grid-area: heading;
+	background-color: orange;
+}
+
+#description{
+	grid-area: description;
+	background-color: brown;
+}
+
+#focus_image{
+	grid-area: focus_image;
+	background-color: green;
+}
+
+#quad_image{
+	grid-area: quad_image;
+	background-color: blueviolet;
+}
+
+#footer{
+	grid-area: footer;
+	background-color: red;
+}
