@@ -1,16 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <title>Responsive Cake webpage</title>
-    <!-- Add a link to your css file here -->
-</head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
-    <!-- Add your markup here -->
-</body>
+  <body>
+    <!-- Beginning of nav -->
+    <header>
+      <nav>
+        <div class="topnav">
+          <div class="active">
+            <a href="#home" class="active"><img src="logo.png" alt="" /></a>
+            <h2>The best cakes in town delivered to your door</h2>
+          </div>
 
+          <div id="myLinks">
+            <ul>
+              <a href="#"><li>HOME</li></a>
+              <a href="#"><li>CAKES</li></a>
+              <a href="#"><li>ORDERING</li></a>
+              <a href="#"><li>LESSONS</li></a>
+              <a href="#"><li>ABOUT</li></a>
+            </ul>
+          </div id="icon">
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i
+          ></a>
+        </div>
+      </nav>
+      <!-- end of nav -->
+    </header>
+
+    <main>
+      <!-- Beginning of welcome -->
+
+      <section class="welcome">
+        <article class="welcome-content">
+          <div class="box welcome-text">
+            <h1>Welcome</h1>
+
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pretium vulputate sapien nec sagittis aliquam malesuada bibendum arcu vitae. 
+               
+            </p>
+          </div>
+
+          <div class="box welcome-img">
+            <img
+              src="welcome.jpg"
+              alt="A deliciously decorated chocolate mousse cake"
+            />
+          </div>
+        </article>
+      </section>
+
+      <!-- PRODUCTS -->
+
+      <section class="products">
+        <div class="grid">
+          <div class="box"><img src="01 box.jpg" alt="" /></div>
+          <div class="box"><img src="02 box.jpg" alt="" /></div>
+          <div class="box"><img src="03 box.jpg" alt="" /></div>
+          <div class="box"><img src="04 box.jpg" alt="" /></div>
+        </div>
+      </section>
+      <!-- END OF PRODUCTS -->
+
+      <!-- BEGINNING OF FOOTER -->
+
+      <footer>
+        <div class="foot-cont">
+          <ul>
+            <a href="#">
+              <li>ABOUT</li>
+            </a>
+            <a href="#">
+              <li>LOGIN</li>
+            </a>
+            <a href="#">
+              <li>CONTACT</li>
+            </a>
+          </ul>
+        </div>
+
+        <h3>© The cake Shop 2022</h3>
+      </footer>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
 </html>
