@@ -2,9 +2,9 @@
 :root{
   --white: #ffffff;
   --black: #000000;
-  --rose: #FF007F;
-  --gray:#808080;
-  --light-green:#6d7c52;
+  --main-clr: #ddbea9;
+  --header-clr:#fbc4ab;
+  --background-clr:#4a4e69;
 }
 
 
@@ -19,7 +19,7 @@ body{
   font-size: 1rem;
   line-height: 1.8;
   color: var(--white);
-  background: var(--light-green);
+  background: var(--background-clr);
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -43,7 +43,7 @@ header{
   display: grid;
   grid-template-areas: 
   'logo text';
-  background: var(--gray);
+  background: var(--header-clr);
 }
 
 .logo{
@@ -116,7 +116,7 @@ main {
   margin: 0 auto;
   width: 100%;
   padding: 1rem;
-  background-color: var(--rose);
+  background-color: var(--main-clr);
 }
 
 .main-article {
@@ -171,10 +171,11 @@ main {
 
 .footer .footer-left{
   display: grid;
+  width: 50%;
 }
 
 .footer-left ul{
-  width: 50%;
+  text-align: left;
   list-style: none;
 }
 
@@ -254,12 +255,10 @@ main {
     }
 
     .welcome img{
-    min-height: 100vh;
+    min-height: 80vh;
     width: 100%;
     object-fit: cover;
      overflow: hidden;
-   
-     
     }
 
     .welcome-text{
@@ -280,5 +279,22 @@ main {
     gap: 15px;
     height: 70%;
     overflow: hidden;
+  }
+
+  .footer .footer-left ul {
+  display: flex;
+  width: 100vw;
+  cursor: pointer;
+  justify-content: center;
+  }
+
+  .footer .footer-left ul li {
+     
+    padding: .25rem 2rem;
+    margin: 1rem;
+  }
+  .footer .footer-left ul li a{
+
+    color: var(--black);
   }
 }
