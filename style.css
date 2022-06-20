@@ -1,1 +1,36 @@
 /*  Add your styling here */
+.heading {
+display: grid;
+grid-template-columns: 1fr 1fr;
+
+}
+.h-5 {
+color: green;
+vertical-align: bottom;
+}
+
+.cupcake-img {
+width: 200px;
+height: auto;
+}
+.nav-items {
+display: flex;
+flex-direction: row;
+justify-content:flex-end;
+padding: 30px;
+}
+.nav-list {
+text-decoration: none;
+margin-left: 30px;
+}
+
+.body-info {
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+}
+
+.cake-img {
+width: 200px;
+height: auto;
+}
