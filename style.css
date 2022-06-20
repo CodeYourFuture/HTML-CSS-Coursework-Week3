@@ -27,10 +27,11 @@ margin-left: 30px;
 .body-info {
     display: flex;
     flex-direction: row;
-    background-color: black;
+    justify-content: space-around;
+background-color: brown;
 }
 
 .cake-img {
-width: 200px;
+width: 2000px;
 height: auto;
 }
