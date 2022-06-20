@@ -3,6 +3,8 @@
   --white: #ffffff;
   --black: #000000;
   --rose: #FF007F;
+  --gray:#b3b0b0;
+  --light-green:#6d7c52;
 }
 
 
@@ -17,6 +19,85 @@ body{
   font-size: 1rem;
   line-height: 1.8;
   color: var(--white);
-  background: var(--black);
+  background: var(--gray);
   font-family: 'Open Sans', sans-serif;
+}
+
+/***************header styles**********************/
+
+header{
+
+  display: grid;
+  grid-template-areas: 
+  "top" 
+  "navbar";
+  background: var(--gray);
+  min-height: 100vh;
+}
+
+.top-area {
+  grid-area: top;
+  display: grid;
+  grid-template-areas: 
+  'logo text';
+}
+
+.logo{
+  grid-area: logo;
+}
+
+.logo img{
+  width: 175px;
+  height: 175px;
+  margin: 15px;
+  border-radius: 50%;
+}
+
+.text-content{
+  grid-area: text;
+  display: flex;
+  flex-flow: column;
+  align-items: flex-end;
+  margin-right: 25px;
+  justify-content: space-between;
+}
+
+.text-content .btn-toggle{
+margin-right: 25px;
+}
+
+.btn-toggle img{
+width: 75px;
+height: 75px;
+display: block;
+cursor: pointer;
+}
+
+.text-content .text{
+  text-align: right;
+  font-size: 1.6rem;
+  font-family: cursive;
+  margin: 0 auto;
+  width: 73%;
+  color: var(--white);
+}
+.navbar{
+  grid-area: navbar;
+  margin: 0 auto;
+  display: none;
+}
+
+.navbar ul{
+  list-style: none;
+}
+
+ul li{
+
+  padding: 10px;
+}
+
+ul li a{
+   display: block;
+  color: var(--white);
+  text-decoration: none;
 }
