@@ -1,12 +1,13 @@
 /* Add your styling here */
 /* General*/
 * {
-margin: 0;
+  margin: 0;
   padding: 0;
 }
 
 body {
-  font-family: "Cabin", sans-serif;
+ font-family: Arial, Helvetica, sans-serif;
+ background-color: goldenrod;
 }
 
 /* header */
@@ -86,7 +87,7 @@ body {
 .toggle-title li {
   list-style: none;
   line-height: 70px;
-  border-bottom: 4px dotted #F291C4;
+  border-bottom: 4px line #f29191;
 }
 
 .toggle-title a {
@@ -94,9 +95,9 @@ body {
   padding: 10px;
   color: #fff;
 }
-
+/*Nav bar*/
 .nav-link {
-  background-color: #FF8080;
+  background-color: #809eff5e;
   box-shadow: 4px 5px #FFCCAA;
   border-radius: 20px;
 }
@@ -128,7 +129,7 @@ input[type=checkbox]:checked ~ ul {
     justify-content: flex-end;
     margin-left: 0px;
     margin: 0;
-    border-bottom: 8px dotted #F291C4
+    border-bottom: 8px line #f29191
   }
   .toggle-title li {
     border: none;
@@ -152,9 +153,8 @@ input[type=checkbox]:checked ~ ul {
 
 /* end of header */
 
-
-
 /* main content wrapper */
+
 .page-wrapper {
   margin: 0 20px;
 }
@@ -254,12 +254,12 @@ input[type=checkbox]:checked ~ ul {
 
 /* footer */
 footer {
-  border-top:4px dotted #F291C4;;
+  border-top: 4px line #f29191;;
   margin-top: 20px;
 }
 @media screen and (min-width: 540px) {
   footer {
-  border-top:8px dotted #F291C4;;
+  border-top:8px line #f29191;;
 }
 
 }
@@ -301,4 +301,3 @@ address {
 }
 
 /* end of footer */
-  
