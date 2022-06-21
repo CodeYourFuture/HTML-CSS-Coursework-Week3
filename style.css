@@ -6,3 +6,44 @@
 font-family: 'Poppins', sans-serif;
 
 font-family: 'Berkshire Swash', cursive;
+ 
+:root {
+    --clr-text: black;
+    --clr-primary: #FED700;
+    --clr-secondary: #FE218B;
+    --clr-block1: #21B0FE; 
+    --clr-block2: #598392;
+    --clr-footer: #124559;
+
+    --ff-title: 'Berkshire Swash', cursive;
+    --ff-sans-serif: 'Poppins', sans-serif;
+}
+
+*,
+*::before,
+::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-family: var(--ff-sans-serif);
+    color: var(--clr-text)
+}
+
+body {
+    margin: 0;
+    width: 414px;
+    height: 1321px;
+}
+
+header {
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    justify-content: space-around;
+}
+
+.logo {
+    height: 8rem;
+    width: 8rem;
+}
