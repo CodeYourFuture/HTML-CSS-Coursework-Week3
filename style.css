@@ -1,29 +1,49 @@
 /*  Add your styling here */
+/* body, html{
+	height: 100vh;
+} */
+
 body{
+
 	display: grid;
-	/* background-color: black; */
-	grid-template-columns: 1fr;
-	grid-template-rows: 20% 10% 15% 20% 20% auto;
+	background-color: black;
+	/* grid-template-columns: 1fr; */
+	grid-template-rows: 20vh 30vh 30vh 30vh 20vh;
+	grid-row-gap: 5vh;
 	grid-template-areas:
 		"header"
-		"heading"
-		"description"
+		"main"
 		"focus_image"
-		"quad_image"
+		"quad_images"
 		"footer";
 }
 
-#banner{
+#header{
 	grid-area: header;
 	background-color: blue;
+	display: grid;
+}
+
+#main{
+	/* padding: 0%; */
+	/* margin: 0%; */
+	grid-area: main;
+	background-color: burlywood;
+	display: grid;
+	grid-template-rows: 1fr 4fr;
+	grid-template-areas:
+		"heading"
+		"description";
 }
 
 #heading{
+	margin: 0%;
 	grid-area: heading;
 	background-color: orange;
 }
 
 #description{
+	margin: 0%;
 	grid-area: description;
 	background-color: brown;
 }
@@ -33,8 +53,8 @@ body{
 	background-color: green;
 }
 
-#quad_image{
-	grid-area: quad_image;
+#quad_images{
+	grid-area: quad_images;
 	background-color: blueviolet;
 }
 
