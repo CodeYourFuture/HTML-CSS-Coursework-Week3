@@ -18,6 +18,7 @@ img {
     border-radius: 0.25em;
     object-fit: cover;
 }
+
 /* header */
 .header {
     background: #EDE0D4;
@@ -27,6 +28,11 @@ img {
 .header nav {
     display: flex;
     justify-content: right;
+}
+
+.header > nav > ul,
+.footer > nav > ul {
+    display: none;
 }
 
 .header-content {
@@ -95,4 +101,94 @@ img {
 
 .footer > p {
     text-align: center;
+}
+
+
+/* Media query */
+/* Desktop */
+@media screen and (min-width: 900px) {
+
+    /* header */
+    .header {
+        display: flex;
+        flex-direction: column-reverse;
+        background: none;
+        padding: 0em 0%;
+    }
+
+    .header > nav {
+        background: #EDE0D4;
+        padding: .8em;
+        border-radius: .25em;
+        margin: 1.5em 5% 0 5%;
+    }
+
+    .header > nav > ul,
+    .footer > nav > ul {
+        display: flex;
+        gap: 2em;
+    }
+
+    .header > nav > ul > li,
+    .footer > nav > ul > li  {
+        list-style: none;
+    }
+
+    .header > nav > ul > li > a,
+    .footer > nav > ul > li > a {
+        text-decoration: none;
+        border-radius: .25em;
+        background: #bcb8b1;
+        color: #000;
+        padding: .2em .5em;
+        transition: all .4s ease-in;
+    }
+    .header > nav > ul > li > a:hover {
+        background: #222;
+        color: #bcb8b1;
+    }
+
+    .header > nav > i {
+        display: none;
+    }
+
+    /* header welcome section */
+    .header-content {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        background: #EDE0D4;
+        padding: 1.5em 5%;
+    }
+
+    /* main */ 
+    /* intro section */
+    .intro {
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 1em;
+    }
+
+    .intro > div {
+       text-align: end;
+    }  
+
+    .intro > img {
+        height: 350px;
+    }
+
+    /* cake catalogue */
+    .cake-catalogue {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    /* footer */
+    .footer > nav > i {
+        display: none;
+    }
+
+    .footer > nav > ul {
+        justify-content: center;
+        margin: 1em 0 2em 0;
+    }
 }
