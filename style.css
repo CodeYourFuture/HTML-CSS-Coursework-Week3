@@ -1,37 +1,83 @@
-/*  Add your styling here */
+.container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+   margin: 40px;
+   grid-template-areas: "header header header header"
+   "nav nav nav nav"
+   "section section section section"
+   "footer footer footer footer"
+   "footer-2 footer-2 footer-2 footer-2";
+   grid-gap: 50px;
+}
+.header {
+    background-color: brown;
+    grid-area: header;
+}
+
+.nav {
+    background-color: beige;
+    grid-area: nav;
+}
+.section {
+    background-color: blueviolet;
+    grid-area: section;
+    align-self: center;
+    justify-self: end;
+}
+.footer {
+    background-color: grey;
+    grid-area: footer;
+}
+.footer-2 {
+    background-color: orange;
+    grid-area: footer-2;
+}
+
+/* h2 {
+    text-align: end;
+} */
+
+.nested-grid-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 30px;
+}
 .heading {
 display: grid;
-grid-template-columns: 1fr 1fr;
+grid-template-columns: 2fr 1fr;
+margin: 30px;
+}
 
-}
-.h-5 {
-color: green;
-vertical-align: bottom;
-}
 
 .cupcake-img {
-width: 800px;
+width: 500px;
 height: auto;
-}
+} 
+
 .nav-items {
 display: flex;
 flex-direction: row;
 justify-content:flex-end;
 padding: 30px;
 }
+
 .nav-list {
 text-decoration: none;
 margin-left: 30px;
+background-color: grey;
+color: white;
 }
 
-.body-info {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-background-color: brown;
+.nested-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 30px;
+
 }
 
 .cake-img {
-width: 2000px;
+width: 500px;
 height: auto;
-}
+
+} 
