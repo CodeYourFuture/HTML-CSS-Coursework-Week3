@@ -143,7 +143,9 @@ img {
         padding: .2em .5em;
         transition: all .4s ease-in;
     }
-    .header > nav > ul > li > a:hover {
+
+    .header > nav > ul > li > a:hover, 
+    .footer > nav > ul > li > a:hover {
         background: #222;
         color: #bcb8b1;
     }
