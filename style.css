@@ -2,9 +2,10 @@
 :root{
   --white: #ffffff;
   --black: #000000;
-  --main-clr: #ddbea9;
+  --main-clr: #db882a;
   --header-clr:#fbc4ab;
   --background-clr:#4a4e69;
+  --primary-clr: #faedcd;
 }
 
 
@@ -18,8 +19,8 @@
 body{
   font-size: 1rem;
   line-height: 1.8;
-  color: var(--white);
-  background: var(--background-clr);
+  color: var(--black);
+  background-color: var(--primary-clr);
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -43,7 +44,7 @@ header{
   display: grid;
   grid-template-areas: 
   'logo text';
-  background: var(--header-clr);
+  background-color: var(--header-clr);
 }
 
 .logo{
@@ -64,10 +65,11 @@ header{
   align-items: flex-end;
   margin-right: 5px;
   justify-content: space-between;
+  
 }
 
 .text-content .btn-toggle{
-margin-right: 25px;
+ margin-right: 25px;
 }
 
 .btn-toggle img{
@@ -83,7 +85,7 @@ cursor: pointer;
   font-family: cursive;
   margin: 0 auto 1rem;
   width: 73%;
-  color: var(--white);
+
 }
 .navbar{
   grid-area: navbar;
@@ -93,16 +95,18 @@ cursor: pointer;
 
 .navbar ul{
   list-style: none;
+  color: var(--black);
+  background-color: var(--header-clr);
 }
 
 ul li{
-
   padding: 10px;
 }
 
 ul li a{
-   display: block;
-  color: var(--white);
+  display: block;
+  color: var(--black);
+  padding: .5rem;
   text-decoration: none;
 }
 
@@ -117,11 +121,13 @@ main {
   width: 100%;
   padding: 1rem;
   background-color: var(--main-clr);
+
 }
 
 .main-article {
   grid-area: article;
   display: grid;
+  grid-template-rows: 1fr;
   grid-template-areas: 
   "text"
   "seem";
@@ -130,6 +136,7 @@ main {
 .welcome{
   grid-area: seem;
   margin-bottom: .5rem;
+
  
 }
 
@@ -137,6 +144,7 @@ main {
   grid-area: text;
   text-align: left;
   padding: 1rem;
+  color: var(--primary-clr);
 }
 
 .welcome-text h2{
@@ -149,16 +157,13 @@ main {
   letter-spacing: 1.4;
 }
 
-.second-art{
+.second-art {
   grid-area: article2;
   margin: 0 auto;
   text-align: center;
-}
-
-.second-art {
-  grid-area: article2;
   display: grid;
   grid-template-columns: repeat(2, minmax(250px, auto));
+  grid-template-rows: auto;
   gap: 10px;
 }
 
@@ -167,6 +172,7 @@ main {
 
 .footer{
   padding: 1rem;
+  background-color: var(--header-clr);
 }
 
 .footer .footer-left{
@@ -180,14 +186,19 @@ main {
 }
 
 .footer-left ul li{
-  padding: .30rem;
+  padding: .20rem;
   text-align: left;
   margin: 10px;
   border-radius: 4px;
   background-color: var(--white)
 }
 
+.footer-left ul li:hover{
+  
+}
+
 .footer-left ul li a{
+
   color: var(--black);
   text-decoration: none;
   text-transform: capitalize;
@@ -224,15 +235,15 @@ main {
     .text-content .text{
       text-align: right;
       font-size: 1.6rem;
-      color: var(--white);
+      color: var(--black);
     }
 
     .navbar{ 
       display: block; 
-      padding: 1rem;
+      padding: .55rem;
       margin: 10px;
       height: 70px;
-      background-color: var(--gray);
+      
     }
 
     .navbar ul {
@@ -274,12 +285,37 @@ main {
 
 @media (min-width: 900px){
 
+  ul li a:hover{
+   color: var(--primary-clr);
+    background-color: var(--main-clr);
+  }
+
+  .main-article {
+    grid-template-rows: minmax(300px, 750px);
+    overflow: hidden;
+    margin-bottom: 1rem;
+  }
+
+  .text-content .text{
+   font-size: 2.5rem;
+   color: var(--main-clr);
+  }
+
+  .welcome-text{
+    letter-spacing: 1.8;
+   font-size: 1.2rem;
+  }
+
+  .welcome-text h2{
+    font-size: 2.4rem;
+  }
+
   .second-art{
     grid-template-columns: repeat(4, 1fr);
     gap: 15px;
-    height: 70%;
-    overflow: hidden;
   }
+ 
+
 
   .footer .footer-left ul {
   display: flex;
