@@ -166,6 +166,15 @@ main {
   grid-template-rows: auto;
   gap: 10px;
 }
+.second-art figure{
+  transform: scale(1);
+  transition: all .5s linear;
+}
+
+.second-art figure:hover{
+
+  transform: scale(.95);
+}
 
 
 /***************************************************************footer styles***********************************/
@@ -186,22 +195,11 @@ main {
 }
 
 .footer-left ul li{
-  padding: .20rem;
+  padding: .1rem;
   text-align: left;
-  margin: 10px;
+  margin: 5px;
   border-radius: 4px;
   background-color: var(--white)
-}
-
-.footer-left ul li:hover{
-  
-}
-
-.footer-left ul li a{
-
-  color: var(--black);
-  text-decoration: none;
-  text-transform: capitalize;
 }
 
 .footer .socio-left {
@@ -213,6 +211,7 @@ main {
   list-style: none;
   font-size: .445rem;
   justify-content: center;
+  align-items: center;
   margin-top: 1rem;
 }
 
