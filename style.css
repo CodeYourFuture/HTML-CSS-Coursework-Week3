@@ -3,9 +3,9 @@
   --white: #ffffff;
   --black: #000000;
   --main-clr: #005f73;
-  --header-clr:#fbc4ab;
+  --header-clr:#f1a27d;
   --background-clr:#4a4e69;
-  --primary-clr: #faedcd;
+  --primary-clr: #d5bdaf;
 }
 
 
@@ -110,6 +110,7 @@ ul li a{
   text-decoration: none;
 }
 
+
 /***************************************************main styles************************************/
 
 main {
@@ -118,7 +119,7 @@ main {
   "article"
   "article2";
   padding: 1rem;
-  background-color: var(--main-clr);
+  background-color: var(--primary-clr);
 
 }
 
@@ -132,14 +133,18 @@ main {
 
 .welcome{
   grid-area: seem;
-  margin-bottom: .5rem;
+}
+
+.welcome img{
+  width: 100vw;
+  object-fit: cover;
 }
 
 .welcome-text{
   grid-area: text;
   text-align: left;
   padding: 1rem;
-  color: var(--primary-clr);
+  color: var(--black);
 }
 
 .welcome-text h2{
@@ -214,6 +219,7 @@ main {
 
 @media (min-width: 540px){
 
+
 /******************media header*************/
   header{
    padding: 0;
@@ -246,6 +252,12 @@ main {
     .navbar ul li {
       padding: .55rem;
     }
+
+    ul li a:hover{
+      color: var(--white);
+      background-color: var(--main-clr);
+    }
+  
 
     /****************************************media main area****************************************/
  main{
@@ -282,21 +294,8 @@ main {
 
 @media (min-width: 900px){
 
-  ul li a:hover{
-   color: var(--primary-clr);
-    background-color: var(--main-clr);
-  }
+
 /*******main area*****/
-
-main{
-  grid-auto-rows: ;
-}
-
-  .main-article {
-  
-    grid-template-rows: 1fr;
-    border: 1px solid red;
-  }
 
   .text-content .text{
    font-size: 2.5rem;
