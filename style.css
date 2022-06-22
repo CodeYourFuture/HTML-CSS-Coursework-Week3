@@ -127,7 +127,7 @@ h1 {
 
 /********* Main-article ********/
 
-h2 {
+span {
     font-family: var(--ff-title);
     font-size: 2rem;
     background-color: var(--clr-secondary);
@@ -194,7 +194,7 @@ footer {
 
 
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 540px) {
     .nav-menu {
         position: fixed;
         right: -100%;
@@ -231,5 +231,37 @@ footer {
 
     .hamburger.active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
+    }
+}
+
+
+@media only screen and (min-width: 900px) {
+    .main-content {
+       display: flex;
+       flex-direction: row-reverse; 
+       text-align: right;
+       column-gap: 3rem;       
+    }
+
+  span {
+        margin-bottom: 8%;
+    }
+
+    .main-article-image {
+        width: 50%;
+        height: auto;        
+    }
+
+    .gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        justify-items: center;
+        gap: 3%;
+        margin-top: 6%;
+    }
+
+    header {
+        width: 100%;
+        
     }
 }
