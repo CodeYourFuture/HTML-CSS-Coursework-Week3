@@ -1,12 +1,11 @@
-/*  Add your styling here */
-@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Inter:wght@300;400;500;600;700;800;900&family=Merriweather:wght@700&family=Passion+One&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,300&family=Roboto:wght@400;700;900&family=Work+Sans:wght@400;700;900&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Inter:wght@300;400;500;600;700;800;900&family=Merriweather:wght@700&family=Passion+One&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,300&family=Roboto:wght@400;700;900&family=Work+Sans:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Fraunces:opsz,wght@9..144,800&family=Inter:wght@300;400;500;600;700;800;900&family=Merriweather:wght@700&family=Passion+One&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,300&family=Roboto:wght@400;700;900&family=Work+Sans:wght@400;700;900&display=swap');
+*,
+*::before,
+::after {
+    box-sizing: border-box;
+}
 
-font-family: 'Poppins', sans-serif;
-
-font-family: 'Berkshire Swash', cursive;
- 
 :root {
     --clr-text: black;
     --clr-primary: #FED700;
@@ -15,35 +14,216 @@ font-family: 'Berkshire Swash', cursive;
     --clr-block2: #598392;
     --clr-footer: #124559;
 
-    --ff-title: 'Berkshire Swash', cursive;
+    --ff-title:  'Fraunces', serif;
     --ff-sans-serif: 'Poppins', sans-serif;
 }
 
-*,
-*::before,
-::after {
-    box-sizing: inherit;
-}
 
-html {
-    box-sizing: border-box;
-    font-family: var(--ff-sans-serif);
-    color: var(--clr-text)
+html, body {
+    margin: 0;
+    padding: 0;
 }
 
 body {
-    margin: 0;
-    width: 414px;
-    height: 1321px;
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: var(--ff-sans-serif);
 }
 
 header {
-    display: grid;
-    grid-template-columns:1fr 1fr;
-    justify-content: space-around;
+   min-height: 200px;
+   width: 100%;
+   display: grid;
+   grid-template-columns: 30% 1fr; 
+   background-image: url(/images/cakes.co-homepage2.jpg);
+   background-size: cover;
 }
 
-.logo {
-    height: 8rem;
-    width: 8rem;
+.logo-block {
+    background-color: var(--clr-primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-block img {
+    width: 75%;
+    height: 75%;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color:var(--clr-footer);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+}
+
+.hamburger {
+    /* display: none; */
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: var(--clr-secondary);
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-item {
+    margin-left: 5rem;
+}
+
+.nav-link{
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.nav-link:hover{
+    color:var(--clr-primary);
+}
+
+.headercontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+h1 {
+    text-align: right;
+    font-size: 2rem;
+    padding-right: 3%;
+    font-family: var(--ff-title);
+    color: whitesmoke;
+}
+
+h2 {
+    font-family: var(--ff-title);
+    font-size: 2rem;
+    background-color: var(--clr-secondary);
+    padding: 0.3rem;
+    width: 50%;
+}
+
+main {
+    padding: 3%;
+}
+
+.main-article-image {
+    width: 100%;
+    height: auto;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* grid-template-rows: 1fr 1fr; */
+    justify-items: center;
+    gap: 3%;
+    margin-top: 2rem;
+    
+
+}
+
+.cake-gallery {
+    width: 100%;
+    height: 90%;
+}
+
+/* .berrycake {
+    height: 126px;
+} */
+
+
+.gallery: hover {
+    background-color: var(--clr-secondary);
+}
+
+footer {
+    font-family: var(--ff-sans-serif);
+    font-size: 1rem;
+    color: var(--clr-block2);
+    padding: 1rem;
+    background-color: var(--clr-footer);
+} 
+
+.contact {
+    line-height: 0.5rem;
+}
+
+.copyright {
+    margin-top: 1rem;
+    font-size: 0.70rem;
+    line-height: 1rem;
+    text-align: center;
+    
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+    .nav-menu {
+        position: fixed;
+        right: -100%;
+        top: rem;
+        flex-direction: column;
+        background-color: #fff;
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+
+    .nav-menu.active {
+        right: 0;
+    }
+
+    .nav-item {
+        margin: 2.5rem 0;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    height: 300px
+
+
 }
