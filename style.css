@@ -117,7 +117,6 @@ main {
   grid-template-areas: 
   "article"
   "article2";
-  margin: 0 auto;
   width: 100%;
   padding: 1rem;
   background-color: var(--main-clr);
@@ -127,7 +126,6 @@ main {
 .main-article {
   grid-area: article;
   display: grid;
-  grid-template-rows: 1fr;
   grid-template-areas: 
   "text"
   "seem";
@@ -136,8 +134,6 @@ main {
 .welcome{
   grid-area: seem;
   margin-bottom: .5rem;
-
- 
 }
 
 .welcome-text{
@@ -163,17 +159,17 @@ main {
   text-align: center;
   display: grid;
   grid-template-columns: repeat(2, minmax(250px, auto));
-  grid-template-rows: auto;
   gap: 10px;
 }
 .second-art figure{
   transform: scale(1);
+  cursor: pointer;
   transition: all .5s linear;
 }
 
 .second-art figure:hover{
 
-  transform: scale(.95);
+  transform: scale(.98);
 }
 
 
@@ -231,7 +227,7 @@ main {
     display: none;
     }
 
-    .text-content .text{
+   .text-content .text{
       text-align: right;
       font-size: 1.6rem;
       color: var(--black);
@@ -241,8 +237,7 @@ main {
       display: block; 
       padding: .55rem;
       margin: 10px;
-      height: 70px;
-      
+      height: 70px;  
     }
 
     .navbar ul {
@@ -257,18 +252,18 @@ main {
     /****************************************media main area****************************************/
  
 
-    .main-article {
+    .main-article { 
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: minmax(250px, 450px), minmax(250px, 450px);
       grid-template-areas: 
-      "seem seem text"
-      ;
-     
+      "seem text";
+      margin-bottom: .2rem;
     }
 
     .welcome img{
-    min-height: 80vh;
-    width: 100%;
-    object-fit: cover;
-     overflow: hidden;
+      min-height: 100vh;
+      width: 100%;
+      object-fit: cover;
     }
 
     .welcome-text{
@@ -290,9 +285,7 @@ main {
   }
 
   .main-article {
-    grid-template-rows: minmax(300px, 750px);
-    overflow: hidden;
-    margin-bottom: 1rem;
+  
   }
 
   .text-content .text{
