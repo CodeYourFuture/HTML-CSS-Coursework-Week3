@@ -1,7 +1,7 @@
 /*  Add your styling here */
 /* Google Fonts */
 
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Pacifico&family=Roboto:wght@400;500&display=swap');
 
 /* General Styling */
 
@@ -17,17 +17,17 @@ html, body  {
 }
 
 :root {
-    --clr-primary: #F27A7D;
-    --clr-secondary: #F7D486;
+    --clr-primary: #e76f51;
+    --clr-secondary: #264653;
     --clr-accent: #C5F9D7;
 }
 
 body {
     
     /* font-family: 'Pacifico', cursive; */
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: 500;
-    color: #F27A7D;
+    color: var(--clr-primary);
     width: 100%;
     min-height: 100%;
     display: flex;
@@ -41,26 +41,28 @@ header {
     height: 195px;
     background-color: var(--clr-secondary);
     display: grid;
-    grid-template-columns: 150px 1fr;
-    grid-template-rows: 100px 195px;
+    grid-template-columns: 30% 1fr;
+    grid-template-rows: 20% 195px;
     grid-template-areas: 
     "logo nav"
     "logo tagline";
+    
 }
 
 .logo {
     grid-area: logo; 
-    width: 142px;
-    height: 195px;
-    left: 1rem;
-    top: 0px; 
+    width: 100%;
+    align-self: center;
+    justify-self: center;
 }
 
 .tagline {
     grid-area: tagline;
     font-family: 'Pacifico', cursive;
+    font-size: 1.5rem;
     text-align: right;
-    padding:  1rem;
+    padding: 0 1rem;
+    
 }
 
 /* Navigation Styling */
@@ -112,11 +114,15 @@ main {
 }
 
 .cakeselections {
-    margin-top: 1rem;
+    margin: 5% 0 0 0;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 1rem;
+    grid-template-columns: 45% 1fr;
+    gap: 5%;
+}
+
+.cake {
+    width: 100%;
+    height: 90%;
 }
 
 /* 
@@ -128,8 +134,7 @@ footer {
 }
 
 .copyrighttag {
-    color: var(--clr-accent);
-    
+    color: var(--clr-accent);    
 }
 
 /* 
