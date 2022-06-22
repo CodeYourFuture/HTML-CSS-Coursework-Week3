@@ -5,7 +5,7 @@
   --main-clr: #005f73;
   --header-clr:#f1a27d;
   --background-clr:#4a4e69;
-  --primary-clr: #d5bdaf;
+  --primary-clr: #c1a494;
 }
 
 
@@ -144,6 +144,8 @@ main {
   grid-area: text;
   text-align: left;
   padding: 1rem;
+  font-weight: 600;
+  letter-spacing: 1.9;
   color: var(--black);
 }
 
@@ -166,6 +168,7 @@ main {
 }
 .second-art figure{
   transform: scale(1);
+  transform-origin: center;
   cursor: pointer;
   transition: all .5s linear;
 }
@@ -198,7 +201,9 @@ main {
   text-align: left;
   margin: 5px;
   border-radius: 4px;
-  background-color: var(--white)
+  color: var(--white);
+  transition: all .5s linear;
+  background-color: var(--main-clr)
 }
 
 .footer .socio-left {
@@ -212,6 +217,7 @@ main {
   justify-content: center;
   align-items: center;
   margin-top: 1rem;
+  color: var(--white);
 }
 
 
