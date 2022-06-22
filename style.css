@@ -7,3 +7,75 @@
   box-sizing: border-box;
   font-family: "Nunito", sans-serif;
 }
+
+body {
+  width: 100%;
+  font-weight: 400;
+  color: gray;
+  font-size: 1rem;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 50px;
+  padding: 20px;
+}
+
+nav {
+  display: none;
+}
+
+section {
+  width: 100%;
+  padding: 20px;
+}
+
+.logo {
+  cursor: pointer;
+}
+
+.logo img {
+  width: 50px;
+}
+
+.logo span {
+  color: black;
+  font-weight: 700;
+}
+.logo p {
+  width: 157px;
+  font-size: 0.6rem;
+  font-weight: 700;
+  padding-left: 8px;
+  color: black;
+}
+
+.burger-menu {
+  width: 35px;
+  height: 60px;
+}
+
+.burger-menu div {
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  margin: 10px;
+  cursor: pointer;
+}
+
+#menu {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+#menu .item {
+  height: 180px;
+}
+
+#menu .item img {
+  display: flex;
+  width: 180px;
+}
