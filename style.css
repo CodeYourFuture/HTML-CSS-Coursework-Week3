@@ -15,7 +15,8 @@
     --clr-block1: #21B0FE; 
     --clr-block2: #598392;
     --clr-footer: #124559;
-
+    --clr-gradient1:hsl(253, 70%, 5%, 0.65);  
+    --clr-gradient2:hsl(204, 70%, 20%, 0.65);
     --ff-title:'Fraunces', serif;
     --ff-sans-serif: 'Poppins', sans-serif;
 }
@@ -42,7 +43,8 @@ header {
    width: 100%;
    display: grid;
    grid-template-columns: 30% 1fr; 
-   background-image: url(/images/cakes.co-homepage2.jpg);
+   background: linear-gradient(135deg, var(--clr-gradient2), var(--clr-gradient1)),
+            url(/images/cakes.co-homepage2.jpg);
    background-size: cover;
 }
 
