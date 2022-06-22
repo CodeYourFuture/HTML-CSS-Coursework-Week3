@@ -105,8 +105,9 @@ ul li{
 
 ul li a{
   display: block;
-  color: var(--black);
+  color: var(--main-clr);
   padding: .5rem;
+  font-weight: 900;
   text-decoration: none;
 }
 
