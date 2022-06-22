@@ -117,7 +117,6 @@ main {
   grid-template-areas: 
   "article"
   "article2";
-  width: 100%;
   padding: 1rem;
   background-color: var(--main-clr);
 
@@ -155,7 +154,6 @@ main {
 
 .second-art {
   grid-area: article2;
-  margin: 0 auto;
   text-align: center;
   display: grid;
   grid-template-columns: repeat(2, minmax(250px, auto));
@@ -250,11 +248,13 @@ main {
     }
 
     /****************************************media main area****************************************/
- 
+ main{
+  grid-auto-rows: repeat(2, minmax(250px, 450px));
+ }
 
     .main-article { 
       grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: minmax(250px, 450px), minmax(250px, 450px);
+      grid-auto-rows: minmax(250px, auto);
       grid-template-areas: 
       "seem text";
       margin-bottom: .2rem;
@@ -272,6 +272,9 @@ main {
       padding: 1rem;
     }
     
+    .second-art {
+      grid-auto-rows: minmax(250px, auto);
+    }
 }
 
 /************************************************@media min-width: 900px************************************/
@@ -283,9 +286,16 @@ main {
    color: var(--primary-clr);
     background-color: var(--main-clr);
   }
+/*******main area*****/
+
+main{
+  grid-auto-rows: ;
+}
 
   .main-article {
   
+    grid-template-rows: 1fr;
+    border: 1px solid red;
   }
 
   .text-content .text{
@@ -304,6 +314,7 @@ main {
 
   .second-art{
     grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
     gap: 15px;
   }
  
