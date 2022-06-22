@@ -18,6 +18,7 @@
 .nav {
     background-color: beige;
     grid-area: nav;
+    margin-top: -500px;
 }
 .section {
     background-color: blueviolet;
@@ -34,14 +35,15 @@
     grid-area: footer-2;
 }
 
-/* h2 {
-    text-align: end;
-} */
 
 .nested-grid-1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: 30px;
+    align-items: flex-end;
+    grid-template-rows: 60px auto;
+    
+
 }
 .heading {
 display: grid;
@@ -51,7 +53,7 @@ margin: 30px;
 
 
 .cupcake-img {
-width: 500px;
+width: 100px;
 height: auto;
 } 
 
@@ -59,25 +61,35 @@ height: auto;
 display: flex;
 flex-direction: row;
 justify-content:flex-end;
-padding: 30px;
+padding-left: 20px;
 }
 
 .nav-list {
 text-decoration: none;
 margin-left: 30px;
-background-color: grey;
+background-color: #D3D3D3;
 color: white;
+padding: 5px;
 }
 
 .nested-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: 30px;
+    align-items:center;
 
 }
 
 .cake-img {
-width: 500px;
+width: 600px;
 height: auto;
 
 } 
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.footer-img {
+    width:  300px;
+    height: auto;
+}
