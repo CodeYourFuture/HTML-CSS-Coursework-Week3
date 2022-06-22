@@ -6,6 +6,8 @@
     box-sizing: border-box;
 }
 
+/********* Variables ********/
+
 :root {
     --clr-text: black;
     --clr-primary: #FED700;
@@ -14,10 +16,11 @@
     --clr-block2: #598392;
     --clr-footer: #124559;
 
-    --ff-title:  'Fraunces', serif;
+    --ff-title:'Fraunces', serif;
     --ff-sans-serif: 'Poppins', sans-serif;
 }
 
+/********* Body-styling ********/
 
 html, body {
     margin: 0;
@@ -31,6 +34,8 @@ body {
     flex-direction: column;
     font-family: var(--ff-sans-serif);
 }
+
+/********* Header ********/
 
 header {
    min-height: 200px;
@@ -52,6 +57,8 @@ header {
     width: 75%;
     height: 75%;
 }
+
+/********* Navbar ********/
 
 li {
     list-style: none;
@@ -116,6 +123,8 @@ h1 {
     color: whitesmoke;
 }
 
+/********* Main-article ********/
+
 h2 {
     font-family: var(--ff-title);
     font-size: 2rem;
@@ -133,6 +142,8 @@ main {
     height: auto;
 }
 
+/********* Gallery-section ********/
+
 .gallery {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -149,14 +160,11 @@ main {
     height: 90%;
 }
 
-/* .berrycake {
-    height: 126px;
-} */
-
-
 .gallery: hover {
     background-color: var(--clr-secondary);
 }
+
+/********* Footer ********/
 
 footer {
     font-family: var(--ff-sans-serif);
@@ -175,9 +183,9 @@ footer {
     font-size: 0.70rem;
     line-height: 1rem;
     text-align: center;
-    
 }
 
+/********* Media Query ********/
 
 
 
@@ -222,8 +230,4 @@ footer {
     .hamburger.active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
     }
-
-    height: 300px
-
-
 }
