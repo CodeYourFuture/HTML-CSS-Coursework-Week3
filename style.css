@@ -1,1 +1,149 @@
-/*  Add your styling here */
+
+.container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+   margin-top: 40px;
+   grid-template-areas: "header header header header"
+   "nav nav nav nav"
+   "section section section section"
+   "footer footer footer footer"
+   "footer-2 footer-2 footer-2 footer-2"
+   "socials socials socials socials";
+   grid-gap: 50px;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.header {
+    grid-area: header;
+    height: 120px;
+
+}
+
+.nav {
+    grid-area: nav;
+    margin-top: -500px;
+}
+.section {
+    grid-area: section;
+    align-self: center;
+    justify-self: end;
+}
+.footer {
+    grid-area: footer;
+    margin-top: 120px;
+}
+.footer-2 {
+    grid-area: footer-2;
+}
+.socials {
+    grid-area: socials;
+}
+
+.nested-grid-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 30px;
+    align-items: flex-end;
+    text-align: end;
+    font-style: italic;
+}
+.heading {
+display: grid;
+grid-template-columns: 2fr 1fr;
+margin: 30px;
+}
+
+
+.cupcake-img {
+width: 300px;
+height: auto;
+} 
+
+.nav-items {
+display: flex;
+flex-direction: row;
+justify-content:flex-end;
+margin-top: 100px;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+font-size: 12px;
+}
+
+.nav-list {
+text-decoration: none;
+margin-left: 30px;
+background-color: #F68989;
+color: white;
+width: 100px;
+height: 15px;
+border-radius: 7%;
+text-align: center;
+padding: 2px;
+}
+
+.nested-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 30px;
+    align-items:center;
+    text-align:end;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.cake-img {
+width: 600px;
+height: auto;
+
+} 
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.footer-img {
+    width:  300px;
+    height: auto;
+}
+.footer2-grid {
+    display: flex;
+   flex-direction: row;
+   justify-content: center;
+   padding: 30px;
+   border-radius: 50%;
+   padding-top: 70px;
+}
+.footer2-grid-class {
+    text-decoration: none;
+    margin-left: 30px;
+    background-color: #F68989;
+    width: 100px;
+    height: 15px;
+    border-radius: 7%;
+    text-align: center;
+    color: white;
+    font-size: 12px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.social-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.fa {
+    text-decoration: none;
+    margin-left: 10px;
+}
+@media (max-width: 550px) {
+    .nested-grid-1 {
+        grid-template-columns: 1fr;
+    }
+}
+@media (max-width: 550px) {
+    .nested-grid {
+        grid-template-columns: 1fr;
+    }
+}
+@media (max-width: 550px) {
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+}
