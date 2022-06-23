@@ -99,8 +99,11 @@ height: auto;
     width:  300px;
     height: auto;
 }
-.footer-2 {
+.footer2-grid {
     display: flex;
-    flex-direction: row;
+   flex-direction: row;
+   justify-content: center;
+   padding: 40px;
+   margin-left: 30px;
     
 }
