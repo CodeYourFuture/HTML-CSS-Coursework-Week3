@@ -7,7 +7,6 @@ body{
 
 	display: grid;
 	background-color: black;
-	/* grid-template-columns: 1fr; */
 	grid-template-rows: 20vh 30vh 30vh 30vh 20vh;
 	grid-row-gap: 5vh;
 	grid-template-areas:
@@ -18,10 +17,69 @@ body{
 		"footer";
 }
 
+
+/* header parent container */
 #header{
+	margin: 0%;
+	padding: 0%;
 	grid-area: header;
-	background-color: blue;
+	background-image: url(/images/banner/rainbow_banner_2.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color: #fff;
 	display: grid;
+	grid-template-columns: 30% 70%;
+	grid-template-rows: 50% 50% ;
+	grid-template-areas:
+	"header_img	menu_group"
+	"header_img	slogan";
+
+	
+}
+
+/* header logo image */
+#header_img{
+	grid-area: header_img;
+	height: 20vh;
+}
+ 
+/* collapsed nav container */
+#menu_group{
+	grid-area: menu_group;
+	display: flex;
+	flex-direction: column;
+	padding-top: 5%;
+	padding-right: 5%;
+}
+
+/* individual divs for collapsed nav */
+.menu_icon{
+
+	background-color: #8B8680;
+	height: 0.5vh;
+	width: 7vw;
+	margin: 0.2vh 0;
+	display: flex;
+	align-self: flex-end;
+}
+
+/* slogan in the header container */
+#p_header{
+	grid-area: slogan;
+	padding-bottom: 5%;
+	padding-right: 5%;
+
+}
+
+/* slogan in the header */
+#p_header>p{
+
+	margin: 0.1vh 0;
+	font-family: 'Indie Flower', cursive;
+	font-size: 1.2em;
+	font-weight: 900;
+	color: #8B8680;
+	text-align: end;
 }
 
 #main{
