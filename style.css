@@ -1,1 +1,234 @@
-/*  Add your styling here */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Charis+SIL:wght@700&display=swap');
+
+*{
+   box-sizing: border-box;
+ padding: 0;
+ margin: 0;
+}
+
+body{
+  background-image: url('/images/olga-serjantu--wVnHkiVmm8-unsplash.jpg');
+  background-size: cover;
+}
+
+
+/* NAV BAR */
+
+
+.navbar {
+  overflow:hidden; 
+ background-color: #b5838d;
+position: relative; 
+}
+
+.navbar a {
+ color: rgb(12, 11, 11);
+ padding: 14px 16px;
+ text-decoration: none;
+ font-size: 17px;
+ display: block;
+}
+
+nav a.icon {
+ background:  #b5838d;
+ display: block;
+ position: absolute;
+ right: 0; 
+ top:0;
+ 
+}
+
+nav a:hover {
+ background-color: #ddd;
+ color: black;
+}
+
+.cupcake {
+  display:flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin: 0;
+  height: 150px;
+} 
+
+.logo{
+   width: 10rem;
+}
+
+.nav_p{
+  margin-bottom: 1rem;
+  padding-left: 5rem;
+ /* margin-right: 4px; */
+ font-size: 15px;
+ font-family: 'El Messiri', sans-serif;
+
+}
+ 
+
+#myLinks {
+  display: none;
+  background-color: rgb(210, 203, 203);
+} 
+
+a{
+   text-decoration: none;
+}
+
+/* MAIN */
+
+h1 {
+  margin: 4rem 0 2rem 1rem;
+  font-family: 'El Messiri', sans-serif;
+}
+
+.welcome p{
+  /* margin:1rem;
+  font-size: 15px; */
+  font-family: 'Charis SIL', serif;
+}
+
+/* IMAGES */
+   /* logo img not incl. */
+
+.main-img{
+   border-radius: 8px;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   width: 50%;
+  
+}
+
+.container {
+  display: grid;
+  grid-template-columns: auto auto ;
+  gap: 10px;
+  margin:2rem;
+ 
+}
+
+.grid-img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+  
+/* FOOTER */
+
+footer{
+  margin-top: 3rem;
+  padding: 1rem;
+  background-color: #b5838d;
+}
+#cc {
+  text-align: center;
+  padding-bottom: 1rem;
+  font-size: 1rem;
+  font-family: 'Charis SIL', serif;
+}
+
+
+.text{
+  margin:1rem;
+  font-size: 20px;
+  font-family: 'Charis SIL', serif;
+}
+
+/* MEDIA QUERIES */
+
+ 
+ @media only screen and (min-width: 540px) {
+  /* NAV */
+     .nav_p{
+      padding-right: 1rem;
+      font-size: 20px;
+     }
+  #myLinks {
+      width: 100%;
+      /* margin: 20px auto; */
+      margin-top: 1rem;
+      padding: 10px 0;
+    }
+    #myLinks a {
+      display: inline-flex;
+      padding: 10px 10px;
+      color: #ffffff;
+    }
+    /* .navbar a.icon{
+      display: none;
+  }  */
+      /* MAIN */
+   .welcome p{
+        font-size: 15px;
+       }
+  article{
+        display: flex;
+        flex-direction: row-reverse;
+        padding: 70px;
+      }
+  .main-img{
+     float: left;
+     margin-left: 1rem;
+     margin-top: 2rem;
+    /* float: left;  */
+  }
+  .container{
+    grid-template-columns: auto auto auto auto;
+  }
+    
+.footer {
+  display: flex;
+  justify-content: center;
+ 
+ }
+ 
+}
+
+@media only screen and (min-width: 900px){
+ /* NAV */
+  #myLinks {
+    width: 100%;
+    /* margin: 20px auto; */
+    margin-top: 1rem;
+    padding: 10px 0;
+    
+  }
+  #myLinks a {
+    display: inline-flex;
+    padding: 10px 90px;
+    color: #ffffff;
+   
+  }
+  
+  .navbar a.icon{
+    display: none;
+} 
+/* MAIN */
+article{
+  display: flex;
+  flex-direction: row-reverse;
+  padding:0 30px;
+  
+  
+  }
+  .welcome p{
+  font-size: 20px;
+  }
+.main-img{
+  margin-top: 2rem;
+  margin-left: 1rem;
+ width: 80%; 
+}
+.container{
+  grid-template-columns: auto auto auto auto;
+}
+  
+.footer {
+display: flex;
+justify-content: center;
+
+}
+}
