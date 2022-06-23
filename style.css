@@ -1,1 +1,152 @@
 /*  Add your styling here */
+
+.tab-nav {
+    outline: none;
+    display: none;
+}
+
+.label {
+    display: none;
+}
+
+.burger {
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin-top: 5px;
+}
+
+.content_nav {
+    grid-column: 3;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+a {
+    box-shadow: inset 0 0 0 0 #54b3d6;
+    color: #54b3d6;
+    margin: 0 -.25rem;
+    padding: 0 .25rem;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+  }
+  a:hover {
+    box-shadow: inset 100px 0 0 0 #54b3d6;
+  }
+
+.content_nav li {
+
+    display: inline-block;
+    padding-right: 10px;
+
+}
+
+.content_nav li a {
+
+    text-decoration: none;
+    color: rgb(5, 5, 5);
+
+}
+
+
+@media screen and (max-width: 770px) {
+
+    .label {
+
+        display: grid;
+        cursor: pointer;
+        padding-left: 60px;
+
+    }
+
+    .content_nav {
+
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-column: 1/4;
+        text-align: center;
+        max-height: 0;
+        overflow: hidden;
+        transition: all ease-in-out 0.6s;
+    }
+
+}
+
+
+.nav-container {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 10px 0px;
+    background-image: linear-gradient(to right, rgb(0, 47, 255), rgb(0, 255, 247), rgb(0, 255, 119));
+    position: relative;
+    overflow: hidden;
+    z-index: 3;
+
+}
+
+body {
+    background-image: linear-gradient(to right, rgb(216, 5, 157), orange, rgb(186, 177, 7), rgb(6, 245, 6), rgb(0, 191, 255), rgb(160, 50, 238), violet);
+    background-size: cover;
+}
+
+.logo {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin: 10px;
+    text-align: center;
+    font-size: large;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.slogan {
+    margin-top: 50px;
+}
+
+.content {
+    display: grid;
+    position: relative;
+    align-items: center;
+    justify-items: center;
+    margin: 20px;
+    padding: 20px;
+    margin-top: 100px;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+
+@media (min-width: 600px) {
+    .content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+.products {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    position: relative;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    align-items: center;
+    justify-items: center;
+    margin: 20px;
+    padding: 20px;
+}
+
+img {
+    border: solid;
+    border-radius: 5px;
+    border-color: bisque;
+
+}
+
+.foot-info {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    align-items: center;
+    justify-items: center;
+}
