@@ -103,7 +103,7 @@ body {
 }
 
 .nav-link:hover {
-  background-color: #F291C4;
+  background-color: #91f2dd;
 }
 
 /* turns toggle on and off */
@@ -182,7 +182,8 @@ input[type=checkbox]:checked ~ ul {
 
 .welcome-text h2 {
   margin-bottom: 20px;
-  color: #3C372C;
+  color: #131211;
+  text-align: end;
 }
 
 .welcome-text p {
@@ -264,11 +265,6 @@ footer {
 
 }
 
-address {
-  margin: 20px 20px 0 20px;
-  line-height: 30px;
-  color: #3C372C;
-}
 @media screen and (min-width: 540px) {
   address {
     font-size: 19px;
