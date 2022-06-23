@@ -15,6 +15,9 @@ body {
   display: flex;
   position: relative;
   justify-content: space-between;
+  margin-bottom: auto;
+  justify-items: left;
+  image-resolution: 15%;
 }
 
 .header-container img {
