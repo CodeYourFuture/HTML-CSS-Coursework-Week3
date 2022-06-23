@@ -7,24 +7,22 @@
    "nav nav nav nav"
    "section section section section"
    "footer footer footer footer"
-   "footer-2 footer-2 footer-2 footer-2";
+   "footer-2 footer-2 footer-2 footer-2"
+   "socials socials socials socials";
    grid-gap: 50px;
    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .header {
-    background-color: brown;
     grid-area: header;
     height: 120px;
 
 }
 
 .nav {
-    background-color: beige;
     grid-area: nav;
     margin-top: -500px;
 }
 .section {
-    background-color: blueviolet;
     grid-area: section;
     align-self: center;
     justify-self: end;
@@ -32,12 +30,14 @@
 .footer {
     background-color: grey;
     grid-area: footer;
+    margin-top: 120px;
 }
 .footer-2 {
-    background-color: orange;
     grid-area: footer-2;
 }
-
+.socials {
+    grid-area: socials;
+}
 
 .nested-grid-1 {
     display: grid;
@@ -73,7 +73,11 @@ text-decoration: none;
 margin-left: 30px;
 background-color: #D3D3D3;
 color: white;
-padding: 5px;
+width: 100px;
+height: 15px;
+border-radius: 7%;
+text-align: center;
+padding: 2px;
 }
 
 .nested-grid {
@@ -104,9 +108,27 @@ height: auto;
    flex-direction: row;
    justify-content: center;
    padding: 30px;
+   border-radius: 50%;
 }
 .footer2-grid-class {
     text-decoration: none;
     margin-left: 30px;
     background-color: #D3D3D3;
+    width: 100px;
+    height: 15px;
+    border-radius: 7%;
+    text-align: center;
+    color: white;
+    font-size: 12px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.social-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.fa {
+    text-decoration: none;
+    margin-left: 10px;
+    
 }
