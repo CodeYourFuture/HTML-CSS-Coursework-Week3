@@ -1,3 +1,4 @@
+
 .container {
     display: grid;
     height: 100vh;
@@ -28,7 +29,6 @@
     justify-self: end;
 }
 .footer {
-    background-color: grey;
     grid-area: footer;
     margin-top: 120px;
 }
@@ -55,7 +55,7 @@ margin: 30px;
 
 
 .cupcake-img {
-width: 120px;
+width: 300px;
 height: auto;
 } 
 
@@ -63,7 +63,7 @@ height: auto;
 display: flex;
 flex-direction: row;
 justify-content:flex-end;
-padding: 30px;
+margin-top: 100px;
 font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 font-size: 12px;
 }
@@ -71,7 +71,7 @@ font-size: 12px;
 .nav-list {
 text-decoration: none;
 margin-left: 30px;
-background-color: #D3D3D3;
+background-color: #F68989;
 color: white;
 width: 100px;
 height: 15px;
@@ -109,11 +109,12 @@ height: auto;
    justify-content: center;
    padding: 30px;
    border-radius: 50%;
+   padding-top: 70px;
 }
 .footer2-grid-class {
     text-decoration: none;
     margin-left: 30px;
-    background-color: #D3D3D3;
+    background-color: #F68989;
     width: 100px;
     height: 15px;
     border-radius: 7%;
@@ -130,5 +131,19 @@ height: auto;
 .fa {
     text-decoration: none;
     margin-left: 10px;
-    
+}
+@media (max-width: 550px) {
+    .nested-grid-1 {
+        grid-template-columns: 1fr;
+    }
+}
+@media (max-width: 550px) {
+    .nested-grid {
+        grid-template-columns: 1fr;
+    }
+}
+@media (max-width: 550px) {
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
 }
