@@ -66,16 +66,131 @@ section {
   cursor: pointer;
 }
 
+.hero-img {
+  width: 100%;
+  height: 200px;
+  background-image: url(./images/heroImg.webp);
+  background-repeat: no-repeats;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+}
 #menu {
   display: grid;
   grid-template-columns: 50% 50%;
 }
 
-#menu .item {
-  height: 180px;
+#menu .item .img-container {
+  height: 100px;
+  width: 100px;
 }
 
-#menu .item img {
-  display: flex;
-  width: 180px;
+#menu .item {
+  background-repeat: no-repeats;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+}
+#menu .item .img-container {
+  margin-bottom: 50px;
+  border: none;
+}
+#menu .item button {
+  width: 120px;
+  height: 30px;
+  border: none;
+  color: #fff;
+  background-color: black;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+#menu .item button:hover {
+  border: 2px solid black;
+  color: black;
+  background-color: white;
+}
+#menu .item:first-child {
+  background-image: url(./images/pic2.png);
+}
+#menu .item:nth-child(2) {
+  background-image: url(./images/pic2.png);
+}
+#menu .item:nth-child(3) {
+  background-image: url(./images/pic2.png);
+}
+#menu .item:nth-child(4) {
+  background-image: url(./images/pic2.png);
+}
+
+footer {
+  width: 100%;
+  background-color: black;
+  color: #fff;
+  height: 80px;
+  padding: 10px;
+}
+
+@media all and (min-width: 540px) {
+  #menu .item .img-container {
+    margin-bottom: 100px;
+  }
+}
+
+@media all and (min-width: 900px) {
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 50px;
+    padding: 20px;
+  }
+
+  nav {
+    display: block;
+  }
+
+  nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+  }
+
+  nav ul li {
+    margin: 0 10px;
+    color: black;
+    font-weight: 700;
+    cursor: pointer;
+  }
+
+  .burger-menu {
+    display: none;
+  }
+
+  .hero-img {
+    width: 100%;
+    height: 400px;
+    margin: 20px 0;
+    background-image: url(./images/heroImg.webp);
+    background-repeat: no-repeats;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+  }
+  #menu {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    margin-bottom: 20px;
+  }
+
+  #menu .item .img-container {
+    height: 100px;
+    width: 100px;
+  }
+
+  #menu .item .img-container {
+    margin-bottom: 100px;
+  }
 }
