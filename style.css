@@ -1,1 +1,196 @@
 /*  Add your styling here */
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+
+body {
+  width: 100%;
+  font-weight: 400;
+  color: gray;
+  font-size: 1rem;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 50px;
+  padding: 20px;
+}
+
+nav {
+  display: none;
+}
+
+section {
+  width: 100%;
+  padding: 20px;
+}
+
+.logo {
+  cursor: pointer;
+}
+
+.logo img {
+  width: 50px;
+}
+
+.logo span {
+  color: black;
+  font-weight: 700;
+}
+.logo p {
+  width: 157px;
+  font-size: 0.6rem;
+  font-weight: 700;
+  padding-left: 8px;
+  color: black;
+}
+
+.burger-menu {
+  width: 35px;
+  height: 60px;
+}
+
+.burger-menu div {
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.hero-img {
+  width: 100%;
+  height: 200px;
+  background-image: url(./images/heroImg.webp);
+  background-repeat: no-repeats;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+}
+#menu {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+#menu .item .img-container {
+  height: 100px;
+  width: 100px;
+}
+
+#menu .item {
+  background-repeat: no-repeats;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+}
+#menu .item .img-container {
+  margin-bottom: 50px;
+  border: none;
+}
+#menu .item button {
+  width: 120px;
+  height: 30px;
+  border: none;
+  color: #fff;
+  background-color: black;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+#menu .item button:hover {
+  border: 2px solid black;
+  color: black;
+  background-color: white;
+}
+#menu .item:first-child {
+  background-image: url(./images/pic2.png);
+}
+#menu .item:nth-child(2) {
+  background-image: url(./images/pic2.png);
+}
+#menu .item:nth-child(3) {
+  background-image: url(./images/pic2.png);
+}
+#menu .item:nth-child(4) {
+  background-image: url(./images/pic2.png);
+}
+
+footer {
+  width: 100%;
+  background-color: black;
+  color: #fff;
+  height: 80px;
+  padding: 10px;
+}
+
+@media all and (min-width: 540px) {
+  #menu .item .img-container {
+    margin-bottom: 100px;
+  }
+}
+
+@media all and (min-width: 900px) {
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 50px;
+    padding: 20px;
+  }
+
+  nav {
+    display: block;
+  }
+
+  nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+  }
+
+  nav ul li {
+    margin: 0 10px;
+    color: black;
+    font-weight: 700;
+    cursor: pointer;
+  }
+
+  .burger-menu {
+    display: none;
+  }
+
+  .hero-img {
+    width: 100%;
+    height: 400px;
+    margin: 20px 0;
+    background-image: url(./images/heroImg.webp);
+    background-repeat: no-repeats;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+  }
+  #menu {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    margin-bottom: 20px;
+  }
+
+  #menu .item .img-container {
+    height: 100px;
+    width: 100px;
+  }
+
+  #menu .item .img-container {
+    margin-bottom: 100px;
+  }
+}
