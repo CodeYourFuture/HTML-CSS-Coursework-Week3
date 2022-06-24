@@ -4,9 +4,11 @@
 } */
 
 body{
-
+	background-image: url(/images/banner/rainbow_banner_2.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
 	display: grid;
-	grid-template-rows: 20vh 30vh 30vh 30vh 20vh;
+	grid-template-rows: 20vh 32vh 30vh 30vh 20vh;
 	grid-row-gap: 5vh;
 	grid-template-areas:
 		"header"
@@ -22,9 +24,6 @@ body{
 	margin: 0%;
 	padding: 0%;
 	grid-area: header;
-	background-image: url(/images/banner/rainbow_banner_2.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
 	display: grid;
 	grid-template-columns: 30% 70%;
 	grid-template-rows: 50% 50% ;
@@ -88,6 +87,9 @@ body{
 	grid-template-areas:
 		"heading"
 		"description";
+	background-color: #fff;
+	border-radius: 2em;
+	
 }
 
 /* h1 */
