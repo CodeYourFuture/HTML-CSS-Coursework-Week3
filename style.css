@@ -71,6 +71,7 @@ a {
     color:var(--clr-footer);
 }
 
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -111,9 +112,6 @@ a {
     color: #475569;
 }
 
-.nav-link:hover{
-    color:var(--clr-primary);
-}
 
 .headercontainer {
     display: flex;
@@ -284,9 +282,6 @@ footer {
     right: 0;
     justify-content: end;
     background-color: var(--clr-primary);
-    /* padding: 0 2rem; */
-    /* border-left: 2rem white solid;
-    border-right: 2rem white solid; */
   }
 
   .nav-item {
@@ -303,9 +298,10 @@ a {
     text-decoration: none;
     color:var(--clr-footer);
     font-size: 0.9rem;
-    
-    
-    /* padding: 0 0.5rem; */
+    }
+
+ a:hover {
+        border: 1px solid var(--clr-footer);
     }
 
     main {
@@ -346,6 +342,10 @@ a {
     color:var(--clr-footer);
     background-color: var(--clr-primary);
     padding: 0 1rem;
+}
+
+a:hover {
+    border: 1px solid var(--clr-footer);
 }
 
     main {
