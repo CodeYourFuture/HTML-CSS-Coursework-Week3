@@ -40,9 +40,9 @@ body {
 
 header {
    min-height: 20%;
-   width: 400px;
+   width: 100%;
    display: grid;
-   grid-template-columns: 30% 1fr; 
+   grid-template-columns: 30% 70%; 
    background: linear-gradient(135deg, var(--clr-gradient2), var(--clr-gradient1)),
             url(/images/cakes.co-homepage2.jpg);
    background-size: cover;
@@ -135,6 +135,7 @@ h1 {
 main span {
     font-family: var(--ff-title);
     font-size: 2rem;
+    color: var(--clr-primary);
     background-color: var(--clr-secondary);
     padding: 0.1rem;
     width: 50%;
@@ -184,7 +185,7 @@ footer {
     font-size: 1rem;
     color: var(--clr-block2);
     padding: 1rem;
-    background-color: var(--clr-primary);
+    background-color: var(--clr-footer);
 } 
 
 footer {
@@ -246,17 +247,91 @@ footer {
     }
 }
 
+@media only screen and (min-width: 540px) and (max-width: 900px) {
+    main span {
+      color: var(--clr-primary);
+    }
+
+    header {
+        position: relative;
+        width: 100%;
+        height: 9rem;
+      }
+
+    .headercontainer{
+        position: relative;
+    }
+
+    .logo-block {
+        height: 9rem; 
+    }
+
+    h1 {
+        display: block;
+        position: absolute;
+        font-size: 1.5rem;
+        bottom: 0;
+        right:0;
+        margin:  0;
+        padding: 0 1rem 1rem 0;
+    }
+    
+    .navbar {
+    position: absolute;
+    bottom: -50%;
+    width: 90%;
+    height: 3rem;
+    right: 0;
+    justify-content: end;
+    background-color: var(--clr-primary);
+    /* padding: 0 2rem; */
+    /* border-left: 2rem white solid;
+    border-right: 2rem white solid; */
+  }
+
+  .nav-item {
+    margin-left: 1rem;
+}
+
+.nav-link{
+    font-size: 1rem;
+    font-weight: 400;
+    color: #475569;
+}
+
+a {
+    text-decoration: none;
+    color:var(--clr-footer);
+    font-size: 0.9rem;
+    
+    
+    /* padding: 0 0.5rem; */
+    }
+
+    main {
+        margin-top: 3.5rem;
+    }
+
+
+
+}
+
 
 @media only screen and (min-width: 900px) {
    
   header {
         position: relative;
+        width: 100%;
+        height: 9rem;
       }
+
+    
     
   .navbar {
     position: absolute;
     bottom: -50%;
     width: 100%;
+    height: 3rem;
     right: 0;
     justify-content: end;
     background-color: var(--clr-primary);
@@ -310,7 +385,6 @@ a {
     }
 
     header {
-        /* display: block; */
         width: 100%;
         height: 9rem;
     }
@@ -323,10 +397,5 @@ a {
         display: flex;
         justify-content: space-around;
    }
-     
-
 }
 
-@media only screen and (min-device-width: 540px) and (max-width: 900px) {
-    
-}
