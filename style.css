@@ -4,11 +4,14 @@
 } */
 
 body{
+	margin: 0%;
 	display: grid;
-	grid-template-rows: 20vh auto 30vh 50vh auto;
+	grid-template-rows: 20vh 0vh auto 30vh 50vh auto;
+	grid-template-columns: 1fr 1fr;
 	grid-row-gap: 3vh;
 	grid-template-areas:
-		"header"
+		"banner"
+		"nav"
 		"main"
 		"focus_image"
 		"quad_images"
@@ -17,16 +20,16 @@ body{
 
 
 /* header parent container */
-#header{
+#banner{
 	margin: 0%;
 	padding: 0%;
-	grid-area: header;
+	width: 100vw;
+	grid-area: banner;
 	background-image: url(/images/banner/rainbow_banner_2.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
-	border-radius: 2em;
 	display: grid;
-	grid-template-columns: 30% 70%;
+	grid-template-columns: auto;
 	grid-template-rows: 50% 50% ;
 	grid-template-areas:
 	"header_img	menu_group"
@@ -78,6 +81,11 @@ body{
 	font-weight: 900;
 	/* color: #8B8680; */
 	text-align: end;
+}
+
+/*hide navbar when mobile*/
+.nav_list{
+	display: none;
 }
 
 /* main section parent container */
@@ -170,6 +178,7 @@ body{
 
 }
 
+/* footer parent container*/
 #footer{
 	grid-area: footer;
 	background-image: url(/images/banner/rainbow_banner_2.jpg);
@@ -186,21 +195,26 @@ body{
 	padding: 5%;
 }
 
+/*contact us container*/
 #contact_us{
 	grid-area: contact_us;
 	display: flex;
 	flex-direction: column;
 	width: 40%;
 }
+
+/* header in contact us section */
 h4{
 	font-family: 'Fascinate', cursive;
 }
 
+/* paragraph and heading in contact us section */
 #contact_us>p, h4{
 	margin: 0;
 	font-size: 0.7em;
 }
 
+/* socials container */
 #socials{
 	grid-area: socials;
 	display: flex;
@@ -209,15 +223,292 @@ h4{
 	width: 40%;
 }
 
+/* images in socials container */
 #socials>a>img{
 	height: 3vh;
 	object-fit: cover;
 }
 
+/* message in footer container */
 #love{
 	grid-area: love;
 	font-family: 'Indie Flower', cursive;
 	font-size: 0.7em;
 	display: flex;
 	justify-content: center;
+}
+
+@media (min-width: 540px) {
+
+	body{
+		margin: 0%;
+		width: 100vw;
+		display: grid;
+		grid-template-rows: 15vh 10vh auto 0vh 50vh auto;
+	
+		grid-template-columns: 1fr 1fr;
+		grid-row-gap: 1vh;
+		grid-template-areas:
+		"banner"
+		"nav"
+		"main focus_image"
+		"main focus_image"
+		"quad_images"
+		"footer";
+	}
+
+	/* header parent container */
+	#banner{
+		margin: 0%;
+		width: 100vw;
+		padding: 0%;
+		grid-area: banner;
+		background-image: url(/images/banner/rainbow_banner_2.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	/* header logo image */
+	#header_img{
+		grid-area: header_img;
+		height: 15vh;
+	}
+
+	
+	/* for collapsed nav when on mobile */
+	.menu_icon, #menu_group{
+		display: none;
+	}
+
+	/* slogan in the header container */
+	#p_header{
+		grid-area: slogan;
+		padding-bottom: 5%;
+		padding-right: 10%;
+		display: flex;
+		align-items: flex-end;
+		justify-content:flex-end;
+	
+	}
+
+	/* slogan in the header */
+	#p_header>p{
+		margin: 0.1vh 0;
+		font-family: 'Indie Flower', cursive;
+		font-size: 1em;
+		font-weight: 900;
+		text-align: end;
+	}
+
+
+	
+	.nav{
+		grid-area: nav;
+		margin: 3% 5%;
+		background-color: pink;
+		height: 10vh;
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		padding-right: 5%;
+
+	}
+
+	.nav_list{
+		margin: 0%;
+		width: 60%;
+		background-color: red;
+		display: flex;
+		justify-content: space-between;
+		/* align-items: center; */
+		
+	}
+
+	li{
+		list-style: none;
+		font-size: 0.5em;
+		/* border: 0.11em black solid; */
+		background-color: orange;
+		padding: 1%;
+		width: 7vw;
+		text-align: center;
+		/* margin: 5%; */
+		
+
+	}
+
+	a{
+		text-decoration: none;
+	}
+
+	/* main section parent container */
+	#main{
+		background-color: purple;
+		grid-area: main;
+		display: grid;
+		grid-template-rows: 1fr 4fr;
+		grid-template-areas:
+			"heading"
+			"description";
+	}
+
+	#f_image{
+		/* height: 30vh; */
+		width: 10vw;
+		border-radius: 2em;
+	}
+
+
+	
+	
+	
+	
+
+
+	
+
+
+	
+
+	
+	/* h1 */
+	#heading{
+		margin: 0%;
+		grid-area: heading;
+		font-family: 'Fascinate', cursive;
+		/* color: #8B8680; */
+		padding: 0 5%;
+	
+	}
+	
+	/* paragraph in main section */
+	#description{
+		margin: 0%;
+		grid-area: description;
+		padding: 5%;
+		font-family: 'Indie Flower', cursive;
+	}
+	
+	/* container for highlighted image */
+	#focus_image{
+		grid-area: focus_image;
+		display: flex;
+		justify-content: center;
+		padding: 0 5%;
+	}
+	
+	/* highlighted image */
+	#f_image{
+		height: 30vh;
+		width: 90vw;
+		border-radius: 2em;
+	}
+	/* container for four images */
+	#quad_images{
+		grid-area: quad_images;
+		padding: 0 5%;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(2, 1fr);
+		grid-row-gap: 3vh;
+		grid-column-gap: 3vh;
+		grid-template-areas: 
+		"quad1	quad2"
+		"quad3	quad4";
+	}
+	
+	/* image 1 of 4 */
+	#quad1{
+		grid-area: quad1;
+	}
+	
+	/* image 2 of 4 */
+	#quad2{
+		grid-area: quad2;
+	}
+	
+	/* image 3 of 4 */
+	#quad3{
+		grid-area: quad3;
+	}
+	
+	/* image 4 of 4 */
+	#quad4{
+		grid-area: quad4;
+	}
+	
+	/* container for each individual image in four */
+	.quad_image_container{
+		border-radius: 2em;
+		overflow: hidden;	
+	}
+	
+	/* images in this container */
+	.quad_image_container>img{
+		width: 43.5vw;
+		height: 23.5vh;
+		object-fit: cover;
+	
+	}
+	
+	/* footer parent container*/
+	#footer{
+		grid-area: footer;
+		background-image: url(/images/banner/rainbow_banner_2.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		border-radius: 2em;
+		display: grid;
+		grid-template-rows: auto 1fr auto;
+		grid-template-areas: 
+		"contact_us"
+		"socials"
+		"love";
+		font-family: 'Indie Flower', cursive;
+		padding: 5%;
+	}
+	
+	/*contact us container*/
+	#contact_us{
+		grid-area: contact_us;
+		display: flex;
+		flex-direction: column;
+		width: 40%;
+	}
+	
+	/* heading in contact us section */
+	h4{
+		font-family: 'Fascinate', cursive;
+	}
+	
+	/* paragraph and heading in contact us section */
+	#contact_us>p, h4{
+		margin: 0;
+		font-size: 0.7em;
+	}
+	
+	/* socials container */
+	#socials{
+		grid-area: socials;
+		display: flex;
+		justify-content: space-around;
+		align-items:center;
+		width: 40%;
+	}
+	
+	/* images in socials container */
+	#socials>a>img{
+		height: 3vh;
+		object-fit: cover;
+	}
+	
+	/* message in footer container */
+	#love{
+		grid-area: love;
+		font-family: 'Indie Flower', cursive;
+		font-size: 0.7em;
+		display: flex;
+		justify-content: center;
+	}
+	
 }
