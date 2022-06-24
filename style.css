@@ -14,6 +14,7 @@
 html, body  {
     margin: 0;
     padding: 0;
+    overflow-x:hidden;
 }
 
 :root {
@@ -24,8 +25,8 @@ html, body  {
 
 body {
     
-    /* font-family: 'Pacifico', cursive; */
     font-family: 'Poppins', sans-serif;
+    font-size: 1em;
     font-weight: 500;
     color: var(--clr-primary);
     width: 100%;
@@ -42,15 +43,17 @@ header {
     background-color: var(--clr-secondary);
     display: grid;
     grid-template-columns: 30% 1fr;
+    grid-template-rows: 30% 1fr;
     grid-template-areas: 
     "logo nav"
     "logo tagline";
+    padding: 1rem;
     
 }
 
 .logo {
     grid-area: logo; 
-    width: 100%;
+    width:100%;
     align-self: center;
     justify-self: center;
 }
@@ -58,10 +61,11 @@ header {
 .tagline {
     grid-area: tagline;
     font-family: 'Pacifico', cursive;
-    font-size: 1.5rem;
-    text-align: right;
-    padding: 0 1rem;
-    
+    font-size: 1rem;
+    text-align: right; 
+    align-self: flex-end;
+    margin: 0;   
+    padding: 0;
 }
 
 /* Navigation Styling */
@@ -70,13 +74,12 @@ header {
     display: flex;
     justify-content:end;
     align-items: top;
-    padding: 1rem;
     grid-area: nav;
 }
 
 .nav-menu {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: center;
 }
 
@@ -182,59 +185,113 @@ Media Queries */
     .hamburger.active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
     }
-
-
 }
+
+@media only screen and (min-width: 540px) and (max-width: 900px){
+      
+    .logo {
+        grid-area: logo;
+        
+        width: 65%;
+        height: auto;
+        align-self: center;
+        justify-self: left; 
+        background-color: var(--clr-secondary);
+    }
+
+     .nav-menu {
+        /* justify-content:flex-start; */
+        padding:0%;
+    }
+       .nav-menu li {
+        background-color:var(--clr-accent);
+        margin: 0 5px;
+        }
+
+     .nav-link {
+        color: #264653;
+        text-transform: uppercase;
+        padding: 0 0.5rem; 
+        font-size: smaller;        
+        }
+
+    .tagline {
+        font-size: larger;
+    }
+
+    .maincontainer {
+        display: flex;
+    } 
+    .maincontainer img {
+        width: 60%;
+        height: auto;
+    }
+    footer {
+        text-align: right;
+    }
+}
+
 
 @media only screen and (min-width: 900px) {
 
-    .logo {
-        width: 40%;
-        /* align-self: center; */
-        justify-self: center; 
-    }
-
     header {
-
+        min-width: 100%;
+        height: 300px;
         grid-template-columns: 30% 1fr;
-         grid-template-areas: 
+        grid-template-rows: 1fr 150px;
+        grid-template-areas: 
             "logo tagline"
             "logo tagline"
             "nav nav";
-        margin-bottom: 1rem;
-    
+        padding: 0;
     }
 
-    .tagline{
-        align-self: flex-end;
-        margin: 0;
+    
+    .logo {
+        grid-area: logo;
+        padding: 1rem;
+        width: 40%;
+        height: auto;
+        align-self: center;
+        justify-self: left; 
+        background-color: var(--clr-secondary);
     }
+
+  .tagline{
+        grid-area: tagline; 
+        align-self: flex-end;
+        background-color: var(--clr-secondary);
+        padding: 1rem;
+        font-size: 2em;
+    } 
+
     .nav-bar {
         display: flex;
-        justify-content: flex-end;
-        width: 100%;
         background-color: var(--clr-accent);
-        margin: 1rem 0;
-        padding: 1rem;
-        border: solid 1rem white;
+        border: 1rem solid #fff;
+        width: 100%;
     }
-
+  
     .nav-menu {
         width: 70%;
+        padding-right: 1rem;
+        justify-content: flex-end;
     }
-
+ 
       .nav-menu li {
         background-color: #e76f51;
-        padding: 0.25rem 0.75rem;
+        margin: 0 1rem;
+        
     }
 
      .nav-link {
         color: #264653;
+        text-transform: uppercase;
+        padding: 0 1rem;
+        font-size: larger;
+        
     }
 
-    main {
-        margin-top: 2rem;
-    }
 
     .maincontainer {
         margin-top: 3rem;
@@ -246,13 +303,14 @@ Media Queries */
 
     .maincontainer img {
      width: 50%;
+     height: auto;
    }
    
    .maincontainer p {
      text-align: end;
      padding-left: 1rem;
-     font-size: larger;
-   }
+     font-size: 1.5em;
+    }
 
    .cakeselections {
         grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -262,10 +320,12 @@ Media Queries */
         display: flex;
         justify-content: space-around;
         padding-left: 0;
+        font-size: larger;
     }
 
     .copyrighttag {
         text-align: center;
+        font-size: larger;
     }
 
-}
+} 
