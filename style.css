@@ -5,7 +5,7 @@
 
 body{
 	display: grid;
-	grid-template-rows: 20vh auto 30vh 30vh 20vh;
+	grid-template-rows: 20vh auto 30vh 50vh 20vh;
 	grid-row-gap: 3vh;
 	grid-template-areas:
 		"header"
@@ -120,22 +120,60 @@ body{
 #f_image{
 	height: 30vh;
 	width: 90vw;
-	/* padding: 0 5%; */
 }
 
 #quad_images{
 	grid-area: quad_images;
-	background-color: blueviolet;
-	margin: 0 5%;
+	padding: 0 5%;
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	grid-template-rows: repeat(2, 1fr);
+	grid-row-gap: 3vh;
+	grid-column-gap: 3vh;
 	grid-template-areas: 
 	"quad1	quad2"
 	"quad3	quad4";
 }
 
+#quad1{
+	grid-area: quad1;
+	/* width: 45vw; 
+    height: 25vw; 
+    object-fit: cover; */
+}
+
+#quad2{
+	grid-area: quad2;
+	/* width: 45vw; */
+}
+
+#quad3{
+	grid-area: quad3;
+	/* width: 45vw; */
+}
+
+#quad4{
+	grid-area: quad4;
+	/* width: 45vw; */
+}
+
+.quad_image_container{
+	/* width: 45vw; */
+	/* height: 25vh; */
+	overflow: hidden;
+	/* object-fit: contain; */
+	
+}
+.quad_image_container>img{
+	width: 43.5vw;
+	height: 23.5vh;
+	object-fit: cover;
+	/* height: 15vh; */
+	/* overflow: hidden; */
+}
+
 #footer{
 	grid-area: footer;
 	background-color: red;
+
 }
