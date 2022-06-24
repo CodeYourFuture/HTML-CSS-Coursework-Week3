@@ -1,25 +1,66 @@
 /*  Add your styling here */
-/* Add a black background color to the top navigation */
+
+.wrapper{
+  display: grid;
+  background-color: #cdb4db;
+  height: 25vh;
+  position: relative;
+}
+
+.muffin{
+  position: absolute;
+  width: 40%;
+  top: 10%;
+}
+
+/* Add a background color to the top navigation */
 .navigation {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    align-items: flex-end;
-    background-color: #cdb4db;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: flex-end;
     overflow: hidden;
   }
   
   /* Style the links inside the navigation bar */
-  .navigation a {
+  .menu-items a {
+    display: grid;
     float: left;
     color: white;
-    text-align: center;
-    padding: 14px 16px;
+    text-align: left;
+    padding: 5%;
     text-decoration: none;
     font-size: 17px;
+
   }
   
   /* Change the color of links on hover */
-  .navigation a:hover {
+  /* .navigation a:hover {
     background-color: #ffc8dd;
     color: black;
+  } */
+
+  /* Style menu-items */
+  .menu-items{
+    display: none;
+    justify-content: left;
+    grid-template-columns: repeat(1, 1fr);
+
   }
+
+  /* move icon to far right */
+  .icon{
+    display: grid;
+    justify-content: flex-end;
+    text-decoration: none;
+    padding: 5%;
+  }
+
+  /* Style top text */
+  .tag-line{
+    position: relative;
+    padding-top: 10%;
+    padding-right: 2%;
+    text-align: right;
+    margin-left: 50%;
+  }
+  
