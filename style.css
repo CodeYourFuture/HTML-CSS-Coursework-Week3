@@ -15,7 +15,7 @@ html {
     color: var(--red);
     margin: 0;
     font-size: 0.6rem;
-    
+
 }
 
 *,
@@ -214,29 +214,30 @@ main {
 .product img {
     width: 100%;
     height: auto;
-    max-height: 100px;
+
     padding: 1rem;
 }
 
 footer {
     margin-top: -2rem;
-    height: 10vh;
+    height: 7rem;
     background-color: var(--green);
 
 }
 
 
 footer .copy {
-    font-size: 3rem;
+    font-size: 2rem;
     text-align: center;
     padding-top: 4rem;
 }
+
 /*Style for screen at least 540px wide*/
 @media screen and (min-width: 540px) {
     #logo {
         height: 200px;
         width: auto;
-        margin-top: -1rem;
+        margin-top: -2rem;
         margin-left: 3rem;
     }
 
@@ -244,109 +245,131 @@ footer .copy {
         font-size: 2rem;
         color: var(--pink);
         height: 50%;
-        margin-top: -5rem;    
+        margin-top: -5rem;
     }
+
     .wellcome h1 {
         font-size: 5rem;
     }
-    
+
     footer .copy {
-        font-size: 2rem;    
+        font-size: 2rem;
     }
+
     footer {
         height: 20vh;
     }
 }
+
 /*Style for screen at least 900px wide*/
 @media screen and (min-width: 900px) {
-       
-        header {
-                height: 20vh;
-            }
-        
-            #logo {
-                height: 250px;
-                width: auto;
-                margin-top: -2rem;
-                margin-left: 3rem;
-        
-            }
-        
-            h2 {
-                font-size: 5rem;
-                color: var(--pink);
-                font-weight: 900;
-                margin-top: -25rem;
-                margin-right: 10rem;
-            }
-        
-            .menu-wrap {
-                height: 50%;
-                position: relative;
-                top: 15rem;
 
-            }
-        
-            .menu-wrap .hamburger {
-                visibility: hidden;
-            }
-        
-            .menu-wrap .menu {
-                visibility: visible;
-                margin-top: 12rem;
-                position: relative;
-                margin-left: -80rem;
-            }
-        
-            .menu-wrap .menu>div>div>ul>li {
-                padding: 2rem;
-            }
-        
-            .menu-wrap .menu>div>div>ul>li>a {
-                font-size: 4rem;
-            }
-        
-            .menu-wrap .menu>div>div>ul>li>a:hover {
-                color: var(--green);
-            }
-        
-            main {
-                padding-top: 20rem;
-            }
-        
-            .wellcome {
-                float: right;
-                width: 50%;
-                margin: auto;
-        
-            }
-        
-            .wellcome h1 {
-                font-size: 8rem;
-                padding-top: 10rem;
-                padding: 4rem;
-            }
-        
-            .wellcome p {
-                font-size: 4rem;
-                text-align: center;
-                padding-bottom: 5rem;
-                line-height: 6rem;
-            }
-        
-            .hero-img img {
-                padding-top: 6rem;
-                width: 50%;
-                height: auto;
-                padding: 2rem;
-            }
-            .products {
-                display: flex;
-                justify-content: space-between;
-            }
-            .product .cake  {
-                width: 100%;
-                height: auto;
-                padding: 1rem;
-            }
-        }
+    header {
+        height: 20vh;
+    }
+
+    #logo {
+        height: 250px;
+        width: auto;
+        margin-top: -2rem;
+        margin-left: 3rem;
+
+    }
+
+    h2 {
+        font-size: 5rem;
+        color: var(--pink);
+        font-weight: 900;
+        margin-top: -25rem;
+        margin-right: 10rem;
+    }
+
+    .menu-wrap {
+        height: 50%;
+        position: relative;
+        top: 15rem;
+
+    }
+
+    .menu-wrap .hamburger {
+        visibility: hidden;
+    }
+
+    .menu-wrap .menu {
+        visibility: visible;
+        margin-top: 12rem;
+        position: relative;
+        margin-left: -80rem;
+    }
+
+    .menu-wrap .menu>div>div>ul>li {
+        padding: 2rem;
+    }
+
+    .menu-wrap .menu>div>div>ul>li>a {
+        font-size: 4rem;
+        color: var(--green);
+    }
+
+    .menu-wrap .menu>div>div>ul>li>a:hover {
+        color: var(--pink);
+    }
+
+    main {
+        padding-top: 20rem;
+    }
+
+    .wellcome {
+        float: right;
+        width: 50%;
+        margin: auto;
+
+    }
+
+    .wellcome h1 {
+        font-size: 12rem;
+        padding-top: 10rem;
+        padding: 4rem;
+
+    }
+
+    .wellcome p {
+        font-size: 4rem;
+        text-align: center;
+        padding-bottom: 5rem;
+        line-height: 6rem;
+    }
+
+    .hero-img img {
+        padding-top: 6rem;
+        width: 50%;
+        height: auto;
+        padding: 2rem;
+    }
+
+    .products {
+        width: 100%;
+        height: fit-content;
+        padding-bottom: 5rem;
+        padding-top: 5rem;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .products .cake {
+        padding: 1rem;
+        border: 4px solid var(--pink);
+        border-radius: 5%;
+    }
+
+    .products .cake img {
+        width: 50rem;
+        height: 50rem;
+        padding: rem;
+        border-radius: 5%;
+    }
+
+    footer {
+        height: 10vh;
+    }
+}
