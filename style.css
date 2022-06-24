@@ -1,1 +1,71 @@
 /*  Add your styling here */
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+header {
+  background-color: lightcoral;
+  grid-column: 1/-1;
+  grid-auto-rows: minmax(100px, auto);
+  grid-gap: 3px;
+}
+header img {
+  width: 100px;
+}
+
+header h1 {
+  text-align: center;
+  margin-top: 100px;
+  margin-left: 100px;
+}
+main {
+  background-color: lightsalmon;
+  grid-column: 1/-1;
+}
+
+.product-varieties {
+  display: grid;
+  background-color: magenta;
+  grid-template-columns: 1fr;
+  grid-auto-rows: minmax(100px, auto);
+  grid-gap: 3px;
+}
+.cake-type {
+  overflow: hidden;
+}
+.cake-type img {
+  width: 100%;
+  height: 100%;
+  padding: 4px;
+  margin: 5px;
+}
+
+.introduction {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: auto;
+}
+
+.text {
+  grid-area: introduction;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-style: italic;
+}
+@media screen and (min-width: 768px) {
+  .product-varieties {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: max-content;
+  }
+  header {
+    display: flex;
+  }
+}
+
+footer {
+  display: flex;
+  grid-column: 1/-1;
+  background-color: mediumorchid;
+  align-items: center;
+  justify-content: center;
+}
