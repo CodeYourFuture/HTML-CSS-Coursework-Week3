@@ -1,1 +1,53 @@
 /*  Add your styling here */
+:root {
+    --yellow: #ffc600;
+    --black: #000000;
+    --gray: #DADEDF;
+    --darkgray:#7F7F7F;
+}
+html {
+    /* border-box: add border and padding without increasing box-size */
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--black);
+}
+
+/* inherit box-sizing from html */
+*,
+*:before,
+*:after {
+box-sizing: inherit;
+margin: 0;
+padding: 0;
+}
+
+body {
+    background-color: var(rgb(173, 207, 210));
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 5px 0;
+}
+
+p {
+    font-size: 15px;
+    margin: 5px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 50% 2fr 1fr 3fr;
+    grid-template-rows: 150px 250px 100px;
+    grid-column-gap: 20px;
+    grid-row-gap: 40px;
+}
+
+.item {
+    border: 5px solid var (--black);
+
+}
