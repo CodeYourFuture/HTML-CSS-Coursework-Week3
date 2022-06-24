@@ -70,3 +70,4 @@ Build the mobile wireframe first, then adapt it for larger screens.
 *Desktop wireframe:*  
 ![alt text](./design/cakes%20wireframe%20-%20desktop.png "Cakes Co desktop design")
 
+
