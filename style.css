@@ -119,7 +119,8 @@ body{
 /* highlighted image */
 #f_image{
 	height: 30vh;
-	padding: 0 5%;
+	width: 90vw;
+	/* padding: 0 5%; */
 }
 
 #quad_images{
