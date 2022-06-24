@@ -262,13 +262,44 @@ Media Queries */
         background-color: var(--clr-secondary);
     }
 
+    
+    .logo:hover {
+        position: relative;
+        animation-name: logomove;
+        animation-duration: 2s;
+        animation-iteration-count: 2;
+        animation-direction: alternate; 
+    }
+
+    @keyframes logomove {
+  0%   {left:0px; top:0px;}
+  50%  {left:200px; top:0px;}
+  100% { left:0px; top:0px;}
+}
+    
+
   .tagline{
         grid-area: tagline; 
         align-self: flex-end;
-        background-color: var(--clr-secondary);
+        /* background-color: var(--clr-secondary); */
         padding: 3rem;
         font-size: 4em;
     } 
+
+ .tagline:hover {
+        position: relative;
+        animation-name: taglinemove;
+        animation-duration: 2s;
+        animation-iteration-count: 2;
+        animation-direction: alternate; 
+    }
+    
+    @keyframes taglinemove {
+  0%   {left:0px; bottom:0px;}
+  50%  {left:0px; bottom:200px;}
+  100% { left:0px; bottom:0px;}
+}
+    
 
     .nav-bar {
         display: flex;
