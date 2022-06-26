@@ -58,9 +58,45 @@
   /* Style top text */
   .tag-line{
     position: relative;
-    padding-top: 10%;
     padding-right: 2%;
     text-align: right;
     margin-left: 50%;
   }
+
+  /* Style images*/
+  .top-image{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .middle-images{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+  }
   
+  .image-container img{
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* Style-message box */
+  .message-box{
+    height: 200px;
+    width: 80%;
+  }
+
+  footer p{
+    display: grid;
+    text-align: center;
+    font-size: small;
+    font-style: italic;
+    color: rgb(190, 181, 181);
+  }
+
+  .contact-form button{
+    color: black;
+    background-color: #cdb4db;
+    border: none;
+    border-radius: 10%;
+    padding: 2%;
+  }
