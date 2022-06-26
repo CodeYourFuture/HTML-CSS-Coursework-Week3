@@ -1,13 +1,13 @@
 /*  Add your styling here */
 
-.wrapper{
+.wrapper {
   display: grid;
   background-color: #cdb4db;
   height: 25vh;
   position: relative;
 }
 
-.muffin{
+.muffin {
   position: absolute;
   width: 40%;
   top: 10%;
@@ -15,88 +15,121 @@
 
 /* Add a background color to the top navigation */
 .navigation {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    justify-content: flex-end;
-    overflow: hidden;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  justify-content: flex-end;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.menu-items a {
+  display: grid;
+  float: left;
+  color: white;
+  text-align: left;
+  padding: 5%;
+  text-decoration: none;
+  font-size: 17px;
+
+}
+
+
+/* Style menu-items */
+.menu-items {
+  display: none;
+  justify-content: left;
+  grid-template-columns: repeat(1, 1fr);
+
+}
+
+/* move icon to far right */
+.icon {
+  display: grid;
+  justify-content: flex-end;
+  text-decoration: none;
+  padding: 5%;
+}
+
+/* Style top text */
+.tag-line {
+  position: relative;
+  padding-right: 2%;
+  text-align: right;
+  margin-left: 50%;
+}
+
+/* Style images*/
+.top-image {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.middle-images {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+}
+
+/* Style-message box */
+.message-box {
+  height: 200px;
+  width: 80%;
+}
+
+/* Style Footer */
+footer p {
+  display: grid;
+  text-align: center;
+  font-size: small;
+  font-style: italic;
+  color: rgb(190, 181, 181);
+}
+
+/* Style-button */
+.contact-form button {
+  color: black;
+  background-color: #cdb4db;
+  border: none;
+  border-radius: 10%;
+  padding: 2%;
+}
+
+/* Tablet media queries */
+@media only screen and (min-width: 600px) {
+  .muffin {
+    top: -5%;
   }
-  
-  /* Style the links inside the navigation bar */
+
+  .tag-line {
+    padding-top: 20%;
+  }
+
+  .icon {
+    display: none;
+  }
+
   .menu-items a {
     display: grid;
-    float: left;
-    color: white;
-    text-align: left;
-    padding: 5%;
-    text-decoration: none;
-    font-size: 17px;
-
-  }
-  
-  /* Change the color of links on hover */
-  /* .navigation a:hover {
-    background-color: #ffc8dd;
+    align-items: center;
+    text-align: center;
     color: black;
-  } */
-
-  /* Style menu-items */
-  .menu-items{
-    display: none;
-    justify-content: left;
-    grid-template-columns: repeat(1, 1fr);
-
   }
 
-  /* move icon to far right */
-  .icon{
+  .menu-items {
     display: grid;
-    justify-content: flex-end;
-    text-decoration: none;
-    padding: 5%;
-  }
-
-  /* Style top text */
-  .tag-line{
-    position: relative;
-    padding-right: 2%;
-    text-align: right;
+    grid-template-columns: repeat(5, 1fr);
+    align-items: flex-start;
+    padding-top: 2%;
     margin-left: 50%;
   }
 
-  /* Style images*/
-  .top-image{
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-  }
-
-  .middle-images{
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-  }
-  
-  .image-container img{
-    width: 100%;
-    height: 100%;
-  }
-  
-  /* Style-message box */
-  .message-box{
-    height: 200px;
-    width: 80%;
-  }
-
-  footer p{
-    display: grid;
-    text-align: center;
-    font-size: small;
-    font-style: italic;
-    color: rgb(190, 181, 181);
-  }
-
-  .contact-form button{
+  .navigation a:hover {
+    background-color: #ffc8dd;
     color: black;
-    background-color: #cdb4db;
-    border: none;
-    border-radius: 10%;
-    padding: 2%;
   }
+  
+}
