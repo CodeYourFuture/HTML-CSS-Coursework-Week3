@@ -1,1 +1,32 @@
 /*  Add your styling here */
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 5fr 1fr 1fr 1fr 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 10px;
+    grid-template-areas:
+    }
+    
+    .header{
+      display: grid;
+      grid-template-columns: 0.5fr 0.5fr;
+      grid-template-rows: 0.5fr 0.5fr;
+      grid-template-areas:
+        "part up"
+        "part down"
+    }
+    .logo {  
+      grid-area: part; 
+    }
+    
+    .nav {
+     grid-area: up;
+    }
+    .tag{
+     grid-area: down;
+    }
+    
+    .item{
+     border: 5px solid black;
+    }
