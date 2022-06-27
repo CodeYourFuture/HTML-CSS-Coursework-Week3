@@ -2,7 +2,7 @@
 .container{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 5fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 5fr 3fr 1fr 5fr 1fr;
     grid-column-gap: 20px;
     grid-row-gap: 10px;
     grid-template-areas:
@@ -14,19 +14,39 @@
       grid-template-rows: 0.5fr 0.5fr;
       grid-template-areas:
         "part up"
-        "part down"
+        "part down";
     }
     .logo {  
       grid-area: part; 
+      background: deepskyblue;
     }
     
     .nav {
      grid-area: up;
+     background: pink;
     }
     .tag{
      grid-area: down;
+     background: skyblue;
+
+    }
+    
+    .welcome{
+     background: pink;
+      
+    }
+    
+    .section{
+      display: grid;
+      grid-template-columns: 0.5fr 0.5fr;
+      grid-template-rows: 0.5fr 0.5fr;
+      grid-template-areas:
+        "cake lake"
+        "fake take";
     }
     
     .item{
      border: 5px solid black;
+     
+      
     }
