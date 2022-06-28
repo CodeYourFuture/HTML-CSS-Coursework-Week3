@@ -118,7 +118,7 @@ p {
 }
 
 .cool {
-  margin-bottom: 20px;
+  margin-bottom: 1rem;
 }
 
 .photos_container {
@@ -155,11 +155,12 @@ p {
   font-weight: 400;
 }
 
-@media (min-width: 540px) {
+@media screen and (min-width: 540px) {
 
-  body{
+  body {
     background-color: #fff;
   }
+
   #container {
     display: grid;
     width: 100%;
@@ -185,12 +186,11 @@ p {
   .hearder-content .best {
     display: grid;
     width: 100%;
-    font-size: 30px;
+    font-size: 1.8rem;
     justify-items: flex-end;
   }
 
   .nav-container {
-    background-color: #FFC000; 
     height: 10vh;
     margin-top: 1.25rem;
     display: grid;
@@ -202,24 +202,20 @@ p {
     text-align: center;
     text-transform: uppercase;
     padding: 1.25rem;
-    color: red; 
+    background-color: #FFC000;
   }
-
-  .navbar {
-    display: grid;
-  }
-
+ 
   .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+
   }
-  
+
   .hamburger {
     display: none;
   }
-  
+
   .nav-menu {
     display: flex;
     justify-content: center;
@@ -232,18 +228,19 @@ p {
     padding: .5rem 0;
     margin: 0 1rem;
   }
-  
+
   li:hover {
     width: 50%;
     background-color: #e2a574;
   }
-  
+
   a {
     text-decoration: none;
     color: #fff;
     font-weight: 700;
     margin: 0 2.5rem;
-    font-size: 1rem;;
+    font-size: 1rem;
+    ;
   }
 
   .main_container {
@@ -264,12 +261,12 @@ p {
 
   .cool {
     display: grid;
-    align-items: flex-start; 
+    align-items: flex-start;
   }
 
   .cool h1 {
-    font-size: 80px;
-    margin-bottom: 30px;
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
   }
 
   .cool p {
@@ -302,11 +299,11 @@ p {
     padding: 5px;
     color: #fff;
   }
-  
+
   .footer p {
     color: #fff;
   }
-  
+
   .footer h5 {
     text-align: center;
     color: #251c1c;
@@ -316,7 +313,7 @@ p {
 
 }
 
-@media (min-width: 900px) {
+@media screen and (min-width: 900px) {
   .photos_container {
     width: 100%;
     min-height: 80vh;
