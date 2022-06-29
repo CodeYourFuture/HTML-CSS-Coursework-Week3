@@ -252,15 +252,19 @@ h4{
 		margin: 0%;
 		/* width: 100vw; */
 		display: grid;
-		grid-template-rows: 15vh 10vh auto 50vh auto;
-		grid-template-columns: 50% 50%;
-		grid-row-gap: 3vh;
+		grid-template-rows: 15vh 5vh 45vh 23.5vh auto;
+		/* grid-template-columns: 50% 50%; */
+		row-gap: 3vh;
 		grid-template-areas:
 		"banner"
 		"navigation"
 		"main_focus_image"
 		"quad_images"
 		"footer";
+	}
+	
+	#header{
+		width: 100vw;
 	}
 
 	/* header parent container */
@@ -272,6 +276,7 @@ h4{
 		background-image: url(/images/banner/rainbow_banner_2.jpg);
 		background-repeat: no-repeat;
 		background-size: cover;
+		margin-bottom: vh;
 	}
 
 	/* header logo image */
@@ -310,22 +315,27 @@ h4{
 	/* navigation container */
 	.nav{
 		grid-area: navigation;
-		margin: 5% 5%;
-		background-color: pink;
+		/* margin: 5% 5%; */
+		/* background-color: pink; */
+		background-image: url(/images/banner/rainbow_banner_2.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
 		height: 10vh;
 		width: 90vw;
+		margin: 3vh 5vw;
 		display: flex;
 		align-items: center;
 		justify-content: flex-end;
-		padding-right: 5%;
+		
 
 	}
 
 	/*navigation list*/
 	.nav_list{
 		margin: 0%;
-		width: 60%;
-		background-color: red;
+		padding-right: 5vw;
+		width: 60vw;
+		/* background-color: red; */
 		display: flex;
 		justify-content: space-between;
 		/* align-items: center; */
@@ -337,8 +347,8 @@ h4{
 		list-style: none;
 		font-size: 0.5em;
 		/* border: 0.11em black solid; */
-		background-color: orange;
-		padding: 1%;
+		background-color: #8B8680;
+		padding: 2%;
 		width: 7vw;
 		text-align: center;
 		/* margin: 5%; */
@@ -349,25 +359,29 @@ h4{
 	/* navigation items anchor tag*/
 	a{
 		text-decoration: none;
+		color: white;
+		font-family: 'Fascinate', cursive;
 	}
 
 	#main_focus_image{
-		width: 90vw;;
+		width: 90vw;
+		height: 45vh;
 		grid-area: main_focus_image;
-		/* display: grid;
-		grid-template-columns: 50vw 50vw;
+		display: grid;
+		/* grid-template-columns: 50vw 50vw; */
 		grid-template-areas:
-		"focus_image	main"; */
-		display: flex;
-		justify-content: space-between;
-		margin: 5%;
+		"focus_image	main";
+		column-gap: 5vw;
+		/* display: flex; */
+		/* justify-content: space-between; */
+		margin: 6vh 5vw;
 	}
 
 	/* main section parent container */
 	#main{
 		grid-area: main;
 		/* margin-right: 5%; */
-		background-color: purple;
+		/* background-color: purple; */
 		display: grid;
 		grid-template-rows: 1fr 4fr;
 		grid-template-areas:
@@ -398,11 +412,12 @@ h4{
 	/* container for highlighted image */
 	#focus_image{
 		grid-area: focus_image;
-		display: flex;
+		/* display: flex; */
+		/* justify-content: flex-end; */
 		/* justify-content: center; */
 		/* padding: 0 5%; */
 		/* display: none; */
-		justify-content: center;
+		/* justify-content: center; */
 		padding: 0 0%;
 	}
 	
@@ -411,36 +426,23 @@ h4{
 		height: auto;
 		width: 43.5vw;
 		border-radius: 0em;
+		object-fit: cover;		
 	}
-
-
-	
-	
-	
-	
-
-
-	
-
-
-	
-
-	
-
-	
 
 	/* container for four images */
 	#quad_images{
 		grid-area: quad_images;
-		padding: 0 5%;
+		width: 90vw;
+		height: 23.5vh;
+		padding: 3vh 5vw;
 		display: grid;
-		grid-template-columns: repeat(2, 1fr);
-		grid-template-rows: repeat(2, 1fr);
-		grid-row-gap: 3vh;
-		grid-column-gap: 3vh;
+		/* grid-template-columns: repeat(2, 1fr); */
+		grid-template-rows: 23.5vh;
+		/* grid-row-gap: 3vh;
+		grid-column-gap: 3vh; */
 		grid-template-areas: 
-		"quad1	quad2"
-		"quad3	quad4";
+		"quad1	quad2 quad3	quad4"
+
 	}
 	
 	/* image 1 of 4 */
@@ -471,7 +473,7 @@ h4{
 	
 	/* images in this container */
 	.quad_image_container>img{
-		width: 43.5vw;
+		width: 21vw;
 		height: 23.5vh;
 		object-fit: cover;
 	
@@ -480,18 +482,21 @@ h4{
 	/* footer parent container*/
 	#footer{
 		grid-area: footer;
+		width: 100vw;
+		margin-left: 0;
 		background-image: url(/images/banner/rainbow_banner_2.jpg);
 		background-repeat: no-repeat;
 		background-size: cover;
-		border-radius: 2em;
+		border-radius: 0em;
 		display: grid;
-		grid-template-rows: auto 1fr auto;
+		grid-template-rows: auto auto;
+		grid-template-columns: auto auto;
 		grid-template-areas: 
-		"contact_us"
-		"socials"
-		"love";
+		"contact_us socials"
+		"love		love";
 		font-family: 'Indie Flower', cursive;
-		padding: 5%;
+		padding: 0%;
+		margin-top: 3vh;
 	}
 	
 	/*contact us container*/
@@ -499,7 +504,8 @@ h4{
 		grid-area: contact_us;
 		display: flex;
 		flex-direction: column;
-		width: 40%;
+		width: 40vw;
+		padding: 5%;
 	}
 	
 	/* heading in contact us section */
@@ -516,16 +522,20 @@ h4{
 	/* socials container */
 	#socials{
 		grid-area: socials;
+		width: 60vw;
 		display: flex;
 		justify-content: space-around;
 		align-items:center;
-		width: 40%;
+		/* padding-top: 5%; */
 	}
 	
 	/* images in socials container */
 	#socials>a>img{
 		height: 3vh;
 		object-fit: cover;
+		background-color: #fff;
+		padding: 1.5vw;
+		border-radius: 50%;
 	}
 	
 	/* message in footer container */
