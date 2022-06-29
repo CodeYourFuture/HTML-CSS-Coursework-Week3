@@ -1,1 +1,63 @@
 /*  Add your styling here */
+body {
+  margin: 20px;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: end;
+}
+
+.headline {
+  text-align: center;
+  font-size: 1em;
+  margin-bottom: 2em;
+}
+
+.article {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+h2 {
+  margin-left: 10px;
+}
+
+p {
+  margin-left: 10px;
+  font-size: 20px;
+}
+
+.article img {
+  width: 100%;
+  display: flex;
+}
+
+.more {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+}
+
+.more img {
+  width: 100%;
+}
+
+@media only screen and (min-width: 540px) {
+  .more {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .more {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .article {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
