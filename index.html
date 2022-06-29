@@ -1,16 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Responsive Cake webpage</title>
     <!-- Add a link to your css file here -->
-</head>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fascinate&family=Indie+Flower&family=Shadows+Into+Light&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
+  <body>
+    <header id="header">
+      <section id="banner">
+        <!-- the logo on the header -->
+        <img
+          id="header_img"
+          src="/images/banner/banner logo.png"
+          alt="Cake Logo"
+        />
+        <!-- collapsed navbar for mobile -->
+        <section id="menu_group">
+          <div class="menu_icon"></div>
+          <div class="menu_icon"></div>
+          <div class="menu_icon"></div>
+        </section>
+        <!-- slogan on header -->
+        <section id="p_header">
+          <p>The best cakes in town delivered to your door</p>
+        </section>
+      </section>
+      <section class="nav">
+        <ul class="nav_list">
+          <li><a href="#">HOME</a></li>
+          <li><a href="#">CAKES</a></li>
+          <li><a href="#">ORDERIN</a></li>
+          <li><a href="#">LESSONS</a></li>
+          <li><a href="#">ABOUT</a></li>
+        </ul>
+      </section>
+    </header>
+    <section id="main_focus_image">
+    <main id="main">
+
+      <!-- heading in main section -->
+      <h1 id="heading">Welcome</h1>
+      <!-- paragraph in main section -->
+      <p id="description">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo suscipit
+        neque dignissimos. Consequuntur nulla iusto magnam quisquam vero
+        reiciendis illo. Repellat aspernatur a quibusdam obcaecati et, nemo
+        expedita laboriosam velit aut
+      </p>
+    </main>
+    <!-- highlighted image -->
+    <section id="focus_image">
+      <img id="f_image" src="/images/focus_image.jpg" alt="Cupcakes" />
+    </section>
+    </section>
+    <section id="quad_images">
+      <div class="quad_image_container" id="quad1" >
+        <img src="/images/quad1.jpg" alt="Rainbow Cake" />
+      </div>
+      <div class="quad_image_container" id="quad2">
+        <img src="/images/cookies.jpg" alt="Chocolate Chip Cookies" />
+      </div>
+      <div class="quad_image_container" id="quad3">
+        <img src="/images/donuts.jpg" alt="Donuts" />
+      </div>
+      <div class="quad_image_container" id="quad4">
+        <img src="/images/cupcakes.jpg" alt="More Cupcakes" />
+      </div>
+    </section>
+    <footer id="footer">
+      <section id="contact_us">
+        <h4>Find us here</h4>
+        <p>
+          1010 Rainbow Street, Sunshine, 4444
+        </p>
+        <p>Or call: 011-295-8852</p>
+      </section>
+      <section id="socials">
+        <a  href="#"><img id="social1" src="/images/social/twitter-icon.svg" alt="Twitter Icon"></a>
+        <a  href="#"><img id="social2" src="/images/social/facebook-icon.svg" alt="Facebook Icon"></a>
+        <a  href="#"><img id="social3" src="/images/social/instagram-icon.svg" alt="Instagram Icon"></a>
+        <a  href="#"><img id="social4" src="/images/social/email-icon.svg" alt="Email Icon"></a>
+      </section>
+      <small id="love">May your days be filled with colour</small>
+    </footer>
     <!-- Add your markup here -->
-</body>
-
+  </body>
 </html>

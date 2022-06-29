@@ -1,1 +1,859 @@
 /*  Add your styling here */
+/* body, html{
+	height: 100vh;
+} */
+
+body{
+	margin: 0%;
+	display: grid;
+	grid-template-rows: 20vh 0vh auto 50vh auto;
+	grid-row-gap: 3vh;
+	grid-template-areas:
+		"banner"
+		"navigation"
+		"main_focus_image"
+		"quad_images"
+		"footer";
+}
+
+
+/* header parent container */
+#banner{
+	margin: 0%;
+	padding: 0%;
+	width: 100vw;
+	grid-area: banner;
+	background-image: url(/images/banner/rainbow_banner_2.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: grid;
+	grid-template-columns: auto;
+	grid-template-rows: 50% 50% ;
+	grid-template-areas:
+	"header_img	menu_group"
+	"header_img	slogan";
+
+	
+}
+
+/* header logo image */
+#header_img{
+	grid-area: header_img;
+	height: 20vh;
+}
+ 
+/* collapsed nav container */
+#menu_group{
+	grid-area: menu_group;
+	display: flex;
+	flex-direction: column;
+	padding-top: 7%;
+	padding-right: 10%;
+}
+
+/* individual divs for collapsed nav */
+.menu_icon{
+
+	background-color: #8B8680;
+	height: 1px;
+	width: 20px;
+	margin: 0.2vh 0;
+	display: flex;
+	align-self: flex-end;
+}
+
+/* slogan in the header container */
+#p_header{
+	grid-area: slogan;
+	padding-bottom: 5%;
+	padding-right: 10%;
+
+}
+
+/* slogan in the header */
+#p_header>p{
+
+	margin: 0.1vh 0;
+	font-family: 'Indie Flower', cursive;
+	font-size: 1.2em;
+	font-weight: 900;
+	/* color: #8B8680; */
+	text-align: end;
+}
+
+/*hide navbar when mobile*/
+.nav_list{
+	display: none;
+}
+
+#main_focus_image{
+	grid-area: main_focus_image;
+	display: grid;
+	grid-template-rows: auto 30vh;
+	grid-template-areas:
+	"main"
+	"focus_image";
+}
+
+/* main section parent container */
+#main{
+	grid-area: main;
+	display: grid;
+	grid-template-rows: 1fr 4fr;
+	grid-template-areas:
+		"heading"
+		"description";
+}
+
+/* h1 */
+#heading{
+	margin: 0%;
+	grid-area: heading;
+	font-family: 'Fascinate', cursive;
+	/* color: #8B8680; */
+	padding: 0 5%;
+
+}
+
+/* paragraph in main section */
+#description{
+	margin: 0%;
+	grid-area: description;
+	padding: 5%;
+	font-family: 'Indie Flower', cursive;
+}
+
+/* container for highlighted image */
+#focus_image{
+	grid-area: focus_image;
+	display: flex;
+	justify-content: center;
+	padding: 0 5%;
+}
+
+/* highlighted image */
+#f_image{
+	height: 30vh;
+	width: 90vw;
+	border-radius: 2em;
+}
+/* container for four images */
+#quad_images{
+	grid-area: quad_images;
+	padding: 0 5%;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	grid-row-gap: 3vh;
+	grid-column-gap: 3vh;
+	grid-template-areas: 
+	"quad1	quad2"
+	"quad3	quad4";
+}
+
+/* image 1 of 4 */
+#quad1{
+	grid-area: quad1;
+}
+
+/* image 2 of 4 */
+#quad2{
+	grid-area: quad2;
+}
+
+/* image 3 of 4 */
+#quad3{
+	grid-area: quad3;
+}
+
+/* image 4 of 4 */
+#quad4{
+	grid-area: quad4;
+}
+
+/* container for each individual image in four */
+.quad_image_container{
+	border-radius: 2em;
+	overflow: hidden;	
+}
+
+/* images in this container */
+.quad_image_container>img{
+	width: 43.5vw;
+	height: 23.5vh;
+	object-fit: cover;
+
+}
+
+/* footer parent container*/
+#footer{
+	grid-area: footer;
+	background-image: url(/images/banner/rainbow_banner_2.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-radius: 2em;
+	display: grid;
+	grid-template-rows: auto 1fr auto;
+	grid-template-areas: 
+	"contact_us"
+	"socials"
+	"love";
+	font-family: 'Indie Flower', cursive;
+	padding: 5%;
+}
+
+/*contact us container*/
+#contact_us{
+	grid-area: contact_us;
+	display: flex;
+	flex-direction: column;
+	width: 40%;
+}
+
+/* header in contact us section */
+h4{
+	font-family: 'Fascinate', cursive;
+}
+
+/* paragraph and heading in contact us section */
+#contact_us>p, h4{
+	margin: 0;
+	font-size: 0.7em;
+}
+
+/* socials container */
+#socials{
+	grid-area: socials;
+	display: flex;
+	justify-content: space-around;
+	align-items:center;
+	width: 40%;
+}
+
+/* images in socials container */
+#socials>a>img{
+	height: 3vh;
+	object-fit: cover;
+}
+
+/* message in footer container */
+#love{
+	grid-area: love;
+	font-family: 'Indie Flower', cursive;
+	font-size: 0.7em;
+	display: flex;
+	justify-content: center;
+}
+
+@media (min-width: 540px) {
+
+
+	body{
+		margin: 0%;
+		/* width: 100vw; */
+		display: grid;
+		grid-template-rows: 15vh 5vh 50vh 23.5vh auto;
+		/* grid-template-columns: 50% 50%; */
+		row-gap: 3vh;
+		grid-template-areas:
+		"banner"
+		"navigation"
+		"main_focus_image"
+		"quad_images"
+		"footer";
+	}
+	
+	#header{
+		width: 100vw;
+	}
+
+	/* header parent container */
+	#banner{
+		margin: 0%;
+		width: 100vw;
+		padding: 0%;
+		grid-area: banner;
+		background-image: url(/images/banner/rainbow_banner_2.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		margin-bottom: vh;
+	}
+
+	/* header logo image */
+	#header_img{
+		grid-area: header_img;
+		height: 15vh;
+	}
+
+	
+	/* for collapsed nav when on mobile */
+	.menu_icon, #menu_group{
+		display: none;
+	}
+
+	/* slogan in the header container */
+	#p_header{
+		grid-area: slogan;
+		padding-bottom: 5%;
+		padding-right: 10%;
+		display: flex;
+		align-items: flex-end;
+		justify-content:flex-end;
+	
+	}
+
+	/* slogan in the header */
+	#p_header>p{
+		margin: 0.1vh 0;
+		font-family: 'Indie Flower', cursive;
+		font-size: 1em;
+		font-weight: 900;
+		text-align: end;
+	}
+
+
+	/* navigation container */
+	.nav{
+		grid-area: navigation;
+		/* margin: 5% 5%; */
+		/* background-color: pink; */
+		background-image: url(/images/banner/rainbow_banner_2.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		height: 10vh;
+		width: 90vw;
+		margin: 3vh 5vw;
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		
+
+	}
+
+	/*navigation list*/
+	.nav_list{
+		margin: 0%;
+		padding-right: 5vw;
+		width: 60vw;
+		/* background-color: red; */
+		display: flex;
+		justify-content: space-between;
+		/* align-items: center; */
+		
+	}
+
+	/* individual navigation items */
+	li{
+		list-style: none;
+		font-size: 0.5em;
+		/* border: 0.11em black solid; */
+		background-color: #8B8680;
+		padding: 2%;
+		width: 7vw;
+		text-align: center;
+		/* margin: 5%; */
+		
+
+	}
+
+	/* navigation items anchor tag*/
+	a{
+		text-decoration: none;
+		color: white;
+		font-family: 'Fascinate', cursive;
+	}
+
+	#main_focus_image{
+		width: 90vw;
+		height: 45vh;
+		grid-area: main_focus_image;
+		display: grid;
+		/* grid-template-columns: 50vw 50vw; */
+		grid-template-areas:
+		"focus_image	main";
+		column-gap: 5vw;
+		/* display: flex; */
+		/* justify-content: space-between; */
+		margin: 0vh 5vw;
+		margin-top: 6vh;
+	}
+
+	/* main section parent container */
+	#main{
+		grid-area: main;
+		/* margin-right: 5%; */
+		/* background-color: purple; */
+		display: grid;
+		grid-template-rows: 1fr 4fr;
+		grid-template-areas:
+			"heading"
+			"description";
+		width: 43.5vw;
+	}
+
+	/* h1 */
+	#heading{
+		margin: 0%;
+		grid-area: heading;
+		font-family: 'Fascinate', cursive;
+		padding: 0 5%;
+		text-align: end;
+	
+	}
+	
+	/* paragraph in main section */
+	#description{
+		margin: 0%;
+		grid-area: description;
+		padding: 5%;
+		font-family: 'Indie Flower', cursive;
+		text-align: end;
+	}
+
+	/* container for highlighted image */
+	#focus_image{
+		grid-area: focus_image;
+		/* display: flex; */
+		/* justify-content: flex-end; */
+		/* justify-content: center; */
+		/* padding: 0 5%; */
+		/* display: none; */
+		/* justify-content: center; */
+		padding: 0 0%;
+	}
+	
+	/* highlighted image */
+	#f_image{
+		height: 45vh;
+		width: 43.5vw;
+		border-radius: 0em;
+		object-fit: cover;		
+	}
+
+	/* container for four images */
+	#quad_images{
+		grid-area: quad_images;
+		width: 90vw;
+		height: 23.5vh;
+		padding: 0vh 5vw;
+		display: grid;
+		/* grid-template-columns: repeat(2, 1fr); */
+		grid-template-rows: 23.5vh;
+		/* grid-row-gap: 3vh;
+		grid-column-gap: 3vh; */
+		grid-template-areas: 
+		"quad1	quad2 quad3	quad4"
+
+	}
+	
+	/* image 1 of 4 */
+	#quad1{
+		grid-area: quad1;
+	}
+	
+	/* image 2 of 4 */
+	#quad2{
+		grid-area: quad2;
+	}
+	
+	/* image 3 of 4 */
+	#quad3{
+		grid-area: quad3;
+	}
+	
+	/* image 4 of 4 */
+	#quad4{
+		grid-area: quad4;
+	}
+	
+	/* container for each individual image in four */
+	.quad_image_container{
+		border-radius: 2em;
+		overflow: hidden;	
+	}
+	
+	/* images in this container */
+	.quad_image_container>img{
+		width: 21vw;
+		height: 23.5vh;
+		object-fit: cover;
+	
+	}
+	
+	/* footer parent container*/
+	#footer{
+		grid-area: footer;
+		width: 100vw;
+		margin-left: 0;
+		background-image: url(/images/banner/rainbow_banner_2.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		border-radius: 0em;
+		display: grid;
+		grid-template-rows: auto auto;
+		grid-template-columns: auto auto;
+		grid-template-areas: 
+		"contact_us socials"
+		"love		love";
+		font-family: 'Indie Flower', cursive;
+		padding: 0%;
+		margin-top: 0vh;
+	}
+	
+	/*contact us container*/
+	#contact_us{
+		grid-area: contact_us;
+		display: flex;
+		flex-direction: column;
+		width: 40vw;
+		padding: 5%;
+	}
+	
+	/* heading in contact us section */
+	h4{
+		font-family: 'Fascinate', cursive;
+	}
+	
+	/* paragraph and heading in contact us section */
+	#contact_us>p, h4{
+		margin: 0;
+		font-size: 0.7em;
+	}
+	
+	/* socials container */
+	#socials{
+		grid-area: socials;
+		width: 60vw;
+		display: flex;
+		justify-content: space-around;
+		align-items:center;
+		/* padding-top: 5%; */
+	}
+	
+	/* images in socials container */
+	#socials>a>img{
+		height: 3vh;
+		object-fit: cover;
+		background-color: #fff;
+		padding: 1.5vw;
+		border-radius: 50%;
+	}
+	
+	/* message in footer container */
+	#love{
+		grid-area: love;
+		font-family: 'Indie Flower', cursive;
+		font-size: 0.7em;
+		display: flex;
+		justify-content: center;
+	}
+	
+}
+
+@media (min-width: 900px) {
+
+
+	body{
+		margin: 0%;
+		/* width: 100vw; */
+		display: grid;
+		grid-template-rows: 15vh 5vh 50vh 23.5vh auto;
+		/* grid-template-columns: 50% 50%; */
+		row-gap: 3vh;
+		grid-template-areas:
+		"banner"
+		"navigation"
+		"main_focus_image"
+		"quad_images"
+		"footer";
+	}
+	
+	#header{
+		width: 100vw;
+	}
+
+	/* header parent container */
+	#banner{
+		margin: 0%;
+		width: 100vw;
+		padding: 0%;
+		grid-area: banner;
+		background-image: url(/images/banner/rainbow_banner_2.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		margin-bottom: vh;
+	}
+
+	/* header logo image */
+	#header_img{
+		grid-area: header_img;
+		height: 15vh;
+	}
+
+	
+	/* for collapsed nav when on mobile */
+	.menu_icon, #menu_group{
+		display: none;
+	}
+
+	/* slogan in the header container */
+	#p_header{
+		grid-area: slogan;
+		padding-bottom: 5%;
+		padding-right: 10%;
+		display: flex;
+		align-items: flex-end;
+		justify-content:flex-end;
+	
+	}
+
+	/* slogan in the header */
+	#p_header>p{
+		margin: 0.1vh 0;
+		font-family: 'Indie Flower', cursive;
+		font-size: 2em;
+		font-weight: 900;
+		text-align: end;
+		align-self: start;
+	}
+
+
+	/* navigation container */
+	.nav{
+		grid-area: navigation;
+		/* margin: 5% 5%; */
+		/* background-color: pink; */
+		background-image: url(/images/banner/rainbow_banner_2.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		height: 10vh;
+		width: 90vw;
+		margin: 3vh 5vw;
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		
+
+	}
+
+	/*navigation list*/
+	.nav_list{
+		margin: 0%;
+		padding-right: 5vw;
+		width: 60vw;
+		/* background-color: red; */
+		display: flex;
+		justify-content: space-between;
+		/* align-items: center; */
+		
+	}
+
+	/* individual navigation items */
+	li{
+		list-style: none;
+		font-size: 1em;
+		/* border: 0.11em black solid; */
+		background-color: #8B8680;
+		padding: 2%;
+		width: 7vw;
+		text-align: center;
+		/* margin: 5%; */
+		
+
+	}
+
+	/* navigation items anchor tag*/
+	a{
+		text-decoration: none;
+		color: white;
+		font-family: 'Fascinate', cursive;
+	}
+
+	#main_focus_image{
+		width: 90vw;
+		height: 45vh;
+		grid-area: main_focus_image;
+		display: grid;
+		/* grid-template-columns: 50vw 50vw; */
+		grid-template-areas:
+		"focus_image	main";
+		column-gap: 5vw;
+		/* display: flex; */
+		/* justify-content: space-between; */
+		margin: 0vh 5vw;
+		margin-top: 6vh;
+	}
+
+	/* main section parent container */
+	#main{
+		grid-area: main;
+		/* margin-right: 5%; */
+		/* background-color: purple; */
+		display: grid;
+		grid-template-rows: 1fr 4fr;
+		grid-template-areas:
+			"heading"
+			"description";
+		width: 43.5vw;
+	}
+
+	/* h1 */
+	#heading{
+		margin: 0%;
+		grid-area: heading;
+		font-family: 'Fascinate', cursive;
+		font-size: 5em;
+		padding: 0 5%;
+		text-align: end;
+	
+	}
+	
+	/* paragraph in main section */
+	#description{
+		margin: 0%;
+		grid-area: description;
+		padding: 5%;
+		font-family: 'Indie Flower', cursive;
+		font-size: 1.5em;
+		text-align: end;
+	}
+
+	/* container for highlighted image */
+	#focus_image{
+		grid-area: focus_image;
+		/* display: flex; */
+		/* justify-content: flex-end; */
+		/* justify-content: center; */
+		/* padding: 0 5%; */
+		/* display: none; */
+		/* justify-content: center; */
+		padding: 0 0%;
+	}
+	
+	/* highlighted image */
+	#f_image{
+		height: 45vh;
+		width: 43.5vw;
+		border-radius: 0em;
+		object-fit: cover;		
+	}
+
+	/* container for four images */
+	#quad_images{
+		grid-area: quad_images;
+		width: 90vw;
+		height: 23.5vh;
+		padding: 0vh 5vw;
+		display: grid;
+		/* grid-template-columns: repeat(2, 1fr); */
+		grid-template-rows: 23.5vh;
+		/* grid-row-gap: 3vh;
+		grid-column-gap: 3vh; */
+		grid-template-areas: 
+		"quad1	quad2 quad3	quad4"
+
+	}
+	
+	/* image 1 of 4 */
+	#quad1{
+		grid-area: quad1;
+	}
+	
+	/* image 2 of 4 */
+	#quad2{
+		grid-area: quad2;
+	}
+	
+	/* image 3 of 4 */
+	#quad3{
+		grid-area: quad3;
+	}
+	
+	/* image 4 of 4 */
+	#quad4{
+		grid-area: quad4;
+	}
+	
+	/* container for each individual image in four */
+	.quad_image_container{
+		border-radius: 2em;
+		overflow: hidden;	
+	}
+	
+	/* images in this container */
+	.quad_image_container>img{
+		width: 21vw;
+		height: 23.5vh;
+		object-fit: cover;
+	
+	}
+	
+	/* footer parent container*/
+	#footer{
+		grid-area: footer;
+		width: 100vw;
+		margin-left: 0;
+		background-image: url(/images/banner/rainbow_banner_2.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		border-radius: 0em;
+		display: grid;
+		grid-template-rows: auto auto;
+		grid-template-columns: auto auto;
+		grid-template-areas: 
+		"contact_us socials"
+		"love		love";
+		font-family: 'Indie Flower', cursive;
+		padding: 0%;
+		margin-top: 0vh;
+	}
+	
+	/*contact us container*/
+	#contact_us{
+		grid-area: contact_us;
+		display: flex;
+		flex-direction: column;
+		width: 40vw;
+		padding: 5%;
+	}
+	
+	/* heading in contact us section */
+	h4{
+		font-family: 'Fascinate', cursive;
+	}
+	
+	/* paragraph and heading in contact us section */
+	#contact_us>p, h4{
+		margin: 0;
+		font-size: 0.7em;
+	}
+	
+	/* socials container */
+	#socials{
+		grid-area: socials;
+		width: 60vw;
+		display: flex;
+		justify-content: space-around;
+		align-items:center;
+		/* padding-top: 5%; */
+	}
+	
+	/* images in socials container */
+	#socials>a>img{
+		height: 3vh;
+		object-fit: cover;
+		background-color: #fff;
+		padding: 1.5vw;
+		border-radius: 50%;
+	}
+	
+	/* message in footer container */
+	#love{
+		grid-area: love;
+		font-family: 'Indie Flower', cursive;
+		font-size: 0.7em;
+		display: flex;
+		justify-content: center;
+	}
+	
+}
