@@ -611,9 +611,10 @@ h4{
 	#p_header>p{
 		margin: 0.1vh 0;
 		font-family: 'Indie Flower', cursive;
-		font-size: 1em;
+		font-size: 2em;
 		font-weight: 900;
 		text-align: end;
+		align-self: start;
 	}
 
 
@@ -650,7 +651,7 @@ h4{
 	/* individual navigation items */
 	li{
 		list-style: none;
-		font-size: 0.5em;
+		font-size: 1em;
 		/* border: 0.11em black solid; */
 		background-color: #8B8680;
 		padding: 2%;
@@ -701,6 +702,7 @@ h4{
 		margin: 0%;
 		grid-area: heading;
 		font-family: 'Fascinate', cursive;
+		font-size: 5em;
 		padding: 0 5%;
 		text-align: end;
 	
@@ -712,6 +714,7 @@ h4{
 		grid-area: description;
 		padding: 5%;
 		font-family: 'Indie Flower', cursive;
+		font-size: 1.5em;
 		text-align: end;
 	}
 
