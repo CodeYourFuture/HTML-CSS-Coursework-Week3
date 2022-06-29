@@ -7,86 +7,106 @@
     <title>Responsive Cake webpage</title>
     <!-- Add a link to your css file here -->
     <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="images/logo.svg" type="image/svg+xml" />
   </head>
 
   <body>
-    <!-- Add your markup here -->
-    <div class="container">
-      <header>
-        <img src="img/" alt="logo" width:auto; />
-        <h1>
-          Praesent efficitur eleifend metus, eu dapibus justo sagittis ac.
-        </h1>
-        <img src="img/" alt="logo" width:auto; />
-
-        <menu-bar>
-          <nav>
-            <a href=""> Home</a>
-            <a href=""> Cakes</a>
-            <a href=""> Orderin</a>
-            <a href=""> Lessons</a>
-            <a href="">About</a>
-          </nav>
-        </menu-bar>
-      </header>
-
-      <main>
-        <section class="Introdution">
-          <div class="text">
-            <h2>Cakes by Sobia</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
-              consectetur, elit id fermentum efficitur, turpis dui rutrum dolor,
-              vitae suscipit augue mauris molestie ipsum. Suspendisse potenti.
-              Sed convallis nunc ut turpis luctus, non porta odio tempor. Nulla
-              venenatis lectus ipsum, non hendrerit libero scelerisque eget.
-              Nunc iaculis felis ut posuere suscipit. Proin eu orci congue,
-              tristique augue at, vehicula nisl. Nulla mattis, nisl in mattis
-              eleifend, leo quam tempus ex, sed vulputate mauris ante sit amet
-              lacus. Fusce nec risus fermentum, congue urna ut, molestie leo.
-            </p>
-          </div>
-          <img scr="" alt="" />
-        </section>
-
-        <section class="product-varieties">
-          <div class="cake-type">
-            <img src="img/" alt="Birthday Cakes" />
-          </div>
-          <div class="cake-type">
-            <img src="img/" alt="Wedding Cakes" />
-          </div>
-          <div class="cake-type">
-            <img src="img/" alt="Anniversary Cakes" />
-          </div>
-          <div class="cake-type">
-            <img src="img/" alt="Thank You Cakes" />
-          </div>
-        </section>
-      </main>
-
-      <footer>
-        <p>You can follow us here:</p>
-
+    <header class="header">
+      <img class="logo" alt="cupcake_logo" />
+      <div class="header_items">
         <img
-          src="img/facebook-icon.svg"
-          alt="facebook"
-          width="25px;"
-          height="20px;"
+          class="hamburger_menu"
+          src="images/hamburger-menu.svg"
+          width="30px"
+          alt="hamburger menu"
         />
-        <img
-          src="img/twitter-icon.svg"
-          alt="twitter"
-          width="25px;"
-          height="20px;"
-        />
-        <img
-          src="img/instagram-icon.svg"
-          alt="instagram"
-          width="25px;"
-          height="20px;"
-        />
-      </footer>
-    </div>
+        <p class="header_title">
+          The best cakes in town delivered to your door
+        </p>
+      </div>
+    </header>
+
+    <main class="main">
+      <nav class="nav_wrapper">
+        <ul class="list">
+          <li class="nav_item">
+            <a class="nav_list" href="#">HOME</a>
+          </li>
+          <li class="nav_item">
+            <a class="nav_list" href="#">CAKES</a>
+          </li>
+          <li class="nav_item">
+            <a class="nav_list" href="#">ORDERING</a>
+          </li>
+          <li class="nav_item">
+            <a class="nav_list" href="#">LESSONS</a>
+          </li>
+          <li class="nav_item">
+            <a class="nav_list" href="#">ABOUT</a>
+          </li>
+        </ul>
+      </nav>
+
+      <section class="welcome">
+        <div class="welcome_wrapper">
+          <h1 class="welcome-title">Welcome</h1>
+          <p class="welcome_text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+            tempus ante vitae ante tincidunt, ac blandit nunc tempor. Quisque
+            rhoncus sapien ac tellus vulputate luctus. Integer maximus, metus ut
+            ultrices interdum.
+            <br /><br />
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Perferendis nisi velit ab ut dicta neque obcaecati natus doloribus,
+            nam pariatur consequuntur laborum illum accusantium. Eum autem
+            architecto officiis veritatis rerum.
+            <br /><br />
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Exercitationem, cumque incidunt! Facere natus necessitatibus nemo
+            possimus? Voluptatibus, voluptate. Molestiae aliquid, ut quisquam
+            commodi tenetur obcaecati nisi deleniti nesciunt cupiditate est!
+          </p>
+        </div>
+        <div class="big_cake_wrapper">
+          <img
+            class="big_cake_img"
+            src="images/cake.jpg"
+            alt="chocolate cake"
+          />
+        </div>
+      </section>
+
+      <section class="cakes">
+        <div class="cake_image">
+          <img src="images/cake1.jpg" alt="cream layer tartlet" />
+        </div>
+        <div class="cake_image">
+          <img src="images/cake2.jpg" alt="fruits and cream tartlets" />
+        </div>
+        <div class="cake_image">
+          <img src="images/cake3.jpg" alt="small cake pieces" />
+        </div>
+        <div class="cake_image">
+          <img
+            src="images/cake4.jpg"
+            alt="raspberry and pistachio cake piece"
+          />
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer_wrapper">
+      <div class="footer_text">
+        <p class="footer_item">CUPCAKES</p>
+        <p class="footer_item">TOPPERS</p>
+        <p class="footer_item">TREATS</p>
+      </div>
+      <p class="social-list">
+        <a href="" class="fab fa-facebook fa-1x"></a>
+        <a href="" class="fab fa-twitter fa-1x"></a>
+        <a href="" class="fab fa-instagram fa-1x"></a>
+      </p>
+      <p class="copyright">© Kwanda Silekwa. All rights reserved</p>
+    </footer>
   </body>
 </html>
