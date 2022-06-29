@@ -46,7 +46,7 @@ p {
 
 #showcase {
 
-    min-height: 450px;
+    min-height: 440px;
     color: white;
     text-align: center;
 }
@@ -114,8 +114,7 @@ p {
 }
 
 
-
-@media(min-width: 900px) {
+@media(min-width: 540px) {
     .grid {
         display: grid;
         grid-template-columns: 1fr repeat(2fr, minmax(auto, 25em)) 1fr;
@@ -129,10 +128,77 @@ p {
 #section-b ul {
     display: flex;
     justify-content: space-around;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0.5em;
 }
 
 #section-b li {
+    width: 70%;
+}
+
+}
+
+
+@media(min-width: 900px) {
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr repeat(2fr, minmax(auto, 25em)) 1fr;
+    }
+
+.content-wrap, #section-b ul {
+    grid-column: 2/4;
+
+    }
+
+    .content-wrap {
+        display: flex;
+    }
+
+    #showcase .content-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    padding: 0 1.5em;
+}
+
+
+    #section-b ul {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        
+        
+}
+
+#section-b li {
+    height: 100%;
     width: 31%;
+    margin-top: 2em;
+    
+}
+
+h1, h2, h3 {
+    font-size: 2em;
+}
+
+
+#section-a .content-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#section-c .content-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
 }
 
 }
