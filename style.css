@@ -252,7 +252,7 @@ h4{
 		margin: 0%;
 		/* width: 100vw; */
 		display: grid;
-		grid-template-rows: 15vh 5vh 45vh 23.5vh auto;
+		grid-template-rows: 15vh 5vh auto 23.5vh auto;
 		/* grid-template-columns: 50% 50%; */
 		row-gap: 3vh;
 		grid-template-areas:
@@ -374,7 +374,8 @@ h4{
 		column-gap: 5vw;
 		/* display: flex; */
 		/* justify-content: space-between; */
-		margin: 6vh 5vw;
+		margin: 0vh 5vw;
+		margin-top: 6vh;
 	}
 
 	/* main section parent container */
@@ -434,7 +435,7 @@ h4{
 		grid-area: quad_images;
 		width: 90vw;
 		height: 23.5vh;
-		padding: 3vh 5vw;
+		padding: 0vh 5vw;
 		display: grid;
 		/* grid-template-columns: repeat(2, 1fr); */
 		grid-template-rows: 23.5vh;
@@ -496,7 +497,7 @@ h4{
 		"love		love";
 		font-family: 'Indie Flower', cursive;
 		padding: 0%;
-		margin-top: 3vh;
+		margin-top: 0vh;
 	}
 	
 	/*contact us container*/
