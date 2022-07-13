@@ -1,1 +1,346 @@
-/*  Add your styling here */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+/* define colors to recall by name in tye stylesheet */
+:root {
+  --yelow: #FFC000;
+  --back: #00000;
+  --gray: #DADEDF;
+  --darkgray: #7F7F7F;
+}
+
+/* border-box: add border and padding without increasing box-size */
+html {
+  box-sizing: border-box;
+  font-family: "roboto", sans-serif;
+  color: var(--back);
+}
+
+/* Inherit box-sizing from .html */
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  background-color: rgb(228, 223, 223);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0 0 5px 0;
+}
+
+p {
+  font-size: 15px;
+  margin: 5px;
+}
+
+
+/* Media Mobile First */
+#container {
+  display: grid;
+  width: 100%;
+  grid-template-rows: repeat(3, 33.3%);
+  row-gap: 5px;
+}
+
+
+/* Header */
+.header {
+  background-color: #fff;
+}
+
+.hearder-content {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 1fr;
+  margin: 0 20px;
+}
+
+.hearder-content .best {
+  display: grid;
+  width: 120px;
+  align-items: end;
+  justify-items: end;
+  font-size: .9rem;
+}
+
+.hearder-content .logo {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  width: 50%;
+  height: 25vh;
+  padding: 20px 40px 20px 0;
+}
+
+.hearder-content .hamburger {
+  display: -moz-grid-group;
+  width: 15px;
+  height: 45px;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.hearder-content .bar {
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #101010;
+}
+
+.nav-menu {
+  display: none;
+}
+/* End of Header */
+
+
+/* Main Container */
+.main_container {
+  display: grid;
+  grid-template-rows: repeat(20% 40% 40%);
+  margin: 0 30px;
+}
+
+ /* Welcome */
+.welcome {
+  grid-template-rows: 50% 50%;
+  margin: 40px 0px 15px 0;
+}
+
+.lemon_cake {
+  width: 100%;
+  height: 40vh;
+}
+
+.cool {
+  margin-bottom: 1rem;
+}
+
+
+  /* Photos Container */
+.photos_container {
+  display: grid;
+  grid-template-columns: repeat(2, 47.5%);
+  grid-template-rows: repeat(2, 47.5%);
+  column-gap: 5%;
+  row-gap: 8%;
+}
+
+.cake {
+  width: 100%;
+  height: 30vh;
+}
+/* End of Main Container */
+
+/* Footer */
+.footer {
+  background-color: rgba(88, 65, 41, 0.993);
+  margin-top: 30px;
+  padding: 20px;
+}
+
+.footer h4 {
+  padding: 5px;
+  color: #fff;
+}
+
+.footer p {
+  color: #fff;
+}
+
+.footer h5 {
+  text-align: center;
+  color: #251c1c;
+  font-weight: 400;
+}
+/* End of Footer */
+
+
+/* Desktop */
+
+ /* Media Querry min-width: 540px */
+@media screen and (min-width: 540px) {
+
+  body {
+    background-color: #fff;
+  }
+
+  #container {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(3, 33.3%);
+  }
+
+  /* Header */
+  .hearder-content {
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: 100%;
+    grid-template-rows: 40% 30% 30%;
+    margin: 0 3.75rem;
+  }
+
+  .hearder-content .logo {
+    display: grid;
+    width: 15%;
+    height: 30vh;
+    margin-top: 1rem;
+  }
+
+  .hearder-content .best {
+    display: grid;
+    width: 100%;
+    font-size: 1.8rem;
+    justify-items: flex-end;
+  }
+
+  .nav-container {
+    height: 10vh;
+    margin-top: 1.25rem;
+    display: grid;
+    align-items: center;
+  }
+
+  .nav-menu {
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 1.25rem;
+    background-color: #FFC000;
+  }
+ 
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .nav-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  li {
+    list-style: none;
+    border: 0.125rem solid chocolate;
+    padding: .5rem 0;
+    margin: 0 1rem;
+  }
+
+  li:hover {
+    width: 50%;
+    background-color: #e2a574;
+  }
+
+  a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+    margin: 0 2.5rem;
+    font-size: 1rem;
+    ;
+  }
+
+  /* main */
+  .main_container {
+    margin: 0 3.75rem;
+    display: grid;
+    grid-template-rows: repeat(2, 50%);
+    row-gap: reapet(3, 0.6rem);
+  }
+
+  .welcome {
+    width: 100%;
+    min-height: 60vh;
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: repeat(2, 50%);
+    align-items: center;
+  }
+
+  .cool {
+    display: grid;
+    align-items: flex-start;
+  }
+
+  .cool h1 {
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .cool p {
+    font-size: 1.9rem;
+  }
+
+  .lemon_cake {
+    display: grid;
+    align-items: start;
+    width: 100%;
+    height: 80vh;
+  }
+
+  .photos_container {
+    width: 100%;
+    min-height: 80vh;
+    display: grid;
+    grid-template-columns: repeat(4, 21.5%);
+    grid-template-rows: 100%;
+    align-items: center;
+    justify-items: center;
+  }
+
+  .cake {
+    width: 90%;
+    height: 40vh;
+  }
+
+  /* Footer */
+  .footer h4 {
+    padding: 5px;
+    color: #fff;
+  }
+
+  .footer p {
+    color: #fff;
+  }
+
+  .footer h5 {
+    text-align: center;
+    color: #a5a589;
+    font-weight: 400;
+    font-size: 1.2rem;
+  }
+
+}
+
+/* Media query min-width: 900px */
+@media screen and (min-width: 900px) {
+  .photos_container {
+    width: 100%;
+    min-height: 80vh;
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: 100%;
+    column-gap: .1rem;
+    align-items: center;
+    justify-items: center;
+  }
+}
