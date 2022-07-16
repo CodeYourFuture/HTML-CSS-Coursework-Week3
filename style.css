@@ -1,1 +1,156 @@
-/*  Add your styling here */
+body {
+    font-family: "Roboto", sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+.header {
+    display: flex;
+    height: 3rem;
+    justify-content: space-between;
+    margin: auto;
+    max-width: 70rem;
+    padding: 1rem;
+}
+
+.header__menu-button {
+    background-color: transparent;
+    border: none;
+    padding: 0.5rem;
+    vertical-align: center;
+}
+
+.header__nav {
+    display: none;
+}
+
+.header__nav-item-wrapper {
+    list-style: none;
+    padding: 0;
+}
+
+.header__nav-item {
+    display: inline-block;
+}
+
+.header__link {
+    color: dimgray;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+.header__link:focus,
+.header__link:hover {
+    color: #e42900;
+}
+
+.introduction {
+    align-items: center;
+    background-image: url("../img/first-background.jpg");
+    color: black;
+    display: flex;
+    flex-direction: column;
+    height: 40rem;
+    justify-content: center;
+    text-align: center;
+}
+
+.introduction__heading {
+    font-size: 3.5rem;
+    font-weight: 300;
+    margin-bottom: 1.5rem;
+    margin-top: 0;
+}
+
+.introduction__subheading {
+    font-size: 2rem;
+    font-weight: 200;
+    margin-bottom: 3rem;
+    margin-top: 0;
+}
+
+.introduction__button {
+    background-color: #e42900;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    padding: 1rem 2rem;
+}
+
+
+
+.description {
+    margin: auto;
+    max-width: 70rem;
+    padding: 5rem 1rem;
+    text-align: center;
+}
+
+.description__heading {
+    font-size: 3rem;
+    font-weight: 300;
+    margin-bottom: 3rem;
+}
+
+.description__image-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.description__image {
+    height: 10rem;
+}
+
+.description__text {
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.footer {
+    border-top: 1px solid lightgray;
+    margin: auto;
+    max-width: 70rem;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.footer__heading {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin: 1.2rem 0;
+}
+
+.footer__wrapper {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+.footer__icon-wrapper {
+    border: 1px solid lightgray;
+    border-radius: 50%;
+    height: 1.2rem;
+    margin: 0.5rem;
+    padding: 1rem;
+    width: 1.2rem;
+}
+
+.footer__copyright {
+    color: dimgray;
+}
+
+@media (min-width: 768px) {
+    .header__menu-button {
+        display: none;
+    }
+
+    .header__nav {
+        display: block;
+    }
+}
