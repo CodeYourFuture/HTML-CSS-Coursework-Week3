@@ -1,1 +1,43 @@
 /*  Add your styling here */
+body {
+  margin: 0;
+  padding: 0;
+}
+.wrapper {
+  display: grid;
+  grid-template: auto / repeat(auto-fill, 1fr);
+}
+/* HEADER */
+header {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: space-between;
+}
+/* NAV */
+nav > h1 {
+  font-size: 2rem;
+}
+.nav-img {
+  max-width: 15%;
+}
+.nav-item {
+  list-style-type: none;
+  display: none;
+}
+li > .nav-link {
+  text-decoration: none;
+}
+/* Main */
+main {
+  grid-row: 2;
+}
+.boombox {
+  max-width: 80%;
+}
+article > img {
+  max-width: 40%;
+}
+/* FOOTER */
+footer {
+  grid-row: 3;
+}
