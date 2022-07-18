@@ -1,1 +1,32 @@
-/*  Add your styling here */
+body
+{
+    background-color: black;
+    color: white;
+}
+
+.img-1
+{
+    width: 60px;
+    height: 60px;
+}
+
+.tempimg1
+{
+    width: 30px;
+    height: 30px;
+    position:relative ;
+    bottom: 30px;
+}
+
+.dropdown-1
+{
+    position:relative ;
+    bottom: 47px;
+    appearance: none;
+    border-radius: 50%;
+}
+
+h1
+{
+    text-align: left;
+}
