@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100%;
+    display: grid;
+    grid-gap: 20px;
+    /* justify-content: center; */
+    /* align-content: center; */
+    /* justify-items: center; */
+    /* align-items: center; */
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 300px 300px 300px 150px 150px 300px;
+    grid-template-areas: 
+        /* "h h h h"
+        "m m m m"
+        "p p p p"
+        "d1 d1 d2 d2"
+        "d3 d3 d4 d4"
+        "f f f f"; */
+
+        "h h h h h h h h h h h h"
+        ". m m m m m m m m m m ."
+        ". p p p p p p p p p p ."
+        ". d1 d1 d1 d1 d1 d2 d2 d2 d2 d2 ."
+        ". d3 d3 d3 d3 d3 d4 d4 d4 d4 d4 ."
+        "f f f f f f f f f f f f";
+
+}
+
+.container > div {
+    font-size: 2em;
+    background-color: #96ceb4;	
+}
+
+.header {
+    grid-area: h;
+    background-color: #ffeead;
+}
+
+.main {
+    grid-area: m;
+}
+
+.navigation {
+    grid-area: n;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.picture {
+    grid-area: p;
+}
+
+.dessert1 {
+    grid-area: d1;
+}
+
+.dessert2 {
+    grid-area: d2;
+}
+
+.dessert3 {
+    grid-area: d3;
+}
+
+.dessert4 {
+    grid-area: d4;
+}
+
+.footer {
+    grid-area: f;
+    background-color: #96ceb4;
+}
