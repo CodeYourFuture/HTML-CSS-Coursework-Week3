@@ -4,14 +4,15 @@
   
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat (6, 1fr);
+  grid-template-rows: 100px 150px 200px 150px 150px 100px;
   /*  grid-template-areas must follow the exact number of columns and rows defined above (4 columns and 4 rows)  */
   grid-template-areas:
   "header header header header"
     "hero     hero    hero     hero"           /* one for each column */
     "feature  feature feature  feature"
     "product  product product  product"
-    "aside    aside   .        .";           /* the dot is used to skip a column */
+    "aside    aside   aside aside"
+    "footer footer footer footer";           /* the dot is used to skip a column */
 }
 
 .homepage-header{
