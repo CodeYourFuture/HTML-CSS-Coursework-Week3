@@ -1,1 +1,136 @@
 /*  Add your styling here */
+.homepage-main {
+  border: 1px solid black;
+  
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat (6, 1fr);
+  /*  grid-template-areas must follow the exact number of columns and rows defined above (4 columns and 4 rows)  */
+  grid-template-areas:
+  "header header header header"
+    "hero     hero    hero     hero"           /* one for each column */
+    "feature  feature feature  feature"
+    "product  product product  product"
+    "aside    aside   .        .";           /* the dot is used to skip a column */
+}
+
+.homepage-header{
+    background-color: grey;
+    grid-area: header;
+}
+
+
+.homepage-hero {
+  background-color: coral;
+  grid-area: hero;
+}
+
+.homepage-feature {
+  background-color: darkBlue;
+  grid-area: feature;
+}
+
+.homepage-products {
+  background-color: darkSeaGreen;
+  grid-area: product;
+}
+
+.homepage-aside {
+  background-color: darkTurquoise;
+  grid-area: aside;
+}
+
+.homepage-footer{
+    background-color: yellow;
+    grid-area: footer;
+}
+/* 
+  Now let's change it for larger screens 
+  (using quite small breakpoints here to allow for Codepen's small viewport)
+*/
+
+/* TABLET: */
+@media screen and (min-width: 550px) {
+
+  /*  
+    We only define rules which are DIFFERENT from the mobile version defined above. 
+  */
+
+  .homepage-main {
+    /*  we need more columns for a more complex layout  */
+    grid-template-columns: repeat(6, 1fr); 
+    /*  we need less rows now  */
+    grid-template-rows: 140px 100px 80px; 
+    /*  our template now has 6 columns and 3 rows  */
+    grid-template-areas:
+      "hero    hero    hero    hero  hero     hero"
+      "feature feature feature .     aside    aside"
+      "product product product .     aside    aside";
+  }
+  
+/* 
+  We don't need to re-define the grid-area for each block because these haven't changed. The hero is still the hero, the feature is still the feature etc. 
+*/
+  
+} /* end of tablet media query  */
+
+
+/* DESKTOP */
+@media screen and (min-width: 750px) {
+
+  /*  
+    We only define rules which are DIFFERENT from the mobile OR tablet version defined above. 
+  */
+
+  .homepage-main {
+    /*  This time we keep the same number of columns and rows as for tablet, so we don't need to re-define those  */
+  /*   All we're doing here is skipping the 1st and last columns so the content isn't too wide.   */
+    grid-template-areas:
+      ".  hero    hero    hero  hero     ."
+      ".  feature feature .     aside    ."
+      ".  product product .     aside    .";
+  }
+  
+} /* end of desktop media query  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Ignore this */
+.tip {
+  display: block;
+  padding-top: 30px;
+  font-family: Arial;
+  color: grey;
+}
+
+.tablet, .desktop {
+  display: none;
+}
+
+@media screen and (min-width: 550px) {
+  .mobile, desktop {
+    display: none;
+  }
+  .tablet {
+    display: block;
+  }
+}
+@media screen and (min-width: 750px) {
+  .mobile, .tablet {
+    display: none;
+  }
+    .desktop {
+    display: block;
+  }
+}
