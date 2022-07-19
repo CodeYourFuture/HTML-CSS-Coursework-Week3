@@ -12,7 +12,19 @@
     <main class="homepage-main">
         <section class="homepage-header">
             <img src="images/diana-polekhina-i5BY6W2ttts-unsplash.jpg" alt="">
-            <nav></nav>
+            <div class="headernav" id="myheadernav">
+                <a href="#home">Home</a>
+                <a href="#news">News</a>
+                <a href="#contact">Contact</a>
+                <a href="#about">About</a>
+                <a href="javascript:void(0);" class="icon" onclick="theFunction()">
+                    <i id="burgericon2">
+                        <div class="burger2"></div>
+                        <div class="burger2"></div>
+                        <div class="burger2"></div>
+                    </i>
+                </a>
+            </div>
             <h2>The best cakes in town delivered to your door</h2>
         </section>
         <section class="homepage-hero">
@@ -28,7 +40,7 @@
         </section>
         <section class="homepage-footer">
             <div class="topnav" id="myTopnav">
-                <a href="#home" class="active">Home</a>
+                <a href="#home" >Home</a>
                 <a href="#news">News</a>
                 <a href="#contact">Contact</a>
                 <a href="#about">About</a>
@@ -49,6 +61,15 @@
             } else {
                 x.className = "topnav";
             }
-        }</script>
+        }
+        
+        function theFunction() {
+                var x = document.getElementById("myheadernav");
+                if (x.className === "headernav") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "headernav";
+                }
+            }</script>
 </body>
 </html>
