@@ -1,9 +1,9 @@
 .homepage-main {
-    border: 1px solid black;
+    border:2px solid palevioletred;
 
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 150px auto auto auto 150px 80px;
+    grid-template-rows: 150px auto auto auto 100px;
     /*  grid-template-areas must follow the exact number of columns and rows defined above (4 columns and 4 rows)  */
     grid-template-areas:
     "header header header header"
@@ -16,7 +16,7 @@
 }
 
 .homepage-header{
-    background-color: grey;
+    
     grid-area: header;
 }
 
@@ -27,16 +27,18 @@
     padding-top:10px;
     padding-left: 10px;
     float: left;
+    
 }
 
 .homepage-header h2{
     font-size: 20px;
     text-align: right;
     padding-right: 20px;
+    color: palevioletred
 }
 
 .homepage-hero {
-    background-color: coral;
+   border:2px solid palevioletred;
     grid-area: hero;
     padding:30px;
 }
@@ -47,6 +49,7 @@
 
 .homepage-hero h1{
     font-size: 30px;
+    color:palevioletred
 }
 
 .homepage-feature {
@@ -68,7 +71,6 @@ justify-content: center;
 /* Product section  change background color */ 
 
 .homepage-products {
-background-color: darkSeaGreen;
 grid-area: product;
 display:grid;
 padding-bottom: 5px;
@@ -81,7 +83,8 @@ grid-template-areas:
         ;
 justify-content: center;
 align-content:center;
-align-items: center;  
+align-items: center; 
+border: 2px solid palevioletred
 }
 
 .image1{
@@ -89,6 +92,7 @@ grid-area: image1;
 width:150px;
 height: 150px; 
 padding: 20px;  
+
 }
 
 .image2{
@@ -123,12 +127,14 @@ padding:20px;
 }
 
 .burger {
-    width: 40px;
-    height: 5px;
+    width: 80px;
+    height: 10px;
     background-color: white;
-    margin: 6px 0;
+    margin: 10px 0;
+
 
 }
+
 
 
 
