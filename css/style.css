@@ -1,8 +1,17 @@
-/*  Add your styling here */
+/*  Variables */
 :root {
-    --ming-dark: #006d77;
-    --mink-light: #83c5be;
-    --blue-light: #edf6f9;
-    --salmon-light: #ffddd2;
-    --salmon-dark: #e29578;
+    --text-color: #3d405b;
+    --background-color: #f4f1de;
+    --green-light: #81b29a;
+    --salmon-light: #f2cc8f;
+    --salmon-dark: #e07a5f;
+
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    color: var(--text-color);
+    background-color: var(--background-color);
 }
