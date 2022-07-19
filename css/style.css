@@ -14,4 +14,8 @@
     padding: 0;
     color: var(--text-color);
     background-color: var(--background-color);
+    font-family: 'Playfair Display', serif;
+    font-family: 'Albert Sans', sans-serif;
 }
+
+/* Header */
