@@ -3,7 +3,7 @@
   border: 1px solid black;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 100px 175px 175px 150px 150px 100px;;
+  grid-template-rows: 100px 175px 175px 150px 150px 100px;
   /*  grid-template-areas must follow the exact number of columns and rows defined above (4 columns and 4 rows)  */
   grid-template-areas:
   "header header header header"
