@@ -20,21 +20,51 @@ html, body {
 
 /* Header */
 .header {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+    display: grid;
+    grid-template-areas: "logo menu"
+        "logo slogan";
     background-color: var(--hero-color);
 }
 
 .logo {
+    grid-area: logo;
     width: 150px;
     height: auto;
     margin: 0.5em 1em;
 }
 
 .slogan {
-    font-size: 1.8em;
+    grid-area: slogan;
+    width: 50vw;
+    display: flex;
+    justify-self: end;
+    padding: 0 1em;
+    text-align: end;
+    font-size: 1.5em;
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+    font-style: italic;
+}
+
+#menu-toggle {
+    grid-area: menu;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-self: end;
+    margin: 1em;
+    border: none;
+    background: linear-gradient(to bottom,
+            var(--text-color), var(--text-color) 20%,
+            var(--hero-color) 20%, var(--hero-color) 40%,
+            var(--text-color) 40%, var(--text-color) 60%,
+            var(--hero-color) 60%, var(--hero-color) 80%,
+            var(--text-color) 80%, var(--text-color) 100%);
+}
+
+#menu-toggle .navbar {
+    visibility: hidden;
+    position: fixed;
 }
 
 .navbar__menu {
