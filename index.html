@@ -6,19 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Responsive Cake webpage</title>
-    <link rel="stylesheet" href="styles/default.css">
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
 </head>
 
 <body>
         <div class="container">
-            <div class="header">Header 1  </div>
-            <div class="main">Main 2 2 </div>
-            <!-- <nav class="navigation">
-                <div>HOME</div>
-                <div>SEARCH</div>
-                <div>LOGOUT</div>
-            </nav> -->
-            <div class="picture">Picture 3 2</div>
+            <div class="header">
+                <!-- <a href="#">
+                    <img class="logo" alt="Macarons logo" src="logo.png" />
+                </a> -->
+                <button class="btn-mobile-nav">
+                    <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+                    <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+                </button>
+            </div>
+
+            <div class="main">
+                Main
+            </div>
+            <div class="navigation">
+                <ul class="nav-list">
+                    <li><a class="nav-link" href="#">How it works</a></li>
+                    <li><a class="nav-link" href="#">Meals</a></li>
+                    <li><a class="nav-link" href="#">Testimonials</a></li>
+                    <li><a class="nav-link" href="#">Pricing</a></li>
+                    <li><a class="nav-link nav-cta" href="#">Try for free</a></li>
+                </ul>
+            </div>
+            <div class="picture">
+                Picture 3 2
+            </div>
             <div class="dessert1">
                 <!-- <img src="img/des1.png"/> -->
             </div>
@@ -31,8 +50,13 @@
             <div class="dessert4">
                 <!-- <img src="img/des4.png"/> -->
             </div>
-            <div class="footer">Footer 6 4</div>
+            <div class="footer">
+                Footer 6 4
+            </div>
         </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>

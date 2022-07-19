@@ -1,0 +1,30 @@
+@media (min-width: 540px) {
+    .btn-mobile-nav {
+        display: none;
+    }
+
+
+.container {
+    grid-template-rows: 300px 150px 300px 300px 150px 150px 300px;
+    grid-template-areas: 
+        "h h h h h h h h h h h h"
+        ". n n n n n n n n n n ."
+        ". m m m m m m m m m m ."
+        ". p p p p p p p p p p ."
+        ". d1 d1 d1 d1 d1 d2 d2 d2 d2 d2 ."
+        ". d3 d3 d3 d3 d3 d4 d4 d4 d4 d4 ."
+        "f f f f f f f f f f f f";
+}
+
+.navigation {
+    grid-area: n;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    .btn-mobile-nav {
+        display: none;
+    }
+
+}
