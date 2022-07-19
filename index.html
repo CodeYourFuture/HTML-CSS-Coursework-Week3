@@ -7,10 +7,77 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Responsive Cake webpage</title>
     <!-- Add a link to your css file here -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <!-- Add your markup here -->
+
+    <!-- the header contain nav, logo, and tagline -->
+    <header>
+        <div id="header-container">
+            <img id="logo" src="./imgs/logo.png" alt="">
+            <h2 id="slogan">"The best cakes in town delivred to your door"</h2>
+        </div>
+        <div>
+            <ul id="nav-list">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">CAKE</a></li>
+                <li><a href="#">ORDERIN</a></li>
+                <li><a href="#">LESSONS</a></li>
+                <li><a href="#">ABOUT</a></li>
+            </ul>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </header>
+    <div class="container">
+        <article>
+            <section id="section-intro">
+                <div id="intro-container">
+                    <h1>
+                        Welcome
+                    </h1>
+                    <p id="intro">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit quod in, officiis
+                        deserunt
+                        reprehenderit nulla mollitia voluptates ducimus deleniti. Animi eius non excepturi ut magni odit
+                        iste
+                        tempora similique mollitia.</p>
+                </div>
+                <img src="./imgs/cake-1.jpg" class="image-effects" id="intro-img" alt="wedding cake">
+            </section>
+            <section id="gallary">
+                <img src="./imgs/cake-2.jpg" id="img-gallery" class="image-effects" alt="Cake images">
+                <img src="./imgs/cake-3.jpg" id="img-gallery" class="image-effects" alt="Cake images">
+                <img src="./imgs/cake-4.jpg" id="img-gallery" class="image-effects" alt="Cake images">
+                <img src="./imgs/cake-5.jpg" id="img-gallery" class="image-effects" alt="Cake images">
+            </section>
+        </article>
+    </div>
+    <footer>
+        <ul>
+            <li><a href="#">Contact us</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Careers</a></li>
+        </ul>
+        <p id="copyright"> &copy; 2022 Sweet Cake, All rights reserved. </p>
+    </footer>
+    </div>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("nav-list");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }`
+        }
+    </script>
 </body>
 
 </html>
