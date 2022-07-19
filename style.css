@@ -1,1 +1,167 @@
 /*  Add your styling here */
+
+body{
+    margin: 0;
+}
+
+.homepage {
+    background-color: #f5d9d5;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas:
+            "header header header header "
+            "feature  feature feature  feature"
+            "hero     hero    hero     hero"
+            "product  product product  product"
+            "footer footer footer footer";
+}
+.header {
+    padding: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #f4f4f4;
+    grid-area: header;
+}
+.humburger-menu{
+    cursor: pointer;
+   
+}
+.line1{
+    position: absolute;
+    left: 88%;
+    right: 5.6%;
+    top: 1%;
+    bottom: 98.85%;
+    background: #000000;
+    border-radius: 1px;
+}
+.line2{
+    position: absolute;
+    left: 88%;
+    right: 5.6%;
+    top: 1.47%;
+    bottom: 98.37%;
+    background: #000000;
+    border-radius: 1px;
+}
+  
+.line3{
+    position: absolute;
+    left: 88%;
+    right: 5.6%;
+    top: 1.95%;
+    bottom: 97.89%;
+    background: #000000;
+    border-radius: 1px;
+}
+.feature {
+    background-color: rgb(239, 129, 199);
+    color: #ffffff;
+    grid-area: feature;
+    padding: 1em;
+    
+}
+
+.hero {
+    margin: 0;
+    background-color: coral;
+    grid-area: hero;
+}
+
+.products {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-around;
+    align-items: space-around;
+    padding: 1em;
+    background-color: #fbc3ca;
+    grid-area: product;
+}
+
+.aside {
+    background-color: darkTurquoise;
+    grid-area: aside;
+}
+
+.footer {
+    background-color: rgb(40, 54, 54);
+    color: rgb(28, 244, 190);
+    grid-area: footer;
+    
+}
+.logo-img{
+    width: 100px;
+}
+.header p {
+    text-align: right;
+    align-self: flex-end;
+    margin-left: 1em;
+    font-size: 1em;
+    font-weight: bold;
+    color: hwb(0 40% 100%);
+}
+.feature h1{
+    font-size: 2.6em;
+    margin-bottom: .5em;
+}
+.feature p{
+    font-size: 1.2em;
+    line-height: 1.2em;
+}
+.hero img{
+    width: 100%;
+    margin: 0;
+}
+.item{
+ width: 120px;
+ height: 120px;
+ margin: .5em;
+ background-color: #ffffff;
+ 
+}
+.cup-cake, .donut {
+   margin-top: .7em;
+}
+.footer p{
+    text-align: center;
+}
+.footer ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style-type: none;
+}
+.fa {
+    background: #f8f9f9;
+    padding: .8em;
+    font-size: .75em;
+    width: 2.2em;
+    text-align: center;
+    margin: 10px;
+    border-radius: 50%;
+    border: 1px solid rgb(206, 205, 205);
+    cursor: pointer;
+    
+}
+
+.fa:hover {
+    opacity: 0.5;
+}
+
+.fa-facebook {
+    color: #1a439b;
+    
+
+}
+
+.fa-twitter {
+
+    color: #55ACEE;
+}
+
+.fa-instagram {
+
+    color: rgb(23, 27, 152);
+}
