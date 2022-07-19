@@ -34,7 +34,7 @@ justify-content: center;
     
 }
 
-.mainimage{
+.main_image{
    width:400px;
    height:320px;
    object-fit: cover;
