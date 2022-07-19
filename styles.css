@@ -1,17 +1,18 @@
-/*  Add your styling here */
 .homepage-main {
-  border: 1px solid black;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 100px 175px 175px 150px 150px 100px;
-  /*  grid-template-areas must follow the exact number of columns and rows defined above (4 columns and 4 rows)  */
-  grid-template-areas:
-  "header header header header"
-    "hero     hero    hero     hero"           /* one for each column */
-    "feature  feature feature  feature"
-    "product  product product  product"
-    "product product product product"
-    "footer footer footer footer";           /* the dot is used to skip a column */
+    border: 1px solid black;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 80px 170px auto auto 150px 80px;
+    /*  grid-template-areas must follow the exact number of columns and rows defined above (4 columns and 4 rows)  */
+    grid-template-areas:
+    "header header header header"
+        "hero     hero    hero     hero"
+        /* one for each column */
+        "feature  feature feature  feature"
+        "product  product product  product"
+        "footer footer footer footer";
+    /* the dot is used to skip a column */
 }
 
 .homepage-header{
@@ -19,31 +20,94 @@
     grid-area: header;
 }
 
-
 .homepage-hero {
-  background-color: coral;
-  grid-area: hero;
+    background-color: coral;
+    grid-area: hero;
 }
 
 .homepage-feature {
-  background-color: darkBlue;
-  grid-area: feature;
+    background-color: darkBlue;
+    grid-area: feature;
+    padding-left: 10px;
+        padding-top: 10px;
+        padding-bottom: 5px;
+  
+    
+  
+  
 }
+
+.mainimage{
+   width:350px;
+   height:320px;
+   object-fit: cover;
+   
+}
+
+/* Product section  completed */ 
 
 .homepage-products {
-  background-color: darkSeaGreen;
-  grid-area: product;
+background-color: darkSeaGreen;
+grid-area: product;
+display:inline-flex;
+justify-content: center;
+align-content: center;
+padding-left: 10px;
+padding-top: 20px;
+padding-right: 10px;
+
+    
+}
+
+.image1{
+    grid-area: image1;
+    width: 170px;
+        height: 170px;
+        padding-bottom: 20px;
+        padding-right:10px;
+    
+}
+
+.image2{
+    grid-area: image2;
+    width: 170px;
+        height: 170px;
+        padding-bottom: 20px;
+        padding-right:10px;
+   
+       
+  
+}
+
+.image3{
+    grid-area: image3;
+    width: 170px;
+        height: 170px;
+        padding-bottom: 20px;
+    
+        }
+
+.image4{
+   grid-area: image4;
+    width: 170px;
+        height: 170px;
+        padding-bottom: 20px;
+      
+}
+
+.homepage-footer {
+    background-color: darkTurquoise;
+    grid-area: footer;
+
 }
 
 
-.homepage-footer{
-    background-color: pink;
-    grid-area: footer;
-}/* end 
+
 /* 
   Now let's change it for larger screens 
   (using quite small breakpoints here to allow for Codepen's small viewport)
 */
+
 /* TABLET: */
 @media screen and (min-width: 550px) {
 
