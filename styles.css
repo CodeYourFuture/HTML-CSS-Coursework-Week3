@@ -26,72 +26,67 @@
 }
 
 .homepage-feature {
-    background-color: darkBlue;
-    grid-area: feature;
-    padding-left: 10px;
-        padding-top: 10px;
-        padding-bottom: 5px;
-  
+background-color: darkBlue;
+grid-area: feature;
+display:flex;
+align-items: center;
+justify-content: center;
     
-  
-  
 }
 
 .mainimage{
-   width:350px;
+   width:400px;
    height:320px;
    object-fit: cover;
    
 }
 
-/* Product section  completed */ 
+/* Product section  change background color */ 
 
 .homepage-products {
 background-color: darkSeaGreen;
 grid-area: product;
-display:inline-flex;
+display:grid;
+padding-left: 5px;
+padding-bottom: 5px;
+grid-gap: 5px;
+padding-top:5px;
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: 190px 190px;
+grid-template-areas:
+        "image1 image2 "
+        "image3 image4 "
+        ;
 justify-content: center;
-align-content: center;
-padding-left: 10px;
-padding-top: 20px;
-padding-right: 10px;
-
-    
+align-content:center;
+align-items: center;  
 }
 
 .image1{
-    grid-area: image1;
-    width: 170px;
-        height: 170px;
-        padding-bottom: 20px;
-        padding-right:10px;
-    
+grid-area: image1;
+width:190px;
+height: 190px;   
 }
 
 .image2{
-    grid-area: image2;
-    width: 170px;
-        height: 170px;
-        padding-bottom: 20px;
-        padding-right:10px;
-   
-       
-  
+grid-area: image2;
+width: 190px;
+height: 190px;        
 }
 
 .image3{
-    grid-area: image3;
-    width: 170px;
-        height: 170px;
-        padding-bottom: 20px;
+grid-area: image3;
+width: 190px;
+height: 190px;
+      
     
         }
 
 .image4{
-   grid-area: image4;
-    width: 170px;
-        height: 170px;
-        padding-bottom: 20px;
+grid-area: image4;
+width: 190px;
+height: 190px;
+       
       
 }
 
