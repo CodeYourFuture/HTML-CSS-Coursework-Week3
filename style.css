@@ -18,7 +18,8 @@ a:hover {
     text-decoration: underline;
 }
 
-#header-container,#nav-list,
+#header-container,
+#nav-list,
 footer {
     background-color: var(--site-bg-color);
 }
@@ -46,7 +47,7 @@ ul {
 #logo {
     width: 100px;
     height: 100px;
-    margin: 10px;
+    margin: 20px;
 }
 
 #slogan {
@@ -80,12 +81,13 @@ h1 {
     height: 250px;
     margin-bottom: 30px;
 }
-#gallary
-{
+
+#gallary {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
+
 #img-gallery {
     width: 47%;
     height: 150px;
@@ -107,78 +109,83 @@ li {
     margin-bottom: 10px;
 }
 
-/* ----------- screen for ipad devices ----------- */
-@media screen and (min-width: 820px) {
-    #img-gallery {
-        width: 46%;
-        height: 300px;
-    }
-
-    #intro-img {
-        width: 95%;
-        height: 300px;
-    }
-}
-
 /* ----------- screen for computer devices ------- */
 @media screen and (min-width: 900px) {
+
+    #logo {
+        margin: 40px;
+    }
 
     ul,
     #nav-list {
         display: flex;
         justify-content: center;
     }
+
     #nav-list {
         margin: 20px 40px;
         justify-content: right;
         align-items: center;
     }
-    #section-intro
-    {
+
+    #section-intro {
         width: 100%;
     }
-    #intro-container
-    {
+
+    #intro-container {
         width: 48.67%;
         float: right;
     }
-    .container
-    {
+
+    .container {
         margin: 40px;
     }
-    .icon
-    {
+
+    .icon {
         display: none;
     }
-    li{
+
+    li {
         margin: 0;
     }
-    ul{
+
+    ul {
         padding: 10px;
     }
+
     #img-gallery {
         width: 23%;
-        height:175px;
+        height: 185px;
     }
+
     #intro-img {
         width: 48.67%;
-        height: 250px;
+        height: 340px;
     }
-    h1,#intro
-    {
+
+    h1,
+    #intro {
         text-align: right;
+
     }
-   
-    a{
-        margin:20px;
-        background-color: var(--site-txt-color);
+
+    a {
+        margin: 20px;
+        background-color: #ee93ad;
         color: var(--site-bg-color);
         padding: 3px 20px;
     }
-    a:hover
-    {
-        background-color: var(--site-bg-color);
-        color: var(--site-txt-color);
+
+    a:hover {
+        background-color: var(--site-txt-color);
+        color: white;
+        text-decoration: none;
     }
-   
+
+    #slogan {
+        width: auto;
+        margin: 40px;
+        top: 90px;
+    }
+
 }
