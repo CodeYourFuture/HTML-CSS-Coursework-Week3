@@ -185,3 +185,29 @@
     width: 100%;
     height: 100%;
 }
+
+/* Footer */
+.footer {
+    padding: 1em 2em;
+    background-color: var(--hero-color);
+}
+
+.footer__links {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__links>a {
+    text-decoration: none;
+    padding-top: 0.5em;
+}
+
+.footer__links>a>i {
+    padding: 0 0.5em;
+}
+
+.footer__text--muted {
+    text-align: center;
+    padding-top: 0.5em;
+    opacity: 60%;
+}
