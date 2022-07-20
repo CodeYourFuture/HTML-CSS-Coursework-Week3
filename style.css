@@ -10,7 +10,6 @@
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-
 /*HEADER*/
 header
 {
@@ -120,6 +119,67 @@ header
     background-color: rgb(204, 108, 108);;
 }
 
+
+
+/*MAIN*/
+main
+{
+    padding: 1rem;
+    background-color: var(--color-4);
+}
+
+.grid_items-1
+{
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-column-gap: 0;
+    grid-row-gap: 2rem;
+}
+
+.grid_items-1 > div
+{
+    padding: 1rem;
+}
+
+.grid_img-1 img
+{
+    width: 90%;
+    border-radius: 5px;
+}
+
+.grid_items-2
+{
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 47.5% 47.5%;
+    grid-column-gap: 5%;
+    grid-row-gap: 40px;
+}
+
+.grid_items-2 > div
+{
+    padding: 1rem;
+}
+
+.grid_img-2 img
+{
+    width: 90%;
+    border-radius: 5px;
+}
+
+img.sizechange
+{
+    transition: all .5s;
+    
+}
+
+img.sizechange:hover
+{
+    transform: scale(1.1);
+}
+
+
 @media (min-width: 540px)
 {
     .dropdown-button
@@ -131,5 +191,35 @@ header
     {
         visibility: visible;
         text-decoration: none;
+    }
+
+    .grid_items-1
+    {
+        grid-template-columns: 47.5% 47.5%;
+        grid-column-gap: 5%;
+        grid-row-gap: 4rem;
+    }
+
+    .grid_text-1
+    {
+        grid-column: 2;
+        grid-row: 1
+    }
+
+    .grid_items-1 > div 
+    {
+        padding: 2rem;
+    }
+
+
+    .grid_items-2
+    {
+        grid-template-columns: 24.75% 24.75% 24.75% 24.75%;
+        grid-column-gap: 5px;
+    }
+
+    .grid_items-2 > div
+    {
+        padding: 0px;
     }
 }
