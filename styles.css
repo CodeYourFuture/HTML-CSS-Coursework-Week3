@@ -11,7 +11,7 @@ body {
 .homepage-main {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 200px auto auto auto 180px;
+    grid-template-rows: 210px auto auto auto 180px;
     /*  grid-template-areas must follow the exact number of columns and rows defined above (4 columns and 4 rows)  */
     grid-template-areas:
     "header header header header"
@@ -40,11 +40,12 @@ body {
 }
 
 .homepage-header h2{
-    font-size: 26px;
+    font-size: 24px;
     text-align: right;
     padding-right: 36px;
     color: palevioletred;
-    padding-top: 60px;
+    padding-left: 20px;
+    padding-top: 90px;
 }
 
 /* top navbar and hamburger menu styling */
@@ -279,7 +280,7 @@ padding:20px;
     font-size: 20px;
     color: palevioletred;
     text-align: center;
-    padding-top: 90px;
+    padding-top: 100px;
     
 }
 
