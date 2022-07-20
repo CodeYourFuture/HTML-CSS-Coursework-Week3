@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+
+
 .homepage-main {
     border:2px solid palevioletred;
 
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 150px auto auto auto 100px;
+    grid-template-rows: 170px auto auto auto 100px;
     /*  grid-template-areas must follow the exact number of columns and rows defined above (4 columns and 4 rows)  */
     grid-template-areas:
     "header header header header"
@@ -16,7 +19,7 @@
 }
 
 .homepage-header{
-    
+    background-color: white;
     grid-area: header;
 }
 
@@ -31,9 +34,9 @@
 }
 
 .homepage-header h2{
-    font-size: 20px;
+    font-size: 26px;
     text-align: right;
-    padding-right: 20px;
+    padding-right: 36px;
     color: palevioletred;
     padding-top: 60px;
 }
@@ -54,7 +57,7 @@
 }
 
 .homepage-feature {
-background-color: darkBlue;
+background-color: white;
 grid-area: feature;
 display:flex;
 align-items: center;
@@ -72,6 +75,7 @@ justify-content: center;
 /* Product section  change background color */ 
 
 .homepage-products {
+background-color: white;
 grid-area: product;
 display:grid;
 padding-bottom: 5px;
@@ -122,134 +126,294 @@ padding:20px;
 }
 
 .homepage-footer {
-    background-color: palevioletred;
+    background-color: white;
     grid-area: footer;
 
 }
 
-.burger {
-    width: 80px;
-    height: 10px;
-    background-color: white;
-    margin: 10px 0;
 
 
-}
 
-.burger2 {
-    width: 35px;
-        height: 5px;
-        background-color: white;
-        margin: 6px 0;
-
-}
+/* top navbar styling */
 
 body {
-    margin: 0;
-    padding: 0;
-    background: #f4f4f4;
-    color: #444444;
-    font-family: "Roboto", sans-serif;
-    overflow-x: hidden;
+    padding: 0px;
+    margin: 0px;
+    font-size: 20px;
+    min-height: 200vh;
+    font-family: 'Cabin', Sans-serif;
 }
 
-a {
-    text-decoration: none !important;
-    color: #232323;
-    transition: color 0.3s ease;
-}
-
-a:hover {
-    color: palevioletred;
-}
-
-#menuToggle {
-
-    display: block;
-    position: absolute;
-    top: 50px;
-    right: 50px;
-    z-index: 1;
-    -webkit-user-select: none;
-    user-select: none;
-}
-
-#menuToggle input {
-    display: block;
-    width: 40px;
-    height: 32px;
-    position: absolute;
-    top: -7px;
-    left: -5px;
-    cursor: pointer;
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     opacity: 0;
-    z-index: 2;
-    -webkit-touch-callout: none;
+    visibility: hidden;
+    transition: opacity .35s, visibility .35s, height .35s;
+    overflow: hidden;
+    background: black;
+    z-index: -1;
 }
 
-#menuToggle span {
+#main-menu {
     display: block;
-    width: 33px;
-    height: 4px;
-    margin-bottom: 5px;
-    position: relative;
-    background: #cdcdcd;
-    border-radius: 3px;
-    z-index: 1;
-    transform-origin: 4px 0px;
-    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
-        background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
-        opacity 0.55s ease;
+    height: 100px;
+    width: 100%;
+    background: palevioletred;
+    margin: 0px;
+    z-index: 9;
+
 }
 
-#menuToggle span:first-child {
-    transform-origin: 0% 0%;
+#main-menu ul {
+    max-width: 800px;
+    width: 100%;
+    height: 100%;
+    margin: 0px auto;
+    padding: 0px;
+ float: right;
+    
 }
 
-#menuToggle span:nth-last-child(2) {
-    transform-origin: 0% 100%;
-}
-
-#menuToggle input:checked~span {
-    opacity: 1;
-    transform: rotate(45deg) translate(-2px, -1px);
-    background: #232323;
-}
-
-#menuToggle input:checked~span:nth-last-child(3) {
-    opacity: 0;
-    transform: rotate(0deg) scale(0.2, 0.2);
-}
-
-#menuToggle input:checked~span:nth-last-child(2) {
-    opacity: 1;
-    transform: rotate(-45deg) translate(0, -1px);
-}
-
-#menu {
-    position: absolute;
-    width: 300px;
-    margin: -100px 0 0 0;
-    padding: 50px;
-    padding-top: 125px;
-    right: -100px;
-    background: #ededed;
+#main-menu li {
     list-style-type: none;
-    -webkit-font-smoothing: antialiased;
-    transform-origin: 0% 0%;
-    transform: translate(100%, 0);
-
-    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+    font-size: 2rem;
+    padding: 20px;
+   float:right;
+   
+    
 }
 
-#menu li {
-    padding: 10px 0;
-    font-size: 22px;
+#main-menu a {
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: none;
 }
 
-#menuToggle input:checked~ul {
-    transform: scale(1.0, 1.0);
-    opacity: 1;
+#main-menu a:hover {
+    text-decoration: underline;
+}
+
+#hamburger-input {
+    display: none;
+}
+
+#hamburger-menu {
+   position: absolute;
+    top: 20px;
+    right: 40px;
+    width: 50px;
+    height: 50px;
+    display: none;
+    border: none;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Cabin', Sans-serif;
+    background: linear-gradient(to bottom,
+            palevioletred, palevioletred 20%,
+            white 20%, white 40%,
+            palevioletred 40%, palevioletred 60%,
+            white 60%, white 80%,
+            palevioletred 80%, palevioletred 100%);
+}
+
+#hamburger-menu #sidebar-menu {
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 200px;
+    height: 100%;
+    background-color: palevioletred;
+    transition: 0.3s;
+    padding: 0px 10px;
+    box-sizing: border-box;
+}
+
+#hamburger-menu h3 {
+    color: white;
+    font-size: 2.2rem;
+}
+
+#hamburger-menu ul {
+    padding-left: 0px;
+}
+
+#hamburger-menu li {
+    list-style-type: none;
+    line-height: 3rem;
+}
+
+#hamburger-menu a {
+    color: white;
+    font-size: 1.3rem;
+    text-decoration: none;
+}
+
+#hamburger-menu a:hover {
+    text-decoration: underline;
+}
+
+#hamburger-input:checked+#hamburger-menu #sidebar-menu {
+    visibility: visible;
+    left: 0;
+}
+
+#hamburger-input:checked~.overlay {
+    visibility: visible;
+    opacity: 0.4;
 }
 
 
+@media screen and (max-width: 540px) {
+    #main-menu {
+        display: none;
+    }
+
+    #hamburger-menu {
+        display: inline;
+    }
+}
+
+/* footer nav bar */
+body {
+    padding: 0px;
+    margin: 0px;
+    font-size: 20px;
+    min-height: 200vh;
+    font-family: 'Cabin', Sans-serif;
+}
+
+.overlay2 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .35s, visibility .35s, height .35s;
+    overflow: hidden;
+    background: palevioletred;
+    z-index: -1;
+}
+
+#main-menu {
+    display: block;
+    height: 100px;
+    width: 100%;
+    background: palevioletred;
+    margin: 0px;
+    z-index: 9;
+}
+
+#main-menu2 ul {
+    max-width: 800px;
+    width: 100%;
+    height: 100%;
+    margin: 0px auto;
+    padding: 0px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: 9;
+}
+
+#main-menu2 li {
+    list-style-type: none;
+    font-size: 2rem;
+}
+
+#main-menu2 a {
+    color: palevioletred;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+#main-menu2 a:hover {
+    text-decoration: underline;
+}
+
+#hamburger-input1 {
+    display: none;
+}
+
+#hamburger-menu1 {
+    position: absolute;
+    top: 1373px;
+    left: 20px;
+    width: 80px;
+    height: 80px;
+    display: none;
+    border: none;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Cabin', Sans-serif;
+    background: linear-gradient(to bottom,
+                palevioletred, palevioletred 20%,
+                white 20%, white 40%,
+                palevioletred 40%, palevioletred 60%,
+                white 60%, white 80%,
+                palevioletred 80%, palevioletred 100%);
+}
+
+#hamburger-menu1 #sidebar-menu1 {
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 200px;
+    height: 100%;
+    background-color: palevioletred;
+    transition: 0.3s;
+    padding: 0px 10px;
+    box-sizing: border-box;
+}
+
+#hamburger-menu1 h3 {
+    color: white;
+    font-size: 2.2rem;
+}
+
+#hamburger-menu1 ul {
+    padding-left: 0px;
+}
+
+#hamburger-menu1 li {
+    list-style-type: none;
+    line-height: 3rem;
+}
+
+#hamburger-menu1 a {
+    color: white;
+    font-size: 1.3rem;
+    text-decoration: none;
+}
+
+#hamburger-menu1 a:hover {
+    text-decoration: underline;
+}
+
+#hamburger-input1:checked+#hamburger-menu1 #sidebar-menu1 {
+    visibility: visible;
+    left: 0;
+}
+
+#hamburger-input1:checked~.overlay {
+    visibility: visible;
+    opacity: 0.4;
+}
+
+
+@media screen and (max-width: 540px) {
+    #main-menu2 {
+        display: none;
+    }
+
+    #hamburger-menu1 {
+        display: inline;
+    }
+}
