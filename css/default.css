@@ -22,7 +22,7 @@
 
 .container > div {
     font-size: 2em;
-    /* border: 1px solid black; */
+    border: 1px solid black;
 }
 
 .header {
@@ -59,6 +59,33 @@
     background-color: #96ceb4;
 }
 
+/* main content */
+
+.main h1 {
+  font-size: 2.5rem;
+  line-height: 1.4em;
+  text-align: center;
+  font-family: 'Dancing Script', cursive;
+  font-weight: 700;
+}
+
+.main p {
+  font-size: 1.2rem;
+  line-height: 1.8em;
+  text-align: justify;
+  font-weight: 600;
+  font-family: 'Ibarra Real Nova', serif;
+  margin: 0 1.5rem 0 1.5rem;
+}
+
+/* main picture */
+
+.img-main {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 /* images boxes */
 
 .img-box {
@@ -74,7 +101,7 @@
   /* display: block; */
   height: 100%;
   width: auto;
-  object-fit: contain;
+  object-fit: cover;
   transition: .5s ease;
   backface-visibility: hidden;
 }
@@ -129,4 +156,6 @@
 .navigation {
     display: none;
 }
+
+
 
