@@ -48,6 +48,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #ffd6ba;
 }
 
 .nav-list {
