@@ -42,7 +42,18 @@ header h1 {
 main {
     grid-area: main;
     background-color: lightgray; 
+    padding: 1rem;
+    margin: 1rem;
+}
+ 
+main p {
+    font-size: 1.7rem;
 
+}
+main img {
+    width:100%;
+    height: 30vh;
+    border-radius: 0.5rem;
 }
 /* content */
 .content {
