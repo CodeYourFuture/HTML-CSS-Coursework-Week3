@@ -50,6 +50,10 @@ body {
 
 /* top navbar styling */
 
+.homepage-nav{
+    grid-area: nav;
+}
+
 .overlay {
     position: fixed;
     top: 0;
@@ -463,10 +467,45 @@ padding:20px;
 
 }
 
+.homepage-main {
+    border: 2px solid palevioletred;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 200px auto auto auto auto 180px;
+    /*  grid-template-areas must follow the exact number of columns and rows defined above (4 columns and 4 rows)  */
+    grid-template-areas:
+        "header header header header"
+        "nav nav nav nav"
+        "hero     hero    hero     hero"
+        /* one for each column */
+        "feature  feature feature  feature"
+        "product  product product  product"
+        "footer footer footer footer";
+    /* the dot is used to skip a column */
+}
+
 
 
 }
 
 @media screen and (min-width: 900px) {
+    .homepage-main {
+            border: 2px solid palevioletred;
+    
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: 200px auto auto auto auto 180px;
+            /*  grid-template-areas must follow the exact number of columns and rows defined above (4 columns and 4 rows)  */
+            grid-template-areas:
+                "header header header header"
+                "nav nav nav nav"
+                "feature    feature   hero     hero"
+                
+                "feature  feature hero hero"
+                "product  product product  product"
+                "footer footer footer footer";
+            
+        }
 
 }
