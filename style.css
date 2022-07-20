@@ -5,7 +5,7 @@ body {
 }
 .wrapper {
   display: grid;
-  grid-template: auto / repeat(auto-fill, 1fr);
+  grid-template: auto / repeat(2, auto);
 }
 /* HEADER */
 header {
