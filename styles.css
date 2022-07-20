@@ -9,21 +9,20 @@ body {
 }
 
 .homepage-main {
-
-
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 200px auto auto auto 180px;
     /*  grid-template-areas must follow the exact number of columns and rows defined above (4 columns and 4 rows)  */
     grid-template-areas:
     "header header header header"
-        "hero     hero    hero     hero"
-        /* one for each column */
-        "feature  feature feature  feature"
-        "product  product product  product"
-        "footer footer footer footer";
-    /* the dot is used to skip a column */
+    "hero     hero    hero     hero"
+    "feature  feature feature  feature"
+    "product  product product  product"
+    "footer footer footer footer";
+   
 }
+
+/* header */
 
 .homepage-header{
     background-color: white;
@@ -48,7 +47,7 @@ body {
     padding-top: 60px;
 }
 
-/* top navbar styling */
+/* top navbar and hamburger menu styling */
 
 .homepage-nav{
     grid-area: nav;
@@ -178,7 +177,7 @@ body {
 }
 
 
-
+/* hero section */
 
 .homepage-hero {;
     grid-area: hero;
@@ -195,6 +194,8 @@ body {
     font-size: 30px;
     color:palevioletred
 }
+
+/* homepage feature */
 
 .homepage-feature {
 background-color: white;
@@ -264,6 +265,8 @@ padding:20px;
        
       
 }
+
+/* footer */
 
 .homepage-footer {
     background-color: white;
@@ -406,6 +409,8 @@ padding:20px;
 
 /* Media queries */
 
+/* removed the navbar on mobile */
+
 
 @media screen and (max-width: 540px) {
     #main-menu2 {
@@ -426,10 +431,11 @@ padding:20px;
 }
 
 @media screen and (min-width: 540px) {
+
+/* adjusted fonts and padding to display better on larger screens */
    
 .homepage-footer p {
         font-size: 1.25em;
-        
         color: palevioletred;
         text-align: center;
         padding: 0;
@@ -441,10 +447,6 @@ padding:20px;
     padding-top: 4em;
     font-weight:800;
     
-}
-
-.homepage-header img{
-    padding-bottom:5em;
 }
 
 .homepage-hero{
@@ -462,7 +464,6 @@ padding:20px;
 }
 
 .homepage-products {
-   
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 190px ;
     grid-template-areas:
@@ -470,22 +471,21 @@ padding:20px;
 
 }
 
+/* changed the grid to display the nav */
+
 .homepage-main {
     border: 2px solid palevioletred;
-
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 200px auto auto auto auto 180px;
-    /*  grid-template-areas must follow the exact number of columns and rows defined above (4 columns and 4 rows)  */
     grid-template-areas:
         "header header header header"
         "nav nav nav nav"
         "hero     hero    hero     hero"
-        /* one for each column */
         "feature  feature feature  feature"
         "product  product product  product"
         "footer footer footer footer";
-    /* the dot is used to skip a column */
+   
 }
 
 
@@ -493,23 +493,24 @@ padding:20px;
 }
 
 @media screen and (min-width: 900px) {
+
+/* changed the grid to align hero and image section */
     .homepage-main {
-            border: 2px solid palevioletred;
-    
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            grid-template-rows: 200px auto auto auto auto 180px;
-            /*  grid-template-areas must follow the exact number of columns and rows defined above (4 columns and 4 rows)  */
-            grid-template-areas:
-                "header header header header"
-                "nav nav nav nav"
-                "feature    feature   hero     hero"
-                
-                "feature  feature hero hero"
-                "product  product product  product"
-                "footer footer footer footer";
+        border: 2px solid palevioletred;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 200px auto auto auto auto 180px;
+        grid-template-areas:
+            "header header header header"
+            "nav nav nav nav"
+            "feature    feature   hero     hero"
+            "feature  feature hero hero"
+            "product  product product  product"
+            "footer footer footer footer";
             
         }
+
+/* changed the alignment of text */
 
     .homepage-hero{
         text-align: right;
