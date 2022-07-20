@@ -1,9 +1,9 @@
 /*  Variables */
 :root {
-    --text-color: #101935;
-    --background-color: #f2fdff;
-    --green-light: #9ad4d6;
-    --hero-color: #dbcbd8;
+    --text-color: #192a51;
+    --background-color: #eff7f6;
+    --menu-color: #f2b5d4;
+    --header-color: #f7d6e0;
 
 }
 
@@ -17,13 +17,18 @@
     font-family: 'Albert Sans', sans-serif;
 }
 
+body {
+    background-color: var(--background-color);
+
+}
 
 /* Header */
 .header {
     display: grid;
     grid-template-areas: "logo menu"
         "logo slogan";
-    background-color: var(--hero-color);
+    background-color: var(--header-color);
+
 }
 
 .logo {
@@ -73,7 +78,7 @@
 }
 
 #checkbox:checked~.navbar li {
-    border: 1px solid var(--background-color);
+    border: 1px solid var(--menu-color);
     height: 2.5em;
     padding: 0.5em;
     transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
@@ -133,7 +138,7 @@
     margin: 0 1rem;
     padding: 0.5em 0;
     width: 100%;
-    background-color: var(--green-light);
+    background-color: var(--background-color);
     overflow: hidden
 }
 
@@ -144,6 +149,8 @@
 /* Main */
 .main {
     margin: 1em 3em;
+    background-color: var(--background-color);
+
 }
 
 /* Welcome paragraph */
@@ -183,7 +190,7 @@
 .footer {
     padding: 1em 2em;
     margin-top: 2em;
-    background-color: var(--hero-color);
+    background-color: var(--header-color);
 }
 
 .footer__links {
@@ -203,7 +210,7 @@
 .footer__text--muted {
     text-align: center;
     padding-top: 0.5em;
-    opacity: 60%;
+    opacity: 80%;
 }
 
 @media screen and (min-width: 540px) {
