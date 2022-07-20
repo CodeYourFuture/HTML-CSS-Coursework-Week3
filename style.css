@@ -1,1 +1,83 @@
 /*  Add your styling here */
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+/* Header section */
+.header{
+    background-color: brown;
+    height: 9em;
+    width: 100%;
+}
+.header ul{
+    float: right;
+    margin-right: 2em;
+}
+.header ul li{
+    display: inline-block; 
+    line-height: 3em;
+    margin: 0 2em;
+
+}
+.header ul li a{
+    color: white;
+    font-size: 2em;
+    text-transform: uppercase;
+    padding: 1em 2em;
+    border-radius: 2em;
+}
+a:hover{
+    background: aqua;
+}
+.checkboxbtn{
+    font-size: 3em;
+    color: blueviolet;
+    float: right;
+    line-height: 4em;
+    margin-right: 3em;
+    cursor: pointer;
+    display: none;
+}
+#checkbox{
+    display: none;
+}
+@media screen and (max-width: 950px) {
+    .header ul li a{
+        font-size: 1em;
+    }
+    .checkboxbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: darkcyan;
+        top: 2em;
+        left: -100%;
+        text-align: center;
+        transition: all 0.5s;
+    }
+    .header ul li{
+        display: block;
+        margin: 2em;
+        line-height: 1em;
+
+    }
+    .header ul li a{
+        font-size: 3em;
+    }
+    a:hover{
+        background:sandybrown;
+    }
+    #checkbox:checked ~ ul{
+        left: 0;
+    }
+}
+.header-icon{
+    height: 5 em;
+}
