@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    display: grid;
+    font-family: 'Edu QLD Beginner', cursive;    display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 170px 700px 500px 240px;
     grid-template-areas:
@@ -101,7 +101,7 @@ footer {
         /* margin-top: 2.5em; */
     }
     main h1 {
-        font-size: 3em;
+        font-size: 2.5em;
     }
     main p {
         line-height: 1.4em;
@@ -133,7 +133,9 @@ footer {
   }
   header h1 {
     font-size: 2em;
-    margin-top: 3em;
+    margin-top: 4em;
+    padding-right: 2em;
+     font-weight: bold;
   }
   .ham1 {
     display: none;
