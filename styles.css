@@ -179,10 +179,9 @@ body {
 
 /* hero section */
 
-.homepage-hero {;
+.homepage-hero {
     grid-area: hero;
     padding:30px;
-    
     border-top: 2px solid palevioletred;
 }
 
