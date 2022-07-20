@@ -1,12 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
 
+body {
+    padding: 0px;
+    margin: 0px;
+    font-size: 20px;
+    min-height: 200vh;
+    font-family: 'Cabin', Sans-serif;
+}
 
 .homepage-main {
     border:2px solid palevioletred;
 
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 170px auto auto auto 100px;
+    grid-template-rows: 200px auto auto auto 180px;
     /*  grid-template-areas must follow the exact number of columns and rows defined above (4 columns and 4 rows)  */
     grid-template-areas:
     "header header header header"
@@ -27,7 +34,7 @@
     height:120px;
     width: 120px;
     object-fit: cover;
-    padding-top:10px;
+    padding-top:60px;
     padding-left: 10px;
     float: left;
     
@@ -41,108 +48,7 @@
     padding-top: 60px;
 }
 
-.homepage-hero {
-   border:2px solid palevioletred;
-    grid-area: hero;
-    padding:30px;
-}
-
-.homepage-hero p{
-    font-size: 24px;
-}
-
-.homepage-hero h1{
-    font-size: 30px;
-    color:palevioletred
-}
-
-.homepage-feature {
-background-color: white;
-grid-area: feature;
-display:flex;
-align-items: center;
-justify-content: center;
-    
-}
-
-.main_image{
-   width:400px;
-   height:320px;
-   object-fit: cover;
-   
-}
-
-/* Product section  change background color */ 
-
-.homepage-products {
-background-color: white;
-grid-area: product;
-display:grid;
-padding-bottom: 5px;
-padding-top:5px;
-grid-template-columns: repeat(2, 1fr);
-grid-template-rows: 190px 190px;
-grid-template-areas:
-        "image1 image2 "
-        "image3 image4 "
-        ;
-justify-content: center;
-align-content:center;
-align-items: center; 
-border: 2px solid palevioletred
-}
-
-.image1{
-grid-area: image1;
-width:150px;
-height: 150px; 
-padding: 20px;  
-
-}
-
-.image2{
-grid-area: image2;
-width: 150px;
-height: 150px; 
-padding:20px;
-       
-}
-
-.image3{
-grid-area: image3;
-width: 150px;
-height: 150px;
-padding: 20px;
-    
-        }
-
-.image4{
-grid-area: image4;
-width: 150px;
-height: 150px;
-padding:20px;
-       
-      
-}
-
-.homepage-footer {
-    background-color: white;
-    grid-area: footer;
-
-}
-
-
-
-
 /* top navbar styling */
-
-body {
-    padding: 0px;
-    margin: 0px;
-    font-size: 20px;
-    min-height: 200vh;
-    font-family: 'Cabin', Sans-serif;
-}
 
 .overlay {
     position: fixed;
@@ -174,17 +80,17 @@ body {
     height: 100%;
     margin: 0px auto;
     padding: 0px;
- float: right;
-    
+    float: right;
+
 }
 
 #main-menu li {
     list-style-type: none;
     font-size: 2rem;
     padding: 20px;
-   float:right;
-   
-    
+    float: right;
+
+
 }
 
 #main-menu a {
@@ -202,7 +108,7 @@ body {
 }
 
 #hamburger-menu {
-   position: absolute;
+    position: absolute;
     top: 20px;
     right: 40px;
     width: 50px;
@@ -268,24 +174,108 @@ body {
 }
 
 
-@media screen and (max-width: 540px) {
-    #main-menu {
-        display: none;
-    }
 
-    #hamburger-menu {
-        display: inline;
-    }
+
+.homepage-hero {
+   border:2px solid palevioletred;
+    grid-area: hero;
+    padding:30px;
 }
 
-/* footer nav bar */
-body {
-    padding: 0px;
-    margin: 0px;
+.homepage-hero p{
+    font-size: 24px;
+}
+
+.homepage-hero h1{
+    font-size: 30px;
+    color:palevioletred
+}
+
+.homepage-feature {
+background-color: white;
+grid-area: feature;
+display:flex;
+align-items: center;
+justify-content: center;
+    
+}
+
+.main_image{
+   width:400px;
+   height:320px;
+   object-fit: cover;
+   
+}
+
+/* Product section  */ 
+
+.homepage-products {
+background-color: white;
+grid-area: product;
+display:grid;
+padding-bottom: 5px;
+padding-top:5px;
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: 190px 190px;
+grid-template-areas:
+        "image1 image2 "
+        "image3 image4 "
+        ;
+justify-content: center;
+align-content:center;
+align-items: center; 
+border: 2px solid palevioletred
+}
+
+.image1{
+grid-area: image1;
+width:150px;
+height: 150px; 
+padding: 20px;  
+
+}
+
+.image2{
+grid-area: image2;
+width: 150px;
+height: 150px; 
+padding:20px;
+       
+}
+
+.image3{
+grid-area: image3;
+width: 150px;
+height: 150px;
+padding: 20px;
+    
+        }
+
+.image4{
+grid-area: image4;
+width: 150px;
+height: 150px;
+padding:20px;
+       
+      
+}
+
+.homepage-footer {
+    background-color: white;
+    grid-area: footer;
+
+}
+
+.homepage-footer p{
     font-size: 20px;
-    min-height: 200vh;
-    font-family: 'Cabin', Sans-serif;
+    color: palevioletred;
+    text-align: center;
+    padding-top: 90px;
+    
 }
+
+
+/* footer hamburger menu and nav bar */
 
 .overlay2 {
     position: fixed;
@@ -301,11 +291,11 @@ body {
     z-index: -1;
 }
 
-#main-menu {
+#main-menu2 {
     display: block;
     height: 100px;
     width: 100%;
-    background: palevioletred;
+    background: white;
     margin: 0px;
     z-index: 9;
 }
@@ -407,6 +397,8 @@ body {
     opacity: 0.4;
 }
 
+/* Media queries */
+
 
 @media screen and (max-width: 540px) {
     #main-menu2 {
@@ -416,4 +408,65 @@ body {
     #hamburger-menu1 {
         display: inline;
     }
+
+    #main-menu {
+        display: none;
+         }
+    
+    #hamburger-menu {
+        display: inline;
+         }
+}
+
+@media screen and (min-width: 540px) {
+   
+.homepage-footer p {
+        font-size: 1.25em;
+        
+        color: palevioletred;
+        text-align: center;
+        padding: 0;
+
+    }
+
+.homepage-header h2{
+    font-size: 1.5em;
+    padding-top: 4em;
+    font-weight:800;
+    
+}
+
+.homepage-header img{
+    padding-bottom:5em;
+}
+
+.homepage-hero{
+    padding-left: 60px;
+    padding-right: 60px
+}
+
+.homepage-hero h1{
+    font-size:2em;
+}
+
+.homepage-hero p{
+    font-size: 1.5em;
+
+}
+
+.homepage-products {
+   
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 190px ;
+    grid-template-areas:
+        "image1 image2 image3 image4";
+
+}
+
+
+
+}
+
+@media screen and (min-width: 900px) {
+
 }
