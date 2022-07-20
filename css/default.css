@@ -7,15 +7,16 @@
 .container {
     height: 100%;
     display: grid;
-    grid-gap: 20px;
+    row-gap: 1.5rem;
+    column-gap: 1.5rem;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: 300px 300px 300px 150px 150px 300px;
     grid-template-areas: 
         "h h h h h h h h h h h h"
-        ". m m m m m m m m m m ."
-        ". p p p p p p p p p p ."
-        ". d1 d1 d1 d1 d1 d2 d2 d2 d2 d2 ."
-        ". d3 d3 d3 d3 d3 d4 d4 d4 d4 d4 ."
+        "m m m m m m m m m m m m"
+        "p p p p p p p p p p p p"
+        "d1 d1 d1 d1 d1 d1 d2 d2 d2 d2 d2 d2"
+        "d3 d3 d3 d3 d3 d3 d4 d4 d4 d4 d4 d4"
         "f f f f f f f f f f f f";
 }
 
@@ -26,6 +27,7 @@
 
 .header {
     grid-area: h;
+    width: 100%;
 }
 
 .main {
@@ -57,13 +59,29 @@
     background-color: #96ceb4;
 }
 
-/* MOBILE nav */
+.border-box {}
+    grid-template-columns: repeat(12, 1fr);
+
+/* .main,
+.picture,
+.dessert1,
+.dessert3 {
+    margin-left: 1.5rem;
+}
+
+.main,
+.picture,
+.dessert2,
+.dessert4 {
+    margin-right: 1.5rem;
+} */
+
+/* mobile nav */
 
 .btn-mobile-nav {
     border: none;
     background: none;
     cursor: pointer;
-    z-index: 9999;
 }
 
 .icon-mobile-nav {
@@ -76,7 +94,8 @@
   display: none;
 }
 
-/* NAVIGATION */
+/* navigation */
+
 .navigation {
     display: none;
 }
