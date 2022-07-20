@@ -69,9 +69,14 @@
   gap: 0;
   flex-direction: column;
  }
- .nav-menu.active{
-   left: 0;
+ p{
+   color: red;
+   display: flex;
+   justify-content: end;
+   font-size: 20px;
+   
  }
+ 
  
 
   
