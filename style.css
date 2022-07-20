@@ -44,6 +44,7 @@ main {
     background-color: lightgray; 
     padding: 1rem;
     margin: 1rem;
+    border-radius: 1rem;
 }
  
 main p {
@@ -59,11 +60,37 @@ main img {
 .content {
     grid-area: content;
     background-color: lightgray; 
-
+    margin: 1rem;
+    border-radius: 1rem;
+}
+.content img {
+    width: 45%;
+    height: 21vh;
+    padding: 0.5rem;
+    border-radius: 1rem;
 }
 /* footer */
 footer {
     grid-area: footer;
     background-color: lightgray; 
+    padding: 0.5rem;
 
+}
+.footer1, 
+.footer2,
+.footer3 {
+  background-color: grey;
+  width: 200px;
+  height: 20px;
+  padding: 0.5rem 0 1rem;
+  margin: 0.5rem;
+  border-radius: 1rem;
+}
+.footer4 {
+  background-color: grey;
+  width: 200px;
+  height: 30px;
+  margin-top: 2rem;
+  margin-left: 10rem;
+  border-radius: 1rem;
 }
