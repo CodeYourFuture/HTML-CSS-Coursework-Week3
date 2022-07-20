@@ -146,6 +146,7 @@
     margin: 1em 2.5em;
 }
 
+/* Welcome paragraph */
 .main__title {
     font-family: 'Playfair Display', serif;
     font-size: 2.5em;
@@ -158,6 +159,7 @@
     padding-bottom: 1em;
 }
 
+/* Image gallery */
 .main__image {
     width: 100%;
     height: auto;
