@@ -79,31 +79,6 @@
     transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
 }
 
-.navbar {
-    position: absolute;
-    top: 0;
-    margin-top: 50px;
-    left: 0;
-    flex-direction: column;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-}
-
-.navbar>li {
-    display: flex;
-    justify-content: center;
-    margin: 0 1rem;
-    padding: 0.5em 0;
-    width: 100%;
-    background-color: var(--green-light);
-    overflow: hidden
-}
-
-.navbar__link {
-    text-decoration: none;
-}
-
 .menu-button,
 .menu-button::before,
 .menu-button::after {
@@ -139,4 +114,46 @@
 #menu-toggle-input:checked+#menu-toggle .menu-button::after {
     margin-top: 0px;
     transform: rotate(-405deg);
+}
+
+.navbar {
+    position: absolute;
+    top: 0;
+    margin-top: 50px;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar>li {
+    display: flex;
+    justify-content: center;
+    margin: 0 1rem;
+    padding: 0.5em 0;
+    width: 100%;
+    background-color: var(--green-light);
+    overflow: hidden
+}
+
+.navbar__link {
+    text-decoration: none;
+}
+
+/* Main */
+/* Welcome section */
+.welcome__section{
+    margin: 1em 1.5em;
+}
+
+.welcome__title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5em;
+    padding-bottom: 0.5em;
+}
+
+.welcome__text{
+    line-height: 1.5em;
+    text-align:justify;
 }
