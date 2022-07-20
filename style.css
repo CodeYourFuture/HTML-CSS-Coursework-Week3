@@ -180,6 +180,51 @@ img.sizechange:hover
 }
 
 
+/*FOOTER*/
+footer
+{
+    background-color: var(--color-1);
+}
+
+.ask-to-follow
+{
+    padding-top: 2rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.grid_items-3
+{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-column-gap: 0;
+    grid-row-gap: 2rem;
+}
+
+.colorchange
+{
+    padding: 1.5rem;
+    background-color: rgb(204, 108, 108);
+    color: black;
+}
+
+
+.colorchange:hover
+{
+    background-color: rgb(211, 84, 84);
+    color: black;
+}
+
+.footer-c
+{
+    text-align: center;
+    padding-bottom: 4rem;
+    font-size: smaller;
+}
+
+
+
+/*MEDIA CODE*/
 @media (min-width: 540px)
 {
     .dropdown-button
@@ -221,5 +266,77 @@ img.sizechange:hover
     .grid_items-2 > div
     {
         padding: 0px;
+    }
+
+    .grid_items-3
+    {
+        padding-left: 30%;
+        padding-right: 20%;
+        grid-template-columns: 30% 30% 30%;
+        grid-row-gap: 5rem;
+    }
+      
+    .grid_items-3 > div
+    {
+        padding: 3rem;
+    }
+}
+
+
+
+@media (min-width: 900px)
+{
+    .dropdown-button
+    {
+        visibility: hidden;
+    }
+
+    .header-sub
+    {
+        visibility: visible;
+        text-decoration: none;
+    }
+
+    .grid_items-1
+    {
+        grid-template-columns: 47.5% 47.5%;
+        grid-column-gap: 5%;
+        grid-row-gap: 4rem;
+    }
+
+    .grid_text-1
+    {
+        grid-column: 2;
+        grid-row: 1
+    }
+
+    .grid_items-1 > div 
+    {
+        padding: 2rem;
+    }
+
+
+    .grid_items-2
+    {
+        grid-template-columns: 24.75% 24.75% 24.75% 24.75%;
+        grid-column-gap: 5px;
+    }
+
+    .grid_items-2 > div
+    {
+        padding: 0px;
+    }
+
+    .grid_items-3
+    {
+        padding-left: 30%;
+        padding-right: 20%;
+        grid-template-columns: 30% 30% 30%;
+        grid-row-gap: 5rem;
+    }
+      
+    .grid_items-3 > div
+    {
+        padding: 3rem;
     }
 }
