@@ -163,14 +163,14 @@
 .main__image {
     width: 100%;
     height: auto;
-    margin-bottom: 2em;
+    margin-bottom: 10px;
 }
 
 .image__gallery__container {
     display: grid;
     gap: 1em;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-template-rows: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
 }
 
 .image__gallery__item {
