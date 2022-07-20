@@ -24,7 +24,7 @@ body{
     background-color: #f4f4f4;
     grid-area: header;
 }
-.humburger-menu{
+.hamburger-menu{
     cursor: pointer;
    
 }
@@ -57,7 +57,7 @@ body{
     border-radius: 1px;
 }
 .feature {
-    background-color: rgb(239, 129, 199);
+    background-color: rgb(84, 41, 68);
     color: #ffffff;
     grid-area: feature;
     padding: 1em;
@@ -124,7 +124,7 @@ body{
 .cup-cake, .donut {
    margin-top: .7em;
 }
-.footer p{
+.footer p, h2, h3{
     text-align: center;
 }
 .footer ul{
@@ -135,7 +135,7 @@ body{
 }
 .fa {
     background: #f8f9f9;
-    padding: .8em;
+    padding: .4em;
     font-size: .75em;
     width: 2.2em;
     text-align: center;
