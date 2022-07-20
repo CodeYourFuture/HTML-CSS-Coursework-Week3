@@ -193,7 +193,7 @@
 
 .footer__links>a {
     text-decoration: none;
-    padding-top: 0.5em;
+    padding: 0.5em 0;
 }
 
 .footer__links>a>i {
@@ -204,4 +204,15 @@
     text-align: center;
     padding-top: 0.5em;
     opacity: 60%;
+}
+
+@media screen and (min-width: 540px) {
+    .footer__links {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .footer__links>a {
+        padding: 1em;
+    }
 }
