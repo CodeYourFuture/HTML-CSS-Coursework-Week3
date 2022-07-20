@@ -9,7 +9,7 @@ body {
 }
 
 .homepage-main {
-    border:2px solid palevioletred;
+
 
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -180,10 +180,11 @@ body {
 
 
 
-.homepage-hero {
-   border:2px solid palevioletred;
+.homepage-hero {;
     grid-area: hero;
     padding:30px;
+    
+    border-top: 2px solid palevioletred;
 }
 
 .homepage-hero p{
@@ -201,7 +202,7 @@ grid-area: feature;
 display:flex;
 align-items: center;
 justify-content: center;
-    
+border-top: 2px solid palevioletred;
 }
 
 .main_image{
@@ -228,7 +229,7 @@ grid-template-areas:
 justify-content: center;
 align-content:center;
 align-items: center; 
-border: 2px solid palevioletred
+border-top: 2px solid palevioletred
 }
 
 .image1{
@@ -267,6 +268,8 @@ padding:20px;
 .homepage-footer {
     background-color: white;
     grid-area: footer;
+
+    border-top: 2px solid palevioletred;
 
 }
 
@@ -507,5 +510,9 @@ padding:20px;
                 "footer footer footer footer";
             
         }
+
+    .homepage-hero{
+        text-align: right;
+    }
 
 }
