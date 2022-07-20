@@ -5,7 +5,7 @@
 
 
 .container {
-    grid-template-rows: 300px 70px 300px 150px 300px;
+    grid-template-rows: 300px 70px 300px 20vw 300px;
     grid-template-areas: 
         "h h h h h h h h h h h h"
         "n n n n n n n n n n n n"
@@ -36,6 +36,9 @@
     margin-left: 0;
 } */
 
+.img-dessert {
+  /* width: 20vw; */
+}
 
 
 /* navigation */
@@ -69,16 +72,16 @@
   color: #cf711f;
 }
 
-.nav-link.nav-cta:link,
-.nav-link.nav-cta:visited {
+.nav-link.nav-btn:link,
+.nav-link.nav-btn:visited {
   padding: 0.7rem 1.5rem;
-  border-radius: 9px;
+  border-radius: 4px;
   color: #fff;
   background-color: #e67e22;
 }
 
-.nav-link.nav-cta:hover,
-.nav-link.nav-cta:active {
+.nav-link.nav-btn:hover,
+.nav-link.nav-btn:active {
   background-color: #cf711f;
 }
 
