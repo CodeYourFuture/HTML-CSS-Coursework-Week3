@@ -14,14 +14,18 @@
         "f f f f f f f f f f f f";
 }
 
-/* .navigation,
+/* .main,
+.navigation,
 .picture,
-.dessert1 {
+.dessert1,
+.dessert3 {
     margin-left: 1.5rem;
 }
 
 .main,
 .navigation,
+.picture,
+.dessert2,
 .dessert4 {
     margin-right: 1.5rem;
 }
@@ -48,7 +52,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #ffd6ba;
+    /* background-color: #ffd6ba; */
+    /* background-color: #
+    ffc9b9 */
 }
 
 .nav-list {
@@ -86,10 +92,5 @@
   background-color: #cf711f;
 }
 
-/* mobile navigation */
-
-    .btn-mobile-nav {
-        display: none;
-    }
 
 }
