@@ -42,6 +42,16 @@
     padding: 1em 2em;
     border-radius: 2em;
 }
+.header-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 7em;
+    width: 7em;
+    margin-top: 1.3em;
+    margin-left: 3em;
+    margin-right: 3em;
+}
 .header-part2{
     display: flex;
     flex-direction: column;
@@ -72,13 +82,14 @@ a:hover{
     }
     ul{
         position: fixed;
-        width: 100%;
+        width: 65%;
         height: 100vh;
         background: darkcyan;
         top: 2em;
         left: -100%;
         text-align: center;
         transition: all 0.5s;
+        margin-top: 0;
     }
     .header ul li{
         display: block;
@@ -87,22 +98,35 @@ a:hover{
 
     }
     .header ul li a{
-        font-size: 3em;
+        font-size: 2em;
     }
     a:hover{
         background:sandybrown;
     }
-    #checkbox:checked ~ ul{
+    #checkbox :checked ~ ul{
         left: 0;
     }
 }
-.header-icon{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 7em;
-    width: 7em;
-    margin-top: 1.3em;
-    margin-left: 3em;
-    margin-right: 3em;
+
+
+/* Main Section */
+.main{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3,auto);
+    grid-template-areas: 
+    ". w w"
+    "t t t";
+    padding: 1.7em;
+    
+
+}
+.main > *{
+    margin: 0.5em;
+}
+.welcome{
+    grid-area: w;
+}
+.main-text{
+    grid-area: t;
 }
