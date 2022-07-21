@@ -6,11 +6,122 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Responsive Cake webpage</title>
-    <!-- Add a link to your css file here -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-    <!-- Add your markup here -->
-</body>
+    <div class="grid-container">
+     <!-- Header -->   
+    <section id="header" class="grid">
+        <!-- Top Navigation Mobile Menu -->
+        <div class="topnav">
+            <div class="logo_img">
+                <a href="#home" class="active">
+                <img src="/img/logo.png" alt="logo"> </a>
+             
+            </div>
+            <!-- Navigation links (hidden by default) -->
+            <div class="navmenu">
+              <nav id="myLinks">
+                  <ul>
+                      <li><a href="#">Home</a></li>
+                      <li><a href="#">About</a></li>
+                      <li><a href="#">Contact</a></li>
+                      <li><a href="#">Blog</a></li>
+                  </ul>
+              </nav>
+                <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+                <a href="javascript:void(0);" id="ham-button" class="icon" onclick="myFunction()">
+                  <i class="fa fa-bars"></i>
+                </a>
+              </div>
+          </div>
+          
+     </section>   
 
+    <!-- New Navigation Row) -->
+    <section class="desktop_nav" class="grid">
+        <div class="nav_menu1">
+          <nav id="my_Links">
+              <ul>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Contact</a></li>
+                  <li><a href="#">Blog</a></li>
+              </ul>
+          </nav>
+        </div>
+    </section>
+  
+    <!-- Section A -->
+    <section id="section-a" class="grid">
+        <div>
+        <h2 class="content-title"> MY CAKES ARE
+          HANDCRAFTED
+          WITH LOVE.</h2>
+            <p>
+              MY CAKES ARE
+              HANDCRAFTED
+              WITH LOVE.</p>
+        <div class="content-wrap">
+        </div>
+    </section>
+    <!-- Section B -->
+    <section id="section-b" class="grid">
+        <div><img src="/img/cake_main_1.png" alt=""></div>
+    </section>
+
+    <!-- Section C -->
+    <section id="section-c" >
+        <div class="grid_1">
+            <div class="card">
+                <img src="/img/cake_2.png" alt="">
+                <div class="card-content">
+                  <h4 class="card-title">Order Online here</h3>
+                </div>
+              </div>
+      
+              <div class="card">
+                <img src="/img/cake_2.png" alt="">
+                <div class="card-content">
+                  <h4 class="card-title">Customize Your Cake</h3>
+                </div>
+              </div>
+    
+              <div class="card">
+                <img src="/img/cake_3.png" alt="">
+                <div class="card-content">
+                  <h4 class="card-title">Instagram</h3>
+                </div>
+              </div>
+    
+                <div class="card">
+                  <img src="/img/cake_3.png" alt="">
+                  <div class="card-content">
+                    <h4 class="card-title">Cake Collection</h3>
+                  </div>
+                </div>
+            </div>
+    </section>
+     <!-- Footer -->
+    <section id="footer" class="grid">
+        <div>© 2023 by Brian Hall</div>
+        <div class="content-wrap">
+        </div>
+    </section>
+ </div>
+
+ <script>
+    function myFunction() {
+      var x = document.getElementById("myLinks");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+</script>
+    
+</body>
 </html>
