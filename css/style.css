@@ -148,7 +148,7 @@ body {
 
 /* Main */
 .main {
-    margin: 2em 3em;
+    margin: 3em;
     background-color: var(--background-color);
 
 }
@@ -255,6 +255,7 @@ body {
 }
 
 @media screen and (min-width: 1300px) {
+
     /* Main */
     .main {
         display: grid;
