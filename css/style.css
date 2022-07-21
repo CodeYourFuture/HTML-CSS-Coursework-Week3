@@ -25,10 +25,11 @@ body {
 /* Header */
 .header {
     display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 200px 100px;
     grid-template-areas: "logo menu"
-        "logo slogan";
+        ". text";
     background-color: var(--header-color);
-
 }
 
 .header__logo {
@@ -39,14 +40,14 @@ body {
 }
 
 .header__text {
-    grid-area: slogan;
+    grid-area: text;
     display: flex;
     justify-self: end;
     align-items: flex-end;
     width: 50vw;
     padding: 1em;
     text-align: end;
-    font-size: 1.3em;
+    font-size: 1.2em;
     font-family: 'Playfair Display', serif;
     font-weight: 500;
     font-style: italic;
@@ -58,15 +59,25 @@ body {
 
 #menu-toggle {
     grid-area: menu;
-    display: flex;
     height: 100%;
     width: 30px;
-    margin: 0 1em;
+    right: 0;
+    margin: 1em;
     cursor: pointer;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     justify-self: end;
+    z-index: 2;
+}
+
+.exit-button {
+    visibility: hidden;
+}
+
+#checkbox:checked~#menu-toggle>.exit-button {
+    visibility: visible;
+}
+
+#checkbox:checked~#menu-toggle>.menu-button {
+    display: none;
 }
 
 #checkbox~.navbar li {
@@ -84,47 +95,9 @@ body {
     transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
 }
 
-.menu-button,
-.menu-button::before,
-.menu-button::after {
-    grid-area: menu;
-    display: block;
-    background-color: var(--text-color);
-    position: absolute;
-    height: 4px;
-    width: 30px;
-    transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
-    border-radius: 2px;
-}
-
-.menu-button::before {
-    content: '';
-    margin-top: -8px;
-}
-
-.menu-button::after {
-    content: '';
-    margin-top: 8px;
-}
-
-#checkbox:checked+#menu-toggle .menu-button::before {
-    margin-top: 0px;
-    transform: rotate(405deg);
-}
-
-#checkbox:checked+#menu-toggle .menu-button {
-    background: rgba(255, 255, 255, 0);
-}
-
-#checkbox:checked+#menu-toggle .menu-button::after {
-    margin-top: 0px;
-    transform: rotate(-405deg);
-}
-
 .navbar {
     position: absolute;
     top: 0;
-    margin-top: 50px;
     left: 0;
     flex-direction: column;
     width: 100%;
@@ -216,8 +189,43 @@ body {
 @media screen and (min-width: 540px) {
 
     /* Header */
-    .header__text {
-        font-size: 2em;
+    .header {
+        grid-template-areas: "logo text"
+            "nav nav";
+    }
+
+    .navbar {
+        grid-area: nav;
+        position: initial;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        border: 20px solid var(--background-color);
+        border-left-width: 70px;
+        border-right-width: 70px;
+        font-size: 1.2em;
+        font-weight: 500;
+    }
+
+    .navbar>li {
+        overflow: visible;
+        align-items: center;
+        width: 180px;
+        margin: 0 1.5em;
+        padding: 0.2em;
+        background-color: var(--menu-color);
+    }
+
+    .navbar__link {
+        width: 150px;
+        padding: 0.2em 0;
+        text-align: center;
+        color: var(--header-color);
+        background-color: var(--text-color);
+    }
+
+    #menu-toggle {
+        display: none;
     }
 
     /* Main */
