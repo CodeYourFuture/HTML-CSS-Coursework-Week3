@@ -1,1 +1,725 @@
-/*  Add your styling here */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Edu QLD Beginner', cursive;    
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 170px 700px 500px 240px;
+    grid-template-areas:
+    "header header header header"            
+    "main  main main  main"
+    "content content content content"
+    "footer footer footer footer"; 
+    gap: 2rem;
+}
+/* header */
+header {
+    grid-area: header;
+    background-color: lightgray; 
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    padding: 1rem;
+}
+header img {
+    min-width: 25%;
+    height: 14vh;
+    border-radius: 0.5rem;
+}
+header-info {
+    position: absolute;
+ 
+}
+.ham1 {
+    text-align: right;
+}
+header h1 {
+    text-align: right;
+    margin-top: 3rem;
+    margin-right: 1em;
+}
+/* nav */
+ /* body {
+  margin: 0;
+  } */
+
+a {
+  color: #000;
+  font-size: 2em;
+  border-radius: 1em;
+ }
+
+/* nav */
+
+nav {
+  /* background-color: #fff; */
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+  /* position: fixed; */
+  width: 100%;
+  z-index: 3;
+  font-size: 0.7em;
+  font-weight: 600;
+}
+
+nav ul {
+  margin: 0.9em;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: rgb(188, 187, 187);
+}
+
+nav li a {
+  display: flex;
+  flex-direction: row;
+   padding: 20px 20px;
+  border-right: 1px solid #f4f4f4;
+  text-decoration: none;
+}
+
+nav li a:hover,
+.ham1 .menu-btn:hover {
+  background-color: #f4f4f4;
+}
+
+ 
+
+/* menu */
+
+nav .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+   
+}
+
+/* menu icon */
+
+.ham1 .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+
+.ham1 .menu-icon .navicon {
+  background: #333;
+  display: block;
+  height: 3px;
+  position: relative;
+  transition: .2s ease-out;
+  width: 28px;
+  margin-right: 1rem;
+}
+
+.ham1 .menu-icon .navicon:before,
+.ham1 .menu-icon .navicon:after {
+  background: #333;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.ham1 .menu-icon .navicon:before {
+  top: 5px;
+}
+
+.ham1 .menu-icon .navicon:after {
+  top: -5px;
+}
+
+/* menu btn */
+
+.ham1 .menu-btn {
+  display: none;
+}
+
+.ham1 .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+
+.ham1 .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.ham1 .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.ham1 .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.ham1 .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.ham1 .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+/* 48em = 768px */
+
+@media (min-width: 900px) {
+  nav li {
+    float: left;
+  }
+  nav li a {
+    padding: 20px 30px;
+  }
+  nav .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  nav .menu-icon {
+    display: none;
+  }
+}
+
+/* main */
+main {
+    grid-area: main;
+    background-color: lightgray; 
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 1rem;
+}
+ 
+main p {
+    font-size: 1.7rem;
+
+}
+main img {
+    width:100%;
+    height: 30vh;
+    border-radius: 0.5rem;
+}
+/* content */
+.content {
+    grid-area: content;
+    background-color: lightgray; 
+    margin: 1rem;
+    border-radius: 1rem;
+}
+.content img {
+    width: 45%;
+    height: 21vh;
+    padding: 0.5rem;
+    border-radius: 1rem;
+}
+/* footer */
+footer {
+    grid-area: footer;
+    background-color: lightgray; 
+    padding: 0.5rem;
+
+}
+.footer1, 
+.footer2,
+.footer3 {
+  background-color: grey;
+  width: 200px;
+  height: 20px;
+  padding: 0.5rem 0 1rem;
+  margin: 0.5rem;
+  border-radius: 1rem;
+}
+.footer4 {
+  background-color: grey;
+  width: 200px;
+  height: 30px;
+  margin-top: 2rem;
+  margin-left: 10rem;
+  border-radius: 1rem;
+}
+/* medium */
+@media (min-width: 540px) {
+    header h1 {
+        font-size: 2em;
+        /* margin-top: 2.5em; */
+    }
+    main h1 {
+        font-size: 2.5em;
+    }
+    main p {
+        line-height: 1.4em;
+    }
+    main img {
+        width: 100%;
+        height: 31vh;
+    }
+}
+/* Larg for Desktop */
+@media (min-width: 900px) {
+    body {
+    display: grid;
+    /* grid-template-columns: repeat(4, 1fr); */
+    grid-template-rows: 270px 100px 900px 700px 340px;
+    grid-template-areas:
+    "header header header header" 
+    ". nav nav nav"           
+    "main  main main  main"
+    "content content content content"
+    "footer footer footer footer"; 
+  } 
+  /* header */
+  header {
+    grid-area: header;
+  }
+  header img {
+    min-width: 20%;
+    height: 18vh;
+  }
+  header h1 {
+    font-size: 2em;
+    margin-top: 4em;
+    padding-right: 0.5em;
+     font-weight: bold;
+  }
+  .ham1 {
+    display: none;
+  }
+  nav {
+    grid-area: nav;
+    background-color: lightgray;
+    margin-right: 1em; 
+    border-radius: 1em;
+  }
+  /* main */
+  main {
+    grid-area: main;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  main img {
+    min-width: 50%;
+    height: 800px;
+    border-radius: 1.5rem;
+  }
+  main h1 {
+    text-align: right;
+    padding-right: 2.5em;
+  }
+  main p {
+    font-size: 2em;
+    padding: 2.5em;
+    line-height: 1.4em;
+  }
+  /* content */
+  .content {
+    grid-area: content;
+    display: flex;
+  }
+  .content img {
+    min-width: 20%;
+    height: 650px;
+  }
+  /* footer */
+  footer {
+    grid-area: footer;
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+  }
+.footer1, 
+.footer2,
+.footer3 {
+  background-color: grey;
+  width: 500px;
+  height: 50px;
+  padding: 0.5rem 0 1rem;
+  margin-top: 60px;
+}
+.footer4 {
+  background-color: grey;
+  width: 500px;
+  height: 60px;
+  margin-top: 250px;
+   display: flex;
+  position: absolute;
+  
+}
+}body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Edu QLD Beginner', cursive;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 170px 700px 500px 240px;
+    grid-template-areas:
+        "header header header header"
+        "main  main main  main"
+        "content content content content"
+        "footer footer footer footer";
+    gap: 2rem;
+}
+
+/* header */
+header {
+    grid-area: header;
+    background-color: lightgray;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+header img {
+    min-width: 25%;
+    height: 14vh;
+    border-radius: 0.5rem;
+}
+
+header-info {
+    position: absolute;
+
+}
+
+.ham1 {
+    text-align: right;
+}
+
+header h1 {
+    text-align: right;
+    margin-top: 3rem;
+    margin-right: 1em;
+}
+
+/* nav */
+/* body {
+  margin: 0;
+  } */
+
+a {
+    color: #000;
+    font-size: 2em;
+    border-radius: 1em;
+}
+
+/* nav */
+
+nav {
+    /* background-color: #fff; */
+    box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .1);
+    /* position: fixed; */
+    width: 100%;
+    z-index: 3;
+    font-size: 0.7em;
+    font-weight: 600;
+}
+
+nav ul {
+    margin: 0.9em;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    background-color: rgb(188, 187, 187);
+}
+
+nav li a {
+    display: flex;
+    flex-direction: row;
+    padding: 20px 20px;
+    border-right: 1px solid #f4f4f4;
+    text-decoration: none;
+}
+
+nav li a:hover,
+.ham1 .menu-btn:hover {
+    background-color: #f4f4f4;
+}
+
+
+
+/* menu */
+
+nav .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+
+}
+
+/* menu icon */
+
+.ham1 .menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+}
+
+.ham1 .menu-icon .navicon {
+    background: #333;
+    display: block;
+    height: 3px;
+    position: relative;
+    transition: .2s ease-out;
+    width: 28px;
+    margin-right: 1rem;
+}
+
+.ham1 .menu-icon .navicon:before,
+.ham1 .menu-icon .navicon:after {
+    background: #333;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+
+.ham1 .menu-icon .navicon:before {
+    top: 5px;
+}
+
+.ham1 .menu-icon .navicon:after {
+    top: -5px;
+}
+
+/* menu btn */
+
+.ham1 .menu-btn {
+    display: none;
+}
+
+.ham1 .menu-btn:checked~.menu {
+    max-height: 240px;
+}
+
+.ham1 .menu-btn:checked~.menu-icon .navicon {
+    background: transparent;
+}
+
+.ham1 .menu-btn:checked~.menu-icon .navicon:before {
+    transform: rotate(-45deg);
+}
+
+.ham1 .menu-btn:checked~.menu-icon .navicon:after {
+    transform: rotate(45deg);
+}
+
+.ham1 .menu-btn:checked~.menu-icon:not(.steps) .navicon:before,
+.ham1 .menu-btn:checked~.menu-icon:not(.steps) .navicon:after {
+    top: 0;
+}
+
+/* 48em = 768px */
+
+@media (min-width: 900px) {
+    nav li {
+        float: left;
+    }
+
+    nav li a {
+        padding: 20px 30px;
+    }
+
+    nav .menu {
+        clear: none;
+        float: right;
+        max-height: none;
+    }
+
+    nav .menu-icon {
+        display: none;
+    }
+}
+
+/* main */
+main {
+    grid-area: main;
+    background-color: lightgray;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 1rem;
+}
+
+main p {
+    font-size: 1.7rem;
+
+}
+
+main img {
+    width: 100%;
+    height: 30vh;
+    border-radius: 0.5rem;
+}
+
+/* content */
+.content {
+    grid-area: content;
+    background-color: lightgray;
+    margin: 1rem;
+    border-radius: 1rem;
+}
+
+.content img {
+    width: 45%;
+    height: 21vh;
+    padding: 0.5rem;
+    border-radius: 1rem;
+}
+
+/* footer */
+footer {
+    grid-area: footer;
+    background-color: lightgray;
+    padding: 0.5rem;
+
+}
+
+.footer1,
+.footer2,
+.footer3 {
+    background-color: grey;
+    width: 200px;
+    height: 20px;
+    padding: 0.5rem 0 1rem;
+    margin: 0.5rem;
+    border-radius: 1rem;
+}
+
+.footer4 {
+    background-color: grey;
+    width: 200px;
+    height: 30px;
+    margin-top: 2rem;
+    margin-left: 10rem;
+    border-radius: 1rem;
+}
+
+/* medium */
+@media (min-width: 540px) {
+    header h1 {
+        font-size: 2em;
+        /* margin-top: 2.5em; */
+    }
+
+    main h1 {
+        font-size: 2.5em;
+    }
+
+    main p {
+        line-height: 1.4em;
+    }
+
+    main img {
+        width: 100%;
+        height: 31vh;
+    }
+}
+
+/* Larg for Desktop */
+@media (min-width: 900px) {
+    body {
+        display: grid;
+        /* grid-template-columns: repeat(4, 1fr); */
+        grid-template-rows: 270px 100px 900px 700px 340px;
+        grid-template-areas:
+            "header header header header"
+            ". nav nav nav"
+            "main  main main  main"
+            "content content content content"
+            "footer footer footer footer";
+    }
+
+    /* header */
+    header {
+        grid-area: header;
+    }
+
+    header img {
+        min-width: 20%;
+        height: 18vh;
+    }
+
+    header h1 {
+        font-size: 2em;
+        margin-top: 4em;
+        padding-right: 0.5em;
+        font-weight: bold;
+    }
+
+    .ham1 {
+        display: none;
+    }
+
+    nav {
+        grid-area: nav;
+        background-color: lightgray;
+        margin-right: 1em;
+        border-radius: 1em;
+    }
+
+    /* main */
+    main {
+        grid-area: main;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    main img {
+        min-width: 50%;
+        height: 800px;
+        border-radius: 1.5rem;
+    }
+
+    main h1 {
+        text-align: right;
+        padding-right: 2.5em;
+    }
+
+    main p {
+        font-size: 2em;
+        padding: 2.5em;
+        line-height: 1.4em;
+    }
+
+    /* content */
+    .content {
+        grid-area: content;
+        display: flex;
+    }
+
+    .content img {
+        min-width: 20%;
+        height: 650px;
+    }
+
+    /* footer */
+    footer {
+        grid-area: footer;
+        display: flex;
+        position: relative;
+        justify-content: space-around;
+    }
+
+    .footer1,
+    .footer2,
+    .footer3 {
+        background-color: grey;
+        width: 500px;
+        height: 50px;
+        padding: 0.5rem 0 1rem;
+        margin-top: 60px;
+    }
+
+    .footer4 {
+        background-color: grey;
+        width: 500px;
+        height: 60px;
+        margin-top: 250px;
+        display: flex;
+        position: absolute;
+
+    }
+}
