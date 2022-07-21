@@ -4,7 +4,7 @@
     
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 170px 140px 100px 80px;
+    grid-template-rows: 170px 290px 150px 80px;
     /*  grid-template-areas must follow the exact number of columns and rows defined above (4 columns and 4 rows)  */
     grid-template-areas:
       "hero     hero    hero     hero"           /* one for each column */
@@ -24,7 +24,7 @@
   .logo img {
     max-height: 150px;
     width: 120px;
- }
+  }
    
  li {
      list-style: none;
@@ -69,6 +69,12 @@
   gap: 0;
   flex-direction: column;
  }
+
+ .homepage-feature {
+  background-color: darkBlue;
+  grid-area: feature;
+}
+
  p{
    color: red;
    display: flex;
@@ -77,17 +83,18 @@
    
  }
  
- 
-
-  
-  .homepage-feature {
-    background-color: darkBlue;
-    grid-area: feature;
-  }
-  
-  .homepage-products {
+ .homepage-products {
     background-color: darkSeaGreen;
     grid-area: product;
+  }
+
+  .image img {
+    max-height: 150px;
+    width: 200px;
+    display: flex;
+    justify-items: center;
+    margin-left: 25%;
+    margin-top: 5%;
   }
   
   .homepage-aside {
