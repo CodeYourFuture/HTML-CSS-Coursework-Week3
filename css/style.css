@@ -26,7 +26,7 @@ body {
 .header {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 100px 50px;
+    grid-template-rows: 200px 100px;
     grid-template-areas: "logo menu"
         ". text";
     background-color: var(--header-color);
@@ -34,7 +34,7 @@ body {
 
 .header__logo {
     grid-area: logo;
-    width: 100px;
+    width: 150px;
     height: auto;
     margin: 1em;
 }
@@ -98,7 +98,6 @@ body {
 .navbar {
     position: absolute;
     top: 0;
-    /* margin-top: 50px; */
     left: 0;
     flex-direction: column;
     width: 100%;
@@ -188,6 +187,46 @@ body {
 }
 
 @media screen and (min-width: 540px) {
+
+    /* Header */
+    .header {
+        grid-template-areas: "logo text"
+            "nav nav";
+    }
+
+    .navbar {
+        grid-area: nav;
+        position: initial;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        border: 20px solid var(--background-color);
+        border-left-width: 70px;
+        border-right-width: 70px;
+        font-size: 1.2em;
+        font-weight: 500;
+    }
+
+    .navbar>li {
+        overflow: visible;
+        align-items: center;
+        width: 180px;
+        margin: 0 1.5em;
+        padding: 0.2em;
+        background-color: var(--menu-color);
+    }
+
+    .navbar__link {
+        width: 150px;
+        padding: 0.2em 0;
+        text-align: center;
+        color: var(--header-color);
+        background-color: var(--text-color);
+    }
+
+    #menu-toggle {
+        display: none;
+    }
 
     /* Main */
     .main__title {
