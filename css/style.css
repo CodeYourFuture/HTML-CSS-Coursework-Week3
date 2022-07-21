@@ -26,15 +26,15 @@ body {
 .header {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 200px 100px;
+    grid-template-rows: 200px 50px;
     grid-template-areas: "logo menu"
-        ". text";
+        "text text";
     background-color: var(--header-color);
 }
 
 .header__logo {
     grid-area: logo;
-    width: 150px;
+    width: 200px;
     height: auto;
     margin: 1em;
 }
@@ -42,12 +42,13 @@ body {
 .header__text {
     grid-area: text;
     display: flex;
-    justify-self: end;
+    justify-content: flex-end;
     align-items: flex-end;
+    justify-self: end;
     width: 50vw;
     padding: 1em;
     text-align: end;
-    font-size: 1.2em;
+    font-size: 1.3em;
     font-family: 'Playfair Display', serif;
     font-weight: 500;
     font-style: italic;
@@ -193,43 +194,8 @@ body {
 @media screen and (min-width: 540px) {
 
     /* Header */
-    .header {
-        grid-template-areas: "logo text"
-            "nav nav";
-    }
-
-    .navbar {
-        grid-area: nav;
-        position: initial;
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-        border: 20px solid var(--background-color);
-        border-left-width: 50px;
-        border-right-width: 50px;
-        font-size: 1.2em;
-        font-weight: 500;
-    }
-
-    .navbar>li {
-        overflow: visible;
-        align-items: center;
-        width: 180px;
-        margin: 0 1.5em;
-        padding: 0.2em;
-        background-color: var(--menu-color);
-    }
-
-    .navbar__link {
-        width: 150px;
-        padding: 0.2em 0;
-        text-align: center;
-        color: var(--header-color);
-        background-color: var(--text-color);
-    }
-
-    #menu-toggle {
-        display: none;
+    .header__text {
+        font-size: 2em;
     }
 
     /* Main */
@@ -267,6 +233,47 @@ body {
 }
 
 @media screen and (min-width: 900px) {
+
+    /* Header */
+    .header {
+        grid-template-areas: "logo text"
+            "nav nav";
+        grid-template-rows: 220px 100px;
+    }
+
+    .navbar {
+        grid-area: nav;
+        position: initial;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        border: 20px solid var(--background-color);
+        border-left-width: 50px;
+        border-right-width: 50px;
+        font-size: 1.2em;
+        font-weight: 500;
+    }
+
+    .navbar>li {
+        overflow: visible;
+        align-items: center;
+        width: 180px;
+        margin: 0 1.5em;
+        padding: 0.2em;
+        background-color: var(--menu-color);
+    }
+
+    .navbar__link {
+        width: 150px;
+        padding: 0.2em 0;
+        text-align: center;
+        color: var(--header-color);
+        background-color: var(--text-color);
+    }
+
+    #menu-toggle {
+        display: none;
+    }
 
     /* Main */
     .main {
