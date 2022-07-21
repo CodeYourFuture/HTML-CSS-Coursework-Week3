@@ -31,14 +31,14 @@ body {
 
 }
 
-.logo {
+.header__logo {
     grid-area: logo;
     width: 150px;
     height: auto;
     margin: 1em;
 }
 
-.slogan {
+.header__text {
     grid-area: slogan;
     display: flex;
     justify-self: end;
@@ -214,6 +214,13 @@ body {
 }
 
 @media screen and (min-width: 540px) {
+
+    /* Header */
+    .header__text {
+        font-size: 2em;
+    }
+
+    /* Main */
     .main__title {
         font-size: 4em;
     }
@@ -222,6 +229,7 @@ body {
         font-size: 2em;
     }
 
+    /* Image Gallery */
     .image__gallery__container {
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
         grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
@@ -231,6 +239,7 @@ body {
         height: 200px;
     }
 
+    /* Footer */
     .footer {
         font-size: 1.3em;
     }
@@ -246,6 +255,7 @@ body {
 }
 
 @media screen and (min-width: 1300px) {
+    /* Main */
     .main {
         display: grid;
         grid-template-areas: "image image  title"
