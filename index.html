@@ -1,16 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Responsive Cake webpage</title>
-    <!-- Add a link to your css file here -->
-</head>
-
-<body>
-    <!-- Add your markup here -->
-</body>
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Cake page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- heading -->
+    <header class="heading">
+      <div class="logo">
+        <img
+          src="https://images.pexels.com/photos/1070850/pexels-photo-1070850.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          alt="cake logo"
+        />
+        <img
+          src="images/menu-hamburger.svg"
+          alt="hamburger-icon"
+          class="hamburger-icon"
+        />
+      </div>
+      <p class="tag-line">The best cakes in town delivered to your door</p>
+    </header>
+    <!-- navbar -->
+    <section class="navigation">
+      <nav class="nav-bar">
+        <ul class="nav-links">
+          <li class="links">Home</li>
+          <li class="links">Cakes</li>
+          <li class="links">Order In</li>
+          <li class="links">Lessons</li>
+          <li class="links">About</li>
+        </ul>
+      </nav>
+    </section>
+    <!-- main -->
+    <section class="hero-container">
+      <article class="hero-text">
+        <h1 class="welcome-heading">Welcome</h1>
+        <p class="hero-text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem ab
+          animi similique, harum mollitia facere nam ea, unde numquam recusandae
+          odio minus molestiae at vero perferendis voluptate, excepturi ducimus
+          veniam accusamus nisi. Labore officiis porro aut magnam beatae, itaque
+          obcaecati.
+        </p>
+      </article>
+    </section>
+    <!-- hero-image -->
+    <section class="hero-image-container">
+      <!-- <img src="images/brooke-lark-V4MBq8kue3U-unsplash.jpg" class="hero-image" alt="cupcakes"/> -->
+    </section>
+    <!-- images -->
+    <section class="images-container">
+      <article>
+        <img
+          class="image-grid"
+          src="images/chocolatecake.jpg"
+          alt="chocolate cake"
+        />
+      </article>
+      <article>
+        <img
+          class="image-grid"
+          src="images/istockphoto-184013736-612x612.jpg"
+          alt="blueberycake"
+        />
+      </article>
+      <article>
+        <img
+          class="image-grid"
+          src="images/rainbowcake.jpg"
+          alt="rainbow cake"
+        />
+      </article>
+      <article>
+        <img class="image-grid" src="images/whitecake.jpg" alt="white cake" />
+      </article>
+    </section>
+    <!-- footer -->
+    <footer>
+      <div id="contacts">
+        <button class="media">Facebook</button>
+        <button class="media">Instagram</button>
+        <button class="media">Pinterest</button>
+      </div>
+      <p>Thank you for visiting our website</p>
+    </footer>
+  </body>
 </html>
