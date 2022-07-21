@@ -23,12 +23,13 @@ body {
 }
 
 /* Header */
-.header {
+.hero {
     display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 150px 50px;
     grid-template-areas: "logo menu"
-        "logo slogan";
+        ". text";
     background-color: var(--header-color);
-
 }
 
 .header__logo {
@@ -39,7 +40,7 @@ body {
 }
 
 .header__text {
-    grid-area: slogan;
+    grid-area: text;
     display: flex;
     justify-self: end;
     align-items: flex-end;
@@ -61,10 +62,10 @@ body {
     display: flex;
     height: 100%;
     width: 30px;
-    margin: 0 1em;
+    margin: 2em;
     cursor: pointer;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     justify-self: end;
 }
@@ -122,6 +123,7 @@ body {
 }
 
 .navbar {
+    display: none;
     position: absolute;
     top: 0;
     margin-top: 50px;
