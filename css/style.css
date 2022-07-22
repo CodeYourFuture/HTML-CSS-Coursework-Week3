@@ -326,8 +326,6 @@ body {
     .main__image {
         grid-area: image;
         align-self: center;
-        /* height: auto;
-        width: 40vw; */
         height: 300px;
         width: auto;
     }
