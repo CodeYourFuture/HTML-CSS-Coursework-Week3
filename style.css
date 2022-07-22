@@ -1,1 +1,274 @@
 /*  Add your styling here */
+
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+
+.container {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "content"
+        "banner"
+        "section"
+        "footer";
+    gap: 2em;
+}
+
+
+
+.header {
+    background-color: #eef8fc;
+    grid-area: header;
+    padding-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 110px;
+    height: auto;
+    margin: 1rem;
+    padding: auto;
+    border: 4rem;
+}
+
+.nav {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+}
+
+.promo {
+    position: relative;
+    right: 1rem;
+    top: 3rem;
+    font-family: montserrat;
+    font-size: 2rem;
+    text-align: center;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.nav span {
+    display: block;
+    width: 2rem;
+    height: 1rem;
+    margin-bottom: 1rem;
+    position: relative;
+    background: #479761;
+    border-radius: 1rem;
+}
+
+.content {
+    height: auto;
+    grid-area: content;
+    font-family: bungee;
+    font-size: 1.6em;
+    text-align: center;
+    color: #32333c;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    text-shadow: 4px 4px 2px rgba(41, 37, 37, 0.2);
+}
+
+.subscription {
+    font-size: 80%;
+    text-shadow: 4px 4px 2px rgba(41, 37, 37, 0.2);
+}
+
+p {
+    font-family: montserrat;
+    font-size: 1.4rem;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.banner {
+    background: url(img/21.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 320px;
+    width: 100%;
+    grid-area: banner;
+}
+
+.section {
+    grid-area: section;
+    display: grid;
+    grid-template-areas:
+        "macarons cookies"
+        "donuts cupcakes";
+    padding-bottom: 1rem;
+    grid-template: max-content;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+img.features {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+figure {
+    max-width: 140px;
+    max-height: 10em;
+    margin: 10 auto;
+    height: 300px;
+}
+
+.macarons {
+    grid-area: macarons;
+}
+
+.cookies {
+    grid-area: cookies;
+}
+
+.donuts {
+    grid-area: donuts;
+}
+
+.cupcakes {
+    grid-area: cupcakes;
+}
+
+.footer {
+    background-color: #c0fdd2;
+    grid-area: footer;
+    min-height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 5%;
+}
+
+.link_title a {
+    text-decoration: none;
+    font-family: bungee;
+    color: #45454c;
+    font-size: 1em;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    width: auto;
+    padding-bottom: 1rem;
+
+}
+
+.copyrights {
+    font-size: 0.6rem;
+    text-align: center;
+    color: slategray;
+    font-family: raleway;
+}
+
+.menu {
+    margin-right: 10px;
+    margin-left: 10px;
+    background-color: #eef8fc;
+    grid-area: menu;
+    padding: 1rem;
+    display: none;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.menu a {
+    margin: 2px;
+    padding: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    text-decoration: none;
+    font-family: bungee;
+    color: #45454c;
+    font-size: 1em;
+    background-color: slategrey;
+    display: none;
+}
+
+@media (min-width: 540px) {
+
+    .banner {
+        height: 360px;
+    }
+
+    .menu {
+        display: flex;
+    }
+
+    .menu a {
+        display: block;
+    }
+
+    .container {
+        display: grid;
+        grid-template-areas:
+            "header"
+            "menu"
+            "content"
+            "banner"
+            "section"
+            "footer";
+        gap: 2em;
+    }
+
+    .nav {
+        display: none;
+    }
+
+}
+
+@media (min-width: 900px) {
+    .banner {
+        height: 450px;
+    }
+
+    .section {
+        grid-area: section;
+        display: flex;
+        justify-content: space-evenly;
+        gap: 1em;
+        padding-top: 2rem;
+        height: auto;
+    }
+
+    .link_title {
+        display: flex;
+        gap: 2rem;
+        justify-content: center;
+    }
+
+    .hero_media {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        gap: 2rem;
+        grid-area: hero;
+        text-align: right;
+    }
+
+    .banner {
+        height: 400px;
+        width: 60%;
+    }
+
+    .container {
+        display: grid;
+        grid-template-areas:
+            "header"
+            "menu"
+            "hero"
+            "section"
+            "footer";
+        gap: 2em;
+    }
+}
