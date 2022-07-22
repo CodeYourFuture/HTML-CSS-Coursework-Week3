@@ -97,7 +97,7 @@ body{
     margin: 0;
     padding: 80px 0;
     list-style: none;
-    background-color: #eceff1;
+    background-color: #EEF1EF;
     box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
     transition-duration: 0.25s;
     text-align: center;
@@ -105,15 +105,19 @@ body{
 .menu__item {
     display: block;
     padding: 12px 24px;
-    color: #333;
+    color: #3e4d48;
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
     font-weight: 600;
     text-decoration: none;
     transition-duration: 0.25s;
+    padding: 1em;
 }
 .menu__item:hover {
-    background-color: lightslategray;
+    font-size: 40px;
+    color: #363a40;
+    border-radius: 1em;
+    background-color: #A9B4C2;
 }
 /*main section*/
 .main {
@@ -160,32 +164,17 @@ body{
     height: 100%;
     grid-column: 1/-1;
     border-radius: 0.7em;
-    transition: 1s;
-}
-.cake-img1:hover{
-    transform: scale(0.7);
-    transition: 1s;
 }
 .cake-img2{
     width: 100%;
     height: 100%;
     grid-column: 1/ 3;
     border-radius: 0.7em;
-    transition: 1s;
-}
-.cake-img2:hover {
-    transform: scale(0.7);
-    transition: 1s;
 }
 .cake-img3{
     width: 100%;
     height: 100%;
     border-radius: 0.7em;
-    transition: 1s;
-}
-.cake-img3:hover {
-    transform: scale(0.7);
-    transition: 1s;
 }
 .cake-img4 {
     width: 100%;
@@ -193,22 +182,12 @@ body{
     border-radius: 0.7em;
     grid-row: 3;
     grid-column: 1/-1;
-    transition: 1s;
-}
-.cake-img4:hover {
-    transform: scale(0.7);
-    transition: 1s;
 }
 .cake-img5{
     width: 100%;
     height: 70%;
     border-radius: 0.7em;
     grid-column: 1/-1;
-    transition: 1s;
-}
-.cake-img5:hover {
-    transform: scale(0.7);
-    transition: 1s;
 }
 /* Footer section */
 .footer{
