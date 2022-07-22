@@ -34,7 +34,7 @@ body {
 
 .header__logo {
     grid-area: logo;
-    width: 200px;
+    width: 150px;
     height: auto;
     margin: 1em;
 }
@@ -100,20 +100,21 @@ body {
     position: absolute;
     top: 0;
     left: 0;
+    display: flex;
     flex-direction: column;
-    width: 100%;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
 .navbar>li {
     display: flex;
+    overflow: hidden;
     justify-content: center;
+    width: 100%;
     margin: 0 1rem;
     padding: 0.5em 0;
-    width: 100%;
     background-color: var(--blue-light);
-    overflow: hidden
 }
 
 
@@ -135,17 +136,17 @@ body {
     background-color: var(--blue-light);
 }
 
-/* Welcome paragraph */
+/* Main content */
 .main__title {
+    padding-bottom: 0.5em;
     font-family: 'Playfair Display', serif;
     font-size: 2.5em;
-    padding-bottom: 0.5em;
 }
 
 .main__text {
+    padding: 0 0.5em 1em;
     line-height: 1.5em;
     text-align: justify;
-    padding: 0 0.5em 1em;
 }
 
 /* Image gallery */
@@ -169,7 +170,7 @@ body {
 }
 
 .image__gallery__item:hover {
-    filter: grayscale(50%);
+    filter: grayscale(80%);
 }
 
 /* Footer */
@@ -207,7 +208,7 @@ body {
 
     /* Header */
     .header__logo {
-        width: 150px;
+        width: 200px;
     }
 
     .header__text {
@@ -260,7 +261,6 @@ body {
     .navbar {
         grid-area: nav;
         position: initial;
-        display: flex;
         flex-direction: row;
         justify-content: flex-end;
         border: 20px solid var(--blue-light);
@@ -282,21 +282,29 @@ body {
     .navbar__link {
         width: 150px;
         padding: 0.2em 0;
+        border: 2px solid var(--blue-dark);
+        background-color: var(--blue-dark);
         text-align: center;
         color: var(--pink-light);
-        background-color: var(--blue-dark);
-        border: 2px solid var(--blue-dark);
     }
 
     .navbar__link:hover {
-        color: var(--blue-dark);
         background-color: var(--blue-light);
+        color: var(--blue-dark);
     }
 
     #menu-toggle {
         display: none;
     }
 
+    /* Main */
+    .main__title {
+        font-size: 4em;
+    }
+
+    .main__text {
+        font-size: 2em;
+    }
 }
 
 @media screen and (min-width: 1500px) {
@@ -307,7 +315,6 @@ body {
         grid-template-areas: "image content content"
             "image content content"
             "gallery gallery gallery";
-        grid-auto-flow: dense;
     }
 
     .main__content {
@@ -318,16 +325,14 @@ body {
     }
 
     .main__title {
-        font-size: 4em;
         text-align: end;
     }
 
     .main__text {
-        font-size: 2em;
-        text-align: justify;
         text-align-last: right;
     }
 
+    /* Image gallery */
     .main__image {
         grid-area: image;
         align-self: baseline;
