@@ -206,6 +206,10 @@ body {
 @media screen and (min-width: 540px) {
 
     /* Header */
+    .header__logo {
+        width: 150px;
+    }
+
     .header__text {
         font-size: 2em;
     }
@@ -292,6 +296,10 @@ body {
     #menu-toggle {
         display: none;
     }
+
+}
+
+@media screen and (min-width: 1500px) {
 
     /* Main */
     .main {
