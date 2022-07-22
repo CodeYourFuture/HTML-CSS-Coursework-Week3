@@ -1,149 +1,142 @@
 /*  Add your styling here */
 
-    
-   
-    /*  grid-template-areas must follow the exact number of columns and rows defined above (4 columns and 4 rows)  */
+/*  grid-template-areas must follow the exact number of columns and rows defined above (4 columns and 4 rows)  */
 
-             /* the dot is used to skip a column */
-  
-  
-  
-  *{
-      padding: 0;
-      margin: 0;
-      box-sizing: border-box;
-	font-family: 'Poppins', sans-serif;
-  }
+/* the dot is used to skip a column */
 
-  .header {
-     display: flex;
-     position: fixed;
-	   width: 100%;
-	   justify-content: space-between;
-	   align-items: center;
-	   background-color: lightpink;
-	   height: 100px;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
 
-  }
-  .logo  {
-    max-height: 120px;
-    width: 100px;
-    margin-left: 10px;
-	  margin-right: 2rem;
-  }
+.header {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: lightpink;
+  height: 100px;
+}
+.logo {
+  max-height: 120px;
+  width: 100px;
+  margin-left: 10px;
+  margin-right: 2rem;
+}
 
-  .navbar {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  
-  .hamburger {
+.navbar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* .hamburger {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 24px;
- }
+ } */
 
- 
- 
 .nav-links:hover {
-     color: blueviolet;
- }
+  color: blueviolet;
+}
 
-p{
-   color: red;
-   margin-right: 20px;
-   text-align: end;
-   font-size: 20px;
-   
- }
- #menu__toggle {
-	opacity: 0;
+p {
+  color: red;
+  margin-right: 20px;
+  text-align: end;
+  font-size: 20px;
+}
+#menu__toggle {
+  opacity: 0;
 }
 #menu__toggle:checked + .menu__btn > span {
-	transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 #menu__toggle:checked + .menu__btn > span::before {
-	top: 0;
-	transform: rotate(0deg);
+  top: 0;
+  transform: rotate(0deg);
 }
 #menu__toggle:checked + .menu__btn > span::after {
-	top: 0;
-	transform: rotate(90deg);
+  top: 0;
+  transform: rotate(90deg);
 }
-#menu__toggle:checked ~ .menu__box {
-	right: 0 !important;
+#menu__toggle:checked ~ .nav-menu {
+  right: 0 !important;
 }
 .menu__btn {
-	position: fixed;
-	top: 20px;
-	right: 20px;
-	width: 26px;
-	height: 26px;
-	cursor: pointer;
-	z-index: 1;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  z-index: 1;
 }
 .menu__btn > span,
 .menu__btn > span::before,
 .menu__btn > span::after {
-	display: block;
+  display: block;
   position: absolute;
-	width: 100%;
-	height: 2px;
-	background-color: #616161;
-	transition-duration: 0.25s;
+  width: 100%;
+  height: 2px;
+  background-color: #616161;
+  transition-duration: 0.25s;
 }
 .menu__btn > span::before {
-	content: '';
-	top: -8px;
+  content: "";
+  top: -8px;
 }
 .menu__btn > span::after {
-	content: '';
-	top: 8px;
+  content: "";
+  top: 8px;
 }
 
 .nav-menu {
   display: block;
   position: fixed;
-  top: 40px;
+  /* top: 40px; */
+  top: 0;
   right: -100%;
-	width: 100%;
-	height: fit-content;
-	margin: 0;
-	padding: 80px 0;
-	list-style: none;
-	background-color: #eceff1;
-	box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
-	transition-duration: 0.25s;
-	text-align: center;
- }
- .nav-links {
+  width: 100%;
+  height: fit-content;
+  margin: 0;
+  padding: 80px 0;
+  list-style: none;
+  background-color: lightcyan;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+  transition-duration: 0.25s;
+  text-align: center;
+}
+.nav-links {
   display: block;
-	padding: 12px 24px;
-	color: #333;
-	font-size: 20px;
-	font-weight: 500;
-	text-decoration: none;
-	text-transform: uppercase;
-	transition-duration: 0.25s;
- }
- .navigation {
-    display: none;
- }
+  padding: 12px 24px;
+  color: mediumvioletred;
+  font-size: 20px;
+  font-weight: 500;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition-duration: 0.25s;
+}
+.navigation {
+  display: none;
+}
 
- .hero {
-	width: 90%;
-	margin: auto;
-	padding: 7rem 0 2rem 0;
+.hero {
+  width: 90%;
+  margin: auto;
+  padding: 7rem 0 2rem 0;
 }
 .paragraph {
-	margin-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 .paragraph h1 {
-	font-size: 2rem;
-	text-align: right;
-	margin-bottom: 0.5rem;
+  font-size: 2rem;
+  text-align: right;
+  margin-bottom: 0.5rem;
   color: brown;
 }
 
@@ -151,134 +144,212 @@ p{
   color: darkmagenta;
   text-align: justify;
   font-style: italic;
-
 }
 
- .image {
+.image {
   height: auto;
   width: 100%;
-  
 }
-  .products {
-     display: grid;
-     grid-template-columns: repeat(2, 1fr);
-     width: 90%;
-	   margin: auto;
-	   gap: 1rem;
+.products {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 90%;
+  margin: auto;
+  gap: 1rem;
+}
+
+.product {
+  width: 100%;
+  height: 120px;
+}
+
+footer {
+  margin-top: 1.5rem;
+  padding: 1rem 0;
+}
+.footer-content {
+  width: 90%;
+  margin: auto;
+}
+footer h4 {
+  margin-bottom: 0.5rem;
+  color: brown;
+  font-size: 25px;
+  width: 90%;
+  margin: auto;
+}
+.copyright {
+  text-align: center;
+  width: 90%;
+  margin: auto;
+  margin-top: 1rem;
+}
+
+@media screen and (min-width: 540px) {
+	.image {
+		height: fit-content;
+	}
+	.product {
+		height: 18rem;
+	}
+}
+@media screen and (min-width: 900px) {
+  .navigation {
+    display: block;
+    padding-top: 8rem;
   }
 
-  .product {
-    width: 100%;
-    height: 120px;
+ .navbar p {
+    font-size: 30px;
   }
-
-  footer {
-   margin-top: 1.5rem;
-    padding: 1rem 0;
+  .hamburger {
+    display: none;
   }
-  .footer-content {
+  .header {
+    margin-bottom: 10rem;
+  }
+  .nav_list {
+    display: flex;
+    justify-content: right;
     width: 90%;
     margin: auto;
+    background-color: lightcoral;
+    padding: 1rem 0;
+    gap: 1.5rem;
+   
   }
-  .footer-content h4 {
-margin-bottom: 0.5rem;
-color: brown;
-font-size: 25px;
+  .nav_list li {
+    list-style-type: none;
+     margin-right: 1rem;
   }
-  .copyright {
-      text-align: center;
-      width: 90%;
-      margin: auto;
-      margin-top: 1rem;
+  .nav_link {
+    padding: 0.20rem 2rem;
+    background-color: skyblue;
+    color: coral;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: medium;
   }
+  .nav_link:last-child {
+    margin-right: 1rem;
+  }
+  .hero {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 1rem;
+    padding: 0;
+    margin: 1.5rem auto;
+  }
+  .paragraph {
+    width: 50%;
+  }
+  .paragraph p {
+    font-size: 32px;
+  }
+  .image {
+    width: 50%;
+    height: auto;
+  }
+  .products {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .product {
+    height: 13rem;
+  }
+
+  .footer-content {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+
+  footer h4 {
+    text-align: center;
+    margin-bottom: 0.5rem;
   
-  /* 
+  }
+  .footer-content a {
+    display: flex;
+    justify-content: center;
+  }
+
+  .copyright {
+    display: flex;
+    justify-content: center;
+  }
+}
+/* 
     Now let's change it for larger screens 
     (using quite small breakpoints here to allow for Codepen's small viewport)
   */
-  
-  /* TABLET: */
-  @media screen and (min-width: 550px) {
-  
-    /*  
+
+/* TABLET: */
+@media screen and (min-width: 550px) {
+  /*  
       We only define rules which are DIFFERENT from the mobile version defined above. 
     */
-  
-    .homepage-main {
-      /*  we need more columns for a more complex layout  */
-      grid-template-columns: repeat(6, 1fr); 
-      /*  we need less rows now  */
-      grid-template-rows: 140px 100px 80px; 
-      /*  our template now has 6 columns and 3 rows  */
-      grid-template-areas:
-        "hero    hero    hero    hero  hero     hero"
-        "feature feature feature .     aside    aside"
-        "product product product .     aside    aside";
-    }
-    
+
+  .homepage-main {
+    /*  we need more columns for a more complex layout  */
+    grid-template-columns: repeat(6, 1fr);
+    /*  we need less rows now  */
+    grid-template-rows: 140px 100px 80px;
+    /*  our template now has 6 columns and 3 rows  */
+    grid-template-areas:
+      "hero    hero    hero    hero  hero     hero"
+      "feature feature feature .     aside    aside"
+      "product product product .     aside    aside";
+  }
+
   /* 
     We don't need to re-define the grid-area for each block because these haven't changed. The hero is still the hero, the feature is still the feature etc. 
   */
-    
-  } /* end of tablet media query  */
-  
-  
-  /* DESKTOP */
-  @media screen and (min-width: 750px) {
-  
-    /*  
+} /* end of tablet media query  */
+
+/* DESKTOP */
+@media screen and (min-width: 750px) {
+  /*  
       We only define rules which are DIFFERENT from the mobile OR tablet version defined above. 
     */
-  
-    .homepage-main {
-      /*  This time we keep the same number of columns and rows as for tablet, so we don't need to re-define those  */
+
+  .homepage-main {
+    /*  This time we keep the same number of columns and rows as for tablet, so we don't need to re-define those  */
     /*   All we're doing here is skipping the 1st and last columns so the content isn't too wide.   */
-      grid-template-areas:
-        ".  hero    hero    hero  hero     ."
-        ".  feature feature .     aside    ."
-        ".  product product .     aside    .";
-    }
-    
-  } /* end of desktop media query  */
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  /* Ignore this */
-  .tip {
-    display: block;
-    padding-top: 30px;
-    font-family: Arial;
-    color: grey;
+    grid-template-areas:
+      ".  hero    hero    hero  hero     ."
+      ".  feature feature .     aside    ."
+      ".  product product .     aside    .";
   }
-  
-  .tablet, .desktop {
+} /* end of desktop media query  */
+
+/* Ignore this */
+.tip {
+  display: block;
+  padding-top: 30px;
+  font-family: Arial;
+  color: grey;
+}
+
+.tablet,
+.desktop {
+  display: none;
+}
+
+@media screen and (min-width: 550px) {
+  .mobile,
+  desktop {
     display: none;
   }
-  
-  @media screen and (min-width: 550px) {
-    .mobile, desktop {
-      display: none;
-    }
-    .tablet {
-      display: block;
-    }
+  .tablet {
+    display: block;
   }
-  @media screen and (min-width: 750px) {
-    .mobile, .tablet {
-      display: none;
-    }
-      .desktop {
-      display: block;
-    }
+}
+@media screen and (min-width: 750px) {
+  .mobile,
+  .tablet {
+    display: none;
   }
+  .desktop {
+    display: block;
+  }
+}
