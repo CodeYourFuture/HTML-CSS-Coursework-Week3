@@ -1,16 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,300' rel='stylesheet' type='text/css'>
+    <link rel="shortcut icon" type="image/x-icon" href="image/webicn.svg">
     <title>Responsive Cake webpage</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>    
     <!-- Add a link to your css file here -->
 </head>
-
 <body>
     <!-- Add your markup here -->
+     <header class="header">
+      <img class="header-icon" src="image/header-icon.svg" alt="header-icon" />    
+       <nav class="hamburger-menu">
+        <input id="menu__toggle" type="checkbox" />
+        <label class="menu__btn" for="menu__toggle">
+            <span></span>
+        </label>
+        <ul class="menu__box">
+            <li><a class="menu__item" href="#">Home</a></li>
+            <li><a class="menu__item" href="#">Cakes</a></li>
+            <li><a class="menu__item" href="#">Ordering</a></li>
+            <li><a class="menu__item" href="#">Lessons</a></li>
+            <li><a class="menu__item" href="#">About</a></li>
+        </ul>
+       </nav>
+       <h1 class="header-title">The best cakes in town delivered to your door</h1>
+     </header>
+     <main class="main">
+        <nav class="desktop-nav">
+            <div>
+                <ul class="des-nav-box">
+                    <li class="des-nav-li"><a class="des-nav-items" href="#">Home</a></li>
+                    <li class="des-nav-li"><a class="des-nav-items" href="#">Cakes</a></li>
+                    <li class="des-nav-li"><a class="des-nav-items" href="#">Ordering</a></li>
+                    <li class="des-nav-li"><a class="des-nav-items" href="#">Lessons</a></li>
+                    <li class="des-nav-li"><a class="des-nav-items" href="#">About</a></li>
+                </ul>
+            </div>
+        </nav>
+        <h2 class="welcome">welcome</h2>
+        <p class="main-text">
+            Choose one of our ready-made designs or create your own bespoke masterpiece! Fresh from The Cake Shop, customised for
+            you.  
+            Due to the intricate and fragile nature of our creations, all our cakes can be collected from our Oxford or Banbury
+            shops or delivered within a 30-mile radius by our dedicated Cake Shop drivers. Check here to see if you are inside our
+            delivery area. If you’re not within our delivery area, please call to discuss options.
+            We also have a specially selected range of cost-effective quick cakes which are available for delivery or collection.
+        </p>
+        <section class="cake-images">
+            <img src="image/cake1.jpg" alt="cake-image" class="cake-img1" id="cake-img1">
+            <img src="image/cake2.jpg" alt="cake-image" class="cake-img2">
+            <img src="image/cake3.jpg" alt="cake-image" class="cake-img3">
+            <img src="image/cake4.jpg" alt="cake-image" class="cake-img4">
+            <img src="image/cake5.jpg" alt="cake-image" class="cake-img5">
+        </section>
+        <img src="image/cake1.jpg" alt="cake-img1" class="cake-des-img" >
+        <img src="image/cake2.jpg" alt="cake-img2" class="cake-des-img" id="cake-des-img2">
+        <img src="image/cake3.jpg" alt="cake-img3" class="cake-des-img" id="cake-des-img3">
+        <img src="image/cake4.jpg" alt="cake-img4" class="cake-des-img" id="cake-des-img4">
+        <img src="image/cake5.jpg" alt="cake-img5" class="cake-des-img" id="cake-des-img5">
+     </main> 
+     <footer class="footer">
+         <div class="footer-part1">
+             <div class="footer-contact">
+                 <p class="email">For contacting us: farzadnazif.nz@gmail.com</p>
+                 <p class="twitter">GitHub: farzad-nazif</p>
+                 <p class="copyright">All copyrights deserved for Farzad-Nazif</p>
+             </div>
+         </div>
+         <div class="footer-part2">
+             <div class="socialmedia-imgs-container">
+                 <a href="https://en-gb.facebook.com/" target="_blank"><img src="image/fb-icn.svg" alt="fb-icn" class="socialmedia-imgs"></a>
+                 <a href="https://www.instagram.com/" target="_blank"><img src="image/ig-icn.svg" alt="ig-icn" class="socialmedia-imgs"></a>
+                 <a href="https://twitter.com/?lang=en-gb" target="_blank"><img src="image/twitter-icn.svg" alt="Twiiter-icn" class="socialmedia-imgs"></a>
+                 <a href="https://www.youtube.com/?gl=GB&hl=en-GB" target="_blank"><img src="image/yt-icn.svg" alt="yt-icn" class="socialmedia-imgs"></a>
+                 <a href="https://www.whatsapp.com/" target="_blank"><img src="image/whatsapp-icn.svg" alt="whatsapp-icn" class="socialmedia-imgs"></a>
+             </div>
+         </div>
+     </footer>
 </body>
-
 </html>
