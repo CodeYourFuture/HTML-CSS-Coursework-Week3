@@ -80,7 +80,7 @@ nav li a {
 
 nav li a:hover,
 .ham1 .menu-btn:hover {
-  background-color: #f4f4f4;
+  background-color: hsl(0, 0%, 96%);
 }
 
  
@@ -362,7 +362,7 @@ footer {
 /* header */
 header {
     grid-area: header;
-    background-color: lightgray;
+    background-color: bisque;
     display: flex;
     position: relative;
     justify-content: space-between;
@@ -431,7 +431,7 @@ nav li a {
 
 nav li a:hover,
 .ham1 .menu-btn:hover {
-    background-color: #f4f4f4;
+    background-color: bisque;
 }
 
 
@@ -457,7 +457,7 @@ nav .menu {
 }
 
 .ham1 .menu-icon .navicon {
-    background: #333;
+    background:bisque;
     display: block;
     height: 3px;
     position: relative;
@@ -468,7 +468,7 @@ nav .menu {
 
 .ham1 .menu-icon .navicon:before,
 .ham1 .menu-icon .navicon:after {
-    background: #333;
+    background: beige;
     content: '';
     display: block;
     height: 100%;
@@ -537,7 +537,7 @@ nav .menu {
 /* main */
 main {
     grid-area: main;
-    background-color: lightgray;
+    background-color: bisque;
     padding: 1rem;
     margin: 1rem;
     border-radius: 1rem;
@@ -557,7 +557,7 @@ main img {
 /* content */
 .content {
     grid-area: content;
-    background-color: lightgray;
+    background-color: bisque;
     margin: 1rem;
     border-radius: 1rem;
 }
@@ -572,7 +572,7 @@ main img {
 /* footer */
 footer {
     grid-area: footer;
-    background-color: lightgray;
+    background-color: bisque;
     padding: 0.5rem;
 
 }
@@ -586,6 +586,8 @@ footer {
     padding: 0.5rem 0 1rem;
     margin: 0.5rem;
     border-radius: 1rem;
+    text-align: center;
+    font-size: larger;
 }
 
 .footer4 {
