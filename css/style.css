@@ -314,20 +314,22 @@ body {
 
     .main__title {
         text-align: end;
-        font-size: 4em;
+        font-size: 3em;
     }
 
     .main__text {
         text-align-last: right;
-        font-size: 2em;
+        font-size: 1.5em;
     }
 
     /* Image gallery */
     .main__image {
         grid-area: image;
         align-self: center;
-        height: auto;
-        width: 40vw;
+        /* height: auto;
+        width: 40vw; */
+        height: 300px;
+        width: auto;
     }
 
     .image__gallery__container {
