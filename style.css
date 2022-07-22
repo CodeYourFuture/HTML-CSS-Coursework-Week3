@@ -1,1 +1,199 @@
-/*  Add your styling here */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    background-color: rgb(0, 0, 0);
+}
+
+.logo {
+    height: 120px;
+    width: 115px;
+}
+
+
+.nav {
+    display: none;
+    width: 39%;
+    margin: auto;
+    background-color: rgb(0, 0, 0);
+
+}
+
+
+.nav_link {
+    list-style-type: none;
+    color :black
+}
+
+.nav_link a {
+    text-decoration: none;
+}
+
+
+main {
+    padding: 2rem;
+
+}
+
+.hero {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "welcome" "hero_img";
+    width: 100%;
+    margin: auto;
+    place-items: center;
+    
+}
+
+.hero_img {
+    grid-area: hero_img;
+    height: 300x;
+    width: 100%;
+}
+
+
+
+.welcome {
+   grid-area: welcome;
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+}
+
+
+
+
+.thumbnails {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: auto;
+    margin: auto;
+    grid-gap: 1.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.thumbnails img {
+    height: 200px;
+    width: 100%;
+
+}
+
+
+
+footer {
+    width: 100%;
+    background-color: rgba(29, 22, 22, 0.685);
+    padding: 2.5rem 0;
+}
+
+.footer_sec {
+    width: 90%;
+    margin: auto;
+    
+}
+
+.footer_content {
+    width: 100px;
+    height: 25px;
+    text-align: center;
+    padding-top: 0.3em;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    margin-top: 20px;
+}
+
+.trademark {
+    width: 200px;
+    height: 20px;
+    text-align: center;
+    padding-top: 0.5em;
+    color: white;
+    background-color: #333;
+    margin: 2.5rem auto 0 auto;
+}
+
+@media screen and (min-width: 1024px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    .logo {
+        margin-left: 5%;
+    }
+
+    header p {
+        margin: 6rem 5% 0 0;
+        justify-self: baseline;
+    }
+
+    .nav {
+       display: flex; 
+       margin-top: 2rem;
+       height: 60px;
+       justify-content: end;
+
+    }
+
+     .nav_list {
+        display: flex;
+        justify-content: end;
+    }
+
+    .nav_link {
+        padding: 0.25rem 1rem;
+        color: rgb(0, 0, 0);
+        background-color: rgb(238, 66, 66);
+        margin-right: 1rem;
+        text-transform: uppercase;
+    }
+
+    .nav_link a {
+        color: white;
+        font-size: larger;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    .hero {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "hero_img welcome";
+        column-gap: 2rem;
+    }
+
+    .welcome h1{
+        width: 100%;
+        
+    }
+
+    .welcome {
+      align-items: flex-start;
+      height: 100%;
+      text-align: right;
+      justify-content: flex-start;
+    }
+     
+    .welcome p {
+        line-height: 3.5rem;
+        font-size: 1.5rem;
+    }
+       
+
+    
+
+    .thumbnails {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .footer_sec {
+        display: flex;
+        justify-content: center;
+        gap: 2.5rem;
+    }
+} 
