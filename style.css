@@ -307,4 +307,18 @@ color:var(--white);
             height: 250px;
             margin-top: 1.8em;
         }
+        .sign-up{
+            width: 60%;
+            margin: auto;
+        }
+        .footer h2{
+            font-size: 2.6em;
+            margin-bottom: 2em;
+        }
+        .footer h3{
+            font-size: 2.2em;
+        }
+        .button {
+            width: 70%;
+        }
 }
