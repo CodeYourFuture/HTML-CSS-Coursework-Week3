@@ -2,136 +2,151 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <meta 
     name="viewport" 
-    content="width=device-width, initial-scale=1.0"
+    content="width=device-width, initial-scale=1.0" 
     />
     <meta 
     http-equiv="X-UA-Compatible" 
-    content="ie=edge"
+    content="ie=edge" 
     />
     <title>Responsive Cake webpage</title>
     <link 
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" 
     rel="stylesheet" 
-    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" 
-    crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
-        crossorigin="anonymous"></script>
-    <link 
-    rel="preconnect" 
-    href="https://fonts.googleapis.com">
-    <link 
-    rel="preconnect" 
-    href="https://fonts.gstatic.com" 
-    crossorigin
+    href="style.css" 
     />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Merienda:wght@700&family=Sacramento&family=Ubuntu:ital,wght@1,300&display=swap"
-        rel="stylesheet"
-        />
 </head>
 
 <body>
+    <header class="header">
+        <img class="logo"
+         src="/cake-imgs/logo.png" 
+         alt="logo"
+          />
+        <div class="nav_wrapper">
+            <nav class="hamburger-menu">
+                <input id="menu__toggle" 
+                type="checkbox" 
+                />
+                <label class="menu__btn" 
+                for="menu__toggle">
+                    <span></span>
+                </label>
 
-    <section class="header">
-<div class="row">
-    <div class="col-lg-6">
-    
-       <h1>The best cakes in town delivered to your door</h1>
-    <i class="fa-solid fa-cupcake"></i>
-       </div>
-</div>
-        <div class="row">
-            <div class="col-lg-6">
-                <nav class="navbar navbar-expand-lg nav-bar-dark bg-#ffadad">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">HOME</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">CAKES</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">ORDERIN</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">LESSONS</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">ABOUT</a>
-                            </li>
+                <ul class="menu__box">
+                    <li>
+                        <a class="menu__item" 
+                        href="#">Home
+                    </a>
+                </li>
+                    <li>
+                        <a class="menu__item" 
+                        href="#">Cakes
+                    </a>
+                </li>
+                    <li>
+                        <a class="menu__item" 
+                        href="#">Ordering
+                    </a>
+                </li>
+                    <li>
+                        <a class="menu__item" 
+                        href="#">Lessons
+                    </a>
+                </li>
+                    <li>
+                        <a class="menu__item" 
+                        href="#">About
+                    </a>
+                </li>
+                </ul>
+            </nav>
+            <p class="slogan">The best cakes in town delivered to your door</p>
+        </div>
+    </header>
 
-                        </ul>
-                    </div>
-                </nav>
-            </div>
+    <nav class="desktop">
+        <ul class="nav_list">
+            <li>
+                <a class="nav_link" 
+                href="#">Home
+            </a>
+        </li>
+            <li>
+                <a class="nav_link" 
+                href="#">Cakes
+            </a>
+        </li>
+            <li>
+                <a class="nav_link"
+                 href="#">Ordering
+                </a>
+            </li>
+            <li>
+                <a class="nav_link" 
+                href="#">Lessons
+            </a>
+        </li>
+            <li>
+                <a class="nav_link" 
+                href="#">About
+            </a>
+        </li>
+        </ul>
+    </nav>
+
+    <section class="hero">
+        <article class="article">
+            <h1 class="welcome">Welcome</h1>
+            <p class="text_content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
+                placeat, suscipit inventore autem ea magni aliquam quia earum, odit,
+                doloribus amet dolorem neque. Voluptate, voluptatum aliquid sint
+                voluptatem quos ut!
+                <br />
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur
+                nemo rem culpa sunt, reprehenderit voluptates saepe laborum molestiae?
+                Voluptate, similique architecto repudiandae nostrum expedita veritatis
+                obcaecati quas totam alias praesentium.
+            </p>
+        </article>
+        <img class="hero_img" 
+        src="/cake-imgs/cocao.jpg"
+         alt="black-white" 
+         />
+    </section>
+
+    <section class="thumbnails">
+        <img 
+        src="/cake-imgs/eggless.jpg" 
+        alt="eggless" 
+        class="thumbnail"
+         />
+        <img 
+        src="/cake-imgs/vegan.jpg" 
+        alt="vegan" 
+        class="thumbnail" 
+        />
+        <img 
+        src="/cake-imgs/love.jpg" 
+        alt="love" 
+        class="thumbnail" 
+        />
+        <img 
+        src="/cake-imgs/pink.jpg" 
+        alt="pink" 
+        class="thumbnail"
+         />
+    </section>
+
+    <footer>
+        <div class="footer_links">
+            <div class="footer_content">google</div>
+            <div class="footer_content">facebook</div>
+            <div class="footer_content">instagram</div>
         </div>
-    
-</div>
-    </section>
-    <main class="homepage-main">
-    <section class="homepage-hero">
-        <div class="row">
-            <div class="col-sm-3">
-                <h1 class="display-1">Welcome</h1>
-                <p>Here you’ll find a variety of from-scratch cake recipes and much more. My goal is to create delicious recipes and
-                provide detailed tutorials to help you become a better baker.</p>
-                <div class="col-sm-3">
-                    <img class="cocao" src="/cake-imgs/cocao.jpg" alt="cocao cake">
-                </div>
-            </div>
-        </div>
-        
-    </section>
-    
-    <section id="features">
-        <div class="row">
-        <div class="features-box col-lg-4">
-            <i class="fa-solid fa-heart"></i>
-    <h3>Delisious Cakes.</h3>
-    <p>So taste to eat, even everone's diet.</p>
-    </div>
-    
-    <div class="features-box col-lg-4">
-    <h3>Elite Party</h3>
-    <i class="fa-solid fa-party-horn"></i>
-    <p>We have all type of cakes, the greatest cake.</p>
-    </div>
-    
-    <div class="features-box col-lg-4">
-    <h3>Everday Homemade Cake.</h3>
-    <i class="fa-solid fa-party-horn"></i>
-    <p>Find the love of your best cake or your money back.</p>
-    </div>
-</div>
-</section>
-    
-    <section class="homepage-products">
-        <section id="press">
-            <img class="cakes" src="cake-imgs/eggless.jpg" alt="eggless">
-            <img class="cakes" src="cake-imgs/pink.jpg" alt="pink cake">
-            <img class="cakes" src="cake-imgs/vegan.jpg" alt="vegan">
-            <img class="cakes" src="cake-imgs/yellow.jpg" alt="yellow cake">
-    </section>
-    <aside class="homepage-aside"></aside>
-</main>
-    
-    <!-- Footer -->
-    
-    <footer id="footer">
-    
-        <p>© Copyright Pare</p>
-    
+        <div class="copyright">Pakize</div>
     </footer>
 </body>
 
