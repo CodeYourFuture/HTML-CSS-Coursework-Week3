@@ -6,11 +6,91 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Responsive Cake webpage</title>
-    <!-- Add a link to your css file here -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700&family=Roboto:wght@300&family=Square+Peg&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <!-- Add your markup here -->
+    <main class="homepage">
+        <header class="header">
+            <img class="logo-img" src="img/cake-logo.PNG" alt="">
+            <div class="hamburger-menu">
+                <div class="menu-line1"></div>
+                <div class="menu-line2"></div>
+                <div class="menu-line3"></div>
+
+            </div>
+            <p><em>The best cakes in town delivered to your door</em></p>
+        </header>
+        <nav class="navbar">
+            <ul class="nav-lists">
+                <li class="nav-link">HOME</li>
+                <li class="nav-link">CAKES</li>
+                <li class="nav-link">ORDER</li>
+                <li class="nav-link">LESSONS</li>
+                <li class="nav-link">ABOUT</li>
+            </ul>
+        </nav>
+        <section class="feature">
+            <h1>Welcome</h1>
+            <p>Here at Cake House we would like to think of each other as family, and our success is because we have held on to our
+            family values. We have extended the family circle to include our customers. To us the customer is not somebody who
+            simply buys a cake from one of our stores. When we make a cake for somebody’s special occasion, we know that we are
+            being allowed into the person’s family via the cake. That is why each cake is baked and decorated as if it was meant for
+            a member of one of our families.</p>
+        </section>
+        <section class="hero">
+            <img src="https://images.unsplash.com/photo-1595144780677-6d0b5abbd089?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1143&q=80" alt="photo of a cake">
+          
+        </section>
+        
+        <section class="products">
+             
+            <img class="item birthday-cake" 
+                src="https://images.unsplash.com/photo-1551879403-6adb554966fd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8YmlydGhkYXklMjBjYWtlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" 
+                alt="birth day cake">
+            <img class="item slice-cake"
+                src="https://images.unsplash.com/photo-1602630209855-dceac223adfe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8c2xpY2UlMjBjYWtlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                alt="slice cake">
+            <img class="item cup-cake"
+                src="https://images.unsplash.com/photo-1607478900766-efe13248b125?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80"
+                alt="cup cake">
+            <img class="item donut"
+                src="https://images.unsplash.com/photo-1626094309830-abbb0c99da4a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8NHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"
+                alt="donut">
+        </section>
+        <footer class="footer">
+            
+            <h2>Sign up for newsletter</h2>
+            <form class="sign-up" action="">
+                <div class="terms-input">
+                    <input id="terms" type="checkbox">
+                    <label for="terms">Tick here to accept our <a class="termsConditions" href="#">Terms and conditions</a></label>
+                </div>
+                <div class="checkbox">
+                    <input id="personalData" type="checkbox">
+                    <label for="personalData">I agree to my personal data being stored and used to receive offers and email newsletters </label>
+                </div>
+                <div>
+                    <button class="button" type="submit">Your email <span>&#129158;</span></button>
+                </div>
+            </form>
+            <h3>Follow us</h3>
+            <ul>
+                <li><img src="img/facebook-icon.svg" class="fa fa-facebook" alt=""></li>
+                <li><img src="img/twitter-icon.svg" class="fa fa-twitter" alt=""></li>
+                <li><img src="img/instagram-icon.svg" class="fa fa-instagram" alt=""></li>
+            </ul>
+            <p>&copy; cake house</cite>
+        </footer>
+    </main>
 </body>
 
 </html>

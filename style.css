@@ -1,1 +1,338 @@
-/*  Add your styling here */
+/*  styling for mobile version starts here */
+:root {
+    --white: #fff;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+.homepage {
+    background-color: #f5d9d5;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-areas:
+            "header  header  header  header "
+            "nav     nav     nav     nav"
+            "feature  feature feature  feature"
+            "hero     hero    hero     hero"
+            "product  product product  product"
+            "footer   footer  footer   footer";
+}
+.header {
+    padding: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #f4f4f4;
+    grid-area: header;
+}
+.logo-img {
+    width: 100px;
+}
+.hamburger-menu{
+    cursor: pointer;
+   
+}
+.menu-line1,
+.menu-line2,
+.menu-line3 {
+    position: absolute;
+    left: 88%;
+    right: 5.6%;
+    background: #000000;
+    border-radius: 1px;
+}
+.menu-line1{
+    top: 1%;
+    bottom: 98.85%;
+}
+.menu-line2{ 
+    top: 1.47%;
+    bottom: 98.37%;   
+}
+  
+.menu-line3{
+    top: 1.95%;
+    bottom: 97.89%;
+}
+.header p {
+    text-align: right;
+    align-self: flex-end;
+    margin-left: 1em;
+    
+    font-size: 1em;
+    font-weight: bold;
+    color: #494949;
+}
+em{
+    padding: .8em;
+}
+.navbar{
+    display: none;
+    grid-area: nav;
+    background-color: #f0a991;
+    cursor: pointer;
+}
+.nav-lists{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    list-style: none;
+    padding-inline-start: 0;
+    width: 100%;
+}
+.nav-link{
+margin: .8em;
+padding: .5em 1.2em;
+
+color:var(--white);
+}
+
+/* section feature */
+.feature {
+    background-color: rgb(84, 41, 68);
+    color: var(--white);
+    grid-area: feature;
+    padding: 1em;
+}
+.feature h1 {
+    font-size: 2.6em;
+    margin-bottom: .5em;
+}
+.feature p {
+    font-size: 1.2em;
+    line-height: 1.2em;
+}
+
+/* section hero */
+.hero {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    background-color: #f3c1b0;
+    grid-area: hero;
+}
+.hero img {
+    width: 80%;
+    margin: 2em;
+}
+
+/* section products */
+.products {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    align-items: space-around;
+    padding: 1em;
+    background-color: #f3c1b0;
+    grid-area: product;
+}
+
+.aside {
+    background-color: darkTurquoise;
+    grid-area: aside;
+}
+
+.footer {
+    background-color: #283636;
+    color: rgb(28, 244, 190);
+    grid-area: footer;
+    
+}
+
+
+
+.item{
+ width: 160px;
+ height: 160px;
+ margin: .8em;
+ background-color: var(--white);
+ 
+}
+
+.footer p, h2, h3{
+    text-align: center;
+}
+.footer h2{
+    font-size: 1.8em;
+    margin-top: 1.8em;
+}
+.termsConditions{
+    color:var(--white)
+}
+.sign-up{
+    padding: 0 1em;
+}
+.button{
+    margin: 2em auto;
+    padding-top: .7em;
+    padding-bottom: .7em;
+    width: 100%;
+    font-size: 1.2em;
+    color: #494949;
+    font-weight: bold;
+}
+.button span{
+    position: absolute;
+    right: 30px;
+    color: #283636;
+}
+.footer ul{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style-type: none;
+    padding-inline-start: 0;
+}
+.fa {
+    background: #f8f9f9;
+    padding: .4em;
+    font-size: .75em;
+    width: 2.2em;
+    text-align: center;
+    margin: 10px;
+    border-radius: 50%;
+    border: 1px solid rgb(206, 205, 205);
+    cursor: pointer;
+    
+}
+
+.fa:hover {
+    opacity: 0.5;
+}
+
+.fa-facebook {
+    color: #1a439b;
+    
+
+}
+
+.fa-twitter {
+
+    color: #55ACEE;
+}
+
+.fa-instagram {
+
+    color: rgb(23, 27, 152);
+}
+
+/*  styling for mobile version ends here */
+/* ==================================================== */
+/*  styling for tablet  starts here */
+@media only screen and (min-width:540px){
+    .feature {
+        background-color: #283636;
+        padding: 1.6em;
+    }
+    .hamburger-menu{
+        display: none;
+    }
+        .navbar {
+            display: flex;
+        }
+    
+        .nav-lists {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            list-style: none;
+        }
+    
+        .nav-link {
+            margin: .8em;
+            padding: .2em .8em;
+            
+            color:var(--white);
+        }
+        .button{
+            width: 80%;
+        }
+
+}
+
+/*  styling for tablet ends here */
+
+/*  styling for desktop starts here */
+
+@media only screen and (min-width:900px){
+    .homepage {
+        
+        grid-template-columns: repeat(4, auto);
+        grid-template-rows: auto auto auto auto auto auto;
+        grid-template-areas:
+                "header  header  header  header "
+                "nav     nav     nav     nav"
+                "hero  hero feature  feature"
+                "hero     hero    feature     feature"
+                "product  product product  product"
+                "footer   footer  footer   footer";
+        }
+        .logo-img {
+            width: 150px;
+            margin-left: 2em;
+                }
+        .header p {
+            font-size: 1.8em;
+                }
+        .nav-link{
+            font-size: 1.3em;
+            
+        }        
+        .nav-link:hover{
+            background-color: #494949;
+        }
+
+        .hero img {
+        width: 100%;
+        margin: 3em 1em 3em 0;
+                }
+
+        .feature {
+            background-color: #f3c1b0;
+            color: #494949;
+            padding: 2.2em;
+        }
+    
+        .feature h1 {
+            font-size: 2.9em;
+            margin-bottom: 1em;
+            text-align: center;
+        }
+    
+        .feature p {
+            font-size: 1.8em;
+            line-height: 1.3em;
+            text-align: center;
+        }
+        .products {
+            
+            justify-content: space-around;
+            align-items: space-around;
+            padding: 1em;
+            
+        }
+        .item {
+            width: 250px;
+            height: 250px;
+            margin-top: 1.8em;
+        }
+        
+        .sign-up{
+            width: 50%;
+            margin: auto;
+        }
+        .footer h2{
+            font-size: 2.6em;
+            margin-bottom: 2em;
+        }
+        .footer h3{
+            font-size: 2.2em;
+        }
+        .button {
+            width: 70%;
+        }
+}
