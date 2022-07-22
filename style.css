@@ -108,6 +108,8 @@ footer {
 .contact > a {
   text-decoration: none;
   margin-top: 0.5rem;
+}
+.bi {
   color: #644983;
 }
 .copyright {
@@ -135,7 +137,7 @@ footer {
     grid-row: 4;
     background-color: lavenderblush;
     margin: 0rem 1rem;
-    padding: 0;
+    padding-top: 0.75rem;
   }
   .nav-list {
     display: flex;
@@ -163,7 +165,6 @@ footer {
   }
   .contact > a {
     padding: 0rem 1rem;
-    color: #644983;
   }
 }
 @media only screen and (min-width: 900px) {
