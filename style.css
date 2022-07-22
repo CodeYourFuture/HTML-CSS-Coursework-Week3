@@ -1,1 +1,52 @@
-/*  Add your styling here */
+header {
+  border: 1px solid;
+  background-color: #ededed;
+}
+nav {
+  font-size: 17px;
+  display: block;
+  flex-direction: row;
+  margin-left: 270px;
+  margin-top: 20px;
+}
+li {
+  list-style-type: none;
+}
+.cake {
+  width: 90px;
+  height: 120px;
+  margin-left: 30px;
+  margin-top: -40px;
+}
+p {
+  width: 170px;
+  margin-left: 180px;
+  margin-top: -40px;
+  font-size: 17px;
+  color: rgb(85, 85, 131);
+}
+h1 {
+  margin-left: 30px;
+}
+.para {
+  width: 350px;
+  margin-left: 30px;
+}
+.img-1 {
+  width: 200px;
+  height: 120px;
+  margin-left: 80px;
+  margin-top: 60px;
+}
+.img-di {
+  background-color: #ededed;
+  height: 250px;
+}
+img {
+  width: 130px;
+  height: 70px;
+}
+.flex {
+  display: grid;
+  grid-template-columns: auto auto;
+}
