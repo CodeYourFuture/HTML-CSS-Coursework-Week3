@@ -34,12 +34,12 @@
     img {
     display: block;
     width: 100%;
-   
+    height: 100%
     }
   
     /* logo */
     .logo_img {
-    height: 40px;
+    height: 70px;
     width: 40px;
     padding: 10px 10px 10px 10px;
     }
@@ -98,7 +98,12 @@
     #footer {
     background: var(--white);
     grid-area: footer;
-  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-size: 1    em;
+    padding: 10px;
     }
   
   
@@ -106,6 +111,11 @@
     display: grid;
     grid-template-columns: repeat(2, auto);
     grid-gap: 1em;
+    }
+
+    .card img {
+        height: 150px;
+
     }
   
     /* Mobile Navigation */
@@ -173,8 +183,6 @@
     background: var(--dark-gray);
     grid-area: footer;
     color: var(--white);
-    font-size: 10px;
-  
     }
 
     @media only screen and ( min-width:540px) {
@@ -214,13 +222,13 @@
         #section-b {
         background: var(--peach);
         grid-area: main;
-    
+        
     
         }
         #section-c {
         background: var(--peach);
         grid-area: middle;
-
+        padding: 2em 1em 1em;
         }
     
         /* footer */
@@ -228,8 +236,9 @@
         background: var(--dark-gray);
         grid-area: footer;
         color: var(--white);
-        font-size: 10px;
         vertical-align: middle;
+        font-size: 15px;
+        padding: 7px;
         }
     
         /* ipad Navigation */
@@ -256,6 +265,7 @@
         li {
             float: left;
             padding-right: 30px;
+
         }   
         
         .grid_1{
@@ -263,6 +273,111 @@
             grid-template-columns: repeat(4, auto);
             grid-gap: 1em;
             }
+      
+    
+        /* logo */
+        .logo_img {
+        height: 80px;
+        width: 80px;
+        padding: 20px 20px 20px 20px;
+        }
+
+        #section-b img {
+      
+        }
+    }
+
+    @media only screen and ( min-width:900px) {
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr ;
+            grid-template-rows: 1fr 0.5fr 2fr 1.2fr 1.2fr 1fr;
+            grid-template-areas:
+            "header header"
+            "nav nav"
+            "main menu"
+            "middle middle"
+            "footer footer";
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 14px;
+            color: var(--dark-gray);
+            text-align: center;
+            }
+    
+        #header {
+        background: var(--gary);
+        grid-area: header;
+        }   
+    
+        .desktop_nav {
+        background: var(--white);
+        grid-area: nav;
+        }
+    
+        #section-a {
+        background: var(--peach);
+        grid-area: menu;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+    
+        #section-b {
+        background: var(--peach);
+        grid-area: main;
+        
+    
+        }
+        #section-c {
+        background: var(--peach);
+        grid-area: middle;
+        padding: 2em 1em 1em;
+        }
+    
+        /* footer */
+        #footer {
+        background: var(--dark-gray);
+        grid-area: footer;
+        color: var(--white);
+        vertical-align: middle;
+        font-size: 20px;
+        }
+    
+        /* ipad Navigation */
+    
+        .navmenu {
+        display: none;
+        }
+    
+        .nav_menu1 {
+            display: block;
+        }
+    
+        .desktop_nav {
+            display: block;
+            background-color: var(--white);
+            color: var(--dark-gray);
+            width: 100%;
+        }   
+        .desktop_nav  a {
+            color: var(--dark-gray);
+            text-decoration: none;
+            display: block;
+        }
+        li {
+            float: left;
+            padding-right: 30px;
+
+        }   
+        
+        .grid_1{
+            display: grid;
+            grid-template-columns: repeat(4, auto);
+            grid-gap: 1em;
+            }
+      
     
         /* logo */
         .logo_img {
@@ -275,6 +390,7 @@
             height: 100%;
         }
     }
+
        
 
   
