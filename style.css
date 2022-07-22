@@ -38,10 +38,12 @@ nav {
 }
 .nav-item {
   list-style-type: none;
+  padding-bottom: 1rem;
 }
 .nav-link {
   text-decoration: none;
   text-transform: uppercase;
+  color: #644983;
 }
 .nav-link:hover {
   background-color: white;
@@ -131,6 +133,7 @@ footer {
     grid-row: 4;
     background-color: lavenderblush;
     margin: 0rem 1rem;
+    padding: 0;
   }
   .nav-list {
     display: flex;

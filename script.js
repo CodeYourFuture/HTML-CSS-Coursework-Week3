@@ -1,18 +1,14 @@
 const navButton = document.querySelector('.expand-nav');
 const navList = document.querySelector('.nav-list');
-console.log(navButton);
-console.log(navList);
 
+navButton.addEventListener('click', function () {
 
+    // if (navList.style.display === 'block') {
+    //     navList.style.display = 'none';
+    // } else {
+    //     navList.style.display = 'block';
+    //     navList.style.backgroundColor = '#fff0f5';
+    // }
 
-function expandNav() {
-    console.log('click works');
-    console.log(navList)
-    navList.style.display;
+});
 
-    if (navList.style.display === 'none') {
-        navList.style.display === 'flex';
-    }
-};
-
-expandNav();
