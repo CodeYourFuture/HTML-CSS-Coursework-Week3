@@ -1,123 +1,207 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 body {
-  font-family: 'Ibarra Real Nova', serif;
+  font-family: "Ibarra Real Nova", serif;
   color: #333;
-  /* color: #555b6e; */
 }
 
 .container {
-    /* height: 100%; */
-    display: grid;
-    row-gap: 2rem;
-    column-gap: 2rem;
-    /* gap: 2rem; */
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 300px auto 300px 40vw 40vw 300px;
-    grid-template-areas: 
-        "h h h h"
-        "m m m m"
-        "p p p p"
-        "d1 d1 d2 d2"
-        "d3 d3 d4 d4"
-        "f f f f";
+  display: grid;
+  row-gap: 2rem;
+  column-gap: 2rem;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 300px auto 300px 40vw 40vw 300px;
+  grid-template-areas:
+    "h h h h"
+    "m m m m"
+    "p p p p"
+    "d1 d1 d2 d2"
+    "d3 d3 d4 d4"
+    "f f f f";
 }
 
-.container > div {
-    /* font-size: 2em;
-    border: 1px solid black; */
-}
+/* Header */
 
 .header {
-    grid-area: h;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    padding: 0.5rem 2rem 0.8rem 2rem;
-    /* color: #000; */
-    /* background-color: #b9d6f2; */
-    /* background-color: #bee3db; */
-    /* background-color: #669bbc8b; */
-    background-color: #82c0cc;
+  grid-area: h;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 2rem 0.8rem 2rem;
+  background-color: #82c0cc;
 }
 
-/* .header {
-    background-image: linear-gradient(to right bottom, hsla(167, 40%, 82%, 0.9), hsla(0, 0%, 100%, 0.9)), url(../img/macarons.jpeg);
-    background-size: cover;
-    background-position: center;
-} */
-
-.main {
-    grid-area: m;
-    /* background-color: #faf9f9; */
+.img-crown {
+  width: 5rem;
+  margin-bottom: 0.5rem;
 }
+
+.logo-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  text-align: right;
+  width: 10rem;
+  height: 100%;
+}
+
+.header p {
+  font-family: "Ibarra Real Nova", serif;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: 000;
+  text-shadow: 1px 1px 2px #fff;
+}
+
+.icon-networks {
+  width: 1.7rem;
+  height: 1.7rem;
+  color: #fff;
+  text-align: center;
+  margin: 1.5rem 0.5rem 0 0.5rem;
+}
+
+.icon-networks:hover,
+.icon-networks:active {
+  color: #e67e22;
+}
+
+.header-right-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header h1 {
+  font-family: "Dancing Script", cursive;
+  font-size: 2.5rem;
+  text-align: end;
+}
+
+.header h2 {
+  font-family: "Dancing Script", cursive;
+  font-size: 1.5rem;
+  text-align: end;
+}
+
+/* mobile navigation */
+
+.mob-nav-box {
+  text-align: right;
+}
+
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.icon-mobile-nav {
+  height: 3rem;
+  width: 3rem;
+  color: #333;
+}
+
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
+}
+
+/* Navigation */
 
 .navigation {
   display: none;
 }
 
-.picture {
-    grid-area: p;
+/* Main */
+
+.main {
+  grid-area: m;
 }
 
+.main h3 {
+  font-size: 2.5rem;
+  line-height: 1.4em;
+  text-align: center;
+  font-family: "Dancing Script", cursive;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+}
+
+.main p {
+  font-size: 1.2rem;
+  line-height: 1.8em;
+  text-align: justify;
+  font-weight: 600;
+}
+
+/* Navigation */
+
+.navigation {
+  display: none;
+}
+
+/* large Picture */
+
+.picture {
+  grid-area: p;
+  overflow: hidden;
+}
+
+.img-main {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Images boxes */
+
 .dessert1 {
-    grid-area: d1;
+  grid-area: d1;
 }
 
 .dessert2 {
-    grid-area: d2;
+  grid-area: d2;
 }
 
 .dessert3 {
-    grid-area: d3;
+  grid-area: d3;
 }
 
 .dessert4 {
-    grid-area: d4;
+  grid-area: d4;
 }
 
-/* footer */
+.img-box {
+  text-align: center;
+  background-color: #f8f7ff;
+  overflow: hidden;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.img-dessert {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Footer */
 
 .footer {
-    grid-area: f;
-    position: relative;
-    background-color: #82c0cc;
-    display: flex;
-    /* align-items: center; */
-    justify-content: center;
-
-}
-
-/* .networks {
+  grid-area: f;
+  position: relative;
+  background-color: #82c0cc;
   display: flex;
-  align-items: center;
   justify-content: center;
-} */
-
-.icon {
-  /* background: lightblue; */
-  width: 1.3rem;
-  height: 1.3rem;
-  /* border-radius: ; */
-  /* line-height: 50px; */
-  text-align: center;
-  margin: 1.5rem 0.5rem 0 0.5rem;
-  /* color: #ff8600; */
 }
 
 /* footer navigation */
 
 .footer-nav {
   margin-top: 2rem;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; 
-    flex-direction: column; */
-    /* background-color: #ffd6ba; */
-    /* background-color: #ffc9b9 */
 }
 
 .footer-nav-list {
@@ -144,174 +228,21 @@ body {
 }
 
 .copyright {
-  font-family: 'Dancing Script', cursive;
+  font-family: "Dancing Script", cursive;
   font-weight: 700;
   text-align: center;
   position: absolute;
   bottom: 2rem;
 }
 
-/* header-left slogan */
-
-.img-crown {
-  width: 5rem;
-  margin-bottom: 0.5rem;
-}
-
-.slogan-box {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-end;
-  width: 10rem;
-  height: 100%;
-  /* margin-left: 1.5rem; */
-}
-
-.header p {
-  font-family: 'Ibarra Real Nova', serif;
-  font-size: 1.6rem;
-  font-weight: 600;
-  text-shadow: 2px 2px 2px #fff;
-}
-
-/* main content */
-
-.main h3 {
-  font-size: 2.5rem;
-  line-height: 1.4em;
-  text-align: center;
-  font-family: 'Dancing Script', cursive;
-  font-weight: 700;
-  margin-bottom: 0.8rem;
-}
-
-.main p {
-  font-size: 1.2rem;
-  line-height: 1.8em;
-  text-align: justify;
-  font-weight: 600;
-  /* font-family: 'Ibarra Real Nova', serif; */
-  /* margin: 0 1.5rem 0 1.5rem; */
-}
-
-/* main picture */
-
-.img-main {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-/* header right side - mob.menu & logo */
-
-.header-right-box {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.mob-nav-box {
-  text-align: right;
-}
-
-.logo-box {
-  text-align: right;
-}
-
-.header h1 {
-    font-family: 'Dancing Script', cursive;
-    font-size: 2.5rem;
-}
-
-.header h2 {
-    font-family: 'Dancing Script', cursive;
-    font-size: 1.5rem;
-    /* margin-right: 1.5rem; */
-}
-
-/* images boxes */
-
-.img-box {
-  position: relative;
-  /* width: 50%; */
-    text-align: center;
-    background-color: #f8f7ff;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.img-dessert {
-  opacity: 1;
-  /* display: block; */
-  height: 100%;
-  width: auto;
-  object-fit: cover;
-  transition: .5s ease;
-  backface-visibility: hidden;
-  background-color: #;
-}
-
-.img-btn-box {
-  transition: .5s ease;
-  opacity: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%)
-}
-
-.img-box:hover .img-dessert {
-  opacity: 0.3;
-}
-
-.img-box:hover .img-btn-box {
-  opacity: 1;
-}
-
-.img-btn {
-  background-color: #e67e22;
-  color: #fff;
-  font-size: 1rem;
-  font-weight: 600;
-  padding: 0.6rem;
-  border-radius: 4px;
-  width: 6rem;
-}
-
-/* mobile nav */
-
-.btn-mobile-nav {
-    border: none;
-    background: none;
-    cursor: pointer;
-}
-
-.icon-mobile-nav {
-    height: 3rem;
-    width: 3rem;
-    color: #333
-}
-
-.icon-mobile-nav[name="close-outline"] {
-  display: none;
-}
-
-/* navigation */
-
-.navigation {
-    display: none;
-}
-
-
-/* margin-frame */
+/* align templates */
 
 .main,
 .navigation,
 .picture,
 .dessert1,
 .dessert3 {
-    margin-left: 2rem;
+  margin-left: 2rem;
 }
 
 .main,
@@ -319,6 +250,5 @@ body {
 .picture,
 .dessert2,
 .dessert4 {
-    margin-right: 2rem;
+  margin-right: 2rem;
 }
-
