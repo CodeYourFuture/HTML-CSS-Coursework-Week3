@@ -108,6 +108,7 @@ footer {
 .contact > a {
   text-decoration: none;
   margin-top: 0.5rem;
+  color: #644983;
 }
 .copyright {
   grid-column: 1 / -1;
@@ -162,6 +163,7 @@ footer {
   }
   .contact > a {
     padding: 0rem 1rem;
+    color: #644983;
   }
 }
 @media only screen and (min-width: 900px) {
