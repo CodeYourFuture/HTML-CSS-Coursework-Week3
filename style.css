@@ -58,8 +58,8 @@ main {
   padding: 2rem 1rem 0rem 1rem;
   margin: 0;
 }
-.welcome > img {
-  max-width: 92%;
+.cake {
+  max-width: 95%;
   align-self: center;
   background-color: lavender;
 }
@@ -83,6 +83,7 @@ footer {
   display: grid;
   grid-template: auto / repeat(2, 1fr);
   background-color: lavender;
+  padding-bottom: 0;
 }
 .contact {
   grid-column: 1 / -1;
@@ -127,10 +128,9 @@ footer {
     padding-left: 1rem;
   }
   .nav-link {
-    background-color: purple;
+    background-color: lavender;
     padding: 0.5rem 1rem;
     text-decoration: none;
-    color: white;
     font-weight: bold;
   }
   .expand-nav {
@@ -145,7 +145,32 @@ footer {
   }
 }
 @media only screen and (min-width: 900px) {
+  .welcome {
+    display: grid;
+    grid-template: auto / repeat(2, 1fr);
+    margin: 1rem 1rem 0rem 1rem;
+  }
+  .cake {
+    grid-column: 1;
+    grid-row: 1;
+    max-width: 100%;
+  }
+  .welcome > h2 {
+    grid-column: 2;
+    grid-row: 1;
+    text-align: right;
+  }
+  .welcome > p {
+    grid-column: 2;
+    grid-row: 1;
+    margin-top: 10rem;
+    text-align: right;
+  }
   .articles {
+    grid-column: 1 / -1;
     display: flex;
+  }
+  footer {
+    padding-top: 2rem;
   }
 }
