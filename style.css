@@ -109,8 +109,11 @@ footer {
   text-decoration: none;
   margin-top: 0.5rem;
 }
-.bi {
+i {
   color: #644983;
+}
+i:hover {
+  color: white;
 }
 .copyright {
   grid-column: 1 / -1;
