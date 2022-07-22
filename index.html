@@ -7,6 +7,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Responsive Cake Webpage</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Square+Peg&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -16,17 +21,17 @@
             <p>Navigation text about how yummy these cakes are</p>
         </section>
         <nav>
-            <a href="#" class="expand-nav">...</a>
+            <a href="#" onclick="expandNav(); return false" class="expand-nav">...</a>
             <ul class="nav-list">
                 <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Cakes</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">About</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+                <li class="nav-item"><a href="#cakes" class="nav-link">Cakes</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#contacts" class="nav-link">Contact</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section class="welcome">
+        <section class="welcome" id="about">
             <h2>Welcome Header</h2>
             <p>Fancy stuff about cakes lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae omnis
                 dolor
@@ -37,7 +42,7 @@
                 In unde voluptate assumenda dolorum eligendi vel.</p>
             <img src="assets/images/cake.png" alt="cake" class="cake">
         </section>
-        <section class="articles">
+        <section class="articles" id="cakes">
             <article>
                 <img src="assets/images/box-o-chocolates.png" alt="Box of chocolates">
             </article>
@@ -53,10 +58,10 @@
         </section>
     </main>
     <footer>
-        <section class="contact">
-            <a href=" #">socials</a>
-            <a href="#">socials</a>
-            <a href="#">socials</a>
+        <section class="contact" id="contacts">
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-twitter"></i></a>
         </section>
         <section class="copyright">
             <p>&copy;</p>

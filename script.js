@@ -3,7 +3,16 @@ const navList = document.querySelector('.nav-list');
 console.log(navButton);
 console.log(navList);
 
-navButton.addEventListener('click', function () {
-    console.log('click works');
 
-});
+
+function expandNav() {
+    console.log('click works');
+    console.log(navList)
+    navList.style.display;
+
+    if (navList.style.display === 'none') {
+        navList.style.display === 'flex';
+    }
+};
+
+expandNav();

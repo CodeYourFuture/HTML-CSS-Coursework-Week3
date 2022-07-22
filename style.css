@@ -2,12 +2,14 @@
 body {
   margin: 0;
   padding: 0;
+  font-family: "Montserrat", sans-serif;
 }
 /* HEADER */
 header {
   display: grid;
   grid-template: auto / repeat(2, auto);
   background-color: lavender;
+  color: #644983;
 }
 .heading {
   grid-column: 1 / -1;
@@ -21,6 +23,10 @@ nav {
   grid-column: 2;
   padding-right: 1rem;
 }
+.expand-nav {
+  text-decoration: none;
+  font-size: 3rem;
+}
 .heading > p {
   grid-row: 3;
   grid-column: 1 / -1;
@@ -33,12 +39,13 @@ nav {
 .nav-item {
   list-style-type: none;
 }
-li > .nav-link {
+.nav-link {
   text-decoration: none;
+  text-transform: uppercase;
 }
-.expand-nav {
-  text-decoration: none;
-  font-size: 3rem;
+.nav-link:hover {
+  background-color: white;
+  font-size: 1.2rem;
 }
 /* Main */
 main {
@@ -52,11 +59,14 @@ main {
   flex-direction: column;
 }
 .welcome > h2 {
-  color: purple;
-  font-family: ;
+  color: #644983;
   font-size: 2.5rem;
   padding: 2rem 1rem 0rem 1rem;
   margin: 0;
+  letter-spacing: 0.5rem;
+}
+.welcome > p {
+  line-height: 1.2rem;
 }
 .cake {
   max-width: 95%;
@@ -83,7 +93,8 @@ footer {
   display: grid;
   grid-template: auto / repeat(2, 1fr);
   background-color: lavender;
-  padding-bottom: 0;
+  color: #644983;
+  padding: 0.5rem 0 0 0;
 }
 .contact {
   grid-column: 1 / -1;
@@ -106,6 +117,7 @@ footer {
   }
   .heading {
     background-color: lavender;
+    color: #644983;
     margin-bottom: 1rem;
     display: flex;
     justify-content: space-between;
@@ -136,6 +148,9 @@ footer {
   .expand-nav {
     display: none;
   }
+  .welcome > h2 {
+    text-align: center;
+  }
   .contact {
     flex-direction: row;
     justify-content: center;
@@ -145,6 +160,9 @@ footer {
   }
 }
 @media only screen and (min-width: 900px) {
+  .heading > p {
+    font-size: 1.5rem;
+  }
   .welcome {
     display: grid;
     grid-template: auto / repeat(2, 1fr);
@@ -159,6 +177,7 @@ footer {
     grid-column: 2;
     grid-row: 1;
     text-align: right;
+    font-size: 3rem;
   }
   .welcome > p {
     grid-column: 2;
