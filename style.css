@@ -136,11 +136,18 @@ body{
 }
 .main>* {
     margin: 0.5em;
-}    
+}  
+.desktop-nav{
+    display: none;
+}
+.cake-des-img{
+    display: none;
+}
 .welcome {
     grid-area: w;
     font-size: 2em;
     margin-bottom: 0;
+    text-align: center;
 }    
 .main-text {
     grid-area: t;
@@ -219,4 +226,120 @@ body{
 .socialmedia-imgs{
     width: 3em;
     height: 1.4em;
+}
+@media screen and (min-width: 900px) {
+    .header {
+        display: flex;
+        position: fixed;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        background-color: lightslategray;
+        height: 8em;
+    }
+    .menu__btn{
+        display: none;
+    }
+    .header-title {
+        font-size: 1.2em;
+        margin-top: 2.7em;
+        margin-right: 2.4em;
+        text-align: end;
+        color: #0f1312;
+    }
+    .header-icon {
+        margin-left: 4em;
+        margin-right: 2em;
+        height: 10em;
+        width: 10em;
+    }
+    .header {
+        display: flex;
+        position: fixed;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        background-color: lightslategray;
+        height: 10em;
+    }
+    .main{
+        padding-top: 11.5em;
+        grid-template-areas:
+        "n n n n" 
+        "c c w w"
+        ". . t t"
+        ;
+    }
+    .desktop-nav{
+        display: flex ;
+        grid-area: n;
+        justify-content: flex-end;
+        background-color: #A9B4C2;
+        padding: 1.5em 0;
+        border-radius: 0.4em;
+    }
+    .des-nav-box{
+        display: flex;
+        flex-direction: row;
+        margin-right: 1em;
+    }
+    .des-nav-items{
+        padding-left: 1.2em;
+        padding-right: 1.2em;
+        color: white; 
+    }
+    .des-nav-li{
+        background-color: #1C2321;
+        margin-left: 2em;
+        border-radius: 0.4em;
+    }
+    .cake-images{
+        display: none;
+    }
+    .cake-des-img{
+        display: inline;
+        grid-area: c;
+        width: 95%;
+        height: 36em;
+        border-radius: 0.7em;
+    }
+    .welcome{
+        height: 6em;
+        text-align: end;
+        margin-top: 3em;
+
+    }
+    .main-text {
+        grid-area: w;
+        font-family: cursive;
+        font-size: 1.35em;
+        color: #1C2321;
+        margin-top: 10em;
+        text-align: end;
+        text-transform: capitalize;
+    }
+    #cake-des-img2{
+        grid-row: 3;
+        grid-column: 1;
+    }
+    #cake-des-img3 {
+        grid-row: 3;
+        grid-column: 2;
+    }
+    #cake-des-img4 {
+        grid-row: 3;
+        grid-column: 3;
+    }
+    #cake-des-img5 {
+        grid-row: 3;
+        grid-column: 4;
+    }
+
+
+
+
+
+
+
+    
 }
