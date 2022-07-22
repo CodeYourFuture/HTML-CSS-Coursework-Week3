@@ -325,7 +325,7 @@ body {
     /* Image gallery */
     .main__image {
         grid-area: image;
-        align-self: baseline;
+        align-self: center;
         height: auto;
         width: 40vw;
     }
