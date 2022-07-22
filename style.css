@@ -72,6 +72,8 @@ em{
 .navbar{
     display: none;
     grid-area: nav;
+    background-color: #f0a991;
+    cursor: pointer;
 }
 .nav-lists{
     display: flex;
