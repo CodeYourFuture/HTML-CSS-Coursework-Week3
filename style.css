@@ -315,7 +315,7 @@ body{
         font-size: 1.35em;
         color: #1C2321;
         margin-top: 10em;
-        text-align: end;
+        text-align: center;
         text-transform: capitalize;
     }
     #cake-des-img2{
@@ -333,6 +333,30 @@ body{
     #cake-des-img5 {
         grid-row: 3;
         grid-column: 4;
+    }
+    .footer-part1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2.5em;
+        margin-left: 2em;
+    }
+    .footer-contact{
+        display: flex;
+        flex-direction: row;
+        padding: 1em;    
+        color: #EEF1EF;
+    }
+    .footer-contact>*{
+        margin-right: 2em;
+        font-size: 1.7em;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: 600;
+    }
+    .socialmedia-imgs {
+        width: 3em;
+        height: 2.3em;
+        margin-right: 1.6em;
     }
 
 
