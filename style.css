@@ -1,1 +1,274 @@
-/*  Add your styling here */
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+/*header style*/
+.header{
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(229, 229, 229);
+    width: 100%;
+    height: 150px;    
+}
+.nav-image {
+    height: 150px;
+    width: 300px;
+    margin-left: 2rem;
+    padding: 0.5em 0px;
+    border-radius: 5em;
+}
+.nav-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.nav-text {
+    margin-right: 1em;
+    padding-top: 1.5em;
+    padding-left: 1.5em;
+    text-align: end;
+    font-family: Merienda, cursive;
+    font-size: 1em;
+    color: rgb(71, 45, 48);
+}
+
+/* hamburger menu */
+#menu-icon {
+    opacity: 0;
+}
+#menu-icon:checked + .menu-button > span {
+    transform: rotate(45deg);
+}
+#menu-icon:checked + .menu-button > span::before {
+    top: 0;
+    transform: rotate(0deg);
+}
+#menu-icon:checked + .menu-button > span::after {
+    top: 0;
+    transform: rotate(90deg);
+}
+#menu-icon:checked ~ .menu-items {
+    right: 0 !important;
+}
+.menu-button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 1;
+}
+.menu-button > span,
+.menu-button > span::before,
+.menu-button > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    transition-duration: 0.25s;
+}
+.menu-button > span::before {
+    content: '';
+    top: -8px;
+}
+.menu-button > span::after {
+    content: '';
+    top: 8px;
+}
+.menu-items {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: fit-content;
+    margin: 0;
+    padding: 80px 0;
+    list-style: none;
+    background-color: #eceff1;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+    transition-duration: 0.25s;
+    text-align: center;
+}
+.menu-list{
+    display: block;
+    padding: 12px 24px;
+    color:rgb(71, 45, 48);;
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+    transition-duration: 0.25s;
+}
+.menu-list:hover {
+    background-color: white;
+    color: rgb(217, 3, 104);
+}
+
+/* desktop navigation */
+.desktop {
+    display: none;
+}
+
+/* hero section style */
+.hero {
+    width: 90%;
+    margin: auto;
+    padding: 4rem 0px 2rem;
+}
+.welcome-article {
+    margin-bottom: 1.5em;
+}
+.welcome {
+    font-size: 1.8em;
+    font-family: "Emilys Candy", cursive;
+    color: rgb(100, 18, 32);
+    margin-bottom: 0.5em;
+    padding-top: 0.5em;
+}
+.welcome-text {
+    font-family: Merienda, cursive;
+    font-size: 1.2em;
+    color: rgb(217, 3, 104);
+    text-align: justify;
+}
+.main-image {
+    width: 100%;
+    height: 400px;
+    margin-bottom: 2em;
+    border:0.1em solid rgb(217, 3, 104);
+    border-radius: 1em;
+}
+
+/* grid-images*/
+.grid-images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 90%;
+    margin: auto;
+    gap: 2em;
+}
+.cake-image {
+    width: 100%;
+    height: 200px;
+    border: 0.1em solid rgb(217, 3, 104);
+    border-radius: 1em;
+}
+
+/*footer style*/
+.footer {
+    background-color: rgb(229, 229, 229);
+    margin-top: 2em;
+}
+.contact {
+    font-size: 0.8em;
+    font-family: Merienda, cursive;
+    padding: 2em 0px 0px 3em;
+}
+.contact-icon {
+    width: 2.5em;
+    padding: 0.5em;
+    border-width: 0.1em;
+    border-style: solid;
+    border-color: rgb(20, 33, 61);
+    border-image: initial;
+    margin: 0.5em 0.5em 0px;
+    border-radius: 1.5em;
+}
+.copyright {
+    text-align: center;
+    padding: 1em;
+}
+/*tablet style*/
+@media (min-width: 540px){
+    .main-image{
+        height: 450px;
+    }
+    .cake-image{
+        height: 250px;
+    }
+}
+
+/*Desktop style*/
+@media (min-width: 900px) {
+    .header {
+         margin-bottom: 10rem;
+    }
+    .nav-image {
+        height: 150px;
+        width: 200px;
+    }
+    .navbar-desktop {
+        display: block;
+        padding-top: 10rem;
+    }
+    .hamburger-menu {
+        display: none;
+    }
+    .nav-text {
+        font-size: 2em;
+    }
+    /*desktop navigation bar*/
+    .navbar-desktop {
+        display: block;
+        padding-top: 10rem;
+    }
+    .nav-list {
+        display: flex;
+        justify-content: right;
+        width: 90%;
+        background-color: rgb(229, 229, 229);
+        margin: auto;
+        padding: 1rem 0px;
+        gap: 0.5rem;
+    }
+    .nav-list li {
+        list-style-type: none;
+    } 
+    .nav-link {
+        background-color: rgb(190, 190, 190);
+        color: rgb(100, 18, 32);
+        font-size: 1em;
+        font-weight: bold;
+        padding: 0.25rem 1.5rem;
+        text-decoration: none;
+    }
+    .nav-link:last-child {
+        margin-right: 1rem;
+    }
+    .nav-link:hover{
+        color: rgb(217, 3, 104); ;
+    }
+    .hero {
+        display: flex;
+        flex-direction: row-reverse;
+        margin-top: 2em;
+        gap: 3em;
+        padding: 2rem 0px;
+    }
+    .welcome-article {
+        width: 100%;
+    }
+    .welcome {
+        text-align: right;
+        padding-top: 0px;
+    }
+    .grid-images {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .contact {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 4em;
+    }
+    .location {
+        text-align: center;
+    }
+}
