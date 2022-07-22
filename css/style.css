@@ -298,18 +298,6 @@ body {
     }
 
     /* Main */
-    .main__title {
-        font-size: 4em;
-    }
-
-    .main__text {
-        font-size: 2em;
-    }
-}
-
-@media screen and (min-width: 1500px) {
-
-    /* Main */
     .main {
         display: grid;
         grid-template-areas: "image content content"
@@ -326,10 +314,12 @@ body {
 
     .main__title {
         text-align: end;
+        font-size: 4em;
     }
 
     .main__text {
         text-align-last: right;
+        font-size: 2em;
     }
 
     /* Image gallery */
