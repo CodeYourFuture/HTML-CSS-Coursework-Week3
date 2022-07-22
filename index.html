@@ -2,15 +2,93 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Responsive Cake webpage</title>
-    <!-- Add a link to your css file here -->
+    <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-    <!-- Add your markup here -->
+    <header class="header">
+        <img class="logo" src="/img/00014638_6fba7hrvepxju.jpg" alt="logo" />
+        <div class="nav_wrapper">
+            <nav class="hamburger-menu">
+                <input id="menu__toggle" type="checkbox" />
+                <label class="menu__btn" for="menu__toggle">
+                    <span></span>
+                </label>
+
+                <ul class="menu__box">
+                    <li><a class="menu__item" href="#">Home</a></li>
+                    <li><a class="menu__item" href="#">Cakes</a></li>
+                    <li><a class="menu__item" href="#">Ordering</a></li>
+                    <li><a class="menu__item" href="#">Lessons</a></li>
+                    <li><a class="menu__item" href="#">About</a></li>
+                </ul>
+            </nav>
+            <p class="slogan">The best cakes in town delivered to your door</p>
+        </div>
+    </header>
+
+    <nav class="desktop">
+        <ul class="nav_list">
+            <li><a class="nav_link" href="#">Home</a></li>
+            <li><a class="nav_link" href="#">Cakes</a></li>
+            <li><a class="nav_link" href="#">Ordering</a></li>
+            <li><a class="nav_link" href="#">Lessons</a></li>
+            <li><a class="nav_link" href="#">About</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero">
+        <article class="article">
+            <h1 class="welcome">Welcome</h1>
+            <p class="text_content">
+                The Proof
+                Independent Hackney-based bakery The Proof delivers fresh puddings and cakes to Londoners’ doorsteps. Founded by former
+                music journalist and self-taught baker, Francesca Strange, the young bakery has recently added profiteroles) to its menu
+                of delicious desserts. The assemble-at-home ‘Proofiteroles’ arrive with an array of toppings and require just enough
+                assembly to convince your dinner guests that you baked them from scratch. Elsewhere, The Proof Box makes an ideal gift
+                or dinner party accessory. The eco-friendly package contains a selection of four pairs of miniature desserts (eight
+                pieces in total), which rotate seasonally, ensuring there is something for everyone.
+                </p>
+                <br>
+                <br>
+            <p>April’s Baker
+            April’s Baker is a cake company set up by Roxy Mankoo, who trained at Le Cordon Bleu, and has worked at notable bakeries
+            in London and New York – including Lily Vanilli and Ron Ben-Israel Cakes. Launched in November 2019, April’s Baker has
+            since dedicated itself to creating cakes that showcase a glimmer of fantasy and capture vintage elegance. Each bake is
+            inspired by the dreamy landscapes of Wes Anderson, pastel palettes used by Miu Miu, and a nod to the artistic
+            decorations of artist Scott Hove.
+            </p>
+            <br>
+            <br>
+            <p>Clementine's Cakes
+            Celebrate a loved one, a special occasion or just treat yourself by ordering one of Clementine’s Cakes. Born out of
+            lockdown and the desire to show friends and family what they really mean to us, Clementine’s Cakes combines art and
+            baking to create memorable celebration cakes. Each bake is entirely different in its design and is baked in Clementine’s
+            kitchen. We love the look of one of her recent bakes, which was covered in dried fruit and edible flowers.</p>
+        </article>
+        <img class="hero_img" src="/img/21.jpg" alt="" />
+    </section>
+
+    <section class="thumbnails">
+        <img src="/img/1.jpg" alt="" class="thumbnail" />
+        <img src="/img/14.jpg" alt="" class="thumbnail" />
+        <img src="/img/17.jpg" alt="" class="thumbnail" />
+        <img src="/img/4.jpg" alt="" class="thumbnail" />
+    </section>
+
+    <footer>
+        <div class="footer_links">
+            <div class="footer_content">BEST SELLER</div>
+            <div class="footer_content">JOIN US</div>
+            <div class="footer_content">MEET US</div>
+        </div>
+        <div class="copyright">©2022 Ozzy`s House</div>
+    </footer>
+
 </body>
 
 </html>

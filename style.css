@@ -1,1 +1,279 @@
-/*  Add your styling here */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* header */
+.header {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: pink;
+    height: 100px;
+}
+
+.nav_wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.logo {
+    height: 80px;
+    width: 80px;
+    margin-left: 10px;
+    margin-right: 2rem;
+}
+
+.slogan {
+    margin-right: 20px;
+    text-align: end;
+}
+
+/* hamburger menu */
+#menu__toggle {
+    opacity: 0;
+}
+
+#menu__toggle:checked+.menu__btn>span {
+    transform: rotate(45deg);
+}
+
+#menu__toggle:checked+.menu__btn>span::before {
+    top: 0;
+    transform: rotate(0deg);
+}
+
+#menu__toggle:checked+.menu__btn>span::after {
+    top: 0;
+    transform: rotate(90deg);
+}
+
+#menu__toggle:checked~.menu__box {
+    right: 0 !important;
+}
+
+.menu__btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.menu__btn>span,
+.menu__btn>span::before,
+.menu__btn>span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #616161;
+    transition-duration: 0.25s;
+}
+
+.menu__btn>span::before {
+    content: '';
+    top: -8px;
+}
+
+.menu__btn>span::after {
+    content: '';
+    top: 8px;
+}
+
+.menu__box {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: fit-content;
+    margin: 0;
+    padding: 80px 0;
+    list-style: none;
+    background-color: #eceff1;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+    transition-duration: 0.25s;
+    text-align: center;
+}
+
+.menu__item {
+    display: block;
+    padding: 12px 24px;
+    color: #333;
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition-duration: 0.25s;
+}
+
+.menu__item:hover {
+    background-color: lightslategray;
+}
+
+/* desktop navigation */
+.desktop {
+    display: none;
+}
+
+/* hero section */
+.hero {
+    width: 90%;
+    margin: auto;
+    padding: 7rem 0 2rem 0;
+}
+
+.article {
+    margin-bottom: 1.5rem;
+}
+
+.welcome {
+    font-size: 2rem;
+    text-align: right;
+    margin-bottom: 0.5rem;
+}
+
+.text_content {
+    text-align: justify;
+    font-size: 1.1rem;
+}
+
+.hero_img {
+    width: 100%;
+    height: 220px;
+}
+
+/* thumbnails */
+.thumbnails {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 90%;
+    margin: auto;
+    gap: 1rem;
+}
+
+.thumbnail {
+    width: 100%;
+    height: 130px;
+}
+
+/* footer */
+footer {
+    background-color: lightslategray;
+    margin-top: 1.5rem;
+    padding: 1rem 0;
+}
+
+.footer_links {
+    width: 90%;
+    margin: 1rem auto;
+}
+
+.footer_content {
+    width: 120px;
+    height: 16px;
+    background-color: #777777;
+    margin-top: 1rem;
+}
+
+.copyright {
+    width: 160px;
+    height: 16px;
+    background-color: rgb(160, 152, 152);
+    margin: 2rem auto;
+}
+
+/* tablets */
+@media screen and (min-width: 540px) {
+    .hero_img {
+        height: fit-content;
+    }
+
+    .thumbnail {
+        height: 18rem;
+    }
+}
+
+/* desktop */
+@media screen and (min-width: 900px) {
+    .desktop {
+        display: block;
+        padding-top: 8rem;
+    }
+
+    .hamburger-menu {
+        display: none;
+    }
+
+    .header {
+        margin-bottom: 10rem;
+    }
+
+    .nav_list {
+        display: flex;
+        justify-content: right;
+        width: 90%;
+        margin: auto;
+        background-color: pink;
+        padding: 1rem 0;
+        gap: 0.5rem;
+    }
+
+    .nav_list li {
+        list-style-type: none;
+    }
+
+    .nav_link {
+        padding: 0.25rem 1.5rem;
+        background-color: #616161;
+        color: white;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-size: small;
+    }
+
+    .nav_link:last-child {
+        margin-right: 1rem;
+    }
+
+    .hero {
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 1rem;
+        padding: 0;
+        margin: 1.5rem auto;
+    }
+
+    .article {
+        width: 50%;
+    }
+
+    .hero_img {
+        width: 50%;
+        height: auto;
+    }
+
+    .thumbnails {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .thumbnail {
+        height: 23rem;
+    }
+
+    .footer_links {
+        display: flex;
+        justify-content: center;
+        gap: 3rem;
+    }
+}
