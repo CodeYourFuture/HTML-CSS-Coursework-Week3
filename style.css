@@ -1,17 +1,11 @@
 /*  Add your styling here */
-.homepage-main {
-    border: 1px solid black;
+
     
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 170px 290px 150px 80px;
+   
     /*  grid-template-areas must follow the exact number of columns and rows defined above (4 columns and 4 rows)  */
-    grid-template-areas:
-      "hero     hero    hero     hero"           /* one for each column */
-      "feature  feature feature  feature"
-      "product  product product  product"
-      "aside    aside   .        .";           /* the dot is used to skip a column */
-  }
+
+             /* the dot is used to skip a column */
+  
   
   .homepage-hero {
     background-color: coral;
@@ -21,10 +15,26 @@
       padding: 0;
       margin: 0;
   }
-  .logo img {
-    max-height: 150px;
-    width: 120px;
+
+  .header {
+     display: flex;
+     position: fixed;
+	   width: 100%;
+	   justify-content: space-between;
+	   align-items: center;
+	   background-color: lightpink;
+	   height: 100px;
+
   }
+  .logo  {
+    max-height: 120px;
+    width: 100px;
+    margin-left: 10px;
+	  margin-right: 2rem;
+  }
+
+  
+  
    
  li {
      list-style: none;
@@ -35,67 +45,135 @@
      text-decoration: none;
  }
   
- .navbar {
+ .hamburger {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 24px;
  }
- .nav-menu {
-     display: flex;
-     justify-content: space-between;
-     align-items: center;
-     gap: 30px;
- }
 
- .nav-links:hover {
+ .navbar {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+ 
+.nav-links:hover {
      color: blueviolet;
  }
 
- .bar {
-     display: block;
-     width: 25px;
-     height: 3px;
-     margin: 5px auto;
-     -webkit-transition: all 0.3s ease-in-out;
-     transition: all 0.3s ease-in-out;
-     background-color: white;
- }
- 
- .nav-menu {
-  position: fixed;
-  left: -100%;
-  top: 40px;
-  gap: 0;
-  flex-direction: column;
- }
-
- .homepage-feature {
-  background-color: darkBlue;
-  grid-area: feature;
-}
-
- p{
+p{
    color: red;
-   display: flex;
-   justify-content: end;
+   margin-right: 20px;
+   text-align: end;
    font-size: 20px;
    
  }
+ #menu__toggle {
+	opacity: 0;
+}
+#menu__toggle:checked + .menu__btn > span {
+	transform: rotate(45deg);
+}
+#menu__toggle:checked + .menu__btn > span::before {
+	top: 0;
+	transform: rotate(0deg);
+}
+#menu__toggle:checked + .menu__btn > span::after {
+	top: 0;
+	transform: rotate(90deg);
+}
+#menu__toggle:checked ~ .menu__box {
+	right: 0 !important;
+}
+.menu__btn {
+	position: fixed;
+	top: 20px;
+	right: 20px;
+	width: 26px;
+	height: 26px;
+	cursor: pointer;
+	z-index: 1;
+}
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+	display: block;
+  position: absolute;
+	width: 100%;
+	height: 2px;
+	background-color: #616161;
+	transition-duration: 0.25s;
+}
+.menu__btn > span::before {
+	content: '';
+	top: -8px;
+}
+.menu__btn > span::after {
+	content: '';
+	top: 8px;
+}
+
+.nav-menu {
+  display: block;
+  position: fixed;
+  top: 40px;
+  right: -100%;
+	width: 100%;
+	height: fit-content;
+	margin: 0;
+	padding: 80px 0;
+	list-style: none;
+	background-color: #eceff1;
+	box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+	transition-duration: 0.25s;
+	text-align: center;
+ }
+ .nav-links {
+  display: block;
+	padding: 12px 24px;
+	color: #333;
+	font-size: 20px;
+	font-weight: 500;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition-duration: 0.25s;
+ }
+ .navigation {
+    display: none;
+ }
+
+ .hero {
+	width: 90%;
+	margin: auto;
+	padding: 7rem 0 2rem 0;
+}
+.paragraph {
+	margin-bottom: 1.5rem;
+}
+
+ .image {
+  max-height: 150px;
+  width: 200px;
+  display: flex;
+  justify-items: center;
+  margin-left: 25%;
+  margin-top: 5%;
+}
  
  .homepage-products {
     background-color: darkSeaGreen;
     grid-area: product;
   }
 
-  .image img {
-    max-height: 150px;
-    width: 200px;
-    display: flex;
-    justify-items: center;
-    margin-left: 25%;
-    margin-top: 5%;
+  .products img {
+     max-width: 150px;
+     height: 100px;
+     display: grid;
+     grid-template-columns: repeat(2 1fr);
   }
+
+  
   
   .homepage-aside {
     background-color: darkTurquoise;
