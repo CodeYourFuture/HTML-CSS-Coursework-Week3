@@ -48,6 +48,7 @@ nav {
 .nav-link:hover {
   background-color: white;
   font-size: 1.2rem;
+  color: #644983;
 }
 /* Main */
 main {
@@ -147,6 +148,7 @@ footer {
     padding: 0.5rem 1rem;
     text-decoration: none;
     font-weight: bold;
+    color: #644983;
   }
   .expand-nav {
     display: none;
