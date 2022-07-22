@@ -1,1 +1,98 @@
 /*  Add your styling here */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  padding: 0;
+}
+body {
+  background-color: #fadce9;
+  padding: 0;
+  margin: 0;
+}
+.main-container {
+  display: grid;
+  grid-template-areas:
+    "header header header header"
+    "r2 r2 r2 r2"
+    "r3 r3 r3 r3"
+    "r4 r4 r4 r4"
+    "r5 r5 r5 r5";
+  gap: 10px;
+  background-color: #f99ac3;
+}
+
+.main-container > div {
+  background-color: #fadce9;
+}
+
+.header {
+  grid-area: header;
+  height: 20vh;
+  display: flex;
+  justify-content: left;
+}
+
+.header img {
+  height: 100%;
+  padding: 0em;
+  text-align: left;
+}
+
+.header h3 {
+  text-align: left;
+  color: black;
+  width: 55%;
+  align-self: flex-end;
+  font-size: 0.8rem;
+  font-weight: 200;
+  text-align: right;
+  margin-left: 5em;
+}
+.welcome {
+  grid-area: r2;
+  margin: 0 1em;
+}
+
+.welcome h1 {
+  text-align: left;
+
+  padding-bottom: 0em;
+}
+.welcome p {
+  text-align: justify;
+  margin-bottom: 1.5em;
+  font-size: 0.7em;
+}
+
+.row3 {
+  grid-area: r3;
+  /*border: 5px solid brown;*/
+  margin: 0 1em;
+}
+
+.row3 img {
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+  /*padding-top: 1em;*/
+}
+
+.row4 {
+  grid-area: r4;
+  border: 5px solid brown;
+  margin: 0 1em;
+  height: 30vh;
+  display: block;
+  justify-content: center;
+  align-content: center;
+  align-self: center;
+}
+
+.row4 img {
+  width: 30%;
+  height: 10vh;
+  padding: 1em 1em;
+  align-self: center;
+}
