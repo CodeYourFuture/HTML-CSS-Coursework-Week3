@@ -1,5 +1,7 @@
-/*  Add your styling here */
-
+/*  styling for mobile version starts here */
+:root {
+    --white: #fff;
+}
 body{
     margin: 0;
 }
@@ -8,13 +10,14 @@ body{
     background-color: #f5d9d5;
     display: grid;
     grid-template-columns: repeat(4, auto);
-    grid-template-rows: auto auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto auto;
     grid-template-areas:
-            "header header header header "
+            "header  header  header  header "
+            "nav     nav     nav     nav"
             "feature  feature feature  feature"
             "hero     hero    hero     hero"
             "product  product product  product"
-            "footer footer footer footer";
+            "footer   footer  footer   footer";
 }
 .header {
     padding: 1em;
@@ -24,59 +27,103 @@ body{
     background-color: #f4f4f4;
     grid-area: header;
 }
+.logo-img {
+    width: 100px;
+}
 .hamburger-menu{
     cursor: pointer;
    
 }
-.line1{
+.menu-line1,
+.menu-line2,
+.menu-line3 {
     position: absolute;
     left: 88%;
     right: 5.6%;
+    background: #000000;
+    border-radius: 1px;
+}
+.menu-line1{
     top: 1%;
     bottom: 98.85%;
-    background: #000000;
-    border-radius: 1px;
 }
-.line2{
-    position: absolute;
-    left: 88%;
-    right: 5.6%;
+.menu-line2{ 
     top: 1.47%;
-    bottom: 98.37%;
-    background: #000000;
-    border-radius: 1px;
+    bottom: 98.37%;   
 }
   
-.line3{
-    position: absolute;
-    left: 88%;
-    right: 5.6%;
+.menu-line3{
     top: 1.95%;
     bottom: 97.89%;
-    background: #000000;
-    border-radius: 1px;
 }
+.header p {
+    text-align: right;
+    align-self: flex-end;
+    margin-left: 1em;
+    
+    font-size: 1em;
+    font-weight: bold;
+    color: #494949;
+}
+em{
+    padding: .8em;
+}
+.navbar{
+    display: none;
+    grid-area: nav;
+}
+.nav-lists{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    list-style: none;
+    padding-inline-start: 0;
+    width: 100%;
+}
+.nav-link{
+margin: .8em;
+padding: .5em 1.2em;
+background-color: #494949;
+color:var(--white);
+}
+
+/* section feature */
 .feature {
     background-color: rgb(84, 41, 68);
-    color: #ffffff;
+    color: var(--white);
     grid-area: feature;
     padding: 1em;
-    
+}
+.feature h1 {
+    font-size: 2.6em;
+    margin-bottom: .5em;
+}
+.feature p {
+    font-size: 1.2em;
+    line-height: 1.2em;
 }
 
+/* section hero */
 .hero {
+    display: flex;
+    justify-content: center;
     margin: 0;
-    background-color: coral;
+    background-color: #f3c1b0;
     grid-area: hero;
 }
+.hero img {
+    width: 80%;
+    margin: 2em;
+}
 
+/* section products */
 .products {
     display: flex;
     flex-flow: wrap;
-    justify-content: space-around;
+    justify-content: center;
     align-items: space-around;
     padding: 1em;
-    background-color: #fbc3ca;
+    background-color: #f3c1b0;
     grid-area: product;
 }
 
@@ -86,52 +133,55 @@ body{
 }
 
 .footer {
-    background-color: rgb(40, 54, 54);
+    background-color: #283636;
     color: rgb(28, 244, 190);
     grid-area: footer;
     
 }
-.logo-img{
-    width: 100px;
-}
-.header p {
-    text-align: right;
-    align-self: flex-end;
-    margin-left: 1em;
-    font-size: 1em;
-    font-weight: bold;
-    color: hwb(0 40% 100%);
-}
-.feature h1{
-    font-size: 2.6em;
-    margin-bottom: .5em;
-}
-.feature p{
-    font-size: 1.2em;
-    line-height: 1.2em;
-}
-.hero img{
-    width: 100%;
-    margin: 0;
-}
+
+
+
 .item{
- width: 120px;
- height: 120px;
- margin: .5em;
- background-color: #ffffff;
+ width: 160px;
+ height: 160px;
+ margin: .8em;
+ background-color: var(--white);
  
 }
-.cup-cake, .donut {
-   margin-top: .7em;
-}
+
 .footer p, h2, h3{
     text-align: center;
+}
+.footer h2{
+    font-size: 1.8em;
+    margin-top: 1.8em;
+}
+.termsConditions{
+    color:var(--white)
+}
+.sign-up{
+    padding: 0 1em;
+}
+.button{
+    margin: 2em auto;
+    padding-top: .7em;
+    padding-bottom: .7em;
+    width: 100%;
+    font-size: 1.2em;
+    color: #494949;
+    font-weight: bold;
+}
+.button span{
+    position: absolute;
+    right: 30px;
+    color: #283636;
 }
 .footer ul{
     display: flex;
     flex-direction: row;
     justify-content: center;
     list-style-type: none;
+    padding-inline-start: 0;
 }
 .fa {
     background: #f8f9f9;
@@ -164,4 +214,97 @@ body{
 .fa-instagram {
 
     color: rgb(23, 27, 152);
+}
+
+/*  styling for mobile version ends here */
+/* ==================================================== */
+/*  styling for tablet  starts here */
+@media only screen and (min-width:540px){
+    .feature {
+        background-color: #283636;
+        padding: 1.6em;
+    }
+    .hamburger-menu{
+        display: none;
+    }
+        .navbar {
+            display: flex;
+        }
+    
+        .nav-lists {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            list-style: none;
+        }
+    
+        .navlink {
+            margin: .8em;
+            padding: .2em .8em;
+            background-color: #494949;
+            color:var(--white);
+        }
+        .button{
+            width: 80%;
+        }
+
+}
+
+/*  styling for tablet ends here */
+
+/*  styling for desktop starts here */
+
+@media only screen and (min-width:900px){
+    .homepage {
+        
+        grid-template-columns: repeat(4, auto);
+        grid-template-rows: auto auto auto auto auto auto;
+        grid-template-areas:
+                "header  header  header  header "
+                "nav     nav     nav     nav"
+                "hero  hero feature  feature"
+                "hero     hero    feature     feature"
+                "product  product product  product"
+                "footer   footer  footer   footer";
+        }
+        .logo-img {
+            width: 150px;
+            margin-left: 2em;
+                }
+        .header p {
+            font-size: 1.8em;
+                }
+
+        .hero img {
+        width: 100%;
+        margin: 3em 1em 3em 0;
+                }
+
+        .feature {
+            background-color: #f3c1b0;
+            padding: 2.2em;
+        }
+    
+        .feature h1 {
+            font-size: 2.9em;
+            margin-bottom: 1em;
+            text-align: center;
+        }
+    
+        .feature p {
+            font-size: 1.8em;
+            line-height: 1.3em;
+            text-align: center;
+        }
+        .products {
+            
+            justify-content: space-around;
+            align-items: space-around;
+            padding: 1em;
+        }
+        .item {
+            width: 250px;
+            height: 250px;
+            margin-top: 1.8em;
+        }
 }
