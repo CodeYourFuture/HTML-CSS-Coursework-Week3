@@ -145,7 +145,7 @@ body {
 .main__text {
     line-height: 1.5em;
     text-align: justify;
-    padding-bottom: 1em;
+    padding: 0 0.5em 1em;
 }
 
 /* Image gallery */
@@ -314,7 +314,7 @@ body {
     }
 
     .main__text {
-        text-align:justify;
+        text-align: justify;
         text-align-last: right;
     }
 
