@@ -314,12 +314,12 @@ body {
 
     .main__title {
         text-align: end;
-        font-size: 4em;
+        font-size: 3em;
     }
 
     .main__text {
         text-align-last: right;
-        font-size: 2em;
+        font-size: 1.5em;
     }
 
     /* Image gallery */
