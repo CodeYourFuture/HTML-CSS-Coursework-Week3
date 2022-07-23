@@ -1,1 +1,162 @@
 /*  Add your styling here */
+/* body{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+} */
+.desktop{
+    display:none;
+}
+
+
+.logo_image{
+    width: 60px;
+    height: 60px;
+    margin: 1em;
+    
+
+}
+  
+  
+header{
+    
+    background-color:indianred;
+    display:flex;
+    justify-content: space-between;
+    height: auto;
+}
+
+.line1,
+.line2,
+.line3 {
+    position: absolute;
+    left: 88%;
+    right: 5.6%;
+    background: #000000;
+    border-radius: 1px;
+}
+.line1{
+    top: 1%;
+    bottom: 98.85%;
+}
+.line2{
+    top: 1.47%;
+    bottom: 98.37%;
+}
+.line3{
+    top: 1.95%;
+    bottom: 97.89%;
+}
+h1{
+    margin-bottom: 0.5rem;
+}
+.description{
+    background-color:beige;
+    margin-bottom: 2rem;
+}
+.hero-paragraph{
+    text-align: justify;
+}
+.hero_img{
+width:100%;
+height:220px;
+}
+  
+
+
+.hero{
+    
+    width:90%;
+    margin:auto;
+    padding:7rem 0 2rem o;
+    
+}
+
+
+
+
+.cakes{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    width:90%;
+    gap:1rem;
+    margin: 1rem auto;
+    
+    
+    
+}
+.cake{
+    width:100%;
+    height:150px;
+}
+
+    
+
+footer{
+    margin-top:1.5rem;
+    padding:1rem 0;
+}
+#checkbox{
+    margin-top:1rem;
+}
+#email{
+    margin-top:1rem;
+}
+
+footer p{
+text-align: center;
+font-size:1rem;
+}
+.fa {
+    background: #F8F9F9;
+    padding: .4em;
+    font-size: .75em;
+    width: 2.2em;
+    text-align: center;
+    margin: 10px;
+    border-radius: 50%;
+    border: 1px solid rgb(206, 205, 205);
+    cursor: pointer;
+}
+.fa:hover {
+    opacity: 0.5;
+}
+.fa-facebook {
+    color: #1A439B;
+}
+.fa-twitter {
+    color: #55ACEE;
+}
+.fa-instagram {
+    color: rgb(23, 27, 152);
+}
+.socials{
+    display: flex;
+    justify-content: center;
+    
+}
+@media (min-width: 900px) {
+    .cakes{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+
+    }
+    .hero{
+        display:flex;
+        flex-direction: row-reverse;
+        width:100%;
+        gap:10px;
+       
+
+        
+    }
+    .articel{
+        width:50%;
+        margin:auto;
+        height: 220px;
+
+    }
+
+}
+   
+  
