@@ -74,19 +74,7 @@
     gap: 2rem;
   }
 
-  /* align templates */
-
-  .navigation,
-  .picture,
-  .dessert1 {
-    margin-left: 2rem;
-  }
-
-  .navigation,
-  .main,
-  .dessert4 {
-    margin-right: 2rem;
-  }
+  /* img boxes align */
 
   .picture,
   .dessert2 {
