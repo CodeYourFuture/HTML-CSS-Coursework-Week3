@@ -23,7 +23,9 @@ a:hover {
 footer {
     background-color: var(--site-bg-color);
 }
-
+header{
+    grid-area:header;
+}
 ul {
     list-style-type: none;
     text-align: left;
@@ -41,7 +43,7 @@ ul {
     right: 0;
     top: 0;
     padding: 10px;
-    color: var(--site-txt-color);
+    color: var(--s`ite-txt-color);
 }
 
 #logo {
@@ -60,6 +62,12 @@ ul {
 }
 
 .container {
+
+    display: grid;
+    grid-template-rows: 'header'
+                        'content'
+                        'gallary'
+                        'footer';
     margin: 20px;
     text-align: justify;
 }
@@ -83,6 +91,7 @@ h1 {
 }
 
 #gallary {
+    grid-area: gallary;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -95,6 +104,7 @@ h1 {
 }
 
 footer {
+    grid-area:footer;
     margin-top: 20px;
     text-align: center;
     padding: 5px;
@@ -109,6 +119,10 @@ li {
     margin-bottom: 10px;
 }
 
+@media screen and (min-width: 540px) {
+    
+
+}
 /* ----------- screen for computer devices ------- */
 @media screen and (min-width: 900px) {
 
@@ -127,7 +141,10 @@ li {
         justify-content: right;
         align-items: center;
     }
-
+    section
+    {
+        grid-area: content;
+    }
     #section-intro {
         width: 100%;
     }
