@@ -1,1 +1,302 @@
 /*  Add your styling here */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@400;600&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+
+              /* ----header---- */
+.header {
+	display: flex;
+	position: fixed;
+	width: 100%;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #fddcdd;
+	height: 100px;
+}
+
+.navigator {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.logo {
+	height: 80px;
+	width: 80px;
+	margin-left: 10px;
+	margin-right: 2rem;
+}
+
+.text-bar {
+	margin-right: 20px;
+	text-align: end;
+	color: red;
+	font-size: 4vw;
+	font-style: italic;	
+}
+
+
+            /* ----hamburger menu---- */
+#menu-button {
+	opacity: 0;
+}
+
+#menu-button:checked + .btn > span {
+	transform: rotate(45deg);
+}
+
+#menu-button:checked + .btn > span::before {
+	top: 0;
+	transform: rotate(0deg);
+}
+#menu-button:checked + .btn > span::after {
+	top: 0;
+	transform: rotate(90deg);
+}
+
+#menu-button:checked ~ .box {
+	right: 0 !important;
+}
+
+.btn {
+	position: fixed;
+	top: 20px;
+	right: 20px;
+	width: 26px;
+	height: 26px;
+	cursor: pointer;
+	z-index: 1;
+}
+
+.btn > span,
+.btn > span::before,
+.btn > span::after {
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	background-color: rgb(185, 4, 4);
+	transition-duration: 0.25s;
+}
+
+.btn > span::before {
+	content: '';
+	top: -8px;
+}
+.btn > span::after {
+	content: '';
+	top: 8px;
+}
+
+.box {
+	display: block;
+	position: fixed;
+	top: 0;
+	right: -100%;
+	width: 100%;
+	height: fit-content;
+	margin: 0;
+	padding: 80px 0;
+	list-style: none;
+	background-color: #fddcdd;
+	box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+	transition-duration: 0.25s;
+	text-align: center;
+}
+
+.box-item {
+	display: block;
+	padding: 12px 24px;
+	color: rgb(232, 9, 9);
+	font-size: 20px;
+	font-weight: 200;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition-duration: 0.25s;
+}
+
+.box-item:hover {
+	background-color: #fddcdd;
+}
+
+
+         /* ---big-screen navigation--- */
+.big-screen {
+	display: none;
+}
+
+
+        /* ---center section--- */
+.center {
+	width: 90%;
+	margin: auto;
+	padding: 7rem 0 2rem 0;
+}
+
+.article {
+	margin-bottom: 1.5rem;
+}
+
+.welcome {
+	color: red;
+	font-size: 2rem;
+	text-align: right;
+	margin-bottom: 0.5rem;
+}
+
+.content {
+	color: red;
+	text-align: justify;
+	font-size: 1.1rem;
+}
+
+.center-img {
+	width: 100%;
+	height: 220px;
+}
+
+
+            /* ---pictures--- */
+.pictures {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	width: 90%;
+	margin: auto;
+	gap: 1rem;
+}
+
+.pic {
+	width: 100%;
+	height: 130px;
+}
+
+
+          /* ---footer--- */
+footer {
+	background-color: #fddcdd;
+	margin-top: 1.5rem;
+	padding: 1rem 0;
+	text-align: center;
+}
+
+.footer-links {
+	width: 90%;
+	margin: 1rem auto;
+	
+}
+
+
+.footer_content {
+	width: 120px;
+	height: 16px;
+	margin-top: 1rem auto;
+	justify-content: center;
+}
+
+.copyright {
+	width: 160px;
+	height: 16px;
+	margin: 1rem auto;
+	font-style: italic;
+	
+}
+
+
+           /* ---tablets--- */
+@media screen and (min-width: 540px) {
+	.center-img {
+		height: fit-content;
+	}
+	.pic {
+		height: 18rem;
+	}
+}
+
+
+         /* ---big-screen--- */
+@media screen and (min-width: 900px) {
+	.big-screen {
+		display: block;
+		padding-top: 8rem;
+	}
+
+	.text-bar {
+		margin-right: 95px;
+		font-size: 1.5rem;
+	
+	}
+
+	.hamburger {
+		display: none;
+	}
+
+	.header {
+		margin-bottom: 10rem;
+	}
+
+	.nav-list {
+		display: flex;
+		justify-content: right;
+		width: 90%;
+		margin: auto;
+		background-color: #fddcdd;
+		padding: 1rem 0;
+		gap: 0.5rem;
+	}
+
+	.nav-list li {
+		list-style-type: none;
+	}
+
+	.navigation-link {
+		padding: 0.25rem 1.5rem;
+		background-color: #e4b7c1;
+		color: rgb(231, 2, 2);
+		text-transform: uppercase;
+		text-decoration: none;
+		font-size: middle;
+	}
+
+	.navigation-link:last-child {
+		margin-right: 1rem;
+	}
+
+	.center {
+		display: flex;
+		flex-direction: row-reverse;
+		gap: 1rem;
+		padding: 0;
+		margin: 1.5rem auto;
+	}
+
+	.article {
+		width: 50%;
+	}
+
+	.center-img {
+		width: 50%;
+		height: 50%;
+	}
+
+	.pictures {
+		grid-template-columns: repeat(4, 1fr);
+	}
+
+	.pic {
+		height: 17rem;
+	}
+
+	.footer-links {
+		display: flex;
+		justify-content: center;
+		gap: 1.5rem;
+	}
+}
