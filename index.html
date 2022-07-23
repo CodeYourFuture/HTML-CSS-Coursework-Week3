@@ -2,15 +2,158 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8" />
+    <meta 
+    name="viewport" 
+    content="width=device-width, initial-scale=1.0" 
+    />
+    <meta 
+    http-equiv="X-UA-Compatible" 
+    content="ie=edge" 
+    />
     <title>Responsive Cake webpage</title>
-    <!-- Add a link to your css file here -->
+    <link 
+    rel="stylesheet" 
+    href="style.css" 
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merienda:wght@700&family=Sacramento&family=Ubuntu:ital,wght@1,300&display=swap"
+        rel="stylesheet">
+
 </head>
 
 <body>
-    <!-- Add your markup here -->
+    <header class="header">
+        <img class="logo"
+         src="/cake-imgs/logo.png" 
+         alt="logo"
+          />
+        <div class="nav_wrapper">
+            <nav class="hamburger-menu">
+                <input id="menu__toggle" 
+                type="checkbox" 
+                />
+                <label class="menu__btn" 
+                for="menu__toggle">
+                    <span></span>
+                </label>
+
+                <ul class="menu__box">
+                    <li>
+                        <a class="menu__item" 
+                        href="#">Home
+                    </a>
+                </li>
+                    <li>
+                        <a class="menu__item" 
+                        href="#">Cakes
+                    </a>
+                </li>
+                    <li>
+                        <a class="menu__item" 
+                        href="#">Ordering
+                    </a>
+                </li>
+                    <li>
+                        <a class="menu__item" 
+                        href="#">Lessons
+                    </a>
+                </li>
+                    <li>
+                        <a class="menu__item" 
+                        href="#">About
+                    </a>
+                </li>
+                </ul>
+            </nav>
+            <p class="slogan">The best cakes in town delivered to your door</p>
+        </div>
+    </header>
+
+    <nav class="desktop">
+        <ul class="nav_list">
+            <li>
+                <a class="nav_link" 
+                href="#">Home
+            </a>
+        </li>
+            <li>
+                <a class="nav_link" 
+                href="#">Cakes
+            </a>
+        </li>
+            <li>
+                <a class="nav_link"
+                 href="#">Ordering
+                </a>
+            </li>
+            <li>
+                <a class="nav_link" 
+                href="#">Lessons
+            </a>
+        </li>
+            <li>
+                <a class="nav_link" 
+                href="#">About
+            </a>
+        </li>
+        </ul>
+    </nav>
+
+    <section class="hero">
+        <article class="article">
+            <h1 class="welcome">Welcome</h1>
+            <p class="text_content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
+                placeat, suscipit inventore autem ea magni aliquam quia earum, odit,
+                doloribus amet dolorem neque. Voluptate, voluptatum aliquid sint
+                voluptatem quos ut!
+                <br />
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur
+                nemo rem culpa sunt, reprehenderit voluptates saepe laborum molestiae?
+                Voluptate, similique architecto repudiandae nostrum expedita veritatis
+                obcaecati quas totam alias praesentium.
+            </p>
+        </article>
+        <img class="hero_img" 
+        src="/cake-imgs/cocao.jpg"
+         alt="black-white" 
+         />
+    </section>
+
+    <section class="thumbnails">
+        <img 
+        src="/cake-imgs/eggless.jpg" 
+        alt="eggless" 
+        class="thumbnail"
+         />
+        <img 
+        src="/cake-imgs/vegan.jpg" 
+        alt="vegan" 
+        class="thumbnail" 
+        />
+        <img 
+        src="/cake-imgs/love.jpg" 
+        alt="love" 
+        class="thumbnail" 
+        />
+        <img 
+        src="/cake-imgs/pink.jpg" 
+        alt="pink" 
+        class="thumbnail"
+         />
+    </section>
+
+    <footer>
+        <div class="footer_links">
+            <div class="footer_content">google</div>
+            <div class="footer_content">facebook</div>
+            <div class="footer_content">instagram</div>
+        </div>
+        <div class="copyright">Pakize</div>
+    </footer>
 </body>
 
 </html>
