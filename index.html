@@ -1,16 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Responsive Cake webpage</title>
-    <!-- Add a link to your css file here -->
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Edu+QLD+Beginner:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Edu+QLD+Beginner&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
+  <body>
     <!-- Add your markup here -->
-</body>
+    <header class="header">
+      <img src="./design/logo.jpg" alt="" width="115px" />
+      <div class="header-info">
+        <div class="ham1">
+          <input class="menu-btn" type="checkbox" id="menu-btn" />
+          <label class="menu-icon" for="menu-btn"
+            ><span class="navicon"></span
+          ></label>
+        </div>
+        <h1>The best cake in town deliverd to your door</h1>
+      </div>
+    </header>
+    <nav>
+      <ul class="menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Cake</a></li>
+        <li><a href="#">OrderIn</a></li>
+        <li><a href="#">Lessons</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+    </nav>
 
+    <main>
+      <div>
+        <h1>Welcome</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus sit
+          perspiciatis, asperiores consequuntur iure inventore nesciunt sequi
+          dolorem esse possimus voluptate necessitatibus, enim tenetur totam
+          sunt deleniti nam temporibus suscipit.
+        </p>
+      </div>
+      <img src="./design/hero.jpg" alt="" width="450px" />
+    </main>
+
+    <div class="content">
+      <img src="./design/pic1.jpg" alt="" width="240px" height="235px" />
+      <img src="./design/pic2.jpg" alt="" width="240px" height="220px" />
+      <img src="./design/pic3.jpg" alt="" width="240px" height="235px" />
+      <img src="./design/pic4.jpg" alt="" width="240px" height="235px" />
+    </div>
+
+    <footer>
+      <div class="footer1">Contact Us</div>
+      <div class="footer2">Address</div>
+      <div class="footer3">Term and Conditions</div>
+    </footer>
+  </body>
 </html>
