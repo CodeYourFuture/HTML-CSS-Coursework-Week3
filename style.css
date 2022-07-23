@@ -1,1 +1,133 @@
 /*  Add your styling here */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "header header"
+        "welcome-text welcome-text"
+        "image-name image-name"
+        "thumbnail1 thumbnail2"
+        "thumbnail3 thumbnail4"
+        "footer footer";
+    max-width: 400px;
+    max-height: 200px;
+    font: sans-serif;
+}
+
+/* Header */
+
+header {
+    display: flex;
+    /* grid-template-columns: 1fr 2fr; */
+    background-color: rgb(210, 215, 218);
+    grid-area: header;
+}
+
+.logo {
+    height: 80px;
+    width: 150px;
+}
+
+header>p {
+    color: red;
+}
+
+/* Navigation */
+
+.navbar {
+    display: none;
+
+}
+
+.nav-list {}
+
+.nav-link {}
+
+section>img {
+    width: 200px;
+    height: 200px;
+}
+
+.image-name {
+    grid-area: image-name;
+    height: 350px;
+}
+
+.welcome-text {
+    grid-area: welcome-text;
+}
+
+.thumbnail1 {
+    grid-area: thumbnail1;
+}
+
+.thumbnail2 {
+    grid-area: thumbnail2;
+}
+
+.thumbnail3 {
+    grid-area: thumbnail3;
+}
+
+.thumbnail4 {
+    grid-area: thumbnail4;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+img {
+    max-height: 100%;
+    width: auto;
+}
+
+/* Main 
+
+.welcome {
+    display: grid;
+    grid-template-columns: 1fr;    
+    grid-template-areas: 'welcome-text''image-name';
+    width: 95%;
+    margin: auto;
+
+}
+
+.welcome-text {
+    grid-area: welcome-text;
+    display: flex;
+    flex-direction: column;
+   
+    
+}
+
+.image-name {
+    grid-area: image-name;
+    height: 350px;
+}
+
+
+.thumbnails {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    width: 90%;
+    margin: auto;
+    grid-column-gap: 5%;
+}
+
+.thumbnail {
+    height: 200px;
+    width: 40%;
+}  
+
+img {
+    width: 200px;
+}
+
+.footer {
+    background-color: rgb(210, 215, 218);;
+}*/
