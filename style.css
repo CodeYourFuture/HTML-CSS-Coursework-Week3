@@ -3,6 +3,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: rgb(238, 234, 234);
 }
 /* Header */
 header {
@@ -19,7 +20,7 @@ header {
     height: 90px;
     width: 90px;
     margin: 5%;
-    border: 0.5px solid #333;
+    border: 3px solid mistyrose;
     border-radius: 25%;
 }
 
