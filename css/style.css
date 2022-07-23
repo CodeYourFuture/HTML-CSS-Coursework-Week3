@@ -300,9 +300,9 @@ body {
     /* Main */
     .main {
         display: grid;
-        grid-template-areas: "image content content"
-            "image content content"
-            "gallery gallery gallery";
+        grid-template-areas: "image content "
+            "image content "
+            "gallery gallery ";
     }
 
     .main__content {
@@ -314,20 +314,20 @@ body {
 
     .main__title {
         text-align: end;
-        font-size: 3em;
+        font-size: 4em;
     }
 
     .main__text {
         text-align-last: right;
-        font-size: 1.5em;
+        font-size: 2em;
     }
 
     /* Image gallery */
     .main__image {
         grid-area: image;
         align-self: center;
-        height: 50vh;
-        width: auto;
+        height: auto;
+        width: 100%;
     }
 
     .image__gallery__container {
