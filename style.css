@@ -1,1 +1,26 @@
 /*  Add your styling here */
+* {
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+}
+
+.nav_wrapper {
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 2rem;
+  display: flex;
+}
+
+.header {
+  position: fixed;
+  background-color: #ccd5ae;
+  display: flex;
+  width: 100%;
+  font-weight: bolder;
+  justify-content: space-between;
+  align-items: center;
+  height: 105px;
+  color: rgb(8, 66, 48);
+}
