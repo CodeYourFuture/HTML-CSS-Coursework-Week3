@@ -35,6 +35,7 @@ header {
     margin-right: 20px;
     margin-top: 40px;
     color: #333;
+    text-shadow: 1px 1px 1px hotpink;
 } 
 
 /* Hamburger */
