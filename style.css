@@ -3,7 +3,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: 'Sacramento', sans-serif;
+	font-family: 'Merienda', cursive sans-serif;
 }
 
 /* header */
@@ -31,7 +31,7 @@
   font-size: 1.5rem;
 	margin-right: 20px;
 	text-align: end;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: 'Sacramento' cursive;
 }
 
 /* hamburger menu */
