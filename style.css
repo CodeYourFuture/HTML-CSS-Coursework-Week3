@@ -96,8 +96,7 @@ body {
 
 .row5 {
   grid-area: r5;
-  display: flex;
-  justify-content: left;
+
   height: 25%;
   padding: 0.5em;
 }
@@ -107,4 +106,12 @@ body {
   font-size: 0.5em;
   padding: 0.5em 0.5em;
   text-align: justify;
+}
+
+hr {
+  width: 70%;
+}
+
+.copyright {
+  margin-left: 30%;
 }
