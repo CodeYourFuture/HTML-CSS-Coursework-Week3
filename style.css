@@ -2,7 +2,7 @@ body {
     margin: 0 0px;
     font-size: 25px;
     --theme: teal;
-    font-family: "Gwendolyn", cursive;
+    font-family: 'Courier New', Courier, monospace;
     background-color: magenta;
   }
   .header {
@@ -12,8 +12,8 @@ body {
   }
   .image-of-home{
     position: relative;
-    top: -250px;
-    right: -750px; 
+    top: -200px;
+    right: -480px; 
     width: 100px;
     height: 100px;
     margin-top: 50px;
@@ -56,9 +56,6 @@ body {
     margin-bottom: 3rem;
   }
   .cake {
-    position: relative;
-    top: -415px;
-    right: -1050px;
     max-width: 15%;
     height: 200px;
   }
