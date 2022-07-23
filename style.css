@@ -7,7 +7,6 @@
   padding: 0;
 }
 body {
-  background-color: #ffeef5;
   padding: 0;
   margin: 0;
 }
@@ -21,11 +20,38 @@ body {
     "r4 r4"
     "r5 r5";
   gap: 10px;
-  background-color: #ffeef5;
 }
 
 .main-container > div {
-  background-color: #ffeef5;
+}
+
+.menu-btn {
+  display: block;
+  right: 0;
+  margin: 1em;
+  position: absolute;
+
+  width: 36px;
+}
+
+.menu-btn:before,
+.menu-btn:after {
+  background-color: #fff;
+  content: "";
+  display: block;
+  height: 4px;
+  transition: all 200ms ease-in-out;
+}
+.menu-btn:before {
+  box-shadow: 0 10px 0 #fff;
+  margin-bottom: 16px;
+}
+.menu-btn:hover:before {
+  box-shadow: 0 0 0 #fff;
+  transform: translateY(10px) rotate(45deg);
+}
+.menu-btn:hover:after {
+  transform: translateY(-10px) rotate(-45deg);
 }
 
 .header {
@@ -33,6 +59,13 @@ body {
   height: 20vh;
   display: flex;
   justify-content: left;
+  align-content: space-between;
+  flex-direction: row;
+  background-image: linear-gradient(
+    to right,
+    rgb(214, 214, 214),
+    rgb(255, 232, 248)
+  );
 }
 
 .header img {
@@ -50,6 +83,7 @@ body {
   font-weight: 200;
   text-align: right;
   margin-left: 5em;
+  border: 2px solid red;
 }
 .welcome {
   grid-area: r2;
@@ -97,8 +131,12 @@ body {
 .row5 {
   grid-area: r5;
 
-  height: 25%;
   padding: 0.5em;
+  background-image: linear-gradient(
+    to right,
+    rgb(255, 255, 255),
+    rgb(255, 232, 248)
+  );
 }
 
 .row5 p {
