@@ -243,7 +243,7 @@ footer {
         justify-content: end;
         background-color: lightgray;
         padding: 2rem;
-        margin: 5%;
+        margin: 4% 5% 0 5%;
     }
 
     .nav_list li {
@@ -268,7 +268,6 @@ footer {
         grid-template-columns: 1fr 1fr;
         grid-template-areas: "hero_img welcome";
         column-gap: 1rem;
-        margin-top: 0.5rem;
     }
 
     .hero_img {
