@@ -1,1 +1,299 @@
-/*  Add your styling here */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  font-family: "Roboto", sans-serif;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 12% 0 80% 12%;
+  grid-template-areas:
+    "header"
+    "nav"
+    "main"
+    "footer";
+}
+
+/* Header styles */
+
+header {
+  grid-area: header;
+  padding: 1rem;
+  background: #73c1c6;
+}
+
+.hamburger_menu {
+  display: flex;
+  justify-content: end;
+}
+
+.hamburger_menu > img {
+  width: 5%;
+}
+
+header p {
+  width: 70%;
+  align-self: flex-end;
+  text-align: right;
+  font-size: 1.5em;
+  font-style: italic;
+}
+
+header i {
+  color: #b57ba6;
+  align-self: center;
+}
+
+.header_imgText_wrapper {
+  width: 100%;
+  height: 100%;
+  align-items: flex-end;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Drop down styles */
+
+.dropdown-link {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 2.2rem;
+  right: 0.5rem;
+  list-style: none;
+  background: rgb(221, 220, 220);
+  width: 80px;
+  height: 150px;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 10px;
+  padding-inline-start: 0px;
+}
+
+.dropdown-link a {
+  text-decoration: none;
+  width: 80px;
+  text-align: center;
+  margin: 3px auto;
+}
+
+/* Navigation styles */
+
+nav {
+  grid-area: nav;
+  background-color: #b57ba6;
+  display: none;
+  margin: auto 2em;
+}
+
+nav li {
+  background-color: #73c1c6;
+  border-radius: 5px;
+  width: 12%;
+  cursor: pointer;
+  text-align: center;
+}
+
+/* Main */
+
+main {
+  grid-area: main;
+ margin: 2em 2em 1em 2em;
+}
+
+.first_section {
+  background: #c9c5c8;
+  height: 55%;
+  width: 100%;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+.hero_image {
+  background-image: url(/images/pexels-daria-shevtsova-1070850.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 90%;
+  height: 300px;
+  margin: 0 auto;
+}
+
+.test {
+  height: auto;
+  padding: 0.8em;
+}
+
+.test > p {
+  font-size: 0.8em;
+}
+
+.product_images {
+  background-color: #c9c5c8;
+  width: 93.2%;
+  height: 38%;
+  margin: 2em auto;
+  padding: 3.5%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5%;
+}
+
+.product_images > div {
+  height: 170px;
+  width: 46%;
+}
+
+.product_image {
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+#first_product {
+  background-image: url(/images/pexels-dmitry-zvolskiy-1721932.jpg);
+}
+
+#second_product {
+  background-image: url(/images/cupcake-header.jpg);
+}
+
+#third_product {
+  background-image: url(/images/pexels-rodrigo-souza-2531546.jpg);
+}
+
+#fourth_product {
+  background-image: url(/images/pexels-jasmine-lew-140831.jpg);
+}
+
+/* Footer */
+footer {
+  grid-area: footer;
+  background: #73c1c6;
+  padding: 1em;
+}
+
+footer div {
+  display: flex;
+  flex-direction: column;
+  margin-left: 0.5em;
+}
+
+footer a {
+  text-decoration: none;
+  color: black;
+  border: 2px solid black;
+  width: 40%;
+  text-align: center;
+  margin-bottom: 0.5em;
+}
+
+footer p {
+  margin-top: 1.5em;
+  text-align: center;
+}
+
+img {
+  width: 50%;
+}
+
+@media screen and (min-width: 540px) {
+  body {
+    grid-template-rows: 20% 10% 70% 20%;
+  }
+
+  nav {
+    display: block;
+  }
+
+  nav > ul {
+    display: flex;
+    width: 100%;
+    float: right;
+    justify-content: space-around;
+    gap: 6%;
+    list-style: none;
+  }
+
+  nav a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .first_section {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  .hero_image {
+    height: 100%;
+    width: 50%;
+    margin: 0;
+  }
+
+  .test {
+    width: 45%;
+    text-align: right;
+  }
+
+  .product_images {
+    flex-wrap: nowrap;
+    height: 30%;
+  }
+
+  footer a {
+    width: 20%;
+    margin: 0;
+  }
+
+  footer > div {
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    margin-top: 1em;
+    gap: 0.7rem;
+  }
+
+  header img,
+  footer img {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  body {
+    grid-template-rows: 20% 10% 90% 17%;
+  }
+
+  header p {
+    font-size: 2rem;
+  }
+
+  nav > ul {
+    display: flex;
+    width: 70%;
+    float: right;
+    justify-content: space-around;
+    gap: 6%;
+    list-style: none;
+  }
+
+  .test p {
+    font-size: 1em;
+    line-height: 2em;
+  }
+
+  .product_images {
+    height: 25%;
+  }
+
+  .product_images > div {
+    height: 200px;
+  }
+
+  footer a {
+    width: 10%;
+  }
+}
