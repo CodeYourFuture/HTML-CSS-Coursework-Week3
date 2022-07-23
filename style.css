@@ -19,7 +19,7 @@ h1 {
     margin-top: 0;
     color: #fff;
     text-align: right;
-    text-shadow: 2px 2px 5px #da2488;
+    text-shadow: 2px 2px 5px #d60f79;
  
 }
 .content {
@@ -32,15 +32,15 @@ h1 {
 }
 .content-title {
     margin-bottom: .5em;
-    color:#6d6e75;
-    text-shadow: 1px 1px 3px #262646;
+    color:#475b65;
+    text-shadow: 1px 1px 3px #33424a;
 }
 .content-title span {
     display:block;
     text-align:left;
     letter-spacing: 2px;
     color: hsl(0, 0%, 100%);
-    text-shadow: 2px 2px px rgb(12, 12, 26);
+    text-shadow: 2px 2px px #102732;
   
 }
 
@@ -48,7 +48,7 @@ h1 {
     letter-spacing: 1.2px;
     font-weight:bold;
     text-align:start;
-    color: #535563;   
+    color:  #475b65;   
 }
 
 
@@ -58,7 +58,7 @@ h1 {
 
  header {
     padding: .5em;
-    background-color:#fdeac7 ;
+    background-color:#f3c4dd  ;
     border-bottom: 1px solid rgba(182, 33, 102, 0.3);
 
 } 
@@ -78,7 +78,7 @@ h1 {
 /* navigation */
 .nav {
     position: fixed;
-    background:#fdeac7;
+    background:#f3c4dd;
     width: 100%;
     top: 0;
     right: 0;
@@ -115,14 +115,14 @@ h1 {
 .nav-link:hover,
 .nav-link:focus {
     font-size: 1.8rem;
-    color: #f788c5;
+    color: #32617b;
     text-shadow: 1px 1px 1px #a81043;
 }
 
 .close-nav {
     border: 0;
     background: 0;
-    color: #da2488;
+    color: #d60f79;
     font-weight: 700;
     font-size: 3rem;
     cursor: pointer;
@@ -133,7 +133,7 @@ h1 {
 .open-nav {
     border: 0;
     background: 0;
-    color:#da2488;
+    color:#d60f79;
     cursor: pointer;
     padding: .5em;
     margin-left: auto;
