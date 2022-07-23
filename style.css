@@ -262,6 +262,10 @@ footer {
         margin: 1.5rem auto;
     }
 
+    .hero_img{
+        height: 350px;
+    }
+
     .article {
         width: 50%;
     }
