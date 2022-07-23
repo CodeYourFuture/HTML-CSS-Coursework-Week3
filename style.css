@@ -163,6 +163,11 @@ h1 {
     margin: 0 auto;
 }
 
+.icon:hover {
+    min-width:10em;
+    width: 11.5em;
+}
+
 .main-phone {
     display: grid;
     grid-template-columns: repeat(2, minmax(100px, 1fr));
