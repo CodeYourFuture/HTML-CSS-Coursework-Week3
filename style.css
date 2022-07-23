@@ -7,24 +7,25 @@
   padding: 0;
 }
 body {
-  background-color: #fadce9;
+  background-color: #ffeef5;
   padding: 0;
   margin: 0;
 }
 .main-container {
   display: grid;
   grid-template-areas:
-    "header header header header"
-    "r2 r2 r2 r2"
-    "r3 r3 r3 r3"
-    "r4 r4 r4 r4"
-    "r5 r5 r5 r5";
+    "header header"
+    "r2 r2"
+    "r3 r3"
+    "r4 r4"
+    "r4 r4"
+    "r5 r5";
   gap: 10px;
-  background-color: #f99ac3;
+  background-color: #ffeef5;
 }
 
 .main-container > div {
-  background-color: #fadce9;
+  background-color: #ffeef5;
 }
 
 .header {
@@ -81,18 +82,29 @@ body {
 
 .row4 {
   grid-area: r4;
-  border: 5px solid brown;
+  /*border: 5px solid brown;*/
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   margin: 0 1em;
-  height: 30vh;
-  display: block;
-  justify-content: center;
-  align-content: center;
-  align-self: center;
 }
 
 .row4 img {
+  width: 47%;
+  padding: 0.5em 0em;
+}
+
+.row5 {
+  grid-area: r5;
+  display: flex;
+  justify-content: left;
+  height: 25%;
+  padding: 0.5em;
+}
+
+.row5 p {
   width: 30%;
-  height: 10vh;
-  padding: 1em 1em;
-  align-self: center;
+  font-size: 0.5em;
+  padding: 0.5em 0.5em;
+  text-align: justify;
 }
