@@ -6,11 +6,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Responsive Cake webpage</title>
-    <!-- Add a link to your css file here -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@700&amp;display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Emilys+Candy&amp;display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <!-- Add your markup here -->
+    <header class="header">     <!--header-->
+        <img class="nav-image" src="image/special-oaccasion-cake.jpg" alt="cake-image">
+        <div class="nav-bar">
+            <nav class="hamburger-menu">
+                <input id="menu-icon" type="checkbox">
+                <label class="menu-button" for="menu-icon">
+                    <span></span>
+                </label>
+                <ul class="menu-items">
+                    <li><a class="menu-list" href="#">HOME</a></li>
+                    <li><a class="menu-list" href="#">CAKES</a></li>
+                    <li><a class="menu-list" href="#">ORDERING</a></li>
+                    <li><a class="menu-list" href="#">OUR FAVOURITES</a></li>
+                    <li><a class="menu-list" href="#">ABOUT</a></li>
+                </ul>
+            </nav>
+            <p class="nav-text">The Best Cakes in Town Delivered to Your Door</p>
+        </div>
+    </header>
+    <nav class="navbar-desktop">
+        <ul class="nav-list">
+            <li><a class="nav-link" href="#">HOME</a></li>
+            <li><a class="nav-link" href="#">CAKES</a></li>
+            <li><a class="nav-link" href="#">ORDERING</a></li>
+            <li><a class="nav-link" href="#">OUR FAVOURITES</a></li>
+            <li><a class="nav-link" href="#">ABOUT</a></li>
+        </ul>
+    </nav>
+    <main class="main">
+        <section class="hero"> <!--hero section-->
+            <article class="welcome-article">
+                <h1 class="welcome">Welcome To The Cake World</h1>
+                <p class="welcome-text">Beautiful and tasty Cakes for every occasion! Choose one of our ready made
+                    designs or create your own bespoke
+                    masterpiece! The Cake World specialises in exquisitely hand-crafted, premium celebration cakes for
+                    any occasion. We have a team of
+                    highly skilled cake designers and decorators who can create a truly personalised and memorable cake
+                    which is bound to
+                    delight at your special occasion. Our cakes are made from the highest quality ingredients, The Cake
+                    Shop sells a wide range of cake
+                    decorating accessories including edible goods, ribbons, sugarcraft materials, tools and equipment.
+                </p>
+            </article>
+            <img class="main-image" src="image/nav-image.jpg" alt="cake-image">
+        </section>
+        <section class="grid-images">
+            <img class="cake-image" src="image/birthdaycake.jpg" alt="cake-image">
+            <img class="cake-image" src="image/homepage-image.jpg" alt="cake-image">
+            <img class="cake-image" src="image/cup-cake.jpg" alt="cake-image">
+            <img class="cake-image" src="image/wedding-cake.jpg" alt="cake-image">
+        </section>
+    </main>
+    <footer class="footer">      <!--footer-->
+        <div class="contact">
+            <div>Get in touch:</div>
+            <div class="location">
+                <p>The Coventry Market, Coventry, CV14EN</p>
+                <p>Monday-Saturday 10a.m-5p.m</p>
+            </div>
+            <div>
+                <img class="contact-icon" src="image/twitter-icon.svg" alt="twitter-icon">
+                <img class="contact-icon" src="image/facebook-icon.svg" alt="facebook-icon">
+                <img class="contact-icon" src="image/instagram-icon.svg" alt="instagram-icon">
+            </div>
+        </div>
+        <div class="copyright">© The Cake World</div>
+    </footer>
 </body>
 
 </html>
