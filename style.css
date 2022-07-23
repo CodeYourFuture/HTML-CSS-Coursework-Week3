@@ -42,8 +42,11 @@ body {
 #menu {
   width: 35px;
   height: 30px;
-  margin: 30px 0 20px 20px;
+  margin: 10px 0 20px 20px;
   cursor: pointer;
+  border: 3px solid red;
+  position: absolute;
+  right: 10px;
 }
 
 .bar {
@@ -59,61 +62,6 @@ body {
 }
 #bar3 {
   transform: translateY(4px);
-}
-.nav li a {
-  color: #fff;
-  text-decoration: none;
-}
-.nav li a:hover {
-  font-weight: bold;
-}
-.nav li {
-  list-style: none;
-  padding: 16px 0;
-}
-.nav {
-  padding: 0;
-  margin: 0 20px;
-  transition: 0.3s ease;
-  display: none;
-}
-.menu-bg,
-#menu-bar {
-  top: 0;
-  right: 10%;
-  position: absolute;
-}
-.menu-bg {
-  z-index: 1;
-  width: 0;
-  height: 0;
-  margin: 30px 0 20px 20px;
-  background: radial-gradient(circle, #e94498, #b81568);
-  border-radius: 50%;
-  transition: 0.3s ease;
-}
-#menu-bar {
-  z-index: 2;
-}
-.change-bg {
-  width: 550px;
-  height: 540px;
-  transform: translate(-60%, -30%);
-}
-.change .bar {
-  background-color: white;
-}
-.change #bar1 {
-  transform: translateY(4px) rotateZ(-45deg);
-}
-.change #bar3 {
-  transform: translateY(-6px) rotate(45deg);
-}
-.change #bar2 {
-  opacity: 0;
-}
-.change {
-  display: block;
 }
 
 .header img {
