@@ -1,16 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Oh My Sweet Cakes!</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Google Fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/ce0969a756.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.ico" />
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Responsive Cake webpage</title>
-    <!-- Add a link to your css file here -->
-</head>
+  <body>
+    <header class="header">
+      <input type="checkbox" id="checkbox" />
+      <label id="menu-toggle" for="checkbox">
+        <i class="menu-button fa-solid fa-bars fa-2xl"></i>
+        <i class="exit-button fa-solid fa-xmark fa-2xl"></i>
+      </label>
+      <img class="header__logo" src="./images/logo.png" alt="cake-logo" />
+      <p class="header__text">The best cakes in town delivered to your door</p>
+      <ul class="navbar">
+        <li><a class="navbar__link" href="#">Home</a></li>
+        <li><a class="navbar__link" href="#">Cakes</a></li>
+        <li><a class="navbar__link" href="#">Ordering</a></li>
+        <li><a class="navbar__link" href="#">Lessons</a></li>
+        <li><a class="navbar__link" href="#">About</a></li>
+      </ul>
+    </header>
 
-<body>
-    <!-- Add your markup here -->
-</body>
-
+    <main class="main">
+      <div class="main__content">
+        <h1 class="main__title">Welcome</h1>
+        <p class="main__text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur et
+          hendrerit urna, nec tincidunt nisl. Nullam tristique hendrerit
+          consectetur. Proin iaculis arcu dui, sed lacinia massa feugiat
+          porttitor. Nulla dignissim tincidunt congue.
+        </p>
+      </div>
+      <img
+        class="main__image"
+        src="./images/orange-cake.jpg"
+        alt="orange cake"
+      />
+      <section class="image__gallery__container">
+        <div
+          class="image__gallery__item"
+          style="background-image: url(./images/strawberry-cake.jpg)"
+          role="img"
+          aria-label="strawberry-cake"
+          title="strawberry-cake"
+        ></div>
+        <div
+          class="image__gallery__item"
+          style="background-image: url(./images/chocolate-ganache-tart.jpg)"
+          role="img"
+          aria-label="chocolate-ganache-tart"
+          title="chocolate-ganache-tart"
+        ></div>
+        <div
+          class="image__gallery__item"
+          style="background-image: url(./images/pink-cake.jpg)"
+          role="img"
+          aria-label="pink-cake"
+          title="pink-cake"
+        ></div>
+        <div
+          class="image__gallery__item"
+          style="background-image: url(./images/raspberry-tart.jpg)"
+          role="img"
+          aria-label="raspberry-tart"
+          title="raspberry-tart"
+        ></div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__links">
+        <a href="#"><i class="fa-brands fa-facebook"></i>Facebook</a>
+        <a href="#"><i class="fa-brands fa-instagram"></i>Instagram</a>
+        <a href="#"><i class="fa-brands fa-pinterest"></i>Pinterest</a>
+      </div>
+      <p class="footer__text--muted">© Oh My Sweet Cakes!</p>
+    </footer>
+  </body>
 </html>
