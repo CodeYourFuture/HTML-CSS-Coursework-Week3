@@ -116,6 +116,9 @@
 }
 
 /* hero section style */
+.main{
+    background-color:#bde0fe ;
+}
 .hero {
     width: 90%;
     margin: auto;
@@ -152,6 +155,7 @@
     width: 90%;
     margin: auto;
     gap: 2em;
+    padding-bottom: 3em;
 }
 .cake-image {
     width: 100%;
@@ -163,7 +167,7 @@
 /*footer style*/
 .footer {
     background-color: rgb(229, 229, 229);
-    margin-top: 2em;
+    /*margin-top: 2em;*/
 }
 .contact {
     font-size: 0.8em;
@@ -249,7 +253,7 @@
         flex-direction: row-reverse;
         margin-top: 2em;
         gap: 3em;
-        padding: 2rem 0px;
+        padding: 4rem 0px;
     }
     .welcome-article {
         width: 100%;
