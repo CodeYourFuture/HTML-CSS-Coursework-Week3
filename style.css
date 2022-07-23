@@ -63,7 +63,7 @@ body {
   flex-direction: row;
   background-image: linear-gradient(
     to right,
-    rgb(214, 214, 214),
+    rgb(255, 255, 255),
     rgb(255, 232, 248)
   );
 }
@@ -130,20 +130,20 @@ body {
 
 .row5 {
   grid-area: r5;
-
   padding: 0.5em;
   background-image: linear-gradient(
     to right,
     rgb(255, 255, 255),
     rgb(255, 232, 248)
   );
+  display: flex;
+  flex-direction: column;
+  border: 2px solid red;
 }
 
-.row5 p {
-  width: 30%;
-  font-size: 0.5em;
-  padding: 0.5em 0.5em;
-  text-align: justify;
+.row5 button {
+  margin: 0.5em;
+  width: 25%;
 }
 
 hr {
@@ -151,5 +151,11 @@ hr {
 }
 
 .copyright {
+  font-size: 0.5em;
   margin-left: 30%;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+  }
 }
