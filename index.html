@@ -2,15 +2,87 @@
 <html lang="en">
 
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Responsive Cake webpage</title>
-    <!-- Add a link to your css file here -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
+<!--------------body--------------->
+
 <body>
-    <!-- Add your markup here -->
+    <header>
+    <div class="small-screen">
+        <a class="logo-link" href="index.html">
+            <img class="logo" src="img/logo.png" alt="cupcake logo">
+        </a>
+        
+    
+    <button aria-label="Open navigation" class="open-nav">&#9776;</button>
+        <nav class="nav">
+            <button aria-label="Close navigation" class="close-nav">&times;</button>
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#" class="nav-link"> Home</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link"> Cakes</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link"> Ordering</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link"> Lessons</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link"> About</a></li>
+                </ul>
+            </nav>
+            
+    </div>
+    <h1>The best cakes in town delivered to your door</h1>
+    </header>
+    
+
+    <!-------------main---------------->
+
+    <main class="main main-phone">
+        <nav class="nav-desktop">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="#" class="nav-link"> Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link"> Cakes</a></li>
+                <li class="nav-item"><a href="#" class="nav-link"> Ordering</a></li>
+                <li class="nav-item"><a href="#" class="nav-link"> Lessons</a></li>
+                <li class="nav-item"><a href="#" class="nav-link"> About</a></li>
+            </ul>
+        </nav>
+        <section class="content">
+            <h2 class="content-title">WELCOME!<span>OUR CAKES ARE
+            HANDCRAFTED
+            WITH LOVE</span></h2>
+            <p class="description">We are passionate about creating edible works of art for special occasions like weddings, baby showers, birthday
+            parties, corporate events, and other special occasions. <br>
+            Our beautifully designed handcrafted products include bespoke
+            cakes, cupcakes, cupcake bouquets, pizza cakes, cake doughnuts, popsicles and many other cake products.<br>
+             Our goal is to
+            bring the best tasting and looking cakes and desserts to our esteemed customers.
+            </p>
+        </section>
+        <img class="main-img" src="img/main1.jpg" alt="birthday cake" >
+
+        <img class="icon icon1" src="img/icon1.jpg" alt="dissert" >
+        <img class="icon icon2" src="img/icon2.jpg" alt="cake" >
+        <img class="icon icon3" src="img/icon3.jpg" alt="slice of cake" >
+        <img class="icon icon4" src="img/icon4.jpg" alt="cupcake" >
+    </main>
+
+    <!---------------footer------- -->
+    <footer class="footer">
+        <div class="btn-list" >
+                <a href="#" class="contact-btn">Facebook</a>
+                <a href="#" class="contact-btn">Instagram</a>
+                <a href="#" class="contact-btn">Youtube</a>
+        </div>
+        <p class="copy-right">©Sweet Dream Ltd</p>
+    </footer>
+<script src="script.js"></script>
 </body>
 
 </html>
