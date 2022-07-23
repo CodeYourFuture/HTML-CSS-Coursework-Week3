@@ -13,8 +13,7 @@ body {
 
 .container {
   display: grid;
-  row-gap: 2rem;
-  column-gap: 2rem;
+  gap: 2rem;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 300px auto 300px 40vw 40vw 300px;
   grid-template-areas:

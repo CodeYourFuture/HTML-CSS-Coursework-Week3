@@ -4,7 +4,7 @@
   }
 
   .container {
-    grid-template-rows: 300px 50px 300px 20vw 150px;
+    grid-template-rows: 300px 55px 300px 20vw 150px;
     grid-template-areas:
       "h h h h"
       "n n n n"
@@ -26,8 +26,9 @@
   .navigation {
     grid-area: n;
     display: flex;
-    justify-content: center;
+    justify-content: end;
     align-items: center;
+    background-color: #f8f7ff;
   }
 
   .nav-list {
@@ -35,6 +36,7 @@
     display: flex;
     align-items: center;
     gap: 3rem;
+    margin: 5px;
   }
 
   .nav-link:link,
