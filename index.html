@@ -6,11 +6,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Responsive Cake webpage</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner&display=swap" rel="stylesheet">
     <!-- Add a link to your css file here -->
 </head>
 
 <body>
+    <header class="header">
+        <img class="logo" src="/images/logo.jpg" alt="logo"/>
+        <div class="nav-bar">
+            <nav class="hamburger-menu">
+                <input id="menu_toogle" type="checkbox"/>
+                <label class="menu_b" for="menu_toogle">
+                    <span></span>
+                </label>
+                <ul class="menu_box">
+                    <li><a class="menu_item"href="#">Home</a>  </li>
+                    <li><a class="menu_item"href="#">Birthday Cakes</a>  </li>
+                    <li><a class="menu_item"href="#">Celebration Cakes</a>  </li>
+                    <li><a class="menu_item"href="#">Wedding Cakes </a>  </li>
+                    <li><a class="menu_item"href="#">Ordering</a>  </li>
+
+                </ul>
+            </nav>
+            <p class="adv"><i>The best cakes in town delivered to your door</i></p>
+        </div>
+
+    </header>
+<nav class="desktop">
+    <ul class="nav_list">
+        <li><a class="nav_link"href="#">Home</a>  </li>
+        <li><a class="nav_link"href="#">Birthday Cakes</a>  </li>
+        <li><a class="nav_link"href="#">Celebration Cakes</a>  </li>
+        <li><a class="nav_link"href="#">Wedding Cakes </a>  </li>
+        <li><a class="nav_link"href="#">Ordering</a>  </li>
+
+    </ul>
+</nav>
+<section class="section1">
+    <article class="article">
+        <h1 class="welcome">Welcome</h1>
+        <p class="text_content">
+            If you're looking for the ultimate wedding, anniversary, birthday, baby shower, christening, or corporate cake, Tree House Cakes is the place to go. Creating bespoke designs to match all themes and events, our delicious recipes are expertly baked and lovingly crafted. Creating a visual taste experience that is sure to be a conversation starter at your next event.
+
+ <br/>
+ <br/>
+ Gluten, Dairy, Wheat-free and Vegan available.
+        </p>
+    </article>
+    <img class="section1_img" src="/images/photo-1562777717-dc6984f65a63.avif" alt=""/>
+</section>
     <!-- Add your markup here -->
+    <section class="thumbnails">
+        <img src="images/photo-1558301211-0d8c8ddee6ec.avif" alt="" class="thumbnail"/>
+        <img src="images/photo-1488477304112-4944851de03d.avif" alt="" class="thumbnail"/>
+        <img src="images/photo-1559620192-032c4bc4674e.avif" alt="" class="thumbnail"/>
+        <img src="images/photo-1557308536-ee471ef2c390.avif" alt="" class="thumbnail"/>
+
+    </section>
+    <footer>
+        <div class="footer_links">
+             <a href="#" class="contact-btn">Facebook</a>
+                <a href="#" class="contact-btn">Instagram</a>
+                <a href="#" class="contact-btn">Youtube</a>
+        </div>
+        <div class="copyright"></div>
+    </footer>
 </body>
 
 </html>
