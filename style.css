@@ -25,35 +25,6 @@ body {
 .main-container > div {
 }
 
-.menu-btn {
-  display: block;
-  right: 0;
-  margin: 1em;
-  position: absolute;
-
-  width: 36px;
-}
-
-.menu-btn:before,
-.menu-btn:after {
-  background-color: #fff;
-  content: "";
-  display: block;
-  height: 4px;
-  transition: all 200ms ease-in-out;
-}
-.menu-btn:before {
-  box-shadow: 0 10px 0 #fff;
-  margin-bottom: 16px;
-}
-.menu-btn:hover:before {
-  box-shadow: 0 0 0 #fff;
-  transform: translateY(10px) rotate(45deg);
-}
-.menu-btn:hover:after {
-  transform: translateY(-10px) rotate(-45deg);
-}
-
 .header {
   grid-area: header;
   height: 20vh;
@@ -66,6 +37,83 @@ body {
     rgb(255, 255, 255),
     rgb(255, 232, 248)
   );
+}
+
+#menu {
+  width: 35px;
+  height: 30px;
+  margin: 30px 0 20px 20px;
+  cursor: pointer;
+}
+
+.bar {
+  height: 5px;
+  width: 100%;
+  background-color: #b81568;
+  display: block;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+#bar1 {
+  transform: translateY(-4px);
+}
+#bar3 {
+  transform: translateY(4px);
+}
+.nav li a {
+  color: #fff;
+  text-decoration: none;
+}
+.nav li a:hover {
+  font-weight: bold;
+}
+.nav li {
+  list-style: none;
+  padding: 16px 0;
+}
+.nav {
+  padding: 0;
+  margin: 0 20px;
+  transition: 0.3s ease;
+  display: none;
+}
+.menu-bg,
+#menu-bar {
+  top: 0;
+  right: 10%;
+  position: absolute;
+}
+.menu-bg {
+  z-index: 1;
+  width: 0;
+  height: 0;
+  margin: 30px 0 20px 20px;
+  background: radial-gradient(circle, #e94498, #b81568);
+  border-radius: 50%;
+  transition: 0.3s ease;
+}
+#menu-bar {
+  z-index: 2;
+}
+.change-bg {
+  width: 550px;
+  height: 540px;
+  transform: translate(-60%, -30%);
+}
+.change .bar {
+  background-color: white;
+}
+.change #bar1 {
+  transform: translateY(4px) rotateZ(-45deg);
+}
+.change #bar3 {
+  transform: translateY(-6px) rotate(45deg);
+}
+.change #bar2 {
+  opacity: 0;
+}
+.change {
+  display: block;
 }
 
 .header img {
