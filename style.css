@@ -14,7 +14,7 @@ body {
   display: grid;
   grid-template-areas:
     "header header"
-    "nv1 nv1"
+    "nav1 nav1"
     "r2 r2"
     "r3 r3"
     "r4 r4"
@@ -38,13 +38,13 @@ body {
 }
 
 #menu {
-  width: 35px;
+  width: 30px;
   height: 30px;
   margin: 10px 0 20px 20px;
   cursor: pointer;
-  border: 3px solid red;
+  /*border: 3px solid red;*/
   position: absolute;
-  right: 10px;
+  right: 5vw;
 }
 
 .bar {
@@ -77,8 +77,8 @@ body {
 }
 .nav {
   padding: 0;
-  margin: 30px 20px;
-  transition: 0.3s ease;
+  margin: 20px 10px;
+  transition: 0.8s ease;
   display: none;
 }
 
@@ -104,9 +104,9 @@ body {
 }
 
 .change-bg {
-  width: 250px;
-  height: 240px;
-  transform: translate(60%, -30%);
+  width: 50vw;
+  height: 50vw;
+  transform: translate(50%, -30%);
 }
 
 .change .bar {
@@ -139,7 +139,8 @@ body {
   font-size: 0.8rem;
   font-weight: 200;
   text-align: right;
-  margin-left: 5em;
+  margin-left: 10%;
+  margin-right: 5%;
   border: 2px solid red;
 }
 .welcome {
@@ -227,9 +228,26 @@ hr {
   #menu-bar {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
     border: 2px solid blue;
     position: relative;
-    width: 100%;
+    justify-content: flex-end;
+  }
+
+  .nav {
+    grid-area: nav1;
+    display: flex;
+  }
+
+  .nav li {
+    list-style: none;
+    padding: 0em 1em;
+    z-index: 1;
+  }
+  .menu-bg {
+    display: none;
+  }
+
+  .header h3 {
+    margin-right: 5vw;
   }
 }
