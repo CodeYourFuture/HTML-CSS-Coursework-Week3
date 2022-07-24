@@ -14,15 +14,13 @@ body {
   display: grid;
   grid-template-areas:
     "header header"
+    "nv1 nv1"
     "r2 r2"
     "r3 r3"
     "r4 r4"
     "r4 r4"
     "r5 r5";
   gap: 10px;
-}
-
-.main-container > div {
 }
 
 .header {
@@ -99,7 +97,7 @@ body {
   background: radial-gradient(circle, #e94498, #b81568);
   border-radius: 50%;
   transition: 0.3s ease;
-  opacity: 0.75;
+  opacity: 0.85;
 }
 #menu-bar {
   z-index: 2;
@@ -151,7 +149,6 @@ body {
 
 .welcome h1 {
   text-align: left;
-
   padding-bottom: 0em;
 }
 .welcome p {
@@ -187,6 +184,11 @@ body {
   padding: 0.5em 0em;
 }
 
+img:hover,
+button:hover {
+  filter: contrast(1.15);
+  filter: drop-shadow(0 0 0.75rem crimson);
+}
 .row5 {
   grid-area: r5;
   padding: 0.5em;
@@ -214,7 +216,20 @@ hr {
   margin-left: 30%;
 }
 
-@media only screen and (max-width: 600px) {
+@media (min-width: 540px) {
   body {
+    background-color: aqua;
+  }
+  #menu {
+    display: none;
+  }
+
+  #menu-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border: 2px solid blue;
+    position: relative;
+    width: 100%;
   }
 }
