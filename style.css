@@ -1,1 +1,78 @@
 /*  Add your styling here */
+.header {
+    position: relative;
+    background-color: blueviolet;
+    width: 100%;
+}
+
+header nav-list {
+    position:absolute;
+    top: 8px;
+    right: 16px;
+    font-size: 18px;
+}
+
+#welcome-title {
+    font-size: 50px;
+}
+
+header img{
+    width:100%;
+    opacity: 0.7;
+    padding: 1em;
+    vertical-align: middle;
+}
+
+.cake_logo {
+    height: 140px;
+    width: 120px;
+}
+
+#quotes {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+    font-size: 18px;
+}
+
+#main_cake {
+    height: 300px;
+    width: 100%;
+}
+
+.thumbnails {
+    display: grid;
+    margin-top: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 0.5fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+
+.thumb-img {
+    height: 100%;
+    width: 100%;
+}
+
+.footer {
+    padding: 10px;
+    font-size: 1.5em;
+}
+
+.contact_links {
+    display: flex;
+    align-items: center;
+       
+}
+
+#linkedin, #twitter, #instagram{
+    height: 60px;
+    width: 80px;
+    
+}
+
+#footer_text {
+    font: cursive;
+    font-size: 20px;
+    text-align: center;
+}
