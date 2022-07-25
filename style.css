@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC&family=Lobster&display=swap');
+
+
+
+
 /*  Add your styling here */
 body {
     margin: 0;
@@ -15,7 +20,7 @@ body {
         "thumbnail3 thumbnail4"
         "footer footer";
  
-    font: sans-serif;
+    font: 'Cormorant SC' ;
 }
 
 /* Header */
@@ -41,7 +46,7 @@ header {
 header>p {
     color: rgb(207, 67, 67);
     font-size: 0.8em;
-    padding: 1em 0 0 0;
+    padding: 1em 1em 0 0;
     text-align: end;
 }
 
@@ -189,7 +194,11 @@ header>p {
 .footer {
     grid-area: footer;
     padding: 2em;
+    background-color:rgb(210, 215, 218);
+    width: 90%;
+    margin-top: 3em;
 }
+
 .about {
     display: flex;
     flex-direction: column;
@@ -216,6 +225,80 @@ header>p {
 /* tablet css*/
 
 @media screen and (min-width: 540px) {
+
+    body {
+            margin: 0 100px;
+            padding: 0em;
+            box-sizing: border-box;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: 200px 200px 250px 200px 200px 200px;
+            grid-template-areas:
+                "header header header header"
+                "desktop desktop desktop desktop"
+                "image-name image-name welcome-text welcome-text"
+                "thumbnail1 thumbnail2 thumbnail3 thumbnail4"
+                "footer footer footer footer"
+                "navbar navbar navbar navbar"
+            ;
+    
+            font: sans-serif;
+        }
+
+        header {
+            position: relative;
+        }
+    
+        .navbar {
+            display: none;
+    
+        }
+    
+        .nav-list {
+            display: block;
+        }
+    
+        .desktop {
+            grid-area: desktop;
+            display: flex;
+            justify-content: center;
+            width: 90%;
+            margin: auto;
+            padding: 3em 0;
+            gap: 1.5em;
+            background-color: #99FEFF;
+            list-style-type: none;
+        }
+    
+    
+        .navigation {
+            text-decoration: none;
+        }
+    
+        .navigation > a  {
+            font-size: 0.7em;
+            font-size: 1.2vw;
+            text-decoration: none;
+            background-color: #bddb88;
+            padding: 1em;
+            list-style: none;
+        }
+    
+        .welcome-text {
+            margin-left: 0.5em;
+        }
+    
+        .about {
+            display: flex;
+            flex-direction: row;
+            gap: 3.5em;
+            justify-content: center;
+            margin-top: 2em;
+        }
+    
+        .header-text {
+            font-size: 1.5em;
+        }
     
 }
 
@@ -226,26 +309,70 @@ header>p {
 
     body {
             margin: 0;
-            padding: 0;
+            padding: 0em;
             box-sizing: border-box;
             display: grid;
             grid-template-columns: repeat(4, 1fr);
-            grid-template-rows: 200px 200px 250px 200px 200px;
+            grid-template-rows: 200px 200px 250px 200px 200px 200px;
             grid-template-areas:
                 "header header header header"
                 "desktop desktop desktop desktop"
                 "image-name image-name welcome-text welcome-text"            
                 "thumbnail1 thumbnail2 thumbnail3 thumbnail4"
-                "footer footer footer footer";
+                "footer footer footer footer"
+                "navbar navbar navbar navbar"
+                ;
     
             font: sans-serif;
         }
 
         .navbar {
             display: none;
+    
         }
 
         .nav-list {
             display: block;
         }
+
+        .desktop {
+            grid-area: desktop;
+            display: flex;
+            justify-content: center;
+            width: 90%;
+            margin: auto;
+            padding: 3em 0;
+            gap: 1.5em;
+            background-color: #99FEFF;
+            list-style-type: none;
+        }
+
+        
+        .navigation {
+            text-decoration: none;
+        }
+
+        .navigation > a {
+            font-size: 1em;
+            text-decoration: none;
+            background-color: #bddb88;
+            padding: 1em;
+            list-style: none;
+        }
+
+        .welcome-text {
+            margin-left: 0.5em;
+        }
+
+                .about {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 3.5em;
+                    justify-content: center;
+                    margin-top: 2em;
+                }
+
+                .header-text {
+                    font-size: 1.5em;
+                }
 }
