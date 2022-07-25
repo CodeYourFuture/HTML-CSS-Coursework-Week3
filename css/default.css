@@ -176,6 +176,24 @@ body {
   object-fit: contain;
 }
 
+/* align templates */
+
+.main,
+.navigation,
+.picture,
+.dessert1,
+.dessert3 {
+  margin-left: 2rem;
+}
+
+.main,
+.navigation,
+.picture,
+.dessert2,
+.dessert4 {
+  margin-right: 2rem;
+}
+
 /* Footer */
 
 .footer {
@@ -220,24 +238,6 @@ body {
   text-align: center;
   position: absolute;
   bottom: 2rem;
-}
-
-/* align templates */
-
-.main,
-.navigation,
-.picture,
-.dessert1,
-.dessert3 {
-  margin-left: 2rem;
-}
-
-.main,
-.navigation,
-.picture,
-.dessert2,
-.dessert4 {
-  margin-right: 2rem;
 }
 
 /* hamburger menu */

@@ -4,7 +4,7 @@
   }
 
   .container {
-    grid-template-rows: 300px 55px 300px 20vw 150px;
+    grid-template-rows: 300px 55px 300px 20vw 150px; 
     grid-template-areas:
       "h h h h"
       "n n n n"
@@ -67,14 +67,11 @@
     background-color: #cf711f;
   }
 
-  /* Footer navigation*/
-
-  .footer-nav-list {
-    flex-direction: row;
-    gap: 2rem;
-  }
-
   /* img boxes align */
+
+.img-box {
+  width: calc(25vw - (10rem/4));
+}
 
   .picture,
   .dessert2 {
@@ -85,4 +82,12 @@
   .dessert3 {
     margin-left: 0;
   }
+
+  /* Footer navigation*/
+
+  .footer-nav-list {
+    flex-direction: row;
+    gap: 2rem;
+  }
+
 }
