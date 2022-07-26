@@ -221,33 +221,103 @@ hr {
   body {
     background-color: aqua;
   }
+
+  .main-container {
+    display: grid;
+    grid-template-areas:
+      "header header header header"
+      "nav1 nav1 nav1 nav1"
+      "r3 r3 r2 r2"
+      "r4 r4 r4 r4"
+      "r5 r5 r5 r5";
+    gap: 50px;
+  }
   #menu {
     display: none;
   }
 
   #menu-bar {
     display: flex;
-    flex-direction: row;
-    border: 2px solid blue;
     position: relative;
-    justify-content: flex-end;
+    grid-area: nav1;
+    /*border: 2px solid blue;*/
+    margin: 0em 0em;
+    justify-content: right;
+    background-image: linear-gradient(
+      to right,
+      rgb(255, 255, 255),
+      rgb(255, 232, 248)
+    );
   }
 
   .nav {
-    grid-area: nav1;
     display: flex;
   }
 
   .nav li {
     list-style: none;
-    padding: 0em 1em;
-    z-index: 1;
+    padding: 0em 0.2em;
+    margin: 0 1em;
+    background-color: rgb(240, 130, 172);
+    text-align: center;
+    width: 10vw;
+    border-radius: 3px;
+    color: rgb(0, 0, 0);
+  }
+
+  .nav li:hover {
+    background-color: rgb(241, 12, 100);
+  }
+  .nav li a {
+    color: rgb(0, 0, 0);
   }
   .menu-bg {
     display: none;
   }
 
   .header h3 {
-    margin-right: 5vw;
+    margin-right: 2vw;
+    font-size: 2.5em;
+  }
+
+  .header {
+    grid-area: header;
+    width: 100vw;
+  }
+
+  .row4,
+  .row3,
+  .welcome,
+  #menu-bar {
+    margin: 0 5vw;
+  }
+
+  .row3 {
+    margin-right: 0;
+  }
+
+  .welcome {
+    margin-left: 0;
+    font-size: 2em;
+    text-align: justify;
+  }
+  .row4 img {
+    width: 18%;
+    padding: 0.5em 0em;
+  }
+
+  .row5 {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .row5 button {
+    margin: 1em 1em;
+    width: 10%;
+  }
+  .copyright {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    font-size: 1em;
   }
 }
