@@ -7,27 +7,31 @@
 
 .mobile-container {
     display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, auto);
     grid-template-areas: 
-    'header header header'
-    'main main main'
-    '. main .'
-    'main . main'
-    'main . main'
-    'footer footer footer';
+    'header header'
+    'main main'
+    'main main'
+    'main main'
+    'main main'
+    'footer footer';
+    grid-gap: 5px;
     max-width: 539px;
-
 }
 
 .header {
     grid-area: header;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     border-style: dashed;
     border-color: hotpink;
+    text-align: center;
 }
 
 .main {
     grid-area: main;
+    text-align: center;
 }
 
 .footer {
@@ -37,8 +41,7 @@
 /* Header */
 
 .logo {
-    height: 50%;
-    width: 50%;
+    width: 75%;
 }
 
 /* Hamburger Nav */
@@ -50,4 +53,24 @@
 
 .nav #myLinks {
     display: none;
+}
+
+
+/* Images */
+
+.main-image {
+    width: 339px;
+}
+
+.small-image {
+    width: 150px;
+}
+
+.image-row1, .image-row2 {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer {
+    text-align: center;
 }
