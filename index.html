@@ -1,16 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Responsive Cake webpage</title>
+    <link rel="stylesheet" href="style.css" />
     <!-- Add a link to your css file here -->
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- Add your markup here -->
-</body>
 
+    <main class="main-container">
+      <div class="header">
+        <img src="img/f11.jpg" alt="CupCake" />
+        <h3>The best Cake in the town delivered to your door</h3>
+      </div>
+      <div id="menu-bar">
+        <div id="menu" onclick="onClickMenu()">
+          <div id="bar1" class="bar"></div>
+          <div id="bar2" class="bar"></div>
+          <div id="bar3" class="bar"></div>
+        </div>
+        <ul class="nav" id="nav">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Gallery</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="menu-bg" id="menu-bg"></div>
+
+      <div class="welcome">
+        <h1>Welcome</h1>
+        <p>
+          Pellentesque habitant morbi tristique senectus et netus et malesuada
+          fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae,
+          ultricies eget, tempor sit amet, ante.
+        </p>
+      </div>
+      <div class="row3">
+        <img src="img/f3.jpg" alt="Birthday Cake" />
+      </div>
+      <div class="row4">
+        <img src="img/album1.jpg" alt="Cake with white cream" />
+        <img src="img/album2.jpg" alt="strawberry CupCake" />
+        <img src="img/album3.jpg" alt="strawberry CupCake with white cream" />
+        <img src="img/album4.jpg" alt="Cake with Blue berry topping" />
+      </div>
+      <div class="row5">
+        <button>New Desgin</button>
+        <button>Offers</button>
+        <button>Vegetarian</button>
+      </div>
+    </main>
+    <footer>
+      <hr />
+      <p class="copyright">Kawa-Manmi.com &copy; 2022</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
 </html>
