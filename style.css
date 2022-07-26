@@ -30,11 +30,7 @@ body {
   justify-content: left;
   align-content: space-between;
   flex-direction: row;
-  background-image: linear-gradient(
-    to right,
-    rgb(255, 255, 255),
-    rgb(255, 232, 248)
-  );
+  background-image: linear-gradient(to right, rgb(255, 255, 255), #f7d7e8);
 }
 
 #menu {
@@ -141,8 +137,9 @@ body {
   text-align: right;
   margin-left: 10%;
   margin-right: 5%;
-  border: 2px solid red;
+  /*border: 2px solid red;*/
 }
+
 .welcome {
   grid-area: r2;
   margin: 0 1em;
@@ -185,10 +182,8 @@ body {
   padding: 0.5em 0em;
 }
 
-img:hover,
-button:hover {
-  filter: contrast(1.15);
-  filter: drop-shadow(0 0 0.75rem crimson);
+img:hover {
+  filter: contrast(120%) drop-shadow(0 0 0.55rem rgb(0, 0, 0));
 }
 .row5 {
   grid-area: r5;
@@ -200,7 +195,7 @@ button:hover {
   );
   display: flex;
   flex-direction: column;
-  border: 2px solid red;
+  /*border: 2px solid red;*/
 }
 
 .row5 button {
@@ -219,7 +214,7 @@ hr {
 
 @media (min-width: 540px) {
   body {
-    background-color: aqua;
+    /*background-color: aqua;*/
   }
 
   .main-container {
@@ -243,11 +238,7 @@ hr {
     /*border: 2px solid blue;*/
     margin: 0em 0em;
     justify-content: right;
-    background-image: linear-gradient(
-      to right,
-      rgb(255, 255, 255),
-      rgb(255, 232, 248)
-    );
+    background-image: linear-gradient(to right, rgb(255, 255, 255), #f7d7e8);
   }
 
   .nav {
@@ -276,8 +267,9 @@ hr {
   }
 
   .header h3 {
-    margin-right: 2vw;
-    font-size: 2.5em;
+    margin: auto;
+    font-size: 2.5vw;
+    width: auto;
   }
 
   .header {
@@ -298,7 +290,7 @@ hr {
 
   .welcome {
     margin-left: 0;
-    font-size: 2em;
+    font-size: 1em;
     text-align: justify;
   }
   .row4 img {
@@ -312,7 +304,7 @@ hr {
   }
   .row5 button {
     margin: 1em 1em;
-    width: 10%;
+    width: 100px;
   }
   .copyright {
     text-align: center;
