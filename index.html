@@ -7,13 +7,24 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Responsive Cake webpage Alex Phillip</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/f795d4535e.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <div class="mobile-container">
     <header class="header">
-        <img src="img/cake-logo.jpg" class="logo" alt="" />
+        <nav class="nav">
+  <a href="#" class="active"><img src="img/cake-logo.jpg" class="logo" alt="" /></a>
+  <div id="myLinks">
+    <a href="#">About</a>
+    <a href="#">Products</a>
+    <a href="#">Contact</a>
+  </nav>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
         <h3 class="tagline">The best cakes in town delivered to your door</h3>
     </header>
     <main class="main">
@@ -31,6 +42,7 @@
         <i class="fa-brands fa-facebook-f"></i>
     </footer>
     </div>
+    <script src="script.js"></script>
 </body>
 
 </html>

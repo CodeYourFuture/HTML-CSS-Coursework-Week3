@@ -1,23 +1,53 @@
+.html {
+    scroll-behavior: smooth;
+    align-content: center;
+}
+
+/* Mobile Grid */
+
 .mobile-container {
     display: grid;
     grid-template-areas: 
-    'header header'
-    'main main'
-    'main main'
-    'main main'
-    'main main'
-    'footer footer';
+    'header header header'
+    'main main main'
+    '. main .'
+    'main . main'
+    'main . main'
+    'footer footer footer';
+    max-width: 539px;
 
 }
 
 .header {
     grid-area: header;
+    display: flex;
+    justify-content: space-between;
+    border-style: dashed;
+    border-color: hotpink;
 }
 
 .main {
-    gird-area: main;
+    grid-area: main;
 }
 
 .footer {
     grid-area: footer;
+}
+
+/* Header */
+
+.logo {
+    height: 50%;
+    width: 50%;
+}
+
+/* Hamburger Nav */
+
+.nav {
+    overflow: hidden;
+    position: relative;
+}
+
+.nav #myLinks {
+    display: none;
 }
