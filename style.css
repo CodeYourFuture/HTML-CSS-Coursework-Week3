@@ -1,1 +1,104 @@
-/*  Add your styling here */
+.html {
+    scroll-behavior: smooth;
+    align-content: center;
+}
+
+/* Mobile Grid */
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, auto);
+    grid-template-areas: 
+    'header header'
+    'main main'
+    'main main'
+    'main main'
+    'main main'
+    'footer footer';
+    grid-gap: 10px;
+    max-width: 539px;
+}
+
+.header {
+    grid-area: header;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.main {
+    grid-area: main;
+    text-align: center;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+/* Header */
+
+.header {
+    border-bottom: 3px solid darkslategrey;
+    padding-bottom: 20px;
+}
+
+.logo {
+    width: 75%;
+}
+
+/* Hamburger Nav */
+
+.nav {
+    overflow: hidden;
+    position: relative;
+}
+
+.nav #myLinks {
+    display: none;
+}
+
+.icon {
+    color: darkslateblue;
+}
+
+/* Images */
+
+.main-image {
+    width: 339px;
+    border: 2px solid darkslateblue;
+}
+
+.small-image {
+    width: 150px;
+    border: 2px solid darkslateblue;
+    margin: 10px 0;
+}
+
+.image-row1, .image-row2 {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+/* Footer */
+
+.footer {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 3px solid darkslategrey;
+}
+
+/* Media query - Tablet */
+
+@media screen and (min-width: 540px) {
+    .container {
+            max-width: 899px;
+        }
+}
+
+/* Media Query - Desktop */
+
+@media screen and (min-width: 900px) {
+   
+}
