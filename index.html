@@ -1,16 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Responsive Cake webpage</title>
-    <!-- Add a link to your css file here -->
-</head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
-    <!-- Add your markup here -->
-</body>
+  <body>
+    <header class="header">
+      <img class="logo" src="design/images/cakelogo4.jpg" alt="logo" />
+      <div class="grid-container">
+        <nav class="hamburger-style">
+          <input id="menu__toggle" type="checkbox" />
+          <label class="menu__btn" for="menu__toggle">
+            <span></span>
+          </label>
 
+          <ul class="nav-menu">
+            <li><a class="menu__item" href="#">Home</a></li>
+            <li><a class="menu__item" href="#">Cakes</a></li>
+            <li><a class="menu__item" href="#">Ordering</a></li>
+            <li><a class="menu__item" href="#">Lessons</a></li>
+            <li><a class="menu__item" href="#">About</a></li>
+          </ul>
+        </nav>
+        <p  class="slogan">The best cakes in town delivered to your door</p>
+      </div>
+    </header>
+
+    <nav class="desktop">
+      <ul class="nav_list">
+        <li><a class="nav_link" href="#">Home</a></li>
+        <li><a class="nav_link" href="#">Cakes</a></li>
+        <li><a class="nav_link" href="#">Ordering</a></li>
+        <li><a class="nav_link" href="#">Lessons</a></li>
+        <li><a class="nav_link" href="#">About</a></li>
+      </ul>
+    </nav>
+
+    <section class="hero">
+      <article class="article">
+        <h1 class="welcome">Welcome</h1>
+        <p class="text_content">
+          Browse our website and pick from our huge range of delicious cake. Order online
+          And we will do the rest, delivered right to your door or your money back.
+          Put your feet up and wait for your delivery! We are busy behind the scene making 
+          fudgy brownies that would not disappoint you.</p>
+      </article>
+      <img class="hero_img" src="design/images/cakelogo.avif" alt="" />
+    </section>
+
+    <section class="thumbnails">
+      <img src="design/images/slideimg1.jpg" alt="candle-cake" class="thumbnail" />
+      <img src="design/images/slide2.jpg" alt="strawberry-cake" class="thumbnail" />
+      <img src="design/images/muffinslide3.jpg" alt="muffin-cake" class="thumbnail" />
+      <img src="design/images/snailcake-slide4.jpg" alt="snail-cake" class="thumbnail" />
+    </section>
+
+    <footer>
+      <div class="footer_links">
+        <div class="footer_content">facebook<a href="https://www.facebook.com"><ion-icon name="logo-facebook"></ion-icon></a></div>
+        <div class="footer_content">twitter<a href="https://www.twitter.com"><ion-icon name="logo-twitter"></ion-icon></a></div>
+        <div class="footer_content">instagram<a href="https://www.instagram.com"></a><ion-icon name="logo-instagram"></ion-icon></div>
+      </div>
+      <div class="copyright">&copy; copyright</div>
+    </footer>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  </body>
 </html>
