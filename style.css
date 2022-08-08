@@ -14,26 +14,56 @@
     "th th"
     "fo fo";
     border: 2px solid black;
-    grid-template: auto / 1fr 1fr 1fr 1fr;
+    grid-template: repeat(5, 1fr) / repeat(2, 1fr);
+    height: 200vh;
   }
   header{
     grid-area: he;
     grid-column-start: 1;
-    grid-column-end: 3;
+    grid-column-end: -1;
     grid-row-start: 1;
     grid-row-end: 2;
+    border: 2px solid green;
+    height: 30vh;
   }
   .first-section{
+    grid-area: fi;
+    grid-column-start: 1;
+    grid-column-end: -1;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    border: 2px solid red;
+    height: 20vh;
 
   }
   .second-section{
-
+    grid-area: se;
+    grid-column-start: 1;
+    grid-column-end: -1;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    border: 2px solid yellow;
+    height: 20vh;
   }
   .third-section{
-
+    grid-area: th;
+    grid-column-start: 1;
+    grid-column-end: -1;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    border: 2px solid blue;
+    height: 100vh;
   }
   footer{
-    
+    grid-area: fo;
+    grid-column-start: 1;
+    grid-column-end: -1;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    border: 2px solid brown;
+    height: 30vh;
+
+
   }
 
 
