@@ -1,4 +1,186 @@
-*{
-    margin: 0;
-    padding: 0;
+@import url("https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps:wght@400;700&display=swap");
+/* font-family: 'Oleo Script Swash Caps', cursive; */
+
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;1,300&display=swap");
+/* font-family: 'Source Sans Pro', sans-serif; */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #ddb892;
+  --secondary-color: #e6ccb2;
+  --tertiary-color: #ede0d4;
+  --title-text-color: #4d3322;
+  --text-color: #b08968;
+  --text-color2: #8f6d52;
+}
+
+body {
+  width: auto;
+  display: grid;
+  font-family: "Source Sans Pro", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Oleo Script Swash Caps", cursive;
+}
+ul,
+li {
+  text-decoration: none;
+  list-style-type: none;
+}
+main {
+  background-color: var(--tertiary-color);
+}
+/* ///// Header ///// */
+header {
+  background-color: var(--primary-color);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas:
+    "logo . . burger"
+    "logo . t t";
+}
+.header__logo {
+  background-image: url(../Img/cup\ cake\ company\ logo.png);
+  width: 80px;
+  height: 90px;
+  margin: 10px 0px 0px 10px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20px;
+  grid-area: logo;
+}
+.header__hamburger {
+  background-image: url(./Img/Hamburger_icon.svg.png);
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 10px;
+  margin-right: 10px;
+  grid-area: burger;
+}
+
+.header__title {
+  grid-area: t;
+  margin-bottom: 10px;
+  font-size: 15px;
+  font-weight: 400;
+  align-items: end;
+  color: var(--title-text-color);
+}
+
+.navbar {
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav__menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+}
+/* ///// Header ///// */
+/* ///// Section1 ///// */
+.container {
+  margin: 20px;
+}
+.container-title {
+  font-size: 40px;
+  color: var(--title-text-color);
+}
+.container-p {
+  line-height: 2em;
+  font-size: 17px;
+  color: var(--text-color2);
+}
+/* ///// Section1 ///// */
+/* ///// Images ///// */
+.cake-images {
+  margin: 1em;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 200px 100px 100px;
+  gap: 20px;
+  grid-template-areas:
+    "img1 img1"
+    "img2 img3"
+    "img4 img5";
+}
+
+.cake-images__1,
+.cake-images__2,
+.cake-images__3,
+.cake-images__4,
+.cake-images__5 {
+  border-radius: 3px;
+}
+.cake-images__1 {
+  grid-area: img1;
+  background-image: url(./Img/Img1.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.cake-images__2 {
+  grid-area: img2;
+  background-image: url(./Img/Img2.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.cake-images__3 {
+  grid-area: img3;
+  background-image: url(./Img/Img3.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.cake-images__4 {
+  grid-area: img4;
+  background-image: url(./Img/Img4.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.cake-images__5 {
+  grid-area: img5;
+  background-image: url(./Img/Img5.jpg);
+  background-position: center;
+  background-size: cover;
+}
+/* ///// Images ///// */
+/* ///// footer ///// */
+footer {
+  background-color: var(--primary-color);
+  text-align: left;
+}
+.footer-place__1 {
+  margin: 1em;
+  text-align: left;
+  font-weight: 400;
+  color: var(--title-text-color);
+}
+.footer-place__2 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  font-size: 15px;
+  color: var(--text-color2);
+}
+/* ///// Images ///// */
+
+/* Media */
+@media only screen and (min-width: 0px) {
+  .nav__menu {
+    display: none;
+  }
 }
