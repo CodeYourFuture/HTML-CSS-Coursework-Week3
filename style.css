@@ -2,6 +2,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,500;0,700;0,800;1,200;1,300&display=swap');
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0 auto;
     width: 100%;
@@ -20,7 +24,7 @@ body {
 }
 
 header {
-    background-image: url('./images/deva-williamson-K2ZFPgTjMDI-unsplash.jpg');
+    background-image: url('./images/david-holifield-ZbaAnGUSXc0-unsplash.jpg');
     background-size: 100%;
     grid-template-areas: "header";
     height: 20rem;
@@ -60,8 +64,12 @@ nav {
 h2 {
     color: #fec5bb;
     text-transform: uppercase;
+    font-size: 2.5em;
 }
 
 p {
     color: #8b8c89;
+    line-height: 1.5;
+    padding: 0px 60px 60px 60px;
+    font-size: 1.1em;
 }
