@@ -7,7 +7,7 @@ body {
     "header"
     "main"
     "footer";
-  grid-template-rows: repeat(3, 1fr 4fr 1fr);
+  
 }
 
 /* header design style*/
