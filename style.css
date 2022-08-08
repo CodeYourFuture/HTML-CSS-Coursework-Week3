@@ -144,6 +144,12 @@ body {
   }
 
   /*  Picture in the main element */
+.intro_and_mainPicture{
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  text-align: right;
+}
+
   .multiple_cakes {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
