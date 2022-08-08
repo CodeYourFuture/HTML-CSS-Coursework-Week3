@@ -7,7 +7,6 @@ body {
     "header"
     "main"
     "footer";
-  
 }
 
 /* header design style*/
@@ -15,7 +14,6 @@ body {
   grid-area: header;
   display: flex;
   justify-content: space-between;
-  background-color: green;
 }
 
 .navBar_and_title_and_hamburgButton {
@@ -54,8 +52,7 @@ button {
   display: flex;
   flex-direction: column;
   grid-area: main;
-  background-color: olive;
-  padding: 10px 0px 10px 0px;
+  padding: 20px 0px 20px 0px;
 }
 
 .intro_and_mainPicture {
@@ -91,7 +88,6 @@ button {
   flex-direction: column;
   align-items: flex-start;
   grid-area: footer;
-  background-color: blue;
 }
 .social_media_image {
   width: 30px;
