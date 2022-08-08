@@ -149,6 +149,12 @@ body {
     flex-direction: row-reverse;
     justify-content: space-between;
     text-align: right;
+    margin: 10px;
+  }
+  .introduction > p{
+   padding-left: 50px;
+   line-height: 30px;
+   font-size: larger;
   }
 
   .multiple_cakes {
