@@ -1,1 +1,34 @@
-/*  Add your styling here */
+/* ==========default============ */
+
+@import url("https://fonts.googleapis.com/css2?family=Allura&family=Niconne&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&display=swap");
+
+:root {
+  --clr-blue: #aed9e0;
+  --clr-green: #b8f2e6;
+  --clr-pink: #ffa69e;
+  --clr-white: rgb(255, 255, 255);
+  --clr-light-gray: #aeaeae;
+  --clr-orange-light: #fcefeb;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  font-family: "Niconne", "Roboto", sans-serif;
+  font-size: 28px;
+  box-sizing: border-box;
+}
+
+/* ============Header============ */
+
+header div {
+  background-repeat: repeat;
+  width: 100%;
+  height: 330px;
+  /* background-color: #d61a4f; */
+
+  background-image: url(./img/ban/pattern_new-3_1_1_0-0_45_1__ffffff_e8c4683d.png);
+  font-family: "Fredericka the Great", cursive;
+}
