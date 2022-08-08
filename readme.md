@@ -13,7 +13,7 @@ Two wireframes are provided down below (scroll to the bottom).
    - To clone, click the green button that says 'Code' on that page.
   Now the code is on your own machine (this happened when you cloned), AND it's linked to your own Cakes repository on Github (which was created when you forked).
 
- - Before you start coding, **create a new branch** following this format `your-class-name/your-name`, for example: `london-class-7/adam-smith`. Your branch name should be all lowercase, with no spaces. 
+ - Before you start coding, **create a new branch** following this format `your-class-name/your-name`, for example: . Your branch name should be all lowercase, with no spaces. 
 
 When you're ready to start coding:
 
