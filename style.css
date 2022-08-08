@@ -4,3 +4,37 @@
     padding: 0%;
     box-sizing: border-box;
   }
+
+  .container{
+    display: grid;
+    grid-template-areas: 
+    "he he"
+    "fi fi"
+    "se se"
+    "th th"
+    "fo fo";
+    border: 2px solid black;
+    grid-template: auto / 1fr 1fr 1fr 1fr;
+  }
+  header{
+    grid-area: he;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+  .first-section{
+
+  }
+  .second-section{
+
+  }
+  .third-section{
+
+  }
+  footer{
+    
+  }
+
+
+
