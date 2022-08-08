@@ -74,6 +74,7 @@ body {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 200px 200px;
   width: 100%;
+  gap: 10px;
 }
 
 /* repeat(auto-fit, minmax(200px, 1fr)) Jus not sure how this will effect the media queries for the just above container, but keep it here for later use*/
