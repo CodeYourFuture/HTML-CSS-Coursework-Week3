@@ -71,12 +71,11 @@ button {
 
 .multiple_cakes {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: 200px 200px;
   width: 100%;
 }
-
-
+/* repeat(auto-fit, minmax(200px, 1fr)) Jus not sure how this will effect the media queries for the just above container, but keep it here for later use*/
 
 /* this code controls the size of the pictures */
 .Picture_for_productItem {
@@ -86,17 +85,20 @@ button {
   margin: 5px;
 }
 
-
-
-
-
-
-
-
-
-
 /* footer design */
 .footer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   grid-area: footer;
   background-color: blue;
+}
+.social_media_image {
+  width: 30px;
+}
+.social_media_links {
+  visibility: collapse;
+}
+.footer > p {
+  text-align: center;
 }
