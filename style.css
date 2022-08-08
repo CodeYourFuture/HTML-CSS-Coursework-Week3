@@ -32,3 +32,17 @@ header div {
   background-image: url(./img/ban/pattern_new-3_1_1_0-0_45_1__ffffff_e8c4683d.png);
   font-family: "Fredericka the Great", cursive;
 }
+
+/* =============== footer ============ */
+
+footer {
+  background-color: grey;
+  padding-bottom: 500px;
+}
+
+.socials img {
+  width: 1.5em;
+}
+.socials img:hover {
+  transform: scale(1.2);
+}
