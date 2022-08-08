@@ -1,1 +1,20 @@
 /*  Add your styling here */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Raleway', sans-serif;
+}
+
+/* header */
+.header {
+	display: flex;
+	position: fixed;
+	width: 100%;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #ccd5ae;
+	height: 110px;
+	color: rgb(8, 66, 48);
+	font-weight: bolder;
+}
