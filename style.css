@@ -22,6 +22,7 @@ body {
   align-items: flex-end; */
   text-align: center;
 }
+
 #logo_picture {
   align-self: flex-start;
 }
@@ -34,7 +35,6 @@ body {
 .logo_picture {
   width: 80px;
   height: inherit;
-  border: solid;
 }
 
 /* 3 divs that made up humberg inside the button */
@@ -119,9 +119,10 @@ body {
 
   .navBar_and_title_and_hamburgButton {
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
   }
-  .tile_paraghr{
+
+  .tile_paraghr {
     align-self: flex-end;
   }
 
@@ -138,17 +139,17 @@ body {
 
   /*nav button  */
   .humburg_btn {
-    visibility:collapse;
+    visibility: collapse;
     height: 40px;
     width: 50px;
   }
 
   /*  Picture in the main element */
-.intro_and_mainPicture{
-  flex-direction: row-reverse;
-  justify-content: space-between;
-  text-align: right;
-}
+  .intro_and_mainPicture {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    text-align: right;
+  }
 
   .multiple_cakes {
     display: grid;
@@ -161,9 +162,8 @@ body {
     display: flex;
     align-items: center;
     grid-area: footer;
-   
   }
- 
+
   .social_media_links {
     visibility: visible;
   }
