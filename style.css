@@ -45,7 +45,7 @@ body {
 }
 
 /*nav button  */
-button {
+.humburg_btn {
   height: 40px;
   width: 50px;
 }
@@ -109,14 +109,6 @@ button {
 /* ------------------DESKTOP DESIGN------------------------ */
 
 @media screen and (min-width: 550px) {
-  /* body {
-    display: grid;
-    grid:
-      "header"
-      "main"
-      "footer";
-  } */
-
   /*  from here up to next comment will be header and its children style in desktop view */
   .header {
     grid-area: header;
@@ -143,29 +135,28 @@ button {
     font-size: large;
   }
 
-  /* .logo_picture {
-    width: 80px;
-    height: inherit;
-    border: solid;
-  } */
-
-  /* 3 divs that made up humberg inside the button */
-
-
   /*nav button  */
-  button {
-    visibility: hidden;
+  .humburg_btn {
+    visibility:collapse;
     height: 40px;
     width: 50px;
   }
 
-
   /*  Picture in the main element */
-.multiple_cakes {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  width: 100%;
-}
+  .multiple_cakes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+  }
 
-
+  .footer {
+    display: flex;
+    align-items: center;
+    grid-area: footer;
+   
+  }
+ 
+  .social_media_links {
+    visibility: visible;
+  }
 }
