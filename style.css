@@ -119,10 +119,10 @@ body {
 
   .navBar_and_title_and_hamburgButton {
     display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    text-align: center;
-    background-color: yellow;
+    justify-content:space-between;
+  }
+  .tile_paraghr{
+    align-self: flex-end;
   }
 
   /* Navigation menu is collapsed in the mobile design */
@@ -131,8 +131,9 @@ body {
     display: flex;
     justify-content: flex-end;
     gap: 50px;
-    background-color: green;
-    font-size: large;
+    background-color: wheat;
+    color: black;
+    padding: 15px;
   }
 
   /*nav button  */
