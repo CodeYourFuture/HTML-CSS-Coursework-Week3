@@ -1,1 +1,67 @@
 /*  Add your styling here */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,500;0,700;0,800;1,200;1,300&display=swap');
+
+body {
+    margin: 0 auto;
+    width: 100%;
+    font-family: 'Montserrat';
+}
+
+.container {
+    display: grid;
+    grid-template-areas:"header"
+                        "hero"
+                        "section"
+                        "g" 
+                        "g"
+                        "footer";
+    grid-template-rows: repeat(4, min-content);
+}
+
+header {
+    background-image: url('./images/deva-williamson-K2ZFPgTjMDI-unsplash.jpg');
+    background-size: 100%;
+    grid-template-areas: "header";
+    height: 20rem;
+}
+
+section {
+    grid-template-areas: "section";
+    margin: 1rem;
+    text-align: center;
+}
+
+footer {
+    grid-template-areas: "footer";
+    background-color: #fcd5ce;
+    height: 14rem;
+}
+
+.image-grid {
+    grid-template-areas: "g";
+    max-width: 100%;
+    display: grid;
+    grid-template-areas: "1 2" 
+                         "3 4";
+    column-gap: 1rem;
+    row-gap: 1rem;
+    margin: 0 1rem 1rem 1rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+nav {
+
+}
+
+h2 {
+    color: #fec5bb;
+    text-transform: uppercase;
+}
+
+p {
+    color: #8b8c89;
+}
