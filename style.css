@@ -107,14 +107,15 @@ button {
 }
 
 /* ------------------DESKTOP DESIGN------------------------ */
+
 @media screen and (min-width: 550px) {
-  body {
+  /* body {
     display: grid;
     grid:
       "header"
       "main"
       "footer";
-  }
+  } */
 
   /*  from here up to next comment will be header and its children style in desktop view */
   .header {
@@ -142,18 +143,14 @@ button {
     font-size: large;
   }
 
-  .logo_picture {
+  /* .logo_picture {
     width: 80px;
     height: inherit;
     border: solid;
-  }
+  } */
 
   /* 3 divs that made up humberg inside the button */
-  .hum_div {
-    border: solid;
-    margin: 5px;
-    width: 20px;
-  }
+
 
   /*nav button  */
   button {
@@ -163,40 +160,11 @@ button {
   }
 
 
-  /*  main element design */
-
-
-  .main {
-  display: flex;
-  flex-direction: column;
-  grid-area: main;
-  padding: 20px 0px 20px 0px;
-}
-
-.intro_and_mainPicture {
-  display: flex;
-  flex-direction: column;
-  padding: 10px 0px 10px 0px;
-}
-
-.main_picture {
-  align-self: center;
-  border-radius: 5px;
-}
-
+  /*  Picture in the main element */
 .multiple_cakes {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   width: 100%;
-}
-
-
-/* this code controls the size of the pictures */
-.Picture_for_productItem {
-  width: 100%;
-  height: 99%;
-  border-radius: 5px;
-  margin: 5px;
 }
 
 
