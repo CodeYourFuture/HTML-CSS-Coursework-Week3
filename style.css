@@ -1,9 +1,16 @@
 /*  Add your styling here */
 
+html{
+
+    margin: 0;
+    width: auto;
+}
 body{
 
     font-family: 'Mouse Memoirs', sans-serif;
     margin: 0;
+    background-color: pink;
+    width: auto;
 
 }
 
@@ -25,12 +32,13 @@ body{
   width: 200px;
   height: 200px;
   /* image-resolution: 100px 10px; */
+  background-size: cover;
 }
 
 .headerHamburgerMenu{
     grid-column: 2/3;
     grid-row: 1/2;
-    width: 75px;
+    width: 50px;
     height: 50px;
     justify-self: end;
     
@@ -62,7 +70,7 @@ body{
 
 .mainImages{
 display: grid;
-grid-template-columns: 5% 45% 45% 5%;
+grid-template-columns: auto 50% 50% auto;
 /* grid-template-rows: 1fr ; */
 gap: 1em 1em;
 padding: 0;
@@ -76,6 +84,7 @@ margin: 0;
     width: 100% ;
     height: 100%;
     background-size: cover;
+    row-gap: 5px;
 }
 
 .topLeftImage{
@@ -85,6 +94,8 @@ margin: 0;
     width: 100% ;
     height: 100%;
     background-size: cover;
+    row-gap: 5px;
+column-gap: 25px;
 
 }
 
@@ -116,4 +127,15 @@ margin: 0;
     height: 100%;
     background-size: cover;
 
+}
+
+.footer{
+    background-color: rgb(252, 164, 178);
+
+}
+
+.footerImage{
+
+    width: 50px;
+    height:50px;
 }
