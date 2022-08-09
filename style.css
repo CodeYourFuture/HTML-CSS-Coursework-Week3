@@ -4,6 +4,14 @@
     padding: 0;
     
 }
+
+body{
+    width: 375px;
+    height: 667px;
+    border: 3px solid black;
+
+
+}
 .container{
     
     display: grid;
@@ -11,9 +19,13 @@
     grid-template-rows: repeat(7, 1fr);
     grid-gap: 5px;
     text-align: center;
-    /* grid-template-areas:
-    ""
-    ; */
+    grid-template-areas:
+    "to to"
+    "mimg mimg"
+    "wt wt"
+    "ar ar"
+    "f f"
+    ;
         
 }
 
@@ -25,7 +37,7 @@
 }
 
 .t_text{
-    grid-area: top;
+    grid-area: to;
 }
 
 .main_img{
@@ -44,8 +56,20 @@
     grid-area: f;
 }
 
-.four_pic{
-    grid-area: four;
+.fimg_pic{
+    grid-area: f1;
+}
+
+.simg_pic{
+    grid-area: f2;
+}
+
+.timg_pic{
+    grid-area: f3;
+}
+
+.fouthimg_pic{
+    grid-area: f4;
 }
 
 .footer{
