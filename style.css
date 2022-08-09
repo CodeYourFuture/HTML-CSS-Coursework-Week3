@@ -13,14 +13,14 @@ body{
 
 }
 .container{
-    
+    display: flex;
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    grid-template-rows: repeat(8, 1fr);
+    grid-template-rows: repeat(0.5fr);
     grid-gap: 5px;
     text-align: center;
     grid-template-areas:
-    "na na"
+    "na bor"
     "to to"
     "mimg mimg"
     "wt wt"
@@ -34,17 +34,56 @@ body{
 }
 
 .box{
-    background-color: aqua;
-    padding: 7%;
+    
+    padding: 2px;
     
     
 }
 
 .nav{
+    justify-content: space-between;
+    display: flex;
     grid-area: na;
+    grid-column: 1/ -1;
+    
+   
+    
+    
 }
+
+.bor{
+    grid-area: bor;
+    height: 30%;
+    text-align: end;
+    font-size: 6px;
+    
+    /* remove the list point */   
+}
+
+ul{
+    list-style: none;
+}
+.p_nav{
+    display: flex;
+    align-items: flex-end;
+    justify-content: end;
+    height: 65%;
+    color: rgb(118, 134, 129);
+
+    
+}
+.bor_par{
+    
+    
+    width: 70%;
+    
+    
+}
+
+
 .t_text{
     grid-area: to;
+    
 }
 
 .main_img{
@@ -84,4 +123,8 @@ body{
 
 .footer{
     grid-area: fo;
+}
+
+.icon_img{
+    
 }
