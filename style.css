@@ -16,7 +16,7 @@ body{
     
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    grid-template-rows: repeat(7, 1fr);
+    grid-template-rows: repeat(8, 1fr);
     grid-gap: 5px;
     text-align: center;
     grid-template-areas:
@@ -26,6 +26,9 @@ body{
     "wt wt"
     "ar ar"
     "f f"
+    "f1 f2"
+    "f3 f4"
+    "fo fo"
     ;
         
 }
@@ -56,12 +59,15 @@ body{
     grid-area: ar;
 }
 
-.fri_pic{
+.fir_pic{
     grid-area: f;
+    
+    
 }
 
 .fimg_pic{
     grid-area: f1;
+    
 }
 
 .simg_pic{
@@ -72,7 +78,7 @@ body{
     grid-area: f3;
 }
 
-.fouthimg_pic{
+.fourth_pic{
     grid-area: f4;
 }
 
