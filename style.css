@@ -5,17 +5,16 @@
 
 * {
     box-sizing: border-box;
-    width: 100%;
 }
 
 body {
     margin: 0 auto;
-    width: 100%;
+    width: 100vw;
     font-family: 'Montserrat';
 }
 
 .container {
-    width:100%;
+    width: 100%;
     display: grid;
     grid-template-rows: repeat(3, auto);
     grid-template-areas:"header"
@@ -26,8 +25,8 @@ body {
 
 header {
     background-image: url('./images/ke-vin-VBF1gBG3JPc-unsplash.jpg');
-    background-size: 180%;
-    background-repeat: no-repeat;
+    background-size:cover;
+    background-repeat:no-repeat;
     grid-area: "header";
     height: 30rem;
     text-align: right;
@@ -115,15 +114,10 @@ p {
     line-height: 1.5;
     padding: 0px 60px 60px 60px;
     font-size: 0.9em;
-    margin: 0px;
-
 }
 
 h1 {
     text-transform: uppercase;
-    margin-top: 60px;
-    text-align: center;
-    padding-left: 170px;
     color: white;
     font-size: 2em;
     line-height: 0.9;
@@ -136,13 +130,19 @@ button {
     background: none;
     border: 2px solid white;
     color: white;
-    margin-right: 65px;
- 
+}
+
+.header-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding-right: 2rem;
 }
 
 footer {
-    margin: 0 ;
-    width: 100%;
+    margin: 0;
+    min-width: 100%;
     display: flex;
     flex-direction: column;
     background-color:#c79398;
@@ -181,5 +181,6 @@ height: 3em;
 
 }
 
-.footer-links {
+@media (min-width: 540px) {
+
 }
