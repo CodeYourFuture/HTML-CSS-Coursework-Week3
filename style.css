@@ -20,6 +20,7 @@ body{
     grid-gap: 5px;
     text-align: center;
     grid-template-areas:
+    "na na"
     "to to"
     "mimg mimg"
     "wt wt"
@@ -36,6 +37,9 @@ body{
     
 }
 
+.nav{
+    grid-area: na;
+}
 .t_text{
     grid-area: to;
 }
