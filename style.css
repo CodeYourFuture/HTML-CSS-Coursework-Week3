@@ -1,0 +1,26 @@
+/*  Add your styling here */
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+.container{
+    
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(7, 1fr);
+    grid-gap: 5px;
+    text-align: center;
+    /* grid-template-areas:
+    ""
+    ; */
+        
+}
+
+.box{
+    background-color: aqua;
+    padding: 7%;
+    
+    
+}
+
