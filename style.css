@@ -215,6 +215,10 @@ footer {
     margin-right: 10px;
     grid-area: burger;
   }
+  .header__hamburger:hover{
+    transform: rotate(-90deg);
+    
+  }
 
   .header__title {
     grid-area: t;
@@ -257,6 +261,7 @@ footer {
     grid-area: title;
     font-size: 40px;
     color: var(--title-text-color);
+    text-shadow: 4px 4px var(--primary-color)
   }
   .container-p {
     grid-area: p;
@@ -345,6 +350,7 @@ footer {
   .navbar2 {
     background-color: var(--primary-color);
     padding: 20px;
+    margin: 17px;
   }
   .nav2__menu {
     display: flex;
@@ -366,7 +372,9 @@ footer {
     background-color: var(--tertiary-color);
   }
   main {
-    margin: 30px;
+    margin: auto;
+    max-width: 1044px;
+    padding: 0px;
   }
   .container {
     display: grid;
