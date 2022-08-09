@@ -1,1 +1,56 @@
 /*  Add your styling here */
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 390px;
+    height: 844px;
+    border: 2px solid black;
+}
+.box{
+    padding: 50px;
+    background-color: aqua;
+}
+.contener{
+display: grid;
+grid-template-columns: repeat(2,1fr);
+grid-template-rows: repeat(7,1fr) ;
+grid-gap: 2px;
+grid-template-areas: 
+"hr hr"
+"ar ar"
+"ar ar"
+"b_img b_img"
+"img1 img2"
+"img3 img4"
+"foot foot";
+}
+.header{
+    grid-area: hr;
+    display: flex;
+    
+    
+}
+.artical{
+    grid-area:ar;
+}
+.big_img{
+    grid-area:b_img;
+}
+.img1{
+    grid-area:img1;
+}
+.img2{
+    grid-area:img2;
+}
+.img3{
+    grid-area:img3;
+}
+.img4{
+    grid-area:img4;
+}
+.footer{
+    grid-area:foot;
+}
+
