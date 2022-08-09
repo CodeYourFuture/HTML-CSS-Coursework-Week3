@@ -41,7 +41,7 @@ justify-content:space-between;
 width: 390px;
 height: 118px;
 border: 2px solid rebeccapurple; 
-background-color: #e4c1f9;
+background-color: #d4a373;
 }
 .icon{
 border: 2px solid rebeccapurple; 
@@ -67,16 +67,25 @@ border: 2px solid rebeccapurple;
 }
 /* artical */
 .artical{
-    background-color: #3a5a40;
+    background-color: #faedcd;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    /* background-image: url("img/back_img.jpg"); */
     grid-area:ar;
+  
 }
+
 /* big img */
 .big_img{
     grid-area:b_img;
+    
 }
 /* group of img  */
 .img1{
     grid-area:img1;
+    
+
 }
 .img2{
     grid-area:img2;
@@ -89,7 +98,7 @@ border: 2px solid rebeccapurple;
 }
 /* Footer */
 .footer{
-    background-color: #a3b18a;
+    background-color: #fefae0;
     grid-area:foot;
 }
 
