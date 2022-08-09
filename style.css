@@ -1,19 +1,31 @@
 /*  Add your styling here */
-.header{
-grid-template-columns: 1fr 1fr;
-grid-template-rows: 1fr 1fr 1fr;
+.header {
+ 
 
+.headerDiv {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr 1fr 1fr;
+
+ 
 }
 
-.headerDiv{
-
+.headerImage {
     grid-column: 1/2;
     grid-row: 1/4;
+  width: 100px;
+  height: 10px;
+  /* image-resolution: 100px 10px; */
 }
 
-.headerImage{
-    width: 100px;
-    height: 10px;
-    /* image-resolution: 100px 10px; */
+.headerText{
+
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+
+.main{
+    display: grid;
+    grid-template-columns: 50% 50%;
 
 }
