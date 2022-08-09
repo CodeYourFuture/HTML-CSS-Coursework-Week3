@@ -1,1 +1,29 @@
 /*  Add your styling here */
+html, body {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: #212527;
+    color: #9FB2B9;
+}
+
+.container {
+    display: grid;
+    width: 100%;
+    margin: 2em auto 0;
+}
+.card {
+    background: #337590;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    align-items: center;
+    border-radius: 1em;
+    margin-bottom: 2em;
+}
+span {
+    width: 5em;
+    height: 5em;
+    background: #75A2B8;
+    border-radius: 50%;
+}
