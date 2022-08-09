@@ -30,6 +30,8 @@ grid-template-areas:
 }
 h1{
     font-size: 100%;
+    font-family: 'Sarabun', sans-serif;
+
 }
 /* header */
 .header{
@@ -72,6 +74,8 @@ background-color: #d4a373;
     /* background-image: url("img/background_cakes.jpg");
     background-size: cover; */
     grid-area:ar;
+    font-family: 'Sarabun', sans-serif;
+
   
 }
 p{
