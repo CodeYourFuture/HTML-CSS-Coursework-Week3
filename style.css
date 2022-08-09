@@ -3,13 +3,15 @@
     margin: 0%;
     padding: 0%;
 }
+@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300&family=Nanum+Gothic&family=Sarabun:wght@100&display=swap');
+
 body{
-    width: 390px;
-    height: 844px;
-    border: 2px solid black;
+    /* width: 390px;
+    height: 844px; */
+    
 }
 .box{
-    padding: 50px;
+    padding: 29px;
     background-color: aqua;
 }
 .contener{
@@ -42,7 +44,7 @@ width: 390px;
 height: 118px;
 background-color: #d4a373;
 }
-.icon{
+.icon1{
  display: flex;
  width: 30%;
  justify-content: left;
@@ -73,6 +75,7 @@ background-color: #d4a373;
   
 }
 p{
+    
     color:rgb(118, 117, 117)
 }
 
@@ -119,5 +122,24 @@ p{
 .footer{
     background-color: #fefae0;
     grid-area:foot;
+    justify-content: center;
+    flex-direction: row;
+    text-align: center;
+
+}
+.icon{
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 35px;
+    height: 30px;
+    border-radius: 80%;
+    justify-content: space-around;
+    border: 2px solid rgb(152, 152, 152);
+}
+.icon_three{
+display: flex;
+justify-content: space-around;
 }
 
