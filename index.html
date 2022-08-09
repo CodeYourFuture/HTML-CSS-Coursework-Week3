@@ -3,29 +3,33 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
+
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Maziar Cake Company</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!-- ======================= header ========================== -->
     <header>
-      <div class="header-top-section">
-        <a href="">
-          <img src="./img/bg/B1IMPug1F5wGAAAAAElFTkSuQmCC.png" alt="" />
-        </a>
-        <p>The best cakes in town delivered to your door</p>
-      </div>
-      <nav>
-        <ul>
-          <li>HOME</li>
-          <li>CAKE</li>
-          <li>ORDERIN</li>
-          <li>LESSONS</li>
-          <li>ABOUT</li>
+      <a href="#">
+        <img src="./img/tlogo.png" alt="cake logo" />
+      </a>
+      <p>The best cakes in town delivered to your door</p>
+      <button aria-label="Open navigation" class="hamburger-menu">
+        &#9776;
+      </button>
+      <nav class="nav">
+        <button aria-label="Close navigation" class="close-nav">&times;</button>
+        <ul class="nav-list">
+          <li><a href="#" class="nav-link"> Home</a></li>
+          <li><a href="#" class="nav-link"> Cakes</a></li>
+          <li><a href="#" class="nav-link"> Ordering</a></li>
+          <li><a href="#" class="nav-link"> Lessons</a></li>
+          <li><a href="#" class="nav-link"> About</a></li>
         </ul>
       </nav>
     </header>
+    <!-- ========================== main ========================== -->
     <main>
       <section class="welcome-section">
         <div>
@@ -41,26 +45,48 @@
             pops, cupcakes, and more!
           </p>
         </div>
-        <img src="./img/mainimg.jpg" alt="" />
       </section>
-      <section class="img-galley">
-        <img src="./img/12CBPinacolada_1100x.jpg" alt="" /><img
-          src="./img/2CBRedVelvet_1100x.jpg"
-          alt=""
-        /><img src="./img/8CBItalian_1100x.jpg" alt="" /><img
-          src="./img/10Neapolitan_1100x.jpg"
-          alt=""
-        />
+      <section class="img-gallery">
+        <div class="zoomin-frame main-img">
+          <img src="./img/mainimg.jpg" alt="" />
+        </div>
+        <div class="zoomin-frame">
+          <img class="small-img" src="./img/12CBPinacolada_1100x.jpg" alt="" />
+        </div>
+        <div class="zoomin-frame">
+          <img class="small-img" src="./img/2CBRedVelvet_1100x.jpg" alt="" />
+        </div>
+        <div class="zoomin-frame">
+          <img class="small-img" src="./img/8CBItalian_1100x.jpg" alt="" />
+        </div>
+        <div class="zoomin-frame">
+          <img class="small-img" src="./img/10Neapolitan_1100x.jpg" alt="" />
+        </div>
       </section>
     </main>
+    <!-- ======================== footer ======================= -->
     <footer>
       <div>
-  <ul class="socials">
-    <li><a href="#"><img src="./img/icon/facebook.png" alt=""></a></li>
-    <li><a href="#"><img src="./img/icon/instagram.png" alt=""></a></li>
-    <li><a href="#"><img src="./img/icon/telephone-call.png" alt=""></a></li>
-  </ul>
+        <ul class="socials">
+          <li>
+            <a href="#"
+              ><img src="./img/icon/facebook.png" alt="facebook icon"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img src="./img/icon/instagram.png" alt="instagram icon"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img src="./img/icon/telephone-call.png" alt="phone call icon"
+            /></a>
+          </li>
+        </ul>
       </div>
-<p><span>&#169</span>Maziar Cake, inc.</p></footer>
+      <p><span>&copy</span>Maziar Cake, inc.</p>
+    </footer>
+    <script src="./cake.js"></script>
   </body>
 </html>
