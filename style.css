@@ -24,3 +24,30 @@
     
 }
 
+.t_text{
+    grid-area: top;
+}
+
+.main_img{
+    grid-area: mimg;
+}
+
+.wel_tex{
+    grid-area: wt;
+}
+
+.artical{
+    grid-area: ar;
+}
+
+.fri_pic{
+    grid-area: f;
+}
+
+.four_pic{
+    grid-area: four;
+}
+
+.footer{
+    grid-area: fo;
+}
