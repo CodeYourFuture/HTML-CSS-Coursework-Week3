@@ -313,3 +313,11 @@ footer p {
     gap: 4em;
   }
 }
+
+/* //////////////// extra large //////////// */
+
+@media only screen and (min-width: 1200px) {
+  main p {
+    font-size: 0.9rem;
+  }
+}
