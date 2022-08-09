@@ -356,6 +356,11 @@ footer {
     color: var(--tertiary-color);
     padding-right: 20px;
     padding-left: 20px;
+    transition: 1s;
+  }
+  li:hover {
+    transform: scale(1.1);
+    background-color: rgb(237, 54, 84);
   }
   body {
     background-color: var(--tertiary-color);
@@ -391,32 +396,61 @@ footer {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    transition: 1s;
+  }
+  .cake-images__1:hover {
+    transform: scale(0.9);
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
   }
   .cake-images__2 {
     grid-area: img2;
     background-image: url(./Img/Img2.jpg);
     background-position: center;
     background-size: cover;
+    transition: 1s;
+  }
+  .cake-images__2:hover {
+    transform: scale(0.9);
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
   }
   .cake-images__3 {
     grid-area: img3;
     background-image: url(./Img/Img3.jpg);
     background-position: center;
     background-size: cover;
+    transition: 1s;
+  }
+  .cake-images__3:hover {
+    transform: scale(0.9);
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
   }
   .cake-images__4 {
     grid-area: img4;
     background-image: url(./Img/Img4.jpg);
     background-position: center;
     background-size: cover;
+    transition: 1s;
+  }
+  .cake-images__4:hover {
+    transform: scale(0.9);
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
   }
   .cake-images__5 {
     grid-area: img5;
     background-image: url(./Img/Img5.jpg);
     background-position: center;
     background-size: cover;
+    transition: 1s;
   }
-
+  .cake-images__5:hover {
+    transform: scale(0.9);
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+  }
   .footer-place__1 {
     display: flex;
     justify-content: center;
