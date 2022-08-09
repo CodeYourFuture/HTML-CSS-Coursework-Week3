@@ -1,6 +1,7 @@
 /*  Add your styling here */
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,500;0,700;0,800;1,200;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
 
 * {
     box-sizing: border-box;
@@ -24,10 +25,17 @@ body {
 }
 
 header {
-    background-image: url('./images/david-holifield-ZbaAnGUSXc0-unsplash.jpg');
-    background-size: 100%;
+    background-image: url('./images/ke-vin-VBF1gBG3JPc-unsplash.jpg');
+    background-size: 160%;
+    background-repeat: no-repeat;
     grid-template-areas: "header";
-    height: 20rem;
+    height: 25rem;
+    text-align: right;
+    background-position:right;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
 }
 
 section {
@@ -36,16 +44,54 @@ section {
     text-align: center;
 }
 
+
 footer {
+    padding-top: 2em;
+    display: flex;
+    flex-direction: column;
+    background-color: #fec5bb;
     grid-template-areas: "footer";
-    background-color: #fcd5ce;
-    height: 14rem;
+
+}
+
+ul {
+list-style: none;
+text-align: center;
+color: white;
+padding: 0;
+}
+
+li {
+padding: 5px;
+}
+
+
+
+.footer-icons {
+display: inline-block;
+text-align: center;
+}
+
+.footer-text {
+color: white;
+font-size: 0.9em;
+text-align: center;
+}
+
+.fa-instagram,
+.fa-twitter,
+.fa-facebook {
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    padding: 20px;
 }
 
 .image-grid {
     grid-template-areas: "g";
     max-width: 100%;
     display: grid;
+    grid-template-rows: 10rem 10rem;
     grid-template-areas: "1 2" 
                          "3 4";
     column-gap: 1rem;
@@ -53,8 +99,19 @@ footer {
     margin: 0 1rem 1rem 1rem;
 }
 
+.gallery__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+figure {
+    margin: 0;
+}
+
 img {
     max-width: 100%;
+    object-fit: stretch;
 }
 
 nav {
@@ -63,13 +120,38 @@ nav {
 
 h2 {
     color: #fec5bb;
-    text-transform: uppercase;
-    font-size: 2.5em;
+    font-size: 2.9em;
+    font-family: 'Sacramento';
+    font-weight: lighter;
+    margin-bottom: 5px;
 }
 
 p {
     color: #8b8c89;
     line-height: 1.5;
-    padding: 0px 60px 60px 60px;
+    padding: 0px 30px 30px 30px;
     font-size: 1.1em;
+    margin-top: 0px;
+
 }
+
+h1 {
+    text-transform: uppercase;
+    margin-top: 20px;
+    margin-right: 15px;
+    margin-left: 100px;
+    color: white;
+}
+
+button {
+    width: 6rem;
+    padding: 8px;
+    margin-right: 15px;
+    margin-left: 100px;
+    margin-top: -9px;
+    background: none;
+    border: 2px solid white;
+    color: white;
+}
+
+/* nav */
