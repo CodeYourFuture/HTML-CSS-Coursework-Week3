@@ -1,1 +1,19 @@
 /*  Add your styling here */
+.header{
+grid-template-columns: 1fr 1fr;
+grid-template-rows: 1fr 1fr 1fr;
+
+}
+
+.headerDiv{
+
+    grid-column: 1/2;
+    grid-row: 1/4;
+}
+
+.headerImage{
+    width: 100px;
+    height: 10px;
+    /* image-resolution: 100px 10px; */
+
+}
