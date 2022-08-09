@@ -9,7 +9,7 @@ body{
 
     font-family: 'Mouse Memoirs', sans-serif;
     margin: 0;
-    background-color: pink;
+    /* background-color: pink; */
     width: auto;
 
 }
@@ -30,7 +30,7 @@ body{
     grid-column: 1/2;
     grid-row: 1/4;
   width: 200px;
-  height: 200px;
+  height: 160px;
   /* image-resolution: 100px 10px; */
   background-size: cover;
 }
@@ -135,7 +135,7 @@ column-gap: 25px;
 }
 
 .footerImage{
-
+    margin-left: 5px   ;
     width: 50px;
     height:50px;
 }
