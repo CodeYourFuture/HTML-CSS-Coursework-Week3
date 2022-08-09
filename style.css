@@ -21,7 +21,7 @@ body{
 .headerDiv {
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 1fr 1fr 1fr;
+    /* grid-template-rows: 1fr 1fr ; */
 
  
 }
@@ -48,7 +48,7 @@ body{
 .headerText{
 
     grid-column: 2/3;
-    grid-row: 3/4;
+    grid-row: 2/3;
     justify-self: start;
 }
 
@@ -71,11 +71,15 @@ body{
 .mainImages{
 display: grid;
 grid-template-columns: auto 50% 50% auto;
-/* grid-template-rows: 1fr ; */
+grid-template-rows: 50% 25% 25% ;
 gap: 1em 1em;
 padding: 0;
 margin: 0;
+overflow: hidden;
 }
+
+
+
 
 .topImage{
 
@@ -130,7 +134,7 @@ column-gap: 25px;
 }
 
 .footer{
-    background-color: rgb(252, 164, 178);
+    /* background-color: rgb(252, 164, 178); */
 
 }
 
@@ -138,4 +142,12 @@ column-gap: 25px;
     margin-left: 5px   ;
     width: 50px;
     height:50px;
+    filter: hue-rotate();
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+h1, p{
+    margin-left: 20px;
+
 }
