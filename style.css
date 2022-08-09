@@ -93,31 +93,31 @@ header {
   gap: 60px;
 }
 /* ///// Header ///// */
-/* ///// Section1 ///// */
+/* ///// Section & Images ///// */
 .container {
   margin: 20px;
+  margin: 1em;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto auto 200px 100px 100px;
+  gap: 20px;
+  grid-template-areas:
+    "title title"
+    "p p"
+    "img1 img1"
+    "img2 img3"
+    "img4 img5";
 }
 .container-title {
+  grid-area: title;
   font-size: 40px;
   color: var(--title-text-color);
 }
 .container-p {
+  grid-area: p;
   line-height: 2em;
   font-size: 17px;
   color: var(--text-color2);
-}
-/* ///// Section1 ///// */
-/* ///// Images ///// */
-.cake-images {
-  margin: 1em;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 200px 100px 100px;
-  gap: 20px;
-  grid-template-areas:
-    "img1 img1"
-    "img2 img3"
-    "img4 img5";
 }
 
 .cake-images__1,
@@ -157,7 +157,7 @@ header {
   background-position: center;
   background-size: cover;
 }
-/* ///// Images ///// */
+/* ///// Section & Images ///// */
 /* ///// footer ///// */
 footer {
   background-color: var(--primary-color);
@@ -180,15 +180,12 @@ footer {
 
 /* Media */
 @media only screen and (min-width: 0px) {
-  .nav__menu {
+  .nav2__menu {
     display: none;
   }
 }
-  @media only screen and (min-width: 540px) {
-    .nav__menu {
-      display: none;
-    }
-
+/* Mobile design */
+@media only screen and (min-width: 540px) {
   header {
     background-color: var(--primary-color);
     display: grid;
@@ -218,7 +215,7 @@ footer {
     margin-right: 10px;
     grid-area: burger;
   }
-  
+
   .header__title {
     grid-area: t;
     margin-bottom: 10px;
@@ -227,7 +224,7 @@ footer {
     align-items: end;
     color: var(--title-text-color);
   }
-  
+
   .navbar {
     min-height: 70px;
     display: flex;
@@ -241,33 +238,33 @@ footer {
     gap: 60px;
   }
   /* ///// Header ///// */
-  /* ///// Section1 ///// */
+  /* ///// Section & Images ///// */
   .container {
     margin: 20px;
-  }
-  .container-title {
-    font-size: 40px;
-    color: var(--title-text-color);
-  }
-  .container-p {
-    line-height: 2em;
-    font-size: 17px;
-    color: var(--text-color2);
-  }
-  /* ///// Section1 ///// */
-  /* ///// Images ///// */
-  .cake-images {
     margin: 1em;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 200px 100px 100px;
+    grid-template-rows: auto auto 200px 100px 100px;
     gap: 20px;
     grid-template-areas:
+      "title title"
+      "p p"
       "img1 img1"
       "img2 img3"
       "img4 img5";
   }
-  
+  .container-title {
+    grid-area: title;
+    font-size: 40px;
+    color: var(--title-text-color);
+  }
+  .container-p {
+    grid-area: p;
+    line-height: 2em;
+    font-size: 17px;
+    color: var(--text-color2);
+  }
+
   .cake-images__1,
   .cake-images__2,
   .cake-images__3,
@@ -305,7 +302,7 @@ footer {
     background-position: center;
     background-size: cover;
   }
-  /* ///// Images ///// */
+  /* ///// Section & Images ///// */
   /* ///// footer ///// */
   footer {
     background-color: var(--primary-color);
@@ -325,4 +322,113 @@ footer {
     color: var(--text-color2);
   }
 }
+/* Mobile design */
+/* Desktop design */
+@media only screen and (min-width: 900px) {
+  header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+      "logo . . ."
+      "logo . t t";
+  }
+  .header__hamburger {
+    display: none;
+  }
+  .header__title {
+    font-size: 20px;
+    grid-area: t;
+    text-align: right;
+    padding-right: 30px;
+  }
+  .navbar2 {
+    background-color: var(--primary-color);
+    padding: 20px;
+  }
+  .nav2__menu {
+    display: flex;
+    justify-content: right;
+    gap: 20px;
+  }
+  li {
+    background-color: var(--title-text-color);
+    color: var(--tertiary-color);
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  body {
+    background-color: var(--tertiary-color);
+  }
+  main {
+    margin: 30px;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto auto 150px;
+    gap: 20px;
+    grid-template-areas:
+      "img1 img1 title title"
+      "img1 img1 p p"
+      "img2 img3 img4 img5";
+  }
+  .container-title {
+    text-align: right;
+    grid-area: title;
+    font-size: 40px;
+    color: var(--title-text-color);
+  }
+  .container-p {
+    grid-area: p;
+    line-height: 2em;
+    font-size: 17px;
+    color: var(--text-color2);
+  }
+  .cake-images__1 {
+    grid-area: img1;
+    background-image: url(./Img/Img1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .cake-images__2 {
+    grid-area: img2;
+    background-image: url(./Img/Img2.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  .cake-images__3 {
+    grid-area: img3;
+    background-image: url(./Img/Img3.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  .cake-images__4 {
+    grid-area: img4;
+    background-image: url(./Img/Img4.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  .cake-images__5 {
+    grid-area: img5;
+    background-image: url(./Img/Img5.jpg);
+    background-position: center;
+    background-size: cover;
+  }
 
+  .footer-place__1 {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-size: 17px;
+    font-weight: bold;
+  }
+  .footer-place__2 {
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 15px;
+    color: var(--text-color2);
+  }
+}
