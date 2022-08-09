@@ -16,7 +16,7 @@ body{
 display: grid;
 grid-template-columns: repeat(2,1fr);
 grid-template-rows: repeat(7,1fr) ;
-grid-gap: 2px;
+grid-gap: 3px;
 grid-template-areas: 
 "hr hr"
 "ar ar"
@@ -40,17 +40,14 @@ padding: 0px;
 justify-content:space-between;
 width: 390px;
 height: 118px;
-border: 2px solid rebeccapurple; 
 background-color: #d4a373;
 }
 .icon{
-border: 2px solid rebeccapurple; 
  display: flex;
  width: 30%;
  justify-content: left;
 }
 .h_text{
-    border: 4px solid rgb(193, 186, 186); 
     display: flex;
     width: 97%;
     height: 80%;
@@ -63,7 +60,6 @@ border: 2px solid rebeccapurple;
     align-items:flex-end;
     flex-direction: column;
     justify-content: space-between;
-border: 2px solid rebeccapurple; 
 }
 /* artical */
 .artical{
@@ -71,30 +67,53 @@ border: 2px solid rebeccapurple;
     display: flex;
     justify-content: space-around;
     flex-direction: column;
-    /* background-image: url("img/back_img.jpg"); */
+    /* background-image: url("img/background_cakes.jpg");
+    background-size: cover; */
     grid-area:ar;
   
+}
+p{
+    color:rgb(118, 117, 117)
 }
 
 /* big img */
 .big_img{
     grid-area:b_img;
-    
+    background-image: url("img/cake_main.jpg");
+    background-size: cover;
+    background-position: 100%;
 }
 /* group of img  */
 .img1{
     grid-area:img1;
-    
+    background-image: url("img/cake_1.jpg");
+    background-size:cover;
+    background-position: 100%;
+    padding-top: 20px;
 
-}
+} 
+
 .img2{
     grid-area:img2;
+    background-image: url("img/cake_2.jpg");
+    background-size: cover;
+    background-position: 100%;
+    
 }
 .img3{
     grid-area:img3;
+    background-image: url("img/cake_3.jpg");
+   
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100%;
+
 }
 .img4{
     grid-area:img4;
+    background-image: url("img/cake_4.jpg");
+    background-size: cover;
+    background-position: 100%;
 }
 /* Footer */
 .footer{
