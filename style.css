@@ -7,7 +7,6 @@ body {
     background: #7cc7ec;
     color: #5a666b;
 }
-
 .container {
     display: grid;
     width: 100%;
@@ -56,3 +55,72 @@ font-size: 1.8em;
     position: relative;
     right: 100px;
 } */
+/* navigation css */
+
+.topnav {
+    position: relative;
+    width: 90%;
+    margin-left: 6.5rem;
+    margin-right: 6.5rem;
+    /* z-index: 9999;   */
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+.topnav > .content{
+    height: 4.375rem;
+}
+
+.topnav .link{
+    float: right;
+    color: #838994;
+    font-size: 1.04rem;
+    margin-top: 1.7rem;
+}
+.topnav .link li{
+    display: inline-block;
+    margin-left: 1.563rem;
+    margin-right: 4.5rem;
+}
+.topnav .link li:hover{
+cursor: pointer;
+color: #333333;
+}
+
+/*grid css */
+
+.maingrid {
+    display: grid;
+    grid-column: 10% 30% 10% 50%;
+
+    
+}
+.welcome {
+    grid-column: 2/5; 
+    margin-top: 10rem; 
+    justify-items: center;
+    margin-left: 7.5rem;
+    font-weight: 400;
+    justify-content: stretch;
+}
+.image2 {
+    width: 700px;
+    height: 700px;
+    margin-left: 10rem;
+    margin-top: 2.45rem;
+}
+.welcome {
+    margin-right: 10rem;
+
+}
+.welcome h3 {
+    font-size: 50px;
+    text-align: end;
+}
+
+.secondgrid {
+    display: grid;
+    grid-template-columns: repeat(4 auto); 
+    grid-gap: .6em;
+    margin-left: 10rem;
+    margin-top: 2.45rem;
+}
