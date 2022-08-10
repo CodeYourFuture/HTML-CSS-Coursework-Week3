@@ -1,5 +1,8 @@
 body {
     font-family:'Oleo Script Swash Caps', cursive;
+    padding-left:150px;
+    padding-right:150px;
+    margin-top: 0;
 
 }
 
@@ -8,7 +11,7 @@ body {
 .container {
 display: flex;
 justify-content:space-evenly;
-
+background-color:wheat;
 
 }
 
@@ -22,10 +25,41 @@ height: 200px;
     font-size: 25px;
     margin-left: 150px;
     margin-top: 100px;
+    
 }
 
 
 .navigator ul {
     display: flex;
     justify-content: space-evenly;
+    border: solid 1px ;
+    font-size: 20px;
+    margin-top: 0;
+    
 }
+ 
+
+.welcome-section {
+    display: flex;
+    flex-wrap: wrap ;
+}
+.welcome-section h1 {
+flex:1;
+font-size: 50px;
+margin: 0 !important;
+}
+
+.cakes-container    {
+    display: flex;
+    flex-wrap: nowrap;
+    
+    justify-content: space-around;
+}
+
+.cakes-images img {
+   
+    height: 200px;
+    width: 200px;
+  
+}
+
