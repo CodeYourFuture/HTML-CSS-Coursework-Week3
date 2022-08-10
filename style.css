@@ -65,6 +65,7 @@ body {
 }
 
 .main_picture {
+  width:15em;
   align-self: center;
   border-radius: 5px;
 }
@@ -72,8 +73,8 @@ body {
 .multiple_cakes {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 200px 200px;
-  width: 100%;
+  grid-template-rows: 9em 9em;
+  /* width: 100%; */
   gap: 10px;
 }
 
@@ -106,10 +107,26 @@ body {
 .footer > p {
   text-align: center;
 }
+/* ------------------------------- tablet design -------------------------- */
+@media screen and (min-width:550px) and (max-width:900px) {
+
+   .main_picture{
+    width:20em;
+   }
+ .multiple_cakes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    width: 100%;
+    gap: 40px;
+  }
+  
+}
 
 /* ------------------DESKTOP DESIGN------------------------ */
 
-@media screen and (min-width: 550px) {
+@media screen and (min-width: 900px) {
+
   /*  from here up to next comment will be header and its children style in desktop view */
   .header {
     grid-area: header;
@@ -157,7 +174,9 @@ body {
    line-height: 30px;
    font-size: larger;
   }
-
+  .main_picture{
+    width:40em;
+}
   .multiple_cakes {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
