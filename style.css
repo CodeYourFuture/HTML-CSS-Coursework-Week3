@@ -1,1 +1,58 @@
 /*  Add your styling here */
+*{
+    box-sizing: border-box;
+}
+
+.nav-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    background-color: darkgreen;
+    width: auto;
+    height: 300px;
+    border: 1px solid black;
+}
+
+.navimg{
+    max-width: 100%; 
+    height: auto; 
+}
+
+.navbar ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar li{
+    list-style: none;
+}
+
+.navbar li a{
+    text-decoration: none;
+    padding: 10px;
+}
+
+.toggle-button{
+    position: absolute;
+    top: .75rem;
+    right:  1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 40px;
+    height: 30px;
+
+}
+
+.toggle-button .bar{
+    height: 3px;
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 10px;
+}
+
+.nav-container p{
+    align-self: flex-end;
+}
