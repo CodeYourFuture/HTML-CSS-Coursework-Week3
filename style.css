@@ -39,6 +39,22 @@ header>img {
 
 nav {
     display: none;
+    padding: 20px;
+}
+
+nav > ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0px;
+}
+
+a {
+    text-decoration: none;
+    background-color: #FFB703;
+    padding: 5px 40px;
+    font-size: 10px;
+    margin-left: 20px;
 }
 
 .s-hero {
