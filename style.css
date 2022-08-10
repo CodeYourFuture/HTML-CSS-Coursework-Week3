@@ -180,6 +180,7 @@ object-fit: contain;
 }
 
 h1, p{
-    margin-left: 20px;
+    /* margin: 20px; */
+    padding: 20px;
 
 }
