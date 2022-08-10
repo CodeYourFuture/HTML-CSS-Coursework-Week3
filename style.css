@@ -4,26 +4,55 @@ html, body {
     padding: 0;
 }
 body {
-    background: #212527;
-    color: #9FB2B9;
+    background: #7cc7ec;
+    color: #5a666b;
 }
 
 .container {
     display: grid;
     width: 100%;
+    height: 70%;
     margin: 2em auto 0;
 }
 .card {
-    background: #337590;
+    background: #879494;
     display: grid;
     grid-template-columns: 1fr 5fr;
-    align-items: center;
+    align-items: flex-end;
     border-radius: 1em;
     margin-bottom: 2em;
 }
+.images {
+    padding: 5em;
+}
+
 span {
     width: 5em;
     height: 5em;
-    background: #75A2B8;
+    background-image: #75A2B8;
     border-radius: 50%;
 }
+.container {
+    width: 90%;
+
+}
+.container .content {
+right: 100px;
+}
+.card {
+    background: #d9e691;
+    padding: 2.5em;
+}
+
+p {
+margin: 0 0 .3em;
+color: #08090a;
+font-size: 1.8em;
+
+}
+/* p .desc {
+    color: #08090a;
+    margin-top: 2.56em;
+    position: relative;
+    right: 100px;
+} */
