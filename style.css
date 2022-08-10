@@ -28,7 +28,7 @@ body{
 
 .headerImage {
     grid-column: 1/2;
-    grid-row: 1/4;
+    grid-row: 1/2;
   width: 200px;
   height: 160px;
   /* image-resolution: 100px 10px; */
@@ -40,7 +40,7 @@ body{
     grid-row: 1/2;
     width: 50px;
     height: 50px;
-    justify-self: end;
+    justify-self:stretch;
     
 
 }
