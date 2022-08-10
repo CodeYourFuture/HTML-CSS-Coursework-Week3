@@ -1,27 +1,35 @@
-.header {
+body {
+    font-family:'Oleo Script Swash Caps', cursive;
+
+}
+
+
+
+.container {
+display: flex;
+justify-content:space-evenly;
+
+
+}
+
+.container img {
+
+height: 200px;
+
+}
+.container p {
+    flex:1;
+    font-size: 25px;
+    margin-left: 150px;
+    margin-top: 100px;
+}
+
+
+.navigator ul {
     display: flex;
-    width: auto;
-    height: 370px;
-    background-repeat:no-repeat;
-    background-image: url("https://images.unsplash.com/photo-1588195538326-c5b1e9f80a1b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60");
-} 
+    justify-content: space-evenly;
+}
+.welcome-section h1 {
    
 
-.header p {
-width: 100%;
-font-family: 'Oleo Script Swash Caps', cursive;
-color: rgb(86, 9, 105);
-align-items:center;
-margin-top: 80%;
-margin-left: 50%;
-}
-
-img {
-    width: 250px;
-    height:150 ;
-}
-
-.options ul li {
-    display: grid;
-    grid-template-columns: 3 fr;
 }
