@@ -1,1 +1,70 @@
-/*  Add your styling here */
+/* Header section */
+.homepage-header{
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: 2 1fr;
+    grid-template-areas: "logo title";
+   
+}
+.header-logo{
+    background-image: url();
+    background-color: yellowgreen;
+    grid-area: logo;
+}
+.header-title{
+    background-color: beige;
+    grid-area: title;
+    
+}
+/* Main section */
+.homepage-main {
+  border: 1px solid black;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 80px 140px 170px 100px;
+  grid-template-areas:
+    "hero     hero    hero     hero"           
+    "feature  feature aside  aside"
+    "feature  feature aside  aside"
+    "product  product product  product"
+    ;  
+    margin: 2em;        
+}
+
+.homepage-hero {
+  background-color: coral;
+  grid-area: hero;
+}
+
+.homepage-feature {
+  background-color: darkBlue;
+  grid-area: feature;
+}
+
+.homepage-products {
+  background-color: darkSeaGreen;
+  grid-area: product;
+}
+
+.homepage-aside {
+  background-color: darkTurquoise;
+  grid-area: aside;
+}
+/* Footer section */
+footer{
+    border: 1px black solid;
+    display: grid;
+    grid-template-rows: 2 1fr;
+    grid-template-areas: "buttons"
+    "p";
+}
+.footer-button{
+    background-color: bisque;
+    grid-area: buttons;
+    text-align: center;
+}
+.footer-title{
+    background-color: aqua;
+    grid-area: p;
+    text-align: center;
+}
