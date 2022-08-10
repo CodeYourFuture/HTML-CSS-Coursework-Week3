@@ -1,30 +1,20 @@
-/*  Add your styling here */
-*{
-    margin: 0;
-    padding: 0;
-    
-}
+@media screen and (max-width: 540px) {
+   
 
 body{
-    width: 375px;
-    height: 667px;
     border: 3px solid black;
-
-
 }
+
 .container{
-    display: flex;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr);
-    grid-gap:14px;
-    text-align: center;
+    grid-template-rows: 0.2fr 0.fr 0.7fr 1fr 1fr 0.5fr 0.5fr 1fr;
+    grid-gap:4px;
     grid-template-areas:
     "na bor"
     "wt wt"
     "ar ar"
     "mimg mimg"
-    "f f"
     "f1 f2"
     "f3 f4"
     "fo fo"
@@ -34,29 +24,26 @@ body{
 
 .box{
     background-color: rgb(228, 144, 179);
-    padding: 19px;
-    
-    
 }
 
 .nav{
     justify-content: space-between;
     display: flex;
     grid-area: na;
-    grid-column: 1/ -1;
-    
-   
-    
-    
+    grid-column: 1/ -1;    
+}
+
+.icon_img{
+    display: flex;
+    justify-content: center;
+    align-items: center;   
 }
 
 .bor{
     grid-area: bor;
     height: 30%;
     text-align: end;
-    font-size: 6px;
-    
-    /* remove the list point */   
+    font-size: 9px;     
 }
 
 ul{
@@ -68,63 +55,65 @@ ul{
     justify-content: end;
     height: 65%;
     color: rgb(118, 134, 129);
-
-    
 }
-.bor_par{
-    
-    
-    width: 70%;
-    
-    
-}
-
-
-.t_text{
-    grid-area: to;
-    
-}
-
-.main_img{
-    grid-area: mimg;
-}
-
 .wel_tex{
     grid-area: wt;
     text-align: start;
     font-size: 30px;
 }
+
 .artical{
     grid-area: ar;
 }
 
-.fir_pic{
-    grid-area: f;
-    
-    
+.main_img{
+    grid-area: mimg;
+    height: 100px;
 }
 
 .fimg_pic{
     grid-area: f1;
-    
+    height: 80px;    
 }
 
 .simg_pic{
     grid-area: f2;
+    height: 80px;
 }
 
 .timg_pic{
     grid-area: f3;
+    height: 80px;
 }
 
 .fourth_pic{
     grid-area: f4;
+    height: 80px;
 }
 
 .footer{
     grid-area: fo;
 }
+.join_us{
+    text-align: center;
+    }
 
-.icon_img{
-    
+.footer_imgs{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+  }
+
+  .footer_ico{
+    display: flex;
+    width: 30px;
+    height: 30px;
+    border-radius: 70px;
+    padding: 8px;
+      
+  }
 }
+  
+
+
+
