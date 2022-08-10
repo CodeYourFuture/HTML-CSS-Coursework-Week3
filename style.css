@@ -1,4 +1,7 @@
 /*  Add your styling here */
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
+
 *{
     margin: 0%;
     padding: 0%;
@@ -9,6 +12,7 @@
 :root {
     
     --main-bg-color: #FFC8DD;
+    --font-color:rgb(8, 8, 180);
   }
 
 body {
@@ -38,7 +42,7 @@ body {
     grid-column-end: -1;
     grid-row-start: 1;
     grid-row-end: 2;
-    height: 30vh;
+    height: 40vh;
     background-color: var(--main-bg-color);
   }
   .header-description{
@@ -68,7 +72,40 @@ body {
     grid-row-end: 2;
 
 }
+a{
+  color: var(--font-color);
+}
+.flex-nav{
+  display: flex;
+  flex-direction: column;
+}
 
+.nav-button{
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px 20px 0 0;
+}
+.nav-toggle {
+  border: transparent;
+  background: transparent;
+  color: var(--font-color);
+  font-size: 1.5rem;
+}
+.nav-link{
+  list-style: none;
+  border-bottom: 2px solid rgb(8, 8, 180);
+  width: 5rem;
+  font-weight:900;
+  font-style: italic;
+  
+}
+.nav-links{
+  height: 0;
+  overflow: hidden;
+}
+.nav-open{
+  height: 15vh;
+}
 header > .h2{
     grid-area: h2;
     grid-column-start: 2;
@@ -81,7 +118,8 @@ header > .h2{
     align-content: flex-end;
     padding-bottom: 5%;
     font-size: .5rem;
-    font-weight: bold;
+    font-weight: 900;
+    color: var(--font-color);
 }
   .first-section{
     grid-area: fi;
@@ -138,7 +176,7 @@ header > .h2{
   border-radius: 5px;
   }
 .third-section-article1:hover{
-    transform: scale(.8);
+    transform: scale(1.1);
   }
 
 .third-section-article2{
@@ -172,10 +210,8 @@ header > .h2{
     grid-column-end: -1;
     grid-row-start: 5;
     grid-row-end: 6;
-    height: 20vh;
+    height: 30vh;
     background-color: var(--main-bg-color);
-
-
   }
 
 
