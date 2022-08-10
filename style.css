@@ -1,149 +1,241 @@
 /*  Add your styling here */
-*{
+@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300&family=Nanum+Gothic&family=Sarabun:wght@100&display=swap');
+
+* {
     margin: 0%;
     padding: 0%;
 }
-@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300&family=Nanum+Gothic&family=Sarabun:wght@100&display=swap');
-
-body{
-    /* width: 390px;
-    height: 844px; */
+    body{
+        /* width: 390px;
+        height: 844px; */
+        background-color: antiquewhite;
+    }
+    .box{
+        padding: 15px;
+        background-color: aqua;
+    }
+    .contener{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(7,1fr) ;
+    grid-gap: 5px;
+    grid-template-areas: 
+    "hr hr"
+    "ar ar"
+    "ar ar"
+    "b_img b_img"
+    "img1 img2"
+    "img3 img4"
+    "foot foot";
+    }
+    h1{
+        font-size: 100%;
+        font-family: 'Sarabun', sans-serif;
     
-}
-.box{
-    padding: 29px;
-    background-color: aqua;
-}
-.contener{
-display: grid;
-grid-template-columns: repeat(2,1fr);
-grid-template-rows: repeat(7,1fr) ;
-grid-gap: 3px;
-grid-template-areas: 
-"hr hr"
-"ar ar"
-"ar ar"
-"b_img b_img"
-"img1 img2"
-"img3 img4"
-"foot foot";
-}
-h1{
-    font-size: 100%;
-    font-family: 'Sarabun', sans-serif;
+    }
+    /* header */
+    .header{
+    grid-area: hr;
+    display: flex;
+    /* margin: 0%;
+    padding: 0%; */
+    margin: 0px;
+    padding: 0px;
+    justify-content:space-between;
+    width: 390px;
+    height: 118px;
+    background-color: #d4a373;
+    }
+    .icon1{
+     display: flex;
+     width: 30%;
+     justify-content: left;
+    }
+    .h_text{
+        display: flex;
+        width: 97%;
+        height: 80%;
+        justify-content: center;
+        font-size: 100%;
+    }
+    .hedaer1{
+        width: 70%;
+        display: flex;
+        align-items:flex-end;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .nav_mun{
+        /* display: none; */
+        /* grid-area: nav; */
+    
+    }
 
-}
-/* header */
-.header{
-grid-area: hr;
-display: flex;
-/* margin: 0%;
-padding: 0%; */
-margin: 0px;
-padding: 0px;
-justify-content:space-between;
-width: 390px;
-height: 118px;
-background-color: #d4a373;
-}
-.icon1{
- display: flex;
- width: 30%;
- justify-content: left;
-}
-.h_text{
-    display: flex;
-    width: 97%;
-    height: 80%;
-    justify-content: center;
-    font-size: 100%;
-}
-.hedaer1{
-    width: 70%;
-    display: flex;
-    align-items:flex-end;
-    flex-direction: column;
-    justify-content: space-between;
-}
-/* artical */
-.artical{
-    background-color: #faedcd;
+    /* artical */
+    .artical{
+        background-color: #faedcd;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        /* background-image: url("img/background_cakes.jpg");
+        background-size: cover; */
+        grid-area:ar;
+        font-family: 'Sarabun', sans-serif;
+    
+      
+    }
+    p{
+        
+        color:rgb(118, 117, 117)
+    }
+    
+    /* big img */
+    .big_img{
+        grid-area:b_img;
+        background-image: url("img/cake_main.jpg");
+        background-size: cover;
+        background-position: 100%;
+    }
+    /* group of img  */
+    .img1{
+        grid-area:img1;
+        background-image: url("img/cake_1.jpg");
+        background-size:cover;
+        background-position: 100%;
+        padding-top: 20px;
+    
+    } 
+    
+    .img2{
+        grid-area:img2;
+        background-image: url("img/cake_2.jpg");
+        background-size: cover;
+        background-position: 100%;
+        
+    }
+    .img3{
+        grid-area:img3;
+        background-image: url("img/cake_3.jpg");
+       
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 100%;
+    
+    }
+    .img4{
+        grid-area:img4;
+        background-image: url("img/cake_4.jpg");
+        background-size: cover;
+        background-position: 100%;
+    }
+    /* Footer */
+    .footer{
+        background-color: #fefae0;
+        grid-area:foot;
+        justify-content: center;
+        flex-direction: row;
+        text-align: center;
+    
+    }
+    .icon{
+        padding: 5px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 35px;
+        height: 30px;
+        border-radius: 80%;
+        justify-content: space-around;
+        border: 2px solid rgb(152, 152, 152);
+    }
+    .icon_three{
     display: flex;
     justify-content: space-around;
-    flex-direction: column;
-    /* background-image: url("img/background_cakes.jpg");
-    background-size: cover; */
-    grid-area:ar;
-    font-family: 'Sarabun', sans-serif;
+    }
 
-  
-}
-p{
+/* media to Tablet /medium */
+@media screen and  (min-width: 540px) {
+
+    body{
+        display: flex;
+       
+        font-style: bold;
+        background-color: rgb(255, 255, 255);
+    }
+    .box{
+        padding: 20px;
+        /* background-color: aqua; */
     
-    color:rgb(118, 117, 117)
-}
+    }
+    
+    .contener{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(8,1fr) ;
+    grid-gap: 10px;
+    grid-template-areas: 
+    "hr hr hr hr"
+    "nav nav nav nav"
+    "b_img b_img ar ar"
+    "b_img b_img ar ar"
+    "b_img b_img ar ar"
+    "img1 img2 img3 img4"
+    "img1 img2 img3 img4"
+    "foot foot foot foot";
+    }
+            /* Header */
+     
+    .header{
+        /* grid-area: hr; */
+        
+        margin: 0px;
+        padding: 0px;
+        justify-content:space-between;
+        width: 903px;
+        height: 118px;
+        background-color: #e2ba92;
+        }
+        .hedaer1{
+            /* display: none; */
+        }
+        .hum_icon{
+            display: none;
+        }
+        .text_header{
+            font-size: 20px;
+            text-align: center;
+            /* font-weight: 50; */
+            color: #000000;
+        }
+                /* Nav mune*/
 
-/* big img */
-.big_img{
-    grid-area:b_img;
-    background-image: url("img/cake_main.jpg");
-    background-size: cover;
-    background-position: 100%;
-}
-/* group of img  */
-.img1{
-    grid-area:img1;
-    background-image: url("img/cake_1.jpg");
-    background-size:cover;
-    background-position: 100%;
-    padding-top: 20px;
+    .nav_mun{
+        grid-area: nav;
+        background-color: #f5e7d9;
+    }
+    li{
+        list-style: none;
+        font-size: 20px;
+        padding-top: 20px;
+    }
+    a{
+        text-decoration-line: none;
+    }
+    .mune_bar{
+        display: flex;
+        justify-content: space-around;
+        align-content:stretch;
+    }
+    .bar{
+        border: 1px solid rgb(209, 206, 201);
+        background-color: #e1e0dc;
+    }
 
-} 
-
-.img2{
-    grid-area:img2;
-    background-image: url("img/cake_2.jpg");
-    background-size: cover;
-    background-position: 100%;
     
 }
-.img3{
-    grid-area:img3;
-    background-image: url("img/cake_3.jpg");
-   
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 100%;
-
+/* media to Desktop /large */
+@media (min-width: 900px) {
+    /* body{
+        background-color: rgb(0, 0, 0);
+    } */
 }
-.img4{
-    grid-area:img4;
-    background-image: url("img/cake_4.jpg");
-    background-size: cover;
-    background-position: 100%;
-}
-/* Footer */
-.footer{
-    background-color: #fefae0;
-    grid-area:foot;
-    justify-content: center;
-    flex-direction: row;
-    text-align: center;
-
-}
-.icon{
-    padding: 5px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    width: 35px;
-    height: 30px;
-    border-radius: 80%;
-    justify-content: space-around;
-    border: 2px solid rgb(152, 152, 152);
-}
-.icon_three{
-display: flex;
-justify-content: space-around;
-}
-
