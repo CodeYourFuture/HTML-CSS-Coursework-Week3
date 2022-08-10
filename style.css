@@ -13,13 +13,13 @@ body{
     margin: 0;
     /* background-color: pink; */
     width: auto;
-    background-color: pink;
+    /* background-color: pink; */
 
 }
 
 .header {
     /* background-color: rgb(253, 167, 181); */
-    background-color: pink;
+    /* background-color: pink; */
 }
 
 .headerDiv {
@@ -178,7 +178,7 @@ object-fit: contain;
 .footer, footer{
     /* background-color: rgb(252, 164, 178); */
     /* margin-top: 500px; */
-    background-color: pink;
+    /* background-color: pink; */
     /* #F2A6B5 */
 }
 
