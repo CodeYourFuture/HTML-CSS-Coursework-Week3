@@ -1,7 +1,6 @@
-/*  Add your styling here */
-
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,500;0,700;0,800;1,200;1,300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+
 
 * {
     box-sizing: border-box;
@@ -9,40 +8,67 @@
 
 body {
     margin: 0 auto;
-    max-width: 100vw;
     font-family: 'Montserrat';
 }
 
 .container {
-    width: 100%;
     display: grid;
-    grid-template-rows: repeat(3, auto);
-    grid-template-areas:"header"
-                        "section"
-                        "grid"
-                        ;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 80px;
+    gap: 16px;
+    min-width: 100%;
+    overflow: hidden;
 }
 
-header {
-    background-image: url('./images/ke-vin-VBF1gBG3JPc-unsplash.jpg');
-    background-size:cover;
+.hero {
+    background-image: url('/img/ke-vin-VBF1gBG3JPc-unsplash.jpg');
+    background-size:150%;
     background-repeat:no-repeat;
-    grid-area: "header";
-    height: 30rem;
-    text-align: right;
     background-position:right;
+    grid-column: 1 / span 4;
+    grid-row: 1 / span 4;
+
+}
+
+.header-text{
+    grid-column: 3 / span 2;
+    grid-row: 2 / span 2; 
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: flex-end;
+    align-items: center;
+    text-align: center;
 }
 
-section {
-    grid-area: "section";
-    padding: 0rem 1rem;
-    text-align: center;
-    height: auto;
-    margin: 0;
+h1 {
+    color: white;
+    font-size: 2.7em;
+    font-family: 'Sacramento';
+    font-weight: lighter;
+    line-height: 0.8;
+    margin-bottom: 10px;;
+}
+
+button {
+    width: 6rem;
+    height: 2rem;
+    padding: 8px;
+    background: #fec5bb;
+    border: none;
+    color: white;
+    font-size: 0.8em;
+    letter-spacing: 2pt;
+}
+
+.section-text {
+    grid-column: 1 / span 4;
+    grid-row: 5 / span 6;
+    margin: 0px 60px 0px 60px;
+}
+
+.section-img {
+    grid-column: 1 / span 4;
+    grid-row: 11 / span 3;
+    margin: 0px 16px 0px 16px;
 }
 
 img {
@@ -51,17 +77,107 @@ img {
     object-fit: cover;
 }
 
-.image-grid {
-    grid-area: "grid";
+h2 {
+    color: #fec5bb;
+    font-size: 3em;
+    font-family: 'Sacramento';
+    font-weight: lighter;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+p {
+    color: #8b8c89;
+    line-height: 1.5;
+    font-size: 1em;
+    text-align: center;
+}
+
+
+.item-1 {
+    grid-column: 1 / span 2;
+    grid-row: 14 / span 2;
+    margin: 0px 0px 0px 16px;
+    
+}
+
+.item-1>img {
+    object-fit: cover;
     max-width: 100%;
-    display: grid;
-    grid-template-rows: 10em 10em;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: "1 2" 
-                         "3 4";
-    column-gap: 1em;
-    row-gap: 1em;
-    padding: 1em;
+    max-height: 100%;
+}
+
+.item-2 {
+    grid-column: 3 / span 2;
+    grid-row: 14 / span 2;
+    margin: 0px 16px 0px 0px;
+}
+
+.item-2>img {
+    object-fit: cover;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.item-3 {
+    grid-column: 1/ span 2;
+    grid-row: 16 / span 2;
+    margin: 0px 0px 0px 16px;
+}
+
+.item-3>img {
+    object-fit: cover;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.item-4 {
+    grid-column: 3 / span 2;
+    grid-row: 16 / span 2;
+    margin: 0px 16px 0px 0px;
+}
+
+.item-4>img {
+    object-fit: cover;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+footer {
+    grid-column: 1 / span 4;
+    grid-row: 18 / span 4;
+    background-color:#c79398;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 65px 0px 65px 0px;
+}
+
+.icon {
+    width: 2em;
+    height: 2em;
+    
+    }
+
+ul {
+list-style: none;
+text-align: center;
+color: white;
+padding: 0;
+}
+        
+li {
+padding: 5px;
+font-size: 1.2em;
+text-transform: uppercase;
+letter-spacing: 2pt;
+}   
+
+.icons {
+display: flex;
+flex-direction: row;
+
 }
 
 .image-container {
@@ -100,87 +216,3 @@ img {
     transform: translate(-50%, -50%);
     text-align: center;
   }
-
-h2 {
-    color: #fec5bb;
-    font-size: 3em;
-    font-family: 'Sacramento';
-    font-weight: lighter;
-    margin-bottom: 5px;
-}
-
-p {
-    color: #8b8c89;
-    line-height: 1.5;
-    padding: 0px 60px 60px 60px;
-    font-size: 0.9em;
-}
-
-h1 {
-    text-transform: uppercase;
-    color: white;
-    font-size: 2em;
-    line-height: 0.9;
-}
-
-button {
-    width: 6rem;
-    height: 3rem;
-    padding: 8px;
-    background: none;
-    border: 2px solid white;
-    color: white;
-}
-
-.header-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-end;
-    padding-right: 2rem;
-}
-
-footer {
-    margin: 0;
-    min-width: 100%;
-    display: flex;
-    flex-direction: column;
-    background-color:#c79398;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-ul {
-list-style: none;
-text-align: center;
-color: white;
-padding: 0;
-}
-
-li {
-padding: 5px;
-font-size: 1em;
-text-transform: uppercase;
-letter-spacing: 2pt;
-}
-
-
-.footer-icons {
-    display: inline-block;
-}
-
-.icons {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.icon {
-width: 3em;
-height: 3em;
-
-}
-
-@media (min-width: 540px) {
-
-}
