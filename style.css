@@ -63,6 +63,9 @@ button {
     grid-column: 1 / span 4;
     grid-row: 5 / span 6;
     margin: 0px 60px 0px 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .section-img {
@@ -130,13 +133,17 @@ p {
 
 footer {
     grid-column: 1 / span 4;
-    grid-row: 18 / span 4;
+    grid-row: 18 / span 2;
     background-color:#c79398;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 65px 0px 65px 0px;
+}
+
+.footer-links {
+    display: none;
 }
 
 .icon {
@@ -295,15 +302,40 @@ a:hover {
 
 
 @media (min-width: 540px) {
-/*
-.hamburger {
-    display: none;
-    position: absolute;
-    left: 87vw;
-    cursor: pointer;
-    z-index: 1;
-} */
-} 
+    .footer-links {
+        display: block;
+    }
+
+    footer {
+        grid-column: 1 / span 4;
+        grid-row: 18 / span 4;
+    }
+
+    h2 {
+        font-size: 60px;
+        margin-top: 10px;
+    }
+    
+    p {
+        padding: 0px 2% 0px 2%;
+        font-size: 1.2em;
+    }
+
+    .section-text {
+        grid-column: 1 / span 4;
+        grid-row: 5 / span 5;
+        margin: 0px 60px 0px 60px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .section-img {
+        grid-column: 1 / span 4;
+        grid-row: 10 / span 4;
+        margin: 0px 16px 0px 16px;
+    }
+}
 
 @media (min-width: 900px) {
    
@@ -440,8 +472,8 @@ h2 {
 }
 
 p {
-    padding: 0px 100px 0px 100px;
-    font-size: 1.7em;
+    padding: 0px 2% 0px 2%;
+    font-size: 1.2em;
 }
 
 .footerlink {
@@ -457,3 +489,4 @@ p {
         height: 4em;
 }
 }
+
