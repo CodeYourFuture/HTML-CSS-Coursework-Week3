@@ -70,8 +70,9 @@ nav {
 .s-cakes {
     grid-area: cakes;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, 162px);
     gap: 20px;
+    justify-content: center;
     padding: 20px;
     background-color: #219EBC;
 }
