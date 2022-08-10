@@ -1,1 +1,180 @@
-/*  Add your styling here */
+* {
+    margin: 0px;
+}
+
+body {
+    font-family: 'Oxygen', sans-serif;
+    display: grid;
+    grid-template-areas:
+        "header"
+        "hero"
+        "cakes"
+        "footer"
+    ;
+}
+
+header {
+    grid-area: header;
+    padding: 20px;
+    background-image: url('img/header-bg.jpg');
+    background-size: 200%;
+    background-position: 50% 0%;
+}
+
+header>h1 {
+    font-size: 20px;
+    width: 60%;
+    padding-top: 125px;
+    text-align: right;
+    margin-left: auto;
+    font-style: italic;
+    position: relative;
+}
+
+header>img {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+nav {
+    display: none;
+    padding: 20px;
+}
+
+nav > ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0px;
+}
+
+a {
+    text-decoration: none;
+    background-color: #FFB703;
+    padding: 5px 40px;
+    font-size: 10px;
+    margin-left: 20px;
+}
+
+.s-hero {
+    grid-area: hero;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "text text"
+        "image image"
+    ;
+}
+
+.s-hero-text {
+    grid-area: text;
+    padding: 40px 20px 20px 20px;
+}
+
+.s-hero-text>p {
+    margin-top: 20px;
+}
+
+.s-hero-image {
+    grid-area: image;
+    height: 200px;
+    background-image: url('img/hero-bg.jpg');
+    background-size: cover;
+}
+
+.s-cakes {
+    grid-area: cakes;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 162px);
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+    background-color: #219EBC;
+}
+
+.cake {
+    height: 125px;
+    background-size: cover;
+}
+
+.cake:nth-child(1) {
+    background-image: url('img/cake-1.jpg');
+}
+
+.cake:nth-child(2) {
+    background-image: url('img/cake-2.jpg');
+}
+
+.cake:nth-child(3) {
+    background-image: url('img/cake-3.jpg');
+}
+
+.cake:nth-child(4) {
+    background-image: url('img/cake-4.jpg');
+}
+
+footer {
+    grid-area: footer;
+}
+
+footer {
+    padding: 20px;
+    background-color: #8ECAE6;
+}
+
+footer>p:nth-child(4) {
+    margin-top: 40px;
+    text-align: center;
+}
+
+@media screen and (min-width: 540px) {
+    body {
+        grid-template-areas:
+            "header"
+            "hero"
+            "cakes"
+            "footer"
+        ;
+    }
+
+    header {
+        background-size: 150%;
+        background-position: 50% 5%;
+    }
+
+    .s-hero-image {
+        height: 300px;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    body {
+        grid-template-areas:
+            "header"
+            "nav"
+            "hero"
+            "cakes"
+            "footer"
+        ;
+    }
+
+    header {
+        background-size: 100%;
+        background-position: 50% 15%;
+    }
+
+    nav {
+        grid-area: nav;
+        display: block;
+    }
+
+    .s-hero {
+        grid-area: hero;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "text image"
+        ;
+    }
+}
