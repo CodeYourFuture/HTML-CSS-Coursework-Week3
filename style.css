@@ -65,7 +65,7 @@ align-self: center;
     grid-column: 1/4;
     grid-row: 2/3;
     justify-self: start;
-    font-size: 1.5em;
+    font-size: 1em;
     font-style: italic;
     font-weight: bold;
 }
