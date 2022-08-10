@@ -358,7 +358,7 @@ p {
   .main{
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: 1.5fr 0.5fr 1fr;
+    grid-template-rows: 1.5fr 0.5fr;
     margin-right: 17%;
     margin-left: 17%;
     gap: 40px 25px;
