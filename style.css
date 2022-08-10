@@ -60,7 +60,7 @@ header p {
   font-size: 2em;
 }
 
-/* navigation */
+/*============= navigation ================*/
 .nav {
   position: fixed;
   background-image: url(./img/ham-menu-back.png);
@@ -71,6 +71,7 @@ header p {
   left: 100%;
   transform: translateX(0);
   transition: transform 250ms;
+  z-index: 9;
 }
 
 .navigation-open {
@@ -112,7 +113,6 @@ header p {
 
 li {
   list-style: none;
-  font-family: "Roboto", "sans-serif";
 }
 
 /* ============= main grid============= */
@@ -182,7 +182,6 @@ footer {
   display: flex;
   justify-content: space-around;
   background-image: url(./img/footer-background.png);
-  background-size: 26em;
 }
 .socials {
   text-align: left;
