@@ -40,7 +40,7 @@ body{
     grid-row: 1/2;
     width: 50px;
     height: 50px;
-    justify-self:stretch;
+    justify-self:center;
     
 
 }
