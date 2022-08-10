@@ -1,80 +1,71 @@
 /*  Add your styling here */
 
-html{
-/* 
+html {
+  /* 
     margin: 0;
     width: auto; */
 }
-body{
+body {
+  /* font-family: 'Mouse Memoirs', sans-serif; */
+  font-family: "Nunito", cursive;
 
-    /* font-family: 'Mouse Memoirs', sans-serif; */
-    font-family: 'Nunito', cursive;
-
-    margin: 0;
-    /* background-color: pink; */
-    width: auto;
-    /* background-color: pink; */
-
+  margin: 0;
+  /* background-color: pink; */
+  width: auto;
+  /* background-color: pink; */
 }
 
 .header {
-    /* background-color: rgb(253, 167, 181); */
-    /* background-color: pink; */
+  /* background-color: rgb(253, 167, 181); */
+  /* background-color: pink; */
 }
 
 .headerDiv {
-    display: grid;
-    grid-template-columns: 30% 40% 30%;
-    grid-template-rows: 25% 25% 25% 25%; 
-
- 
+  display: grid;
+  grid-template-columns: 30% 40% 30%;
+  grid-template-rows: 25% 25% 25% 25%;
 }
 
-.topText{
-grid-column: 2/3;
-grid-row: 2/4;
-text-align: center  ;
-font-size: 1em;
+.topText {
+  grid-column: 2/3;
+  grid-row: 2/4;
+  text-align: center;
+  font-size: 1em;
 
-align-self: center;
+  align-self: center;
 }
 
 .headerImage {
-    grid-column: 1/2;
-    grid-row: 1/5;
+  grid-column: 1/2;
+  grid-row: 1/5;
   width: 100%;
-  height:100%;
+  height: 100%;
   /* image-resolution: 100px 10px; */
   object-fit: cover;
   /* filter: grayscale(100%); */
 }
 
-.headerHamburgerMenu{
-    grid-column: 3/4;
-    grid-row: 1/5;
-    width: 50px;
-    height: 50px;
-    justify-self: center;
-    align-self: center;
-    /* margin: 20px; */
-    
-
+.headerHamburgerMenu {
+  grid-column: 3/4;
+  grid-row: 1/5;
+  width: 50px;
+  height: 50px;
+  justify-self: center;
+  align-self: center;
+  /* margin: 20px; */
 }
 
-.headerText{
-
-    grid-column: 2/4;
-    grid-row: 4/5;
-    justify-self:right;
-    font-size: 0.75em;
-    font-style: italic;
-    font-weight: bold;
+.headerText {
+  grid-column: 2/4;
+  grid-row: 4/5;
+  justify-self: right;
+  font-size: 0.75em;
+  font-style: italic;
+  font-weight: bold;
 }
 
-
-.nav{
-    display: none;
-
+.nav {
+  display: none;
 }
 /* .main{
     display: grid;
@@ -92,157 +83,284 @@ align-self: center;
     grid-area: 2/1/3/3;
 } */
 
-
-.main{
-
-    /* background-color: rgb(248, 142, 160); */
-
+.main {
+  /* background-color: rgb(248, 142, 160); */
 }
 
-
-.mainWelcome{
-
-    text-align: center;
-
+.mainWelcome {
+  text-align: center;
 }
 
-.mainCheckout{
-    text-align: center;
-
-
+.mainCheckout {
+  text-align: center;
 }
 
-.mainImages{
-display: grid;
-grid-template-columns:  50% 50% ;
-grid-template-rows: 50% 50% ;
-gap: 0.5em 0.5em;
-/* padding: 0;
+.mainImages {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+  gap: 0.5em 0.5em;
+  /* padding: 0;
 margin: 0; */
-overflow: hidden;
-/* margin-left: -1.2em; */
-
+  overflow: hidden;
+  /* margin-left: -1.2em; */
 }
 
-
-
-
-.topImage{
-
-    /* grid-column: 2/4 ;
+.topImage {
+  /* grid-column: 2/4 ;
     grid-row: 1/2; */
-    width: 100% ;
-    height:100%;
-    /* background-size: cover; */
-    /* row-gap: 5px; */
-/* column-gap: -5em; */
-margin-bottom: 0.25em;
+  width: 100%;
+  height: 100%;
+  /* background-size: cover; */
+  /* row-gap: 5px; */
+  /* column-gap: -5em; */
+  margin-bottom: 0.25em;
 }
 
-.topLeftImage{
-
-    grid-column: 1/2;
-    grid-row: 1/2;
-    width: 100% ;
-    height: 100%;
-    /* background-size: cover; */
-    /* row-gap: 5px; */
-/* column-gap: 5em; */
-/* margin-right: -1em; */
-object-fit: contain;
-
-
+.topLeftImage {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  width: 100%;
+  height: 100%;
+  /* background-size: cover; */
+  /* row-gap: 5px; */
+  /* column-gap: 5em; */
+  /* margin-right: -1em; */
+  object-fit: contain;
 }
 
-.topRightImage{
-
-    grid-column: 2/3;
-    grid-row: 1/2;
-    width: 100% ;
-    height: 100%;
-    /* background-size: cover; */
-    object-fit: contain;
-    
-
-
+.topRightImage {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  width: 100%;
+  height: 100%;
+  /* background-size: cover; */
+  object-fit: contain;
 }
 
-.bottomLeftImage{
-
-    grid-column: 1/2;
-    grid-row: 2/3;
-    width: 100% ;
-    height: 100%;
-    /* background-size: cover; */
-    object-fit: contain;
-    /* margin-bottom: 1em; */
-
-
+.bottomLeftImage {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  width: 100%;
+  height: 100%;
+  /* background-size: cover; */
+  object-fit: contain;
+  /* margin-bottom: 1em; */
 }
 
-.bottomRightImage{
-
-    grid-column: 2/3;
-    grid-row: 2/3;
-    width: 100% ;
-    height: 100%;
-    /* background-size: cover; */
-    object-fit: contain;
-    /* margin-bottom: 1em; */
-
-
+.bottomRightImage {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  width: 100%;
+  height: 100%;
+  /* background-size: cover; */
+  object-fit: contain;
+  /* margin-bottom: 1em; */
 }
 
-.footer, footer{
-    /* background-color: rgb(252, 164, 178); */
-    /* margin-top: 500px; */
-    /* background-color: pink; */
-    /* #F2A6B5 */
+.footer,
+footer {
+  /* background-color: rgb(252, 164, 178); */
+  /* margin-top: 500px; */
+  /* background-color: pink; */
+  /* #F2A6B5 */
 }
 
-.footerImage{
-    margin-left: 5px   ;
-    width: 50px;
-    height:50px;
-    filter: hue-rotate();
-   margin: 20px;
+.footerImage {
+  margin-left: 5px;
+  width: 50px;
+  height: 50px;
+  filter: hue-rotate();
+  margin: 20px;
 }
 
-h1, p{
-    /* margin: 20px; */
-    padding-left: 20px;
-    padding-right: 20px;
-    color:black  ;
-    font-weight: bold;
-
+h1,
+p {
+  /* margin: 20px; */
+  padding-left: 20px;
+  padding-right: 20px;
+  color: black;
+  font-weight: bold;
 }
 
-
-.rights{
-
-    text-align: center;
-    font-weight: bold;
-
+.rights {
+  text-align: center;
+  font-weight: bold;
 }
 
 /* MEDIA QUERIES START HERE ON */
 
-
 /* TABLET MEDIA QUERY STARTED*/
-@media only screen and (min-width: 540px){
-
-    
-    
+@media only screen and (min-width: 540px) {
 }
 
 /* TABLET MEDIA QUERY ENDED  */
 
 /* DESKTOP MEDIA QUERY START */
 
-@media only screen and (min-width: 900px){
+@media only screen and (min-width: 900px) {
+  .headerDiv {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+  }
 
+  .topText {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    text-align: center;
+    font-size: 2em;
+    justify-self: end;
+    align-self: start;
+    /* display: none; */
+  }
+
+  .headerText {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    justify-self: end;
+    align-self: flex-end;
+    font-size: 1em;
+    font-style: italic;
+    font-weight: bold;
+    margin: 0;
+  }
+
+
+  .headerImage {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    justify-self: start;
+    align-self: end;
+    width: auto;
+    height: auto;
+    /* image-resolution: 100px 10px; */
+    object-fit: cover;
+    /* filter: grayscale(100%); */
+  }
+
+  .headerHamburgerMenu {
+    grid-column: 3/4;
+    grid-row: 1/5;
+    width: 50px;
+    height: 50px;
+    justify-self: center;
+    align-self: center;
+    /* margin: 20px; */
+    display: none;
+  }
+
+ 
+  .nav {
+    display:inline;
+    grid-column: 1/3;
+    /* justify-self: end; */
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .navUnorderedList {
+    /* list-style: none; */
+    display: flex;
+    flex-direction: row;
+    justify-items: flex-end;
+    justify-content: flex-end;
+    /* margin-left: 50%; */
     
-    
+  }
+
+  .navList {
+    list-style: none;
+    margin-left: 5%;
+    background-color: grey;
+    border: 2px solid grey;
+    border-radius: 10%;
+    padding-left: 10px;
+    padding-right: 10px;
+
+  }
+
+  .navA {
+    text-decoration: none;
+    color: white;
+  }
+
+
+
+  .topImage{
+    grid-column: 1/3;
+    grid-row: 1/2;
+    object-fit: contain;
+  }
+
+
+
+  .main{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 60% 40% ;
+
+  }
+
+  .mainWelcome{
+    grid-area: 1/3/2/5;
+    object-fit: contain;
+    justify-self: right;
+    align-self: start;
+
+  }
+  .mainCheckout{
+
+    grid-area: 1/3/2/5;
+    object-fit: contain;
+    justify-self: right;
+
+    align-self: center;
+    text-align: end;
+
+
+  }
+
+  
+
+  /* .image1{
+
+    grid-column: 1/2;
+    grid-row: 2/3;
+    object-fit: cover;
+
+  }
+
+  .image2{
+
+    grid-column: 2/3;
+    grid-row: 2/3;
+    object-fit: cover;
+
+  }
+
+  .image3{
+
+    grid-column: 3/4;
+    grid-row: 2/3;
+    object-fit: cover;
+
+  }
+  
+
+  .image4{
+
+    grid-column: 4/5;
+    grid-row: 2/3;
+    object-fit: cover;
+
+  } */
+
+  .footer{
+    position: relative;
+    /* bottom: 0; */
+  }
+
 }
 
 /* DESKTOP MEDIA QUERY ENDED */
