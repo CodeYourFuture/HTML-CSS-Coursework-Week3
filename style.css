@@ -159,13 +159,22 @@ footer>p:nth-child(4) {
         ;
     }
 
+    header {
+        background-size: 100%;
+        background-position: 50% 15%;
+    }
+
     nav {
         grid-area: nav;
         display: block;
     }
 
-    header {
-        background-size: 100%;
-        background-position: 50% 15%;
+    .s-hero {
+        grid-area: hero;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "text image"
+        ;
     }
 }
