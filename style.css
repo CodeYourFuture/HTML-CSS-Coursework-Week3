@@ -11,11 +11,13 @@ body{
     margin: 0;
     /* background-color: pink; */
     width: auto;
+    background-color: rgb(248, 142, 160);
+
 
 }
 
 .header {
-    /* background-color: pink; */
+    background-color: pink;
 }
 
 .headerDiv {
@@ -50,7 +52,7 @@ body{
 
 .headerText{
 
-    grid-column: 2/3;
+    grid-column: 1/3;
     grid-row: 2/3;
     justify-self: start;
     font-size: 1.25em;
@@ -72,6 +74,14 @@ body{
 
     grid-area: 2/1/3/3;
 } */
+
+
+.main{
+
+    /* background-color: rgb(248, 142, 160); */
+
+}
+
 
 .mainImages{
 display: grid;
@@ -157,6 +167,7 @@ object-fit: contain;
 .footer{
     /* background-color: rgb(252, 164, 178); */
     /* margin-top: 500px; */
+    background-color: pink;
 
 }
 
