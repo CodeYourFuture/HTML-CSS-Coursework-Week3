@@ -33,7 +33,8 @@ body{
 .topText{
 grid-column: 2/3;
 text-align: center  ;
-font-size: 1.5em;
+font-size: 1em;
+
 align-self: center;
 }
 
