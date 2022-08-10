@@ -23,9 +23,7 @@ body {
   text-align: center;
 }
 
-#logo_picture {
-  align-self: flex-start;
-}
+
 
 /* Navigation menu is collapsed in the mobile design */
 .navbar {
@@ -33,7 +31,8 @@ body {
 }
 
 .logo_picture {
-  width: 80px;
+ align-self: flex-start;
+   width: 80px;
   height: inherit;
 }
 
@@ -134,6 +133,10 @@ body {
     flex-direction: column;
     justify-content: space-between;
   }
+  .logo_picture{
+    width:200px;
+    height: 200px;
+  }
 
   .navBar_and_title_and_hamburgButton {
     display: flex;
@@ -142,6 +145,7 @@ body {
 
   .tile_paraghr {
     align-self: flex-end;
+    font-size: xx-large;
   }
 
   /* Navigation menu is collapsed in the mobile design */
@@ -153,6 +157,7 @@ body {
     background-color: wheat;
     color: black;
     padding: 15px;
+    font-size:xx-large
   }
 
   /*nav button  */
@@ -169,10 +174,10 @@ body {
     text-align: right;
     margin: 10px;
   }
-  .introduction > p{
+  .introduction {
    padding-left: 50px;
-   line-height: 30px;
-   font-size: larger;
+   line-height: 40px;
+   font-size: 2em;
   }
   .main_picture{
     width:40em;
@@ -180,7 +185,7 @@ body {
   .multiple_cakes {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 1fr;
+    grid-template-rows: 300px;
     width: 100%;
     gap: 40px;
   }
