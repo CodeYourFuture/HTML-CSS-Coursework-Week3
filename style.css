@@ -109,6 +109,13 @@ body {
 /* ------------------------------- tablet design -------------------------- */
 @media screen and (min-width:550px) and (max-width:900px) {
 
+   .intro_and_mainPicture {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+    margin: 10px;
+  }
+
    .main_picture{
     width:20em;
    }
@@ -118,6 +125,40 @@ body {
     grid-template-rows: 1fr;
     width: 100%;
     gap: 40px;
+  }
+  .header {
+    grid-area: header;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+.navbar {
+    visibility: visible;
+    display: flex;
+    justify-content: flex-end;
+    gap: 50px;
+    background-color: wheat;
+    color: black;
+    padding: 15px;
+    font-size:large
+  }
+
+  /*nav button  */
+  .humburg_btn {
+    visibility: collapse;
+    height: 40px;
+    width: 50px;
+  }
+
+  .footer {
+    display: flex;
+    align-items: center;
+    grid-area: footer;
+  }
+
+  .social_media_links {
+    visibility: visible;
   }
   
 }
