@@ -71,6 +71,11 @@ align-self: center;
     font-weight: bold;
 }
 
+
+.nav{
+    display: none;
+
+}
 /* .main{
     display: grid;
     grid-template-columns: 50% 50%;
@@ -98,6 +103,12 @@ align-self: center;
 .mainWelcome{
 
     text-align: center;
+
+}
+
+.mainCheckout{
+    text-align: center;
+
 
 }
 
@@ -213,3 +224,25 @@ h1, p{
     font-weight: bold;
 
 }
+
+/* MEDIA QUERIES START HERE ON */
+
+
+/* TABLET MEDIA QUERY STARTED*/
+@media only screen and (min-width: 540px){
+
+    
+    
+}
+
+/* TABLET MEDIA QUERY ENDED  */
+
+/* DESKTOP MEDIA QUERY START */
+
+@media only screen and (min-width: 900px){
+
+    
+    
+}
+
+/* DESKTOP MEDIA QUERY ENDED */
