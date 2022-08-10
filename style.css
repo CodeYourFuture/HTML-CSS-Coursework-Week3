@@ -222,6 +222,33 @@ p {
 
 /* TABLET MEDIA QUERY STARTED*/
 @media only screen and (min-width: 540px) {
+
+
+.main{
+
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 5% 5% 40% 20% 20%;
+    gap: 0.5em 0.5em;
+
+}
+
+.mainWelcome{
+
+    justify-self: center;
+    align-self: start;
+    margin: 0;
+}
+
+
+.mainCheckout{
+
+    justify-self: center;
+    align-self: start;
+    margin: 0;
+}
+
+
 }
 
 /* TABLET MEDIA QUERY ENDED  */
