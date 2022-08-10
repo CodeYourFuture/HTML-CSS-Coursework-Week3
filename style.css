@@ -59,6 +59,7 @@ body{
     justify-self: start;
     font-size: 1.5em;
     font-style: italic;
+    font-weight: bold;
 }
 
 /* .main{
@@ -186,5 +187,6 @@ h1, p{
     padding-left: 20px;
     padding-right: 20px;
     color:rgb(52, 120, 247)   ;
+    font-weight: bold;
 
 }
