@@ -16,7 +16,8 @@ body{
 }
 
 .header {
-    background-color: rgb(253, 167, 181);
+    /* background-color: rgb(253, 167, 181); */
+    background-color: #F2A6B5;
 }
 
 .headerDiv {
@@ -166,7 +167,8 @@ object-fit: contain;
 .footer, footer{
     /* background-color: rgb(252, 164, 178); */
     /* margin-top: 500px; */
-    background-color: rgb(255, 131, 156);
+    background-color: #F2A6B5
+    /* #F2A6B5 */
 }
 
 .footerImage{
@@ -179,6 +181,7 @@ object-fit: contain;
 
 h1, p{
     /* margin: 20px; */
-    padding: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
 
 }
