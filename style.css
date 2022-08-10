@@ -46,6 +46,9 @@
     height: 118px;
     background-color: #d4a373;
     }
+    .icon_img{
+        width="80px"
+    }
     .icon1{
      display: flex;
      width: 30%;
@@ -75,14 +78,13 @@
     .artical{
         background-color: #faedcd;
         display: flex;
-        justify-content: space-around;
         flex-direction: column;
         /* background-image: url("img/background_cakes.jpg");
         background-size: cover; */
         grid-area:ar;
         font-family: 'Sarabun', sans-serif;
-    
-      
+        font-weight: bold;
+        /* font-size: 50px; */
     }
     p{
         
@@ -158,12 +160,12 @@
 
     body{
         display: flex;
-       
         font-style: bold;
-        background-color: rgb(255, 255, 255);
+        background-color: #ffd6ae;
+
     }
     .box{
-        padding: 20px;
+        padding: 45px;
         /* background-color: aqua; */
     
     }
@@ -186,37 +188,44 @@
             /* Header */
      
     .header{
-        /* grid-area: hr; */
+        grid-area: hr;
         
         margin: 0px;
-        padding: 0px;
+        padding: 10px;
         justify-content:space-between;
         width: 903px;
         height: 118px;
         background-color: #e2ba92;
         }
+      
         .hedaer1{
             /* display: none; */
         }
         .hum_icon{
             display: none;
         }
+        .h1_welocme{
+        font-weight: bold;
+        }
         .text_header{
             font-size: 20px;
             text-align: center;
             /* font-weight: 50; */
+            font-weight: bold;
             color: #000000;
         }
                 /* Nav mune*/
 
     .nav_mun{
         grid-area: nav;
-        background-color: #f5e7d9;
+        background-color: #ffd6ae;
+
+        /* margin-bottom: 20px; */
     }
     li{
         list-style: none;
-        font-size: 20px;
-        padding-top: 20px;
+        font-size: 30px;
+        
     }
     a{
         text-decoration-line: none;
@@ -225,17 +234,53 @@
         display: flex;
         justify-content: space-around;
         align-content:stretch;
+        font-weight: bold;
     }
     .bar{
-        border: 1px solid rgb(209, 206, 201);
-        background-color: #e1e0dc;
+        color: #3f3d3d;
+        font-family:'Sarabun', sans-serif;
+        border: 2px solid rgb(180, 177, 177);
+        border-radius: 5px;
+        padding: 10px;
+        background-color:  #e2ba92;
+    }
+    .h1_welocme{
+        padding-bottom: 30px;
     }
 
     
 }
 /* media to Desktop /large */
 @media (min-width: 900px) {
-    /* body{
-        background-color: rgb(0, 0, 0);
-    } */
+    body{
+        background-color: rgb(246, 218, 255);
+    }
+        /* Header */
+     
+        .header{
+            grid-area: hr;
+            
+            margin: 0px;
+            padding: 10px;
+            justify-content:space-between;
+            width: auto;
+            
+            background-color: #e2ba92;
+            }
+            .artical{
+                background-color: #faedcd;
+                display: flex;
+                justify-content: space-around;
+                flex-direction: column;
+                /* background-image: url("img/background_cakes.jpg");
+                background-size: cover; */
+                grid-area:ar;
+                font-family: 'Sarabun', sans-serif;
+                font-weight: bold;
+                font-size: 30px;
+            }
+            .h1_welocme{
+                margin: 0;
+                padding-bottom: 50px;
+            }
 }
