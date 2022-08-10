@@ -57,6 +57,7 @@ button {
     color: white;
     font-size: 0.8em;
     letter-spacing: 2pt;
+    margin-top: 1em;
 }
 
 .section-text {
@@ -351,7 +352,7 @@ a:hover {
 .container {
     display: grid;
     grid-template-columns: repeat(14, 1fr);
-    grid-template-rows: auto;
+    grid-template-rows: 200px auto;
     gap: 46px;
     min-width: 100%;
     overflow: hidden;
@@ -359,9 +360,9 @@ a:hover {
 
 .hero {
     background-image: url('/img/ke-vin-VBF1gBG3JPc-unsplash.jpg');
-    background-size:150%;
+    background-size:110%;
     background-repeat:no-repeat;
-    background-position:right;
+    background-position:right center;
     grid-column: 1 / span 14;
     grid-row: 1 / span 3;
 
@@ -463,7 +464,9 @@ button {
 }
 
 h1 {
-    font-size: 60px;
+    font-size: 90px;
+    margin-left: 60%;
+    line-height: 1;
 
 }
 h2 {
