@@ -1,1 +1,293 @@
-/*  Add your styling here */
+
+/* css variables*/
+:root{
+  --primary:#7b2cbf;
+--dark: #240046;
+ --ligth:#e0aaff;
+ --shadow:#5a189a;
+}
+html{
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--dark);
+}
+body{background-color: aliceblue;
+  margin: 30px 50px;
+  line-height: 1.5;
+}
+
+.wrapper{
+  display: grid;
+  grid-gap: 20px;
+}
+
+/*header*/
+.header{
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 1fr 1fr;
+}
+ .header p{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 2.5em;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+ }
+
+
+
+/*nav*/
+.nav-section ul{
+  display: grid;
+  grid-gap: 20px;
+  padding: 0;
+  list-style: none;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.nav-section a {
+  background-color: var(--primary);
+  display: block;
+  text-decoration: none;
+  padding: 0.5rem;
+  text-align: center;
+  color: var(--dark);
+  font-size: 1.2rem;
+  box-shadow: var(--shadow);
+}
+
+.nav-section a:hover{
+  background-color: var(--dark);
+  color: var(--ligth);
+}
+/* top container*/
+.top-container{
+  display: grid;
+  grid-gap: 20px;
+  grid-template-areas: 
+  "main-img main-paragrafo" 
+  "main-img main-paragrafo";
+
+}
+
+.main-img{
+  grid-area: main-img;
+  min-height: 500px;
+  background-size: cover;
+  background-position: left;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-self: start;
+  justify-content: left;
+  }
+.main-paragrafo{
+  grid-area: main-paragrafo;
+  max-height: 500px;
+  background-size: cover;
+  background-position: right;
+  padding: 7rem;
+  display: flex;
+  align-self: right;
+  flex-direction: column;
+  justify-content: right;
+
+}
+
+.main-paragrafo h1{
+  font-size: 4rem;
+  justify-content: center;
+  text-align: center;
+  padding: 4px;
+  text-align: center;
+}
+
+.main-paragrafo p{
+  font-size: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.portfolio{
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+}
+
+.portfolio .images1{
+  width: 100%;
+  box-shadow: var(--shadow);
+}
+.portfolio .images2{
+  width: 100%;
+  box-shadow: var(--shadow)
+ 
+}
+.portfolio .images3{
+  width: 100%;
+  box-shadow: var(--shadow)
+}
+.portfolio .images4{
+  width: 100%;
+  box-shadow: var(--shadow)
+}
+
+.nav{
+  text-decoration: none;
+  
+}
+/* footer*/
+.footer{
+  margin-right: 700px;
+  margin-left: 700px;
+  margin-top: 100px;
+  margin-bottom: 300px;
+  justify-content: center;
+  text-align: center;
+  align-self: center;
+
+}
+
+.box-social{
+  display: grid;
+  grid-gap: 20px;
+ grid-template-areas:
+  "card-social1 card-social2 card-social3";
+  margin-left: 10px;
+}
+
+.card-social1{
+  grid-area: card-social1;
+  width: 40px;
+  cursor: pointer;
+}
+
+.card-social2{
+  grid-area: card-social2;
+  width: 40px;
+  cursor: pointer;
+}
+
+.card-social3{
+  grid-area: .card-social3;
+  width: 40px;
+  cursor: pointer;
+}
+.card-social{
+  border: 1px; solid #b1b4b7;
+  border-radius: 100%;
+  padding: 10px 12px;
+
+}
+
+
+/*  imag*/
+
+.logo{
+width: 200px; 
+}
+
+
+
+.images1{
+width: 300px;
+
+}
+
+.images2{
+width: 300px;
+height: auto;}
+
+.images3{
+ width: 300px;
+}
+
+ .images4{
+ width: 300px;
+height: auto;}
+
+.main-cake{
+width: 750px;
+}
+
+/*media queries
+
+@media ( min-width: 570px) {
+.top-container{
+  grid-template-areas: 
+  "main-img"
+  "main-paragrafo";
+}
+.nav-section ul{
+  grid-template-columns: 1fr;
+
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+  /*grid style
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto;
+    grid-gap: 10px;
+    background-color: #2196F3;
+    padding: 10px;
+  }
+  
+  .grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+  }
+  
+  .item1 {
+    grid-column: 1 / span 6;
+  }
+
+  .item2{
+    grid-column: 1/span 6;
+
+  }
+  .item3{
+   grid-column-start: 1;
+   grid-column-end: 3;
+  }
+  .item4{
+    grid-column: 3/span 4;
+  }
+
+  .item5{
+    grid-column: 1/span 3;
+  }
+  .item6{
+   grid-column-start: 4;
+   grid-column-end: 7;
+  }
+  .item7{
+    grid-column: 1/span 6;
+  }
+    
+  
+
+/*grid style end*/
+
+
+
+
