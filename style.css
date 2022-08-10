@@ -101,6 +101,16 @@ footer {
     grid-area: footer;
 }
 
+footer {
+    padding: 20px;
+    background-color: #8ECAE6;
+}
+
+footer > p:nth-child(4) {
+    margin-top: 40px;
+    text-align: center;
+}
+
 @media screen and (min-width: 540px) {
     body {
         grid-template-areas:
