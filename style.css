@@ -24,10 +24,17 @@ body{
 
 .headerDiv {
     display: grid;
-    grid-template-columns: 40% 60%;
+    grid-template-columns: 30% 40% 30%;
     /* grid-template-rows: 1fr 1fr ; */
 
  
+}
+
+.topText{
+grid-column: 2/3;
+text-align: center  ;
+font-size: 1.5em;
+align-self: center;
 }
 
 .headerImage {
@@ -41,7 +48,7 @@ body{
 }
 
 .headerHamburgerMenu{
-    grid-column: 2/3;
+    grid-column: 3/4;
     grid-row: 1/2;
     width: 50px;
     height: 50px;
@@ -54,7 +61,7 @@ body{
 
 .headerText{
 
-    grid-column: 1/3;
+    grid-column: 1/4;
     grid-row: 2/3;
     justify-self: start;
     font-size: 1.5em;
@@ -188,10 +195,5 @@ h1, p{
     padding-right: 20px;
     color:rgb(52, 120, 247)   ;
     font-weight: bold;
-
-}
-
-.topText{
-    text-align: center  ;
 
 }
