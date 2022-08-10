@@ -136,14 +136,19 @@ body{
     background-color: #6d6875;
     margin-top: .5em;
     align-items: center;
-    opacity:50%;
-    
+    opacity:30%;
+    border-radius: 3px;
 }
 .button a{
     text-decoration: none;
     margin-top: .2em;
     color: black;
         }
+.button:hover{
+    opacity: 70%;
+    color: #6d6875;
+    background-color: beige;
+}
 /* Hamburger menu */
 label .menu {
   position: absolute;
