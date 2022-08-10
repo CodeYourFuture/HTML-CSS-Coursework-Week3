@@ -55,7 +55,7 @@ body{
     grid-column: 1/3;
     grid-row: 2/3;
     justify-self: start;
-    font-size: 1.25em;
+    font-size: 1em;
     font-style: italic;
 }
 
@@ -183,6 +183,6 @@ h1, p{
     /* margin: 20px; */
     padding-left: 20px;
     padding-right: 20px;
-    color:cornflowerblue   ;
+    color:rgb(52, 120, 247)   ;
 
 }
