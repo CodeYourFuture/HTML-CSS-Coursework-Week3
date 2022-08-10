@@ -1,3 +1,7 @@
+* {
+    margin: 0px;
+}
+
 body {
     font-family: 'Oxygen', sans-serif;
     display: grid;
@@ -11,6 +15,26 @@ body {
 
 header {
     grid-area: header;
+    padding: 20px;
+    background-image: url('img/header-bg.jpg');
+    background-size: 200%;
+    background-position: 50% 0%;
+}
+
+header > h1 {
+    font-size: 20px;
+    width: 60%;
+    padding-top: 125px;
+    text-align: right;
+    margin-left: auto;
+    font-style: italic;
+    position: relative;
+}
+
+.hamburger-icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
 }
 
 nav {
