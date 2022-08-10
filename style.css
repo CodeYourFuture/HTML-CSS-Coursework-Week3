@@ -35,7 +35,7 @@ span {
     width: 90%;
 
 }
-.container .content {
+.content {
 right: 100px;
 }
 .card {
@@ -49,12 +49,7 @@ color: #08090a;
 font-size: 1.8em;
 
 }
-/* p .desc {
-    color: #08090a;
-    margin-top: 2.56em;
-    position: relative;
-    right: 100px;
-} */
+
 /* navigation css */
 
 .topnav {
@@ -119,8 +114,33 @@ color: #333333;
 
 .secondgrid {
     display: grid;
-    grid-template-columns: repeat(4 auto); 
-    grid-gap: .6em;
+    grid-template-columns: repeat(4 1fr);
     margin-left: 10rem;
     margin-top: 2.45rem;
+    row-gap: 10px;
+}
+
+/*footer*/
+span {
+    width: 5em;
+    height: 5em;
+    background-image: #75A2B8;
+    border-radius: 50%;
+}
+.container1 {
+    width: 90%;
+
+}
+.foot {
+    background: #879494;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    align-items: flex-end;
+    border-radius: 1em;
+    margin-bottom: 2em;
+}
+.foot {
+        background: #d9e691;
+        padding: 2.5em;
+    
 }
