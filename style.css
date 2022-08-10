@@ -45,7 +45,7 @@ align-self: center;
   height:100%;
   /* image-resolution: 100px 10px; */
   object-fit: cover;
-  /* filter: grayscale(100%); */
+  filter: grayscale(100%);
 }
 
 .headerHamburgerMenu{
