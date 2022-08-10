@@ -31,7 +31,7 @@ header > h1 {
     position: relative;
 }
 
-.hamburger-icon {
+header > img {
     position: absolute;
     top: 20px;
     right: 20px;
