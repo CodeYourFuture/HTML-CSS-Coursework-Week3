@@ -1,1 +1,109 @@
-/*  Add your styling here */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body {
+  
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(7, auto);
+  max-width: 320px;
+  grid-template-areas: 
+  'header header'
+  'nav nav'
+  'main main'
+  'main main'
+  'main main'
+  'main main'
+  'footer footer';
+
+}
+
+.header-container {
+  grid-area: header;
+  background-color: #adb5bd;
+  border-bottom: 3px solid darkslategrey;
+  padding-bottom: 20px;
+  
+}
+.top-nav{
+  grid-area: nav;
+  margin: 10px 0;
+  justify-content: space-between;
+  background-color: #adb5bd;
+
+}
+a{
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  
+}
+.link:hover{
+  background-color: darkgoldenrod;
+}
+
+.main-container{
+  grid-area: main;
+  
+  
+    
+}
+.main-text{
+  text-align: justify;
+  border: 4px solid darkslateblue;
+  margin: 10px 0;
+}
+.main-text >h2{
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.main-img{
+  width: 320px;
+  border: 4px solid darkslateblue;
+  margin: 10px 0;
+  
+  
+}
+.img-container {
+  width: 150px;
+  border: 2px solid darkslateblue;
+  margin: 10px 0;
+}
+.img-first-row, .img-second-row {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+
+
+.logo{
+    height: 55px;
+}
+
+
+/*footer style*/
+footer{
+    grid-area: footer;
+    background-color:#adb5bd;
+    display: block;
+    text-align: center;
+    padding-top: 20px;
+    border-top: 3px solid darkslategrey;
+ 
+}
+  
+
+
+
+
+
+
+
+
+
