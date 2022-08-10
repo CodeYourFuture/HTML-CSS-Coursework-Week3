@@ -1,1 +1,46 @@
-/*  Add your styling here */
+body {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "hero"
+        "cakes"
+        "footer"
+    ;
+}
+
+header {
+    grid-area: header;
+}
+
+nav {
+    display: none;
+}
+
+.s-hero {
+    grid-area: hero;
+}
+
+.s-cakes {
+    grid-area: cakes;
+}
+
+footer {
+    grid-area: footer;
+}
+
+@media screen and (min-width: 540px) {
+    body {
+        grid-template-areas:
+            "header"
+            "nav"
+            "hero"
+            "cakes"
+            "footer"
+        ;
+    }
+
+    nav {
+        display: block;
+        grid-area: nav;
+    }
+}
