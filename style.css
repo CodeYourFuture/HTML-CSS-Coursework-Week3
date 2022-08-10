@@ -21,7 +21,7 @@ header {
     background-position: 50% 0%;
 }
 
-header > h1 {
+header>h1 {
     font-size: 20px;
     width: 60%;
     padding-top: 125px;
@@ -31,7 +31,7 @@ header > h1 {
     position: relative;
 }
 
-header > img {
+header>img {
     position: absolute;
     top: 20px;
     right: 20px;
@@ -56,7 +56,7 @@ nav {
     padding: 40px 20px 20px 20px;
 }
 
-.s-hero-text > p {
+.s-hero-text>p {
     margin-top: 20px;
 }
 
@@ -106,7 +106,7 @@ footer {
     background-color: #8ECAE6;
 }
 
-footer > p:nth-child(4) {
+footer>p:nth-child(4) {
     margin-top: 40px;
     text-align: center;
 }
@@ -115,15 +115,18 @@ footer > p:nth-child(4) {
     body {
         grid-template-areas:
             "header"
-            "nav"
             "hero"
             "cakes"
             "footer"
         ;
     }
 
-    nav {
-        display: block;
-        grid-area: nav;
+    header {
+        background-size: 150%;
+        background-position: 50% 5%;
+    }
+
+    .s-hero-image {
+        height: 300px;
     }
 }
