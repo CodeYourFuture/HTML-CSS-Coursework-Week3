@@ -146,6 +146,8 @@ body{
     padding: 15px;
     font-size:large
   }
+  /* this helps the contrast to be inline with the (WCAG 2.0 CONTRAST) */
+  .navbar > .nav_item{color: black;}
 
   /*nav button  */
   .humburg_btn {
@@ -205,6 +207,9 @@ body{
     padding: 15px;
     font-size:xx-large
   }
+
+  /* this helps the contrast to be inline with the (WCAG 2.0 CONTRAST) */
+  .navbar > .nav_item{color: black;}
 
   /*nav button  */
   .humburg_btn {
