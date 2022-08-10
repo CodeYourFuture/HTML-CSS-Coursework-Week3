@@ -8,7 +8,7 @@ html{
 body{
 
     /* font-family: 'Mouse Memoirs', sans-serif; */
-    font-family: 'Caveat', cursive;
+    font-family: 'Nunito', cursive;
 
     margin: 0;
     /* background-color: pink; */
@@ -193,7 +193,7 @@ h1, p{
     /* margin: 20px; */
     padding-left: 20px;
     padding-right: 20px;
-    color:rgb(52, 120, 247)   ;
+    color:black  ;
     font-weight: bold;
 
 }
