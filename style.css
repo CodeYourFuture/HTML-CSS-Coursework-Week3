@@ -9,6 +9,16 @@ body {
 
 header {
     grid-area: header;
+    background-image: url('img/banner.jpg');
+    background-size: 100%;
+}
+
+header > h1 {
+    font-size: 22px;
+    text-align: right;
+    margin-left: auto;
+    padding-top: 150px;
+    padding-right: 50px;
 }
 
 nav {
