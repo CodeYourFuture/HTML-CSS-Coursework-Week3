@@ -1,6 +1,91 @@
-/*  Add your styling here */
-
+ /* Add your styling here */
+/*
 body {
+background-color: hsl(240, 30%, 92%);
+min-height: 100vh;
+display: flex;
 
-background-color: blue;
+align-items: center;
+
+}
+main {
+    height: 1020px;
+    width: 480px;
+    border: 1px solid rgb(64, 64, 154);
+}
+img {
+
+    height: 10%;
+    width: 10%;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    
+    text-align: center;
+    margin-top: 40px;
+
+}
+ul{
+    
+    text-decoration: none;
+    
+
+    margin: 0px 10px;
+    list-style: none;
+    
+
+}
+*/
+    /*li {s
+    list-style: none;
+    display: inline-block;
+     text-decoration: none; 
+     justify-content: flex-end;
+     justify-content: space-around;
+
+}
+//
+p {
+    justify-content: flex-end;
+} */
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: lightgrey;
+}
+p {
+    font-size: 20px;
+}
+.header-img {
+    margin-left: 2px;
+}
+.nav-bar {
+    background-color: lightgrey;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: flex-end; 
+    
+}
+li {
+    padding: 30px;
+}
+a {
+    background-color: dimgray;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+.left-hand-img {
+    width: 350px;
+    height: 200px;
+}
+.main-page-main {
+    display: flex;
+}
+.homepage-aside {
+    justify-content: right;
+
 }
