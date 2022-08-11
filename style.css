@@ -3,55 +3,64 @@
     box-sizing: border-box;
 }
 
+main{
+    background-color: #ffc8dd;
+}
+
+/* bodygrid layout */
 body{
     display: grid;
+    font-family: 'Dancing Script', cursive;
     grid: 
-    "he"
-    "bo"
-    "foo";
+    "hero"
+    "body"
+    "footer";
 }
 
 header{
-    grid-area: he;
+    grid-area: hero;
 }
 
 main{
-   grid-area: bo;
+   grid-area: body;
 }
 
 footer{
-    grid-area: foo;
+    grid-area: footer;
 }
 
+/* headersection starts here */
 .nav-container{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: darkgreen;
+    background-color: #cdb4db;
     width: auto;
     height: 300px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
-.navimg{
-    width:  100px;
+.nav-img{
+    width:  100%;
+    height: auto;
 }
-
-.navbar ul{
-    margin: 0;
-    padding: 0;
+ 
+/* nav bar  */
+.nav-bar ul{
     display: flex;
+    justify-content: center;
 }
 
-.navbar li{
+.nav-bar li{
     list-style: none;
 }
 
-.navbar li a{
+.nav-bar li a{
     text-decoration: none;
     padding: 10px;
 }
 
+/* hamburger menu  */
 .toggle-button{
     position: absolute;
     top: .75rem;
@@ -72,22 +81,11 @@ footer{
 
 .nav-container p{
     align-self: flex-end;
+    margin-right: 20px; 
+    font-size: 25px;
 }
 
 /* main starts here */
-
-/*.container{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 170px 140px 100px 100px;
-    grid-gap: 10px;
-    grid-template-areas: 
-     "h h"
-     "img img"
-     "img1 img2"
-     "img3 img4";
-}*/
-
 
 .hero-info-img{
     display: flex;
@@ -95,16 +93,18 @@ footer{
 }
 
 .heroImg{
-    width: 400px;
+    width: 50%;
+    height: auto;
     align-self: center;
+    margin: 20px 0;
 }
 
-.all4image{
+.allImages{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 200px 200px;
-    grid-gap: 5px;
-    border: solid;
+    grid-gap: 10px;
+    /* border: solid; */
 }
 
 .heroImges{
@@ -112,35 +112,35 @@ footer{
    height: 100%;
 }
 
-
-
-/*.hero-info{
-    grid-area: h;
-    background-color: rebeccapurple;
-    color: black;
+.hero-info-img h1{
+    margin-left: 20px;
+    font-size: 50px;
 }
 
-.hero-image{
-    grid-area: img;
-    width: 100%;
-    object-fit: cover;
-}
- 
-.hero-image1{
-    grid-area: img1;
-    width: 100%; 
-    background-color: orange;
-}
-.hero-image2{
-    grid-area: img2;
-    background-color: coral;
+.hero-info-img p{
+    margin-left: 20px;
+    font-size: 20px;
 }
 
-.hero-image3{
-    grid-area: img3;
-    background-color: gray;
+/* footersection starts here */
+footer {
+    text-align: center;
+    padding: 10px 3px;
+    background-color: #ffafcc;
+    color: whitesmoke;
 }
-.hero-image4{
-    grid-area: img4;
-    background-color: cyan;
-}*/
+
+
+@media only screen and (min-width:540px){
+    .nav-bar{
+        
+    }
+}
+
+
+    
+
+  
+
+  
+  
