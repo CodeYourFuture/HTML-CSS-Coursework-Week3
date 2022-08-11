@@ -69,13 +69,48 @@ a {
     margin-top: 20px;
 }
 
-
-
-
-
 .cakes {
     grid-area: cakes;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "img1 img2 img3 img4"
+    ;
+    padding: 20px;
 }
+
+.cake-img1 {
+    grid-area: img1;
+    height: 150px;
+    background-image: url('img/banner.jpg');
+    background-size: cover;
+    margin: 20px;
+}
+
+.cake-img2 {
+    grid-area: img2;
+    height: 150px;
+    background-image: url('img/banner.jpg');
+    background-size: cover;
+    margin: 20px;
+}
+
+.cake-img3 {
+    grid-area: img3;
+    height: 150px;
+    background-image: url('img/banner.jpg');
+    background-size: cover;
+    margin: 20px;
+}
+
+.cake-img4 {
+    grid-area: img4;
+    height: 150px;
+    background-image: url('img/banner.jpg');
+    background-size: cover;
+    margin: 20px;
+}
+
 
 footer {
     grid-area: footer;
