@@ -8,6 +8,8 @@ body{
     margin: 0 auto;
     font-family: "Raleway",sans-serif;
     font-size: .5em;
+    background-color: beige;
+
 }
 
 /* Main section */
@@ -26,7 +28,7 @@ body{
     "footer footer"
     ;  
 }
-
+  /* hero */
 .homepage-hero {
   background-color: #ffcdb2;
   grid-area: hero;
@@ -52,7 +54,7 @@ body{
     margin: 1em;
     padding: 1em;
 }
-
+/* feature */
 .homepage-feature {
  grid-area: feature;
  margin: 1.5em;
@@ -63,7 +65,7 @@ body{
     object-fit: cover;
     margin: auto;
 }
-
+/* product */
 .homepage-products {
   grid-area: product;
   display: grid;
@@ -97,7 +99,7 @@ body{
 .homepage-products:hover{
     opacity: 100%;
 }
-
+/* aside */
 .homepage-aside {
   grid-area: aside;
   margin: 1em;
@@ -110,7 +112,7 @@ body{
 .homepage-aside > h1{
     font-size: 2em;
 }
-
+/* footer */
 .homepage-footer{
     grid-area: footer;
     background-color:#ffcdb2 ;
@@ -125,6 +127,7 @@ body{
 .footer-btns{
     margin-top: 1.5em;
     margin-left: 1.5em;
+ 
 }
 .button{
     width: 150px;
@@ -136,7 +139,7 @@ body{
     background-color: #6d6875;
     margin-top: .5em;
     align-items: center;
-    opacity:30%;
+    opacity:50%;
     border-radius: 3px;
 }
 .button a{
@@ -235,4 +238,152 @@ label a {
   font-weight: bold;
   
 }
+/* Media queries */
 
+/* medium  */
+@media screen and (min-width: 540px) {
+  body{
+    max-width: 540px;
+    margin: 0 auto;
+  }
+  .homepage-hero p{
+    font-size: 1.8em;
+    width: 150px;
+    margin-top: 50px;
+  }
+  .homepage-main{
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: 150px 250px 250px 150px;
+    grid-template-areas: 
+    "hero hero hero hero hero hero"
+    "feature feature feature aside aside aside"
+    "product product product  aside aside aside"
+    "footer footer footer footer footer footer"
+    ;
+  }
+  .homepage-feature img{
+    height: 220px;
+  }
+    .homepage-products{
+      width: 240px;
+      height: auto;
+    }
+    .pr-img{
+    width:98px;
+    height: 98px;
+    margin:5px 0 5px 5px;
+    /* margin-right: 20px;
+    margin-left: 2px; */
+  }
+  .homepage-aside{
+    font-size:2.2em;
+    font-weight: 0;
+    text-align: center;
+  }
+  .hamburger-menu{
+    display: none;
+  }
+  .footer-btns{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  text-align: center;
+}
+.footer-title{
+  margin: 40px;
+  font-size: 1.5em;
+}
+}
+
+/* large */
+@media screen and (min-width: 900px) {
+  body{
+    max-width: 900px;
+    margin: 0 auto;
+  }
+   .homepage-hero p{
+    font-size: 2em;
+    width: 350px;
+    margin-top: 0;
+  }
+  .homepage-hero img{
+    width: 190px;
+    height: 140px;
+    margin: 1.5em;
+    padding: 1em;
+}
+.homepage-main{
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: 150px 98px 320px  200px 150px;
+    grid-template-areas: 
+    "hero hero hero hero hero hero"
+    "menu menu menu menu menu menu"
+    "feature feature feature aside aside aside"
+    "product product product  product product product"
+    "footer footer footer footer footer footer"
+    ;
+  }
+  .homepage-menu{
+    grid-area: menu;
+    background-color: #e5989b;
+    margin: 2em;
+  }
+  .main-menu{
+     display: flex !important;
+     justify-content: flex-end;
+     align-items: center;
+     padding: 1em;
+    font-size: 2.5em;
+    font-weight: bold;
+  }
+  .main-menu a{
+    text-decoration: none;
+    margin-left: 30px;
+    color: aliceblue;
+    
+  }
+  .main-menu a:hover{
+    color: #6d6875;
+  }
+  .homepage-feature{
+    margin: 2em;
+    grid-row: 3/4;
+    grid-column: 1/4;
+  }
+  .homepage-feature img{
+    height: 320px;
+    
+  }
+  .homepage-aside{
+    margin-right: 2em;
+    grid-row: 3/4;
+    grid-column: 4/7;
+    margin-top: 0;
+    text-align: left;
+    font-size: 2.3em;
+    color: #36454f;
+  }
+  .homepage-products{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 2em;
+    margin-right: 2em;
+    margin-bottom: 0;
+    grid-row: 4/5;
+    grid-column: 1/7;
+  }
+  .hover{
+    margin-right: 60px;
+  }
+  .pr-img{
+    width: 150px;
+   height: 170px;
+  }
+  .button{
+    color: #6d6875;
+    background-color: beige;
+    text-align: center;
+    margin-top: 2em;
+  }
+}
