@@ -308,6 +308,7 @@ a{
     flex-direction: row;
     justify-content: center;
     overflow: visible;
+    height: 5vh;
   }
   /* footer-btn display hidden */
   .footer-button{
@@ -317,4 +318,58 @@ a{
 
 }
 
-@media screen and  (min-width: 900px)
+@media screen and  (min-width: 900px){
+
+  .container{
+    display: grid;
+    grid-template-areas: 
+    "he he he he"
+    "nv nv nv nv"
+    "se se fi fi"
+    "th th th th"
+    "fo fo fo fo";
+    grid-template: repeat(5, 1fr) / repeat(4, 1fr);
+    height: 300vh;
+    margin: 5%;
+    grid-gap:5px;
+  
+  }
+  header{
+    grid-area: he;
+    grid-column-start: 1;
+    grid-column-end: -1;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    height: 30vh;
+    background-color: var(--main-bg-color);
+  }
+  .header-description{
+    display: grid;
+    grid-template-areas: 
+     "logo h2"
+     "logo . ";
+     grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+
+  }
+
+  .logo{
+    grid-area: logo;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: -1;
+  }
+  .nav-button{
+    display: none;
+  }
+.h2{
+  grid-area: h2;
+    grid-column-start: 2;
+    grid-column-end: -1;
+    grid-row-start: 2;
+    grid-row-end: -1;
+    font-size: 1rem; 
+}
+
+
+}
