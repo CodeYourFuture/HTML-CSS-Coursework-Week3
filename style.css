@@ -50,7 +50,7 @@ body {
     grid-template-areas: 
      "logo nav"
      "logo h2";
-     grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+     grid-template: repeat(2, 1fr) / repeat(2, 120px 1fr);
 
   }
 .logo{
@@ -58,8 +58,8 @@ body {
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 1;
-    grid-row-end: 3;
-  
+    grid-row-end: -1;
+  border: 2px solid black;
     background-image: url("https://t4.ftcdn.net/jpg/01/61/51/53/360_F_161515385_9xZTx5dWHgDlfj2tK7Qtniib9jn1reFq.jpg");
     background-size: 50% 50%;
     background-repeat: no-repeat;
@@ -97,12 +97,17 @@ a{
   width: 5rem;
   font-weight:900;
   font-style: italic;
+  font-size: .8rem;
   
 }
 .nav-links{
   height: 0;
   overflow: hidden;
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
 }
+
 .nav-open{
   height: 15vh;
 }
@@ -115,10 +120,10 @@ header > .h2{
     font-style: italic;
     display: grid;
     align-items: center;
-    align-content: flex-end;
+    align-content:flex-end;
     padding-bottom: 5%;
-    font-size: .5rem;
-    font-weight: 900;
+    font-size: .8rem;
+    font-weight: 300;
     color: var(--font-color);
 }
   .first-section{
@@ -131,6 +136,22 @@ header > .h2{
     border: 2px solid black;
     background-color: var(--main-bg-color);
   }
+  .first-section > h1{
+    font-size: 2rem;
+    font-weight: 900;
+    text-align: center;
+    padding: 10px 0 0 0;
+    font-style: italic;
+  }
+  .first-section, p{
+    padding: 10px;
+    font-size: .8rem;
+    font-weight: 600;
+    text-align: center;
+    line-height: 20px;
+
+  }
+
   .second-section{
     grid-area: se;
     grid-column-start: 1;
