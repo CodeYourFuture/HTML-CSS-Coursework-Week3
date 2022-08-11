@@ -1,1 +1,265 @@
-/*  Add your styling here */
+body{
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: antiquewhite;
+}
+
+a{
+    color:black;
+}
+
+.head{
+    background-color:white;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    box-shadow: 1px 1px 4px 0 rgba(1, 1, 1, 1);
+    
+    
+}
+.head__part{
+    display:flex;
+    flex-direction: column;
+    text-align: end;
+    
+}
+
+header ul{
+    margin:0;
+    padding:0;
+    list-style: none;
+    overflow: hidden;
+
+}
+
+.menu__item{
+    display:block;
+    padding:20px;
+    border-right: 1px solid #aaa;
+    text-decoration: none;
+}
+.menu__item:hover{
+    background-color: rgb(203, 203, 224);
+
+}
+.nav-menu{
+    max-height: 0;
+    transition: max-height .2s ease-out;
+}
+.menu__btn{
+    
+    padding:20px;
+    position:relative;
+    float:right;
+    cursor: pointer;
+}
+.nav-icon{
+    background-color: black;
+    display:block;
+    height:2px;
+    width:18px;
+    position:relative;
+    transition:background .2s ease-out;
+}
+.nav-icon:before{
+    background:black;
+    content: "";
+    display:block;
+    height:100%;
+    width:100%;
+    position:absolute;
+    transition: all .2s ease-out;
+    top:5px;
+}
+.nav-icon:after{
+    background:black;
+    content: "";
+    display:block;
+    height:100%;
+    width:100%;
+    position:absolute;
+    transition: all .2s ease-out;
+    top:-5px;
+}
+.head .menu__toggle{
+    display:none;
+}
+/*css for when the menu checked*/
+.head .menu__toggle:checked ~ .nav-menu{
+    max-height:240px;
+}
+.head .menu__toggle:checked ~ .menu__btn .nav-icon{
+    background: transparent;
+
+}
+
+.head .menu__toggle:checked ~ .menu__btn .nav-icon:before{
+    transform: rotate(-45deg);
+    top:0;
+}
+
+.head .menu__toggle:checked ~ .menu__btn .nav-icon:after{
+    transform: rotate(45deg);
+    top:0;
+
+}
+
+.main__paragraph{
+    margin:5px;
+    
+}
+
+.birthday{
+  width: 300px;
+  height:181;
+}
+
+.img1 ,.img2 ,.img3 ,.img4{
+    width:148px;
+    height:98px;
+}
+
+
+.four__pic{
+display: grid;
+grid-template-columns: 1fr 1fr;
+/*grid-template-rows: 1fr 1fr;*/
+
+}
+
+
+
+.links{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 15px;
+  margin:25px  25px;
+  justify-content: center;
+
+}
+.links a {
+
+    text-decoration-line: none;
+}
+
+
+
+
+footer p{
+  font-weight: bold;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+@media  (min-width:300px){
+    .head li{
+        float:left;
+    }
+    .head li a{
+        padding:20px 30px;
+    }
+.head .nav-menu{
+    clear:none;
+    float:right;
+    max-height:none;
+
+}
+.nav-icon{
+    display:none;
+}
+.body1{
+    display:flex;
+    gap: 15px;
+
+}
+.birthday{
+    grid-column: 1/2;
+}
+.body1-2{
+   grid-column: 2/-1 ;
+}
+.main__title{
+    text-align: center;
+}
+
+.four__pic{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+margin-top: 20px;
+
+}
+.img1 , .img2, .img3 ,.img4{
+    width:300px;
+    height:300px;
+    
+}
+
+.links{
+ display:flex;
+ justify-content: center;
+
+  
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
