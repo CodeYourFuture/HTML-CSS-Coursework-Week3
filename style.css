@@ -9,59 +9,47 @@ body {
 }
 .container {
     display: grid;
-    width: 100%;
+    width: 95%;
     height: 70%;
     margin: 2em auto 0;
+    
+
 }
 .card {
-    background: #879494;
-    display: grid;
-    grid-template-columns: 1fr 5fr;
-    align-items: flex-end;
+    display: flex;
     border-radius: 1em;
     margin-bottom: 2em;
-}
-.images {
-    padding: 5em;
-}
-
-span {
-    width: 5em;
-    height: 5em;
-    background-image: #75A2B8;
-    border-radius: 50%;
-}
-.container {
-    width: 90%;
-
-}
-.content {
-right: 100px;
-}
-.card {
     background: #d9e691;
     padding: 2.5em;
+    margin-left: 5rem;
+    margin-top: 2.45rem;
+    
+}
+.cards {
+    display: flex;
 }
 
+.cards p {
+    position: relative;
+    left: 58rem;
+    margin-top: 100px;
+}
 p {
-margin: 0 0 .3em;
-color: #08090a;
-font-size: 1.8em;
-
-}
+    color: #08090a;
+    font-size: 1.8em;
+    }
 
 /* navigation css */
 
 .topnav {
     position: relative;
-    width: 90%;
-    margin-left: 6.5rem;
-    margin-right: 6.5rem;
+    width: 80%;
+    margin-left: 12rem;
     /* z-index: 9999;   */
     background-color: #fff;
     border-bottom: 1px solid #ddd;
 }
-.topnav > .content{
+.topnav > .content1{
     height: 4.375rem;
 }
 
@@ -81,7 +69,11 @@ cursor: pointer;
 color: #333333;
 }
 
-/*grid css */
+/* navigation */
+
+
+
+/*grid middle */
 
 .maingrid {
     display: grid;
@@ -112,35 +104,46 @@ color: #333333;
     text-align: end;
 }
 
-.secondgrid {
-    display: grid;
-    grid-template-columns: repeat(4 1fr);
-    margin-left: 10rem;
-    margin-top: 2.45rem;
-    row-gap: 10px;
+.image3 {
+    display: flex;
+    margin: 50px;
+    column-gap: 20px;
+    margin-left: 18rem;
 }
+ 
+/* grid middle */
+
+
 
 /*footer*/
-span {
-    width: 5em;
-    height: 5em;
-    background-image: #75A2B8;
-    border-radius: 50%;
-}
+
 .container1 {
-    width: 90%;
+    width: 95%;
+    height: 70%;
+    margin: 2em auto 0;
+    
 
 }
 .foot {
-    background: #879494;
-    display: grid;
-    grid-template-columns: 1fr 5fr;
-    align-items: flex-end;
     border-radius: 1em;
     margin-bottom: 2em;
-}
-.foot {
-        background: #d9e691;
-        padding: 2.5em;
+    background: #d9e691;
+    padding: 2.5em;
+    margin-left: 5rem;
+    margin-top: 2.45rem;
     
+}
+.foot1 {
+    text-align: center;
+    font-size: 10px;
+    margin-top: 3.5rem;
+}
+
+
+
+
+
+
+@media screen (min-width: 600px) {
+    .
 }
