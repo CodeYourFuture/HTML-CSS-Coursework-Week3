@@ -1,1 +1,28 @@
-/*  Add your styling here */
+body {
+    display: grid;
+    grid-template-areas: 
+        "header"
+        "hero"
+        "cakes"
+        "footer";
+}
+
+header {
+    grid-area: header;
+}
+
+nav {
+    display: none;
+}
+
+.hero {
+    grid-area: hero;
+}
+
+.cakes {
+    grid-area: cakes;
+}
+
+footer {
+    grid-area: footer;
+}
