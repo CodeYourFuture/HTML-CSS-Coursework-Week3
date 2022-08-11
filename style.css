@@ -114,4 +114,34 @@ a {
 
 footer {
     grid-area: footer;
+    text-align: center;
+    padding: 20px 0px 50px 0px;
+    background-color: #dde8ee;
+}
+
+.container-social {
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
+    margin: 0 auto;
+}
+
+.card-social {
+    border: 1px solid #b3bbbe;
+    border-radius: 100%;
+    padding: 10px 12px;
+}
+
+.card-social img {
+    width: 20px;
+}
+
+.footer-title {
+    font-size: 30px;
+}
+
+.footer-bottom {
+    color: #bdc3c7;
+    margin-top: 30px;
+    font-size: 20px;
 }
