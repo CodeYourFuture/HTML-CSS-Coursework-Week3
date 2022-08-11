@@ -2,6 +2,7 @@ body {
     display: grid;
     grid-template-areas: 
         "header"
+        "nav"
         "hero"
         "cakes"
         "footer"
@@ -23,7 +24,23 @@ header > h1 {
 }
 
 nav {
-    display: none;
+    grid-area: nav;
+    padding: 20px;
+}
+
+nav > ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0px;
+}
+
+a {
+    text-decoration: none;
+    background-color: #FFB703;
+    padding: 5px 40px;
+    font-size: 10px;
+    margin-left: 20px;
 }
 
 .hero {
