@@ -111,7 +111,7 @@ a{
 .nav-open{
   height: 15vh;
 }
-header > .h2{
+.h2{
     grid-area: h2;
     grid-column-start: 2;
     grid-column-end: -1;
@@ -119,12 +119,14 @@ header > .h2{
     grid-row-end: -1;
     font-style: italic;
     display: grid;
-    align-items: center;
+    align-items: flex-end;
     align-content:flex-end;
     padding-bottom: 5%;
-    font-size: .8rem;
-    font-weight: 300;
+    font-size: .6rem;
+    font-weight: 500;
     color: var(--font-color);
+    width: 100%;
+    border: 2px solid black;
 }
   .first-section{
     grid-area: fi;
@@ -233,7 +235,30 @@ header > .h2{
     grid-row-end: 6;
     height: 30vh;
     background-color: var(--main-bg-color);
+    display: flex;
+    justify-content: center;
   }
+  .icon{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .circle{
+    width: 15%;
+    height: 5vh;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: white;
+    text-align: center;
+    color: var(--font-color);
+    font-size: 1.5rem;
+}
+
+.circle:hover{
+    background-color: #474d5d;
+}
 
 
-
+@media screen and (min-width: 540px) {
+  
+}
