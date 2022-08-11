@@ -4,7 +4,8 @@ body {
         "header"
         "hero"
         "cakes"
-        "footer";
+        "footer"
+    ;
 }
 
 header {
@@ -27,7 +28,33 @@ nav {
 
 .hero {
     grid-area: hero;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+        "image text"
+    ;
 }
+
+.hero-img {
+    grid-area: image;
+    height: 250px;
+    background-image: url('img/banner.jpg');
+    background-size: cover;
+
+}
+
+.hero-text {
+    grid-area: text;
+    padding: 30px;
+}
+
+.hero-text > p {
+    margin-top: 20px;
+}
+
+
+
+
 
 .cakes {
     grid-area: cakes;
