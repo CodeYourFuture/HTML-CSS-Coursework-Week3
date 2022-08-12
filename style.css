@@ -1,7 +1,7 @@
 /*  Add your styling here */
-.heabar{ grid-area: headbar; }
+.headbar{ grid-area: headbar;}
 .navbar{ grid-area: navbar;}
-.header{  grid-area: header; }
+/**.header{  grid-area: header; }**/
 .main-left{ grid-area: main-left; }
 .main-right { grid-area: main-right;}
 .main-bottom { grid-area: main-bottom;}
@@ -9,7 +9,6 @@
 .main-body{
     display: grid;
     grid-template-areas:
-   /** 'hearder header header header'**/
     'headbar headbar headbar headbar'
     'navbar navbar navbar navbar'
     'main-left main-left main-right main-right'
@@ -30,28 +29,49 @@
 /**header{
     background-color: #e22b2b;
 }**/
-.header-paragraph {
+.logo-icon{
+   
+    width: 15%;
+    height:85%;
+    padding:15px;
+    border-radius: 1.5em;
+
+}
+.headbar-paragraph {
     background-color:auto;
-   text-justify: right;
+    float: right;
+    margin-right: 20px;
+
+  
 }
 .headbar{
- background-color: mediumorchid;
+ background-color: rgb(216, 173, 226);
+
+ 
  
 }
 
 .navbar{
-    display:flex;
-    background-color: yellowgreen;
+    background-color: rgb(203, 206, 198);
     text-transform:uppercase;
-    justify-content:right;
+    
 }
 ul{
     display:flex;
     flex-direction: row;
-    justify-content: left;
+    justify-content: right;
+    list-style:none;
+    
+   
 }
 li{
-    padding:10px;
+    background-color:yellowgreen;
+    margin-right:20px;
+    padding:10px
+}
+li:hover{
+    background-color:black;
+    color:white;
 }
 .main-left{
     display:flex;
