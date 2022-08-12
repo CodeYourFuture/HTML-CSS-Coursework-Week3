@@ -1,19 +1,19 @@
 header {
-    background-color: rgb(237, 237, 237);
+    background-color: rgb(241, 241, 255);
 }
 .header {
+    background-color: rgb(237, 237, 237);
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(3, auto auto 5px);
 
 }
 .left-header {
     grid-column: 1 / 3;
-    grid-row: 1 / 3;
+    grid-row: 1/3;
     
 }
 .logo{
-    margin-top: 5px;
+    margin-top: 10px;
     width: 100%;
 }
 .right-header {
@@ -25,19 +25,17 @@ header {
     display: flex;
     justify-content: right;
     color: rgb(0, 0, 99);
-    grid-row: 2/4;
+    grid-row: 2/3;
     grid-column: 3 / 6;
     text-align: right;
-    margin-right: 5px;
    align-items: flex-end;
 }
 
 .slogan p {
-    margin-top: 2rem;
     font-weight: 500;
     font-style: italic;
-    margin-right: 5px;
-    margin-bottom: 5px;
+    margin-right: 10px;
+    margin-bottom: 16px;
    
 }
 #nav-menu {
@@ -59,6 +57,8 @@ header {
 .hamburger {
     display: block;
     cursor: pointer;
+    float: right;
+    margin: 10px 10px;
 }
 
 .bar {
@@ -186,7 +186,7 @@ text-align: center;
     .header {
         display: grid;
         grid-template-columns: repeat(8, 1fr);
-        grid-template-rows: 1 auto;
+     
     }
     .logo{
         margin-left: 32px;
@@ -195,22 +195,24 @@ text-align: center;
 
     .slogan {
         display: flex;
-        justify-content: right;
-        color: rgb(0, 0, 99);
         grid-column: 4/ 9;
         text-align: right;
         margin-right: 32px;
         margin-bottom: 16px;
-       align-items: flex-end;
     }
     
     .slogan p {
-        margin-top: 2rem;
-        font-weight: 500;
-        font-style: italic;
-       
+        font-weight: 700;
         font-size: x-large;
        
+    }
+    #nav-menu {
+        display: grid;
+        background-color: rgb(237, 237, 237);
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        color: black;
     }
 }
 
