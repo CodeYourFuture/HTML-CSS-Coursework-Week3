@@ -16,6 +16,8 @@ header {
 }
 .logo{
     margin-top: 5px;
+    width: 100%;
+    height: 100%;
 }
 
 .right-header {
@@ -25,24 +27,23 @@ header {
 }
 
 .slogan {
+    display: flex;
+    justify-content: right;
     color: rgb(0, 0, 99);
     grid-row: 2/4;
     grid-column: 3 / span 5;
     text-align: right;
-  
-
-
+    margin-right: 5px;
+   align-items: flex-end;
 }
 
 .slogan p {
-    display: flex;
-    align-items: center;
     margin-top: 2rem;
     font-weight: 500;
     font-style: italic;
     margin-right: 5px;
     margin-bottom: 5px;
-    
+   
 }
 
 .nav-menu {
@@ -85,12 +86,16 @@ body {
     background-color: rgb(241, 241, 255);
     display: grid;
     grid-template-rows: repeat(3, auto);
+    width: 2fr;
 }
 
 .welcome {
     padding: 5px;
     margin: 5px;
     color:rgb(0, 0, 99);
+}
+.welcome h1 {
+    font-size:x-large;
 }
 
 .grid-img {
@@ -109,10 +114,14 @@ body {
 }
 
 .img2 {
+    grid-row: 2;
+    grid-column: 1;
     height: 100%;
 }
 
 .img3 {
+    grid-row: 2;
+    grid-column: 2;
     height: 100%;
 }
 
@@ -123,7 +132,6 @@ body {
 .img5 {
     height: 100%;
 }
-
 .social {
     display: grid;
     margin: 20px auto auto 10px;
@@ -131,28 +139,24 @@ body {
     grid-template-columns: 100px;
     grid-row-gap: 15px;
 }
-
 .face {
     border: solid rgb(170, 170, 170);
     background-color: rgb(170, 170, 170);
     text-decoration: none;
     color: rgb(0, 0, 99);
 }
-
 .twit {
     border: solid rgb(170, 170, 170);
     background-color: rgb(170, 170, 170);
     text-decoration: none;
     color: rgb(0, 0, 99);
 }
-
 .insta {
     border: solid rgb(170, 170, 170);
     background-color: rgb(170, 170, 170);
     text-decoration: none;
     color: rgb(0, 0, 99);
 }
-
 .end {
     text-align: center;
     border: solid rgb(200, 200, 200);
