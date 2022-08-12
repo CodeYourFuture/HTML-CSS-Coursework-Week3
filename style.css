@@ -11,21 +11,24 @@ body {
 
 header {
     grid-area: header;
-    background-image: url('img/banner.jpg');
-    background-size: 100%;
+    background-image: url('img/banner-cake.png');
+    background-size: cover;
 }
 
 header > h1 {
     font-size: 22px;
     text-align: right;
     margin-left: auto;
-    padding-top: 150px;
+    padding-top: 200px;
     padding-right: 50px;
+    font-style: italic;
 }
 
 nav {
     grid-area: nav;
+    margin: 30px 40px;
     padding: 20px;
+    background-color: #a5b1b8;
 }
 
 nav > ul {
@@ -37,8 +40,9 @@ nav > ul {
 
 a {
     text-decoration: none;
-    background-color: #FFB703;
-    padding: 5px 40px;
+    color: white;
+    background-color: #163048;
+    padding: 9px 40px;
     font-size: 10px;
     margin-left: 20px;
 }
@@ -50,23 +54,25 @@ a {
     grid-template-areas: 
         "image text"
     ;
+    padding: 10px 40px;
 }
 
 .hero-img {
     grid-area: image;
     height: 250px;
-    background-image: url('img/banner.jpg');
+    background-image: url('img/cakes.jpg');
     background-size: cover;
 
 }
 
 .hero-text {
     grid-area: text;
-    padding: 30px;
+    padding: 10px;
+    text-align: right;
 }
 
 .hero-text > p {
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 .cakes {
@@ -82,7 +88,7 @@ a {
 .cake-img1 {
     grid-area: img1;
     height: 150px;
-    background-image: url('img/banner.jpg');
+    background-image: url('img/cake1.jpeg');
     background-size: cover;
     margin: 20px;
 }
@@ -90,7 +96,7 @@ a {
 .cake-img2 {
     grid-area: img2;
     height: 150px;
-    background-image: url('img/banner.jpg');
+    background-image: url('img/cake2.jpeg');
     background-size: cover;
     margin: 20px;
 }
@@ -98,7 +104,7 @@ a {
 .cake-img3 {
     grid-area: img3;
     height: 150px;
-    background-image: url('img/banner.jpg');
+    background-image: url('img/cake3.jpeg');
     background-size: cover;
     margin: 20px;
 }
@@ -106,7 +112,7 @@ a {
 .cake-img4 {
     grid-area: img4;
     height: 150px;
-    background-image: url('img/banner.jpg');
+    background-image: url('img/cake4.jpeg');
     background-size: cover;
     margin: 20px;
 }
@@ -115,19 +121,19 @@ a {
 footer {
     grid-area: footer;
     text-align: center;
-    padding: 20px 0px 50px 0px;
-    background-color: #dde8ee;
+    padding:20px 0px 10px 0px;
+    background-color: #a5b1b8;
 }
 
 .container-social {
     display: flex;
     justify-content: space-between;
-    width: 20%;
+    width: 18%;
     margin: 0 auto;
 }
 
 .card-social {
-    border: 1px solid #b3bbbe;
+    border: 1px solid #627282;
     border-radius: 100%;
     padding: 10px 12px;
 }
@@ -137,11 +143,11 @@ footer {
 }
 
 .footer-title {
-    font-size: 30px;
+    font-size: 25px;
 }
 
 .footer-bottom {
-    color: #bdc3c7;
-    margin-top: 30px;
+    color: #627282;
+    margin-top: 15px;
     font-size: 20px;
 }
