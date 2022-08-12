@@ -12,6 +12,8 @@ body {
     ;
 }
 
+/*Header*/
+
 .background-header {
     grid-area: header;
     height: 200px;
@@ -30,6 +32,7 @@ header > h1 {
     position: relative;
 }
 
+/*Nav*/
 
 nav {
     display: none; 
@@ -54,6 +57,8 @@ a {
     font-size: 10px;
     margin-left: 20px;
 }
+
+/*Hero*/
 
 .hero {
     grid-area: hero;
@@ -84,16 +89,9 @@ a {
     margin-top: 20px; 
 }
 
-.cakes {
-    grid-area: cakes;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, 162px);
-    gap: 20px;
-    justify-content: center;
-    padding: 20px;
- }
- 
- .cakes {
+/*Cakes*/
+
+ .section-cakes {
      grid-area: cakes;
      display: grid;
      grid-template-columns: repeat(auto-fit, 162px);
@@ -124,10 +122,12 @@ a {
     background-image: url('img/cake4.jpeg');
 }
 
+/*Footer*/
+
 footer {
     grid-area: footer;
     text-align: center;
-    padding:20px 0px 10px 0px;
+    padding:20px 0px;
     background-color: #a5b1b8;
 }
 
@@ -136,6 +136,7 @@ footer {
     justify-content: space-between;
     width: 60%;
     margin: 0 auto;
+    padding: 10px 0px;
 }
 
 .card-social {
@@ -154,7 +155,7 @@ footer {
 
 .footer-bottom {
     color: #627282;
-    margin-top: 15px;
+    margin-top: 10px;
     font-size: 20px;
 }
 
@@ -168,10 +169,6 @@ footer {
             "cakes"
             "footer"
             ;
-    }
-
-    header {
-        background-size: 150%;
     }
 
     .hero-img {
@@ -194,11 +191,6 @@ footer {
             "cakes"
             "footer"
         ;
-    }
-
-    header {
-        background-size: 100%;
-        background-position: 50% 15%;
     }
 
     nav {
