@@ -1,32 +1,52 @@
-header{
+header {
     background-color: rgb(237, 237, 237);
 }
-.header{
+
+.header {
     display: grid;
-    grid-template-columns: repeat(3, auto);
-    grid-template-rows: repeat(3, auto);
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, auto auto 5px);
 
 }
-.left-header{
+
+.left-header {
     grid-column: 1 / span 2;
     grid-row: 1 / span 2;
+    
 }
-.right-header{
+.logo{
+    margin-top: 5px;
+}
+
+.right-header {
+    grid-column: 5/6;
+    float: right;
     
 }
 
-footer{
-    background-color: rgb(237, 237, 237);
-    margin-top: 40px;
+.slogan {
+    color: rgb(0, 0, 99);
+    grid-row: 2/4;
+    grid-column: 3 / span 5;
+    text-align: right;
+  
+
+
 }
-body{
-    background-color: white;
-    display: grid;
-    grid-template-rows: repeat(3, auto);
+
+.slogan p {
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    font-weight: 500;
+    font-style: italic;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    
 }
 
 .nav-menu {
-    display:flex ;
+    display: flex;
     position: fixed;
     left: -100%;
     top: 5rem;
@@ -38,82 +58,107 @@ body{
 }
 
 .nav-item {
-    margin: 2.5rem;
+    margin: 5px;
+    float: right;
 }
 
 .hamburger {
     display: block;
     cursor: pointer;
 }
+
 .bar {
     display: block;
     align-items: right;
     width: 25px;
     height: 3px;
     margin: 5px;
-    background-color: #ffffff;
+    background-color:rgb(37, 37, 99);
 }
-.welcome{
+
+footer {
+    background-color: rgb(237, 237, 237);
+    margin-top: 40px;
+}
+
+body {
+    background-color: rgb(241, 241, 255);
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+}
+
+.welcome {
     padding: 5px;
     margin: 5px;
-    color: black;
+    color:rgb(0, 0, 99);
 }
+
 .grid-img {
     display: grid;
-    grid-template-columns: repeat(2, 2fr) ;
+    grid-template-columns: repeat(2, 2fr);
     grid-template-rows: repeat(3, auto);
     grid-column-gap: 10px;
     grid-row-gap: 15px;
     padding: 5px;
     margin: 5px;
 }
+
 .img1 {
     grid-column: 1/-1;
     height: 100%;
 }
-.img2{
-height: 100%;
-}
-.img3{
+
+.img2 {
     height: 100%;
 }
-.img4{
+
+.img3 {
     height: 100%;
 }
-.img5{
+
+.img4 {
     height: 100%;
 }
-.social{
+
+.img5 {
+    height: 100%;
+}
+
+.social {
     display: grid;
     margin: 20px auto auto 10px;
     grid-template-rows: repeat(3, 20px);
     grid-template-columns: 100px;
     grid-row-gap: 15px;
 }
+
 .face {
     border: solid rgb(170, 170, 170);
     background-color: rgb(170, 170, 170);
     text-decoration: none;
-    color: black;
+    color: rgb(0, 0, 99);
 }
-.twit{
+
+.twit {
     border: solid rgb(170, 170, 170);
     background-color: rgb(170, 170, 170);
-     text-decoration: none;
-    color: black;
+    text-decoration: none;
+    color: rgb(0, 0, 99);
 }
-.insta{
+
+.insta {
     border: solid rgb(170, 170, 170);
     background-color: rgb(170, 170, 170);
-     text-decoration: none;
-    color: black;
+    text-decoration: none;
+    color: rgb(0, 0, 99);
 }
-.end{
+
+.end {
     text-align: center;
     border: solid rgb(200, 200, 200);
     background-color: rgb(200, 200, 200);
     text-decoration: none;
-    color: black;
+    color: rgb(0, 0, 99);
     margin: 30px;
     white-space: nowrap;
 }
