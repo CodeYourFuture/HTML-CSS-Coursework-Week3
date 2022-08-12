@@ -82,21 +82,21 @@ height: 100%;
     grid-row-gap: 15px;
 }
 .face {
-    border: solid grey;
-    background-color: grey;
+    border: solid rgb(170, 170, 170);
+    background-color: rgb(170, 170, 170);
     text-decoration: none;
     color: black;
 }
 .twit{
-    border: solid grey;
-    background-color: grey;
-    text-decoration: none;
+    border: solid rgb(170, 170, 170);
+    background-color: rgb(170, 170, 170);
+     text-decoration: none;
     color: black;
 }
 .insta{
-    border: solid grey;
-    background-color: grey;
-    text-decoration: none;
+    border: solid rgb(170, 170, 170);
+    background-color: rgb(170, 170, 170);
+     text-decoration: none;
     color: black;
 }
 .end{
