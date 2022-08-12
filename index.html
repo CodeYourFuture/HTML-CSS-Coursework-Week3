@@ -10,61 +10,76 @@
     <!-- Add a link to your css file here -->
     <link rel="stylesheet" href="style.css">
 </head>
+<body class="body">
 
-<body>
-    <header class="header-container">
-        <!--logo cake-->
-        <div>
-            <img src="/design/img cake/image1.jpg" alt="logo image" class="logo">
+    <!--HEADER-->
+    <header class="header">
+    <!--LOGO & HAMBURGER MENU-->
+        <div class="header-container">
+            <div class="logo-img"> <img  class="logo-img" src ="/design/img cake/image1.jpg" alt ="logo-img"/>
+            </div>
+            <div class="hamburger-logo"><img class="hamburger-logo" src="/design/img cake/hamburger menu.png" alt="hamburger-menu"/> </div>
         </div>
-        <p>The best cake in the town delivered to your door</p>
-        
+        <div class="header-p">
+            <p>The best cakes in town delivered to your door!</p>
+        </div>
+        <!--NAVIGATION-->
+        <nav class="nav-bar">
+            <ul>
+                <li> <a href ="#">HOME</a> </li>
+                <li> <a href ="#">CAKES</a> </li>
+                <li> <a href ="#">ORDERING</a> </li>
+                <li> <a href ="#">LESSONS</a> </li>
+                <li> <a href ="#">ABOUT</a> </li>
+            </ul>
+        </nav>
     </header>
-    <!--navigation-->
-    <nav class="top-nav">
-        <a class="link"href="#">HOME</a>
-        <a class="link"href="#">CAKES</a>
-        <a class="link"href="#">OERDERIN</a>
-        <a class="link"href="#">LESSONS</a>
-        <a class="link"href="#">ABOUT</a>
-    </nav>
-    <main class="main-container">
-        <div class="main-text">
-            <h2>Welcome</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
-        </div>
-        <div>
-            <img class="main-img" src="/design/img cake/image4.jpg" alt="">
-        </div>
     
-        <div class="img-first-row">
-            <img class="img-container" src="/design/img cake/image2.jpg" alt="">
-            <img class="img-container"src="/design/img cake/image3.jpg" alt="">
-        </div>
+    <!---------MAIN--------->
+    <main class= "main">
+        <section class="main-section">
+            <div class="welcome-container">
+                <h1>Welcome</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam soluta laboriosam asperiores voluptatibus quia? Possimus quis quo porro voluptatum. Cupiditate, quas? Minus cupiditate nostrum animi.</p>
+            </div>
+        <!----------HERO SECTION--------->
+            <div class="main-img">
+                <img src="/design/img cake/image4.jpg" alt ="cake-img" />
+            </div>
+        </section>
+    <!-------CAKES SECTION--------->
+        <section class="variety-cakes">
+            <div class="img-cake">
+                <img src="/design/img cake/image2.jpg" alt ="cupcakes"/>
+                
+            </div>
+            <div class="img-cake">
+                <img src="/design/img cake/image3.jpg" alt ="doughnuts"/>
+                
+            </div>
+            <div class="img-cake">
+                <img src="/design/img cake/image5.jpg" alt="tiramisu">
+                
+            </div>
+            <div class="img-cake">
+                <img src="/design/img cake/image6.jpg" alt ="modern"/>
+                
+            </div> 
         
-        <div class="img-second-row">
-            <img class="img-container"src="/design/img cake/image5.jpg" alt="">
-            <img class="img-container"src="/design/img cake/image6.jpg" alt="">
-        </div>
-        
-        
-            
-        
+        </section>
     </main>
+    
     <footer class="footer">
-        <p>Please folow us on:</p>
-        <div class="social-media">
-            <a href="#" class="fa fa-facebook"></a>
-            <a href="#" class="fa fa-twitter"></a>
-            <a href="#" class="fa fab fa-instagram"></a>
-            <a href="#" class="fa fa-linkedin"></a>
-        </div>
-
+        <section class="info-footer ">
+            <div class="footer"> <a href ="#">Visit Us</a></div>  
+            <div class="footer"><a href ="#">Contact Us</a></div>
+            <div class="footer"><a href="#">Our Policy</a></div>     
+        </section> 
+        <section class="copy-right">
+            <p>&#169; Taste of Cakes</p>
+        
+        </section>
 
     </footer>
-    
-    
-
 </body>
-
 </html>
