@@ -40,7 +40,7 @@ header {
     margin-bottom: 5px;
    
 }
-.nav-menu {
+#nav-menu {
     display: none;
     position: fixed;
     top: 5rem;
@@ -178,6 +178,40 @@ text-align: center;
 .welcome h1 {
     text-align: center;
 }
+}
+@media only screen and (min-width: 900px) {
+    .right-header{
+        display: none;
+    }
+    .header {
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: 1 auto;
+    }
+    .logo{
+        margin-left: 32px;
+        width: 80%;
+    }
+
+    .slogan {
+        display: flex;
+        justify-content: right;
+        color: rgb(0, 0, 99);
+        grid-column: 4/ 9;
+        text-align: right;
+        margin-right: 32px;
+        margin-bottom: 16px;
+       align-items: flex-end;
+    }
+    
+    .slogan p {
+        margin-top: 2rem;
+        font-weight: 500;
+        font-style: italic;
+       
+        font-size: x-large;
+       
+    }
 }
 
 
