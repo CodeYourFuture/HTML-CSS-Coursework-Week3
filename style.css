@@ -32,7 +32,7 @@ footer{
 /* headersection starts here */
 .nav-container{
     display: flex;
-    flex-direction: row;
+    flex-direction: row;  
     justify-content: space-between;
     background-color: #cdb4db;
     width: auto;
@@ -46,9 +46,12 @@ footer{
 }
  
 /* nav bar  */
+.nav-bar{
+    justify-content: center;
+}
+
 .nav-bar ul{
     display: flex;
-    justify-content: center;
 }
 
 .nav-bar li{
@@ -58,6 +61,10 @@ footer{
 .nav-bar li a{
     text-decoration: none;
     padding: 10px;
+}
+
+.nav-bar li a:hover{
+    background-color: gray;
 }
 
 /* hamburger menu  */
@@ -79,10 +86,18 @@ footer{
     border-radius: 10px;
 }
 
+@media only screen and (min-width:540px){
+    .nav-bar{
+        display: flex;
+        align-self:flex-end;
+    }
+}
+
+
 .nav-container p{
     align-self: flex-end;
-    margin-right: 20px; 
-    font-size: 25px;
+    margin-right: 10px; 
+    font-size: 15px;
 }
 
 /* main starts here */
@@ -107,9 +122,9 @@ footer{
     /* border: solid; */
 }
 
-.heroImges{
+.heroImages{
    width: 100%;
-   height: 100%;
+   height: 200px;
 }
 
 .hero-info-img h1{
@@ -122,6 +137,47 @@ footer{
     font-size: 20px;
 }
 
+@media only screen and (min-width:900px){
+    .hero-info-img{
+        display: flex;
+        flex-direction: row;
+        
+    }
+
+    .heroImg{
+        
+        width: 100%;
+        justify-content: flex-start;
+        align-self: flex-start;
+      }
+    
+    .hero-info-img h1{
+        
+        align-self: flex-start;
+        align-content: center;
+    }
+
+    .hero-info-img p{
+        /* margin-left: auto; */
+        align-self: center;
+        align-content: center;
+    }
+
+    .allImages{
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .heroImages{
+        width: 100%;
+        height: 50%;
+     }
+
+    
+}
+
+
+
 /* footersection starts here */
 footer {
     text-align: center;
@@ -131,11 +187,8 @@ footer {
 }
 
 
-@media only screen and (min-width:540px){
-    .nav-bar{
-        
-    }
-}
+
+
 
 
     
