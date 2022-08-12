@@ -104,6 +104,7 @@ width: 100%;
 .img2 {
     grid-row: 2/3;
     grid-column: 1/2;
+    height: 100%;
     
 }
 
@@ -166,9 +167,18 @@ footer {
     .social{
         grid-template-columns: 1fr 1fr 1fr;
         gap: 10px;
+        margin: 10px 10px;
     }
+    .social a{
+text-align: center;
 }
-    
+.end{
+    margin: 20px 80px
+}
+.welcome h1 {
+    text-align: center;
+}
+}
 
 
 /*
