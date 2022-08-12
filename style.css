@@ -11,7 +11,7 @@ body {
     margin: auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 200px auto 400px;
+    grid-template-rows: 200px auto 250px;
     grid-template-areas:
         "h h"
         "b b"
@@ -88,26 +88,6 @@ h2 {
 .welcome_message {
     margin-top: auto;
     margin-bottom: 2.2em
-}
-
-/* Navigation */
-
-.navigation__list {
-    display: flex;
-    list-style: none;
-}
-
-.navigation__item {
-    padding: 10px;
-}
-
-.navigation__link {
-    color: grey;
-    text-decoration: none;
-}
-
-.navigation__link:hover {
-    color: #c05326;
 }
 
 /* Section */
@@ -187,8 +167,8 @@ h2 {
 
 .footer__content {
     border-top: 1px solid grey;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
 }
 
 .footer p {
@@ -217,3 +197,61 @@ h2 {
 }
 
 /* Media queries */
+@media screen and (min-width: 750px) {
+    .body {
+        grid-area: b;
+        margin: 0 1.5em;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 50px auto 200px;
+        grid-template-areas:
+            "nav nav nav nav"
+            "dog dog text text"
+            "cake1 cake2 cake3 cake4"
+
+    }
+
+    .topnav {
+        overflow: hidden;
+        background-color: white;
+        position: relative;
+    }
+
+    .topnav #myLinks {
+        display: flex;
+        grid-area: nav;
+        justify-content: flex-end;
+    }
+
+    .topnav a {
+        color: #e63946;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+    }
+
+    .topnav a.icon {
+        display: none;
+    }
+
+    .topnav a:hover {
+        }
+
+    .active {
+        background-color: #e63946;
+        color: white;
+        height: 200px;
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-end;
+    }
+
+    .photo1 {
+        margin-top: 0em;
+    }
+    
+    .photo2 {
+        margin-top: 0em;
+    }
+}
