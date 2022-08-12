@@ -20,3 +20,5 @@ function showFooterlinks(){
     
     iconLinkName.classList.toggle('footer-open');
 }
+
+// adding 
