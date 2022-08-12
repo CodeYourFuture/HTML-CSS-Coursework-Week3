@@ -1,1 +1,31 @@
 /*  Add your styling here */
+
+/* global */
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  max-width: 1200px;
+  width: 90vw;
+  margin: auto;
+}
+
+/*header*/
+
+.hero {
+  display: flex;
+}
+
+.hero img {
+  width: 35%;
+}
+
+.hero h3 {
+  align-self: end;
+  margin-bottom: 2em;
+}
