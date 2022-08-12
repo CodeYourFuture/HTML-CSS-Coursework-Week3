@@ -11,6 +11,7 @@
   }
   body {
   font-family:'Oleo Script Swash Caps', cursive;
+  background-color: wheat;
   }
   ul {
     list-style: none;
@@ -21,57 +22,72 @@
     margin-left: auto;
     margin-right: auto;
   }
-  /* Small */
-  @media (min-width: 768px) {
-    .container {
-      width: 750px;
-    }
-  }
-  /* Medium */
-  @media (min-width: 992px) {
-    .container {
-      width: 970px;
-    }
-  }
-  /* Large */
-  @media (min-width: 1200px) {
-    .container {
-      width: 1170px;
-    }
-  }
+ 
+ 
   /* End Global Rules */
 
 
 
-.container {
-display: flex;
-justify-content:space-evenly;
-background-color:wheat;
+.header {
+  display: block;
+}
+.header-img {
+
+width:540px;
+}
+
+.header-items p {
+ align-content: center;
+  font-size: 30px;
+
 
 }
 
-.container img {
 
-height: 200px;
+
+
+
+
+
+.navigator {
+  display: flex;
+  background-color:wheat;
+ 
+}
+
+
+@media (min-width:900px) {
+.navigator img {
+display: none;
+} 
 
 }
-.container p {
-    flex:1;
-    font-size: 25px;
-    margin-left: 150px;
-    margin-top: 100px;
-    
-}
-
 
 .navigator ul {
+  flex: 1;
     display: flex;
+    align-items: center;
     justify-content: space-evenly;
     border: solid 1px ;
     font-size: 20px;
     margin-top: 0;
     
 }
+.navigator Img {
+
+  width:50px;
+}
+@media (max-width: 900px) {
+  .navigator ul {
+    display: none;
+  }
+.header-img {
+width: 100%;
+  align-items: center;
+}
+
+  }
+  
  
 
 .welcome-section {
@@ -84,20 +100,35 @@ font-size: 50px;
 margin: 0 !important;
 }
 
-.cakes-container    {
-    display: flex;
-    flex-wrap: nowrap;
-    
-    justify-content: space-around;
+
+
+.cakes-container {
+   display: grid;
+   grid-template-columns: repeat(2, 2fr) ;
+   grid-template-rows: repeat(3, auto) ;
+   
 }
 
-.cakes-images img {
-   
-    height: 200px;
-    width: 200px;
-  
+.cakes-images {
+  display: grid;
+  grid-template-columns: repeat(4, 4fr) ;
+  grid-template-rows: repeat(3, auto) ;
+  width: 50px;
+}
+
+@media (min-width:900px){
+  .cakes-container {
+    display: grid;
+    grid-template-columns: repeat(4, 4fr) ;
+    grid-template-rows: repeat(3, auto) ;
+
+ }
 }
 
 .footer {
     padding-left: 50%;
+}
+
+i.fa {
+    font-family: fontawesome;
 }
