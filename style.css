@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=DynaPuff&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff&family=Roboto+Condensed&display=swap');
 
 .body{
-  font-family: 'DynaPuff', cursive;
+  font-family: 'Roboto Condensed', sans-serif;
   margin: 2em;
   display:grid;
   grid-template-columns: repeat(4, 1fr);
@@ -57,12 +57,12 @@
   margin-bottom: 50px;
 } 
 .welcome-container h1{
-  font-size: 50px;
+  font-size: 30px;
   color:rebeccapurple;
   text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
 }
 .welcome-container p{
-  font-size:30px;
+  font-size: 20px;
 
 }
 
@@ -103,7 +103,7 @@
   background-color:#ecf8f8
 }
 .info-footer  {
-  font-size: 25px;
+  font-size: 15px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -118,10 +118,11 @@
 
 }
 .copy-right{
+  font-size: 10px;
   text-align: center;
 }
 /* tablet media screen*/
-@media screen and (min-width: 550px) {
+@media screen and (min-width: 540px) {
 .header-container {
     margin-top: 50px 0;
     display: flex;
@@ -166,6 +167,11 @@
       background-color: #e9ecef;
       
   }
+  .welcome-container h1{
+    font-size: 50px;
+    color:rebeccapurple;
+    text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+  }
   .main-img {
       width:50%;
   }
@@ -202,7 +208,9 @@
   .nav-bar a{
       text-decoration: none;
       padding: 15px;
+      
   }
+  
   
   
   .img-cake {
@@ -218,19 +226,18 @@
     display: flex;
     text-align: center;
     margin-top: 1em;
-    font-style: italic;
+    font-size: 25px;
     
 }
 .info-footer p{
   display: flow-root;
-  font-style: italic;
   color: rgb(128, 0, 62);
  }
- .info-footer a{
+.info-footer a{
   color: darkslategray;
  }
- .copy-right{
-  font-style: italic;
+.copy-right{
+  font-size: 15px;
  }
   
      
