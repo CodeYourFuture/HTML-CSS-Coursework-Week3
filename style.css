@@ -1,1 +1,187 @@
 /*  Add your styling here */
+@import url('https://fonts.googleapis.com/css?family=Sofia');
+
+:root{
+  --main-reduce:5px;
+  --main-padding:5px;  
+}
+.container{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 1.5fr 1.2fr 0.8fr;
+    grid-template-areas: 
+    "nav nav nav nav"
+    "sidebar main main main"
+    "sidebar content1 content2 content3"
+    "sidebar footer footer footer";
+    grid-gap: 0.2rem;
+    font-family:"Sans-serif", Tahoma, Verdana,sans-serif;
+    font-weight:800;
+    text-transform:uppercase;
+    font-size:12px;
+    color: voilent;
+    text-align: center;
+}
+ nav{
+background: white;
+grid-area: nav;
+border-radius: var(--main-reduce);
+padding-top: var(--main-padding);
+ }
+
+ main{
+    background: white;
+    background-image:url(./backgroung-img.jpg);
+  background-size:cover;
+  grid-area: main;
+  border-radius: var(--main-reduce);
+padding-top: var(--main-padding);
+}
+#sidebar{
+    background: rgb(128, 53, 53);
+    grid-area:sidebar;
+    border-radius: var(--main-reduce);
+padding-top: var(--main-padding);
+}
+#content1{
+    background: rgb(140, 14, 218);
+    grid-area: content1;
+    border-radius: var(--main-reduce);
+    padding-top: var(--main-padding);
+}
+ 
+#content2{
+    background: rgb(213, 31, 183);
+    grid-area: content2;
+    border-radius: var(--main-reduce);
+    padding-top: var(--main-padding);
+
+}
+#content3{
+    background: violet;
+    grid-area: content3;
+    border-radius: var(--main-reduce);
+    padding-top: var(--main-padding);
+
+}
+footer{
+    background: yellow;
+    grid-area:footer;
+    border-radius: var(--main-reduce);
+    padding-top: var(--main-padding);
+}
+
+
+@media only screen and(max-width:540px) {
+.container{
+grid-template-columns: 1fr;
+grid-template-rows: 0.4fr 0.4fr 2.2fr 1.2fr 1.2fr 1.2fr 1fr;
+grid-template-areas: 
+"nav"
+"sidebar"
+"content1"
+"content2"
+"content3"
+"footer"
+}
+}
+
+/* 
+{
+body 
+{
+  font-family: "Sans-serif", Tahoma, Verdana,sans-serif;
+  margin: 0;
+  
+
+   .header 
+   {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+ 
+ }
+ .header .logo
+ { 
+    cursor: pointer;
+    margin-right: auto; 
+}
+ .logo-name
+ {
+    height: auto;
+    margin-top: 15px;
+    margin-right: auto;
+    font-size: 1.0rem;
+    position:relative;
+    display:inline-block;
+    vertical-align: top;
+}
+ul{
+    list-style:none;
+  }
+li, a,button
+{
+font-family: Arial, Helvetica, sans-serif;
+font-weight: 500;
+font-size: 16px;
+color: blueviolet;
+text-decoration: none;
+}
+.navbar-link
+{
+list-style: none;
+}
+.navbar-link li
+{
+display: inline-block;
+padding:0px 20px;
+}
+.navnar-link li a
+{
+transition: all 0s ease 0s;
+}
+button
+{
+margin-left: 20px;
+padding:9px 25px;
+background-color: rgb(254, 182, 218);
+border:none;
+border-radius: 50px;
+transition: all 0s ease 0s;
+cursor:pointer;
+ }
+
+.main 
+{
+padding-right: 2rem;
+(max-width: 450PX)HTML{
+    font-size: 50%;
+}
+}
+        .sidebar {
+            height: 100%; 
+            width: 0; 
+            position: fixed; 
+            z-index: 1; 
+            top: 0;
+            left: 0;
+            background-color: #111; 
+            overflow-x: hidden; 
+            padding-top: 60px;
+            transition: 0.5s;
+        }
+  
+  .footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  } 
+   */
+ 
+ 
+  
+  /* Media queries for web responsive*/
+  @media (min-width: 540px) 
+  @media screen and (min-width: 540px) {
+   
