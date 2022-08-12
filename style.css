@@ -207,16 +207,16 @@ h2 {
         content: 'The best cakes in town delivered to your door';
     }
 
-    h2{
-        color:#e63946;
-        font-style:italic;
+    h2 {
+        color: #e63946;
+        font-style: italic;
     }
 
-    .welcome_message{
+    .welcome_message {
         font-weight: bolder;
     }
 
-    a{
+    a {
         font-weight: bold;
     }
 }
