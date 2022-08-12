@@ -1,30 +1,40 @@
+* {
+    margin: 0px;
+}
+
 body {
     display: grid;
     grid-template-areas: 
         "header"
-        "nav"
+        /* "nav" */
         "hero"
         "cakes"
         "footer"
     ;
 }
 
-header {
+.background-header {
     grid-area: header;
+    height: 200px;
     background-image: url('img/banner-cake.png');
     background-size: cover;
 }
 
 header > h1 {
+    background-color: #163048;
     font-size: 22px;
+    color: white;
     text-align: right;
     margin-left: auto;
-    padding-top: 200px;
-    padding-right: 50px;
+    padding: 5px 10px 5px 0px;
+    /* padding-right: 50px; */
     font-style: italic;
+    position: relative;
 }
 
+
 nav {
+    display: none; /*It was add*/
     grid-area: nav;
     margin: 30px 40px;
     padding: 20px;
@@ -50,16 +60,18 @@ a {
 .hero {
     grid-area: hero;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr; /*It was 1fr 1fr*/
     grid-template-areas: 
-        "image text"
+        /* "image text" */
+        "text"
+        "image"
     ;
-    padding: 10px 40px;
+    /* padding: 10px 40px; */
 }
 
 .hero-img {
     grid-area: image;
-    height: 250px;
+    height: 220px;
     background-image: url('img/cakes.jpg');
     background-size: cover;
 
@@ -67,25 +79,60 @@ a {
 
 .hero-text {
     grid-area: text;
-    padding: 10px;
-    text-align: right;
+    padding: 20px; 
+    text-align: left; /*It was right*/
 }
 
 .hero-text > p {
-    margin-top: 40px;
+    margin-top: 20px; /*It was 40px*/
 }
 
 .cakes {
     grid-area: cakes;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-areas:
+    /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+
+    /* grid-template-areas:
         "img1 img2 img3 img4"
-    ;
+    ; */
+    grid-template-columns: repeat(auto-fit, 162px);
+    gap: 20px;
+    justify-content: center;
     padding: 20px;
+ }
+ 
+ .cakes {
+     grid-area: cakes;
+     display: grid;
+     grid-template-columns: repeat(auto-fit, 162px);
+     gap: 20px;
+     justify-content: center;
+     padding: 20px;
+     background-color: #1e3956;
+ }
+
+.cake {
+    height: 125px;
+    background-size: cover;
 }
 
-.cake-img1 {
+.cake:nth-child(1) {
+    background-image: url('img/cake1.jpeg');
+}
+
+.cake:nth-child(2) {
+    background-image: url('img/cake2.jpeg');
+}
+
+.cake:nth-child(3) {
+    background-image: url('img/cake3.jpeg');
+}
+
+.cake:nth-child(4) {
+    background-image: url('img/cake4.jpeg');
+}
+
+/* .cake-img1 {
     grid-area: img1;
     height: 150px;
     background-image: url('img/cake1.jpeg');
@@ -115,7 +162,7 @@ a {
     background-image: url('img/cake4.jpeg');
     background-size: cover;
     margin: 20px;
-}
+} */
 
 
 footer {
@@ -128,7 +175,7 @@ footer {
 .container-social {
     display: flex;
     justify-content: space-between;
-    width: 18%;
+    width: 38%;
     margin: 0 auto;
 }
 
@@ -151,3 +198,57 @@ footer {
     margin-top: 15px;
     font-size: 20px;
 }
+
+/* 
+@media screen and (min-width: 540px) {
+    body {
+        grid-template-areas: 
+            "header"
+            "nav"
+            "hero"
+            "cakes"
+            "footer"
+            ;
+    }
+
+    header {
+        background-size: 150%;
+    }
+
+        .hero-img {
+            height: 300px;
+        }
+
+}
+
+@media screen and (min-width: 900px) {
+    body {
+        grid-template-areas:
+            "header"
+            "nav"
+            "hero"
+            "cakes"
+            "footer"
+        ;
+    }
+
+    header {
+        background-size: 100%;
+        background-position: 50% 15%;
+    }
+
+    nav {
+        grid-area: nav;
+        display: block;
+    }
+
+    .hero {
+        grid-area: hero;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "text image"
+        ;
+    } */
+}
+
