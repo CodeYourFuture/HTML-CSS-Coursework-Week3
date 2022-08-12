@@ -143,17 +143,15 @@ footer{
         display: flex;
         flex-direction: row;
         justify-content: center;
-    }
+     }
 
     .heroImg{
         width: 100%;
-        
         align-self: center;
-      }
+    }
     
     .hero-info-img h1{
-        text-align: center;
-        margin-left: 50px;
+        margin:30px;
     }
 
     .hero-info-img p{
@@ -174,7 +172,6 @@ footer{
      }
 
 }
-
 
 
 /* footersection starts here */
