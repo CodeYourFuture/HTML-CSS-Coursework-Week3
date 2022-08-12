@@ -1,1 +1,109 @@
-/*  Add your styling here */
+header{
+    background-color: rgb(237, 237, 237);
+}
+footer{
+    background-color: rgb(237, 237, 237);
+    margin-top: 40px;
+}
+body{
+    background-color: white;
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+}
+.logo{
+    height: 70px;
+    margin: 10px auto auto 3px;
+}
+.nav-menu {
+    display:flex ;
+    position: fixed;
+    left: -100%;
+    top: 5rem;
+    flex-direction: column;
+    background-color: rgb(255, 0, 0);
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+}
+
+.nav-item {
+    margin: 2.5rem 0;
+}
+
+.hamburger {
+    display: block;
+    cursor: pointer;
+}
+.bar {
+    display: block;
+    align-items: right;
+    width: 25px;
+    height: 3px;
+    margin: 5px;
+    background-color: #ffffff;
+}
+.welcome{
+    padding: 5px;
+    margin: 5px;
+    color: black;
+}
+.grid-img {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr) ;
+    grid-template-rows: repeat(3, auto);
+    grid-column-gap: 10px;
+    grid-row-gap: 15px;
+    padding: 5px;
+    margin: 5px;
+}
+.img1 {
+    grid-column: 1/-1;
+    height: 100%;
+}
+.img2{
+height: 100%;
+}
+.img3{
+    height: 100%;
+}
+.img4{
+    height: 100%;
+}
+.img5{
+    height: 100%;
+}
+.social{
+    display: grid;
+    margin: 20px auto auto 10px;
+    grid-template-rows: repeat(3, 20px);
+    grid-template-columns: 100px;
+    grid-row-gap: 15px;
+}
+.face {
+    border: solid grey;
+    background-color: grey;
+    text-decoration: none;
+    color: black;
+}
+.twit{
+    border: solid grey;
+    background-color: grey;
+    text-decoration: none;
+    color: black;
+}
+.insta{
+    border: solid grey;
+    background-color: grey;
+    text-decoration: none;
+    color: black;
+}
+.end{
+    text-align: center;
+    border: solid rgb(200, 200, 200);
+    background-color: rgb(200, 200, 200);
+    text-decoration: none;
+    color: black;
+    margin: 30px;
+}
