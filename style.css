@@ -1,7 +1,117 @@
 /*  Add your styling here */
+
+
+
 .headbar{ grid-area: headbar;}
 .navbar{ grid-area: navbar;}
-/**.header{  grid-area: header; }**/
+.main-left{ grid-area: main-left; }
+.main-right { grid-area: main-right;}
+.main-bottom { grid-area: main-bottom;}
+.footer { grid-area:footer;}
+.main-body{
+    display: grid;
+    grid-template-areas:
+    'headbar headbar headbar headbar'
+    'navbar navbar navbar navbar'
+    'main-left main-left main-right main-right'
+    'main-bottom main-bottom main-bottom main-bottom'
+    'footer footer footer footer';
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 0.5em;
+}
+.logo-icon{
+   
+    width: 15%;
+    height:85%;
+    padding:0.5em;
+    border-radius: 1.5em;
+
+}
+.headbar-paragraph {
+    background-color:auto;
+    float: right;
+    margin-right: 0.5em;
+
+  
+}
+.headbar{
+ background-color: rgb(216, 173, 226);
+
+ 
+ 
+}
+
+.navbar{
+    background-color: rgb(203, 206, 198);
+    text-transform:uppercase;
+    
+}
+ul{
+    display:flex;
+    flex-direction: row;
+    justify-content: right;
+    list-style:none;
+    
+   
+}
+li{
+    background-color:yellowgreen;
+    margin-right:0.5em;
+    padding:0.3em;
+}
+li:hover{
+    color:white;
+}
+.main-left{
+    display:flex;
+    background-color: coral;
+    justify-content: center;
+    padding:0.5em;
+}
+.main-left-img{
+    width:6em;
+    height:10em;
+}
+.main-right{
+    background-color:#2196F3;
+    text-align: right;
+    padding: 0.5em;
+}
+.main-bottom{
+    display:flex;
+    flex-direction:row;  
+    justify-content:space-around;
+    background-color: darkslategrey;
+}
+.cake-img{
+    width:3em;
+    height:3em;
+    padding:3em;
+
+}
+.footer{
+    background-color: rgb(157, 92, 39);
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+}
+.footer p{
+    padding:0.5em;
+}
+.footer small{
+
+    align-self:center !important;
+    
+}
+
+/*Desktop CSS*/
+
+
+@media screen and (min-width: 580px )
+{
+    
+.headbar{ grid-area: headbar;}
+.navbar{ grid-area: navbar;}
 .main-left{ grid-area: main-left; }
 .main-right { grid-area: main-right;}
 .main-bottom { grid-area: main-bottom;}
@@ -17,18 +127,6 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 20px;
 }
-/*.header{
-    display: grid;
-    grid-template-areas: 
-    'headbar headbar headbar headbar'
-    'navbar navbar navbar navbar';
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 20px;
-}*/
-
-/**header{
-    background-color: #e22b2b;
-}**/
 .logo-icon{
    
     width: 15%;
@@ -98,4 +196,16 @@ li:hover{
 }
 .footer{
     background-color: rgb(157, 92, 39);
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+}
+.footer p{
+    padding:20px;
+}
+.footer small{
+
+    align-self:center !important;
+    
+}
 }
