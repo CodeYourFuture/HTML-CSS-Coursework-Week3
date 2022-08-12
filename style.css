@@ -106,4 +106,5 @@ height: 100%;
     text-decoration: none;
     color: black;
     margin: 30px;
+    white-space: nowrap;
 }
