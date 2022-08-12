@@ -11,8 +11,9 @@
   }
 :root {
     
-    --main-bg-color: #f5eef1;
+    --main-bg-color: white;
     --submain-bg-color:    #edacc8;
+    --submain1-bg-color:#f5eef1;
     --font-color:rgb(8, 8, 180);
 
   }
@@ -45,7 +46,7 @@ body {
     grid-row-start: 1;
     grid-row-end: 2;
     height: 30vh;
-    background-color: var(--main-bg-color);
+    background-color: var(--submain1-bg-color);
   }
   .header-description{
     display: grid;
@@ -98,6 +99,7 @@ a{
   display:flex;
   flex-direction: row;
   justify-content: space-evenly;
+  background-color: var(--submain1-bg-color)
 }
 .nav-links{
   overflow: hidden;
@@ -139,8 +141,8 @@ a{
     grid-row-end: 3;
     height: 30vh;
     color: var(--font-color);
+    background-color: var(--submain-bg-color);
 
-    background-color: var(--main-bg-color);
   }
   .first-section > h1{
     font-size: 2rem;
@@ -155,7 +157,6 @@ a{
     font-weight: 500;
     text-align: center;
     line-height: 20px;
-
   }
 
   .second-section{
@@ -165,12 +166,13 @@ a{
     grid-row-start: 3;
     grid-row-end: 4;
     height: 50vh;
-    background-color: var(--main-bg-color);
     background-image: url("https://images.unsplash.com/photo-1614878257906-91bdeb16c470?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8OXx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60");
     background-size: 100% 100%;
+    position: relative;
     background-repeat: no-repeat;
-    padding: 20px;
+    border-radius: 5px;
     transition:2s;
+
 } 
 .second-section:hover{
   transform: scale(1.1);
@@ -184,15 +186,14 @@ a{
     grid-row-start: 4;
     grid-row-end: 5;
     height: 60vh;
-    background-color: var(--main-bg-color);
+    background-color: var(--submain-bg-color);
     display: grid;
     grid-template-areas: 
      "art1 art2"
      "art3 art4";
      grid-template: repeat(2, 1fr) / repeat(2, 1fr);
      grid-gap: 5px;
-
-
+     padding: 5%;
   }
 .third-section-article1{
     grid-area: art1;
@@ -265,7 +266,7 @@ a{
     grid-row-start: 5;
     grid-row-end: 6;
     height: 30vh;
-    background-color: var(--main-bg-color);
+    background-color: var(--submain1-bg-color);
     display: flex;
     justify-content: center;
     color: var(--font-color);
@@ -326,12 +327,11 @@ a{
   .container{
     display: grid;
     grid-template-areas: 
-    "he he he he"
-    ". nv nv ."
-    "se se fi fi"
-    "th th th th"
+    "he he he he he he"
+    ". se se se se ."
+    ". th th th th ."
     "fo fo fo fo";
-    grid-template: repeat(5, 1fr) / repeat(4, 1fr);
+    grid-template: repeat(4, 1fr) / repeat(6, 1fr);
     height: 95vh;
     margin: 5%;
     grid-gap:5px;
@@ -344,7 +344,7 @@ a{
     grid-row-start: 1;
     grid-row-end: 2;
     height: 30vh;
-    background-color: var(--main-bg-color);
+    background-color: var(--submain1-bg-color);
   }
 
   .header-description{
@@ -355,7 +355,6 @@ a{
      "nv nv";
      grid-template: repeat(3, 1fr) / repeat(2, 1fr);
      gap: 5px;
-
   }
 
   .logo{
@@ -384,9 +383,10 @@ a{
   grid-column-end: 3;
   grid-row-start: 3;
   grid-row-end: 4;
-  background-color: var();
   padding-top: 2%;
   background-color: var(--submain-bg-color);
+  margin-left: 15%;
+  margin-right: 15%;
 
 }
 .nav-links{
@@ -396,22 +396,24 @@ a{
 
 .second-section{
   grid-area: se;
-  grid-column-start: 1;
-  grid-column-end: 3;
+  grid-column-start: 2;
+  grid-column-end: 4;
   grid-row-start: 3;
   grid-row-end: 4;
   height: 30vh;
+  background-color: var(--submain1-bg-color);
 }
 
 .first-section{
   grid-area: fi;
-  grid-column-start: 3;
-  grid-column-end: -1;
+  grid-column-start: 4;
+  grid-column-end: 6;
   grid-row-start: 3;
   grid-row-end: 4;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background-color: var(--submain1-bg-color);
 }
 .first-section > h1{
   text-align: right;
@@ -425,6 +427,8 @@ a{
 .third-section{
   grid-row-start: 4;
     grid-row-end: 5;
+    grid-column-start: 2;
+    grid-column-end: 6;
     height: 30vh;
     display: grid;
     grid-template-areas: 
@@ -467,5 +471,6 @@ a{
 }
 footer{
 height: 25vh;
+background-color: var(--submain1-bg-color);
 }
 }
