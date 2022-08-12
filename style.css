@@ -58,23 +58,16 @@ a {
   border-radius: 3px;
 }
 
-.main {
+.main > h2 {
   padding-top: 20px;
   display: grid;
-  grid-template-areas: "image1 image2 test3 test4";
+  grid-area: 1/1/2/3;
   color: brown;
 }
 
-.main-text {
+.main > p {
   display: grid;
-  grid-area: "test3 test4;
-  
-}
-
-.main-text > p {
-  display: grid;
-  grid-area: " test3 test4 ";
-  margin-top: 20px;
+  grid-area: 2/1/3/3;
 }
 
 .main-image {
