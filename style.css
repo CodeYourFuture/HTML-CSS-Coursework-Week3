@@ -175,7 +175,7 @@ footer {
 .container-social {
     display: flex;
     justify-content: space-between;
-    width: 38%;
+    width: 60%;
     margin: 0 auto;
 }
 
@@ -199,7 +199,7 @@ footer {
     font-size: 20px;
 }
 
-/* 
+
 @media screen and (min-width: 540px) {
     body {
         grid-template-areas: 
@@ -215,13 +215,18 @@ footer {
         background-size: 150%;
     }
 
-        .hero-img {
-            height: 300px;
-        }
+    .hero-img {
+        height: 300px;
+    }
+
+    .container-social {
+        width: 30%;
+
+    }
 
 }
 
-@media screen and (min-width: 900px) {
+/* @media screen and (min-width: 900px) {
     body {
         grid-template-areas:
             "header"
@@ -249,6 +254,6 @@ footer {
         grid-template-areas:
             "text image"
         ;
-    } */
-}
+    } 
+}*/
 
