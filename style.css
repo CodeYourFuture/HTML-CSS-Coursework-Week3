@@ -1,15 +1,15 @@
 /*  Add your styling here */
 /*  styling for mobile version starts here */
 :root {
-    --white: #fff;
+    --gray: rgba(255, 255, 255, 0.445);
   }
   body{
-    font-family: 'Roboto', sans-serif;
+    font-family: tahoma;
     margin: 0;
   }
   
   .homepage {
-    background-color:#faedcd;
+    background-color:#8d850f;
     display: grid;
     grid-template-columns: repeat(4, auto);
     grid-template-rows: auto auto auto auto auto auto;
@@ -49,7 +49,7 @@
     position: absolute;
     left: 88%;
     right: 5.6%;
-    background: #000000;
+    background: #93a111;
     border-radius: 1px;
   }
   .menu-line1{
