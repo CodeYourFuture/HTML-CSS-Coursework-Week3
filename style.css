@@ -197,6 +197,33 @@ h2 {
 }
 
 /* Media queries */
+@media screen and (min-width: 550px) {
+
+    .slogan span {
+        display: none;
+    }
+
+    .slogan:after {
+        content: 'The best cakes in town delivered to your door';
+    }
+
+    h2{
+        color:#e63946;
+        font-style:italic;
+    }
+
+    .welcome_message{
+        font-weight: bolder;
+    }
+
+    a{
+        font-weight: bold;
+    }
+}
+
+
+
+
 @media screen and (min-width: 750px) {
     .body {
         grid-area: b;
@@ -235,8 +262,7 @@ h2 {
         display: none;
     }
 
-    .topnav a:hover {
-        }
+    .topnav a:hover {}
 
     .active {
         background-color: #e63946;
@@ -250,7 +276,7 @@ h2 {
     .photo1 {
         margin-top: 0em;
     }
-    
+
     .photo2 {
         margin-top: 0em;
     }
