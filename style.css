@@ -1,1 +1,147 @@
-/*  Add your styling here */
+/* Start Global Rules */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+  font-family:'Oleo Script Swash Caps', cursive;
+  background-color: wheat;
+  }
+  ul {
+    list-style: none;
+  }
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+ 
+ 
+  /* End Global Rules */
+
+
+
+.header {
+  display: block;
+}
+.header-img {
+
+width:540px;
+}
+
+.header-items p {
+ align-content: center;
+  font-size: 30px;
+
+
+}
+
+
+
+
+
+
+
+.navigator {
+  display: flex;
+  background-color:wheat;
+ 
+}
+
+
+@media (min-width:900px) {
+.navigator img {
+display: none;
+} 
+
+}
+
+.navigator ul {
+  flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border: solid 1px ;
+    font-size: 20px;
+    margin-top: 0;
+    
+}
+.navigator Img {
+
+  width:50px;
+}
+@media (max-width: 900px) {
+  .navigator ul {
+    display: none;
+  }
+.header-img {
+width: 100%;
+  align-items: center;
+}
+
+  }
+  
+ 
+
+.welcome-section {
+    display: flex;
+    flex-wrap: wrap ;
+}
+.welcome-section h1 {
+flex:1;
+font-size: 50px;
+margin: 0 !important;
+}
+
+
+
+.cakes-container {
+   display: grid;
+   grid-template-columns: repeat(2, 2fr) ;
+   grid-template-rows: repeat(3, auto) ;
+   
+}
+
+.cakes-images {
+  
+  display: grid;
+  grid-template-columns: repeat(4, 1fr) ;
+  grid-gap: 10px;
+}
+@media (max-width:540px){
+  .cakes-images {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows:repeat(4, 1fr);
+  grid-gap: 5px;
+  justify-items: center
+
+ }
+ .cakes-images img {
+
+  width: 100%;
+  }
+}
+
+
+
+
+.cakes-images img {
+
+width: 250px;
+}
+
+
+
+.footer {
+margin-left: 15%; 
+  padding: 50px;
+}
+
