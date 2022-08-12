@@ -34,7 +34,7 @@ body {
     grid-template: repeat(5, 1fr) / repeat(2, 1fr);
     height: 200vh;
     margin: 5%;
-    grid-gap:5px;
+    grid-gap:10px;
   }
 
 
@@ -190,7 +190,7 @@ a{
      "art1 art2"
      "art3 art4";
      grid-template: repeat(2, 1fr) / repeat(2, 1fr);
-     grid-gap: 2px;
+     grid-gap: 5px;
 
 
   }
