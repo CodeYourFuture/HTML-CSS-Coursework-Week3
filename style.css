@@ -1,1 +1,158 @@
 /*  Add your styling here */
+* body {
+  font-family: "Mochiy Pop One", sans-serif;
+  display: grid;
+}
+header {
+  display: grid;
+  grid-template-areas: "image1" "image1" "head" "head";
+}
+
+header > h1 {
+  display: grid;
+  grid-template-areas: "image1" "image1";
+  color: chocolate;
+  font-size: 22px;
+  margin-left: auto;
+  font-style: italic;
+  position: relative;
+  margin-right: auto;
+}
+
+header > img {
+  display: grid;
+  grid-template-areas: "head" "head";
+  border-radius: 4px;
+  position: relative;
+  padding-top: 20px;
+  margin-left: 30px;
+  right: 20px;
+  width: 30%;
+}
+
+.heads {
+  display: grid;
+  grid-template-areas: "list1" "list2" "list3" "list4";
+}
+
+nav > ol {
+  display: grid;
+  grid-template-areas: "list3" "list4";
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  padding: 5px;
+  margin-left: auto;
+  position: relative;
+  margin-right: 20px;
+}
+
+a {
+  text-decoration: none;
+  background-color: #faf0e6;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  color: darkred;
+  margin-left: 20px;
+  border-radius: 3px;
+}
+
+.main > h2 {
+  padding-top: 20px;
+  display: grid;
+  grid-area: 1/1/2/3;
+  color: brown;
+}
+
+.main > p {
+  display: grid;
+  grid-area: 2/1/3/3;
+}
+
+.main-image {
+  display: grid;
+  grid-template-areas: "image1";
+  padding-top: 30px;
+  padding-bottom: 30px;
+  height: 400px;
+  background-image: url("images/Chocolatecake.jpg");
+  margin-right: 30px;
+  margin-left: 20px;
+  border-radius: 4px;
+  position: relative;
+}
+
+.main-menu {
+  margin-top: 30px;
+  grid-area: cakes;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 330px);
+  gap: 25px;
+  justify-content: center;
+  padding: 20px;
+  background-color: rgba(210, 30, 144, 0.758);
+  background-size: auto;
+}
+
+.cake {
+  border-radius: 5px;
+  height: 380px;
+  background-size: cover;
+}
+
+.cake:nth-child(1) {
+  background-image: url("images/cake1.jpg");
+}
+
+.cake:nth-child(2) {
+  background-image: url("images/cake2.jpg");
+}
+
+.cake:nth-child(3) {
+  background-image: url("images/cake3.jpg");
+}
+
+.cake:nth-child(4) {
+  background-image: url("images/cake4.jpg");
+}
+
+footer {
+  position: bottom;
+  grid-area: footer;
+  text-align: center;
+}
+
+footer {
+  padding: 20px;
+  background-color: rgba(255, 250, 205, 0.425);
+  align-items: flex-end;
+}
+
+footer > p:nth-child(4) {
+  margin-top: 40px;
+  text-align: end;
+}
+
+@media screen and (min-width: 800px) {
+  body {
+    grid-template-areas:
+      "header"
+      "nav"
+      "main"
+      "cakes"
+      "footer";
+  }
+
+  header {
+    background-size: 100%;
+    background-position: 50% 15%;
+  }
+
+  .main {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "image test";
+  }
+}
