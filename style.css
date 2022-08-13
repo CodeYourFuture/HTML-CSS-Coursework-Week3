@@ -1,1 +1,277 @@
 /*  Add your styling here */
+/* -----------------------MOBILE DESIGN---------------------------------- */
+/* Overall mobile layout from line 2 to 11 */
+body {
+  display: grid;
+  grid:
+    "header"
+    "main"
+    "footer";
+    background-color: #F0EEE0;
+}
+
+/* header design style*/
+.header {
+  grid-area: header;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navBar_and_title_and_hamburgButton {
+  display: flex;
+  text-align: center;
+  border-bottom: solid;
+}
+
+.navBar_and_title_and_hamburgButton > .tile_paraghr {
+  padding: 10px;
+  font-size: 1.3em;
+
+}
+
+
+/* Navigation menu is collapsed in the mobile design */
+.navbar {
+  visibility: collapse;
+}
+
+.logo_picture {
+ align-self: flex-start;
+   width: 80px;
+  height: inherit;
+}
+
+/* 3 divs that made up humberg inside the button */
+.hum_div {
+  border: solid;
+  margin: 5px;
+  width: 20px;
+}
+
+/*nav button  */
+.humburg_btn {
+  height: 40px;
+  width: 50px;
+}
+
+/* main content style*/
+.main {
+  display: flex;
+  flex-direction: column;
+  grid-area: main;
+  padding: 20px 0px 20px 0px;
+}
+
+.intro_and_mainPicture {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0px 10px 0px;
+}
+.introduction{padding: 10px;}
+
+.main_picture {
+  width:15em;
+  align-self: center;
+  border-radius: 5px;
+}
+
+.multiple_cakes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-rows: 9em 9em;
+
+  gap: 10px;
+}
+
+/* repeat(auto-fit, minmax(200px, 1fr)) Jus not sure how this will effect the media queries for the just above container, but keep it here for later use*/
+
+/* this code controls the size of the pictures */
+.Picture_for_productItem {
+  width: 100%;
+  height: 99%;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+/* footer design */
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  grid-area: footer;
+}
+
+.social_media_image {
+  width: 30px;
+}
+
+.social_media_links {
+  visibility: collapse;
+}
+
+.footer > p {
+  text-align: center;
+}
+/* ------------------------------- tablet design -------------------------- */
+@media screen and (min-width:550px)  {
+body{
+  background-color: #bffe28;
+}
+   .intro_and_mainPicture {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+    margin: 10px;
+  }
+  .navBar_and_title_and_hamburgButton > .tile_paraghr {
+    padding: 20px;
+    font-size: 2em;
+  }
+
+   .main_picture{
+    width:20em;
+   }
+ .multiple_cakes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    width: 100%;
+    gap: 40px;
+  }
+  .header {
+    grid-area: header;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+.navbar {
+    visibility: visible;
+    display: flex;
+    justify-content: flex-end;
+    gap: 50px;
+    background-color: wheat;
+    color: black;
+    padding: 15px;
+    font-size:large
+  }
+  /* this helps the contrast to be inline with the (WCAG 2.0 CONTRAST) */
+  .navbar > .nav_item{color: black;}
+
+  /*nav button  */
+  .humburg_btn {
+    visibility: collapse;
+    height: 40px;
+    width: 50px;
+  }
+
+  .footer {
+    display: flex;
+    align-items: center;
+    grid-area: footer;
+  }
+
+  .social_media_links {
+    visibility: visible;
+  }
+  /* Make border of footer images circle */
+  .social_media_links .social_media_image_links .social_media_image{
+border: solid white;
+padding: 1em;
+border-radius: 50%;
+}
+  
+}
+
+/* ------------------DESKTOP DESIGN------------------------ */
+
+@media screen and (min-width: 900px) {
+  body{
+    background-color: #c0fa8b;
+  }
+  /*  from here up to next comment will be header and its children style in desktop view */
+  .header {
+    grid-area: header;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .logo_picture{
+    width:200px;
+    height: 200px;
+  }
+
+  .navBar_and_title_and_hamburgButton {
+    display: flex;
+    justify-content: space-between;
+  }
+   .navBar_and_title_and_hamburgButton > .tile_paraghr {
+    align-self: flex-end;
+    padding: 20px;
+    font-size: 2.5em;
+  }
+
+
+  /* Navigation menu desktop design */
+  .navbar {
+    visibility: visible;
+    display: flex;
+    justify-content: flex-end;
+    gap: 50px;
+    background-color: #bffe28;
+    padding: 15px;
+    font-size:xx-large
+  }
+
+  /* this helps the contrast to be inline with the (WCAG 2.0 CONTRAST) */
+  .navbar > .nav_item{color: black;}
+
+  /*nav button  */
+  .humburg_btn {
+    visibility: collapse;
+    height: 40px;
+    width: 50px;
+  }
+
+  /*  Picture in the main element */
+  .intro_and_mainPicture {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    text-align: right;
+    margin: 10px;
+  }
+  .introduction {
+   padding-left: 50px;
+   line-height: 40px;
+   font-size: 2em;
+  }
+  .main_picture{
+    width:40em;
+}
+  .multiple_cakes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 300px;
+    width: 100%;
+    gap: 40px;
+  }
+
+  .footer {
+    display: flex;
+    align-items: center;
+    grid-area: footer;
+  }
+
+  .social_media_links {
+    visibility: visible;
+    
+  }
+
+/* Make border of footer images circle */
+.social_media_links .social_media_image_links .social_media_image{
+border: solid white;
+padding: 1em;
+border-radius: 50%;
+}
+
+}

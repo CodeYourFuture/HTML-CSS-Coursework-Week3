@@ -6,11 +6,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Responsive Cake webpage</title>
+    <link href="style.css" rel="stylesheet">
     <!-- Add a link to your css file here -->
 </head>
 
 <body>
     <!-- Add your markup here -->
+    <header class="header" id="header_id">
+
+        <div class="navBar_and_title_and_hamburgButton">
+            <img src="/cakePicture.jpeg" id="logo_picture" class="logo_picture" alt="logo">
+            <h2 class="tile_paraghr">The Best Cakes in Town Delivered to Your Door 🚪</h2>
+            <button id="showNav" class="humburg_btn nav_humburg_btn">
+                <div class="humberg_menu">
+                    <div class="hum_div"></div>
+                    <div class="hum_div"></div>
+                    <div class="hum_div"></div>
+                </div>
+            </button>
+        </div>
+
+        <nav class="navbar">
+            <a href="#" class="nav_item">Home</a>
+            <a href="#" class="nav_item">About</a>
+            <a href="#" class="nav_item">Contact</a>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="intro_and_mainPicture">
+            <div class="introduction">
+                <h2>Welcome</h2>
+                <p>Lorem -- The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and
+                1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by
+                English versions from the 1914 translation by H. Rackham.</p>
+            </div>
+            <img src="/Images/mainPicture.jpg" class="main_picture">
+        </section>
+
+        <section class="multiple_cakes">
+            <div class="product_item"><img src="/Images/birthdaycake.jpg" class="Picture_for_productItem"></div>
+            <div class="product_item"><img src="/Images/layer_cake.jpg" class="Picture_for_productItem"></div>
+            <div class="product_item"><img src="/Images/cupcakes.jpg" class="Picture_for_productItem"></div>
+            <div class="product_item"><img src="/Images/roundcake.jpeg" class="Picture_for_productItem"></div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="social_media_links">
+            <a class="social_media_image_links" href=""><img src="/Images/twitter-icon.svg" class="social_media_image"></a>
+            <a class="social_media_image_links" href=""><img src="/Images/facebook-icon.svg" class="social_media_image"></a>
+            <a class="social_media_image_links" href=""><img src="/Images/instagram-icon.svg" class="social_media_image"></a>
+        </div>
+        <button class="humburg_btn footer_humburg_btn" id="show_footer_SocialLink">
+            <div class="footer_humberg">
+                <div class="hum_div"></div>
+                <div class="hum_div"></div>
+                <div class="hum_div"></div>
+            </div>
+        </button>
+        <p class="copyRight">©️CYF-Khadar Dagal</p>
+    </footer>
 </body>
 
 </html>
