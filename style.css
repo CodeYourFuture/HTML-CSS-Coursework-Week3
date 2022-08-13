@@ -1,1 +1,287 @@
 /*  Add your styling here */
+@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300&family=Nanum+Gothic&family=Sarabun:wght@100&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0%;
+}
+    body{
+        /* width: 390px;
+        height: 844px; */
+        background-color: antiquewhite;
+    }
+    .box{
+        padding: 15px;
+        background-color: aqua;
+    }
+    .contener{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(7,1fr) ;
+    grid-gap: 5px;
+    grid-template-areas: 
+    "hr hr"
+    "ar ar"
+    "ar ar"
+    "b_img b_img"
+    "img1 img2"
+    "img3 img4"
+    "foot foot";
+    }
+    h1{
+        font-size: 100%;
+        font-family: 'Sarabun', sans-serif;
+    
+    }
+    /* header */
+    .header{
+    grid-area: hr;
+    display: flex;
+    /* margin: 0%;
+    padding: 0%; */
+    margin: 0px;
+    padding: 0px;
+    justify-content:space-between;
+    width: 390px;
+    height: 118px;
+    background-color: #d4a373;
+    }
+    .icon_img{
+        width:"80px"
+    }
+    .icon1{
+     display: flex;
+     width: 30%;
+     justify-content: left;
+    }
+    .h_text{
+        display: flex;
+        width: 97%;
+        height: 80%;
+        justify-content: center;
+        font-size: 100%;
+    }
+    .hedaer1{
+        width: 70%;
+        display: flex;
+        align-items:flex-end;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .nav_mun{
+        /* display: none; */
+        /* grid-area: nav; */
+    
+    }
+
+    /* artical */
+    .artical{
+        background-color: #faedcd;
+        display: flex;
+        flex-direction: column;
+        /* background-image: url("img/background_cakes.jpg");
+        background-size: cover; */
+        grid-area:ar;
+        font-family: 'Sarabun', sans-serif;
+        font-weight: bold;
+        /* font-size: 50px; */
+    }
+    p{
+        
+        color:rgb(118, 117, 117)
+    }
+    
+    /* big img */
+    .big_img{
+        grid-area:b_img;
+        background-image: url("img/cake_main.jpg");
+        background-size: cover;
+        background-position: 100%;
+    }
+    /* group of img  */
+    .img1{
+        grid-area:img1;
+        background-image: url("img/cake_1.jpg");
+        background-size:cover;
+        background-position: 100%;
+        padding-top: 20px;
+    
+    } 
+    
+    .img2{
+        grid-area:img2;
+        background-image: url("img/cake_2.jpg");
+        background-size: cover;
+        background-position: 100%;
+        
+        
+    }
+    .img3{
+        grid-area:img3;
+        background-image: url("img/cake_3.jpg");
+       
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 100%;
+    
+    }
+    .img4{
+        grid-area:img4;
+        background-image: url("img/cake_4.jpg");
+        background-size: cover;
+        background-position: 100%;
+    }
+    /* Footer */
+    .footer{
+        background-color: #fefae0;
+        grid-area:foot;
+        justify-content: center;
+        flex-direction: row;
+        text-align: center;
+    
+    }
+    .icon{
+        padding: 5px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 35px;
+        height: 30px;
+        border-radius: 80%;
+        justify-content: space-around;
+        border: 2px solid rgb(152, 152, 152);
+    }
+    .icon_three{
+    display: flex;
+    justify-content: space-around;
+    }
+
+/* media to Tablet /medium */
+@media screen and  (min-width: 540px) {
+
+    body{
+        display: flex;
+        font-style: bold;
+        background-color: #ffd6ae;
+
+    }
+    .box{
+        padding: 45px;
+        /* background-color: aqua; */
+    
+    }
+    
+    .contener{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(8,1fr) ;
+    grid-gap: 10px;
+    grid-template-areas: 
+    "hr hr hr hr"
+    "nav nav nav nav"
+    "b_img b_img ar ar"
+    "b_img b_img ar ar"
+    "b_img b_img ar ar"
+    "img1 img2 img3 img4"
+    "img1 img2 img3 img4"
+    "foot foot foot foot";
+    }
+            /* Header */
+    .header{
+        grid-area: hr;
+        
+        margin: 0px;
+        padding: 10px;
+        justify-content:space-between;
+        width: 903px;
+        height: 118px;
+        background-color: #e2ba92;
+        }
+      
+        .hedaer1{
+            /* display: none; */
+        }
+        .hum_icon{
+            display: none;
+        }
+        .h1_welocme{
+        font-weight: bold;
+        }
+        .text_header{
+            font-size: 20px;
+            text-align: center;
+            /* font-weight: 50; */
+            font-weight: bold;
+            color: #000000;
+        }
+                /* Nav mune*/
+
+    .nav_mun{
+        grid-area: nav;
+        background-color: #ffd6ae;
+        display: flex !important; 
+         /* display: ; */
+        /* margin-bottom: 20px; */
+    }
+    li{
+        list-style: none;
+        font-size: 30px;
+        
+    }
+    a{
+        text-decoration-line: none;
+    }
+    .mune_bar{
+        display: flex;
+        justify-content: space-around;
+        align-content:stretch;
+        font-weight: bold;
+    }
+    .bar{
+        color: #3f3d3d;
+        font-family:'Sarabun', sans-serif;
+        border: 2px solid rgb(180, 177, 177);
+        border-radius: 5px;
+        padding: 10px;
+        background-color:  #e2ba92;
+    }
+    .h1_welocme{
+        padding-bottom: 30px;
+    }
+
+    
+}
+/* media to Desktop /large */
+@media (min-width: 900px) {
+    body{
+        background-color: rgb(246, 218, 255);
+    }
+        /* Header */
+     
+        .header{
+            grid-area: hr;
+            
+            margin: 0px;
+            padding: 10px;
+            justify-content:space-between;
+            width: auto;
+            
+            background-color: #e2ba92;
+            }
+            .artical{
+                background-color: #faedcd;
+                display: flex;
+                justify-content: space-around;
+                flex-direction: column;
+                /* background-image: url("img/background_cakes.jpg");
+                background-size: cover; */
+                grid-area:ar;
+                font-family: 'Sarabun', sans-serif;
+                font-weight: bold;
+                font-size: 30px;
+            }
+            .h1_welocme{
+                margin: 0;
+                padding-bottom: 50px;
+            }
+}
