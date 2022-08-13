@@ -473,7 +473,9 @@
    margin:0;
    padding:0;
   
+  
   }
+
 
 
 .h1{
@@ -487,6 +489,15 @@
   float: right;
   display: none;
   
+
+}
+
+li{
+  background-color: rgb(211, 207, 207);
+  padding: 2px;
+  width: 60px;
+  padding-left: 5px;
+
 }
 .menu-item{
   margin-right: 7px;
@@ -499,7 +510,6 @@
   display: grid;
   grid-area: main;
   grid-template-columns:1fr 1fr ;
-  grid-template-rows: 1fr 1fr 1fr;
   grid-template-areas:
   "h1 h1"
   "pic1 pic1"
@@ -621,7 +631,9 @@ grid-area: footer;
   display:flex;
   padding: 30px;
   grid-area:nav;
-  
+  width: 65%;
+  justify-content: space-between;
+  margin-top: 65px;
 }
 
 .hamburger-image{
