@@ -1,16 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Responsive Cake webpage</title>
-    <!-- Add a link to your css file here -->
-</head>
-
-<body>
-    <!-- Add your markup here -->
-</body>
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Maziar Cake Company</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ======================= header ========================== -->
+    <header>
+      <a href="#">
+        <img src="./img/tlogo.png" alt="cake logo" />
+      </a>
+      <p>The best cakes in town delivered to your door</p>
+      <button aria-label="Open navigation" class="hamburger-menu">
+        &#9776;
+      </button>
+      <nav class="nav">
+        <button aria-label="Close navigation" class="close-nav">&times;</button>
+        <ul class="nav-list">
+          <li><a href="#" class="nav-link"> Home</a></li>
+          <li><a href="#" class="nav-link"> Cakes</a></li>
+          <li><a href="#" class="nav-link"> Ordering</a></li>
+          <li><a href="#" class="nav-link"> Lessons</a></li>
+          <li><a href="#" class="nav-link"> About</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section>
+      <ul class="nav-list-main">
+        <li><a href="#" class="nav-link"> Home</a></li>
+        <li><a href="#" class="nav-link"> Cakes</a></li>
+        <li><a href="#" class="nav-link"> Ordering</a></li>
+        <li><a href="#" class="nav-link"> Lessons</a></li>
+        <li><a href="#" class="nav-link"> About</a></li>
+      </ul>
+    </section>
+    <!-- ========================== main ========================== -->
+    <main>
+      <h1>Welcome!</h1>
+      <p>
+        We've been making fresh, homemade custom cakes in the Manchester area
+        for over 10 years. Everything is baked from scratch to provide the best
+        quality. We would love the opportunity to work with you & create a
+        custom cake in any flavor you desire. We can turn any dream cake into a
+        reality. Whether its for a wedding, birthday, sweet, holiday, theme, or
+        anything else. The FUN doesn't stop there! We also have a wide and
+        delicious variety of Sweets from cookies, cake pops, cupcakes, and more!
+      </p>
+      <img src="./img/mainimg.jpg" alt="" />
+      <div class="zoomin-frame img-one">
+        <img class="small-img" src="./img/12CBPinacolada_1100x.jpg" alt="" />
+      </div>
+      <div class="zoomin-frame img-two">
+        <img class="small-img" src="./img/2CBRedVelvet_1100x.jpg" alt="" />
+      </div>
+      <div class="zoomin-frame img-three">
+        <img class="small-img" src="./img/8CBItalian_1100x.jpg" alt="" />
+      </div>
+      <div class="zoomin-frame img-four">
+        <img class="small-img" src="./img/10Neapolitan_1100x.jpg" alt="" />
+      </div>
+    </main>
+    <!-- ======================== footer ======================= -->
+    <footer>
+      <div>
+        <ul class="socials">
+          <li>
+            <a href="#"
+              ><img src="./img/icon/facebook.png" alt="facebook icon"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img src="./img/icon/instagram.png" alt="instagram icon"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img src="./img/icon/telephone-call.png" alt="phone call icon"
+            /></a>
+          </li>
+        </ul>
+      </div>
+      <p><span>&copy</span>Maziar Cake, inc.</p>
+    </footer>
+    <script src="./cake.js"></script>
+  </body>
 </html>
