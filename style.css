@@ -258,5 +258,14 @@ body{
 
   .social_media_links {
     visibility: visible;
+    
   }
+
+/* Make border of footer images circle */
+.social_media_links .social_media_image_links .social_media_image{
+border: solid white;
+padding: 1em;
+border-radius: 50%;
+}
+
 }
