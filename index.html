@@ -1,16 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Responsive Cake webpage</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oleo+Script+Swash+Caps&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Inline+One&family=Lato:wght@300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Add a link to your css file here -->
 </head>
 
-<body>
+<body class="mobile-container">
     <!-- Add your markup here -->
+
+    <div class="header">
+
+        <div class="topnav">
+            <!-- Top Navigation Menu -->
+
+            <div class="active">
+                <img src="/design/cake logo.jpg" alt="Logo of shop" class="shop_logo" />
+                <h1 class="slogan"><span>The best cakes in town <br> delivered to your door</span></h1>
+            </div>
+
+
+            <div class="navigation_link" id="myLinks">
+                <a href="#">HOMErrrr</a>
+                <a href="#">CAKES</a>
+                <a href="#">ORDENIN</a>
+                <a href="#">LESSONS</a>
+                <a href="#">ABOUT</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+        </div>
+    </div>
+
+    <main class="body">
+        <div class="welcome">
+            <h2>Welcome</h2>
+            <p class="welcome_message">At Doris Cake we offer free delivery, at short notice, to all our friends in
+                Manchester. We make freshly baked celebration cakes for all occasions and we’ve been in the business for
+                several generations that we know how to make brilliant cakes and deliver safely. Just take a look at
+                what we offer!</p>
+        </div>
+        <div class="hero"></div>
+        <div class="cake photo1"></div>
+        <div class="cake photo2"></div>
+        <div class="cake photo3"></div>
+        <div class="cake photo4"></div>
+    </main>
+
+    <footer class="footer">
+
+        <div class="footer__content">
+            <p class="p1"> Address: Picadilly Garden, Manchester</p>
+            <p class="p1"> Telphone: 07751 123 123</p>
+
+            <div class="icons">
+                <img class="circle" src="/design/twitter-icon.svg" alt="twitter icon" />
+                <img class="circle" src="/design/facebook-icon.svg" alt="facebook icon" />
+                <img class="circle" src="/design/instagram-icon.svg" alt="instagram icon" />
+            </div>
+
+            <p class="p3">@Doris Cake Inc.</p>
+        </div>
+    </footer>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
 </body>
 
 </html>

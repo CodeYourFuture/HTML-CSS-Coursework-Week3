@@ -1,1 +1,283 @@
 /*  Add your styling here */
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #ffafcc;
+
+}
+
+
+.mobile-container {
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 200px auto 250px;
+    grid-template-areas:
+        "h h"
+        "b b"
+        "f f";
+}
+
+h1 {
+    font-family: 'Oleo Script Swash Caps', cursive;
+    font-size: 1.5rem;
+}
+
+h2 {
+    font-family: 'Oleo Script Swash Caps', cursive;
+    font-size: 2.5rem;
+    margin-bottom: 0em
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: white;
+    position: relative;
+}
+
+.topnav #myLinks {
+    display: none;
+}
+
+.topnav a {
+    color: #e63946;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+}
+
+.topnav a.icon {
+    background: white;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.topnav a:hover {
+    background-color: white;
+    color: #e63946;
+}
+
+.active {
+    background-color: #e63946;
+    color: white;
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+
+
+/* Header */
+
+
+.header {
+    grid-area: h;
+
+}
+
+.shop_logo {
+    height: 150px;
+    width: 150px;
+    align-self: center;
+}
+
+.welcome_message {
+    margin-top: auto;
+    margin-bottom: 2.2em
+}
+
+/* Section */
+.cake {
+    width: 40%;
+    height: 200px;
+}
+
+.body {
+    grid-area: b;
+    margin: 0 1.5em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas:
+        "text text"
+        "dog dog"
+        "cake1 cake2"
+        "cake3 cake4";
+    grid-gap: 2em;
+}
+
+.welcome {
+    grid-area: text;
+
+}
+
+.hero {
+    background-image: url("/design/hero.jpg");
+    width: 100%;
+    grid-area: dog;
+    background-size: cover;
+}
+
+.photo1 {
+    background-image: url("/design/cake1.jpg");
+    width: 100%;
+    grid-area: cake1;
+    background-size: cover;
+    margin-top: 3em;
+}
+
+.photo2 {
+    background-image: url("/design/cake2.jpg");
+    width: 100%;
+    grid-area: cake2;
+    background-size: cover;
+    margin-top: 3em;
+}
+
+
+.photo3 {
+    background-image: url("/design/cake3.jpg");
+    width: 100%;
+    grid-area: cake3;
+    background-size: cover;
+}
+
+.photo4 {
+    background-image: url("/design/cake5.jpg");
+    width: 100%;
+    grid-area: cake4;
+    background-size: cover;
+}
+
+
+
+/* Footer */
+
+.footer {
+    margin-top: 2rem;
+    background-color: #e63946;
+    color: white;
+    font-weight: bolder;
+    grid-area: f;
+}
+
+.footer__content {
+    border-top: 1px solid grey;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+}
+
+.footer p {
+    padding-bottom: 1rem;
+    text-align: center;
+    font-size: 0.85rem;
+}
+
+.p1 {}
+
+.icons {
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: center;
+    column-gap: 15px;
+}
+
+.circle {
+    border: 2px solid lightgrey;
+    background-color: #FFFFFF;
+    height: 20px;
+    border-radius: 50%;
+    width: 20px;
+    background-clip: content-box;
+    padding: 1em;
+}
+
+/* Media queries */
+@media screen and (min-width: 550px) {
+
+    .slogan span {
+        display: none;
+    }
+
+    .slogan:after {
+        content: 'The best cakes in town delivered to your door';
+    }
+
+    h2 {
+        color: #e63946;
+        font-style: italic;
+    }
+
+    .welcome_message {
+        font-weight: bolder;
+    }
+
+    a {
+        font-weight: bold;
+    }
+}
+
+
+
+
+@media screen and (min-width: 750px) {
+    .body {
+        grid-area: b;
+        margin: 0 1.5em;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 50px auto 200px;
+        grid-template-areas:
+            "nav nav nav nav"
+            "dog dog text text"
+            "cake1 cake2 cake3 cake4"
+
+    }
+
+    .topnav {
+        overflow: hidden;
+        background-color: white;
+        position: relative;
+    }
+
+    .topnav #myLinks {
+        display: flex;
+        grid-area: nav;
+        justify-content: flex-end;
+    }
+
+    .topnav a {
+        color: #e63946;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+    }
+
+    .topnav a.icon {
+        display: none;
+    }
+
+    .topnav a:hover {}
+
+    .active {
+        background-color: #e63946;
+        color: white;
+        height: 200px;
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-end;
+    }
+
+    .photo1 {
+        margin-top: 0em;
+    }
+
+    .photo2 {
+        margin-top: 0em;
+    }
+}
