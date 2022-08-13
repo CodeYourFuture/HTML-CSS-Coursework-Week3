@@ -47,7 +47,7 @@
     background-color: #d4a373;
     }
     .icon_img{
-        width="80px"
+        width:"80px"
     }
     .icon1{
      display: flex;
@@ -113,6 +113,7 @@
         background-image: url("img/cake_2.jpg");
         background-size: cover;
         background-position: 100%;
+        
         
     }
     .img3{
@@ -186,7 +187,6 @@
     "foot foot foot foot";
     }
             /* Header */
-     
     .header{
         grid-area: hr;
         
@@ -219,7 +219,8 @@
     .nav_mun{
         grid-area: nav;
         background-color: #ffd6ae;
-
+        display: flex !important; 
+         /* display: ; */
         /* margin-bottom: 20px; */
     }
     li{
