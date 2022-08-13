@@ -18,3 +18,8 @@ body {
   line-height: 1.7;
   color: #777;
   padding: 3rem; }
+
+.logo-img {
+  margin-top: 40px;
+  max-width: 173px;
+  height: auto; }
