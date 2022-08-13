@@ -77,9 +77,9 @@ body {
 
 .multiple_cakes {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-template-rows: 9em 9em;
-  /* width: 100%; */
+
   gap: 10px;
 }
 
@@ -113,7 +113,7 @@ body {
   text-align: center;
 }
 /* ------------------------------- tablet design -------------------------- */
-@media screen and (min-width:550px) and (max-width:900px) {
+@media screen and (min-width:550px)  {
 body{
   background-color: #bffe28;
 }
