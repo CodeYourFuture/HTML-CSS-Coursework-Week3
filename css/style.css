@@ -23,3 +23,78 @@ body {
   margin-top: 40px;
   max-width: 173px;
   height: auto; }
+
+.header {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-areas: "left left logo logo logo logo logo logo logo logo right right" ". . logo logo logo logo logo logo logo logo search search"; }
+  .header .header-links-left {
+    grid-area: left; }
+    .header .header-links-left ul li {
+      display: inline-block;
+      margin-right: 1rem;
+      font-size: 1.5rem; }
+      .header .header-links-left ul li a {
+        text-decoration: none; }
+        .header .header-links-left ul li a:visited, .header .header-links-left ul li a:link {
+          color: #292522; }
+        .header .header-links-left ul li a::before {
+          content: "";
+          margin-right: 8px; }
+        .header .header-links-left ul li a:hover {
+          color: #a68f51; }
+  .header .logo-img {
+    grid-area: logo;
+    margin: auto; }
+  .header .header-links-right {
+    grid-area: right; }
+    .header .header-links-right ul li {
+      display: inline-block;
+      margin-right: 1rem;
+      font-size: 1.5rem; }
+      .header .header-links-right ul li a {
+        text-decoration: none; }
+        .header .header-links-right ul li a:visited, .header .header-links-right ul li a:link {
+          color: #292522; }
+        .header .header-links-right ul li a::before {
+          content: "";
+          margin-right: 8px; }
+        .header .header-links-right ul li a:hover {
+          color: #a68f51; }
+  .header .control-search {
+    grid-area: search;
+    position: relative; }
+    .header .control-search input {
+      border-color: #a9a9a9;
+      height: 4.5rem;
+      width: 17vw;
+      margin: 0;
+      padding-right: 5.6rem;
+      font-size: 1.8rem; }
+    .header .control-search label {
+      position: absolute;
+      right: -1rem;
+      top: 0.1rem;
+      font-size: 2.5rem;
+      border-left: solid 1px #000;
+      padding-left: 0.7rem;
+      padding: 0 0.7rem;
+      cursor: pointer; }
+
+.nav-sections {
+  margin-top: 3rem;
+  font-size: 1.7rem;
+  border-top: solid 1px rgba(80, 80, 80, 0.199); }
+  .nav-sections ul {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    list-style: none;
+    padding-top: 1.7rem; }
+  .nav-sections ul li {
+    padding: 1rem; }
+  .nav-sections ul li:hover {
+    background-color: rgba(173, 179, 255, 0.425); }
+  .nav-sections li a {
+    text-decoration: none;
+    color: #292522; }

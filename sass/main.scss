@@ -1,49 +1,74 @@
-$color-primary: #55c57a;
-$color-primary-light: #7ed56f;
-$color-primary-dark: #28b485;
+@import "abstracts/mixins";
+@import "abstracts/variables";
 
-$color-secondary-light: #ffb900;
-$color-secondary-dark: #ff7730;
+@import "base/base";
 
-$color-tertiary-light: #2998ff;
-$color-tertiary-dark: #5643fa;
-
-$color-grey-light-1: #f7f7f7;
-$color-grey-light-2: #eee;
-
-$color-grey-dark: #777;
-$color-grey-dark-2: #999;
-$color-grey-dark-3: #333;
-
-$color-white: #fff;
-$color-black: #000;
-
-*,
-*::after,
-*::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit;
-}
-
-html {
-  font-size: 62.5%;
-}
-
-body {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
-  /*font-size: 16px;*/
-  line-height: 1.7;
-  color: #777;
-  padding: 3rem;
-}
 .logo-img {
   margin-top: 40px;
   max-width: 173px;
   height: auto;
+}
+.header {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-areas:
+    "left left logo logo logo logo logo logo logo logo right right"
+    ". . logo logo logo logo logo logo logo logo search search";
+
+  .header-links-left {
+    grid-area: left;
+    @include designli;
+  }
+  .logo-img {
+    grid-area: logo;
+    margin: auto;
+  }
+  .header-links-right {
+    grid-area: right;
+    @include designli;
+  }
+  .control-search {
+    grid-area: search;
+    position: relative;
+    input {
+      border-color: #a9a9a9;
+      height: 4.5rem;
+      width: 17vw;
+      margin: 0;
+      padding-right: 5.6rem;
+      font-size: 1.8rem;
+    }
+    label {
+      position: absolute;
+      right: -1rem;
+      top: 0.1rem;
+      font-size: 2.5rem;
+      border-left: solid 1px #000;
+      padding-left: 0.7rem;
+      padding: 0 0.7rem;
+      cursor: pointer;
+    }
+  }
+}
+.nav-sections {
+  margin-top: 3rem;
+  font-size: 1.7rem;
+  border-top: solid 1px rgba(80, 80, 80, 0.199);
+  ul {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    list-style: none;
+    padding-top: 1.7rem;
+  }
+  ul li {
+    padding: 1rem;
+  }
+  ul li:hover {
+    background-color: hsla(236, 100%, 84%, 0.425);
+  }
+  li a {
+    text-decoration: none;
+    color: #292522;
+  }
 }
