@@ -8,12 +8,19 @@
   max-width: 173px;
   height: auto;
 }
+.page-header {
+  width: 100vw;
+  height: 100vw;
+  margin: 2rem;
+}
 .header {
   display: grid;
+  width: inherit;
+  margin-bottom: 3rem;
   grid-template-columns: repeat(12, 1fr);
   grid-template-areas:
-    "left left logo logo logo logo logo logo logo logo right right"
-    ". . logo logo logo logo logo logo logo logo search search";
+    "left left left logo logo logo logo logo logo right right right"
+    ". . . logo logo logo logo logo logo search search search";
 
   .header-links-left {
     grid-area: left;
@@ -33,14 +40,14 @@
     input {
       border-color: #a9a9a9;
       height: 4.5rem;
-      width: 17vw;
+      width: 20vw;
       margin: 0;
       padding-right: 5.6rem;
       font-size: 1.8rem;
     }
     label {
       position: absolute;
-      right: -1rem;
+      right: 5vw;
       top: 0.1rem;
       font-size: 2.5rem;
       border-left: solid 1px #000;
@@ -51,15 +58,18 @@
   }
 }
 .nav-sections {
+  width: inherit;
   margin-top: 3rem;
   font-size: 1.7rem;
   border-top: solid 1px rgba(80, 80, 80, 0.199);
+  margin: 0;
+  padding: 0;
   ul {
     display: flex;
     justify-content: center;
-    gap: 2rem;
+    // gap: 2rem;
     list-style: none;
-    padding-top: 1.7rem;
+    padding: 1.7rem 0;
   }
   ul li {
     padding: 1rem;
