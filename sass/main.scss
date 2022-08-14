@@ -82,3 +82,21 @@
     color: #292522;
   }
 }
+
+.img-background {
+  background-image: url(../img/header-background.jpg);
+  display: block;
+  height: 30rem;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  margin: auto;
+  h1 {
+    font-size: 7rem;
+    color: #fff;
+    font-style: normal;
+    font-weight: 400;
+    font-family: Garamond, Georgia, Times New Roman, Times, serif;
+  }
+}
