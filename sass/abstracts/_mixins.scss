@@ -1,0 +1,22 @@
+@mixin designli {
+  ul li {
+    display: inline-block;
+    margin-right: 1rem;
+    font-size: 1.5rem;
+    margin: 1rem;
+    a {
+      text-decoration: none;
+      &:visited,
+      &:link {
+        color: #292522;
+      }
+      &::before {
+        content: "";
+        margin-right: 8px;
+      }
+      &:hover {
+        color: #a68f51;
+      }
+    }
+  }
+}
