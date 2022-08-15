@@ -8,14 +8,32 @@
   max-width: 173px;
   height: auto;
 }
+.hide-mobile {
+  margin: 0;
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 1.4rem;
+  background-color: rgba(207, 210, 207, 0.226);
+  padding: 1rem;
+  color: #292522;
+  // width: 100vw;
+  a {
+    color: #292522;
+    border-bottom: 1px solid #a68f51;
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 0.5rem;
+    width: inherit;
+  }
+}
 .page-header {
-  width: 100vw;
-  height: 100vw;
+  // width: inherit;
+  // height: 100vw;
   margin: 2rem;
 }
 .header {
   display: grid;
-  width: inherit;
+  // width: inherit;
   margin-bottom: 3rem;
   grid-template-columns: repeat(12, 1fr);
   grid-template-areas:
@@ -38,27 +56,33 @@
     grid-area: search;
     position: relative;
     input {
-      border-color: #a9a9a9;
+      border: none;
+      border: solid 1.5px #a9a9a9;
+      // border-color: #a9a9a952;
+      padding-left: 1rem;
       height: 4.5rem;
-      width: 20vw;
+      width: 24vw;
       margin: 0;
       padding-right: 5.6rem;
       font-size: 1.8rem;
+      font-weight: 100;
+      border-radius: 3px;
     }
     label {
       position: absolute;
-      right: 5vw;
+      right: 1.5vw;
       top: 0.1rem;
       font-size: 2.5rem;
-      border-left: solid 1px #000;
+      border-left: solid 1.5px rgba(0, 0, 0, 0.308);
       padding-left: 0.7rem;
-      padding: 0 0.7rem;
+      padding: 0 0.3rem;
+      width: 1.8vw;
       cursor: pointer;
     }
   }
 }
 .nav-sections {
-  width: inherit;
+  // width: inherit;
   margin-top: 3rem;
   font-size: 1.7rem;
   border-top: solid 1px rgba(80, 80, 80, 0.199);
@@ -69,17 +93,20 @@
     justify-content: center;
     // gap: 2rem;
     list-style: none;
-    padding: 1.7rem 0;
+    padding: 0.7rem 0;
   }
   ul li {
     padding: 1rem;
   }
   ul li:hover {
-    background-color: hsla(236, 100%, 84%, 0.425);
+    background-color: rgba(156, 157, 162, 0.2);
   }
   li a {
     text-decoration: none;
     color: #292522;
+  }
+  .tea {
+    color: #a68f51;
   }
 }
 
@@ -87,11 +114,11 @@
   background-image: url(../img/header-background.jpg);
   display: block;
   height: 30rem;
-  width: 100%;
+  // width: 100vw;
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
-  margin: auto;
+  margin: 0;
   h1 {
     font-size: 7rem;
     color: #fff;
