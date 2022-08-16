@@ -73,10 +73,14 @@ a {
 
 .hero-img {
     grid-area: image;
-    height: 220px;
+    height: 220px; 
     background-image: url('img/cakes.jpg');
     background-size: cover;
 
+}
+
+.cakes {
+    width: 100%;
 }
 
 .hero-text {
@@ -94,7 +98,7 @@ a {
  .section-cakes {
      grid-area: cakes;
      display: grid;
-     grid-template-columns: repeat(auto-fit, 162px);
+     grid-template-columns: repeat(auto-fit, 175px);
      gap: 20px;
      justify-content: center;
      padding: 20px;
@@ -103,23 +107,7 @@ a {
 
 .cake {
     height: 125px;
-    background-size: cover;
-}
-
-.cake:nth-child(1) {
-    background-image: url('img/cake1.jpeg');
-}
-
-.cake:nth-child(2) {
-    background-image: url('img/cake2.jpeg');
-}
-
-.cake:nth-child(3) {
-    background-image: url('img/cake3.jpeg');
-}
-
-.cake:nth-child(4) {
-    background-image: url('img/cake4.jpeg');
+    width: 100%;
 }
 
 /*Footer*/
@@ -173,6 +161,11 @@ footer {
 
     .hero-img {
         height: 300px;
+                
+    }
+
+    .cakes {
+        width: 100%;      
     }
 
     .container-social {
@@ -207,6 +200,7 @@ footer {
         ;
         padding: 10px 40px 40px 40px;
     } 
+
 
     .container-social {
         width: 18%;
