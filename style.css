@@ -1,4 +1,4 @@
- /* Add your styling here */
+/* Add your styling here */
 /*
 body {
 background-color: hsl(240, 30%, 92%);
@@ -37,7 +37,7 @@ ul{
 
 }
 */
-    /*li {s
+/*li {s
     list-style: none;
     display: inline-block;
      text-decoration: none; 
@@ -49,115 +49,106 @@ ul{
 p {
     justify-content: flex-end;
 } */
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 .header {
-    display: flex;
-    justify-content: space-between;
-    background-color: lightgrey;
-    padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  background-color: lightgrey;
+  padding: 20px;
 }
 p {
-    font-size: 20px;
+  font-size: 20px;
 }
 
-    
 .nav-bar {
-    background-color: lightgrey;
-    overflow: hidden;
+  background-color: lightgrey;
+  overflow: hidden;
 }
 
-ul{
-    list-style: none;
-    display: flex;
-    justify-content: flex-end; 
-    
-    
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
 }
+
 li {
-    padding: 30px;
+  padding: 30px;
 }
+
 a {
-    background-color: dimgray;
-    color: white;
-    font-size: 1.5rem;
-    text-decoration: none;
-    padding: 5px 10px;
+  background-color: dimgray;
+  color: white;
+  font-size: 1.5rem;
+  text-decoration: none;
+  padding: 5px 10px;
 }
 .left-hand-img {
-    width: 90%;
-    height: 400px;
-    object-fit: cover;
-    object-position: bottom center;
+  width: 90%;
+  height: 400px;
+  object-fit: cover;
+  object-position: bottom center;
 }
 .width {
-    max-width: 1300px;
-    margin: 30px auto 0 auto;
+  max-width: 1300px;
+  margin: 30px auto 0 auto;
 }
 
 .main-page-main {
-    display: grid;
-    grid-template-columns: 48% 48%;
-    justify-content: space-between;
+  display: grid;
+  grid-template-columns: 48% 48%;
+  justify-content: space-between;
 }
 
 .homepage-aside {
-    text-align: right;
-    font-size: 45px;
+  text-align: right;
+  font-size: 45px;
 }
 
 h1 {
-margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 .image-icons {
-    display: grid;
-    grid-template-columns: repeat(4, 23%);
-    justify-content: space-between;
-margin-top: 20px;
-    
+  display: grid;
+  grid-template-columns: repeat(4, 23%);
+  justify-content: space-between;
+  margin-top: 20px;
 }
 .image-icons img {
-    display: block;
-    height: 250px;
-    width: 100%;
-    object-fit: cover;
+  display: block;
+  height: 250px;
+  width: 100%;
+  object-fit: cover;
 }
 footer {
-    padding: 20px;
-    color: black;
-    background-color: #efefef;
-display: flex;
-justify-content: center;
-gap: 25px;
-font-size: 19px;
-margin-bottom: 7px;
+  padding: 20px;
+  color: black;
+  background-color: #efefef;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  font-size: 19px;
+  margin-bottom: 7px;
 }
 .menu {
-    display: none;
-    margin-bottom: 20px;
-    justify-content: flex-end;  
-}  
-@media(max-width: 768px) {
+  display: none;
+  margin-bottom: 20px;
+}
+@media (max-width: 768px) {
 }
 
-.menu {
-    display: block; 
-}
-.menu {
-    justify-content: flex-end;
-
-}
 .menu span {
-    display: block;
-    margin-bottom: 6px;
-    height: 4px;
-    width: 35px;
-    background-color: #ffff;
+  display: block;
+  margin-bottom: 6px;
+  height: 4px;
+  width: 35px;
+  background-color: #ffff;
 }
-.nav-bar {
+/*.nav-bar {
     overflow: hidden;
     display: none;
 }
+*/
