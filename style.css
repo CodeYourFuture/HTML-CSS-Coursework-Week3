@@ -1,1 +1,183 @@
-/*  Add your styling here */
+* {
+  margin: 0px;
+}
+
+body {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "hero"
+    "cakes"
+    "footer";
+}
+
+/*Header*/
+
+.background-header {
+  grid-area: header;
+  height: 200px;
+  background-image: url("img/banner-cake.png");
+  background-size: cover;
+}
+
+header > h1 {
+  padding: 5px 10px 5px 0px;
+  background-color: #163048;
+  font-size: 22px;
+  color: white;
+  font-style: italic;
+  text-align: right;
+}
+
+/*Nav*/
+
+nav {
+  display: none;
+  grid-area: nav;
+  padding: 20px;
+  margin: 30px 40px;
+  background-color: #a5b1b8;
+}
+
+nav > ul {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none; /*Remove bullet point*/
+}
+
+a {
+  text-decoration: none; /*Remove underscore*/
+  padding: 9px 40px;
+  background-color: #163048;
+  font-size: 10px;
+  color: white;
+  margin-left: 20px;
+}
+
+/*Hero*/
+
+.hero {
+  grid-area: hero;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "text"
+    "image";
+}
+
+.hero-img {
+  grid-area: image;
+  height: 220px;
+  background-image: url("img/cakes.jpg");
+  background-size: cover;
+}
+
+.cakes {
+  width: 100%;
+}
+
+.hero-text {
+  grid-area: text;
+  padding: 20px;
+  text-align: left;
+}
+
+.hero-text > p {
+  margin-top: 20px;
+}
+
+/*Cakes*/
+
+.section-cakes {
+  grid-area: cakes;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 175px);
+  padding: 20px;
+  gap: 20px;
+  background-color: #1e3956;
+  justify-content: center;
+}
+
+.cake {
+  height: 125px;
+  width: 100%;
+}
+
+/*Footer*/
+
+footer {
+  grid-area: footer;
+  background-color: #a5b1b8;
+  padding: 20px 0px;
+  text-align: center;
+}
+
+.container-social {
+  display: flex;
+  width: 60%;
+  padding: 10px 0px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.card-social {
+  padding: 10px 12px;
+  border: 1px solid #627282;
+  border-radius: 100%;
+}
+
+.card-social img {
+  width: 20px;
+}
+
+.footer-title {
+  font-size: 25px;
+}
+
+.footer-bottom {
+  margin-top: 10px;
+  font-size: 20px;
+  color: #627282;
+}
+
+@media screen and (min-width: 540px) {
+  .hero-img {
+    height: 300px;
+  }
+
+  .container-social {
+    width: 30%;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  body {
+    grid-template-areas:
+      "header"
+      "nav"
+      "hero"
+      "cakes"
+      "footer";
+  }
+
+  nav {
+    grid-area: nav;
+    display: block;
+  }
+
+  .hero {
+    grid-area: hero;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "image text";
+    padding: 10px 40px 40px 40px;
+  }
+
+  .container-social {
+    width: 18%;
+  }
+
+  .hero-text {
+    text-align: right;
+  }
+}
