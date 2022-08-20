@@ -5,12 +5,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Responsive Cake webpage</title>
-    <!-- Add a link to your css file here -->
+    <title>Responsive Cake Webpage</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Square+Peg&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-    <!-- Add your markup here -->
+    <header>
+        <section class="heading">
+            <img src="assets/images/chocolate-strawberry.png" alt="Cake Shop">
+            <p>Navigation text about how yummy these cakes are</p>
+        </section>
+        <nav>
+            <a href="#" class="expand-nav">...</a>
+            <ul class="responsive-nav">
+                <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#cakes" class="nav-link">Cakes</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#contacts" class="nav-link">Contact</a></li>
+            </ul>
+            <ul class="nav-list">
+                <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#cakes" class="nav-link">Cakes</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#contacts" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="welcome" id="about">
+            <h2>Welcome Header</h2>
+            <p>Fancy stuff about cakes lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae omnis
+                dolor
+                eaque, repellat accusamus, aliquid corporis et quam sunt nam dicta harum ut eligendi, nostrum ab
+                culpa
+                consequatur! Dicta, odit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim hic nam
+                voluptate deserunt, distinctio totam officia et, ipsa consequatur, laudantium maxime dolore commodi.
+                In unde voluptate assumenda dolorum eligendi vel.</p>
+            <img src="assets/images/cake.png" alt="cake" class="cake">
+        </section>
+        <section class="articles" id="cakes">
+            <article>
+                <img src="assets/images/box-o-chocolates.png" alt="Box of chocolates">
+            </article>
+            <article>
+                <img src="assets/images/cupcake.png" alt="Cupcake">
+            </article>
+            <article>
+                <img src="assets/images/hot-chocolate.png" alt="Hot Chocolate">
+            </article>
+            <article>
+                <img src="assets/images/love-cake.png" alt="Love cakes">
+            </article>
+        </section>
+    </main>
+    <footer>
+        <section class="contact" id="contacts">
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-twitter"></i></a>
+        </section>
+        <section class="copyright">
+            <p>&copy; michellejanaycodes @ CodeYourFuture</p>
+        </section>
+    </footer>
 </body>
+
+<script src="script.js"></script>
 
 </html>
