@@ -6,11 +6,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Responsive Cake webpage</title>
-    <!-- Add a link to your css file here -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>
+    /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+        function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
+
+
 </head>
 
 <body>
     <!-- Add your markup here -->
+    <main class="homepage-main">
+        <section class="homepage-hero">
+            <!-- Top Navigation Menu -->
+            <div class="topnav">
+            <a href="#home" class="active"><img class="logo" src="https://www.designhill.com/design-blog/wp-content/uploads/2015/01/Bakery_Logo_1.png"
+                alt="logo" width="100px">
+                <h1>My Bakery For Everyone</h1></a>
+            <!-- Navigation links (hidden by default) -->
+            <div id="myLinks">
+            <a href="#news">News</a>
+            <a href="#contact">Contact</a>
+            <a href="#about">About</a>
+            </div>
+    <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+            </a>
+            </div>
+
+        </section>
+
+
+        <section class="homepage-feature">
+            <figure class="feature_icons">
+                <figcaption><img src="https://static.thenounproject.com/png/1389032-200.png" width="150px" alt="icon-gluten free" />
+                    <br>Gluten free</figcaption>
+                <figcaption><img src="https://static.thenounproject.com/png/3594679-200.png" width="150px" alt="icon-dairy free" />
+                    <br>Dairy free</figcaption>
+                <figcaption><img src="https://static.thenounproject.com/png/1537489-200.png" width="150px" alt="icon-egg free" />
+                    <br>Egg free</figcaption>
+            </figure>        
+        </section>
+
+        
+        <section class="homepage-products">
+            <h2>What will you find here?</h2>
+            <p>Dear Customer!</p>
+            <p> I'm glad you are visiting My Bakery For Everyone. The bakery is aiming to everyone with gluten, dairy, egg intolerance. However, everyone will find something for themselves.</p>
+            <p>If you are intolerant to other ingredients, tell us! I am sure there will be something for you too.</p>
+            <p>The most important <strong>we never use any of the feature ingredients.</strong></p>
+            <p>Thank you for your interest</p>
+        </section>
+        
+        
+        <aside class="homepage-aside">
+            <h3> <strong>UPDATES:</strong></h3>
+            <p class="updates_date"> 23th Aug 2022</p>
+            <p class="updates_info">We introduce a sourdough bread. Only 3 basic ingredients.</p>
+            <p class="updates_date"> 18th Aug 2022</p>
+            <p class="updates_info">Today, we have opened our bakery for everyone! Expecially, for gluten, egg & dairy intolerant.</p>
+        </aside>
+    </main>
+
 </body>
 
 </html>

@@ -1,1 +1,119 @@
 /*  Add your styling here */
+
+:root {
+    --background: #ebfab8;
+    --text: #43222a;
+    --header: #560c95;
+    --menu: #560c95;
+    --shadow: #b8fae8;
+
+}
+body{
+    color: var(--text);
+    font-size: 1.3em;
+    min-width: 375px;
+}
+.homepage-main {
+    border: 1px solid black;
+    
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto auto auto auto;
+    /*  grid-template-areas must follow the exact number of columns and rows defined above (4 columns and 4 rows)  */
+    grid-template-areas:
+      "hero     hero    hero     hero"           /* one for each column */
+      "feature  feature feature  feature"
+      "product  product product  product"
+      "aside    aside   .        .";           /* the dot is used to skip a column */
+  }
+  
+  .homepage-hero {
+    background-color: var(--background);
+    grid-area: hero;
+  }
+  
+  .homepage-feature {
+    background-color: var(--background);
+    grid-area: feature;
+  }
+  
+  .homepage-products {
+    background-color: darkSeaGreen;
+    grid-area: product;
+    padding: 20px;
+    line-height: 1.5em;
+  }
+  
+  .homepage-aside {
+    background-color: darkTurquoise;
+    grid-area: aside;
+    padding: 20px;
+  }
+  
+
+  /* homepage styling */
+
+  /* Style the navigation menu */
+.topnav {
+    overflow: hidden;
+    position: relative;
+  }
+  
+  /* Hide the links inside the navigation menu (except for logo/home) */
+  .topnav #myLinks {
+    display: none;
+  }
+  
+  /* Style navigation menu links */
+  .topnav a {
+    color: var(--menu);
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 2em;
+    display: block;
+  }
+  
+  /* Style the hamburger menu */
+  .topnav a.icon {
+    background: var(--shadow);
+    display: block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+  
+  /* Add a grey background color on mouse-over */
+  .topnav a:hover {
+    background-color: var(--shadow);
+    color: var(--menu);
+  }
+  
+  /* Style the active link (or home/logo) */
+  .active {
+    background-color: var(--background);
+    color: var(--menu);
+  }
+  
+  /* features styling */
+  .feature_icons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: stretch;
+    text-align: center;
+    justify-content: center;
+  }
+
+  /* prduct styling */
+  .homepage-products > p {
+
+  }
+
+  /* aside styling */
+  .updates_date {
+    font-weight: bolder;
+    text-decoration:underline;
+  }
+  .updates_info {
+    font-style: oblique;
+  }
