@@ -9,6 +9,7 @@
 
 }
 body{
+    font-family: 'DynaPuff', cursive, 'Lucida Sans';
     color: var(--text);
     font-size: 1.3em;
     min-width: 375px;
