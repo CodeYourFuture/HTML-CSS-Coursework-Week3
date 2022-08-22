@@ -21,21 +21,37 @@
             }
         }
     /* automatically moves slides*/
-    var slidePosition = 0;
-    SlideShow();
+    var slidePosition = 1;
+SlideShow(slidePosition);
 
-    function SlideShow() {
-    var i;
-    var slides = document.getElementsByClassName("Containers");
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
-    slidePosition++;
-    if (slidePosition > slides.length) {slidePosition = 1}
-    slides[slidePosition-1].style.display = "block";
-    setTimeout(SlideShow, 1000); // Change image every 1 second
-    } 
-    
+// forward/Back controls
+function plusSlides(n) {
+  SlideShow(slidePosition += n);
+}
+
+//  images controls
+function currentSlide(n) {
+  SlideShow(slidePosition = n);
+}
+
+function SlideShow(n) {
+  var i;
+  var slides = document.getElementsByClassName("Containers");
+  var circles = document.getElementsByClassName("dots");
+  if (n > slides.length) {slidePosition = 1}
+  if (n < 1) {slidePosition = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < circles.length; i++) {
+      circles[i].className = circles[i].className.replace(" enable", "");
+  }
+  slides[slidePosition-1].style.display = "block";
+  circles[slidePosition-1].className += " enable";
+} 
+var slidePosition = 0;
+SlideShow();
+  
     </script>
 
 
@@ -48,7 +64,7 @@
             <!-- Top Navigation Menu -->
             <div class="topnav">
             <a href="#home" id="home" class="active"><img class="logo" src="https://www.designhill.com/design-blog/wp-content/uploads/2015/01/Bakery_Logo_1.png"
-                alt="logo" width="100px">
+                alt="logo">
                 <h1>Bakery For Everyone</h1></a>
             <!-- Navigation links (hidden by default) -->
             <div id="myLinks">
@@ -89,22 +105,22 @@
                 <!-- Full images-->
                 <div class="Containers">
                     <div class="messageInfo"> 1 / 4 </div>
-                    <img src="" alt="muffins" width="100%" /> 
+                    <img src="https://preview.redd.it/wa5jgm53t2e81.jpg?width=640&crop=smart&auto=webp&s=08e9c3dbe47d604c23ffd4966f49d4fd9c67a77b" alt="walnut_cake" width="100%" /> 
                     <div class="Info">First Caption</div>
                 </div>
                 <div class="Containers">
                     <div class="messageInfo"> 2 / 4 </div>
-                    <img src="#" alt="muffins" width="100%" /> 
+                    <img src="https://asweetpantry.com/wp-content/uploads/2021/09/Greek-Yogurt-Almond-Streusel-Cake-Thumbnail-500px-500x500.jpg" alt="almond yoghurt cake" width="100%" /> 
                     <div class="Info">Second Caption</div>
                 </div>
                 <div class="Containers">
                     <div class="messageInfo"> 3 / 4 </div>
-                    <img src="#" alt="muffins" width="100%" /> 
+                    <img src="https://www.dummies.com/wp-content/uploads/480642.image0.jpg" alt="lemon brownies" width="100%" /> 
                     <div class="Info">Third Caption</div>
                 </div>
                 <div class="Containers">
                     <div class="messageInfo"> 4 / 4 </div>
-                    <img src="#" alt="muffins" width="100%" /> 
+                    <img src="https://images.unsplash.com/photo-1486428128344-5413e434ad35?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80" alt="cupcakes" width="100%" /> 
                     <div class="Info">Fourth Caption</div>
                 </div>
                 <!--Back and forward buttons-->
