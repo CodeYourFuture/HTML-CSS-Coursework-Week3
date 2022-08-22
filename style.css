@@ -14,9 +14,11 @@ body{
     font-size: 1.3em;
     min-width: 375px;
 }
+
+.logo {
+    width: 100px;
+}
 .homepage-main {
-    border: 1px solid black;
-    
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto auto auto auto;
@@ -100,7 +102,6 @@ body{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    align-content: stretch;
     text-align: center;
     justify-content: center;
   }
@@ -114,7 +115,7 @@ body{
 
         /* Slideshow container */
         .slideshow-container {
-            max-width: 1000px;
+            min-width: 350px;
             position: relative;
             margin: auto;
         }
@@ -253,9 +254,7 @@ body{
   /* MEDIA QUERY min 769px for tablets */
 
   @media (min-width: 769px) {
-    .homepage-main {
-        border: 1px solid black;
-        
+    .homepage-main {    
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: auto auto auto auto;
@@ -266,14 +265,73 @@ body{
           "aside    product product  product"
           "aside    product product  product";           /* the dot is used to skip a column */
       }
+    
+    .homepage-aside > .note {
+       width: 200px;
+      }
+
+    .Back {
+        cursor: pointer;
+        position: relative;
+        right: -2%;
+        top: 250px;
+    
+    }
+
+    .forward {
+        cursor: pointer;
+        position: relative;
+        left: 88%;
+        top: 250px;
+    }
+
     .up, .up1 {
         /* it's moved out of the screen */
         position:absolute;
         left:-5000px;
         top: 0px;
     }
-    .homepage-aside > .note {
-       width: 200px;
-      }
+    .gallery {
+        padding-top: 20px;
+    }
   }
 
+
+  /* MEDIA QUERY min 995px for screens */
+
+@media (min-width: 995px) {
+    .logo {
+        min-width: 300px;
+    }
+    .homepage-main {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto auto auto auto;
+        /*  grid-template-areas must follow the exact number of columns and rows defined above (4 columns and 4 rows)  */
+        grid-template-areas:
+          "hero     hero    hero     hero"           /* one for each column */
+          "feature  feature feature  feature"
+          "product  product product  aside"
+          "product  product product  aside";           /* the dot is used to skip a column */
+      }
+ 
+    .feature_icons {
+        justify-content:space-evenly;
+    }
+    .homepage-feature, .homepage-products {
+        padding-left: 150px;
+        padding-right: 150px;
+    }
+    h1 {
+        padding-left: 140px;
+    }
+ 
+    .homepage-aside > .note {
+       min-width: 400px;
+      }
+    .fade {
+       max-width: 900px;
+    }
+   
+
+  }
