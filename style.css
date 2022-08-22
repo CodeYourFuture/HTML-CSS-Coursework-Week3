@@ -218,7 +218,7 @@ body{
   /* aside styling */
 
   .note {
-    min-width: 300px;
+    width: 300px;
     min-height: 100px;
     background-color: var(--shadow);
     border-radius: 10px 10px 0 0;
@@ -248,5 +248,32 @@ body{
   a {
     text-decoration: none;
     color: var(--text);
+  }
+
+  /* MEDIA QUERY min 769px for tablets */
+
+  @media (min-width: 769px) {
+    .homepage-main {
+        border: 1px solid black;
+        
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto auto auto auto;
+        /*  grid-template-areas must follow the exact number of columns and rows defined above (4 columns and 4 rows)  */
+        grid-template-areas:
+          "hero     hero    hero     hero"           /* one for each column */
+          "feature  feature feature  feature"
+          "aside    product product  product"
+          "aside    product product  product";           /* the dot is used to skip a column */
+      }
+    .up, .up1 {
+        /* it's moved out of the screen */
+        position:absolute;
+        left:-5000px;
+        top: 0px;
+    }
+    .homepage-aside > .note {
+       width: 200px;
+      }
   }
 
