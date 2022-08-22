@@ -19,6 +19,22 @@
                 x.style.display = "block";
             }
         }
+    /* automatically moves slides*/
+    var slidePosition = 0;
+    SlideShow();
+
+    function SlideShow() {
+    var i;
+    var slides = document.getElementsByClassName("Containers");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slidePosition++;
+    if (slidePosition > slides.length) {slidePosition = 1}
+    slides[slidePosition-1].style.display = "block";
+    setTimeout(SlideShow, 1000); // Change image every 1 second
+    } 
+    
     </script>
 
 
@@ -30,7 +46,7 @@
         <section class="homepage-hero">
             <!-- Top Navigation Menu -->
             <div class="topnav">
-            <a href="#home" class="active"><img class="logo" src="https://www.designhill.com/design-blog/wp-content/uploads/2015/01/Bakery_Logo_1.png"
+            <a href="#home" id="home" class="active"><img class="logo" src="https://www.designhill.com/design-blog/wp-content/uploads/2015/01/Bakery_Logo_1.png"
                 alt="logo" width="100px">
                 <h1>My Bakery For Everyone</h1></a>
             <!-- Navigation links (hidden by default) -->
@@ -67,15 +83,58 @@
             <p>If you are intolerant to other ingredients, tell us! I am sure there will be something for you too.</p>
             <p>The most important <strong>we never use any of the feature ingredients.</strong></p>
             <p>Thank you for your interest</p>
+            <h2 class="gallery"> Gallery</h2>
+            <div class="slide-gallery fade">
+                <!-- Full images-->
+                <div class="Containers">
+                    <div class="messageInfo"> 1 / 4 </div>
+                    <img src="" alt="muffins" width="100%" /> 
+                    <div class="Info">First Caption</div>
+                </div>
+                <div class="Containers">
+                    <div class="messageInfo"> 2 / 4 </div>
+                    <img src="#" alt="muffins" width="100%" /> 
+                    <div class="Info">Second Caption</div>
+                </div>
+                <div class="Containers">
+                    <div class="messageInfo"> 3 / 4 </div>
+                    <img src="#" alt="muffins" width="100%" /> 
+                    <div class="Info">Third Caption</div>
+                </div>
+                <div class="Containers">
+                    <div class="messageInfo"> 4 / 4 </div>
+                    <img src="#" alt="muffins" width="100%" /> 
+                    <div class="Info">Fourth Caption</div>
+                </div>
+                <!--Back and forward buttons-->
+                <a class="Back" onclick="plusSlides(-1)">&#10094;</a> <!--An arrow-->
+                <a class="forward" onclick="plusSlides(1)">&#10095;</a> <!--An arrow-->
+                <br>
+                <!-- The circles/dots -->
+                <div style="text-align:center">
+                    <span class="dots" onclick="currentSlide(1)"></span>
+                    <span class="dots" onclick="currentSlide(2)"></span>
+                    <span class="dots" onclick="currentSlide(3)"></span>
+                    <span class="dots" onclick="currentSlide(4)"></span>
+                </div> 
+            </div>
+
+
+
         </section>
         
         
         <aside class="homepage-aside">
             <h3> <strong>UPDATES:</strong></h3>
-            <p class="updates_date"> 23th Aug 2022</p>
-            <p class="updates_info">We introduce a sourdough bread. Only 3 basic ingredients.</p>
-            <p class="updates_date"> 18th Aug 2022</p>
-            <p class="updates_info">Today, we have opened our bakery for everyone! Expecially, for gluten, egg & dairy intolerant.</p>
+            <div class="note">
+                <p class="updates_date"> 23th Aug 2022</p>
+                <p class="updates_info">We introduce a sourdough bread. Only 3 basic ingredients.</p>
+            </div>
+            <div class="note">
+                <p class="updates_date"> 18th Aug 2022</p>
+                <p class="updates_info">Today, we have opened our bakery for everyone! Expecially, for gluten, egg & dairy intolerant.</p>
+            </div>
+            <div class="up"><a href="#home"><span class="up1">&#8683;</span><br>Go up to the top</a></div>
         </aside>
     </main>
 
