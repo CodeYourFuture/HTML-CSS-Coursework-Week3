@@ -1,1 +1,291 @@
 /*  Add your styling here */
+
+:root {
+    --background: #ebfab8;
+    --text: #43222a;
+    --header: #560c95;
+    --menu: #560c95;
+    --shadow: #b8fae8;
+
+}
+body{
+    font-family: 'DynaPuff', cursive, 'Lucida Sans';
+    color: var(--text);
+    font-size: 1.3em;
+    min-width: 375px;
+}
+
+.logo {
+    width: 100px;
+    padding-left: 10px;
+}
+.homepage-main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto auto auto auto;
+    /*  grid-template-areas must follow the exact number of columns and rows defined above (4 columns and 4 rows)  */
+    grid-template-areas:
+      "hero     hero    hero     hero"           /* one for each column */
+      "feature  feature feature  feature"
+      "product  product product  product"
+      "aside    aside   aside    aside";           /* the dot is used to skip a column */
+  }
+  
+  .homepage-hero {
+    background-color: var(--background);
+    grid-area: hero;
+  }
+  
+  .homepage-feature {
+    background-color: var(--background);
+    grid-area: feature;
+  }
+  
+  .homepage-products {
+    background-color: var(--background);
+    grid-area: product;
+    padding: 20px;
+    line-height: 1.5em;
+  }
+  
+  .homepage-aside {
+    background-color:var(--background);
+    grid-area: aside;
+    padding: 20px;
+  }
+  
+
+  /* homepage styling */
+
+  /* Style the navigation menu */
+.topnav {
+    overflow: hidden;
+    position: relative;
+  }
+  
+  /* Hide the links inside the navigation menu (except for logo/home) */
+  .topnav #myLinks {
+    display: none;
+  }
+  
+  /* Style navigation menu links */
+  .topnav a {
+    color: var(--menu);
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 2em;
+    display: block;
+  }
+  
+  /* Style the hamburger menu */
+  .topnav a.icon {
+    background: var(--shadow);
+    display: block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+  
+  /* Add a grey background color on mouse-over */
+  .topnav a:hover {
+    background-color: var(--shadow);
+    color: var(--menu);
+  }
+  
+  /* Style the active link (or home/logo) */
+  .active {
+    background-color: var(--background);
+    color: var(--menu);
+  }
+  
+  /* features styling */
+  .feature_icons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+  }
+
+  /* prduct styling */
+  .homepage-products p {
+    text-align: justify;
+  }
+
+  * {box-sizing:border-box}
+
+        /* Slideshow container */
+        .slideshow-container {
+            min-width: 350px;
+            position: relative;
+            margin: auto;
+        }
+        /* Make the images invisible by default */
+        .Containers {
+            display: none;
+            padding: 20px;
+        }
+
+        .containers_background {
+            min-width: 300px;
+            background-color: var(--shadow);
+        }
+
+                /* Caption Info */
+        .Info {
+            color: var(--text);
+            padding: 10px 14px;
+            text-align: center;
+        }
+        
+        /* Worknumbering (1/3 etc) */
+        .messageInfo {
+            color: var(--text);
+            padding: 10px 14px;
+            text-align: center;
+        }
+        
+        /* The circles or bullets and indicators */
+        .dots {
+            cursor: pointer;
+            height: 16px;
+            width: 16px;
+            margin: 0 3px;
+            margin-bottom: 20px;
+            background-color: #acc;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.5s ease;
+        }
+        
+        .enable, .dots:hover {
+            background-color: #717161;
+        }
+        
+        /* Faint animation */
+        .fade {
+            -webkit-animation-name: fade;
+            -webkit-animation-duration: 1.4s;
+            animation-name: fade;
+            animation-duration: 1.4s;
+            min-width: 300px;
+            min-height: 500px;
+            background-color: var(--shadow);
+            border-radius: 10px 10px 0 0;
+        }
+        
+        @-webkit-keyframes fade {
+            from {opacity: .5}
+            to {opacity: 2}
+        }
+        
+        @keyframes fade {
+            from {opacity: .5}
+            to {opacity: 2}
+        }
+
+
+  /* aside styling */
+
+  .note {
+    width: 300px;
+    min-height: 100px;
+    background-color: var(--shadow);
+    border-radius: 10px 10px 0 0;
+    padding: 20px;
+    margin-bottom: 30px;
+  }
+
+  .updates_date {
+    font-weight: bolder;
+    text-decoration:underline;
+
+  }
+  .updates_info {
+    font-style: oblique;
+  }
+
+  .up {
+    text-decoration: none;
+    text-align: right;
+    font-size: small;
+  }
+  .up .up1 {
+    padding-right: 30px;
+    font-size: 4em;
+  }
+
+  a {
+    text-decoration: none;
+    color: var(--text);
+  }
+
+  /* MEDIA QUERY min 769px for tablets */
+
+  @media (min-width: 769px) {
+    .homepage-main {    
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto auto auto auto;
+        /*  grid-template-areas must follow the exact number of columns and rows defined above (4 columns and 4 rows)  */
+        grid-template-areas:
+          "hero     hero    hero     hero"           /* one for each column */
+          "feature  feature feature  feature"
+          "aside    product product  product"
+          "aside    product product  product";           /* the dot is used to skip a column */
+      }
+    
+    .homepage-aside > .note {
+       width: 200px;
+      }
+
+    .up, .up1 {
+        /* it's moved out of the screen */
+        position:absolute;
+        left:-5000px;
+        top: 0px;
+    }
+    .gallery {
+        padding-top: 20px;
+    }
+  }
+
+
+  /* MEDIA QUERY min 995px for screens */
+
+@media (min-width: 995px) {
+    .logo {
+        min-width: 300px;
+    }
+    .homepage-main {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto auto auto auto;
+        /*  grid-template-areas must follow the exact number of columns and rows defined above (4 columns and 4 rows)  */
+        grid-template-areas:
+          "hero     hero    hero     hero"           /* one for each column */
+          "feature  feature feature  feature"
+          "product  product product  aside"
+          "product  product product  aside";           /* the dot is used to skip a column */
+      }
+ 
+    .feature_icons {
+        justify-content:space-evenly;
+    }
+    .homepage-feature, .homepage-products {
+        padding-left: 150px;
+        padding-right: 150px;
+    }
+    h1 {
+        padding-left: 140px;
+    }
+ 
+    .homepage-aside > .note {
+       min-width: 400px;
+      }
+    .fade {
+       max-width: 900px;
+    }
+   
+
+  }
