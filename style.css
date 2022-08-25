@@ -1,1 +1,135 @@
 /*  Add your styling here */
+
+/* General*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+ font-family: Arial, Helvetica, sans-serif;
+ background-color: bisque;
+}
+
+/* header */
+.header-container {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  margin-bottom: auto;
+  justify-items: left;
+  image-resolution: 15%;
+}
+
+.header-container img {
+  width: 50vw;
+  padding: 20px;
+  position: absolute;
+}
+@media screen and (min-width: 600px) {
+  .header-container img {
+    width: 300px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .header-container img {
+    width: 350px;
+  }
+}
+@media screen and (min-width: 2000px) {
+  .header-container img {
+    width: 400px;
+  }
+}
+
+.toggle-title {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  align-items: flex-end;
+  width: 100vw;
+}
+
+.toggle-title h1 {
+  font-size: 15px;
+  text-align: right;
+  width: 138px;
+  margin: 43px 0;
+  color: #3C372C;
+}
+@media screen and (min-width: 540px) {
+  .toggle-title h1 {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 800px) {
+  .toggle-title h1 {
+    font-size: 20px;
+    width: 400px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .toggle-title h1 {
+    font-size: 30px;
+    width: 600px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .toggle-title h1 {
+    font-size: 50px;
+    width: 1000px;
+  }
+}
+
+.toggle-title ul {
+  margin-left: auto;
+  margin: auto;
+  width: 90vw;
+  padding-top: 20px;
+}
+
+.toggle-title li {
+  list-style: none;
+  line-height: 70px;
+  border-bottom: 4px line #f29191;
+}
+
+.toggle-title a {
+  text-decoration: none;
+  padding: 10px;
+  color: #fff;
+}
+/*Nav bar*/
+.nav-link {
+  background-color: #809eff5e;
+  box-shadow: 4px 5px #FFCCAA;
+  border-radius: 20px;
+}
+
+.nav-link:hover {
+  background-color: #91f2dd;
+}
+
+/* turns toggle on and off */
+input[type=checkbox] {
+  display: none;
+}
+
+ul {
+  display: none;
+}
+
+input[type=checkbox]:checked ~ ul {
+  display: block;
+}
+@media screen and (min-width: 540px) {
+  label {
+    display: none;
+  }
+}
+@media screen and (min-width: 540px) {
+  .toggle-title ul {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
