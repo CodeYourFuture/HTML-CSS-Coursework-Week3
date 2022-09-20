@@ -1,191 +1,212 @@
-
 body {
-    font-size: 16px;
+    display: grid;
+    grid-area: ham;
+    padding-top: 10px;
+    margin-left: 15px;
+    height: 20px;
+}
+header > p:nth-child(3) {
+    display: grid;
+    grid-area: par;
+    text-align: end;
+    margin-top: -25px;
+    padding-right: 22px;
+    font-size: 1.1rem;
   }
-  
-  /*  Header */
-  
-  .header-container {
-    display: flex;
+  header > p:nth-child(4) {
+    display: grid;
+    grid-area: par1;
+    text-align: end;
+    margin-top: -10px;
+    padding-right: 15px;
+    padding-right: 22px;
+    font-size: 1.1rem;
   }
-  
-  .cake-logo {
-    /* height: auto; */
-    width: 40%;
+  .logo-img{
+      width:5rem;
+      height: 7rem;
   }
-  
-  .second-header-container {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+  nav{
+    grid-position: end;
   }
-  
-  nav {
-    display: none;
+  /* welcome section's styles */
+  .wlc > p:nth-child(1) {
+    font-size: 3.5rem;
+    margin: 0;
+    padding-left: 0px;
   }
-  
-  .slogan {
-    width: 70%;
-  }
-  
-  .hamburger-icon {
-    width: 30%;
-  }
-  
-  /*  Main */
-  main {
-    background-color: burlywood;
-  }
-  .first-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .first-container img {
-    width: 90%;
-  }
-  
-  /*  Images */
-  
-  /*  1st section */
-  
-  /*  Images section */
-  
-  .images-container {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
-    padding: 1rem;
-  }
-  
-  .images-container img {
-    width: 45%;
-  }
-  
-  /*  Footer */
-  
-  footer {
-    display: flex;
-    justify-content:center;
-    background: #da6736;
-    padding: 1.5rem;
+  .wlc > p:nth-child(2) {
+    padding-left: 0px;
     width: 100%;
+    text-align: justify;
+    margin-bottom: 30px;
   }
-
-  .social-item {
-    font-weight: 700;
-    font-size:0.9rem;
-    cursor:pointer;
+  /* intro section style */
+  .intro {
+    display: grid;
+    grid-area: intro;
   }
-
-  .socials {
-    display: inline-block;
-    flex-direction: row;
-    width: 40rem;
+  .wlc {
+    margin-top: 40px;
   }
-  
-  /* media queries */
-  
+  .big-img {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  /* products style */
+  .cake1-img img {
+    width: 100%;
+    object-fit: cover;
+    height: 170px;
+  }
+  .cake2-img img {
+    width: 100%;
+    object-fit: cover;
+    height: 170px;
+  }
+  .cake3-img img {
+    width: 100%;
+    object-fit: cover;
+    height: 170px;
+  }
+  .cake4-img img {
+    width: 100%;
+    object-fit: cover;
+    height: 170px;
+  }
+  .big-img img {
+    width: 100%;
+    object-fit: cover;
+    height: 280px;
+  }
+  .cake1-img {
+    grid-area: cake1-img;
+}
+.cake2-img {
+  grid-area: cake2-img;
+}
+.cake3-img {
+  grid-area: cake3-img;
+}
+.cake4-img {
+  grid-area: cake4-img;
+}
+/* Footer */
+footer {
+  grid-area: footer;
+  padding: 10px 5px 0px 10px;
+  background-color: rgb(247, 247, 247);
+  margin: 0 95px 10px 15px;
+}
+.social-media {
+  background-color: rgb(190, 190, 190);
+  border-radius: 3%;
+  margin: 4px;
+  display: flex;
+  text-decoration: none;
+  color: white;
+  line-height: 20px;
+  width: 200px;
+  padding: 0;
+}
+.social-media img {
+    height: 20px;
+    padding: 6px 17px 2px 13px;
+  }
+  .contact-us {
+    padding-top: 6px;
+    margin: 0;
+  }
+  .footer-p {
+    color: rgb(156, 154, 154);
+    margin-top: 1rem;
+    text-align: center;
+  }
+  /* media query */
   @media screen and (min-width: 540px) {
-    header p {
-      width: 190%;
-    }
-    nav {
+    .navbar {
       display: flex;
-      /* margin-left: 0; */
-      justify-content: flex-end;
-      flex-wrap: wrap;
-      margin: 1.5em;
-      background: #da6736;
     }
-    .hamburger-icon {
+    .hamburger-menu {
       display: none;
     }
-  
-    p {
-      text-align: justify;
+    .content {
+      grid-template-areas:
+        "header"
+        "nav"
+        "intro"
+        "products"
+        "footer";
     }
-  
-    ul {
-      display: flex;
-      padding-top: 1em;
-      justify-content: space-evenly;
-      list-style: none;
-      width: 60%;
+    nav {
+      display: grid;
+      grid-area: nav;
     }
-  }
-  
-  @media screen and (min-width: 900px) {
-    p {
-      text-align: justify;
+    .into {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-row: auto;
+      margin-bottom: 20px;
     }
-  
-    h1 {
-      text-align: left;
+    .big-img {
+      display: grid;
+      grid-column: 1/2;
+      order: 1;
     }
-  
-    header p {
-      padding-top: 1em;
+    .big-img img {
+      width: 165%;
+      height: 300px;
+    }
+    .wlc {
+      display: grid;
+      grid-column: 2/3;
+      order: 2;
+      margin-left: 25px;
+      padding-left: 170px;
+    }
+    .wlc > p:nth-child(1) {
       text-align: right;
-      font-size: 2rem;
-      color: #da6736;
     }
-    footer {
-      background: #da6736;
-    }
-  
-    ul {
-      display: flex;
-      padding-top: 1em;
-      justify-content: flex-end;
-    }
-  
-    li {
-      margin-right: 10%;
-      background-color: #f5efeb;
-      padding: 1em;
-      list-style: none;
-    }
-  
-    a {
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 1.3em;
-      color: black;
-    }
-  
-    .images-container img {
-      width: 22%;
-      margin-top: 1.1em;
-    }
-  
-    .socials {
+    .footer-content {
       display: flex;
       flex-direction: row;
+      justify-content: center;
     }
-  
-    .first-container {
-      display: flex;
-      flex-direction: row-reverse;
-      margin-bottom: 1em;
-      justify-content: space-between;
+    .social-media img {
+      height: 20px;
+      padding: 8px 17px 0px 20px;
     }
-  
-    .intro-container {
-      padding: 1em;
-    }
-  
-    .slogan {
-      width: 70%;
-    }
-  
-    .first-container img {
-      width: 50%;
-      padding: 1rem;
-    }
-  
-    .cake-logo {
-      width: 20%;
-    }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: 180px;
+      grid-template-areas:
+      "cake1-img cake2-img cake3-img cake3-img"
+      "cake1-img cake2-img cake4-img cake4-img";
+    gap: 10px;
+  }
+  .cake1-img img {
+    height: 360px;
+  }
+  .cake2-img img {
+    height: 360px;
+  }
+  .cake3-img img {
+    height: 180px;
+  }
+}
+@media screen and (min-width: 900px) {
+  .products {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 180px;
+    grid-template-areas: "cake1-img cake2-img cake3-img cake4-img";
+    gap: 10px;
+  }
+  .cake1-img img,
+  .cake2-img img,
+  .cake3-img img,
+  .cake4-img img {
+    height: 200px;
+  }
 }
