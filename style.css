@@ -1,59 +1,77 @@
 /*  Add your styling here */
-:root {
-    --yellow: #ffc600;
-    --black: #000000;
-    --gray: #DADEDF;
-    --darkgray:#7F7F7F;
-}
-html {
-    /* border-box: add border and padding without increasing box-size */
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-    color: var(--black);
-}
 
-/* inherit box-sizing from html */
-*,
-*:before,
-*:after {
-box-sizing: inherit;
-margin: 0;
-padding: 0;
+body, html {
+    height: 100vh;
 }
 
 body {
-    background-color: var(rgb(173, 207, 210));
+    margin: 0;
+    display:grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat (auto, 5);
+    grid-template-areas:
+        "header"
+        "main"
+        "gallery"
+        "footer";
+      
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    margin: 0 0 5px 0;
+header {
+    grid-area: header;
+    background-color: #91c8ff;
 }
 
-p {
-    font-size: 15px;
-    margin: 5px;
+.main {
+    grid-area: main;
+    background-color: #5e86af;
 }
 
-.container {
+.cakeGallery {
+    grid-area: gallery;
+    background-color: #6d9fd2;
     display: grid;
-    grid-template-columns: 50% 2fr 1fr 3fr;
-    grid-template-rows: 150px 250px 100px;
-    grid-column-gap: 20px;
-    grid-row-gap: 40px;
+    grid-template-columns: 50% 50%;
 }
 
-.item {
-    border: 5px solid var (--black);
-
+footer {
+    grid-area: footer;
+    background-color: #7da9d5;
 }
 
-@media screen and (min-width: 320px) {
+header img {
+    width: 100px;
+    height: auto;
+
+}
+.main img {
+    width: 80vw;
+    height: auto;
+
+}
+.cakeGallery img {
+    width: 50vw;
+    height:50vh;
+}    
+
+/* @media only screen and (min-width: 768px){
+
     body {
-        background: lightgrey
-    }
-}
+            margin: 0;
+            display: grid;
+            grid-template-columns: auto 27% 27% 27%;
+            grid-template-rows: 8% 30% auto 10%;
+            grid-template-areas:
+                "sidebar header header header"
+                "sidebar sect1 sect2 sect 3"
+                "sidebar main main main"
+                "sidebar footer footer footer";
+    
+        }
+} */
+
+
+
+
+
+
