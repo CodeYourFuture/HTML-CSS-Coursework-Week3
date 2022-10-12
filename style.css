@@ -20,8 +20,9 @@ header {
   "header-image mobile-nav"
   "header-image header-title";
   padding: 1rem;
-  background: linear-gradient(200deg, rgba(225, 137, 183, 1) 40%, rgba(208, 71, 86, 1) 100%);
-  background: linear-gradient(45deg, rgba(159, 202, 201, 1) 40%, rgba(208, 71, 162, 1) 100%);
+  background-image: 
+    linear-gradient(45deg, rgba(159, 202, 201, 0.5) 40%, rgba(208, 71, 162, 0.75) 100%),
+    url("images/background01.png");
   border: 0.15rem solid hsl(345, 58%, 78%);
 }
 
@@ -73,6 +74,7 @@ main {
   border-right: 0.15rem solid hsl(253, 41%, 72%);
   border-bottom: 0.15rem solid hsl(253, 41%, 72%);
   border-left: 0.15rem solid hsl(253, 41%, 72%);
+  background-image: url("images/background02.png");
 }
 
 #section-one {
@@ -82,7 +84,7 @@ main {
   grid-template-columns: auto;
   grid-template-rows: auto;
   row-gap: 1rem;
-  background-color: hsla(0, 0%, 100%, 0.5);
+  background-color: hsla(0, 0%, 100%, 0.65);
   border: 0.15rem solid hsla(333, 59%, 69%, 0.5);
 }
 
@@ -102,7 +104,7 @@ main {
 
 #section-two {
   grid-area: section-two;
-  background: linear-gradient(330deg, rgba(159, 202, 201, 1) 40%, rgba(208, 71, 162, 1) 100%);
+  background: linear-gradient(330deg, hsl(179, 29%, 71%) 40%, hsl(320, 59%, 55%) 100%);
   border: 0.15rem solid hsl(264, 45%, 68%);
 }
 
@@ -141,7 +143,9 @@ footer {
   border-right: 0.15rem solid hsl(253, 41%, 72%);
   border-bottom: 0.15rem solid hsl(253, 41%, 72%);
   border-left: 0.15rem solid hsl(253, 41%, 72%);
-  background: linear-gradient(340deg, rgba(130, 134, 182, 1) 0%, rgba(145, 217, 214, 1) 60%);
+  background-image:
+   url("images/background01.png"),
+   linear-gradient(340deg, hsla(235, 26%, 61%, 0.75) 0%, hsla(178, 49%, 71%, 0.75) 60%);
 }
 
 #footer-list {
@@ -192,6 +196,7 @@ footer {
     border-left: 0.15rem solid hsl(253, 41%, 72%);
     border-right: 0.15rem solid hsl(253, 41%, 72%);
     background-color: hsl(316, 100%, 96%);
+    background-image: url("images/background02.png");
   }
 
   #nav-desktop-list {
