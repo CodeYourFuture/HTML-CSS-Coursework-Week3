@@ -222,3 +222,23 @@ footer {
     .end p {
         font-size: x-large;
     }
+
+@media only screen and (min-width: 540px) {
+    .social {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
+        margin: 10px 10px;
+    }
+
+    .social a {
+        text-align: center;
+    }
+
+    .end {
+        margin: 20px 80px
+    }
+
+    .welcome h1 {
+        text-align: center;
+    }
+}
