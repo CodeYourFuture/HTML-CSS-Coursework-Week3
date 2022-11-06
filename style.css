@@ -21,11 +21,32 @@ header {
     flex-direction: row-reverse;
     justify-content: center;
     background-color: pink;
+    background-size: cover;
     width: auto;
-    height: 50%;
     padding: 1rem;
 }
 
 .hero_img {
-    width: 300px;
+    width: 200px;
+    max-height: 400px;
+    display: flex;
+    justify-content: center;
+}
+
+.hero_text {
+    text-align: right;
+    width: 50%
+}
+
+/* Welcome Intro */
+
+.welcome {
+    margin: 2rem 0 2rem 0;
+    padding: 1rem;
+}
+
+/* Grid Cotainer */
+
+.grid_container {
+    display: grid;
 }
