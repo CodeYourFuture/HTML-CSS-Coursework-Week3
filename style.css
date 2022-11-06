@@ -1,8 +1,152 @@
 /*  Add your styling here */
-/*This applies from 0px to 600px */
-body {
-  background: pink;
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"); /* import font */
+
+:root{
+    /* CSS HEX */
+--glossy-grape: #a393bfff;
+--mandarin: #ef7b45ff;
+--black-olive: #42443eff;
+--artichoke: #929982ff;
+--bitter-lime: #baff29ff;
+--red-salsa: #ed474aff;
+--eggplant: #493843ff;
+--misty-rose: #e5d0ccff;
+--pear: #cfd11aff;
+--key-lime: #e6f8b2ff;
+--white:#ffffff;
+
 }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*This applies from 0px to 540px */
+body {
+    background-color: var(--key-lime);
+    font-family: 'Poppins', sans-serif;
+  
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+.header{
+    background-color: var(--mandarin);
+    width: 100%;
+    position: sticky;
+    top: 0;
+    box-shadow: 1px 1px 5px 0px var(--red-salsa);
+}
+.logo{
+    display: inline-block;
+    
+    margin-left: 10px;
+}
+
+.logo img{
+    display: block;
+    margin: 4px 10px;
+    padding: 0;
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    box-shadow: 0px 6px 5px var(--bitter-lime);
+} 
+.nav{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: var(--eggplant);   
+    overflow: hidden;
+
+}
+.menu a{
+    display: block;
+    padding: 30px;
+    color: var(--white);
+}
+.menu a:hover{
+    background-color: var(--pear);
+}
+
+.nav{
+    max-height: 0;
+    transition: max-height .5s ease-out;
+}
+
+/*styling hamburger icon*/
+.hamburger{
+    cursor: pointer;
+    float: right;
+    padding: 40px 20px;
+}
+
+.hamburger-line{
+    background: var(--bitter-lime);
+    display: block;
+    height: 2px;
+    position: relative;
+    width: 24px;
+}
+
+
+.hamburger-line::after{
+    background: var(--bitter-lime);
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+.hamburger-line::before{
+    background: var(--bitter-lime);
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+
+.hamburger-line::before{
+    top: 5px;
+}
+.hamburger-line::after{
+    top:-5px;
+}
+.side-menu{
+    display: none;
+}
+
+.side-menu:checked ~ nav{
+    max-height: 100%;
+}
+.side-menu:checked ~ .hamburger .hamburger-line {
+    background: transparent;
+}
+.side-menu:checked ~ .hamburger .hamburger-line::before {
+    transform: rotate(-45deg);
+    top:0;
+}
+.side-menu:checked ~ .hamburger .hamburger-line::after {
+    transform: rotate(45deg);
+    top:0;
+}
+
+
+
+
+
+
+
+
+
+
 
 /* This applies from 540px onwards */
 @media (min-width: 540px) {
