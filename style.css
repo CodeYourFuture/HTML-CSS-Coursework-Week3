@@ -1,1 +1,38 @@
 /*  Add your styling here */
+body {
+  max-width: 414px;
+  font-family: "Roboto", sans-serif;
+  margin: 1em;
+}
+
+header {
+  font-family: "Poppins", sans-serif;
+  padding: 1.2em;
+}
+
+.hidden-menu {
+  display: none;
+}
+
+.image {
+  border: 1px solid pink;
+  width: 100px;
+  height: 100px;
+}
+
+.image-menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.name {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.name h1 {
+  text-transform: uppercase;
+  margin-bottom: 0;
+  font-weight: bold;
+}
