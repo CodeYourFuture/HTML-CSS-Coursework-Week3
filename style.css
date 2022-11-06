@@ -1,1 +1,19 @@
 /*  Add your styling here */
+/*This applies from 0px to 600px */
+body {
+  background: pink;
+}
+
+/* This applies from 540px onwards */
+@media (min-width: 540px) {
+  body {
+    background: blue;
+  }
+}
+
+/* this applies from 900px onwards */
+@media (min-width: 900px){
+    body {
+        background: violet;
+    }
+}
