@@ -40,6 +40,22 @@ ul{
     position: sticky;
     top: 0;
     box-shadow: 1px 1px 5px 0px var(--red-salsa);
+    display: grid;
+    grid-template-areas: 
+    'one one three three'
+    'one one two two'
+    'one one two two'
+    ;
+}
+.logo-nav{
+    grid-area: one;
+}
+.text-nav{
+    grid-area: two;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+.ham-nav{
+    grid-area: three;
 }
 .logo{
     display: inline-block;
@@ -57,11 +73,11 @@ ul{
     box-shadow: 0px 6px 5px var(--bitter-lime);
 } 
 .nav{
-    width: 100%;
+    width:100%;
     height: 100%;
-    position: fixed;
+    position:sticky;
     background-color: var(--eggplant);   
-    overflow: hidden;
+    overflow:hidden;
 
 }
 .menu a{
@@ -120,7 +136,8 @@ ul{
     top:-5px;
 }
 .side-menu{
-    display: none;
+    display:none;
+    float: right;
 }
 
 .side-menu:checked ~ nav{
@@ -145,19 +162,50 @@ ul{
 
 
 
+/*
 
 
-
-/* This applies from 540px onwards */
+/* This applies from 540px onwards 
 @media (min-width: 540px) {
   body {
-    background: blue;
+    background: var(--misty-rose);
   }
+
 }
 
-/* this applies from 900px onwards */
+/* this applies from 900px onwards 
 @media (min-width: 900px){
     body {
-        background: violet;
+        background: var(--key-lime);
+    }
+    .nav{
+        max-height: none;
+        top: 0;
+        position: relative;
+        float: center;
+        width: 100%;
+        margin:10px;
+    }
+    .menu li{
+        float: left;
+    }
+    .menu a:hover{
+        background-color: transparent;
+        color: var(--mandarin);
+
+    }
+
+    .hamburger{
+        display: none;
+    }
+    .logo >img{
+        width: 40%;
+        height: 30vh;
+        border-radius: 50%;
+    }
+    .header{
+        display: flex;
+        flex-direction: column;
+        
     }
 }
