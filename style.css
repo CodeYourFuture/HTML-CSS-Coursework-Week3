@@ -1,1 +1,31 @@
-/*  Add your styling here */
+body {
+    display: grid;
+    width: auto;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    padding: 10px;
+}
+
+.menu_icon {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+/* Hero */
+
+.hero {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    background-color: pink;
+    width: auto;
+    height: 50%;
+    padding: 1rem;
+}
+
+.hero_img {
+    width: 300px;
+}
