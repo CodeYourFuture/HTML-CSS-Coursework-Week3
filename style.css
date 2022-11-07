@@ -1,1 +1,100 @@
+:root{ --primary:#be95c4;
+    --dark: #5e548e;
+     --ligth:#be95c4;
+     shadow:#0077b6;
+    }
+
+    .header {
+        grid-area: hd;
+    }
+    .footer {
+        grid-area: ft;
+    }
+    .content {
+        grid-area: mai;
+    }
+    .sidebar {
+        grid-area: sd;
+    }
+    wrapper {
+        display: grid;
+        grid-template-columns: repeat(9, 1fr); <= this is giving you 9 columns which are of equal width
+        grid-auto-rows: minmax(100px, auto); <= this is giving the rows a minimum height of 100px and a maximum height that just scales to whatever is in it
+        grid-template-areas:
+          "hd hd hd hd   hd   hd   hd   hd   hd"
+          "sd sd sd main main main main main main"
+          "ft ft ft ft   ft   ft   ft   ft   ft";
+    }
+    .link{
+        display:flex;
+    
+        padding: 2rem 2rem;
+        margin: 2rem 2rem;
+        display: flex;
+  justify-content: space-between;
+  list-style: none;
+
+    }
+
+
+
+
+    html{
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+        color: var(--dark);
+      }
+
+      body{
+        background-color: #ffffff;
+        margin: 2em;
+        line-height: 1.5;
+        font-family: 'Secular One', sans-serif;
+      }
+      .footer{
+        margin-right: 200px;
+        margin-left: 200px;
+      
+        display: grid;
+        text-decoration: none;
+        text-align: center;
+        color: var(--ligth);
+        font-size: 1.2rem;
+        box-shadow: var(--shadow);
+        background-color: #feeafa;
+        margin: 2em;
+      padding: 1em;
+      }
+
+      .footer h1{
+        color: var(--dark);
+        padding-top: 1em;
+        justify-content: center;
+        padding-bottom: 0.5em;
+      }
+      
+      .footer P{
+        padding: 2em;
+        justify-content: center;
+        color: var(--dark);
+        padding-top: 0.5em;
+        cursor: pointer;
+      }
+      
+      
+      .footer{
+        grid-template-areas: "footer";
+        margin: 1px;;
+      }
 /*  Add your styling here */
+@media screen and (min-width: 320px) {
+    body {
+        background: lightgrey
+    }
+    
+    
+@media screen and (max-width: 540px) {
+    body {
+        background: #0077b6;
+    }
+}
