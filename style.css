@@ -207,11 +207,100 @@ footer p {
     text-align: center;
 }
 
-@media only screen and (max-width:900) {
+@media only screen and (min-width: 541px), (max-width:900) {
     .nav-menu {
         display: flex;
         justify-content: center;
         align-items: center;
         gap: 10px;
      }
+
+     .logo-wrapper {
+        width: 36%;
+        height: auto;
+        padding: 1.5em;
+     }
+    
+     .logo-img {
+        width: 300px;
+        height: 300px;
+     }
+
+    .bar {
+        display: none;
+    }
+
+    .company-name {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1.5em;
+    }
+
+    .name {
+        font-size: 2em;
+        padding-right: 0;
+        margin: 0;
+    }
+
+    .header-phrase {
+        margin: 0;
+        padding-bottom: 2em;
+    }
+
+    .nav-menu {
+        background-color: #383257;
+        
+     }
+
+    .span-ul {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        padding-right: 40px;
+        gap: 20px;
+        
+    }
+
+    .span-nav {
+        font-size: 1em;
+        text-decoration: underline;
+        color: rgb(37, 35, 35);
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+    h1 {
+        margin-top: .5em;
+    }
+
+    .img-container {
+        grid-gap: 2em;
+        margin-top: 2em;
+    }
+    .img-1 {
+        grid-area: a;
+        width: 400px;
+        height: 300px;
+    }
+    
+    .img-2 {
+        grid-area: b;
+        width: 400px;
+        height: 300px;
+    }
+    
+    .img-3 {
+        grid-area: c;
+        width: 400px;
+        height: 300px;
+    }
+    
+    .img-4 {
+        grid-area: d;
+        width: 400px;
+        height: 300px;
+    }
+    
 }
