@@ -6,10 +6,11 @@ header {
     display: flex;
     flex-direction: row;
     background-color: rgb(96, 96, 128);
+    height: 400px;
+    border: 2px solid purple;
 }
 
 .logo-wrapper {
-    /* width: 50%; */
     height: auto;
     padding: 2em 1.5em 1.5em 1.5em;
     flex: 1;
@@ -142,7 +143,7 @@ h1 {
 }
 
 .hero:nth-child(2) {
-    font-size: 1.3em;
+    font-size: 1.2em;
 }
 
 .img-container {
@@ -210,24 +211,31 @@ footer p {
     text-align: center;
 }
 
-@media only screen and (min-width: 541px), (max-width:900) {
+@media only screen and (min-width: 540px), (max-width:900) {
+    header {
+        margin: 0;
+        padding: 0;
+        height: 227px;
+    }
+
+    .logo-img {
+        width: 250px;
+        height: 227px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .logo-wrapper {
+        padding: 0;
+        margin: 0;
+    }
+
     .nav-menu {
         display: flex;
         justify-content: center;
         align-items: center;
         gap: .625rem;
-     }
-
-     .logo-wrapper {
-        width: 36%;
-        height: auto;
-        padding: 1.5em;
-     }
-    
-     .logo-img {
-        width: 300px;
-        height: 300px;
-     }
+    }
 
     .bar {
         display: none;
@@ -238,40 +246,48 @@ footer p {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-top: 1.5em;
+        color: white;
+        padding: 0 5em 1em 0;
+        margin: 0;
     }
 
     .name {
         font-size: 2em;
-        padding-right: 0;
         margin: 0;
+        padding-top: 1em;
+        order: 1;
     }
 
-    .header-phrase {
+    .phrase {
         margin: 0;
         padding-bottom: 2em;
+        order: 3;
     }
-
-    .nav-menu {
-        background-color: #383257;
-        
-     }
 
     .span-ul {
         list-style: none;
         display: flex;
         flex-direction: row;
-        padding-right: 40px;
-        gap: 20px;
-        
+        padding: 20px;
+        order: 1;
+        background-color: #89a4c4;
+        border-radius: 10px;
+        justify-content: center;
+    }
+
+    .nav-wrapper {
+        margin:0 0 0 0;
+        padding: 0 0 0 0;
+        width: 100%;
     }
 
     .span-nav {
-        font-size: 1em;
-        text-decoration: underline;
-        color: rgb(37, 35, 35);
+        font-size: 1.1em;
+        color: white;
         text-transform: uppercase;
         font-weight: bold;
+        text-decoration: none;
+        padding-right: 20px;
     }
 
     h1 {
