@@ -4,6 +4,8 @@
     --yellow-light: #fdffcd;
     --orange-light: #ffebbb;
     --red-light: #ffcab0;
+    --blue-light:#83cee0;
+    --purple:#5f5dbd;
     --white: #fff;
     --black: #000;
 }
@@ -19,7 +21,8 @@ body {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 1fr);
     grid-column-gap: 0px;
-    grid-row-gap: 10px;
+    grid-row-gap: 0px;
+    background-color: var(--green-light);
 }
 /* header */
 header {
@@ -31,6 +34,8 @@ header {
     grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
+    height: 200px;
+    margin-bottom: 0;
 }
 
 .logo {
@@ -100,8 +105,51 @@ header p {
 /* main */
 main {
     grid-area: 2 / 1 / 3 / 2;
+    /* main grid */
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    background-color: var(--orange-light);
+    margin-top: -240px;
+}
+.container {
+    grid-area: 1 / 1 / 2 / 2;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.main-pic {
+    grid-area: 2 / 1 / 3 / 2;
+    background-image: url(/images/pexels-lina-kivaka-5732158.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 10px;
+}
+
+
+.collage {
+    grid-area: 3 / 1 / 4 / 2;
+    /* collage grid */
+    display: grid;
+    grid-template-columns: repeat(2, 100px);
+    grid-template-rows: repeat(2, 100px);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    margin: 10px auto;
+}
+
+.collage img {
+    width: 100px;
+    height: 100px;
 }
 
 footer {
     grid-area: 3 / 1 / 4 / 2;
+    background-color: var(--yellow-light);
 }
