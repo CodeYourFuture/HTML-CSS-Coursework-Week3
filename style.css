@@ -125,7 +125,7 @@ main {
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     background-color: var(--orange-light);
-    
+    height: fit-content;
 }
 .container {
     grid-area: 1 / 1 / 2 / 2;
@@ -164,7 +164,7 @@ main {
     grid-column-gap: 10px;
     grid-row-gap: 10px;
     margin: 10px;
-    height: fit-content;
+    
     
 }
 
