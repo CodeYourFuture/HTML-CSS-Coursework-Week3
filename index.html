@@ -5,12 +5,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./style.css">
     <title>Responsive Cake webpage</title>
     <!-- Add a link to your css file here -->
 </head>
 
 <body>
     <!-- Add your markup here -->
+    <header>
+        <div class="logo-wrapper">
+            <img class="logo-img" src="https://images.pexels.com/photos/913136/pexels-photo-913136.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Image of decorated cupcake">
+        </div>
+        <nav class="nav-bar">
+            <ul class="nav-menu">
+                <li class="nav-head" class="nav-item"><a class="nav-link" href="#">Shop</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Our Story</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Gifts</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+            </ul>
+            <div class="nav-wrapper">
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <div class="company-name">
+                    <p class="name">Lee Bakes Cakes</p>
+                    <p class="header-phrase">The best cakes in town delivered to your door</p>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="hero">
+        <h1>Welcome</h1>
+        <p>Lees Cakes are baked with love and decorated with all organic ingredients and delivered to your door. Have a browse through our website or feel free to visit one of our Bakeries where our courteous staff will be happy to help.</p>
+        <div class="main-img-wrapper">
+            <img alt="Round cake with edible fruit decorations" class="main-img" src="https://images.pexels.com/photos/1027811/pexels-photo-1027811.jpeg?auto=compress&cs=tinysrgb&w=600">
+        </div>
+    </section>
+    <div class="img-container">
+        <img alt="" class="img-1" src="https://images.pexels.com/photos/10733586/pexels-photo-10733586.jpeg?auto=compress&cs=tinysrgb&w=600">
+        <img alt="" class="img-2" src="https://images.pexels.com/photos/3592423/pexels-photo-3592423.jpeg?auto=compress&cs=tinysrgb&w=600">
+        <img alt="" class="img-3" src="https://images.pexels.com/photos/1359294/pexels-photo-1359294.jpeg?auto=compress&cs=tinysrgb&w=600">
+        <img alt="" class="img-4" src="https://images.pexels.com/photos/2323206/pexels-photo-2323206.jpeg?auto=compress&cs=tinysrgb&w=600">
+    </div>
+    <footer>
+        <div class="footer-img-container">
+            <img class="footer-img1" alt="" src="https://cdn.pixabay.com/photo/2017/06/22/06/22/facebook-2429746__340.png">
+            <img class="footer-img2" alt="" src="https://cdn.pixabay.com/photo/2016/08/09/17/52/instagram-1581266__340.jpg">
+            <img class="footer-img1" alt="" src="https://cdn.pixabay.com/photo/2017/06/22/14/23/twitter-2430933__340.png">
+        </div>
+        <p>@Copyright all rights reserved</p>
+    </footer>
 </body>
+
+<script>
+    const hamburger = document.querySelector(".hamburger");
+    const navMenu = document.querySelector(".nav-menu");
+
+    hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+    })
+
+    document.querySelectorAll ("nav-item").forEach(n => n. 
+    addEventListener("click",() => {
+
+    }))
+</script>
 
 </html>
