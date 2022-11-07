@@ -1,15 +1,16 @@
 .homepage-main {
     border: 1px solid black;
-    
+    column-gap: 10px;
+    row-gap: 10px;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 170px 140px 100px 80px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 150px 150px 150px 150px 150px;
     /*  grid-template-areas must follow the exact number of columns and rows defined above (4 columns and 4 rows)  */
     grid-template-areas:
-      "hero     hero    hero     hero"           /* one for each column */
-      "feature  feature feature  feature"
-      "product  product product  product"
-      "aside    aside   .        .";           /* the dot is used to skip a column */
+      "hero     hero"           /* one for each column */
+      "feature  feature"
+      "product  product"
+      "footer    footer";           /* the dot is used to skip a column */
   }
   
   .homepage-hero {
@@ -25,11 +26,55 @@
   .homepage-products {
     background-color: darkSeaGreen;
     grid-area: product;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(2, 0.5fr);
+    grid-template-rows: 50px 50px;
+    grid-template-areas:
+      "product-item1     product-item2"           /* one for each column */
+      "product-item3     product-item4"
+; 
+  }
+
+  .grid-item1 {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    grid-area: product-item1;
+  }
+
+  .grid-item2 {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    grid-area: product-item2;
+  }
+
+  .grid-item3 {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    grid-area: product-item3;
+  }
+
+  .grid-item4 {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    grid-area: product-item4;
   }
   
-  .homepage-aside {
+  .homepage-footer {
     background-color: darkTurquoise;
-    grid-area: aside;
+    grid-area: footer;
   }
   
   /* 
@@ -52,8 +97,8 @@
       /*  our template now has 6 columns and 3 rows  */
       grid-template-areas:
         "hero    hero    hero    hero  hero     hero"
-        "feature feature feature .     aside    aside"
-        "product product product .     aside    aside";
+        "feature feature feature .     footer    footer"
+        "product product product .     footer   footer";
     }
     
   /* 
@@ -75,8 +120,8 @@
     /*   All we're doing here is skipping the 1st and last columns so the content isn't too wide.   */
       grid-template-areas:
         ".  hero    hero    hero  hero     ."
-        ".  feature feature .     aside    ."
-        ".  product product .     aside    .";
+        ".  feature feature .     footer    ."
+        ".  product product .     footer    .";
     }
     
   } /* end of desktop media query  */
@@ -106,7 +151,7 @@
     display: none;
   }
   
-  @media screen and (min-width: 550px) {
+  @media screen and (min-width: 540px) {
     .mobile, desktop {
       display: none;
     }
@@ -114,7 +159,7 @@
       display: block;
     }
   }
-  @media screen and (min-width: 750px) {
+  @media screen and (min-width: 900px) {
     .mobile, .tablet {
       display: none;
     }
