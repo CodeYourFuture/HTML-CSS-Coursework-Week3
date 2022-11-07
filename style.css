@@ -46,3 +46,31 @@ span {
   font-weight: bold;
   color: #3300cc;
 }
+
+.name p,
+article h2 {
+  margin-bottom: 0;
+}
+
+article {
+  text-align: justify;
+  padding: 0.8em;
+}
+
+article h2 {
+  text-align: center;
+}
+
+article p {
+  line-height: 1.2em;
+}
+
+.image-sweets img {
+  width: 100%;
+  max-width: 414px;
+  object-fit: contain;
+}
+
+.image-sweets {
+  margin-bottom: 0.8em;
+}
