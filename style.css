@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Montserrat&display=swap');
 /*  Add your styling here */
 :root {
     --green-light: #e0ffcd;
@@ -21,8 +22,10 @@ body {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 1fr);
     grid-column-gap: 0px;
-    grid-row-gap: 0px;
+    grid-row-gap: 20px;
     background-color: var(--green-light);
+    height: 100vh;
+    font-family: 'Montserrat', sans-serif;
 }
 /* header */
 header {
@@ -46,6 +49,14 @@ header {
     width: 200px;
     height: 200px;
 }
+
+header p {
+    display: flex;
+    justify-content: center;
+    font-family: 'Cookie',sans-serif;
+    font-size: 20px;
+    margin: 10px;
+}
 /* header navigation */
 nav {
     grid-area: 1 / 2 / 2 / 3;
@@ -62,6 +73,7 @@ header ul li {
     margin: 10px;
 }
 
+/* main */
 .menu {
     border: 1px solid var(--green-light);
     padding: 1rem;
@@ -112,16 +124,24 @@ main {
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     background-color: var(--orange-light);
-    margin-top: -240px;
+    
 }
 .container {
     grid-area: 1 / 1 / 2 / 2;
-    padding: 1rem;
+    padding: 2rem;
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
+.container h1 {
+    font-size: 42px;
+    font-family: 'Cookie',sans-serif;
+}
+
+.container p {
+    font-size: 30px;
+}
 
 .main-pic {
     grid-area: 2 / 1 / 3 / 2;
@@ -137,16 +157,17 @@ main {
     grid-area: 3 / 1 / 4 / 2;
     /* collage grid */
     display: grid;
-    grid-template-columns: repeat(2, 100px);
-    grid-template-rows: repeat(2, 100px);
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: auto;
     grid-column-gap: 10px;
     grid-row-gap: 10px;
-    margin: 10px auto;
+    margin: 10px;
 }
 
 .collage img {
-    width: 100px;
-    height: 100px;
+    display: block;
+    width: 100%;
+    height: 100%;
 }
 
 /* footer */
@@ -159,6 +180,7 @@ footer {
     grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
+    height: fit-content;
 }
 
 .footer-links {
@@ -177,7 +199,7 @@ footer {
 .footer-links ul li a {
     color: var(--blue-light);
     text-decoration: none;
-    font-size: 30px;
+    font-size: 20px;
 }
 
 .footer-links ul li a i {
@@ -188,6 +210,11 @@ footer {
     grid-area: 2 / 1 / 3 / 3;
     display: flex;
     justify-content: center;
-    align-content: center;
+    align-items: center;
+}
+
+.footer-text p a {
+    color: var(--purple);
+    text-decoration: none;
 }
 
