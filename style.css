@@ -48,5 +48,8 @@ header {
 /* Grid Cotainer */
 
 .grid_container {
+    width: 384px;
     display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
 }
