@@ -1,16 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Responsive Cake webpage</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!-- Add a link to your css file here -->
-</head>
+  </head>
 
-<body>
-    <!-- Add your markup here -->
-</body>
+  <body>
+    <header>
+      <nav class="mobile-nav">
+        <label for="menu"><i class="fa-solid fa-bars"></i></label>
+        <input type="checkbox" id="menu" />
+        <ul>
+          <li>home</li>
+          <li>cakes</li>
+          <li>orderin</li>
+          <li>lessons</li>
+          <li>about</li>
+        </ul>
+      </nav>
 
+      <div class="titleBox">
+        <h1>The best cakes in town delivered to your door</h1>
+      </div>
+    </header>
+    <nav class="desktop-nav">
+      <div>
+        <ul>
+          <li>home</li>
+          <li>cakes</li>
+          <li>orderin</li>
+          <li>lessons</li>
+          <li>about</li>
+        </ul>
+      </div>
+    </nav>
+    <main>
+      <section class="welcome">
+        <div>
+          <h1>Welcome</h1>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque
+            corporis amet nostrum assumenda harum placeat deleniti aliquid
+            dignissimos quae porro quis repudiandae maiores, sit qui sed magnam
+            incidunt officia maxime ducimus dolore unde minima! Ipsum, eius.
+            Quis sint enim quia?
+          </p>
+        </div>
+      </section>
+      <section class="largePic">
+        <img src="./assets/main.jpg" alt="main" />
+      </section>
+      <section class="pics">
+        <img src="./assets/1.jpg" alt="1" />
+        <img src="./assets/2.jpg" alt="2" />
+        <img src="./assets/3.jpg" alt="3" />
+        <img src="./assets/4.jpg" alt="4" />
+      </section>
+    </main>
+    <footer>
+      <p>Lorem ipsum dolor sit.</p>
+      <p>Lorem ipsum dolor sit.</p>
+      <p>Lorem ipsum dolor sit.</p>
+      <p class="susan">Coding by Susan</p>
+    </footer>
+  </body>
 </html>
