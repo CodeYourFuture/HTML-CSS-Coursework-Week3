@@ -1,37 +1,64 @@
 /*  Add your styling here */
 body {
-  max-width: 414px;
+  min-width: 414px;
   font-family: "Roboto", sans-serif;
-  margin: 1em;
+  margin: 0;
 }
 
 header {
   font-family: "Poppins", sans-serif;
   padding: 1.2em;
-  background-color: #c8b6ff;
-  border-radius: 8%;
+  /* background-color: #c8b6ff; */
+  border-radius: 20px;
+  margin: 1.5em 1.5em 0 1.5em;
+  background-image: url("brooke-lark-pGM4sjt_BdQ-unsplash.jpg");
+  background-size: contain;
 }
 
 span {
   color: #3300cc;
   font-size: 2em;
+  opacity: 1;
 }
 
 .hidden-menu {
   display: none;
 }
 
-.image {
+.menu-container button {
+  border: none;
+}
+
+.menu-container button:hover {
+  border: 2px solid #edffb6;
+}
+
+/* .image {
   border: 5px solid #edffb6;
   width: 7em;
   height: 7em;
   object-fit: cover;
   border-radius: 20%;
-}
+} */
 
 .image-menu {
-  display: flex;
-  justify-content: space-between;
+  /* display: flex;
+  justify-content: space-between; */
+  text-align: end;
+}
+
+@media screen and (min-width: 900px) {
+  .banner {
+    width: 100%;
+    border-radius: 20px;
+    margin: 1.5em;
+  }
+  .hidden-menu {
+    display: flex;
+  }
+  .menu-container button {
+    display: none;
+  }
 }
 
 .name {
@@ -45,25 +72,34 @@ span {
   margin-bottom: 0;
   font-weight: bold;
   color: #3300cc;
+  margin-top: 0.3em;
 }
 
-.name p,
+.name p {
+  margin-bottom: 0;
+  margin-top: 2em;
+}
+
 article h2 {
   margin-bottom: 0;
+  margin-top: 0.5em;
 }
 
 article {
   text-align: justify;
-  padding: 0.8em;
+  padding: 0.5em;
+  margin: 0 2.5em 0 2.5em;
 }
 
 article h2 {
-  text-align: center;
+  text-align: left;
 }
 
 article p {
   line-height: 1.2em;
 }
+
+/*STYLING FOR CAKE PICTURES*/
 
 .image-sweets img {
   width: 100%;
@@ -72,5 +108,89 @@ article p {
 }
 
 .image-sweets {
-  margin-bottom: 0.8em;
+  margin-bottom: 0.9em;
+  margin-top: 0.9em;
+}
+
+.cake-pics {
+  border-top: 2px solid #c8b6ff;
+  border-bottom: 2px solid #c8b6ff;
+  margin: 1em 1.5em 1.5em 1.5em;
+}
+
+@media screen and (min-width: 900px) {
+  .cake-pics {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+  }
+}
+
+/*STYLING FOR FOOTER*/
+
+footer {
+  text-align: left;
+  background-color: #c8b6ff;
+  border-radius: 6%;
+  padding: 1.2em;
+  margin-top: 0.9em;
+  margin: 1.5em;
+}
+
+@media screen and (min-width: 900px) {
+  .end {
+    border-radius: 20px;
+    margin: 2em;
+    text-align: center;
+  }
+
+  .contact-icon,
+  .name-icon {
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.contact-icon {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 0.7em;
+}
+
+.contact-icon span {
+  padding: 0.3em;
+}
+
+.contact-icon p {
+  padding: 0.5em;
+  margin-top: 0;
+  margin-bottom: 0.3em;
+}
+
+.name-icon {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 0.6em;
+  margin-left: 0.5em;
+}
+
+.name-icon a {
+  margin-top: 0;
+  margin-bottom: 0.3em;
+  margin-left: 0.5em;
+}
+
+.smicon {
+  width: 0.7em;
+  border: 1px solid #edffb6;
+  padding: 0.3em;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+#copyright {
+  color: #3d00f5;
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: "Poppins", sans-serif;
 }

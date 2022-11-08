@@ -19,31 +19,34 @@
     />
   </head>
 
-  <body>
+  <body class="main-section">
     <!-- Add your markup here -->
     <header class="banner">
       <div class="image-menu">
-        <img
+        <!-- <img
           class="image"
           src="luisana-zerpa-MJPr6nOdppw-unsplash.jpg"
           alt="Red velvet cupcake with cream cheese frosting and sprinkles on red velvet cake on frosting"
-        />
-        <span class="material-symbols-outlined">menu</span>
+        /> -->
+        <div class="menu-container">
+            <button><span class="material-symbols-outlined">menu</span></button>
+            <nav class="hidden-menu">
+            <a href=".general">Home</a>
+            <a href=".cake-pics">Pastries</a>
+            <a href="">Order In</a>
+            <a href="">Lessons</a>
+            <a href="">About</a>
+            </nav>
+        </div>
       </div>
-      <nav class="hidden-menu">
-        <a href="">Home</a>
-        <a href="">Pastries</a>
-        <a href="">Order In</a>
-        <a href="">Lessons</a>
-        <a href="">About</a>
-      </nav>
+     
       <div class="name">
         <h1>Sweet Obsessions</h1>
         <p class="slogan">The best pastries delivered to your door.</p>
       </div>
     </header>
 
-    <article>
+    <article class="general">
       <h2>Welcome</h2>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores amet
@@ -52,33 +55,47 @@
       </p>
     </article>
 
-    <section class="image-sweets">
-      <img src="brooke-lark-pGM4sjt_BdQ-unsplash.jpg" alt="" />
-    </section>
-    <section class="image-sweets">
-      <img src="daniel-klein-RE2xiNk3KFY-unsplash.jpg" alt="" />
-    </section>
-    <section class="image-sweets">
-      <img src="katie-rosario-QNyRp21hb5I-unsplash.jpg" alt="" />
-    </section>
-    <section class="image-sweets">
-      <img src="slashio-photography-GKcoau1ESxg-unsplash.jpg" alt="" />
-    </section>
+    <div class="cake-pics">
+        <!-- <section class="image-sweets">
+        <img src="brooke-lark-pGM4sjt_BdQ-unsplash.jpg" alt="" /> 
+        </section>-->
+        <section class="image-sweets">
+        <img src="daniel-klein-RE2xiNk3KFY-unsplash.jpg" alt="" />
+        </section>
+        <section class="image-sweets"><img src="olivia-oliver-design-8lDEn_W-WAA-unsplash.jpg" alt=""></section>
+        <section class="image-sweets"><img src="luisana-zerpa-MJPr6nOdppw-unsplash.jpg" alt=""></section>
+        <section class="image-sweets"><img src="deva-williamson-m4A2KWBU7xI-unsplash.jpg" alt=""></section>
+        <section class="image-sweets">
+        <img src="katie-rosario-QNyRp21hb5I-unsplash.jpg" alt="" />
+        </section>
+        <section class="image-sweets">
+        <img src="slashio-photography-GKcoau1ESxg-unsplash.jpg" alt="" />
+        </section>
+    </div>
 
-    <footer>
-      <p>Contact Us: Andriana Saffo, 075 xxxx xxxx</p>
-      <p>Follow us on 
-        <div>
-            <a href="">Instagram</a>
+    <footer class="end">
+        <h2>Contact</h2>
+        <div class="contact-icon">
+            <span class="material-symbols-outlined">call</span>
+            <p>075 xxxx xxxx</p>
+        </div>
+
+        <div class="contact-icon">
+            <span class="material-symbols-outlined">mail</span>
+            <p>info@sweetobsessions.com</p>
+        </div>
+
+        <div class="name-icon">
             <img src="img/instagram-icon.svg" alt="instagram logo" class="smicon" />
+            <a href="instagram.com">Instagram</a>
         </div>
-        <div>
-            <a href="">Facebook</a>
+        <div class="name-icon">
             <img src="img/facebook-icon.svg" alt="facebook logo" class="smicon" />
+            <a href="facebook.com">Facebook</a>
         </div>
-         <div>
-            <a href="">Twitter</a>
+         <div class="name-icon">
             <img src="img/twitter-icon.svg" alt="twitter logo" class="smicon" />
+            <a href="">Twitter</a>
         </div>
     </p>
     <p id="copyright">&copy; Sweet Obsessions, Inc.</p>
