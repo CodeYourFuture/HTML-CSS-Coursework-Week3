@@ -73,7 +73,7 @@ header ul li {
     margin: 10px;
 }
 
-/* main */
+/* menu */
 .navigation { display: none;}
 .menu {
     border: 1px solid var(--green-light);
