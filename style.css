@@ -103,7 +103,6 @@ article p {
 
 .image-sweets img {
   width: 100%;
-  max-width: 414px;
   object-fit: contain;
 }
 
