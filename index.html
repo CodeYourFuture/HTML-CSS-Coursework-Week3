@@ -6,11 +6,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Responsive Cake webpage</title>
-    <!-- Add a link to your css file here -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <!-- Add your markup here -->
-</body>
+   <div class="container">
+      <div class="navbar">
+           <img src="images/logo.png" class="logo">
+           <p>The best cakes in town delivered to your door</p>
+            <nav>
+               <ul id="menuList">
+                 <li><a href="">Home</a></li>
+                 <li><a href="">Cakes</a></li>
+                 <li><a href="">Order In</a></li>
+                 <li><a href="">Lessons</a></li>
+                 <li><a href="">About</a></li>
+              </ul>
+            </nav>
+            <img src="images/menu1.png" class="menu-icon" onclick="togglemenu()">
+      </div>
+       
+      <div class="row">
+          <div class="col-1">
+            
+            <img src="images/3tier.jpg" class="controller">
+            <div class="color-box"></div>
+          </div>
 
+          <div class="col-2">
+            <h2>PS4 V2<br>Dualshock 4</h2>
+             <h3>Wireless Controller for Play station 4</h3>
+             <p>Compatible /Generic</p>
+             <h4>32.50</h4>  
+
+            
+          </div>
+      </div>
+      <div class="social-links">
+        <img src="images/fb.png">
+        <img src="images/tw.png">
+        <img src="images/ig.png">
+      </div>
+      
+    </div>  
+    <script>
+        var menuList=document.getElementById("menuList");
+        menuList.style.maxHeight="0px";   
+
+        function togglemenu(){
+            if(menuList.style.maxHeight=="0px")
+            {
+                menuList.style.maxHeight="130px";
+            }
+            else
+            {
+                menuList.style.maxHeight="0px";
+
+            }
+        }
+    </script>
+</body>
 </html>
