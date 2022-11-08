@@ -1,1 +1,68 @@
 /*  Add your styling here */
+body{ 
+    margin: 0;
+    border: 0;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 0 0;
+    padding: 0;    
+}
+
+* {
+    box-sizing: border-box;
+}
+ul{ list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+/*header style*/
+header{
+    background-color: rgb(240, 235, 245);
+    display: flex;
+    justify-content: space-between;   
+}
+/*logo style*/
+img{
+    width: 20%;
+    height: 50%;
+    margin: 10px 0 10px 10px;
+}
+/*menu style*/
+.hamburger-menu {
+    height: 30px;
+    width: 30px;
+    display: flex;
+    flex-direction: column;    
+    justify-content: space-between;
+   
+}
+.hamburger-menu span {
+    height: 20%;    
+    background-color: gray;
+    border-radius: 2px;
+}
+/*intro style*/
+header span{
+    font-size: large;
+}
+  
+.intro{
+    text-align: center;
+}
+/*nav-p style*/
+.nav-p{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin: 5px 5px 10px 10px;
+  }
+  
