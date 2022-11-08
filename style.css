@@ -10,13 +10,35 @@ happy selected on coolors website
   }
 
   /* font-style */
-  /* body {
+  body {
     font-family: 'Open Sans', serif;
     font-size: 28px;
-  } */ 
+  }
 
   .header {
     background:#e17ad3;
     width: auto;
-    height: 6rem;
+    height: 10rem;
+    display: flex;
   }
+
+  img {
+    height: 7.5rem;
+  }
+
+  img.hamburger { 
+    height: 1.5rem;
+    padding-right: 1.5rem;
+    align-items: flex-start;
+    padding-top: 1rem;
+  }
+
+  p.header-p {
+    margin: 6rem 0.5rem 0 0.5rem;
+    font-size: large;
+    font-weight: 100
+    ;
+  }
+
+  
+
