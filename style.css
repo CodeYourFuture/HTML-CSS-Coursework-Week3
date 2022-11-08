@@ -1,8 +1,12 @@
+body {
+  box-sizing: border-box;
+}
+
 .homepage-main {
     column-gap: 10px;
     row-gap: 10px;
     display: grid;
-    grid-template-rows: 200px 200px 200px 400px 100px;
+    grid-template-rows: auto auto auto auto auto;
     /*  grid-template-areas must follow the exact number of columns and rows defined above (4 columns and 4 rows)  */
     grid-template-areas:
       "hero"  
@@ -36,7 +40,7 @@
   font-style: italic;
   font-size: 1.5rem;
   padding-right: 10px;
-  padding-bottom: 40px;
+  padding-bottom: 10px;
   }
 
   .homepage-welcome {
@@ -50,7 +54,7 @@
   }
 
   .homepage-feature img {
-    width:100%;
+    width: 100%;
     object-fit: cover;
   }
   
@@ -90,8 +94,9 @@
   }
   
   .homepage-footer {
-    background-color:bisque;
+    background-color:rgb(194, 229, 241);
     grid-area: footer;
+    padding-left: 15px;
   }
   .oleh {
     text-align: center;
