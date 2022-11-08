@@ -24,6 +24,7 @@ happy selected on coolors website
 
   img {
     height: 7.5rem;
+    padding-top: 1rem;
   }
 
   img.hamburger { 
@@ -34,11 +35,40 @@ happy selected on coolors website
   }
 
   p.header-p {
-    margin: 6rem 0.5rem 0 0.5rem;
-    font-size: large;
-    font-weight: 100
-    ;
+    margin: 7.5rem -1rem 0 0.5rem;
+    font-size: small;
+    font-weight: 100;
+    font-style: italic;
   }
 
-  
+  section {
+    background: #e1f4e3;
+    padding: 2rem;
+  }
 
+  section p {
+    font-size: small;
+  }
+
+  .welcome h4 {
+    margin-top: 1.5rem;
+  }
+
+  img.welcome-image {
+
+    width: 100%;
+    height: fit-content;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 auto;
+    gap: 2rem;
+  }
+
+  section div.grid-item {
+    margin: 0;
+    padding: 0;
+  }
+ 
