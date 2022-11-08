@@ -83,6 +83,7 @@ header ul li {
     background-color: var(--orange-light);
     opacity: .9;
     top: -800px;
+    right: 70px;
     transition: all 0.3s ease-in-out;
     border-radius: 5px;
 }
