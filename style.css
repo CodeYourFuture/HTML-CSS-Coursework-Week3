@@ -3,19 +3,47 @@
     column-gap: 10px;
     row-gap: 10px;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 150px 150px 150px 150px 150px;
+    grid-template-rows: 200px 150px 150px 150px 150px;
     /*  grid-template-areas must follow the exact number of columns and rows defined above (4 columns and 4 rows)  */
     grid-template-areas:
-      "hero     hero"           /* one for each column */
-      "feature  feature"
-      "product  product"
-      "footer    footer";           /* the dot is used to skip a column */
+      "hero"  
+      "welcome"         /* one for each column */
+      "feature"
+      "product"
+      "footer";           /* the dot is used to skip a column */
   }
   
   .homepage-hero {
     background-color: coral;
     grid-area: hero;
+    display: grid;
+    background-size: cover;
+    background-image: url(/HTML-CSS-Coursework-Week3/assets/hero.jpeg);
+  }
+  .one-one {
+  justify-self: end;
+  padding: 15px;
+  }
+
+  .one-one div {
+  width: 35px;
+  height: 5px;
+  background-color: black;
+  margin: 6px 0;
+  }
+
+  .one-two {
+  justify-self: end;
+  align-self: flex-end;
+  font-style: italic;
+  font-size: 1.5rem;
+  padding-right: 10px;
+  padding-bottom: 40px;
+  }
+
+  .homepage-welcome {
+    background-color:blueviolet;
+    grid-area: welcome;
   }
   
   .homepage-feature {
