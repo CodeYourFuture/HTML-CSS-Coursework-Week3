@@ -1,6 +1,76 @@
 /*  Add your styling here */
-.button
-{
-    width: ;
-    height: ;
+/* lego cake */
+
+:root {--pink:#f5c1ee;
+    --gray:#948e93;
+}
+
+*{margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+
+ 
+header {
+    display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: repeat(2, 1fr);
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+width: 100%;
+height: 100%;
+}
+.logo {
+    grid-area: 1 / 1 / 3 / 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+ .logo img {
+
+    width: 100px;
+    height: 100px;
+}
+
+.hamberger {
+    grid-area: 1 / 2 / 2 / 3;
+    display: flex;
+    justify-content: flex-end;
+    margin: 1rem;
+
+}
+.header-text {
+    grid-area: 2 / 2 / 3 / 3;
+    padding: 1rem;
+}
+/* main */
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 10px;
+    background-color: var(--gray);
+}
+.main-text {
+    grid-area: 1 / 1 / 2 / 2; 
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 1rem;
+    margin: 10px;
+}
+.main-pic {
+    grid-area: 2 / 1 / 3 / 2;
+    background-image: url(/img/photo_2022-11-08_20-11-20.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    margin: 20px;
+}
+.main-album {
+    grid-area: 3 / 1 / 4 / 2;
 }
