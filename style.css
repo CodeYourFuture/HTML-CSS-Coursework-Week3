@@ -6,7 +6,7 @@ body {
     column-gap: 10px;
     row-gap: 10px;
     display: grid;
-    grid-template-rows: auto auto auto auto auto;
+    /* grid-template-rows: repeat (5, auto); */
     /*  grid-template-areas must follow the exact number of columns and rows defined above (4 columns and 4 rows)  */
     grid-template-areas:
       "hero"  
@@ -60,6 +60,7 @@ body {
   
   .homepage-products {
     grid-area: product;
+    gap: 0.5rem;
     display: grid;
     grid-template-areas:
       "product-item1     product-item2"           /* one for each column */
@@ -67,30 +68,26 @@ body {
 ; 
   }
   .homepage-products img {
-    height: 10rem;
+    height: 8rem;
     object-fit: cover;
   }
   .grid-item1 {
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 15px;
     grid-area: product-item1;
+    justify-self: center;
   }
   .grid-item2 {
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 15px;
     grid-area: product-item2;
+    justify-self: center;
   }
 
   .grid-item3 {
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 15px;
     grid-area: product-item3;
+    justify-self: center;
   }
 
   .grid-item4 {
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 15px;
     grid-area: product-item4;
+    justify-self: center;
   }
   
   .homepage-footer {
@@ -112,17 +109,65 @@ body {
     /*  
       We only define rules which are DIFFERENT from the mobile version defined above. 
     */
+    .one-one{
+      display: none;
+    }
+    .grid-item1 {
+      grid-area: product-item1;
+    }
+    .grid-item2 {
+      grid-area: product-item2;
+    }
   
+    .grid-item3 {
+      grid-area: product-item3;
+    }
+
+    .grid-item4 {
+      display: none;
+    }
+    .homepage-products {
+      grid-area: product;
+      display: grid;
+      
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-areas:
+        "product-item1  product-item2  product-item3" ;          /* one for each column */ 
+    } 
+
+     .contact {
+      grid-area: contact;
+      text-align: center;
+     }
+     .address{
+      grid-area: address;
+      text-align: center;
+     }
+     .phone {
+      grid-area: phone;
+      text-align: center;
+     }
+    .homepage-footer {
+      grid-area: footer;
+      display: grid;
+      
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-areas:
+        "contact  address  phone" ;          /* one for each column */ 
+    } 
+
     .homepage-main {
       /*  we need more columns for a more complex layout  */
-      grid-template-columns: repeat(6, 1fr); 
       /*  we need less rows now  */
-      grid-template-rows: 140px 100px 80px; 
-      /*  our template now has 6 columns and 3 rows  */
+      grid-template-rows: 20vh auto auto auto auto;
+      grid-template-columns: repeat(3, 1fr);
+      /*  our template now has 4 columns and 5 rows  */
       grid-template-areas:
-        "hero    hero    hero    hero  hero     hero"
-        "feature feature feature .     footer    footer"
-        "product product product .     footer   footer";
+        "hero hero hero hero "
+        "welcome welcome welcome  welcome"
+        "feature feature feature feature"
+        "product product product product"
+        "footer footer footer footer";
     }
     
   /* 
@@ -132,37 +177,81 @@ body {
   } /* end of tablet media query  */
   
   
-  /* DESKTOP */
-  @media screen and (min-width: 750px) {
+/* Desktop: */
+@media screen and (min-width: 900px) {
   
-    /*  
-      We only define rules which are DIFFERENT from the mobile OR tablet version defined above. 
-    */
-  
-    .homepage-main {
-      /*  This time we keep the same number of columns and rows as for tablet, so we don't need to re-define those  */
-    /*   All we're doing here is skipping the 1st and last columns so the content isn't too wide.   */
-      grid-template-areas:
-        ".  hero    hero    hero  hero     ."
-        ".  feature feature .     footer    ."
-        ".  product product .     footer    .";
-    }
+  /*  
+    We only define rules which are DIFFERENT from the mobile version defined above. 
+  */
+  .one-one{
+    display: none;
+  }
+
+  .grid-item1 {
+    grid-area: product-item1;
+  }
+  .grid-item2 {
+    grid-area: product-item2;
+  }
+  .grid-item3 {
+    grid-area: product-item3;
+  }
+  .grid-item4 {
+    display: block;
+    grid-area: product-item4;
+  }
+
+  .homepage-products {
+    grid-area: product;
+    display: grid;
     
-  } /* end of desktop media query  */
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+      "product-item1  product-item2  product-item3 product-item4" ;          /* one for each column */ 
+  } 
+
+   .contact {
+    grid-area: contact;
+    text-align: center;
+   }
+   .address{
+    grid-area: address;
+    text-align: center;
+   }
+   .phone {
+    grid-area: phone;
+    text-align: center;
+   }
+  .homepage-footer {
+    grid-area: footer;
+    display: grid;
+    
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+      "contact  address  phone" ;          /* one for each column */ 
+  } 
+
+  .homepage-main {
+    /*  we need more columns for a more complex layout  */
+    /*  we need less rows now  */
+    grid-template-rows: 20vh auto auto auto auto;
+    grid-template-columns: repeat(4, 1fr);
+    /*  our template now has 4 columns and 5 rows  */
+    grid-template-areas:
+      "hero hero hero hero "
+      "welcome welcome welcome  welcome"
+      "feature feature feature feature"
+      "product product product product"
+      "footer footer footer footer";
+  }
   
+/* 
+  We don't need to re-define the grid-area for each block because these haven't changed. The hero is still the hero, the feature is still the feature etc. 
+*/
   
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+} /* end of tablet media query  */
+
+
   /* Ignore this */
   .tip {
     display: block;
