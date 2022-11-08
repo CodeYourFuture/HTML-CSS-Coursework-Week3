@@ -1,9 +1,8 @@
 .homepage-main {
-    border: 1px solid black;
     column-gap: 10px;
     row-gap: 10px;
     display: grid;
-    grid-template-rows: 200px 150px 150px 150px 150px;
+    grid-template-rows: 200px 200px 200px 400px 100px;
     /*  grid-template-areas must follow the exact number of columns and rows defined above (4 columns and 4 rows)  */
     grid-template-areas:
       "hero"  
@@ -14,7 +13,6 @@
   }
   
   .homepage-hero {
-    background-color: coral;
     grid-area: hero;
     display: grid;
     background-size: cover;
@@ -42,69 +40,62 @@
   }
 
   .homepage-welcome {
-    background-color:blueviolet;
     grid-area: welcome;
+    padding: 15px;
   }
   
   .homepage-feature {
-    background-color: darkBlue;
     grid-area: feature;
+    background-size: cover;
+  }
+
+  .homepage-feature img {
+    width:100%;
+    object-fit: cover;
   }
   
   .homepage-products {
-    background-color: darkSeaGreen;
     grid-area: product;
     display: grid;
-    gap: 10px;
-    grid-template-columns: repeat(2, 0.5fr);
-    grid-template-rows: 50px 50px;
     grid-template-areas:
       "product-item1     product-item2"           /* one for each column */
       "product-item3     product-item4"
 ; 
   }
-
+  .homepage-products img {
+    height: 10rem;
+    object-fit: cover;
+  }
   .grid-item1 {
     background-color: rgba(255, 255, 255, 0.8);
-    border: 1px solid rgba(0, 0, 0, 0.8);
-    padding: 20px;
-    font-size: 30px;
-    text-align: center;
+    padding: 15px;
     grid-area: product-item1;
   }
-
   .grid-item2 {
     background-color: rgba(255, 255, 255, 0.8);
-    border: 1px solid rgba(0, 0, 0, 0.8);
-    padding: 20px;
-    font-size: 30px;
-    text-align: center;
+    padding: 15px;
     grid-area: product-item2;
   }
 
   .grid-item3 {
     background-color: rgba(255, 255, 255, 0.8);
-    border: 1px solid rgba(0, 0, 0, 0.8);
-    padding: 20px;
-    font-size: 30px;
-    text-align: center;
+    padding: 15px;
     grid-area: product-item3;
   }
 
   .grid-item4 {
     background-color: rgba(255, 255, 255, 0.8);
-    border: 1px solid rgba(0, 0, 0, 0.8);
-    padding: 20px;
-    font-size: 30px;
-    text-align: center;
+    padding: 15px;
     grid-area: product-item4;
   }
   
   .homepage-footer {
-    background-color: darkTurquoise;
+    background-color:bisque;
     grid-area: footer;
   }
-  
+  .oleh {
+    text-align: center;
+  }
   /* 
     Now let's change it for larger screens 
     (using quite small breakpoints here to allow for Codepen's small viewport)
