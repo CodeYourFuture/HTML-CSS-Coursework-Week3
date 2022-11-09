@@ -89,7 +89,7 @@ article h2 {
 }
 
 article {
-  text-align: justify;
+  text-align: left;
   padding: 0.5em;
   margin: 0 2.5em 0 2.5em;
 }
@@ -102,9 +102,19 @@ article p {
   line-height: 1.2em;
 }
 
+.cake {
+  display: none;
+}
+
 @media screen and (min-width: 540px) {
   .general {
     width: 100%;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .cake {
+    display: flex;
+    justify-content: flex-end;
   }
 }
 
@@ -113,7 +123,7 @@ article p {
 .image-sweets img {
   width: 100%;
   object-fit: contain;
-  max-height: 600px;
+  max-height: 530px;
 }
 
 .image-sweets {
@@ -144,10 +154,9 @@ article p {
     max-height: 530px;
   }
 
-  .cake {
+  /* .cake {
     max-height: 530px;
-    object-fit: contain;
-  }
+    object-fit: contain; */
 }
 
 /*STYLING FOR FOOTER*/
