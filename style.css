@@ -1,5 +1,5 @@
 /*  Add your styling here */
-
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,700;1,200&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"); /* import font */
 
 :root{
@@ -25,7 +25,7 @@
 /*This applies from 0px to 540px */
 body {
     background-color: var(--key-lime);
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Source Code Pro', monospace;
   
 }
 a{
@@ -36,11 +36,13 @@ ul{
 }
 .header{
     background-color: var(--mandarin);
+    height: 18vh;
     width: 100%;
     position: sticky;
     top: 0;
     box-shadow: 1px 1px 5px 0px var(--red-salsa);
     display: grid;
+    
     grid-template-areas: 
     'one one three three'
     'one one two two'
@@ -49,33 +51,36 @@ ul{
 }
 .logo-nav{
     grid-area: one;
+    display: flex;
+    justify-content: center;
+    align-content: center;
 }
 .text-nav{
+    padding-left: 3rem;
     grid-area: two;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    font-weight: 400;
 }
 .ham-nav{
     grid-area: three;
 }
+/*
 .logo{
-    display: inline-block;
     
-    margin-left: 10px;
+    margin-top: auto;
 }
-
-.logo img{
-    display: block;
-    margin: 4px 10px;
-    padding: 0;
-    width: 8rem;
-    height: 8rem;
+*/
+ .logo img{
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+    width: 9rem;
+    height: 9rem;
     border-radius: 50%;
     box-shadow: 0px 6px 5px var(--bitter-lime);
 } 
 .nav{
     width:100%;
     height: 100%;
-    position:sticky;
+   
     background-color: var(--eggplant);   
     overflow:hidden;
 
@@ -154,42 +159,142 @@ ul{
     transform: rotate(45deg);
     top:0;
 }
+.hero-banner:hover, .image-four:hover, .image-one:hover, .image-two:hover, .image-three:hover {
+    filter:grayscale(100%);
+    opacity: 0.5;
+    border-radius: 10px;
+    border: 5px solid var(--mandarin);
+    /*box-shadow: 10px 10px var(--black-olive); */
+}
+
+.main-display{
+    display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 15vh 17vh 17vh 17vh;
+  /*  grid-template-areas must follow the exact number of columns and rows defined above (4 columns and 4 rows)  */
+  grid-template-areas:
+    "hero     hero    hero     hero"           /* one for each column */
+    "feature  feature feature  feature"
+    "image-one  image-one image-two image-two"
+    "image-three image-three image-four image-four";           /* the dot is used to skip a column */
+    gap: 0.5rem;
+    margin: 0.5rem 0.5rem;
+}
+.welcome{
+    
+    padding: 0.5rem 1rem; 
+    grid-area: hero;
+}
+.hero-banner{
+    background-image: url(./img/main.jpg);
+    grid-area: feature;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.image-one{
+    background-image: url(./img/img1.jpg);
+    grid-area: image-one;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    
+}
+.image-two{
+    background-image: url(./img/img2.jpg);
+    grid-area: image-two;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+}
+.image-three{
+    background-image: url(./img/img3.jpg);
+    grid-area: image-three;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+}
+.image-four{
+    background-image: url(./img/img4.jpg);
+    grid-area: image-four;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+}
+.footer-mobile{
+  display: grid;
+  background: var(--mandarin);
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 2.5vh 2.5vh 2.5vh 2vh;
+  /*  grid-template-areas must follow the exact number of columns and rows defined above (4 columns and 4 rows)  */
+  grid-template-areas:
+    "one one . ."           /* one for each column */
+    "one one . ."
+    "one one . . "
+    "two two two two";           /* the dot is used to skip a column */
+    gap: 0.25rem;
+    margin: 0.5rem 0.5rem;
+}
+.footer-text{
+    grid-area:one;
+    padding-left: 0.5rem;
+}
+.copyright{
+    grid-area: two;
+    font-size: 0.75rem;
+    text-align: center;
+}
 
 
 
 
 
 
-
-
-/*
-
-
-/* This applies from 540px onwards 
+/* This applies from 540px onwards */
 @media (min-width: 540px) {
   body {
     background: var(--misty-rose);
   }
+  .header{
+    background: var(--pear);
+  }
+  .footer-mobile{
+    background: var(--pear);
+  }
+  .hamburger-line, .hamburger-line::after, .hamburger-line::before{
+    background-color: var(--black-olive);
+  }
 
 }
 
-/* this applies from 900px onwards 
+/* this applies from 900px onwards */
 @media (min-width: 900px){
     body {
         background: var(--key-lime);
     }
-    .nav{
-        max-height: none;
-        top: 0;
-        position: relative;
-        float: center;
-        width: 100%;
-        margin:10px;
-    }
-    .menu li{
-        float: left;
-    }
-    .menu a:hover{
+    
+    
+        .menu a:hover{
         background-color: transparent;
         color: var(--mandarin);
 
@@ -197,15 +302,84 @@ ul{
 
     .hamburger{
         display: none;
-    }
-    .logo >img{
-        width: 40%;
-        height: 30vh;
-        border-radius: 50%;
-    }
+    } 
     .header{
-        display: flex;
-        flex-direction: column;
-        
+        background:var(--glossy-grape);
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 7vh 7vh 3vh;
+        grid-template-areas:
+        "one one two two"
+        "one one two two"
+        "three three three three";
+        box-shadow: 1px 1px 5px 0px var(--red-salsa);  
+
     }
+    .logo-nav{
+    grid-area: one;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1vh;
+    ;
+    
+    }
+    .text-nav{
+    grid-area: two;
+    display: block;
+    text-align: center;
+    padding: 5vh 0;
+    margin-right: 1vh;
+    
+    }
+    .nav{
+     grid-area: three;
+     height: 3vh;
+     width: 100%;
+     background-color: var(--misty-rose);
+     color: black;
+     overflow: visible;
+     
+               
+    }
+    .menu{
+        display: flex;
+        flex-direction: row;
+        background-color: var(--black-olive);
+        margin-top: 5vh;
+    }
+    
+    .main-display{
+    display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 7vh 28vh 25vh 1vh;
+  /*  grid-template-areas must follow the exact number of columns and rows defined above (4 columns and 4 rows)  */
+  grid-template-areas:
+    ". . . ."
+    "hero     hero    feature feature"           /* one for each column */
+    "image-one  image-three image-two image-four"
+    ". . . .";           /* the dot is used to skip a column */
+    gap: 0.5rem;
+    margin: 2.5rem 0.5rem;
+}
+.footer-mobile{
+    background: var(--glossy-grape);
+    position: relative;
+    margin-bottom: 0;
+    display: grid;
+    grid-template-areas:
+    ". . . ."           /* one for each column */
+    "one one one one"
+    "one one one one "
+    "two two two two"; 
+}
+.footer-text{
+    grid-area: one;
+    display: flex;
+    justify-content: space-around;
+}
+.copyright{
+    grid-area: two;
+}
+        
 }
