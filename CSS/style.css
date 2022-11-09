@@ -1,0 +1,170 @@
+/* -------- General Style Here ----------
+*/
+
+body {
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  color: black;
+  margin: 8px;
+}
+
+h1 {
+  font-size: 10vw;
+  padding-left: 1.2rem;
+  margin-bottom: 0%;
+}
+
+/*
+ --------- Main Homepage Starts Here -------------
+*/
+
+.homepage-main {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+  grid-template-rows: 50vw 85vw 55vw 75vw 30vw;
+  grid-template-areas:
+    "hero"
+    "welcome"
+    "feature"
+    "product"
+    "footer";
+}
+
+/*
+ --------- Homepage Hero Starts Here -------------
+*/
+
+.homepage-hero {
+  background-color: coral;
+  grid-area: hero;
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr 1fr;
+  grid-template-rows: 1fr;
+  background-image: url(../imgages/kids_celebration_cake_37179_16x9.jpg);
+  background-size: cover;
+}
+
+.hamburger-menue {
+  grid-column: 4;
+  justify-self: end;
+  padding: 0.7rem;
+}
+
+.hamburger-menue div {
+  width: 5vw;
+  height: 0.5vw;
+  background-color: black;
+  margin: 0.3rem;
+}
+
+.hero-txt {
+  grid-column: 3 / span 2;
+  grid-row: 2;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 4.5vw;
+  font-weight: 100%;
+  text-align: right;
+  line-height: 1.5;
+  color: hwb(0 0% 100%);
+}
+
+/*
+ --------- Homepage Welcome Starts Here -------------
+*/
+
+.homepage-welcome {
+  background-color: hsl(80, 33%, 77%);
+  grid-area: welcome;
+}
+
+.homepage-welcome p {
+  font-size: 4vw;
+  line-height: 2;
+  padding-left: 1.2rem;
+  margin-bottom: 0%;
+}
+
+/*
+ --------- Homepage Feature Starts Here -------------
+*/
+
+.homepage-feature {
+  grid-area: feature;
+  background-image: url(../imgages/birthday_cake_63590_16x9.jpg);
+  background-size: cover;
+}
+
+/*
+ --------- Homepage Product Starts Here -------------
+*/
+
+.homepage-products {
+  grid-area: product;
+  display: grid;
+  gap: 10px;
+  grid-template-areas:
+    "product-item1 product-item2"
+    "product-item3 product-item4";
+}
+
+.grid-item1 {
+  grid-area: product-item1;
+  justify-self: center;
+}
+
+.grid-item2 {
+  grid-area: product-item2;
+  justify-self: center;
+}
+
+.grid-item3 {
+  grid-area: product-item3;
+  justify-self: center;
+}
+
+.grid-item4 {
+  grid-area: product-item4;
+  justify-self: center;
+}
+
+.homepage-products img {
+  height: 8rem;
+  object-fit: cover;
+}
+
+/*
+ --------- Footer Starts Here -------------
+*/
+
+.homepage-footer {
+  background-color: #6dc5c6;
+  grid-area: footer;
+}
+
+.footer-links div {
+  width: 30vw;
+  height: 2vw;
+  background-color: #6a6a6a;
+  margin: 0.4rem;
+}
+
+.footer-links p {
+  text-align: center;
+  justify-self: center;
+  margin: 2rem;
+}
+
+/*
+ --------- Tips Starts Here -------------
+*/
+
+.tip {
+  display: block;
+  padding-top: 30px;
+  font-family: Arial;
+  color: grey;
+}
