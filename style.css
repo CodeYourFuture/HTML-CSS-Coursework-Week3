@@ -235,7 +235,7 @@ p {
   grid-area: section-3;
   margin-bottom: 10px;
   border-top: 2px solid #bf0603;
-  padding-top: 4rem;
+  padding-top: 3rem;
 }
 
 .section-3 img {
@@ -251,11 +251,11 @@ p {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr auto;
   gap: 15px;
-  margin: 4rem 0;
+  margin: 30px 0px;
   border-top: 2px solid #bf0603;
-  padding-top: 4rem;
+  padding-top: 2rem;
 }
-/* 
+
 .section-4 img {
   width: 100%;
   height: 100%;
@@ -281,7 +281,7 @@ p {
 
 .section-4 .img-grid-4 {
   grid-area: 2/2/3/3;
-} */
+}
 
 /* ............/footer/............ */
 
@@ -343,146 +343,79 @@ p {
     order: 1;
   }
 
-main {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto;
-  grid-template-areas:
-    "hero hero"
-    "section-2 section-2"
-    "section-3 section-3"
-    "section-4 section-4";
-  margin: 0 20px;
-  background-color: #fff;
-}
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "hero hero"
+      "section-2 section-2"
+      "section-3 section-3"
+      "section-4 section-4";
+    margin: 0 20px;
+    background-color: #fff;
+  }
 
-/* ............/hero/............ */
+  /* ............/hero/............ */
 
-/* .hero {
-  grid-area: hero;
-} */
+  .hero-background {
+    height: 500px;
+  }
 
-.hero-background {
-  /* background-image: url(/design/Banner-1920x800.jpg);
-  background-size: cover;
-  background-position: center;
-  width: 100%; */
+  h1 {
+    font-size: 2rem;
+    padding: 0 4rem;
+  }
 
-  height: 500px;
+  /* ............/section-2/............ */
 
-  /* margin-top: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center; */
-}
+  .section-2 {
+    padding: 30px 0;
+  }
 
-h1 {
-  color: #fff;
-  padding: auto;
-  text-transform: uppercase;
-  letter-spacing: 0.01em;
-  text-shadow: 0 0 9px black;
-  text-align: center;
-
-  font-size: 2rem;
-  padding: 0 4rem;
-}
-
-/* ............/section-2/............ */
-
-.section-2 {
-  /* grid-area: section-2;
-  margin: 30px 20px 30px 20px; */
-  /* height: 400px; */
-
-      padding: 30px 0;
-  
-}
-
-h2 {
-  /* padding-bottom: 3px; */
-
-  font-size: 1.8rem;
-}
-p {
-  /* line-height: 1.8rem; */
+  h2 {
+    font-size: 1.8rem;
+  }
+  p {
     font-size: large;
+  }
 
-}
+  /* ............/section-3/............ */
 
-/* ............/section-3/............ */
+  .section-3 {
+    padding: 3rem 0;
+  }
 
-.section-3 {
-  /* grid-area: section-3; */
-   margin-bottom: 0;
-  /* border-top: 2px solid #bf0603; */ *
-  padding: 4rem 0;
-}
+  .section-3 img {
+    width: 100%;
+    height: 100%;
+  }
 
-.section-3 img {
-  width: 100%;
-  height: 100%;
-}
+  /* ............/section-4/............ */
 
-/* ............/section-4/............ */
+  .section-4 {
+    margin: 3rem 0px;
+    padding-top: 3rem;
+  }
 
-.section-4 {
-  grid-area: section-4;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr auto;
-  gap: 15px;
-  margin: 30px 0px;
-  border-top: 2px solid #bf0603;
-  padding-top: 2rem;
-}
+  /* ............/footer/............ */
 
-.section-4 img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: 0.3s ease-in-out;
-}
+  .footer-container {
+    background-color: #bf0603;
+    padding: 30px 20px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-.section-4 img:hover {
-  transform: scale(0.9);
-}
+  .footer-container .social-icons {
+    display: flex;
+    gap: 25px;
+    padding: 1.5rem 0;
+  }
 
-.section-4 .img-grid-1 {
-  grid-area: 1/1/2/2;
-}
-
-.section-4 .img-grid-2 {
-  grid-area: 1/2/2/3;
-}
-
-.section-4 .img-grid-3 {
-  grid-area: 2/1/3/2;
-}
-
-.section-4 .img-grid-4 {
-  grid-area: 2/2/3/3;
-}
-
-/* ............/footer/............ */
-
-.footer-container {
-  background-color: #bf0603;
-  padding: 30px 20px;
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.footer-container .social-icons {
-  display: flex;
-  gap: 25px;
-  padding: 1.5rem 0;
-}
-
-
-/* 
+  /* 
   .navbar-container input[type="checkbox"]:checked ~ .menu-items {
     transform: translateX(0);
   } */
