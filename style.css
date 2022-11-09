@@ -1,7 +1,9 @@
 body {
   box-sizing: border-box;
 }
-
+.navigation {
+  display: none;
+}
 .homepage-main {
     column-gap: 10px;
     row-gap: 10px;
@@ -230,17 +232,29 @@ body {
     grid-template-areas:
       "contact  address  phone" ;          /* one for each column */ 
   } 
+  .homepage-feature {
+    align-self: center ;
+  }
+
+  .navigation {
+    display: flex;
+    gap: 1rem;
+    justify-content: end;
+    align-items: baseline;
+    padding-top: 2rem;
+    padding-right: 0.5rem;
+  }
+
 
   .homepage-main {
     /*  we need more columns for a more complex layout  */
     /*  we need less rows now  */
-    grid-template-rows: 20vh auto auto auto auto;
+    grid-template-rows: 20vh auto auto auto;
     grid-template-columns: repeat(4, 1fr);
     /*  our template now has 4 columns and 5 rows  */
     grid-template-areas:
       "hero hero hero hero "
-      "welcome welcome welcome  welcome"
-      "feature feature feature feature"
+      "feature feature welcome welcome"
       "product product product product"
       "footer footer footer footer";
   }
