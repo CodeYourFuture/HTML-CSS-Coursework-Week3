@@ -114,6 +114,21 @@ a {
         margin: 0 2.5em ;
         justify-self: start;
     }
+    footer {
+        background-color: lightgray;
+    }
+    .footer {
+        text-align: center;
+    }
+    img {
+        width: 200px;
+        height: 150px;
+    }
+    .cake {
+        width: 100%;
+        height: 100%;
+    }
+
 }
 
 
