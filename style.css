@@ -131,7 +131,7 @@ a {
 
 }
 
-
+  /* css for hamburger with added some js*/
  .hamburger.active .bar:nth-child(2) {
      opacity: 0;
  }
