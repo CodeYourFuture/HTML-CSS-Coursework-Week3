@@ -5,6 +5,8 @@ body {
   margin: 0;
 }
 
+/*HEADER STYLES*/
+
 header {
   font-family: "Poppins", sans-serif;
   padding: 1.2em;
@@ -19,18 +21,26 @@ span {
   color: #3300cc;
   font-size: 2em;
   opacity: 1;
+  border: none;
 }
 
 .hidden-menu {
   display: none;
 }
 
-.menu-container button {
-  border: none;
-}
+@media screen and (min-width: 540px) {
+  .banner {
+    width: 100%;
+  }
 
-.menu-container button:hover {
-  border: 2px solid #edffb6;
+  .menu-container button {
+    display: none;
+  }
+
+  .hidden-menu {
+    display: flex;
+    justify-content: space-evenly;
+  }
 }
 
 @media screen and (min-width: 900px) {
@@ -39,15 +49,14 @@ span {
     border-radius: 20px;
     margin: 1.5em;
   }
+
   .hidden-menu {
     display: flex;
+    justify-content: space-evenly;
   }
+
   .menu-container button {
     display: none;
-  }
-  .menu-container {
-    display: flex;
-    justify-content: space-between;
   }
 }
 
