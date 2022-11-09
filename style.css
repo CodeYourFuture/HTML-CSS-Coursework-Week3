@@ -33,20 +33,6 @@ span {
   border: 2px solid #edffb6;
 }
 
-/* .image {
-  border: 5px solid #edffb6;
-  width: 7em;
-  height: 7em;
-  object-fit: cover;
-  border-radius: 20%;
-} */
-
-.image-menu {
-  /* display: flex;
-  justify-content: space-between; */
-  text-align: end;
-}
-
 @media screen and (min-width: 900px) {
   .banner {
     width: 100%;
@@ -58,6 +44,10 @@ span {
   }
   .menu-container button {
     display: none;
+  }
+  .menu-container {
+    display: flex;
+    justify-content: space-between;
   }
 }
 
@@ -104,6 +94,7 @@ article p {
 .image-sweets img {
   width: 100%;
   object-fit: contain;
+  max-height: 600px;
 }
 
 .image-sweets {
@@ -118,12 +109,33 @@ article p {
 }
 
 @media screen and (min-width: 900px) {
-  .cake-pics {
+  /* .cake-pics {
     display: grid;
+    grid-template-columns: auto auto; */
+  /* grid-template-rows: 400px 400px;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto;
+    grid-template-rows: 2; 
+    grid-template-columns: auto auto;
+  grid-template-rows: 300px 300px;*/
+
+  .sweet1 {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 1em;
+  }
+
+  .sweet2 {
+    display: grid;
+    grid-template-columns: auto auto;
   }
 }
+
+/* cont {
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: repeat(auto-fit, minmax(auto, 1fr)); */
+/* grid-template-rows: repeat(2, auto); */
+/* grid-auto-rows: 100px;} */
 
 /*STYLING FOR FOOTER*/
 
@@ -143,10 +155,14 @@ footer {
     text-align: center;
   }
 
-  .contact-icon,
-  .name-icon {
+  .contact-icon {
     justify-content: center;
     align-items: center;
+  }
+
+  .social {
+    display: flex;
+    justify-content: space-around;
   }
 }
 
