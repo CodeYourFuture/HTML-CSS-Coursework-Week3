@@ -2,6 +2,12 @@
 html {
   margin: 0;
   padding: 0;
+  font-family: "Lora", serif;
+  background: linear-gradient(
+    307deg,
+    rgba(255, 200, 221, 1) 35%,
+    rgba(189, 224, 254, 1) 100%
+  );
 }
 
 * {
@@ -10,23 +16,39 @@ html {
 
 li {
   list-style: none;
-  text-transform: uppercase;
 }
 
 a {
   text-decoration: none;
 }
 
+/*intro*/
+.intro {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.intro-img {
+  background-color: red;
+  width: 50%;
+}
+
+.intro-text {
+  display: flex;
+  padding: 0 20px;
+}
 /*nav*/
 .header {
-  border-bottom: 1px solid #e2e8f0;
+  background-color: #cdb4db;
+  border: 1px solid white;
 }
 
 .navbar {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
-  padding: 1rem 1.5rem;
+  padding: 0.5rem 0.8rem;
 }
 
 .hamburger {
@@ -35,7 +57,7 @@ a {
 
 .bar {
   display: block;
-  width: 25px;
+  width: 1.5rem;
   height: 3px;
   margin: 5px auto;
   -webkit-transition: all 0.3s ease-in-out;
@@ -51,25 +73,37 @@ a {
 
 .nav-item {
   margin-left: 5rem;
+  text-transform: uppercase;
 }
 
 .nav-link {
-  font-size: 1.6rem;
-  font-weight: 400;
-  color: #475569;
+  font-size: 1rem;
+  font-weight: 550;
+  color: white;
+  background-color: #ffafcc;
+  padding: 8px 17px;
+  border-radius: 3px;
+  border: 1px solid white;
 }
 
 .nav-link:hover {
-  color: #482ff7;
+  background-color: white;
+  color: #ffafcc;
+  border: 1px solid #ffafcc;
+  border-radius: 3px;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 540px) {
   .nav-menu {
     position: fixed;
     left: -100%;
-    top: 5rem;
+    top: 0;
     flex-direction: column;
-    background-color: #fff;
+    background: radial-gradient(
+      circle,
+      rgba(255, 200, 221, 1) 42%,
+      rgba(189, 224, 254, 1) 100%
+    );
     width: 100%;
     border-radius: 10px;
     text-align: center;
@@ -82,7 +116,7 @@ a {
   }
 
   .nav-item {
-    margin: 2.5rem 0;
+    margin: 1.5rem 0;
   }
 
   .hamburger {
