@@ -1,16 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Responsive Cake webpage</title>
+        <link rel="stylesheet" href="style.css" />
+        
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Responsive Cake webpage</title>
-    <!-- Add a link to your css file here -->
-</head>
+    <body>
+        <header class="header">
+            <img class="logo" src="image/image1.png" alt="logo" />
+            <div class="nav_wrapper">
+                <nav class="hamburger-menu">
+                    <input id="menu__toggle" type="checkbox" />
+                    <label class="menu__btn" for="menu__toggle">
+                        <span></span>
+                    </label>
 
-<body>
-    <!-- Add your markup here -->
-</body>
+                    <ul class="menu__box">
+                        <li><a class="menu__item" href="#">Home</a></li>
+                        <li><a class="menu__item" href="#">Cakes</a></li>
+                        <li><a class="menu__item" href="#">Ordering</a></li>
+                        <li><a class="menu__item" href="#">Lessons</a></li>
+                        <li><a class="menu__item" href="#">About</a></li>
+                    </ul>
+                </nav>
+                <p class="slogan">The best cakes in town delivered to your door</p>
+            </div>
+        </header>
 
+        <nav class="desktop">
+            <ul class="nav_list">
+                <li><a class="nav_link" href="#">Home</a></li>
+                <li><a class="nav_link" href="#">Cakes</a></li>
+                <li><a class="nav_link" href="#">Ordering</a></li>
+                <li><a class="nav_link" href="#">Lessons</a></li>
+                <li><a class="nav_link" href="#">About</a></li>
+            </ul>
+        </nav>
+
+        <section class="hero">
+            <article class="article">
+                <h1 class="welcome">Welcome</h1>
+                <p class="text_content">
+                    Cakes are the inseparable parts of birthdays! 
+                    Such a sweet delicacy enhances the joy of the celebration 
+                    and makes the birthday girl or boy feel extra special and loved!
+                    Birthday cakes and the short wordings on birthday cake 
+                    go hand in hand. A lovely birthday cake message is enough to cheer someone up
+                     and boost their mood.
+            </article>
+            <img class="hero_img" src="image/image2.png" alt="" />
+        </section>
+
+        <section class="thumbnails">
+            <img src="image/image3.png" alt="" class="thumbnail" />
+            <img src="image/image4.png" alt="" class="thumbnail" />
+            <img src="image/image5.png" alt="" class="thumbnail" />
+            <img src="image/image6.png" alt="" class="thumbnail" />
+        </section>
+
+        <footer>
+            <div class="footer_links">
+                <div class="footer_content"></div>
+                <div class="footer_content"></div>
+                <div class="footer_content"></div>
+            </div>
+            <div class="copyright"></div>
+        </footer>
+    </body>
 </html>
