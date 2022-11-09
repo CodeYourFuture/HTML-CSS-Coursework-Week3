@@ -60,6 +60,7 @@ a {
     margin-left: 5rem;
     background-color: #ccf1dd;
     padding: .5em;
+    border-radius: 5px;
 }
 
 .nav-link {
@@ -107,11 +108,11 @@ a {
         margin-top: -60px;
     }
     .slogan {
-        font-size: 240%;
+        font-size: 2em;
         display: block;
         text-align: right;
         margin: 0 2.5em ;
-      
+        justify-self: start;
     }
 }
 
