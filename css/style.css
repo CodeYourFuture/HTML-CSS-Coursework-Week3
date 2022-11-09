@@ -1,0 +1,45 @@
+/*  Add your styling here */
+
+.header{
+    background-color: peru;
+    display: -moz-inline-grid;
+
+}
+
+body{
+    background-color: rgb(248, 215, 174);
+}
+
+.cakebox{
+    background-color: coral;
+    
+
+}
+
+.logo{
+    width: 200px;
+    height: 200px;
+}
+
+.main-cake{
+background-color: blueviolet;
+}
+.topcake{
+    width: 300px;
+    height: 200;
+}
+
+.fourcakes{
+    width: 280px;
+    height: 250px;
+
+}
+.cake1{
+    width: 200px;
+    height: 150px;
+}
+
+footer{
+    background-color: darkorange;
+}
+
