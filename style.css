@@ -23,7 +23,7 @@ a {
 .header {
     border-bottom: 1px solid #E2E8F0;
     background-image: linear-gradient(lightgreen, lightblue);
-   height: 28em;
+   height: 30em;
 }
 
 .navbar {
@@ -106,7 +106,13 @@ a {
         cursor: pointer;
         margin-top: -60px;
     }
-
+    .slogan {
+        font-size: 240%;
+        display: block;
+        text-align: right;
+        margin: 0 2.5em ;
+      
+    }
 }
 
 
