@@ -30,13 +30,16 @@ a {
 }
 
 .intro-img {
-  background-color: red;
-  width: 50%;
+  height: 200px;
+  background-image: url("images/cupcake-removebg-preview.png");
 }
 
 .intro-text {
   display: flex;
   padding: 0 20px;
+  flex: 50%;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
 /*nav*/
 .header {
