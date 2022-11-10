@@ -6,7 +6,6 @@
 }
 
 body {
-    background-color: rgb(255, 0, 166);
     display: grid;
     grid-template-columns: repeat (2, 1fr);
     grid-template-rows: 100px 30px auto 100px;
@@ -18,7 +17,6 @@ body {
 }
 
 header {
-    background-color: rgb(149, 80, 218);
     grid-area: header;
     display: flex;
 }
@@ -29,7 +27,6 @@ header {
 }
 
 .title {
-    background-color: rgb(212, 64, 64);
     max-width: 13rem;
     padding: 0.6;
 
@@ -40,7 +37,6 @@ header {
 }
 
 section {
-    background-color: chartreuse;
     grid-area: section;
     margin: 1rem 1rem;
     gap: 1rem;
@@ -77,7 +73,6 @@ section {
 }
 
 footer {
-    background-color: darkcyan;
     grid-area: footer;
     display: flex;
     flex-direction: column;
