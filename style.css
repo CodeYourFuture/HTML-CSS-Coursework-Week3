@@ -186,3 +186,8 @@ footer.footer {
       margin-right: 1rem;
       font-size: 2rem;
     }
+
+    section div.grid-item{
+      width: 1rem;
+      /* grid-template-rows: 10px 10px; */
+    }
