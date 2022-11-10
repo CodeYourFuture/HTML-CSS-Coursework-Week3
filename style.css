@@ -262,6 +262,10 @@ p {
   height: 100%;
   object-fit: cover;
   transition: 0.3s ease-in-out;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 10px 6px rgb(0 0 0 / 10%);
+
+  
 }
 
 .section-4 img:hover {
@@ -443,8 +447,7 @@ p {
       "hero hero hero hero"
       "section-2 section-2 section-3 section-3"
       "section-2 section-2 section-3 section-3"
-      "section-4 section-4 section-4 section-4"
-      /* "button . . ." */;
+      "section-4 section-4 section-4 section-4";
     margin: 0 40px;
     background-color: #fff;
   }
