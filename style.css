@@ -1,1 +1,453 @@
 /*  Add your styling here */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+ 
+ 
+.header-cupcake {
+    display: flex;
+    justify-content: space-between;
+}
+.header-logo {
+    width: 200px;
+    height: 200px;
+    margin-left: 40px;
+    margin-top: 40px;
+    border-radius: 50%;
+     
+   
+}
+.hamburger-icon {
+    margin-top: 0;
+    margin-right: 20px;
+    margin-bottom: 180px;
+   
+}
+.p-title{
+    text-align: right;
+    margin-bottom: 10px;
+    margin-right: 20px;
+    font-weight: bold;
+    font-size: 20px;
+    color: rgb(176, 7, 7);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    width: 300px;
+    margin-left: 50px;
+}
+   
+   
+ nav ul li a {
+    display: none;
+}
+ 
+ 
+.header {
+    grid-area: h;
+    border: 1px solid rgb(222, 221, 225);
+    background-color: rgb(245, 242, 214);
+    border-radius: 10px;
+    background-image: url(https://png.pngtree.com/background/20210710/original/pngtree-birthday-cake-picture-image_1006680.jpg);
+    background-size: cover;
+}
+ 
+ 
+ 
+.welcome {
+    grid-area: w;
+    border: 1px solid rgb(206, 206, 208);
+    /* width: 50%; */
+    /* padding: 10%; */
+    background-color: rgb(245, 242, 214);
+    height: 90vh;
+    padding: 20px;
+    border-radius: 10px;
+ 
+ }
+ .welcome-p {
+    font-size: 25px;
+    color: rgb(176, 7, 7);
+    font-family:Arial, Helvetica, sans-serif;
+}
+.wel {
+   display: inline-block;
+   margin-bottom: 50px;
+   color: rgb(176, 7, 7);
+   font-family:Verdana, Geneva, Tahoma, sans-serif
+  
+  
+}
+
+
+.main-cake {
+   grid-area: c;
+   width: 100%;
+   height: 90vh;
+   border: 1px solid rgb(241, 241, 242);
+   background-size: cover;
+   background-color: rgb(245, 242, 214);
+   border-radius: 10px;
+}
+
+
+.cupcake1 {
+   grid-area: c1;
+   border: 1px solid rgb(204, 203, 205);
+   /* grid-template-columns:  repeat(2, 50px);
+   grid-template-rows: repeat(2, 100px); */
+   /* max-width: 25%; */
+   background-color: rgb(245, 242, 214);
+   border-radius: 10px;
+}
+
+
+.c1-img {
+   background-size: cover;
+   width: 100%;
+   height: 50vh;
+   cursor: pointer;
+   border-radius: 10px;
+}
+
+
+.c2-img {
+   background-size: cover;
+   width: 100%;
+   height: 50vh;
+   cursor: pointer;
+   border-radius: 10px;
+}
+
+
+  
+.c3-img {
+   background-size: cover;
+   width: 100%;
+   height: 50vh;
+   cursor: pointer;
+   border-radius: 10px;
+}
+
+.c4-img {
+   background-size: cover;
+   width: 100%;
+   height: 50vh;
+   cursor: pointer;
+   border-radius: 10px;
+}
+  
+
+.cupcake2 {
+   grid-area: c2;
+   border: 1px solid rgb(202, 201, 204);
+   /* max-width: 25%; */
+   background-color: rgb(245, 242, 214);
+   border-radius: 10px;
+}
+  
+  
+.cupcake3 {
+    grid-area: c3;
+    border: 1px solid rgb(206, 205, 208);
+    /* max-width: 25%; */
+    background-color: rgb(245, 242, 214);
+    border-radius: 10px;
+ 
+ }
+ 
+ .cupcake4 {
+    grid-area: c4;
+    border: 1px solid rgb(204, 203, 205);
+    /* max-width: 25%; */
+    background-color: rgb(245, 242, 214);
+    border-radius: 10px;
+ }
+ 
+.footer{
+    grid-area: f;
+    border: 1px solid rgb(189, 188, 191);
+    /* grid-column: 1 / -1; */
+    background-color: rgb(245, 242, 214);
+    border-radius: 10px;
+    background-image: url(https://png.pngtree.com/background/20210710/original/pngtree-birthday-cake-picture-image_1006680.jpg);
+    background-size: cover;
+ }
+ 
+.footer p {
+    text-align: center;
+    margin-bottom: 13px;
+    margin-top: 10px;
+    color: rgb(139, 13, 13);
+    font-weight: bold;
+ }
+ 
+.container {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-areas:
+    "h h h h h h h h h h h h"
+    /* "n n n n n n n n n n n n" */
+    "w w w w w w w w w w w w"
+    "c c c c c c c c c c c c"
+    "c1 c1 c1 c1 c1 c1 c2 c2 c2 c2 c2 c2"
+    "c3 c3 c3 c3 c3 c3 c4 c4 c4 c4 c4 c4"
+    "f f f f f f f f f f f f";
+    padding: 15px;
+ 
+}
+ 
+.social-ul {
+    display: grid;
+  flex-wrap: wrap;
+  justify-content:;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 40px;
+ 
+}
+.insta {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid gray;
+    margin: 5px 10px;
+}
+.tweet {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid gray;
+    margin: 5px 10px;
+   
+ 
+}
+.linkedin {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid gray;
+    margin: 5px 10px;
+   
+}
+ 
+ 
+ 
+ 
+@media (min-width: 540px) and (max-width: 899px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: auto auto auto auto auto;
+        grid-template-areas:
+        "h h h h h h h h h h h h"
+        "n n n n n n n n n n n n"
+        "c c c c c c w w w w w w"
+        "c1 c1 c1 c1 c1 c1 c2 c2 c2 c2 c2 c2"
+        "c3 c3 c3 c3 c3 c3 c4 c4 c4 c4 c4 c4"
+        "f f f f f f f f f f f f";
+        padding: 15px;
+   
+    }
+    nav ul li a {
+        display:flex;
+        cursor: pointer;
+    }
+    nav ul li a:hover {
+        transform: scale(1.2);
+    }
+ 
+    .header-ul li {
+        border: 1px solid rgb(228, 225, 225);
+        padding: 5px;
+        margin: 10px;
+        border-radius: 5px;
+    }
+    .header-ul li a {
+        color: #E0633A;
+        font-weight: bold;
+        color: rgb(176, 7, 7);
+        font-family:cursive;
+    }
+    .navbar {
+        grid-area: n;
+        border: 1px solid rgb(217, 216, 219);
+        background-color: rgb(245, 242, 214);
+        border-radius: 10px;
+    }
+    .header-ul {
+        display: flex;
+        justify-content: flex-end;
+    }
+    .hamburger-icon {
+        display: none;
+    }
+    .p-title {
+        /* display: flex; */
+        /* display: inline-block; */
+        /* justify-content: right; */
+        /* margin-right: 0px; */
+        /* margin-left: 200px; */
+        /* position: relative; */
+        transform:translateX(50%);
+        cursor: pointer;
+       
+    }
+       
+       
+   
+    .p-title:hover{
+        font-style: italic;
+ 
+    }
+    .social-ul {
+        display: flex;
+        justify-content: center;
+    }
+    .social-ul:hover {
+        transform: scale(1.5);
+ 
+    }
+   
+    .header, .navbar, .welcome, .footer {
+        background-color: rgb(243, 230, 232);
+    }
+    .main-cake {
+        transition: all ease 0.3;
+    }
+    .main-cake:hover {
+        transform:rotate(6deg);
+    }
+    .love:hover {
+        transition: 0.3s;
+        transform: scale(1.2);
+    }
+    .welcome-p:hover {
+        transition: 0.3s;
+        transform: scale(1.1);
+       
+    }
+    .wel:hover {
+        transition: 0.3;
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+   
+   
+}
+ 
+ 
+ 
+ 
+ 
+@media (min-width: 900px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: auto auto auto auto auto;
+        grid-template-areas:
+        "h h h h h h h h h h h h"
+        "n n n n n n n n n n n n"
+        "c c c c c c w w w w w w"
+        "c1 c1 c1 c2 c2 c2 c3 c3 c3 c4 c4 c4"
+        "f f f f f f f f f f f f";
+        padding: 15px;
+   
+    }
+    nav ul li a {
+        display:flex;
+        cursor: pointer;
+    }
+    nav ul li a:hover {
+        transform: scale(1.2);
+        background-color: white;
+       
+    }
+   
+    .header-ul li {
+        border: 1px solid rgb(228, 225, 225);
+        padding: 5px;
+        margin: 10px;
+        border-radius: 5px;
+    }
+    .header-ul li a {
+    color: #E0633A;
+    font-weight: bold;
+    color: rgb(176, 7, 7);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.navbar {
+    grid-area: n;
+    border: 1px solid rgb(217, 216, 219);
+    background-color: rgb(251, 248, 226);
+    border-radius: 10px;
+}
+.header-ul {
+    display: flex;
+    justify-content: flex-end;
+}
+.hamburger-icon {
+    display: none;
+}
+.p-title {
+    transform:translateX(35%);
+    cursor: pointer;
+    width: 600px;
+ 
+   
+}
+.social-ul {
+    display: flex;
+    justify-content: center;
+}
+.c1-img, .c2-img, .c3-img, .c4-img{
+    transition: all ease 0.3;
+}
+.c1-img:hover {
+    transform: scale(1.1);
+}
+.c2-img:hover {
+    transform: scale(1.1);
+}
+.c3-img:hover {
+    transform: scale(1.1);
+}
+.c4-img:hover {
+    transform: scale(1.1);
+}
+.social-ul{
+    cursor: pointer;
+}
+.social-ul:hover {
+    transform: rotate(10deg);
+}
+.wel:hover {
+ color: olivedrab;
+ transform: scale(1.2);
+}
+.welcome-p:hover {
+    color: olivedrab;
+    font-family:cursive;
+}
+.p-title:hover {
+    text-shadow: 3px 2px 2px gray;
+}
+.love a:hover {
+    font-size: 30px;
+    color:rgb(172, 25, 25);
+ 
+}
+ 
+  
+}
+ 
+ 
+ 
+ 
+ 
+
+
