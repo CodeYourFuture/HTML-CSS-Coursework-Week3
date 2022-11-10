@@ -50,7 +50,8 @@ header {
     height: 200px;
 }
 
-header p {
+header h1 {
+    grid-area: 2 / 2 / 3 / 3;
     display: flex;
     justify-content: center;
     font-family: 'Cookie',sans-serif;
@@ -255,7 +256,7 @@ footer {
     color: var(--white);
 }
 
-    header p {
+    header h1 {
     font-size: 40px;
 }
     .container h1 {
@@ -276,42 +277,52 @@ footer {
 }
 
 @media (min-width: 900px) {
-    nav {
+    /* nav {
         display: none;
-    }
+    } */
+.menu {
+    border: none;
+    padding: .5rem;
+    position: absolute;
+    z-index: 2;
+    background-color: var(--green-light);
+    opacity: 1;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    top: 200px;
+    right: 0px;
+    transition: all 0.3s ease-in-out;
+    border-radius: 5px;
+}
+.open-menu {
+    display: none;
+}
+.menu li a {
+    text-decoration: none;
+        padding: .5rem;
+        background-color: var(--blue-light);
+        border-radius: 5px;
+        color: var(--purple);
+        transition: all .4s ease-in-out;
+        
+}
 
+.menu li a:hover {
+    background-color: var(--purple);
+        color: var(--white);
+}
     main {
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: 100px 1fr 540px;
     }
     
     .navigation {
-        list-style: none;
+        
         grid-area: 1 / 1 / 2 / 5;
-        display: flex;
-        justify-content: flex-end;
-        background-color: var(--green-light);
+        
     }
-    .navigation ul {
-        display: flex;
-        list-style: none;
-        align-items: center;
-    }
-    .navigation ul li {
-        margin: 0 2.5rem;
-    }
-    .navigation ul li a {
-        text-decoration: none;
-        padding: 1rem;
-        background-color: var(--blue-light);
-        border-radius: 5px;
-        color: var(--purple);
-        transition: all .4s ease-in-out;
-    }
-    .navigation ul li a:hover {
-        background-color: var(--purple);
-        color: var(--white);
-    }   
+    
     .container {
         grid-area: 2 / 3 / 3 / 5;
         align-items: flex-end;
@@ -337,6 +348,16 @@ footer {
         height: 100px;
         
     }
+.footer-links {
+    grid-area: 1 / 1 / 1 / 3;
+}
+
+.footer-links ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
 
     .footer-links ul li a {
     font-size: 40px;
