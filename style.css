@@ -189,11 +189,23 @@ footer.footer {
 
     section.grid-container {
       display: grid;
-      grid-template-rows: 200px;
-      grid-template-columns: 200px 200px;
+      /* grid-template-rows: 200px 200px 200px 200px; */
+      /* grid-template-columns: 300px 300px; */
+      grid-template-columns: repeat(4, 1fr);
+      padding-left: 2rem;
+      gap: 1rem;
     }
 
-    section div.grid-item{
-      width: 1rem;
+    section div.grid-item img{
+      width: 100%;
+      height: 100%;
+      gap: 10;
+      /* grid-template-rows: 10px 10px; */
+    }
+
+    section >div.grid-item {
+      width: 100%;
+      height: 100%;
+      gap: 0;
       /* grid-template-rows: 10px 10px; */
     }
