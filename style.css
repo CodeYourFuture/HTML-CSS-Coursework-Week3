@@ -100,7 +100,7 @@ article h2 {
 }
 
 article p {
-  line-height: 1.2em;
+  line-height: 1.5em;
 }
 
 .cake {
@@ -108,6 +108,30 @@ article p {
 }
 
 @media screen and (min-width: 540px) {
+  .general {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+  }
+  .cake {
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+    max-height: 70%;
+    object-fit: contain;
+  }
+
+  .text {
+    width: 50%;
+    justify-content: flex-start;
+  }
+
+  .text p {
+    line-height: 2em;
+  }
+}
+
+@media screen and (min-width: 900px) {
   .general {
     width: 100%;
     display: flex;
@@ -145,6 +169,24 @@ article p {
   margin: 1em 1.5em 1.5em 1.5em;
 }
 
+@media screen and (min-width: 540px) {
+  .sweet1 {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 1em;
+  }
+
+  .sweet2 {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto;
+  }
+
+  .sweet2 img {
+    max-height: 530px;
+  }
+}
+
 @media screen and (min-width: 900px) {
   .sweet1 {
     display: grid;
@@ -161,10 +203,6 @@ article p {
   .sweet2 img {
     max-height: 530px;
   }
-
-  /* .cake {
-    max-height: 530px;
-    object-fit: contain; */
 }
 
 /*STYLING FOR FOOTER*/
@@ -176,6 +214,24 @@ footer {
   padding: 1.2em;
   margin-top: 0.9em;
   margin: 1.5em;
+}
+
+@media screen and (min-width: 540px) {
+  .end {
+    border-radius: 20px;
+    margin: 2em;
+    text-align: center;
+  }
+
+  .contact-icon {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .social {
+    display: flex;
+    justify-content: space-around;
+  }
 }
 
 @media screen and (min-width: 900px) {
