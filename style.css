@@ -187,6 +187,12 @@ footer.footer {
       font-size: 2rem;
     }
 
+    section.grid-container {
+      display: grid;
+      grid-template-rows: 200px;
+      grid-template-columns: 200px 200px;
+    }
+
     section div.grid-item{
       width: 1rem;
       /* grid-template-rows: 10px 10px; */
