@@ -6,11 +6,91 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Responsive Cake webpage</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
     <!-- Add a link to your css file here -->
 </head>
 
 <body>
     <!-- Add your markup here -->
-</body>
+    <header>
+        <p class="call-to-action-p">Sign up and get <strong>£5 OFF*</strong> your first order <button class="call-to-action-btn">SIGN UP</button></p>    
+        <div class="header-container">
+            <img alt="" class="header-img" src="https://cdn.pixabay.com/photo/2014/04/03/10/07/cupcake-309889__340.png" width="100%" height="100%">
+            
+            <div class="nav-bar">
+            
+            
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+               
+                <p class="nav-bar-p">Lee-Lee Bakes</p>
+                <p class="nav-bar-phrase">'The best cakes in town delivered to your door'</p>
+            </div>
+            
+        </div>
+    </header>
 
+    <div class="nav-menu">
+        <ul class="nav-ul">
+            <li class="nav-list"><a href="#" class="nav-item">Home</a></li>
+            <li class="nav-list"><a href="#" class="nav-item">Cakes</a></li>
+            <li class="nav-list"><a href="#" class="nav-item">Orderin</a></li>
+            <li class="nav-list"><a href="#" class="nav-item">lessons</a></li>
+            <li class="nav-list"><a href="#" class="nav-item">About</a></li>
+        </ul>
+    </div>
+
+    <section class="hero">
+
+        <div class="hero-text">
+            <h1>Welcome</h1>
+            <p class="hero-p">Home to all organic products, Lee-Lee Bakes promise to make cakes that cater to your exact needs. Cakes for every and any occasion. With fresh fruits and products sourced sustainably and locally, we promise to always supply you with products of a high standard. Explore our range and select from our mouth watering favors.</p>
+        </div>
+        <div class="hero-img">
+            <img width="100%" height="100%" alt="" src="https://cdn.pixabay.com/photo/2015/08/24/18/05/cake-905377__340.jpg">
+        </div>
+    </section>
+
+    <section class="imgs-section">
+
+        <div class="imgs-container">
+
+            <img class="img-b" alt="" src="./images/small-cupcakes.jpeg" width="100%" height="100%">
+                
+            <img class="img-c" alt="" src="./images/samll-caramel-cake.jpeg" width="100%" height="100%">
+               
+            <img class="img-d" alt="" src="./images/choc-frut-cake.jpeg" width="100%" height="100%">
+
+            <img class="img-e"alt="" src="./images/small-cake-flowers.jpeg" width="100%" height="100%">
+        
+        </div>
+    </section>
+    <footer>
+        <div class="footer-icons">
+            <a href="#"><img alt="twitter" class="footer-imgs" src="./images/facebook-icon.svg"></a>
+            <a href="#"><img alt="facebook" class="footer-imgs" src="./images/instagram-icon.svg"></a>
+            <a href="#"><img alt="instagram" class="footer-imgs" src="./images/twitter-icon.svg"></a>
+        </div>
+  
+        <p class="footer-p">&#169Lee-LeeBakes</p>
+    </footer>
+</body>
+<script>
+    const hamburger = document.querySelector(".hamburger");
+    const navMenu = document.querySelector(".nav-menu");
+
+    hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+    })
+
+    document.querySelectorAll ("nav-item").forEach(n => n. 
+    addEventListener("click",() => {
+
+    }))
+</script>
 </html>
