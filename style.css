@@ -5,30 +5,55 @@
   box-sizing: border-box;
 }
 body {
-  /*display: grid;
+  display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(5, auto);
   grid-template-areas: "header" "section1" "section2" "section3" "footer";
 }
 header {
-  grid-area: header;*/
+  grid-area: header;
+  background-color: aliceblue;
 }
 
 .nav_bar {
   width: 100%;
-  display: flex;
+  /*display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: center;*/
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: auto 50% auto;
+
   list-style: none;
   position: relative;
   background-color: aliceblue;
   padding: 12px 20px;
 }
 
-.logo img {
-  width: 30px;
+nav {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: auto 50% auto;
 }
 
+nav div {
+  width: 30px;
+  display: grid;
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+nav ul {
+  grid-column: 2 /3;
+  grid-row: 1 / 2;
+}
+
+nav p {
+  grid-column: 2/3;
+  grid-row: 3/4;
+  margin-right: 1em;
+  text-align: end;
+  font-size: 1.5em;
+}
 .menu {
   display: flex;
   flex-direction: column;
@@ -102,27 +127,59 @@ header {
 #check:checked ~ .menu {
   right: 0;
 }
+section {
+  background-color: aliceblue;
+  margin: 2em 1em;
+  font-size: 1.5em;
+}
 
-/*#section1 {
+#section1 {
   grid-area: section1;
-  background-color: red;
+  background-color: aliceblue;
 }
 
 #section2 {
   grid-area: section2;
-  background-color: rgb(0, 255, 115);
 }
 
 #section3 {
-  grid-area: section1;
-  background-color: rgb(255, 0, 191);
+  grid-area: section3;
+  background-color: aliceblue;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1em;
 }
-
+#section3 .img1 {
+  grid-column: 1 / 2;
+  grid-row: 1 /2;
+}
+#section3 .img1 {
+  grid-column: 2 / 3;
+  grid-row: 1 /2;
+}
+#section3 .img1 {
+  grid-column: 1 / 2;
+  grid-row: 2 /3;
+}
+#section3 .img4 {
+  grid-column: 2 / 3;
+  grid-row: 2 /3;
+}
+/*
 footer {
   grid-area: footer;
   background-color: blueviolet;
 }
-
-img {
-  width: 30%;
-}*/
+*/
+.logo {
+  width: 100px;
+  margin-left: 1.2em;
+}
+.img-section2 {
+  width: 100%;
+  margin: auto;
+}
+#section3 img {
+  width: 100%;
+}
