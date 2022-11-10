@@ -1,5 +1,6 @@
-/* -------- General Style Here ----------
+/*
 */
+/* -------- General Style Here ---------- */
 
 body {
   font-family: "Roboto", sans-serif;
@@ -8,15 +9,7 @@ body {
   margin: 8px;
 }
 
-h1 {
-  font-size: 10vw;
-  padding-left: 1.2rem;
-  margin-bottom: 0%;
-}
-
-/*
- --------- Main Homepage Starts Here -------------
-*/
+/* --------- Main Homepage Starts Here ------------- */
 
 .homepage-main {
   display: grid;
@@ -30,13 +23,9 @@ h1 {
     "product"
     "footer";
 }
-
-/*
- --------- Homepage Hero Starts Here -------------
-*/
+/* --------- Homepage Hero Starts Here ------------- */
 
 .homepage-hero {
-  background-color: coral;
   grid-area: hero;
   display: grid;
   grid-template-columns: 2fr 2fr 2fr 1fr;
@@ -54,7 +43,7 @@ h1 {
 .hamburger-menue div {
   width: 5vw;
   height: 0.5vw;
-  background-color: black;
+  background-color: rgb(105, 104, 104);
   margin: 0.3rem;
 }
 
@@ -72,25 +61,25 @@ h1 {
   color: hwb(0 0% 100%);
 }
 
-/*
- --------- Homepage Welcome Starts Here -------------
-*/
+/* --------- Homepage Welcome Starts Here ------------- */
 
 .homepage-welcome {
   background-color: hsl(80, 33%, 77%);
   grid-area: welcome;
 }
 
-.homepage-welcome p {
-  font-size: 4vw;
-  line-height: 2;
+.homepage-welcome h1 {
+  font-size: 10vw;
   padding-left: 1.2rem;
-  margin-bottom: 0%;
 }
 
-/*
- --------- Homepage Feature Starts Here -------------
-*/
+.homepage-welcome p {
+  font-size: 14px;
+  line-height: 2;
+  padding: 0rem 1.2rem 1rem 1.2rem;
+}
+
+/* --------- Homepage Feature Starts Here ------------- */
 
 .homepage-feature {
   grid-area: feature;
@@ -98,9 +87,7 @@ h1 {
   background-size: cover;
 }
 
-/*
- --------- Homepage Product Starts Here -------------
-*/
+/* --------- Homepage Product Starts Here ------------- */
 
 .homepage-products {
   grid-area: product;
@@ -136,9 +123,7 @@ h1 {
   object-fit: cover;
 }
 
-/*
- --------- Footer Starts Here -------------
-*/
+/* --------- Footer Starts Here ------------- */
 
 .homepage-footer {
   background-color: #6dc5c6;
@@ -152,19 +137,177 @@ h1 {
   margin: 0.4rem;
 }
 
-.footer-links p {
+.homepage-footer p {
   text-align: center;
   justify-self: center;
   margin: 2rem;
 }
 
-/*
- --------- Tips Starts Here -------------
-*/
+@media screen and (min-with: 420px) {
+  .navbar-desktop {
+    display: none;
+  }
+}
+/* ------------- Tablet Media query Start Here --------- */
+/* ------------- Tablet Media query Start Here --------- */
 
-.tip {
-  display: block;
-  padding-top: 30px;
-  font-family: Arial;
-  color: grey;
+@media screen and (min-width: 550px) {
+  .homepage-main {
+    grid-template-columns: 20vh auto auto auto;
+    grid-template-rows: 10rem 15rem 15rem 10rem;
+    grid-template-areas:
+      "hero     hero     hero     hero   "
+      "welcome  welcome  welcome  welcome"
+      "feature  feature  feature  feature"
+      "product  product  product  product"
+      "footer   footer   footer   footer ";
+  }
+
+  /* --------- Homepage Hero for Tablet ------------- */
+
+  .hamburger-menue {
+    padding-right: 3rem;
+  }
+
+  .hamburger-menue div {
+    width: 6vw;
+    height: 0.75vw;
+    margin: 0.5rem;
+  }
+
+  .hero-txt {
+    grid-column: 2 / span 3;
+    padding-right: 4rem;
+    padding-bottom: 1rem;
+    font-size: 2.5vw;
+  }
+
+  /* --------- Homepage Welcome for Tablet ------------- */
+
+  .homepage-welcome h1 {
+    font-size: 25px;
+  }
+
+  .homepage-welcome p {
+    font-size: 2vw;
+    line-height: 2;
+  }
+  /* --------- Homepage Feature for Tablet ------------- */
+
+  .homepage-feature {
+  }
+
+  /* --------- Homepage Product for Tablet ------------- */
+
+  .homepage-products {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 10px;
+  }
+
+  .homepage-products img {
+    width: auto;
+  }
+
+  /* --------- Footer for Tablet ------------- */
+
+  .footer-links {
+    display: grid;
+    grid-template-areas: "contact address phone email";
+    align-items: center;
+    padding-top: 0.75rem;
+  }
+
+  .footer-links div {
+    width: 20vw;
+    height: 1vw;
+    background-color: #6a6a6a;
+    margin: 0.4rem;
+  }
+}
+
+/* ------------- Desktop Media query Start Here --------- */
+/* ------------- Desktop Media query Start Here --------- */
+
+@media screen and (min-width: 900px) {
+  .homepage-main {
+    grid-template-columns: 5rem 1fr 1fr 1fr 1fr 5rem;
+    grid-template-rows: 17rem 3.5rem 15rem 8rem 10rem;
+    grid-template-areas:
+      "hero   hero     hero     hero     hero      hero"
+      ".      navbar   navbar   navbar   navbar       ."
+      ".      welcome  welcome  feature  feature        ."
+      ".      product  product  product  product      ."
+      "footer footer   footer   footer   footer  footer";
+  }
+
+  /* --------- Homepage Hero for Desktop ------------- */
+
+  .hamburger-menue {
+    display: none;
+  }
+
+  /* --------- Homepage Navbar for Desktop ------------- */
+
+  .navbar {
+    grid-column: navbar;
+    display: grid;
+    justify-items: end;
+    align-items: center;
+    background-color: antiquewhite;
+  }
+
+  .navbar-btn {
+    display: flex;
+    column-gap: 15px;
+    list-style: none;
+    padding-right: 20px;
+  }
+
+  .navbar-btn button {
+    background-color: orange;
+    border: none;
+    padding: 5px;
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+  /* --------- Homepage Welcome for Desktop ------------- */
+
+  .homepage-welcome {
+    grid-column: welcome;
+  }
+
+  .homepage-welcome h1 {
+    font-size: 2vw;
+  }
+
+  .homepage-welcome p {
+    font-size: 15px;
+    line-height: 2;
+  }
+  /* --------- Homepage Feature for Desktop ------------- */
+
+  .homepage-feature {
+    grid-column: feature;
+  }
+
+  /* --------- Homepage Product for Desktop ------------- */
+
+  /* --------- Footer for Desktop ------------- */
+
+  .footer-links {
+    display: grid;
+    grid-template-areas: "contact address phone email";
+    align-items: center;
+    padding-top: 0.75rem;
+  }
+
+  .footer-links div {
+    width: 20vw;
+    height: 1vw;
+    background-color: #6a6a6a;
+    margin: 0.4rem;
+  }
 }
