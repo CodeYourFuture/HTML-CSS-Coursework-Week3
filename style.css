@@ -1,1 +1,128 @@
 /*  Add your styling here */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  /*display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5, auto);
+  grid-template-areas: "header" "section1" "section2" "section3" "footer";
+}
+header {
+  grid-area: header;*/
+}
+
+.nav_bar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  position: relative;
+  background-color: aliceblue;
+  padding: 12px 20px;
+}
+
+.logo img {
+  width: 30px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  z-index: 100;
+  background-color: rgb(134, 134, 236);
+  transition: all 0.2s ease-in-out;
+}
+.menu li {
+  padding-left: 30px;
+  margin-top: 40px;
+}
+
+.menu li a {
+  display: inline-block;
+  text-decoration: none;
+  color: rgb(246, 243, 248);
+  text-align: center;
+  transition: 0.15s ease-in-out;
+  position: relative;
+  text-transform: uppercase;
+  padding: 10px;
+}
+
+.menu li a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: black;
+  transition: 0.15s ease-in-out;
+}
+
+.menu li a:hover:after {
+  width: 100%;
+}
+
+.open_menu,
+.close_menu {
+  content: "";
+  position: absolute;
+  color: rgb(42, 165, 67);
+  cursor: pointer;
+  font-size: 24px;
+  display: block;
+}
+
+.open_menu {
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+}
+
+.close_menu {
+  top: 20px;
+  right: 20px;
+}
+
+#check {
+  display: none;
+}
+
+#check:checked ~ .menu {
+  right: 0;
+}
+
+/*#section1 {
+  grid-area: section1;
+  background-color: red;
+}
+
+#section2 {
+  grid-area: section2;
+  background-color: rgb(0, 255, 115);
+}
+
+#section3 {
+  grid-area: section1;
+  background-color: rgb(255, 0, 191);
+}
+
+footer {
+  grid-area: footer;
+  background-color: blueviolet;
+}
+
+img {
+  width: 30%;
+}*/
