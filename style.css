@@ -1,7 +1,7 @@
 body {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: repeat(3, auto);
   grid-template-areas:
     "hero hero hero hero"
     "main  main  main  main"
@@ -14,12 +14,10 @@ header {
 }
 
 main {
-  background-color: darkBlue;
   grid-area: main;
 }
 
 footer {
-  background-color: darkSeaGreen;
   grid-area: footer;
 }
 
@@ -155,6 +153,35 @@ header .header-text {
 .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
 .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
   top: 0;
+}
+
+/* main */
+/* main .section1 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas:
+    "img img nav nav"
+    "img img nav nav"
+    "img img text text";
+}
+
+header .header {
+  grid-area: nav;
+}
+
+header img {
+  grid-area: img;
+} */
+
+main .section1 img {
+  width: 50%;
+  height: auto;
+}
+
+main .section2 img {
+  width: 25%;
+  height: auto;
 }
 
 @media (min-width: 540px) {
