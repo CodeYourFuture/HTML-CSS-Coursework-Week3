@@ -243,8 +243,45 @@ main .section2 {
 }
 
 main .section2 img {
+  display: block;
   border-radius: 10px;
   box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.3);
+}
+
+main .image-container {
+  position: relative;
+}
+
+main .image-container .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.476);
+}
+
+main .image-container:hover .overlay {
+  opacity: 1;
+}
+
+main .image-container .text {
+  color: white;
+  font-size: 20px;
+  line-height: 30px;
+  position: absolute;
+  width: 80%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
 
 main .section2 .image1 {
@@ -379,13 +416,18 @@ footer .link a{
       "img img title title";
   }
 
-  main .title-and-text {
+  main .section1 .title-and-text {
    display: flex;
    flex-direction: column;
    justify-content: center;
    text-align: end;
    margin-left: 15px;
   }
+
+  main .section1 button {
+    font-size: 1.3rem;
+  }
+
 
   main .title-and-text button{
     align-self: flex-end;
