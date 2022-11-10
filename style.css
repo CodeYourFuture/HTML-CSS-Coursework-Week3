@@ -99,6 +99,7 @@ body {
   }
   .oleh {
     text-align: center;
+    grid-column: 1 / span 3;
   }
   /* 
     Now let's change it for larger screens 
@@ -111,9 +112,6 @@ body {
     /*  
       We only define rules which are DIFFERENT from the mobile version defined above. 
     */
-    .one-one{
-      display: none;
-    }
     .grid-item1 {
       grid-area: product-item1;
     }
@@ -131,13 +129,13 @@ body {
     .homepage-products {
       grid-area: product;
       display: grid;
-      
-      grid-template-columns: repeat(3, 1fr);
+      justify-content: space-around;
+      grid-template-columns: repeat(3, 6rem);
       grid-template-areas:
         "product-item1  product-item2  product-item3" ;          /* one for each column */ 
     } 
 
-     .contact {
+     .contacts {
       grid-area: contact;
       text-align: center;
      }
@@ -171,6 +169,7 @@ body {
         "product product product product"
         "footer footer footer footer";
     }
+
     
   /* 
     We don't need to re-define the grid-area for each block because these haven't changed. The hero is still the hero, the feature is still the feature etc. 
