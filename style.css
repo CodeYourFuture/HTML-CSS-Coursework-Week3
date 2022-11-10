@@ -189,23 +189,24 @@ footer.footer {
 
     section.grid-container {
       display: grid;
-      /* grid-template-rows: 200px 200px 200px 200px; */
-      /* grid-template-columns: 300px 300px; */
       grid-template-columns: repeat(4, 1fr);
-      padding-left: 2rem;
       gap: 1rem;
+      padding-bottom: 5rem;
     }
 
     section div.grid-item img{
       width: 100%;
       height: 100%;
-      gap: 10;
-      /* grid-template-rows: 10px 10px; */
     }
 
-    section >div.grid-item {
-      width: 100%;
-      height: 100%;
-      gap: 0;
-      /* grid-template-rows: 10px 10px; */
+    footer.footer {
+      display: grid;
+      grid-template-columns: repeat(3,2fr);   }
+    
+    footer.footer p {
+      padding-top: 3rem;
+    }
+
+    footer.footer > div.foot > h6 {
+      margin-left: 11rem;
     }
