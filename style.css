@@ -1,1 +1,254 @@
 /*  Add your styling here */
+
+body {
+  font-family: "Mukta", sans-serif;
+  color: rgb(133, 120, 120);
+  margin: 0;
+}
+
+.index-main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 0.2fr 0.7fr 0.5fr 0.7fr 0.2fr;
+  gap: 2em;
+  grid-template-areas:
+    "hero hero"
+    "description description"
+    "d-picture d-picture"
+    "products products"
+    "footer footer";
+}
+
+.index-hero {
+  grid-area: hero;
+  font-weight: bold;
+  border-bottom: 2px solid rgb(186, 219, 208);
+  padding: 0;
+}
+
+.index-description {
+  border: 2px solid rgb(186, 219, 208);
+  border-radius: 1em;
+  grid-area: description;
+  display: flex;
+  gap: 1em;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+  padding: 2em;
+  margin: 0.5em;
+}
+
+.index-description p,
+h1 {
+  margin: 0;
+}
+
+.index-description-picture {
+  grid-area: d-picture;
+  background-image: url("img/d-image.jpeg");
+  background-size: cover;
+}
+
+.index-products {
+  grid-area: products;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+}
+.index-products img {
+  width: 45%;
+  height: auto;
+}
+/*motto*/
+.motto {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.motto img {
+  width: 20%;
+}
+.motto p {
+  font-size: 1.2em;
+  text-align: right;
+  margin-bottom: 0;
+  margin-right: 0;
+}
+
+/*Nav bar*/
+.topnav {
+  margin: 0;
+  padding: 0;
+}
+.topnav a {
+  display: none;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.topnav a.icon {
+  size: 2em;
+  float: right;
+  display: block;
+}
+.topnav.responsive {
+  position: relative;
+}
+.topnav.responsive a.icon {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.topnav.responsive a {
+  float: none;
+  display: block;
+  text-align: left;
+}
+.topnav a:hover {
+  color: darkgrey;
+}
+
+i.fa.fa-bars::before {
+  color: rgb(133, 120, 120);
+}
+
+/*footer*/
+footer {
+  grid-area: footer;
+  background-color: rgb(186, 219, 208);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.socialMedia {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 5px;
+}
+footer p {
+  font-size: 16px;
+}
+
+/*media query for tablet*/
+@media screen and (min-width: 540px) {
+  /*navbar changes*/
+  .topnav {
+    overflow: hidden;
+  }
+
+  .topnav a {
+    float: left;
+    display: block;
+  }
+
+  .topnav a.icon {
+    display: none;
+    color: white;
+  }
+
+  .motto {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .index-main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 0.3fr 0.8fr 0.3fr 0fr;
+    gap: 2em;
+    grid-template-areas:
+      "hero hero hero hero"
+      "d-picture d-picture description description"
+      "products products products products"
+      "footer footer footer footer";
+  }
+  .motto img {
+    align-self: flex-start;
+  }
+  .motto p {
+    margin: 0;
+    padding: 0 20px 0 10px;
+    font-size: 1.5em;
+  }
+  .index-description {
+    font-size: 1.5em;
+    border-radius: 1em;
+    margin: 0;
+  }
+  .topnav {
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+
+  .topnav a {
+    background-color: rgb(186, 219, 208);
+    margin: 10px;
+  }
+  .index-products {
+    flex-wrap: nowrap;
+    margin: 2em;
+  }
+  .index-products img {
+    width: 22%;
+  }
+  .index-description {
+    margin-right: 2em;
+  }
+  .index-description-picture {
+    margin-left: 2em;
+  }
+}
+
+/* media query for desktop*/
+@media screen and (min-width: 900px) {
+  .index-main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 0.5fr 1fr 0.5fr 0.2fr;
+    gap: 2em;
+    grid-template-areas:
+      "hero hero hero hero"
+      "d-picture d-picture description description"
+      "products products products products"
+      "footer footer footer footer";
+  }
+  .motto img {
+    align-self: flex-start;
+    width: 10%;
+  }
+
+  .index-description {
+    font-size: 1.5em;
+    border-radius: 1em;
+    margin: 0;
+  }
+  .topnav {
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+
+  .topnav a {
+    background-color: rgb(186, 219, 208);
+    margin: 10px;
+  }
+  .index-products {
+    flex-wrap: nowrap;
+  }
+  .index-products img {
+    width: 22%;
+  }
+  .index-description {
+    margin-right: 2em;
+  }
+  .index-description-picture {
+    margin-left: 2em;
+  }
+  .index-products {
+    margin: 2em;
+  }
+}
