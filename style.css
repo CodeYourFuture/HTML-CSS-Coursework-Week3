@@ -8,10 +8,6 @@
   padding: 0;
 }
 
-body {
-  width: 100vw;
-}
-
 header {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -20,9 +16,9 @@ header {
   "header-image mobile-nav"
   "header-image header-title";
   padding: 1rem;
-  background-image: 
-    linear-gradient(45deg, rgba(159, 202, 201, 0.5) 40%, rgba(208, 71, 162, 0.75) 100%),
-    url("images/background01.png");
+  background-image:
+    url("images/background01.png"),
+    linear-gradient(45deg, hsla(179, 29%, 71%, 1) 30%, hsla(320, 59%, 55%, 1) 100%);
   border: 0.15rem solid hsl(345, 58%, 78%);
 }
 
@@ -37,9 +33,12 @@ header {
   justify-self: end;
   align-self: end;
   text-align: right;
-  color: hsl(323, 90%, 88%);
+  /* color: hsl(323, 90%, 88%); */
+  /* color: hsl(323, 90%, 68%); */
+  color: hsl(180, 70%, 60%);
+  text-shadow: 0 0 0.15rem hsl(0, 0%, 0%);
   font-family: "Berkshire Swash", serif;
-  text-shadow: 0 0 0.1rem hsl(0, 0%, 0%);
+  font-size: 1.6rem;
 }
 
 #nav-mobile {
@@ -63,7 +62,7 @@ header {
 main {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-areas: 
+  grid-template-areas:
   "section-one"
   "section-two"
   "section-three";
@@ -91,13 +90,15 @@ main {
 #section-one-title {
   font-size: 2.2rem;
   font-family: "Berkshire Swash", serif;
-  color: hsl(246, 69%, 71%);
+  /* color: hsl(246, 69%, 71%); */
+  color: hsl(323, 100%, 75%);
   text-shadow: 0 0 0.1rem hsl(0, 0%, 0%);
 }
 
 #section-one-text {
-  color: hsl(0, 0%, 15%);
+  color: hsl(0, 0%, 25%);
   font-family: "Libre Baskerville", serif;
+  font-size: 0.9rem;
   line-height: 1.5rem;
   text-align: justify;
 }
@@ -118,14 +119,14 @@ main {
   grid-area: section-three;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  column-gap: 1rem;
-  row-gap: 1rem;
+  gap: 1rem;
 }
 
 .gallery-image {
   display: block;
   width: 100%;
   height: 100%;
+  object-fit: cover;
   border: 0.15rem solid hsl(0, 0%, 0%, 0.15);
   background-color: hsla(180, 67%, 74%, 0.5);
   filter: saturate(1.5);
@@ -144,8 +145,8 @@ footer {
   border-bottom: 0.15rem solid hsl(253, 41%, 72%);
   border-left: 0.15rem solid hsl(253, 41%, 72%);
   background-image:
-   url("images/background01.png"),
-   linear-gradient(340deg, hsla(235, 26%, 61%, 0.75) 0%, hsla(178, 49%, 71%, 0.75) 60%);
+    url("images/background01.png"),
+    linear-gradient(340deg, hsla(235, 26%, 61%, 1) 0%, hsla(178, 49%, 71%, 1) 60%);
 }
 
 #footer-list {
@@ -179,6 +180,13 @@ footer {
 
 /* screen width 540px or greater */
 @media (min-width: 540px) {
+
+  body {
+    margin: 0 auto;
+    max-width: 1400px;
+    background-color: hsl(0, 0%, 90%);
+  }
+
   header {
     grid-template-areas:
     "header-image ."
