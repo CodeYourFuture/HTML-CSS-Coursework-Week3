@@ -214,6 +214,7 @@ main .section1 img {
   width: 100%;
   height: auto;
   border-radius: 10px;
+  box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.3);
 }
 
 main .section1 button {
@@ -243,6 +244,7 @@ main .section2 {
 
 main .section2 img {
   border-radius: 10px;
+  box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.3);
 }
 
 main .section2 .image1 {
@@ -382,6 +384,7 @@ footer .link a{
    flex-direction: column;
    justify-content: center;
    text-align: end;
+   margin-left: 15px;
   }
 
   main .title-and-text button{
