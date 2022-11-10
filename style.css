@@ -1,106 +1,128 @@
-:root{ --primary:#be95c4;
-    --dark: #5e548e;
-     --ligth:#be95c4;
-     shadow:#0077b6;
-    }
+body {
+    background-color: #e5e8ea;
+    color: #333;
+    font-size: 0.9rem;
+    line-height: 1.2;
+  }
+  
+  .container {
+    width: 24rem;
+    margin: 4rem;
+    padding: 2rem;
+    background-color: rgb(236, 237, 238);
+  }
+  
+  .icon {
+    font-size: 3rem;
+    padding-left: 1rem;
+    width: 100px;
+  }
+  
+  h3 {
+    margin: 0;
+  }
+  
+  p {
+    margin: 5px 0 0;
+  }
+  
+  .item {
+    padding: 0 0 1.4rem 0;
+  }
+  
+  /* Generic Styles End */
+  
+  .container {
+    display: grid;
+    grid-template-columns: 1fr auto;
+  }
+  
 
-    .header {
-        grid-area: hd;
-    }
-    .footer {
-        grid-area: ft;
-    }
-    .content {
-        grid-area: main;
-    }
-    .sidebar {
-        grid-area: sd;
-    }
-    wrapper {
-        display: grid;
-        grid-template-columns: repeat(9, 1fr); <= this is giving you 9 columns which are of equal width
-        grid-auto-rows: minmax(100px, auto); <= this is giving the rows a minimum height of 100px and a maximum height that just scales to whatever is in it
-        grid-template-areas:
-          "hd hd hd hd   hd   hd   hd   hd   hd"
-          "sd sd sd main main main main main main"
-          "ft ft ft ft   ft   ft   ft   ft   ft";
-    }
-    .link{
-        display:flex;
-    
-        padding: 2rem 2rem;
-        margin: 2rem 2rem;
-        display: flex;
-  justify-content: space-between;
-  list-style: none;
 
-    }
+  @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+  body {
+    font-family: roboto;
+  }
+  
+  .wrapper2 {
+    padding: 3rem;
+    text-align: center;
+    color: #333;
+    background-color: #DDD6FE;
+  }
+  
+  .menu {
+    background-color: white;
+    padding: 0.5rem;
+    border-radius: 2rem;
+  }
+  
+  .menu a {
+    background-color: #EFF6FF;
+    padding: 0.6rem 1.5rem;
+    border-radius: 2rem;
+    color: black;
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+  
+  .menu a.active {
+    background-color: #949aa3;
+    color: white;
+  }
+  
+  /* Generic Styles End */
+  
+  .menu {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  
+body {
+    background-color: #F1F5F9;
+  }
+  
+  p {
+    text-align: center;
+    margin-top: 40px;
+  }
+  
+  ul {
+    padding: 0;
+    list-style-type: none;
+    width: 300px;
+    margin: 30px auto;
+    background-color: rgba(203, 201, 201, 0.521);
+    display: flex;
+    flex-direction: row;
+  }
+  
+  ul li {
+    padding: 20px;
+    text-align: center;
+    transition: flex;
+    transition-duration: 0.2s;
+  }
+  
+  ul li:hover {
+    cursor: pointer;
+    border-bottom: solid 3px #2DD4BF;
 
-
-
-    html{
-        box-sizing: border-box;
-        font-family: Arial, Helvetica, sans-serif;
-        color: var(--dark);
-      }
-
-      body{
-        background-color: #ffffff;
-        margin: 2em;
-        line-height: 1.5;
-        font-family: 'Secular One', sans-serif;
-      }
-      .footer{
-        margin-right: 200px;
-        margin-left: 200px;
-      
-        display: grid;
-        text-decoration: none;
-        text-align: center;
-        color: var(--ligth);
-        font-size: 1.2rem;
-        box-shadow: var(--shadow);
-        background-color: #feeafa;
-        margin: 2em;
-      padding: 1em;
-      }
-
-      .footer h1{
-        color: var(--dark);
-        padding-top: 1em;
-        justify-content: center;
-        padding-bottom: 0.5em;
-      }
-      
-      .footer P{
-        padding: 2em;
-        justify-content: center;
-        color: var(--dark);
-        padding-top: 0.5em;
-        cursor: pointer;
-      }
-      
-      
-      .footer{
-        grid-template-areas: "footer";
-        margin: 0px;
-        padding: 0rem;
-      }
-
-      .call {
-        margin: 0px;
-        padding: 0rem;
-      }
-/*  Add your styling here */
-@media screen and (min-width: 320px) {
+  }
+  @media screen and (min-width: 320px) {
     body {
         background: lightgrey
     }
-    
-    
-@media screen and (max-width: 900px) {
+
+
+@media screen and (max-width: 540px) {
     body {
         background: #0077b6;
     }
 }
+  
+  /* Generic Styles End */
+  
+  
