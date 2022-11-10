@@ -1,3 +1,4 @@
+<!-- from new branch-->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,12 +6,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Responsive Cake webpage</title>
-    <!-- Add a link to your css file here -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-    <!-- Add your markup here -->
-</body>
+    <div class="main">
+        <div class="one">
+            <div class="one-one">
+                <div class="mobile-container">
+                <div class="topnav">
+                    <a href="#home" class="active"><img class="logo-cake" src="/images/logo.png"></a>
+                    <div id="myLinks">
+                      <a href="#news">News</a>
+                      <a href="#contact">Contact</a>
+                      <a href="#about">About</a>
+                    </div>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()"> <img class="burger"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSo6URo4iYQ9SlrlSox7pXP03Rhx_LYngNYOA&usqp=CAU" alt="burger">
+                      
+                    </a>
+                  </div>  
+            </header>
+ 
+            </div>
+            <div class="one-two"> 
+                <h2>online cake </h2>
+                <h4>The best cake in town delivered to your door</h4></div>
+           
+        </div>
+        <!-- section two-->
+        <div class="two">
+          
+          <h2>Welcome</h2><p >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis repudiandae non omnis quos voluptas ducimus dolor maxime doloremque nam maiores? Ducimus adipisci nulla dignissimos nobis ut provident molestiae possimus recusandae.</p></div>
 
+          <div class="one-three"> 
+            <div class="item">News</div>
+            <div class="item">Contact</div>
+            <div class="item">About</div>
+            <div class="item">lego</div>
+            <div class="item">Shop</div>
+        </div>
+
+     <!-- section three-->
+      
+         <div class="three">
+          <div class="three2"></div>
+          <h3 class="h3">Welcome <br>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis repudiandae non omnis quos voluptas ducimus dolor maxime doloremque nam maiores? Ducimus adipisci nulla dignissimos nobis ut provident molestiae possimus recusandae.</h3>
+         </div>
+         <!-- section four-->
+        <div class="four-wrapper"></div>
+        <div class="four">
+            <div class="four-one"></div>
+            <div class="four-two"></div>
+            <div class="four-three"></div>
+            <div class="four-four"></div>
+
+        </div>
+         <!-- section five-->
+        <div class="five">
+          <a href="#" class="fa fa-facebook"></a><br>
+          <a href="#" class="fa fa-twitter"></a><br>
+          <a href="#" class="fa fa-instagram"></a>  
+        </div>
+    </div>
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myLinks");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+        </script>
+</body>
 </html>
