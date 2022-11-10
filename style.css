@@ -60,7 +60,13 @@ nav {
   
   -webkit-user-select: none;
   user-select: none;
+  
+  visibility: visible;
 
+}
+
+.tablet { 
+    visibility: hidden;
 }
 
 #menuToggle a
@@ -186,10 +192,82 @@ nav {
 .footer a {
     margin-bottom: .8em;
     text-decoration: none;
-    color: black;
+    
 }
 
 h3 {
     text-align: center;
 }
 
+/*
+ Now change it for larger screens
+*/
+/*TABLET*/
+@media screen and (min-width: 540px) {
+
+    /*Only define rules which are different from the mobile version defined above*/
+
+  .h-main {
+    /* need more columns for a more complex layout*/
+    grid-template-columns: repeat(6,1fr);
+    /* need less rows */
+    grid-template-rows: 160px 80px 220px 135px 135px 160px;
+   /*template nwo has 6 columns and 3 rows */
+    grid-template-areas: 
+    "hero      hero     hero     hero     hero    hero"
+    "nav       nav      nav      .      .       .   "
+    "f-img     feature    feature    feature  feature feature"
+    "product   product  product  product  product product"
+    "product   product  product  product  product product"
+    "footer    footer   footer   footer   footer  footer";
+  }
+  .tablet{
+   /* background-color: green;*/
+    grid-area: nav;
+    visibility: visible;
+  }
+  .container {
+    display: flex;
+    list-style-type:none;
+    justify-self: flex-end;   
+}
+ .container a {
+    margin-top: .5em;
+    text-decoration: none;
+ }  
+
+ button {
+    margin-left: 1em;
+ }
+
+
+  #menuToggle {
+    visibility: hidden;
+  }
+  .footer {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+
+} /*end of tablet media query*/
+
+
+/*DESKTOP*/
+@media screen and (min-width: 900px) {
+ /*define rules which are DIFFERENT from the mobile and tablet version defined above*/
+
+ .h-main {
+   /* This time we keep the same number of columns and rows for tablets, so we don't 
+      need to re-define those  */
+   /* Skipping the 1st and last columns so the content isn't too wide*/
+   grid-template-areas: 
+   "hero  hero     hero     hero     hero       hero"
+   "nav   nav      nav      nav      nav        nav "
+   "f-img feature  feature   feature  feature   feature"
+   "product  product  product  product  product product "
+   ".  product  product  product  product  ."
+   ".  footer   footer   footer   footer   .";
+ }
+
+} /*end of desktop media query*/
