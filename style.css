@@ -13,7 +13,7 @@ html , body {
     display: grid;
     gap: 3px;
     grid-template-columns: repeat(4,1fr);
-    grid-template-rows: 160px 220px 195px 135px 135px 80px;
+    grid-template-rows: 160px 220px 195px 135px 135px 160px;
     grid-template-areas: 
     "hero      hero       hero     hero"
     "feature   feature    feature  feature"
@@ -175,8 +175,21 @@ nav {
 
 
 .h-footer {
-    background-color: darkturquoise;
+   /* background-color: darkturquoise;*/
     grid-area: footer;
 }
+.footer{
+    display: grid;
+    margin:3em 4em;
+    
+}
+.footer a {
+    margin-bottom: .8em;
+    text-decoration: none;
+    color: black;
+}
 
+h3 {
+    text-align: center;
+}
 
