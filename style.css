@@ -272,8 +272,8 @@ main .image-container:hover .overlay {
 
 main .image-container .text {
   color: white;
-  font-size: 20px;
-  line-height: 30px;
+  font-size: 12px;
+  line-height: 16px;
   position: absolute;
   width: 80%;
   top: 50%;
@@ -329,6 +329,13 @@ footer .link{
 
 footer .link a{
   color: #e79187;
+}
+
+@media(min-width: 540px) {
+  main .image-container .text {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 @media (min-width: 900px) {
@@ -441,6 +448,11 @@ footer .link a{
       "img1 img2 img3 img4";
   }
 
+  main .image-container .text {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
   footer .data {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -470,6 +482,11 @@ text-align: center;
 @media(min-width: 1150px){
   .header {
     width: 94%;
+  }
+
+  main .image-container .text {
+    font-size: 20px;
+    line-height: 24px;
   }
 }
 
