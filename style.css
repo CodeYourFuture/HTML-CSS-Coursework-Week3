@@ -148,6 +148,32 @@ h1 {
     gap: 20px;
 }
 
+/* Footer Styles */
+
+footer {  
+    margin: 30px 30px;
+    padding: 20px 0 0 20px;
+    background-color: #F3CFC6;
+}
+
+.footer-icons {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-imgs {
+    padding: 10px;
+    margin: 0 0 10px 10px;
+    width: 15px;
+    height: 15px;
+    border: 1px solid rgb(75, 71, 71);
+    border-radius: 50px;
+}
+
+.footer-p {
+    padding: 0 0 10px 10px;
+    margin-top: 0;
+}
 
 @media only screen and (min-width: 540px) {
 
@@ -243,6 +269,15 @@ h1 {
     .imgs-container {
         padding-left: 30px;
         margin: 0 35px;
+    }
+
+    .footer-icons {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .footer-p {
+        text-align: center;
     }
 }
 
