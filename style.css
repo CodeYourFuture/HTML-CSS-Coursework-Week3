@@ -1,2 +1,266 @@
+.main {
+  display: grid;
+  width: 100%;
+  height: auto;
+
+}
+/*section one*/
+.one{
+  background-color: white;
+  display: grid;
+  grid-template-rows: auto auto;
+}
+/*section one-one*/
+.one-one {
+background-image:url(https://media.istockphoto.com/id/656325336/photo/cupcake-background-on-white.jpg?s=612x612&w=0&k=20&c=g_C-LBcLrc2hiaIb-1c88_BNmfwm5sKbxp8vmjZrP1g=) ;
+background-repeat:no-repeat ;
+
+}
+
+.mobile-container {
+
+  color: white;
+  border-radius: 10px;
+  justify-self: end;
+}
+
+.topnav {
+  overflow: hidden;
+  position: relative;
+}
+
+.topnav #myLinks {
+display:hidden ;
+
+}
+
+.topnav a {
+  color: rgb(19, 18, 18);
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+  
+}
+
+.topnav a.icon {
+  
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+
+.burger{
+  width: 2rem;
+  height: 2rem;
+  
+}
+.logo-cake{
+  width: 4rem;
+  height: 4rem;
+  justify-self:flex-start;
+}
+
+
+
+/*section one-two*/
+.one-two {
+  text-align: right;
+  }
+
  
+
+/*section two*/
+.two{
+background-color: rgb(245, 219, 238);
+font-size:1.4rem ;
+padding:1.5rem ;
+margin-top:1rem ;
+
+
+}
+/*section three*/
+.three{
+ 
+  background-image:url(https://media.istockphoto.com/id/1368439281/photo/birthday-party-with-sliced-pink-cake.jpg?s=612x612&w=0&k=20&c=iE1DCoF7K5zvlcmkz3sV9UQvId3eBRTdvEaw9Rb2IPQ=);
+  height:350px ;
+  background-size: cover;
+  margin-top:1rem ;
+  
+}
+/*section four*/
+.four{
+  display:grid;
+  width:100%;
+  height: 300px;
+  grid-template-columns: auto auto;
+gap: 0.5em;
+margin-top:1rem ;
+}
+
+
+.four-one {
+  background-image: url(https://media.istockphoto.com/id/1253501415/photo/birthday-cake-with-drip-icing-and-colorful-candles.jpg?s=612x612&w=0&k=20&c=HHTHJN_pEiSacVOgJeNCtSBHvUHL3h2ZSpfZ5-MTZto=);
+  background-size: cover;
+  width:100%;
+  height: 150px;
+}
+.four-two {
+  background-image: url(https://media.istockphoto.com/id/179640507/photo/strawberry-cheesecake.jpg?s=612x612&w=0&k=20&c=VKRS8I0OgwWseIXTOP_2_DwRBKgHVHyaAtQl2rDCxeY=);
+  background-size: cover;
+  width:100%;
+  height: 150px;
+ 
+}
+
+.four-three {
+  background-image: url(https://media.istockphoto.com/id/1368439167/photo/colorful-birthday-cupcake-with-sparkler.jpg?s=612x612&w=0&k=20&c=vwm43rVaYSksiX5BIwpj8sHCcokmEMVz_J2B_5aT234=);
+  
+  background-size: cover;
+  width:100%;
+  height: 150px;
+}
+.four-four {
+  background-image: url(https://media.istockphoto.com/id/1299104835/photo/cinnamon-roll-with-white-icing.jpg?s=612x612&w=0&k=20&c=0TktSCIBtf8vODvAymGjRIRp1SR30wsLLc-8YYqJgZ8=);
+  background-size: cover;
+  width:100%;
+  height: 150px;
+}
+/*section five*/
+.five {
+  background-color: rgb(170, 145, 166);
+  margin-top:1rem ;
+  margin-bottom: 1rem;
+
+
+}
+.fa {
+  padding: 20px;
+  font-size: 350px;
+  width: 36%;
+  text-align: center;
+  text-decoration: none;
+  border:0.1px solid  ;
+  border-radius:5px;
+}
+
+
+
+@media screen and (min-width:550px) {
+  .one-one {
+    display: none;
+  }
+  
+  .one-three {
+    display: flex;
+     padding: 2rem;
+      background-color: rgb(179 149 149);
+      justify-content: space-around;
+      padding-left:50% ;
+      
+  }
+  
+  
+  .four{
+display: flex;
+flex-direction: row;
+height:9rem ;
+  }
+  .five{
+   display: flex;
+   flex-direction: row;
+   border-style: none;
+  }
+p ,h2{
+  display: none;
+}
+.three{
+  display:none ;
+}
+.three{
+display: flex;
+
+}
+
+.two{
+  height:10rem ;
+}
+.three2{
+ 
+  justify-content:start ;
+  width:50% ;
+  background-image:url(https://media.istockphoto.com/id/1368439281/photo/birthday-party-with-sliced-pink-cake.jpg?s=612x612&w=0&k=20&c=iE1DCoF7K5zvlcmkz3sV9UQvId3eBRTdvEaw9Rb2IPQ=);
+  background-repeat: no-repeat;
+}
+
+.h3{ 
+  margin: 0%;
+  background-color: rgb(184, 179, 183);
+width:50% ;
+padding:2rem ;
+text-align: center;
+font-size:1.2rem;}
+.five{
+  margin-bottom: 0;
+}
+
+  
+}
+
+
+       
+@media screen and (max-width: 550px) {
+  .one-three {
+      display: none;
+  }
+  h3{
+    display:none ;
+  }
+
+}
+@media screen and (min-width:920px) {
+
+  .two{
+    background-image:url(https://images.unsplash.com/photo-1486427944299-d1955d23e34d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Y2FrZSUyMGJhY2tncm91bmZ8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60) ;
+    width:100%;
+    height:18rem;
+  }
+  .one-three{
+    height:5rem ;
+   
+  }
+.item{
+  font-size:4rem ;
+  color: rgb(94, 19, 163);
+  text-shadow:1px 2px 1px white ;
+}
+.item:hover{
+  text-shadow:2px 2px 2px black ;
+}
+.three{
+  height:30rem ;
+  
+}
+.three2{
+ 
+  background-image:url(https://media.istockphoto.com/id/1368439281/photo/birthday-party-with-sliced-pink-cake.jpg?s=612x612&w=0&k=20&c=iE1DCoF7K5zvlcmkz3sV9UQvId3eBRTdvEaw9Rb2IPQ=);
+  background-repeat: no-repeat;
+ 
+}
+.h3{
+  font-size: 3rem;
+}
+.four{
+  height:48rem ;
+}
+.four-one ,.four-two ,.four-three ,.four-four{
+  height:48rem ;
+}
+.five{
+ height:6rem ;
+}
+
+}
 
