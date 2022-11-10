@@ -1,14 +1,128 @@
 
 .carrot-cake{
-    width: 20rem;
+    width: 15rem;
+    padding-top: 0;
+    
+    
+}
+.birthday-cake{
+    width: 100%;
+    height: 100%;
+    
 }
 body{
-    width: 400px;
+    margin: 20px;
+    width: 540px;
+    display: grid;
+    grid-template-columns: 2fr;
+    grid-template-rows: 400px 400px 400px 400px 400px;
+    grid-template-areas: "h"
+    "e"
+    "a"
+    "b"
+    "c";
 }
 .img-cake{
-    width: auto;
+    width: 100%;
+   height: 100%;
+    
 }
 
 .four-cakes{
-    width: 400px;
+    display: grid;
+    width: 100%;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: "h b"
+    "e c";
+    padding-bottom: 3em;
+    grid-area:b;
+    gap: 1.2em;
+}
+.cake1{
+    grid-area: h;
+    
+}
+.cake2{
+    grid-area: b;
+    
+}
+.cake3{
+    grid-area: e;
+    
+}
+.cake4{
+    grid-area: c;
+    
+}
+.header{
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+    grid-area: h;
+}
+.single-cake{
+    grid-area: a;
+    padding-bottom: 3em;
+}
+.header-p{
+    
+    padding-top: 6em;
+}
+contant{
+    grid-area:e;
+}
+
+.img-cake{
+    width: 250px;
+}
+
+footer{
+    grid-area:c;
+    display: grid;
+    width: 100%;
+    height: 200px;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(5,20%);
+    grid-template-areas: "m m m . . ."
+    "k k k . . ."
+    "v v v . . ."
+    ". l l l l ."
+    ". l l l l .";
+}
+.f1{
+    grid-area: m;
+   
+    background-color: rgb(247, 246, 246);
+    margin: 0.5em;
+}
+.f2{
+    grid-area: k;
+    background-color: rgb(247, 246, 246);
+    margin: 0.5em;
+}
+.f3{
+    grid-area: v;
+    background-color: rgb(247, 246, 246);
+    margin: 0.5em;
+}
+.f4{
+    grid-area: l;
+    background-color: rgb(230, 230, 230);
+    margin: 0.5em;
+    text-align: center;
+    padding-top: 1em;
+}
+.icon-footer
+{
+    max-height: 20px;
+    
+    border: solid 1px rgb(224, 229, 229);
+    border-radius: 15px;
+    margin-left: 30px;
+}
+
+@media screen and (min-width:540px){
+    
+    
 }
