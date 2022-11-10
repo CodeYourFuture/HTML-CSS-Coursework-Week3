@@ -1,16 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Responsive Cake webpage</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <!-- Add a link to your css file here -->
-</head>
+  </head>
 
-<body>
-    <!-- Add your markup here -->
-</body>
+  <body>
+    <main class="index-main">
+      <section class="index-hero">
+        <div class="motto">
+          <img alt="cake logo" src="img/cupcakelogo.jpg" />
+          <p>The best cakes in town delivered to your door</p>
 
+          <div class="topnav" id="myTopnav">
+            <a href="#home">HOME</a>
+            <a href="#news">CAKES</a>
+            <a href="#contact">ORDERIN</a>
+            <a href="#about">LESSONS</a>
+            <a href="#about">ABOUT</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="index-description">
+        <h1>Welcome</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet,
+          consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+          exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+      </section>
+      <section class="index-description-picture"></section>
+      <section class="index-products">
+        <img alt="cake picture" src="/img/cake1.jpeg" />
+        <img alt="cake picture" src="/img/cake2.jpeg" />
+        <img alt="cake picture" src="/img/cake3.jpeg" />
+        <img alt="cake picture" src="/img/cake4.jpeg" />
+      </section>
+      <footer>
+        <div class="socialMedia">
+          <p>Tweeter</p>
+          <p>Facebook</p>
+          <p>Instagram</p>
+        </div>
+        <p>Copyright © Cake4all Ltd</p>
+      </footer>
+    </main>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
+  </body>
 </html>
