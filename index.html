@@ -12,6 +12,7 @@
       type="text/css"
     />
     <link rel="stylesheet" href="/css/style.css" />
+    <!-- <script src="/css/script.js"></script> -->
   </head>
 
   <body>
@@ -32,27 +33,29 @@
           <span>The best cakes in town delivered to your door</span>
         </div>
       </div>
+      <nav>
+        <div class="nav-bar">
+          <ul class="nav-menu">
+            <li class="nav-item">
+              <a href="/index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Cakes</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Orderin</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Lessons</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">About</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </header>
     <main>
-      <nav class="nav-bar">
-        <ul class="nav-menu">
-          <li class="nav-item">
-            <a href="/index.html" class="nav-link">Home</a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">Cakes</a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">Orderin</a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">Lessons</a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">About</a>
-          </li>
-        </ul>
-      </nav>
       <section class="hero">
         <h1>Welcome</h1>
         <div class="main-content">
@@ -62,10 +65,11 @@
             animi officiis aliquam obcaecati ipsam sapiente?
           </p>
         </div>
-        <figure class="card-img">
-          <img class="main-img" src="/img/slide1.jpg" alt="" />
-        </figure>
       </section>
+      <figure class="card-img">
+        <img class="main-img" src="/img/slide1.jpg" alt="" />
+      </figure>
+
       <section class="products">
         <div class="product-item">
           <img class="product-img" src="/img/prod1.jpg" alt="" />
@@ -82,14 +86,27 @@
       </section>
     </main>
     <footer>
-      <div class="footer-asside">
-        <p>U.S.A., Washington, 14th street</p>
-        <a href="mailto:yourmail@gmail.com"> yourmail@gmail.com </a>
-        <p>Telephone: (1)222 333 44</p>
-      </div>
-      <div class="copyright">
-        <p>© Cake by Mo Mahboobian, 2022. All rights reserved.</p>
-      </div>
+      <section class="footer">
+        <div class="footer-asside">
+          <p>U.S.A., Washington, 14th street</p>
+          <a href="mailto:yourmail@gmail.com"> yourmail@gmail.com </a>
+          <p>Telephone: (1)222 333 44</p>
+        </div>
+        <div class="copyright">
+          <p>© Cake by Mo Mahboobian, 2022. All rights reserved.</p>
+        </div>
+      </section>
     </footer>
+    <script>
+      const hamburger = document.querySelector(".hamburger");
+      const navMenu = document.querySelector(".nav-menu");
+
+      hamburger.addEventListener("click", mobileMenu);
+
+      function mobileMenu() {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+      }
+    </script>
   </body>
 </html>
