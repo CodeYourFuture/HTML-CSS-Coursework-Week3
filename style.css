@@ -1,1 +1,273 @@
 /*  Add your styling here */
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap');
+
+html , body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito';
+}
+
+/*define grid*/
+
+.h-main {
+    display: grid;
+    gap: 3px;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 160px 220px 195px 135px 135px 160px;
+    grid-template-areas: 
+    "hero      hero       hero     hero"
+    "feature   feature    feature  feature"
+    "f-img     f-img      f-img    f-img"
+    "product   product    product  product" 
+    "product   product    product  product" 
+    "footer    footer     footer   footer";
+}
+/*define hero*/
+.h-hero {
+   /* background-color: coral;*/
+   background-image:url('img/background2.jpg.jpg') ;
+   grid-area: hero;
+}
+.h-hero  {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding-top: 5em;       
+        padding-right: 1.5em;
+    
+}
+nav {
+    margin-bottom: 15em;
+}
+
+
+#hero {
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+
+/*hamburger menu*/
+
+#menuToggle
+{
+  display: block;
+  position: relative;
+  top: 50px;
+  left: 50px;
+  
+  z-index: 1;
+  
+  -webkit-user-select: none;
+  user-select: none;
+  
+  visibility: visible;
+
+}
+
+.tablet { 
+    visibility: hidden;
+}
+
+#menuToggle a
+{
+  text-decoration: none;
+  color: #232323;
+  
+  transition: color 0.3s ease;
+}
+
+#menuToggle a:hover
+{
+  color: tomato;
+}
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+
+  cursor: pointer;
+  
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+  
+  -webkit-touch-callout: none;
+}
+
+/*
+ * Just a quick hamburger
+ */
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background: #cdcdcd;
+  border-radius: 3px;
+  z-index: 1;
+}
+
+/*
+ * Make this absolute positioned at the top left of the screen
+ */
+#menu
+{
+  position: absolute;
+  width: 300px;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  
+  background: #ededed;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  display: none;
+}
+
+#menu li
+{
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+/*
+ * And let's slide it in from the left
+ */
+#menuToggle input:checked ~ ul
+{
+  display: block;
+}
+
+
+
+/*define feature*/
+.h-feature{
+   /* background-color: blue;  */
+    grid-area: feature;
+    padding: .5em 1em;
+}
+ #feature-title {
+    margin-top: 1em;
+ }
+ #feature {
+   margin-bottom: 2em;
+ }
+
+
+.h-feature-image{
+    /*background-color: darkseagreen; */
+    grid-area: f-img;
+    padding: .5em 1em;
+}
+.h-products {
+   /* background-color: gray; */
+    grid-area: product;
+    padding: .5em 1em;
+}
+.top {
+    display: flex;
+}
+.bottom {
+    display: flex;
+}
+
+
+.h-footer {
+   /* background-color: darkturquoise;*/
+    grid-area: footer;
+}
+.footer{
+    display: grid;
+    margin:3em 4em;
+    
+}
+.footer a {
+    margin-bottom: .8em;
+    text-decoration: none;
+    
+}
+
+h3 {
+    text-align: center;
+}
+
+/*
+ Now change it for larger screens
+*/
+/*TABLET*/
+@media screen and (min-width: 540px) {
+
+    /*Only define rules which are different from the mobile version defined above*/
+
+  .h-main {
+    /* need more columns for a more complex layout*/
+    grid-template-columns: repeat(6,1fr);
+    /* need less rows */
+    grid-template-rows: 160px 80px 220px 135px 135px 160px;
+   /*template nwo has 6 columns and 3 rows */
+    grid-template-areas: 
+    "hero      hero     hero     hero     hero    hero"
+    "nav       nav      nav      .      .       .   "
+    "f-img     feature    feature    feature  feature feature"
+    "product   product  product  product  product product"
+    "product   product  product  product  product product"
+    "footer    footer   footer   footer   footer  footer";
+  }
+  .tablet{
+   /* background-color: green;*/
+    grid-area: nav;
+    visibility: visible;
+  }
+  .container {
+    display: flex;
+    list-style-type:none;
+    justify-self: flex-end;   
+}
+ .container a {
+    margin-top: .5em;
+    text-decoration: none;
+ }  
+
+ button {
+    margin-left: 1em;
+ }
+
+
+  #menuToggle {
+    visibility: hidden;
+  }
+  .footer {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+
+} /*end of tablet media query*/
+
+
+/*DESKTOP*/
+@media screen and (min-width: 900px) {
+ /*define rules which are DIFFERENT from the mobile and tablet version defined above*/
+
+ .h-main {
+   /* This time we keep the same number of columns and rows for tablets, so we don't 
+      need to re-define those  */
+   /* Skipping the 1st and last columns so the content isn't too wide*/
+   grid-template-areas: 
+   "hero  hero     hero     hero     hero       hero"
+   "nav   nav      nav      nav      nav        nav "
+   "f-img feature  feature   feature  feature   feature"
+   "product  product  product  product  product product "
+   ".  product  product  product  product  ."
+   ".  footer   footer   footer   footer   .";
+ }
+
+} /*end of desktop media query*/
