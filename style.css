@@ -1,1 +1,27 @@
-/*  Add your styling here */
+body {
+  border: 3px solid black;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas:
+    "hero hero hero hero"
+    "main  main  main  main"
+    "footer  footer footer  footer";
+}
+
+header {
+  /* background-color: coral; */
+  grid-area: hero;
+}
+
+main {
+  background-color: darkBlue;
+  grid-area: main;
+}
+
+footer {
+  background-color: darkSeaGreen;
+  grid-area: footer;
+}
+
+/* navbar */
