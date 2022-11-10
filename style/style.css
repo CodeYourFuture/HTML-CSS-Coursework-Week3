@@ -1,0 +1,159 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body{
+    background-color: yellow;     /*e7ecef*/
+    display: grid;
+    grid-template-columns: repeat(1, fr);
+    grid-template-rows: 200px auto 90px;
+    grid-template-areas: 
+    "hd"
+    "section"
+    "footer";
+    gap: 2rem;
+}
+
+
+.header{
+    /* background-color: red; */
+    grid-area: hd;
+    background-image: url("/img/header\ pic.avif");
+    object-fit: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.nav-header {
+    display: none;
+}
+
+.add {
+    text-align: right;
+    padding: auto;
+    width: 50%;
+}
+
+.add-text {
+    color: rgb(255, 255, 255);
+    text-shadow: 90px 9px 20px #000000, 1px 2px 10px #ff0000;
+    font-family: fantasy;
+    font-weight: 900;
+    font-size: 2rem;
+    margin: 1rem;
+
+
+}
+
+.homepage-main{
+    background-color: blueviolet;
+    grid-area: section;
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    margin: 2rem;
+    gap: 1rem;
+}
+
+.homepage-hero{
+    margin: 1rem;
+    row-gap: 4rem;
+}
+
+.title{
+    font-size: 5rem;
+    color: cyan;
+    margin: 3rem;
+    text-align: left;
+    font-weight: 800;
+}
+
+.text-hero{
+    font-size: 2rem;
+    color: yellow;
+    text-align: center;
+    font-family: fantasy;
+    font-weight: 200;
+
+}
+
+.img-hero{
+    height: 50rem;
+    padding: 2rem;
+
+}
+
+.img-hero img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.homepage-products{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+    padding: 2rem;
+
+}
+
+.homepage-products img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+
+footer{
+    background-color: aqua;
+    color:brown;
+    grid-area: footer;
+}
+
+/* @media screen and (min-width: 540px){
+    body {
+        display: grid;
+        grid-template-columns: repeat(4, fr);
+        grid-template-rows: 90px auto 90px;
+        grid-template-areas: 
+        "hd hd hd hd"
+        "section section section section"
+        "footer footer footer footer";
+    }
+
+    .header{
+        display: grid;
+        grid-template-columns: repeat(4, fr);
+        display: flex
+        grid-template-areas: 
+        ;
+    }
+
+    .homepage-main{
+        display: grid;
+        grid-template-columns: repeat(4, fr);
+        grid-template-areas: 
+        "homepage-hero homepage-hero homepage-hero homepage-hero"
+        "product-hero product-hero product-hero product-hero"
+        "homepage-products homepage-products homepage-products homepage-products";
+    }
+
+
+} */
+
+
+/* @media  screen and (min-width: 900px){
+    body {
+        display: grid;
+        grid-template-columns:  ;
+    }
+    
+} */
