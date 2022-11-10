@@ -35,13 +35,8 @@ span {
     margin-right: 1.5em;
   }
 
-  .menu-container button {
-    display: none;
-  }
-
   .hidden-menu {
-    display: flex;
-    justify-content: space-evenly;
+    display: none;
   }
 }
 
@@ -60,6 +55,17 @@ span {
 
   .menu-container button {
     display: none;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    width: 100%;
+  }
+
+  .navbar li {
+    list-style: none;
   }
 }
 
@@ -84,22 +90,19 @@ span {
 
 /*MAIN TEXT STYLES*/
 
-article h2 {
+.general h2 {
   margin-bottom: 0;
   margin-top: 0.5em;
+  text-align: left;
 }
 
-article {
+.general {
   text-align: justify;
   padding: 0.5em;
   margin: 0 2.5em 0 2.5em;
 }
 
-article h2 {
-  text-align: left;
-}
-
-article p {
+.general p {
   line-height: 1.5em;
 }
 
@@ -273,6 +276,10 @@ footer {
   justify-content: flex-start;
   margin-bottom: 0.6em;
   margin-left: 0.5em;
+}
+
+.name-icon li {
+  list-style: none;
 }
 
 .name-icon a {
