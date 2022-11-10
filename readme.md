@@ -1,3 +1,6 @@
+live version
+https://tiritaki.github.io/HTML-CSS-Coursework-Week3/
+
 # Cakes Co
 
 The aim of this exercise is to create a **responsive webpage** showcasing your cake business.

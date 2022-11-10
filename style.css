@@ -1,1 +1,295 @@
-/*  Add your styling here */
+body {
+  box-sizing: border-box;
+}
+.navigation {
+  display: none;
+}
+.homepage-main {
+    column-gap: 10px;
+    row-gap: 10px;
+    display: grid;
+    /* grid-template-rows: repeat (5, auto); */
+    /*  grid-template-areas must follow the exact number of columns and rows defined above (4 columns and 4 rows)  */
+    grid-template-areas:
+      "hero"  
+      "welcome"         /* one for each column */
+      "feature"
+      "product"
+      "footer";           /* the dot is used to skip a column */
+  }
+  
+  .homepage-hero {
+    grid-area: hero;
+    display: grid;
+    background-size: cover;
+    background-image: url(/HTML-CSS-Coursework-Week3/assets/hero.jpeg);
+  }
+  .one-one {
+  justify-self: end;
+  padding: 15px;
+  }
+
+  .one-one div {
+  width: 35px;
+  height: 5px;
+  background-color: black;
+  margin: 6px 0;
+  }
+
+  .one-two {
+  justify-self: end;
+  align-self: flex-end;
+  font-style: italic;
+  font-size: 1.5rem;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  }
+
+  .homepage-welcome {
+    grid-area: welcome;
+    padding: 15px;
+  }
+  
+  .homepage-feature {
+    grid-area: feature;
+    background-size: cover;
+  }
+
+  .homepage-feature img {
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .homepage-products {
+    grid-area: product;
+    gap: 0.5rem;
+    display: grid;
+    grid-template-areas:
+      "product-item1     product-item2"           /* one for each column */
+      "product-item3     product-item4"
+; 
+  }
+  .homepage-products img {
+    height: 8rem;
+    object-fit: cover;
+  }
+  .grid-item1 {
+    grid-area: product-item1;
+    justify-self: center;
+  }
+  .grid-item2 {
+    grid-area: product-item2;
+    justify-self: center;
+  }
+
+  .grid-item3 {
+    grid-area: product-item3;
+    justify-self: center;
+  }
+
+  .grid-item4 {
+    grid-area: product-item4;
+    justify-self: center;
+  }
+  
+  .homepage-footer {
+    background-color:rgb(194, 229, 241);
+    grid-area: footer;
+    padding-left: 15px;
+  }
+  .oleh {
+    text-align: center;
+    grid-column: 1 / span 3;
+  }
+  /* 
+    Now let's change it for larger screens 
+    (using quite small breakpoints here to allow for Codepen's small viewport)
+  */
+  
+  /* TABLET: */
+  @media screen and (min-width: 550px) {
+  
+    /*  
+      We only define rules which are DIFFERENT from the mobile version defined above. 
+    */
+    .grid-item1 {
+      grid-area: product-item1;
+    }
+    .grid-item2 {
+      grid-area: product-item2;
+    }
+  
+    .grid-item3 {
+      grid-area: product-item3;
+    }
+
+    .grid-item4 {
+      display: none;
+    }
+    .homepage-products {
+      grid-area: product;
+      display: grid;
+      justify-content: space-around;
+      grid-template-columns: repeat(3, 6rem);
+      grid-template-areas:
+        "product-item1  product-item2  product-item3" ;          /* one for each column */ 
+    } 
+
+     .contacts {
+      grid-area: contact;
+      text-align: center;
+     }
+     .address{
+      grid-area: address;
+      text-align: center;
+     }
+     .phone {
+      grid-area: phone;
+      text-align: center;
+     }
+    .homepage-footer {
+      grid-area: footer;
+      display: grid;
+      
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-areas:
+        "contact  address  phone" ;          /* one for each column */ 
+    } 
+
+    .homepage-main {
+      /*  we need more columns for a more complex layout  */
+      /*  we need less rows now  */
+      grid-template-rows: 20vh auto auto auto auto;
+      grid-template-columns: repeat(3, 1fr);
+      /*  our template now has 4 columns and 5 rows  */
+      grid-template-areas:
+        "hero hero hero hero "
+        "welcome welcome welcome  welcome"
+        "feature feature feature feature"
+        "product product product product"
+        "footer footer footer footer";
+    }
+
+    
+  /* 
+    We don't need to re-define the grid-area for each block because these haven't changed. The hero is still the hero, the feature is still the feature etc. 
+  */
+    
+  } /* end of tablet media query  */
+  
+  
+/* Desktop: */
+@media screen and (min-width: 900px) {
+  
+  /*  
+    We only define rules which are DIFFERENT from the mobile version defined above. 
+  */
+  .one-one{
+    display: none;
+  }
+
+  .grid-item1 {
+    grid-area: product-item1;
+  }
+  .grid-item2 {
+    grid-area: product-item2;
+  }
+  .grid-item3 {
+    grid-area: product-item3;
+  }
+  .grid-item4 {
+    display: block;
+    grid-area: product-item4;
+  }
+
+  .homepage-products {
+    grid-area: product;
+    display: grid;
+    
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+      "product-item1  product-item2  product-item3 product-item4" ;          /* one for each column */ 
+  } 
+
+   .contact {
+    grid-area: contact;
+    text-align: center;
+   }
+   .address{
+    grid-area: address;
+    text-align: center;
+   }
+   .phone {
+    grid-area: phone;
+    text-align: center;
+   }
+  .homepage-footer {
+    grid-area: footer;
+    display: grid;
+    
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+      "contact  address  phone" ;          /* one for each column */ 
+  } 
+  .homepage-feature {
+    align-self: center ;
+  }
+
+  .navigation {
+    display: flex;
+    gap: 1rem;
+    justify-content: end;
+    align-items: baseline;
+    padding-top: 2rem;
+    padding-right: 0.5rem;
+  }
+
+
+  .homepage-main {
+    /*  we need more columns for a more complex layout  */
+    /*  we need less rows now  */
+    grid-template-rows: 20vh auto auto auto;
+    grid-template-columns: repeat(4, 1fr);
+    /*  our template now has 4 columns and 5 rows  */
+    grid-template-areas:
+      "hero hero hero hero "
+      "feature feature welcome welcome"
+      "product product product product"
+      "footer footer footer footer";
+  }
+  
+/* 
+  We don't need to re-define the grid-area for each block because these haven't changed. The hero is still the hero, the feature is still the feature etc. 
+*/
+  
+} /* end of tablet media query  */
+
+
+  /* Ignore this */
+  .tip {
+    display: block;
+    padding-top: 30px;
+    font-family: Arial;
+    color: grey;
+  }
+  
+  .tablet, .desktop {
+    display: none;
+  }
+  
+  @media screen and (min-width: 540px) {
+    .mobile, desktop {
+      display: none;
+    }
+    .tablet {
+      display: block;
+    }
+  }
+  @media screen and (min-width: 900px) {
+    .mobile, .tablet {
+      display: none;
+    }
+      .desktop {
+      display: block;
+    }
+  }
