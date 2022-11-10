@@ -252,6 +252,18 @@ header {
   margin: 1em 1.5em 1.5em 1.5em;
 }
 
+.sweet1 {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 1em;
+}
+
+.sweet2 {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto;
+}
+
 @media screen and (min-width: 540px) {
   .sweet1 {
     display: grid;
