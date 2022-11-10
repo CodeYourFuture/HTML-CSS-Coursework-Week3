@@ -17,7 +17,7 @@ header {
   background-size: contain;
 }
 
-span {
+/* span {
   color: #3300cc;
   font-size: 2em;
   opacity: 1;
@@ -26,6 +26,72 @@ span {
 
 .hidden-menu {
   display: none;
+} */
+
+.menu-container {
+  display: block;
+  position: relative;
+  top: 0.5em;
+  left: 0em;
+  z-index: 1;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.menu-container a {
+  text-decoration: none;
+  color: #3300cc;
+  transition: color 0.3s ease;
+}
+
+.menu-container a:hover {
+  border-bottom: 2px solid #edffb6;
+}
+
+.menu-container input {
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 2;
+  -webkit-touch-callout: none;
+}
+
+.menu-container span {
+  display: block;
+  width: 1.5em;
+  height: 0.15em;
+  margin-bottom: 0.25em;
+  position: relative;
+  background: #3300cc;
+  border-radius: 3px;
+  z-index: 1;
+}
+
+.navbar {
+  position: absolute;
+  width: 5em;
+  margin: -3.4em 0em 0em -1.5em;
+  border-radius: 20px;
+  padding: 2em;
+  padding-top: 4em;
+  background: #c8b6ff;
+  list-style: none;
+  -webkit-font-smoothing: antialiased;
+  display: none;
+}
+
+.navbar li {
+  padding: 0.2em 0;
+  font-size: 1.1em;
+}
+
+.menu-container input:checked ~ ul {
+  display: block;
 }
 
 @media screen and (min-width: 540px) {
@@ -33,10 +99,6 @@ span {
     min-width: 540px;
     width: 100%;
     margin-right: 1.5em;
-  }
-
-  .hidden-menu {
-    display: none;
   }
 }
 
@@ -81,11 +143,12 @@ span {
   font-weight: bold;
   color: #3300cc;
   margin-top: 0.3em;
+  font-size: 2em;
 }
 
 .name p {
   margin-bottom: 0;
-  margin-top: 2.3em;
+  margin-top: 3em;
 }
 
 /*MAIN TEXT STYLES*/
@@ -116,12 +179,24 @@ span {
     display: flex;
     gap: 20px;
   }
+
   .cake {
     display: flex;
+  }
+
+  .red-cake {
+    display: flex;
     justify-content: flex-end;
+    align-items: center;
     width: 50%;
     max-height: 70%;
     object-fit: contain;
+  }
+
+  .red-cake img {
+    width: 100%;
+    object-fit: contain;
+    max-height: 530px;
   }
 
   .text {
@@ -145,6 +220,12 @@ span {
     justify-content: flex-end;
     width: 50%;
     object-fit: contain;
+  }
+
+  .red-cake img {
+    width: 100%;
+    object-fit: contain;
+    max-height: 530px;
   }
 
   .text {
@@ -276,6 +357,7 @@ footer {
   justify-content: flex-start;
   margin-bottom: 0.6em;
   margin-left: 0.5em;
+  padding: 0;
 }
 
 .name-icon li {
@@ -286,6 +368,12 @@ footer {
   margin-top: 0;
   margin-bottom: 0.3em;
   margin-left: 0.5em;
+  text-decoration: none;
+}
+
+.name-icon a:hover {
+  font-weight: bold;
+  border-bottom: 2px solid #3300cc;
 }
 
 .smicon {
