@@ -1,1 +1,211 @@
-/*  Add your styling here */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+ .homepage-main {  
+    border: 1px solid rgb(113, 69, 234);
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto, auto, auto, auto, auto, auto;
+    grid-template-areas: "header header"
+                        "wel-text wel-text"
+                        "wel-image wel-image"
+                        "cakes pies"
+                        "ice donuts"
+                         "footer footer";
+    gap: 10px;
+    
+ }
+  
+ .logo img {
+    width: 102px;
+    height: 102px;
+    margin: 30px auto 30px auto;
+    overflow: hidden;
+    border-radius: 50%;
+  } 
+  
+  .logo {
+    width: auto;
+    height: 50%;
+    margin: 0 auto;
+  } 
+
+.topnav {
+    background-color:  #8ac6d1;
+    position: relative;
+  }
+  
+  .topnav #myLinks {
+   display: none;
+  }
+
+  .topnav a {
+    color: white;
+    padding: 14px 16px;
+    font-size: 17px;
+    display: block;
+  }
+  
+  .topnav a.icon {
+    background:  #ffb6b9;;
+    display: block;
+    position:relative;
+    right: 0;
+    top: 0;
+  }
+  
+
+  
+ .header {
+    grid-area: header;
+    /* grid-column: 1/-1;
+    grid-row: 1/2; */
+    background-color: #8ac6d1;
+    display: flex;
+    width: 100%;
+ }
+
+.header p {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}  
+
+.welcome-text {
+    grid-area: wel-text;
+    /* grid-column: 1/-1;
+    grid-row: 2/3; */
+    background-color:#fae3d9;
+}
+
+.welcome-text p {
+    display: flex;
+    justify-content: center;
+}
+
+.welcome-image {
+    grid-area: wel-image;
+    /* grid-column: 1/-1;
+    grid-row: 3/4; */
+    background-color:#fae3d9;    
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+.cakes {
+grid-area: cakes;
+/* grid-column: 1/2;
+grid-row: 4/5; */
+background-color:#fae3d9;
+}
+
+.pies {
+    grid-area: pies;
+    /* grid-column: 2/3;
+    grid-row: 4/5; */
+    background-color:#fae3d9; 
+}
+
+.ice-creames {
+    grid-area: ice;
+    /* grid-column: 1/2;
+    grid-row: 5/6; */
+    background-color: #fae3d9;
+}
+
+
+.donuts {
+    grid-area: donuts;
+    /* grid-column: 2/3;
+    grid-row: 5/6; */
+    background-color: #fae3d9;
+}
+
+
+ .button {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    color: #8ac6d1;
+ }
+
+ footer {
+    grid-area: footer;
+    /* grid-column: 1/-1;
+    grid-row: 6/7; */
+    background-color: #8ac6d1;
+ }
+    p {
+text-align: center;
+}
+
+
+.join {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    } 
+    
+    #fb,
+    #inst,
+    #tw {
+    border-radius: 100px;
+    border: 1px solid #adb0b7;
+    padding: 5px;
+    margin: 5px;
+    width: 20px;
+    height: 20px;
+    }
+    
+    #copyright {
+    color: #4a4444
+    }
+
+    @media (min-width: 540px) {
+       
+        .homepage-main {  
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: auto, auto, auto, auto;
+            grid-template-areas: "header header header header"
+                                "wel-image wel-image wel-text wel-text "
+                                "cakes pies ice donuts"
+                                 "footer footer footer footer";
+            /* changed the numbers of columns and rows, and areas */
+         }
+
+          
+          .topnav #myLinks {
+           display: flex;
+            padding: 10px; 
+        /* we can see links */
+          }
+          
+          .topnav a.icon {
+            display: none;}
+
+        }
+
+    @media (min-width: 900px) {
+
+        .homepage-main {  
+            
+            grid-template-areas: "header header header header"
+                                "wel-image wel-image wel-text wel-text "
+                                "cakes pies ice donuts"
+                                 "footer footer footer footer"; 
+            background-color: #f6f2f2;
+           
+         }
+
+ }
+
+    
