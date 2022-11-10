@@ -11,8 +11,9 @@ html , body {
 
 .h-main {
     display: grid;
+    gap: 3px;
     grid-template-columns: repeat(4,1fr);
-    grid-template-rows: 150px 100px 100px 100px 100px 80px;
+    grid-template-rows: 160px 220px 195px 135px 135px 80px;
     grid-template-areas: 
     "hero      hero       hero     hero"
     "feature   feature    feature  feature"
@@ -40,7 +41,7 @@ nav {
 }
 
 
-p {
+#hero {
     font-size: 1.5em;
     font-weight: 600;
 }
@@ -75,7 +76,6 @@ p {
   color: tomato;
 }
 
-
 #menuToggle input
 {
   display: block;
@@ -84,7 +84,7 @@ p {
   position: absolute;
   top: -7px;
   left: -5px;
-  
+
   cursor: pointer;
   
   opacity: 0; /* hide this */
@@ -142,20 +142,38 @@ p {
 
 
 
-
 /*define feature*/
 .h-feature{
-    background-color: blue;
+   /* background-color: blue;  */
     grid-area: feature;
+    padding: .5em 1em;
 }
+ #feature-title {
+    margin-top: 1em;
+ }
+ #feature {
+   margin-bottom: 2em;
+ }
+
+
 .h-feature-image{
-    background-color: darkseagreen;
+    /*background-color: darkseagreen; */
     grid-area: f-img;
+    padding: .5em 1em;
 }
 .h-products {
-    background-color: brown;
+   /* background-color: gray; */
     grid-area: product;
+    padding: .5em 1em;
 }
+.top {
+    display: flex;
+}
+.bottom {
+    display: flex;
+}
+
+
 .h-footer {
     background-color: darkturquoise;
     grid-area: footer;
