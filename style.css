@@ -123,6 +123,7 @@ h1 {
 }
 
 .hero-img {
+    max-width: 100%;
     width: 100%;
     overflow: hidden;
     margin: 0;
@@ -135,7 +136,7 @@ h1 {
     padding: 10px 0;
 }
 
-/* General Styles */
+/* Grid styles */
 
 .imgs-container {
     display: grid;
@@ -182,7 +183,7 @@ footer {
     .bar {
         display: none;
     }
-    
+
     .nav-menu {
         display: contents;
     } 
@@ -262,7 +263,6 @@ footer {
     }
 
     .hero-img {
-        width: 50%;
         padding: 0;
         order: 1;
         flex: 2;
