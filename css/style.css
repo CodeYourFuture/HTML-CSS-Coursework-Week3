@@ -1,0 +1,362 @@
+
+.carrot-cake{
+    width: 100%;
+    padding-bottom: 5em;
+    margin-right: 2em;
+    grid-area: a ;
+    
+}
+.header-p{
+    padding-left: 1em;
+    font-weight: 100;
+    font-size: large;
+    grid-area: b ;
+}
+.birthday-cake{
+    width: 100%;
+    height: 100%;
+    
+}
+body{
+    margin: 1em;
+    width: 540px;
+    display: grid;
+    grid-template-columns: 2fr;
+    grid-template-rows: 400px 400px 400px 400px 400px;
+    grid-template-areas: "h"
+    "e"
+    "a"
+    "b"
+    "c";
+    background-color: rgb(99, 90, 90);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.nav-menu{
+    list-style: none;
+    grid-area: c;
+    
+}
+.nav-item{
+    background-color: rgb(139, 127, 127);
+    padding: .1em;
+    margin: .3em;
+
+    
+}
+.nav-link:hover{
+    color: aquamarine;
+}
+.nav-link{
+    text-decoration: none;
+    color: rgb(247, 244, 240);
+}
+.img-cake{
+    width: 100%;
+   height: 100%;
+    
+}
+
+.four-cakes{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: "h b"
+    "e c";
+    padding-bottom: 3em;
+    grid-area:b;
+    gap: 1.2em;
+}
+.cake1{
+    grid-area: h;
+    
+}
+.cake2{
+    grid-area: b;
+    
+}
+.cake3{
+    grid-area: e;
+    
+}
+.cake4{
+    grid-area: c;
+    
+}
+.header{
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+    grid-area: h;
+    display: grid;
+    grid-template-columns: 3 auto;
+    grid-template-rows: 400px ;
+    grid-template-areas: "a b c";
+}
+.content-p{
+    margin-top: 3em;
+    font-size: large;
+    line-height: 1.5em;
+}
+.single-cake{
+    grid-area: a;
+    padding-bottom: 3em;
+}
+.header-p{
+    
+    padding-top: 6em;
+}
+contant{
+    grid-area:e;
+}
+
+.img-cake{
+    width: 250px;
+}
+
+footer{
+    grid-area:c;
+    display: grid;
+    width: 100%;
+    height: 200px;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(5,20%);
+    grid-template-areas: "m m m . . ."
+    "k k k . . ."
+    "v v v . . ."
+    ". l l l l ."
+    ". l l l l .";
+}
+.f1{
+    grid-area: m;
+   
+    background-color: rgb(209, 197, 197);
+    margin: 0.5em;
+    display: flex;
+    align-items: center;
+    color: rgb(68, 66, 66);
+}
+.f2{
+    grid-area: k;
+    background-color: rgb(209, 197, 197);
+    margin: 0.5em;
+    display: flex;
+    align-items: center;
+    color: rgb(68, 66, 66);
+}
+.f3{
+    
+    grid-area: v;
+    background-color: rgb(209, 197, 197);
+    margin: 0.5em;
+    display: flex;
+    align-items: center;
+    color: rgb(68, 66, 66);
+}
+.f4{
+    grid-area: l;
+    background-color: rgb(172, 161, 161);
+    margin: 0.3em;
+    text-align: center;
+    padding-top: 1em;
+    color: black;
+}
+.icon-footer
+{
+    max-height: 20px;
+    border: solid 1px rgb(224, 229, 229);
+    border-radius: 15px;
+    margin-left: 30px;
+}
+.f-p{
+    padding-left: 1em;
+}
+
+
+@media screen and (min-width:540px){
+    body{
+        
+        margin: 5em;
+        width: 540px;
+        display: grid;
+        grid-template-columns: repeat(12, 75px);
+        grid-template-rows: 200px 100px 400px 300px 300px 200px;
+        grid-template-areas: "h h h h h h h h h h h h"
+        "h h h h h h h h h h h h"
+        ". a a a a a m m m m m ."
+        ". b b b b b b b b b b ."
+        ". c c c c c c c c c c .";
+        background-color: rgb(99, 90, 90);
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+  
+    .header{
+        grid-area: h;
+        display: grid;
+        grid-template-columns:repeat(9 ,100px ) ;
+        grid-template-rows: 150px 100px;
+        grid-template-areas: "z z z z z b b b b"
+        "x x x x x x x x x";
+    }
+    .carrot-cake{
+        grid-area: z;
+        width: 100%;
+        height: 100%;
+        margin-top: 5em;
+    }
+    .header-p{
+        grid-area: b;
+    }
+    .navbar{
+        grid-area: x;
+
+    }
+    
+    .nav-menu{
+        display: flex;
+        justify-content:flex-end;
+
+    }
+    contant{
+        width: 100%;
+        grid-area: m;
+        line-height: 0;
+        margin: 3em;
+    }
+    .content-p{
+        width: 100%;
+        font-size: medium;
+    }
+    .single-cake{
+        grid-area: a;
+        width: 100%;
+    }
+    .four-cakes{
+        grid-area: b;
+        display: flex;
+        width: 100%;
+        
+    }
+    .img-cake{
+        width: 12em;
+    }
+    footer{
+        grid-area: c;
+        display: grid;
+        grid-template-columns: repeat(11, 80px);
+        grid-template-rows:80px 80px ;
+        grid-template-areas: ". a a a b b b f f f ."
+        ". . . s s s s s . . .";
+        
+    }
+    
+    .f1{
+        grid-area: a;
+    }
+    .f2{
+        grid-area: b;
+    }
+    .f3{
+        grid-area: f;
+    }
+    .f4{
+        grid-area: s;
+    }
+
+}
+@media screen and (min-width:900px){
+    body{
+        
+        margin: 5em;
+        width: 540px;
+        display: grid;
+        grid-template-columns: repeat(12, 100px);
+        grid-template-rows: 300px 200px 500px 400px 400px 300px;
+        grid-template-areas: "h h h h h h h h h h h h"
+        "h h h h h h h h h h h h"
+        ". a a a a a m m m m m ."
+        ". b b b b b b b b b b ."
+        ". c c c c c c c c c c .";
+        background-color: rgb(99, 90, 90);
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+  
+    .header{
+        grid-area: h;
+        display: grid;
+        grid-template-columns:repeat(9 ,130px ) ;
+        grid-template-rows: 180px 150px;
+        grid-template-areas: "z z z z z b b b b"
+        "x x x x x x x x x";
+    }
+    .carrot-cake{
+        grid-area: z;
+        width: 100%;
+        height: 100%;
+        margin-top: 5em;
+    }
+    .header-p{
+        grid-area: b;
+    }
+    .navbar{
+        grid-area: x;
+
+    }
+    
+    .nav-menu{
+        display: flex;
+        justify-content: space-around;
+    
+
+    }
+    contant{
+        width: 100%;
+        grid-area: m;
+        line-height: 0;
+        margin: 3em;
+    }
+    .content-p{
+        width: 100%;
+        font-size: medium;
+    }
+    .single-cake{
+        grid-area: a;
+        width: 100%;
+    }
+    .four-cakes{
+        grid-area: b;
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        
+    }
+    .img-cake{
+        width: 15em;
+    }
+    footer{
+        grid-area: c;
+        display: grid;
+        grid-template-columns: repeat(11, 100px);
+        grid-template-rows:80px 80px ;
+        grid-template-areas: ". a a a b b b f f f ."
+        ". . . s s s s s . . .";
+        
+    }
+    
+    .f1{
+        grid-area: a;
+    }
+    .f2{
+        grid-area: b;
+    }
+    .f3{
+        grid-area: f;
+    }
+    .f4{
+        grid-area: s;
+    }
+
+}
