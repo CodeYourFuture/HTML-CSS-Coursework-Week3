@@ -11,7 +11,7 @@
         grid-area: ft;
     }
     .content {
-        grid-area: mai;
+        grid-area: main;
     }
     .sidebar {
         grid-area: sd;
@@ -84,7 +84,13 @@
       
       .footer{
         grid-template-areas: "footer";
-        margin: 1px;;
+        margin: 0px;
+        padding: 0rem;
+      }
+
+      .call {
+        margin: 0px;
+        padding: 0rem;
       }
 /*  Add your styling here */
 @media screen and (min-width: 320px) {
@@ -93,7 +99,7 @@
     }
     
     
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 900px) {
     body {
         background: #0077b6;
     }
