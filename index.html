@@ -7,10 +7,46 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Responsive Cake webpage</title>
     <!-- Add a link to your css file here -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <!-- Add your markup here -->
+
+  <main class="h-main">
+
+    <section class="h-hero">
+
+        <nav>
+          <div id="menuToggle">
+            <!-- a fake/hidden checkbox is used as click receiver, so can use the 
+                 :checked selector on it -->
+            <input type="checkbox" />
+            <!-- some spans to act as a hamburger.-->
+            <span></span>
+            <span></span>
+            <span></span>
+            <!-- The menu has to be inside of the button -->
+             <ul id="menu">
+               <a href="#"><li>HOME</li></a>
+               <a href="#"><li>CAKES</li></a>
+               <a href="#"><li>ORDERING</li></a>
+               <a href="#"><li>LESSONS</li></a>
+               <a href="#"><li>ABOUT</li></a>
+             </ul>
+          </div>
+        </nav>
+
+     <p><i>The best cakes in town<br>
+     delivered to your door</i></p>
+    </section>
+
+    <section class="h-feature"></section>
+    <section class="h-feature-image"></section>
+    <section class="h-products"></section>
+    <footer class="h-footer"></footer>
+  </main>
+
 </body>
 
 </html>

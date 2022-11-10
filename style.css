@@ -1,1 +1,164 @@
 /*  Add your styling here */
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap');
+
+html , body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito';
+}
+
+/*define grid*/
+
+.h-main {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 150px 100px 100px 100px 100px 80px;
+    grid-template-areas: 
+    "hero      hero       hero     hero"
+    "feature   feature    feature  feature"
+    "f-img     f-img      f-img    f-img"
+    "product   product    product  product" 
+    "product   product    product  product" 
+    "footer    footer     footer   footer";
+}
+/*define hero*/
+.h-hero {
+   /* background-color: coral;*/
+   background-image:url('img/background2.jpg.jpg') ;
+   grid-area: hero;
+}
+.h-hero  {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding-top: 5em;       
+        padding-right: 1.5em;
+    
+}
+nav {
+    margin-bottom: 15em;
+}
+
+
+p {
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+
+/*hamburger menu*/
+
+#menuToggle
+{
+  display: block;
+  position: relative;
+  top: 50px;
+  left: 50px;
+  
+  z-index: 1;
+  
+  -webkit-user-select: none;
+  user-select: none;
+
+}
+
+#menuToggle a
+{
+  text-decoration: none;
+  color: #232323;
+  
+  transition: color 0.3s ease;
+}
+
+#menuToggle a:hover
+{
+  color: tomato;
+}
+
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  
+  cursor: pointer;
+  
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+  
+  -webkit-touch-callout: none;
+}
+
+/*
+ * Just a quick hamburger
+ */
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background: #cdcdcd;
+  border-radius: 3px;
+  z-index: 1;
+}
+
+/*
+ * Make this absolute positioned at the top left of the screen
+ */
+#menu
+{
+  position: absolute;
+  width: 300px;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  
+  background: #ededed;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  display: none;
+}
+
+#menu li
+{
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+/*
+ * And let's slide it in from the left
+ */
+#menuToggle input:checked ~ ul
+{
+  display: block;
+}
+
+
+
+
+/*define feature*/
+.h-feature{
+    background-color: blue;
+    grid-area: feature;
+}
+.h-feature-image{
+    background-color: darkseagreen;
+    grid-area: f-img;
+}
+.h-products {
+    background-color: brown;
+    grid-area: product;
+}
+.h-footer {
+    background-color: darkturquoise;
+    grid-area: footer;
+}
+
+
