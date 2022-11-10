@@ -46,6 +46,10 @@ happy selected on coolors website
     padding: 2rem;
   }
 
+  section.navbar {
+    display: none;
+  }
+
   section p {
     font-size: small;
   }
@@ -112,6 +116,60 @@ footer.footer {
       height: 10rem;
       padding-top: .5rem;
     }
-    
 
-  }
+    img.hamburger { 
+      display: none;
+    }
+
+    p.header-p {
+      margin: 7.5rem 3rem 0 0.5rem;
+      padding-left: 20rem;
+      font-size: x-large;
+      font-weight: 400;
+      font-style: italic;
+    }
+    
+    section.navbar {
+      display: block;
+      padding-top: 2rem;
+      
+    }
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      border: 1px solid #e7e7e7;
+      background-color: #f3f3f3;
+      font-size: small;
+    }
+    
+    li {
+      float: right;
+    }
+    
+    li a {
+      display: block;
+      color: #666;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      margin-right: 1.5rem;
+    }
+    
+    li a:hover:not(.active) {
+      background-color: #e17ad3;
+    }
+    
+    li a.active {
+      color: white;
+      background-color: #e17ad3;
+    }
+
+    section.welcome {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr)
+    }
+
+    
