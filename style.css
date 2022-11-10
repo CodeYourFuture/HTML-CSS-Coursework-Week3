@@ -17,17 +17,6 @@ header {
   background-size: contain;
 }
 
-/* span {
-  color: #3300cc;
-  font-size: 2em;
-  opacity: 1;
-  border: none;
-}
-
-.hidden-menu {
-  display: none;
-} */
-
 .menu-container {
   display: block;
   position: relative;
@@ -45,7 +34,7 @@ header {
 }
 
 .menu-container a:hover {
-  border-bottom: 2px solid #edffb6;
+  border-bottom: 4px solid #edffb6;
 }
 
 .menu-container input {
@@ -67,7 +56,7 @@ header {
   height: 0.15em;
   margin-bottom: 0.25em;
   position: relative;
-  background: #3300cc;
+  color: #3300cc;
   border-radius: 3px;
   z-index: 1;
 }
@@ -75,7 +64,7 @@ header {
 .navbar {
   position: absolute;
   width: 5em;
-  margin: -3.4em 0em 0em -1.5em;
+  margin: -2.4em 0em 0em -1.8em;
   border-radius: 20px;
   padding: 2em;
   padding-top: 4em;
@@ -104,18 +93,19 @@ header {
 
 @media screen and (min-width: 900px) {
   .banner {
-    min-width: 900px;
-    width: 100%;
+    /* min-width: 900px; */
+    /* width: 100%; */
     border-radius: 20px;
     margin: 1.5em;
   }
 
-  .hidden-menu {
+  /* .hidden-menu {
     display: flex;
     justify-content: space-evenly;
-  }
+  } */
 
-  .menu-container button {
+  .menu-container span,
+  .menu-container input {
     display: none;
   }
 
@@ -124,10 +114,17 @@ header {
     justify-content: space-evenly;
     align-items: flex-end;
     width: 100%;
+    background: none;
+    padding: 2em 2em 1em 2em;
   }
 
   .navbar li {
     list-style: none;
+  }
+
+  .name h1 {
+    margin-bottom: 1em;
+    margin-top: 1.3em;
   }
 }
 
@@ -139,11 +136,13 @@ header {
 
 .name h1 {
   text-transform: uppercase;
-  margin-bottom: 0;
+  /* margin-bottom: 0; */
   font-weight: bold;
   color: #3300cc;
-  margin-top: 0.3em;
+  /* margin-top: 0.3em; */
   font-size: 2em;
+  margin-bottom: 1em;
+  margin-top: 1.3em;
 }
 
 .name p {
@@ -300,6 +299,10 @@ footer {
   margin: 1.5em;
 }
 
+.end h2 {
+  text-transform: uppercase;
+}
+
 @media screen and (min-width: 540px) {
   .end {
     border-radius: 20px;
@@ -373,7 +376,7 @@ footer {
 
 .name-icon a:hover {
   font-weight: bold;
-  border-bottom: 2px solid #3300cc;
+  border-bottom: 4px solid #edffb6;
 }
 
 .smicon {
