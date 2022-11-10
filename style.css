@@ -37,7 +37,7 @@ header {
   grid-template-rows: repeat(2, 1fr);
   grid-template-areas:
     "img img nav nav"
-    ". . text text";
+    ". text text text";
     box-shadow: 1px 2px 6px 1px rgba(0, 0, 0, 0.3);
   gap: 10%;
 }
@@ -83,14 +83,18 @@ header .header-text {
 
 .header li a {
   display: block;
-  padding: 20px 20px;
+  padding: 15px 20px;
   border-right: 1px solid #f4f4f4;
   text-decoration: none;
+  color: var(--main-color);
+  font-size: 18px;
+  font-family: var(--text-font);
 }
 
 .header li a:hover,
 .header .menu-btn:hover {
-  background-color: #f4f4f4;
+  background-color: var(--main-color);
+  color: white;
 }
 
 .header .logo {
@@ -106,10 +110,10 @@ header .header-text {
   clear: both;
   max-height: 0;
   transition: max-height 0.2s ease-out;
+  background-color: var(--pink-color)
 }
 
 /* menu icon */
-
 .header .menu-icon {
   cursor: pointer;
   display: inline-block;
@@ -153,7 +157,7 @@ header .header-text {
 }
 
 .header .menu-btn:checked ~ .menu {
-  max-height: 240px;
+  max-height: 300px;
 }
 
 .header .menu-btn:checked ~ .menu-icon .navicon {
@@ -288,11 +292,6 @@ footer .link a{
   color: #e79187;
 }
 
-
-
-@media (min-width: 540px) {
-}
-
 @media (min-width: 900px) {
   /* navbar */
   header {
@@ -305,21 +304,37 @@ footer .link a{
       "nav nav nav nav";
   }
 
+  header .header-text {
+    grid-area: text;
+   justify-self: end;
+   align-self: start;
+    margin: 0;
+    padding: 0;
+    margin-right: 18px;
+    font-size: 22px;
+    margin-bottom: 22px;
+    text-align: end;
+  }
+
   .header {
     width: 100%;
     position: relative;
   }
+ 
   .header li {
     float: left;
   }
+
   .header li a {
     padding: 20px 30px;
   }
+
   .header .menu {
     clear: none;
     float: right;
     max-height: none;
   }
+  
   .header .menu-icon {
     display: none;
   }
