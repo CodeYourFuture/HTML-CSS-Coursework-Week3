@@ -39,6 +39,7 @@ body{
 
 .add {
     text-align: right;
+    margin: auto;
     padding: auto;
     width: 50%;
 }
@@ -48,7 +49,7 @@ body{
     text-shadow: 0 0 20px #dae351, 0 0 10px #ff0000;
     font-family: fantasy;
     font-weight: 900;
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin: 1rem;
 }
 
