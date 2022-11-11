@@ -13,8 +13,8 @@
 
 body {
   font-size: 16px;
-  background-color: #aea3b0;
-  color: #827081;
+  background-color: #81b29a;
+  color: #3d405b;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(5, auto);
@@ -25,7 +25,7 @@ header {
   grid-area: header;
   display: grid;
   grid-template-columns: 1fr 2fr;
-  grid-template-rows: auto 50% auto;
+  grid-template-rows: auto auto auto;
   background-color: aliceblue;
 }
 
@@ -37,7 +37,6 @@ header {
 }
 
 header div {
-  width: 30px;
   display: grid;
   grid-column: 1 / 2;
   grid-row: 2 / 3;
@@ -65,7 +64,7 @@ header p {
   top: 0;
   right: -100%;
   z-index: 100;
-  background-color: #e7e6f7;
+  background-color: #f4f1de;
   transition: all 0.2s ease-in-out;
 }
 .menu li {
@@ -101,9 +100,10 @@ header p {
 
 .open_menu,
 .close_menu {
+  margin: 1rem;
   content: "";
   position: absolute;
-  color: #827081;
+  color: #d6380c;
   cursor: pointer;
   font-size: 24px;
   display: block;
@@ -136,7 +136,7 @@ main nav {
 section {
   background-color: aliceblue;
   margin: 2em 1em;
-  font-size: 1.5em;
+  font-size: 1.5rem;
 }
 section p,
 h2 {
@@ -186,13 +186,13 @@ section3 img {
 }
 
 .logo {
-  width: 100px;
-  height: auto;
+  width: 80%;
+
   margin-left: 1.2em;
+  border-radius: 50% 0 50% 0;
 }
 .img-section2 {
   width: 100%;
-  margin: auto;
 }
 #section3 img {
   width: 100%;
@@ -213,6 +213,7 @@ footer {
   gap: 1em;
   margin-left: 2em;
   margin-top: 1em;
+  font-weight: bold;
 }
 footer ul {
   list-style: none;
@@ -226,36 +227,32 @@ footer p {
   font-weight: bold;
 }
 
+.navigation-link {
+  text-decoration: none;
+  font-style: none;
+}
+
+.navigation-link:hover {
+  color: #e07a5f;
+}
+
+img:hover {
+  color: #3d405b;
+}
+
 /************/
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 540px) {
   body {
     display: flex;
-    background-color: aquamarine;
-    flex-direction: column;
-    font-size: 24px;
-    gap: 2em;
 
-    /*grid-template-areas: "h h h h" "s2 s2 s1 s1" "s3 s3 s3 s3" "f f f f";*/
+    flex-direction: column;
+    font-size: 16px;
+    gap: 2em;
   }
 
   /*header*/
-
-  header {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto auto auto auto;
-    margin-right: 0.5em;
-    margin-left: 0.5em;
-  }
-
-  header img {
-    grid-column: 1 /2;
+  header div {
     grid-row: 1 / 3;
-  }
-
-  header p {
-    grid-column: 2 /4;
-    grid-row: 3 / 4;
   }
 
   header nav {
@@ -277,7 +274,7 @@ footer p {
     grid-column: 1 / 5;
     grid-row: 1/ 2;
     width: 100%;
-    background-color: #a09cd8;
+    background-color: #f2cc8f;
 
     padding-top: 1em;
     padding-bottom: 1em;
@@ -292,6 +289,10 @@ footer p {
   main nav ul a {
     text-decoration: none;
     margin-right: 1em;
+  }
+
+  main nav ul a:hover {
+    color: aliceblue;
   }
 
   #section1 {
@@ -312,6 +313,13 @@ footer p {
     margin: 0;
     width: 100%;
     height: 100%;
+    background-image: url(https://images.unsplash.com/photo-1622896784083-cc051313dbab?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTh8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60);
+    background-size: cover;
+    background-position: center;
+  }
+
+  #section2 img {
+    display: none;
   }
 
   #section3 {
@@ -343,11 +351,44 @@ footer p {
     grid-row: 2 / 3;
   }
 
-  footer {
+  .navigation-list {
+    grid-column: 1/3;
+    grid-row: 1/2;
   }
 
   .navigation-list {
     grid-column: 1/3;
     grid-row: 1/2;
+  }
+  footer nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  footer nav ul li {
+    margin-right: 2rem;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  body {
+    font-size: 32px;
+  }
+
+  #section1 h2 {
+    margin-top: 7rem;
+    font-size: 32px;
+  }
+
+  #section1 P {
+    margin: 2rem 5rem 8rem 5rem;
+    font-size: 32px;
+  }
+  /* #section2 img {
+    display: block;
+  }*/
+
+  #section2 {
+    background-image: url(https://images.unsplash.com/photo-1542826438-bd32f43d626f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1592&q=80);
   }
 }
