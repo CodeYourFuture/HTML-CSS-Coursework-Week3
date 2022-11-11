@@ -109,8 +109,7 @@ footer a {
     color: grey;
   }
  
-
-/* TABLET */
+    /* TABLET */
 
 @media screen and (min-width: 540px){
    
@@ -173,28 +172,75 @@ footer a {
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    /* DESKTOP MODE */
 
 @media screen and (min-width: 900px) {
+
+    body {
+        background-color: #f9dcc4;
+    }
+    section {
+        display: grid;
+        grid-template-columns: repeat (2, 1fr);
+        grid-template-rows: repeat (2, 1fr);
+        grid-template-areas:
+        "mainpicture hero"
+        "products products";
+    }
+
+    .hero{
+        grid-area: hero;
+        text-align: end;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .hero h1{
+        font-size: 3rem;
+        font-family: 'cursiva';
+    }
+
+    .hero p {
+        font-size: larger;
+    }
+
+    .mainpicture{
+        grid-area: mainpicture;
+
+    }
+    .products {
+        grid-area: products;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 }
 
