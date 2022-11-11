@@ -1,1 +1,197 @@
 /*  Add your styling here */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap');
+
+
+
+:root {
+    --light-pink: 
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+  
+    height: 100vh;
+    font-family: 'Rubik', sans-serif;
+    background-color:lightpink ;
+    
+}
+
+
+header {
+
+    display: grid;
+    /* grid for header area */
+    grid-template-columns: repeat(3 1fr);
+    grid-template-rows: 1fr 1fr 1fr ; 
+    height: 200px;
+    margin-bottom: 50px;
+   
+    grid-template-areas: 
+    ". . n"
+    "l h h"
+    "l h h";
+}
+
+.cakelogo {
+    grid-area: l; }
+
+.cakelogo img {
+    width: 100%;
+    height: auto;
+    max-width: 100px;
+}
+
+header h1 {
+    grid-area: h;
+    display: flex;
+    align-items: center;
+    /* justify-items: flex-end; */
+    background-color: bisque;
+    /* text-align: end; */
+    padding: 30px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    height: 50px;
+    width: auto;
+    font-size: 18px;
+    font-weight: bolder;
+    font-style: italic;
+    color:indianred;
+}
+
+/*navigation*/
+
+nav {
+    display:none;
+    grid-area: n;
+    
+}
+
+/* main grid */
+
+.mainpage {
+    display: grid;
+    grid-template-columns: repeat (4, 1fr);
+    grid-template-rows: 62vh 45vh 40vh 40vh;
+    border: blueviolet solid 10px;
+    gap:0.5em;
+    grid-template-areas: 
+    "w w w w"
+    "p p p p"
+    "a a b b"
+    "c c d d";
+}
+
+
+.wtext {
+    display: grid;
+    grid-area: w;
+    border: coral solid 20px;
+    padding: 20px;
+    line-height: 1.5em;
+    text-align: justify;
+}
+
+.wpic {
+    display: grid;
+    background-image: url(./imgs/cake-pink.jpeg);
+    grid-area: p;
+    height: 100%;
+    width:100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: aqua solid 10px;
+    padding: 10px;
+    
+}
+
+
+.img-a {
+    display: grid;
+    background-image: url(./imgs/cute-pink-birthday-cake.webp);
+    grid-area: a;
+    height: 100%;
+    width:100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    background-position: center;
+    border: aqua solid 10px;
+    padding: 10px;
+  
+}
+
+.img-b {
+    display: grid;
+    background-image: url(./imgs/easter-funny-bunny-cupcakes.webp);
+    grid-area: b;
+    height: 100%;
+    width:100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: aqua solid 10px;
+    padding: 10px;
+ 
+}
+
+
+
+.img-c {
+    display: grid;
+    background-image: url(./imgs/yellow-cake-sitting-on-stand-600w-1009387063.webp);
+    grid-area: c;
+    height: 100%;
+    width:100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: aqua solid 10px;
+    padding: 10px;
+   
+
+}
+
+.img-d {
+    display: grid;
+    background-image: url(./imgs/beautiful-blue-wedding-cake-decorated.webp);
+    grid-area: d;
+    height: 100%;
+    width:100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: aqua solid 10px;
+    padding: 10px;
+    
+    
+}
+
+
+.footer-area{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
+    background-color: bisque;
+    padding:20px;
+}
+
+@media screen and (min-width: 750px) {
+    nav {
+        display: block;
+
+    }
+
+     nav ul {
+        list-style: none;
+     }
+
+
+}
