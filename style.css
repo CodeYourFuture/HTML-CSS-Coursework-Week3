@@ -31,15 +31,50 @@ body
 
   .footer-container {
     grid-area: c;
+    margin-left: 30px;
   }
+  
   header{
     display: flex;
   }
-  .main-heading{
-    align-items: flex-end;
+  
+  .header-container{
+    display: grid;
+    grid-template-areas:
+    "a . c"
+    "a b b"
+  }
 
+  .logo-container{
+    grid-area: a;
+  }
+
+  .main-heading{
+    font-size: 10px;
+    padding-left: 50px;
+    padding-top: 25px;
+    grid-area: b;
   }
   
+  .nav-container{
+    grid-area: c;
+  }
+
+  .hero-container{
+    margin-left: 30px;
+  }
+
+  ul a {
+    list-style: none;
+    text-decoration: none;
+    color: white;
+  }
+
+  .footer-container a:hover
+  {
+    color: #a2d2ff;
+  }
+
 /* hamburger menu */
 
 #menuToggle
@@ -65,7 +100,7 @@ body
 
 #menuToggle a:hover
 {
-  color: #ffc8dd;;
+  color: #a2d2ff;
 }
 
 
