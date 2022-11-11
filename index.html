@@ -1,16 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Responsive Cake webpage</title>
     <!-- Add a link to your css file here -->
-</head>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
+  <body>
     <!-- Add your markup here -->
-</body>
-
+    <header>
+      <img src="./images/Cake_Monochromatic.svg" alt="logo-cake" />
+      <nav role="navigation">
+        <div id="menu">
+          <input type="checkbox" />
+          <span></span>
+          <span></span>
+          <span></span>
+          <ul id="menu">
+            <a href="#"><li>Home</li></a>
+            <a href="#"><li>Cakes</li></a>
+            <a href="#"><li>Orderin</li></a>
+            <a href="#"><li>Lessons</li></a>
+            <a href="#"><li>About</li></a>
+          </ul>
+        </div>
+      </nav>
+      <p>The best cakes in town delivered to your door</p>
+    </header>
+    <section id="welcome" class="welcome-text">
+      <h1>Welcome</h1>
+      <p>
+        Cake Bakery is London's only all natural bakery, delivering throughout
+        the UK! Created by Harry Junior, playfulness is his passion; he loves to
+        create exciting, experimental flavours and artisan designs, having fun
+        in the process. Harry is a little health-conscious and like to make sure
+        his bakes are irresistibly scrumptious without using too much fat and
+        sugar - ‘just as much as needed to make something delicious’. Our
+        premium bakes and gifts are lovingly handcrafted to taste delicious and
+        look exquisite for you to enjoy whatever the occasion!
+      </p>
+    </section>
+    <section class="topic-images">
+      <img src="./img/childcake.jpg" alt="main-picture-cake" />
+      <img
+        src="../HTML-CSS-Coursework-Week3/img/bcake.jpg"
+        alt="birthday-cake"
+      />
+      <img src="./images/cutted cake.jpg" alt="cutted-cake" />
+      <img src="./images/cupcakes.jpg" alt="cupcake" />
+      <img src="./images/donuts.jpg" alt="donut" />
+    </section>
+  </body>
 </html>
