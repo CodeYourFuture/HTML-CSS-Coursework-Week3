@@ -7,7 +7,7 @@
 }
 
 body{
-    background-color: rgba(178, 250, 242, 0.201);
+    background-color: #ffffff;
     display: grid;
     grid-template-columns: repeat(1, fr);
     grid-template-rows: 200px auto 200px;
@@ -27,10 +27,9 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    width: 100%;
     display: flex;
-    align-items: flex-end;
     justify-content: flex-end;
+    align-items: flex-end;
 }
 
 .nav-header {
@@ -38,19 +37,17 @@ body{
 }
 
 .add {
-    text-align: right;
-    margin: auto;
-    padding: auto;
-    width: 50%;
+    max-width: 24rem;
+    word-wrap: break-word;
+
 }
 
 .add-text {
     color: rgb(255, 255, 255);
     text-shadow: 0 0 20px #dae351, 0 0 10px #ff0000;
     font-family: fantasy;
-    font-weight: 900;
-    font-size: 1.5rem;
-    margin: 1rem;
+    text-align: right;
+    font-size: 2rem;
 }
 
 .homepage-main{
@@ -111,14 +108,13 @@ body{
 
 
 footer{
+    grid-area: footer;
     background-color: rgba(194, 195, 200, 0.35);
     /* color:brown; */
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     padding: 1rem;
     gap: .5rem;
-    width: 100%;
-
 }
 
 footer span {
