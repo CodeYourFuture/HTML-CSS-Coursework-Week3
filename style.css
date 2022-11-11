@@ -1,1 +1,247 @@
-/*  Add your styling here */
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    display: grid;
+    grid-template-columns: repeat (2, 1fr);
+    grid-template-rows: 150px 30px auto 100px;
+    grid-template-areas: 
+    "header header"
+    "nav2 nav2"
+    "section section"
+    "footer footer"
+}
+
+header {
+    grid-area: header;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #ffcfd2;
+    opacity: 0.75;
+}
+
+.headerpic img {
+    width: 100%;
+    height: 100%;
+    margin-left: 1rem;
+}
+
+.title {
+    padding: 0.6;
+    max-width: 13rem;
+    margin: 6rem 0 0 0;
+}
+
+.title p {
+    font-size: large;
+    color: rgb(246 6 202);
+    font-weight: 700;
+
+}
+
+.nav2 {
+    display: none;
+}
+
+section {
+    grid-area: section;
+    margin: 1rem 1rem;
+    gap: 1rem;
+    display: grid;
+    grid-template-rows: repeat (2, auto);
+}
+
+.hero {
+    margin: 1em;
+}
+
+.hero h1 {
+    margin: 0 0 1rem 0;
+}
+
+.mainpicture {
+    width: 100%;
+    height: 20rem;
+    object-fit: cover;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 1rem;
+}
+
+.products img {
+    object-fit: cover;
+    width: 100%;
+    height: 10rem;
+}
+
+footer {
+    background-color: #fcd5ce;
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    padding: 0.4rem;
+    gap: 5px;
+}
+
+footer a {
+    margin-left: 1rem;
+}
+
+ footer p {
+    text-align: center;
+
+ }
+
+ .tip {
+    display: block;
+    padding-top: 30px;
+    font-family: Arial;
+    color: grey;
+  }
+ 
+    /* TABLET */
+
+@media screen and (min-width: 540px){
+   
+    body {
+        background-color: #ffffff;
+        gap: 1rem;
+        display: grid;
+        grid-template-columns: repeat (4, 1fr);
+        grid-template-rows: 150px 30px auto 100px;
+        grid-template-areas: 
+        "header header header header"
+        ". nav2 nav2 ."
+        "section section section section"
+        "footer footer footer footer";
+    }
+
+    .title  {
+        font-weight: 800;
+        font-size: 1rem;
+        max-width: 50rem;
+    }
+
+    .nav2 {
+        grid-area: nav2;
+        display: block;
+        margin: 0.5rem 0;
+    }
+    
+    div ul {
+        background-color: #a9d6e5;
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+    }
+    
+    div li {
+        display: flex;
+        padding: 0.8rem;
+        cursor: pointer;
+    }
+    
+    li:hover,
+    li:focus{
+      background-color: #ffcfd2;
+    }
+
+    section {
+        row-gap: 3rem;
+    }
+
+    .products {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        /* grid-template-rows: 200px; */
+    }
+    .mainpicture {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+    /* DESKTOP MODE */
+
+@media screen and (min-width: 900px) {
+
+    body {
+        background-color: #f9dcc4;
+    }
+    section {
+        display: grid;
+        grid-template-columns: repeat (2, 1fr);
+        grid-template-rows: repeat (2, 1fr);
+        grid-template-areas:
+        "mainpicture hero"
+        "products products";
+    }
+
+    .hero{
+        grid-area: hero;
+        text-align: end;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .hero h1{
+        font-size: 3rem;
+        font-family: 'cursiva';
+    }
+
+    .hero p {
+        font-size: larger;
+    }
+
+    .mainpicture{
+        grid-area: mainpicture;
+
+    }
+    .products {
+        grid-area: products;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
