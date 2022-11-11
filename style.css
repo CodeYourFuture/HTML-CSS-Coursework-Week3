@@ -1,1 +1,240 @@
-/*  Add your styling here */
+:root{
+    --pink: #ebb8f3;
+    --light-pink: rgb(241, 209, 239);
+    --purple: #5e036c89;
+    --white: #fff;
+}
+
+/* General */
+
+html {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+
+.header {
+    grid-area: header;
+    background-image:url("./img/OIP\ \(3\).jpg") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.logo {
+    grid-area: logo;
+}
+
+.logo img{
+    border-radius: 50%;
+    padding: 5%;
+    width: 350px;
+    max-width: 100%;
+    height: 30vh;
+}
+
+.header p {
+    font-family: 'Raleway', sans-serif;
+    font-style: italic;
+    font-size: 20px;
+    text-align: right;
+    width: 100%;
+    font-weight: bold;
+    padding: 2% 5%;
+}
+
+.nav-list{
+    list-style: none;
+}
+
+nav{
+    grid-area: nav;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    z-index: 1;
+    background-color: var(--light-pink);
+}
+
+.open-menu,
+.close-menu {
+    position: absolute;
+    cursor: pointer;
+    font-size: 2rem;
+    display: block;
+}
+
+.open-menu{
+    top:4%;
+    right: 4%;
+    /* transform: translateY(-50%); */
+}
+
+.close-menu{
+    top: 4%;
+    right: 15%;
+}
+
+#check{
+    display: none;
+}
+
+#check:checked ~ .menu{
+    right: 0;
+}
+
+.nav-link{
+    padding: 20% 0%;
+}
+
+.nav-link a{
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    position: relative;
+    background-color: var(--purple);
+    color: var(--white);
+}
+
+/* Main */
+
+.main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, auto);
+    row-gap: 30px;
+    grid-template-areas:
+        "header header"
+        "aside aside"
+        "hero hero"
+        "products products"
+        "footer footer";
+}
+
+.aside {
+    grid-area: aside;
+    text-align: justify;
+}
+
+.aside p{
+    padding-top: 5%;
+    font-family: 'Indie Flower', cursive;
+    font-size: 1rem;
+}
+
+.hero {
+    grid-area: hero;
+}
+
+.hero img{
+    width: 100%;
+    height: 50vh;
+}
+
+.products {
+    grid-area: products;
+    display: grid;
+    justify-content: space-between;
+    align-content: space-between;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap:20px;
+}
+
+.aside,
+.hero,
+.products {
+    padding: 0% 5%;
+}
+
+.products img {
+    width: 100%;
+    height: 40vh;
+}
+
+/* Footer */
+
+
+
+
+
+
+
+@media screen and (min-width:540px) {
+
+    .open-menu, .close-menu{
+        display: none;
+    }
+
+    .main {
+        grid-template-areas:
+            "header     header"
+            "nav        nav"
+            "hero       aside"
+            "products   products"
+            "footer     footer";
+        }
+
+    .aside {
+        padding-right: 10%;
+        direction: rtl;
+    }
+
+    .aside p {
+        font-size: 1.2rem;
+    }
+
+    .hero {
+        padding-left: 10%;
+    }
+
+    .menu {
+        flex-direction: row;
+        justify-content: flex-end;
+        width: 100%;
+        position: static;
+        background-color: var(--light-pink);
+    }
+
+    .nav-list{
+        margin: 0% 5%;
+    }
+
+    .nav-link {
+        padding: 3%;
+    }
+}
+
+@media screen and (min-width:900px) {
+
+    .aside p {
+            font-size: 1.5rem;
+        }
+
+    .products {
+    grid-template-columns: repeat(4, 1fr);
+}
+}
