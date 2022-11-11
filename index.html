@@ -1,16 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fragment+Mono:ital@1&display=swap" rel="stylesheet">
+
+
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Responsive Cake webpage</title>
-    <!-- Add a link to your css file here -->
+    <title>Document</title>
 </head>
-
 <body>
-    <!-- Add your markup here -->
-</body>
+    <main class="homepage-main">
+        <section class="homepage-hero">
+            <!-- Top Navigation Menu -->
+            <div class="topnav" id="myTopnav">
+                <a href="#home" class="active">Home</a>
+                <a href="#news">News</a>
+                <a href="#contact">Contact</a>
+                <a href="#about">About</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                  <i class="fa fa-bars"></i>
+                </a>
+              </div>
 
+        </section>
+        <section class="homepage-feature">
+            <div class="container">
+                <h2>WELCOME</h2>
+                <p>
+                     remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </p>
+            </div>
+        </section>
+        <section class="homepage-products">
+            <div class="products">
+                <img src="img/istockphoto-1326149502-170667a.jpg" alt="pic" id="product-img1">
+                <img src="img/istockphoto-1333023716-170667a.jpg" alt="pic" id="product-img2">
+                <img src="img/istockphoto-1339241159-170667a.jpg" alt="pic" id="product-img3">
+                <img src="img/istockphoto-1342473926-170667a.jpg" alt="pic" id="product-img4">
+                <img src="img/istockphoto-1346128287-170667a.jpg" alt="pic" id="product-img5">
+            </div>
+        </section>
+        <aside class="homepage-aside">
+            <div class="footer">
+                <p>
+                      when an unknown printer took a galley of type and scrambled it to make a type specimen bookLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                </p>
+                
+                <div class="icons">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-linkedin"></a>
+                </div>
+            </div>
+        </aside>
+      </main>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <span class="tip mobile">Mobile mode</span>
+    <span class="tip tablet">Tablet mode</span>
+    <span class="tip desktop">Desktop mode</span>
+
+
+    <script>
+        /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+        function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+    </script>
+</body>
 </html>
