@@ -7,10 +7,10 @@
 }
 
 body{
-    background-color: e7ecef
+    background-color: rgba(178, 250, 242, 0.201);
     display: grid;
     grid-template-columns: repeat(1, fr);
-    grid-template-rows: 200px auto 150px;
+    grid-template-rows: 200px auto 200px;
     grid-template-areas: 
     "hd"
     "section"
@@ -45,7 +45,7 @@ body{
 
 .add-text {
     color: rgb(255, 255, 255);
-    text-shadow: 90px 9px 20px #000000, 1px 2px 10px #ff0000;
+    text-shadow: 0 0 20px #dae351, 0 0 10px #ff0000;
     font-family: fantasy;
     font-weight: 900;
     font-size: 2rem;
@@ -68,7 +68,7 @@ body{
 
 .title{
     font-size: 5rem;
-    color: rgb(53, 28, 83);
+    color: rgb(62, 31, 31);
     margin-bottom: 3rem;
     text-align: left;
     font-weight: 800;
@@ -76,7 +76,7 @@ body{
 
 .text-hero{
     font-size: 2rem;
-    color: rgb(147, 35, 167);
+    color: rgb(117, 9, 136);
     text-align: center;
     font-family: fantasy;
     font-weight: 200;
@@ -111,7 +111,7 @@ body{
 
 footer{
     background-color: rgba(194, 195, 200, 0.35);
-    color:brown;
+    /* color:brown; */
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     padding: 1rem;
@@ -121,13 +121,18 @@ footer{
 }
 
 footer span {
-
     border-left: 3px solid rgba(94, 92, 92, 0.532);
     padding: .3rem;
-    width: 60%;
+    width: 40%;
     color:rgb(33, 33, 26);
     background-color: rgba(169, 169, 169, 0.172);
 
+}
+
+.copy{
+    text-align: center;
+    color: lightgrey;
+    font-weight: 900;
 }
 
 /* @media screen and (min-width: 540px){
