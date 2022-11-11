@@ -183,7 +183,7 @@ nav {
     padding:20px;
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 540px) {
     nav {
         display: block;
 
@@ -193,5 +193,51 @@ nav {
         list-style: none;
      }
 
+     .mainpage {
+        display: grid;
+        grid-template-columns: repeat (4, 1fr);
+        grid-template-rows: 62vh 45vh 40vh 40vh 40vh;
+        border: blueviolet solid 10px;
+        gap:0.5em;
+        grid-template-areas: 
+        "p p w w"
+        "a a a a"
+        "b b b b"
+        "c c c c"
+        "d d d d";
+    }
 
+    .wpic {
+        width: 250px;
+        font-size: 4em;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    nav {
+        display: block;
+        display: flex;
+
+    }
+
+     nav ul {
+        list-style: none;
+     }
+
+     .mainpage {
+        display: grid;
+        grid-template-columns: repeat (4, 1fr);
+        grid-template-rows: 62vh 45vh ;
+        border: blueviolet solid 10px;
+        gap:0.5em;
+        grid-template-areas: 
+        "p p w w"
+        "a b c d";
+    }
+
+    .wpic {
+        width: 400px;
+        font-size: 4em;
+    }
+    
 }
