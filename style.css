@@ -1,6 +1,5 @@
 :root{
-    --pink: #ebb8f3;
-    --light-pink: rgb(241, 209, 239);
+    --light-pink: #f1d1ef;
     --purple: #5e036c89;
     --white: #fff;
 }
@@ -39,7 +38,7 @@ html {
 
 .logo img{
     border-radius: 50%;
-    padding: 5%;
+    padding: 1rem;
     width: 350px;
     max-width: 100%;
     height: 30vh;
@@ -52,7 +51,7 @@ html {
     text-align: right;
     width: 100%;
     font-weight: bold;
-    padding: 2% 5%;
+    padding-right: 1.5rem;
 }
 
 .nav-list{
@@ -88,14 +87,13 @@ nav{
 }
 
 .open-menu{
-    top:4%;
-    right: 4%;
-    /* transform: translateY(-50%); */
+    top: 1.5rem;
+    right: 1.5rem;
 }
 
 .close-menu{
-    top: 4%;
-    right: 15%;
+    top: 1.5rem;
+    right: 2rem;
 }
 
 #check{
@@ -107,7 +105,7 @@ nav{
 }
 
 .nav-link{
-    padding: 20% 0%;
+    padding: 1.5rem 0;
 }
 
 .nav-link a{
@@ -117,6 +115,7 @@ nav{
     position: relative;
     background-color: var(--purple);
     color: var(--white);
+    padding: 5px 20px;
 }
 
 /* Main */
@@ -140,7 +139,7 @@ nav{
 }
 
 .aside p{
-    padding-top: 5%;
+    padding-top: 1.5rem;
     font-family: 'Indie Flower', cursive;
     font-size: 1em;
 }
@@ -152,6 +151,11 @@ nav{
 .hero img{
     width: 100%;
     height: 50vh;
+}
+
+.products img {
+    width: 100%;
+    height: 40vh;
 }
 
 .products {
@@ -167,13 +171,9 @@ nav{
 .aside,
 .hero,
 .products {
-    padding: 0% 5%;
+    padding: 0 2rem;
 }
 
-.products img {
-    width: 100%;
-    height: 40vh;
-}
 
 /* Footer */
 
@@ -190,7 +190,6 @@ nav{
     }
 
     .main {
-        font-size: 120%;
         grid-template-areas:
             "header     header"
             "nav        nav"
@@ -200,14 +199,13 @@ nav{
         }
 
     .aside {
-        padding-top: 5%;
-        padding-right: 10%;
+        padding-right: 2rem;
         direction: rtl;
-
+        font-size: 1.2em;
     }
-
+ 
     .hero {
-        padding-left: 10%;
+        padding-left: 2rem;
     }
 
     .menu {
@@ -215,15 +213,16 @@ nav{
         justify-content: flex-end;
         width: 100%;
         position: static;
-        background-color: var(--light-pink);
+        font-size: 0.7rem;
+        font-weight: bold;
     }
 
     .nav-list{
-        margin: 0% 5%;
+        margin: 0 2rem;
     }
 
     .nav-link {
-        padding: 3%;
+        padding: 0.3rem;
     }
 }
 
@@ -231,5 +230,15 @@ nav{
 
     .products {
         grid-template-columns: repeat(4, 1fr);
-}
+    }
+
+    .aside{
+        font-size: 1.3em;
+    }
+
+    .nav-link {
+        font-size: 0.9rem;
+        font-weight: bold;
+        padding: 2rem;
+    }
 }
