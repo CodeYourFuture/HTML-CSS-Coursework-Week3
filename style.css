@@ -3,8 +3,6 @@
   padding: 0;
 }
 
-/* ----- Header ----- */
-
 .header-content {
   display: grid;
   grid-template-columns: 45% 55%;
@@ -44,7 +42,6 @@
   margin-top: -30px;
 }
 
-/* ----- Hamburger Menu ----- */
 .hamburger {
   justify-self: end;
   padding: 10px 10px;
@@ -69,7 +66,6 @@
   padding: 20px;
 }
 
-/* ----- Main Section ----- */
 main h1 {
   font-size: 40px;
   font-weight: 400;
@@ -97,7 +93,6 @@ main {
   max-width: 50%;
 }
 
-/* ----- Products Section ----- */
 .cakes {
   grid-column: 2;
   display: grid;
@@ -111,7 +106,6 @@ main {
   max-height: 100%;
 }
 
-/* ----- Footer ----- */
 footer {
   display: flex;
   flex-direction: column;
