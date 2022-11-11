@@ -1,1 +1,134 @@
-/*  Add your styling here */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.header-content {
+  display: grid;
+  grid-template-columns: 45% 55%;
+  background-color: rgb(12, 228, 113);
+  padding: 20px;
+  border-bottom: 1px solid #eee;
+}
+.logo-img {
+  grid-row: 1 / -1;
+  margin-left: 10px;
+}
+.logo-img img {
+  display: grid;
+  opacity: 100%;
+  width: 250px;
+  height: 200px;
+}
+.items {
+  margin: 3rem 0;
+  flex-shrink: inherit;
+  margin: 0;
+}
+.links {
+  text-transform: uppercase;
+  font-weight: 300;
+  background-color: #0d3b19;
+  padding: 5px 30px;
+  color: #eee;
+}
+.header-text {
+  grid-column: 2 / -1;
+  font-size: 30px;
+  font-weight: 300;
+  font-style: italic;
+  color: #0d3b19;
+  direction: rtl;
+  margin-top: -30px;
+}
+
+.hamburger {
+  justify-self: end;
+  padding: 10px 10px;
+}
+.bar {
+  display: block;
+  width: 40px;
+  height: 10px;
+  margin: 5px auto;
+  background-color: #0d2b14;
+}
+/* ----- Nav Menu ----- */
+.nav {
+  display: none;
+}
+.menu {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 15px;
+  padding: 20px;
+}
+
+main h1 {
+  font-size: 40px;
+  font-weight: 400;
+  color: #1c5632;
+}
+main {
+  display: grid;
+  grid-template-columns: 20px 2fr 20px;
+  grid-column-gap: 20px;
+}
+
+.hero {
+  grid-column: 2;
+  min-width: 0;
+  display: grid;
+  gap: 30px;
+  padding: 20px 0;
+}
+.fab-img {
+  background-color: #f5f3f3;
+}
+.main-img {
+  object-fit: cover;
+  max-width: 50%;
+  max-width: 50%;
+}
+
+.cakes {
+  grid-column: 2;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  padding: 20px 0;
+  gap: 20px;
+}
+.cake-img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 6rem;
+  padding: 2rem 0;
+  gap: 1rem;
+}
+
+footer ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+footer ul li {
+  display: block;
+  padding: 0.5rem;
+  margin: 10px;
+}
+
+footer ul li a img {
+  max-width: 4rem;
+  max-height: 4rem;
+}
