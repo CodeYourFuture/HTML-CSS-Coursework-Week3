@@ -55,7 +55,7 @@ a {
   }
 }
 
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 541px) {
   .intro-text {
     padding-bottom: 1rem;
     font-size: 100%;
@@ -66,14 +66,14 @@ a {
 .header {
   background-color: #cdb4db;
   border: 1px solid white;
-  padding: 1rem 1rem;
+  padding: 0rem 1rem;
 }
 
 .navbar {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding: 0.5rem 0.8rem;
+  padding: 0rem 0.5rem;
 }
 
 .hamburger {
@@ -94,6 +94,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-direction: row;
 }
 
 .nav-item {
@@ -102,7 +103,7 @@ a {
 }
 
 .nav-link {
-  font-size: 1rem;
+  font-size: 80%;
   font-weight: 550;
   color: white;
   background-color: #ffafcc;
@@ -177,60 +178,14 @@ a {
   margin: 1rem 0 1rem 0;
 }
 
-@media only screen and (min-width: 900px) {
-  .hero {
-    display: grid;
-    height: 100%;
-    grid-gap: 0.5rem;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, 200px);
-    grid-template-areas:
-      "i i w w"
-      "i i w w"
-      "c c c c";
-  }
-
-  .main-img {
-    grid-area: i;
-  }
-
-  .main-img img {
-    object-fit: cover;
-    width: 100%;
-    max-height: 100%;
-  }
-  .welcome {
-    grid-area: w;
-    display: block;
-  }
-
-  .cross {
-    grid-area: c;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 1rem;
-  }
-
-  .cross-imgs {
-    width: 100%;
-    max-width: 300px;
-    height: 100%;
-    max-height: 300px;
-    object-fit: cover;
-  }
-}
-
 .welcome p {
   text-align: justify;
   margin-bottom: 3rem;
 }
 .main-img img {
   width: 100%;
-  max-width: 600px;
-  height: 600px;
+  height: 100%;
   object-fit: cover;
-
   margin: 15px 0s;
 }
 
@@ -240,7 +195,6 @@ a {
     grid-gap: 0.8rem;
     grid-template-columns: repeat(2, 2fr);
     grid-template-rows: repeat(2, 2fr);
-    border: 1px solid black;
     padding: 30px 5px;
     width: auto;
   }
@@ -255,6 +209,20 @@ a {
 }
 
 @media only screen and (min-width: 541px) {
+  .body {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  .intro {
+    margin-bottom: 1rem;
+    background-color: #cdb4db;
+    border: 1px solid white;
+    border-radius: 2px;
+  }
+  .header {
+    margin-bottom: 2rem;
+  }
   .hero {
     display: grid;
     height: 100%;
@@ -279,6 +247,16 @@ a {
   .welcome {
     grid-area: w;
     display: block;
+    padding: 0 0 0 2rem;
+    text-align: right;
+    margin: 0;
+  }
+  .welcome p {
+    font-size: 1.2rem;
+    margin: 0;
+  }
+  h1 {
+    margin: 0 0 2rem 0;
   }
 
   .cross {
@@ -287,14 +265,20 @@ a {
     flex-direction: row;
     justify-content: space-between;
     gap: 1rem;
+    margin-top: 2rem;
   }
 
   .cross-imgs {
     width: 100%;
-    max-width: 200px;
     height: 100%;
-    max-height: 200px;
     object-fit: cover;
+    max-height: 400px;
+    margin: 0 auto;
+  }
+  footer {
+    background-color: #cdb4db;
+    border: 1px solid white;
+    border-radius: 2px;
   }
 }
 /*footer*/
