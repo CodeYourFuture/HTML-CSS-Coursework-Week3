@@ -1,1 +1,96 @@
 /*  Add your styling here */
+p {
+  font-family: "Lemonada", sans-serif;
+  font-size: 1em;
+  color: rgb(86, 83, 83);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Lemonada", sans-serif;
+}
+
+.logo-img {
+  width: 30%;
+}
+
+header {
+  background-color: rgb(245, 225, 228);
+}
+
+.header-text {
+  float: right;
+  font-family: "courgette", sans-serif;
+  font-size: 1.5em;
+  position: relative;
+  bottom: 100px;
+  padding-right: 5%;
+  color: rgb(86, 83, 83);
+}
+
+h1 {
+  margin: 1em;
+  color: rgb(86, 83, 83);
+}
+
+.p-top {
+  margin: 1em;
+}
+
+.images {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.top-image {
+  width: 100%;
+}
+
+.navbar {
+  display: none;
+}
+
+.image {
+  width: 100px;
+  height: 100px;
+  padding: 20px;
+  margin: 10px;
+}
+footer {
+  background-color: rgb(245, 225, 228);
+  color: rgb(86, 83, 83);
+}
+.footer-items {
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  padding: 0.6em;
+}
+
+.copyright {
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-with: 420px) {
+  .navbar {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .navbar {
+    display: grid;
+    justify-items: end;
+  }
+  .narbar-menue {
+    display: flex;
+    column-gap: 20px;
+    list-style: none;
+    color: rgb(86, 83, 83);
+  }
+}
