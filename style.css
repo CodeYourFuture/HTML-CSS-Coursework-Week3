@@ -4,34 +4,43 @@
     padding: 0;
 }
 
-body {
-    display: grid;
-    /* width: auto; */
-    margin: 0;
-    padding: 0;
+p, h1, h2, h3, h4, h5, h6 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+hr {
+    margin: 1rem;
+    border:2px solid #fff2ee;
 }
 
 /* Header */
 
+/* .header {
+    border: solid 2px white;
+    border-radius: 20px;
+} */
+
+header {
+    background-color: #fff2ee;
+    padding: 2rem;
+    border: solid 2px #fbc4ab;
+    border-radius: 20px;
+    margin: 10px;
+    /* border: solid 4px red; */
+}
+
 .menu_icon {
     display: flex;
     flex-direction: row-reverse;
-}
-
-header {
-    display: flex;
-    flex-direction: row-reverse;
-    /* justify-content: center; */
-    background-color: pink;
-    /* background-size: cover; */
-    /* width: auto; */
-    padding: 1rem;
+    margin-bottom: 1rem;
+    /* background-color: white; */
 }
 
 .header_title {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
+    font-weight: 1px;
 }
 
 .header_img {
@@ -43,22 +52,30 @@ header {
     text-align: right;
 }
 
+hr {
+    border-top: 1px solid #fff2e;
+}
+
 /* Main */
 /* Welcome Intro */
 
-.intro_section {
-    margin: 2rem 0 2rem 0;
-    padding: 1rem;
-    width: 100%
+.intro_container {
+    /* margin: 2rem 0 2rem 0; */
+    /* padding: 1rem; */
+    width: 100%;
+    padding: 2rem;
+    /* border: solid 2px #fbc4ab;
+    border-radius: 20px; */
+    margin: 10px;
 }
 
-.intro_text {
+.title_intro {
     margin-bottom: 2rem;
-    padding: 0 1rem 0 1rem;
 }
 
 .intro_img {
-    width: 350px;
+    width: 300px;
+    margin-top: 2rem;
 }
 
 /* Gallery Cotainer */
@@ -68,12 +85,15 @@ header {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 20px;
-    padding: 20px;
+    padding: 2rem;
+    /* border: solid 2px #fbc4ab;
+    border-radius: 20px; */
+    margin: 10px;
     /* border: 4px solid red; */
 }
 
 .gallery_image_container {
-    border: 4px solid green
+    /* border: 4px solid green */
 }
 
 .gallery_img_link {
@@ -89,4 +109,33 @@ header {
     height: 100%;
     object-fit: cover;
     /* border: 4px solid orange; */
+}
+
+/* Footer */
+
+footer {
+    background-color: #fff2ee;
+    padding: 2rem;
+    border: solid 2px #fbc4ab;
+    border-radius: 20px;
+    margin: 10px;
+    /* border: solid 4px red; */
+}
+
+.footer_text {
+    /* border: solid 4px blue; */
+    text-align: center;
+}
+
+.footer_contact {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
 }
