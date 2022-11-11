@@ -96,7 +96,53 @@ footer.footer {
     font-size: small;
     align-self: center;
     font-style: italic;
-    padding-top: 1.5rem;
+    padding-top: 1rem;
+  }
+
+  div.foot {
+    font-size: small;
+    align-self: center;
+    font-style: italic;
+    padding-top: 1rem;
+  }
+
+  @media (min-width: 540px) {
+    body {
+      padding: 0;
+      margin: 0;
+    }
+
+    .header {
+      background:#e17ad3;
+      width: 100%;
+      height: 11rem;
+      display: flex;
+    }
+
+    img {
+      height: 10rem;
+      padding-top: .5rem;
+    }
+
+    img.hamburger { 
+      padding: 2rem 0 0 6rem;
+    }
+
+    p.header-p {
+      padding-left: 1rem;
+    }
+
+    img.welcome-image {
+      width: 100%;
+      height: 100%;
+    }
+
+    section div.grid-item {
+      width: 100%;
+      height: 100%;
+      padding-left: 1.5rem;
+    }
+
   }
 
   @media (min-width: 900px) {
@@ -201,7 +247,8 @@ footer.footer {
 
     footer.footer {
       display: grid;
-      grid-template-columns: repeat(3,2fr);   }
+      grid-template-columns: repeat(3,1fr); 
+    }
     
     footer.footer p {
       padding-top: 3rem;
@@ -210,3 +257,4 @@ footer.footer {
     footer.footer > div.foot > h6 {
       margin-left: 11rem;
     }
+  }
