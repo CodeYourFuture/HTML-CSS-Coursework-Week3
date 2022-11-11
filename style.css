@@ -1,1 +1,205 @@
-/*  Add your styling here */
+body
+{
+  margin: 0;
+  padding: 0;
+  
+  background: #ffc8dd;
+  color: white;
+  font-family: 'Signika Negative', sans-serif;;
+
+    display: grid;
+    
+    grid-template-areas:
+      "a a a"
+      "b b b"
+      "b b b"
+      "b b b"
+      "b b b"
+      "b b b"
+      "c c c";
+    align-content: space-between;
+    justify-content: space-around;
+  }
+
+  .header-container {
+    grid-area: a;
+  }
+
+  .main-container {
+    grid-area: b;
+  }
+
+  .footer-container {
+    grid-area: c;
+    margin-left: 30px;
+  }
+  
+  header{
+    display: flex;
+  }
+  
+  .header-container{
+    display: grid;
+    grid-template-areas:
+    "a . c"
+    "a b b"
+  }
+
+  .logo-container{
+    grid-area: a;
+  }
+
+  .main-heading{
+    font-size: 10px;
+    padding-left: 50px;
+    padding-top: 25px;
+    grid-area: b;
+  }
+  
+  .nav-container{
+    grid-area: c;
+  }
+
+  .hero-container{
+    margin-left: 30px;
+  }
+
+  ul a {
+    list-style: none;
+    text-decoration: none;
+    color: white;
+  }
+
+  .footer-container a:hover
+  {
+    color: #a2d2ff;
+  }
+
+/* hamburger menu */
+
+#menuToggle
+{
+  display: block;
+  position: relative;
+  
+  
+  z-index: 1;
+  
+  -webkit-user-select: none;
+  user-select: none;
+  padding: 15px 20px;
+}
+
+#menuToggle a
+{
+  text-decoration: none;
+  color: white;
+  
+  transition: color 0.3s ease;
+}
+
+#menuToggle a:hover
+{
+  color: #a2d2ff;
+}
+
+
+#menuToggle input
+{
+  display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    /* top: -7px; */
+    /* left: -5px; */
+    cursor: pointer;
+    opacity: 0;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background: white;
+  border-radius: 3px;
+  z-index: 1;
+}
+
+
+
+#menu
+{
+    position: absolute;
+    width: 100vw;
+    /* margin: -100px 0 0 -50px; */
+    padding: 50px;
+    padding-top: 125px;
+    background: #ffc8dd;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    display: none;
+    right: 0;
+    /* transform: translateX(8%); */
+    top: 0;
+    box-sizing: border-box;
+    height: 100vh;
+}
+
+
+#menu li
+{
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+
+#menuToggle input:checked ~ ul
+{
+  display: block;
+}
+/* hamburger menu */
+
+.image-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 30px;
+    align-content: space-between;
+    justify-content: space-around;
+    padding: 30px;
+
+}
+
+.image1{
+    grid-area: a;
+}
+
+.image2{
+    grid-area: b;
+}
+
+.image3{
+    grid-area: c;
+}
+
+.image4{
+    grid-area: d;
+}
+
+.cakex4{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+ul{
+    margin: 0;
+}
