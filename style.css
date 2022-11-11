@@ -1,1 +1,260 @@
 /*  Add your styling here */
+/*  Add your styling here */
+
+/* colors */
+happy selected on coolors website 
+:root {
+    --pink: #e17ad3;
+    --white: #e1f4e3;
+    --purp: #f27de3;
+  }
+
+  /* font-style */
+  body {
+    font-family: 'Open Sans', serif;
+    font-size: 28px;
+  }
+
+  .header {
+    background:#e17ad3;
+    width: auto;
+    height: 10rem;
+    display: flex;
+  }
+
+  img {
+    height: 7.5rem;
+    padding-top: 1rem;
+  }
+
+  img.hamburger { 
+    height: 1.5rem;
+    padding-right: 1.5rem;
+    align-items: flex-start;
+    padding-top: 1rem;
+  }
+
+  p.header-p {
+    margin: 7.5rem -1rem 0 0.5rem;
+    font-size: small;
+    font-weight: 100;
+    font-style: italic;
+  }
+
+  section {
+    background: #e1f4e3;
+    padding: 2rem;
+  }
+
+  section.navbar {
+    display: none;
+  }
+
+  section p {
+    font-size: small;
+  }
+
+  .welcome h4 {
+    margin-top: 1.5rem;
+  }
+
+  img.welcome-image {
+
+    width: 100%;
+    height: fit-content;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 auto;
+    gap: 2rem;
+  }
+
+  section div.grid-item {
+    margin: 0;
+    padding: 0;
+  }
+
+footer.footer {
+    background: #f27de3;
+    width: 100%;
+    height: 13rem;
+    display: flex;
+    flex-direction: column;
+  }
+ 
+  footer p {
+    font-size: medium;
+    line-height: 10%;
+    font-weight: 400;
+    margin: .5rem 0 0 2rem;
+    padding-top: 1.5rem;
+  }
+
+  footer h6 {
+    font-size: small;
+    align-self: center;
+    font-style: italic;
+    padding-top: 1rem;
+  }
+
+  div.foot {
+    font-size: small;
+    align-self: center;
+    font-style: italic;
+    padding-top: 1rem;
+  }
+
+  @media (min-width: 540px) {
+    body {
+      padding: 0;
+      margin: 0;
+    }
+
+    .header {
+      background:#e17ad3;
+      width: 100%;
+      height: 11rem;
+      display: flex;
+    }
+
+    img {
+      height: 10rem;
+      padding-top: .5rem;
+    }
+
+    img.hamburger { 
+      padding: 2rem 0 0 6rem;
+    }
+
+    p.header-p {
+      padding-left: 1rem;
+    }
+
+    img.welcome-image {
+      width: 100%;
+      height: 100%;
+    }
+
+    section div.grid-item {
+      width: 100%;
+      height: 100%;
+      padding-left: 1.5rem;
+    }
+
+  }
+
+  @media (min-width: 900px) {
+    body {
+      padding: 0;
+      margin: 0;
+    }
+    
+    .header {
+      background:#e17ad3;
+      width: 100%;
+      height: 11rem;
+      display: flex;
+    }
+    
+    img {
+      height: 10rem;
+      padding-top: .5rem;
+    }
+
+    img.hamburger { 
+      display: none;
+    }
+
+    p.header-p {
+      margin: 7.5rem 3rem 0 0.5rem;
+      padding-left: 20rem;
+      font-size: x-large;
+      font-weight: 400;
+      font-style: italic;
+    }
+    
+    section.navbar {
+      display: block;
+      padding-top: 2rem;
+      
+    }
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      border: 1px solid #e7e7e7;
+      background-color: #f3f3f3;
+      font-size: small;
+    }
+    
+    li {
+      float: right;
+    }
+    
+    li a {
+      display: block;
+      color: #666;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      margin-right: 1.5rem;
+    }
+    
+    li a:hover:not(.active) {
+      background-color: #e17ad3;
+    }
+    
+    li a.active {
+      color: white;
+      background-color: #e17ad3;
+    }
+
+    section.welcome {
+      display: flex;
+      flex-direction: row-reverse;
+    }
+
+    img.welcome-image {
+      width: 85%;
+      height: 20rem;
+      margin-right: 5rem;
+    }
+
+    div.welcome h4,p {
+      float: right;
+    }
+
+    div.welcome h4 {
+      margin-right: 1rem;
+      font-size: 2rem;
+    }
+
+    section.grid-container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1rem;
+      padding-bottom: 5rem;
+    }
+
+    section div.grid-item img{
+      width: 100%;
+      height: 100%;
+    }
+
+    footer.footer {
+      display: grid;
+      grid-template-columns: repeat(3,1fr); 
+    }
+    
+    footer.footer p {
+      padding-top: 3rem;
+    }
+
+    footer.footer > div.foot > h6 {
+      margin-left: 11rem;
+    }
+  }
