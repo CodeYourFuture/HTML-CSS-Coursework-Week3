@@ -7,10 +7,10 @@
 }
 
 body{
-    background-color: yellow;     /*e7ecef*/
+    background-color: e7ecef
     display: grid;
     grid-template-columns: repeat(1, fr);
-    grid-template-rows: 200px auto 90px;
+    grid-template-rows: 200px auto 150px;
     grid-template-areas: 
     "hd"
     "section"
@@ -50,12 +50,10 @@ body{
     font-weight: 900;
     font-size: 2rem;
     margin: 1rem;
-
-
 }
 
 .homepage-main{
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
     grid-area: section;
     display: grid;
     grid-template-rows: repeat(3, auto);
@@ -70,19 +68,18 @@ body{
 
 .title{
     font-size: 5rem;
-    color: cyan;
-    margin: 3rem;
+    color: rgb(53, 28, 83);
+    margin-bottom: 3rem;
     text-align: left;
     font-weight: 800;
 }
 
 .text-hero{
     font-size: 2rem;
-    color: yellow;
+    color: rgb(147, 35, 167);
     text-align: center;
     font-family: fantasy;
     font-weight: 200;
-
 }
 
 .img-hero{
@@ -113,9 +110,24 @@ body{
 
 
 footer{
-    background-color: aqua;
+    background-color: rgba(194, 195, 200, 0.35);
     color:brown;
-    grid-area: footer;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 1rem;
+    gap: .5rem;
+    width: 100%;
+
+}
+
+footer span {
+
+    border-left: 3px solid rgba(94, 92, 92, 0.532);
+    padding: .3rem;
+    width: 60%;
+    color:rgb(33, 33, 26);
+    background-color: rgba(169, 169, 169, 0.172);
+
 }
 
 /* @media screen and (min-width: 540px){
