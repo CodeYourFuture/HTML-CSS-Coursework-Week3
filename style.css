@@ -6,6 +6,7 @@ body {
 }
 .main-container{
 width: 100%; 
+height: 100%;
 
 max-width: 1800px;
 margin: 0px auto;
@@ -59,8 +60,10 @@ margin: 5px 5px 10px 10px;
 main{
 margin: 10px 10px 0px 10px;
 }
+.content-2{
+  text-align:justify
+}
 .main-img-container img{
-
 width: 250px;
 height: 250px;
 width: 100%;
@@ -80,7 +83,7 @@ grid-template-columns: 1fr 1fr ;
 /*footer style*/
 footer{
 background-color: rgb(195, 177, 211);
-
+font-size: 2em;
 }
 .links-container{
 display: flex;
@@ -91,30 +94,40 @@ margin-left: 10px;
 text-align: center;
 }
 
-/*media style*/
-@media (min-width: 540px) {
-.images-container {    
+/*media style 540-900*/
+@media (min-width: 540px) 
+ {
+  .images-container {    
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr ;
+  grid-template-columns: 1fr 1fr 1fr 1fr;  
    gap:5px; } 
-   .second-container{
+
+  .second-container{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns:1fr 1fr;
+    
   }
-}
-.main{
-  display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
-}
+  .content{
+    grid-column: 2/3;
+    
+  }
+  .main-img-container {
+    grid-column: 1/2;
+  } 
+  
 header ,footer{
-  background-color: rgb(129, 167, 135);
+  background-color: rgb(78, 202, 186);
   
 }
+.content{
+  text-align: right;
+}
+}
 
-
+/*media style min900px*/
 @media (min-width: 900px) {
 header ,footer{
-  background-color: rgb(226, 69, 69);
+  background-color: rgb(241, 188, 119);
     }
    .links-container{
       display: flex;
