@@ -2,6 +2,7 @@
     --light-pink: #f1d1ef;
     --purple: #5e036c89;
     --white: #fff;
+    --dark-pink: #fb6f92;
 }
 
 /* General */
@@ -51,7 +52,7 @@ html {
     text-align: right;
     width: 100%;
     font-weight: bold;
-    padding-right: 1.5rem;
+    padding: 1.5rem;
 }
 
 .nav-list{
@@ -114,8 +115,13 @@ nav{
     text-transform: uppercase;
     position: relative;
     background-color: var(--purple);
+    border-radius: 10ch;
     color: var(--white);
-    padding: 5px 20px;
+    padding: 5px 10px;
+}
+
+.nav-link a:hover{
+    background-color: var(--dark-pink);
 }
 
 /* Main */
@@ -151,11 +157,7 @@ nav{
 .hero img{
     width: 100%;
     height: 50vh;
-}
-
-.products img {
-    width: 100%;
-    height: 40vh;
+    border-radius: 3%;
 }
 
 .products {
@@ -166,6 +168,17 @@ nav{
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, auto);
     gap:20px;
+}
+
+.products img {
+    width: 100%;
+    height: 40vh;
+    border-radius: 3%;
+}
+
+.products img:hover , .hero img:hover{
+    transform: scale(0.9);
+    transition: 0.5s;
 }
 
 .aside,
@@ -222,7 +235,7 @@ nav{
     }
 
     .nav-link {
-        padding: 0.3rem;
+        padding: 1rem 0.3rem;
     }
 }
 
@@ -239,6 +252,6 @@ nav{
     .nav-link {
         font-size: 0.9rem;
         font-weight: bold;
-        padding: 2rem;
+        padding: 1rem 2rem;
     }
 }
