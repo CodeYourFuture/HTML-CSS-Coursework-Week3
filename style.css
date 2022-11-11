@@ -102,7 +102,7 @@ margin: auto;
 width: auto;
 }
 
-/* -TABLE SIZE - TABLET SIZE- */
+/*    -TABLE SIZE - TABLET SIZE-     */
 
 @media screen and (min-width: 540px){
 body{
@@ -184,12 +184,66 @@ body{
   }
 
 }
-
-
   
+/*      DESKTOP SIZE     */
 @media screen and (min-width: 900px){
+
+  body{
+    background-image: url("/photos.cakesProject/background\ pic.jpeg");
+    object-fit: contain;
+    background-image: cover;
+    /* background-position: 1fr; */
+    background-size: contain;
+    background-color: black;
+    }
   
+  header,
+  nav,
+  footer{
+    background-color: transparent;
+  }
+header span{
+  font-size: 2rem;
+  margin-top: 3rem;
+}
+  .hero{
+    grid-area: hero;
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+    justify-content: center;
+  }
+
+  .hero h1{
+    color: #FFFFFF;
+    font-size: 3rem;
+    font-family: cursive;
+  }
+  .hero p{
+    color: #FFFFFF;
+    font-size: larger;
+    line-height: 2rem;
+  }
+
+  section{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+    "cake hero"
+    "photos photos";
+  }
+
+  .cake {
+    grid-area: cake;
+  }
+
+
   
+  .photos{
+    margin: 10rem 0;
+    grid-area: photos;
+  }
 }
 
   
