@@ -25,12 +25,14 @@ body {
     margin: 30px auto 30px auto;
     overflow: hidden;
     border-radius: 50%;
+   
   } 
   
   .logo {
     width: auto;
     height: 50%;
     margin: 0 auto;
+   
   } 
 
 .topnav {
@@ -43,10 +45,15 @@ body {
   }
 
   .topnav a {
-    color: white;
+    color: rgb(210, 39, 73);
     padding: 14px 16px;
-    font-size: 17px;
+    font-size: 1.4em;
+    font-weight: lighter;
     display: block;
+  }
+
+  .topnav a:hover, a:active{
+    color: white;
   }
   
   .topnav a.icon {
@@ -58,7 +65,6 @@ body {
   }
   
 
-  
  .header {
     grid-area: header;
     /* grid-column: 1/-1;
@@ -72,6 +78,13 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    margin-bottom: 2em;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: white;
+    font-style: italic;
+    ;
+    
 }  
 
 .welcome-text {
@@ -79,12 +92,23 @@ body {
     /* grid-column: 1/-1;
     grid-row: 2/3; */
     background-color:#fae3d9;
+    padding: 1em;
+    text-align: left;
+   
 }
 
-.welcome-text p {
-    display: flex;
-    justify-content: center;
+ .welcome-text p {
+   line-height: 1.7em;
+   text-align: left;
+   font-size: 1.5em;
+   font-weight: bold;
 }
+
+.welcome-text h1 {
+   margin-bottom: 0.5em;
+   font-size: 2.5em;
+   color: rgb(210, 39, 73);
+} 
 
 .welcome-image {
     grid-area: wel-image;
@@ -135,9 +159,20 @@ background-color:#fae3d9;
     display: flex;
     justify-content: center;
     padding: 30px;
-    color: #8ac6d1;
+    
  }
 
+ button {
+    color:  rgb(210, 39, 73);
+    font-size: 1.5em;
+    font-weight:bold;
+    border-radius: .5em;
+    border-color:  rgb(210, 39, 73);
+    padding: 0.4em;
+    cursor: pointer;
+    transition-duration: 0.4s;
+ }
+ 
  footer {
     grid-area: footer;
     /* grid-column: 1/-1;
@@ -146,6 +181,7 @@ background-color:#fae3d9;
  }
     p {
 text-align: center;
+
 }
 
 
