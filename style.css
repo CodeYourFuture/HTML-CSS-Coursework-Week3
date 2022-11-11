@@ -113,7 +113,7 @@ body{
   grid-template-rows: 150px auto auto 100px;
   grid-template-areas: 
   "hd hd hd hd"
-  ". nav nav nav"
+  "nav nav nav nav"
   "sect sect sect sect"
   "foot foot foot foot";
   }
@@ -192,19 +192,21 @@ body{
     background-image: url("/photos.cakesProject/background\ pic.jpeg");
     object-fit: contain;
     background-image: cover;
-    /* background-position: 1fr; */
+    background-position: 1fr;
     background-size: contain;
-    background-color: black;
+
     }
   
+
   header,
   nav,
   footer{
     background-color: transparent;
   }
+
 header span{
-  font-size: 2rem;
-  margin-top: 3rem;
+  font-size: 2.2rem;
+  margin: 1rem 1rem;
 }
   .hero{
     grid-area: hero;
@@ -212,6 +214,11 @@ header span{
     flex-direction: column;
     text-align: end;
     justify-content: center;
+  }
+
+  
+  nav li:hover{
+    background-color: #FFFFFF;
   }
 
   .hero h1{
@@ -244,6 +251,40 @@ header span{
     margin: 10rem 0;
     grid-area: photos;
   }
+
+  .photos img{
+    height: max-content;
+  }
+
+  .photos img:hover{
+    height: max-content;
+  }
+
+  footer{
+    background-image: linear-gradient(rgba(4, 16, 16, 0.394), rgb(4, 11, 18));
+    margin-top: 0.6rem;
+    padding: 0 0 0 0;
+    font-size: 1.2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+  }
+
+  footer :last-child{
+    font-size: medium;
+    grid-column: 2/3;
+  }
+  footer p:hover{
+    cursor: pointer;
+    margin: auto;
+    padding: 0 0 0 0;
+    background-color: inherit;
+    color: inherit;
+  }
+
+
+
+
 }
 
   
