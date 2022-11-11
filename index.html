@@ -1,16 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Responsive Cake webpage</title>
+    <link rel="stylesheet" href="style.css" />
     <!-- Add a link to your css file here -->
-</head>
+  </head>
 
-<body>
-    <!-- Add your markup here -->
-</body>
+  <body>
+    <header>
+      <div>
+        <img
+          class="logo"
+          src="https://images.unsplash.com/photo-1622090860720-c4a77e146284?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80"
+          alt="logo"
+        />
+      </div>
+      <p class="hero-p">The best cakes in town delivered to your door</p>
 
+      <nav>
+        <ul class="nav_bar">
+          <input type="checkbox" id="check" />
+          <span class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Cakes</a></li>
+            <li><a href="#">Orderin</a></li>
+            <li><a href="#">Lessons</a></li>
+            <li><a href="#">About</a></li>
+            <label for="check" class="close_menu"
+              ><i class="fas fa_times">close menu</i></label
+            >
+          </span>
+          <label for="check" class="open_menu"
+            ><i class="fas fa_bars">open menu</i></label
+          >
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Cakes</a></li>
+          <li><a href="#">Orderin</a></li>
+          <li><a href="#">Lessons</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+      </nav>
+      <section id="section1">
+        <h2>Welcome</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum nemo
+          quae dolores doloremque officiis voluptatem tenetur impedit,
+          reiciendis inventore est eligendi perferendis, eum harum itaque at
+          natus blanditiis nam velit!
+        </p>
+      </section>
+      <section id="section2">
+        <img
+          src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1989&q=80"
+          alt="chocolate cake"
+          class="img-section2"
+        />
+      </section>
+      <section id="section3">
+        <img
+          src="https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTB8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+          alt="chocolate cake"
+          class="img1"
+        />
+        <img
+          src="https://images.unsplash.com/photo-1565004602745-718e1b0d44f8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=752&q=80"
+          alt="chocolate cake"
+          class="img2"
+        />
+        <img
+          src="https://images.unsplash.com/photo-1582716401301-b2407dc7563d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MjI1fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60"
+          alt="chocolate cake"
+          class="img3"
+        />
+        <img
+          src="https://images.unsplash.com/photo-1514517220017-8ce97a34a7b6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTM5fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60"
+          alt="chocolate cake"
+          class="img4"
+        />
+      </section>
+    </main>
+    <footer>
+      <nav class="navigation-list">
+        <ul>
+          <li>
+            <a href="#" class="navigation-link">instagram</a>
+          </li>
+          <li>
+            <a href="#" class="navigation-link">Email</a>
+          </li>
+          <li><a href="#" class="navigation-link">call us : 0000</a></li>
+        </ul>
+      </nav>
+      <p>the Webpage designed by <br /><a>Boshra Mahmoudi</a></p>
+    </footer>
+  </body>
 </html>
