@@ -48,7 +48,7 @@ html {
 .header p {
     font-family: 'Raleway', sans-serif;
     font-style: italic;
-    font-size: 20px;
+    font-size: 1.5rem;
     text-align: right;
     width: 100%;
     font-weight: bold;
@@ -142,7 +142,7 @@ nav{
 .aside p{
     padding-top: 5%;
     font-family: 'Indie Flower', cursive;
-    font-size: 1rem;
+    font-size: 1em;
 }
 
 .hero {
@@ -190,6 +190,7 @@ nav{
     }
 
     .main {
+        font-size: 120%;
         grid-template-areas:
             "header     header"
             "nav        nav"
@@ -199,12 +200,10 @@ nav{
         }
 
     .aside {
+        padding-top: 5%;
         padding-right: 10%;
         direction: rtl;
-    }
 
-    .aside p {
-        font-size: 1.2rem;
     }
 
     .hero {
@@ -230,11 +229,7 @@ nav{
 
 @media screen and (min-width:900px) {
 
-    .aside p {
-            font-size: 1.5rem;
-        }
-
     .products {
-    grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(4, 1fr);
 }
 }
