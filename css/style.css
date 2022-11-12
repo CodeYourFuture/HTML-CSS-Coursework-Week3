@@ -132,12 +132,11 @@ main h1 {
 .card-img {
   grid-area: card-img;
 }
-.main-img {
+g .main-img {
   object-fit: cover;
   max-width: 100%;
   max-width: 100%;
   filter: grayscale(1);
-  height: 100%;
 }
 .main-content p {
   line-height: 1.4em;
@@ -250,6 +249,12 @@ img:nth-child(1) {
     justify-content: flex-end;
     flex-shrink: inherit;
     margin: 0;
+  }
+  .footer-asside {
+    flex-direction: row;
+    justify-content: center;
+    font-size: 14px;
+    gap: 4em;
   }
 }
 /* DESKTOP */
