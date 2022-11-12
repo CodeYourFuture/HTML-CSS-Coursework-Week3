@@ -1,1 +1,79 @@
-/*  Add your styling here */
+body {
+  width: 80%;
+  margin-top: 3em;
+  margin-left: 7em;
+  margin-right: 3em;
+}
+/* header */
+
+.header {
+  border: 1px solid red;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto;
+  width: 50%;
+}
+/* navbar */
+.navbar {
+  background-color: yellow;
+}
+
+.nav_menu {
+  list-style: none;
+}
+
+.nav_link {
+  text-decoration: none;
+}
+
+/* header-cake-shop */
+
+.cake_shop_avatar {
+  background-color: red;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.cake_shop_slogan {
+  background-color: aqua;
+}
+
+/* hero */
+.hero {
+  width: 43%;
+  margin-bottom: 3em;
+}
+
+/* cake-gallery_wrapper */
+.cake_gallery_wrapper {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+  gap: 2em;
+}
+
+.bday_cakes {
+  background-color: blueviolet;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.tarts {
+  background-color: blue;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.cup_cakes {
+  background-color: red;
+}
+
+.buns_and_rolls {
+  background-color: yellow;
+}

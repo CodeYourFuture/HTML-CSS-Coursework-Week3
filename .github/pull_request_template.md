@@ -16,21 +16,21 @@ Please complete the details below this message
 
 # Your Details
 
-- Your Name:
-- Your City:
-- Your Slack Name:
+- Your Name:Farnoosh
+- Your City:London
+- Your Slack Name:Farnoosh Moayeri
 
 # Homework Details
 
-- Module:
-- Week:
+- Module:HTML/CSS
+- Week:3
 
 # Notes
 
-- What did you find easy?
+- What did you find easy? HTML
 
-- What did you find hard?
+- What did you find hard? Alingment
 
-- What do you still not understand?
+- What do you still not understand? Alingment
 
 - Any other notes?
