@@ -61,7 +61,7 @@ body {
   color: #000;
   opacity: 0.95;
   height: 50px;
-  z-index: 12;
+  /* z-index: 12; */
 }
 
 .navbar-container {
@@ -195,7 +195,7 @@ main {
 }
 
 .hero-background {
-  background-image: url(/design/Banner-1920x800.jpg);
+  background-image: url(./design/Banner-1920x800.jpg);
   background-size: cover;
   background-position: center;
   width: 100%;
