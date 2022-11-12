@@ -13,4 +13,7 @@ body {
   min-height: 100vh;
   border: 5px dashed red;
 }
-
+.topic-images > img {
+  width: 250px;
+  height: 250px;
+}
