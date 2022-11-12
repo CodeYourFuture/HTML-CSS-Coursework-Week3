@@ -131,8 +131,9 @@ main h1 {
 }
 .card-img {
   grid-area: card-img;
+  height: 100%;
 }
-g .main-img {
+.main-img {
   object-fit: cover;
   max-width: 100%;
   max-width: 100%;
