@@ -136,7 +136,7 @@ img {
 
 /*-- media query--- @media (min-width:540px) {} */
 
-@media (min-width:540px) {
+@media (min-width:540px) { 
 .nav-menu {
     display: flex;
     justify-content: space-between;
@@ -179,7 +179,9 @@ img {
     align-items: center;
     padding: 1rem 1.5rem;
 }
-
+.welcome {
+    font-size: 2rem;
+}
 /* hamburger styles */
 .hamburger{
     display: none;
