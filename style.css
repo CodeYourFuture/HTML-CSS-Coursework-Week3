@@ -1,1 +1,407 @@
 /*  Add your styling here */
+body {
+  min-width: 414px;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+}
+
+/*HEADER STYLES*/
+
+header {
+  font-family: "Poppins", sans-serif;
+  padding: 1.2em;
+  /* background-color: #c8b6ff; */
+  border-radius: 20px;
+  margin: 1.5em 1.5em 0 1.5em;
+  background-image: url("brooke-lark-pGM4sjt_BdQ-unsplash.jpg");
+  background-size: contain;
+}
+
+.menu-container {
+  display: block;
+  position: relative;
+  top: 0.5em;
+  left: 0em;
+  z-index: 1;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.menu-container a {
+  text-decoration: none;
+  color: #3300cc;
+  transition: color 0.3s ease;
+}
+
+.menu-container a:hover {
+  border-bottom: 4px solid #edffb6;
+}
+
+.menu-container input {
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 2;
+  -webkit-touch-callout: none;
+}
+
+.menu-container span {
+  display: block;
+  width: 1.5em;
+  height: 0.15em;
+  margin-bottom: 0.25em;
+  position: relative;
+  color: #3300cc;
+  border-radius: 3px;
+  z-index: 1;
+}
+
+.navbar {
+  position: absolute;
+  width: 5em;
+  margin: -2.4em 0em 0em -1.8em;
+  border-radius: 20px;
+  padding: 2em;
+  padding-top: 4em;
+  background: #c8b6ff;
+  list-style: none;
+  -webkit-font-smoothing: antialiased;
+  display: none;
+}
+
+.navbar li {
+  padding: 0.2em 0;
+  font-size: 1.1em;
+}
+
+.menu-container input:checked ~ ul {
+  display: block;
+}
+
+@media screen and (min-width: 540px) {
+  .banner {
+    min-width: 540px;
+    width: 100%;
+    margin-right: 1.5em;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .banner {
+    /* min-width: 900px; */
+    /* width: 100%; */
+    border-radius: 20px;
+    margin: 1.5em;
+  }
+
+  /* .hidden-menu {
+    display: flex;
+    justify-content: space-evenly;
+  } */
+
+  .menu-container span,
+  .menu-container input {
+    display: none;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    width: 100%;
+    background: none;
+    padding: 2em 2em 1em 2em;
+  }
+
+  .navbar li {
+    list-style: none;
+  }
+
+  .name h1 {
+    margin-bottom: 1em;
+    margin-top: 1.3em;
+  }
+}
+
+.name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.name h1 {
+  text-transform: uppercase;
+  /* margin-bottom: 0; */
+  font-weight: bold;
+  color: #3300cc;
+  /* margin-top: 0.3em; */
+  font-size: 2em;
+  margin-bottom: 1em;
+  margin-top: 1.3em;
+}
+
+.name p {
+  margin-bottom: 0;
+  margin-top: 3em;
+}
+
+/*MAIN TEXT STYLES*/
+
+.general h2 {
+  margin-bottom: 0;
+  margin-top: 0.5em;
+  text-align: left;
+}
+
+.general {
+  text-align: justify;
+  padding: 0.5em;
+  margin: 0 2.5em 0 2.5em;
+}
+
+.general p {
+  line-height: 1.5em;
+}
+
+.cake {
+  display: none;
+}
+
+@media screen and (min-width: 540px) {
+  .general {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+  }
+
+  .cake {
+    display: flex;
+  }
+
+  .red-cake {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 50%;
+    max-height: 70%;
+    object-fit: contain;
+  }
+
+  .red-cake img {
+    width: 100%;
+    object-fit: contain;
+    max-height: 530px;
+  }
+
+  .text {
+    width: 50%;
+    justify-content: flex-start;
+  }
+
+  .text p {
+    line-height: 2em;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .general {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+  }
+  .cake {
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+    object-fit: contain;
+  }
+
+  .red-cake img {
+    width: 100%;
+    object-fit: contain;
+    max-height: 530px;
+  }
+
+  .text {
+    width: 50%;
+    justify-content: flex-start;
+  }
+}
+
+/*STYLING FOR CAKE PICTURES*/
+
+.image-sweets img {
+  width: 100%;
+  object-fit: contain;
+  max-height: 530px;
+}
+
+.image-sweets {
+  margin-bottom: 0.9em;
+  margin-top: 0.9em;
+}
+
+.cake-pics {
+  border-top: 2px solid #c8b6ff;
+  border-bottom: 2px solid #c8b6ff;
+  margin: 1em 1.5em 1.5em 1.5em;
+}
+
+.sweet1 {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 1em;
+}
+
+.sweet2 {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto;
+}
+
+@media screen and (min-width: 540px) {
+  .sweet1 {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 1em;
+  }
+
+  .sweet2 {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto;
+  }
+
+  .sweet2 img {
+    max-height: 530px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .sweet1 {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 1em;
+  }
+
+  .sweet2 {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto;
+  }
+
+  .sweet2 img {
+    max-height: 530px;
+  }
+}
+
+/*STYLING FOR FOOTER*/
+
+footer {
+  text-align: left;
+  background-color: #c8b6ff;
+  border-radius: 6%;
+  padding: 1.2em;
+  margin-top: 0.9em;
+  margin: 1.5em;
+}
+
+.end h2 {
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 540px) {
+  .end {
+    border-radius: 20px;
+    margin: 2em;
+    text-align: center;
+  }
+
+  .contact-icon {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .social {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .end {
+    border-radius: 20px;
+    margin: 2em;
+    text-align: center;
+  }
+
+  .contact-icon {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .social {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+.contact-icon {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 0.7em;
+}
+
+.contact-icon span {
+  padding: 0.3em;
+}
+
+.contact-icon p {
+  padding: 0.5em;
+  margin-top: 0;
+  margin-bottom: 0.3em;
+}
+
+.name-icon {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 0.6em;
+  margin-left: 0.5em;
+  padding: 0;
+}
+
+.name-icon li {
+  list-style: none;
+}
+
+.name-icon a {
+  margin-top: 0;
+  margin-bottom: 0.3em;
+  margin-left: 0.5em;
+  text-decoration: none;
+}
+
+.name-icon a:hover {
+  font-weight: bold;
+  border-bottom: 4px solid #edffb6;
+}
+
+.smicon {
+  width: 0.7em;
+  border: 1px solid #edffb6;
+  padding: 0.3em;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+#copyright {
+  color: #3d00f5;
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: "Poppins", sans-serif;
+}
