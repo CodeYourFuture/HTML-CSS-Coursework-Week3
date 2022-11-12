@@ -5,12 +5,115 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Responsive Cake webpage</title>
-    <!-- Add a link to your css file here -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <!-- Add your markup here -->
+    
+
+    <main class="homepage-main">
+    
+        <header class="header">
+        
+            <logo class="logo">
+            <img src="img\cake-logo-vector_25327-1.webp" alt="Logo">      
+            </logo>   
+
+             <p>The best cakes in town delivered to your door</p>
+
+
+            <div class="topnav">
+                <a href="tryhow_js_mobile_navbar.htm#home" class="active"></a>
+            
+            
+                <div id="myLinks">
+                    <a href="tryhow_js_mobile_navbar.php">Home</a>
+                    <a href="tryhow_js_mobile_navbar.php">Cakes</a>
+                    <a href="tryhow_js_mobile_navbar.php">Orderin</a>
+                    <a href="tryhow_js_mobile_navbar.php">Lessons</a>
+                    <a href="tryhow_js_mobile_navbar.php">About</a>
+                </div>
+            
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+                </a>
+            </div>
+
+            
+            <!-- <nav class="navigation">
+            <ul class="nav">
+                <li><a href="#"> Home</a></li>
+                <li><a href="#"> Cakes </a></li>
+                <li><a href="#"> Orderin </a></li>
+                <li><a href="#"> Lessons</a></li>
+                <li><a href="#"> About </a></li>
+            </ul>
+             </nav>  -->
+
+             <script>
+                function myFunction() {
+                var x = document.getElementById("myLinks");
+                if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+            x.style.display = "block";
+          }
+            }
+            </script>
+        
+        </header>
+
+
+        <section class="welcome-text">
+            <h1>Welcome</h1>
+            <p>“Cakes are special. Every birthday, every celebration ends with something sweet, a cake, and people remember. It’s all about the memories.” <br> — Buddy Valastro</p>
+            <div class="button">
+                <button>Buy now!</button>
+            </div>
+        </section>
+
+        <section class="welcome-image">
+            <img src="img\wel.jpg" alt="">
+        </section>
+
+        <section class="cakes">
+            <img src="img\cake.jpg" alt="Cake" width="250px" height="250px">
+        </section>
+
+        <section class="pies">
+            <img src="img\pie.jpg" alt="Pie" width="250px" height="250px">
+        </section>
+            
+   
+        <section class="ice-creames">
+            <img src="img\ice-cream.jpg" alt="Ice creame" width="250px" height="250px">
+        </section>
+           
+        <section class="donuts">
+            <img src="img\donut.png" alt="Donut" width="250px" height="250px">
+        </section>
+ 
+        
+
+        <footer>
+            
+        <p>Join us on</p>
+    
+      <div class="join"> 
+        <p><a href=""><img id="tw" src="img\twitter-icon.svg"></a>
+        <a href=""><img id="fb" src="img\facebook-icon.svg"></a>
+            <a href=""><img id="inst" src="img\instagram-icon.svg"></a></p>
+        </div>  
+    
+        <p id="copyright">Best cakes, Ink &#169</p>
+        </footer>
+
+
+    </main>
+
+
 </body>
 
 </html>
