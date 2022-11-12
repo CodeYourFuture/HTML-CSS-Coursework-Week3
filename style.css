@@ -176,7 +176,7 @@ body {
     grid-template-rows: auto, auto, auto, auto;
     grid-template-areas: "header header header header"
                          "content content content content "
-                        "french itlian classic ."
+                        "french italian classic ."
                         "footer footer footer footer";
 }
   
