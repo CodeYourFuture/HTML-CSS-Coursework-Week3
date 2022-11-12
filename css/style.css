@@ -137,6 +137,10 @@ main h1 {
   max-width: 100%;
   max-width: 100%;
   filter: grayscale(1);
+  height: 100%;
+}
+.main-content p {
+  line-height: 1.4em;
 }
 
 /* ----- Products Section ----- */
@@ -209,8 +213,8 @@ img:nth-child(1) {
     padding: 0 20px;
   }
   .products {
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
   }
   nav {
     grid-area: navbar;
