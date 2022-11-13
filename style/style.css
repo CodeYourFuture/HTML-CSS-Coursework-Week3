@@ -10,7 +10,7 @@ body{
     background-color: #ffffff;
     display: grid;
     grid-template-columns: repeat(1, fr);
-    grid-template-rows: 200px auto 200px;
+    grid-template-rows: 200px auto auto;
     grid-template-areas: 
     "hd"
     "section"
@@ -90,7 +90,7 @@ body{
 }
 
 .img-hero{
-    width: 35%;
+    width: 90%;
     height: 100%;
     padding-top: 1rem;
     padding-bottom: 1rem;
@@ -110,7 +110,7 @@ body{
 }
 
 .homepage-products{
-    width: 50%;
+    width: 89%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 1rem;
@@ -130,7 +130,6 @@ body{
 footer{
     grid-area: footer;
     background-color: rgba(194, 195, 200, 0.35);
-    /* color:brown; */
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     padding: 1rem;
