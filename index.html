@@ -6,11 +6,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Responsive Cake webpage</title>
-    <!-- Add a link to your css file here -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!-- Font Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <!-- Add your markup here -->
-</body>
+    <main class="main">
 
+        <section class="header">
+            <figure class="logo">
+                    <img src="./img/cake_shop_badge-logo_4x.webp" alt="logo">
+            </figure>
+            <p>The best cakes in town delivered to your door</p>
+        </section>
+        <nav>
+            <ul class="nav-list">
+                <input type="checkbox" id="check">
+                <span class="menu">
+                    <li class="nav-link"><a href="#">Home</a></li>
+                    <li class="nav-link"><a href="#">Cakes</a></li>
+                    <li class="nav-link"><a href="#">Orderin</a></li>
+                    <li class="nav-link"><a href="#">Lessons</a></li>
+                    <li class="nav-link"><a href="#">About</a></li>
+                    <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+                </span>
+                <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+            </ul>
+        </nav>
+
+        <aside class="aside">
+            <h1>Welcome</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, hic rerum. Similique, numquam itaque, eligendi totam repellat harum hic eveniet voluptatum culpa dolores nam, perferendis iure. Quibusdam eum fuga illum.</p>
+        </aside>
+
+        <section class="hero">
+            <div class="hero-wrapper">
+                <img src="./img/BC-pink-1-644x805-1.png" alt="A big cake">
+            </div>
+        </section>
+        
+        <section class="products">
+            <div class="products-wrapper">
+                <img src="./img/birthday.jpg" alt="A birthday cake">
+            </div>
+            <div class="products-wrapper">
+                <img src="./img/piece.jpg" alt="A piece of cake">
+            </div>
+            <div class="products-wrapper">
+                <img src="./img/cupcake.jpg" alt="A cupcake">
+            </div>
+            <div class="products-wrapper">
+                <img src="./img/Pink-Cookies.jpg" alt="A cookie">
+            </div>
+         </section>
+
+        <footer class="footer">
+            <div class="footer-wrapper">
+                <p>footer link</p>
+                <p>footer link</p>
+                <p>footer link</p>
+            </div>
+            <p class="footer-made">Made by Farzaneh</p>
+        </footer>
+    </main>
+    
+</body>
 </html>
