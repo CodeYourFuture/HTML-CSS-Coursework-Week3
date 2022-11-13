@@ -30,6 +30,7 @@ body{
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
+    width: 100%;
 }
 
 .nav-header {
@@ -73,17 +74,27 @@ body{
 }
 
 .text-hero{
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: rgb(117, 9, 136);
     text-align: center;
     font-family: fantasy;
     font-weight: 200;
 }
 
-.img-hero{
-    height: 50rem;
-    padding: 2rem;
+.wrapper-img{
+    width: 100%;
+    background-color: rgba(194, 195, 200, 0.35);
+    margin: auto;
+    margin-bottom: 2rem;
+    
+}
 
+.img-hero{
+    width: 35%;
+    height: 100%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin: auto;
 }
 
 .img-hero img {
@@ -92,11 +103,20 @@ body{
     width: 100%;
 }
 
+.products {
+    width: 100%;
+    background-color: rgba(194, 195, 200, 0.35);
+    margin: auto;
+}
+
 .homepage-products{
+    width: 50%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 1rem;
-    padding: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin: auto;
 
 }
 
@@ -128,7 +148,7 @@ footer span {
 
 .copy{
     text-align: center;
-    color: lightgrey;
+    color: rgb(49, 49, 49);
     font-weight: 900;
 }
 
