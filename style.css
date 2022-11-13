@@ -154,10 +154,20 @@ nav{
     grid-area: hero;
 }
 
-.hero img{
+.hero-wrapper{
+    position: relative;
+    padding-bottom: 75%;
+}
+
+.hero-wrapper img{
     width: 100%;
-    height: 50vh;
+    /* height: 50vh; */
     border-radius: 3%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    
 }
 
 .products {
@@ -170,9 +180,18 @@ nav{
     gap:20px;
 }
 
-.products img {
+.products-wrapper{
+    position: relative;
+    padding-bottom: 80%;
+}
+
+.products-wrapper img {
+    position: absolute;
     width: 100%;
-    height: 40vh;
+    height: 100%;
+    top: 0;
+    left: 0;
+    /* object-fit: contain; */
     border-radius: 3%;
 }
 
@@ -185,7 +204,7 @@ nav{
 .hero,
 .products,
 .footer {
-    padding: 0 2rem;
+    padding: 0 3rem;
 }
 
 
@@ -195,7 +214,6 @@ nav{
     grid-area: footer;
     font-size: 1rem;
     background-color: var(--light-pink);
-    /* line-height: 50px; */
 }
 
 .footer-wrapper {
@@ -262,8 +280,8 @@ nav{
     }
 
     .footer-wrapper {
-        flex-direction: row;
-        /* padding: 0 rem; */
+        flex-direction: row;products
+
     }
 }
 
