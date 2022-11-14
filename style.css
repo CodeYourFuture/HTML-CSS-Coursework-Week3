@@ -111,7 +111,7 @@ body {
   row-gap: 1rem;
   display: gird;
   grid-template-columns: repeat (4, 1fr);
-  grid-template-rows: 150px auto auto 100px;
+  grid-template-rows: 150px auto auto 115px;
   grid-template-areas: 
   "hd hd hd hd"
   "nav nav nav nav"
@@ -220,7 +220,10 @@ header span {
     justify-content: center;
   }
 
-  
+  nav ul {
+  gap: 5rem;
+  }
+
   nav li:hover {
     background-color: #FFFFFF;
   }
@@ -258,7 +261,6 @@ header span {
 
   footer {
     background-image: linear-gradient(rgba(4, 16, 16, 0.394), rgb(4, 11, 18));
-    /* padding: 0 0 0 0; */
     font-size: 1.2rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -266,18 +268,25 @@ header span {
   }
 
   footer p{
+    /* margin: auto; */
     width: auto;
+    font-size: larger;
   }
 
   footer :last-child {
-    font-size: medium;
+    font-size: 75%;
     grid-column: 2/3;
+    background-color: transparent;
+    color: #FFFFFF;
+    
   }
 
-  footer p:hover {
+  footer .ft-txt:hover {
     cursor: pointer;
+    border-radius: 0.01rem;
     background-color: inherit;
-    color: inherit;
+    color: #FFFFFF;
+    font-size: x-large;
   }
 }  
  
