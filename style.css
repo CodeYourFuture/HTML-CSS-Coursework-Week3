@@ -95,10 +95,11 @@ a {
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
+  gap: 2%;
+  margin: 2%;
 }
 
 .nav-item {
-  margin-left: 5rem;
   text-transform: uppercase;
 }
 
