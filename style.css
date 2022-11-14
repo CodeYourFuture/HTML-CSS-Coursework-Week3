@@ -29,7 +29,11 @@
   }
   
   .topnav #myLinks {
-  display:hidden ;
+  display:none ;
+  position: fixed;
+  right: 0px;
+  background-color: white;
+  z-index: 2;
   
   }
   
@@ -157,11 +161,12 @@
       display: flex;
        padding: 2rem;
         background-color: rgb(26, 166, 221);
-        justify-content: space-around;
+        /* justify-content: space-around; */
         padding-left:50% ;
-        
+        justify-content:flex-end;
     }
-    
+    .item {padding: 0 0.5rem;
+    } 
     
     .four{
   display: flex;
@@ -172,6 +177,7 @@
      display: flex;
      flex-direction: row;
      border-style: none;
+     justify-content: center;
     }
   p ,h2{
     display: none;
