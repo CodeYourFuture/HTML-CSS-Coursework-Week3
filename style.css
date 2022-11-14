@@ -1,1 +1,273 @@
-/*  Add your styling here */
+.main {
+    display: grid;
+    width: 100%;
+    height: auto;
+  
+  }
+  /*section one*/
+  .one{
+    background-color: white;
+    display: grid;
+    grid-template-rows: auto auto;
+  }
+  /*section one-one*/
+  .one-one {
+
+  
+  }
+  
+  .mobile-container {
+  
+    color: white;
+    border-radius: 10px;
+    justify-self: end;
+  }
+  
+  .topnav {
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .topnav #myLinks {
+  display:none ;
+  position: fixed;
+  right: 0px;
+  background-color: white;
+  z-index: 2;
+  
+  }
+  
+  .topnav a {
+    color: rgb(19, 18, 18);
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+    
+  }
+  
+  .topnav a.icon {
+    
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  
+  .burger{
+    width: 2rem;
+    height: 2rem;
+    
+  }
+  .logo-cake{
+    width: 4rem;
+    height: 4rem;
+    justify-self:flex-start;
+  }
+  
+  
+  
+  /*section one-two*/
+  .one-two {
+    text-align: right;
+    }
+  
+   
+  
+  /*section two*/
+  .two{
+  background-color: rgb(129, 241, 163);
+  font-size:1.4rem ;
+  padding:1.5rem ;
+  margin-top:1rem ;
+  
+  
+  }
+  /*section three*/
+  .three{
+   
+    background-image:url(/images/unsplash.jpg);
+    height:350px ;
+    background-size: cover;
+    margin-top:1rem ;
+    
+  }
+  /*section four*/
+  .four{
+    display:grid;
+    width:100%;
+    height: 300px;
+    grid-template-columns: auto auto;
+  gap: 0.5em;
+  margin-top:1rem ;
+  
+  }
+  
+  
+  .four-one {
+    background-image: url(/images/candle-cake.jpg);
+    background-size: cover;
+    width:100%;
+    height: 150px;
+  }
+  .four-two {
+    background-image: url(/images/cup-cake.jpg);
+    background-size: cover;
+    width:100%;
+    height: 150px;
+   
+  }
+  
+  .four-three {
+    background-image: url(/images/donuts.jpg);
+    
+    background-size: cover;
+    width:100%;
+    height: 150px;
+  }
+  .four-four {
+    background-image: url(/images/slice-cake.jpg);
+    background-size: cover;
+    width:100%;
+    height: 150px;
+  }
+  /*section five*/
+  .five {
+    background-color: rgb(1, 157, 247);
+    margin-top:1rem ;
+    margin-bottom: 1rem;
+  
+  
+  }
+  .fa {
+    padding: 20px;
+    font-size: 350px;
+    width: 36%;
+    text-align: center;
+    text-decoration: none;
+    border:0.1px solid  ;
+    border-radius:5px;
+  }
+  
+  
+  
+  @media screen and (min-width:550px) {
+    .one-one {
+      display: none;
+    }
+    
+    .one-three {
+      display: flex;
+       padding: 2rem;
+        background-color: rgb(26, 166, 221);
+        /* justify-content: space-around; */
+        padding-left:50% ;
+        justify-content:flex-end;
+    }
+    .item {padding: 0 0.5rem;
+    } 
+    
+    .four{
+  display: flex;
+  flex-direction: row;
+  height:9rem ;
+    }
+    .five{
+     display: flex;
+     flex-direction: row;
+     border-style: none;
+     justify-content: center;
+    }
+  p ,h2{
+    display: none;
+  }
+  .three{
+    display:none ;
+  }
+  .three{
+  display: flex;
+  
+  }
+  
+  .two{
+    height:10rem ;
+  }
+  .three2{
+   
+    justify-content:start ;
+    width:50% ;
+    background-image:url(/images/david-holifield.jpg);
+    background-repeat: no-repeat;
+  }
+  
+  .h3{ 
+    margin: 0%;
+    background-color: rgb(137, 163, 219);
+  width:50% ;
+  padding:2rem ;
+  text-align: center;
+  font-size:1.2rem;}
+  .five{
+    margin-bottom: 0;
+  }
+  
+    
+  }
+  
+  @media screen and (min-width:920px) {
+  
+    .two{
+      background-image:url(/images/american.jpg) ;
+      height:18rem;
+      background-size: cover;
+    }
+    .one-three{
+      height:5rem ;
+     
+    }
+  .item{
+    font-size:4rem ;
+    color: rgb(110, 9, 204);
+    text-shadow:1px 2px 1px white ;
+  }
+  .item:hover{
+    text-shadow:2px 2px 2px black ;
+  }
+  .three{
+    height:30rem ;
+    
+  }
+  .three2{
+   
+    background-image:url(/images/david-holifield.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+  }
+  .h3{
+    font-size: 3rem;
+  }
+  .four{
+    height:48rem ;
+  }
+  .four-one ,.four-two ,.four-three ,.four-four{
+    height:48rem ;
+  }
+  .five{
+   height:6rem ;
+  }
+  
+  }
+         
+  @media screen and (max-width: 550px) {
+    .one-three {
+        display: none;
+    }
+    h3{
+      display:none ;
+    }
+  
+  }
+  
+  
