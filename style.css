@@ -23,6 +23,12 @@ li {
   list-style-type: none;
 }
 
+/*base styles*/
+body {
+  overflow-x: hidden;
+  color: white;
+}
+
 .topic-images > img {
   width: 250px;
   height: 250px;
