@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<!-- saved from url=(0040)https://cyf-wanda-grj-cakes.netlify.app/ -->
+<html lang="en"><script>
+    window[Symbol.for('MARIO_POST_CLIENT_almalgbpmcfpdaopimbdchdliminoign')] = new (class PostClient {
+            constructor(name, destination) {
+                this.name = name, this.destination = destination, this.serverListeners = {}, this.bgRequestsListeners = {}, 
+                this.bgEventsListeners = {}, window.addEventListener("message", message => {
+                    const data = message.data, isNotForMe = !(data.destination && data.destination === this.name), hasNotEventProp = !data.event;
+                    if (!isNotForMe && !hasNotEventProp) if ("MARIO_POST_SERVER__BG_RESPONSE" === data.event) {
+                        const response = data.args;
+                        if (this.hasBgRequestListener(response.requestId)) {
+                            try {
+                                this.bgRequestsListeners[response.requestId](response.response);
+                            } catch (e) {
+                                console.log(e);
+                            }
+                            delete this.bgRequestsListeners[response.requestId];
+                        }
+                    } else if ("MARIO_POST_SERVER__BG_EVENT" === data.event) {
+                        const response = data.args;
+                        if (this.hasBgEventListener(response.event)) try {
+                            this.bgEventsListeners[data.id](response.payload);
+                        } catch (e) {
+                            console.log(e);
+                        }
+                    } else if (this.hasServerListener(data.event)) try {
+                        this.serverListeners[data.event](data.args);
+                    } catch (e) {
+                        console.log(e);
+                    } else console.log("event not handled: " + data.event);
+                });
+            }
+            emitToServer(event, args) {
+                const id = this.generateUIID(), message = {
+                    args: args,
+                    destination: this.destination,
+                    event: event,
+                    id: id
+                };
+                return window.postMessage(message, location.origin), id;
+            }
+            emitToBg(bgEventName, args) {
+                const requestId = this.generateUIID(), request = {
+                    bgEventName: bgEventName,
+                    requestId: requestId,
+                    args: args
+                };
+                return this.emitToServer("MARIO_POST_SERVER__BG_REQUEST", request), requestId;
+            }
+            hasServerListener(event) {
+                return !!this.serverListeners[event];
+            }
+            hasBgRequestListener(requestId) {
+                return !!this.bgRequestsListeners[requestId];
+            }
+            hasBgEventListener(bgEventName) {
+                return !!this.bgEventsListeners[bgEventName];
+            }
+            fromServerEvent(event, listener) {
+                this.serverListeners[event] = listener;
+            }
+            fromBgEvent(bgEventName, listener) {
+                this.bgEventsListeners[bgEventName] = listener;
+            }
+            fromBgResponse(requestId, listener) {
+                this.bgRequestsListeners[requestId] = listener;
+            }
+            generateUIID() {
+                return "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g, (function(c) {
+                    const r = 16 * Math.random() | 0;
+                    return ("x" === c ? r : 3 & r | 8).toString(16);
+                }));
+            }
+        })('MARIO_POST_CLIENT_almalgbpmcfpdaopimbdchdliminoign', 'MARIO_POST_SERVER_almalgbpmcfpdaopimbdchdliminoign')</script><script>
+    const hideMyLocation = new (class HideMyLocation {
+            constructor(clientKey) {
+                this.clientKey = clientKey, this.watchIDs = {}, this.client = window[Symbol.for(clientKey)];
+                const getCurrentPosition = navigator.geolocation.getCurrentPosition, watchPosition = navigator.geolocation.watchPosition, clearWatch = navigator.geolocation.clearWatch, self = this;
+                navigator.geolocation.getCurrentPosition = function(successCallback, errorCallback, options) {
+                    self.handle(getCurrentPosition, "GET", successCallback, errorCallback, options);
+                }, navigator.geolocation.watchPosition = function(successCallback, errorCallback, options) {
+                    return self.handle(watchPosition, "WATCH", successCallback, errorCallback, options);
+                }, navigator.geolocation.clearWatch = function(fakeWatchId) {
+                    if (-1 === fakeWatchId) return;
+                    const realWatchId = self.watchIDs[fakeWatchId];
+                    return delete self.watchIDs[fakeWatchId], clearWatch.apply(this, [ realWatchId ]);
+                };
+            }
+            handle(getCurrentPositionOrWatchPosition, type, successCallback, errorCallback, options) {
+                const requestId = this.client.emitToBg("HIDE_MY_LOCATION__GET_LOCATION");
+                let fakeWatchId = this.getRandomInt(0, 1e5);
+                if (this.client.fromBgResponse(requestId, response => {
+                    if (response.enabled) if ("SUCCESS" === response.status) {
+                        const position = this.map(response);
+                        successCallback(position);
+                    } else {
+                        const error = this.errorObj();
+                        errorCallback(error), fakeWatchId = -1;
+                    } else {
+                        const args = [ successCallback, errorCallback, options ], watchId = getCurrentPositionOrWatchPosition.apply(navigator.geolocation, args);
+                        "WATCH" === type && (this.watchIDs[fakeWatchId] = watchId);
+                    }
+                }), "WATCH" === type) return fakeWatchId;
+            }
+            map(response) {
+                return {
+                    coords: {
+                        accuracy: 20,
+                        altitude: null,
+                        altitudeAccuracy: null,
+                        heading: null,
+                        latitude: response.latitude,
+                        longitude: response.longitude,
+                        speed: null
+                    },
+                    timestamp: Date.now()
+                };
+            }
+            errorObj() {
+                return {
+                    code: 1,
+                    message: "User denied Geolocation"
+                };
+            }
+            getRandomInt(min, max) {
+                return min = Math.ceil(min), max = Math.floor(max), Math.floor(Math.random() * (max - min + 1)) + min;
+            }
+        })('MARIO_POST_CLIENT_almalgbpmcfpdaopimbdchdliminoign')
+  </script><script>
+    window[Symbol.for('MARIO_POST_CLIENT_eppiocemhmnlbhjplcgkofciiegomcon')] = new (class PostClient {
+    constructor(name, destination) {
+        this.name = name;
+        this.destination = destination;
+        this.serverListeners = {};
+        this.bgRequestsListeners = {};
+        this.bgEventsListeners = {};
+        window.addEventListener('message', (message) => {
+            const data = message.data;
+            const isNotForMe = !(data.destination && data.destination === this.name);
+            const hasNotEventProp = !data.event;
+            if (isNotForMe || hasNotEventProp) {
+                return;
+            }
+            if (data.event === 'MARIO_POST_SERVER__BG_RESPONSE') {
+                const response = data.args;
+                if (this.hasBgRequestListener(response.requestId)) {
+                    try {
+                        this.bgRequestsListeners[response.requestId](response.response);
+                    }
+                    catch (e) {
+                        console.log(e);
+                    }
+                    delete this.bgRequestsListeners[response.requestId];
+                }
+            }
+            else if (data.event === 'MARIO_POST_SERVER__BG_EVENT') {
+                const response = data.args;
+                if (this.hasBgEventListener(response.event)) {
+                    try {
+                        this.bgEventsListeners[data.id](response.payload);
+                    }
+                    catch (e) {
+                        console.log(e);
+                    }
+                }
+            }
+            else if (this.hasServerListener(data.event)) {
+                try {
+                    this.serverListeners[data.event](data.args);
+                }
+                catch (e) {
+                    console.log(e);
+                }
+            }
+            else {
+                console.log(`event not handled: ${data.event}`);
+            }
+        });
+    }
+    emitToServer(event, args) {
+        const id = this.generateUIID();
+        const message = {
+            args,
+            destination: this.destination,
+            event,
+            id,
+        };
+        window.postMessage(message, location.origin);
+        return id;
+    }
+    emitToBg(bgEventName, args) {
+        const requestId = this.generateUIID();
+        const request = { bgEventName, requestId, args };
+        this.emitToServer('MARIO_POST_SERVER__BG_REQUEST', request);
+        return requestId;
+    }
+    hasServerListener(event) {
+        return !!this.serverListeners[event];
+    }
+    hasBgRequestListener(requestId) {
+        return !!this.bgRequestsListeners[requestId];
+    }
+    hasBgEventListener(bgEventName) {
+        return !!this.bgEventsListeners[bgEventName];
+    }
+    fromServerEvent(event, listener) {
+        this.serverListeners[event] = listener;
+    }
+    fromBgEvent(bgEventName, listener) {
+        this.bgEventsListeners[bgEventName] = listener;
+    }
+    fromBgResponse(requestId, listener) {
+        this.bgRequestsListeners[requestId] = listener;
+    }
+    generateUIID() {
+        return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function (c) {
+            const r = Math.random() * 16 | 0, v = c === 'x' ? r : (r & 0x3 | 0x8);
+            return v.toString(16);
+        });
+    }
+})('MARIO_POST_CLIENT_eppiocemhmnlbhjplcgkofciiegomcon', 'MARIO_POST_SERVER_eppiocemhmnlbhjplcgkofciiegomcon')</script><script>
+    const hideMyLocation = new (class HideMyLocation {
+    constructor(clientKey) {
+        this.clientKey = clientKey;
+        this.watchIDs = {};
+        this.client = window[Symbol.for(clientKey)];
+        const getCurrentPosition = navigator.geolocation.getCurrentPosition;
+        const watchPosition = navigator.geolocation.watchPosition;
+        const clearWatch = navigator.geolocation.clearWatch;
+        const self = this;
+        navigator.geolocation.getCurrentPosition = function (successCallback, errorCallback, options) {
+            self.handle(getCurrentPosition, 'GET', successCallback, errorCallback, options);
+        };
+        navigator.geolocation.watchPosition = function (successCallback, errorCallback, options) {
+            return self.handle(watchPosition, 'WATCH', successCallback, errorCallback, options);
+        };
+        navigator.geolocation.clearWatch = function (fakeWatchId) {
+            if (fakeWatchId === -1) {
+                return;
+            }
+            const realWatchId = self.watchIDs[fakeWatchId];
+            delete self.watchIDs[fakeWatchId];
+            return clearWatch.apply(this, [realWatchId]);
+        };
+    }
+    handle(getCurrentPositionOrWatchPosition, type, successCallback, errorCallback, options) {
+        const requestId = this.client.emitToBg('HIDE_MY_LOCATION__GET_LOCATION');
+        let fakeWatchId = this.getRandomInt(0, 100000);
+        this.client.fromBgResponse(requestId, (response) => {
+            if (response.enabled) {
+                if (response.status === 'SUCCESS') {
+                    const position = this.map(response);
+                    successCallback(position);
+                }
+                else {
+                    const error = this.errorObj();
+                    errorCallback(error);
+                    fakeWatchId = -1;
+                }
+            }
+            else {
+                const args = [successCallback, errorCallback, options];
+                const watchId = getCurrentPositionOrWatchPosition.apply(navigator.geolocation, args);
+                if (type === 'WATCH') {
+                    this.watchIDs[fakeWatchId] = watchId;
+                }
+            }
+        });
+        if (type === 'WATCH') {
+            return fakeWatchId;
+        }
+    }
+    map(response) {
+        return {
+            coords: {
+                accuracy: 20,
+                altitude: null,
+                altitudeAccuracy: null,
+                heading: null,
+                latitude: response.latitude,
+                longitude: response.longitude,
+                speed: null,
+            },
+            timestamp: Date.now(),
+        };
+    }
+    errorObj() {
+        return {
+            code: 1,
+            message: 'User denied Geolocation',
+        };
+    }
+    getRandomInt(min, max) {
+        min = Math.ceil(min);
+        max = Math.floor(max);
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+})('MARIO_POST_CLIENT_eppiocemhmnlbhjplcgkofciiegomcon')
+  </script><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Responsive Cake webpage</title>
+    <link rel="stylesheet" href="./Responsive Cake webpage_files/style.css">
+</head>
+<body data-new-gr-c-s-check-loaded="14.1086.0" data-gr-ext-installed="">
+  <header>
+    <span>The best cakes in town delivered to your door<span>
+  </span></span></header>
+  <nav class="nav-list">
+    <div>
+      <ul>
+        <li>HOME</li>
+        <li>CAKES</li>
+        <li>ORDERING</li>
+        <li>LESSONS</li>
+        <li>ABOUT</li>
+      </ul>
+    </div>
+  </nav>
+  <section>
+  <div class="hero">
+      <h1>We just Open!</h1>
+      <p>
+        What is Lorem Ipsum?
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's        standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+   </div>
+    <div class="cake">
+      <img src="./Responsive Cake webpage_files/large photo.jpeg">
+    </div>
+    
+   <div class="photos">
+     
+      <img src="./Responsive Cake webpage_files/cake with candles.jpeg" alt="">
+      <img src="./Responsive Cake webpage_files/donuts.jpeg" alt="">
+      <img src="./Responsive Cake webpage_files/muffin flags.jpeg" alt="">
+      <img src="./Responsive Cake webpage_files/mini one.jpeg" alt="">
+    
+ </div></section>
+  
+  <footer>
+      <p>079385000</p>
+      <p>cakes@pastry.com</p>
+      <p>london, Uk</p>
+      <p clas="city">© WANDA - 2022 - All rights reserved</p>
+  </footer>
+
+
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>
