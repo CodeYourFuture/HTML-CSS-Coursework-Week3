@@ -1,12 +1,12 @@
 /*  Add your styling here */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-html {
-  font-size: 1em;
-  color: black;
+/*variables*/
+:root {
+  background-color: linear-gradient(
+    110.2deg,
+    rgb(111, 71, 133) 3.6%,
+    rgb(232, 129, 166) 50.3%,
+    rgb(237, 237, 183) 97.4%
+  );
 }
 body {
   width: 100%;
