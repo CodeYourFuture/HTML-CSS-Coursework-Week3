@@ -144,7 +144,7 @@ body {
 }
 
 @media screen and (min-with: 420px) {
-  .navbar-desktop {
+  .navbar {
     display: none;
   }
 }
