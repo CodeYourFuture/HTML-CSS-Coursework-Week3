@@ -1,0 +1,276 @@
+/*  Add your styling here practice */
+
+
+body{
+    background-color: #ffc8dd;
+    display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+    grid-column-gap: 20px;
+    grid-row-gap: 40px;
+}
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-style: italic;
+    font-size: 50px;
+    font-weight: bolder;
+}
+p{
+    font-size: large
+}
+
+.nav-logo-container{
+    display: flex;
+    flex-direction: column-reverse;
+
+}
+
+.logo-title{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 150px;
+
+}
+
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    background-color: #ffc8dd;
+}
+
+.main-cake{
+    padding:10px;
+}
+.cakebox img{
+width: 100%;
+}
+.cakebox{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+  grid-template-areas: 
+    "cake1 cake2"
+    "cake3 cake4";
+}
+.cake1{
+    grid-area: cake1;
+    padding: 10px;
+}
+.cake2{
+    grid-area: cake2;
+    padding: 10px;
+}
+.cake3{
+    grid-area: cake3;
+    padding: 10px;
+}
+.cake4{
+    grid-area: cake4;
+    padding: 10px;
+}
+@media only screen and (min-width: 768px) {
+    .cakebox{
+        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-rows: auto;
+        grid-template-areas: 
+          "cake1 cake2 cake3 cake4";
+      }
+      .hero{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+}
+
+footer{
+    background-color: #f084da;
+}
+
+
+.navbar
+{
+  display: block;
+  position: relative;
+  top: 50px;
+  left: 50px;
+  
+  z-index: 1;
+  
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.navbar a:hover
+{
+  color: tomato;
+}
+
+
+.navbar input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  
+  cursor: pointer;
+  
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+  
+  -webkit-touch-callout: none;
+}
+
+/*
+ * Just a quick hamburger
+ */
+.navbar span
+{
+  display: block;
+  width: 33vh;
+  height: 4px;
+  margin-bottom: 20px;
+  position: relative;
+  border-radius: 3px;
+  z-index: 1;
+  z-index: 1;
+}
+
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+.nav-menu
+{
+  position: absolute;
+  width: 300px;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  
+  background: #ededed;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  display: none;
+}
+
+.nav-menu li
+{
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+/*
+ * And let's slide it in from the left
+ */
+.navbar input:checked ~ ul
+{
+  display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*  
+.header{
+    display: flex:
+    background-color: peru;
+    display: -moz-inline-grid;
+}
+
+.hamburger {
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 10px;
+    height: 3px;
+    margin: 5px auto;
+}
+
+.cakebox{
+    background-color: coral;
+    
+}
+
+.logo{
+    width: 200px;
+    height: 200px;
+}
+
+.main-cake{
+    width: auto;
+background-color: blueviolet;
+}
+
+.topcake{
+    width: 300px;
+    height: 200;
+}
+
+.fourcakes{
+    width: 280px;
+    height: 250px;
+
+}
+.cake1{
+    width: 200px;
+    height: 150px;
+}
+
+footer{
+    background-color: darkorange;
+}
+.navbar{
+ justify-items:end
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-item {
+    margin-left: 10px;
+}
+
+.nav-link{
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: green;
+}
+
+.nav-link:hover{
+    color: red;
+}
+.hero{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (min-width:540px){
+    body{
+        background-color: aqua;
+    }
+    
+}
+/*  */
