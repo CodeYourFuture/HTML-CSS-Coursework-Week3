@@ -7,10 +7,79 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Responsive Cake webpage</title>
     <!-- Add a link to your css file here -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="/style.css" />
 </head>
+ <body>
+        <header class="header">
+            <nav class="navbar">
+                <img src="img/istockphoto-1079817466-612x612.jpg" class="nav-logo" alt="logo"/>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">CAKES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">ORDERIN</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">LESSONS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">ABOUT</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+               </nav> 
+               <p class="slogan">The best cakes in town<br> delivered to your door!</p>
+        </header>
+        <main class="main">
+            <section class="welcome">
+                <div>
+                    <h1 class="h1">Welcome</h1>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                     when an unknown printer took a galley of type and scrambled it to make a 
+                     type specimen book. It has survived not only five centuries, but also 
+                     the leap into electronic typesetting, remaining essentially
+                    unchanged.</p>
+                </div>
+            </section>
+            <section class="bigImage">
+                <img class="cake" src="img/istockphoto-1351933727-612x612.jpg" alt="Cake"/>
+            </section>
+            <section class="images">
+                <img src="img/img1.jpg" alt="1" />
+                <img src="img/img2.jpg" alt="1" />
+                <img src="img/img3.jpg" alt="1" />
+                <img src="img/img4.jpg" alt="1" />
+            </section>
+        </main>
+        <footer>
+                <p>Lorem Ipsum is simply</p>
+                <p>Lorem Ipsum is simply</p>
+                <p>Lorem Ipsum is simply</p>
+                <p class="footer">Lorem Ipsum is simply</p>
+        </footer>
+        <!-- js for Hamburger -->
+   <script>
+    const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
 
-<body>
-    <!-- Add your markup here -->
+        hamburger.addEventListener("click", mobileMenu);
+
+        function mobileMenu() {
+            hamburger.classList.toggle("active");
+            navMenu.classList.toggle("active");
+        }
+   </script>
+    
 </body>
 
 </html>
