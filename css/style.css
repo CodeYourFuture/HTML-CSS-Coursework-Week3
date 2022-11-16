@@ -36,7 +36,7 @@ html {
   font-weight: 300;
   font-style: italic;
   color: #979797;
-  direction: rtl;
+  text-align: right;
   margin-top: -20px;
 }
 
@@ -71,7 +71,7 @@ html {
 
 /* ----- Nav Menu ----- */
 .nav-menu {
-  position: fixed;
+  position: absolute;
   left: -100%;
   top: 5rem;
   flex-direction: column;
@@ -80,7 +80,7 @@ html {
   width: 100%;
   border-radius: 10px;
   text-align: center;
-  box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 20px 30px 0px #8b8b8b;
   z-index: 1;
 }
 .nav-menu.active {
@@ -191,7 +191,7 @@ img:nth-child(1) {
 }
 
 /* -----TABLET----- */
-@media screen and (min-width: 540px) {
+@media screen and (min-width: 770px) {
   main {
     grid-template-columns: repeat(6, 1fr);
     grid-template-areas:
@@ -268,7 +268,7 @@ img:nth-child(1) {
   }
 
   .hero {
-    direction: rtl;
+    text-align: right;
   }
   main {
     padding: 20px 0;
