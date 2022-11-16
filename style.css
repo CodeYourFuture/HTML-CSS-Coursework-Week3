@@ -1,21 +1,30 @@
 body {
-  width: 80%;
+  width: 590px;
   margin-top: 3em;
   margin-left: 7em;
   margin-right: 3em;
 }
 /* header */
+img {
+  width: 100%;
+  object-fit: cover;
+}
 
 .header {
-  border: 1px solid red;
   display: grid;
-  grid-template-columns: auto auto auto;
-  grid-template-rows: auto auto;
-  width: 50%;
-}
-/* navbar */
-.navbar {
-  background-color: yellow;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 0px 0px;
+  grid-template-areas:
+    "a n"
+    "a s";
+
+  background-color: blanchedalmond;
+  width: 100%;
+  max-width: 590px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .nav_menu {
@@ -29,20 +38,37 @@ body {
 /* header-cake-shop */
 
 .cake_shop_avatar {
-  background-color: red;
-  grid-row-start: 1;
-  grid-row-end: 3;
-  grid-column-start: 1;
-  grid-column-end: 2;
+  width: 9em;
+  height: 9em;
+  margin-top: 1em;
+  margin-left: 2em;
+}
+
+.navbar {
+  /* grid-row-start: 1;
+  grid-row-end: 2;
+  width: 100%; */
+  grid-area: n;
+  margin-bottom: 4em;
+  text-align: right;
 }
 
 .cake_shop_slogan {
-  background-color: aqua;
+  /* grid-row-start: 2;
+  grid-row-end: 3; */
+  grid-area: s;
+  margin-top: -4em;
+  margin-left: 3em;
+  margin-right: -3em;
+  margin-bottom: 0em;
+  padding-left: 10em;
+  padding-right: 0em;
+  font-size: 8px;
 }
 
 /* hero */
 .hero {
-  width: 43%;
+  width: 100%;
   margin-bottom: 3em;
 }
 
