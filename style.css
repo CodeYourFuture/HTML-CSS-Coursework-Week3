@@ -7,6 +7,7 @@ body {
 /* header */
 img {
   width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 
@@ -38,10 +39,14 @@ img {
 /* header-cake-shop */
 
 .cake_shop_avatar {
-  width: 9em;
+  width: 7em;
   height: 9em;
   margin-top: 1em;
   margin-left: 2em;
+
+  background-image: url(img/cupcake.webp);
+  background-size: cover;
+  background-position: center;
 }
 
 .navbar {
@@ -78,28 +83,34 @@ img {
   grid-template-columns: 50% 50%;
   grid-template-rows: 50% 50%;
   gap: 2em;
+  width: 90%;
+  padding-left: 1em;
 }
 
 .bday_cakes {
-  background-color: blueviolet;
+  /* background-image: url(img/Bday_cake.jpeg); */
+
   grid-row-start: 1;
   grid-row-end: 2;
   grid-column-start: 1;
   grid-column-end: 2;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .tarts {
-  background-color: blue;
   grid-row-start: 2;
   grid-row-end: 3;
   grid-column-start: 2;
   grid-column-end: 3;
+  object-fit: cover;
 }
 
 .cup_cakes {
-  background-color: red;
+  object-fit: cover;
 }
 
 .buns_and_rolls {
-  background-color: yellow;
+  object-fit: cover;
 }
