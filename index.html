@@ -1,16 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Responsive Cake webpage</title>
     <!-- Add a link to your css file here -->
-</head>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+    <!-- <script src="/css/script.js"></script> -->
+  </head>
 
-<body>
+  <body>
     <!-- Add your markup here -->
-</body>
+    <header>
+      <div class="header">
+        <div class="logo-img">
+          <img src="/img/logo-s.png" alt="Cake logo" />
+        </div>
+        <div class="hamburger-container">
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </div>
+        <div class="header-content">
+          <span>The best cakes in town delivered to your door</span>
+        </div>
+      </div>
+      <nav>
+        <div class="nav-bar">
+          <ul class="nav-menu">
+            <li class="nav-item">
+              <a href="/index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Cakes</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Orderin</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Lessons</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">About</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="hero">
+        <h1>Welcome</h1>
+        <div class="main-content">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus,
+            dolore aperiam! Cumque numquam repudiandae similique temporibus,
+            animi officiis aliquam obcaecati ipsam sapiente?
+          </p>
+        </div>
+      </section>
+      <figure class="card-img">
+        <img class="main-img" src="/img/slide1.jpg" alt="cake image" />
+      </figure>
 
+      <section class="products">
+        <div class="product-item">
+          <img class="product-img" src="/img/prod1.jpg" alt="cake image" />
+        </div>
+        <div class="product-item">
+          <img class="product-img" src="/img/prod2.jpg" alt="cake image" />
+        </div>
+        <div class="product-item">
+          <img class="product-img" src="/img/prod3.jpg" alt="cake image" />
+        </div>
+        <div class="product-item">
+          <img class="product-img" src="/img/prod4.jpg" alt="cake image" />
+        </div>
+      </section>
+    </main>
+    <footer>
+      <section class="footer">
+        <div class="footer-asside">
+          <p>U.S.A., Washington, 14th street</p>
+          <a href="mailto:yourmail@gmail.com"> yourmail@gmail.com </a>
+          <p>Telephone: (1)222 333 44</p>
+        </div>
+        <div class="copyright">
+          <p>© Cake by Mo Mahboobian, 2022. All rights reserved.</p>
+        </div>
+      </section>
+    </footer>
+    <script>
+      const hamburger = document.querySelector(".hamburger");
+      const navMenu = document.querySelector(".nav-menu");
+
+      hamburger.addEventListener("click", mobileMenu);
+
+      function mobileMenu() {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+      }
+    </script>
+  </body>
 </html>
