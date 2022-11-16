@@ -186,6 +186,7 @@ img {
 .hamburger{
     display: none;
 }
+}
 /*
 .bar {
 
@@ -240,6 +241,3 @@ li {
 a {
     text-decoration: none;
 }
-
-}
-/*  media queries  */
