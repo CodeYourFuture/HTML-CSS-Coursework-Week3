@@ -2,9 +2,9 @@
 :root{
     --green-light:#e0ffcd;
     --yellow-light: fdffcd;
-    --orange-light: #ffebbb;
+    --orange-light: #ba9f61;
     --red-light: #ffcab0;
-    --blue-light:#83cee0;
+    --blue-light:#e083cf;
     --purple:#5f5dbd;
     --white: #fff;
     --black: #000;
@@ -24,6 +24,12 @@ body{
     font-family: 'Montserrat',sans-serif;
     }
 
+.img{
+    width: 100%;
+    height: ;
+    object-fit: cover;
+}
+
     /* header */
 
     header{
@@ -42,11 +48,13 @@ body{
 
     .logo{
         grid-area: 1/1/3/2;
-    }
+        height: auto;
+        width: 100%;
+      }
 
     .logo img{
-        width: 200px;
-        height: 200px;
+        max-width: 100%;
+        height: auto;
     }
 
     header p{
@@ -146,11 +154,13 @@ background-color: var(--orange-light);
 }
 .main-pic {
     grid-area: 2 / 1 / 3 / 2;
-    background-image: url(/images/pexels-lina-kivaka-5732158.jpg);
-    background-size: cover;
+    background-image: url(/image/slashio-photography-XxWxPGXwDU0-unsplash.jpg);
+    background-size: auto;
     background-position: center;
     background-repeat: no-repeat;
     margin: 10px;
+    max-width: 50%;
+    height: auto;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
 .collage {
@@ -162,11 +172,14 @@ background-color: var(--orange-light);
     grid-column-gap: 10px;
     grid-row-gap: 10px;
     margin: 10px;
+    max-width: 100%;
+    height: auto;
 }
 .collage img {
     display: block;
-    width: 100%;
-    height: 100%;
+    max-width: 100px;
+    height: auto;
+    object-fit: cover;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
 
@@ -325,7 +338,7 @@ footer {
     .collage {
         grid-area: 3 / 1 / 4 / 5;
         grid-template-columns: repeat(4,1fr);
-        height: 100px;
+        height: auto;
 
     }
 
