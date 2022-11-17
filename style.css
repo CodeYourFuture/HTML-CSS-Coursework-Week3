@@ -1,26 +1,23 @@
-@import url("https://fonts.googleapis.com/css2?family=Caveat&family=Roboto&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Roboto&display=swap');
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 body {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-areas: "hd hd" "nv nv" "mn mn" "ft ft";
+  height: 100vh;
 }
 img {
   width: 100%;
 }
 
 header {
-  grid-area: hd;
   background-image: linear-gradient(
       rgba(255, 200, 221, 0.5),
       rgba(117, 117, 117, 0.1)
     ),
-    url("./assets/header.jpg");
+    url('./assets/header.jpg');
   background-size: cover;
   background-position: 25% 10%;
   height: 200px;
@@ -84,14 +81,12 @@ li:hover {
 header h1 {
   font-size: 1.5rem;
   color: #8b0033;
-  font-family: "Caveat", cursive;
+  font-family: 'Caveat', cursive;
 }
 /* main */
 main {
-  grid-area: mn;
   margin: 1rem;
   display: grid;
-  grid-template-rows: repeat(3, auto);
   gap: 1rem;
 }
 section {
@@ -106,11 +101,11 @@ section {
   gap: 0.8rem;
 }
 .pics img {
-  height: 10rem;
+  max-height: 5rem;
+  min-height: 100%;
   object-fit: cover;
 }
 footer {
-  grid-area: ft;
   background-color: #999;
   padding: 1rem;
 }
@@ -125,7 +120,6 @@ footer {
     display: none;
   }
   .desktop-nav {
-    grid-area: nv;
     display: block;
     background-color: pink;
     padding: 1rem;
@@ -145,7 +139,8 @@ footer {
   main {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, auto);
+    grid-template-rows: 2fr 1fr;
+    height: 100%;
   }
   .welcome {
     grid-column: 3/5;
@@ -163,7 +158,8 @@ footer {
     grid-row: 1/2;
   }
   .largePic img {
-    height: 20rem;
+    max-height: 5rem;
+    min-height: 100%;
     object-fit: cover;
   }
   .pics {
