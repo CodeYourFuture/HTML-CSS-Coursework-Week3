@@ -23,11 +23,12 @@ img {
   grid-template-areas:
     "a n"
     "a s";
-
-  background-color: blanchedalmond;
+  border-bottom: 3px solid silver;
+  border-right: 1px solid silver;
   width: 100%;
   max-width: 590px;
   margin: 0 auto;
+  margin-top: 2em;
   padding-left: 20px;
   padding-right: 20px;
   position: relative;
@@ -37,9 +38,9 @@ img {
   list-style: none;
 }
 
-.nav_link {
+/* .nav_link {
   text-decoration: none;
-}
+} */
 
 /* header-cake-shop */
 
@@ -58,14 +59,79 @@ img {
 }
 
 .navbar {
-  /* grid-row-start: 1;
-  grid-row-end: 2;
-  width: 100%; */
   grid-area: n;
-  margin-bottom: 4em;
-  text-align: right;
+}
+/* hamburger */
+
+#menuToggle {
+  display: block;
+  position: relative;
+  top: 2em;
+  right: -8em;
+
+  z-index: 1;
+
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle a {
+  text-decoration: none;
+  color: white;
+
+  transition: color 0.3s ease;
+}
+
+#menuToggle a:hover {
+  text-decoration: underline;
+}
+
+#menuToggle input {
+  display: block;
+  width: 40px;
+  height: 32px;
   position: absolute;
-  right: 0;
+  top: -7px;
+  left: -5px;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 2;
+  -webkit-touch-callout: none;
+}
+
+#menuToggle span {
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+
+  background: #040306;
+  border-radius: 3px;
+  z-index: 1;
+}
+
+#menu {
+  position: absolute;
+  width: 100px;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  right: 6em;
+
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  display: none;
+  background-color: #4e3d7d;
+}
+
+#menu li {
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+#menuToggle input:checked ~ ul {
+  display: block;
 }
 
 .cake_shop_slogan {
