@@ -1,1 +1,340 @@
-/*  Add your styling here */
+body {
+  width: 540px;
+  margin-top: 3em;
+  margin-left: 7em;
+  margin-right: 3em;
+  width: 414px;
+  height: 1321px;
+  max-width: 500px;
+  margin: auto;
+}
+
+@media (min-width: 900px) {
+  body {
+    width: 100%;
+    background-color: #f28482;
+    font-family: Arial, Helvetica, sans-serif;
+
+    margin-left: 15em;
+  }
+}
+@media (min-width: 540px) and (max-width: 900px) {
+  body {
+    width: 100%;
+    background-color: #f6bd60;
+  }
+}
+/* header */
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: 50% 50%;
+  gap: 0px 0px;
+  grid-template-areas:
+    "a n"
+    "a s";
+  border-bottom: 3px solid silver;
+
+  width: 100%;
+  max-width: 590px;
+  margin: 0 auto;
+  margin-top: 2em;
+  padding-left: 20px;
+  padding-right: 20px;
+  position: relative;
+}
+
+.nav_menu {
+  list-style: none;
+}
+
+.cake_shop_avatar {
+  width: 7em;
+  height: 9em;
+  margin-top: 1em;
+  margin-left: 2em;
+
+  background-image: url(img/cupcake.webp);
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 2em;
+  left: 2em;
+}
+
+.navbar {
+  grid-area: n;
+}
+/* hamburger */
+
+#menuToggle {
+  display: block;
+  position: relative;
+  top: 2em;
+  right: -8em;
+
+  z-index: 1;
+
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle a {
+  text-decoration: none;
+  color: white;
+
+  transition: color 0.3s ease;
+}
+
+#menuToggle a:hover {
+  text-decoration: underline;
+}
+
+#menuToggle input {
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 2;
+  -webkit-touch-callout: none;
+}
+
+#menuToggle span {
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+
+  background: #040306;
+  border-radius: 3px;
+  z-index: 1;
+}
+
+#menu {
+  position: absolute;
+  width: 100px;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  right: 6em;
+
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  display: none;
+  background-color: #4e3d7d;
+}
+
+#menu li {
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+#menuToggle input:checked ~ ul {
+  display: block;
+}
+
+.cake_shop_slogan {
+  /* grid-row-start: 2;
+  grid-row-end: 3; */
+  grid-area: s;
+  /* margin-top: -4em; */
+  margin-left: 3em;
+  margin-right: -3em;
+  margin-bottom: 0em;
+  /* padding-left: 10em; */
+  padding-right: 0em;
+  font-size: 8px;
+  position: absolute;
+  width: 170px;
+  /* right: 2em; */
+}
+
+@media (min-width: 900px) {
+  #menuToggle {
+    display: none;
+  }
+
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  .header {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 9em;
+    min-width: 540px;
+    max-width: 900px;
+    gap: 0px 0px;
+    grid-template-areas: "a s";
+    border-bottom: 3px solid silver;
+
+    width: 100%;
+    height: 100%;
+    position: relative;
+    right: 6em;
+    margin-left: 11em;
+  }
+
+  .cake_shop_slogan {
+    font-size: 8px;
+    position: absolute;
+    top: 17em;
+    right: 1em;
+    width: 100%;
+    height: 100%;
+    font-size: 7px;
+  }
+
+  .cake_shop_avatar {
+    border-radius: 4px;
+    position: absolute;
+  }
+}
+
+/* hero */
+.hero {
+  width: 100%;
+  margin-bottom: 3em;
+  margin-top: 0.5em;
+  padding: 0em;
+}
+.welcome {
+  margin-left: 0em;
+  margin-bottom: -0.5em;
+}
+.welcome_image {
+  width: 300;
+  height: 300;
+}
+
+@media (min-width: 900px) {
+  .hero {
+    width: 100%;
+    margin-top: 4em;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 300px;
+    grid-template-areas: "i w";
+    gap: 13em;
+    margin-left: -2em;
+  }
+
+  .welcome {
+    margin-top: 1em;
+    margin-bottom: 4em;
+  }
+  .welcome_text {
+    width: 400px;
+    height: 100%;
+    grid-area: w;
+  }
+  .welcome_image {
+    width: 400px;
+    height: 100%;
+    grid-area: i;
+  }
+}
+
+/* cake-gallery_wrapper */
+.cake_gallery_wrapper {
+  height: 50vh;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+  grid-template-areas:
+    "b t"
+    "c r";
+  gap: 2em;
+  width: 90%;
+  padding-left: 1em;
+}
+
+@media (min-width: 900px) {
+  .cake_gallery_wrapper {
+    display: grid;
+    grid-template-columns: 50% 50% 50% 50%;
+    grid-template-rows: 1fr;
+    grid-template-areas: "b t c r";
+    margin-left: -8em;
+    object-fit: cover;
+  }
+}
+
+.bday_cakes {
+  /* background-image: url(img/Bday_cake.jpeg); */
+
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-area: b;
+  object-fit: cover;
+}
+
+.tarts {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-area: t;
+  object-fit: cover;
+}
+
+.cup_cakes {
+  object-fit: cover;
+  grid-area: c;
+}
+
+.buns_and_rolls {
+  object-fit: cover;
+  grid-area: r;
+}
+
+/* footer */
+
+.footer {
+  display: grid;
+
+  grid-template-areas:
+    "a"
+    "e"
+    "t";
+
+  margin-top: 4em;
+  margin-left: 2em;
+
+  gap: 0.5em;
+}
+
+.address {
+  grid-area: a;
+}
+
+.email {
+  grid-area: e;
+}
+
+.telephone {
+  grid-area: t;
+}
+
+@media (min-width: 900px) {
+  .footer {
+    grid-template-columns: 50% 50% 50%;
+    grid-template-areas: "e a t";
+
+    justify-content: baseline;
+  }
+}
