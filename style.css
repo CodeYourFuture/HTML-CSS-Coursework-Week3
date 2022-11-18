@@ -97,6 +97,10 @@ p {
   font-size: 2rem;
   font-weight: bold;
 }
+.nav-bar-desktop {
+  display: none;
+}
+
 /*---------------------------hamburger menu-------------------*/
 
 #menu__toggle {
@@ -272,6 +276,9 @@ p {
       rgb(247, 121, 125)
     );
   }
+  .nav-bar-desktop {
+    display: none;
+  }
   .button {
     background: linear-gradient(
       to right,
@@ -284,5 +291,57 @@ p {
   .footer-text p {
     background: rgb(247, 121, 125);
     font-weight: 200;
+  }
+}
+
+/*---------------breakpoint 2 --> 900px--------------*/
+@media (min-width: 900px) {
+  body {
+    background: linear-gradient(
+      122.3deg,
+      rgb(111, 71, 133) 14.6%,
+      rgb(232, 129, 166) 29.6%,
+      rgb(237, 237, 183) 42.1%,
+      rgb(244, 166, 215) 56.7%,
+      rgb(154, 219, 232) 68.7%,
+      rgb(238, 226, 159) 84.8%
+    );
+  }
+  .footer-text p {
+    font-weight: bold;
+  }
+  .hamburger-menu {
+    display: none;
+  }
+  .nav-bar-desktop {
+    display: block;
+  }
+  .nav-bar-desktop {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0rem 0.5rem;
+  }
+  .navbar-desktop {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0rem 0.5rem;
+    padding-right: 2rem;
+  }
+  .menu__box-desktop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    gap: 2%;
+    margin: 2%;
+    list-style: none;
+  }
+  .header-title {
+    grid-area: header-title;
+    align-self: flex-end;
+    font-size: 1.6rem;
+    align-items: center;
   }
 }
