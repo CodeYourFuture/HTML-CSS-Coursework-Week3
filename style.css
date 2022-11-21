@@ -1,1 +1,152 @@
 /*  Add your styling here */
+body{
+    background-color:#f1f1f1;
+    font-family: Arial (sans-serif);
+    
+}
+
+a{
+    text-decoration: none;
+}
+ul{
+    display:none;
+    list-style:none;
+}
+.hamburger {
+    position:absolute;
+    display: block;
+    top: 25px;
+    right: 10px;
+}
+
+h2{
+    font-size: 0.9rem;
+    margin: 10px;
+
+}
+.header-content{
+    display: flex;
+}
+h3{
+    font-size: 1.5em;
+    margin-top:10px;
+}
+h4{
+    font-size: 1.4em;
+}
+p{
+    font-size: 1.2em;
+    
+}
+.first-Image{
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 255px;
+    height: 255px;
+    border-radius: 15px;
+}
+.header{
+    display: flex;
+}
+
+/*styling middle image*/
+
+.top-image{
+    margin:auto;
+    display:flex;
+    justify-content: center;
+    justify-items: center;
+    border-radius: 15px;
+
+}
+
+/*styling Images in content*/
+
+.bottom-Images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 30px;
+    border-radius: 15px;
+}
+.bottom-Images img{
+    width: 100px;
+    height: 100px;
+    margin:20px;
+    border-radius: 15px;
+}
+/*links*/
+.links a{
+    display:flex;
+    text-align: center;
+    flex-direction: column;
+
+}
+/*footer*/
+
+.footer{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+
+}
+
+
+
+  @media screen and (min-width:540px){
+    .bottom-Images img{
+        width: 150px;
+        height: 150px;
+        border: 2px solid plum;
+    }
+    h4{
+        font-size: 1.3em;
+    }
+    .links a{
+        font-size: 1.0em;
+        display: flex;
+            text-align: center;
+            flex-direction: column;
+    }
+  }
+
+  /*second media query `@media (min-width: 900px)*/
+
+  @media screen and (min-width:900px){
+    ul{
+        display:flex;
+        justify-content: space-evenly;
+    }
+    li{
+        margin-left: 10PX;
+        margin-right: 10px;
+    }
+    .nav-link{
+        list-style: none;
+        color:black;
+    }
+    .nav-link:hover{
+        font-size: 1.1em;
+        
+    }
+    .hamburger {
+        display: none;
+    }
+    h2{
+        font-size: 1.5em;
+    }
+    p{
+        font-size:1.2em;
+        }
+        html{
+            width:1400px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+
+        }
+        main{
+            position:relative;
+        }
+    }
+  
