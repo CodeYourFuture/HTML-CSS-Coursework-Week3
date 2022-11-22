@@ -6,11 +6,103 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Responsive Cake webpage</title>
-    <!-- Add a link to your css file here -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400&family=Xanh+Mono&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-    <!-- Add your markup here -->
+    <header>
+        <img src="media/logo.png" alt="Logo">
+        <p class="header-text">The best cakes in town delivered to your door</p>
+        <nav class="header">
+            <input class="menu-btn" type="checkbox" id="menu-btn" />
+            <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+            <ul class="menu">
+                <li><a href="#work">Home</a></li>
+                <li><a href="#about">Cakes</a></li>
+                <li><a href="#careers">How to Order</a></li>
+                <li><a href="#contact">FAQ</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="section1">
+            <div class="title-and-text">
+                <h2>Welcome</h2>
+                <p>Welcome to LAURA’S LONDON. A Cake and Catering Studio based in West London. Laura provides London’s
+                    cake lovers with deliciously
+                    chic and alluring cakes, packaged to perfection.
+                    ​</p>
+                <button>Contact</button>
+            </div>
+            <img src="media/main_image.png" alt="The pink cake">
+        </section>
+
+        <section class="section2">
+            <div class="image-container">
+                <img class="image1" src="media/image_1.png" alt="Cake">
+                <div class="overlay">
+                    <div class="text">
+                        <h3>Two Tier Pastel Pink Cake</h1>
+                            <p> A 8 inch 4 layer bottom tier with a 6 inch top tier. Fresh florals and rose gold leaf
+                                detailing.
+                                Feeds 50-60. £250</p>
+                    </div>
+                </div>
+            </div>
+            <div class="image-container">
+                <img class="image2" src="media/image_2.png" alt="cakes">
+                <div class="overlay">
+                    <div class="text">
+                        <h3>Pink and White Floral Cupcakes</h1>
+                            <p>Pink and White Floral Cupcakes. x12. £42</p>
+                    </div>
+                </div>
+            </div>
+            <div class="image-container">
+                <img class="image3" src="media/image_3.png" alt="Cake">
+                <div class="overlay">
+                    <div class="text">
+                        <h3>Ruffles, Pearls and Swirls Cake</h1>
+                            <p>You can choose any colours or size that you want. Feeds 25-30. £130</p>
+                    </div>
+                </div>
+            </div>
+            <div class="image-container">
+                <img class="image4" src="media/image_4.png" alt="Cakes">
+                <div class="overlay">
+                    <div class="text">
+                        <h3>Strawberry Tartlets</h1>
+                            <p>Fresh Strawberry Tartlets on a sweet shortcrust pastry with creme patisserie. Minimum
+                                order x12. £30</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <img class="image1" src="media/image_1.png" alt="Cake">
+            <img class="image2" src="media/image_2.png" alt="cakes">
+           <img class="image3" src="media/image_3.png" alt="Cake"> 
+            <img class="image4" src="media/image_4.png" alt="Cakes"> -->
+        </section>
+    </main>
+
+    <footer>
+        <div class="data">
+            <p class="data1">Laura@lauraslondon.com </p>
+            <p class="data2"> 07950123426</p>
+            <p class="data3">London, United Kingdom</p>
+        </div>
+        <p class="link">
+            <a target="_blank"
+                href="https://github.com/VitalinaKuzmenko/Cake-website/tree/london-class-9/vitalina-kuzmenko">Open-source
+                code</a>
+            , by Vitalina Kuzmenko
+        </p>
+    </footer>
 </body>
 
 </html>

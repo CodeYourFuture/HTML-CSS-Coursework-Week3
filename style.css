@@ -1,1 +1,494 @@
-/*  Add your styling here */
+:root {
+  --text-font:: 'Source Sans Pro', sans-serif;
+  --title-font: 'Xanh Mono', monospace;
+  --main-color: #393f44;
+  --pink-color: #ffb3ab;
+}
+
+body {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, auto);
+  grid-template-areas:
+    "hero hero hero hero"
+    "main  main  main  main"
+    "footer  footer footer  footer";
+    font-family: var(--text-font);
+    color: var(--main-color);
+}
+
+header {
+  grid-area: hero;
+}
+
+main {
+  grid-area: main;
+}
+
+footer {
+  grid-area: footer;
+}
+
+/* navbar */
+header {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas:
+    "img img nav nav"
+    ". text text text";
+    box-shadow: 1px 2px 6px 1px rgba(0, 0, 0, 0.3);
+  gap: 10%;
+}
+
+header .header {
+  grid-area: nav;
+}
+
+header img {
+  grid-area: img;
+  width: 220px;
+  height: auto;
+}
+
+header .header-text {
+  grid-area: text;
+ justify-self: end;
+ align-self: start;
+  margin: 0;
+  padding: 0;
+  margin-right: 18px;
+  font-size: 22px;
+  margin-bottom: 22px;
+  text-align: end;
+}
+
+.header {
+  background-color: #fff;
+  position: absolute;
+  right: 0;
+  width: 30%;
+  z-index: 3;
+  margin-right: 8px
+}
+
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.header li a {
+  display: block;
+  padding: 15px 20px;
+  border-right: 1px solid #f4f4f4;
+  text-decoration: none;
+  color: var(--main-color);
+  font-size: 18px;
+  font-family: var(--text-font);
+}
+
+.header li a:hover,
+.header .menu-btn:hover {
+  background-color: var(--main-color);
+  color: white;
+}
+
+.header .logo {
+  display: block;
+  float: left;
+  font-size: 2em;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+/* menu */
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
+  background-color: var(--pink-color)
+}
+
+/* menu icon */
+.header .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+
+.header .menu-icon .navicon {
+  background: #333;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background 0.2s ease-out;
+  width: 18px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: #333;
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all 0.2s ease-out;
+  width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+  top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+  top: -5px;
+}
+
+/* menu btn */
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+  max-height: 300px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+/* main */
+main {
+  margin: 10px 20px;
+}
+
+/* section1 */
+main .section1 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, auto);
+  grid-template-areas:
+    "title title title title"
+    "img img img img";
+  justify-items: center;
+  margin: 20px 0 50px 0;
+}
+
+main .title-and-text {
+  grid-area: title;
+  text-align: start;
+  font-family: var(--text-font);
+  font-size: 1.2em;
+  margin-bottom: 15px;
+  color: var(--main-color);
+}
+
+
+main .title-and-text h2 {
+  font-size: 3.4rem;
+  font-family: var(--title-font);
+  margin: 0;
+}
+
+main .section1 img {
+  grid-area: img;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.3);
+}
+
+main .section1 button {
+  padding: 5px 15px;
+  background-color: transparent;
+  border: 1px solid var(--main-color);
+  border-radius: 40px;
+  font-size: 1rem;
+}
+
+main .section1 button:hover {
+  background-color: var(--main-color);
+ color: white;
+}
+
+/* section2 */
+main .section2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, auto);
+  grid-template-areas:
+    "img1 img2"
+    "img4 img3";
+  justify-items: center;
+  gap: 4%;
+}
+
+main .section2 img {
+  display: block;
+  border-radius: 10px;
+  box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.3);
+}
+
+main .image-container {
+  position: relative;
+}
+
+main .image-container .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.476);
+}
+
+main .image-container:hover .overlay {
+  opacity: 1;
+}
+
+main .image-container .text {
+  color: white;
+  font-size: 12px;
+  line-height: 16px;
+  position: absolute;
+  width: 80%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+main .section2 .image1 {
+  grid-area: img1;
+}
+
+main .section2 .image2 {
+  grid-area: img2;
+}
+
+main .section2 .image3 {
+  grid-area: img3;
+}
+
+main .section2 .image4 {
+  grid-area: img4;
+}
+
+main .section2 img {
+  width: 100%;
+  height: auto;
+}
+
+footer {
+  margin: 40px 0;
+  box-shadow: 1px 2px 6px 1px rgba(0, 0, 0, 0.3);
+}
+
+footer .data{
+  padding-bottom: 10px;
+  padding-top: 15px;
+}
+
+footer .data p {
+margin: 0;
+margin-left: 20px;
+padding: 8px 0;
+font-size: 20px;
+}
+
+footer .link{
+  text-align: center;
+  font-size: 18px;
+}
+
+footer .link a{
+  color: #e79187;
+}
+
+@media(min-width: 540px) {
+  main .image-container .text {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: 900px) {
+  /* navbar */
+  header {
+    grid-template-areas:
+      "img text text text"
+      "nav nav nav nav";
+      box-shadow: none;
+  }
+
+  header .header-text {
+   align-self: end;
+    margin-right: 30px;
+    font-size: 22px;
+    margin-top: 22px;
+    text-align: end;
+  }
+
+  header img {
+    grid-area: img;
+    width: 300px;
+    height: auto;
+    margin-left: 20px
+  }
+
+  .header {
+    width: 90%;
+    position: relative;
+   background-color: var(--pink-color);
+   margin: 0 50px;
+   border-radius: 10px;
+   border: 1px solid var(--main-color);
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+  }
+
+  .header .menu {
+    background-color: transparent;
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  
+  .header li a {
+    border-right: none;
+    font-size: 20px;
+  }
+  
+  .header li a:hover,
+  .header .menu-btn:hover {
+    color: white;
+    background-color: transparent;
+  }
+  
+  .header .logo {
+    display: block;
+    float: left;
+    font-size: 2em;
+    padding: 10px 20px;
+    text-decoration: none;
+  }
+ 
+  .header li {
+    float: left;
+  }
+
+  .header li a {
+    padding: 20px 30px;
+  }
+
+  .header .menu-icon {
+    display: none;
+  }
+
+  main {
+    margin: 0 50px;
+  }
+
+  main .section1 {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, auto);
+    grid-template-areas:
+      "img img title title";
+  }
+
+  main .section1 .title-and-text {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   text-align: end;
+   margin-left: 15px;
+  }
+
+  main .section1 button {
+    font-size: 1.3rem;
+  }
+
+
+  main .title-and-text button{
+    align-self: flex-end;
+  }
+
+  main .section2 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, auto);
+    grid-template-areas:
+      "img1 img2 img3 img4";
+  }
+
+  main .image-container .text {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  footer .data {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(1, auto);
+    grid-template-areas:
+      ". data1 data2 data3 .";
+      justify-items: center;
+    margin: 20px 0 50px 0;
+  }
+
+  footer .data .data1 {
+    grid-area: data1;
+text-align: center;
+  }
+  
+  footer .data .data2 {
+    grid-area: data2;
+    text-align: center;
+  }
+
+  footer .data .data3 {
+    grid-area: data3;
+    text-align: center;
+  }
+}
+
+@media(min-width: 1150px){
+  .header {
+    width: 94%;
+  }
+
+  main .image-container .text {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+
+
