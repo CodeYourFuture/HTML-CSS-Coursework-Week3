@@ -1,16 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Responsive Cake webpage</title>
     <!-- Add a link to your css file here -->
-</head>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
-    <!-- Add your markup here -->
-</body>
+  <body>
+    <header class="header">
+      <div class="header-logo">
+        <img
+          class="header-img-src"
+          src="./images/Cake_Monochromatic.svg"
+          alt="cake"
+        />
+      </div>
+      <div class="header-title">
+        <h2>The best cakes in town delivered to your door</h2>
+      </div>
+      <div class="header-navbar-menu">
+        <div class="hamburger-menu">
+          <input id="menu__toggle" type="checkbox" />
+          <label class="menu__btn" for="menu__toggle">
+            <span></span>
+          </label>
 
+          <ul class="menu__box">
+            <li><a class="menu__item" href="#">Home</a></li>
+            <li><a class="menu__item" href="#">About</a></li>
+            <li><a class="menu__item" href="#">Team</a></li>
+            <li><a class="menu__item" href="#">Contact</a></li>
+            <li><a class="menu__item" href="#">Twitter</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="nav-bar-desktop">
+        <nav class="navbar-desktop">
+          <ul class="menu__box-desktop">
+            <li><a class="menu__item" href="#">Home</a></li>
+            <li><a class="menu__item" href="#">About</a></li>
+            <li><a class="menu__item" href="#">Team</a></li>
+            <li><a class="menu__item" href="#">Contact</a></li>
+            <li><a class="menu__item" href="#">Twitter</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="container>">
+        <div class="grid">
+          <div class="main-title">
+            <h1>Welcome</h1>
+          </div>
+          <div class="main-text">
+            <p>
+              Cake Co is London's only all natural bakery, delivering throughout
+              the UK! Created by Harry Junior, playfulness is his passion; he
+              loves to create exciting, experimental flavours and artisan
+              designs, having fun in the process. Harry is a little
+              health-conscious and like to make sure his bakes are irresistibly
+              scrumptious without using too much fat and sugar - ‘just as much
+              as needed to make something delicious’. Our premium bakes and
+              gifts are lovingly handcrafted to taste delicious and look
+              exquisite for you to enjoy whatever the occasion!
+            </p>
+          </div>
+          <div class="image-library-main">
+            <img
+              class="library-item-main"
+              src="./images/bcake.jpg"
+              alt="cake"
+            />
+          </div>
+
+          <div class="image-library-one">
+            <img
+              class="library-item-one"
+              src="./images/child_cake.jpg"
+              alt="childcake"
+            />
+          </div>
+
+          <div class="image-library-two">
+            <img
+              class="library-item-two"
+              src="./images/Cupcake.jpg"
+              alt="cupcake"
+            />
+          </div>
+
+          <div class="image-library-three">
+            <img
+              class="library-item-three"
+              src="./images/vanilla-traybake.jpg"
+              alt="cutted-cake"
+            />
+          </div>
+
+          <div class="image-library-four">
+            <img
+              class="library-item-four"
+              src="./images/donut.jpg"
+              alt="donuts"
+            />
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer">
+        <div class="footer-adinfo">
+          <a class="button" id="footer-adinfo-items" href="#company">Company</a>
+          <a class="button" id="footer-adinfo-items" href="#help">Help</a>
+          <a class="button" id="footer-adinfo-items" href="#events">Events</a>
+        </div>
+
+        <div class="footer-text">
+          <p>The website is designed and created by Olena Reukova</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script>
+    const hamburger = document.querySelector(".hamburger");
+    const navMenu = document.querySelector(".nav-bar");
+
+    hamburger.addEventListener("click", mobileMenu);
+
+    function mobileMenu() {
+      hamburger.classList.toggle("active");
+      navMenu.classList.toggle("active");
+    }
+
+    const navLink = document.querySelectorAll(".nav-link");
+
+    navLink.forEach((n) => n.addEventListener("click", closeMenu));
+
+    function closeMenu() {
+      hamburger.classList.remove("active");
+      navMenu.classList.remove("active");
+    }
+  </script>
 </html>
