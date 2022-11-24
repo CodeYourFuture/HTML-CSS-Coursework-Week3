@@ -74,7 +74,7 @@ p {
 .header-title {
   grid-area: header-title;
   align-self: flex-end;
-  font-size: 1.6rem;
+  text-align: center;
 }
 
 .menu__btn {
@@ -95,7 +95,6 @@ p {
 .header-title h2 {
   font-weight: 100;
   font-size: 2rem;
-  font-weight: bold;
 }
 .nav-bar-desktop {
   display: none;
@@ -179,36 +178,48 @@ p {
   background-color: #cfd8dc;
 }
 /*---------------------------END hamburger menu-------------------*/
-/*------------------Section one_--------------*/
-.main-title {
+/*---------------------------container--------------*/
+.grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, auto);
-  grid-gap: 1rem;
+  grid-template-rows: repeat(5, auto);
+  grid-gap: 0.5rem;
   grid-template-areas:
-    "main-title main-title"
-    "main-text main-text";
+    "title title"
+    "text text"
+    "main-image main-image"
+    "img-one img-two"
+    "img-three img-four";
+  justify-items: center;
 }
 .main-title {
-  grid-area: hmain-title;
+  grid-area: title;
   align-items: center;
   justify-items: flex-start;
+  width: 100%;
 }
 .main-text {
-  grid-area: main-text;
+  grid-area: text;
 }
 .main-title,
 .main-text {
   padding: 0 2rem;
 }
-/*---------------Section two--------------*/
-.two {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(3, auto);
-  grid-gap: 0.6rem;
-  width: auto;
-  padding: 0 2rem;
+.image-library-main {
+  grid-area: main-image;
+}
+.image-library-one {
+  grid-area: img-one;
+}
+.image-library-two {
+  grid-area: img-two;
+}
+
+.image-library-three {
+  grid-area: img-three;
+}
+.image-library-four {
+  grid-area: img-four;
 }
 
 .library-item-main,
@@ -216,8 +227,8 @@ p {
 .library-item-two,
 .library-item-three,
 .library-item-four {
-  max-width: 100%;
-  height: 100%;
+  width: 100%;
+  height: auto;
   object-fit: cover;
 }
 .image-library-main {
@@ -270,10 +281,9 @@ p {
 @media (min-width: 540px) {
   body {
     background: linear-gradient(
-      to right,
-      rgb(198, 255, 221),
-      rgb(251, 215, 134),
-      rgb(247, 121, 125)
+      90deg,
+      rgb(252, 115, 156) 0%,
+      rgb(139, 102, 241) 100%
     );
   }
   .nav-bar-desktop {
@@ -337,11 +347,5 @@ p {
     gap: 2%;
     margin: 2%;
     list-style: none;
-  }
-  .header-title {
-    grid-area: header-title;
-    align-self: flex-end;
-    font-size: 1.6rem;
-    align-items: center;
   }
 }
