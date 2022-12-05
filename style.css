@@ -1,1 +1,68 @@
 /*  Add your styling here */
+body  {
+    background-color: #ffe6ff;
+}
+
+.nav-bar {
+overflow: hidden;
+}
+
+.nav-bar a {
+    float: right;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.nav-bar a:hover {
+    background-color: #ff80ff;
+    color: black;
+}
+
+.nav-bar a.active {
+    background-color: #cb3354;
+    color: white;
+}
+
+.title, .tagline {
+    text-align: center;
+}
+
+.title {
+    font-size: 3em;
+    padding: 1em 1em;
+}
+.tagline {
+    font-size: 2em;
+    padding: .75em;
+}
+
+.order-now {
+    border-radius: 50%;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-size: 1em;
+}
+
+.info {
+    text-align: center;
+    background-color: #ff80ff;
+}
+.cake {
+    display: flex;
+    
+}
+
+.cake figure {
+    display: inline-block;
+}
+.socail {
+    display: flex;
+}
+
+.socail a {
+    display: inline-block;
+    justify-content: center;
+}
