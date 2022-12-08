@@ -1,1 +1,140 @@
-/*  Add your styling here */
+.header {
+display: grid;
+padding: 2%;
+margin-top: 1%;
+
+
+}
+.header-top {
+width:100%;
+background-color: antiquewhite;
+display: grid;
+grid-template-columns: 1fr 1fr;
+
+}
+.top-header-img {
+    background-color:darkgoldenrod;
+    width:0px;
+}
+.top-header-img img{
+    width: 100px;
+}
+.span {
+    margin-top: 70px;
+    text-align: right;
+    padding: 3%;
+    font-style: italic;
+    
+}
+.header-bottom {
+    background-color: aliceblue;
+    margin-top: 10px;
+    width:90%;
+    text-align: right;
+    justify-self: center;
+    justify-items: right;
+    margin-right: 10px;
+    margin-left: 5px;
+    
+    
+  
+    
+
+}
+.nav{
+   background-color:bisque;
+   text-decoration: none;
+   height: 60px;
+   padding-top: 3%;
+   padding-right: 4%;
+   
+   
+   
+   
+}
+.topnav {
+    display: inline;
+    text-align: right;
+   
+}
+.main {
+        width: 80%;
+        display: grid;
+      
+        justify-content:center;
+        justify-self: center;
+        grid-template-columns: auto auto;
+        margin-left: 100px;
+        /* justify-items: left; */
+        /* margin-left: 5%;
+        padding-left: 5%;
+        padding-top: 4%; */
+        background-color: papayawhip;
+      
+        
+}
+.h1 {
+    
+justify-items: center;
+padding: auto;
+text-align: center;
+}
+.img1 {
+  
+    margin-bottom: ;
+
+    height: 200px;
+}
+.para { 
+
+ justify-self: left;
+ padding-left: 4%;
+ text-align: justify;
+ padding-right: 4%;
+ 
+
+}
+.img {
+
+    width:170%;
+    margin-left: 70px;
+    margin-right: 130px;
+    
+}
+.img img{
+display: inline;
+padding-left: 1.2%;
+
+}
+.nav-bottom {
+    text-align: center;
+    width: 90%;
+  height: 80px;
+  padding-top: 2%;
+  padding-right: 1%;
+
+  
+
+
+
+}
+.item{
+    text-decoration: none;
+}
+
+.footerItem{
+   text-decoration: none;
+   text-align: center;
+   background-color: peachpuff;
+min-height: 70px;
+margin-left: 100px;
+margin-right: 120px;
+padding-top: 2%;
+ 
+}
+
+.end {
+    text-align: center;
+    margin-bottom: 30px;
+    padding-bottom: 3%;
+}
