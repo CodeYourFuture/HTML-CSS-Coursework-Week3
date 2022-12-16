@@ -1,1 +1,184 @@
-/*  Add your styling here */
+body {
+    background-color: #e5e8ea;
+    color: #333;
+    font-size: 0.9rem;
+    line-height: 1.2;
+  }
+  
+  .container {
+    width: 24rem;
+    margin: 4rem;
+    padding: 2rem;
+    background-color: rgb(236, 237, 238);
+  }
+  
+  .icon {
+    font-size: 3rem;
+    padding-left: 1rem;
+    width: 100px;
+  }
+  
+  h3 {
+    margin: 0;
+  }
+  
+  p {
+    margin: 5px 0 0;
+  }
+  
+  .item {
+    padding: 0 0 1.4rem 0;
+  }
+  
+  /* Generic Styles End */
+  
+  .container {
+    display: grid;
+    grid-template-columns: 1fr auto;
+  }
+  
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+  body {
+    font-family: roboto;
+  }
+  
+  .wrapper2 {
+    padding: 3rem;
+    text-align: center;
+    color: #333;
+    background-color: #DDD6FE;
+  }
+  
+  .menu {
+    background-color: white;
+    padding: 0.5rem;
+    border-radius: 2rem;
+  }
+  
+  .menu a {
+    background-color: #EFF6FF;
+    padding: 0.6rem 1.5rem;
+    border-radius: 2rem;
+    color: black;
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+  
+  .menu a.active {
+    background-color: #949aa3;
+    color: white;
+  }
+  
+  /* Generic Styles End */
+  
+  .menu {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  
+body {
+    background-color: #F1F5F9;
+  }
+  
+  p {
+    text-align: center;
+    margin-top: 40px;
+  }
+  
+  ul {
+    padding: 0;
+    list-style-type: none;
+    width: 300px;
+    margin: 30px auto;
+    background-color: rgba(203, 201, 201, 0.521);
+    display: flex;
+    flex-direction: row;
+  }
+  
+  ul li {
+    padding: 20px;
+    text-align: center;
+    transition: flex;
+    transition-duration: 0.2s;
+  }
+  
+  ul li:hover {
+    cursor: pointer;
+    border-bottom: solid 3px #2DD4BF;
+
+  }
+  .french {
+    grid-area: french;
+    /* grid-column: 1/2;
+    grid-row: 4/5; */
+    background-color:#fae3d9;
+    }
+    
+    .italian {
+        grid-area: italian;
+        /* grid-column: 2/3;
+        grid-row: 4/5; */
+        background-color:#fae3d9; 
+    }
+    
+    .classic {
+        grid-area: classic;
+        /* grid-column: 1/2;
+        grid-row: 5/6; */
+        background-color: #fae3d9;
+    }
+    
+    
+    
+    
+    
+    
+     .button {
+        display: flex;
+        justify-content: center;
+        padding: 30px;
+        color: #8ac6d1;
+     }
+    
+     footer {
+        grid-area: footer;
+        /* grid-column: 1/-1;
+        grid-row: 6/7; */
+        background-color: #8ac6d1;
+     }
+     .content {
+        grid-area: content;
+        /* grid-column: 1/-1;
+        grid-row: 6/7; */
+        background-color: #8ac6d1;
+     }
+
+
+  @media screen and (min-width: 320px) {
+    body {
+        background: lightgrey
+    }
+
+
+@media screen and (max-width: 540px) {
+
+
+    
+    body {
+        background: #0077b6;
+    }
+    .wrapper {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto, auto, auto, auto;
+    grid-template-areas: "header header header header"
+                         "content content content content "
+                        "french italian classic ."
+                        "footer footer footer footer";
+}
+  
+
+  
