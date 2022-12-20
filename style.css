@@ -1,111 +1,139 @@
-/*  Add your styling here */
-/* lego cake */
-
-:root {--pink:#f5c1ee;
-    --gray:#948e93;
-}
-
-*{margin: 0;
-    padding: 0;
-    box-sizing: border-box;
- }
-
- 
-header {
-    display: grid;
-grid-template-columns: repeat(2, 1fr);
-grid-template-rows: repeat(2, 1fr);
-grid-column-gap: 0px;
-grid-row-gap: 0px;
-width: 100%;
-height: 100%;
-}
-.logo {
-    grid-area: 1 / 1 / 3 / 2;
+body { 
+    margin: 0px;
+    border: 0px;
+    font: size 16px;
+  }
+  .main-container{
+  width: 100%; 
+  height: 100%;
+  
+  max-width: 1800px;
+  margin: 0px auto;
+  font-size: 1em;
+  }
+  /*header style*/
+  
+  header{
+  background-color: rgb(240, 235, 245);
   display: flex;
-  justify-content: center;
-  align-items: center;
-
-}
-
- .logo img {
-
-    width: 100px;
-    height: 100px;
-}
-
-.hamberger {
-    grid-area: 1 / 2 / 2 / 3;
-    display: flex;
-    justify-content: flex-end;
-    margin: 1rem;
-
-}
-.header-text {
-    grid-area: 2 / 2 / 3 / 3;
-    padding: 1rem;
-}
-/* main */
-main {
+  justify-content: space-between; 
+  font-size: 2em;  
+  }
+  
+  /*logo style*/
+  .logo{
+  margin: 10px 10px 10px 10px;
+  width: 200px;
+  }
+  .logo img{  
+  width: 100%;
+  }
+  
+  
+  .hamburger-menu {
+  height: 30px;
+  width: 30px;
+  display: flex;
+  flex-direction: column;    
+  justify-content: space-between;
+  
+  }
+  .hamburger-menu span {
+  height: 20%;    
+  background-color: gray;
+  border-radius: 2px;
+  }
+  .nav-p-container {
+  
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin: 5px 5px 10px 10px;
+  }
+  
+  /*main style */
+  
+  
+  
+  main{
+  margin: 10px 10px 0px 10px;
+  }
+  .content-2{
+    text-align:justify
+  }
+  .main-img-container img{
+  width: 250px;
+  height: 250px;
+  width: 100%;
+  }
+  .images img{
+  width: 250px;
+  height: 250px;
+  width: 100%;
+  
+  }
+  .images-container {    
+  display: grid;
+  grid-template-columns: 1fr 1fr ;
+  
+  }
+  
+  /*footer style*/
+  footer{
+  background-color: rgb(195, 177, 211);
+  font-size: 2em;
+  }
+  .links-container{
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  }
+  .copyright {
+  text-align: center;
+  }
+  
+  /*media style 540-900*/
+  @media (min-width: 540px) 
+   {
+    .images-container {    
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 10px;
-    background-color: var(--gray);
-}
-.main-text {
-    grid-area: 1 / 1 / 2 / 2; 
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    padding: 1rem;
-    margin: 10px;
-}
-.main-pic {
-    grid-area: 2 / 1 / 3 / 2;
-    background-image: url(/img/photo_2022-11-08_20-11-20.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100%;
-    margin: 20px;
-}
-.main-album {
-    grid-area: 3 / 1 / 4 / 2;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 10px;
-    grid-row-gap: 10px;
-
-}
-.main-album img:nth-child(1){
-grid-area: 1 / 1 / 2 / 2;
-height: 10px;
-width: 10px;
-
-
-}
-.main-albumi img:nth-child(2){
-grid-area: 1 / 2 / 2 / 3;
-height: 10px;
-width: 10px;
-
-}
-.main-album img:nth-child(3){
-grid-area: 2 / 1 / 3 / 2;
-height: 10px;
-width: 10px;
-
-}
-.main-album img:nth-child(4){
-grid-area: 2 / 2 / 3 / 3; 
-height: 10px;
-width: 10px;
-
-}
-
-    
-
-
+    grid-template-columns: 1fr 1fr 1fr 1fr;  
+     gap:5px; } 
+  
+    .second-container{
+      display: grid;
+      grid-template-columns:1fr 1fr;
+  
+    }
+    .content{
+      grid-column: 2/3;
+  
+    }
+    .main-img-container {
+      grid-column: 1/2;
+    } 
+  
+  header ,footer{
+    background-color: rgb(78, 202, 186);
+  
+  }
+  .content{
+    text-align: right;
+  }
+  }
+  
+  /*media style min900px*/
+  @media (min-width: 900px) {
+  header ,footer{
+    background-color: rgb(241, 188, 119);
+      }
+     .links-container{
+        display: flex;
+        flex-direction:row;
+        justify-content: space-around;
+  
+  
+      }
+  
+  }
