@@ -69,12 +69,16 @@ hr {
     margin: 10px;
 }
 
+.intro_text {
+    max-width: 600px;
+}
+
 .title_intro {
     margin-bottom: 2rem;
 }
 
 .intro_img {
-    width: 300px;
+    max-width: 400px;
     margin-top: 2rem;
 }
 
@@ -111,6 +115,30 @@ hr {
     /* border: 4px solid orange; */
 }
 
+/* CARD */
+
+.card_container {
+    width: 400px;
+    padding: 2rem;
+    margin: 2rem;
+    background-color:#fbc4ab;
+    border: grey 2px solid;
+    border-radius: 25px;
+}
+
+.card_image {
+    width: 100%;
+}
+
+.card_text_container {
+    margin-top: 1rem;
+}
+
+.card_title {
+    margin-bottom: 1rem;
+    /* border: solid 4px blue; */
+}
+
 /* Footer */
 
 footer {
@@ -133,6 +161,18 @@ footer {
     flex-direction: row;
     justify-content: center;
     gap: 10px;
+}
+
+.contact_button {
+    padding: 0.5em;
+    border: solid 2px #fbc4ab;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.contact_button:hover {
+    background-color: orange;
+    color: white;
 }
 
 .copyright {
