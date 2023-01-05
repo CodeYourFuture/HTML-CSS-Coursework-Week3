@@ -26,6 +26,7 @@ header img{
 .cake_logo {
     height: 140px;
     width: 120px;
+    z-index: 3;
 }
 
 #quotes {
@@ -43,8 +44,8 @@ header img{
 .thumbnails {
     display: grid;
     margin-top: 20px;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 0.5fr);
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
     grid-column-gap: 10px;
     grid-row-gap: 10px;
 }
