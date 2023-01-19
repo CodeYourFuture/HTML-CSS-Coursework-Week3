@@ -1,1 +1,113 @@
 /*  Add your styling here */
+.header {
+    position: relative;
+    background-color: blueviolet;
+    width: 100%;
+}
+
+header nav-list {
+    position:absolute;
+    top: 8px;
+    right: 16px;
+    font-size: 18px;
+}
+
+.nav-bar {
+    display: grid;
+    grid-template: repeat(1, 20px) / repeat(5, 1fr);
+    grid-gap: 15px;
+    background-color: lightgrey;
+    width: 90%;
+    height: 60px;
+    margin: auto;
+    justify-content: right;
+    align-content: center;
+    justify-items: right;
+}
+
+.nav-link {
+    color: white;
+    background-color: darkgray;
+    border:0px;
+    /* justify-self: end;
+    align-self: end; */
+}
+
+.main {
+    display: grid;
+
+}
+
+#welcome-title {
+    font-size: 50px;
+}
+
+header img{
+    width:100%;
+    opacity: 0.7;
+    padding: 1em;
+    vertical-align: middle;
+}
+
+.cake_logo {
+    height: 140px;
+    width: 120px;
+    z-index: 3;
+}
+
+#quotes {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+    font-size: 18px;
+}
+
+.main {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+    width: 80%;
+    margin: 100px;
+}
+
+#main_cake {
+    height: 400px;
+    width: 300px;
+}
+
+.thumbnails {
+    display: grid;
+    margin-top: 20px;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(1, auto);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+
+.thumb-img {
+    height: 400px;
+    width: 300px;
+}
+
+.footer {
+    padding: 10px;
+    font-size: 1.5em;
+}
+
+.contact_links {
+    display: flex;
+    align-content: center;
+       
+}
+
+#linkedin, #twitter, #instagram{
+    height: 60px;
+    width: 80px;
+    
+}
+
+#footer_text {
+    font: cursive;
+    font-size: 20px;
+    text-align: center;
+}
