@@ -1,1 +1,150 @@
-/*  Add your styling here */
+body {
+    margin: 0 0px;
+    font-size: 25px;
+    --theme: teal;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: magenta;
+  }
+  .header {
+    background-color: var(--theme);
+    padding: 1.5rem;
+    margin-bottom: 3rem;
+  }
+  .image-of-home{
+    position: relative;
+    top: -200px;
+    right: -480px; 
+    width: 100px;
+    height: 100px;
+    margin-top: 50px;
+  }
+  .header-quote {
+    text-align: end;
+    font-style: oblique;
+  }
+  .navigation{
+    display: flex;
+    list-style: none;
+}
+  .navigation-list{
+    color: gold;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 0 1em;
+    margin-right: 10px;
+    transition: opacity 0.25s;
+
+  }
+  .navigation-list:hover{
+    color: black;
+  }
+  .nav{
+    display: none;
+  }
+
+  .main {
+    margin: 1.5rem;
+    display: grid;
+  }
+  
+  .brand-name {
+    font-size: 5rem;
+  }
+  
+  .brand-description,
+  .cake {
+    margin-bottom: 3rem;
+  }
+  .cake {
+    max-width: 15%;
+    height: 200px;
+  }
+  .cake-grid {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(2, auto);
+    width: 100%;
+    height: auto;
+    margin: 4rem 0;
+  }
+  
+  .cake-image {
+    width: 100%;
+    height: 100%;
+  }
+  .footer {
+    text-align: center;
+    background-color: var(--theme);
+    padding: 2.5rem 0;
+  }
+  
+  .social-links {
+    text-align: left;
+    margin-left: 2rem;
+  }
+  
+  .social-icon {
+    width: 35px;
+    height: 35px;
+    margin-right: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .footer-text {
+    font-weight: 500;
+  }
+  @media screen and (min-width: 540px) {
+    .main {
+      grid-template-columns: 1fr auto;
+      grid-gap: 2rem;
+    }
+  
+    .cake {
+      grid-column-start: 2; 
+      height: 95%;
+    }
+  
+    .cake-grid {
+      grid-column: 1 / 3;
+      margin: 0; 
+    }
+  
+    .second-description {
+      display: none;
+    }
+  }
+  
+  /* Desktop Mode */
+  @media screen and (min-width: 900px) {
+    .header {
+      padding: 2.5rem;
+    } 
+  
+  .main {
+    margin: 5rem;
+    grid-gap: 3rem;
+  }
+
+  .cake {
+    grid-column-start: 3;
+    grid-row-end: 1;
+  }
+
+  .second-description {
+    display:flex;
+    font-size: 25px;
+  }
+
+  .cake-grid {
+    grid-column: 1 / 4;
+    grid-template-columns: repeat(4, auto);
+  }
+
+  .social-links {
+    text-align: center;
+  }
+
+  .social-icon {
+    margin-right: 2rem;
+  }
+}
