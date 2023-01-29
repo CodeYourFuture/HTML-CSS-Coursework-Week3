@@ -1,16 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Responsive Cake webpage</title>
     <!-- Add a link to your css file here -->
-</head>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
 
-<body>
+  <body>
     <!-- Add your markup here -->
-</body>
 
+    <div class="header">
+      <img id="logo" src="./Cakes/logo.jpg" />
+      <p id="header-text">The best cakes in town delivered to your door</p>
+    </div>
+    <div class="nav-div">
+      <button class="nav-links">HOME</button>
+      <button class="nav-links">CAKES</button>
+      <button class="nav-links">ORDERING</button>
+      <button class="nav-links">LESSONS</button>
+      <button class="nav-links">ABOUT</button>
+    </div>
+    <main>
+      <div class="main">
+        <div class="main-cake">
+          <img id="main-cake" src="./Cakes/main-cake.jpg" />
+        </div>
+        <div class="welcome-div">
+          <h2 id="welcome">Welcome</h2>
+          <p id="welcome-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
+            quam dolores vitae commodi magnam. Animi earum soluta adipisci
+            labore perspiciatis iure fuga facilis reiciendis veritatis illo hic,
+            neque maxime delectus?
+          </p>
+        </div>
+      </div>
+
+      <div class="thumbnails">
+        <img
+          class="thumb-image"
+          src="./Cakes/main-cake.jpg"
+          alt="cake_image"
+          class="cake"
+        />
+        <img
+          class="thumb-image"
+          src="./Cakes/Cake2.jpg"
+          alt="cake_image"
+          class="cake"
+        />
+        <img
+          class="thumb-image"
+          src="./Cakes/Cake3.jpg"
+          alt="cake_image"
+          class="cake"
+        />
+        <img
+          class="thumb-image"
+          src="./Cakes/Cake4.jpg"
+          alt="cake_image"
+          class="cake"
+        />
+      </div>
+    </main>
+
+    <footer class="footer">
+            <div class="media-links">
+              <a href="https://en-gb.facebook.com/">
+              <img src="Icons/facebookicon.png" class="media-icon">
+            </a>
+            <a href="https://www.instagram.com/">
+              <img src="Icons/Instagram_icon.jpg" class="media-icon">
+              </a>
+              <a href="https://twitter.com/">
+              <img src="Icons/Twittericon.png" class="media-icon">
+              </a>
+            </div>
+    </footer>
+  </body>
 </html>
