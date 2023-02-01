@@ -1,1 +1,266 @@
 /*  Add your styling here */
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  background-image: url(./images/abstract-empty-smooth-light-pink-studio-room-background-use-as-montage-product-display-banner-template\ 1.png);
+  margin: 0;
+ 
+
+}
+
+
+
+/* header*/
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(255, 134, 161, 0.65);
+}
+
+.logo{
+    width: 30%;
+    padding: 20px;
+    
+}
+
+.menu{
+ width: 50px;
+ height: 50px;
+ padding: 10px;
+
+}
+.menu-context{
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between ;
+  align-items: flex-end;
+  
+  
+}
+
+.menu-context h3{
+  text-align: end;
+  padding: 10px;
+  font-family: 'Libre Caslon Display';
+  font-size: 32px;
+  color: rgba(75, 2, 94, 0.84);
+}
+
+header nav{
+  display: none;
+}
+
+
+/*----main----*/
+main {
+  padding: 100px 30px 0px 30px;
+}
+
+h1, p{
+  margin-bottom: 30px;
+  font-family: 'Libre Caslon Display';
+  font-size: 42px;
+  color:rgba(75, 2, 94, 0.49)
+}
+/*section*/
+
+section{
+  padding: 0 30px
+}
+.cupcake{
+
+ width: 100%;
+ border-radius: 20px;
+ padding-top: 20px;
+ 
+}
+
+.cupcakes{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 40px;
+  padding:20px 0;
+  
+}
+
+.cupcakes img{
+  background-color: rgba(242, 170, 170, 1);
+  border-radius: 90px;
+  height: 300px;
+  
+}
+
+.cupcakes h4{
+  text-align: center;
+  padding: 20px;
+  color:rgba(187, 37, 145, 1)
+  
+}
+.cupcakes img{
+ width: 100%;
+  
+}
+
+.footer{
+
+  padding:30px 0px;
+  font-family: 'Play', sans-serif;
+  text-align:center;
+  background-color:rgba(255, 134, 161, 0.65);
+  }
+  
+  .footer .row{
+  width:100%;
+  padding:0.6% 0%;
+  color:rgba(187, 37, 145, 1);
+  font-size:0.8em;
+  }
+  
+  .footer .row a{
+  text-decoration:none;
+  transition:0.5s;
+  }
+  
+  .footer .row a:hover{
+  color:#fff;
+  }
+  
+  .footer .row ul{
+  width:100%;
+  }
+  
+  .footer .row ul li{
+  display:inline-block;
+  margin:0px 30px;
+  }
+  
+
+
+
+
+  @media only screen and (min-width: 540px) {
+      .cupcakes{
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          padding-bottom: 100px;
+  
+      }
+      .cupcakes img{
+        
+        height: 80%;
+        
+        
+      }
+
+     .cupcake {
+        width: 100%;
+       
+      }
+     
+      
+    }
+
+     
+      @media only screen and (min-width: 900px) {
+    
+      
+       header{
+        height: 200px;
+       }
+       .header img{
+        width:150px;
+        padding: 20px;
+       }
+
+       .menu-context{
+        font-size: xx-large;
+       }
+        .menu{
+          display: none;
+         
+        }
+
+    
+  
+        .menu-context {
+          display: flex;
+          justify-content: end;
+          padding-right: 10px;
+        }
+
+   
+
+        header nav{
+          display: block;
+          text-align: end;
+          background-color: rgba(255, 134, 161, 0.65);
+          padding: 20px;
+          margin: 30px 30px
+        }
+
+        header nav a{
+          text-decoration: none;
+          color: black;
+          margin: 10px;
+          background-color: pink;
+          padding: 10px;
+          color:rgba(75, 2, 94, 0.84);
+          transition:0.5s;
+        }
+
+        header nav a:hover{
+          color:white
+        }
+
+        main{
+          display: flex;
+          flex-direction: row-reverse;
+          justify-content: space-between;
+          margin-top: 200px;
+          margin-bottom: 150px;
+
+        }
+
+        
+
+        .main-context{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          
+        }
+
+       
+       .main-context h1, p{
+
+          text-align: end;
+          padding-left: 10px;
+          padding: 20px;
+       }
+
+       .cupcake {
+        height: 500px;
+       
+      }
+        .cupcakes{
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          padding-bottom: 100px;
+  
+      }
+      .cupcakes img{
+      
+        width: 100%;
+
+        
+      }
+
+   
+      
+
+}
