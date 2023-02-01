@@ -7,20 +7,20 @@ Two wireframes are provided down below (scroll to the bottom).
 
 ## Task
 
- - **Fork and clone** this repo.
-   - To fork, hit the 'fork' button in the top right corner of this page on Github. 
+ + **Fork and clone** this repo.
+   + To fork, hit the 'fork' button in the top right corner of this page on Github. 
   Now you should be on your own Github repository - you'll know this because your name should now be in the repo name at the top of the Github page. 
-   - To clone, click the green button that says 'Code' on that page.
+   + To clone, click the green button that says 'Code' on that page.
   Now the code is on your own machine (this happened when you cloned), AND it's linked to your own Cakes repository on Github (which was created when you forked).
 
- - Before you start coding, **create a new branch** following this format `your-class-name/your-name`, for example: `london-class-7/adam-smith`. Your branch name should be all lowercase, with no spaces. 
+ + Before you start coding, **create a new branch** following this format `your-class-name/your-name`, for example: `london-class-7/adam-smith`. Your branch name should be all lowercase, with no spaces. 
 
 When you're ready to start coding:
 
 ### Start with mobile
 - Write the HTML following the mobile design
 - Then write your CSS for everything to look great on mobile
-- Remember to link your CSS file to your HTML file inside the `<head>` in `index.html`
++ Remember to link your CSS file to your HTML file inside the `<head>` in `index.html`
 - You don't need to use any media queries yet, because we're following a [Mobile First](https://www.invisionapp.com/inside-design/mobile-first-design/) approach!
 
 ### Then adapt the page for larger screens

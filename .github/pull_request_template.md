@@ -16,14 +16,14 @@ Please complete the details below this message
 
 # Your Details
 
-- Your Name:
-- Your City:
-- Your Slack Name:
+- Your Name: Anna Hrychaniuk
+- Your City: London
+- Your Slack Name: Anna Hrychaniuk
 
 # Homework Details
 
-- Module:
-- Week:
+- Module: HTML/CSS
+- Week: 3
 
 # Notes
 
