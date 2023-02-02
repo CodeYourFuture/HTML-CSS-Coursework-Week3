@@ -1,1 +1,130 @@
-/*  Add your styling here */
+:root {
+  --primary-color: #000;
+  --secondary-color: #fff;
+  --tertiary-color: #e9c46a;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: var(--secondary-color);
+  /* line-height: 14px; */
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas:
+    "h h h h h h h h h h h h"
+    "m1 m1 m1 m1 m1 m1 m1 m1 m1 m1 m1 m1"
+    "m2 m2 m2 m2 m2 m2 m2 m2 m2 m2 m2 m2"
+    "m3 m3 m3 m3 m3 m3 m3 m3 m3 m3 m3 m3"
+    "f f f f f f f f f f f f";
+}
+
+/* Utilities */
+.mt-1 {
+  margin-top: 0.5rem;
+}
+.pxy-1 {
+  padding: 1rem 1rem;
+}
+.pxy-2 {
+  padding: 1.5rem 1.5rem;
+}
+.py-1 {
+  padding: 1rem 0rem;
+}
+.px-1 {
+  padding: 0rem 1rem;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  
+}
+a:hover{
+  background-color:var(--tertiary-color) ;
+}
+ul {
+  list-style: none;
+}
+.tertiary-color{color:var(--tertiary-color)}
+.text-center{text-align: center;}
+
+/* header */
+header {
+  grid-area: h;
+  background-color: var(--primary-color);
+}
+header .navbar {
+  background: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+header .navbar img {
+  width: 100px;
+}
+header .navbar nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+/* Main */
+/* Main - Showcase Section */
+main .showcase-sec{
+  grid-area: m1;
+}
+main .showcase-sec {
+  background: url(./img/Untitled.png) no-repeat center center/cover;
+  height: 400px;
+  text-align: center;
+}
+
+/* Main - Describe Section */
+main .description-sec {
+ grid-area: m2;
+ color: var(--primary-color);
+}
+
+/* Main - Order Section */
+main .order-sec {
+  background-color: #0d1c22;
+  grid-area: m3;
+}
+main .order-sec img {
+  width: 160px;
+}
+main .order-sec .row {
+  display: grid;
+  grid-template-columns: repeat(2 , 1fr); 
+  grid-gap: 2rem 0.5rem;
+}
+main .order-sec .row .col {
+  text-align: center; 
+}
+main .order-sec .row .col h4 {
+  margin-bottom: 0.5rem; 
+}
+
+/* Footer */
+footer {
+  background-color: var(--primary-color);
+  grid-area: f;
+  text-align: center;
+}
+
+
+
+
+
