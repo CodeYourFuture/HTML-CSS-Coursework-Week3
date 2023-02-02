@@ -1,1 +1,8 @@
 /*  Add your styling here */
+p {
+    font-family: 'Itim', cursive;
+}
+.header_text {
+    font-family: 'Lobster', cursive;
+
+}
