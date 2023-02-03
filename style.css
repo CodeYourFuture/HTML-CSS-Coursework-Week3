@@ -3,6 +3,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(10, auto);
+    grid-gap: 20px;
     grid-template-areas: 
     "hi h"
     "hi ht"
@@ -12,53 +13,75 @@
     "b b"
     "ione itwo"
     "ithree ifour"
-    "t ."
+    "t blank"
     "f f";
     background-color: rgb(248, 243, 248);
+    padding: 20px;
 }
 .header-image{
     grid-area: hi;
+    background-color: rgb(248, 235, 237);
 }
 .header{
     grid-area: h;
-    background-color: aqua;
+    background-color: rgb(248, 235, 237);
 }
 .header-text{
 grid-area: ht;
 text-align: center;
+background-color: rgb(248, 235, 237);
 }
 .wellcome{
 grid-area: w;
-background-color: bisque;
 }
 .text-wellcome{
     grid-area: tw;
-    background-color: aquamarine;
+
 }
 .big-image{
-    grid-area: b; 
+    grid-area: b;
+ 
 }
 .image1{
     grid-area: ione;
-    
-
+    background-image: url(https://www.recipetineats.com/wp-content/uploads/2021/08/Red-Velvet-Cupcakes_58.jpg);
+    height: 300px;
+    width: 600;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .image2{
     grid-area: itwo;
-    
+    background-image: url(https://static.standard.co.uk/homesandproperty/s3fs-public/thumbnails/image/2016/09/15/12/whitechocolatecupcake.jpg?width=1200&auto=webp&quality=75);
+    height: 300px;
+    width: 600;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .image3{
     grid-area: ithree;
-    
+    background-image: url(https://dinnerthendessert.com/wp-content/uploads/2016/02/Rainbow-Cupcakes-with-Vanilla-Cloud-Frosting-3-500x375.jpg);
+    height: 300px;
+    width: 600;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .image4{
     grid-area: ifour;
-    
+    background-image: url(https://celebratingsweets.com/wp-content/uploads/2015/02/Chocolate-Strawberry-Cupcakes-1-2.jpg);
+    height: 300px;
+    width: 600;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
+
+
 .text{
-    grid-area: t;
-    
-    
+    grid-area: t; 
+}
+.blank{
+    grid-area: blank;
+    background-color: rgb(248, 235, 237);
 }
 .footer{
     grid-area: f;
@@ -66,25 +89,42 @@ background-color: bisque;
 }
 
 .header-image img{
-    height: 300px;
-    width: 270px;
+    height: 200px;
+    width: 200px;
 }
-.big-image img{
-    height: 400px;
-    display: block;
-    margin:40px auto 0px auto;
-    width: 50%; 
+
+.big-image{
+    background-image: url(https://www.wilton.com/dw/image/v2/AAWA_PRD/on/demandware.static/-/Sites-wilton-project-master/default/dw417acfee/images/project/WLPROJ-9603/flower-cupcakes-final-3.jpg?sw=800&sh=800);
+background-size: cover;
+height: 500px;
+margin-bottom: 70px;
 }
  .img-style{
     height: 200px;
     display: block;
-    margin: 30px auto;
-    width: 50%;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
 }
+
 .header-text h3{
 color: rgb(195, 145, 243);
 font-size:60px ;
 font-weight: 200;
+}
+
+h1{
+    color: rgb(233, 125, 204);
+    font-size: 40px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.text-wellcome p{
+    color: rgb(233, 125, 204);
+    font-size: 25px;
+    line-height: 40px;
 }
 /**  link styling  */
 
@@ -96,5 +136,18 @@ color: rgb(195, 145, 243);
 }
 .text a:hover{
     font-size: 50px;
-    color: rgb(183, 117, 245);
+    color: rgb(233, 125, 204);
+}
+.text{
+    background-color: rgb(248, 235, 237);
+}
+/**  footer styling  */
+.footer svg{
+    padding-right: 10px;
+    padding-left: 10px;   
+}
+.footer{
+    background-color: rgb(248, 235, 237); 
+    display: flex;
+    justify-content: center;
 }
