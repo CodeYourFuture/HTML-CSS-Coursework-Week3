@@ -9,14 +9,15 @@
   margin: 0;
   box-sizing: border-box;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   color: var(--secondary-color);
   line-height: 20px;
   background: var(--primary-color);
-  
 }
 body .container {
   display: grid;
@@ -55,14 +56,21 @@ a {
   padding: 0.5rem 1rem;
   border-radius: 5px;
 }
-a:hover{
-  background-color:var(--tertiary-color) ;
+a:hover {
+  background-color: var(--tertiary-color);
+}
+a.btn:hover {
+  background-color: transparent !important;
 }
 ul {
   list-style: none;
 }
-.tertiary-color{color:var(--tertiary-color)}
-.text-center{text-align: center;}
+.tertiary-color {
+  color: var(--tertiary-color);
+}
+.text-center {
+  text-align: center;
+}
 
 /* header */
 header {
@@ -88,28 +96,32 @@ header nav .nav_toggle svg {
   fill: var(--secondary-color);
 }
 header nav .nav_toggle .close {
- display: none;
+  display: none;
 }
 header nav .nav_toggle .menu {
- margin-top: 2rem;
+  margin-top: 2rem;
 }
 header nav .nav_checkbox {
- display: none;
+  display: none;
 }
 header nav .nav_menu {
- display: flex;
- flex-direction: column;
- gap: 2rem;
- align-items: center;
- /* margin: 1rem; */
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  /* margin: 1rem; */
 }
 header nav .nav_menu li {
   display: none;
+}
+header nav .nav_menu li:last-child {
+  margin-bottom: 1rem;
 }
 header nav .nav_menu li:first-child {
   margin-right: auto;
   display: block;
 }
+
 #nav_checkbox:checked ~ ul.nav_menu li {
   display: block;
 }
@@ -122,7 +134,7 @@ header nav .nav_menu li:first-child {
 
 /* Main */
 /* Main - Showcase Section */
-main .showcase-sec{
+main .showcase-sec {
   grid-area: s;
 }
 main .showcase-sec {
@@ -133,22 +145,22 @@ main .showcase-sec {
 main .showcase-sec h1 {
   padding-top: 3rem;
 }
-main .showcase-sec a{
+main .showcase-sec a {
   display: none;
 }
 
 /* Main - Describe Section */
 main .description-sec {
- padding: 1.5rem 1rem;
- background-color: var(--secondary-color);
- grid-area: d;
- color: var(--primary-color);
+  padding: 1.5rem 1rem;
+  background-color: var(--secondary-color);
+  grid-area: d;
+  color: var(--primary-color);
 }
-main .description-sec h3{
- padding-bottom: 1.5rem;
+main .description-sec h3 {
+  padding-bottom: 1.5rem;
 }
-main .description-sec img{
- display: none;
+main .description-sec img {
+  display: none;
 }
 
 /* Main - Order Section */
@@ -161,14 +173,14 @@ main .order-sec img {
 }
 main .order-sec .row {
   display: grid;
-  grid-template-columns: repeat(2 , 1fr); 
+  grid-template-columns: repeat(2, 1fr);
   grid-gap: 2rem 0.5rem;
 }
 main .order-sec .row .col {
-  text-align: center; 
+  text-align: center;
 }
 main .order-sec .row .col h4 {
-  margin-bottom: 0.5rem; 
+  margin-bottom: 0.5rem;
 }
 
 /* Footer */
@@ -178,46 +190,51 @@ footer {
   text-align: center;
 }
 
-
-
-
-@media (min-width: 540px){
+@media (min-width: 540px) {
   /* Header Section */
-  .nav .nav_toggle{
+  .nav .nav_toggle {
     display: none;
   }
-  .nav .nav_menu{
+  .nav .nav_menu {
     flex-direction: row;
   }
-  .nav .nav_menu li{
+  .nav .nav_menu img {
+    width: 5rem;
+  }
+
+  .nav .nav_menu li {
     display: block;
+  }
+  header nav .nav_menu li:last-child {
+    margin-bottom: 0rem;
+    margin-right: 1rem;
   }
 
   /* Main - Showcase Section */
- main .showcase-sec {
-  background: none;
-  height: 500px;
-  text-align: center;
- }
- main .showcase-sec::before {
-  content: "";
-  background: url(./img/thumbnail.jfif) no-repeat center center/cover;
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0.5;
-  z-index: -1;
- }
+  main .showcase-sec {
+    background: none;
+    height: 400px;
+    text-align: center;
+  }
+  main .showcase-sec::before {
+    content: "";
+    background: url(./img/thumbnail.jfif) no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.5;
+    z-index: -1;
+  }
 
   /* Main - Order Section */
- main .order-sec img {
-  width: 200px;
- }
- main .order-sec {
-  background-color: var(--primary-color)
-}
+  main .order-sec img {
+    width: 200px;
+  }
+  main .order-sec {
+    background-color: var(--primary-color);
+  }
 
   /* Footer Section */
   footer {
@@ -229,64 +246,56 @@ footer {
     justify-content: space-evenly;
     align-items: center;
   }
-
 }
 
-
-
-@media (min-width: 900px){
+@media (min-width: 900px) {
   /* Main - Showcase Section */
-  main .showcase-sec  {
-  font-size: 35px;
-  height: 87vh;
- }
+  main .showcase-sec {
+    font-size: 35px;
+    height: 74vh;
+  }
+
   main .showcase-sec h1 {
-  font-size: 35px;
-  margin-top: 6rem;
- }
+    font-size: 35px;
+    margin-top: 6rem;
+  }
   main .showcase-sec p {
-  font-size: 20px;
-  margin-top: 2rem;
- }
- main .showcase-sec a{
-  display: inline-block;
-  font-size: 15px;
-  margin-top: 1rem;
+    font-size: 20px;
+    margin-top: 2rem;
+  }
+  main .showcase-sec a {
+    display: inline-block;
+    font-size: 15px;
+    margin-top: 1rem;
+  }
+
+  /* Main - Describe Section */
+  main .description-sec img {
+    display: block;
+    width: 500px;
+  }
+  main .description-sec .row {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1rem;
+  }
+  main .description-sec .col {
+    flex: 1;
+    text-align: center;
+  }
+  main .description-sec .col img {
+    margin-left: 3rem;
+  }
+
+  /* Main - Order Section */
+
+  main .order-sec img {
+    width: 200px;
+  }
+  main .order-sec .row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem 0.5rem;
+  }
 }
-
-/* Main - Describe Section */
-main .description-sec img{
-  display: block;
-  width: 500px;
- }
-main .description-sec .row {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  gap: 1rem;
- }
- main .description-sec .col {
-  flex: 1;
-  text-align: center;
- 
- }
- main .description-sec .col img {
-  margin-left: 3rem;
- }
- 
- /* Main - Order Section */
-
-main .order-sec img {
-  width: 200px;
-}
-main .order-sec .row {
-  display: grid;
-  grid-template-columns: repeat(3 , 1fr); 
-  grid-gap: 2rem 0.5rem;
-}
-
-
-
-
-}
-

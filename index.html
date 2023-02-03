@@ -8,6 +8,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -20,150 +21,162 @@
 
   <body>
     <div class="contaner">
-    <!-- Header Section -->
-    <header class="my-1">
-       <nav class="nav">
-    <input type="checkbox" id="nav_checkbox" class="nav_checkbox">
-    <label for="nav_checkbox" class="nav_toggle">
-      <svg class="menu" viewBox="0 0 448 512" width="100" title="bars" >
-        <path d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z" />
-      </svg>
-      <svg class="close" viewBox="0 0 384 512" width="100" title="times">
-        <path d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z" />
-      </svg>
-    </label>
-    <ul class="nav_menu">
-      <li><a href="#"><img src="./img/logo.jfif" alt="logo_image"/></a></li>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#order">Order</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>     
-    </header>
+      <!-- Header Section -->
+      <header class="my-2">
+        <nav class="nav">
+          <input type="checkbox" id="nav_checkbox" class="nav_checkbox" />
+          <label for="nav_checkbox" class="nav_toggle">
+            <svg class="menu" viewBox="0 0 448 512" width="100" title="bars">
+              <path
+                d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"
+              />
+            </svg>
+            <svg class="close" viewBox="0 0 384 512" width="100" title="times">
+              <path
+                d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"
+              />
+            </svg>
+          </label>
+          <ul class="nav_menu">
+            <li>
+              <a class="btn" href="#"
+                ><img src="./img/logo.jfif" alt="logo_image"
+              /></a>
+            </li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#order">Order</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
 
-    <!-- Main section -->
-    <main>
-      <!-- Showcase -->
-      <section class="showcase-sec" id="home">
-        <h1>
-          Welcome to <span class="tertiary-color">CAKE LAND</span>
-        </h1>
-        <p class="py-1">
-          <strong
-            >The best <span class="tertiary-color">cakes</span> delivered to
-            your door</strong
-          >
-        </p>
-        <a href="#about" class="Showcase_btn">Read Before Order</a>
-      </section>
+      <!-- Main section -->
+      <main>
+        <!-- Showcase -->
+        <section class="showcase-sec" id="home">
+          <h1>Welcome to <span class="tertiary-color">CAKE LAND</span></h1>
+          <p class="py-1">
+            <strong
+              >The best <span class="tertiary-color">cakes</span> delivered to
+              your door</strong
+            >
+          </p>
+          <a href="#about" class="Showcase_btn">Read Before Order</a>
+        </section>
 
-      <!-- Describe Page Section-->
-      <section id="about" class="description-sec pxy-1">
-        <div class="row">
-          
-          <div class="col">
-                <h3 class="text-center">Beautiful Cakes for Every Occasion</h3>
-                <p>
-                  Choose one of our ready made designs or create your own bespoke
-                  masterpiece! <br /><br />
-                  Order a birthday, wedding or special occasion cake from our selection
-                  online or contact our shop on xxxxx-xxxxx to arrange a free
-                  consultation for a bespoke creation.
-                </p>
+        <!-- Describe Page Section-->
+        <section id="about" class="description-sec pxy-1">
+          <div class="row">
+            <div class="col" data-aos="fade-up" data-aos-delay="50">
+              <h3 class="text-center">
+                Beautiful <span class="tertiary-color">Cakes</span> for Every
+                Occasion
+              </h3>
+              <p>
+                Choose one of our ready made designs or create your own bespoke
+                masterpiece! <br /><br />
+                Order a birthday, wedding or special occasion cake from our
+                selection online or contact our shop on xxxxx-xxxxx to arrange a
+                free consultation for a bespoke creation.
+              </p>
             </div>
 
-          <div class="col">
-                <img src="./img/chef.jpg" alt="image of chef">
+            <div class="col" data-aos="zoom-out" data-aos-delay="400">
+              <img src="./img/chef.jpg" alt="image of chef" />
+            </div>
           </div>
-          
-      </div>
-        
-      </section>
+        </section>
 
-      <!-- Order Section -->
-      <section class="order-sec pxy-2" id="order">
-        <h2 class="text-center py-1">
-          <span class="tertiary-color">SEE ALL OUR CAKES</span>
-        </h2>
-        <div class="row">
-          <div class="col">
-            <img
-              class="py-1"
-              src="./img/wedding-cake1.jfif"
-              alt="wedding cake image1"
-            />
-            <h4>Wedding Cake</h4>
-            <p>From 100$</p>
+        <!-- Order Section -->
+        <section class="order-sec pxy-2" id="order">
+          <h2 class="text-center py-1">
+            <span class="tertiary-color">SEE ALL OUR CAKES</span>
+          </h2>
+          <div class="row">
+            <div class="col" data-aos="fade-up" data-aos-delay="400">
+              <img
+                class="py-1"
+                src="./img/wedding-cake1.jfif"
+                alt="wedding cake image1"
+              />
+              <h4>Wedding Cake</h4>
+              <p>From 100$</p>
+            </div>
+            <div class="col" data-aos="flip-right" data-aos-delay="400">
+              <img
+                class="py-1"
+                src="./img/wedding_cake2.jfif"
+                alt="wedding cake image2"
+              />
+              <h4>Wedding Cake</h4>
+              <p>From 100$</p>
+            </div>
+            <div class="col" data-aos="flip-right" data-aos-delay="400">
+              <img
+                class="py-1"
+                src="./img/birth-cake1.jfif"
+                alt="birth cake image1"
+              />
+              <h4>Birthday Cake</h4>
+              <p>From 50$</p>
+            </div>
+            <div class="col" data-aos="flip-right" data-aos-delay="400">
+              <img
+                class="py-1"
+                src="./img/birth_cake2.jfif"
+                alt="birth cake image2"
+              />
+              <h4>Birthday Cake</h4>
+              <p>From 50$</p>
+            </div>
+            <div class="col" data-aos="flip-right" data-aos-delay="400">
+              <img
+                class="py-1"
+                src="./img/birth-cake3.jfif"
+                alt="birth cake image3"
+              />
+              <h4>Birthday Cake</h4>
+              <p>From 50$</p>
+            </div>
+            <div class="col" data-aos="flip-right" data-aos-delay="400">
+              <img
+                class="py-1"
+                src="./img/birth-cake4.jfif"
+                alt="birth cake image4"
+              />
+              <h4>Birthday Cake</h4>
+              <p>From 50$</p>
+            </div>
           </div>
-          <div class="col">
-            <img
-              class="py-1"
-              src="./img/wedding_cake2.jfif"
-              alt="wedding cake image2"
-            />
-            <h4>Wedding Cake</h4>
-            <p>From 100$</p>
-          </div>
-          <div class="col">
-            <img
-              class="py-1"
-              src="./img/birth-cake1.jfif"
-              alt="birth cake image1"
-            />
-            <h4>Birthday Cake</h4>
-            <p>From 50$</p>
-          </div>
-          <div class="col">
-            <img
-              class="py-1"
-              src="./img/birth_cake2.jfif"
-              alt="birth cake image2"
-            />
-            <h4>Birthday Cake</h4>
-            <p>From 50$</p>
-          </div>
-          <div class="col">
-            <img
-              class="py-1"
-              src="./img/birth-cake3.jfif"
-              alt="birth cake image3"
-            />
-            <h4>Birthday Cake</h4>
-            <p>From 50$</p>
-          </div>
-          <div class="col">
-            <img
-              class="py-1"
-              src="./img/birth-cake4.jfif"
-              alt="birth cake image4"
-            />
-            <h4>Birthday Cake</h4>
-            <p>From 50$</p>
-          </div>
-        </div>
-      </section>
-    </main>
+        </section>
+      </main>
 
-    <!-- Footer section -->
-    <footer>
+      <!-- Footer section -->
+      <footer>
         <!-- Contact Section -->
         <div id="contact" class="contact">
+          <div class="box-content py-1">
+            <i class="fa fa-envelope fa-4x"></i>
+            <h3 class="mt-1">Email Address</h3>
+            <p class="mt-1">cake_Land@gmail.com</p>
+          </div>
 
-          <div class= "box-content py-1">
-              <i class="fa fa-envelope fa-4x"></i>
-              <h3 class="mt-1">Email Address</h3>
-              <p class="mt-1">cake_Land@gmail.com</p>
-            </div>
-            
-            <div class="box-content py-1">
-              <i class="fa fa-phone fa-4x"></i>
-              <h3 class="mt-1">Phone Number</h3>
-              <p class="mt-1">xxxxx-xxxxx</p>
-            </div>
+          <div class="box-content py-1">
+            <i class="fa fa-phone fa-4x"></i>
+            <h3 class="mt-1">Phone Number</h3>
+            <p class="mt-1">xxxxx-xxxxx</p>
+          </div>
         </div>
-          
-        <p class="py-1"> <span class="tertiary-color">© 2023, The Cake Land</span></p>
-    </footer>
-  </div>
+
+        <p class="py-1">
+          <span class="tertiary-color">© 2023, The Cake Land</span>
+        </p>
+      </footer>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
