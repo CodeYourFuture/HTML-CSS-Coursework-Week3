@@ -22,7 +22,7 @@ h4 {
 .header,
 .content,
 .footer {
-    padding: 0 1.5rem;
+    padding: 0;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -53,9 +53,31 @@ h4 {
 
 .hero {
     background-image: url("/home/coder/Desktop/CYF/HTML&CSS/HTML-CSS-Coursework-Week3/img/berry_cake_white.jpg");
-    padding: 4rem 2rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 8rem 2rem;
     color: #fff;
 }
 
+/***About***/
+
+.about_section {
+    padding: 1rem;
+}
+
+.about_section h1 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.about_info {
+    font-size: 1.25rem;
+    text-align: justify;
+}
+
+
 /***Gallery***/
+
+.cake_gallery {}
+
 /***Footer***/
