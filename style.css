@@ -1,1 +1,100 @@
-/*  Add your styling here */
+
+.main{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(10, auto);
+    grid-template-areas: 
+    "hi h"
+    "hi ht"
+    "w ."
+    "tw tw"
+    "b b"
+    "b b"
+    "ione itwo"
+    "ithree ifour"
+    "t ."
+    "f f";
+    background-color: rgb(248, 243, 248);
+}
+.header-image{
+    grid-area: hi;
+}
+.header{
+    grid-area: h;
+    background-color: aqua;
+}
+.header-text{
+grid-area: ht;
+text-align: center;
+}
+.wellcome{
+grid-area: w;
+background-color: bisque;
+}
+.text-wellcome{
+    grid-area: tw;
+    background-color: aquamarine;
+}
+.big-image{
+    grid-area: b; 
+}
+.image1{
+    grid-area: ione;
+    
+
+}
+.image2{
+    grid-area: itwo;
+    
+}
+.image3{
+    grid-area: ithree;
+    
+}
+.image4{
+    grid-area: ifour;
+    
+}
+.text{
+    grid-area: t;
+    
+    
+}
+.footer{
+    grid-area: f;
+    
+}
+
+.header-image img{
+    height: 300px;
+    width: 270px;
+}
+.big-image img{
+    height: 400px;
+    display: block;
+    margin:40px auto 0px auto;
+    width: 50%; 
+}
+ .img-style{
+    height: 200px;
+    display: block;
+    margin: 30px auto;
+    width: 50%;
+}
+.header-text h3{
+color: rgb(195, 145, 243);
+font-size:60px ;
+font-weight: 200;
+}
+/**  link styling  */
+
+.text a{
+text-decoration: none;
+padding-left: 40px;
+font-size: 47px;
+color: rgb(195, 145, 243);
+}
+.text a:hover{
+    font-size: 50px;
+    color: rgb(183, 117, 245);
+}
