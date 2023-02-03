@@ -1,1 +1,61 @@
 /*  Add your styling here */
+
+body {
+    margin: 0;
+}
+
+body,
+button {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #666;
+    font: size 1rem;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.header,
+.content,
+.footer {
+    padding: 0 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/***Header***/
+
+.header {
+    display: flex;
+    align-items: end;
+    /* justify-content: space-between; */
+    height: 5rem;
+    padding-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+/***Navigation***/
+/***Text Styles***/
+/***Buttons***/
+
+/***Content***/
+
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+/***Hero***/
+
+.hero {
+    background-image: url("/home/coder/Desktop/CYF/HTML&CSS/HTML-CSS-Coursework-Week3/img/berry_cake_white.jpg");
+    padding: 4rem 2rem;
+    color: #fff;
+}
+
+/***Gallery***/
+/***Footer***/
