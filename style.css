@@ -1,1 +1,371 @@
-/*  Add your styling here */
+.homepage-main {
+  border: 1px solid black;
+
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto auto auto auto auto;
+  /*  grid-template-areas must follow the exact number of columns and rows defined above (4 columns and 4 rows)  */
+  grid-template-areas:
+    "hero     hero    hero     hero" /* one for each column */
+    /*comment out / remove sepnav code when complet8*/
+    /*"sepNav sepNav sepNav sepNav"*/
+    "feature  feature feature  feature"
+    "product  product product  product"
+    "aside    aside aside    aside "
+    "footer footer footer footer "; /* the dot is used to skip a column */
+  /* the above grid is mobile first */
+}
+
+.homepage-hero {
+  background-color: coral;
+  grid-area: hero;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  /*  grid-template-areas must follow the exact number of columns and rows defined above (4 columns and 4 rows)  */
+  grid-template-areas:
+    "img img . nav" /* one for each column */
+    "img img . nav"
+    "img img  quote quote"
+    "img img quote quote";
+}
+
+.img {
+  background-color: yellow;
+  grid-area: img;
+  margin: 0px;
+  justify-content: center;
+}
+
+.img img {
+  border-radius: 50%;
+  width: 7rem;
+  padding: 2rem;
+}
+
+.nav {
+  background-color: yellow;
+  grid-area: nav;
+  margin: 4px;
+}
+
+.top-nav {
+  margin: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #00baf0;
+  background: linear-gradient(to left, #f46b45, #eea849);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #fff;
+  height: 50px;
+  padding: 1em;
+  margin: 4px;
+}
+
+.menu {
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  margin-top: 0rem;
+  left: 0;
+  width: 70%;
+  justify-content: center;
+  align-items: center;
+  padding: 0 0px;
+}
+.menu > li {
+  margin: 0 1rem;
+  overflow: hidden;
+}
+
+.menu-button-container {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.menu-button,
+.menu-button:before,
+.menu-button:after {
+  display: block;
+  background-color: #fff;
+  position: absolute;
+  height: 5px;
+  width: 40px;
+  transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  border-radius: 3px;
+}
+
+.menu-button:before {
+  content: "";
+  margin-top: -10px;
+}
+
+.menu-button:after {
+  content: "";
+  margin-top: 10px;
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button:before {
+  margin-top: 0px;
+  transform: rotate(405deg);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button {
+  background: rgba(255, 255, 255, 0);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button:after {
+  margin-top: 0px;
+  transform: rotate(-405deg);
+}
+
+#menu-toggle ~ .menu li {
+  height: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+#menu-toggle:checked ~ .menu li {
+  border: 1px solid #333;
+  height: 2.5em;
+  padding: 0.5em;
+  transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+.menu > li {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0.5em 0;
+  width: 100%;
+  color: white;
+  background-color: #222;
+}
+.menu > li:not(:last-child) {
+  border-bottom: 1px solid #444;
+}
+
+/* nav hero section end */
+.quote {
+  background-color: yellow;
+  grid-area: quote;
+  margin: 4px;
+  text-align: right;
+}
+
+.quote h2 {
+  padding-right: 0.5rem;
+  text-align: right;
+}
+/* end of homepage-hero scope */
+
+.homepage-sperateNav {
+  background-color: grey;
+  grid-area: sepNav;
+  display: none;
+  z-index: -1;
+}
+
+.homepage-feature {
+  background-color: darkBlue;
+  grid-area: feature;
+  padding: 0.5rem 1.5rem;
+  color: white;
+}
+
+.homepage-products {
+  background-color: darkSeaGreen;
+  grid-area: product;
+  padding: 1rem;
+}
+
+.homepage-products img {
+  border-radius: 10%;
+  width: 100%;
+  padding: 0rem;
+}
+
+.homepage-aside {
+  background-color: darkTurquoise;
+  grid-area: aside;
+  display: grid;
+  grid-gap: 0.25rem;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  /*  grid-template-areas must follow the exact number of columns and rows defined above (4 columns and 4 rows)  */
+  grid-template-areas:
+    "imgHa1 imgHa2" /* one for each column */
+    "imgHa3 imgHa4";
+}
+
+.homepage-aside div img {
+  width: 100%;
+  border-radius: 5%;
+}
+
+.homepage-aside div {
+  padding: 0.5em;
+}
+.imgHa1 {
+  grid-area: imgHa1;
+}
+
+.imgHa2 {
+  grid-area: imgHa2;
+}
+
+.imgHa3 {
+  grid-area: imgHa3;
+}
+
+.imgHa4 {
+  grid-area: imgHa4;
+}
+
+.homepage-footer {
+  background-color: pink;
+  grid-area: footer;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  /*  grid-template-areas must follow the exact number of columns and rows defined above (4 columns and 4 rows)  */
+  grid-template-areas:
+    "footNav  . . " /* one for each column */
+    "footNav . . "
+    "footNav  .  ."
+    "copyRight copyRight copyRight";
+}
+.footNavbar {
+  grid-area: footNav;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  list-style-type: none;
+  margin: 0;
+  padding: 0.5rem;
+}
+.footNavbar li {
+  background-color: red;
+  padding: 0.15em 1.5em;
+  margin: 6px;
+}
+
+.copyRight {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: grey;
+  grid-area: copyRight;
+  margin: 0.25rem 1.5rem;
+  text-align: center;
+}
+
+/* 
+  Now let's change it for larger screens 
+  (using quite small breakpoints here to allow for Codepen's small viewport)
+*/
+
+/* TABLET: */
+@media screen and (min-width: 540px) {
+  /*  
+    We only define rules which are DIFFERENT from the mobile version defined above. 
+  */
+
+  .homepage-main {
+    /*  we need more columns for a more complex layout  */
+    grid-template-columns: repeat(6, 1fr);
+    /*  we need less rows now  */
+    grid-template-rows: auto auto auto auto auto;
+    /*  our template now has 6 columns and 3 rows  */
+    grid-template-areas:
+      "hero    hero    hero    hero  hero     hero"
+      "sepNav sepNav sepNav sepNav sepNav sepNav"
+      "feature feature feature feature feature feature"
+      "product product product aside aside    aside"
+      "footer footer footer footer footer footer";
+  }
+  .nav {
+    background-color: yellow;
+    grid-area: nav;
+    margin: 4px;
+    display: none;
+  }
+  .homepage-sperateNav {
+    background-color: grey;
+    grid-area: sepNav;
+    display: block;
+    z-index: 1;
+  }
+  .sepNavbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    list-style-type: none;
+    margin: 0;
+    padding: 1rem;
+  }
+  .sepNavbar li {
+    background-color: red;
+    padding: 0.15em 1.5em;
+    margin-right: 20px;
+  }
+
+  .homepage-footer {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    /*  grid-template-areas must follow the exact number of columns and rows defined above (4 columns and 4 rows)  */
+    grid-template-areas:
+      ".  . . . " /* one for each column */
+      "footNav footNav footNav footNav"
+      ". copyRight copyRight .";
+  }
+
+  .footNavbar {
+    flex-direction: row;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0.5rem;
+  }
+  /* 
+  We don't need to re-define the grid-area for each block because these haven't changed. The hero is still the hero, the feature is still the feature etc. 
+*/
+} /* end of tablet media query  */
+
+/* DESKTOP */
+@media screen and (min-width: 900px) {
+  /*  
+    We only define rules which are DIFFERENT from the mobile OR tablet version defined above. 
+  */
+
+  .homepage-main {
+    /*  This time we keep the same number of columns and rows as for tablet, so we don't need to re-define those  */
+    /*   All we're doing here is skipping the 1st and last columns so the content isn't too wide.   */
+    grid-template-areas:
+      " hero hero    hero    hero  hero     hero"
+      "sepNav sepNav sepNav sepNav sepNav sepNav "
+      "product  product product feature feature   feature"
+      "aside  aside aside aside    aside    aside"
+      "footer footer footer footer footer footer";
+  }
+
+  .homepage-aside {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    /*  grid-template-areas must follow the exact number of columns and rows defined above (4 columns and 4 rows)  */
+    grid-template-areas: "imgHa1 imgHa2 imgHa3 imgHa4 " /* one for each column */;
+  }
+}
