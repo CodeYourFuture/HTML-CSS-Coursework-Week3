@@ -38,7 +38,6 @@ nav {
     margin-top: 3rem;
 }
 .grid__img {
-    max-width: none;
     height: 450px;
 }
 
@@ -53,7 +52,6 @@ nav {
 }
 
 .grid__img {
-    max-width: none;
     height: 270px;
 }
 }
