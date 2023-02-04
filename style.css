@@ -71,6 +71,10 @@ body {
     
 }
 
+.grid__img:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
 .footer {
     display: flex;
     justify-content: center;
