@@ -2,14 +2,22 @@
 :root {
     --backgroundColor: #F4D6ED;
 }
-
+/* text styling */
 p {
     font-family: 'Itim', cursive;
 }
 
 .header_text {
     font-family: 'Lobster', cursive;
-    
+}
+
+footer p {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+#top {
+    margin: 1em 0.5em 3em 0.5em;
 }
 /* images sizing */
 #logo {
@@ -22,14 +30,24 @@ p {
 
 .chapter {
     width: 250px;
+    height: 250px;
 }
 header,footer {
     background-color: var(--backgroundColor);
-}
+    }
+
+/* grid layouts */
 
 .articles {
-    /* display: grid;
-    grid-column: repeat (2, 1fr);
-    grid-row: repeat (2, 1fr); */
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+    margin-bottom: 3em;
+}
+
+.img_footer {
+    display: grid;
+    gap: 5px;
+    padding: 10px 5px 5px 10px;
 }
