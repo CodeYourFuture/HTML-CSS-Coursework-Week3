@@ -1,0 +1,57 @@
+.menu__burger {
+    display: none;
+}
+
+body {
+    max-width: none;
+}
+
+section {
+   justify-content: flex-end;
+}
+
+.menu {
+    justify-content: flex-end;
+    max-width: none;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 75px;
+    margin: 1.5rem;
+    background: #eae8e8;
+}
+
+.navbar {
+    display: flex;
+    column-gap: 2rem;
+    padding-right: 2rem;
+
+}
+
+.main {
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 1.5rem;
+    margin-top: 3rem;
+}
+.grid__img {
+    height: 450px;
+}
+
+.grid {
+    margin: 3rem 1.5rem 0 1.5rem;
+}
+@media (min-width: 1100px) {
+
+.grid {
+    display: flex;
+    justify-content: center;
+}
+
+.grid__img {
+    height: 270px;
+}
+}

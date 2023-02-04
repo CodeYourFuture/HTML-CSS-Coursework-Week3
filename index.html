@@ -1,16 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Responsive Cake webpage</title>
-    <!-- Add a link to your css file here -->
-</head>
-
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/adaptive.css" media="(min-width: 900px)">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  </head>
 <body>
-    <!-- Add your markup here -->
+    <section>
+        <div class="menu">
+                <img class="menu__burger" src="/files/menu.svg" alt="menu">
+            <h3>The best cakes in town delivered to your door</h3>
+        </div>
+    </section>
+    <nav>
+        <div class="navbar">
+            <button class="btn">HOME</button>
+            <button class="btn"><a href="#cakes">CAKES</a></button>
+            <button class="btn">ORDER</button>
+            <button class="btn">RECIPES</button>
+            <button class="btn"><a href="#contact">ABOUT</a></button>
+        </divc>
+    </nav>
+    <main>
+        <div class="main">
+            <div class="main__header">
+                <h2>Welcome</h2>
+                <p>Welcome to Sweet Delights, where cake dreams come true! Our website is a one-stop-shop for all things cake-related perfect for both beginner and experienced bakers. And for those who want the convenience of having a delicious cake delivered right to their doorstep, our online ordering and delivery service makes it easy to treat yourself or send a sweet surprise to a loved one. So, let's get baking!</>
+            </div>
+            <img class="img-cake" src="/files/cake.jpg" alt="">
+        </div>
+        <div class="grid" id="cakes" data-aos="zoom-in">
+            <img class="grid__img" src="/files/cake1.jpg" alt="cake-example">
+            <img class="grid__img" src="/files/cake3.jpg" alt="cake-example">
+            <img class="grid__img" src="/files/cake2.jpg" alt="cake-example">         
+            <img class="grid__img" src="/files/cake4.jpg" alt="cake-example">
+        </div>
+    </main>
+    <footer>
+        <div class="footer" id="contact">
+          <span>© 2023 by Maksim Lukianenko for CYF.</span>
+        </div>
+      </footer>
 </body>
-
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </html>
