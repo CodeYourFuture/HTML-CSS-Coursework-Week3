@@ -6,10 +6,25 @@ body {
 }
  section {
     display: flex;
-    
     height: 200px;
     justify-content: center;
-    background: url(/files/menu-background.jpg);
+    background: url(/files/menu-background.jpg) no-repeat;
+    background-size: cover;
+ }
+
+ .btn {
+    width: 90px;
+    height: 25px;
+    border: none;
+    background: #fff;
+}
+
+.btn:hover{
+    cursor: pointer;
+    background: #a9a9a9;
+}
+ nav {
+    display: none;
  }
 .menu {
     display: flex;
@@ -21,6 +36,16 @@ body {
     width: 100%;
 }
 
+.menu__burger {
+    width: 45px;
+}
+.main {
+    margin: 1rem;
+}
+
+.main__header {
+    padding: 1rem;
+}
 .img-cake {
     max-width: 540px;
     width: 100%;
