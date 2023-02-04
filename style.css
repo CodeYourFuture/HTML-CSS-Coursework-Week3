@@ -1,1 +1,7 @@
 /*  Add your styling here */
+* {
+    background-color: black;
+    padding: 0%;
+    margin: 0%;
+
+}
