@@ -1,1 +1,9 @@
-/*  Add your styling here */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 20vh auto auto;
+}
