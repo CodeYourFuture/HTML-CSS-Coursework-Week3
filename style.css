@@ -89,16 +89,23 @@ section{
 }
 
 .cupcakes img{
-  background-color: rgba(242, 170, 170, 1);
+  
   border-radius: 90px;
   height: 300px;
+  background-color: rgba(255, 134, 161, 0.65)
   
+}
+
+.cupcakes img:hover{
+  background-color: rgba(170,229,242,1);
 }
 
 .cupcakes h4{
   text-align: center;
   padding: 20px;
-  color:rgba(187, 37, 145, 1)
+  color:rgba(187, 37, 145, 1);
+ 
+  font-size: xx-large;
   
 }
 .cupcakes img{
@@ -216,7 +223,8 @@ footer{
         }
 
         header nav a:hover{
-          color:white
+          color:white;
+          background-color:rgba(170,229,242,1);
         }
 
         main{
