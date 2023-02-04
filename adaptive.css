@@ -23,6 +23,7 @@ nav {
     margin: 1.5rem;
     background: #eae8e8;
 }
+
 .navbar {
     display: flex;
     column-gap: 2rem;
@@ -40,7 +41,12 @@ nav {
     max-width: none;
     height: 450px;
 }
+
+.grid {
+    margin: 3rem 1.5rem 0 1.5rem;
+}
 @media (min-width: 1100px) {
+
 .grid {
     display: flex;
     justify-content: center;
