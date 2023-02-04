@@ -45,7 +45,7 @@ header,footer {
         width: 100%;
         height: 100%;
         position: fixed;
-        background-color: black;
+        background-color: blue;
         overflow: hidden;
     }
     nav a {
@@ -58,24 +58,44 @@ header,footer {
     }
 
     .navigation_menu a:hover{
-        background-color: blue;
+        background-color: green;
     }
     .nav {
         max-height: 0;
         transition: max-height .5s ease-out;
     }
     
-    .hamb{
+    .ham{
         cursor: pointer;
         float: right;
         padding: 40px 20px;
     }
-    .hamb-line{
-        background: white;
+    .ham-line{
+        background: black;
         display: block;
         height: 2px;
         position: relative;
         width: 24px;
+    }
+    .ham-line::before,
+    .ham-line::after{
+        background: black;
+        content: '';
+        display: block;
+        height: 100%;
+        position: absolute;
+        transition: all .2s ease-out;
+        width: 100%;
+    }
+
+    .ham-line::before{
+        top: 5px;
+    }
+    .ham-line::after{
+        top: -5px;
+    }
+    .side-menu{
+        display: none;
     }
     nav ul {
         list-style: none;
