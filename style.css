@@ -75,6 +75,14 @@ body {
     opacity: 0.8;
     cursor: pointer;
 }
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: initial;
+}
 .footer {
     display: flex;
     justify-content: center;
