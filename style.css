@@ -29,6 +29,7 @@ a {
   text-decoration: none;
 }
 
+/* This is the overall grid container */
 .super-container {
   display: grid;
   grid-template-columns: 1fr;
