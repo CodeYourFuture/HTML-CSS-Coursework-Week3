@@ -40,6 +40,16 @@ body {
 .navigator button a {
   display: none;
 }
+
+/*flex the header*/
+.header {
+  display: flex;
+  flex-direction: row;
+}
+.header .navigator {
+  margin-right: 1px;
+}
+
 /*logo*/
 .header > a img {
   width: auto;
