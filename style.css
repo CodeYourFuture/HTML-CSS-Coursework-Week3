@@ -10,6 +10,10 @@ p {
 
 .header_text {
     font-family: 'Lobster', cursive;
+    text-align: end;
+    padding: 0 10px 10px 0;
+    margin-top: 0;
+    font-weight: 16px;
 }
 
 footer p {
@@ -45,7 +49,7 @@ header,footer {
         width: 100%;
         height: 100%;
         position: fixed;
-        background-color: blue;
+        background-color: var(--backgroundColor);
         overflow: hidden;
     }
     nav a {
@@ -53,12 +57,14 @@ header,footer {
     }
     .navigation_menu a{
         display: block;
-        padding: 30px;
-        color: white;
+        padding: 10px;
+        color: blue;
+        font-size: large;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
 
     .navigation_menu a:hover{
-        background-color: green;
+        background-color: white;
     }
     .nav {
         max-height: 0;
@@ -68,14 +74,14 @@ header,footer {
     .ham{
         cursor: pointer;
         float: right;
-        padding: 40px 20px;
+        padding: 20px 20px;
     }
     .ham-line{
         background: black;
         display: block;
-        height: 2px;
+        height: 5px;
         position: relative;
-        width: 24px;
+        width: 48px;
     }
     .ham-line::before,
     .ham-line::after{
@@ -89,13 +95,28 @@ header,footer {
     }
 
     .ham-line::before{
-        top: 5px;
+        top: 10px;
     }
     .ham-line::after{
-        top: -5px;
+        top: -10px;
     }
     .side-menu{
         display: none;
+    }
+
+    .side-menu:checked ~ nav{
+        max-height: 100%;
+    }
+    .side-menu:checked ~ .ham .ham-line {
+        background: transparent;
+    }
+    .side-menu:checked ~ .ham .ham-line::before {
+        transform: rotate(-45deg);
+        top:0;
+    }
+    .side-menu:checked ~ .ham .ham-line::after {
+        transform: rotate(45deg);
+        top:0;
     }
     nav ul {
         list-style: none;
