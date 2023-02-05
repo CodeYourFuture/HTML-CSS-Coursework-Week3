@@ -1,27 +1,64 @@
 /*  Add your styling here */
-header{
-    background-color: bisque;
-}
+
 body{
+   
     display: grid;
     grid-template-columns:1fr 1fr ;
-    grid-template-rows: 15rem 20rem 15rem 25rem 10rem 5rem;
+    grid-template-rows: 20rem 10rem 20rem 30rem 10rem 5rem;
+    grid-template-areas: 
+    "header   header"
+    "hero     hero"
+    "cake     cake"
+    "cupcakes cupcakes"
+    "contact      ."
+    "footer   footer"
+    ;
 }
+.header{
+    grid-area: header;
+    display: flex;
+    align-items: center;
+    background-color: bisque;
+}
+.hero{
+    grid-area: hero;
+}
+.cake_after_hero{
+    grid-area: cake;
+    background-image: url(images/cake.jpg);
+    background-size: cover; 
+    
+}
+.contact_details{
+    grid-area: contact;
+}
+.footer{
+    grid-area: footer;
+}
+.cup_cakes{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 10rem 10rem;
+    gap: 1rem;
+    grid-area: cupcakes;
+}
+
 .cake_main_img{
-    width: 20rem;
+    width: 15rem;
     height: auto;
+    align-self: flex-start;
 }
 .hamburger{
     width: 5rem;
-    height: auto;
+    height: 5rem;
 }
 .cake_hero_img{
-    width: 20rem;
+    width: 30rem;
     height: auto;
 }
 .cup_cakes_img{
-    width: 100%;
-    height: auto;
+    width: auto;
+    height: 7rem;
 }
 .cup_cakes{
     display: grid;
