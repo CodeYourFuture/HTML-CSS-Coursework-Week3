@@ -2,3 +2,24 @@
 header{
     background-color: bisque;
 }
+body{
+    display: grid;
+    grid-template-columns:1fr 1fr ;
+    grid-template-rows: 15rem 20rem 15rem 20rem 10rem 5rem;
+}
+.cake_main_img{
+    width: 20rem;
+    height: auto;
+}
+.hamburger{
+    width: 5rem;
+    height: auto;
+}
+.cake_hero_img{
+    width: 20rem;
+    height: auto;
+}
+.cup_cakes_img{
+    width: 20rem;
+    height: auto;
+}
