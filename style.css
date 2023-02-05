@@ -4,10 +4,11 @@
 .grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 15rem 70rem 50rem 30rem 30rem 50rem;
+    grid-template-rows: 15rem 17rem 50rem 30rem 30rem 50rem;
     grid-template-areas: 
     "header   header"
-    "welcome  welcome";
+    "welcome  welcome"
+    "image    image";
 }
 .cupcake {
     max-width: 11rem;
@@ -54,4 +55,9 @@ margin-top: 1rem;
 }
 .welcome-text {
 text-align:justify;
+}
+.doughnut {
+    grid-area: image;
+    width: 100%;
+    /* margin:0 auto; */
 }
