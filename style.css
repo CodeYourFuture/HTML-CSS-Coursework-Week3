@@ -5,7 +5,7 @@ header{
 body{
     display: grid;
     grid-template-columns:1fr 1fr ;
-    grid-template-rows: 15rem 20rem 15rem 20rem 10rem 5rem;
+    grid-template-rows: 15rem 20rem 15rem 25rem 10rem 5rem;
 }
 .cake_main_img{
     width: 20rem;
@@ -20,6 +20,12 @@ body{
     height: auto;
 }
 .cup_cakes_img{
-    width: 20rem;
+    width: 100%;
     height: auto;
+}
+.cup_cakes{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 10rem 10rem;
+    gap: 1rem;
 }
