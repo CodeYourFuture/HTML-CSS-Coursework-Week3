@@ -41,17 +41,15 @@ body {
   display: none;
 }
 
-/*flex the header*/
+/*position the header*/
 .header {
   position: relative;
-  display: flex;
-  flex-direction: row;
 }
 .header .navigator {
   margin-right: 1px;
   position: absolute;
-  top: 50px;
-  right: 50px;
+  top: 60px;
+  right: 60px;
 }
 
 /*logo*/
