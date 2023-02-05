@@ -1,1 +1,60 @@
 /*  Add your styling here */
+.logo{
+    grid-area: logo;
+}
+
+.context{
+    grid-area: context;
+    text-align: end;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: "logo context";
+    background-color: #e6fff9;
+    }
+.first-heading {
+    grid-column: 1 / -1;
+    text-align: center;
+    color: darkcyan
+
+}
+.hamburger {
+    width: 8%;
+}
+ .logo {
+    width: 50%;
+ }
+ h1 {
+    color: darkcyan
+ }
+ p {
+    color: darkcyan;
+ }
+ nav {
+    display: none;
+ }
+ section {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-rows: 100px;\
+
+}
+ section img {
+    margin: 5px;
+    border: 1px;
+    padding: 5px;
+    width: 300px;
+    height: 300px;
+ }
+.footer {
+    position: fixed;
+    background-color: #e6fff9;
+    left: 0;
+   bottom: 0;
+   width: 100%;
+   color: white;
+   text-align: center;
+}
