@@ -1,64 +1,45 @@
-/*                 Colour basic for all website  */
-
-:root {
-  --grey-dark: #292b2c;
-  --grey-light: #e4e4e4;
-  --orange-dark: #c05326;
-  --orange-light: #f7eae4;
-  --white: #fff;
-}
-
-/*             Body   */
 body {
   margin: 0;
+  font-family: "Sen", sans-serif;
+  font-size: 1.2rem;
+  color: #003b4a;
 }
 
-body {
-  font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
-  color: var(--grey-dark);
-  font-size: 1rem;
+.parent {
+  background-color: white;
+  padding: 20px;
+  padding-right: 20ex;
+  padding-left: 20ex;
+  margin-top: 20px;
+  /*  grid code  */
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  grid-template-rows: 3fr repeat(2, 6fr) repeat(2, 4fr) 3fr;
+  grid-column-gap: 8px;
+  grid-row-gap: 8px;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin-top: 0;
-  margin-bottom: 0;
-}
+/* =========   Header  ==========  */
+.div1 {
+  grid-area: 1 / 1 / 2 / 3;
 
-p {
-  margin-top: 0;
-  margin-bottom: 0;
+  padding: 80px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
 }
-
-.header,
-.content,
-.footer {
-  padding: 0 1.5rem;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-/*                 Header */
 
 .header {
+  background-image: url("https://images.pexels.com/photos/7381533/pexels-photo-7381533.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=500&w=1500");
+
   background-color: var(--grey-light);
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 5rem;
+  height: 20rem;
   padding-bottom: 1rem;
   padding-top: 1rem;
 }
-
-.header__logo {
-  max-height: 90px;
-  width: auto;
-}
-
 /*             Navigation */
 
 .navigation__list {
@@ -66,160 +47,97 @@ p {
   list-style: none;
 }
 
-.navigation__item {
-  padding: 0.5rem 1rem;
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
 }
-
-.navigation__link {
-  color: var(--grey-dark);
-  font-weight: 600;
-  text-transform: uppercase;
+.navbar a.right {
+  float: right;
+}
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: right;
+  padding: 5px 10px;
   text-decoration: none;
 }
 
-.navigation__link:hover {
-  color: var(--orange-dark);
+/* =========   Test hero banner  ==========  */
+.div2 {
+  grid-area: 2 / 1 / 3 / 3;
 }
+/* =========   Featured image bannner  ==========  */
 
-/*                 Text styles */
+.div3 {
+  grid-area: 3 / 1 / 4 / 3;
 
-.text-highlight {
-  color: var(--orange-dark);
-  font-weight: 600;
-}
+  background-image: url("https://images.pexels.com/photos/11663130/pexels-photo-11663130.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=500&w=1500");
 
-/*                     Content */
-
-.content {
-  display: flex;
-  flex-direction: column;
-}
-
-/*                        hero */
-
-.main {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 5rem;
-  padding-bottom: 5rem;
-  padding-top: 5rem;
-}
-
-.Background_colour {
-  background-color: var(--grey-light);
-  color: var(--white);
-  margin: 0 0 2.5rem 0;
-}
-
-/*                        Headings */
-
-.heading-underline {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   position: relative;
-  margin-bottom: 2rem;
-  padding-bottom: 0.5rem;
-  border-bottom: 2px solid var(--orange-light);
-  font-size: 1rem;
-  font-weight: 600;
-  text-transform: uppercase;
 }
 
-.heading-underline:before {
-  content: "";
-  position: absolute;
-  bottom: -2px;
-  left: 0;
-  width: 25%;
-  height: 2px;
-  max-width: 100px;
-  background: var(--orange-dark);
+.image_Feat_grid {
+  --num-cols: 1;
+  --row-height: auto;
+
+  box-sizing: border-box;
+  padding: var(--gap);
+
+  display: grid;
+  grid-template-columns: repeat(var(--num-cols), 4fr);
+  grid-auto-rows: var(--row-height);
 }
+/* =========  Featured four items - 1   ==========  */
 
-/*                          Article */
-.article_two {
-  object-fit: contain;
-  width: 50rem;
+.div4 {
+  grid-area: 4 / 1 / 6 / 3;
 }
-.article {
-  margin-bottom: 1rem;
+.image_grid > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
+.image_grid {
+  --gap: 16px;
+  --num-cols: 2;
+  --row-height: auto;
 
-.article__title {
-  margin-bottom: 0.5rem;
-  font-size: 1rem;
-  font-weight: 700;
+  box-sizing: border-box;
+  padding: var(--gap);
+
+  display: grid;
+  grid-template-columns: repeat(var(--num-cols), 1fr);
+  grid-auto-rows: var(--row-height);
+  gap: var(--gap);
 }
+/* =========  Footer   ==========  */
 
-.article__title-link {
-  text-decoration: none;
-  color: var(--orange-dark);
-}
-
-.article__thumbnail {
-  object-fit: contain;
-  width: 25rem;
-}
-
-.article__read-more {
-  margin-top: 0;
-}
-
-.article__read-more a {
-  font-size: 0.85rem;
-  font-weight: 700;
-  color: var(--orange-dark);
-  text-decoration: none;
-}
-
-.article__read-more a:hover,
-.article__read-more a:focus {
-  text-decoration: underline;
-}
-
-/*                  Flex Container*/
-
-.flex-container {
-  display: flex;
-}
-
-.flex-item {
-  padding: 0.5rem;
-  margin: 0.3rem;
-}
-
-.border {
-  border: var(--grey-light) solid 0.15rem;
-  border-radius: 0.2rem;
-}
-
-/*                        Footer */
-
-.footer {
-  margin-top: 2rem;
-}
-
-.footer__content {
-  border-top: 2px solid var(--orange-light);
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
-
-.footer p {
-  padding-bottom: 1rem;
+.footer_div5 {
+  grid-area: 6 / 1 / 7 / 3;
+  padding: 20px;
   text-align: center;
-  font-size: 0.85rem;
+  background: #ddd;
+  width: auto;
+  height: 15em;
 }
+/* =========   Responsive layout  ==========  */
 
-/*                      Media queries */
-/*                      IPAD screen   */
-/*                      Desktop computer screen */
-
-@media screen and (min-width: 992px) {
-  .content {
-    flex-direction: row;
-  }
-
-  .main {
-    padding-right: 2rem;
+@media screen and (max-width: 700px) {
+  .image_grid {
+    flex-direction: column;
   }
 }
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+
+/* =========     ==========  */

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Grid Gallery with HTML & CSS</title>
+    <link rel="stylesheet" href="main.css" />
+    <style>
+      body {
+        margin: 0;
+      }
+
+      .image-grid {
+        --gap: 16px;
+        --num-cols: 4;
+        --row-height: 300px;
+
+        box-sizing: border-box;
+        padding: var(--gap);
+
+        display: grid;
+        grid-template-columns: repeat(var(--num-cols), 1fr);
+        grid-auto-rows: var(--row-height);
+        gap: var(--gap);
+      }
+
+      .image-grid > img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .image-grid-col-2 {
+        grid-column: span 2;
+      }
+
+      .image-grid-row-2 {
+        grid-row: span 2;
+      }
+
+      /* Anything udner 1024px */
+      @media screen and (max-width: 1024px) {
+        .image-grid {
+          --num-cols: 2;
+          --row-height: 200px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="image-grid">
+      <img
+        src="https://images.pexels.com/photos/7381533/pexels-photo-7381533.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=500&w=1500"
+        alt="architecture"
+      />
+      <img
+        src="https://images.pexels.com/photos/7381533/pexels-photo-7381533.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=500&w=1500"
+        alt="architecture"
+      />
+      <img
+        src="https://images.pexels.com/photos/7381533/pexels-photo-7381533.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=500&w=1500"
+        alt="architecture"
+      />
+      <img
+        src="https://images.pexels.com/photos/7381533/pexels-photo-7381533.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=500&w=1500"
+        alt="architecture"
+      />
+      <img
+        src="https://images.pexels.com/photos/7381533/pexels-photo-7381533.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=500&w=1500"
+        alt="architecture"
+      />
+    </div>
+  </body>
+</html>
