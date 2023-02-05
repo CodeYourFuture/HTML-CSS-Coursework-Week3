@@ -4,7 +4,7 @@ body{
    
     display: grid;
     grid-template-columns:1fr 1fr ;
-    grid-template-rows: 15rem 14rem 15rem 30rem 10rem 5rem;
+    grid-template-rows: 15rem 14rem 15rem 17rem 10rem 5rem;
     grid-template-areas: 
     "header   header"
     "hero     hero"
@@ -35,10 +35,17 @@ header h3{
 .hero{
     grid-area: hero;
 }
+.hero h1{
+padding-left: 1rem;
+}
+.hero p{
+    text-align: justify;
+    padding: 1rem;
+}
 .cake_after_hero{
     grid-area: cake;
-    background-image: url(images/cake.jpg);
-    background-size: cover; 
+    /* background-image: url(images/cake.jpg);
+    background-size: cover;  */
     
     
 }
@@ -51,11 +58,10 @@ header h3{
 .cup_cakes{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 10rem 10rem;
-    gap: 1rem;
+    grid-template-rows: 5rem 5rem;
+    
     grid-area: cupcakes;
 }
-
 .cake_main_img{
     width: 15rem;
     height: auto;
@@ -66,7 +72,7 @@ header h3{
     height: 2rem;
 }
 .cake_hero_img{
-    width: 30rem;
+    width: 100%;
     height: auto;
 }
 .cup_cakes_img{
