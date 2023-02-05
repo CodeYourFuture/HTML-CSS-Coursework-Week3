@@ -1,1 +1,13 @@
-/*  Add your styling here */
+/*Add your styling here */
+
+
+.grid {
+    display: grid;
+    grid-template-columns:
+    grid-template-rows:
+}
+
+ .header {
+    background-color: #99d6ea;
+
+ }       
