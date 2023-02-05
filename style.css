@@ -1,4 +1,50 @@
 .Cake-image {
     height: 250px;
     width: 250px;
+    float: left;
+    padding: 10px;
 }
+
+header {
+    background-color: bisque;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.div1 {
+    background-color: cornflowerblue;
+    height: 350px;
+}
+
+
+nav {
+    
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.site-info {
+    color: black;
+    position:absolute;
+    bottom:600px;
+    right:10px;
+    
+}
+
+li {
+    display: inline;
+    float: right;
+    padding: 5px;
+}
+
+.list button {
+    border: solid;
+    color: black;
+    padding: 20px 35px;
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    height: 20px;
+    width: 30px;
+  }
