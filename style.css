@@ -12,6 +12,14 @@
 html {
   scroll-behavior: smooth;
 }
+@font-face {
+  font-family: 'Roboto';
+  src: url(./fonts/Roboto-Regular.ttf) format('truetype'),
+   url(./fonts/Roboto-Medium.ttf) format('truetype'),
+   url(./fonts/Roboto-Light.ttf) format('truetype'),
+   url(./fonts/Roboto-Italic.ttf) format('truetype'),
+   url(./fonts/Roboto-Black.ttf) format('truetype');
+}
 body {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
@@ -168,6 +176,9 @@ main .order-sec {
   background-color: #0d1c22;
   grid-area: o;
 }
+main .order-sec h2{
+  margin: 1rem 0 2rem 0;
+}
 main .order-sec img {
   width: 160px;
 }
@@ -178,17 +189,24 @@ main .order-sec .row {
 }
 main .order-sec .row .col {
   text-align: center;
+  margin-top: 0.5rem;
 }
 main .order-sec .row .col h4 {
-  margin-bottom: 0.5rem;
+  margin: 1rem 0 0.5rem 0;
 }
 
 /* Footer */
 footer {
-  background-color: var(--primary-color);
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
   grid-area: f;
   text-align: center;
 }
+footer img {
+  width: 90px;
+}
+
+
 
 @media (min-width: 540px) {
   /* Header Section */
@@ -246,6 +264,9 @@ footer {
     justify-content: space-evenly;
     align-items: center;
   }
+  footer img {
+    width: 110px;
+  }
 }
 
 @media (min-width: 900px) {
@@ -297,5 +318,8 @@ footer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 2rem 0.5rem;
+  }
+  footer img {
+    width: 120px;
   }
 }
