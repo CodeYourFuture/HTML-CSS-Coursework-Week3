@@ -28,7 +28,8 @@ nav {
     position:absolute;
     bottom:600px;
     right:10px;
-    
+    text-align: right;
+    height: 50px;
 }
 
 li {
@@ -37,14 +38,58 @@ li {
     padding: 5px;
 }
 
-.list button {
-    border: solid;
-    color: black;
-    padding: 20px 35px;
-    text-align: left;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    height: 20px;
-    width: 30px;
+.list li {
+        border: none;
+        color: white;
+        padding: 10px 25px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+      }
+
+  main {
+    background-color: white;
   }
+
+  .welcome {
+    text-align: center;
+    padding-bottom: 50px;
+    font-size: 40px;
+    font-weight: 27px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.p2 {
+    text-align: center;
+}
+
+  .list2 {
+    display: inline;
+  }
+
+  .cake-image2 {
+    height: 500px;
+    width: 500px;
+    margin-left: 700px;
+  }
+
+.cake-image3 {
+    height: 500px;
+    width: 500px;
+    margin-right: 200px;
+}
+.cake-image4 {
+    height: 500px;
+    width: 500px;
+    margin-right: 200px;
+}
+
+
+footer {
+   margin-top: 1000px;  
+   background-color:blue;
+   height: 200px;      
+}
