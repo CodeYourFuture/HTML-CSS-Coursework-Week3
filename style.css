@@ -1,1 +1,73 @@
-/*  Add your styling here */
+body{background-image: url(https://www.wilton.com/dw/image/v2/AAWA_PRD/on/demandware.static/-/Sites-wilton-project-master/default/dw6d37cd3c/images/project/WLPROJ-8914/FlCoCaFe_36027%2001.jpg?sw=800&sh=800);
+background-repeat: no-repeat;
+background-size: cover;}
+
+
+.container{display: grid;
+grid-template-rows: auto;
+grid-template-columns: 0.2fr 2fr 1.5fr 1.2fr 1fr;
+grid-gap:5px;
+grid-template-areas:
+"h"
+"m"
+"c1"
+"s"
+"f";}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    height: 1rem;
+    margin-bottom: 0.3rem;
+    background-color: darkgrey;
+    align-items: center;
+    flex-direction: row;
+    grid-area:h;
+  
+  }
+
+  
+  .navigation__list {
+    display: flex;
+    list-style: none;
+  }
+  
+  .navigation__item {
+    padding: 0.4rem 0;
+  }
+  
+  .navigation__link {
+    color:maroon;
+text-transform: uppercase;
+    padding: 0.5rem;
+    
+  }
+.main{grid-area:m}
+  .hero{
+    justify-content: center;
+    align-items:center;
+  grid-area: m;
+padding:2rem;
+margin:4rem;
+background-color:darkcyan;
+text-align: center;}
+
+  .hero h1{ text-align: center;
+  font-size: 2rem;
+color:plum;}
+
+.hero p{text-align: center;
+  font-size: 1.5rem;
+color: plum}
+
+.hero button{
+  font-size: 1.em;
+padding:5px;
+background-color: brown;
+color: aliceblue;}
+ 
+h1{color:darkred;
+  text-align: center;
+
+}
+.about{text-align:justify;}
