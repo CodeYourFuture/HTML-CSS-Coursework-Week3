@@ -7,15 +7,11 @@ height: 300px;
 width: 400px;
 margin-left: 700px
 }
-.victorian-sponge-cake{
+
+.cake-images img{
+   display: inline;
     height: 300px;
-    width: 350px;
- 
-   
-}
-.cake-images{
-    display: inline;
-    margin-left: 400px;
+    width: 300px;
 }
 
 header{
