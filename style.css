@@ -1,4 +1,39 @@
 .Cake-image{
     height: 200px;
-    width: 250px;
+    width: 200px;
 }
+header{
+    background-color: bisque;
+    color: orangered;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body{
+    background-color: whitesmoke;
+}
+.list button{
+    border: solid;
+}
+ul li {
+    background-color: white;
+    color: bisque;
+    text-decoration: none;
+    border: solid;
+}
+li{
+    display: inline;
+    float: left
+    padding: 5px;
+}
+
+..list li{
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
