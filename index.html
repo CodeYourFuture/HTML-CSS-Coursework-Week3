@@ -5,12 +5,155 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href='https://fonts.googleapis.com/css?family="Bree Serif:400,500,300"|Karla' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Responsive Cake webpage</title>
     <!-- Add a link to your css file here -->
+    <link rel="stylesheet" href="style.css">
+    
 </head>
 
 <body>
     <!-- Add your markup here -->
-</body>
+ <div class="container">
+    <header class="header">
+            <nav class="navbar-mobile">
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#cakes" class="nav-link">CAKES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">ORDERIN</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">LESSONS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">ABOUT</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+            
+              <div class="header-img">
+                <img src="images/cake-logo1.jpg" alt="cake"></div>
+              <div class="header-text">
+                <h1>The best cakes in town delivered to your door </h1></div>
+    </header> 
 
+        <!-- End of Header -->
+    <nav class="navbar-desktop">
+            <ul class="nav-menu-desktop">
+                <li class="nav-item-desktop">
+                    <a href="#" class="nav-link-desktop">HOME</a>
+                </li>
+                <li class="nav-item-desktop">
+                    <a href="#cakes" class="nav-link-desktop">CAKES</a>
+                </li>
+                <li class="nav-item-desktop">
+                    <a href="#" class="nav-link-desktop">ORDERIN</a>
+                </li>
+                <li class="nav-item-desktop">
+                    <a href="#" class="nav-link-desktop">LESSONS</a>
+                </li>
+                <li class="nav-item-desktop">
+                    <a href="#" class="nav-link-desktop">ABOUT</a>
+                </li>
+            </ul>
+    </nav>
+        <!-- End of Nav -->
+
+    <main class="main-homepage">
+        <section class="hero">
+            <div class="hero-content">
+              <h2 class="welcome">Welcome</h2>  
+               <p class="p-hero">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eleifend quam adipiscing vitae proin sagittis nisl rhoncus mattis rhoncus. Fermentum iaculis eu non diam phasellus vestibulum lorem sed. Fames ac turpis egestas sed. Nullam non nisi est sit amet. Id diam vel quam elementum pulvinar etiam. Ullamcorper malesuada proin libero nunc consequat. Consequat mauris nunc congue nisi. Arcu vitae elementum curabitur vitae.</p>
+            </div>
+            <div class="hero-img">
+                <img src="images/cake 3.avif" alt="Strawberry cake">
+            </div>
+        </section>
+       <!-- End of Section one  -->
+
+        <section class="products" id="cakes">
+        <div class="product-img">
+            <a href=""> 
+                <img class="img-box img1" src="images/cake 6.avif" alt="slice of cake">
+                <h3 class="cake-titles">Gift Cakes</h3></a>
+        </div>
+            
+            <div class="product-img">
+                <a href=""> 
+                    <img class="img-box img2" src="images/cupcake.avif" alt="cupcake">
+                    <h3 class="cake-titles">cupcakes</h3></a>
+            </div>
+            
+            <div class="product-img">
+                <a href="">
+                 <img class="img-box img3" src="images/Birthday cake.png" alt="Birthday cake">
+                 <h3 class="cake-titles">Birthday Cakes</h3>
+                </a>
+       
+            </div>
+          
+            <div class="product-img">
+                <a href="">
+                    <img class="img-box img4" src="images/donut.avif" alt="Doughnut">
+                    <h3 class="cake-titles">Doughnut</h3>
+                </a>
+            </div>
+            
+        </section>
+        <!-- End of Section 2 -->
+    </main>
+    <!-- End of Main -->
+
+    <footer class="footer">
+        <ul class="footer-list">
+            <li class="footer-list-item">
+                <a href="">Facebook</a>
+            </li>
+            <li class="footer-list-item">
+                <a href="">Instagram</a>
+            </li>
+            <li class="footer-list-item">
+                <a href="">Twitter</a>
+            </li>
+        </ul>
+        <p id="copyright">© Cake Co. 2023</p>
+    </footer>
+    <!-- End of Footer -->
+ </div>
+
+
+
+<!-- Hamburger menu -->
+   <script>
+     const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
+
+hamburger.addEventListener("click", mobileMenu);
+
+function mobileMenu() {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+}
+const navLink = document.querySelectorAll(".nav-link");
+
+navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+function closeMenu() {
+    hamburger.classList.remove("active");
+    navMenu.classList.remove("active");
+}
+   </script>
+<!-- End of hambuerger Menu -->
+</body>
 </html>
