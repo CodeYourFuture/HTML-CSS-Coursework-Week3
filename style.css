@@ -41,13 +41,21 @@ li {
 .list li {
         border: none;
         color: white;
-        padding: 10px 25px;
+        padding: 2px 10px;
         text-align: center;
         text-decoration: none;
         display: inline-block;
         font-size: 16px;
         margin: 4px 2px;
         cursor: pointer;
+      }
+
+      button {
+        height: 50px;
+        width: 70px;
+        font-size: 16px;
+        font-weight: bold;
+        padding-left: 2px;
       }
 
   main {
@@ -90,6 +98,6 @@ li {
 
 footer {
    margin-top: 1000px;  
-   background-color:blue;
+   background-color:#bbe4e9;
    height: 200px;      
 }
