@@ -1,7 +1,23 @@
-.Cake-image{
+.cup-cake{
     height: 200px;
     width: 200px;
 }
+.red-velvet-cake{
+height: 300px;
+width: 400px;
+margin-left: 700px
+}
+.victorian-sponge-cake{
+    height: 300px;
+    width: 350px;
+ 
+   
+}
+.cake-images{
+    display: inline;
+    margin-left: 400px;
+}
+
 header{
     background-color: bisque;
     color: orangered;
@@ -11,9 +27,8 @@ header{
 body{
     background-color: whitesmoke;
 }
-.list button{
-    border: solid;
-}
+
+
 ul li {
     background-color: white;
     color: bisque;
