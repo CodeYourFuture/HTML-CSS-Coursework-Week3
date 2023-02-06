@@ -23,6 +23,8 @@ body {
 .footer {
   grid-area: f;
   background-color: whitesmoke;
+  color: palevioletred;
+  font-weight: bold;
 }
 
 /* navigator button*/
@@ -79,6 +81,7 @@ button {
   padding: 0 2rem 0rem 400px;
   font-size: 2rem;
   color: palevioletred;
+  font-weight: bold;
 }
 /*logo*/
 .header .div-h a img {
@@ -147,6 +150,21 @@ button {
 }
 .content .content3 .c .c4 {
   grid-area: 2/7/3/13;
+}
+
+.footer > p {
+  text-align: center;
+}
+.footer .div-f {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  margin-left: 2rem;
+}
+
+.footer .div-f p {
+  background-color: white;
 }
 
 @media screen and (min-width: 540px) {
@@ -263,5 +281,13 @@ button {
   .content .content2 a img {
     width: 46vw;
     height: auto;
+  }
+  .footer .div-f {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: flex-start;
+    justify-content: center;
+    margin-left: 2rem;
   }
 }
