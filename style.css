@@ -4,7 +4,7 @@ body{
    
     display: grid;
     grid-template-columns:1fr 1fr ;
-    grid-template-rows: 15rem 18rem 17rem 28rem 15rem;
+    grid-template-rows: 15rem 15rem 20rem 30rem 15rem;
     grid-template-areas: 
     "header   header"
     "hero     hero"
@@ -31,6 +31,28 @@ header h3{
     text-align: right;
     margin-left: auto;
 }
+nav{
+    display: none;
+    grid-area: nav;
+    background-color: bisque;
+}
+.navigation__list {
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+  }
+  
+  .navigation__item {
+    padding: 0.5rem 0;
+  }
+
+  .navigation__link {
+    color: var(--grey-dark);
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0 1rem;
+  }
 .shop p{
     font-size: 0.8rem;
 }
@@ -49,6 +71,7 @@ padding-left: 1rem;
 .hero p{
     text-align: justify;
     padding: 1rem;
+    font-size: 0.8rem;
 }
 .cake_after_hero{
     grid-area: cake;
@@ -66,9 +89,7 @@ padding-left: 1rem;
     justify-content: space-between;
   
 }
-.info{
-    
-}
+
 .copyright{
     align-self: center;
     border-top: solid 0.2rem rgb(109, 23, 23);
@@ -76,7 +97,7 @@ padding-left: 1rem;
 .cup_cakes{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 170px 170px;
+    grid-template-rows: 190px 190px;
     gap: 1rem;
 }
 .cake_main_img{
@@ -86,10 +107,11 @@ padding-left: 1rem;
 .hamburger{
     width: 2rem;
     height: 2rem;
+    display: block;
 }
 .cake_hero_img{
     width: 100%;
-    height: auto;
+    /* height: auto; */
 }
 .cup_cakes_img{
     width: 100%;
@@ -120,4 +142,46 @@ button {
 }
 button:hover,button:focus {
     color: #934423;
+}
+/* TABLET: */
+@media screen and (min-width: 550px) {
+    body{
+   
+        display: grid;
+        grid-template-columns:1fr 1fr ;
+        grid-template-rows: 15rem 5rem 18rem 18rem 11rem;
+        grid-template-areas: 
+        "header   header"
+        "nav     nav"
+        "cake     hero"
+        "cupcakes cupcakes"
+        "footer   footer"
+        ;
+        gap:1rem;
+        font-family: 'Poppins', sans-serif;
+    }
+    .cup_cakes{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 200x 
+        gap: 1rem;
+    }
+    .info{
+        display: flex;
+        flex-direction: row;
+        justify-content:space-around;
+        align-items: center;
+    }
+    .hamburger{display: none;}
+    nav{display:block}
+    header h3{
+        font-size: 1rem;
+      width: 100%;
+        text-align: right;
+        margin:0;
+    }
+}
+
+/* DESKTOP */
+@media screen and (min-width: 900px) {
 }
