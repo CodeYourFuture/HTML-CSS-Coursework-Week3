@@ -29,19 +29,24 @@ body {
 
 /* navigator button*/
 
-.navigator button div {
+.navigator label span {
+  display: inline-block;
   width: 90px;
   height: 15px;
   margin-bottom: 10px;
   background-color: pink;
 }
+.navigator input[type="checkbox"] {
+  appearance: none;
+}
 .navigator,
-button {
+label {
   display: flex;
   flex-direction: column;
   gap: 5px;
   cursor: pointer;
   border: none;
+  background-color: whitesmoke;
 }
 .navigator a {
   display: none;
@@ -49,13 +54,14 @@ button {
   width: 100%;
   color: black;
 }
-.navigator:hover a {
+.navigator input[type="checkbox"]:checked ~ a {
   display: block;
   padding: 0.25rem;
+  background-color: pink;
 }
 .navigator a:hover {
   background-color: white;
-  color: orchid;
+  color: white;
 }
 
 /*apply positioning to the header*/
@@ -67,7 +73,7 @@ button {
   position: absolute;
   top: 30px;
   right: 60px;
-  background-color: pink;
+  background-color: whitesmoke;
 }
 
 /*flex the logo and text element in the header*/
@@ -89,7 +95,7 @@ button {
   width: auto;
   height: 30vh;
   margin-left: 50px;
-  margin-bottom: 4em;
+  margin-bottom: 6em;
 }
 
 /*flex the main content*/
@@ -186,6 +192,7 @@ button {
     grid-area: 2/1/3/13;
     height: 6rem;
     position: relative;
+    background-color: pink;
   }
   .header .div-h {
     display: flex;
@@ -204,7 +211,7 @@ button {
     margin-bottom: 1rem;
   }
 
-  .navigator button {
+  .navigator label {
     display: none;
     width: 0;
   }
@@ -314,6 +321,7 @@ button {
     grid-area: 2/1/3/13;
     height: 6rem;
     position: relative;
+    background-color: pink;
   }
   .header .div-h {
     display: flex;
@@ -333,7 +341,7 @@ button {
     margin-bottom: 1rem;
   }
 
-  .navigator button {
+  .navigator label {
     display: none;
     width: 0;
   }
