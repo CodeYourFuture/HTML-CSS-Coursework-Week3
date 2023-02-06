@@ -123,3 +123,17 @@ font-weight: lighter;
     color: #FAF9F6;
     text-shadow: 1px 0 rgb(183, 180, 180);
 }
+
+@media screen and (min-width: 540px) {
+    .grid {
+        grid-template-rows:  15rem 7rem 30rem 20rem 20rem;
+        grid-template-areas:
+        "header   header"
+        "nav      nav"
+        "image    welcome"
+        "cake     cake"
+        "media    media"
+        "footer   footer"
+
+    }
+}
