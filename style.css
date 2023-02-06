@@ -79,6 +79,10 @@ main {
 
     /* nav-bar positioning */
 
+    nav-bar {
+        display: none;
+    }
+
     nav {
         width: 100%;
         height: 30%;
@@ -152,7 +156,7 @@ main {
         transform: rotate(45deg);
         top:0;
     }
-    nav ul {
+    nav, nav-bar ul {
         list-style: none;
     }
 
@@ -179,4 +183,69 @@ main {
     .sm_icon, .chapter {
         justify-self: center;
     }
+    #top {
+        display: grid;
+        grid-template-rows: 1fr 2fr;
+        grid-template-areas: 
+        "p p w w"
+        "p p t t";
+        gap: 20px;
+        padding-right: 10px;
+    }
+    .main_img {
+        grid-area: p;
+    }
+    h1 {
+        grid-area: w;
+        justify-self: self-end;
+        font-size: 4rem;
+        margin-bottom: 0;
+        line-height: 100px;
+    }
+    #top p {
+        grid-area: t;
+        justify-self: self-end;
+        font-size: 1em;
+        text-align: right;
+    }
+    .ham {
+        display: none;
+    }
+    nav-bar {
+         display: grid;
+         gap: 10px;
+         float: right;
+         width: 100%;
+         background-color:#bbd0ff;
+         
+        }
+        .navigation_menu li {
+            float: right;
+        }
+
+        .navigation_item {
+            background-color: aqua;
+            
+        }
+
+        main {
+            margin-top: 5.5rem;
+        }
+
+        /* .nav{
+            max-height: none;
+            top: 0;
+            position: relative;
+            float: right;
+            width: fit-content;
+            background-color: transparent;
+        }
+        .menu li{
+            float: left;
+        }
+        .menu a:hover{
+            background-color: transparent;
+            color: var(--gray);
+    
+        } */
 }
