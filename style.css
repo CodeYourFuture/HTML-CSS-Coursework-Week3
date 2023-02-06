@@ -4,16 +4,16 @@ body{
    
     display: grid;
     grid-template-columns:1fr 1fr ;
-    grid-template-rows: 15rem 14rem 17rem 28rem 10rem 5rem;
+    grid-template-rows: 15rem 18rem 17rem 28rem 15rem;
     grid-template-areas: 
     "header   header"
     "hero     hero"
     "cake     cake"
     "cupcakes cupcakes"
-    "contact      ."
     "footer   footer"
     ;
     gap:1rem;
+    font-family: 'Poppins', sans-serif;
 }
 .header{
     grid-area: header;
@@ -26,17 +26,25 @@ body{
     justify-content:space-between;
 }
 header h3{
-    font-size: 0.9rem;
+    font-size: 0.7rem;
     width: 10rem;
     text-align: right;
     margin-left: auto;
 }
-
+.shop p{
+    font-size: 0.8rem;
+}
+h4,a{
+    font-size: 0.9rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}
 .hero{
     grid-area: hero;
 }
 .hero h1{
 padding-left: 1rem;
+
 }
 .hero p{
     text-align: justify;
@@ -50,14 +58,20 @@ padding-left: 1rem;
     
 }
 .contact_details{
-    grid-area: contact;
-    text-decoration: none;
+    grid-area: footer;
+   
+    background-color: bisque;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   
 }
-.footer{
-    grid-area: footer;
-    background-color: bisque;
-
+.info{
+    
+}
+.copyright{
+    align-self: center;
+    border-top: solid 0.2rem rgb(109, 23, 23);
 }
 .cup_cakes{
     display: grid;
@@ -106,3 +120,4 @@ button {
 }
 button:hover,button:focus {
     color: #934423;
+}
