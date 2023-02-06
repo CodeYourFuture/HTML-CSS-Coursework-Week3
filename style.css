@@ -254,9 +254,7 @@ footer{
   padding-bottom: 1rem;
 }
 
-@media (min-width: 540px) {
-  background-color: rgb(222, 121, 149, 80%);
-}
+
 
 @media screen and (min-width: 540px) {
   header {
@@ -270,15 +268,29 @@ footer{
 
   }
 @media screen and (min-width: 900px) {
-  header {
-    background-color: yellow;
-  }
+
   .full-menu-container {
     display: block;
     
   }
   .hamburger-navbar {
     display: none;
+  
+  }
 
+  .super-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+    "feature feature main main"
+    "gateau birthday wedding celebration";
+    gap: 1rem;
+    margin: 3rem 2rem;
+  }
+  .footer-social{
+    display: flex;
+    justify-content: center;
+    
   }
 }
