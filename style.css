@@ -41,22 +41,37 @@ header{
     font-family: 'Bebas Neue', cursive;
     font-size: 1.2rem;
     height: 5rem;
-    max-height: 7rem;
     margin-bottom: 1.5rem;
     margin-top: 1.5rem;
 }
+ul li{
+    list-style: none;
+    display: inline-block;
+    
+}
+
+ul{
+    text-align: center;
+    padding-top: 2rem;
+}
+
+
 
 .navbar a{
     text-decoration: none;
     color: rgb(255, 255, 255);
     position: relative;
     margin: 2rem;
-    top: 40%;
-    left: 28%;
+    
 }
+    
 
 .navbar a:hover{
     color: rgb(154, 108, 150);;
+}
+
+.nav{
+    display: none;
 }
 
 
@@ -95,7 +110,7 @@ main{
 
 .main-picture img{
     width: auto;
-    max-width: 100%;
+    max-width: 40rem;
 }
 
 /*Main-icons*/
@@ -171,7 +186,9 @@ footer p{
 }
 
 
-
+.main-welkome{
+    flex-wrap: wrap-reverse;
+}
 
 .main-text h1{
     font-size: 4rem;
@@ -181,20 +198,64 @@ footer p{
     margin: auto;
  }
 
- .navbar{
- margin-bottom: 0;
- }
 
  .main-text, .main-picture{
     margin: 1rem;
  }
 
- 
+ .main-picture img{
+    width: 100%;
+ }
 
-
-  
-  
+ .footer-container{
+    flex-direction: column;
 }
 
+.footer-container a{
+    margin: 0.5rem;
+}
 
+.navbar{
+  display: none;
+}
 
+}
+
+@media screen and (max-width: 1180px){
+.main-icons {
+    margin: 2rem 10rem;
+}
+.main-picture img{
+    width: 100%;
+    max-width: 100%;
+ }
+
+}
+
+/*
+.wrapper {
+		position: relative;
+		width: 768px;
+		margin: auto;
+	}
+	
+	#primary_nav {
+		position: absolute;
+		top: 5px;
+		right: 10px;
+		background: none;
+	}
+	
+	#primary_nav li {
+		display: inline;
+	}
+	
+	#primary_nav li a {
+		float: left;
+		border: none;
+		padding: 0 10px;
+		-webkit-border-radius: 2px;
+		-moz-border-radius: 2px;
+		border-radius: 2px;
+	}
+*/
