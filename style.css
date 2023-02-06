@@ -1,35 +1,40 @@
 
 .main{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(10, auto);
-    grid-gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(10, minmax(40px, auto));
+    grid-gap: 10px;
     grid-template-areas: 
-    "hi h"
-    "hi ht"
-    "w ."
-    "tw tw"
-    "b b"
-    "b b"
-    "ione itwo"
-    "ithree ifour"
-    "t blank"
-    "f f";
-    background-color: rgb(248, 243, 248);
-    padding: 20px;
+    "h h h h"
+    "hi hi ht ht"
+    "w . . ."
+    "tw tw tw tw"
+    "b b b b"
+    "b b b b"
+    "ione hidden1 hidden1 itwo"
+    "ithree hidden2 hidden2 ifour"
+    "t t tb tb"
+    "f f f f";
+    padding: 5px;
 }
 .header-image{
     grid-area: hi;
-    background-color: rgb(248, 235, 237);
+    margin: 40px 0px;
 }
+.image-header-size{
+width: 200px;
+height: 200px;
+padding: 0px;
+}
+
+
 .header{
     grid-area: h;
-    background-color: rgb(248, 235, 237);
 }
 .header-text{
 grid-area: ht;
 text-align: center;
-background-color: rgb(248, 235, 237);
+font-size: xx-large;
 }
 .wellcome{
 grid-area: w;
@@ -40,65 +45,111 @@ grid-area: w;
 }
 .big-image{
     grid-area: b;
- 
 }
 .image1{
     grid-area: ione;
-    display: flex;
-    justify-content: center;
-    background-color: rgb(248, 235, 237);
-    padding-top: 15px;
-    padding-bottom: 15px;
+    
 }
-.image1 img{
-    width: 200px;
-    height: 200px; 
+.image-size{
+    width: 150px;
+    height: 150px; 
+}
+.image-contents{
+    padding-bottom: 15px;
+    margin-right: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(233, 125, 204);
 }
 
 .image2{
     grid-area: itwo;
-    display: flex;
-    justify-content: center;
-    background-color: rgb(248, 235, 237);
-    padding-top: 15px;
-    padding-bottom: 15px;
 }
 
-.image2 img{
-    height: 200px;
-    width: 200px;
-}
+
 .image3{
     grid-area: ithree;
-    display: flex;
-    justify-content: center;
-    background-color: rgb(248, 235, 237);
-    padding-top: 15px;
-    padding-bottom: 15px;
 }
-.image3 img{
-    height: 200px;
-    width: 200px; 
-}
+
 .image4{
     grid-area: ifour;
+
+}
+.hidden-image-1{
+    grid-area: hidden1;
+    display: none;
+    color: rgb(233, 125, 204);
+}
+.hidden-image-2{
+    grid-area: hidden2;
+    display: none;
+    color: rgb(233, 125, 204);
+}
+/** styling nav bar */
+
+
+
+.nav--toggle{
+    position: absolute;
+    right: 0;
+    margin-right: 2rem;
+    
+    cursor: pointer;
+}
+.nav svg{
+    width: 2rem;
+    fill: rgb(233, 125, 204); 
+    
+    
+}
+
+#nav--checkbox{
+    display: none;
+}
+.nav--menu{
     display: flex;
-    justify-content: center;
-    background-color: rgb(248, 235, 237);
-    padding-top: 15px;
-    padding-bottom: 15px;
+    flex-direction: column;
+    align-items: center;
+    
+    gap: 1rem;
+    margin-top: 1rem;
+    margin-right: 3rem; 
+    margin-left: 3rem; 
 }
-.image4 img{
-    height: 200px;
-    width: 200px;  
+.nav--menu li{
+    list-style: none;
+    display: none;
 }
+.nav--menu a{
+    text-decoration: none;
+    color: rgb(233, 125, 204); 
+    font-size: 1.2rem;
+}
+#nav--checkbox:checked ~ ul.nav--menu li{
+    display: block;
+}
+/** view screen */
+
+
+
+
+
+
+
+
 
 
 .text{
     grid-area: t; 
 }
-.blank{
-    grid-area: blank;
+.text-bottom{
+    grid-area: tb;  
+    font-size: 30px;
+    color: rgb(195, 145, 243);
+    text-align: center;
+    padding-top: 0px;
+    font-weight: 20;
     background-color: rgb(248, 235, 237);
 }
 .footer{
@@ -106,17 +157,13 @@ grid-area: w;
     
 }
 
-.header-image img{
-    height: 200px;
-    width: 200px;
-    padding-left: 20px;
-    padding-top: 20px;
-}
+
 
 .big-image{
     background-image: url(https://www.wilton.com/dw/image/v2/AAWA_PRD/on/demandware.static/-/Sites-wilton-project-master/default/dw417acfee/images/project/WLPROJ-9603/flower-cupcakes-final-3.jpg?sw=800&sh=800);
 background-size: cover;
-height: 500px;
+background-repeat: no-repeat;
+height: 400px;
 margin-bottom: 70px;
 }
  .img-style{
@@ -127,15 +174,20 @@ margin-bottom: 70px;
     margin-right: auto;
     margin-top: 30px;
 }
+.header-text{
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .header-text h3{
-color: rgb(195, 145, 243);
-font-size:60px ;
+color: rgb(233, 125, 204);
+font-size:40px ;
 font-weight: 200;
 }
 
 h1{
-    color: rgb(233, 125, 204);
+    color:rgb(233, 125, 204);
     font-size: 40px;
     margin-bottom: 0px;
     margin-top: 0px;
@@ -159,6 +211,10 @@ color: rgb(195, 145, 243);
     color: rgb(233, 125, 204);
 }
 .text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: opx;
     background-color: rgb(248, 235, 237);
 }
 /**  footer styling  */
@@ -170,4 +226,54 @@ color: rgb(195, 145, 243);
     background-color: rgb(248, 235, 237); 
     display: flex;
     justify-content: center;
+}
+
+/** view screen */
+
+@media only screen and (min-width: 540px){
+    .nav .nav--toggle{
+        display: none;
+    }
+    .nav .nav--menu{
+        flex-direction: row;
+        justify-content: end;
+    }
+    .nav li{
+        display: block;
+    }
+    .image-header-size{
+        width: 250px;
+        height: 250px;
+        padding: 0px;
+        }
+        .image-size{
+            width: 220px;
+            height: 220px; 
+        }
+}
+
+
+@media only screen and (min-width: 900px){
+    .hidden-image-1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .hidden-image-2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .big-image{
+        height: 600px;
+    }
+    .image-header-size{
+        width: 400px;
+        height: 500px;
+    }
+    .image-size{
+        width: 250px;
+        height: 250px; 
+    }
 }
