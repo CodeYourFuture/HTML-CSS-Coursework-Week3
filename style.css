@@ -136,4 +136,10 @@ font-weight: lighter;
         "footer   footer"
 
     }
+    .images-cakes {
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: 20rem;
+        grid-template-areas:
+        "cake1 cake2 cake3 cake4";
+    }
 }
