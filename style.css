@@ -45,7 +45,7 @@ header img{
 
 .navbar a{
     text-decoration: none;
-    color: rgb(62, 62, 62);
+    color: rgb(255, 255, 255);
     position: relative;
     margin: 2rem;
     top: 40%;
@@ -79,7 +79,7 @@ main{
 .main-text h1{
     font-family: 'Bebas Neue', cursive;
     font-size: 5rem;
-    color: rgb(193, 163, 190);
+    color: rgb(73, 40, 70);
 }
 
 .main-text p{
@@ -109,7 +109,14 @@ main{
 }
 
 .main-icons div{
-    margin-left: 4rem;
+    margin: 0 3rem;
+    text-align: center;
+}
+
+.main-icons p{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.5rem;
+    color: rgb(71, 71, 71);
 }
 
 hr{
@@ -122,9 +129,34 @@ footer{
     background-color: rgb(234, 223, 233);
     min-height: 10rem;
     text-align: center;
+    padding: 2rem 0;
 }
 
-footer-container
+.footer-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+.footer-container a{
+    text-decoration: none;
+    font-family: 'Bebas Neue', cursive;
+    color: rgb(121, 88, 118);
+    margin: 1.5rem;
+}
+
+footer p{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 0.8rem;
+    margin-top: 1rem;
+    color: rgb(255, 255, 255);
+
+}
+
+.footer-container a:hover{
+    color: rgb(92, 48, 88);
+}
 
 
 
