@@ -16,9 +16,11 @@ p {
 .header_text {
     font-family: 'Lobster', cursive;
     text-align: end;
-    padding: 0 10px 10px 0;
+    padding: 0 10px 10px 350px;
     margin-top: 0;
     font-weight: 16px;
+    
+    /* max-width: 400px; */
 }
 
 footer p {
@@ -161,4 +163,20 @@ main {
     display: grid;
     gap: 5px;
     padding: 10px 5px 5px 10px;
+}
+
+/* responsiveness for a tablet */
+
+@media (min-width: 540px) {
+
+    .img_footer {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .articles {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr;
+    }
+    .sm_icon, .chapter {
+        justify-self: center;
+    }
 }
