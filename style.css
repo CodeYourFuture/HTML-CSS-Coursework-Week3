@@ -13,7 +13,7 @@ body{
     "footer   footer"
     ;
     gap:1rem;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Itim', cursive;
 }
 .header{
     grid-area: header;
@@ -54,7 +54,7 @@ nav{
     padding: 0 1rem;
   }
 .shop p{
-    font-size: 0.8rem;
+    font-size: 1rem;
 }
 h4,a{
     font-size: 0.9rem;
@@ -211,5 +211,8 @@ button:hover,button:focus {
     .hero p{
         font-size: 1.7rem;
     }
+   .shop h3{
+    font-size: 2rem;
+   }
     
 }
