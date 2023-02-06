@@ -146,9 +146,6 @@ button:hover,button:focus {
 /* TABLET: */
 @media screen and (min-width: 550px) {
     body{
-   
-        display: grid;
-        grid-template-columns:1fr 1fr ;
         grid-template-rows: 15rem 5rem 18rem 18rem 11rem;
         grid-template-areas: 
         "header   header"
@@ -157,14 +154,10 @@ button:hover,button:focus {
         "cupcakes cupcakes"
         "footer   footer"
         ;
-        gap:1rem;
-        font-family: 'Poppins', sans-serif;
     }
     .cup_cakes{
-        display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: 200x 
-        gap: 1rem;
     }
     .info{
         display: flex;
@@ -176,7 +169,7 @@ button:hover,button:focus {
     nav{display:block}
     header h3{
         font-size: 1rem;
-      width: 100%;
+        width: 100%;
         text-align: right;
         margin:0;
     }
@@ -184,4 +177,39 @@ button:hover,button:focus {
 
 /* DESKTOP */
 @media screen and (min-width: 900px) {
+    body{
+        grid-template-rows: 15rem 5rem 40rem 30rem 11rem;
+        grid-template-areas: 
+        "header   header"
+        "nav     nav"
+        "cake     hero"
+        "cupcakes cupcakes"
+        "footer   footer"
+        ;
+        }
+    .cup_cakes{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 200x 
+    }
+    .info{
+        display: flex;
+        flex-direction: row;
+        justify-content:space-around;
+        align-items: center;
+    }
+    .hamburger{display: none;}
+    nav{display:block}
+    header h3{
+        font-size: 2rem;
+        width: 100%;
+        text-align: right;
+        margin:0;
+    }
+    .hero h1{
+        font-size: 2.3rem; 
+    }
+    .hero p{
+        font-size: 1.7rem;
+    }
+    
 }
