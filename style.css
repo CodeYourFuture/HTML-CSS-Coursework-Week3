@@ -2,10 +2,29 @@
 
 /* HEADER  STYLE*/
 header {
+  border: 2px solid black;
+  padding: 9px;
+
   display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 70px 70px;
   grid-template-areas:
-    "i d d"
-    "i p p";
+    "icon . drop"
+    "icon parap parag";
+}
+
+.cake-icon {
+  grid-area: icon;
+}
+.dropdown {
+  grid-area: drop;
+  display: flex;
+  justify-content: flex-end;
+  height: 20px;
+}
+
+.catch-line{
+    grid-area: parag;
 }
 
 /* MAIN STYLE */
@@ -47,8 +66,6 @@ main {
   grid-area: f;
 }
 
-
-
 img {
   object-fit: cover;
   width: 100%;
@@ -56,8 +73,6 @@ img {
 }
 
 /* FOOTER style */
-
-
 
 /* FOR TABLET USERS */
 @media screen and (min-width: 540px) {
@@ -75,10 +90,9 @@ img {
   }
 }
 
-
 /* FOR DESKTOP USERS */
 @media screen and (min-width: 900px) {
-      main {
+  main {
     border: 2px solid gray;
 
     display: grid;
