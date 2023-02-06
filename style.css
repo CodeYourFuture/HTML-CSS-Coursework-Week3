@@ -1,1 +1,51 @@
 /*  Add your styling here */
+
+
+body{
+    margin: 0;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 9rem;
+}
+
+.logo img {
+     width:20%;
+}
+
+.content{
+
+}
+
+
+
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.list {
+
+}
+
+
+.list ul {
+    display: flex;
+    flex-direction: row;
+    padding: 0 3rem;
+    list-style: none;
+}
+
+.list ul li {
+    text-decoration: none;
+    list-style: none;
+    padding: 0 2rem;
+    border: 1px #232a35;
+    margin: 0 7px;
+    background-color: lavender;
+    color: white;
+}
