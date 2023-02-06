@@ -11,16 +11,120 @@ header{
     justify-content: space-between;
     align-items:flex-end;
     width: 100%;
-    border: solid red;
-    background-color: rgb(217, 231, 243);
+    background-color: rgb(234, 223, 233);
 
 }
 
 header img{
-    padding: 1rem 3rem;
+    padding: 1rem 5rem;
     width: 100%;
     max-width: 10rem;
 }
 
+.header-text{
+    font-family: 'Bebas Neue', cursive;
+    color: rgb(193, 163, 190);
+    font-size: 1.5rem;
+    margin-right: 5rem;
+}
+
 /*header*/
+
+/*navbar*/
+
+.navbar{
+    width: 100%;
+    list-style: none;
+    background-color: rgb(213, 187, 211);
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.2rem;
+    height: 5rem;
+    max-height: 7rem;
+    margin-bottom: 1.5rem;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: rgb(62, 62, 62);
+    position: relative;
+    margin: 2rem;
+    top: 40%;
+    left: 28%;
+}
+
+.navbar a:hover{
+    color: rgb(154, 108, 150);;
+}
+
+
+/*main*/
+
+main{
+    margin:1.5rem 4rem;
+}
+
+.main-welkome{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.main-text{
+    margin-left: 2rem;
+   
+}
+
+.main-text h1{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 5rem;
+    color: rgb(193, 163, 190);
+}
+
+.main-text p{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    margin-top: -3rem;
+    color: rgb(63, 63, 63);
+}
+
+.main-picture img{
+    width: auto;
+    max-width: 100%;
+}
+
+/*Main-icons*/
+.main-icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+    margin: 3rem 0;
+    flex-wrap: wrap;
+}
+
+.main-icons img{
+    max-width: 5rem;
+}
+
+.main-icons div{
+    margin-left: 4rem;
+}
+
+hr{
+    width: 70%;
+}
+
+/*footer*/
+
+footer{
+    background-color: rgb(234, 223, 233);
+    min-height: 10rem;
+    text-align: center;
+}
+
+footer-container
+
+
 
