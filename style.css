@@ -136,7 +136,7 @@ text-align: center;}
     "f f f f f f f";}
   }
 
-  @media screen and(min-width:750px){
+  @media screen and(min-width:900px){
   .container{grid-template-columns: repeat(7,1fr);
     grid-template-rows: auto;
     grid-template-areas: 
