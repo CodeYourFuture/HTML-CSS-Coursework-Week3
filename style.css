@@ -50,7 +50,7 @@ margin-top: 1rem;
 .title {
     text-align:end;
     margin-bottom: 0px;
-    max-width: 15rem;
+    max-width: 10rem;
     margin-left:auto;
     margin-right: 1rem; 
     font-family: 'Londrina Solid', cursive;
@@ -126,7 +126,7 @@ font-weight: lighter;
 
 @media screen and (min-width: 540px) {
     .grid {
-        grid-template-rows:  15rem 7rem 30rem 20rem 20rem;
+        grid-template-rows:  15rem 7rem 30rem 20rem 10rem 3rem;
         grid-template-areas:
         "header   header"
         "nav      nav"
@@ -142,4 +142,14 @@ font-weight: lighter;
         grid-template-areas:
         "cake1 cake2 cake3 cake4";
     }
+    .social-media {
+        display: flex;
+        justify-content: center;
+        
+        align-items:center;
+    }
+    .insta {
+        padding: 0 5rem;
+    }
+
 }
