@@ -16,6 +16,7 @@
     "t t tb tb"
     "f f f f";
     padding: 5px;
+    background-color: darkslategray;
 }
 .header-image{
     grid-area: hi;
@@ -50,45 +51,43 @@ grid-area: w;
     grid-area: ione;
     
 }
-.image-size{
-    width: 150px;
-    height: 150px; 
-}
-.image-contents{
-    padding-bottom: 15px;
-    margin-right: 2rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: rgb(233, 125, 204);
-}
 
 .image2{
     grid-area: itwo;
 }
-
-
 .image3{
     grid-area: ithree;
 }
-
 .image4{
     grid-area: ifour;
-
 }
 .hidden-image-1{
     grid-area: hidden1;
     display: none;
-    color: rgb(233, 125, 204);
+    color: #ff6b6b;
 }
 .hidden-image-2{
     grid-area: hidden2;
     display: none;
-    color: rgb(233, 125, 204);
+    color: #ff6b6b;
 }
+.text{
+    grid-area: t; 
+}
+.text-bottom{
+    grid-area: tb; 
+
+    font-size: 30px;
+    color: #ff6b6b;
+    text-align: center;
+    padding-top: 0px;
+    font-weight: 20;   
+}
+.footer{
+    grid-area: f;   
+}
+
 /** styling nav bar */
-
-
 
 .nav--toggle{
     position: absolute;
@@ -99,7 +98,7 @@ grid-area: w;
 }
 .nav svg{
     width: 2rem;
-    fill: rgb(233, 125, 204); 
+    fill: #4ecdc4; 
     
     
 }
@@ -123,42 +122,30 @@ grid-area: w;
 }
 .nav--menu a{
     text-decoration: none;
-    color: rgb(233, 125, 204); 
+    color: #4ecdc4; 
     font-size: 1.2rem;
 }
 #nav--checkbox:checked ~ ul.nav--menu li{
     display: block;
 }
-/** view screen */
 
 
 
+/**  styling images */
 
-
-
-
-
-
-
-.text{
-    grid-area: t; 
+.image-size{
+    width: 150px;
+    height: 150px; 
 }
-.text-bottom{
-    grid-area: tb;  
-    font-size: 30px;
-    color: rgb(195, 145, 243);
-    text-align: center;
-    padding-top: 0px;
-    font-weight: 20;
-    background-color: rgb(248, 235, 237);
+.image-contents{
+    padding-bottom: 15px;
+    margin-right: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #4ecdc4;
+    font-size: 20px;
 }
-.footer{
-    grid-area: f;
-    
-}
-
-
-
 .big-image{
     background-image: url(https://www.wilton.com/dw/image/v2/AAWA_PRD/on/demandware.static/-/Sites-wilton-project-master/default/dw417acfee/images/project/WLPROJ-9603/flower-cupcakes-final-3.jpg?sw=800&sh=800);
 background-size: cover;
@@ -174,56 +161,57 @@ margin-bottom: 70px;
     margin-right: auto;
     margin-top: 30px;
 }
-.header-text{
+/**  styling text  */
 
+.header-text{
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.header-text h3{
-color: rgb(233, 125, 204);
-font-size:40px ;
+.header-text h1{
+color: #ff6b6b;
+font-size:60px ;
 font-weight: 200;
 }
-
-h1{
-    color:rgb(233, 125, 204);
+h3{
+    color:#4ecdc4;
     font-size: 40px;
     margin-bottom: 0px;
     margin-top: 0px;
 }
-
 .text-wellcome p{
-    color: rgb(233, 125, 204);
+    color: #ff6b6b;
     font-size: 25px;
     line-height: 40px;
 }
+.text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: opx;   
+}
+
 /**  link styling  */
 
 .text a{
 text-decoration: none;
 padding-left: 40px;
 font-size: 47px;
-color: rgb(195, 145, 243);
+color: #ff6b6b;
 }
 .text a:hover{
     font-size: 50px;
-    color: rgb(233, 125, 204);
+    color: #4ecdc4;
 }
-.text{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: opx;
-    background-color: rgb(248, 235, 237);
-}
+
 /**  footer styling  */
+
 .footer svg{
     padding-right: 10px;
     padding-left: 10px;   
 }
 .footer{
-    background-color: rgb(248, 235, 237); 
+    background-color: #4ecdc4; 
     display: flex;
     justify-content: center;
 }
