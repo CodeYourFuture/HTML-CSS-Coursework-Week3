@@ -1,1 +1,60 @@
 /*  Add your styling here */
+
+.container {
+    display: grid;
+    grid-auto-rows: minmax(100px, auto);
+    grid-gap: 5px;
+    background-color: aquamarine;
+    grid-template-areas:  
+    "h h h h h h h h"
+    "h h h h h h h h"
+    "nav nav nav nav nav nav nav nav"
+    "ma ma ma ma maa maa maa maa"
+    "ma ma ma ma maa maa maa maa"
+    "ma ma ma ma maa maa maa maa"
+    "ma ma ma ma maa maa maa maa"
+    "ma ma ma ma maa maa maa maa"
+    "s1 s1 s2 s2 s3 s3 s4 s4"
+    "s1 s1 s2 s2 s3 s3 s4 s4"
+    "s1 s1 s2 s2 s3 s3 s4 s4"
+    "foo foo foo foo foo foo foo foo"
+    "foo foo foo foo foo foo foo foo"
+    ;
+}
+.box{
+    display: flex;
+    color: #fff;
+    font-size: 3rem;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background-color: rgb(154, 152, 152);
+}
+
+.header{
+    grid-area: h;
+}
+.nav{
+    grid-area: nav;
+}
+.main{
+    grid-area: ma;
+}
+.main2{
+    grid-area: maa;
+}
+.section1{
+    grid-area: s1;
+}
+.section2{
+    grid-area: s2;
+}
+.section3{
+    grid-area: s3;
+}
+.section4{
+    grid-area: s4;
+}
+.footer{
+    grid-area: foo;
+}
