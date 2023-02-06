@@ -4,21 +4,20 @@ background-size: cover;}
 
 
 .container{display: grid;
-grid-template-rows: auto;
-grid-template-columns: 0.2fr 2fr 1.5fr 1.2fr 1fr;
+grid-template-rows: repeat(5,1fr);
+grid-template-columns: 0.2fr 2fr 1.5fr 2fr 1fr;
 grid-gap:5px;
 grid-template-areas:
-"h"
-"m"
-"c1"
-"s"
-"f";}
+"h h h h h"
+"m m m m m"
+". . s s s"
+"c1 c1 c1 c1 c1"
+"f f f f f ";}
 
 .header{
     display: flex;
     justify-content: space-between;
-    height: 1rem;
-    margin-bottom: 0.3rem;
+    margin-bottom: 0.1rem;
     background-color: darkgrey;
     align-items: center;
     flex-direction: row;
@@ -71,4 +70,57 @@ h1{color:darkred;
 
 }
 .about{text-align:justify;
+  ;
 }
+.sidebar{grid-area:s;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  
+}
+
+.cakes{ font-size: 1.5rem;
+  color:darkred;
+  margin-bottom: 0.1rem;
+}
+
+.sidebar p{color:darkgreen;
+padding:0.3rem;
+background-color: antiquewhite;}
+
+button{padding:0.2rem;
+background-color: orange;
+margin-bottom: 1rem;
+align-items: center;
+justify-content: center;
+}
+
+
+.content{display: flex;
+justify-content: center;
+align-items:center;
+grid-area: c1;
+flex-direction: column;}
+
+.content p{font-size: 2rem;
+color: brown;}
+
+.contact{grid-area: c1;}
+
+.join{text-align: center;
+color:lightgrey;
+font-size: 20px;}
+
+
+.icon{display: flex;
+  align-items:center;
+justify-content: center;
+column-gap: 5px;}
+
+.l{margin-top:32px;
+border:1px solid grey;
+margin-bottom: 32px;}
+
+footer{grid-area: f;
+color:blueviolet;
+font-size: 1rem;
+text-align: center;}
+
