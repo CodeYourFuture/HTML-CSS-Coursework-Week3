@@ -95,6 +95,7 @@ justify-content: center;
 
 
 .content{display: flex;
+  flex-direction: row;
 justify-content: center;
 align-items:center;
 grid-area: c1;
@@ -123,4 +124,9 @@ footer{grid-area: f;
 color:blueviolet;
 font-size: 1rem;
 text-align: center;}
+
+@media screen and(min-width:550px){
+  .container{grid-template-columns:repeat() ;}
+}
+  
 
