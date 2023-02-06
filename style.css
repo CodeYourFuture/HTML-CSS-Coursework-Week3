@@ -1,7 +1,6 @@
-/*  Add your styling here */
+/*  General styles */
 
 body{
-   
     display: grid;
     grid-template-columns:1fr 1fr ;
     grid-template-rows: 15rem 15rem 20rem 30rem 15rem;
@@ -15,6 +14,13 @@ body{
     gap:1rem;
     font-family: 'Itim', cursive;
 }
+h4,a{
+    font-size: 0.9rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+/* Header */
+
 .header{
     grid-area: header;
     background-color: bisque;
@@ -31,6 +37,17 @@ header h3{
     text-align: right;
     margin-left: auto;
 }
+/* Header images */
+.hamburger{
+    width: 2rem;
+    height: 2rem;
+    display: block;
+}
+.cake_main_img{
+    width: 15rem;
+    height: auto; 
+}
+/* Navigation */
 nav{
     display: none;
     grid-area: nav;
@@ -41,11 +58,9 @@ nav{
     list-style: none;
     justify-content: space-evenly;
   }
-  
   .navigation__item {
     padding: 0.5rem 0;
   }
-
   .navigation__link {
     color: var(--grey-dark);
     font-weight: 600;
@@ -53,65 +68,35 @@ nav{
     text-decoration: none;
     padding: 0 1rem;
   }
-.shop p{
-    font-size: 1rem;
-}
-h4,a{
-    font-size: 0.9rem;
-    text-decoration: none;
-    text-transform: uppercase;
-}
+/* About section */
 .hero{
     grid-area: hero;
 }
 .hero h1{
 padding-left: 1rem;
-
 }
 .hero p{
     text-align: justify;
     padding: 1rem;
     font-size: 0.8rem;
 }
+/* Cake image section */
 .cake_after_hero{
-    grid-area: cake;
-    /* background-image: url(images/cake.jpg);
-    background-size: cover;  */
-    
-    
+    grid-area: cake; 
 }
-.contact_details{
-    grid-area: footer;
-   
-    background-color: bisque;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  
+.cake_hero_img{
+    width: 100%;
 }
 
-.copyright{
-    align-self: center;
-    border-top: solid 0.2rem rgb(109, 23, 23);
-}
+/* Shop section */
 .cup_cakes{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 190px 190px;
     gap: 1rem;
 }
-.cake_main_img{
-    width: 15rem;
-    height: auto; 
-}
-.hamburger{
-    width: 2rem;
-    height: 2rem;
-    display: block;
-}
-.cake_hero_img{
-    width: 100%;
-    /* height: auto; */
+.shop p{
+    font-size: 1rem;
 }
 .cup_cakes_img{
     width: 100%;
@@ -133,6 +118,7 @@ padding-left: 1rem;
     align-items: center;
     justify-content: space-between;
 }
+/* Button shop */
 button {
     padding: 0.5rem;
     border: 0;
@@ -142,6 +128,19 @@ button {
 }
 button:hover,button:focus {
     color: #934423;
+}
+/* Footer */
+.contact_details{
+    grid-area: footer;
+   
+    background-color: bisque;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.copyright{
+    align-self: center;
+    border-top: solid 0.2rem rgb(109, 23, 23);
 }
 /* TABLET: */
 @media screen and (min-width: 550px) {
