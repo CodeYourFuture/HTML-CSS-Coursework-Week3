@@ -27,6 +27,21 @@ h4 {
     margin: 0 auto;
 }
 
+.body {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-gap: 0px;
+    grid-template-areas:
+        "h h h h h h h h h h h h"
+        "a a a a a a a a a a a a"
+        "g g g g g g g g g g g g"
+        "g g g g g g g g g g g g"
+        "g g g g g g g g g g g g"
+        "f f f f f f f f f f f f";
+}
+
+
 /***Header***/
 
 .header {
@@ -52,9 +67,12 @@ h4 {
 /***Hero***/
 
 .hero {
-    background-image: url("/home/coder/Desktop/CYF/HTML&CSS/HTML-CSS-Coursework-Week3/img/berry_cake_white.jpg");
+    grid-area: h;
+    background-image: url("/home/coder/Desktop/CYF/HTML&CSS/HTML-CSS-Coursework-Week3/img/mini_cakes.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    width: 100%;
+    position: center;
     padding: 8rem 2rem;
     color: #fff;
 }
@@ -62,6 +80,7 @@ h4 {
 /***About***/
 
 .about_section {
+    grid-area: a;
     padding: 1rem;
 }
 
@@ -76,8 +95,31 @@ h4 {
 }
 
 
+
+/*** HELP! Images are all giant ***/
+
+
 /***Gallery***/
 
-.cake_gallery {}
+.cake_gallery {
+    grid-area: g;
+    background-color: aqua;
+}
+
+.cake_gallery img {
+    width: 100%;
+}
+
+.horizontal {
+    grid-column: 1/-1;
+    grid-row: 1/1;
+}
+
+
 
 /***Footer***/
+
+footer {
+    grid-area: f;
+    background-color: lavender;
+}
