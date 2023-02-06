@@ -37,7 +37,6 @@ a {
   padding: 1rem 1.5rem;
 }
 
-
 .full-menu-container {
   display: none;
   padding-top: 1rem;
@@ -47,7 +46,6 @@ a {
   margin-right: 3rem;
   margin-top: 1rem;
   background-color: rgb(222, 121, 149, 20%);
-
 }
 
 .nav-menu {
@@ -59,14 +57,14 @@ a {
   /* gap: 2rem; */
 }
 
-.nav-item{
+.nav-item {
   text-decoration: none;
-  background-color: rgb(49,117,130,75%);
+  background-color: rgb(49, 117, 130, 75%);
   padding: 0.5rem 1.5rem;
   border-radius: 10px;
 }
 
-.nav-link{
+.nav-link {
   color: white;
 }
 .bar {
@@ -106,12 +104,12 @@ a {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto auto auto auto;
-  grid-template-areas: 
-   "main main"
-   "feature feature"
-   "gateau birthday"
-   "wedding celebration";
- 
+  grid-template-areas:
+    "main main"
+    "feature feature"
+    "gateau birthday"
+    "wedding celebration";
+
   gap: 1rem;
   margin: 3rem 2rem;
 }
@@ -129,7 +127,6 @@ a {
   justify-content: space-between;
 }
 
-
 .welcome-header-text {
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -137,7 +134,7 @@ a {
 
 .homepage-feature {
   /* outline: 3px solid red; */
-  
+
   margin-bottom: 1rem;
   background-color: rgb(222, 121, 149, 20%);
   grid-area: feature;
@@ -157,20 +154,22 @@ a {
   margin: 0.5rem auto;
 }
 
-.feature-para{
+.feature-para {
   margin: 0.5rem;
 }
-
 
 .homepage-products {
   margin: 1.5rem 1rem 1rem 1rem;
 }
 
-
 .product-holder {
-  height: 80%;
-  width: 80%;
-  background-color: white;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  /* justify-content: space-between; */
+  /* background-color: white; */
 }
 .product-gateau {
   grid-area: gateau;
@@ -191,7 +190,7 @@ a {
 
 .product-img {
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
 }
 
 .product-gateau-image-container {
@@ -211,7 +210,7 @@ a {
   height: 100%;
 }
 
-.product-text-container{
+.product-text-container {
   margin-left: 1rem;
 }
 
@@ -250,47 +249,59 @@ a {
   font-size: small;
 }
 
-footer{
+footer {
   padding-bottom: 1rem;
 }
 
-
-
 @media screen and (min-width: 540px) {
   header {
-    background-color: lightgreen;
+    background-color: rgb(210, 218, 199);
   }
-  .full-menu {
-    display: block;
+  .super-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas:
+      "main main main main gateau gateau"
+      "main main main main birthday birthday"
+      "feature feature feature feature wedding wedding"
+      "feature feature feature feature celebration celebration";
   }
-  .hamburger-navbar {
-    display: none;
 
+  .homepage-feature {
+    margin-bottom: 0;
   }
+
+  .footer-social {
+    display: flex;
+    justify-content: center;
+  }
+
+  .product-gateau-image-container {
+    outline: 3px dotted red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
 @media screen and (min-width: 900px) {
-
+  header {
+    background-color: rgb(239, 232, 199);
+  }
   .full-menu-container {
     display: block;
-    
   }
   .hamburger-navbar {
     display: none;
-  
   }
 
   .super-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: auto auto;
-    grid-template-areas: 
-    "feature feature main main"
-    "gateau birthday wedding celebration";
-    gap: 1rem;
-    margin: 3rem 2rem;
-  }
-  .footer-social{
-    display: flex;
-    justify-content: center;
-    
+    grid-template-areas:
+      "feature feature main main"
+      "gateau birthday wedding celebration";
   }
 }
