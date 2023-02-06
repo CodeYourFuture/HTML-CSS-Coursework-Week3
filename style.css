@@ -4,7 +4,7 @@ body{
    
     display: grid;
     grid-template-columns:1fr 1fr ;
-    grid-template-rows: 15rem 14rem 17rem 25rem 10rem 5rem;
+    grid-template-rows: 15rem 14rem 17rem 28rem 10rem 5rem;
     grid-template-areas: 
     "header   header"
     "hero     hero"
@@ -51,9 +51,13 @@ padding-left: 1rem;
 }
 .contact_details{
     grid-area: contact;
+    text-decoration: none;
+  
 }
 .footer{
     grid-area: footer;
+    background-color: bisque;
+
 }
 .cup_cakes{
     display: grid;
@@ -93,3 +97,12 @@ padding-left: 1rem;
     align-items: center;
     justify-content: space-between;
 }
+button {
+    padding: 0.5rem;
+    border: 0;
+    border-radius: 7%;
+    background-color: #c05326;
+    color: #FAF9F6;
+}
+button:hover,button:focus {
+    color: #934423;
