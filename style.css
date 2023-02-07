@@ -3,9 +3,9 @@
 :root {
     --coral: #ff533d;
     --navy-blue: #0f1626;
-    --leather: #ab987a;
+    --leather: #eeeae4;
     --white: #f5f5f5; 
-    --light-pink: #ffeeec;
+    --light-pink: #f7f5f2;
     --bloob: #FFBAB1;
 
 }
@@ -17,8 +17,7 @@
 }
 
 html {
-    font-size: 62.5%;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Rubik', sans-serif;
 }
 
 li {
@@ -31,20 +30,21 @@ ul, a, li {
 
 /* base styles */
 body {
-    background-color: var(--white);
+    background-color: var(--light-pink);
     overflow-x: hidden;
+    font-size: 10px;
 }
 
 .button {
     background-color: var(--coral);
     border: 2px solid var(--coral);
     color: var(--white);
-    padding: 1rem 2rem;
-    border-radius: 2rem;
+    padding: 0.8em 1.6em;
+    border-radius: 2em;
     text-transform: uppercase;
     box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.6);
     display: inline-block;
-    font-size: 1.6rem;
+    font-size: 1.2em;
 }
 
 .button:active,
@@ -56,9 +56,46 @@ body {
 
 input, textarea {
     background: ;
-    padding: 1rem 2rem;
-    border-radius: 1rem;
+    padding: 1em 2em;
+    border-radius: 1em;
     border: 2px solid var(--bloob);
+    font-family: inherit;
+}
+
+/* fonts */
+
+h1, h2, h3, h4 {
+    color: var(--coral);
+}
+
+p, a, li {
+    color: var(--navy-blue);
+}
+
+h1, h3 {
+    font-size: 1.8em;
+    letter-spacing: 0.2em;
+}
+
+h2 {
+    font-size: 1.6em;
+}
+
+h4 {
+    font-size: 1.2em;
+}
+
+.leading {
+    font-size: 1.4em;
+}
+
+/* Mobile layout */
+
+
+
+
+.welcome {
+    background-color: var(--leather);
 }
 
 .welcome-img {
@@ -69,14 +106,19 @@ input, textarea {
 
 }
 
-/* fonts */
 
 /* small tablet styles */
 @media screen and (min-width: 540px) {
+    body {
+        font-size: 12px;
+    }
     
 }
 
 /* laptops & desctop styles*/
 @media screen and (min-width: 900px) {
+    body {
+        font-size: 16px;
+    }
     
 }
