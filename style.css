@@ -1,1 +1,110 @@
 /*  Add your styling here */
+  @media screen and (max-width: 600px) {
+    .navbar {
+      display: none;
+    }
+  }
+  @media screen and (min-width: 600px) {
+    .navbar {
+      display: block;
+    text-align: center;
+    background-color: #e6fff9;
+    margin: 10px;
+    }
+  }
+  @media screen and (min-width: 900px) {
+    .navbar {
+      display: block;
+    text-align: center;
+    background-color: rgb(234, 213, 213);
+    }
+  }
+.logo{
+    grid-area: logo;
+}
+
+nav ul {
+    display: inline-block;
+    list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+li {
+    display: inline-block;
+    float:left;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+}
+li a {
+        display: block;
+        border: 0px;
+        margin: 0px;
+        padding-right: 15px;
+        padding-left: 20px;
+        text-align: center;
+      
+}
+.context{
+    grid-area: context;
+    text-align: end;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: "logo context";
+    background-color: #e6fff9;
+    }
+.first-heading {
+    grid-column: 1 / -1;
+    text-align: center;
+    color: darkcyan
+
+}
+.hamburger {
+    width: 8%;
+}
+ .logo {
+    width: 50%;
+ }
+ h1 {
+    color: darkcyan;
+    text-align: center;
+ }
+ p {
+    color: darkcyan;
+ }
+ nav {
+    display: non
+ }
+ section {
+    display: grid;
+    row-gap: 40px;
+    column-gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-rows: 300px;
+
+}
+section img {
+    display: inline-flex;
+    margin: 10px;
+    border-top: px;
+    padding: 5px;
+    width: 320px;
+    height: 320px;
+   
+ }
+.footer {
+    background-color: #e6fff9;
+    left: 0;
+   bottom: 0;
+   width: 100%;
+   color: white;
+   text-align: center;
+   display:inline-flexbox;
+   padding-top: 30px;
+
+}
