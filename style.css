@@ -1,1 +1,29 @@
 /*  Add your styling here */
+.container {
+    border: 1px solid black;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 150px 100px auto 100px;
+    grid-template-areas: 
+    "header header header header"
+    "navigation navigation navigation navigation"
+    "content content content content"
+    "footer footer footer footer";
+}
+
+.header {
+    grid-area: header;
+}
+
+.navigation {
+    grid-area: navigation;
+}
+
+.content {
+    grid-area: content;
+}
+
+.footer {
+    grid-area: footer;
+}
