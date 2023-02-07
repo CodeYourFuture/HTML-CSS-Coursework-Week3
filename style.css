@@ -28,30 +28,40 @@ h4 {
 }
 
 .body {
+    height: 100%;
     display: grid;
+    grid-gap: 5px;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(6, 1fr);
-    grid-gap: 0px;
+    grid-template-rows: repeat(11, 1fr);
     grid-template-areas:
         "h h h h h h h h h h h h"
+        "r r r r r r r r r r r r"
+        "r r r r r r r r r r r r"
         "a a a a a a a a a a a a"
-        "g g g g g g g g g g g g"
-        "g g g g g g g g g g g g"
-        "g g g g g g g g g g g g"
-        "f f f f f f f f f f f f";
+        "a a a a a a a a a a a a"
+        "l l l l l l l l l l l l"
+        "l l l l l l l l l l l l"
+        "m m m m m m m m m m m m"
+        "s s s s s s s s s s s s"
+        "f f f f f f f f f f f f"
+        "f f f f f f f f f f f f"
 }
 
 
 /***Header***/
 
-.header {
-    display: flex;
+header {
+    /* display: flex;
     align-items: end;
-    /* justify-content: space-between; */
+    /**** justify-content: space-between; 
     height: 5rem;
     padding-top: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1rem; */
+    background-color: hotpink;
+    grid-area: h;
 }
+
+
 
 /***Navigation***/
 /***Text Styles***/
@@ -62,64 +72,57 @@ h4 {
 .content {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
 }
+
+
+
 
 /***Hero***/
 
 .hero {
-    grid-area: h;
-    background-image: url("/home/coder/Desktop/CYF/HTML&CSS/HTML-CSS-Coursework-Week3/img/mini_cakes.jpg");
+    /** background-image: url("/home/coder/Desktop/CYF/HTML&CSS/HTML-CSS-Coursework-Week3/img/mini_cakes.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
     position: center;
     padding: 8rem 2rem;
-    color: #fff;
+    color: #fff; **/
+    grid-area: r;
+    background-color: lightgreen;
 }
 
 /***About***/
 
 .about_section {
     grid-area: a;
-    padding: 1rem;
+    background-color: lightcoral;
 }
-
-.about_section h1 {
-    font-size: 2rem;
-    font-weight: 600;
-}
-
-.about_info {
-    font-size: 1.25rem;
-    text-align: justify;
-}
-
-
-
-/*** HELP! Images are all giant ***/
 
 
 /***Gallery***/
 
-.cake_gallery {
-    grid-area: g;
-    background-color: aqua;
+.gallery_lrg {
+    grid-area: l;
+    background-color: lightsalmon;
 }
 
-.cake_gallery img {
-    width: 100%;
+.gallery_mdm {
+    grid-area: m;
+    background-color: lightskyblue;
 }
 
-.horizontal {
-    grid-column: 1/-1;
-    grid-row: 1/1;
+.gallery_sml {
+    grid-area: s;
+    background-color: lightyellow;
 }
-
 
 
 /***Footer***/
 
 footer {
+    background-color: aqua;
     grid-area: f;
-    background-color: lavender;
 }
