@@ -124,26 +124,12 @@ body {
   width: auto;
   height: 15em;
 }
-/* =========   Responsive layout  ==========  
-
-@media screen and (max-width: 700px) {
-  .image_grid {
-    flex-direction: column;
-  }
-}
-*/
-
-/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other 
-@media screen and (max-width: 400px) {
-  .navbar a {
-    float: none;
-    width: 100%;
-  }
-}
-*/
-
+/* =========   Responsive layout  ==========  */
+/**/
+/**/
+/**/
+/* styles for browsers larger than 960px; */
 @media only screen and (min-width: 400px) {
-  /* styles for browsers larger than 960px; */
   .parent {
     background-color: white;
     padding: 20px;
@@ -152,6 +138,12 @@ body {
     margin-top: 20px;
   }
 }
+
+/**/
+/**/
+/**/
+/**/
+
 @media only screen and (min-width: 1440px) {
   /* styles for browsers larger than 1440px; */
 }
@@ -160,3 +152,20 @@ body {
 }
 
 /* =========     ==========  */
+
+/*
+@media screen and (max-width: 700px) {
+    .image_grid {
+      flex-direction: column;
+    }
+  }
+  */
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other 
+  @media screen and (max-width: 400px) {
+    .navbar a {
+      float: none;
+      width: 100%;
+    }
+  }
+  */
