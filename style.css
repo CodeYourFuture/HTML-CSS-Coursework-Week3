@@ -4,7 +4,7 @@
     border: 1px solid black;
     height: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fit, 1fr);
+    grid-template-columns: repeat(auto-fit, 4fr);
     grid-template-rows: 150px 100px auto 100px;
     grid-template-areas: 
     "header header header header"
@@ -24,21 +24,47 @@
     grid-area: navigation;
     display: flex;
     justify-content: space-around;
+    padding-left: 250px;
 }
 
 .content {
     grid-area: content;
-    
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .footer {
     grid-area: footer;
     display: flex;
     justify-content: space-around;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 25px;
+}
+
+.image {
+    width: 45%;
+    margin-left: 20px;
+    height: auto;
+    display: inline-block;
+    text-align: center;
 }
 
 .small-img {
     width: 22%;
     margin-left: 10px;
     height: auto;
+}
+
+h4 {
+    padding-right: 20px;
+    padding-top: 35px;
+    padding-left: 100px;
+}
+.text {
+    display: inline-block;
+    padding-left: 25px;
+    
+
 }
