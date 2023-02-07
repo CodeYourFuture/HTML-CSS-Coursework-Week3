@@ -171,12 +171,18 @@ font-weight: lighter;
     .navigation__list {
         display: flex;
         list-style: none;
-        justify-content: space-evenly;
+        justify-content: flex-end;
        
     }    
         
     .navigation__item {
-        padding: 0.5rem 0;
+        padding: 0.5rem 0.5rem;
+        color: #313639;
+       
+      }
+      .navigation__item:hover {
+        color: #FAF9F6;
+       
       }
       .navigation__link {
         color: var(--grey-dark);
@@ -185,5 +191,22 @@ font-weight: lighter;
         text-decoration: none;
         padding: 0 1rem;
       }
+      h1 {
+        margin: 0 auto;
+      }  
+}
 
+@media screen and (min-width: 900px) {
+    .grid {
+        grid-template-columns: 1fr 4fr 4fr 1fr;
+        grid-template-rows:  15rem 4rem 22rem 15rem 10rem 3rem;
+        grid-gap: 1rem;
+        grid-template-areas:
+        "header  header   header  header"
+        ".       nav      nav      ."
+        ".       image    welcome   ."
+        ".        cake     cake     ."
+        "media    media    media    media"
+        "footer   footer   footer   footer";
+    }
 }
