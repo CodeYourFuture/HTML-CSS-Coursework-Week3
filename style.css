@@ -18,7 +18,7 @@ a {
   .header{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
+    grid-template-rows: auto auto;
     grid-template-areas:
     "image nav"
     "image text";
@@ -87,7 +87,7 @@ a {
     align-self: end;
     text-align: right;
     grid-area: text;
-    font-size: 0.6rem;
+    font-size: 0.7rem;
     font-family: 'Bree Serif','Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     padding-bottom: 1rem;
     color:#7e2f77;
@@ -134,10 +134,9 @@ a {
   }
   .p-hero{
     /* grid-area: p-hero; */
- 
     color: hsl(178, 84%, 12%);
     font-family: 'Karla', serif;
-    font-size: 0.9rem;
+    font-size: 1rem;
     line-height: 1.5rem;
     text-align: justify;
   }
@@ -179,7 +178,7 @@ font-family: 'Rubik', serif;
 .cake-titles:hover{
   background-color: #7ebdc1;
   color: white;
-  transition: 0.9s;
+  transition: 0.7s;
 }
 
 /* footer */
@@ -217,14 +216,10 @@ footer {
 }
 #copyright {
   grid-area: copyright;
-  color: hsla(243, 37%, 95%);
+  color: rgb(29, 29, 38);
   font-size: 0.9rem;
   text-align: center;
 }
-
-
-                       
-
 
   /* TABLET: */
   @media screen and (min-width: 540px) {
@@ -269,15 +264,17 @@ align-items: center;
   }
 .nav-item-desktop{
   margin-right:0rem;
+ 
 }
 .nav-link-desktop {
  font-family: 'Rubik', Times, serif;
   background-color: rgb(177, 212, 212);
   color: #AC20A5;
-  padding: 0.5rem 1.2rem;
+  padding: 0.8rem 1.2rem;
   font-size: 0.9rem;
   text-align: center;
   cursor: pointer;
+  border-radius: 5px;
 }
 .nav-link-desktop:hover {
   color:  #e75a7c;
@@ -295,7 +292,9 @@ align-items: center;
 .welcome{
   text-align: end;
 }
-
+.p-hero{
+  font-size:1.2rem;
+}
 .products{
   grid-template-columns: repeat(4, 1fr);
 }
