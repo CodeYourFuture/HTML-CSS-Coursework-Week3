@@ -187,16 +187,61 @@ header,footer {
     .img_footer {
         grid-template-columns: repeat(3, 1fr);
     }
-    .articles {
+
+    .sm_icon {
+        justify-self: center;
+    }
+
+    .ham {
+        display: none;
+    }
+
+    header {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 1fr;
+    }
+
+    .header_text {
+        font-size: x-large;
+        margin-bottom: 0;
+    }
+    
+        .nav{
+            max-height: 4.5rem;
+            display: flex;
+            flex-direction: row-reverse;
+            align-content: flex-end;
+            /* top: 0; */
+            position: absolute;
+            /* float: right; */
+            width: 100%;
+            background-color: #ffd6ff;
+            margin: 10rem 1rem 0 1rem;
+            
+        }
+        .navigation_item {
+            display: inline-block;;
+            /* float: left; */
+            list-style-type: none;
+            background-color: aqua;
+            margin-left: 5px;
+            margin-right: 10px;
+        }
+        .menu a:hover{
+            background-color: transparent;
+            color: var(--gray);
+        }
+
+
+    /* .articles {
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: 1fr;
     }
     .sm_icon, .chapter {
         justify-self: center;
     }
-    .header_text {
-        font-size: xx-large;
-    }
+    
     #top {
         display: grid;
         grid-template-rows: 1fr 2fr;
@@ -221,35 +266,16 @@ header,footer {
         justify-self: self-end;
         font-size: 1.5em;
         text-align: right;
-    }
-    .ham {
-        display: none;
-    }
-    
-        .nav{
-            max-height: 4.5rem;
-            display: flex;
-            flex-direction: row-reverse;
-            align-content: space-between;
-            top: 0;
-            position: relative;
-            float: right;
-            width: 96%;
-            background-color: #ffd6ff;
-            margin-left: 2rem;
-            margin-right: 2rem;
-        }
-        .navigation_item {
-            float: left;
-            list-style-type: none;
-            background-color: aqua;
-            margin-left: 5px;
-            margin-right: 10px;
-        }
-        .menu a:hover{
-            background-color: transparent;
-            color: var(--gray);
-        }
+    } */
+
+
+
+
+
+
+
+
+   
 
         main {
             margin: 6.5rem 2rem 1rem 2rem;
