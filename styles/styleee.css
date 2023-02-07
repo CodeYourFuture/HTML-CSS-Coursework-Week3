@@ -7,28 +7,45 @@ body {
 
 .parent {
   background-color: white;
-  padding: 20px;
-  padding-right: 20ex;
-  padding-left: 20ex;
-  margin-top: 20px;
+  padding: 3px;
+  padding-right: 1ex;
+  padding-left: 1ex;
+  margin-top: 5px;
   /*  grid code  */
   display: grid;
   grid-template-columns: repeat(2, 2fr);
   grid-template-rows: 3fr repeat(2, 6fr) repeat(2, 4fr) 3fr;
-  grid-column-gap: 8px;
-  grid-row-gap: 8px;
+  grid-column-gap: 3px;
+  grid-row-gap: 3px;
 }
 
 /* =========   Header  ==========  */
 .div1 {
   grid-area: 1 / 1 / 2 / 3;
+}
+/*  nav and image grid   */
+.nav_img_parent {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
 
-  padding: 80px;
+.nav_img_img_div1 {
+  grid-area: 1 / 1 / 3 / 4;
+
+  padding: 3px;
   text-align: center;
   background: #1abc9c;
   color: white;
 }
-
+.nav_img_para_div2 {
+  grid-area: 2 / 2 / 3 / 4;
+}
+.nav_img_nav_div3 {
+  grid-area: 1 / 3 / 2 / 4;
+}
 .header {
   background-image: url("https://images.pexels.com/photos/7381533/pexels-photo-7381533.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=500&w=1500");
 
@@ -59,7 +76,7 @@ body {
   display: block;
   color: white;
   text-align: right;
-  padding: 5px 10px;
+  padding: 1px 1px;
   text-decoration: none;
 }
 
@@ -82,14 +99,20 @@ body {
 
 .image_Feat_grid {
   --num-cols: 1;
-  --row-height: auto;
+  --row-height: 30ex;
 
   box-sizing: border-box;
   padding: var(--gap);
 
   display: grid;
-  grid-template-columns: repeat(var(--num-cols), 4fr);
+  grid-template-columns: repeat(var(--num-cols), 1fr);
   grid-auto-rows: var(--row-height);
+  gap: var(--gap);
+}
+.image_Feat_grid > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 /* =========  Featured four items - 1   ==========  */
 
@@ -103,8 +126,8 @@ body {
 }
 .image_grid {
   --gap: 16px;
-  --num-cols: 2;
-  --row-height: auto;
+  --num-cols: 1;
+  --row-height: 30ex;
 
   box-sizing: border-box;
   padding: var(--gap);
@@ -118,12 +141,23 @@ body {
 
 .footer_div5 {
   grid-area: 6 / 1 / 7 / 3;
-  padding: 20px;
+  padding: 3px;
   text-align: center;
   background: #ddd;
   width: auto;
   height: 15em;
 }
+
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+
 /* =========   Responsive layout  ==========  */
 /**/
 /**/
@@ -136,6 +170,138 @@ body {
     padding-right: 20ex;
     padding-left: 20ex;
     margin-top: 20px;
+    /*  grid code  */
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: 3fr repeat(2, 6fr) repeat(2, 4fr) 3fr;
+    grid-column-gap: 3px;
+    grid-row-gap: 3px;
+  }
+  body {
+    margin: 0;
+    font-family: "Sen", sans-serif;
+    font-size: 1.2rem;
+    color: #003b4a;
+  }
+
+  .parent {
+    background-color: white;
+    padding: 3px;
+    padding-right: 3ex;
+    padding-right: 3ex;
+    margin-top: 5px;
+    /*  grid code  */
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: 3fr repeat(2, 6fr) repeat(2, 4fr) 3fr;
+    grid-column-gap: 3px;
+    grid-row-gap: 3px;
+  }
+
+  /* =========   Header  ==========  */
+  .div1 {
+    grid-area: 1 / 1 / 2 / 3;
+
+    padding: 80px;
+    text-align: center;
+    background: #1abc9c;
+    color: white;
+  }
+
+  .header {
+    background-image: url("https://images.pexels.com/photos/7381533/pexels-photo-7381533.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=500&w=1500");
+
+    background-color: var(--grey-light);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 20rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+  }
+  /*             Navigation */
+
+  .navigation__list {
+    display: flex;
+    list-style: none;
+  }
+
+  .navbar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  .navbar a.right {
+    float: right;
+  }
+  .navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: right;
+    padding: 5px 10px;
+    text-decoration: none;
+  }
+
+  /* =========   Test hero banner  ==========  */
+  .div2 {
+    grid-area: 2 / 1 / 3 / 3;
+  }
+  /* =========   Featured image bannner  ==========  */
+
+  .div3 {
+    grid-area: 3 / 1 / 4 / 3;
+
+    background-image: url("https://images.pexels.com/photos/11663130/pexels-photo-11663130.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=500&w=1500");
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
+  .image_Feat_grid {
+    --num-cols: 1;
+    --row-height: auto;
+
+    box-sizing: border-box;
+    padding: var(--gap);
+
+    display: grid;
+    grid-template-columns: repeat(var(--num-cols), 4fr);
+    grid-auto-rows: var(--row-height);
+  }
+  /* =========  Featured four items - 1   ==========  */
+
+  .div4 {
+    grid-area: 4 / 1 / 6 / 3;
+  }
+  .image_grid > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .image_grid {
+    --gap: 16px;
+    --num-cols: 2;
+    --row-height: auto;
+
+    box-sizing: border-box;
+    padding: var(--gap);
+
+    display: grid;
+    grid-template-columns: repeat(var(--num-cols), 1fr);
+    grid-auto-rows: var(--row-height);
+    gap: var(--gap);
+  }
+  /* =========  Footer   ==========  */
+
+  .footer_div5 {
+    grid-area: 6 / 1 / 7 / 3;
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+    width: auto;
+    height: 15em;
   }
 }
 
