@@ -1,1 +1,351 @@
 /*  Add your styling here */
+
+/*  Add your styling here */
+@import url('https://fonts.googleapis.com/css2?family=Arial&family=Karla&family=Rubik&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+/* Header */
+
+  .header{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "image nav"
+    "image text";
+    background-color: rgba(42,172,193,0.8);
+    padding: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .desktop-navbar{
+    display: none;
+    background-color: chocolate;
+  }
+ 
+  .mobile-navbar{
+    grid-area: nav;
+    align-self:start;
+    justify-self: end;
+  }
+
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 1.1rem;
+    flex-direction: column;
+    background-color: rgb(226, 232, 232);
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 400ms ease-in-out;
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+  }          
+  
+  .nav-menu.active {
+    left: 0;
+  }          
+  
+  .nav-item {
+    margin: 1rem 0;
+  }
+
+  .nav-link{
+    color: black;
+   } 
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .bar {
+      display: block;
+      width: 40px;
+      height: 3px;
+      margin: 5px auto;
+      -webkit-transition: all 0.2ms ease-in-out;
+      transition: all 0.2ms ease-in-out;
+      background-color: white;
+  }  
+  
+  .header-img{
+    grid-area:image;
+  }
+ 
+
+  .header-img > img{
+    width: 10rem;
+    padding-bottom: 1rem;
+    padding-left: 0rem;
+  }
+
+  .header-text{
+    font-size: 0.8rem;
+    justify-self: end;
+    align-self: end;
+    text-align: right;
+    grid-area: text;
+    padding-bottom: 1rem;
+    padding-right: 1rem;
+  }
+
+/* main */
+  .homepage-main{
+   display: grid;
+   column-gap: 1rem;
+   row-gap: 1.5rem;
+   padding: 2rem 1rem;
+   grid-template-columns: 1fr;
+   grid-template-rows: auto auto;
+   grid-template-areas: "hero"
+   "product";
+  }
+  /*section hero  */
+  .hero {
+    grid-area: hero;
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+    "text"
+    "image";
+    gap: 1.5rem;
+  }
+
+  .hero-content{
+    grid-area: text;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    background-color: white;
+    row-gap: 1rem;
+    padding: 1rem;
+  }
+
+  h1{
+    text-align: right;
+    font-size: 2rem;
+    padding-bottom: 0;
+  }
+
+  p{
+    font-size: 1rem;
+    line-height: 1.5rem;
+    text-align: justify;
+    padding-top: 0;
+  }
+
+  .hero-img{
+    grid-area: image;
+  }
+
+  .hero-img > img{
+    display: block;
+    width: 100%;
+    height: 400px;
+  }
+
+  /* section two-products */
+  .products {
+    grid-area: product;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    grid-template-rows: auto auto;
+  }
+
+.img-box{
+   display: block;
+   width: 100%;
+   height: 260px;
+   object-fit:cover;
+   border-bottom: none;
+}
+
+.cake-titles{
+ height: 2.5rem;
+ padding-top: 0.6rem;
+ text-align: center;
+ background-color: chocolate;
+ color: white;
+ }
+
+ .cake-titles:hover{
+  background-color: rgba(42,172,193,0.8);
+  color: black;
+ }
+
+/* footer */
+footer{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas: 
+  "links . ."
+  ". copyright .";
+  background-color: rgba(42,172,193,0.8);
+  row-gap: 1rem;
+  padding: 2rem 1rem;
+}
+
+.footer-li{
+  grid-area: links;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  row-gap: 1rem;
+
+}
+
+.footer-li-item > a{
+  font-size: 1rem;
+  color:black;
+  cursor: pointer;
+}
+.footer-li-item > a:hover{
+  color: chocolate;
+}
+
+.copyright {
+  grid-area: copyright;
+  font-size: 1rem;
+  text-align: center;
+  color: black;
+}
+
+
+                       /*. tablet.  */
+  @media screen and (min-width: 540px) {
+  
+    .container {
+     
+      display: grid;
+      grid-template-columns:repeat(12,1fr) ;
+      grid-template-areas: 
+     "h h h h h h h h h h h h"
+     "n n n n n n n n n n n n"
+     "m m m m m m m m m m m m"
+     "f f f f f f f f f f f f";
+    }
+    .header{
+     grid-area: h;
+     grid-template-areas: 
+     "image . "
+     "image text";
+    }
+    .header-text{
+      font-size: 0.8rem;
+    }
+.mobile-navbar{
+  display: none;
+}
+
+.desktop-navbar{
+  grid-area: n;
+  margin: 2rem 0rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 1.5rem 1.5rem;
+  
+ 
+}
+.desktop-nav-menu {
+  display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 1rem;
+  }
+.desktop-nav-item{
+  margin-right:0rem;
+}
+.desktop-nav-link {
+ background-color: rgba(42,172,193,0.8);
+  color: white;
+  padding: 6px 18px;
+  font-size: 1rem;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.desktop-nav-link:hover {
+  color: black;
+  background-color: lightblue;
+  transition: 0.4ms;
+}
+.homepage-main{
+  grid-area: m;
+}
+.hero{
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "image text";
+}
+
+h1{
+  text-align: end;
+}
+
+.products{
+  grid-template-columns: repeat(4, 1fr);
+}
+   
+footer{
+  grid-area: f;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+  .footer-li{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    }
+    .footer-li-item{
+      margin-left: 2rem;
+      padding-right: 2rem;
+    }
+  }
+  
+  
+  
+  /* DESKTOP */
+  @media screen and (min-width: 900px) {
+    .container{
+      grid-template-areas: 
+      "h h h h h h h h h h h h"
+      ". n n n n n n n n n n ."
+      ". m m m m m m m m m m ."
+      "f f f f f f f f f f f f";
+    }
+    .header{
+    padding-left: 3rem;
+     padding-right: 6rem;
+    }
+    .homepage-main{
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+  
+  
+  
+  
+  
+  
+
+  
