@@ -1,9 +1,10 @@
 /*  Add your styling here */
+
 .container {
     border: 1px solid black;
     height: 100%;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit, 1fr);
     grid-template-rows: 150px 100px auto 100px;
     grid-template-areas: 
     "header header header header"
@@ -14,16 +15,30 @@
 
 .header {
     grid-area: header;
+    display: flex;
+    flex: 0 0 auto;
+    justify-content: flex-end;
 }
 
 .navigation {
     grid-area: navigation;
+    display: flex;
+    justify-content: space-around;
 }
 
 .content {
     grid-area: content;
+    
 }
 
 .footer {
     grid-area: footer;
+    display: flex;
+    justify-content: space-around;
+}
+
+.small-img {
+    width: 22%;
+    margin-left: 10px;
+    height: auto;
 }
