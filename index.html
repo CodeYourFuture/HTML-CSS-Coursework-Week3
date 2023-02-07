@@ -5,12 +5,123 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Responsive Cake webpage</title>
+    <title>Hello, Sugar!</title>
     <!-- Add a link to your css file here -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <!-- Add your markup here -->
+    <!-- Navigation -->
+    <nav class="site-nav grid">
+        <h1>Hello, Sugar!</h1>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Cakes</a></li>
+            <li><a href="#">Order In</a></li>
+            <li><a href="#">Contacts</a></li>
+        </ul>
+    </nav>
+    <main>
+        <!-- Hero section -->
+        <section class="welcome grid">
+            <div class="welcome-text">
+                <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+                <p class="leading">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, nihil. Impedit ab
+                    quasi ut maiores quaerat modi praesentium odio, est architecto ipsum voluptas illum nostrum.</p>
+                <a class="button" href="#">Order now</a>
+            </div>
+            <div class="welcome-img">
+                <img src="" alt="Welcome image">
+            </div>
+        </section>
+        <!-- Feature Section -->
+        <section class="portfolio">
+            <h3>Pick your treat</h3>
+            <div class="grid feature">
+                <div class="feature">
+                    <img src="" alt="Birthday cake image">
+                    <h4>Birthday Cake</h4>
+                    <p class="cake-descrption">Honey, you don't have to make a wish, it's already come true! Cakes for
+                        every taste and size!</p>
+                </div>
+
+                <div class="feature">
+                    <img src="" alt="Wedding Cake image">
+                    <h4>Wedding Cake</h4>
+                    <p class="cake-descrption">Beach wedding, Vegas wedding or Big Greek wedding? Our cake will steal
+                        the show anyway!</p>
+                </div>
+
+                <div class="feature">
+                    <img src="" alt="Cake Image">
+                    <h4>No Reason Cake</h4>
+                    <p class="cake-descrption">Do you really need a reason to treat yourself to our delicious cakes? We
+                        say No!</p>
+                </div>
+            </div>
+        </section>
+        <section class="gallery">
+            <h3>Look at these beauties!</h3>
+            <div class="img-gallery">
+                <img src="" alt="cake-1">
+                <img src="" alt="cake-1">
+                <img src="" alt="cake-1">
+                <img src="" alt="cake-1">
+                <img src="" alt="cake-1">
+                <img src="" alt="cake-1">
+                <img src="" alt="cake-1">
+                <img src="" alt="cake-1">
+                <img src="" alt="cake-1">
+            </div>
+
+        </section>
+        <section class="contact">
+            <h3>Leave a comment</h3>
+            <p class="leading"></p>
+            <form action="" method="post">
+                <div>
+                    <label for="full-name">Your Name</label>
+                    <input id="full-name" type="text" placeholder="Your Name" name="full-name">
+                </div>
+
+                <div>
+                    <label for="email">Your email</label>
+                    <input id="email" type="email" placeholder="Your email" name="email">
+                </div>
+
+                <div>
+                    <label for="comment">Leave your comment here</label>
+                    <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Yout message goes here"></textarea>
+                </div>
+                <div>
+                    <button class="button" type="submit">Submit now</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="grid">
+            <div class="footer-links">
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Customer Service</a></li>
+                    <li><a href="#">Terms and Conditions</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul> 
+            </div>
+            <div class="footer-links">
+                <ul>
+                    <li><a href="#"></a><img src="#" alt="instagram icon"></li>
+                    <li><a href="#"></a><img src="#" alt="facebook icon"></li>
+                    <li><a href="#"></a><img src="#" alt="twitter icon"></li>
+                    <li><a href="#"></a><img src="#" alt="pinterest icon"></li>
+                </ul>
+
+            </div>
+            <p class="copyright">Created by Alena Lazareva as a part of CYF Homework in 2023</p>
+        </div>
+    </footer>
 </body>
 
 </html>
