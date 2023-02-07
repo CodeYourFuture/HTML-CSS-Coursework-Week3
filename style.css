@@ -1,1 +1,440 @@
-/*  Add your styling here */
+* {
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+}
+
+/*Create grid for the whole page*/
+body {
+  display: grid;
+  grid-template-areas:
+    "h h h h h h h h h h h h "
+    "m m m m m m m m m m m m "
+    "f f f f f f f f f f f f ";
+}
+
+.header {
+  grid-area: h;
+  background-color: whitesmoke;
+}
+.content {
+  grid-area: m;
+}
+
+.footer {
+  grid-area: f;
+  background-color: whitesmoke;
+  color: palevioletred;
+  font-weight: bold;
+}
+
+/* navigator button*/
+
+.navigator label span {
+  display: inline-block;
+  width: 90px;
+  height: 15px;
+  margin-bottom: 10px;
+  background-color: pink;
+}
+.navigator input[type="checkbox"] {
+  appearance: none;
+}
+.navigator,
+label {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  border: none;
+  background-color: whitesmoke;
+}
+.navigator a {
+  display: none;
+  text-decoration: none;
+  width: 100%;
+  color: black;
+}
+.navigator input[type="checkbox"]:checked ~ a {
+  display: block;
+  padding: 0.25rem;
+  background-color: pink;
+}
+.navigator a:hover {
+  background-color: white;
+  color: white;
+}
+
+/*apply positioning to the header*/
+.header {
+  position: relative;
+}
+.header .navigator {
+  margin-right: 1px;
+  position: absolute;
+  top: 30px;
+  right: 60px;
+  background-color: whitesmoke;
+}
+
+/*flex the logo and text element in the header*/
+.header .div-h {
+  display: flex;
+  flex-direction: row;
+}
+
+.header .div-h p {
+  align-self: flex-end;
+  margin-left: auto;
+  padding: 0 2rem 0rem 400px;
+  font-size: 2rem;
+  color: palevioletred;
+}
+/*logo*/
+.header .div-h a img {
+  width: auto;
+  height: 30vh;
+  margin-left: 50px;
+  margin-bottom: 6em;
+}
+
+/*flex the main content*/
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/*margin the sections of the main element*/
+.content1 {
+  margin: 2rem 2rem 0 2rem;
+}
+.content2 {
+  margin: 2rem 2rem 0 2rem;
+}
+.content3 {
+  margin: 2rem 2rem 2rem 2rem;
+}
+
+.content .content1 h1 {
+  font-size: 5rem;
+  color: pink;
+}
+.content .content1 p.cont1-p {
+  font-size: 2rem;
+}
+/*sizing content3 images*/
+.content .content3 .c img {
+  width: 100%;
+  height: 100%;
+}
+
+.c1,
+.c2,
+.c3,
+.c4 {
+  height: 40vh;
+}
+
+/* create grid on the third element of Main */
+
+.content .content3 .c {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 1fr 1fr;
+  justify-content: center;
+  gap: 30px;
+  margin: 0px;
+}
+
+.content .content3 .c .c1 {
+  grid-area: 1/1/2/7;
+}
+.content .content3 .c .c2 {
+  grid-area: 1/7/2/13;
+}
+.content .content3 .c .c3 {
+  grid-area: 2/1/3/7;
+}
+.content .content3 .c .c4 {
+  grid-area: 2/7/3/13;
+}
+
+.footer > p {
+  text-align: center;
+}
+.footer .div-f {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: flex-start;
+  margin-left: 2rem;
+}
+
+.footer .div-f p {
+  background-color: white;
+  padding: 5px 10px;
+}
+
+@media (min-width: 540px) {
+  .header {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto auto;
+    gap: 10px;
+    background-color: white;
+  }
+  .header .div-h {
+    grid-area: 1/1/2/13;
+    background-color: whitesmoke;
+  }
+  .header .navigator {
+    grid-area: 2/1/3/13;
+    height: 6rem;
+    position: relative;
+    background-color: pink;
+  }
+  .header .div-h {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .header .div-h p.head-p {
+    align-self: flex-end;
+    margin-left: auto;
+    margin-right: 100px;
+    padding: 0;
+    font-size: 1.5rem;
+    color: palevioletred;
+  }
+  .header .div-h a img {
+    margin-bottom: 1rem;
+  }
+
+  .navigator label {
+    display: none;
+    width: 0;
+  }
+  .navigator {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    gap: 1rem;
+    cursor: auto;
+    border: none;
+    background-color: whitesmoke;
+    margin: 0 2rem 2rem 6rem;
+    padding-right: 5rem;
+  }
+
+  .navigator a {
+    display: inline;
+    padding: 0.5rem 1.5rem;
+    background-color: white;
+    width: auto;
+    font-size: 0.75rem;
+  }
+  .navigator:hover a {
+    display: inline;
+    padding: 0.5rem 1.5rem;
+    background-color: white;
+    width: auto;
+  }
+  .navigator a:hover {
+    color: orchid;
+  }
+
+  .content1 {
+    margin: 2rem 4rem 2rem 0;
+  }
+  .content2 {
+    margin: 2rem 0 2rem 2rem;
+  }
+  .content3 {
+    margin: 0 2rem 2rem 2rem;
+  }
+
+  .content .content1 h1 {
+    font-size: 3rem;
+    color: pink;
+    text-align: right;
+  }
+  .content .content1 p.cont1-p {
+    font-size: 1em;
+    text-align: justify;
+    width: 46vw;
+    height: auto;
+  }
+  .content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr auto;
+    gap: 30px;
+  }
+
+  .content .content2 {
+    grid-area: 1/1/1/2;
+  }
+
+  .content .content1 {
+    grid-area: 1/2/2/3;
+  }
+  .content .content3 {
+    grid-area: 2/1/3/3;
+  }
+  .content .content3 .c {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+  }
+
+  .content .content3 .c img {
+    width: 22.5vw;
+    height: 40vh;
+  }
+
+  .content .content2 a img {
+    width: 46vw;
+    height: 100%;
+  }
+
+  .footer .div-f {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: flex-start;
+    justify-content: center;
+    margin-left: 2rem;
+  }
+}
+
+@media (min-width: 900px) {
+  .header {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto auto;
+    gap: 10px;
+    background-color: white;
+  }
+  .header .div-h {
+    grid-area: 1/1/2/13;
+    background-color: whitesmoke;
+  }
+  .header .navigator {
+    grid-area: 2/1/3/13;
+    height: 6rem;
+    position: relative;
+    background-color: pink;
+  }
+  .header .div-h {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .header .div-h p.head-p {
+    align-self: flex-end;
+    margin-left: auto;
+    margin-right: 100px;
+    padding: 0;
+    font-size: 2rem;
+    color: palevioletred;
+  }
+
+  .header .div-h a img {
+    margin-bottom: 1rem;
+  }
+
+  .navigator label {
+    display: none;
+    width: 0;
+  }
+  .navigator {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    gap: 25px;
+    cursor: auto;
+    border: none;
+    background-color: whitesmoke;
+    margin: 0 2rem 2rem 6rem;
+    padding-right: 5rem;
+  }
+
+  .navigator a {
+    display: inline;
+    padding: 0.5rem 1.5rem;
+    background-color: white;
+    width: auto;
+    font-size: 1rem;
+  }
+  .navigator:hover a {
+    display: inline;
+    padding: 0.5rem 1.5rem;
+    background-color: white;
+    width: auto;
+  }
+  .navigator a:hover {
+    color: orchid;
+  }
+
+  .content1 {
+    margin: 2rem 4rem 2rem 0;
+  }
+  .content2 {
+    margin: 2rem 0 2rem 2rem;
+  }
+  .content3 {
+    margin: 0 2rem 2rem 2rem;
+  }
+
+  .content .content1 h1 {
+    font-size: 3rem;
+    color: pink;
+    text-align: right;
+  }
+  .content .content1 p.cont1-p {
+    font-size: 2rem;
+    text-align: justify;
+  }
+  .content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr auto;
+    gap: 30px;
+  }
+
+  .content .content2 {
+    grid-area: 1/1/1/2;
+  }
+
+  .content .content1 {
+    grid-area: 1/2/2/3;
+  }
+  .content .content3 {
+    grid-area: 2/1/3/3;
+  }
+  .content .content3 .c {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+  }
+
+  .content .content3 .c img {
+    width: 22.5vw;
+    height: 40vh;
+  }
+
+  .content .content2 a img {
+    width: 46vw;
+    height: auto;
+  }
+  .footer .div-f {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: flex-start;
+    justify-content: center;
+    margin-left: 2rem;
+  }
+}
