@@ -1,7 +1,42 @@
 /*  Add your styling here */
-* {
+.navbar {
+    display: flex;
     background-color: black;
-    padding: 0%;
-    margin: 0%;
-
+    font-family: sans-serif;
+    font-size: 14px;
+    color: azure;
+    padding: 10px;
+}
+.navbar_items, .navbar_items_right {
+    display: flex;
+}
+.navbar_links, .navbar_title {
+    padding-right: 10px;
+    list-style: none;
+}
+.navbar_items_right {
+    margin-left: auto;
+}
+.navbar_links_toggle {
+    display: none;
+}
+@media only screen and (max-width: 768px){
+    .navbar_items, .navbar {
+        flex-direction: column;
+    }
+    .navbar_items {
+        display: none;
+    }
+    .navbar_items_right {
+        margin-left: 0;
+    }
+    .navbar_links_toggle {
+        display: initial;
+        align-self: flex-end;
+        position: absolute;
+        cursor: pointer;
+    }
+    .navbar_toggleShow {
+        display: flex;
+    }
 }

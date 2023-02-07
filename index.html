@@ -8,54 +8,46 @@
     <title>Responsive Cake webpage</title>
     <!-- Add a link to your css file here -->
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <script type="text/javascript">
+        function classToggle() {
+        const navs = document.querySelectorAll('.navbar_items')
+        navs.forEach(nav => nav.classList.toggle('navbar_toggleShow'));
+        }
+        document.querySelector('.navbar_links_toggle')
+        .addEventListener('click', classToggle);
+    </script>
 
 </head>
 
 <body>
+    
     <!-- Add your markup here -->
-    <div>
-        <header>
-            <a class="to_navbar" href="#navbar">Nav</a>
-            <img class="logo" src="./images/logo.jpg">
-
-        </header>
-        <div>
-            <h2>Welcome to our cake bakery, where you can find the best cake in town. We have been delivering our fresh cake and pasteris for over 50 years.</h2>
-    
-            <img src="./images/birthday_cake1.jpg" alt="birthday cake">
-        </div>
-        <div>
-            <div>
-                <img src="./images/birthday_cake.jpg" alt="birthday cake">
-                <p>Birthday cake</p>
-            </div>
-            
-            <div>
-                <img src="./images/pancake1.jpg" alt="pancake">
-                <p>Pancake</p>
-            </div>
-            <div>
-                <img src="./images/croissants.jpg">
-                <p>croissants</p>
-            </div>
-        </div>
-        
-    
-        <nav>
-            <ul id="navbar">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Cakes</a></li>
-                <li><a href="#">Oreder in</a></li>
-                <li><a href="#">Lessons</a></li>
-                <li><a href="#">About</a></li>
-            </ul>
+    <div class="navbar">
+        <div class="navbar_links navbar_title">CakeCo</div>
+        <div class="navbar_links navbar_links_toggle">Menu</div>
+        <nav class="navbar_items">       
+        <div class="navbar_links"><a href="#">Home</a></div>
+        <div class="navbar_links"><a href="#">Cakes</a></div>
         </nav>
-        <footer>
-            <p>Thanks for visiting our Cake bakery, for more information please give us a call on 02076277252</p>
-        </footer>
+        <nav class="navbar_items navbar_items_right">
+        <div class="navbar_links"><a href="#">Order in</a></div>
+        <div class="navbar_links"><a href="#">Lessons</a></div>
+        <div class="navbar_links"><a href="#">About</a></div>
+        </nav>
+
+        
+
     </div>
 
-
+    <div>
+        <h2>Welcome to CakeCo bakery</h2>
+        <img src="./images/birthday_cake.jpg" width="100%">
+    </div>
+    <div>
+        <div><img src="./images/birthday_cake1.jpg"></div>
+        <div><img src="./images/croissants.jpg"></div>
+        <div><img src="./images/cupcake.jpg"></div>
+    </div>
 </body>
 
 </html>
