@@ -1,1 +1,67 @@
 /*  Add your styling here */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200&display=swap');
+
+
+
+* {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+
+}
+
+body {
+    
+}
+
+.four-images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 10px;
+    
+    
+}
+
+.first-img1 {
+    width: 470px;
+    display: grid;
+    justify-content: center;
+    
+}
+
+.first-img {
+    width: 235px;
+}
+
+.logo-img {
+    width: 150px;
+}
+.welcome {
+    text-align: center;
+    letter-spacing: 1.5rem;
+}
+.nav {
+    display: none;
+}
+
+.logo-p-nav-container {
+    display: grid;
+    grid-template-columns: 235px 235px;
+    grid-template-rows: 180px;
+    border: 2px solid black;
+
+}
+
+.nav-p {
+    font-size: 0.6rem;
+    text-align: end;
+    line-height: 0;
+    border: 2px solid blue;
+}
+.img-p-container {
+    display: grid;
+    grid-template-columns: 235px 235px;
+    grid-template-rows: 180px;
+    border: 2px solid brown;
+}
