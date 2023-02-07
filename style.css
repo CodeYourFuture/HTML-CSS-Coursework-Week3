@@ -1,8 +1,51 @@
 /*  Add your styling here */
+  @media screen and (max-width: 600px) {
+    .navbar {
+      display: none;
+    }
+  }
+  @media screen and (min-width: 600px) {
+    .navbar {
+      display: block;
+    text-align: center;
+    background-color: #e6fff9;
+    margin: 10px;
+    }
+  }
+  @media screen and (min-width: 900px) {
+    .navbar {
+      display: block;
+    text-align: center;
+    background-color: rgb(234, 213, 213);
+    }
+  }
 .logo{
     grid-area: logo;
 }
 
+nav ul {
+    display: inline-block;
+    list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+li {
+    display: inline-block;
+    float:left;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+}
+li a {
+        display: block;
+        border: 0px;
+        margin: 0px;
+        padding-right: 15px;
+        padding-left: 20px;
+        text-align: center;
+      
+}
 .context{
     grid-area: context;
     text-align: end;
@@ -35,7 +78,7 @@ header {
     color: darkcyan;
  }
  nav {
-    display: none;
+    display: non
  }
  section {
     display: grid;
