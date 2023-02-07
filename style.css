@@ -88,7 +88,6 @@ label {
   padding: 0 2rem 0rem 400px;
   font-size: 2rem;
   color: palevioletred;
-  font-weight: bold;
 }
 /*logo*/
 .header .div-h a img {
@@ -120,7 +119,7 @@ label {
   font-size: 5rem;
   color: pink;
 }
-.content .content1 p {
+.content .content1 p.cont1-p {
   font-size: 2rem;
 }
 /*sizing content3 images*/
@@ -176,7 +175,7 @@ label {
   padding: 5px 10px;
 }
 
-@media screen and (min-width: 540px) {
+@media (min-width: 540px) {
   .header {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -199,12 +198,12 @@ label {
     flex-direction: row;
   }
 
-  .header .div-h p {
+  .header .div-h p.head-p {
     align-self: flex-end;
     margin-left: auto;
     margin-right: 100px;
     padding: 0;
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: palevioletred;
   }
   .header .div-h a img {
@@ -220,7 +219,7 @@ label {
     flex-direction: row;
     justify-content: end;
     align-items: center;
-    gap: 25px;
+    gap: 1rem;
     cursor: auto;
     border: none;
     background-color: whitesmoke;
@@ -233,6 +232,7 @@ label {
     padding: 0.5rem 1.5rem;
     background-color: white;
     width: auto;
+    font-size: 0.75rem;
   }
   .navigator:hover a {
     display: inline;
@@ -259,9 +259,11 @@ label {
     color: pink;
     text-align: right;
   }
-  .content .content1 p {
-    font-size: 2em;
+  .content .content1 p.cont1-p {
+    font-size: 1em;
     text-align: justify;
+    width: 46vw;
+    height: auto;
   }
   .content {
     display: grid;
@@ -293,8 +295,9 @@ label {
 
   .content .content2 a img {
     width: 46vw;
-    height: auto;
+    height: 100%;
   }
+
   .footer .div-f {
     display: flex;
     flex-direction: row;
@@ -305,7 +308,7 @@ label {
   }
 }
 
-@media screen and (min-width: 900px) {
+@media (min-width: 900px) {
   .header {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -328,7 +331,7 @@ label {
     flex-direction: row;
   }
 
-  .header .div-h p {
+  .header .div-h p.head-p {
     align-self: flex-end;
     margin-left: auto;
     margin-right: 100px;
@@ -363,6 +366,7 @@ label {
     padding: 0.5rem 1.5rem;
     background-color: white;
     width: auto;
+    font-size: 1rem;
   }
   .navigator:hover a {
     display: inline;
@@ -389,7 +393,7 @@ label {
     color: pink;
     text-align: right;
   }
-  .content .content1 p {
+  .content .content1 p.cont1-p {
     font-size: 2rem;
     text-align: justify;
   }
