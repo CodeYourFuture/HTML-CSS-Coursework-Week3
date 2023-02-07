@@ -295,6 +295,9 @@ align-items: center;
 .p-hero{
   font-size:1.2rem;
 }
+.hero-img img{
+  height: 100%;
+}
 .products{
   grid-template-columns: repeat(4, 1fr);
 }
@@ -338,6 +341,9 @@ footer{
     .main-homepage{
       padding-left: 0;
       padding-right: 0;
+    }
+    .hero-img img{
+      height: 85%;
     }
   }
   
