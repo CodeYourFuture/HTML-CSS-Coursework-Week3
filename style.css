@@ -19,6 +19,7 @@ body {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     column-gap: 10px;
+    row-gap: 10px;
     
     
 }
@@ -64,4 +65,13 @@ body {
     grid-template-columns: 235px 235px;
     grid-template-rows: 180px;
     border: 2px solid brown;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 5rem;
+}
+.footer-icon {
+    width: 30px;
+    margin-top: 2rem;
 }
