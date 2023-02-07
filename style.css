@@ -179,12 +179,56 @@ footer p{
 
 /*Medea*/
 
-@media screen and (max-width: 1080px){
+@media screen and (max-width: 820px){
+
+.main-welkome{
+    flex-wrap: wrap-reverse;
+    align-items: center;
+}
+
+.main-text{
+    margin-left: 0;
+   
+}
+
+.main-text p{
+    margin-bottom: 2rem;
+}
+
+.main-picture{
+    width: 100%;
+}
+
+.main-icons div{
+    padding: 0 4rem;
+    margin: 1rem 2rem;  
+}
+
+.main-picture img{
+    width: 100%;
+    max-width: 100%;
+ }
+
+
+}
+
+@media screen and (max-width: 390px){
  
 .header{
     flex-wrap: wrap;
 }
 
+.main-icons img{
+    max-width: 4rem;
+}
+.main-icons{
+    flex-wrap: wrap;
+}
+
+.main-icons div{
+    padding: 1rem;
+    margin: 0;
+}
 
 .main-welkome{
     flex-wrap: wrap-reverse;
@@ -198,6 +242,9 @@ footer p{
     margin: auto;
  }
 
+ .main-icons div{
+    margin: 1rem;
+}
 
  .main-text, .main-picture{
     margin: 1rem;
@@ -215,22 +262,56 @@ footer p{
     margin: 0.5rem;
 }
 
+/*navbar media*/
+
+.navbar ul{
+  overflow: hidden;
+  background-color: rgb(234, 223, 233);
+  margin: auto;
+  padding: 0;
+  height:0;
+  top:0%;
+  position: absolute;
+  width: 100%;
+  
+}
+
+.navbar ul.open{
+    height: auto;
+    padding-top: 3rem;
+}
+
+.navbar ul li{
+    margin-top: 2rem;
+    display: block;
+    text-align: left;
+}
+
+.navbar ul li a{
+    color: rgb(123, 80, 119);
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    border-bottom: 0.1rem solid rgb(162, 129, 159);
+    display: block;
+    margin: 0.5rem 2rem;
+}
+
 .navbar{
-  display: none;
+    height: 0;
 }
 
-}
-
-@media screen and (max-width: 1180px){
-.main-icons {
-    margin: 2rem 10rem;
-}
-.main-picture img{
+.burger-nav{
+    display: block;
+    height: 3rem;
     width: 100%;
-    max-width: 100%;
- }
+    background: url(images/navbar_1.png) no-repeat 92% center;
+    position: absolute;
+    top: 3%;
+}
 
 }
+
+
 
 /*
 .wrapper {
