@@ -1,5 +1,53 @@
 /*  Add your styling here */
 
+/* @import url('https://fonts.googleapis.com/css2?family=Georama:wght@200&display=swap'); */
+
+
+*{
+    padding: 10px;
+    margin: 5px;
+}
+
+.navigate{
+    height: 30vh;
+    width: 100%;
+    background-color: rgb(39, 27, 27);
+   
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.logo{
+    color: whitesmoke;
+    font-size: 28px;
+}
+
+span{
+    color: orange;
+}
+
+nav ul li { 
+    list-style: none;
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+nav ul li a{
+    color: orange;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+
+
 /* .container-header{
     padding:10px;
     margin: 10px;
@@ -11,20 +59,60 @@
    row-gap: 10px;
 } */
 
-*{
-    font-family:fantasy;
+/* font-family:fantasy;
    
-    
+} */ 
+
+/* header{
+    position:relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 .2rem 3rem lightgrey;
+    background-color: pink
 }
 
-header{
-    background-color: rgb(137, 183, 235);
-    color: palevioletred;
-    padding: 20px 20px;
-    
+header .logo img{
+    height: 10rem
 }
 
-.logo{
+header .navigate ul{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+header .navigate ul li{
+    margin-left: 1rem;
+}
+
+header .navigate ul li a{
+    padding-right: 3rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color:goldenrod;
+    font-weight: 500;
+}
+
+header .company-name{
+    display: flex;
+    /* text-align: center; */
+    /* align-items: center;
+    justify-content: center;
+} */
+
+/* .home{
+    background-color: lightcoral;
+}  */
+
+
+/* .logo{
     display: flex;
     justify-content: flex-start;
     padding: 0px;
@@ -68,7 +156,7 @@ h1{
 
    .cake-img{
     padding: 0 20px 20px 0;
-   }
+   } */
 
 /* .container-2{
     display: flex;
@@ -79,10 +167,10 @@ h1{
     justify-content: center;
     padding: 10px 10px;
     
-   } */
+   }
 
-   .right{
+.right{
 text-align: center;
 font-size: x-small;
 color: gray;
-   }
+   } */ 
