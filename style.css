@@ -1,1 +1,88 @@
 /*  Add your styling here */
+
+/* .container-header{
+    padding:10px;
+    margin: 10px;
+    text-align: center ;
+    color: palevioletred;
+    background-color: pink;
+   display: flex;
+   flex-direction: row;
+   row-gap: 10px;
+} */
+
+*{
+    font-family:fantasy;
+   
+    
+}
+
+header{
+    background-color: rgb(137, 183, 235);
+    color: palevioletred;
+    padding: 20px 20px;
+    
+}
+
+.logo{
+    display: flex;
+    justify-content: flex-start;
+    padding: 0px;
+    margin-left: 0px;
+}
+
+h1{
+    text-align: center;
+}
+
+.menu {
+    float: right;
+    text-align: center;
+  }
+
+  .menu a {
+   
+    padding: 10px;
+    margin-top:10px;
+    display: inline;
+    width: 100%;
+    color: black;
+  }
+
+
+.main{
+    padding: 10px;
+    padding-bottom: 20px;
+    margin: 10px;
+    text-align: center;
+}
+
+.images{
+    display: flex;
+   flex-wrap: wrap;
+   flex-direction: row;
+   align-items: center;
+   justify-items: center;
+   
+   }
+
+   .cake-img{
+    padding: 0 20px 20px 0;
+   }
+
+/* .container-2{
+    display: flex;
+    height: 50px; 
+    max-width: 1200px;
+    width: 50px;
+    flex-wrap:wrap
+    justify-content: center;
+    padding: 10px 10px;
+    
+   } */
+
+   .right{
+text-align: center;
+font-size: x-small;
+color: gray;
+   }
