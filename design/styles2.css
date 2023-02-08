@@ -1,0 +1,144 @@
+:root {
+    --backgroundColor: #ffd6ff;
+    --purple: #c8b6ff;
+    --pale-blue: #bbd0ff;
+    --bright-purple: #8338ec;
+}
+
+/* text styling */
+p {
+    font-family: 'Itim', cursive;
+    text-align: justify;
+    padding: 5px;
+}
+
+.header_text {
+    font-family: 'Lobster', cursive;
+    text-align: end;
+    padding: 0 10px 10px 350px;
+    margin-top: 0;
+    font-weight: 16px;
+}
+
+header,footer {
+    background-color: var(--backgroundColor);
+    margin-bottom: 0;
+    }
+
+/* images sizing */
+
+#logo {
+    width: 150px;
+    grid-area: l;
+}
+.main_img {
+    width: 480px;
+    padding-left: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sm_icon {
+    width: 30px;
+}
+
+.chapter {
+    width: 220px;
+    height: 220px;
+}
+
+/* max-width: 400px; */
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "l n"
+    "l p";
+}
+
+/* nav-bar positioning */
+
+nav-bar {
+    display: none;
+}
+
+nav {
+    width: 100%;
+    height: 30%;
+    position: fixed;
+    background-color: var(--backgroundColor);
+    overflow: hidden;
+}
+nav a {
+    text-decoration: none;
+}
+.navigation_menu a{
+    display: block;
+    padding: 10px;
+    color: var(--bright-purple);
+    font-size: large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.navigation_menu a:hover{
+    background-color: var(--pale-blue);
+}
+.nav {
+    max-height: 0;
+    transition: max-height .5s ease-out;
+}
+
+.ham{
+    cursor: pointer;
+    float: right;
+    padding: 20px 20px;
+}
+.ham-line{
+    background: black;
+    display: block;
+    height: 5px;
+    position: relative;
+    width: 48px;
+    grid-area: n;
+}
+.ham-line::before,
+.ham-line::after{
+    background: black;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+
+.ham-line::before{
+    top: 10px;
+}
+.ham-line::after{
+    top: -10px;
+}
+.side-menu{
+    display: none;
+}
+
+.side-menu:checked ~ nav{
+    max-height: 100%;
+}
+.side-menu:checked ~ .ham .ham-line {
+    background: transparent;
+}
+.side-menu:checked ~ .ham .ham-line::before {
+    transform: rotate(-45deg);
+    top:0;
+}
+.side-menu:checked ~ .ham .ham-line::after {
+    transform: rotate(45deg);
+    top:0;
+}
+nav, nav-bar ul {
+    list-style: none;
+}
