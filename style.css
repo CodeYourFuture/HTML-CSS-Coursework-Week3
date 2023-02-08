@@ -4,9 +4,8 @@
     --coral: #ff533d;
     --navy-blue: #0f1626;
     --leather: #eeeae4;
-    --white: #f5f5f5;
+    --white: #FFFAFA;
     --light-pink: #f7f5f2;
-    --bloob: #FFBAB1;
 
 }
 
@@ -19,7 +18,7 @@
 }
 
 html {
-    font-family: 'Rubik', sans-serif;
+    font-family:'Times New Roman', Times, serif;
 }
 
 li {
@@ -34,7 +33,7 @@ li {
 
 /* base styles */
 body {
-    background-color: var(--light-pink);
+    background-color: var(--white);
     overflow-x: hidden;
     font-size: 10px;
     border-top: 1em solid var(--navy-blue);
@@ -67,6 +66,7 @@ body {
     font-size: 1em;
     display: inline-block;
     margin-bottom: 1rem;
+    text-transform: uppercase;
 }
 
 .small-button:active,
@@ -86,11 +86,17 @@ textarea {
     margin-bottom: 1em;
 }
 
+input[type=text]:active,
+input[type=textarea]:active {
+    border: none;
+}
+
+
 input:active,
 textarea:active, 
 input:hover,
 textarea:hover {
-    border: 1px solid var(--bloob);
+    border: 1px solid var(--coral);
 }
 
 .centered {
@@ -141,7 +147,7 @@ h4 {
 .leading {
     font-size: 1.2em;
     margin-bottom: 1em;
-    line-height: 1.4;
+    line-height: 1.6;
 }
 
 /* Mobile layout */
@@ -183,7 +189,7 @@ h4 {
 
 /* Hero section */
 .welcome {
-    background-color: var(--leather);
+    /* background-color: var(--leather); */
     grid-column: 1/-1;
     padding: 2em;
 
@@ -216,6 +222,13 @@ h4 {
 
 }
 
+.image {
+    background-image: url(https://images.unsplash.com/photo-1617980695839-8e27c9f7db25?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+    padding: 20em 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 /* Features */
 .portfolio {
     margin-bottom: 3em;
@@ -224,7 +237,7 @@ h4 {
 
 .feature {
     grid-column: 2/4;
-    background-color: var(--leather);
+    background-color: var(--light-pink);
     border-radius: 6px;
     box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.4);
     margin-bottom: 2em;
@@ -254,7 +267,7 @@ h4 {
 /* Gallery */
 .gallery {
     padding: 3em 2em 5em 2em;
-    background: var(--leather);
+    background: var(--light-pink);
 }
 
 .img-gallery {
