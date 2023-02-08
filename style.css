@@ -43,6 +43,8 @@ header a,
 .body__container {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 1fr auto auto auto 1fr;
+    gap: 1rem;
 }
 
 .grid__full {
@@ -70,6 +72,10 @@ header a,
 }
 
 /* header */
+header {
+    grid-row: 1;
+}
+
 .logo {
     display: flex;
     align-content: center;
@@ -94,7 +100,20 @@ ul {
     padding-left: 0;
 }
 
+/* main */
+main {
+    grid-row: 2 / 4;
+}
+
+/* portfolio section */
+.portfolio {
+    grid-row: 4 / 5;
+}
+
 /* footer */
+footer {
+    grid-row: 5 / 6;
+}
 
 .social__icons {
     display: flex;
