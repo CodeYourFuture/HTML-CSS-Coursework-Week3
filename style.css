@@ -64,9 +64,10 @@ body {
     border-radius: 6px;
     box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.3);
     font-size: 1em;
-    display: inline-block;
     margin-bottom: 1rem;
     text-transform: uppercase;
+    position: absolute;
+    bottom: 1em;
 }
 
 .small-button:active,
@@ -189,7 +190,6 @@ h4 {
 
 /* Hero section */
 .welcome {
-    /* background-color: var(--leather); */
     grid-column: 1/-1;
     padding: 2em;
 
@@ -242,7 +242,9 @@ h4 {
     box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.4);
     margin-bottom: 2em;
     padding: 1rem;
-
+    min-height: 35em;
+    max-height: 35em;
+    position: relative;
 }
 
 .feature img {
@@ -260,7 +262,7 @@ h4 {
 
 .cake-descrption {
     font-size: 1.2em;
-    margin-bottom: 1.4em;
+    margin-bottom: 1em;
     line-height: 1.4;
 }
 
