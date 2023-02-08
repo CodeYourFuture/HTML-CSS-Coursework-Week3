@@ -8,13 +8,14 @@
   grid-template-areas:  
   "h h h h h h nav nav"
   "h h h h h h nav nav"
-  "ma ma ma ma maa maa maa maa"
-  "ma ma ma ma maa maa maa maa"
-  "ma ma ma ma maa maa maa maa"
-  "ma ma ma ma maa maa maa maa"
-  "ma ma ma ma maa maa maa maa"
-  "s1 s1 s2 s2 s3 s3 s4 s4"
-  "s1 s1 s2 s2 s3 s3 s4 s4"
+  "maa maa maa maa maa maa maa maa"
+  "maa maa maa maa maa maa maa maa"
+  "ma ma ma ma ma ma ma ma"
+  "ma ma ma ma ma ma ma ma"
+  "ma ma ma ma ma ma ma ma"
+  "s1 s1 s1 s1 s2 s2 s2 s2"
+  "s3 s3 s3 s3 s4 s4 s4 s4"
+  
   "foo foo foo foo foo foo foo foo"
   "foo foo foo foo foo foo foo foo"
   ;
