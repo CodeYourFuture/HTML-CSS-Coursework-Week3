@@ -30,7 +30,7 @@
     display: none;
 }
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 540px){
     .navbar_items, .navbar {
         flex-direction: column;
     }
@@ -122,7 +122,7 @@
     
 
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 540px) {
     .upper_part {
         display: flex;
         flex-direction: row-reverse;
