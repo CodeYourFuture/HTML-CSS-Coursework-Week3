@@ -1,5 +1,30 @@
+/* root */
+
+
 /* general */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=DM+Serif+Display&display=swap');
+
 * {
-    margin: 0;
-    padding: 0;
+    box-sizing: border-box;
 }
+
+img {
+    width: 100%;
+}
+
+body {
+    margin: 0;
+    text-align: center;
+    line-height: 1.5;
+}
+
+h1 {
+    font-family: 'DM Serif Display', serif;
+}
+
+p {
+    font-family: 'DM Sans', sans-serif;
+}
+
+
+/* header */
