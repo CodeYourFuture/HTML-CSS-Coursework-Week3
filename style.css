@@ -84,7 +84,29 @@
         display: flex;
         text-decoration: none;
         margin-bottom: 40px;
+        color: brown;
         
+    }
+    .lower_navbar {
+        display: flex;
+        flex-direction: column;
+        margin-left: 15px;
+
+    }
+    .lower_navbar a {
+        margin-left: 10px;
+        text-decoration: none;
+        text-align: center;
+        display:inline-flex;
+        color: beige;
+    }
+   
+    footer p {
+        margin-left: 20px;
+        color: beige;
+    }
+    .navbar_footer {
+        background-color: black;
     }
     
     
