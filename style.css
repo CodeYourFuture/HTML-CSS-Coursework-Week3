@@ -42,7 +42,7 @@ body {
 .button {
     background-color: var(--coral);
     color: var(--white);
-    padding: 0.8em 1.8em;
+    padding: 1.2em 2.2em;
     border-radius: 6px;
     border: none;
     text-transform: uppercase;
@@ -60,7 +60,7 @@ body {
 .small-button {
     background-color: var(--navy-blue);
     color: var(--white);
-    padding: 0.8em 1.8em;
+    padding: 1.2em 2.2em;
     border-radius: 6px;
     box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.3);
     font-size: 1em;
