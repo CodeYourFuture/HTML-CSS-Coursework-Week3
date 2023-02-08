@@ -57,8 +57,7 @@ When you're ready to start coding:
 ## Deployment (optional)
 
 [Deploy your work to Netlify!](https://syllabus.codeyourfuture.io/workshops/deployment/workshop/instructions/)
-Remember to follow this naming convention when creating your custom URL in Netlify: `https://cyf-[your-Github-username]-cakes.netlify.app/`
-
+Remember to follow this naming convention when creating your custom URL in Netlify: https://cyf-delniaalipour-cakes.netlify.app/
 
 ## Wireframes
 
