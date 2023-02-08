@@ -25,9 +25,11 @@ p {
     font-family: 'DM Sans', sans-serif;
 }
 
+.unstyled__list {
+    list-style: none;
+}
 
 /* header */
-
 .logo {
     display: flex;
     align-content: center;
@@ -46,3 +48,10 @@ p {
     font-family: 'Staatliches', cursive;
     font-size: 1.8rem;
 }
+
+header a {
+    text-decoration: none;
+    color: black;
+}
+
+/* nav */
