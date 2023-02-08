@@ -5,53 +5,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
+    <!--   Google fonts link -->
     <link rel="dns-prefetch" href="//fonts.googleapis.com" />
     <link
       href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,"
       rel="stylesheet"
     />
+
+    <!--   favicon link -->
     <link
       rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <link rel="stylesheet" href="styles/styleee.css" />
+
+    <!--   local CSS link -->
+    <link rel="stylesheet" href="styles/style.css" />
 
     <title>Cakes</title>
   </head>
+
   <body>
     <!--  ======================= Start of main Area =============================  -->
 
-    <div class="parent">
-      <!--  =======================  NAV BAR =============================  -->
+    <!--  =======================  NAV BAR =============================  -->
 
-      <div
-        class="div1 header"
-        role="img"
-        aria-label="A view of the woods with its magnificent autumn colors"
-      >
-        <a href="#"> </a>
-        <h3>The best cakes in town diliverd to your door</h3>
-
-        <nav class="navbar">
-          <ul class="navigation__list">
-            <li>
-              <a href="#">Home</a>
+    <header>
+      <div class="nav_div">
+        <div class="nav_img_div">
+          <a href="#" class="logo-link">
+            <img
+              class="nav_img"
+              src="https://images.pexels.com/photos/7381533/pexels-photo-7381533.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=400&w=500"
+              alt="two pices of chocolate cake"
+          /></a>
+        </div>
+        <nav class="nav_ham">
+          <div>
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </nav>
+        <div class="nav_menu_div">
+          <ul class="nav-menu">
+            <li class="nav-item">
+              <a href="#" class="nav-link">Home</a>
             </li>
-            <li>
-              <a href="#">About Us</a>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Featured</a>
             </li>
-            <li>
-              <a href="#">News & Events</a>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Menu</a>
             </li>
-            <li>
-              <a href="#">Contact Us</a>
+            <li class="nav-item">
+              <a href="#" class="nav-link">About</a>
             </li>
           </ul>
-        </nav>
+        </div>
       </div>
+      <div class="text_head_div">
+        <p class="header-slogan">
+          The best cakes in town diliverd to your door
+        </p>
+      </div>
+    </header>
 
+    <!--  ======================= END NAV BAR =============================  -->
+
+    <div class="body_img_div">
       <!--  ======================= HERO TEXT =============================  -->
-      <main class="div2">
+      <main class="hero_text">
         <h1>Welcome</h1>
         <p>
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea veritatis
@@ -66,73 +89,82 @@
           aperiam repellat repellendus nemo. Consequatur laboriosam asperiores
           dicta ipsum natus optio alias quos facilis unde at. Quo!
         </p>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea veritatis
-          nam aut omnis iusto consequatur accusamus cupiditate sint officia
-          ullam ratione, consequuntur ad reiciendis exercitationem veniam minus
-          iste. Repudiandae ut maxime veritatis ducimus sint dolor saepe culpa,
-          quam quo error possimus quaerat expedita, dignissimos eligendi
-          asperiores? Amet commodi unde praesentium?Lorem ipsum, dolor sit amet
-          consectetur adipisicing elit. Doloremque similique eum, commodi quos
-          fugiat quibusdam cumque labore, ut quasi officia harum iste magni,
-          modi dolorem architecto omnis a maiores quaerat ipsum hic veritatis
-          aperiam repellat repellendus nemo. Consequatur laboriosam asperiores
-          dicta ipsum natus optio alias quos facilis unde at. Quo!
-        </p>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea veritatis
-          nam aut omnis iusto consequatur accusamus cupiditate sint officia
-          ullam ratione, consequuntur ad reiciendis exercitationem veniam minus
-          iste. Repudiandae ut maxime veritatis ducimus sint dolor saepe culpa,
-          quam quo error possimus quaerat expedita, dignissimos eligendi
-          asperiores? Amet commodi unde praesentium?Lorem ipsum, dolor sit amet
-          consectetur adipisicing elit. Doloremque similique eum, commodi quos
-          fugiat quibusdam cumque labore, ut quasi officia harum iste magni,
-          modi dolorem architecto omnis a maiores quaerat ipsum hic veritatis
-          aperiam repellat repellendus nemo. Consequatur laboriosam asperiores
-          dicta ipsum natus optio alias quos facilis unde at. Quo!
-        </p>
       </main>
+
       <!--  ======================= Featured Cake IMAGE =============================  -->
-      <div
-        class="div3"
-        role="img"
-        aria-label="A view of the woods with its magnificent autumn colors"
-      ></div>
+
+      <section class="featured_cake">
+        <img
+          src="https://images.pexels.com/photos/11663130/pexels-photo-11663130.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=1000&w=1500"
+          alt="blossom cake and spring"
+        />
+      </section>
 
       <!--  ======================= Featured Four Cakes =============================  -->
-      <div class="div4 image_grid">
-        <img
-          class="flex-item"
-          src="https://images.pexels.com/photos/5945565/pexels-photo-5945565.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=500&w=1500"
-          alt="logo with a blossom tree branch and text spring fundraisers"
-        />
-        <img
-          class="flex-item"
-          src="https://images.pexels.com/photos/11663130/pexels-photo-11663130.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=500&w=1500"
-          alt="logo with a blossom tree branch and text spring fundraisers"
-        />
-        <img
-          class="flex-item"
-          src="https://images.pexels.com/photos/10455820/pexels-photo-10455820.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=500&w=1500"
-          alt="logo with a blossom tree branch and text spring fundraisers"
-        />
-        <img
-          class="flex-item"
-          src="https://images.pexels.com/photos/5713814/pexels-photo-5713814.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=500&w=1500"
-          alt="logo with a blossom tree branch and text spring fundraisers"
-        />
-      </div>
-      <!--  ======================= Footer =============================  -->
-      <div class="footer_div8">
-        <div class="footer_side">
-          <p><strong>Bikes for Refugees Scotland is a.</strong></p>
-          <p><strong>Bikes for Refugees Scotland is a.</strong></p>
-          <p><strong>Bikes for Refugees Scotland is a.</strong></p>
+
+      <div class="feature_div_1 img_div">
+        <div class="feature_four_item">
+          <img
+            class="feature_img"
+            src="https://images.pexels.com/photos/5945565/pexels-photo-5945565.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=500&w=500"
+            alt="strawberry small cake"
+          />
         </div>
-        <p>Website by Code Your Future</p>
       </div>
-      <!--  ======================= END Footer =============================  -->
+      <div class="feature_div_2 img_div">
+        <div class="feature_four_item">
+          <img
+            class="feature_img"
+            src="https://images.pexels.com/photos/10455820/pexels-photo-10455820.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=500&w=500"
+            alt="strawberry newyork style cake"
+          />
+        </div>
+      </div>
+      <div class="feature_div_3 img_div">
+        <div class="feature_four_item">
+          <img
+            class="feature_img"
+            src="https://images.pexels.com/photos/5713814/pexels-photo-5713814.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=500&w=500"
+            alt="beakers favirut cake"
+          />
+        </div>
+      </div>
+      <div class="feature_div_4 img_div">
+        <div class="feature_four_item">
+          <img
+            class="feature_img"
+            src="https://images.pexels.com/photos/11663130/pexels-photo-11663130.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=500&w=500"
+            alt="chocolate sponge"
+          />
+        </div>
+      </div>
     </div>
+
+    <!--  ======================= Footer =============================  -->
+    <!--  <a href="#"><i class="fa fa-facebook"></i></a>   -->
+    <!--  <a href="#"><i class="fa fa-instagram"></i></a> -->
+    <footer>
+      <div class="footer_social">
+        <!-- sicial links -->
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-instagram"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-snapchat"></i></a>
+
+        <!-- copy rights  -->
+        <p>
+          Copyright &copy;
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+        </p>
+        <p>
+          MPL v.2.0 | programmed by
+
+          <a href="https://github.com/ali-nasir-ali"><span>nasir</span></a>
+        </p>
+      </div>
+    </footer>
+    <!--  ======================= END Footer =============================  -->
   </body>
 </html>
