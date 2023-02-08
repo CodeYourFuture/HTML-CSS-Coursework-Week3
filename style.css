@@ -29,6 +29,10 @@ p {
     list-style: none;
 }
 
+.center__text {
+    text-align: center;
+}
+
 /* header */
 .logo {
     display: flex;
@@ -58,6 +62,13 @@ header a {
 
 
 /* footer */
+
+.social__icons {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
 .icon {
     width: 30px;
     height: 30px;
