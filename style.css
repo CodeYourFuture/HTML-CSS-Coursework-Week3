@@ -220,66 +220,17 @@ li a:hover:not(.active) {
 
 /* add media */
 
-@media (max-width: 700px) {
-  .container .box{
-      background-color: black;
-      display: grid;
-      grid-auto-rows: minmax(100px, auto);
-      /* flex-direction:column; */
-      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
-      /* background-color: rgb(9, 9, 22); */
-      grid-template-areas: 
-      
-      ;
-  }
-  .box{
+
+@media only screen and (min-width: 540px)
+  .container{
       display: flex;
-  }
-  .header{
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      align-content: space-between;
-  }
-  .header p{
-      display: none;
-  }
-  .main img{
-      width: 180px;
-      height: 180px;
-  }
-  .section1 img{
-      width: 180px;
-      height: 180px;
-  }
-  .section2 img{
-      width: 180px;
-      height: 180px;
-  }
-  .section3 img{
-      width: 180px;
-      height: 180px;
-  }
-  .section4 img{
-      width: 180px;
-      height: 180px;
-  }
+      }
 }
 
-/* @media only screen and (min-width: 540px)and (max-width: 989px){
-  .box{
+
+@media only screen and (min-width: 900px)
+  .container{
       display: flex;
-      flex-direction: column;
   }
-  
-  
-  .nav{
-      display: none;
-  }
-  .nav ul{
-      flex-direction: row;
-      justify-content: end;
-  }
-  
-  
-  } */
+
+
