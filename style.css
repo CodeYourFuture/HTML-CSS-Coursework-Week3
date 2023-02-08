@@ -4,6 +4,7 @@ body {
     font-family: fantasy;
     font-size: 18px;
     
+    
 }
 header {
     display: flex;
@@ -14,6 +15,10 @@ header {
     height: 220px;
     width: 100%;
     background-color: #D4A373;
+    padding: 20px;
+
+    
+    
  }
   footer {
     text-align: center;
@@ -21,11 +26,16 @@ header {
     padding: 50px;
   }
 
-
+  .text-header {
+    font-size: 40px;
+    
+ }
   .container {
     display: flex;
     flex-direction: row;
     align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
   }
   .img-main {
     display: flex;
