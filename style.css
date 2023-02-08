@@ -88,8 +88,10 @@
         
         
     }
+    
     .lower_part a {
         display: flex;
+        align-items: center;
         text-decoration: none;
         margin-bottom: 40px;
         color: brown;
