@@ -43,7 +43,7 @@ header a,
 .body__container {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 1fr auto auto auto 1fr;
+    grid-template-rows: 1fr repeat(4, auto) 1fr;
     gap: 1rem;
 }
 
@@ -73,7 +73,7 @@ header a,
 
 /* header */
 header {
-    grid-row: 1;
+    grid-row: 1 / 2;
 }
 
 .logo {
@@ -107,12 +107,12 @@ main {
 
 /* portfolio section */
 .portfolio {
-    grid-row: 4 / 5;
+    grid-row: 4 / 6;
 }
 
 /* footer */
 footer {
-    grid-row: 5 / 6;
+    grid-row: 6 / 7;
 }
 
 .social__icons {
