@@ -39,6 +39,31 @@ header a,
     color: black;
 }
 
+/* Main Grid */
+.body__container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.grid__full {
+    grid-column: 1 / -1;
+    background-color: lightblue;
+}
+
+.grid__center {
+    grid-column: 2 / 12;
+}
+
+/* Nested Grid 1 */
+.second__grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.second__grid > * {
+    grid-column: 2 / 12;
+}
+
 /* Flex */
 .flex__row {
     display: flex;
@@ -48,7 +73,7 @@ header a,
 .logo {
     display: flex;
     align-content: center;
-    padding: 1rem;
+    padding: 1rem 0;
     gap: 0.3rem;
 }
 
@@ -65,9 +90,12 @@ header a,
 }
 
 /* nav */
-
+ul {
+    padding-left: 0;
+}
 
 /* footer */
+
 .social__icons {
     display: flex;
     flex-direction: column;
