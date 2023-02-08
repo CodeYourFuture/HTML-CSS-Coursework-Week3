@@ -144,11 +144,6 @@ h4 {
     line-height: 1.4;
 }
 
-/* li {
-    font-size: 1em;
-    margin-bottom: 2em;
-} */
-
 /* Mobile layout */
 .grid {
     display: grid;
@@ -172,11 +167,15 @@ h4 {
     border-bottom: 1px solid var(--navy-blue);
 }
 
+.site-nav li a:hover {
+    color: var(--coral);
+}
 
 
 /* Hero section */
 .welcome {
     background-color: var(--leather);
+    grid-column: 1/-1;
     padding: 2em;
 
 }
@@ -194,7 +193,7 @@ h4 {
     background-image: url(.//img/blob.svg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: 100%;
     grid-column: 3/-1;
     display: flex;
     align-items: center;
@@ -202,7 +201,7 @@ h4 {
 }
 
 .welcome-img img {
-    width: 130%;
+    width: 110%;
     padding-right: 2em;
 
 }
@@ -243,7 +242,7 @@ h4 {
 
 /* Gallery */
 .gallery {
-    padding: 3em 2em;
+    padding: 3em 2em 5em 2em;
     background: var(--leather);
 }
 
@@ -332,6 +331,7 @@ footer a {
     width: 2.6em;
     height: 2.6em;
     color: var(--leather);
+    cursor: pointer;
 }
 
 
@@ -356,7 +356,6 @@ footer a {
     }
 
     .welcome {
-        grid-column: 1 / -1;
         padding: 7em 2em;
     }
 
@@ -396,17 +395,21 @@ footer a {
         display: block;
     }
 
+    .flex-form {
+        max-width: 60%;
+    }
+
 }
 
 /* laptops & desctop styles*/
 @media screen and (min-width: 900px) {
     body {
-        font-size: 16px;
+        font-size: 14px;
     }
 
     .grid {
         display: grid;
-        padding: 2em;
+        /* padding: 2em; */
         grid-template-columns: repeat(12, 1fr);
         /* gap: 2em; */
     }
@@ -419,7 +422,7 @@ footer a {
     }
 
     .site-nav h1 {
-        grid-column: 1 / 7;
+        grid-column: 1 / 6;
     }
 
     .site-nav ul {
@@ -427,8 +430,16 @@ footer a {
         display: flex;
         align-items: center;
         justify-content: flex-end;
-        gap: 1.6em;
-        
+        gap: 1.6em;       
+    }
+
+    .welcome-text {
+        grid-column: 2/ span 4;
+    }
+
+    .welcome-img {
+        grid-column: 6/ -1;
+
     }
 
     .features {
@@ -459,5 +470,9 @@ footer a {
     .cake-img:last-child {
             display: none;
         }
+
+    .flex-form {
+        max-width: 50%;
+    }
 
 }
