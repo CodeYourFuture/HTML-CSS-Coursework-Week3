@@ -42,12 +42,16 @@
         <!-- Feature Section -->
         <section class="portfolio">
             <h3>Pick your treat</h3>
-            <div class="grid feature">
+            <div class="grid features">
                 <div class="feature">
                     <img src="./img/birthday_girl.svg" alt="Birthday cake image">
                     <h4>Birthday Cake</h4>
                     <p class="cake-descrption">Honey, you don't have to make a wish, it's already come true! Cakes for
                         every taste and size!</p>
+                <div class="centered">
+                        <a class="small-button" href="#">Learn more</a>
+
+                </div>
                 </div>
 
                 <div class="feature">
@@ -55,6 +59,10 @@
                     <h4>Wedding Cake</h4>
                     <p class="cake-descrption">Beach wedding, Vegas wedding or Big Greek wedding? Our cake will steal
                         the show anyway!</p>
+                <div class="centered">
+                            <a class="small-button" href="#">Learn more</a>
+    
+                    </div>
                 </div>
 
                 <div class="feature">
@@ -62,43 +70,46 @@
                     <h4>No Reason Cake</h4>
                     <p class="cake-descrption">Do you really need a reason to treat yourself to our delicious cakes? We
                         say No!</p>
+                <div class="centered">
+                            <a class="small-button" href="#">Learn more</a>
+    
+                    </div>
                 </div>
             </div>
         </section>
         <section class="gallery">
-            <h3>Look at these beauties!</h3>
+            <h3>Our proudest collection</h3>
             <div class="img-gallery">
-                <img src="./img/cake-1.jpg" alt="cake-1">
-                <img src="./img/cake-2.jpg" alt="cake-1">
-                <img src="./img/cake-3.jpg" alt="cake-1">
-                <img src="./img/cake-4.jpg" alt="cake-1">
-                <img src="./img/cake-5.jpg" alt="cake-1">
-                <img src="./img/cake-6.jpg" alt="cake-1">
-                <img src="./img/cake-7.jpg" alt="cake-1">
-                <img src="./img/cake-8.jpg" alt="cake-1">
-                <img src="./img/cake-9.jpg" alt="cake-1">
+                <img class="cake-img" src="./img/cake-1.jpg" alt="cake-1">
+                <img class="cake-img" src="./img/cake-2.jpg" alt="cake-1">
+                <img class="cake-img" src="./img/cake-3.jpg" alt="cake-1">
+                <img class="cake-img" src="./img/cake-4.jpg" alt="cake-1">
+                <img class="cake-img" src="./img/cake-5.jpg" alt="cake-1">
+                <img class="cake-img" src="./img/cake-6.jpg" alt="cake-1">
+                <img class="cake-img" src="./img/cake-7.jpg" alt="cake-1">
+                <img class="cake-img" src="./img/cake-8.jpg" alt="cake-1">
+                <img class="cake-img" src="./img/cake-9.jpg" alt="cake-1">
             </div>
 
         </section>
         <section class="contact">
             <h3>Leave a comment</h3>
-            <p class="leading"></p>
             <form action="" method="post">
-                <div>
+                <div class="flex-form">
                     <label for="full-name">Your Name</label>
-                    <input id="full-name" type="text" placeholder="Your Name" name="full-name">
+                    <input id="full-name" type="text" name="full-name">
                 </div>
 
-                <div>
+                <div class="flex-form">
                     <label for="email">Your email</label>
-                    <input id="email" type="email" placeholder="Your email" name="email">
+                    <input id="email" type="email" name="email">
                 </div>
 
-                <div>
+                <div class="flex-form">
                     <label for="comment">Leave your comment here</label>
-                    <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Yout message goes here"></textarea>
+                    <textarea name="comment" id="comment" cols="30" rows="8"></textarea>
                 </div>
-                <div>
+                <div class="centered">
                     <button class="button" type="submit">Submit now</button>
                 </div>
             </form>
@@ -106,7 +117,7 @@
     </main>
     <footer>
         <div class="grid">
-            <div class="footer-links">
+            <div class="footer-links-right">
                 <ul>
                     <li><a href="#">About Us</a></li>
                     <li><a href="#">Customer Service</a></li>
@@ -114,16 +125,29 @@
                     <li><a href="#">Contact Us</a></li>
                 </ul> 
             </div>
-            <div class="footer-links">
+            <div class="footer-links-left">
                 <ul>
-                    <li><a href="#"></a><img src="#" alt="instagram icon"></li>
-                    <li><a href="#"></a><img src="#" alt="facebook icon"></li>
-                    <li><a href="#"></a><img src="#" alt="twitter icon"></li>
-                    <li><a href="#"></a><img src="#" alt="pinterest icon"></li>
+                <div class="centered">
+                    <li><a href="#"></a><img class="contact-icon" src="./img/instagram-logo-fill.svg" alt="instagram icon"></li>
+                    <p>Follow us on Instagram</p>
+                </div>
+                <div class="centered">
+                    <li><a href="#"></a><img class="contact-icon" src="./img/facebook-logo-fill.svg" alt="facebook icon"></li>
+                    <p>Follow us on Facebook</p>
+
+                </div>
+                <div class="centered">
+                    <li><a href="#"></a><img class="contact-icon" src="./img/twitter-logo-fill.svg" alt="instagram icon"></li>
+                    <p>Follow us on Twitter</p>
+                </div>
+                <div class="centered">
+                    <li><a href="#"></a><img class="contact-icon" src="./img/pinterest-logo-fill.svg" alt="pinterest icon"></li>
+                    <p>Follow us on Pinterest</p>
+                </div>
                 </ul>
 
             </div>
-            <p class="copyright">Created by Alena Lazareva as a part of CYF Homework in 2023</p>
+            <p id="copyright">Created by Alena Lazareva as a part of CYF Homework in 2023</p>
         </div>
     </footer>
 </body>
