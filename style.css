@@ -1,1 +1,5 @@
-/*  Add your styling here */
+/* general */
+* {
+    margin: 0;
+    padding: 0;
+}
