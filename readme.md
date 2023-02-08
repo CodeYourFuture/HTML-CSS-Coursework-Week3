@@ -30,7 +30,7 @@ When you're ready to start coding:
   
 
   If we have the following **2 breakpoints**:  
-  > - breakpoint 1 --> 540px  
+  > + breakpoint 1 --> 540px  
   > - breakpoint 2 --> 900px  
 
   Then our CSS code will be split into **3**:  
@@ -45,7 +45,7 @@ When you're ready to start coding:
   - Get creative! Can you add some cool hover effects to buttons and [images](https://www.wix.com/website-template/view/html/1911?siteId=c1c72d26-c040-41f2-80ce-0b0f8aef01b4&metaSiteId=5d77fab8-f068-4228-8b61-4181af054ca6&originUrl=https%3A%2F%2Fwww.wix.com%2Fwebsite%2Ftemplates&tpClick=view_button)?
 
 ### Also
-- It's up to you to find a solution for any elements that are visible in desktop and not on mobile - and vice versa.
++ It's up to you to find a solution for any elements that are visible in desktop and not on mobile - and vice versa.
 
 
 ## Remember

@@ -262,7 +262,9 @@ header,footer {
 
     .main_img {
         grid-area: p;
-        width: fit-content;
+        width: 300px;
+        padding: auto;
+        align-self: center;
     } 
 
     h1 {
@@ -282,6 +284,22 @@ header,footer {
         margin: 0;
         
     }  
+
+    @media (min-width: 900px) {
+        .articles {
+            display: flex;
+            justify-content: space-around;
+            
+        }
+
+        .main_img {
+            width: fit-content;
+        } 
+
+        #top p {
+            font-size: 28px;
+        }  
+    } 
 
     
     
