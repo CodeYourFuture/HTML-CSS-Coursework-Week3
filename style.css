@@ -1,6 +1,6 @@
 /*  Add your styling here */
 
-/* @import url('https://fonts.googleapis.com/css2?family=Georama:wght@200&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Georama:wght@200&display=swap');
 
 
 *{
@@ -12,7 +12,6 @@
     height: 30vh;
     width: 100%;
     background-color: rgb(39, 27, 27);
-   
 }
 
 nav{
@@ -46,131 +45,58 @@ nav ul li a{
 }
 
 
-
-
-/* .container-header{
-    padding:10px;
-    margin: 10px;
-    text-align: center ;
-    color: palevioletred;
-    background-color: pink;
-   display: flex;
-   flex-direction: row;
-   row-gap: 10px;
-} */
-
-/* font-family:fantasy;
-   
-} */ 
-
-/* header{
-    position:relative;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.content{
+    width: 80%;
+    margin: 0 auto;
     box-shadow: 0 .2rem 3rem lightgrey;
-    background-color: pink
 }
 
-header .logo img{
-    height: 10rem
-}
-
-header .navigate ul{
-    
+.image{
     display: flex;
-    align-items: center;
-    justify-content: center;
-    list-style: none;
-}
-
-header .navigate ul li{
-    margin-left: 1rem;
-}
-
-header .navigate ul li a{
-    padding-right: 3rem;
-    text-decoration: none;
-    font-size: 1.2rem;
-    color:goldenrod;
-    font-weight: 500;
-}
-
-header .company-name{
-    display: flex;
-    /* text-align: center; */
-    /* align-items: center;
-    justify-content: center;
-} */
-
-/* .home{
-    background-color: lightcoral;
-}  */
-
-
-/* .logo{
-    display: flex;
-    justify-content: flex-start;
-    padding: 0px;
-    margin-left: 0px;
+    width: 80%;
+    margin: 0 auto;
 }
 
 h1{
     text-align: center;
+    color: dodgerblue;
 }
 
-.menu {
-    float: right;
-    text-align: center;
-  }
-
-  .menu a {
-   
-    padding: 10px;
-    margin-top:10px;
-    display: inline;
-    width: 100%;
-    color: black;
-  }
-
-
-.main{
-    padding: 10px;
-    padding-bottom: 20px;
-    margin: 10px;
-    text-align: center;
+P{
+    width: 80%;
+    margin: 0 auto; 
+    line-height: 30px;
 }
 
-.images{
-    display: flex;
-   flex-wrap: wrap;
-   flex-direction: row;
-   align-items: center;
-   justify-items: center;
-   
-   }
-
-   .cake-img{
+.cake-img{
     padding: 0 20px 20px 0;
-   } */
+   } 
 
-/* .container-2{
+.container{
+    padding-top: 10px;
     display: flex;
-    height: 50px; 
-    max-width: 1200px;
-    width: 50px;
-    flex-wrap:wrap
-    justify-content: center;
-    padding: 10px 10px;
-    
+    width: 100%;
+    margin: 0 auto;
+    box-shadow: 0 .2rem 3rem lightgrey;
+    justify-content:center;
+ 
    }
 
-.right{
-text-align: center;
-font-size: x-small;
-color: gray;
-   } */ 
+  h2{
+    text-align: center;
+    color: dodgerblue;
+   
+   }
+
+.copyright{
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: small;
+    color: gray;
+}
+
+@media (min-width: 600px) {
+    
+}
