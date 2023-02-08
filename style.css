@@ -34,7 +34,7 @@ h4 {
     height: 100%;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(10, 1fr);
+    grid-template-rows: repeat(8, 1fr);
 }
 
 /***Hero***/
@@ -42,7 +42,18 @@ h4 {
 .hero {
     grid-column: 1/ -1;
     grid-row: 1/ 3;
-    background-color: lightgreen;
+    background-color: rgb(243, 243, 243);
+    padding: 2rem;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.hero h1 {
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: 500;
+    margin-top: 3rem;
 }
 
 /***About***/
@@ -50,7 +61,18 @@ h4 {
 .about_section {
     grid-column: 1 / -1;
     grid-row: 3/ 5;
-    background-color: lightcoral;
+    padding: 3rem;
+    margin: 1rem 0;
+}
+
+.about_section h2 {
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.about_info {
+    font-weight: 400;
 }
 
 /***Gallery***/
@@ -58,38 +80,59 @@ h4 {
 .gallery_lrg {
     grid-column: 1/-1;
     grid-row: 5/7;
-    background-color: lightsalmon;
+    background-color: rgb(243, 243, 243);
+    padding: 3rem;
+    margin: 1rem 0;
 }
 
-.gallery_top_left {
-    grid-column: 1/7;
+.gallery_top {
+    grid-column: 1/-1;
     grid-row: 7/8;
-    background-color: lightskyblue;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 3rem;
+    margin: 1rem 0;
+    background-color: rgb(243, 243, 243);
+
 }
 
-.gallery_top_right {
-    grid-column: 7/-1;
-    grid-row: 7/8;
-    background-color: rgb(169, 135, 250);
+.gallery_top img {
+    object-fit: contain;
+    width: 45%;
+    height: auto;
 }
 
-.gallery_btm_left {
-    grid-column: 1/7;
+.gallery_btm {
+    grid-column: 1/-1;
     grid-row: 8/9;
-    background-color: lightyellow;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 3rem;
+    margin: 1rem 0;
+    background-color: rgb(243, 243, 243);
 }
 
-.gallery_btm_right {
-    grid-column: 7/-1;
-    grid-row: 8/9;
-    background-color: rgb(239, 255, 224);
+.gallery_btm img {
+    width: 45%;
+    object-fit: contain;
 }
-
 
 /***Footer***/
 
-footer {
-    background-color: aqua;
-    grid-column: 1/ -1;
-    grid-row: 9/-1;
+.footer {
+    padding: 2rem;
+    margin: 1rem 0;
+}
+
+.footer address {
+    font-style: normal;
+    line-height: 1.5rem;
+}
+
+.footer p {
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 0.85rem;
 }
