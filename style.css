@@ -365,6 +365,10 @@ footer a {
         grid-column: 1 / span 5;
     }
 
+    .menu {
+        grid-column: -2/-1;
+    }
+
     .welcome {
         padding: 7em 2em;
     }
@@ -423,6 +427,10 @@ footer a {
         /* padding: 2em; */
         grid-template-columns: repeat(12, 1fr);
         /* gap: 2em; */
+    }
+
+    .menu {
+        display: none;
     }
 
     .site-nav {
