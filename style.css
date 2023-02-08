@@ -4,19 +4,27 @@
     background-color: black;
     font-family: sans-serif;
     font-size: 14px;
-    color: azure;
+    color: beige;
     padding: 10px;
+    font-weight: bold;
+    
+}
+.navbar a:hover {
+    color: coral;
 }
 .navbar_items, .navbar_items_right {
     display: flex;
-    text-decoration: none;
+    
 }
-.navbar_links, .navbar_title {
-    padding-right: 10px;
-    text-decoration: none;
+.navbar_links {
+    padding-right: 30px;
+    font-size: 20px;
+    
+    
 }
 .navbar_items_right {
     margin-left: auto;
+    
 }
 .navbar_links_toggle {
     display: none;
@@ -116,18 +124,67 @@
     .upper_part {
         display: flex;
         flex-direction: row-reverse;
+        justify-content:center;
+        
+
+
     }
     .upper_part_text {
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
+        justify-content: flex-end;
     }
-    .upper_part > img {
+    .upper_part  img {
         height: 300px;
         width: 600px;
         margin-top: 40px;
-        margin-right: 40px;
+        margin-right: 50px;
+    }
+    .navbar_items a {
+        text-decoration: none;
+        color:beige
+    }
+    .navbar_title {
+        color:cadetblue
+    }
+    .lower_part, .lower_part_section1, .lower_part_section2 {
+        display:flex;
+    }
+   
+    .lower_part img {
+        height: 150px;
+        width: 250px;
+        margin-top: 300px;
+        margin-left: 30px;
+        
+    }
+    .lower_part_section1 a, .lower_part_section2 a {
+        margin-left: 10px;
+        text-decoration: none;
+        display:block;
+        text-align: center;
+        color:coral;
+        margin-bottom: 150px;
+    }
+    .lower_part  {
+        display: flex;
+        justify-content:center;
+    }
+    .navbar_footer {
+        background-color: coral;
+        
+    }
+    .lower_navbar a {
+        text-decoration: none;
+        margin-left: 20px;
+        font-size: 20px;
+        font-weight: bold;
+        color: beige;
+
+    }
+    footer p {
+        margin-left: 20px;
     }
 
 }
