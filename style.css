@@ -33,6 +33,17 @@ p {
     text-align: center;
 }
 
+header a,
+.social__icons a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Flex */
+.flex__row {
+    display: flex;
+}
+
 /* header */
 .logo {
     display: flex;
@@ -53,26 +64,26 @@ p {
     font-size: 1.8rem;
 }
 
-header a {
-    text-decoration: none;
-    color: black;
-}
-
 /* nav */
 
 
 /* footer */
-
 .social__icons {
     display: flex;
-    justify-content: center;
-    gap: 2rem;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 0.5rem;
+}
+
+.icon__flex {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
 }
 
 .icon {
     width: 30px;
     height: 30px;
-    
     background-size: cover;
     background-position: center;
 }
