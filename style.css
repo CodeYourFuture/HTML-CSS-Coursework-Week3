@@ -1,1 +1,76 @@
-/*  Add your styling here */
+
+  @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
+:root{
+    --dark-green: #081c15; 
+    --light-green:#606c38;
+    --beige:#fefae0;
+    --dark-beige: #dda15e;
+    --brown: #bc6c25;
+}
+
+body{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 2fr 2fr 3fr 3fr 3fr 0.5fr;
+    grid-template-areas: 
+    "h h"
+    "m m"
+    "s1 s1"
+    "s2 s3"
+    "s4 s5"
+    "f f";
+    gap: 1rem;
+}
+/* header */
+header{
+    grid-area: h;
+    background-image: url(/capcakes.jpg);
+    background-size: cover;
+    width: 45vh;
+    height: 25vh;
+
+}
+
+h1{
+    color: var(--beige);
+    font-family: 'Quicksand', sans-serif;
+}
+/* 
+#text_area_header{
+    display: flex;
+    flex-direction: row;
+    justify-content:right;
+} */
+
+/* main */
+main{
+    background-color: var(--light-green);
+    grid-area: m;
+}
+
+#section1{
+    background-color: var(--dark-beige);
+    grid-area: s1;
+}
+#section2{
+    background-color: var(--brown);
+    grid-area: s2;
+
+}
+#section3{
+    background-color: var(--beige);
+    grid-area: s3;
+}
+#section4{
+    background-color: var(--brown);
+    grid-area: s4;
+}
+#section5{
+    background-color: var(--beige);
+    grid-area: s5;
+}
+footer{
+    background-color: var(--dark-beige);
+    grid-area: f;
+}
