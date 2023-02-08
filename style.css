@@ -286,7 +286,6 @@ footer {
 }
 
 footer a,
-footer li,
 footer p,
 #copyright {
     color: var(--leather);
@@ -294,26 +293,37 @@ footer p,
     font-weight: 200;
 }
 
-
-
-.footer-links-right {
-    grid-column: 1/3;
+table {
+    width: 100%;
+    padding: 2em;
+    margin-bottom: 2em;
 }
 
-.footer-links-left {
-    grid-column: 3/5;
+
+table th:nth-child(1) {
+    width: 50%;
 }
+
+table th:nth-child(2) {
+    width: 5%;
+}
+
+table th:nth-child(3) {
+    width: 40%;
+}
+
+footer a {
+    margin: 0;
+    padding: 0;
+}
+
 
 .contact-icon {
-    width: 3em;
-    height: 3em;
+    width: 2.6em;
+    height: 2.6em;
     color: var(--leather);
-    margin-right: 1em;
 }
 
-#copyright {
-    grid-column: 1/-1;
-}
 
 /* small tablet styles */
 @media screen and (min-width: 540px) {
