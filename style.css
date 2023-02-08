@@ -198,31 +198,34 @@ header,footer {
 
     header {
         display: grid;
-        grid-template-columns: 1fr 2fr;
-        grid-template-rows: 1fr;
+        grid-template-columns: 1fr auto;
+        grid-template-rows: 2fr 1fr;
     }
 
     .header_text {
         font-size: x-large;
         margin-bottom: 0;
+        grid-row: 1 / 2;
+        position: absolute;
+        right: 1rem;
+        top: 6rem;
     }
     
         .nav{
             max-height: 4.5rem;
-            display: flex;
-            flex-direction: row-reverse;
-            align-content: flex-end;
-            /* top: 0; */
-            position: absolute;
-            /* float: right; */
-            width: 100%;
             background-color: #ffd6ff;
-            margin: 10rem 1rem 0 1rem;
-            
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            position: absolute;
+            right: 2.5rem;
+            top:11.5rem;
+            left: 2.5rem;
+            width: auto;
         }
+
         .navigation_item {
-            display: inline-block;;
-            /* float: left; */
+            display: inline-block;
             list-style-type: none;
             background-color: aqua;
             margin-left: 5px;
@@ -234,39 +237,56 @@ header,footer {
         }
 
 
-    /* .articles {
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: 1fr;
+    .articles {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
     }
-    .sm_icon, .chapter {
-        justify-self: center;
+
+    .chapter {
+        width: fit-content;
     }
-    
-    #top {
+
+    main {
+        margin: 6.5rem 2rem 1rem 2rem;
+    } 
+
+     #top {
         display: grid;
-        grid-template-rows: 1fr 2fr;
+        grid-template-rows: 120px auto;
         grid-template-areas: 
         "p p w w"
         "p p t t";
         gap: 20px;
         padding-right: 10px;
     }
+
     .main_img {
         grid-area: p;
-    }
+        width: fit-content;
+    } 
+
     h1 {
         grid-area: w;
         justify-self: self-end;
         font-size: 4rem;
-        margin-bottom: 0;
+        margin: 0;
         line-height: 100px;
+        padding: 10px;
     }
+
     #top p {
         grid-area: t;
         justify-self: self-end;
-        font-size: 1.5em;
+        font-size: 20px;
         text-align: right;
-    } */
+        margin: 0;
+        
+    }  
+
+    
+    
+    
+   
 
 
 
@@ -277,7 +297,5 @@ header,footer {
 
    
 
-        main {
-            margin: 6.5rem 2rem 1rem 2rem;
-        }
+        
 }
