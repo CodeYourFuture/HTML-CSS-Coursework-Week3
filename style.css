@@ -1,1 +1,31 @@
 /*  Add your styling here */
+
+body {
+    font-family: 'Comfortaa', cursive;
+    -webkit-font-smoothing: antialiased;
+
+}
+
+:root {
+    --dark: #3A3E3B;
+    --gold: #F0B945;
+    --red: #9D556A;
+    --taupe: #BAAAAC;
+    --light: #E9ECF1;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+html, body, div {
+    margin: 0;
+    padding: 0;
+    border: 0 none;
+}
+
+.main-container {
+    display:grid;
+
+}
