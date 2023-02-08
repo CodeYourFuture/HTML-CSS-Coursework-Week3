@@ -7,10 +7,68 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Responsive Cake webpage</title>
     <!-- Add a link to your css file here -->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script type="text/javascript">
+        function classToggle() {
+        const navs = document.querySelectorAll('.navbar_items')
+        navs.forEach(nav => nav.classList.toggle('navbar_toggleShow'));
+        }
+        document.querySelector('.navbar_links_toggle')
+        .addEventListener('click', classToggle);
+    </script>
+
 </head>
 
 <body>
+    
     <!-- Add your markup here -->
+    <div class="navbar">
+        <div class="navbar_links navbar_title">CakeCo</div>
+        <div class="navbar_links navbar_links_toggle">Menu</div>
+        <nav class="navbar_items">       
+            <div class="navbar_links"><a href="#">Home</a></div>
+            <div class="navbar_links"><a href="#">Cakes</a></div>
+        </nav>
+        <nav class="navbar_items navbar_items_right">
+            <div class="navbar_links"><a href="#">Order in</a></div>
+            <div class="navbar_links"><a href="#">Lessons</a></div>
+            <div class="navbar_links"><a href="#">About</a></div>
+        </nav>
+
+        
+
+    </div>
+
+    <div class="upper_part">
+        <div class="upper_part_text">
+            <h2>Welcome to CakeCo bakery</h2>
+            <p>We are proud to deliver cakes and pasteries for over 50 years</p>
+        </div>
+        <img src="./images/birthday_cake.jpg" width="100%">
+    </div>
+    <div class="lower_part">
+        <div class="lower_part_section1">
+            <div><img class="birthday_cake" src="./images/birthday_cake1.jpg"><a href="#">Birthday Cake</a></div>
+            <div><img class="croissants" src="./images/croissants.jpg"><a href="#">croissants</a></div>
+        </div>
+        <div class="lower_part_section2">
+            <div><img class="cupcake" src="./images/cupcake.jpg"><a href="#">Cupcake</a></div>
+        </div>
+    </div>
+    <div class="navbar_footer">
+        <div class="lower_navbar">
+             
+            <div class="lower_navbar_links"><a href="#">Our policy</a></div>
+            <div class="lower_navbar_links"><a href="#">Recipes</a></div>
+            <div class="lower_navbar_links"><a href="#">Find us on social media</a></div>
+            
+            
+    
+        </div>
+        <footer>
+            <p>Thanks for visiting our website, we hope to see you again soon.</p>
+        </footer>
+    </div>
 </body>
 
 </html>

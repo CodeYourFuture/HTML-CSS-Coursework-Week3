@@ -1,1 +1,192 @@
 /*  Add your styling here */
+.navbar {
+    display: flex;
+    background-color: black;
+    font-family: sans-serif;
+    font-size: 14px;
+    color: beige;
+    padding: 10px;
+    font-weight: bold;
+    
+}
+.navbar a:hover {
+    color: coral;
+}
+.navbar_items, .navbar_items_right {
+    display: flex;
+    
+}
+.navbar_links {
+    padding-right: 30px;
+    font-size: 20px;
+    
+    
+}
+.navbar_items_right {
+    margin-left: auto;
+    
+}
+.navbar_links_toggle {
+    display: none;
+}
+
+@media only screen and (max-width: 540px){
+    .navbar_items, .navbar {
+        flex-direction: column;
+    }
+    .navbar_items {
+        display: none;
+    }
+    .navbar_items_right {
+        margin-left: 0;
+    }
+    .navbar_links_toggle {
+        display: initial;
+        align-self: flex-end;
+        position: absolute;
+        cursor: pointer;
+    }
+    .navbar_toggleShow {
+        display: flex;
+    }
+    .upper_part {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    .upper_part > img {
+        margin-bottom: 80px;
+    }
+    .lower_part {
+        margin-left: 80px;
+        display: grid;
+        grid-template-areas: 
+        "b cr"
+        "cu .";
+    }
+    .birthday_cake {
+        grid-area: b;
+        width: 150px;
+        height: 150px;
+    }
+    .croissants {
+        grid-area: cr;
+        width: 150px;
+        height: 150px;
+    }
+    .cupcake {
+        grid-area: cu;
+        width: 150px;
+        height: 150px;
+    }
+    .lower_part_section1 {
+        display: flex;
+        flex-direction: column;
+        justify-content:space-between;
+        
+        
+    }
+    
+    .lower_part a {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        margin-bottom: 40px;
+        color: brown;
+        
+    }
+    .lower_navbar {
+        display: flex;
+        flex-direction: column;
+        margin-left: 15px;
+
+    }
+    .lower_navbar a {
+        margin-left: 10px;
+        text-decoration: none;
+        text-align: center;
+        display:inline-flex;
+        color: beige;
+    }
+   
+    footer p {
+        margin-left: 20px;
+        color: beige;
+    }
+    .navbar_footer {
+        background-color: black;
+    }
+    
+    
+
+}
+@media screen and (min-width: 540px) {
+    .upper_part {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content:center;
+        
+
+
+    }
+    .upper_part_text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    .upper_part  img {
+        height: 300px;
+        width: 600px;
+        margin-top: 40px;
+        margin-right: 50px;
+    }
+    .navbar_items a {
+        text-decoration: none;
+        color:beige
+    }
+    .navbar_title {
+        color:cadetblue
+    }
+    .lower_part, .lower_part_section1, .lower_part_section2 {
+        display:flex;
+    }
+   
+    .lower_part img {
+        height: 150px;
+        width: 250px;
+        margin-top: 300px;
+        margin-left: 30px;
+        
+    }
+    .lower_part_section1 a, .lower_part_section2 a {
+        margin-left: 10px;
+        text-decoration: none;
+        display:block;
+        text-align: center;
+        color:coral;
+        margin-bottom: 150px;
+    }
+    .lower_part  {
+        display: flex;
+        justify-content:center;
+    }
+    .navbar_footer {
+        background-color: coral;
+        
+    }
+    .lower_navbar a {
+        text-decoration: none;
+        margin-left: 20px;
+        font-size: 20px;
+        font-weight: bold;
+        color: beige;
+
+    }
+    footer p {
+        margin-left: 20px;
+    }
+
+}
