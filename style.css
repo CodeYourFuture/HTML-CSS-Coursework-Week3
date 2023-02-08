@@ -55,3 +55,25 @@ header a {
 }
 
 /* nav */
+
+
+/* footer */
+.icon {
+    width: 30px;
+    height: 30px;
+    
+    background-size: cover;
+    background-position: center;
+}
+
+.fb {
+    background-image: url('images/fb.png');
+}
+
+.ig {
+    background-image: url('images/ig.png');
+}
+
+.tw {
+    background-image: url('images/tw.png');
+}
