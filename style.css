@@ -222,6 +222,7 @@ li a:hover:not(.active) {
         grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
         /* background-color: rgb(9, 9, 22); */
         grid-template-areas: 
+        ""
         
         ;
     }
