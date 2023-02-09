@@ -42,7 +42,7 @@ p, nav {
 }
 
 header a,
-.social__icons a {
+.social__icons a, nav a {
     text-decoration: none;
     color: #000;
 }
@@ -196,14 +196,29 @@ footer {
 
 /* media query for menu */
 @media (min-width: 900px) {
+
+/* Grid */
+    .big__nav {
+        grid-column: 2 / 12;
+        grid-row: 2 / 3;
+    }
+
+    main {
+        grid-column: 2 / 12;
+        grid-row: 3 / 4;
+    }
+
+    .portfolio__section {
+        grid-column: 2 / 12;
+        grid-row: 4 / 6;
+    }
+
+    /* Hide menu icon */
     .menu__icon {
         display: none;
     }
 
-    .menu {
-        display: none;
-    }
-
+    /* Shuffle header items */
     .header__container {
         display: grid;
         grid-template-areas:
@@ -226,5 +241,47 @@ footer {
         font-size: 1rem;
         align-self: flex-end;
         text-align: right;
+    }
+
+    /* nav bar */
+    .big__nav .menu {
+        display: flex;
+        justify-content: right;
+        background-color: var(--accent__clr);
+        padding: 1rem;
+    }
+
+    .menu li {
+        margin-left: 1.5rem;
+    }
+
+    nav a {
+        color: blue;
+    }
+
+    nav a:hover {
+        background-color: var(--second__clr);
+    }
+
+    /* main */
+    .main__grid {
+        display: grid;
+        grid-template-areas: 
+        "img text";
+        grid-gap: 2rem;
+    }
+
+    .main__text {
+        grid-area: text;
+    }
+
+    .main__image {
+        grid-area: img;
+    }
+
+    .main__image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
 }
