@@ -4,23 +4,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Georama:wght@200&display=swap');
 
 body{
-    background-color: rgb(134, 190, 239);
+    margin: 10px;
+    padding:10px
+    
 }
 
 .contianer{
     display: grid;
     grid-auto-rows: minmax(100px, auto);
-    grid-gap: 0px;
+    grid-gap: 1px;
     grid-template-areas: 
-    /* "h h h h h h nav nav"
-    "h h h h h h nav nav" */
+    "h h h h h h nav nav"
+    "h h h h h h nav nav"
+    "m1 m1 m1 m1 m1 m1 m1 m1 m1"
+    "m1 m1 m1 m1 m1 m1 m1 m1 m1"
+    "m2 m2 m2 m2 m2 m2 m2 m2"
+    "m2 m2 m2 m2 m2 m2 m2 m2"
+    "m2 m2 m2 m2 m2 m2 m2 m2"
+    "s1 s1 s1 s1 s2 s2 s2 s2"
+    "s3 s3 s3 s3 s4 s4 s4 s4"
 
 }
 
 .box{
     display: flex;
-    color: pink;
+    color: rgb(116, 6, 24);
     font-size: 2rem;
+
 }
 
 .header{
@@ -29,11 +39,14 @@ body{
     justify-content: space-around;
     align-items: center;
     align-content: space-between;
+    background-color: rgb(44, 39, 39);
+   
 }
 
 .header p{
     font-size: 2rem;
     color: gold;
+    font-family: fantasy;
 }
 
 .logo{
@@ -44,3 +57,177 @@ body{
 span {
     color: orange;
 }
+
+.nav{
+    grid-area: nav;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 1rem;
+    align-items: center;
+    padding: 15px;
+}
+
+ul{
+    list-style-type: none;
+    margin: 5px;
+    padding: 5px;
+    overflow: hidden;
+
+    /* <!-- change this of not proper --> */
+}
+
+li{
+    float: right;
+    gap: 20px;
+}
+
+li a{
+    display: flex;
+    color: orange;
+    text-align: center;
+    padding: 18px 20px;
+    
+}
+
+.main1{
+    grid-area: m1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.main1 img{
+    width: 600px;
+    height: 300px;
+    margin-top: 30px;
+    /* border-radius: 20px;
+    border: 2px solid orange; */
+}
+
+.main2{
+    grid-area: m2;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5 rem;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 30px;
+}
+
+.main2 h2{
+    font-family: fantasy;
+    font-weight: lighter;
+}
+
+.section1{
+    grid-area: s1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section1 img{
+    width: 300px;
+    height: 400px;
+    padding: 10px;
+   
+}
+
+
+.section2{
+    grid-area: s2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.section2 img{
+    width: 300px;
+    height: 400px;
+    padding: 10px;
+   
+}
+
+.section3{
+    grid-area: s3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section3 img{
+    width: 300px;
+    height: 400px;
+    padding: 10px;
+   
+}
+.section4{
+    grid-area: s4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section4 img{
+    width: 300px;
+    height: 400px;
+    padding: 10px;
+}
+
+.footer-heading{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.footer{
+    grid-area: foo;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .fa{
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50px; 
+    height: 40px;
+    width: 40px;
+
+}
+
+.fa-facebook{
+    border:  1px solid #fff;
+    background: #125688;
+    color: white;
+} */
+
+.copyright{
+    grid-area: foo;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    font-size: small;
+    color: gray;
+}
+
+/* @media only screen and (min-width: 540px)
+.container{
+    display: flex;
+}
+
+
+@media only screen and (min-width: 900px)
+.container{
+    display: flex;
+} */
