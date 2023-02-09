@@ -1,1 +1,21 @@
-/*  Add your styling here */
+.container {
+    height: 100%; 
+    display: grid;
+    grid-gap: 3px;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-rows: 40px auto 40px; 
+}
+
+.header {
+    grid-column: 1 / 3;
+}
+
+.menu {}
+
+.content {
+    grid-column: 2 / 3;
+}
+
+.footer {
+    grid-column: 1 / 3;
+}
