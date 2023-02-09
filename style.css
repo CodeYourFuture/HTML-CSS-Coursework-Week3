@@ -73,8 +73,6 @@ header a,
     grid-column: 2 / 12;
 }
 
-
-
 /* Flex */
 .flex__row {
     display: flex;
@@ -83,6 +81,10 @@ header a,
 /* header */
 header {
     grid-row: 1 / 2;
+}
+
+header .flex__row {
+    justify-content: space-between;
 }
 
 .header__text {
