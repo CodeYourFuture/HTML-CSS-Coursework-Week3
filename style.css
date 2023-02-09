@@ -90,10 +90,6 @@ header {
     width: 100%;
 }
 
-/* header .flex__row {
-    justify-content: space-between;
-} */
-
 .header__text {
     font-size: 2rem;
     font-family: var(--heading__font);
@@ -118,78 +114,6 @@ header {
 .logo__text {
     font-family: 'Staatliches', cursive;
     font-size: 1.8rem;
-}
-
-/* nav menu */
-.header ul {
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: var(--main__clr);
-}
-
-.header ul a {
-    display: block;
-    outline: 1px solid var(--accent__clr);
-    padding: 10px;
-}
-
-.header ul a:hover {
-    background-color: var(--second__clr);
-}
-
-.header .menu {
-    clear: both;
-    max-height: 0;
-    transition: max-height 0.2s ease-out;
-}
-
-.header .menu__icon {
-    padding: 50px 0px;
-    position: relative;
-    float: right;
-    cursor: pointer;
-}
-
-/* creating the menu icon inside the label tag */
-.header .menu__icon .nav__icon {
-    background: #000;
-    display: block;
-    height: 3px;
-    width: 20px;
-    position: relative;
-    transition: background 0.2s ease-out;
-}
-
-/* Adds additional lines to menu icon */
-.header .menu__icon .nav__icon:before {
-    background: #000;
-    content: "";
-    display: block;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    transition: all 0.2s ease-out;
-    top: 5px;
-}
-
-.header .menu__icon .nav__icon:after {
-    background: #000;
-    content: "";
-    display: block;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    transition: all 0.2s ease-out;
-    top: -5px;
-}
-
-.header .menu__btn {
-    display: none;
-}
-
-.header .menu__btn:checked ~ .menu {
-    max-height: 240px;
 }
 
 /* main */
