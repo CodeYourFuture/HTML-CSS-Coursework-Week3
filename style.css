@@ -1,9 +1,16 @@
-/* root */
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=DM+Serif+Display&family=Staatliches&family=Train+One&display=swap');
 
+/* root */
+:root {
+    --main__clr: #bbd0ff;
+    --second__clr: #c8b6ff;
+    --accent__clr: #ffd6ff;
+    --p__font: 'DM Sans', sans-serif;
+    --heading__font: 'DM Serif Display', serif;
+}
 
 /* general */
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=DM+Serif+Display&family=Staatliches&display=swap');
-
 * {
     box-sizing: border-box;
 }
@@ -18,11 +25,11 @@ body {
 }
 
 h1 {
-    font-family: 'DM Serif Display', serif;
+    font-family: var(--heading__font);
 }
 
-p {
-    font-family: 'DM Sans', sans-serif;
+p, nav {
+    font-family: var(--p__font);
 }
 
 .unstyled__list {
@@ -49,14 +56,14 @@ header a,
 
 .grid__full {
     grid-column: 1 / -1;
-    background-color: lightblue;
+    background-color: var(--main__clr);
 }
 
 .grid__center {
     grid-column: 2 / 12;
 }
 
-/* Nested Grid 1 */
+/* Second Grid */
 .second__grid {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -66,6 +73,8 @@ header a,
     grid-column: 2 / 12;
 }
 
+
+
 /* Flex */
 .flex__row {
     display: flex;
@@ -74,6 +83,11 @@ header a,
 /* header */
 header {
     grid-row: 1 / 2;
+}
+
+.header__text {
+    font-size: 2rem;
+    font-family: var(--heading__font);
 }
 
 .logo {
