@@ -86,7 +86,8 @@ ul {
 header {
     grid-row: 1 / 2;
     position: fixed;
-    z-index: 3;
+    z-index: 999;
+    width: 100%;
 }
 
 /* header .flex__row {
@@ -100,6 +101,7 @@ header {
 }
 
 .logo {
+    float: left;
     display: flex;
     align-content: center;
     padding: 1rem 0;
@@ -118,7 +120,7 @@ header {
     font-size: 1.8rem;
 }
 
-/* nav */
+/* nav menu */
 .header ul {
     margin: 0;
     padding: 0;
@@ -128,6 +130,55 @@ header {
 
 .header ul a {
     display: block;
+    outline: 1px solid var(--accent__clr);
+    padding: 10px;
+}
+
+.header ul a:hover {
+    background-color: var(--second__clr);
+}
+
+.header .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height 0.2s ease-out;
+}
+
+.header .menu__icon {
+    outline: 1px solid red;
+    padding: 28px 20px;
+    position: relative;
+}
+
+/* creating the menu button lines */
+.header .menu__icon .nav__icon {
+    background: #000;
+    display: block;
+    height: 3px;
+    width: 20px;
+    position: relative;
+    transition: background 0.2s ease-out;
+}
+
+/* Adds second line */
+.header .menu__icon .nav__icon:before {
+    background: #000;
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 5px;
+}
+
+.header .menu__icon .nav__icon:after {
+    background: #000;
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: -5px;
 }
 
 /* main */
