@@ -43,7 +43,11 @@ p, nav {
 header a,
 .social__icons a {
     text-decoration: none;
-    color: black;
+    color: #000;
+}
+
+ul {
+    padding-left: 0;
 }
 
 /* Main Grid */
@@ -81,11 +85,13 @@ header a,
 /* header */
 header {
     grid-row: 1 / 2;
+    position: fixed;
+    z-index: 3;
 }
 
-header .flex__row {
+/* header .flex__row {
     justify-content: space-between;
-}
+} */
 
 .header__text {
     font-size: 2rem;
@@ -113,8 +119,15 @@ header .flex__row {
 }
 
 /* nav */
-ul {
-    padding-left: 0;
+.header ul {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: var(--main__clr);
+}
+
+.header ul a {
+    display: block;
 }
 
 /* main */
