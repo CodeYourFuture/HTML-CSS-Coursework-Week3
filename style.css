@@ -1,102 +1,46 @@
 /*  Add your styling here */
 
+
 @import url('https://fonts.googleapis.com/css2?family=Georama:wght@200&display=swap');
 
-
-*{
-    padding: 10px;
-    margin: 5px;
+body{
+    background-color: rgb(134, 190, 239);
 }
 
-.navigate{
-    height: 30vh;
-    width: 100%;
-    background-color: rgb(39, 27, 27);
+.contianer{
+    display: grid;
+    grid-auto-rows: minmax(100px, auto);
+    grid-gap: 0px;
+    grid-template-areas: 
+    /* "h h h h h h nav nav"
+    "h h h h h h nav nav" */
+
 }
 
-nav{
+.box{
     display: flex;
+    color: pink;
+    font-size: 2rem;
+}
+
+.header{
+    grid-area: h;
+    display: flex;
+    justify-content: space-around;
     align-items: center;
-    justify-content: space-between;
-    padding-top: 40px;
-    padding-left: 10%;
-    padding-right: 10%;
+    align-content: space-between;
+}
+
+.header p{
+    font-size: 2rem;
+    color: gold;
 }
 
 .logo{
     color: whitesmoke;
-    font-size: 28px;
+    font-size: 2rem;
 }
 
-span{
+span {
     color: orange;
-}
-
-nav ul li { 
-    list-style: none;
-    display: inline-block;
-    padding: 10px 20px;
-}
-
-nav ul li a{
-    color: orange;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-
-.content{
-    width: 80%;
-    margin: 0 auto;
-    box-shadow: 0 .2rem 3rem lightgrey;
-}
-
-.image{
-    display: flex;
-    width: 80%;
-    margin: 0 auto;
-}
-
-h1{
-    text-align: center;
-    color: dodgerblue;
-}
-
-P{
-    width: 80%;
-    margin: 0 auto; 
-    line-height: 30px;
-}
-
-.cake-img{
-    padding: 0 20px 20px 0;
-   } 
-
-.container{
-    padding-top: 10px;
-    display: flex;
-    width: 100%;
-    margin: 0 auto;
-    box-shadow: 0 .2rem 3rem lightgrey;
-    justify-content:center;
- 
-   }
-
-  h2{
-    text-align: center;
-    color: dodgerblue;
-   
-   }
-
-.copyright{
-    display: flex;
-    width: 80%;
-    margin: 0 auto;
-    text-align: center;
-    font-size: small;
-    color: gray;
-}
-
-@media (min-width: 600px) {
-    
 }
