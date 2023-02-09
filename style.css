@@ -36,6 +36,7 @@ header {
     align-items: center;
     flex-wrap: wrap;
     justify-content: center;
+    background-color:#FAEDCD;
   }
   .img-main {
     display: flex;
