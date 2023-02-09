@@ -273,6 +273,8 @@ footer {
 
     .main__text {
         grid-area: text;
+        text-align: justify;  
+        text-align-last: right;
     }
 
     .main__image {
