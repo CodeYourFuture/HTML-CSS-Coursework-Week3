@@ -145,12 +145,13 @@ header {
 }
 
 .header .menu__icon {
-    outline: 1px solid red;
-    padding: 28px 20px;
+    padding: 50px 0px;
     position: relative;
+    float: right;
+    cursor: pointer;
 }
 
-/* creating the menu button lines */
+/* creating the menu icon inside the label tag */
 .header .menu__icon .nav__icon {
     background: #000;
     display: block;
@@ -160,7 +161,7 @@ header {
     transition: background 0.2s ease-out;
 }
 
-/* Adds second line */
+/* Adds additional lines to menu icon */
 .header .menu__icon .nav__icon:before {
     background: #000;
     content: "";
@@ -168,6 +169,7 @@ header {
     height: 100%;
     width: 100%;
     position: absolute;
+    transition: all 0.2s ease-out;
     top: 5px;
 }
 
@@ -178,7 +180,16 @@ header {
     height: 100%;
     width: 100%;
     position: absolute;
+    transition: all 0.2s ease-out;
     top: -5px;
+}
+
+.header .menu__btn {
+    display: none;
+}
+
+.header .menu__btn:checked ~ .menu {
+    max-height: 240px;
 }
 
 /* main */
