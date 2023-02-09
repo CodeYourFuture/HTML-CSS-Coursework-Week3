@@ -17,6 +17,7 @@
 
 img {
     width: 100%;
+    display: block;
 }
 
 body {
@@ -54,8 +55,8 @@ ul {
 .body__container {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 1fr repeat(4, auto) 1fr;
-    gap: 1rem;
+    grid-template-rows: 0.7fr repeat(4, auto) 1fr;
+    gap: 2rem;
 }
 
 .grid__full {
@@ -91,22 +92,22 @@ header {
 }
 
 .header__text {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-family: var(--heading__font);
     text-align: right;
+    line-height: 1;
 }
 
 .logo {
     float: left;
     display: flex;
-    align-content: center;
-    padding: 1rem 0;
+    padding-top: 1rem;
     gap: 0.3rem;
 }
 
 .logo__img{
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
     background-image: url('images/cupcake-logo.png');
     background-size: cover;
     background-position: center;
@@ -114,6 +115,8 @@ header {
 .logo__text {
     font-family: 'Staatliches', cursive;
     font-size: 1.8rem;
+    line-height: 0;
+    align-self: center;
 }
 
 /* main */
@@ -122,8 +125,34 @@ main {
 }
 
 /* portfolio section */
-.portfolio {
+.portfolio__section {
     grid-row: 4 / 6;
+}
+
+.portfolio__grid {
+    display: grid;
+    grid-template-areas:
+    "item1 item2"
+    "item3 item4";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 1rem;
+}
+
+.item1 {
+    grid-area: item1;
+}
+
+.item2 {
+    grid-area: item2;
+}
+
+.item3 {
+    grid-area: item3;
+}
+
+.item4 {
+    grid-area: item4;
 }
 
 /* footer */
@@ -161,4 +190,41 @@ footer {
 
 .tw {
     background-image: url('images/tw.png');
+}
+
+
+
+/* media query for menu */
+@media (min-width: 900px) {
+    .menu__icon {
+        display: none;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .header__container {
+        display: grid;
+        grid-template-areas:
+        ". logo . . . . . . . . . ."
+        ". logo . . . text text text text text text .";
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: 40px auto;
+        grid-row-gap: 1rem;
+    }
+
+    .header__1 {
+        grid-area: logo;
+    } 
+
+    .header__2 {
+        grid-area: text;
+    }
+
+    .header__text {
+        font-size: 1rem;
+        align-self: flex-end;
+        text-align: right;
+    }
 }

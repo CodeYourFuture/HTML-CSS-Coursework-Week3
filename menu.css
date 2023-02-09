@@ -72,3 +72,17 @@
 }
 
 /* menu icon animation */
+.header .menu__btn:checked ~ .menu__icon .nav__icon {
+    background: transparent;
+}
+
+.header .menu__btn:checked ~ .menu__icon .nav__icon:before {
+    top: 0;
+    transform: rotate(-45deg);
+}
+
+.header .menu__btn:checked ~ .menu__icon .nav__icon:after {
+    top: 0;
+    transform: rotate(45deg);
+}
+
