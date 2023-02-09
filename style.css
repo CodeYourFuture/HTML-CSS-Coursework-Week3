@@ -8,26 +8,26 @@
   }
 
 :root {
-  /* --chicken-yellow: #fafcd1; */
   --chicken-yellow: rgba(250, 252, 209, 0.8);
   --light-green: rgba(218, 255, 211, 0.5);
   --light-blue: #9bf6ff;
 }
 body {
+  margin: 0;
   display: grid;
-  grid-template-rows: 170px 6fr 1fr;
+  grid-template-rows: auto 6fr 1fr;
   width: 100%;
-  max-width: fit-content;
-  padding: 0 1vw 0 1vw;
+  overflow-x:hidden;
+  /* padding: 0 2vw; */
 }
 /* Header */
 header {
   display: flex;
   flex-direction: column;
   background-image: url(/basic-muffin-recipe-8cde647.jpg);
-  /* font-family: "Comfortaa", cursive; */
   font-family: "Julius Sans One", sans-serif;
   align-items: flex-end;
+  padding-right: 2vw;
 }
 
 #parag > h1 {
@@ -38,7 +38,6 @@ header {
   margin-left: 1vw;
   font-size: 22px;
   font-style: italic;
-  /* bottom: 0; */
   text-align: end;
 }
 
@@ -59,7 +58,6 @@ header {
 }
 /* Content */
 main {
-  /* background-color: var(--light-blue); */
   min-height: 600px;
   font-family: "Comfortaa", cursive;
 }
@@ -74,27 +72,39 @@ article > p {
 }
 /* Images */
 
-#large_img > div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 2em;
+#large_img{
+  position: relative;
+  display: grid;
+  grid-gap: 20px;
+  justify-items: center;
+  align-content: center;
   color: #ffeead;
+  margin: 0;
+}
+
+#large_img > p{
+  /* background: var(--chicken-yellow); */
+  z-index: 2;
+  position: absolute;
+  top: 10vh;
 }
 #large_img > img {
-  object-fit: cover;
+  object-fit:cover;
   width: 100%;
-  height: 20%;
-  /* scale: 50%; */
-  margin-bottom: 10px;
+
 }
 
 .small_images > div {
-  display: flex;
+  display: grid;
+  /* grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); */
+  grid-template-columns: 1fr;
   justify-content: center;
   align-items: center;
   font-size: 2em;
   color: #ffeead;
+}
+.small_images>div>p{
+  z-index: 2;
 }
 .small_images > div > img {
   width: 100%;
@@ -104,7 +114,6 @@ article > p {
 
 .small_images {
   display: grid;
-  /* height: 100%; */
   grid-gap: 10px;
   grid-template-columns: repeat(2, minmax(200px, 1fr));
   grid-template-rows: repeat(2, 200px);
@@ -116,7 +125,6 @@ footer {
   padding-left: 5vw;
   padding-right: 5vw;
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   background-color: var(--light-green);
   opacity: 0.5;
