@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&display=swap");
 :root {
   --dark-green: #081c15;
   --light-green: #606c38;
@@ -12,8 +13,9 @@ body {
   background-color: var(--beige);
   display: grid;
   grid-template-columns: 2fr 2fr;
-  grid-template-rows: auto auto 2fr auto auto 0.5fr;
+  grid-template-rows: 0.5fr auto auto 2fr auto auto 0.5fr;
   grid-template-areas:
+    "n n"
     "h h"
     "m m"
     "s1 s1"
@@ -23,29 +25,82 @@ body {
   margin: 0;
   font-family: "Satisfy", cursive;
 }
-/* header */
+
+nav {
+  grid-area: n;
+  font-family: "Rajdhani", sans-serif;
+}
+
+.class_nav {
+  display: flex;
+  justify-content: space-between;
+}
+.nav_image {
+  max-height: 12vh;
+}
+
+.nav-links {
+  list-style-type: none;
+  padding-right: 1rem;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-gap: 0.9rem;
+  justify-items: center;
+  align-items: center;
+  padding: 1rem;
+}
+a {
+  text-decoration: none;
+  color: var(--dark-green);
+  font-size: 20px;
+}
+.nav-links a {
+  transition-duration: 0.4s;
+}
+
+.nav-links a:hover {
+  color: var(--brown);
+}
+
 header {
   grid-area: h;
-  background-image: url(/fon.jpg);
-  background-size: cover;
-  width: 100vw;
-  height: 30vh;
+  position: relative;
+}
+.header_image {
+  width: 100%;
 }
 
 h1 {
-  color: var(--beige);
+  color: var(--dark-beige);
   font-weight: lighter;
-  font-size: 35px;
+  font-size: 30px;
 }
 
 #text_area_header {
+  position: absolute;
+  top: 23%;
+  right: 12%;
   text-align: center;
-  margin-left: 2rem;
-  margin-top: 7rem;
-  line-height: 1;
 }
 
-/* main */
+.order_button {
+  background-color: var(--light-green);
+  border-radius: 5px;
+  border: none;
+  color: var(--beige);
+  font-family: "Rajdhani", sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.order_button {
+  transition-duration: 0.4s;
+}
+
+.order_button:hover {
+  background-color: var(--beige);
+  color: var(--light-green);
+}
 main {
   background-color: var(--beige);
   grid-area: m;
@@ -60,10 +115,12 @@ h2 {
 }
 
 #welcome_text {
+  text-indent: 3vw;
   margin: 16px;
   text-align: justify;
   color: var(--dark-green);
   padding-bottom: 8px;
+  font-family: "Rajdhani", sans-serif;
 }
 
 /* section1 */
@@ -74,9 +131,11 @@ h2 {
 .main_image {
   width: 100vw;
   height: 30vh;
+  object-fit: cover;
 }
 #guarantee_text {
   text-align: center;
+  font-size: 25px;
 }
 
 #section2 {
@@ -87,6 +146,7 @@ h2 {
   margin: 0.3rem;
   width: 47vw;
   height: 30vh;
+  object-fit: cover;
 }
 #section3 {
   grid-area: s3;
@@ -101,9 +161,87 @@ footer {
   background-color: var(--dark-beige);
   grid-area: f;
 }
-
+#join-us {
+  color: black;
+  text-align: center;
+  font-size: 1.5rem;
+}
+.networks {
+  width: 6rem;
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  margin: 0 auto;
+}
+.sm-icon > img {
+  width: 2rem;
+  margin: 0 16px;
+}
+#copyright {
+  text-align: center;
+  font-size: small;
+}
 @media (min-width: 540px) {
+  /* body {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 0.5fr auto auto 2fr auto auto 0.5fr;
+    grid-template-areas:
+      "n n"
+      "h h"
+      "m s1"
+      "m s1"
+      "s2 s3"
+      "s4 s5"
+      "f f";
+    margin: 0;
+    font-family: "Satisfy", cursive;
+  } */
+  /* h1 {
+    padding-top: 2rem;
+    font-size: 40px;
+  }
+  .order_button {
+    font-size: 30px;
+  }
+  .nav-links {
+    grid-gap: 2rem;
+  }
+  .nav_image {
+    width: 25vw;
+    height: 20vh;
+    align-items: center;
+  } */
 }
 
 @media (min-width: 900px) {
+  body {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 0.5fr auto auto 2fr auto auto 0.5fr;
+    grid-template-areas:
+      "n n"
+      "h h"
+      "m s1"
+      "m s1"
+      "s2 s3"
+      "s4 s5"
+      "f f";
+    margin: 0;
+    font-family: "Satisfy", cursive;
+  }
+
+  .main_image {
+    width: 100%;
+    height: auto;
+  }
+  #text_area_header {
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    text-align: center;
+  }
+  h1 {
+    font-size: 40px;
+  }
 }
