@@ -186,16 +186,23 @@ img {
     }
     
 
-    .slogan {        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        background-color: #E7E9E8;
+    .slogan {        
+        display: flex;
+        background-color: #F4ACB7;
         font-size: x-large;
         font-weight: bold;
         text-align: right;
+        justify-content: end;
+        align-items: end;
         margin: 0 2em;
         width: auto;
     }
+
+    .desktop-hero {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
     .footer-section {
         display: flex;
         flex-direction: column;
@@ -204,23 +211,31 @@ img {
     .side-footer {
         display: flex;
         flex-direction: row;
-        height: 5rem;
-        width: 30rem;
-        flex: 1;
-        align-items: center;
-        justify-content: center;
+        height: auto;
+        width: auto;
+        margin-left: auto;
+        margin-right: auto;
     }
     
     .side-footer-item {
-        margin: 1rem;
+        margin: 6rem 2rem 0 2rem;
         background-color: #CDF3AC;
+        font-size: x-large;
         font-weight: bold;
-        padding: 0.25em;
+        padding: 0.25rem;
+        text-justify: center;
+        text-align: center;
+        width: 15rem;
     }
+
     .center-footer {
         display: block;
         margin-left: auto;
         margin-right: auto;
         background-color: #E7E9E8;
+        margin-bottom: 5rem;
+        width: 30rem;
+        text-align: center;
+        padding: 0.5rem
     }
 }
