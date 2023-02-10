@@ -30,7 +30,9 @@ main {
     margin: auto 1em;
 }
 
-
+.header-right {
+    margin-right: 2em;
+}
 
 .hamburger-menu {
     width: 6em;
