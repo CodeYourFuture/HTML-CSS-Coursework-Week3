@@ -1,34 +1,23 @@
-body{background-image: url(https://www.wilton.com/dw/image/v2/AAWA_PRD/on/demandware.static/-/Sites-wilton-project-master/default/dw6d37cd3c/images/project/WLPROJ-8914/FlCoCaFe_36027%2001.jpg?sw=800&sh=800);
-background-repeat: no-repeat;
-background-size: cover;}
-
-
-.container{display: grid;
-grid-template-columns: repeat(5,1fr);
-grid-template-rows: 0.2fr 2fr 1.5fr 2fr 1fr;
-grid-gap:5px;
-grid-template-areas:
-"h h h h h"
-"m m s s s"
-"s s s s s"
-"c1 c1 c1 c1 c1"
-"f f f f f ";}
+body{background-color:darkcyan;}
 
 .header{
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 0.1rem;
-    background-color: darkgrey;
-    align-items: center;
-    flex-direction: row;
-    grid-area:h;
-  
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "i n"
+    "i p";
   }
+   .header-para{text-align: end;
+  grid-area: p;}
+
+  .image{grid-area:i;}
 
   
   .navigation__list {
     display: flex;
     list-style: none;
+    grid-area: n;
   }
   
   .navigation__item {
@@ -41,70 +30,59 @@ text-transform: uppercase;
     padding: 0.5rem;
     
   }
-.main{grid-area:m}
-  .hero{
-    justify-content: center;
-    align-items:center;
-  grid-area: m;
-padding:2rem;
-margin:4rem;
-background-color:darkcyan;
-text-align: center;}
+  .main{display:grid;
+  grid-template-columns: 1fr;
+grid-template-rows: 1fr 1fr 2fr;
+grid-template-areas: 
+"w"
+"p"
+"i";}
 
-  .hero h1{ text-align: center;
-  font-size: 2rem;
-color:plum;}
-
-.hero p{text-align: center;
-  font-size: 1.5rem;
-color: plum}
-
-.hero button{
-  font-size: 1.em;
-padding:5px;
-background-color: brown;
-color: aliceblue;}
- 
-h1{color:darkred;
-  text-align: center;
-
-}
-.about{text-align:justify;
-  ;
-}
-.sidebar{grid-area:s;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  
+  .hero h1{ text-align:justify;
+  font-size:1.5rem;
+color:brown;
+grid-area: w;
 }
 
-.cakes{ font-size: 1.5rem;
-  color:darkred;
-  margin-bottom: 0.1rem;
+.hero p{text-align: justify;
+  font-size: 1rem;
+color:brown;
+grid-area: p;
 }
 
-.sidebar p{color:darkgreen;
-padding:0.3rem;
-background-color: antiquewhite;}
-
-button{padding:0.2rem;
-background-color: orange;
-margin-bottom: 1rem;
+.image1{justify-content: center;
 align-items: center;
-justify-content: center;
+width: 30rem;
+height:20rem;
+grid-area: i;
 }
 
+.gallery{
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: 
+  "1 2"
+  "3 4";
+}
 
-.content{display: flex;
-  flex-direction: row;
-justify-content: center;
-align-items:center;
-grid-area: c1;
-flex-direction: column;}
+.item1 {grid-area: 1;
+width:200px;
+height:200px;}
 
-.content p{font-size: 2rem;
-color: brown;}
+.item2 {grid-area: 2;
+  width:200px;
+height:200px;}
 
-.contact{grid-area: c1;}
+  .item3 {grid-area: 3;
+    width:200px;
+  height:200px;}
+
+  .item4{grid-area: 4;
+    width:200px;
+  height:200px;}
 
 .join{text-align: center;
 color:lightgrey;
@@ -120,32 +98,15 @@ column-gap: 5px;}
 border:1px solid grey;
 margin-bottom: 32px;}
 
-footer{grid-area: f;
+footer{
 color:blueviolet;
 font-size: 1rem;
 text-align: center;}
 
 @media screen and(min-width:550px){
-  .container{grid-template-columns: repeat(7,1fr);
-    grid-template-rows: 0.2fr 2fr 1.5fr;
-    grid-template-areas: 
-    "h h h h h h h"
-    "m m m m m m m"
-    ". . . s s s s"
-    "c1 c1 c1 s s s s"
-    "f f f f f f f";}
+  
   }
 
   @media screen and(min-width:900px){
-  .container{grid-template-columns: repeat(7,1fr);
-    grid-template-rows: auto;
-    grid-template-areas: 
-    "h h h h h h h"
-    ". . m m m . ."
-    ". . . . s s s"
-    "c1 c1 c1 . s s s"
-    "f f f f f f f"}
+
   }
-
-
-  
