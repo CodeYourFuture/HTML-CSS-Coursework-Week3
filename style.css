@@ -33,11 +33,16 @@ main {
 
 
 .hamburger-menu {
-    font-size: small;
-    background-color: #CDF3AC;
     width: 6em;
     height: 7em;
-    padding: 0.5em;
+}
+
+.hamburger-menu-item {
+    font-size: small;
+    background-color: #CDF3AC;
+    margin: 0.5em 0;
+    font-weight: bold;
+    padding: 0.25em;
     text-align: right;
 }
 
@@ -65,7 +70,9 @@ main {
     margin: 1em 1em 0 0;
 }
 
+
 h1 {
+    font-weight: bold;
     margin-top: 2em;
 }
 
@@ -74,7 +81,7 @@ h1 {
     text-align: justify;
 }
 
-.hero {
+.hero-section {
     width: auto;
     height: auto;
     background-color: #E7E9E8;
@@ -106,22 +113,35 @@ img {
 }
 
 .footer-section {
-
-    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    height: auto;
     
 }
 .side-footer {
+    display: flex;
     flex-direction: column;
-    
+    height: 7rem;
+    width: 14rem;
+    margin: 2rem 1rem 1rem 1rem;
 }
 
+.side-footer-item {
+    margin: 0.5rem;
+    background-color: #CDF3AC;
+    font-size: large;
+    font-weight: bold;
+    padding: 0.25em;
+}
 
 .center-footer {
-    justify-content: center;
-    align-self: end;
-
+    align-items: end;
+    margin-left: auto;
+    margin-right: auto;
     background-color: #E7E9E8;
-
+    margin-bottom: 2rem;
+    padding: 0.25rem;
 }
 
 
@@ -142,10 +162,65 @@ img {
     .hamburger-menu {
         display: none;
     }
+
     .large-nav {
-        display: block;
+        display: flex;
+        flex-direction: row;
+        justify-content: right;
+        background-color: #F1D8D5;
+        height: auto;
+        width: auto;
+        margin: 3em;
     }
-    .slogan {
-        margin-bottom: 0;
+    
+    .large-nav-item {
+        text-align: center;
+        font-size: small;
+        font-weight: bold;
+        background-color: #CDF3AC;
+        margin: 1em 0.5em;
+        font-weight: bold;
+        padding: 0.25em;
+        width: 5rem;
+        
+    }
+    
+
+    .slogan {        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #E7E9E8;
+        font-size: x-large;
+        font-weight: bold;
+        text-align: right;
+        margin: 0 2em;
+        width: auto;
+    }
+    .footer-section {
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .side-footer {
+        display: flex;
+        flex-direction: row;
+        height: 5rem;
+        width: 30rem;
+        flex: 1;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .side-footer-item {
+        margin: 1rem;
+        background-color: #CDF3AC;
+        font-weight: bold;
+        padding: 0.25em;
+    }
+    .center-footer {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #E7E9E8;
     }
 }
