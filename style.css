@@ -32,32 +32,34 @@ text-transform: uppercase;
   }
   .main{display:grid;
   grid-template-columns: 1fr;
-grid-template-rows: 1fr 1fr 1fr;
+grid-template-rows: auto;
 grid-template-areas: 
 "w"
 "p"
-"i";}
+"e";}
 
-  .hero h1{ text-align:justify;
+  .main h1{ text-align:justify;
   font-size:1.5rem;
 color:brown;
 grid-area: w;
 }
 
-.hero p{text-align: justify;
+.main p{text-align: justify;
   font-size: 1rem;
 color:brown;
 grid-area: p;
 }
 
-.image1{justify-content: center;
+.image1{display: flex;
+  justify-content: center;
 align-items: center;
 width: 30rem;
-grid-area: i;
+grid-area: e;
 }
 
 .gallery{
   display: grid;
+  grid: gap 5px;
   align-items: center;
   justify-items: center;
   margin-top: 2rem;
