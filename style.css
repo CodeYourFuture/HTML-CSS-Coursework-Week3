@@ -33,7 +33,7 @@ body{background-color:darkcyan;}
     color:black;
 text-transform: uppercase;
     padding: 0.2rem;
-    background-color: blue;
+    background-color: palevioletred;
     text-decoration: none;
     grid-area: i;
     
@@ -60,7 +60,7 @@ grid-area: p;
 
 .image1{
   justify-content:space-between;
-width: 25rem;
+width: 20rem;
 grid-area: e;
 }
 
