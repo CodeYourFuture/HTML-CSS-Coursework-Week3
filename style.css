@@ -13,8 +13,9 @@ body{background-color:darkcyan;}
   }
   .image{grid-area: i;}
 
-   header.para{
-    text-align: end;
+   header.para{display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
     font-size: 20px;
     color:black;
   grid-area: p;}
@@ -68,7 +69,6 @@ grid-area: e;
 
 .gallery{
   display: grid;
-  grid: gap 5px;
   align-items: center;
   justify-items: center;
   margin-top: 2rem;
@@ -117,8 +117,40 @@ text-align: center;}
 
 @media only screen and (min-width: 540px){
   body{background-color: blanchedalmond;}
+  .gallery{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;}
+  
+
 }
 
 @media only screen and (min-width: 900px){
   body{background-color: darkmagenta;}
+  
+  
+  .navigation__list {display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    
+  }
+  .main{display: flex;
+  flex-direction: row-reverse;
+column-gap: 10px;}
+
+  .image1{width:30rem;
+  height:20rem;}
+
+  .gallery{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    column-gap: 5px;
+    
+
+
 }
