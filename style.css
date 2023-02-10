@@ -2,31 +2,31 @@ body{background-color:darkcyan;}
 
 .header{
     display: grid;
-    padding:4px;
+    padding:2px;
     background-color: brown;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: 1fr 2fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:auto;
     grid-template-areas: 
     "i n"
     "i p";
+    
   }
-   .header-para{text-align: end;
+  .image{grid-area: i;}
+
+   header.para{
+    text-align: end;
     font-size: 20px;
     color:black;
   grid-area: p;}
 
-  .image{grid-area:i;}
-
   
-  .navigation__list {
-    display: flex;
-
+  .navigation__list {display: flex;
     list-style: none;
-    grid-area: n;
+    
   }
   
   .navigation__item {
-    padding: 0.4rem;
+    padding: 0.2rem;
   
   }
   
@@ -36,6 +36,7 @@ text-transform: uppercase;
     padding: 0.4rem;
     background-color: blue;
     text-decoration: none;
+    grid-area: n;
     
   }
   .main{display:grid;
@@ -114,14 +115,10 @@ color:blueviolet;
 font-size: 1rem;
 text-align: center;}
 
+@media only screen and (min-width: 540px){
+  body{background-color: blanchedalmond;}
+}
 
-@media screen and(min-width:540px)
-  body{
-    background-color: darkgoldenrod;
-  }
-
-  }
-
-  @media screen and(min-width:900px){
-body{background-color: brown;}
-  }
+@media only screen and (min-width: 900px){
+  body{background-color: darkmagenta;}
+}
