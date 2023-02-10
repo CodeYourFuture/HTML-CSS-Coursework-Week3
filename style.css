@@ -5,13 +5,13 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin: 0;
 }
 
 .header-section, .footer-section {
     color: #432818;
     background: #F4ACB7;
     margin: 0;
-    padding: 1em;
 }
 
 body {
@@ -32,7 +32,7 @@ main {
 }
 
 .header-right {
-    margin-right: 2em;
+    padding-right: 2em;
 }
 
 .hamburger-menu {
