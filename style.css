@@ -58,10 +58,10 @@ color:black;
 grid-area: p;
 }
 
-.image1{display: flex;
+.image1{
   justify-content: center;
 align-items: center;
-width: 20rem;
+width: 10rem;
 grid-area: e;
 }
 
@@ -78,21 +78,21 @@ grid-area: e;
 }
 
 .item1 {grid-area: 1;
-width:200px;
-height:200px;
+width:100px;
+height:100px;
 }
 
 .item2 {grid-area: 2;
-  width:200px;
-height:200px;}
+  width:100px;
+height:100px;}
 
   .item3 {grid-area: 3;
-    width:200px;
-  height:200px;}
+    width:100px;
+  height:100px;}
 
   .item4{grid-area: 4;
-    width:200px;
-  height:200px;}
+    width:100px;
+  height:100px;}
 
 .join{text-align: center;
 color:lightgrey;
