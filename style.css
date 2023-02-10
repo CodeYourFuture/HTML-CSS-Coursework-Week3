@@ -1,1 +1,227 @@
-/*  Add your styling here */
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&display=swap");
+:root {
+  --dark-green: #081c15;
+  --light-green: #606c38;
+  --beige: #fefae0;
+  --dark-beige: #dda15e;
+  --brown: #bc6c25;
+  --white: #fff;
+}
+
+body {
+  background-color: var(--beige);
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  grid-template-rows: 0.5fr auto auto auto auto 0.5fr;
+  grid-template-areas:
+    "n n"
+    "h h"
+    "m m"
+    "s1 s1"
+    "s2 s3"
+    "s4 s5"
+    "f f";
+  margin: 0;
+  font-family: "Satisfy", cursive;
+}
+
+nav {
+  grid-area: n;
+  font-family: "Rajdhani", sans-serif;
+}
+
+.class_nav {
+  display: flex;
+  justify-content: space-between;
+}
+.nav_image {
+  max-height: 12vh;
+}
+
+.nav-links {
+  list-style-type: none;
+  padding-right: 1rem;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-gap: 0.9rem;
+  justify-items: center;
+  align-items: center;
+  padding: 1rem;
+}
+a {
+  text-decoration: none;
+  color: var(--dark-green);
+  font-size: 20px;
+}
+.nav-links a {
+  transition-duration: 0.4s;
+}
+
+.nav-links a:hover {
+  color: var(--brown);
+}
+
+header {
+  grid-area: h;
+  position: relative;
+}
+.header_image {
+  width: 100%;
+}
+
+h1 {
+  color: var(--dark-beige);
+  font-weight: lighter;
+  font-size: 30px;
+}
+
+#text_area_header {
+  position: absolute;
+  top: 23%;
+  right: 12%;
+  text-align: center;
+}
+
+.order_button {
+  background-color: var(--light-green);
+  border-radius: 5px;
+  border: none;
+  color: var(--beige);
+  font-family: "Rajdhani", sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.order_button {
+  transition-duration: 0.4s;
+}
+
+.order_button:hover {
+  background-color: var(--beige);
+  color: var(--light-green);
+}
+main {
+  background-color: var(--beige);
+  grid-area: m;
+}
+h2 {
+  color: var(--dark-green);
+  font-size: 35px;
+  font-weight: lighter;
+  text-align: center;
+  margin-bottom: 0;
+  margin-top: 10px;
+}
+
+#welcome_text {
+  text-indent: 3vw;
+  margin: 16px;
+  text-align: justify;
+  color: var(--dark-green);
+  padding-bottom: 8px;
+  font-family: "Rajdhani", sans-serif;
+}
+
+/* section1 */
+
+#section1 {
+  grid-area: s1;
+}
+.main_image {
+  width: 100%;
+  height: auto;
+}
+#guarantee_text {
+  text-align: center;
+  font-size: 25px;
+}
+
+#section2 {
+  grid-area: s2;
+}
+
+.section_images {
+  margin: 0.3rem;
+  width: 47vw;
+  height: 30vh;
+  object-fit: cover;
+}
+#section3 {
+  grid-area: s3;
+}
+#section4 {
+  grid-area: s4;
+}
+#section5 {
+  grid-area: s5;
+}
+footer {
+  background-color: var(--dark-beige);
+  grid-area: f;
+}
+#join-us {
+  color: black;
+  text-align: center;
+  font-size: 1.5rem;
+}
+.networks {
+  width: 6rem;
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  margin: 0 auto;
+}
+.sm-icon > img {
+  width: 2rem;
+  margin: 0 16px;
+}
+#copyright {
+  text-align: center;
+  font-size: small;
+}
+@media (min-width: 540px) {
+  body {
+    margin: 10px;
+  }
+  .nav-links {
+    grid-gap: 2rem;
+  }
+
+  #text_area_header {
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    text-align: center;
+  }
+}
+
+@media (min-width: 900px) {
+  body {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 0.5fr auto auto auto auto 0.5fr;
+    grid-template-areas:
+      "n n"
+      "h h"
+      "m s1"
+      "s2 s3"
+      "s4 s5"
+      "f f";
+    margin: 15px;
+    font-family: "Satisfy", cursive;
+  }
+  .main_image {
+    width: 100%;
+    min-height: 150px;
+  }
+  #text_area_header {
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    text-align: center;
+  }
+  h1 {
+    font-size: 40px;
+  }
+}
