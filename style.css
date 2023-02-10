@@ -149,6 +149,9 @@ img {
     body {
         background-color: #d7e4ca;
     }
+    .center-footer {
+    background-color: #d7e4ca;
+}
 }
 
 @media screen and (min-width: 900px) {
@@ -243,7 +246,7 @@ img {
         display: block;
         margin-left: auto;
         margin-right: auto;
-        background-color: #E7E9E8;
+        background-color: #f3e3bc;
         margin-bottom: 5rem;
         width: 30rem;
         text-align: center;
