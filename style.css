@@ -150,6 +150,40 @@ footer div p > a {
 #contact_section {
   text-align: right;
 }
+@media (max-width: 400px) {
+  #parag h1 {
+    font-size: 2rem;
+  }
+  #logo img {
+    height: 10vh;
+  }
+  #large_img {
+    display: none;
+  }
+  .frist {
+    position: absolute;
+  }
+  footer {
+    position: relative;
+    top: 33vh;
+  }
+
+  .small_images {
+    position: relative;
+    top: 100vh;
+    display: grid;
+    grid-gap: 1vw;
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+    grid-template-rows: repeat(2, 40vh);
+  }
+
+  .small_images > img {
+    width: 2vw;
+  }
+  .ad {
+    display: none;
+  }
+}
 
 @media (max-width: 800px) {
   .frist {
@@ -170,8 +204,7 @@ footer div p > a {
   .small_images > img {
     width: 10vw;
   }
-  .ad img {
-    height: 20vh;
-    margin-top: 6vh;
+  .ad {
+    display: none;
   }
 }
