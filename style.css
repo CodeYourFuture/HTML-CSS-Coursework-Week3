@@ -147,13 +147,13 @@ img {
 
 @media screen and (min-width: 540px) {
     body {
-        background-color: #f9c74f;
+        background-color: #d7e4ca;
     }
 }
 
 @media screen and (min-width: 900px) {
     body {
-        background-color: #deaaff;
+        background-color: #f3e3bc;
     }
     .cake-display {
         grid-template-columns: 1fr 1fr 1fr 1fr;
