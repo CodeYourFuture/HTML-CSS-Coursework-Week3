@@ -5,12 +5,180 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Responsive Cake webpage</title>
+    <title>Hello, Sugar!</title>
     <!-- Add a link to your css file here -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <!-- Add your markup here -->
+    <!-- Navigation -->
+    <nav class="site-nav grid">
+        <h1>Hello, Sugar!</h1>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Cakes</a></li>
+            <li><a href="#">Order In</a></li>
+            <li><a href="#">Contacts</a></li>
+        </ul>
+        <img class="menu" src="./img/menu.svg" alt="Menu logo">
+    </nav>
+    <main>
+        <!-- Hero section -->
+        <section class="welcome grid">
+            <div class="welcome-text">
+                <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+                <p class="leading">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor atque dolorem officia voluptatum, accusamus sapiente quis earum ipsam! Ex consectetur magni quam autem eos accusamus accusantium nihil sapiente fugiat similique tempore et minus laudantium exercitationem asperiores temporibus tempora, inventore officia? Quae recusandae necessitatibus alias quibusdam tempora!</p>
+                <a class="button" href="#">Order now</a>
+            </div>
+            <div class="welcome-img">
+                <img src="./img/birthday_cake.svg" alt="Welcome image">
+            </div>
+        </section>
+        <!-- Image section -->
+        <section class="image">
+        </section>
+        <!-- Feature Section -->
+        <section class="portfolio">
+            <h3>Pick your treat</h3>
+            <div class="grid features">
+                <div class="feature">
+                    <img src="./img/birthday_girl.svg" alt="Birthday cake image">
+                    <h4>Birthday Cake</h4>
+                    <p class="cake-descrption">Honey, you don't have to make a wish, it's already come true! Cakes for
+                        every taste and size!</p>
+                    <div class="centered">
+                        <a class="small-button" href="#">Learn more</a>
+
+                    </div>
+                </div>
+
+                <div class="feature">
+                    <img src="./img/romantic_getaway.svg" alt="Wedding Cake image">
+                    <h4>Wedding Cake</h4>
+                    <p class="cake-descrption">Beach wedding, Vegas wedding or Big Greek wedding? Our cake will steal
+                        the show anyway!</p>
+                    <div class="centered">
+                        <a class="small-button" href="#">Learn more</a>
+
+                    </div>
+                </div>
+
+                <div class="feature">
+                    <img src="./img/flowers.svg" alt="Cake Image">
+                    <h4>No Reason Cake</h4>
+                    <p class="cake-descrption">Do you really need a reason to treat yourself to our delicious cakes? We
+                        say No! Don't think, enjoy!</p>
+                    <div class="centered">
+                        <a class="small-button" href="#">Learn more</a>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="gallery">
+            <h3>Our proudest collection</h3>
+            <div class="img-gallery">
+                <img class="cake-img" src="./img/cake-1.jpg" alt="cake-1">
+                <img class="cake-img" src="./img/cake-2.jpg" alt="cake-1">
+                <img class="cake-img" src="./img/cake-3.jpg" alt="cake-1">
+                <img class="cake-img" src="./img/cake-4.jpg" alt="cake-1">
+                <img class="cake-img" src="./img/cake-5.jpg" alt="cake-1">
+                <img class="cake-img" src="./img/cake-6.jpg" alt="cake-1">
+                <img class="cake-img" src="./img/cake-7.jpg" alt="cake-1">
+                <img class="cake-img" src="./img/cake-8.jpg" alt="cake-1">
+                <img class="cake-img" src="./img/cake-9.jpg" alt="cake-1">
+            </div>
+
+        </section>
+        <section class="contact">
+            <h3>Leave a comment</h3>
+            <form action="" method="post">
+                <div class="flex-form">
+                    <label for="full-name">Your Name</label>
+                    <input id="full-name" type="text" name="full-name">
+                </div>
+
+                <div class="flex-form">
+                    <label for="email">Your email</label>
+                    <input id="email" type="email" name="email">
+                </div>
+
+                <div class="flex-form">
+                    <label for="comment">Leave your comment here</label>
+                    <textarea name="comment" id="comment" cols="30" rows="8"></textarea>
+                </div>
+                <div class="centered">
+                    <button class="button" type="submit">Submit now</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <table>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tr>
+                <td>
+                    <a href="#">About Us</a>
+                </td>
+                <td>
+                    <a href="#"></a><img class="contact-icon" src="./img/instagram-logo-fill.svg" alt="instagram icon">
+
+
+                </td>
+                <td>
+                    <p>Follow us on Instagram</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="#">Customer Service</a>
+                </td>
+                <td>
+                    <a href="#"></a><img class="contact-icon" src="./img/pinterest-logo-fill.svg" alt="pinterest icon">
+                </td>
+                <td>
+                    <p>Follow us on Pinterest</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="#">Terms and Conditions</a>
+                </td>
+                <td>
+                    <a href="#"></a><img class="contact-icon" src="./img/facebook-logo-fill.svg" alt="facebook icon">
+                </td>
+                <td>
+                    <p>Follow us on Facebook</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="#">Contact Us</a>
+                </td>
+                <td>
+                    <a href="#"></a><img class="contact-icon" src="./img/twitter-logo-fill.svg" alt="instagram icon">
+                </td>
+                <td>
+                    <p>Follow us on Twitter</p>
+                </td>
+            </tr>
+
+        </table>
+        <p id="copyright">Created by Alena Lazareva as a part of CYF Homework in 2023</p>
+        </div>
+    </footer>
 </body>
 
 </html>
