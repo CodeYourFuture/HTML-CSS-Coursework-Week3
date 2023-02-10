@@ -51,9 +51,13 @@ body{
   display: flex;
   justify-content: flex-end;
   height: 20px;
+  position: absolute;
+top: 10px;
+right: 10px;
 }
 
 .btn{
+  grid-area: btn;
   width: 100px;
   height: 100px;
   background-image: url(/img/threelines.webp);
@@ -63,8 +67,10 @@ body{
   background-color: transparent;
   mix-blend-mode: color-burn;
   
+
 }
 .three{
+  grid-area: three;
   width: 100px;
   height: 100px;
   
