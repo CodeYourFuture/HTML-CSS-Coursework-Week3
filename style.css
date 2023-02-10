@@ -61,7 +61,7 @@ grid-area: p;
 .image1{
   justify-content: center;
 align-items: center;
-width: 10rem;
+width: 30rem;
 grid-area: e;
 }
 
@@ -70,6 +70,7 @@ grid-area: e;
   align-items: center;
   justify-items: center;
   margin-top: 2rem;
+  gap: 2px;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   grid-template-areas: 
@@ -78,21 +79,21 @@ grid-area: e;
 }
 
 .item1 {grid-area: 1;
-width:100px;
-height:100px;
+width:150px;
+height:150px;
 }
 
 .item2 {grid-area: 2;
-  width:100px;
-height:100px;}
+  width:150px;
+height:150px;}
 
   .item3 {grid-area: 3;
-    width:100px;
-  height:100px;}
+    width:150px;
+  height:150px;}
 
   .item4{grid-area: 4;
-    width:100px;
-  height:100px;}
+    width:150px;
+  height:150px;}
 
 .join{text-align: center;
 color:lightgrey;
