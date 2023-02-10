@@ -6,8 +6,8 @@
   grid-gap: 5px;
   
   grid-template-areas:  
-  "h h h h h h nav nav"
-  "h h h h h h nav nav"
+  "h h h parag parag parag parag drop"
+  "h h h parag parag parag parag drop"
   "maa maa maa maa maa maa maa maa"
   "maa maa maa maa maa maa maa maa"
   "ma ma ma ma ma ma ma ma"
@@ -46,14 +46,34 @@ body{
 .header p{
   font-size: 2rem;
 }
-.nav{
-  grid-area: nav;
+.dropdown {
+  grid-area: drop;
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  font-size: 1.7rem;
-  align-items: center;
-  padding: 20px;
+  justify-content: flex-end;
+  height: 20px;
+}
+
+.btn{
+  width: 100px;
+  height: 100px;
+  background-image: url(/img/threelines.webp);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  mix-blend-mode: color-burn;
+  
+}
+.three{
+  width: 100px;
+  height: 100px;
+  
+}
+.slogan {
+  grid-area: parag;
+}
+.nav{
+ display: none;
   
 }
 ul {
@@ -221,16 +241,15 @@ li a:hover:not(.active) {
 /* add media */
 
 
-@media only screen and (min-width: 540px)
+@media only screen and (max-width: 540px){
   .container{
       display: flex;
       }
 }
 
 
-@media only screen and (min-width: 900px)
+@media only screen and (max-width: 900px){
   .container{
       display: flex;
   }
-
-
+}
