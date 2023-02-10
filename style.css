@@ -13,7 +13,7 @@ body {
   background-color: var(--beige);
   display: grid;
   grid-template-columns: 2fr 2fr;
-  grid-template-rows: 0.5fr auto auto 2fr auto auto 0.5fr;
+  grid-template-rows: 0.5fr auto auto auto auto 0.5fr;
   grid-template-areas:
     "n n"
     "h h"
@@ -129,9 +129,8 @@ h2 {
   grid-area: s1;
 }
 .main_image {
-  width: 100vw;
-  height: 30vh;
-  object-fit: cover;
+  width: 100%;
+  height: auto;
 }
 #guarantee_text {
   text-align: center;
@@ -182,63 +181,44 @@ footer {
   font-size: small;
 }
 @media (min-width: 540px) {
-  /* body {
-    display: grid;
-    grid-template-columns: 2fr 2fr;
-    grid-template-rows: 0.5fr auto auto 2fr auto auto 0.5fr;
-    grid-template-areas:
-      "n n"
-      "h h"
-      "m s1"
-      "m s1"
-      "s2 s3"
-      "s4 s5"
-      "f f";
-    margin: 0;
-    font-family: "Satisfy", cursive;
-  } */
-  /* h1 {
-    padding-top: 2rem;
-    font-size: 40px;
-  }
-  .order_button {
-    font-size: 30px;
+  body {
+    margin: 10px;
   }
   .nav-links {
     grid-gap: 2rem;
   }
-  .nav_image {
-    width: 25vw;
-    height: 20vh;
-    align-items: center;
-  } */
+
+  #text_area_header {
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    text-align: center;
+  }
 }
 
 @media (min-width: 900px) {
   body {
     display: grid;
     grid-template-columns: 2fr 2fr;
-    grid-template-rows: 0.5fr auto auto 2fr auto auto 0.5fr;
+    grid-template-rows: 0.5fr auto auto auto auto 0.5fr;
     grid-template-areas:
       "n n"
       "h h"
       "m s1"
-      "m s1"
       "s2 s3"
       "s4 s5"
       "f f";
-    margin: 0;
+    margin: 15px;
     font-family: "Satisfy", cursive;
   }
-
   .main_image {
     width: 100%;
-    height: auto;
+    min-height: 150px;
   }
   #text_area_header {
     position: absolute;
     top: 30%;
-    left: 30%;
+    left: 20%;
     text-align: center;
   }
   h1 {
