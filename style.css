@@ -4,8 +4,8 @@ body{background-color:darkcyan;}
     display: grid;
     padding:4px;
     background-color: brown;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 2fr;
     grid-template-areas: 
     "i n"
     "i p";
@@ -115,7 +115,7 @@ font-size: 1rem;
 text-align: center;}
 
 
-@media screen and(min-width:540px){
+@media screen and(min-width:540px)
   body{
     background-color: darkgoldenrod;
   }
