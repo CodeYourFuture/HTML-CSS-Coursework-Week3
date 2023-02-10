@@ -2,13 +2,17 @@ body{background-color:darkcyan;}
 
 .header{
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    padding:4px;
+    background-color: brown;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-template-areas: 
     "i n"
     "i p";
   }
    .header-para{text-align: end;
+    font-size: 20px;
+    color:black;
   grid-area: p;}
 
   .image{grid-area:i;}
@@ -16,18 +20,22 @@ body{background-color:darkcyan;}
   
   .navigation__list {
     display: flex;
+
     list-style: none;
     grid-area: n;
   }
   
   .navigation__item {
-    padding: 0.4rem 0;
+    padding: 0.4rem;
+  
   }
   
   .navigation__link {
-    color:maroon;
+    color:black;
 text-transform: uppercase;
-    padding: 0.5rem;
+    padding: 0.4rem;
+    background-color: blue;
+    text-decoration: none;
     
   }
   .main{display:grid;
@@ -46,7 +54,7 @@ grid-area: w;
 
 .main p{text-align: justify;
   font-size: 1rem;
-color:brown;
+color:black;
 grid-area: p;
 }
 
@@ -105,6 +113,7 @@ footer{
 color:blueviolet;
 font-size: 1rem;
 text-align: center;}
+
 
 @media screen and(min-width:540px){
   body{
