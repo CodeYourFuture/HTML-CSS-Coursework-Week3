@@ -2,7 +2,10 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="style.css"
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -10,26 +13,54 @@
     <!-- Add a link to your css file here -->
 </head>
 
-<body>
-    <div class="header">
-        <img class="logo" src="../images/Redvelvet_cupcake_logo.jpg">
-        <div class="header-right">
-            <nav class="hamburger-menu">
-                <!-- <button id="open">☰</button> -->
-                <ul id="nav-menu">
-                    <li>HOME</li>
-                    <li>CAKES</li>
-                    <li>ORDERING</li>
-                    <li>LESSONS</li>
-                    <li>ABOUT US</li>
-                </ul>
-            </nav>
-            <p class="slogan">The best cakes in town delivered to your door</p>
-        </div>
+<section class="header-section">
+    <img class="logo" alt="a red-velvet cupcake logo" src="../images/Redvelvet_cupcake_logo.jpg">
+    <div class="header-right">
+        <nav class="hamburger-menu">
+            <!-- <button id="open">☰</button> -->
+                <div>HOME</div>
+                <div>CAKES</div>
+                <div>ORDERING</div>
+                <div>LESSONS</div>
+                <div>ABOUT US</div>
+        </nav>
+        <p class="slogan">The best cakes in town delivered to your door</p>
     </div>
+</section>
+<section class="large-nav">
+    <div>HOME   CAKES   ORDERING</div>
+</section>
 
+<body>
+    <main>
+        <section class="welcome-section">
+            <h1>Welcome</h1>
+            <p class="site-description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</p>
+        </section>
+
+        <section class="hero-section">
+            <img id="hero-img" alt="Strawberry cheese cake decorated with strawberry on top" src="../images/Strawberry_Cheesecake.jpg">
+        </section>
+        <section class="cake-display">
+            <img alt="pretty cupcakes with pastel coloured icing on top" src="../images/pretty_cupcakes.jpg">
+            <img alt="three layered cake beautifully decorated with icing, strawberries and blueberries" src="../images/Pretty_cake_berry_topping.jpg">
+            <img alt="Chocolate cake with Happy Birthday written on it" src="../images/Chocolate_cake.jpg">
+            <img alt="cake decorated with white icing and strawberries, kiwis, raspberries and blackberries on top" src="../images/Cake_with_fruit_topping.jpg">
+        </section>
+
+
+    </main>
+    
 
     <!-- Add your markup here -->
 </body>
 
+<div class="footer-section">
+    <section class="side-footer">
+        <div>Gallery</div>
+        <div>Events</div>
+        <div>Contact us</div>
+    </section>
+    <p class="center-footer">Copyright © 2023 Cakes Co.</p>
+</div>
 </html>
