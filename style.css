@@ -59,9 +59,8 @@ grid-area: p;
 }
 
 .image1{
-  justify-content: center;
-align-items: center;
-width: 20rem;
+  justify-content:space-between;
+width: 25rem;
 grid-area: e;
 }
 
@@ -116,6 +115,11 @@ text-align: center;}
 
 @media only screen and (min-width: 540px){
   body{background-color: blanchedalmond;}
+
+  .main{display: flex;
+    flex-direction: row-reverse;
+  column-gap: 10px;}
+  
   .gallery{
     display: flex;
     flex-direction: row;
