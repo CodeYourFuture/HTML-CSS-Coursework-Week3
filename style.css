@@ -5,7 +5,8 @@
 
 body{
     margin: 10px;
-    padding:10px
+    padding:10px;
+    background-color: rgb(238, 175, 185);
     
 }
 
@@ -14,15 +15,16 @@ body{
     grid-auto-rows: minmax(100px, auto);
     grid-gap: 1px;
     grid-template-areas: 
-    "h h h h h h nav nav"
-    "h h h h h h nav nav"
-    "m1 m1 m1 m1 m1 m1 m1 m1 m1"
-    "m1 m1 m1 m1 m1 m1 m1 m1 m1"
-    "m2 m2 m2 m2 m2 m2 m2 m2"
-    "m2 m2 m2 m2 m2 m2 m2 m2"
-    "m2 m2 m2 m2 m2 m2 m2 m2"
-    "s1 s1 s1 s1 s2 s2 s2 s2"
-    "s3 s3 s3 s3 s4 s4 s4 s4"
+    "header header header header nav nav"
+    "header header header header nav nav"
+    "main1 main1 main1 main1 main1 main1"
+    "main1 main1 main1 main1 main1 main1"
+    "main2 main2 main2 main2 main2 main2"
+    "main2 main2 main2 main2 main2 main2"
+    "main2 main2 main2 main2 main2 main2"
+    "section1 section1 section1 section2 section2 section2"
+    "section3 section3 section3 section4 section4 section4"
+    "foo foo foo foo foo foo";
 
 }
 
@@ -34,7 +36,7 @@ body{
 }
 
 .header{
-    grid-area: h;
+    grid-area: header;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -91,7 +93,7 @@ li a{
 }
 
 .main1{
-    grid-area: m1;
+    grid-area: main1;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -103,12 +105,12 @@ li a{
     width: 600px;
     height: 300px;
     margin-top: 30px;
-    /* border-radius: 20px;
-    border: 2px solid orange; */
+    border-radius: 20px;
+    border: 2px solid orange;
 }
 
 .main2{
-    grid-area: m2;
+    grid-area: main2;
     display: flex;
     flex-direction: column;
     font-size: 1.5 rem;
@@ -124,7 +126,7 @@ li a{
 }
 
 .section1{
-    grid-area: s1;
+    grid-area: section1;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -139,7 +141,7 @@ li a{
 
 
 .section2{
-    grid-area: s2;
+    grid-area: section2;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -154,7 +156,7 @@ li a{
 }
 
 .section3{
-    grid-area: s3;
+    grid-area: section3;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -167,7 +169,7 @@ li a{
    
 }
 .section4{
-    grid-area: s4;
+    grid-area: section4;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -220,8 +222,8 @@ li a{
     font-size: small;
     color: gray;
 }
-
-/* @media only screen and (min-width: 540px)
+/* 
+@media only screen and (min-width: 540px)
 .container{
     display: flex;
 }
