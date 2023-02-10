@@ -1,1 +1,416 @@
 /*  Add your styling here */
+body{
+    font-size: 20px;
+    font-family: "Sofia", sans-serif;
+
+
+}
+li{
+    list-style: none;
+    
+}
+a{
+    text-decoration: none;
+}
+
+.header { grid-area: header; }
+.navbar{ grid-area:navbar; }
+.welcome { grid-area: welcome; }
+.welcomeimage{ grid-area:welcomeimage;}
+.cakeimage { grid-area: cakeimage; }
+.footer { grid-area: footer; }
+.grid-container {
+    display: grid;
+    grid-template-areas:
+    'header'
+    'navbar'
+    'welcome'
+    'welcomeimage'
+    'cakeimage'
+    'footer';
+   
+    gap: 10px;
+    background-color: white;
+    padding: 10px;
+
+  }
+  
+  .grid-container > div {
+    background-color: pink;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+  }
+  /* navbar */
+  .navbar{
+    display:none;
+  }
+  .navbar,.welcome,.welcomeimage{
+    margin-left: 150px;
+    margin-right: 150px;
+  }
+/* navbar end */
+/* header */
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+.header div{
+     display: flex;
+     justify-content: space-between;
+     margin-left: 20px;
+     margin-right: 20px;
+
+    
+}
+.icon{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.images img{
+    width: 100px;
+    height: 100px;
+    
+    border-radius: 10px;
+      
+}
+.images img:hover {
+    box-shadow: 2px 2px 2px 2px black;}
+
+
+/* header end */
+/* nav */
+nav{
+    background:pink;
+    height:80px;
+    width:100%;
+    
+  }
+  label.logo{
+      color:black;
+      font-size:35px;
+      line-height: 80px;
+      padding: 0 100px;
+      font-weight:bold;
+  
+  }
+  nav ul{
+      float:right;
+      margin-right:20px;
+      
+  
+  }
+  nav ul li{
+      display:inline-block;
+      line-height:80px;
+      margin: -15px 5px;
+  }
+  nav ul li a {
+      color:white;
+      font-size:17px;
+      padding: 7px 13px;
+      border-radius:3px;
+      text-transform:uppercase;
+  }
+  a.active,a:hover{
+      background:#1b9bff;
+      transition: all .5s;
+  
+  }
+  .checkbtn{
+      font-size: 30px;
+      color:black;
+      float:right;
+      
+      line-height:80px;
+      margin-right: 40px;
+      cursor: pointer;
+    
+  }
+  #check{
+      display:none;
+  }
+  ul{
+    position:fixed;
+    width:30%;
+    height:100vh;
+    background:lightskyblue;
+    top: 100px;
+    padding-right: 50px;
+    right:-100%;
+    text-align:center;
+    transition: all .5s;
+
+ }
+ 
+  nav ul li{
+    display:block;
+  }
+  a:hover,a.active{
+    background: none;
+    color:black;
+}
+#check:checked ~ul{
+    right:0;
+
+}
+
+
+/* nav end */
+/* welcomeimage */
+.welcomeimage{
+    margin-top: 20px;
+}
+
+.welcomeimage img{
+    width: 50%;
+    height: 80%;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+.welcomeimage img:hover {
+    box-shadow: 2px 2px 2px 2px black;
+  }
+  /* welcomeimage end */
+  /* cakeimage */
+.cakeimage{
+    background-color: white;
+    margin-bottom: 40px;
+    
+}
+.cakeimage div img{
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+}
+
+.cakeimage{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+    background-color:white !important;
+    padding: 10px;
+    margin: 20px 100px 20px 100px;
+    
+}
+.cakeimage div{
+    background-color:pink;
+    border: 1px solid pink;
+    border-radius: 3px;
+    text-align: center;
+    margin: 5px;
+    font-size: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 10px;
+
+}
+
+
+.cakeimage img:hover {
+    box-shadow: 2px 2px 2px 2px black;
+  }
+  
+
+/* cakeimage end */
+
+/* footer */
+
+.footer article{
+    text-align: left;
+    align-items: left;
+    padding: 20px ;
+}
+.footer footer{
+    text-align: center;
+    align-items: center;
+}
+
+/* footer end */
+@media(min-width:540px){
+    /* nav */
+
+    nav{
+        display:none;
+    }
+    /* nav end */
+    /* navbar */
+    .navbar{
+        display: block;
+    }
+    .navbar nav{
+        
+        display:flex;
+        flex-direction: row;
+        justify-content: space-around;
+        
+        
+      }
+
+      .navbar nav li{
+        margin: 20px 0px 10px 0px ;
+        
+        
+      }
+      .navbar nav li a{
+        color:black;
+        background-color: aquamarine;
+        margin: 20px 0px 10px 0px ;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-radius: 5px;
+        font-size: 15px;
+        
+      }
+      .navbar nav li a:hover{
+        background-color: pink;
+
+      }
+    /* navbar end */
+    /* footer */
+    .footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer div{
+        display: flex;
+        justify-content: space-between;
+        margin-left: 40px;
+        margin-right: 40px;
+
+        
+    }
+    .footer div div{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .footer div div article{
+        font-size: 20px;
+    }
+    /* footer end */
+
+}
+@media(min-width:900px){
+    .grid-container {
+        display: grid;
+        grid-template-areas:
+          'header header header header header header'
+          'navbar navbar navbar navbar navbar navbar'
+          'welcomeimage welcomeimage welcomeimage welcomeimage welcomeimage welcome'
+          'cakeimage cakeimage cakeimage cakeimage cakeimage cakeimage'
+          'footer footer footer footer footer footer';
+        gap: 10px;
+        background-color:white;
+        padding: 10px;
+      }
+      
+      .grid-container > div {
+        background-color: pink;
+        text-align: center;
+        padding: 20px 0;
+        font-size: 30px;
+        margin: 10px 60px 10px 60px;
+      }
+    
+/* welcome */
+.welcome h3{
+    margin-top: 3px;
+    font-size: 20px;
+    
+}
+.welcome p{
+    margin-top: 3px;
+    font-size: 15px;
+}
+/* welcome end */
+/* welcomeimage */
+.welcomeimage{
+    align-items: center;
+}
+.welcomeimage img{
+    width: 150px;
+    height:150px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    margin-top: 60px;
+}
+.welcomeimage img:hover {
+    box-shadow: 2px 2px 2px 2px black;
+  }
+  /* welcomeimage end */
+
+
+
+
+        /* nav */
+
+        nav{
+            display:none;
+        }
+        /* nav end */
+        /* navbar */
+        .navbar{
+            display: block;
+        }
+        .navbar nav{
+            
+            display:flex;
+            flex-direction: row;
+            justify-content: space-around;
+            
+            
+          }
+    
+          .navbar nav li{
+            margin: 20px 0px 10px 0px ;
+            
+            
+          }
+          .navbar nav li a{
+            color:black;
+            background-color: aquamarine;
+            margin: 20px 0px 10px 0px ;
+            padding-left: 10px;
+            padding-right: 10px;
+            border-radius: 5px;
+            font-size: 15px;
+            
+          }
+          .navbar nav li a:hover{
+            background-color: pink;
+    
+          }
+        /* navbar end */
+        /* footer */
+        .footer{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .footer div{
+            display: flex;
+            justify-content: space-between;
+            margin-left: 40px;
+            margin-right: 40px;
+    
+            
+        }
+        .footer div div{
+            display: flex;
+            flex-direction: column;
+            
+        }
+        .footer div div article{
+            font-size: 20px;
+        }
+        /* footer end */
+
+}
