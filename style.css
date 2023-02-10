@@ -88,8 +88,8 @@ h1 {
 }
 
 #hero-img {
-    width: 20rem;
-    height: 12rem;
+    width: 100%;
+    height: 100%;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -167,22 +167,25 @@ img {
         display: flex;
         flex-direction: row;
         justify-content: right;
-        background-color: #F1D8D5;
+        background-color: #F4ACB7;
         height: auto;
         width: auto;
-        margin: 3em;
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+        padding: 0.25em 1em;
     }
     
     .large-nav-item {
         text-align: center;
-        font-size: small;
+        font-size: large;
         font-weight: bold;
         background-color: #CDF3AC;
-        margin: 1em 0.5em;
+        margin: 1em;
+        justify-content: space-evenly;
         font-weight: bold;
-        padding: 0.25em;
-        width: 5rem;
-        
+        padding: 0.5em;
+        width: 9rem;
+
     }
     
 
@@ -201,7 +204,15 @@ img {
     .desktop-hero {
         display: flex;
         flex-direction: row-reverse;
+        gap: 1rem;
     }
+
+    /* .desktop-hero {
+        display: grid-reverse;
+        gap: 1rem;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+    } */
 
     .footer-section {
         display: flex;
