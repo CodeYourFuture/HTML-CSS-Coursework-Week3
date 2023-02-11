@@ -58,10 +58,12 @@ color:black;
 grid-area: p;
 }
 
-.image1{
-  justify-content:space-between;
+.image1{display: block;
+  justify-content:center;
 width: 20rem;
 grid-area: e;
+margin-left: auto;
+margin-right: auto;
 }
 
 .gallery{
