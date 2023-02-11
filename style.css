@@ -14,7 +14,7 @@ body{
     display: grid;
     grid-auto-rows: minmax(100px, auto);
     grid-gap: 1px;
-    grid-template-areas: 
+    /* grid-template-areas: 
     "header header header header nav nav"
     "header header header header nav nav"
     "main1 main1 main1 main1 main1 main1"
@@ -24,7 +24,7 @@ body{
     "main2 main2 main2 main2 main2 main2"
     "section1 section1 section1 section2 section2 section2"
     "section3 section3 section3 section4 section4 section4"
-    "foo foo foo foo foo foo";
+    "foo foo foo foo foo foo"; */
 
 }
 
@@ -35,7 +35,7 @@ body{
 
 }
 
-.header{
+/* .header{
     grid-area: header;
     display: flex;
     justify-content: space-around;
@@ -43,7 +43,7 @@ body{
     align-content: space-between;
     background-color: rgb(44, 39, 39);
    
-}
+} */
 
 .header p{
     font-size: 2rem;
@@ -61,7 +61,7 @@ span {
 }
 
 .nav{
-    grid-area: nav;
+    /* grid-area: nav; */
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -93,7 +93,7 @@ li a{
 }
 
 .main1{
-    grid-area: main1;
+    /* grid-area: main1; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -110,7 +110,7 @@ li a{
 }
 
 .main2{
-    grid-area: main2;
+    /* grid-area: main2; */
     display: flex;
     flex-direction: column;
     font-size: 1.5 rem;
@@ -126,7 +126,7 @@ li a{
 }
 
 .section1{
-    grid-area: section1;
+    /* grid-area: section1; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -141,7 +141,7 @@ li a{
 
 
 .section2{
-    grid-area: section2;
+    /* grid-area: section2; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -156,7 +156,7 @@ li a{
 }
 
 .section3{
-    grid-area: section3;
+    /* grid-area: section3; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -169,7 +169,7 @@ li a{
    
 }
 .section4{
-    grid-area: section4;
+    /* grid-area: section4; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -188,7 +188,7 @@ li a{
 }
 
 .footer{
-    grid-area: foo;
+    /* grid-area: foo; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -222,14 +222,45 @@ li a{
     font-size: small;
     color: gray;
 }
-/* 
-@media only screen and (min-width: 540px)
-.container{
+
+.picture-container{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.title-text {
+    display: none;
+}
+.desktop-title {
+    display: none;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: space-between;
+    background-color: rgb(44, 39, 39);
+    flex-direction: column;
+}
+
+@media only screen and (min-width: 540px) {
+    .header-container{
+        flex-direction: row;
+    }
+}
+
+@media only screen and (min-width: 540px) {
+    .title-text{
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .desktop-title{
+        display: block;
+    }
 }
 
 
-@media only screen and (min-width: 900px)
-.container{
-    display: flex;
-} */
