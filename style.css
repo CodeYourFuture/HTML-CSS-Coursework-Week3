@@ -9,7 +9,7 @@ button{
     padding: 0.7rem;
     background-color:black;
     color: white;
-}
+} 
 
 .hero-Banner {
     background-image:linear-gradient(0deg, rgb(4 3 3 / 30%), rgb(129 129 129 / 30%)), url("https://images.unsplash.com/photo-1464305795204-6f5bbfc7fb81?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8M3w0NTF8fGVufDB8fHx8&w=1000&q=80");
@@ -17,7 +17,7 @@ button{
     height: 40rem; 
     background-position: center; 
     background-repeat: no-repeat;
-     background-size: cover; 
+    background-size: cover; 
 
 }
 
@@ -32,6 +32,7 @@ button{
 .hero-banner-navbar-logo h2 {
     font-size: 3rem;
     font-family: 'Sassy Frass', cursive;
+    margin-left: 1rem;
 }
 
 .hero-banner-navbar-links ul {
@@ -161,5 +162,61 @@ button{
 /* *************************************** */
 footer {
     padding:4rem 0;
+}
+
+
+
+
+/* *************************************** */
+    /* Styling for Footer  */
+/* *************************************** */
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1050px) {
+    
+    body{
+        background-color: green;
+    }
+    
+}
+
+@media screen and (max-width: 769px) {
+
+    body {
+        background-color: yellow;
+    }
+
+    .topSelling-products{
+        display: flex;
+        flex-direction: column;
+    }
+
+    
+    
+}
+
+@media screen and (max-width: 490px) {
+
+    body {
+        background-color: blue;
+    }
+
+    .features{
+        display: flex;
+        flex-direction: column;
+        padding-left: 14rem;
+    }
+
+    .topSelling-products {
+        display: block;
+    }
+    
+  
 }
 
