@@ -347,7 +347,18 @@ nav{
   }
   /* welcomeimage end */
 
+/* cake image */
+.cakeimage{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 10px;
+    background-color:white !important;
+    padding: 10px;
+    margin: 20px 100px 20px 100px;
+    
+}
 
+/* cake image end */
 
 
         /* nav */
