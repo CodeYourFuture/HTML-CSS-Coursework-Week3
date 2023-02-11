@@ -286,7 +286,7 @@ footer {
     .big__nav .menu {
         display: flex;
         justify-content: right;
-        padding: 1rem;
+        padding-top: 1rem;
     }
 
     .section__break {
