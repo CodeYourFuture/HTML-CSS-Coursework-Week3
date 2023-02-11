@@ -1,1 +1,359 @@
-/*  Add your styling here */
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=DM+Serif+Display&family=Staatliches&family=Train+One&display=swap');
+
+/* root */
+:root {
+    --main__clr: #bbd0ff;
+    --second__clr: #c8b6ff;
+    --accent__clr: #ffd6ff;
+    --p__font: 'DM Sans', sans-serif;
+    --heading__font: 'DM Serif Display', serif;
+}
+
+/* general */
+* {
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
+
+h1 {
+    font-family: var(--heading__font);
+}
+
+p, nav {
+    font-family: var(--p__font);
+}
+
+.unstyled__list {
+    list-style: none;
+}
+
+.center__text {
+    text-align: center;
+}
+
+header a,
+.social__icons a, nav a {
+    text-decoration: none;
+    color: #000;
+}
+
+ul {
+    padding-left: 0;
+}
+
+/* Main Grid */
+.body__container {
+    display: grid;
+    grid-template-columns: 30px repeat(10, 1fr) 30px;
+    grid-template-rows: 0.7fr repeat(4, auto) 1fr;
+    grid-row-gap: 1rem;
+}
+
+.grid__full {
+    grid-column: 1 / -1;
+    background-color: var(--main__clr);
+}
+
+.grid__center {
+    grid-column: 2 / 12;
+}
+
+/* Second Grid */
+.second__grid {
+    display: grid;
+    grid-template-columns: 30px repeat(10, 1fr) 30px;
+}
+
+.second__grid > * {
+    grid-column: 2 / 12;
+}
+
+/* Flex */
+.flex__row {
+    display: flex;
+}
+
+/* header */
+header {
+    grid-column: 2 / 12;
+    grid-row: 1 / 2;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+}
+
+.header__text {
+    font-size: 1.5rem;
+    font-family: var(--heading__font);
+    text-align: right;
+    line-height: 1;
+}
+
+.logo {
+    float: left;
+    display: flex;
+    padding-top: 1rem;
+    gap: 0.3rem;
+}
+
+.logo__img{
+    width: 70px;
+    height: 70px;
+    background-image: url('images/cupcake-logo.png');
+    background-size: cover;
+    background-position: center;
+}
+.logo__text {
+    font-family: 'Staatliches', cursive;
+    font-size: 1.8rem;
+    line-height: 0;
+    align-self: center;
+}
+
+/* main */
+main {
+    grid-column: 2 / 12;
+    grid-row: 2 / 4;
+}
+
+/* portfolio section */
+.portfolio__section {
+    grid-column: 2 / 12;
+    grid-row: 4 / 6;
+}
+
+.portfolio__grid {
+    display: grid;
+    grid-template-areas:
+    "item1 item2"
+    "item3 item4";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 1rem;
+}
+
+.item1 {
+    grid-area: item1;
+}
+
+.item2 {
+    grid-area: item2;
+}
+
+.item3 {
+    grid-area: item3;
+}
+
+.item4 {
+    grid-area: item4;
+}
+
+/* footer */
+footer {
+    grid-row: 6 / 7;
+}
+
+.social__icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 0.5rem;
+}
+
+.icon__flex {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+    background-position: center;
+}
+
+.fb {
+    background-image: url('images/fb.png');
+}
+
+.ig {
+    background-image: url('images/ig.png');
+}
+
+.tw {
+    background-image: url('images/tw.png');
+}
+
+
+/* 540px MEDIA QUERY */
+@media (min-width: 540px) {
+
+    /* Header */
+
+    body {
+        text-align: center;
+    }
+
+    main {
+        margin-top: 2rem;
+    }
+
+    /* Footer */
+    .social__icons {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    footer li {
+        margin: 0.8rem;
+    }
+}
+
+
+/* 900px MEDIA QUERY */
+@media (min-width: 900px) {
+
+/* Grid */
+    .body__container {
+        display: grid;
+        grid-template-columns: 30px repeat(10, 1fr) 30px;
+        grid-template-rows: 1fr 1fr auto auto auto;
+        gap: 2rem;
+    }
+
+    .big__nav {
+        grid-column: 2 / 12;
+        grid-row: 2 / 3;
+    }
+
+    main {
+        grid-column: 2 / 12;
+        grid-row: 3 / 4;
+    }
+
+    .portfolio__section {
+        grid-column: 2 / 12;
+        grid-row: 4 / 5;
+    }
+
+    footer {
+        grid-column: 2 / 12;
+        grid-row: 5 / -1;
+    }
+
+    /* Hide menu icon */
+    .menu__icon {
+        display: none;
+    }
+
+    /* Shuffle header items */
+    .header__container {
+        display: grid;
+        grid-template-areas:
+        ". logo logo . . . . . . . . ."
+        ". logo logo . . text text text text text text .";
+        grid-template-columns: 30px repeat(10, 1fr) 30px;
+        grid-template-rows: 40px auto;
+        grid-gap: 2rem;
+    }
+
+    .header__1 {
+        grid-area: logo;
+    } 
+
+    .header__2 {
+        grid-area: text;
+    }
+
+    .header__text {
+        font-size: 1rem;
+    }
+
+    /* nav bar */
+    .big__nav .menu {
+        display: flex;
+        justify-content: right;
+        padding-top: 1rem;
+    }
+
+    .section__break {
+        height: 2px;
+        width: 100%;
+        background-color: var(--accent__clr);
+    }
+
+    .menu li {
+        margin-left: 1.5rem;
+    }
+
+    nav a {
+        color: blue;
+    }
+
+    nav a:hover {
+        background-color: var(--second__clr);
+    }
+
+    /* main */
+    main {
+        margin-top: 0;
+    }
+
+    .main__grid {
+        display: grid;
+        grid-template-areas: 
+        "img text";
+        grid-gap: 2rem;
+    }
+
+    .main__text {
+        grid-area: text;
+        text-align: justify;  
+        text-align-last: right;
+    }
+
+    .main__image {
+        grid-area: img;
+    }
+
+    .main__image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /* Portfolio */
+    .portfolio__grid {
+        display: grid;
+        grid-template-areas:
+        "item1 item2 item3 item4";
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr;
+        grid-gap: 1rem;
+    }
+
+    /* Footer */
+    .social__icons {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    footer li {
+        margin: 1rem;
+    }
+    
+}
