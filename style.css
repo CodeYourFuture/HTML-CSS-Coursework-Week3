@@ -77,7 +77,6 @@ a {
 .nav-container {
     grid-column: 1 / -1;
     grid-row: 1 / 2;
-
 }
 
 .nav-link-container {
@@ -89,15 +88,30 @@ a {
     height: 100vh;
 }
 
-#nav-checkbox:checked ~ .nav-link-container {
-    display: block;
+.text-after {
+    display: none;
+    color: var(--red);
 }
-
-/* nav */
 
 #nav-checkbox {
     display: none;
 }
+
+/* Menu Checkbox Settings */
+
+#nav-checkbox:checked ~ .nav-link-container {
+    display: block;
+}
+
+#nav-checkbox:checked ~ label .text-before {
+    display: none;
+}
+
+#nav-checkbox:checked ~ label .text-after {
+    display: inline;
+}
+
+
 
 
 /* Main Section */
@@ -108,9 +122,7 @@ a {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(3, auto);
-
 }
-
 
 .grid-article {
     grid-column: 1 / -1;
@@ -130,7 +142,6 @@ a {
     grid-template-rows: repeat(2, 1fr);
     gap: 0.3rem;
 }
-
 
 .img-span {
     width: 100%;
@@ -168,19 +179,6 @@ a {
     text-align: center;
 }
 
-.text-after {
-    display: none;
-    color: var(--red);
-}
-
-#nav-checkbox:checked ~ label .text-before {
-    display: none;
-}
-
-#nav-checkbox:checked ~ label .text-after {
-    display: inline;
-}
-
 .text-justify {
     text-align: justify;
 }
@@ -211,16 +209,7 @@ li + li {
 
 @media (min-width: 540px) {
         
-    /* Header */
-    
-    .header-container {
-        grid-column: 1 / -1;
-        grid-row: 1 / 2;
-        display: grid;
-        grid-template-columns: repeat(10, 1fr);
-        grid-template-rows: repeat(5, auto);
-    
-    }
+    /* Tablet Header Section */
     
     .header-logo-container {
         grid-column: 1 / 4;
@@ -231,7 +220,6 @@ li + li {
         grid-column: 1 / -1;
         grid-row: 1 / 2;
     }
-
     
     .header-title-container {
         grid-column: 4 / -1;
@@ -239,14 +227,18 @@ li + li {
         align-self: center;
     }
 
+    /* Tablet Main Section */
+
     .grid-article {
         column-count: 2;
     }
 
     .img-grid-container {
-        grid-template-columns: repeat(3, auto);
+        grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2, 1fr);
     }
+
+    /* Tablet Footer Section */
 
     .footer-links {
         column-count: 2;
@@ -258,14 +250,11 @@ li + li {
 
 @media (min-width: 900px) {
         
-    /* Header */
+    /* Desktop Header Section */
 
     .nav-link-container {
         position: relative;
         display: block;
-        background-color: var(--dark);
-        grid-column: 1 / -1;
-        grid-row: 1 / 2;
         height: auto;
     }
 
@@ -278,25 +267,18 @@ li + li {
         justify-content: space-around;
     }
 
-    /* remove padding from nav list items */
+    /* remove padding from nav links */
 
     li + li {
         padding-top: 0;
-    }
-
-    .header-container {
-        grid-column: 1 / -1;
-        grid-row: 1 / 2;
-        display: grid;
-        grid-template-columns: repeat(10, 1fr);
-        grid-template-rows: repeat(5, auto);
-    
     }
     
     .header-logo-container {
         grid-column: 1 / 4;
         grid-row: 2 / 3;
     }
+
+    /* cancel menu checkbox settings */
 
     #nav-checkbox:checked ~ label .text-after {
         display: none;
@@ -317,16 +299,8 @@ li + li {
         grid-row: 3 / -1;
     }
 
-    .grid-article {
-        column-count: 3;
-    }
-
-    .footer-links {
-        column-count: 3;
-    }
-
-    
-    /* Main Container */
+        
+    /* Desktop Main Section */
 
     .grid-article {
         grid-column: 2 / -1;
@@ -349,6 +323,16 @@ li + li {
         grid-template-rows: repeat(2, 1fr);
         grid-column: 1 / -1;
         grid-row: 2 / -1;
+    }
+
+    .grid-article {
+        column-count: 3;
+    }
+
+    /* Desktop Footer Section */
+
+    .footer-links {
+        column-count: 3;
     }
 
 }
