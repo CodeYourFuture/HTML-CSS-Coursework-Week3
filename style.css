@@ -11,8 +11,8 @@ body{
     grid-template-columns:100%;
     grid-template-rows: repeat(auto, 5);
     grid-template-areas: 
-    "menu"
-    "header"
+    
+    "header menu"
     "welcome"
     "main"
     "footer";
@@ -37,11 +37,12 @@ body{
 .menu {
     grid-area: menu;
     background-color:rgb(179, 196, 147);
+    
 }
 
 .welcome{
     grid-area: welcome;
-    background-color:rgb(147, 172, 135);
+    background-color:rgb(143, 146, 142);
 
 }
 
@@ -67,7 +68,8 @@ body{
         grid-template-columns:repeat (3, 1fr );
         grid-template-rows:repeat (5, 1fr ) ;
         grid-template-areas: 
-        "header header menu"
+        "header header header"
+        "* menu menu"
         "welcome welcome welcome"
         "main main main "
         "footer footer footer";
@@ -75,6 +77,6 @@ body{
     
 }
 img{
-    height: 40px;
-    width: 40px;
+    height: 60px;
+    width: 60px;
 }
