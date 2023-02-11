@@ -1,13 +1,12 @@
 /*  Add your styling here */
-
 .container {
   display: grid;
   grid-auto-rows: minmax(100px, auto);
   grid-gap: 5px;
   
   grid-template-areas:  
-  "h h h parag parag parag parag drop"
-  "h h h parag parag parag parag drop"
+  "h h h parag parag parag parag parag"
+  "h h h parag parag parag parag parag"
   "maa maa maa maa maa maa maa maa"
   "maa maa maa maa maa maa maa maa"
   "ma ma ma ma ma ma ma ma"
@@ -17,8 +16,8 @@
   "s3 s3 s3 s3 s4 s4 s4 s4"
   
   "foo foo foo foo foo foo foo foo"
-  "foo foo foo foo foo foo foo foo"
-  ;
+  "foo foo foo foo foo foo foo foo";
+  
 }
 body{
   background-color: #096373;
@@ -27,6 +26,102 @@ body{
   display: flex;
   color: #f4a261;
   font-size: 3rem;
+}
+
+
+#menu__toggle {
+  opacity: 0;
+}
+
+#menu__toggle:checked ~ .menu__btn > span {
+  transform: rotate(45deg);
+}
+#menu__toggle:checked ~ .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0);
+}
+#menu__toggle:checked ~ .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+#menu__toggle:checked ~ .menu__box {
+  visibility: visible;
+  left: 0;
+}
+
+.menu__btn {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+
+  width: 26px;
+  height: 26px;
+
+  cursor: pointer;
+  z-index: 1;
+}
+
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+
+  width: 100%;
+  height: 2px;
+
+  background-color: white;
+
+  transition-duration: .25s;
+}
+.menu__btn > span::before {
+  content: '';
+  top: -8px;
+}
+.menu__btn > span::after {
+  content: '';
+  top: 8px;
+}
+
+.menu__box {
+  display: block;
+  position: fixed;
+  visibility: hidden;
+  top: 0;
+  left: -100%;
+  
+  width: 300px;
+  height: 100%;
+
+  margin: 0;
+  padding: 80px 0;
+
+  list-style: none;
+
+  background-color: #ECEFF1;
+  box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+
+  transition-duration: .25s;
+}
+
+.menu__item {
+  display: block;
+  padding: 12px 24px;
+  
+  color: #333;
+
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+
+  text-decoration: none;
+
+  transition-duration: .25s;
+}
+.menu__item:hover {
+  background-color: #CFD8DC;
 }
 
 .header{
@@ -46,42 +141,14 @@ body{
 .header p{
   font-size: 2rem;
 }
-.dropdown {
-  grid-area: drop;
-  display: flex;
-  justify-content: flex-end;
-  height: 20px;
-  position: absolute;
-top: 10px;
-right: 10px;
-}
 
-.btn{
-  grid-area: btn;
-  width: 100px;
-  height: 100px;
-  background-image: url(/img/threelines.webp);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-color: transparent;
-  mix-blend-mode: color-burn;
-  
-
-}
-.three{
-  grid-area: three;
-  width: 100px;
-  height: 100px;
-  
-}
+ 
 .slogan {
   grid-area: parag;
 }
-.nav{
- display: none;
-  
-}
+
+
+
 ul {
   list-style-type: none;
   margin: 0;
@@ -115,6 +182,20 @@ li a:hover:not(.active) {
 .active:hover {
   opacity: 0.8;
 }
+
+.main2{
+  grid-area: maa;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.6rem;
+  align-items: center;
+  justify-content: center;
+  padding: 30px
+}
+.main2 h1{
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
 .main{
   grid-area: ma;
   display: flex;
@@ -130,18 +211,7 @@ li a:hover:not(.active) {
   height: 600px;
 
 }
-.main2{
-  grid-area: maa;
-  display: flex;
-  flex-direction: column;
-  font-size: 1.6rem;
-  align-items: center;
-  justify-content: center;
-  padding: 30px
-}
-.main2 h1{
-  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
+
 .section1{
   grid-area: s1;
   display: flex;
