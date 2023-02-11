@@ -1,13 +1,14 @@
 /*  Add your styling here */
-.wrapper {
+.grid-container {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(6, 1fr);
   grid-gap: 1em;
 }
-/*
+
 nav {
   grid-column: 1 / span 12;
+  background-image: url(cake.png);
   background-size: cover;
   display: flex;
   justify-content: space-between;
@@ -26,110 +27,25 @@ nav li {
   margin: 0 1em;
 }
 
-.img-background {
-  margin: 3%;
-  position: relative;
-}
-h2 {
-  position: absolute;
-  bottom: 20px;
-  left: 10px;
-}
-*/
-.header {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(6, 1fr);
-}
-
-.hamburger {
-  grid-column: 1 / 2;
-  grid-row: 1 / 2;
-  z-index: 1;
-  position: relative;
-  display: none;
-}
-
-.navbar {
-  grid-column: 2 / span 12;
-  grid-row: 1 / 2;
-  display: flex;
-  justify-content: flex-end;
-}
-
-.nav-list {
-  display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.nav-item {
-  margin-left: 10px;
-}
-
-.header-title {
+main {
   grid-column: 1 / span 12;
-  grid-row: 2 / 3;
-  z-index: 1;
-  position: relative;
+  grid-row: 1 / span 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
-.header-background {
-  grid-column: 1 / span 12;
-  grid-row: 3 / 7;
-  z-index: 0;
-}
-
-.header-background img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-@media (max-width: 767px) {
-  .hamburger {
-    display: block;
-  }
-
-  .navbar {
-    grid-column: 1 / span 12;
-    grid-row: 2 / 3;
-    flex-direction: column;
-    align-items: flex-start;
-    background-color: #fff;
-    position: absolute;
-    top: 50px;
-    left: 0;
-    right: 0;
-    height: 0;
-    overflow: hidden;
-    transition: height 0.3s ease-in-out;
-  }
-
-  .nav-item {
-    margin-left: 0;
-    margin-top: 10px;
-  }
-
-  .header-title {
-    grid-column: 1 / span 12;
-    grid-row: 3 / 4;
-  }
-
-  .header-background {
-    grid-column: 1 / span 12;
-    grid-row: 4 / 7;
-  }
-
-  .show-navbar {
-    height: auto;
-  }
-}
-`` .about-section {
+.header-section {
   grid-column: 2 / span 10;
   padding: 1em;
   text-align: center;
+}
+
+.header-section img {
+  margin: 2em auto;
+  display: block;
+  max-width: 100%;
 }
 
 .baked-good {
