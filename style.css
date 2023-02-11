@@ -1,1 +1,133 @@
-/*  Add your styling here */
+/* CSS RESET */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+header {
+    background-color: blue;
+    
+
+}
+ul{
+    float: right;
+    list-style-type: none;
+    margin-top: -165px;
+ 
+}
+ul li{
+    display: inline-block;
+}
+ul li a {
+    text-decoration: none;
+    color: black;
+    padding: 5px 20px;
+    border: 1px solid #fff;
+    transition: 0.6s ease;
+}
+ul li a:hover{
+    background-color: aqua;
+    color: #000;
+    
+}
+    
+
+h1{
+    text-align: center;
+    color: black;
+    padding: 30px;
+    margin: 3px;
+}
+  
+.types{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 20rem 20rem 20rem 20rem 20rem 20rem;
+    grid-gap: 1rem;
+    padding: 1rem;
+   
+}
+
+.type img{
+
+width: 80%;
+height: 150px;
+object-fit: cover;
+cursor: pointer;
+transition: 4.ms;
+margin-top: 20px;
+margin-bottom: 20px;
+
+}
+.type img:hover{
+    transform: scale(1.04);
+}
+.type h3{
+    padding: 5px;
+    text-align: center;
+}
+
+.type button{
+    padding: 5px 30px;
+    border: none;
+    outline: none;
+    background-color: blanchedalmond;
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: 20px;
+    display: block;
+    margin: 0 auto;
+}
+.type button:hover{
+    transform-scale(1.04);
+    color: black;
+    background-color: orangered;
+    
+}
+.contact{
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+     text-align: center;
+        color: black;
+        background-color: blue;
+        background-size: 50;
+}
+.join us{
+    margin: 20px;
+    text-align: center;
+    color: #000;
+    font-size: 100px;
+    margin: 0;
+    text-transform: uppercase;
+}
+.icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 50px;
+}
+footer{
+    grid-area: 50;
+    color: blue;
+    font-size: 1rem;
+    text-align: center;
+    padding-top: 40px;
+    margin-bottom: 70rem;
+}
+
+
+    
+
+@media screen and(min-width: 540px) {
+    .types{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 20rem 20rem;
+        grid-gap: 1rem;
+        padding: 1rem;
+    }
+  
+}
