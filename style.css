@@ -278,6 +278,8 @@ li + li {
         justify-content: space-around;
     }
 
+    /* remove padding from nav list items */
+
     li + li {
         padding-top: 0;
     }
@@ -327,13 +329,19 @@ li + li {
     /* Main Container */
 
     .grid-article {
-        grid-column: 4 / -1;
+        grid-column: 2 / -1;
         grid-row: 1 / 2;
     }
     
     .img-span-container {
-        grid-column: 1 / 4;
+        grid-column: 1 / 2;
         grid-row: 1 / 2;
+    }
+
+    .img-span {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
     
     .img-grid-container {
