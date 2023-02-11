@@ -5,44 +5,47 @@
     font-family: sans-serif;
     box-sizing: border-box;
 }
-h1{
-    text-align: center;
-    color: brown;
-    padding: 18px;
-}
-p{
-    text-align: center;
-    color: black;
-    background-color: orangered;
-}
+header {
+    background-color: blue;
+    
 
-nav{
-    background-color: blueviolet;
-    display: grid;
-    place-items: center;
-    text-transform: uppercase;
 }
-nav ul{
+ul{
+    float: right;
     list-style-type: none;
+    margin-top: -165px;
+ 
 }
-nav ul a{
+ul li{
     display: inline-block;
-    padding: 18px;
-    text-decoration: none;
-    color: #000;
-    transition: 4.ms;
-    font-size: 18px;
 }
-nav ul a:hover{
+ul li a {
+    text-decoration: none;
+    color: black;
+    padding: 5px 20px;
+    border: 1px solid #fff;
+    transition: 0.6s ease;
+}
+ul li a:hover{
     background-color: aqua;
+    color: #000;
     
 }
+    
+
+h1{
+    text-align: center;
+    color: black;
+    padding: 30px;
+    margin: 3px;
+}
+  
 .types{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    padding: 30px 20px;
-    grid-column-gap: 30px;
-    grid-row-gap: 35px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 20rem 20rem 20rem 20rem 20rem 20rem;
+    grid-gap: 1rem;
+    padding: 1rem;
    
 }
 
@@ -53,6 +56,8 @@ height: 150px;
 object-fit: cover;
 cursor: pointer;
 transition: 4.ms;
+margin-top: 20px;
+margin-bottom: 20px;
 
 }
 .type img:hover{
@@ -67,8 +72,7 @@ transition: 4.ms;
     padding: 5px 30px;
     border: none;
     outline: none;
-    background-color: purple;
-    color: blanchedalmond;
+    background-color: blanchedalmond;
     cursor: pointer;
     border-radius: 3px;
     font-size: 20px;
@@ -81,15 +85,49 @@ transition: 4.ms;
     background-color: orangered;
     
 }
-
-@media screen and (min-width: 540px){
-    .types{
-        grid-template-columns: repeat(1, 1fr);
-    }
+.contact{
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+     text-align: center;
+        color: black;
+        background-color: blue;
+        background-size: 50;
 }
-@media  screen and(max-width: 900px) {
-    .types{
-        grid-template-columns: repeat(1, 1fr);
-    }
+.join us{
+    margin: 20px;
+    text-align: center;
+    color: #000;
+    font-size: 100px;
+    margin: 0;
+    text-transform: uppercase;
+}
+.icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 50px;
+}
+footer{
+    grid-area: 50;
+    color: blue;
+    font-size: 1rem;
+    text-align: center;
+    padding-top: 40px;
+    margin-bottom: 70rem;
+}
+
+
     
+
+@media screen and(min-width: 540px) {
+    .types{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 20rem 20rem;
+        grid-gap: 1rem;
+        padding: 1rem;
+    }
+  
 }
