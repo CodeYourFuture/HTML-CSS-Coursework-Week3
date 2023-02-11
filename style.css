@@ -229,7 +229,7 @@ footer {
 /* Grid */
     .body__container {
         display: grid;
-        grid-template-columns: repeat(12, 1fr);
+        grid-template-columns: 30px repeat(10, 1fr) 30px;
         grid-template-rows: 1fr 1fr auto auto auto;
         gap: 2rem;
     }
@@ -263,11 +263,11 @@ footer {
     .header__container {
         display: grid;
         grid-template-areas:
-        ". logo . . . . . . . . . ."
-        ". logo . . . text text text text text text .";
-        grid-template-columns: repeat(12, 1fr);
+        ". logo logo . . . . . . . . ."
+        ". logo logo . . text text text text text text .";
+        grid-template-columns: 30px repeat(10, 1fr) 30px;
         grid-template-rows: 40px auto;
-        grid-row-gap: 1rem;
+        grid-gap: 2rem;
     }
 
     .header__1 {
@@ -280,8 +280,6 @@ footer {
 
     .header__text {
         font-size: 1rem;
-        align-self: flex-end;
-        text-align: right;
     }
 
     /* nav bar */
