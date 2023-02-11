@@ -148,6 +148,7 @@ h4 {
 }
 
 /***Media Queries***/
+/** !!!!! use min-width and max-width **/
 
 
 /* Tablet - for screens 540px + */
@@ -162,14 +163,25 @@ h4 {
 
     /*menu nav will be visible - hide burger*/
     /*large image will move upwards & left next to content*/
-    .gallery_lrg {}
+    .gallery_lrg {
+        grid-column: 1/7;
+        grid-row: 3/5;
+        background-color: rgb(243, 243, 243);
+        padding: 3rem;
+        margin: 1rem 0;
+    }
 
-    .about_section {}
+    .about_section {
+        grid-column: 7 / -1;
+        grid-row: 3/ 5;
+        padding: 3rem;
+        margin: 1rem 0;
+    }
 
     /*small images will be in 1 row*/
     .gallery_top {
         grid-column: 1/7;
-        grid-row: 7/8;
+        grid-row: 5/6;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -177,7 +189,7 @@ h4 {
 
     .gallery_btm {
         grid-column: 7/-1;
-        grid-row: 7/8;
+        grid-row: 5/6;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
