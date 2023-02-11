@@ -213,8 +213,10 @@ li a:hover:not(.active) {
 
 /* add media */
 
-@media screen and (min-width: 7000px) {
-   
+@media screen and (min-width: 700px) {
+    .nav{
+        display: none;
+    }
 }
 
 
