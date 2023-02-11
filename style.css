@@ -41,9 +41,9 @@ main {
 .hamburger-menu-item {
     font-size: small;
     background-color: #CDF3AC;
-    margin: 0.5em 0.25;
+    margin: 0.5em 0;
     font-weight: bold;
-    padding: 0.5em;
+    padding: 0.25em;
     text-align: right;
 }
 
