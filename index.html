@@ -2,98 +2,87 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="style.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <title>Responsive Cake webpage</title>
-  <!-- Add a link to your css file here -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Responsive Cake webpage</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch&family=Fira+Sans:wght@300&family=Londrina+Solid:wght@100;300&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <div class="container">
-    <div class="box header">
-      <img src="./img/5.2.jpg" alt="cake9">
-      
-      <div class="box slogan">
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-        Similique vero tenetur voluptas ab minima, ex
-        voluptatum assumenda,!
-            </p>
+    <!-- Add your markup here -->
+    <main class="grid">
+        <header class="header" id="header">
+            <div class="nav-items">
+                <img src="./img/5.2.jpg" alt="cakeimg9" class="cake9">
+                
+                <div class="hamburger-menu">
+                  <input id="menu__toggle" type="checkbox" />
+                  <label class="menu__btn" for="menu__toggle">
+                    <span></span>
+                  </label>
+                  
+                  
+                          <ul class="menu__box">
+                    <li><a class="menu__item" href="#Home">Home</a></li>
+                    <li><a class="menu__item" href="#Cakes">Cakes</a></li>
+                    <li><a class="menu__item" href="#Orderin">Orderin</a></li>
+                    <li><a class="menu__item" href="#Lessons">Lessons</a></li>
+                    <li><a class="menu__item" href="#About">About</a></li>
+                     </ul>
+                </div>  
+                       
+            <h3 class="title">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Similique vero tenetur voluptas ab minima, ex
+              voluptatum assumenda,!</h3>
+            </div>
+        </header>
+        <nav class=navigation>
+            <ul class="navigation__list">
+                <li class="navigation__item">
+                  <a class="navigation__link" href="#header">HOME</a>
+                </li>
+                <li class="navigation__item">
+                  <a class="navigation__link" href="#cakes">CAKES</a>
+                </li>
+                <li class="navigation__item">
+                  <a class="navigation__link" href="#contact">ORDERIN</a>
+                </li>
+                <li class="navigation__item">
+                  <a class="navigation__link" href="#welcome">ABOUT</a>
+                </li> 
+                
+        </nav>
+        <div class="welcome" id="welcome">
           
-      </div>
+            <h1>Welcome
+            </h1>
+            <p class="welcome-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil suscipit totam quasi cupiditate quod
+              magnam vero doloremque porro ullam voluptate. 
+            </p>
+        </div>
+        <img src="./img/5.3.jpg" alt="cakeimg0" class="cake0">
+        
       
-      <div class="hamburger-menu">
-        <input id="menu__toggle" type="checkbox" />
-        <label class="menu__btn" for="menu__toggle">
-          <span></span>
-        </label>
-        
-        
-                <ul class="menu__box">
-          <li><a class="menu__item" href="#Home">Home</a></li>
-          <li><a class="menu__item" href="#Cakes">Cakes</a></li>
-          <li><a class="menu__item" href="#Orderin">Orderin</a></li>
-          <li><a class="menu__item" href="#Lessons">Lessons</a></li>
-          <li><a class="menu__item" href="#About">About</a></li>
-          <li><a class="active" href="#Contact-us">Contact us</a></li>
-        </ul>
+      
+                <div class="images-cakes" id="cakes">
+            <img src="./img/4.3.jpg" alt="cakeimg1" class="cake1">        
+            <img src="./img/3.1.jpg" alt="cakeimg2" class="cake2">
+            <img src="./img/3.2.jpg" alt="cakeimg3" class="cake3">
+            <img src="./img/4.1.jpg" alt="cakeimg4" class="cake4">
+        </div> 
+
+        <div class="social-media" id="contact">
+                    <h4 class="insta"><span><img src="images/instagram.png" alt="instagram icon" class="instagram"></span>   Instagram</h4>
+          <h4><span><img src="images/facebook.png" alt="facebook icon" class="facebook"></span>   Facebook</h4>
       </div>
-    </div>
-  
-    <div class="box main2">
-      <h2>Cakes</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil suscipit totam quasi cupiditate quod
-        magnam vero
-        doloremque porro ullam voluptate. Voluptatibus, praesentium. Necessitatibus ducimus neque aliquid eos
-        quo, facilis
-        earum exercitationem voluptatibus culpa similique ratione architecto delectus? Deleniti quod
-        voluptatibus ab vero
-        labore! Mollitia nisi modi temporibus cum necessitatibus porro assumenda nulla officia, architecto ipsam
-        dicta,
-        libero nemo pariatur consequuntur, rem excepturi ullam quas a aspernatur iure minus iusto? Error
-        laudantium natus
-        nam, quos itaque nihil, corporis unde repudiandae inventore at hic autem tenetur excepturi facere
-        debitis aut
-        numquam iste molestias dolorum eos vitae dolore soluta harum maiores? Perferendis, eius?
-      </p>
-    </div>
-    <div class="box main">
-      <img src="./img/5.3.jpg" alt="cake0">
-    </div>
-    
-    <div class="box section1">
-      <img src="./img/4.3.jpg" alt="cake1">
-    </div>
-
-    <div class="box section2">
-      <img src="./img/3.1.jpg" alt="cake2">
-    </div>
-    <div class="box section3">
-      <img src="./img/3.2.jpg" alt="cake3">
-    </div>
-    <div class="box section4">
-      <img src="./img/4.1.jpg" alt="cake4">
-    </div>
-  </div>
-    <!-- start footer -->
-    <div class="footer-heading">
-      <h5>Join us on</h5>
-    </div>
-    <div class="box footer">
-      <a href="#" class="fa fa-facebook"></a>
-      <a href="#" class="fa fa-twitter"></a>
-      <a href="#" class="fa fa-instagram"></a>
-    </div>
-    <div class="footer-ending">
-      <p>Cake Co</p>
-    </div>
-    <!-- end footer -->
-
-
-  
+      <footer class="footer">
+          <p>© 2023 Cake Co - All Rights Reserved</p>
+      </footer>
+    </main>
 </body>
 
 </html>
