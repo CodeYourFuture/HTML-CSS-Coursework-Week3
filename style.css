@@ -12,14 +12,14 @@ body{background-color:darkcyan;}
     flex-direction: row;
     justify-content: flex-start;
     width:5rem;
-    grid-area: i;}
+    }
 
    .para{display: flex;
     justify-content: flex-end;
     align-items: flex-end;
     font-size: 20px;
     color:black;
-  grid-area: p;}
+  }
 
   
   .navigation__list {display: flex;
