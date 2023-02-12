@@ -245,10 +245,9 @@ font-weight: lighter;
   grid-area: media;
   background-color:  rgb(250, 225, 156);
   font-family: sans-serif;
-
+color: #333;
 }
-.tel{
-  text-decoration: underline;
+
 }
 .footer {
   grid-area: footer;
