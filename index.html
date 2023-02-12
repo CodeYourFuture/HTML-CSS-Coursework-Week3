@@ -6,11 +6,84 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Responsive Cake webpage</title>
-    <!-- Add a link to your css file here -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch&family=Fira+Sans:wght@300&family=Londrina+Solid:wght@100;300&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <!-- Add your markup here -->
+    <main class="grid">
+        <header class="header" id="header">
+            <div class="nav-items">
+                <img src="./img/5.2.jpg" alt="cakeimg9" class="cake9">
+                
+                <div class="hamburger-menu">
+                  <input id="menu__toggle" type="checkbox" />
+                  <label class="menu__btn" for="menu__toggle">
+                    <span></span>
+                  </label>
+                  
+                  
+                          <ul class="menu__box">
+                    <li><a class="menu__item" href="#Home">Home</a></li>
+                    <li><a class="menu__item" href="#Cakes">Cakes</a></li>
+                    <li><a class="menu__item" href="#Orderin">Orderin</a></li>
+                    <li><a class="menu__item" href="#Lessons">Lessons</a></li>
+                    <li><a class="menu__item" href="#About">About</a></li>
+                     </ul>
+                </div>  
+                       
+            <h3 class="title">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Similique vero tenetur voluptas ab minima, ex
+              voluptatum assumenda,!</h3>
+            </div>
+        </header>
+        <nav class=navigation>
+            <ul class="navigation__list">
+                <li class="navigation__item">
+                  <a class="navigation__link" href="#header">HOME</a>
+                </li>
+                <li class="navigation__item">
+                  <a class="navigation__link" href="#cakes">CAKES</a>
+                </li>
+                <li class="navigation__item">
+                  <a class="navigation__link" href="#contact">ORDERIN</a>
+                </li>
+                <li class="navigation__item">
+                  <a class="navigation__link" href="#welcome">ABOUT</a>
+                </li> 
+                
+        </nav>
+        <div class="welcome" id="welcome">
+          
+            <h1>Welcome
+            </h1>
+            <p class="welcome-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil suscipit totam quasi cupiditate quod
+              magnam vero doloremque porro ullam voluptate. 
+            </p>
+        </div>
+        <img src="./img/5.3.jpg" alt="cakeimg0" class="cake0">
+        
+      
+      
+                <div class="images-cakes" id="cakes">
+            <img src="./img/4.3.jpg" alt="cakeimg1" class="cake1">        
+            <img src="./img/3.1.jpg" alt="cakeimg2" class="cake2">
+            <img src="./img/3.2.jpg" alt="cakeimg3" class="cake3">
+            <img src="./img/4.1.jpg" alt="cakeimg4" class="cake4">
+        </div> 
+
+        <div class="social-media" id="contact">
+                    <h4 class="insta"><span><img src="images/instagram.png" alt="instagram icon" class="instagram"></span>   Instagram</h4>
+          <h4><span><img src="images/facebook.png" alt="facebook icon" class="facebook"></span>   Facebook</h4>
+          <footer class="footer">
+            <p>Cake Co</p>
+        </footer>
+        </div>
+      
+    </main>
 </body>
 
 </html>
