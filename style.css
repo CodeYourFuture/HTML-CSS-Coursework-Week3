@@ -7,12 +7,13 @@ body{
 
 button{
     padding: 0.7rem;
-    background-color:black;
+    background-color: rgb(0 0 0 / 15%);
     color: white;
+    border: none;
 } 
 
 .hero-Banner {
-    background-image:linear-gradient(0deg, rgb(4 3 3 / 30%), rgb(129 129 129 / 30%)), url("https://images.unsplash.com/photo-1464305795204-6f5bbfc7fb81?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8M3w0NTF8fGVufDB8fHx8&w=1000&q=80");
+    background-image:linear-gradient(0deg, rgb(240 248 255), rgb(0 0 0 / 50%)), url("https://images.unsplash.com/photo-1464305795204-6f5bbfc7fb81?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8M3w0NTF8fGVufDB8fHx8&w=1000&q=80");
     background-repeat: no-repeat;
     height: 40rem; 
     background-position: center; 
@@ -33,6 +34,7 @@ button{
     font-size: 3rem;
     font-family: 'Sassy Frass', cursive;
     margin-left: 1rem;
+    color: white;
 }
 
 .hero-banner-navbar-links ul {
@@ -42,10 +44,13 @@ button{
    list-style: none; 
 }
 .hero-banner-navbar-links ul li a {
-    color: white;
-   font-size: 21px;
+    color: black;
+    font-size: 21px;
     padding: 0 16px;
     text-decoration: none;
+ }
+ .hero-banner-navbar-links ul li a:hover{
+    color: white;
  }
 
  /* css for the icons if needed */
@@ -80,6 +85,8 @@ button{
     background-position: center; 
     background-size: cover; 
 
+    margin: auto;
+
     /* stlying */
     color: white;
 
@@ -100,13 +107,13 @@ button{
     text-align: center;
 }
 .poundCake{
-    background-image:linear-gradient(0deg, rgba(231, 3, 3, 0.3), rgba(3, 1, 1, 0.3)), url("https://prettysimplesweet.com/wp-content/uploads/2018/01/easy_lemon_bundt_cake_recipe.jpg");
+    background-image:linear-gradient(0deg, rgb(0 0 0 / 50%), rgb(240 248 255)), url("https://prettysimplesweet.com/wp-content/uploads/2018/01/easy_lemon_bundt_cake_recipe.jpg");
 }
 .redVelvet {
-    background-image:linear-gradient(0deg, rgba(234, 98, 232, 0.3), rgba(9, 4, 4, 0.3)), url("https://jessicainthekitchen.com/wp-content/uploads/2021/12/red-velvet-cake03132-V1.jpg");
+    background-image:linear-gradient(0deg, rgb(0 0 0 / 50%), rgb(240 248 255)), url("https://jessicainthekitchen.com/wp-content/uploads/2021/12/red-velvet-cake03132-V1.jpg");
 }
 .carrot-Cake{
-    background-image:linear-gradient(0deg, rgba(96, 255, 226, 0.3), rgba(0, 0, 0, 0.3)), url("https://media.istockphoto.com/id/466724890/photo/healthy-homemade-carrot-cake.jpg?b=1&s=612x612&w=0&k=20&c=gZECFsoulqaw6wImpJvlZ9SvPLo9PfH4EH804_Y--uM=");
+    background-image:linear-gradient(0deg, rgb(0 0 0 / 50%), rgb(240 248 255)), url("https://media.istockphoto.com/id/466724890/photo/healthy-homemade-carrot-cake.jpg?b=1&s=612x612&w=0&k=20&c=gZECFsoulqaw6wImpJvlZ9SvPLo9PfH4EH804_Y--uM=");
 }
 
 
@@ -121,6 +128,7 @@ button{
     flex-direction: column;
     align-items: center;
     padding: 4rem 20rem;
+    background-color: rgb(240 255 255 / 31%);;
 }
 .topSelling-heading {
     font-size: 25px;
@@ -160,10 +168,22 @@ button{
 /* *************************************** */
     /* Styling for Footer  */
 /* *************************************** */
-footer {
-    padding:4rem 0;
+ /* footer section */
+ footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 0px;
+    background-color: azure;
 }
 
+.footer-icon i{
+    padding:20px 12px;
+}
+.footer-icon i :hover{
+    color: white;
+
+}
 
 
 
@@ -171,52 +191,106 @@ footer {
     /* Styling for Footer  */
 /* *************************************** */
 
-
-
-
-
-
-
-
-@media screen and (max-width: 1050px) {
+@media screen and (min-width: 1050px) {
     
-    body{
-        background-color: green;
-    }
     
 }
 
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 1565px) {
 
     body {
-        background-color: yellow;
+        /* background-color: yellow; */
     }
+
+    /* hero banner */
+    .topSelling-heading{
+        text-align: center;
+    }
+    .hero-Banner-content-text p {
+        font-size: 28px;
+        margin: 13px 5rem;
+    }
+
+    .hero-banner-navbar-icons i{
+        display: none;
+    }
+
+    /* feature section */
+    .features{
+        font-size: 12px;
+        display: flex;
+        flex-direction: column;
+        margin-top: 0px;
+    }
+
+    .features-content {
+        margin: 12px;
+    }
+
+    /* Top selling section */
 
     .topSelling-products{
         display: flex;
-        flex-direction: column;
+    }  
+    .topSelling-content {
+        margin: 1px 25px;
     }
-
-    
-    
-}
-
-@media screen and (max-width: 490px) {
-
-    body {
-        background-color: blue;
-    }
-
-    .features{
-        display: flex;
-        flex-direction: column;
-        padding-left: 14rem;
+    .topSelling-content p{
+        font-size: 2rem;
+        width: 28rem;
     }
 
     .topSelling-products {
-        display: block;
+        flex-direction: column;
+    }
+
+    /* footer section */
+   
+    
+}
+
+@media screen and (max-width: 700px) {
+
+    body {
+        /* background-color: blue; */
+    }
+
+    /* hero-banner section */
+
+    .hero-banner-navbar-links {
+        display: none;
+    }
+
+    .hero-Banner-content-text p{
+        font-size: 21px;
+    }
+
+
+    /* features  section */
+
+    .features-content{
+        width: auto;
+        margin: 26px;
+        height: 16rem;
+    }
+    .features-content p{
+    font-size: 14px;
+    text-align: center;
+    width: 9rem;
+    margin: inherit;
     }
     
+   
+
+
+    /* top-selling section */
+    .topSelling{
+        padding: 1px;
+    }
+      .topSelling-content p{
+        width: auto;
+        font-size: 23px;
+      }
   
 }
 
