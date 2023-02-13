@@ -7,15 +7,16 @@ body, html{
 }
 body{
     margin:0;
-    display: grid;
-    grid-template-columns:100%;
+    display: flex;
+    
+    /* grid-template-columns:100%;
     grid-template-rows: repeat(auto, 5);
     grid-template-areas: 
     
     "header menu"
     "welcome"
     "main"
-    "footer";
+    "footer"; */
 
 }
 
