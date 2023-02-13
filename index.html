@@ -1,16 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Responsive Cake webpage</title>
-    <!-- Add a link to your css file here -->
-</head>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
-    <!-- Add your markup here -->
-</body>
+  <body>
+    <header>
+      <div class="header-logo-container">
+        <img class="header-logo-image" src="/img/logo.png" width="300px" />
+      </div>
+      <!-- <nav class="menu-mobile">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Info</a>
+            <a href="#">Contact</a>
+      </nav> -->
+      <div class="header-text-container">
+        <h1 class="header-text">
+          The best cakes in town delivered to your door!
+        </h1>
+      </div>
+      <!-- <input type="checkbox" /> -->
+      <div class="menu-mobile">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </header>
 
+    <nav class="navigation-desktop">
+      <a href="#"><button class="button-menu">Home</button></a>
+      <a href="#"><button class="button-menu">About</button></a>
+      <a href="#"><button class="button-menu">Info</button></a>
+      <a href="#"><button class="button-menu">Contact</button></a>
+    </nav>
+
+    <main>
+      <section class="main-section-one">
+        <div class="main-side-img"></div>
+
+        <section class="main-side-container">
+          <h1>Welcome</h1>
+          <p>
+            Pellentesque pretium tellus id nisl interdum, sit amet efficitur
+            sapien mollis. Curabitur rutrum tincidunt nisi, at feugiat tortor
+            laoreet quis. Sed ultrices vulputate urna, at eleifend nulla
+            pulvinar nec. Quisque eget turpis maximus, ullamcorper odio non,
+            hendrerit magna. Nam consectetur, ipsum at eleifend aliquet, massa
+            velit malesuada lacus, sed convallis tortor mi quis magna.
+          </p>
+        </section>
+      </section>
+
+      <div class="main-section-two">
+        <img class="gallery-image" src="/img/cake1.avif" alt="1" />
+        <img class="gallery-image" src="/img/cake2.avif" alt="3" />
+        <img class="gallery-image" src="/img/cake3.avif" alt="2" />
+        <img class="gallery-image" src="/img/cake4.avif" alt="4" />
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-links-container">
+        <a href=""
+          ><button class="button-menu footer-grid1">FACEBOOK</button></a
+        >
+        <a href=""
+          ><button class="button-menu footer-grid2">INSTAGRAM</button></a
+        >
+        <a href=""
+          ><button class="button-menu footer-grid3">PINTEREST</button></a
+        >
+      </div>
+      <p class="footer-paragraph">Join us on:</p>
+    </footer>
+  </body>
 </html>
