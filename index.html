@@ -1,91 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Responsive Cake webpage</title>
     <link rel="stylesheet" href="./style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
-    
+  <body>
     <header>
-        <div class="logo">
-            <h1 id="logo">CAKES</h1>
-        </div>
-        <nav role="navigation">
-            <div id="menuToggle">
+      <div class="header-logo-container">
+        <img class="header-logo-image" src="/img/logo.png" width="300px" />
+      </div>
+
+      <!-- <div id="menuToggle">
 
             <input type="checkbox" />
 
             <span></span>
             <span></span>
-            <span></span>
-           
-            <ul  id="menu">
-                <a href="#"><li>Home</li></a>
-                <a href="#"><li>About</li></a>
-                <a href="#"><li>Info</li></a>
-                <a href="#"><li>Contact</li></a>
-              </ul>
-            </div>
-          </nav>
-         <h1>The best cakes in town delivered to your door!</h1>
+            <span></span> -->
+
+      <!-- for mobile   -->
+
+      <!-- <nav class="menu-mobile">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Info</a>
+            <a href="#">Contact</a>
+      </nav> -->
+      <div class="header-text-container">
+        <h1 class="header-text">
+          The best cakes in town delivered to your door!
+        </h1>
+      </div>
     </header>
-   
+
+    <nav class="navigation-desktop">
+      <a href="#"><button class="button-menu">Home</button></a>
+      <a href="#"><button class="button-menu">About</button></a>
+      <a href="#"><button class="button-menu">Info</button></a>
+      <a href="#"><button class="button-menu">Contact</button></a>
+    </nav>
 
     <main>
-        <section class="navigation">
+      <section class="main-section-one">
+        <div class="main-side-img"></div>
 
+        <section class="main-side-container">
+          <h1>Welcome</h1>
+          <p>
+            Pellentesque pretium tellus id nisl interdum, sit amet efficitur
+            sapien mollis. Curabitur rutrum tincidunt nisi, at feugiat tortor
+            laoreet quis. Sed ultrices vulputate urna, at eleifend nulla
+            pulvinar nec. Quisque eget turpis maximus, ullamcorper odio non,
+            hendrerit magna. Nam consectetur, ipsum at eleifend aliquet, massa
+            velit malesuada lacus, sed convallis tortor mi quis magna.
+          </p>
         </section>
-        <section class="container">
-            <h1>Welcome</h1>
-            <p>Pellentesque pretium tellus id nisl interdum, sit amet efficitur sapien mollis. Curabitur rutrum tincidunt nisi, at feugiat tortor laoreet quis. 
-                Fusce porttitor turpis eget justo facilisis accumsan. Donec luctus, nunc et pulvinar iaculis, elit augue ullamcorper sapien, non vestibulum risus lectus eu purus. Curabitur sit amet orci id dolor pellentesque egestas sed vitae elit. Vestibulum est nibh, venenatis sed dolor sit amet, hendrerit tristique dui. Proin dignissim commodo magna id imperdiet. Donec vitae nulla quis turpis interdum mollis feugiat interdum tortor. Mauris leo purus, faucibus et nunc non, faucibus congue nunc. In hac habitasse platea dictumst. Sed a ligula aliquam, posuere quam vitae, laoreet risus. Sed volutpat dolor eros, et eleifend urna maximus in. Aliquam aliquet neque justo. Maecenas tincidunt posuere leo sed aliquet.
+      </section>
 
-Fusce lobortis nisl quis vulputate scelerisque. Donec efficitur condimentum orci sit amet viverra. Quisque eleifend massa non diam semper, eget fringilla nunc volutpat. Fusce vel odio et risus pellentesque placerat sit amet ut nisl. Integer maximus viverra hendrerit. Donec fermentum scelerisque leo, ac varius neque fermentum nec. Aliquam in felis dui. Integer eget orci eget felis scelerisque elementum. Quisque auctor tortor pulvinar, fermentum ante at, accumsan orci. Cras gravida euismod nibh at posuere. Nulla volutpat sit amet nisi at imperdiet. Integer in tincidunt lacus. Nullam quis rhoncus urna, sed ornare urna. Nulla eu ultrices mi.
+      <div class="main-section-two">
+        <img class="gallery-image" src="/img/cake1.avif" alt="1" />
+        <img class="gallery-image" src="/img/cake2.avif" alt="3" />
+        <img class="gallery-image" src="/img/cake3.avif" alt="2" />
+        <img class="gallery-image" src="/img/cake4.avif" alt="4" />
+      </div>
+    </main>
 
-Sed ultrices vulputate urna, at eleifend nulla pulvinar nec. Quisque eget turpis maximus, ullamcorper odio non, hendrerit magna. Nam consectetur, ipsum at eleifend aliquet, massa velit malesuada lacus, sed convallis tortor mi quis magna. Nunc hendrerit orci est, a dictum nibh placerat eget. Pellentesque tempus, nulla porta semper viverra, justo nisl gravida orci, ac lobortis tellus lorem sit amet mi. Cras maximus ipsum vitae purus aliquet, luctus imperdiet justo posuere.</p>
-        </section>
-
-
-    <card class="card">
-
-    </card>
-
-
-    <section class="pics">
-        <img src="https://images.unsplash.com/photo-1488477304112-4944851de03d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjF8fGNha2V8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="1" />
-        <img src="https://images.unsplash.com/photo-1557925923-33b27f891f88?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NzV8fGNha2V8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="3" />
-        <img src="https://images.unsplash.com/photo-1615735487485-e52b9af610c1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTZ8fGNha2V8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="2" />
-        <img src="https://images.unsplash.com/photo-1624000952068-8e605b61c84c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDV8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="4" />
-    </section>
-
-</main>
-
-<footer class="footer">
-    <div>
-        <p>Join us on:</p>
-    <ul>
-        <li>
-            <a href="link">FACEBOOK</a>
-        </li>
-        <li>
-            <a href="ll">INSTAGRAM</a>
-        </li>
-        <li>
-            <a href="lll">PINTEREST</a>
-        </li>
-      </ul>
-      
-    </div>
-</footer>
-
-</body>
-
+    <footer>
+      <div class="footer-links-container">
+        <a href=""
+          ><button class="button-menu footer-grid1">FACEBOOK</button></a
+        >
+        <a href=""
+          ><button class="button-menu footer-grid2">INSTAGRAM</button></a
+        >
+        <a href=""
+          ><button class="button-menu footer-grid3">PINTEREST</button></a
+        >
+      </div>
+      <p class="footer-paragraph">Join us on:</p>
+    </footer>
+  </body>
 </html>
