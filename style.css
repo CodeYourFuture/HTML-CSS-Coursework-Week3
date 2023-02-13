@@ -22,7 +22,7 @@ body{
 
 .header {
     grid-area: header;
-    background-color:rgb(150, 98, 124);
+    background-color:rgb(254, 197, 65);
     display: flex;
     justify-content: space-between;
 }
@@ -43,18 +43,18 @@ body{
 
 .welcome{
     grid-area: welcome;
-    background-color:rgb(143, 146, 142);
+    background-color:rgb(217, 232, 212);
 
 }
 
 .main {
     grid-area: main;
-    background-color: #eac7d9;;
+    background-color: #e2d27e;;
 }
 
 .footer {
     grid-area: footer;
-    background-color:rgb(175, 30, 183);
+    background-color:rgb(129, 173, 100);
 }
 
 .footer a i {
