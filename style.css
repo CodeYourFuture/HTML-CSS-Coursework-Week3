@@ -1,88 +1,112 @@
 /*  Add your styling here */
+
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(6, 1fr);
-  grid-gap: 1em;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(6, 15 rem);
+  grid-template-areas:
+    "header header"
+    "nav nav"
+    "welcome Welcome"
+    "about about"
+    "images images"
+    "footer footer";
+
+  grid-gap: 2em;
 }
 
+header {
+  grid-area: header;
+  background: #d3e3f0;
+  padding: 2em;
+}
 nav {
-  grid-column: 1 / span 12;
-  background-image: url(cake.png);
-  background-size: cover;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1em;
+  grid-area: nav;
+}
+.navbar input[type="checkbox"],
+.navbar .hamburger-lines {
+  display: none;
 }
 
-nav ul {
+.navbar {
+  box-shadow: 0 5px 10px #aaa;
+  position: relative;
+  width: 100%;
+  background: #fff;
+  color: #000;
+  opacity: 0.85;
+  height: 50px;
+  z-index: 12;
+}
+
+.navbar-container {
   display: flex;
+  justify-content: space-around;
+  height: 64px;
+  align-items: center;
+}
+
+.menu-items {
+  order: 2;
+  display: flex;
+}
+
+.menu-items li {
   list-style: none;
-  margin: 0;
-  padding: 0;
+  margin-left: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
 }
 
-nav li {
-  margin: 0 1em;
+.menu-items a {
+  text-decoration: none;
+  color: #444;
+  font-weight: 500;
+  transition: color 0.3s ease-in-out;
 }
 
-main {
-  grid-column: 1 / span 12;
-  grid-row: 1 / span 2;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+.menu-items a:hover {
+  color: #117964;
+  transition: color 0.3s ease-in-out;
 }
 
-.header-section {
-  grid-column: 2 / span 10;
-  padding: 1em;
-  text-align: center;
+.about-section {
+  grid-area: welcome;
 }
 
-.header-section img {
-  margin: 2em auto;
-  display: block;
-  max-width: 100%;
+.about-cake {
+  width: 100%;
+  margin: 1rem;
 }
-
-.baked-good {
-  grid-column: 2 / span 10;
-  padding: 1em;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.aboutimg-container {
+  grid-area: about;
 }
-
-.baked-good img {
-  max-width: 100%;
+.img-section {
+  grid-area: images;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 2 1fr;
+  grid-gap: 1rem;
   margin: 1em;
+  width: 100%;
+}
+.cake1 .cake2 .cake3 .cake4 {
+  width: 100%;
+}
+.img-background {
+  width: 5%;
+}
+
+.header-img {
+  width: 100%;
 }
 
 footer {
-  grid-column: 1 / span 12;
-  /* display: flex;
-  justify-content: space-between;*/
-  padding: 1em;
+  grid-area: footer;
 }
-/*
-footer h3 {
-  font-size: 1.2em;
-  margin: 0;
-}
-*/
-#contact {
-  padding: 5rem 0;
-  background: rgb(226, 226, 226);
-  grid-column: 1 / span 6;
+.form-container {
+  grid-area: footer;
 }
 
-.contact-container {
-  display: flex;
-  background: #fff;
-}
 .form-container {
   padding: 1rem;
   width: 50%;
@@ -124,20 +148,159 @@ footer h3 {
 .form-container a {
   font-size: 1.3rem;
 }
+.btn {
+  display: inline-block;
+  padding: 0.5em 1.5em;
+  text-decoration: none;
+  border-radius: 50px;
+  cursor: pointer;
+  outline: none;
+  margin-top: 1em;
+  text-transform: uppercase;
+  font-weight: small;
+}
+
+.btn-primary {
+  color: #fff;
+  background: #626665;
+}
+
+.btn-primary:hover {
+  background: #dee0e0;
+  transition: background 0.3s ease-in-out;
+}
+#footer h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  padding: 2.6rem;
+  font-weight: 500;
+  color: #fff;
+  background: rgb(65, 65, 65);
+}
+
 @media (max-width: 768px) {
-  nav {
-    display: none;
+  .navbar {
+    opacity: 0.95;
   }
-  main {
-    grid-column: 1 / span 12;
+
+  .navbar-container input[type="checkbox"],
+  .navbar-container .hamburger-lines {
+    display: block;
   }
-  .header-section {
-    grid-column: 1 / span 12;
+
+  .navbar-container {
+    display: block;
+    position: relative;
+    height: 64px;
   }
-  .baked-good {
-    grid-column: 1 / span 12;
+
+  .navbar-container input[type="checkbox"] {
+    position: absolute;
+    display: block;
+    height: 32px;
+    width: 30px;
+    top: 20px;
+    right: 20px;
+    z-index: 5;
+    opacity: 0;
   }
-  footer {
-    grid-column: 1 / span 12;
+
+  .navbar-container .hamburger-lines {
+    height: 23px;
+    width: 35px;
+
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    float: right;
+    margin-right: 20px;
+    margin-top: 15px;
+  }
+
+  .navbar-container .hamburger-lines .line {
+    display: block;
+    height: 4px;
+    width: 100%;
+    border-radius: 10px;
+    background: #333;
+  }
+
+  .navbar-container .hamburger-lines .line1 {
+    transform-origin: 0% 0%;
+    transition: transform 0.4s ease-in-out;
+  }
+
+  .navbar-container .hamburger-lines .line2 {
+    transition: transform 0.2s ease-in-out;
+  }
+
+  .navbar-container .hamburger-lines .line3 {
+    transform-origin: 0% 100%;
+    transition: transform 0.4s ease-in-out;
+  }
+
+  .navbar .menu-items {
+    padding-top: 100px;
+    background: #fff;
+    height: auto;
+    max-width: 300px;
+    transform: translate(-150%);
+    display: flex;
+    flex-direction: column;
+    margin-right: -40px;
+    padding-right: 50px;
+    transition: transform 0.5s ease-in-out;
+    box-shadow: none;
+  }
+
+  .navbar .menu-items li {
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+  }
+  .navbar-container input[type="checkbox"]:checked ~ .menu-items {
+    transform: translateX(50%);
+  }
+
+  .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
+    transform: rotate(15deg);
+  }
+
+  .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
+    transform: scaleY(0);
+  }
+
+  .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
+    transform: rotate(-35deg);
+  }
+}
+@media (max-width: 500px) {
+  .navbar .menu-items li {
+    font-size: 1.6rem;
+  }
+  .navbar .menu-items li {
+    margin-bottom: 2.5rem;
+    font-size: 1.8rem;
+    font-weight: 500;
+  }
+  .form-container {
+    width: 70%;
+  }
+}
+@media only screen and (min-width: 900px) {
+  /* Your styles for desktop go here */
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(1fr 2fr 2fr 1fr);
+    grid-template-rows: (15 rem 10 rem 20 rem 30 rem 25 rem);
+    grid-area: "header  header   header  header" ".       nav       nav      ."
+      ".       about     welcome   ."
+      "images       images     images     images"
+      "footer   footer   footer   footer";
+    grid-gap: 1rem;
+  }
+  .about-cake {
+    width: 50%;
   }
 }

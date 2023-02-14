@@ -9,30 +9,35 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-  <header>
-    <nav>
-      <div class="nav-logo">
-        <a href="#">Cakes Co</a>
-      </div>
-      <div class="nav-items">
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Menu</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </div>
-      <div class="nav-hamburger">
-        <i class="fas fa-bars"></i>
-      </div>
-    </nav>
-  </header>
-  <div class="grid-container">
-    <main>
-      <img src="cake.png" class="img-background" />
-      <h2>The best cakes in Town Delivered to your door</h2>
-    </main>
-    <section class="header-section">
+    <div class="grid-container">
+      <header>
+        <div class="header-section">
+            <img src="pics/cake_2.svg" class="img-background" />
+          <h2>The best cakes in town delivered to your door</h2>
+        </div>
+        
+        <nav class="navbar">
+            <div class="navbar-container container">
+                <input type="checkbox" name="" id="">
+                  <div class="hamburger-lines">
+                      <span class="line line1"></span>
+                      <span class="line line2"></span>
+                      <span class="line line3"></span>
+                  </div>
+                  <ul class="menu-items">
+                      <li><a href="#home">Home</a></li>
+                      <li><a href="#cakes">Cakes</a></li>
+                      <li><a href="#orderin">Order In</a></li>
+                      <li><a href="#lessons">Lessons</a></li>
+                      <li><a href="#about">About</a></li>
+                      <li><a href="#contact">Contact</a></li>
+                  </ul>
+            </div>
+        </nav>
+      </header>
+      
+  
+    <section class="about-section">
       <h1>
         Cakes Co <br />
         Welcomes You
@@ -52,35 +57,38 @@
         will make sure to always have your favorites, so come on in and have a
         bite!<br />
       </p>
-      <img src="header-img.jpg" class="header-img" />
     </section>
-    <section class="baked-good">
-      <h3>Our Baked Good</h3>
-      <p>You wouldn't want to miss them</p>
-      <img src="baked-good-1.jpg" alt="baked-good-1" />
-      <img src="baked-good-2.jpg" alt="baked-good-2" />
-      <img src="baked-good-3.jpg" alt="baked-good-3" />
-      <img src="baked-good-4.jpg" alt="baked-good-4" />
+    <section class="aboutimg-container">
+      <img src="sections1.png" alt="cake" class="about-cake">
     </section>
-    <footer>
-      <section id="contact">    
-          <div class="form-container">
-            <h2>Contact Us</h2>
-            <input type="text" placeholder="Your Name" />
-            <input type="email" placeholder="E-Mail" />
-            <textarea
-              cols="30"
-              rows="6"
-              placeholder="Type Your Message"
-            ></textarea>
-            <a href="#" class="btn btn-primary">Submit</a>
-          </div>
-        </div>
-      </section>
-      </footer>
-  </body>
-  .................../ JS Code for smooth scrolling /...................... -->
 
+    <section class="images-container">
+      <div class="img-section">
+        <img src="pics/a3.png" alt="lemon-cake "  class="cake1"/>
+        <img src="pics/a2.png" alt="levender-cake" class="cake2 "/>
+        <img src="pics/a4.png" alt="orange-cake" class="cake3"/>
+        <img src="pics/avokado1.png" alt="avokado-cake" class="cake4"/>
+      </div>
+    
+    </section>
+      <footer>
+          <section id="contact">    
+              <div class="form-container">
+                <h2>Contact Us</h2>
+                <input type="text" placeholder="Your Name" />
+                <input type="email" placeholder="E-Mail" />
+                <textarea
+                  cols="30"
+                  rows="6"
+                  placeholder="Type Your Message"
+                ></textarea>
+                <a href="#" class="btn btn-primary">Submit</a>
+              </div>
+            </div>
+          </section>
+        </footer>
+    </div>
+  </body>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script>
     $(document).ready(function () {
