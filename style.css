@@ -77,19 +77,11 @@ body{
 
 .bannerwelcome {
     display: flex;
-    flex-direction: row-reverse;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    align-content: stretch;
-
-    padding: 15px;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 1rem;
 }
- .bannerwelcome h1 {
-    padding-left: 400px;
- }
-
-
+ 
 .bannerwelcome p {
   font-style:initial;
 }
@@ -131,8 +123,53 @@ footer {
    display: flex; 
    padding-top: 75px;
    justify-content: space-evenly;
+   font-family: 'Babylonica', cursive;
+
+}
+
+/*  */
+@media screen and (max-width: 1050px) {
+
+    body{
+        background-color: blue;
+    }
+
+
+    
+}
+
+@media screen and (max-width: 650px) {
+    body{
+        background-color: yellow;
+        
+    }
+
+    .navbar {
+        display: flex;
+        padding-bottom: 25px;
+        justify-content: center;
+        padding-left: 37px;
+    }
+
+    .list ul li {
+        padding: 0px;
+    }
+
+    .bannerImg img {
+        width: 194%;
+    }
+    .bannerwelcome p {
+        font-size: 11px;
+        width: 50%;
+    }
+
+    
 }
 
 
+@media screen and (max-width: 490px) {
+    body {
+        background-color: red;
+    }
 
-
+}
