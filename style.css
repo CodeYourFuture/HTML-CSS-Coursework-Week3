@@ -1,1 +1,175 @@
 /*  Add your styling here */
+
+
+body{
+    margin: 0;
+    cursor:smooth;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 9rem;
+}
+
+.logo img {
+     width:20%;
+}
+.content p {
+    font-style:italic;
+    font-size: 15px;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 50px;
+}
+
+
+.list ul {
+    display: flex;
+    flex-direction: row;
+    padding: 0 3rem;
+    list-style: none;
+}
+
+.list ul li {
+    text-decoration: none;
+    list-style: none;
+    padding: 0 2rem;
+    border: 1px #232a35;
+    margin: 0 7px;
+    background-color: lavender;
+    color: white;
+} 
+
+.list ul li a {
+    text-decoration: none;
+    outline: none;
+    color: white ;
+}
+
+
+/*  end */
+
+/* display: flex;  flex-dir: row; */
+
+
+.banner {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;  
+    background-color: plum;
+
+    align-items: center;
+}
+
+.bannerImg img{
+    margin-bottom: -4px;
+
+}
+
+/* */
+
+.bannerwelcome {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 1rem;
+}
+ 
+.bannerwelcome p {
+  font-style:initial;
+}
+
+
+.feature {
+    display: flex;
+    padding-top: 75px;
+}
+
+.featureItem {
+  height: 200px; /* You must set a specified height */
+  width: 100%;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+}
+
+.item1 {
+  background-image: url("https://images.morrisons.com/products/5010525166056_fto_1@396x300.jpg");
+}
+
+.item2 {
+  background-image: url("https://media.phillyvoice.com/media/images/01-120216_Stocks_Carroll.2e16d0ba.fill-735x490.jpg");
+}
+
+.item3 {
+    background-image: url("https://media.istockphoto.com/id/135848397/photo/blue-birthday-cake.jpg?b=1&s=170667a&w=0&k=20&c=_0p7iFwbe6ywuVhkKU9mbX4LOsfMsHcVJJs2avsSEZc=");
+}
+
+
+.item4 {
+    background-image: url("https://i.pinimg.com/474x/3f/f0/75/3ff07523bc7dc9e0ff09673ef8977c84--never-too-old-happy-birthday-cakes.jpg");
+}
+
+
+
+footer {
+   display: flex; 
+   padding-top: 75px;
+   justify-content: space-evenly;
+   font-family: 'Babylonica', cursive;
+
+}
+
+/*  */
+@media screen and (max-width: 1050px) {
+
+    body{
+        background-color: blue;
+    }
+
+
+    
+}
+
+@media screen and (max-width: 650px) {
+    body{
+        background-color: yellow;
+        
+    }
+
+    .navbar {
+        display: flex;
+        padding-bottom: 25px;
+        justify-content: center;
+        padding-left: 37px;
+    }
+
+    .list ul li {
+        padding: 0px;
+    }
+
+    .bannerImg img {
+        width: 194%;
+    }
+    .bannerwelcome p {
+        font-size: 11px;
+        width: 50%;
+    }
+
+    
+}
+
+
+@media screen and (max-width: 490px) {
+    body {
+        background-color: red;
+    }
+
+}
