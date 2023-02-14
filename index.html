@@ -7,10 +7,102 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Responsive Cake webpage</title>
     <!-- Add a link to your css file here -->
+    <link rel="stylesheet" href="style.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Pacifico&display=swap" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
 </head>
 
-<body>
+<body class="body-container">
     <!-- Add your markup here -->
+    <header class="header-container">
+        <div class="header-logo-container">
+            <img class="header-logo" src="img/cupcake.png" alt="icon of a cupcake">
+        </div>
+        <div class="header-title-container">
+            <h1 class="title">Cake Factory</h1>
+            <p>"The best cakes in town delivered to your door"</p>
+        </div>
+        <nav class="nav-container center-text">
+            <input type="checkbox" id="nav-checkbox">        
+            <label for="nav-checkbox">
+                <span class="text-before"><span class="material-symbols-outlined">
+                    menu
+                    </span></span><span class="text-after"><span class="material-symbols-outlined">
+                        close
+                        </span></span>
+                </label>
+            <div class="nav-link-container">
+                <ul class="nav-list no-bullet">
+                    <li><a href="#">Cakes</a></li>
+                    <li><a href="#">Gift Ideas</a></li>
+                    <li><a href="#">Catering</a></li>
+                    <li><a href="#">Speciality Coffee</a></li>
+                </ul>  
+            </div>
+
+            
+            
+            
+        </nav>
+    </header>
+    <main class="main-container">
+        <article class="grid-article text-justify">
+            <h2>welcome</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse interdum, tellus vitae convallis sodales, diam nunc convallis mi, et scelerisque massa mauris rhoncus sem. Integer placerat mi libero, nec commodo sem vulputate a. Sed sit amet aliquam quam. Donec nunc purus, pharetra et ipsum et, bibendum bibendum lectus. Vivamus nec tellus eleifend, porttitor nunc eu, aliquet erat. Aenean tincidunt vel dui nec consectetur. Nulla vel mi est. Vestibulum a tempor mauris, non cursus justo. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nullam quis massa quis diam iaculis porttitor id eget odio. Donec pharetra consectetur tincidunt. Morbi sit amet magna odio. Nam ut arcu sem. Ut pulvinar sem quis libero condimentum dictum.
+            </p>
+            <p>
+                Curabitur eget eleifend dolor. Donec viverra sem dolor, sit amet tincidunt purus imperdiet in. Aenean placerat turpis eu mi tristique, a consequat magna mollis. Ut eros erat, pulvinar blandit euismod a, vestibulum tincidunt nulla. Mauris ac felis ut purus placerat tempus venenatis non orci. Phasellus at urna nisi. Suspendisse potenti. Integer ut dui eget orci euismod ornare eu nec eros. Praesent nec nulla eget tortor facilisis porttitor id ut eros. Vestibulum pharetra ut velit mattis maximus. Morbi id lorem ante. Sed ultricies, sapien eget pharetra feugiat, odio urna ultrices sem, et aliquet turpis orci vel augue. Praesent consequat dictum risus congue pellentesque.
+            </p>
+            <p>
+                Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent sed pulvinar nulla. Curabitur placerat dui et ullamcorper lacinia. Nulla elementum imperdiet leo, non rhoncus metus finibus in. Morbi maximus justo a dui molestie, sit amet mattis metus efficitur. Sed rhoncus interdum lorem, id sollicitudin nulla rutrum a. Pellentesque suscipit convallis ultricies. Proin pellentesque sodales fringilla. Pellentesque maximus, mi in aliquam convallis, nibh augue ullamcorper urna, vitae hendrerit felis magna a libero.
+            </p>
+        </article>
+        <div class="img-span-container">
+            <img class="img-span" src="img/cake1.jpg" alt="strawberry cake with a strawberry, blueberry and raspberry on top">
+        </div>
+        <img class="img-grid-1" src="img/cake2.jpg" alt="3 mini layered cakes with strawberry and butter icing">
+        <img class="img-grid-2" src="img/cake3.jpg" alt="bowl full of macarons">
+        <img class="img-grid-3" src="img/cake4.jpg" alt="chocolate cupcakes">
+        <img class="img-grid-4" src="img/cake5.jpg" alt="cake with chocolate shards and decorated strawberries on top">
+    </main>
+    <footer class="footer border-tb">
+        <div class="footer-links">
+            <div>
+                <h2>About</h2>
+                <ul class="no-bullet">
+                    <a href="#"><li>Our Story</li></a>
+                    <a href="#"><li>Locations</li></a>
+                    <a href="#"><li>Blog</li></a>
+                </ul>
+            </div>
+            <div>
+                <h2>Ordering</h2>
+                <ul class="no-bullet">
+                    <a href="#"><li>Order Online</li></a>
+                    <a href="#"><li>Catering & Events</li></a>
+                    <a href="#"><li>Gift Vouchers</li></a>
+                </ul>
+            </div>
+            <div>
+                <h2>Help</h2>
+                <ul class="no-bullet">
+                    <a href="#"><li>FAQs</li></a>
+                    <a href="#"><li>Allergen Information</li></a>
+                    <a href="#"><li>Careers</li></a>
+                    <a href="#"><li>Delivery Area</li></a>
+                </ul>
+            </div>
+        </div>
+        
+        <section>
+            <h2 class="center-text">Contact Us</h2>
+            <p class="center-text">General Enquiries - <a href="mailto:hello@example.com">hello@example.com</a></p>
+            <p class="center-text">Order Enquiries - <a href="mailto:orders@example.com">orders@example.com</a></p>
+        </section>
+        
+    </footer>
+    
 </body>
 
 </html>
