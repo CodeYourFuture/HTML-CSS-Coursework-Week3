@@ -5,9 +5,12 @@
 body, html{
     height: 100vh;
 }
-body{
+body,p,a,ul,li{
     margin:0;
+    padding: 0;
+    text-decoration: none;
     display: flex;
+    overflow: hidden;
     
     /* grid-template-columns:100%;
     grid-template-rows: repeat(auto, 5);
