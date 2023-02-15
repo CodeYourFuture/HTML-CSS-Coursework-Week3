@@ -191,12 +191,9 @@ button{
     /* Styling for Footer  */
 /* *************************************** */
 
-@media screen and (min-width: 1050px) {
-    
-    
-}
 
-@media screen and (max-width: 1565px) {
+
+@media screen and (min-width: 900px) {
 
     body {
         /* background-color: yellow; */
@@ -249,7 +246,7 @@ button{
     
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (min-width: 540px) {
 
     body {
         /* background-color: blue; */
@@ -267,7 +264,13 @@ button{
 
 
     /* features  section */
-
+    .features {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 7rem;
+    }
     .features-content{
         width: auto;
         margin: 26px;
@@ -280,10 +283,13 @@ button{
     margin: inherit;
     }
     
-   
-
-
     /* top-selling section */
+    .topSelling-products {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+    }
     .topSelling{
         padding: 1px;
     }
