@@ -1,39 +1,20 @@
 /*  Add your styling here */
 
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(6, 15 rem);
-  grid-template-areas:
-    "header header"
-    "nav nav"
-    "welcome Welcome"
-    "about about"
-    "images images"
-    "footer footer";
-
-  grid-gap: 2em;
-}
-
 header {
-  grid-area: header;
+  display: flex;
   background: #d3e3f0;
   padding: 2em;
 }
-nav {
-  grid-area: nav;
-}
+
 .navbar input[type="checkbox"],
 .navbar .hamburger-lines {
   display: none;
 }
 
 .navbar {
-  box-shadow: 0 5px 10px #aaa;
   position: relative;
   width: 100%;
-  background: #fff;
-  color: #000;
+  background-color: #fff;
   opacity: 0.85;
   height: 50px;
   z-index: 12;
@@ -69,42 +50,59 @@ nav {
   color: #117964;
   transition: color 0.3s ease-in-out;
 }
+.header-section {
+  display: flex;
+  flex-direction: flex-end;
+}
 
-.about-section {
+.top-header {
+  display: flex;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 20rem 30rem 30rem 30rem;
+  grid-template-areas:
+    "welcome welcome"
+    "bigimage bigimage"
+    "cake1 cake2"
+    "cake3 cake4";
+  row-gap: 2rem;
+  margin: 3rem 2rem;
+}
+.about-container {
   grid-area: welcome;
 }
+.cake0 {
+  width: 100%;
+  grid-area: bigimage;
+}
 
-.about-cake {
-  width: 100%;
-  margin: 1rem;
+.images-container {
+  margin: 20px;
 }
-.aboutimg-container {
-  grid-area: about;
-}
-.img-section {
-  grid-area: images;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 2 1fr;
-  grid-gap: 1rem;
-  margin: 1em;
+.lemon-cake {
+  grid-area: cake1;
   width: 100%;
 }
-.cake1 .cake2 .cake3 .cake4 {
+.levender-cake {
+  grid-area: cake2;
   width: 100%;
 }
-.img-background {
+.orange-cake {
+  grid-area: cake3;
+  width: 100%;
+}
+.avokado-cake {
+  grid-area: cake4;
+  width: 100%;
+}
+.logo-img {
   width: 5%;
 }
 
 .header-img {
   width: 100%;
-}
-
-footer {
-  grid-area: footer;
-}
-.form-container {
-  grid-area: footer;
 }
 
 .form-container {
@@ -185,7 +183,7 @@ footer {
 
   .navbar-container input[type="checkbox"],
   .navbar-container .hamburger-lines {
-    display: block;
+    display: inline-block;
   }
 
   .navbar-container {
@@ -289,18 +287,5 @@ footer {
   }
 }
 @media only screen and (min-width: 900px) {
-  /* Your styles for desktop go here */
-  .grid-container {
-    display: grid;
-    grid-template-columns: repeat(1fr 2fr 2fr 1fr);
-    grid-template-rows: (15 rem 10 rem 20 rem 30 rem 25 rem);
-    grid-area: "header  header   header  header" ".       nav       nav      ."
-      ".       about     welcome   ."
-      "images       images     images     images"
-      "footer   footer   footer   footer";
-    grid-gap: 1rem;
-  }
-  .about-cake {
-    width: 50%;
-  }
+  /* styles for desktop */
 }
