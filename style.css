@@ -1,1 +1,48 @@
 /*  Add your styling here */
+/*General Style*/
+
+:root {
+    --melon: #FFA8A9;
+    --pink: #F786AA;
+    --magenta: #A14A76;
+}
+
+body,
+p,
+ul,
+a,
+li {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Playfair Display', sans-serif;
+
+}
+
+body {
+    background-color: var(--melon);
+}
+
+
+li {
+    list-style-type: none;
+}
+
+
+/*Mobile version 540px*/
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+}
+
+nav ul {
+    display: none;
+}
+
+
+
+
+
+
+/*Desktop version 900px*/

@@ -6,24 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Responsive Cake webpage</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
     <!-- Add a link to your css file here -->
 </head>
 
 <body>
     <!-- Add your markup here -->
 
-    <header>
-        <div>
+    <header class="grid">
+        <div class="header-image">
             <img src="images/bryam-blanco-nXKWLn8y9qE-unsplash.jpg" alt="Multicolour cupcake">
         </div>
-        <div>
+        <div class="header-text">
             <p>Dreaming of cupcakes? <br /> Let us <i>bake</i> it happen for you.</p>
         </div>
-        <div>
+        <div class="hamb-menu">
             <img src="images/icons8-hamburger-menu-24.png">
         </div>
 
-        <nav>
+        <nav class="grid">
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Cakes</a></li>
@@ -36,20 +41,21 @@
     </header>
 
     <main>
-        <section>
-            <div>
-                <img src="images/katie-rosario-QNyRp21hb5I-unsplash.jpg" alt="Birthday Cake">
-            </div>
-
-            <div>
+        <section class="welcome grid">
+            <div class="welcome-text">
                 <h1> Welcome </h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia ipsum officia eveniet asperiores sit
                     voluptas, quibusdam voluptate velit nihil quod? Nobis adipisci tenetur numquam cupiditate illo minus
-                    fugit rerum quisquam.</p>
+                    fugit rerum quisquam.
+                </p>
+            </div>
+
+            <div class="welcome-image">
+                <img src="images/katie-rosario-QNyRp21hb5I-unsplash.jpg" alt="Birthday Cake">
             </div>
         </section>
 
-        <section>
+        <section class=" gallery grid">
             <img src="images/brooke-lark-V4MBq8kue3U-unsplash.jpg">
             <img src="images/alexandra-gornago-_B7shfNUXEA-unsplash.jpg">
             <img src="images/deva-williamson-S2jw81lfrG0-unsplash.jpg">
@@ -57,13 +63,13 @@
         </section>
     </main>
 
-    <footer>
-        <div>
+    <footer class="grid">
+        <div class="socialmedia-icons">
             <a href="#"><img src="images/icons8-facebook-64.png" alt="Facebook"></a>
             <a href="#"><img src="images/icons8-instagram-64.png" alt="Instagram"></a>
             <a href="#"><img src="images/icons8-tiktok-64.png" alt="Tik Tok"></a>
         </div>
-        <p>&copy; Made by Irianni Munoz, 2023</p>
+        <p class="footer-text">&copy; Made by Irianni Munoz, 2023</p>
     </footer>
 </body>
 
