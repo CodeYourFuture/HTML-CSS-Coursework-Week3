@@ -6,8 +6,8 @@
 body{
     margin: 10px;
     padding:10px;
-    background-color: rgb(238, 175, 185);
-    
+    background-color: rgb(238, 219, 175);
+   
 }
 
 .contianer{
@@ -52,9 +52,10 @@ body{
 }
 
 .logo{
+    margin: 20px;
     color: whitesmoke;
-    font-size: 2rem;
-}
+    font-size: 2rem;}
+   
 
 span {
     color: orange;
@@ -75,7 +76,7 @@ ul{
     margin: 5px;
     padding: 5px;
     overflow: hidden;
-    /* <!-- change this of not proper --> */
+    
 }
 
 li{
@@ -106,7 +107,9 @@ li a{
     margin-top: 30px;
     border-radius: 20px;
     border: 2px solid orange;
+  
 }
+
 
 .main2{
     /* grid-area: main2; */
@@ -228,8 +231,16 @@ li a{
     justify-content: center;
 }
 
+.button{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    padding: 10px;
+}   
+
 .title-text {
     display: none;
+    text-align: center;
 }
 .desktop-title {
     display: none;
