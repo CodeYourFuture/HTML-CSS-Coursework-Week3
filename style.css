@@ -69,7 +69,7 @@ body, html{
     margin: 0;
     padding: 80px 0;
     list-style: none;
-    background-color: ;
+    background-color: rgb(209, 203, 203);
     box-shadow: 1px 0px 6px rgba(0,0,0,.2);
 
 
@@ -82,14 +82,14 @@ body, html{
     list-style: none;
 }
 font-family  sans-serif{
-    font-ize:20px;
+    font-size:20px;
     font-weight: 600;
     text-decoration: none;
     transition-duration: .25s;
     
 }
 .menues:hover{
-    background-color: ;
+    background-color:rgb(252, 252, 195);
 }
 li {
     padding: auto;
