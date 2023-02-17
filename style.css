@@ -1,5 +1,7 @@
-{
-    /* border: 1px solid red; */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body, html{
@@ -7,7 +9,7 @@ body, html{
 }
 
 .header {
-    grid-area: header;
+    /* grid-area: header; */
     display: flex;
     align-items: center;
     background-color: rgb(185, 185, 116);
@@ -22,7 +24,7 @@ body, html{
     margin-bottom: 1rem;
     background-color: rgb(219, 218, 212);
   }
-  .img-wrapper1 {
+  .img-wrapper-1 {
     grid-area: content;
     display: flex;
     flex-direction: column;
@@ -41,8 +43,8 @@ body, html{
   }
 
  .welcome-img{
-    width: 500px;
-    height: 400px;
+    width: 100%;
+    /* height: 400px; */
 }
 .logo {
     display: flex;
@@ -71,6 +73,7 @@ body, html{
     list-style: none;
     background-color: rgb(209, 203, 203);
     box-shadow: 1px 0px 6px rgba(0,0,0,.2);
+    border: solid 2px red;
 
 
 }
@@ -99,6 +102,7 @@ li {
  display: flex;
  justify-content: center;
  flex-direction: row;
+ flex-wrap: wrap;
  
 }
 
@@ -108,7 +112,7 @@ li {
     padding: 2rem;
 }
 
-@media (min-width: 500px) {
+@media only screen and (min-width: 500px) {
     .wrapper {
       grid-template-columns: 1fr 3fr;
       grid-template-areas:
@@ -123,7 +127,7 @@ li {
     }
   }
 
-  @media screen and (min-width: 540px) {
+  @media only screen and (min-width: 540px) {
     .grid {
         grid-template-rows:  15rem 4rem 20rem 13rem 10rem 3rem;
         grid-gap: 1rem;
@@ -192,7 +196,7 @@ li {
       }  
   }
   
-  @media screen and (min-width: 900px) {
+  @media only screen and (min-width: 900px) {
     .grid {
         grid-template-columns: 1fr 4fr 4fr 1fr;
         grid-template-rows:  15rem 4rem 22rem 15rem 10rem 3rem;
