@@ -1,0 +1,376 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Bebas Neue", cursive;
+  font-family: "Roboto", sans-serif;
+}
+
+
+
+body {
+  margin: 0;
+  font-family: Helvetica, sans-serif;
+  background-color: #f4f4f4;
+}
+
+a {
+  color: #000;
+
+}
+
+.navbar {
+  width: 100%;
+  height: 150px;
+  background-color: #b6ad90;
+  display: flex;
+  justify-content: space-between;
+}
+
+img {
+  margin: 20px;
+  width: 80%;
+  height: 90px;
+  background: transparent;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+img:hover {
+  transform: translateY(-10px);
+}
+
+.bar {
+  margin: 10px 10px;
+  font-size: 30px;
+  text-align: right;
+}
+
+.ads {
+  font-size: 15px;
+  width: 70%;
+  text-align: right;
+  margin: 50px 0px 0px 60px;
+  font-style: italic;
+}
+
+
+.menu {
+  list-style: none;
+  display: flex;
+  justify-content: end;
+  margin: 0;
+}
+
+.row {
+  background-color: #fff;
+  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .1);
+  position: absolute;
+  width: 100%;
+}
+
+.row ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: #fff;
+
+
+}
+
+.row li a {
+  display: block;
+  padding: 20px 15px;
+  border-right: 2px solid #f4f4f4;
+  text-decoration: none;
+
+}
+
+.row li a:hover,
+.row .menu-btn:hover {
+  background-color: #f4f4f4;
+}
+
+
+
+.row .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+}
+
+
+.container {
+  margin-top: 70px;
+}
+
+.details {
+  margin: 50px 45px;
+}
+
+ p{
+  margin-top: 20px;
+  text-align: justify;
+  width: 66vh;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+.photos {
+  text-align: center;
+  margin: 40px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  width: 80%;
+}
+
+.photo-cake:nth-child(1) {
+  border: 2px #6b675c solid;
+  grid-column: 1/5;
+  background-image: url(/images/cake3.avif);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 200px;
+  transition: 0.5s;
+}
+
+.photo-cake:nth-child(2) {
+  border: 2px #6b675c solid;
+  grid-column: 1/3;
+  background-image: url(/images/cake2.avif);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100px;
+  transition: 0.5s;
+}
+
+.photo-cake:nth-child(3) {
+  border: 2px #6b675c solid;
+  grid-column: 3/5;
+  background-image: url(/images/cake4.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100px;
+  transition: 0.5s;
+}
+
+.photo-cake:nth-child(4) {
+  border: 2px #6b675c solid;
+  grid-column: 1/3;
+  background-image: url(/images/cake5.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100px;
+  transition: 0.5s;
+}
+
+.photo-cake:nth-child(5) {
+  border: 2px #6b675c solid;
+  grid-column: 3/5;
+  background-image: url(/images/cake6.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100px;
+  transition: 0.5s;
+}
+
+.photo-cake:hover {
+  transform: scale(1.1);
+}
+
+i {
+  gap: 20px;
+  margin: 5px;
+}
+
+
+.footer {
+  background-color: #b6ad90;
+  padding: 10px 0px;
+  margin-top: 60px;
+  transition: 0.5s;
+}
+
+a {
+  font-size: 15px;
+  gap: 10px;
+  color: #020202;
+
+
+}
+
+.copyrights {
+  text-align: center;
+  margin: 20px;
+  color: #020202;
+
+}
+
+
+
+@media (min-width: 900px) {
+  .ads {
+    width: 100%;
+    text-align: center;
+    margin: 40px 50px 0px 10px;
+  }
+
+  .logo-menu {
+    visibility: hidden;
+  }
+
+  .container {
+    display: ;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+
+  }
+
+
+
+  p {
+    margin: 20px 600px;
+    margin-right: 00px;
+    text-align: right;
+    text-align: justify;
+    
+  }
+
+  h1 {
+    font-size: 30px;
+    text-align: right;
+    margin-bottom: 40px;
+    ;
+    margin-top: 10px;
+  }
+
+ 
+
+  photos {
+    text-align: end;
+    margin: 10px 100px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-top: 70px;
+    width: 87%;
+   
+
+
+  }
+
+.muath {
+  display: flex;
+  
+}
+
+
+
+
+   .photo-cake:nth-child(1) {
+    border: 2px #6b675c solid;
+    grid-column: 1/5;
+    background-image: url(/images/cake3.avif);
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    height: 300px;
+    transition: 0.5s;
+  }
+
+  .photo-cake:nth-child(2) {
+    border: 2px #6b675c solid;
+    grid-column: 1/2;
+    background-image: url(/images/cake2.avif);
+    background-size: cover;
+    background-position: center;
+    width: 90%;
+    height: 150px;
+    transition: 0.5s;
+  }
+
+  .photo-cake:nth-child(3) {
+    border: 2px #6b675c solid;
+    grid-column: 2/3;
+    background-image: url(/images/cake4.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 90%;
+        height: 150px;
+    transition: 0.5s;
+  }
+
+  .photo-cake:nth-child(4) {
+    border: 2px #6b675c solid;
+    grid-column: 3/4;
+    background-image: url(/images/cake5.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 90%;
+        height: 150px;
+    transition: 0.5s;
+
+  }
+
+  .photo-cake:nth-child(5) {
+    border: 2px #6b675c solid;
+    grid-column: 4/5;
+    background-image: url(/images/cake6.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 90%;
+        height: 150px;
+    transition: 0.5s;
+    gap: 10px;
+  }
+  
+
+
+
+
+  li {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+  }
+
+  .logos-footer {
+    display: flex;
+    margin-left: 65vh;
+  }
+
+  li {
+    margin: 20px;
+  }
+
+  .copyrights {
+    text-align: center;
+    margin-left: 390px;
+  }
+
+
+
+
+
+
+
+  @media (min-width: 48em) {
+
+    .row .menu {
+      clear: none;
+      float: right;
+      max-height: none;
+    }
+
+  }
