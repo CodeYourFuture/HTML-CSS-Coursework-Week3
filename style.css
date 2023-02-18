@@ -21,6 +21,7 @@ li {
 
 body {
     background-color: var(--melon);
+
 }
 
 
@@ -28,21 +29,143 @@ li {
     list-style-type: none;
 }
 
+header {
+    background-color: var(--magenta);
 
-/*Mobile version 540px*/
+
+
+}
+
+.header-image {
+    width: 160px;
+    padding: 0;
+    background-size: cover;
+
+}
+
+header img {
+    width: 100%;
+    padding: 0;
+    border: none;
+    border-radius: 10px;
+
+
+}
+
+
+
+
+/*Mobile version*/
 
 .grid {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
+    gap: 10px;
 }
 
 nav ul {
     display: none;
 }
 
+.header-image {
+    grid-column: 1/4;
+    grid-row: span 2;
+    margin-left: 5px;
+    margin-bottom: 0;
+
+}
+
+.header-text {
+    grid-column: 5/9;
+    grid-row: 2;
+    color: white;
+    padding: 5px;
+
+
+}
+
+.hamb-menu {
+    grid-column: 8;
+    width: 40px;
+}
+
+.welcome h1 {
+    grid-column: 2/6;
+    grid-row: 1;
+    font-size: 2.5rem;
+
+}
+
+.welcome-text {
+    grid-column: 2/8;
+    grid-row: 2;
+    margin-bottom: 10px;
+}
+
+.welcome-image {
+    grid-column: 1/9;
+    grid-row: 3;
+    /*width: 540px;*/
+}
+
+.welcome-image img {
+    width: 100%;
+
+}
+
+.gallery {
+    /*width: 500px;*/
+    grid-column: 1/9;
+    margin: 10px auto;
+
+
+}
+
+
+.gallery img {
+    width: 100%;
+    grid-column: span 4;
+    align-self: center;
+    border-radius: 20px;
+}
+
+
+footer {
+    background-color: var(--pink);
+
+
+}
+
+.socialmedia-icons {
+    grid-column: 4/7;
+    grid-row: 1;
+    margin-top: 10px;
+
+}
+
+.socialmedia-icons img {
+    width: 40px;
+
+
+}
+
+footer p {
+    grid-column: 3/9;
+    grid-row: 2;
+    margin-bottom: 10px;
+    margin-left: 15px;
+}
+
+
+
+/*Tablet version 540px to 900px*/
+
+@media screen and () {}
 
 
 
 
 
-/*Desktop version 900px*/
+
+
+/*Deskopt version min 900 px*/
