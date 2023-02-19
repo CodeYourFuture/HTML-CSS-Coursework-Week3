@@ -1,1 +1,361 @@
-/*  Add your styling here */
+body {
+  font-family: 'Shantell Sans', cursive;
+}
+  header {
+    background-color: rgb(21, 255, 0);
+    font-family: 'Shantell Sans', cursive;
+
+  }
+  .Cake-image {
+    height: 250px;
+    width: 250px;
+    float: left;
+    padding: 10px;
+}
+
+
+header {
+    background-color: bisque;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.div1 {
+    background-color: cornflowerblue;
+    height: 350px;
+}
+
+
+nav {
+    
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.site-info {
+    color: black;
+    position:absolute;
+    bottom:600px;
+    right:10px;
+    text-align: right;
+    height: 50px;
+}
+
+li {
+    display: inline;
+    float: right;
+    padding: 5px;
+}
+
+.list li {
+        border: none;
+        color: white;
+        padding: 2px 10px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+      }
+
+      button {
+        height: 50px;
+        width: 70px;
+        font-size: 16px;
+        font-weight: bold;
+        padding-left: 2px;
+      }
+
+  main {
+    background-color: white;
+  }
+
+  .welcome {
+    text-align: center;
+    padding-bottom: 50px;
+    font-size: 40px;
+    font-weight: 27px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.p2 {
+    text-align: center;
+}
+
+  .list2 {
+    display: inline;
+  }
+
+  .cake-image2 {
+    height: 500px;
+    width: 500px;
+    margin-left: 700px;
+  }
+
+.cake-image3 {
+    height: 500px;
+    width: 500px;
+    margin-right: 200px;
+}
+.cake-image4 {
+    height: 500px;
+    width: 500px;
+    margin-right: 200px;
+}
+
+
+footer {
+   margin-top: 1000px;  
+   background-color:#bbe4e9;
+   height: 200px;      
+}
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 900px) {
+    
+
+  /* .Cake-image {
+    height: 250px;
+    width: 250px;
+    float: left;
+    padding: 10px;
+} */
+
+
+header {
+    background-color: rgb(196, 197, 255);
+    color: black;
+    font-family: 'Shantell Sans', cursive;
+}
+
+.div1 {
+    background-color: cornflowerblue;
+    height: 350px;
+}
+
+
+nav {
+    
+    color: black;
+    font-family: 'Shantell Sans', cursive;
+}
+
+.site-info {
+    color: black;
+    position:absolute;
+    bottom:600px;
+    right:10px;
+    text-align: right;
+    height: 50px;
+}
+
+li {
+    display: inline;
+    float: right;
+    padding: 5px;
+}
+
+.list li {
+        border: none;
+        color: white;
+        padding: 2px 10px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+      }
+
+      button {
+        height: 50px;
+        width: 70px;
+        font-size: 16px;
+        font-weight: bold;
+        padding-left: 2px;
+      }
+
+
+  .welcome {
+    text-align: center;
+    padding-bottom: 50px;
+    font-size: 40px;
+    font-weight: 27px;
+    font-family: 'Shantell Sans', cursive;
+}
+
+.p2 {
+    text-align: right;
+    width: 800px;
+    margin-left: 600px;
+    font-family: 'Shantell Sans', cursive;
+    font-size: 1.3em;
+}
+
+.first-div {
+  height: 400px;
+  width: 80%;
+  margin-left: 100px;
+}
+
+  .cake-image2 {
+    height: 250px;
+    width: 250px;
+    margin-left: 100px;
+    margin-bottom: 800px;
+    margin-top: 0px;
+    position: relative;
+    top: -250px;
+  }
+.cake-line {
+  height: 300px;
+  background-color: rgb(107, 107, 143);
+  
+}
+.cake-image3 {
+    height: 200px;
+    width: 200px;
+    
+}
+.cake-image4 {
+    height: 200px;
+    width: 200px;
+}
+
+footer {
+   margin-top: 0px;  
+   background-color:#bbe4e9;
+   height: 200px;      
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 540px){
+  
+}
+@media screen and (max-width: 900px) {
+  .Cake-image {
+    height: 250px;
+    width: 250px;
+    float: left;
+    padding: 10px;
+}
+
+
+header {
+    background-color: #fcff82;
+    font-family: 'Shantell Sans', cursive;
+    color: #0c005a;
+}
+
+.div1 {
+    background-color: cornflowerblue;
+    height: 350px;
+}
+
+
+nav {
+    
+    color: black;
+    font-family: 'Shantell Sans', cursive;
+}
+
+.site-info {
+    color: black;
+    position:absolute;
+    bottom:600px;
+    right:10px;
+    text-align: right;
+    height: 50px;
+    width: 300px;
+    padding-right: 150px;
+}
+
+li {
+    display: inline;
+    float: right;
+    padding: 5px;
+}
+
+.list li {
+        border: none;
+        color: white;
+        padding: 2px 10px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+      }
+
+      button {
+        height: 50px;
+        width: 70px;
+        font-size: 16px;
+        font-weight: bold;
+        padding-left: 2px;
+      }
+
+
+  .welcome {
+    text-align: left;
+    padding-bottom: 10px;
+    font-size: 40px;
+    font-weight: 27px;
+    font-family: 'Shantell Sans', cursive;
+}
+
+.p2 {
+    text-align: right;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+  /* .list2 {
+    display: inline;
+  } */
+
+  .cake-image2 {
+    height: 500px;
+    width: 500px;
+    margin-left: 160px;
+  }
+
+.cake-image3 {
+    height: 200px;
+    width: 200px;
+    margin-right: 100px;
+}
+.cake-image4 {
+    height: 200px;
+    width: 200px;
+    margin-right: 100px;
+}
+
+footer {
+   margin-top: 450px;  
+   background-color:#bbe4e9;
+   height: 200px;      
+}
+}
