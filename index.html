@@ -6,11 +6,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Responsive Cake webpage</title>
-    <!-- Add a link to your css file here -->
+    <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
-    <!-- Add your markup here -->
+    <header>  
+                
+        <div class="topnav">
+            <img src="images/logo.png" alt="logo" class="logo active">
+            <div id="myLinks" class="links">
+                <a href="">home</a>
+                <a href="">cakes</a>
+                <a href="">ordering</a>
+                <a href="">lessons</a>
+                <a href="">about</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+            <!-- <p class="header-p">The best cakes in town delivered to your door</p> -->
+
+        </div>
+
+    </header>
+
+    <!-- <main>
+        <p>here is main</p>
+        <div>test the images
+
+            <img src="images/photo-1.avif" alt="">
+            <img src="images/photo-2.avif" alt="">
+            <img src="images/photo-3.avif" alt="">
+            <img src="images/photo-4.avif" alt="">
+            <img src="images/photo-5.avif" alt="">
+            <img src="images/photo-6.avif" alt="">
+
+        </div>
+
+    </main> -->
+
+    <!-- <footer>
+        <img src="" alt="social media 1">
+        <img src="" alt="social media 2">
+        <img src="" alt="social media 3">
+        <p>here is footer</p>
+    </footer> -->
+
+
+
+<script>
+    function myFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "block";
+        }
+    }
+</script>
 </body>
 
 </html>
