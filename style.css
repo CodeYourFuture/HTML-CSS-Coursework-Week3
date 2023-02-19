@@ -3,8 +3,8 @@
 .container {
     display: grid;
     grid-auto-rows: minmax(100px, auto);
-    grid-gap: 5px;
-    /* background-color: aquamarine; */
+    grid-gap: 30px ;
+    color: #f4a261;
     grid-template-areas:  
     "h h h h h h h h"
     "h h h h h h h h"
@@ -214,9 +214,7 @@ li a:hover:not(.active) {
 /* add media */
 
 @media screen and (min-width: 700px) {
-    .nav{
-        display: none;
-    }
+   
 }
 
 
