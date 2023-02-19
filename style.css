@@ -71,3 +71,40 @@ body,ul,a,p,img{
     background-color: pink;
     border: solid orange;
 } */
+
+
+/* ----styling main ---- */
+
+main{
+    margin: 5%;
+    display:grid;
+    width: 100vw;
+    
+    grid-template-columns: 2;
+    grid-template-rows: 12;
+
+}
+
+main h1{
+    grid-column: 1;
+    grid-row: 1/2;
+}
+/* #main-p{
+    
+    background-color: beige;
+    grid-column: 1/2;
+    grid-row: 2/4;
+} */
+
+#photo-1{
+    grid-column: 1/2;
+    grid-row: 4/5;
+}
+#photo-2 {
+    grid-column: 2/3;
+    grid-row: 4/5;
+}
+.image-class{
+    width: 100px;
+
+}
