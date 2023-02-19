@@ -1,36 +1,19 @@
 /* ---reset---- */
 
-body,ul,a,p,li{
+body,ul,a,p,img{
     margin: 0;
     padding: 0;
     text-decoration: none;
 
 }
 
+
 /* --- styling header --- */
-
-.topnav{
-    display: grid;
-    background-color: bisque;
-    /* grid-template-columns: repeat(5,1fr) ;
-    grid-template-rows: 4rem 4rem 4rem;
-    grid-template-areas: 
-    ". . . m m" 
-    "logo . m m "
-    ". . "; */
-
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 50px 50px;
-    grid-template-areas: "logo . ." "logo . m";
-    
-}
 
 
 .logo {
-    width: 7rem;
-    grid-area: logo;
-    border: solid orange;
-    
+    width: 35%;
+    height: auto;
 }
 
 /* nav {
@@ -45,20 +28,21 @@ body,ul,a,p,li{
     overflow: hidden;
     background-color: #f4eef1;
     position: relative;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: column;
+
+
 }
 
 .topnav #myLinks {
     display: none;
-    /* grid-area: m; */
-    /* border: solid white; */
-}
-.links{
-    grid-area: m;
-    border: solid red;
 }
 
 .topnav a {
-    color: rgb(0, 0, 0);
+    color: rgb(59, 59, 59);
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
@@ -66,17 +50,20 @@ body,ul,a,p,li{
 }
 
 .topnav a.icon {
-    background: black;
+    
     display: block;
-    /* position: absolute; */
+    position: absolute;
     right: 0;
     top: 0;
+    margin-top: 9%;
+
 }
 
 .topnav a:hover {
     background-color: #ddd;
     color: black;
 }
+
 
 /* .header-p{
     grid-area: p;
