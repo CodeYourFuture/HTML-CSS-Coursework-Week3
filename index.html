@@ -8,60 +8,93 @@
     <title>Responsive Cake webpage</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>  
                 
         <div class="topnav">
-            <img src="images/logo.png" alt="logo" class="logo active">
-            <!-- <a href="" class="logo active">logo</a> -->
+            <div class="logo-menu">
             
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i>
-            </a>
+                <h2 class="logo">My Cake</h2>
 
-            <div id="myLinks" class="links">
-                <a href="">home</a>
-                <a href="">cakes</a>
-                <a href="">ordering</a>
-                <a href="">lessons</a>
-                <a href="">about</a>
+                <div class="nav">
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                
+                    <div id="myLinks" class="links">
+                        <a href="">home</a>
+                        <a href="">cakes</a>
+                        <a href="">ordering</a>
+                        <a href="">lessons</a>
+                        <a href="">about</a>
+                    </div>
+                
+                </div>
+            
             </div>
             
-            <!-- <p class="header-p">The best cakes in town delivered to your door</p> -->
+            <p class="header-p">The best cakes in town delivered to your door</p>
 
         </div>
 
     </header>
 
     <main>
-        <h1>Welcome</h1>
-        <!-- <p id="main-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-        aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-         -->
-        
+        <div class="main-container">
 
-        <img src="images/photo-1.avif" alt="" id="photo-1" class="images-class">
-        <img src="images/photo-2.avif" alt="" id="photo-2" class="images-class">
-        <!-- <img src="images/photo-3.avif" alt="" id="photo-3" class="images-class">
-        <img src="images/photo-4.avif" alt="" id="photo-4" class="images-class">
-        <img src="images/photo-5.avif" alt="" id="photo-5" class="images-class">
-        <img src="images/photo-6.avif" alt="" id="photo-6" class="images-class">
+            <h1 class="main-h1">Welcome</h1>
 
-         -->
+            <p class="main-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                sed do eiusmod tempor incididunt ut labore et dolore magna
+            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+            </p>
+            
+            <section id="photo-0">
+                <img src="images/cut-photo-0.png" alt="" class="center-image"> 
+                <h3>About Us.. </h3>
+            </section>
 
+            <section id="photo-1">
+                <img src="images/smaller-photo-2.png" alt="" class="grid-photo sqaure-image">
+                <h4>cakes</h4>
+            </section>
+
+            <section id="photo-2" >
+                <img src="images/smaller-photo-3.png" alt="" class="grid-photo sqaure-image">
+                <h4>lessons</h4>
+            </section>
+
+            <section id="photo-3">
+                <img src="images/smaller-photo-4.png" alt="" class="grid-photo sqaure-image">
+                <h4>order</h4>
+            </section>
+
+            <section id="photo-4">
+                <img src="images/smaller-photo-5.png" alt="" class="grid-photo sqaure-image">
+                <h4>about</h4>
+            </section>
+
+            
+            
+           
+        </div>
     </main>
 
-    <!-- <footer>
-        <img src="" alt="social media 1">
+    <footer>
+        <!-- <img src="" alt="social media 1">
         <img src="" alt="social media 2">
-        <img src="" alt="social media 3">
+        <img src="" alt="social media 3"> -->
         <p>here is footer</p>
-    </footer> -->
+    </footer>
 
 
 
