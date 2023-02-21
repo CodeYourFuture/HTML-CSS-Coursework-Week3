@@ -6,11 +6,123 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Responsive Cake webpage</title>
-    <!-- Add a link to your css file here -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <!-- Add your markup here -->
+    <header>  
+                
+        <div class="topnav">
+            <div class="logo-menu">
+            
+                <h2 class="logo">My Cake</h2>
+
+                <div class="nav">
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                
+                    <!-- <div id="myLinks" class="links">
+                        <ul class="test-ul">
+                            <li class="test-nav">Home</li>
+                            <li class="test-nav">Cakes</li>
+                            <li class="test-nav">Order</li>
+                            <li class="test-nav">Lessons</li>
+                            <li class="test-nav">About</li>
+                        </ul>
+                    </div> -->
+
+                    <div id="myLinks" class="links">
+                        <a href="">home</a>
+                        <a href="">cakes</a>
+                        <a href="">ordering</a>
+                        <a href="">lessons</a>
+                        <a href="">about</a>
+                    </div>
+                
+                </div>
+            
+            </div>
+            
+            <p class="header-p">The best cakes in town delivered to your door</p>
+            
+        </div>
+        
+    </header>
+
+    <main>
+        <div class="main-container">
+
+            <h1 class="main-h1">Welcome</h1>
+
+            <p class="main-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                sed do eiusmod tempor incididunt ut labore et dolore magna
+            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+            </p>
+            
+            <section id="photo-0">
+                <img src="images/cut-photo-0.png" alt="" class="center-image"> 
+                <h3>About Us.. </h3>
+            </section>
+
+            <section id="photo-1">
+                <img src="images/smaller-photo-2.png" alt="" class="grid-photo sqaure-image">
+                <h4>cakes</h4>
+            </section>
+
+            <section id="photo-2" >
+                <img src="images/smaller-photo-3.png" alt="" class="grid-photo sqaure-image">
+                <h4>lessons</h4>
+            </section>
+
+            <section id="photo-3">
+                <img src="images/smaller-photo-4.png" alt="" class="grid-photo sqaure-image">
+                <h4>order</h4>
+            </section>
+
+            <section id="photo-4">
+                <img src="images/smaller-photo-5.png" alt="" class="grid-photo sqaure-image">
+                <h4>about</h4>
+            </section>
+
+            
+            
+           
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-div">
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-youtube"></a>
+
+        </div>
+        
+        <p class="copyright">Copyright @2023</p>
+
+    </footer>
+
+
+
+<script>
+    function myFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "block";
+        }
+    }
+</script>
 </body>
 
 </html>

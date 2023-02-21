@@ -1,1 +1,314 @@
-/*  Add your styling here */
+/* colors  */
+:root{
+    --dark-green: #585123;
+    --green: #A3A380;
+    --zety: #D6CE93;
+    --beige: #EFEBCE;
+    --beige2: #F5F5F5;
+    --pink: #D8A48F;
+    --pink2: #be907d;
+}
+body{
+ 
+    margin: 5%;
+}
+
+/* ---reset margins and padding---- */
+
+ul,a,p,img,div,h2,li{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+
+}
+
+
+/* --- styling header --- */
+
+/* font for welcome and p's and menu  */
+h1,a,p,h3,h4 {
+    font-family: 'Handlee', cursive;
+}
+
+.topnav{
+    /* overflow: scroll; */
+    background-color:var(--beige2);
+    position: relative;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: 5rem;
+    padding: 1rem 1rem 0.5rem 1rem;
+}
+
+.logo-menu{
+    grid-column: 1/3;
+    grid-row: 1/2;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.logo{
+    font-family: 'Allura', cursive;
+    color: var(--pink2);
+    font-weight: 300;
+    font-size: 2.5rem;
+}
+
+.nav {
+    align-self: center;
+}
+
+
+.header-p{
+    grid-column: 1/3;
+    grid-row: 2/3;
+    align-self: center;
+    justify-self: end;
+    color: var(--dark-green);
+    font-size: 0.75rem;
+   
+    
+}
+
+.topnav #myLinks {
+    display: none;
+    background-color: var(--beige2);
+    padding: 1rem;
+}
+
+.topnav a {
+    color: var(--dark-green);
+    padding: 14px 0px 14px 0px;
+    text-decoration: none;
+    font-size: 1rem;
+    display: block;
+}   
+
+/* .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+} */
+
+
+
+
+
+
+/* ----styling main ---- */
+/* testing borders */
+
+main,div,h1,p,section,img{
+    /* border: 1px solid grey; */
+}
+
+
+.main-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(7, auto);
+}
+
+.main-h1{
+    grid-column: 1/3;
+    grid-row: 1/2;
+    padding: 0 5%;
+    color: var(--green);
+}
+
+.main-p {
+    grid-column: 1/3;
+    grid-row: 2/4;
+    padding: 0 5%;
+    color: var(--dark-green);
+}
+
+.center-image {
+    width: 17rem;
+    /* height: auto; */
+
+
+}
+
+
+#photo-0 {
+    grid-column: 1/3;
+    grid-row: 4/6;
+    
+
+}
+
+
+/* sizing images  */
+
+
+.sqaure-image
+{
+    width: 7rem;
+}
+
+/* to center images  */
+#photo-0, #photo-1 , #photo-2 , #photo-3 , #photo-4 { 
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    flex-direction: column;
+    margin: 1rem;
+}
+
+/* to position images within the grid  */
+#photo-1{
+    grid-column: 1/2;
+    grid-row: 6/7;    
+   padding-left: 20%;
+
+
+}
+
+#photo-2 {
+    grid-column: 2/3;
+    grid-row: 6/7;
+    padding-right: 20%;
+
+}
+
+#photo-3 {
+    grid-column: 1/2;
+    grid-row: 7/8;
+    padding-left: 20%;
+
+}
+
+#photo-4 {
+    grid-column: 2/3;
+    grid-row: 7/8;
+    padding-right: 20%;
+    
+
+}
+
+
+/* image title  */
+.main-container h3 , .main-container h4{
+    display: flex;
+    justify-content: center;
+
+    text-transform:uppercase;
+    color: var(--dark-green);
+    border-bottom: 1px solid var(--beige);
+
+}
+
+/* hoover affect  */
+
+#photo-1:hover, 
+#photo-2:hover,
+#photo-3:hover , #photo-4:hover{
+    opacity: 0.75;
+}
+
+/* ------------------------------------- */
+/* ------------------------------------- */
+/* ------------------------------------- */
+
+/* footer */
+
+footer{
+    background-color: var(--beige2);
+    padding: 0.5rem;
+}
+
+.footer-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    
+
+}
+.fa-instagram , .fa-facebook , .fa-youtube {
+    background-color: var(--pink2);
+    color: white;
+    width: 1rem;
+    padding: 0.05rem;
+    margin: 0.25rem;
+    opacity: 0.5;
+
+}
+
+.copyright{
+    font-size: 0.5rem;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2%;
+    opacity: 70%;
+    
+
+}
+
+
+
+/* -----------------desktop -----------  */
+
+@media screen and (min-width: 540px) {
+
+    .main-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, auto);
+        }
+
+    
+    #photo-0{
+        grid-column: 1/3;
+        grid-row:1/3;
+    }
+    .main-h1{
+        grid-column: 3/5;
+        grid-row: 1/2;
+    }
+    .main-p{
+        grid-column: 3/5;
+        grid-row: 2/3;
+    }
+    #photo-1{
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    #photo-2 {
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+    #photo-3 {
+        grid-column: 3/4;
+        grid-row: 3/4;
+    }
+    #photo-4 {
+        grid-column: 4/5;
+        grid-row: 3/4;
+    }
+
+    .main-container h1{
+        margin:0px;
+        align-self: center;
+
+    }
+    #photo-1, #photo-2, #photo-3, #photo-4{
+        padding: 0px;
+        margin:0px;
+
+
+    }
+
+        .footer-div {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+        .footer-div a {
+            margin: 1rem;
+        }
+           
+         
+
+}
