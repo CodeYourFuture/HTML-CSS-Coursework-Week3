@@ -1,1 +1,103 @@
-/*  Add your styling here */
+/* Screen for Mobile */
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+Header {
+  display: flex;
+  position: relative;
+  height: 200px;
+  width: 100%;
+  background-color: brown;
+}
+
+.logo {
+  width: 150px;
+  height: 100px;
+  position: absolute;
+  top: 20%;
+  left: 2%;
+}
+.logo > img {
+  width: 100px;
+  height: 90px;
+}
+#nav-mobile{
+position: absolute;
+top: 1%;
+right: 1%;
+color: white;
+}
+/* header > nav {
+  position: relative;
+} */
+/* nav > ul {
+}
+nav > ul > li {
+} */
+
+header > h4 {
+  position: absolute;
+  bottom: 2%;
+  right: 2%;
+  color: white;
+}
+.main{
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.introduction{
+  height: 200px;
+ }
+
+ .cakes{
+  padding: 10px;
+  background-color: pink;
+}
+.first{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+.first >img{
+  border-radius: 10px;
+    width:90%;
+    height: 400px;
+    
+}
+.second{
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+}
+.second>img{
+  width: 45%;
+  height: 300px;
+  border-radius: 10px;
+}
+.third{
+   margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+}
+.third>img{
+  width: 45%;
+  height: 300px;
+  border-radius: 10px;
+}
+footer{
+  display: flex;
+  justify-content: center;
+  height: 50px;
+  width: 100%;
+  background-color: brown;
+  padding: 10px;
+  color: white;
+}
