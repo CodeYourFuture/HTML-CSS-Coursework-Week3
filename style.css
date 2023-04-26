@@ -285,9 +285,8 @@ footer p {
     padding-left: 10px;
   }
 
-  /* footer p {
-    font-size: 1.2rem;
-    align-self: unset;
-    letter-spacing: 0.5px;
-  } */
+  footer p {
+    grid-column: 5/12;
+    padding-left: 90px;
+  }
 }
