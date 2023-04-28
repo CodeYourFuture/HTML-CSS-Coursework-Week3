@@ -4,7 +4,7 @@
 .header-section {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .header-section, .footer-section {
@@ -20,28 +20,28 @@ body {
 }
 
 main {
-    margin: 1em;
+    margin: 1rem;
 }
 
 
 .logo {
-    width: 7em;
-    height: 10em;
-    margin: auto 1em;
+    width: 7rem;
+    height: 10rem;
+    margin: auto 1rem;
 }
 
 
 .hamburger-menu {
-    width: 6em;
-    height: 7em;
+    width: 6rem;
+    height: 7rem;
 }
 
 .hamburger-menu-item {
     font-size: small;
     background-color: #CDF3AC;
-    margin: 0.5em 0;
+    margin: 0.5rem;
     font-weight: bold;
-    padding: 0.25em;
+    padding: 0.25rem;
     text-align: right;
 }
 
@@ -53,26 +53,23 @@ main {
 .slogan {
     font-size: medium;
     font-weight: bold;
-    width: 13em;
-    height: 5em;
     text-align: right;
-    margin-bottom: 2em;
     display: flex;
     align-items: end;
+    padding: 2.5rem 0.5rem 0.5rem 0;
 }
 
 
 .header-right {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
-    margin: 1em 0 0 0;
+    align-items: end;
 }
 
 
 h1 {
     font-weight: bold;
-    margin-top: 2em;
+    margin-top: 2rem;
 }
 
 .site-description {
@@ -131,7 +128,7 @@ img {
     background-color: #CDF3AC;
     font-size: large;
     font-weight: bold;
-    padding: 0.25em;
+    padding: 0.25rem;
 }
 
 .center-footer {
@@ -174,7 +171,7 @@ img {
         width: auto;
         margin-top: 2rem;
         margin-bottom: 3rem;
-        padding: 0.25em 1em;
+        padding: 0.25rem 1rem;
     }
     
     .large-nav-item {
@@ -182,10 +179,10 @@ img {
         font-size: large;
         font-weight: bold;
         background-color: #CDF3AC;
-        margin: 1em;
+        margin: 1rem;
         justify-content: space-evenly;
         font-weight: bold;
-        padding: 0.5em;
+        padding: 0.5rem;
         width: 9rem;
 
     }
@@ -199,7 +196,7 @@ img {
         text-align: right;
         justify-content: end;
         align-items: end;
-        margin: 0 2em;
+        margin: 0 2rem;
         width: auto;
     }
 
