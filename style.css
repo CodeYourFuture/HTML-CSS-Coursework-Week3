@@ -216,7 +216,7 @@ img {
     .footer-section {
         display: flex;
         flex-direction: column;
-        
+        height: 15rem;
     }
     .side-footer {
         display: flex;
@@ -228,7 +228,7 @@ img {
     }
     
     .side-footer-item {
-        margin: 6rem 2rem 0 2rem;
+        margin: 2rem 2rem 0 2rem;
         background-color: #CDF3AC;
         font-size: x-large;
         font-weight: bold;
@@ -243,9 +243,7 @@ img {
         margin-left: auto;
         margin-right: auto;
         background-color: #f3e3bc;
-        margin-bottom: 5rem;
         width: 30rem;
         text-align: center;
-        padding: 0.5rem
     }
 }
