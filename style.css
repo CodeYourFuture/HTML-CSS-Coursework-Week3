@@ -1,1 +1,194 @@
 /*  Add your styling here */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Quicksand", sans-serif;
+  }
+  
+  /* Set the root font size to 16px */
+  html {
+    font-size: 16px;
+  }
+  
+  /* Style the header */
+  header {
+    height: 100px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+  }
+  
+  /* Style the logo */
+  header .logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Style the navigation bar */
+  nav {
+    margin: 2rem 0;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  nav li {
+    margin: 0 1rem;
+  }
+  
+  nav a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 1rem;
+  }
+  
+  nav a:hover {
+    color: #555;
+    background-color: #f4f4f4;
+    border-radius: 4px;
+  }
+  
+  /* Style the main section */
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 2rem auto;
+  }
+  
+  section {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  section article {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5rem;
+  }
+  
+  .wrapper {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .section__cakes {
+    margin-top: 2rem;
+    gap: 1rem;
+  }
+  
+  /* Style the cakes section */
+  .cakes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 2rem auto;
+  }
+  
+  .cake {
+    width: calc(25% - 2rem);
+    margin: 1rem;
+  }
+  
+  .cake img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+  
+  .cake h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .cake p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+  }
+  
+  /* Style the footer */
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 2rem;
+  }
+  
+  /* Responsive styles */
+  
+  @media screen and (max-width: 1200px) {
+    .section__cakes {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    header {
+      height: auto;
+      padding: 1rem;
+    }
+  
+    header .logo {
+      margin-bottom: 1rem;
+    }
+  
+    nav {
+      margin-top: 1rem;
+    }
+  
+    nav li {
+      margin: 1rem 0;
+    }
+  
+    main {
+      margin: 1rem;
+    }
+  
+    .wrapper {
+      flex-direction: column;
+    }
+  
+    section img {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 1rem;
+    }
+  
+    section article {
+      width: 100%;
+    }
+  
+    .cakes {
+      margin: 1rem;
+    }
+  }
+  
+  @media screen and (max-width: 468px) {
+    nav ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .section__cakes {
+      flex-direction: column;
+    }
+  }
+  
