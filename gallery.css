@@ -1,0 +1,31 @@
+.container {
+    width: 24rem;
+    margin: 4rem;
+    padding: 2rem;
+    background-color: white;
+    }
+
+  .icon {
+    font-size: 3rem;
+    padding-left: 1rem;
+  }
+
+  h3 {
+    margin: 0;
+  }
+
+  p {
+    margin: 5px 0 0;
+  }
+
+  .item {
+    padding: 0 0 1.4rem 0;
+  }
+
+  /* Generic Styles End */
+
+  .container {
+    display: grid;
+    grid-template-columns: 1fr auto;
+  }
+  

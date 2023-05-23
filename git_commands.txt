@@ -1,0 +1,11 @@
+   history 10 
+   16  git config --add user.name afsoon
+   17  git config --list
+   18  git config --add user.email afsoonewss@gmail.com
+   19  git config --get user.email
+
+   21  git remote
+   22  git remote -v
+   23  git push origin 
+   24  history 10
+   25  history 10 > git_commands.txt
