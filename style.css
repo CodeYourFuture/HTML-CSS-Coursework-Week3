@@ -1,1 +1,186 @@
-/*  Add your styling here */
+
+
+body{
+    background-color: whitesmoke;
+    font-family: 'Quicksand', sans-serif;
+}
+
+
+
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+/* 1440px */
+/****************** #navbar#logo#content******************/
+.logo h1{
+    font-family: 'Zeyada', cursive;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar ul {
+    display: flex;
+
+}
+
+
+.navbar ul li {
+display: flex;
+flex-direction: row;
+padding: 0 16px;
+text-decoration: none;
+}
+
+
+.navbar a {
+    text-decoration: none;
+    font-style: none;
+    color: black;
+}
+
+.header-content{
+    font-family: 'Babylonica', cursive;
+    font-size: 1.6rem;
+    letter-spacing: 12px;
+
+}
+
+.hamburger-menu{
+    display: none;
+}
+
+/****************** navbar ******************/
+
+
+
+
+.hero-banner{
+    background-image: url("https://tinyurl.com/dw3xbar6");
+    height:500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+/****************** images ******************/
+
+.cake-images{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+   
+
+}
+.cake-item{
+
+    height: 23rem;
+    width: 30rem;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+}
+
+
+
+.victorian-sponge-cake{
+    background-image: url("https://tinyurl.com/4j87s64d");
+   
+}
+ 
+.chocolate-cake{
+    background-image: url("https://tinyurl.com/yxb8r9me");
+    
+  
+}
+ 
+.carrot-cake{
+    background-image: url("https://tinyurl.com/y9tv4y4u");
+
+}
+
+.cake-item h1{
+
+    color: white;
+    border: solid #e15b8d;
+    background-color: #e15b8d;
+  
+}
+
+/****************** images ******************/
+
+
+
+  footer{
+    text-align: center;
+  }
+
+
+
+
+
+
+  @media screen and (max-width: 900px) {
+.hamburger-menu{
+    display: block;
+}
+
+.menu:target {
+    transform: translateY(0);
+}
+    .navbar{
+        display: none;
+    }
+
+    .cake-images {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header-content {
+        font-family: 'Babylonica', cursive;
+        font-size: 1rem;
+        letter-spacing: 5px;
+    }
+
+    .content-section p{
+        width: 600px;
+    }
+
+    .cake-item{
+        margin: 1rem;
+    }
+
+
+  }
+
+
+
+
+
+
+  @media screen and (max-width: 540px) {
+    .content-section p {
+        width: 400px;
+    }
+  }
