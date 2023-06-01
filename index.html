@@ -5,12 +5,94 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gwendolyn&family=Open+Sans:wght@300;500&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <title>Responsive Cake webpage</title>
-    <!-- Add a link to your css file here -->
 </head>
-
 <body>
-    <!-- Add your markup here -->
+<div class="wrapper">
+    <header class="header">
+        <nav class="menu">
+            <div class="menu_icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="menu_list">
+                <li class="menu_item active">
+                    <a href="#">Home</a>
+                </li>
+                <li class="menu_item">
+                    <a href="#">Cakes</a>
+                </li>
+                <li class="menu_item">
+                    <a href="#">Ordering</a>
+                </li>
+                <li class="menu_item">
+                    <a href="#">Lessons</a>
+                </li>
+                <li class="menu_item">
+                    <a href="#">About</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section class="welcome">
+        <div class="content content--welcome">
+            <div class="welcome_img">
+            </div>
+            <h1 class="welcome_title">
+                The best cake in town delivered to your door
+            </h1>
+        </div>
+    </section>
+    <section class="about content">
+        <div class="about_text content">
+            <h2 class="section_title">Welcome</h2>
+            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus dolorum et exercitationem
+                molestiae nostrum perferendis porro possimus reiciendis reprehenderit vitae</p>
+        </div>
+        <div class="about_img"></div>
+    </section>
+    <section class="gallery content">
+        <ul class="gallery_list">
+            <li class="gallery_item">
+                <img src="images/gallery_1.webp" alt="">
+            </li>
+            <li class="gallery_item">
+                <img src="images/gallery_2.webp" alt="">
+            </li>
+            <li class="gallery_item">
+                <img src="images/gallery_3.webp" alt="">
+            </li>
+            <li class="gallery_item">
+                <img src="images/gallery_4.webp" alt="">
+            </li>
+        </ul>
+    </section>
+    <footer class="footer">
+        <div class="socials content">
+            <h3 class="section_subtitle">Connect</h3>
+            <ul class="socials_list">
+                <li class="socials_item">
+                    <a href="#">Instagram</a>
+                </li>
+                <li class="socials_item">
+                    <a href="#">Facebook</a>
+                </li>
+                <li class="socials_item">
+                    <a href="#">Telegram</a>
+                </li>
+            </ul>
+        </div>
+        <p class="footer_copyright">Made with love by Iryna Lypnyk</p>
+    </footer>
+</div>
+
+
 </body>
 
 </html>

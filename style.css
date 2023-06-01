@@ -1,1 +1,347 @@
-/*  Add your styling here */
+:root {
+    --bg: #f3f0ef;
+    --text: #4c4946;
+    --yellow: #f7e259;
+    --yellowLight: #fff9de;
+    --ff-body: 'Open Sans', sans-serif;
+    --ff-secondary: 'Gwendolyn', cursive;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html, body {
+    min-height: 100vh;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: var(--ff-body);
+    -webkit-font-smoothing: antialiased;
+    font-weight: 300;
+    color: black;
+    background: var(--bg);
+    line-height: 1.4;
+}
+
+h1, h2, h3, h4, h5 {
+    font-weight: 500;
+    margin: 0;
+}
+
+/** General  */
+a {
+    display: inline-block;
+    color: inherit;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+img {
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+}
+
+p {
+    font-size: 1.07rem;
+    line-height: 1.8;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.section_title {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+.section_subtitle {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+.wrapper {
+    display: grid;
+    min-height: 100vh;
+    grid-template-areas:
+        "header"
+        "welcome"
+        "about"
+        "gallery"
+        "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, auto);
+}
+
+section {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/*    HEADER    */
+.header {
+    grid-area: header;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.content{
+    padding: 20px;
+}
+
+.main {
+    grid-area: main;
+    flex-grow: 1;
+}
+
+.menu_icon{
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    align-items: center;
+    justify-content: center;
+    z-index: 101;
+    position: relative;
+}
+
+.menu_icon:hover{
+    cursor: pointer;
+}
+
+.menu_icon span{
+    width: 22px;
+    height: 2px;
+    background-color: var(--text);
+}
+
+.menu_list {
+    display: none;
+    column-gap: 2rem;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 2rem;
+}
+
+.menu_item a {
+   text-transform: uppercase;
+    font-weight: 500;
+}
+
+.menu_item:hover a {
+    text-decoration: underline;
+}
+
+.menu_item.active a {
+    text-shadow: 1px 2px var(--yellow);
+}
+
+.welcome {
+    grid-area: welcome;
+    background-image: url("images/welcome_bg.jpeg");
+    background-repeat: repeat;
+    border-top: 2px solid var(--yellow);
+    border-bottom: 2px solid var(--yellow);
+}
+
+.content--welcome {
+    display: flex;
+    align-items: flex-end;
+    column-gap: 16px;
+}
+
+.welcome_img {
+    background-image: url("images/welcome.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left center;
+    width: 100%;
+    min-width: 50px;
+    max-width: 60%;
+    height: 100%;
+    min-height: 200px;
+}
+
+.welcome_title{
+    font-family: var(--ff-secondary);
+    font-size: 2rem;
+    font-weight: 800;
+    line-height: 1.2;
+    text-shadow: 1px 1px 2px var(--bg);
+}
+
+.about {
+    grid-area: about;
+}
+
+
+.about_img {
+    height: 50vh;
+    background-image: url("images/gallery_L.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.about p {
+    margin-bottom: 2rem;
+}
+
+.gallery {
+    grid-area: gallery;
+}
+
+.gallery_list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+
+.footer {
+    border-top: 1px solid var(--yellow);
+    grid-area: footer;
+}
+
+.socials_list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    column-gap: 20px;
+    font-weight: 500;
+}
+
+.socials_item a {
+   text-decoration: none;
+    border-bottom: 2px solid var(--yellow);
+}
+
+.socials_item:hover a {
+    text-decoration: none;
+    border-bottom: 2px solid var(--text);
+}
+
+.footer_copyright {
+    background-color: var(--text);
+    color: var(--bg);
+    text-align: center;
+    font-size: 0.9rem;
+    padding: 2rem;
+}
+
+
+@media screen and (min-width: 540px){
+    html {
+        font-size: 18px;
+    }
+
+    .socials_list {
+        max-width: 500px;
+        flex-direction: row;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 900px){
+    .wrapper {
+        grid-template-areas:
+        "welcome"
+         "header"
+        "about"
+        "gallery"
+        "footer";
+    }
+
+    .header {
+        background-color: var(--yellowLight);
+    }
+
+    .menu_icon {
+        display: none;
+    }
+
+    .menu_list {
+        display: flex;
+    }
+
+    .content {
+        padding: 4rem 2rem;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .content--welcome {
+        column-gap: 2rem;
+        justify-content: space-between;
+        border-bottom: none;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .welcome_img{
+        max-width: 300px;
+        margin-left: 20px;
+    }
+
+    .welcome_title {
+        font-size: 3rem;
+    }
+
+    .about {
+        display: grid;
+        grid-template-areas: "img text";
+        grid-template-rows: auto;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 2rem;
+    }
+
+    .about_img{
+        grid-area: img;
+        height: auto;
+        min-height: 50vh;
+    }
+
+    .about_text{
+        grid-area: text;
+    }
+
+    .gallery_list {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 2rem;
+    }
+
+    .gallery_item:hover {
+        transform: scale(1);
+        transition: transform 0.3s ease-out;
+    }
+
+    .gallery_item:hover {
+        transform: scale(1.1);
+    }
+
+    .socials .section_subtitle {
+        text-align: center;
+    }
+    .socials_list {
+       text-align: center;
+        justify-content: center;
+        max-width: 700px;
+    }
+}
