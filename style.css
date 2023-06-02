@@ -1,1 +1,236 @@
 /*  Add your styling here */
+
+body{
+  margin: 0;
+  background-color: rgba(255, 99, 71, 0.5);
+}
+
+.super-container{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 250px 300px 480px 570px px;
+  row-gap: 60px;
+  min-width: 480px;
+
+  
+}
+
+.header{
+  display: flex;
+  align-items: center;
+  background-color: #bbc7c7;
+  
+  
+}
+
+.header-logo-img{
+  margin-left: 1rem;
+  border-radius: 15px;
+}
+.slogan{
+  font-size: 1.5rem;
+  padding-top: 5rem;
+  padding-left: 1rem;
+  font-style: italic;
+}
+ .welcome-container h2{
+  font-size: 50px;
+  margin-left: 1rem;
+
+  
+  
+}
+.welcome-container p{
+  font-size: 30px;
+  margin-left: 1rem;
+  font-style: italic;
+  
+}
+.welcome-container{
+  margin-bottom: 5rem;
+  
+}
+
+.Big-cake-container{
+  margin-left: 1rem;
+  
+  
+}
+
+.big-cake-img{
+  height: 100%;
+  
+}
+.social-media-container{
+  margin-top: 1rem;
+  background-color: #bbc7c7;
+  
+}
+nav{
+  display:none;
+}
+.gallery-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  margin-left: 1rem;
+  row-gap: 10px;
+  
+}
+
+  
+.navbar{
+  display: none;
+}
+
+.hamburger{
+  display:block;
+  float: right;
+  width: 35px;
+  height: 30px;
+  cursor: pointer;
+  
+  
+
+}
+.line{
+  display: block;
+  width: 100%;
+  height: 4px;
+  margin: 6px 0;
+  background-color: #333;
+}
+
+.copy{
+  font-size: large;
+  text-align: center;
+
+}
+.media{
+  flex-direction: column;
+}
+
+/* responsive */
+
+@media screen and (min-width:900px) {
+  body{
+    background-color: pink;
+
+  }
+  .gallery-container{
+    display: flex;
+    gap: 2%;
+    margin-left: 5rem;
+    
+  }
+  .cake-feature{
+    display:flex;
+    flex-direction: row-reverse;
+    padding-bottom: 3rem;
+    height: 400px;
+    
+    
+
+  }
+  .slogan{
+    margin-left: 15rem;
+    font-size: 32px;
+    
+  }
+  
+  .social-media-container{
+    width: 90rem;
+    font-size: 22px;
+    
+    
+    
+    
+  }
+  nav{
+    display: block;
+    border: 5px solid lightblue;
+    font-size: 28px;
+    font-style: italic;
+    text-align: center;
+    background-color: #bbc7c7;
+    color: white;
+  }
+ .nav-list{
+  display: flex;
+  justify-content: space-evenly;
+  margin-left: 32rem;
+ }
+ .navigation-item-home{
+  border-radius: 5px;
+  
+  
+  
+ }
+  .media{
+    /* border: 5px solid red; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 65rem;
+    margin-left: 10rem;
+    
+
+  }
+    
+  .hamburger{
+    display:none;
+    }
+  }
+
+  
+@media screen and (min-width:1100px) {
+  body{
+    background-color:violet;
+  }
+  .social-media-container{
+    width: 120rem;
+    font-size: 24px;
+    
+    
+    
+}
+.gallery-container{
+  display: flex;
+  gap: 4%;
+  margin-left: 15rem;
+  
+}
+.welcome-container p{
+  font-size: 38px;
+  font-style: italic;
+  
+}
+.cake-feature{
+  display:flex;
+  flex-direction: row-reverse;
+  padding-bottom: 3rem;
+  height: 400px;
+  margin-left: 2rem;
+
+  
+
+}
+.welcome-container{
+  
+  margin-left: 1rem;
+  
+}
+.slogan{
+  margin-left: 23rem;
+  font-size: 38px;
+  
+}
+.copy{
+  font-size: x-large;
+  text-align: center;
+
+}
+.media{
+  margin-left: 20rem;
+}
+}
