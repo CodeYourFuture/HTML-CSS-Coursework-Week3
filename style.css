@@ -68,12 +68,13 @@ main {
 
 
 h1 {
+    font-size: 2rem;
     font-weight: bold;
     margin-top: 2rem;
 }
 
 .site-description {
-    font-size: larger;
+    font-size: 2rem;
     font-weight: bold;
     text-align: justify;
 }
