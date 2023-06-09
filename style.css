@@ -73,6 +73,7 @@ h1 {
 }
 
 .site-description {
+    font-size: larger;
     font-weight: bold;
     text-align: justify;
 }
