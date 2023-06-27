@@ -85,8 +85,8 @@ h1 {
 }
 
 #hero-img {
+    height: 15rem;
     width: 100%;
-    height: 100%;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -147,13 +147,20 @@ img {
         background-color: #d7e4ca;
     }
     .center-footer {
-    background-color: #d7e4ca;
-}
+        background-color: #d7e4ca;
+    }
+    #hero-img {
+        height:25rem;    
+    }
 }
 
 @media screen and (min-width: 900px) {
     body {
         background-color: #f3e3bc;
+    }
+    #hero-img {
+        /* height: 25rem; */
+        width: 35rem;   
     }
     .cake-display {
         grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -185,7 +192,6 @@ img {
         font-weight: bold;
         padding: 0.5rem;
         width: 9rem;
-
     }
     
 
